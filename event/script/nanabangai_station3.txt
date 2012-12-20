@@ -1,0 +1,19 @@
+set_eternal_event
+wait_target_talked 1708
+reset_talked_flag 1708
+set_talk_npc 1707
+msg 「エェ！
+reset_talk_npc
+sleep 32
+set_talk_npc 1707
+msg 「でも　このあたり\n　れっしゃ　はかば　しかないし\n　オバケ　でるっていうし
+reset_talk_npc
+set_talk_npc 1708
+sleep 16
+msg 「……しまった
+reset_talk_npc
+set_talk_npc 1707
+msg 「……え？
+reset_talk_npc
+chg_type 1707 npc3
+chg_type 1708 npc2

@@ -1,0 +1,12 @@
+wait_same_pos
+backup_char_img
+chg_char_img 0
+create npc_event 601 6 2 2 1 1 2 none
+move_npc 601 right 1
+sleep 15
+chg_npc_dir 601 left
+msg 「Little by little the\n reactorsll drain out all\n the life. Then thatll be\n that.\n『Its not my problem.\n\n\n\n「The planets dyin.\n Cloud!\n\n\n『The only thing I care\n about is finishin this\n job before security and\n the Roboguards come.
+move_npc 601 left 1
+sleep 15
+restore_char_img
+kill 601

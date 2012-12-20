@@ -1,0 +1,13 @@
+wait_target_talked 134
+play_se door_open.wav
+kill 135
+kill 136
+chg_type 134 npc_event
+chg_speed 134 fast
+sleep 16
+move_npc 134 down 1
+sleep 8
+move_npc 134 right 11
+sleep 80
+kill 134
+

@@ -1,0 +1,5 @@
+set_eternal_event
+wait_target_talk 123
+reset_talk_flag 123
+jump_char down 3
+sleep 48

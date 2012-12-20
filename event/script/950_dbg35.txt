@@ -1,0 +1,6 @@
+set_eternal_event
+wait_same_pos
+chg_char_dir down
+jump_char_target_pos 32 25
+sleep 94
+

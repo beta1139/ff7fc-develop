@@ -1,0 +1,64 @@
+wait_same_pos
+draw_char off
+msg しゃないアナウンス\n「ミッドガル　はちばんがい　ステーション　はつ\n　さいしゅうれっしゃ\n\n　しゅうてん\n　スラムななばんがい　れっしゃはかば　えき\n\n\n　とうちゃく　よていじかんは　ミッドガルじ\n　０じ２３ぷん……
+create npc_event 1665 16 1 21 1 3 2 「みろよ……ちじょうが　みえてきたぜ\n　ひるも　よるもねえ　おれたちの　まちがよ\n\n\n　ミッドガルの　プレートさえ　なけりゃなあ……\n　でっけえ　そらが　おがめんのになあ\n\n\n『くうちゅうに　うかぶ　としか……\n　おちつかない　ふうけいだな\n\n\n「はあ？\n　あんたが　そんなふうに　かんじるとはな\n　……いがいだぜ\n\n　うえの　せかい……　プレートせかい……\n　あの　くさったピザの　せいで　したの　にんげんが\n　どんなに　くるしんでることか……\n\n　したの　せかいは　いまじゃあ　けがされた\n　くうきの　たまりばだ\n\n\n　おまけに　まこうろは　どんどん　エネルギーを\n　くみあげちまう\n　おかげで　とちは　かれる　いっぽうだ\n　くうきを　きれいにするちからも なくしちまった\n『どうして　みんな　うえへ\n　うつらないんだろう……\n\n\n「さあな　かねがないからだろ\n　いや　それとも……\n\n\n　どんなに　けがれていても　じべたが\n　すきなのかもな\n\n\n『わかってるさ……\n　すきで　スラムに　すんでるやつなど　いない\n　みんな　この　れっしゃと　おなじ　しかれた\n　レールには　さからえないんだ
+move_npc 1665 right 6
+sleep 96
+move_npc 1665 up 2
+sleep 32
+chg_npc_dir 1665 down
+create npc_event 1666 16 1 21 35 3 2 「さすがに　つかれたよ\n　えきにつくまで　ねむらせてくれ
+move_npc 1666 right 1
+sleep 15
+create npc_event 1667 16 1 21 34 3 2 「そうだ　クラウド！\n　こんど　わたしの　てづくりさくひんを\n　プレゼントしちゃおうかな\n\n#2\n　　えんりょしとくよ\n　　たのしみにしてるよ\n\n\n[[「そう きっと　こうかい　するかもよ\n　わたし　ズガッーンと　ねにもつ　タイプなの]]\n[[　うん　じゃ　うでに　よりをかけて\n　ドッカーンと　せいさくするわ]]
+move_npc 1666 right 1
+move_npc 1667 right 1
+sleep 15
+create npc_event 1668 16 1 21 36 3 2 「アバランチで　なをあげて　いつか　おれだって……\n　っす！\n\n\n　クラウドさんっ！！\n　おれにも　あかるい　みらいが　まってるっすよね？\n\n\n#2\n　　なにを　きたいしてる？\n　　むりだな\n\n\n[[　おれ　いままで　ずっと　じんせい　わきやくって\n　かんじで　いきてきたっすよ\n\n\n　でも　アバランチに　はいって　ほしの　いのちを\n　すくえば　こんなおれでも……いろいろとね]]\n[[　ああ　ひどいなあ　クラウドさん\n　やっぱ　ダメっすかね　そうすかね]]
+move_npc 1667 up 1
+move_npc 1668 right 1
+sleep 15
+chg_npc_dir 1667 right
+move_npc 1668 down 1
+sleep 15
+chg_npc_dir 1668 right
+move_npc 1664 down 2
+sleep 30
+move_npc 1664 right 8
+sleep 30
+move_npc 1662 right 4
+move_npc 1663 right 4
+sleep 60
+msg 「これだから　しゅうでんは　まいるよ\n　はあ……
+move_npc 1661 down 1
+sleep 15
+move_npc 1661 right 1
+sleep 15
+kill 1661
+kill 1662
+kill 1663
+kill 1664
+move_npc 1666 right 2
+move_npc 1667 right 2
+move_npc 1668 right 4
+sleep 31
+move_npc 1666 up 2
+move_npc 1667 up 1
+sleep 15
+chg_npc_dir 1667 down
+sleep 15
+chg_npc_dir 1666 down
+chg_npc_dir 1668 up
+chg_type 1665 npc
+chg_type 1666 npc
+chg_type 1667 npc
+chg_type 1668 npc
+chg_speed 1665 not_step
+chg_speed 1666 not_step
+chg_speed 1667 not_step
+chg_speed 1668 not_move
+set_flag_wall 1665
+set_flag_wall 1666
+set_flag_wall 1667
+set_flag_wall 1668
+draw_char on

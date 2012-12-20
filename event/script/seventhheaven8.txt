@@ -1,0 +1,44 @@
+wait_same_pos
+chg_npc_dir 2202 up
+sleep 16
+msg ティファ\n「おはよ！　クラウド！
+chg_char_dir up
+sleep 16
+chg_npc_img 2251 3
+sleep 16
+chg_npc_dir 2202 right
+move_char down 1
+sleep 16
+chg_char_dir left
+msg ティファ\n「よくねむれた？\n\n\n#2\n　　バレットの　イビキが　うるさくて……\n　　ティファが　そばに　いたから……\n\n\n[[]][[]]
+if_flag 3 0
+add_likability 1 500
+chg_speed 2202 slow
+move_npc 2202 right 1
+sleep 32
+chg_char_dir down
+msg ティファ\n「ひそひそ……\n\n\n　ダメ……きこえちゃうよ\n　バレット　さくせんまえは　きが　たってるから
+sleep 16
+chg_char_dir left
+msg ティファ\n「こんかいは　わたしも　いくね！
+sleep 16
+chg_speed 2202 normal
+move_npc 2202 left 1
+sleep 16
+fi
+if_flag 3 1
+add_likability 2 500
+sleep 16
+msg ティファ\n「それ　どういう　いみかしら
+sleep 16
+msg ティファ\n「こんかいは　わたしも　いくね！
+sleep 16
+chg_speed 2202 normal
+chg_npc_dir 2202 left
+fi
+chg_type 2202 npc
+chg_speed 2202 not_move
+set_flag_wall 2202
+create event_generator 2241 22 5 9 17 0 0 @seventhheaven9_1.txt
+create event_generator 2242 22 4 10 17 0 0 @seventhheaven9_2.txt
+create event_generator 2243 22 6 10 17 0 0 @seventhheaven9_3.txt

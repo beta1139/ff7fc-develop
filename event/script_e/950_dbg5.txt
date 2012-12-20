@@ -1,0 +1,6 @@
+set_eternal_event
+wait_target_talked 95072
+open_armor_shop 3000/3003/3007
+msg ‚Ü‚½‚Ì‚²‚è‚æ‚¤@‚¨‚Ü‚¿‚µ‚Ä‚¨‚è‚Ü‚·
+recover_talked_npc_dir
+reset_talked_flag 95072

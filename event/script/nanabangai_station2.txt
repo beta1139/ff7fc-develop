@@ -1,0 +1,8 @@
+set_eternal_event
+wait_target_talked 1707
+reset_talked_flag 1707
+set_talk_npc 1708
+msg 「エェ！
+reset_talk_npc
+chg_type 1707 npc3
+chg_type 1708 npc3

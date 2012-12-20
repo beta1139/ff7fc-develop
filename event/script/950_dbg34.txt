@@ -1,0 +1,17 @@
+set_eternal_event
+wait_same_pos
+chg_char_dir left
+jump_char_target_pos 30 22
+loop 7
+sleep 2
+chg_char_dir up
+sleep 2
+chg_char_dir right
+sleep 2
+chg_char_dir down
+sleep 2
+chg_char_dir left
+pool
+sleep 2
+msg ÅwÇ–Ç·Ç¡ÇŸÇ¢ÅI
+

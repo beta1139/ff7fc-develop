@@ -1,0 +1,75 @@
+NEXTLV
+LIMIT
+CFG
+ゆびのいちをきおくするかどうか
+バトルのじかんのすすみかた
+Face Graphics
+Cursor
+Ini
+Save
+Activ
+Wait
+FaceGraph
+Org
+Amano
+ITEM
+MAGIC
+MTRIA
+EQUIP
+STATS
+FORM
+PHS
+SAVE
+GIL
+USE
+TIDY
+KEYITEM
+POWER
+SPEED
+VIT
+MAGIC
+MIND
+LUCK
+ATTACK
+ACCURACY
+GUARD
+EVADE
+M.ATTACK
+M.GUARD
+M.EVADE
+EXP：
+つぎのレベルまであと：
+LIMITLV：
+パーティをつくってください
+Load
+Enemy was wiped out
+GIL acquired
+EXP acquired
+どうぐや
+ぶきや
+ぼうぐや
+マテリアや
+アクセサリや
+いらっしゃい　どのようなごようけんで？
+かう
+うる
+でる
+なににいたしましょうか？
+いくつ？
+ありがとうございます　ほかには？
+なにを　うりますか？
+ぜんぶ
+それなら　　　　　　　ギルになります
+none
+none
+M.GRD
+ was lv up
+AP acquired
+SUMMONS
+E.MGC
+ConsMP
+Found
+！
+ Materia
+ばくはにまきこまれて　パーティはぜんめつした……
+

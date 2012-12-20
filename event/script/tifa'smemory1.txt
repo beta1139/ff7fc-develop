@@ -1,0 +1,127 @@
+wait_same_pos
+move_char down 7
+sleep 112
+sleep 16
+msg ティファ\n「ほら　むらの　きゅうすいとう\n\n\n　おぼえてる？
+sleep 16
+chg_npc_dir 70201 right
+sleep 96
+msg 『ああ……あのときか
+sleep 48
+msg 『ティファ　なかなか　こなくて\n　ちょっと　さむかったな
+sleep 80
+fadeout
+kill 70201
+kill 70202
+warp 702 11 19 down
+create npc_event 70203 702 14 22 86 3 1 none
+create npc_event 70204 702 7 22 87 0 1 none
+sleep 32
+fadein
+move_npc 70204 up 3
+sleep 96
+move_npc 70204 right 1
+sleep 48
+kill 70204
+sleep 32
+chg_npc_dir 70203 left
+sleep 48
+create npc_event 70204 702 9 19 87 1 1 none
+sleep 16
+chg_npc_dir 70203 right
+sleep 32
+chg_npc_dir 70204 down
+msg ティファ\n「お ま た せ
+move_npc 70204 down 3
+sleep 96
+move_npc 70204 right 3
+sleep 96
+chg_npc_dir 70204 down
+sleep 96
+chg_npc_dir 70204 right
+msg ティファ\n「なーに？\n　はなしが　あるって
+sleep 16
+chg_npc_dir 70204 down
+sleep 48
+msg 『おれ……はるに　なったら　むらを　でて\n　ミッドガルへ　いくよ　
+sleep 96
+msg ティファ\n「……おとこのこ　たちって\n　みーんな　むらを　でてっちゃうね
+sleep 32
+msg 『おれは　みんなとは　ちがう\n　ただ　しごとを　さがす　だけじゃない
+sleep 64
+chg_npc_dir 70203 left
+sleep 32
+msg 『おれ ソルジャーに　なりたいんだ
+sleep 32
+chg_npc_dir 70203 right
+sleep 32
+msg 『セフィロス　みたいな\n　さいこうの　ソルジャーに
+sleep 16
+msg ティファ\n「セフィロス……\n　えいゆう　セフィロス　か
+sleep 32
+move_npc 70203 up 4
+sleep 16
+chg_npc_dir 70204 right
+sleep 88
+chg_npc_dir 70204 down
+sleep 24
+chg_npc_dir 70203 left
+sleep 16
+kill 70203
+sleep 80
+move_char up 1
+sleep 16
+create npc_event 70203 702 11 17 86 1 1 none
+sleep 16
+move_npc 70203 down 1
+sleep 64
+msg ティファ\n「ソルジャーに　なるのって\n　むずかしいんでしょ？
+sleep 32
+msg 『……しばらくの　あいだ\n　むらには　もどれないな　きっと
+sleep 80
+chg_npc_dir 70204 left
+sleep 16
+chg_npc_dir 70204 down
+sleep 16
+msg 『……うん？
+sleep 32
+msg ティファ\n「だいかつやく　したら\n　しんぶんにも　のるかな？
+sleep 32
+msg 『がんばるよ
+sleep 16
+chg_npc_dir 70204 left
+msg ティファ\n「ね　やくそく　しない？
+sleep 32
+chg_npc_dir 70204 down
+sleep 16
+msg ティファ\n「あのね　クラウドが　ゆうめいに　なって\n　そのとき　わたしが　こまってたら……\n\n　クラウド　わたしを　たすけに　きてね
+sleep 16
+msg 『はぁ？
+sleep 16
+move_npc 70203 right 1
+sleep 32
+msg ティファ\n「わたしが　ピンチのときに\n　ヒーローが　あらわれて　たすけて　くれるの\n\n　いちどくらい　けいけん　したいじゃない？
+chg_npc_dir 70203 down
+sleep 16
+msg 『はぁ？
+sleep 16
+chg_npc_dir 70204 up
+sleep 16
+msg ティファ\n「いいじゃないのよ～！\n　やくそくしなさい～！
+sleep 48
+msg 『わかった……やくそく　するよ
+sleep 48
+move_char up 10
+sleep 160
+sleep 32
+fadeout
+chg_npc_img 2251 3
+create event_generator 2236 22 5 10 17 1 0 @seventhheaven7.txt
+kill 2207
+draw_char on
+sleep 65
+warp 22 5 10 up
+fadein
+kill 2304
+kill 70203
+kill 70204

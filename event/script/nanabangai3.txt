@@ -1,0 +1,12 @@
+wait_event_invalid 1905
+wait_same_pos
+sleep 16
+create npc_event 1907 19 1 7 1 3 2 none
+move_npc 1907 right 2
+sleep 32
+msg バレット 「おい　クラウド\n　こっちだ！
+sleep 16
+move_npc 1907 left 2
+sub_likability 1 250
+sleep 32
+kill 1907

@@ -1,0 +1,20 @@
+wait_target_talked 60001
+chg_type 60001 npc_event
+chg_speed 60001 normal
+chg_npc_dir 60001 left
+sleep 28
+jump_npc_target_pos 60001 8 17
+sleep 70
+chg_npc_dir 60001 right
+chg_char_dir left
+sleep 28
+msg 「やい　このツンツンあたま！\n　もう１かい　もう１かいしょうぶだ！\n\n\n#2\n  いいだろう\n　　きょうみないね\n\n\n[[]][[]]
+if_flag 3 0
+msg a
+end
+fi
+if_flag 3 1
+create event_generator 60003 600 0 0 17 0 0 @yufi2.txt
+end
+fi
+

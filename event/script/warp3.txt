@@ -1,0 +1,54 @@
+set_eternal_event
+wait_target_talked 162
+reset_talked_flag 162
+if_flag 3 0
+fadeout
+stop_bgm
+warp 17 4 4 down
+draw_char off
+set_flag 0 0
+set_flag 7 1
+play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+fadein
+fi
+if_flag 3 1
+fadeout
+stop_bgm
+draw_char off
+chg_npc_img 2251 2
+sleep 48
+play_se good_night_until_tomorrow.ogg
+kill 2200
+kill 2202
+kill 2203
+kill 2204
+kill 2205
+kill 2206
+kill 2304
+kill 2306
+kill 2307
+kill 2308
+kill 2309
+sleep 400
+recover_active_chara
+warp 23 2 8 right
+create event_generator 2240 22 8 5 17 0 0 @seventhheaven8.txt
+draw_char on
+play_event_bgm 1-06-Barrett's_Theme.ogg
+fadein
+sleep 32
+chg_char_dir right
+sleep 8
+chg_char_dir left
+sleep 8
+chg_char_dir right
+set_flag 0 0
+set_flag 9 1
+kill 2260
+create event_generator 2261 22 5 13 17 0 0 @seventhheaven_out1.txt
+fi
+if_flag 3 2
+warp 600 11 16 up
+play_bgm
+set_flag 0 0
+fi
