@@ -20,7 +20,6 @@ FF7FC Developing Version (2012/12/20 updated)
     ・XキーとZキーの入れ替え
     ・画面サイズ変更
     ・垂直同期on/off設定
-    ・顔グラタイプの選択
   ・keyConfig.exe
     ・キー設定
 
