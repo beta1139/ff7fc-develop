@@ -1,0 +1,7 @@
+wait_same_pos
+msg ティファ\n「ねぇ　クラウド\n　きぶんは　どう？
+sleep 16
+chg_char_dir up
+msg 『……ふつうさ\n　どうして　そんなことを　きく？\n\n\nティファ\n「ううん　なんでもない\n　ただ　つかれて　ないのかなって……
+sleep 16
+kill 2223

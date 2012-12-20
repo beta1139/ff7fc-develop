@@ -1,0 +1,32 @@
+wait_target_talked 130
+chg_type 130 npc_event
+chg_type 131 npc_event
+play_se door_open.wav
+kill 114
+kill 115
+kill 116
+chg_speed 130 normal
+chg_speed 131 normal
+move_npc 130 right 1
+move_npc 131 left 1
+sleep 16
+move_npc 130 up 7
+move_npc 131 up 9
+sleep 110
+move_npc 130 right 2
+sleep 32
+kill 130
+kill 131
+create npc 133 5 10 5 35 1 0 ビッグス\n「ここのあんごうをにゅうしゅするために\n なんにんのなかまがぎせいになったことか……
+
+
+
+
+
+
+
+
+
+
+
+

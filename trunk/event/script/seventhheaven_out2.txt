@@ -1,0 +1,4 @@
+wait_same_pos
+warp_ff3 20 22 26 down
+play_event_bgm 1-06-Barrett's_Theme.ogg
+create event_generator 2262 22 5 12 17 0 0 @seventhheaven_out2_before.txt

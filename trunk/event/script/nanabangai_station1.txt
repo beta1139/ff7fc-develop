@@ -1,0 +1,93 @@
+wait_same_pos
+move_npc 1706 right 2
+sleep 96
+move_npc 1706 left 1
+sleep 64
+chg_npc_dir 1706 down
+sleep 40
+create npc_event 1707 17 4 4 71 1 2 「こんやは　かえさないよ
+move_npc 1707 down 2
+sleep 32
+chg_npc_dir 1707 up
+create npc_event 1708 17 4 4 72 1 2 「ね　どっかで　やすんで　いこう
+move_npc 1708 down 1
+sleep 16
+move_npc 1708 left 2
+move_npc 1707 up 1
+sleep 16
+move_npc 1707 left 1
+sleep 16
+chg_npc_dir 1708 right
+sleep 16
+chg_type 1706 npc
+chg_speed 1706 not_move
+set_flag_wall 1706
+chg_type 1707 npc3
+chg_speed 1707 not_move
+set_flag_wall 1707
+chg_type 1708 npc2
+chg_speed 1708 not_move
+set_flag_wall 1708
+create npc_event 1705 17 4 4 36 1 2 none
+move_npc 1705 down 2
+sleep 32
+create npc_event 1703 17 4 4 34 1 2 none
+move_npc 1703 down 2
+move_npc 1705 left 2
+sleep 32
+move_npc 1703 right 1
+sleep 16
+create npc_event 1704 17 4 4 35 1 2 none
+move_npc 1704 down 2
+sleep 32
+create npc_event 1702 17 4 4 1 1 2 none
+move_npc 1702 down 1
+sleep 48
+create npc_event 1701 17 4 4 0 1 2 none
+sleep 48
+msg バレット\n「おう！！\n　みんな　あつまれ！！
+sleep 16
+move_npc 1705 right 1
+chg_npc_dir 1703 left
+chg_npc_dir 1704 up
+sleep 16
+chg_npc_dir 1703 up
+chg_npc_dir 1705 up
+sleep 16
+chg_npc_dir 1702 up
+msg バレット\n「よう！\n　クラウドさんよ！\n　あんたも　きいとけ！
+sleep 16
+chg_npc_dir 1702 down
+sleep 32
+msg バレット\n「こんかいの　さくせんは　せいこうだ\n　だがな　きをぬくなよ\n　ほんばんは　これからだ\n　あんな　ばくはつで　びびるな！
+sleep 32
+msg バレット\n「つぎは　もっと　はでに　かますぞ！
+move_npc 1702 down 1
+sleep 16
+move_npc 1702 left 1
+sleep 16
+move_npc 1702 left 1
+chg_npc_dir 1703 left
+sleep 16
+move_npc 1702 left 1
+chg_npc_dir 1704 left
+sleep 16
+chg_npc_dir 1705 left
+chg_npc_dir 1702 right
+msg バレット\n「アジトに　しゅうごうだ！！\n　いくぞ！
+chg_npc_dir 1702 left
+sleep 8
+kill 1702
+move_npc 1705 left 2
+move_npc 1704 left 3
+move_npc 1703 left 4
+sleep 16
+fadeout
+kill 1704
+kill 1703
+kill 1705
+kill 1701
+draw_char on
+create event_generator 1710 17 3 4 17 0 0 @nanabangai_station2.txt
+create event_generator 1711 17 3 3 17 0 0 @nanabangai_station3.txt
+fadein

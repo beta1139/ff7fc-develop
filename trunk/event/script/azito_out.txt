@@ -1,0 +1,17 @@
+wait_same_pos
+if_flag 9 0
+warp_ff3 22 8 4 down
+create event_generator 2360 23 4 4 17 0 0 @azito_out_before.txt
+fi
+if_flag 9 1
+play_se warp_in.wav
+fadeout
+warp 22 8 4 down
+create npc_event 2201 22 5 10 1 0 0 none
+create npc_event 2202 22 6 6 2 2 0 ティファ\n「ビッグスたちは　そとで　たいき　してるわ
+create npc_event 2206 22 3 5 37 1 0 おしごと　がんばってね
+sleep 16
+fadein
+fi
+jump_char down 1
+sleep 16

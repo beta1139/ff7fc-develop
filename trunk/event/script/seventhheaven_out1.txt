@@ -1,0 +1,9 @@
+wait_same_pos
+warp_ff3 20 22 26 down
+if_flag 9 0
+play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+create event_generator 2260 22 5 12 17 0 0 @seventhheaven_out1_before.txt
+fi
+if_flag 9 1
+create event_generator 2262 22 5 12 17 0 0 @seventhheaven_out2_before.txt
+fi

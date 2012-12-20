@@ -1,0 +1,10 @@
+wait_event_invalid 95013
+wait_same_pos
+create npc_event 95015 950 24 22 31 1 3 none
+move_npc 95015 left 7
+sleep 56
+msg 「ドロボー！
+boss_encount 188
+sleep 64
+kill 95015
+kill 95031

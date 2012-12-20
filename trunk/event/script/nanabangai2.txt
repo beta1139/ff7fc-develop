@@ -1,0 +1,38 @@
+wait_target_talked 1905
+sleep 16
+chg_npc_dir 1905 up
+sleep 8
+chg_char_dir up
+fadeout
+draw_char off
+create npc_event 1906 19 4 4 0 0 0 none
+inactive 1906
+warp 701 7 17 up
+sleep 24
+fadein
+move_char up 10
+sleep 160
+sleep 232
+fadeout
+kill 1906
+sleep 24
+warp 19 4 4 up
+draw_char on
+fadein
+msg 「ほら……\n　なんだか　すてきで　ふしぎな　ばしょ　だろ
+chg_npc_dir 1905 right
+sleep 24
+chg_char_dir left
+msg 「おれの　ばしょ　だが　たまには\n　みにきても　いいぞ\n　じゃな！！　きょうだい！
+chg_type 1905 npc_event
+active 1905
+chg_speed 1905 fast
+move_npc 1905 down 1
+sleep 8
+move_npc 1905 right 1
+sleep 8
+move_npc 1905 down 2
+sleep 16
+move_npc 1905 right 2
+sleep 16
+kill 1905

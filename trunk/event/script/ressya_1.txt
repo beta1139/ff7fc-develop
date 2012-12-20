@@ -1,0 +1,89 @@
+wait_same_pos
+play_event_bgm Ex-01-Train_Noise_Close.ogg
+draw_char off
+msg ウェッジ\n「クラウドさん　こなかったっすね
+sleep 60
+msg ビッグス\n「クラウド……\n　やられちまったのかな\n\nバレット\n「ケッ……！！\n　あのやろうが　かねも　もらわないで\n　いなくなるわけ　ないだろ！！
+sleep 60
+msg ジェシー\n「クラウド……
+sleep 60
+msg ビッグス\n「なあ　クラウドってさ……\n　さいごまで　おれたち……　アバランチのために\n　たたかって　くれんのか？\nバレット\n「さあな……　しらねえよ\n\n\n　チッ！！\n　おまえらが　もうすこし　たよりになりゃよ……\n　あんな　やろう　やとわないでも　いいんだがな…
+sleep 60
+msg ウェッジ\n「あ　バレットさん\n　おれたちの　きゅうりょう……\n\n　や　なんでもないっす……
+sleep 60
+msg アバランチのめんめん\n「ふう……
+sleep 120
+create npc_event 1654 16 17 3 0 0 2 none
+open_door 1601
+chg_npc_dir 1650 right
+chg_npc_dir 1651 right
+chg_npc_dir 1652 right
+chg_npc_dir 1653 right
+play_se door_open.wav
+play_event_bgm Ex-02-Train_Noise_Open.ogg
+move_npc 1654 down 2
+sleep 32
+move_npc 1654 left 2
+sleep 32
+msg ビッグス「クラウド！！\nジェシー「クラウド……\nウェッジ「クラウドさんっ！\n\n『やくそくの　じかんに　おくれたようだ\n\n\n\nバレット\n「おい！　ちこくやろう！！\n　ずいぶん　はでな　おでまし　じゃねえか\n\n『そうでもない　ふつうだ\n\n\n\nバレット\n「ケッ！！\n　しんぱい　させやがって　かってな　やろうだ！\n\n『ほう……？\n　しんぱい　してくれたのか\n\n\nバレット\n「なにっ！！　チッ……\n　ちこくの　ぶんは　ほうしゅうから ひく　からな
+move_npc 1651 down 2
+sleep 32
+move_npc 1651 right 5
+sleep 80
+chg_npc_dir 1651 left
+msg バレット\n「おい　おめえら！\n　ばしょ　かえるぞ　ついてこい！
+move_npc 1651 right 2
+move_npc 1650 up 1
+sleep 16
+move_npc 1650 right 3
+sleep 48
+chg_npc_dir 1650 up
+chg_npc_dir 1654 down
+msg ウェッジ\n「あ　クラウドさん！！\n　おつかれっす！
+move_npc 1650 right 3
+move_npc 1652 up 1
+sleep 16
+move_npc 1652 right 7
+sleep 112
+chg_npc_dir 1652 up
+msg ビッグス\n「へへ……クラウド！\n　つぎの　さくせんも　がんばろうな
+move_npc 1652 right 3
+move_npc 1653 down 2
+sleep 32
+kill 1650
+kill 1651
+kill 1652
+move_npc 1653 right 8
+sleep 32
+move_char right 6
+sleep 96
+chg_npc_dir 1653 up
+msg ジェシー\n「やだ！　クラウド！！\n　かお　まっくろ
+step_npc 1653 3
+sleep 100
+sleep 
+msg ジェシー\n「はい　できあがり！
+move_npc 1653 right 2
+sleep 32
+move_npc 1653 up 2
+chg_npc_dir 1654 right
+sleep 32
+set_talk_npc 1653
+msg ジェシー\n「あぶないから　しめとくね
+reset_talk_npc
+sleep 20
+close_door 1601
+play_event_bgm Ex-01-Train_Noise_Close.ogg
+sleep 20
+move_npc 1653 down 1
+sleep 16
+chg_npc_dir 1653 left
+msg ジェシー\n「ね　まこうろで　たすけてくれて\n　ありがとう！
+move_npc 1653 down 1
+sleep 16
+move_npc 1653 right 2
+sleep 32
+kill 1653
+chg_char_dir right
+draw_char on
+kill 1654

@@ -1,0 +1,36 @@
+set_eternal_event
+wait_target_talk 95090
+backup_npc_dir 95090
+chg_dir_to_char 95090
+set_talk_npc 95090
+if_active_mem 0
+msg クラウドさん
+fi
+if_active_mem 1
+msg バレットさん
+fi
+if_active_mem 2
+msg ティファさん
+fi
+if_active_mem 3
+msg エアリスさん
+fi
+if_active_mem 4
+msg レッド13さん
+fi
+if_active_mem 5
+msg ケットシーさん
+fi
+if_active_mem 6
+msg ユフィさん
+fi
+if_active_mem 7
+msg シドさん
+fi
+if_active_mem 8
+msg ヴィンセントさん
+fi
+msg こんにちわ
+restore_npc_dir 95090
+reset_talk_flag 95090
+reset_talk_npc

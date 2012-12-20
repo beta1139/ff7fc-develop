@@ -1,0 +1,9 @@
+wait_event_invalid 1661
+wait_target_talked 1667
+if_flag 3 0
+chg_param 1667 ジェシー\n「もうすぐ　えきに　つくね\n　クラウドと　いっぱい　はなせて　もえたわ
+fi
+if_flag 3 1
+chg_param 1667 ジェシー\n「もうすぐ　えきに　つくね\n　クラウドと　いっぱい　はなせて　もえたわ\n\n　わたし　どうかせんに　ひが　ついたかもよ
+sub_likability 2 250
+fi

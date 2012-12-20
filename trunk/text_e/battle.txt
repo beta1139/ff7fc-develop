@@ -1,0 +1,8 @@
+ATK
+LMT
+MGC
+ITEM
+RUN
+GRD
+CHG
+

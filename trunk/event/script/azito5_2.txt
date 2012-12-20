@@ -1,0 +1,49 @@
+wait_same_pos
+play_se door_open.wav
+create npc_event 2305 23 4 1 2 1 0 ティファ\n「みんなには　あやまって　おくね
+chg_speed 2305 fast
+set_flag_wall 2305
+chg_char_dir up
+chg_type 2309 npc_event
+chg_speed 2309 normal
+chg_npc_dir 2309 right
+slide_npc 2305 down 2
+sleep 16
+chg_speed 2305 normal
+move_npc 2305 down 1
+sleep 16
+move_npc 2305 right 1
+sleep 16
+move_npc 2305 down 2
+sleep 32
+msg ティファ\n「まって　クラウド！
+sleep 16
+chg_npc_img 2304 1
+chg_npc_dir 2304 right
+sleep 16
+msg バレット\n「ティファ！\n　そんなヤツ　ほうっておけ！\n\n　どうやら　しんらに\n　みれん　タラタラ　らしいからな！
+chg_npc_dir 2309 left
+chg_char_dir left
+msg 『だまれ！\n　おれは　しんらにも　ソルジャーにも\n　みれんは　ない！
+move_char right 1
+sleep 16
+chg_npc_dir 2309 right
+move_char up 3
+sleep 48
+move_char left 1
+sleep 16
+chg_npc_dir 2305 up
+msg 『でも　かんちがい　するな！\n\n\n\n　ほしの　いのちにも\n　おまえたち　アバランチの　かつどうにも\n　きょうみは　ない！
+move_npc 2309 up 1
+sleep 16
+move_npc 2309 left 1
+sleep 16
+chg_npc_dir 2309 down
+chg_type 2309 npc
+chg_speed 2309 not_move
+chg_type 2305 npc
+chg_speed 2305 not_step
+kill 2310
+create event_generator 2230 22 6 7 17 1 0 @seventhheaven6_1.txt
+create event_generator 2231 22 7 7 17 1 0 @seventhheaven6_2.txt
+create event_generator 2232 22 8 7 17 1 0 @seventhheaven6_3.txt

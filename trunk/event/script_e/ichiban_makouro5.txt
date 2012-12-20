@@ -1,0 +1,16 @@
+wait_talk
+chg_char_dir right
+inactive 800
+chg_type 800 npc_event
+chg_npc_dir 800 left
+msg 『You all right？\n「My leg got stuck.
+step_char 3
+sleep 60
+msg 「Thanks!
+active 800
+chg_speed 800 fast
+move_npc 800 left 9
+sleep 70
+kill 800
+kill 510
+create event_generator 410 4 9 7 17 1 0 @ichiban_makouro1.txt

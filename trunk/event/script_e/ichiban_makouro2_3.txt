@@ -1,0 +1,2 @@
+wait_same_pos
+set_flag 0 0

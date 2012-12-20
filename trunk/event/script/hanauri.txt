@@ -1,0 +1,49 @@
+wait_same_pos
+chg_speed 1300 slow
+move_npc 1300 up 2
+sleep 64
+move_npc 1300 right 1
+sleep 32
+msg はなうり\n「ねえ　なにがあったの？\n\n\n#2\n　　にげたほうがいい\n　　きにするな……　それより\n\n\n[[]][[]]
+if_flag 3 0
+msg 「そうなの！？\n　なんだか　わからないけど　そうするわね
+sub_likability 3 500
+active 1300
+chg_speed 1300 slow
+move_npc 1300 down 6
+sleep 32
+chg_char_dir down
+sleep 160
+move_npc 1300 right 1
+sleep 32
+move_npc 1300 down 3
+sleep 96
+kill 1300
+set_flag 7 2
+end
+fi
+if_flag 3 1
+msg 『はな　なんて　めずらしいな\n\n\n\n「あ　これね　きにいってくれた？\n　１ギルなんだけど　どう？\n\n\n#2\n　　もらおう\n　　やめとくよ\n\n\n[[]][[]]
+fi
+if_flag 3 0
+msg 「わあ　ありがとう！\n　はい！
+add_likability 3 500
+sub_gil 1
+set_flag 7 1
+fi
+if_flag 3 1
+msg 「……ちょっとがっかり　かな
+sub_likability 3 250
+set_flag 7 2
+fi
+active 1300
+chg_speed 1300 slow
+move_npc 1300 down 6
+sleep 32
+chg_char_dir down
+sleep 160
+move_npc 1300 right 1
+sleep 32
+move_npc 1300 down 3
+sleep 96
+kill 1300

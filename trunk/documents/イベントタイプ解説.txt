@@ -1,0 +1,57 @@
+event_generator: スクリプトに記述されたイベント処理を実行する
+                 ゲームの状態をイベント状態に遷移させる
+
+                 ゲームの状態がマップ移動画面もしくはイベント状態のときに、
+                 スクリプトの処理を上から順に実行していく
+                 スクリプトを最下行まで実行し終えると、
+				 ゲームの状態をマップ移動画面に戻した後、自身は消滅する
+                 (ただしset_eternal_eventを実行した場合は消滅しない)
+
+                 スクリプトの命令一覧は"イベントスクリプト命令一覧.txt"に記載
+
+                 paramの欄にスクリプトを記述する
+                 頭に'@'を付けるとファイルから読み込むことも可能
+                 @ichibangai_station_baret.txtと記述すると
+                 ./event/script/ichibangai_station_baret.txtを
+                 読み込む
+
+                 directionやspeedのパラメータは使用しない
+
+npc            : 話しかけるとparamの欄の内容が表示される。
+                 speedに設定したスピードで自動で歩き回る
+                 イベント状態では処理が止まる。
+                 画像は./image/character.bmpを使用
+                 image_idと画像の対応は"新キャラチップ対応表.txt"に記載
+
+npc2           : 話しかけてもセリフのウィンドウが開かない。
+                 speedに設定したスピードで自動で歩き回る
+                 イベント状態では処理が止まる。
+
+npc3           : 話しかけるとparamの欄の内容が表示される。
+                 speedに設定したスピードで自動で歩き回る
+                 イベント状態では処理が止まる。
+                 画像は./image/character.bmpを使用
+                 image_idと画像の対応は"新キャラチップ対応表.txt"に記載
+				 話しかけても振り返らない。
+
+npc_event      : 話しかけてもセリフのウィンドウが開かない。
+                 イベント状態でも処理が続く。
+                 speedにnot_move以外が設定されていても自動では歩かない
+                 (move_npc命令を受けたときのみ歩かせることができる)
+
+item_shop    : ショップ系イベント
+weapon_shop  :
+armor_shop   : 話しかけるとショップ画面が開く
+materia_shop : paramには./item/以下のテキストに記述してある各アイテムのIDを
+acce_shop    : '/'区切りで記述する
+
+treasure_box : 宝箱。画像は./image/treasure_box.bmpを使う。
+               paramに./item/以下のテキストに記述してあるアイテムのIDを指定する
+treasure_box2: 宝箱。２回アイテムが取れる
+treasure_box3: 宝箱。一度もアイテムが取れない
+treasure_item: マップ上に落ちている拾えるアイテム。拾うと消滅する。
+               画像は./image/treasure_item.bmpを使う
+save_point: セーブポイント
+map_obj: マップオブジェクト。画像は./image/map_obj.bmpを使う
+map_door: マップドア。画像は./image/map_door.bmpを使う
+

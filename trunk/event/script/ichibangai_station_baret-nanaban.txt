@@ -1,0 +1,13 @@
+wait_same_pos
+chg_char_dir right
+set_flag 1 1
+set_flag 0 3
+sleep 16
+fadeout
+stop_bgm
+warp 17 4 4 down
+draw_char off
+set_flag 0 0
+set_flag 7 1
+play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+fadein
