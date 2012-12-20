@@ -1,0 +1,4 @@
+set_eternal_event
+wait_talk
+jump_char_target_pos 26 8
+sleep 48

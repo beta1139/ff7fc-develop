@@ -9,7 +9,7 @@ id,type,bgm,battle_back,monster_party_id
 7,0,1-03-Makou_Reactor.ogg,20,2/195/203
 8,0,1-03-Makou_Reactor.ogg,20,2/195/203
 9,0,1-03-Makou_Reactor.ogg,20,2/195/203
-10,0,1-02b-Bombing_Mission.ogg,6,188/189/190/191
+10,0,1-03-Makou_Reactor.ogg,6,188/189/190/191
 11,0,nothing,0,188/189/190/191
 12,1,1-04-Anxious_Heart.ogg,4,188/189/190/191
 13,1,1-04-Anxious_Heart.ogg,4,188/189/190/191

@@ -1,12 +1,12 @@
 wait_same_pos
 backup_char_img
 chg_char_img 0
-create npc_event 902 9 8 14 1 0 2 none
-move_npc 902 up 1
+create npc_event 1002 10 8 14 1 0 2 none
+move_npc 1002 up 1
 sleep 16
-move_npc 902 left 1
+move_npc 1002 left 1
 sleep 16
-chg_npc_dir 902 down
+chg_npc_dir 1002 down
 msg 「ここも　ブッこわしちまえば\n　ただの　ガラクタだぜ　クラウド　さんよ\n　このばくだんを　セットしてくれ\n\n『あんたが　やったほうが　いいんじゃ\n　ないのか？\n\n\n「オレ？　オレは　みはらせてもらう\n　おまえさんが　おかしなまねを　しないようにな\n\n\n『すきに　してくれ
 play_se beeeeep.wav
 screen_effect red
@@ -27,7 +27,7 @@ chg_char_dir up
 msg 『え？\n「どうした　クラウド　さんよ？\n はやくしてくれ！\n\n『ああ　すまない
 move_char up 1
 sleep 16
-chg_npc_dir 902 right
+chg_npc_dir 1002 right
 sleep 30
 step_char 3
 sleep 60
@@ -43,6 +43,6 @@ msg 「ドゥドゥドゥペーイが　やってくるぜ
 boss_encount 204
 sleep 64
 set_flag 0 1
-kill 850
-kill_through 851
-create event_generator 903 9 8 13 17 1 0 @ichiban_makouro7_2.txt
+kill 950
+kill_through 951
+create event_generator 1003 10 8 13 17 1 0 @ichiban_makouro7_2.txt
