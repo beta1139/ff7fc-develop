@@ -50,7 +50,7 @@ chg_npc_dir 2304 left
 chg_npc_img 2304 95
 play_se damage.wav
 step_npc 2304 1
-sleep 56
+sleep 48
 chg_speed 2304 normal
 chg_npc_img 2304 1
 chg_npc_dir 2304 up

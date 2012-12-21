@@ -4,6 +4,7 @@ chg_speed 2021 normal
 chg_speed 2022 normal
 chg_npc_dir 2020 down
 chg_npc_dir 2021 down
+chg_char_dir up
 sleep 16
 move_npc 2020 right 6
 move_npc 2021 right 5
