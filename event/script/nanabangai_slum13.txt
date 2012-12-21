@@ -42,4 +42,5 @@ restore_char_img
 create npc 2508 25 7 8 89 2 0 「いいゆめ　みたかい\n\n\n\n　やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフに　いきていく　きほんだぜ！\n　おっさん　おぼえときな
 sleep 16
 kill_through 2504
+kill_through 2507
 kill_through 2506
