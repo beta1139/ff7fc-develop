@@ -1,7 +1,6 @@
 wait_same_pos
 chg_npc_dir 2501 down
-create npc_event 2520 25 4 7 0 3 0 none
-chg_speed 2520 normal
+create npc_event 2520 25 4 7 0 3 2 none
 draw_char off
 chg_type 2501 npc
 move_char up 1
@@ -26,5 +25,5 @@ fi
 move_char down 1
 sleep 16
 chg_char_dir up
-kill 2520
 draw_char on
+kill 2520

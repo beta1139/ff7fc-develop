@@ -51,7 +51,6 @@ msg ティファ\n「おみせを　はなで　いっぱいに　しちゃおうかな
 chg_npc_dir 2202 down
 sleep 16
 fi
-if_flag 7 1
 if_flag 3 1
 move_npc 2202 left 1
 move_npc 2206 down 1
