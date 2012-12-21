@@ -38,7 +38,7 @@ kill 2702
 kill 2703
 fi
 if_flag 3 2
-jump_npc 2504 same 2
+step_npc 2504  2
 sleep 32
 set_talk_npc 2504
 msg 「そりゃ　ドケチって　やつだぜ　おっさん

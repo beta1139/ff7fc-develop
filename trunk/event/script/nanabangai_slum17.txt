@@ -5,10 +5,11 @@ chg_char_dir down
 chg_type 2006 npc_event
 chg_speed 2006 normal
 move_npc 2006 right 2
-sleep 32
-chg_npc_dir 2008 right
+sleep 16
 chg_npc_dir 2009 right
 chg_speed 2009 not_step
+sleep 16
+chg_npc_dir 2008 right
 jump_npc 2006 same 2
 loop 2
 chg_npc_dir 2006 down

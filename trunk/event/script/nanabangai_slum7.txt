@@ -4,7 +4,7 @@ draw_char off
 move_char up 3
 sleep 48
 set_talk_npc 2106
-msg 「フーッ……\n　きょうも　ひまひま……\n\n\n　もう　このみせも　ダメかのう……\n　こんなスラムじゃ\n　まともなクスリは　うれんなあ
+msg 「フーッ……\n　きょうも　ひまひま……\n\n\n　もう　このみせも　ダメかのう……\n　こんなスラムじゃ\n　まともな　クスリは　うれんなあ
 reset_talk_npc
 move_char down 3
 sleep 48
