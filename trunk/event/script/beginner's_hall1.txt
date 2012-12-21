@@ -93,4 +93,3 @@ fi
 restore_char_img
 if_flag 3 1
 fi
-
