@@ -12,6 +12,6 @@ move_npc 2008 left 5
 sleep 40
 set_npc_pos 2008 20 22 28
 chg_npc_dir 2008 up
-chg_type 2008 npc3
 chg_speed 2008 not_move
+chg_type 2008 npc3
 chg_param 2008 「ああ～　いざとなると　ゆうきが　でない\n　だめだな　ボクって\n　まだ　こどもだな～

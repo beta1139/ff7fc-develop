@@ -20,7 +20,7 @@ msg 「ほら……\n　なんだか　すてきで　ふしぎな　ばしょ　だろ
 chg_npc_dir 1908 right
 sleep 24
 chg_char_dir left
-msg 「おれの　ばしょ　だが　たまには\n　みにきても　いいぞ\n　じゃな！！　きょうだい！
+msg 「おれの　ばしょだが　たまには\n　みにきても　いいぞ\n　じゃな！！　きょうだい！
 chg_type 1908 npc_event
 active 1908
 chg_speed 1908 fast
