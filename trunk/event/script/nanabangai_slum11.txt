@@ -5,7 +5,7 @@ chg_char_img 0
 msg 「チッ！！\n　おっさん　しけたツラ　してんな\n　もしかして　つかれてんじゃないの？
 chg_type 2504 npc_event
 step_npc 2504 2
-sleep 24
+sleep 16
 set_talk_npc 2504
 msg 「いえの　さんかいで　やすませて　あげても\n　いいけど…\n\n\n　それには　ひとつ　じょうけんが　あるぜ\n　このオレに　こづかい　くれるならな\n\n\n#3\n　　1ギル\n　　10ギル\n　　あげない\n\n[[「チッ！！　おっさん\n　このはなしは　なかったことに　してくれ]][[「しめしめ……]][[]]
 reset_talk_npc
@@ -38,7 +38,7 @@ kill 2702
 kill 2703
 fi
 if_flag 3 2
-step_npc 2504  2
+step_npc 2504 2
 sleep 32
 set_talk_npc 2504
 msg 「そりゃ　ドケチって　やつだぜ　おっさん
