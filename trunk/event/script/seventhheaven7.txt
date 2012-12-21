@@ -119,7 +119,7 @@ kill_through 2017
 kill 2018
 kill 2019
 kill 2600
-kill 2608
+kill_through 2608
 chg_speed 2008 not_move
 set_npc_pos 2006 20 33 20
 set_npc_pos 2007 20 32 20

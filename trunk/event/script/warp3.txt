@@ -51,7 +51,7 @@ kill_through 2017
 kill 2018
 kill 2019
 kill 2600
-kill 2608
+kill_through 2608
 set_npc_pos 2602 26 6 8
 sleep 16
 chg_param 2006 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
