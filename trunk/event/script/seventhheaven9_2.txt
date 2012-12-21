@@ -15,6 +15,7 @@ sleep 16
 msg バレット\n「ソルジャーさんたちの　ひみつ　ってわけか\n\n\n　まあ　いいだろう\n　あとで　ジェシーにでも　きいておく　からな\n　だがな　マテリアは　おまえが　かんりしろ！
 fi
 sleep 16
+play_se ready.wav
 msg マテリアシステム\n　メニューを　ひらいて　マテリアを\n　えらぶことによって マテリアの　つけかえが\n　できるように　なります
 sleep 16
 chg_type 2202 npc_event
@@ -23,7 +24,7 @@ move_npc 2202 down 1
 sleep 16
 msg ティファ\n「クラウド！\n　ぶきや　にかいの　おじさんから　でんごんよ\n\n　あげたいものが　あるから　おみせに　よって\n　……だって\n　わすれないでね！
 chg_char_dir up
-create npc_event 2207 22 4 10 0 0 0 none
+create npc_event 2207 22 4 10 0 0 2 none
 draw_char off
 move_npc 2202 left 2
 move_char up 2

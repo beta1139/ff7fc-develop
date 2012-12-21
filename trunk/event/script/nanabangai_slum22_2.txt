@@ -1,0 +1,18 @@
+wait_same_pos
+chg_speed 2020 normal
+chg_speed 2021 normal
+chg_speed 2022 normal
+chg_npc_dir 2020 left
+chg_npc_dir 2022 left
+sleep 16
+move_npc 2020 right 4
+move_npc 2021 right 3
+sleep 16
+move_npc 2022 right 4
+sleep 32
+kill 2021
+sleep 16
+kill 2020
+sleep 16
+kill 2022
+kill 2032

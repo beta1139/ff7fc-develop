@@ -1,13 +1,13 @@
-wait_target_talked 1904
+wait_target_talked 1906
 sleep 24
-chg_npc_dir 1904 right
-msg 「こっ　こんな　かんじで　いいでしょうか\n　せんぱい
-sleep 8
-chg_npc_dir 1903 left
-msg 「もっと　どうどうと　せんか！
-chg_npc_dir 1903 up
+chg_npc_dir 1907 right
+msg 「さっ　さすが　せんぱい！！
+sleep 16
+chg_npc_dir 1906 left
+msg 「おう！！\n　むだぐち　たたくんじゃねえ！
+chg_npc_dir 1906 up
 sleep 24
 msg 「え　で　でも……　
-sleep 16
-chg_npc_dir 1904 up
-chg_type 1904 npc2
+sleep 32
+chg_npc_dir 1907 up
+chg_param 1906 「ここからさきは　たちいり　きんしだ\n　わかったら　さっさと　うせろ！！

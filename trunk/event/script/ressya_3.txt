@@ -6,10 +6,10 @@ wait_target_talked 1670
 wait_target_talked 1671
 wait_event_invalid 1675
 sleep 60
+play_se train_stop1.ogg
 msg しゃないアナウンス\n「まもなく　スラムななばんがい　れっしゃはかば\n　えき
-sleep 60
+sleep 32
 fadeout
-sleep 30
 kill 1665
 kill 1666
 kill 1667
@@ -17,6 +17,6 @@ kill 1668
 kill 1670
 kill 1671
 draw_char off
-warp 17 4 4 down
-sleep 60
+warp 17 30 4 down
+sleep 24
 fadein

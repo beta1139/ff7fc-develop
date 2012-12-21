@@ -1,0 +1,96 @@
+wait_same_pos
+backup_char_img
+msg 「まいど　おなじみ\n　しょしんしゃの　やかた　だよ～ん
+create npc_event 2621 26 4 8 0 2 3 none
+draw_char off
+chg_char_dir left
+sleep 16
+jump_npc_target_pos 2621 5 8
+sleep 16
+chg_npc_img 2621 105
+create npc_event 2622 26 4 8 104 0 3 none
+create npc_event 2623 26 4 7 105 0 3 none
+loop 4
+sleep 2
+chg_npc_dir 2622 right
+chg_npc_dir 2623 right
+sleep 2
+chg_npc_dir 2622 down
+sleep 2
+chg_npc_dir 2622 left
+sleep 2
+chg_npc_dir 2622 up
+chg_npc_dir 2623 up
+pool
+loop 2
+sleep 3
+chg_npc_dir 2622 right
+chg_npc_dir 2623 right
+sleep 3
+chg_npc_dir 2622 down
+sleep 3
+chg_npc_dir 2622 left
+sleep 3
+chg_npc_dir 2622 up
+chg_npc_dir 2623 up
+pool
+kill 2622
+kill 2623
+chg_speed 2621 normal
+chg_npc_img 2621 0
+jump_npc_target_pos 2621 4 8
+sleep 16
+chg_char_img 0
+draw_char on
+kill 2621
+msg 『もとソルジャーを　なめるな\n　どれだけ　ものしりか　おしえてやる\n　しかも　むりょうでだ！\n\n　なにが　しりたいんだ？\n\n\n\n#4\n　　きろくを　のこすには？\n　　みかたを　かいふくするには？\n　　まほうをつかった　かいふく\n　　そのた\n[[]][[]][[]][[]]
+if_flag 3 0
+restore_char_img
+end
+fi
+if_flag 3 1
+restore_char_img
+end
+fi
+if_flag 3 2
+restore_char_img
+end
+fi
+if_flag 3 3
+msg 『なにが　しりたいんだ？\n\n\n\n#4\n　　ぶき　ぼうぐの　つかいかた\n　　マテリアのそうちゃく\n　　マテリアの　こうどな　つかいかた\n　　そのた\n[[]][[]][[]][[]]
+if_flag 3 0
+restore_char_img
+end
+fi
+if_flag 3 1
+restore_char_img
+end
+fi
+if_flag 3 2
+restore_char_img
+end
+fi
+if_flag 3 3
+msg 『なにが　しりたいんだ？\n\n\n\n#4\n　　せんとうじの　たいけいについて\n　　じぶんのじょうたいを　チェック\n　　リミットわざの　つかいかた\n　　そのた\n[[]][[]][[]][[]]
+if_flag 3 0
+restore_char_img
+end
+fi
+if_flag 3 1
+restore_char_img
+end
+fi
+if_flag 3 2
+restore_char_img
+end
+fi
+if_flag 3 3
+msg 『なにが　しりたいんだ？\n\n\n\n#2\n　　そのほかの　ちゅうい\n　　もうおしえることはない\n\n\n[[『じょうしきなので　わかっていると　おもうが\n　ねんのため　いっておく\n\n\n　カセットを　フーフーするのは　げんきんだ！\n　きんぞくたんしが　さびつくぞ\n\n\n　よごれが　きになるなら\n　しはんの　クリーニングキットが　オススメだ\n\n\n　いじょう\n\n\n\n　おれは　フーフーは　だけどな]][[]]
+if_flag 3 0
+restore_char_img
+end
+fi
+restore_char_img
+if_flag 3 1
+fi
+

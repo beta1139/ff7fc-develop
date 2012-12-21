@@ -74,7 +74,12 @@ fadein
 kill 2212
 kill 2230
 kill 2232
-kill_through 2302
 kill 2305
-kill 2306
+kill 2307
 kill 2309
+kill_through 2313
+kill 2312
+kill_through 2318
+kill 2317
+kill_through 2315
+kill_through 2314

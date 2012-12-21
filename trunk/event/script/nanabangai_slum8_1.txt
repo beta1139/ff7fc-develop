@@ -1,0 +1,53 @@
+wait_target_talk 2107
+create npc_event 2105 21 4 7 0 0 2 none
+draw_char off
+move_char up 1
+sleep 16
+chg_npc_dir 2106 down
+set_talk_npc 2106
+msg 「おっ！！　こりゃこりゃ！\n　こりゃ　めずらしい\n　あんた　まさか　きゃくかね？
+reset_talk_npc
+jump_npc 2106 same 2
+sleep 8
+chg_npc_dir 2106 right
+sleep 8
+chg_npc_dir 2106 up
+sleep 8
+chg_npc_dir 2106 left
+sleep 8
+chg_npc_dir 2106 down
+set_talk_npc 2106
+msg 「はい！！　いらっしゃい！！\n　うりますよ！\n　かいますよ！\n\n#3\n　　アイテムをみたい\n　　マテリアをみたい\n　　きょうみないね\n\n[[]][[]][[……なんじゃあ\n　つまらんのぉ……]]
+reset_talk_npc
+if_flag 3 0
+open_item_shop 1000/1007/1008
+fi
+if_flag 3 1
+open_materia_shop 4000/4003/4004/4005
+fi
+if_flag 3 2
+sleep 16
+chg_npc_dir 2106 left
+sleep 64
+chg_npc_dir 2106 down
+sleep 16
+chg_npc_dir 2106 left
+sleep 32
+set_talk_npc 2106
+msg 「そうりょうも　むりょう　なのになあ……
+reset_talk_npc
+fi
+sleep 16
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 2107
+kill 2108
+kill 2105
+kill 2102
+create npc2 2109 21 4 6 17 0 0 
+create npc2 2110 21 5 5 17 0 0 
+sleep 16
+create event_generator 2103 21 1 3 17 0 0 @nanabangai_slum8_3.txt
+create event_generator 2104 21 1 4 17 0 0 @nanabangai_slum8_4.txt

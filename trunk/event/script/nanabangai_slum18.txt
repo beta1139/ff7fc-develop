@@ -1,0 +1,21 @@
+wait_event_invalid 2023
+wait_target_talked 2007
+chg_type 2007 npc_event
+chg_speed 2007 normal
+move_npc 2007 left 1
+sleep 16
+move_npc 2007 down 1
+sleep 16
+move_npc 2007 left 1
+sleep 16
+move_npc 2007 down 1
+sleep 16
+move_npc 2007 left 1
+sleep 16
+move_npc 2007 down 1
+sleep 16
+move_npc 2007 left 1
+sleep 16
+chg_npc_dir 2007 down
+chg_type 2007 npc
+chg_param 2007 「もう！！\n　はなしを　きいてくれる　ひとが　いないと\n　じょうほうを　あつめても　しかたないのよね！\n\n　そうだ　あなた！\n　きょうみない　おとこさん！\n\n\n　こんどは　きっと　あなたでも\n　きょうみのわく　すご～い　じょうほうを\n　あつめておくから　たのしみに　しておいて
