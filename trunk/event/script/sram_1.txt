@@ -1,9 +1,0 @@
-set_eternal_event
-wait_target_talked 2007
-reset_talked_flag 2007
-if_flag 4 1
-chg_param 2007 「とにかく　まこうろの　ばくはつで\n　ミッドガルは　だいこんらん　らしいの
-kill 2050
-fi
-
-
