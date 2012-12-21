@@ -1,0 +1,29 @@
+wait_target_talked 2006
+move_char up 1
+sleep 16
+chg_char_dir down
+chg_type 2006 npc_event
+chg_speed 2006 normal
+move_npc 2006 right 2
+sleep 32
+chg_npc_dir 2008 right
+chg_npc_dir 2009 right
+chg_speed 2009 not_step
+jump_npc 2006 same 2
+loop 2
+chg_npc_dir 2006 down
+sleep 4
+chg_npc_dir 2006 right
+sleep 4
+chg_npc_dir 2006 up
+sleep 4
+chg_npc_dir 2006 left
+sleep 4
+pool
+move_npc 2006 right 1
+sleep 16
+move_npc 2006 up 1
+sleep 16
+move_npc 2006 right 2
+sleep 32
+kill 2006

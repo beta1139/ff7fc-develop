@@ -1,0 +1,199 @@
+wait_same_pos
+move_char left 1
+sleep 16
+play_se warp_in.wav
+fadeout
+draw_char off
+warp 20 24 26 left
+create npc_event 2001 20 38 18 0 2 2 none
+create npc_event 2002 20 27 28 1 2 2 none
+create npc_event 2005 20 28 28 35 2 2 none
+create npc_event 2003 20 28 29 34 2 2 none
+create npc_event 2004 20 29 27 36 2 2 none
+create npc_event 2010 20 26 23 78 3 2 none
+fadein
+move_npc 2002 left 5
+move_npc 2005 left 5
+move_npc 2003 left 5
+move_npc 2004 left 3
+move_char left 2
+sleep 32
+chg_npc_dir 2010 down
+sleep 16
+move_npc 2004 down 2
+sleep 32
+move_npc 2002 up 2
+move_npc 2004 left 2
+move_npc 2003 left 2
+move_npc 2005 down 1
+sleep 16
+move_npc 2010 left 1
+chg_npc_dir 2005 up
+open_door 2092
+play_se door_open.wav
+sleep 16
+kill 2002
+move_npc 2004 down 1
+chg_npc_dir 2003 up
+sleep 16
+move_npc 2004 left 2
+sleep 32
+move_npc 2004 up 1
+sleep 16
+move_npc 2010 right 1
+chg_npc_dir 2004 up
+sleep 32
+play_se attack2.wav
+sleep 32
+chg_npc_dir 2010 down
+sleep 32
+play_se attack2.wav
+sleep 48
+create npc_event 2006 20 22 26 71 1 2 「ウウ……よっぱらっちゃった\n　てづくりカクテル　おいしいんだもんなあ\n　きついんだもんなあ
+chg_speed 2006 fast
+move_npc 2006 down 2
+sleep 16
+play_se attack2.wav
+move_npc 2006 right 2
+sleep 16
+move_npc 2006 down 6
+create npc_event 2007 20 22 26 88 1 2 「ねえ　ねえ　しってる？\n\n\n\n#2\n　　きょうみないね\n　　しらないよ\n\n\n[[「あ　そ！]]\n[[「ニュースの　そくほうが　はいったのよ\n　うえで　ばくだん　テロが　あったって\n　いうじゃない　それも　まこうろの　ばくはつ！！\n　これが　どんなに　たいへんな　ことか　わかる？\n#2\n　　きょうみないね\n　　わからないよ\n\n\n[[「あ　そ！]]\n[[「じじょうつうの　わたしに　いわせればね\n　ミッドガルの　でんりょくが　マヒしちゃったら\n　コンピューターとか　しんごうとか　いろいろ\n　とまっちゃうじゃない\n　けいざいてき　そんしつは　んーー\n　１０おくギルは　くだらないし\n　それに！！　たくさんの　つみなきひとびとが\n　しんだと　おもうのよ\n　ばくはが　まよなかだったから　まだいいわ\n　ねむってたひとは　そのまま　めがさめない　だけね]]]]
+chg_speed 2007 fast
+move_npc 2007 down 2
+sleep 16
+create npc_event 2008 20 22 26 65 1 2 「ばくはつ！！　ばくはつ！！\n　スゲッー！！\n　アバランチ　かっくいー！！
+move_npc 2008 down 2
+move_npc 2007 right 2
+sleep 32
+move_npc 2006 right 9
+chg_npc_dir 2007 left
+move_npc 2008 right 1
+sleep 16
+chg_npc_dir 2008 left
+sleep 16
+create npc_event 2009 20 22 26 70 1 2 「まったくよぉ！！\n　こんやは　どうなってんだかよ！！\n\n\n　さっきまで　ずいぶん　ながく　ていでん\n　してたから　みょうだと　おもったらよ\n\n\n　うえで　まこうろ　ばくはテロが\n　おきたって　いうじゃねぇか\n\n\n　さけ　かっくらいながら　ニュースみてりゃよ\n　とつぜん　みせを　おいだされる\n　たまんねぇよなぁ！！
+chg_speed 2009 fast
+move_npc 2009 down 1
+sleep 8
+move_npc 2010 up 2
+chg_npc_dir 2009 up
+close_door 2092
+sleep 16
+open_door 2090
+sleep 16
+kill 2010
+open_door 2092
+play_se door_open.wav
+create npc_event 2011 20 22 26 1 1 2 バレット\n「よし！\n　さきに　はいってろ
+chg_npc_img 2011 95
+step_npc 2011 4
+sleep 16
+close_door 2090
+sleep 16
+move_npc 2009 down 1
+sleep 8
+chg_npc_dir 2009 up
+sleep 8
+move_npc 2007 right 5
+chg_speed 2008 fast
+move_npc 2008 right 5
+move_npc 2009 left 2
+sleep 16
+chg_npc_img 2011 1
+move_npc 2009 down 3
+sleep 24
+move_npc 2007 up 7
+move_npc 2008 right 1
+move_npc 2009 left 1
+move_npc 2011 down 2
+sleep 8
+move_npc 2008 up 6
+move_npc 2009 down 3
+sleep 24
+create npc_event 2012 20 22 26 2 1 2 none
+move_npc 2012 down 2
+move_npc 2011 right 1
+sleep 16
+chg_npc_dir 2011 left
+sleep 8
+chg_npc_dir 2007 down
+move_npc 2008 right 1
+sleep 8
+move_npc 2008 up 1
+move_npc 2012 left 1
+move_npc 2004 up 3
+sleep 8
+chg_npc_dir 2008 down
+sleep 8
+move_npc 2003 right 1
+chg_npc_dir 2012 right
+sleep 16
+move_npc 2003 up 3
+move_npc 2005 left 1
+sleep 16
+kill 2004
+move_npc 2005 up 3
+sleep 32
+kill 2003
+sleep 16
+kill 2005
+sleep 16
+move_npc 2012 right 1
+sleep 16
+move_npc 2012 up 1
+sleep 16
+close_door 2092
+chg_npc_dir 2012 down
+sleep 48
+chg_npc_dir 2012 right
+sleep 16
+chg_npc_dir 2012 left
+sleep 16
+chg_npc_dir 2012 right
+chg_type 2006 npc
+chg_type 2007 npc
+chg_type 2009 npc
+chg_type 2011 npc
+chg_speed 2006 not_move
+chg_speed 2007 not_move
+chg_speed 2009 not_move
+chg_speed 2011 not_move
+set_flag_wall 2006
+set_flag_wall 2007
+set_flag_wall 2009
+set_flag_wall 2011
+move_char right 5
+sleep 80
+move_npc 2008 down 1
+move_char right 4
+sleep 64
+move_char up 5
+sleep 80
+move_npc 2008 right 1
+move_char up 3
+sleep 48
+move_char right 5
+sleep 80
+move_npc 2008 left 1
+move_char right 2
+sleep 32
+chg_char_dir left
+chg_npc_dir 2012 down
+chg_type 2008 npc
+set_flag_wall 2008
+chg_speed 2008 normal
+chg_type 2012 npc
+chg_speed 2012 not_move
+draw_char on
+kill 2001
+kill 1910
+kill 1911
+kill_through 1903
+kill_through 1904
+kill_through 1905
+set_npc_pos 2006 20 31 31
+set_npc_pos 2009 20 30 31
+create event_generator 2013 20 22 28 17 0 0 @nanabangai_slum2.txt
+create event_generator 2014 20 1 1 17 0 0 @nanabangai_slum3.txt
+create event_generator 2015 20 1 2 17 0 0 @nanabangai_slum4.txt
+create event_generator 2017 20 2 1 17 0 0 @nanabangai_slum6.txt

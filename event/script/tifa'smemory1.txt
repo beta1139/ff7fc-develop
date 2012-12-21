@@ -117,8 +117,7 @@ sleep 32
 fadeout
 chg_npc_img 2251 3
 create event_generator 2236 22 5 10 17 1 0 @seventhheaven7.txt
-kill 2207
-draw_char on
+chg_npc_dir 2207 up
 sleep 65
 warp 22 5 10 up
 fadein

@@ -45,22 +45,28 @@ chg_npc_img 2304 95
 chg_speed 2304 normal
 step_npc 2304 4
 move_char down 1
-sleep 32
+sleep 16
 chg_npc_dir 2307 left
+sleep 16
 chg_speed 2307 fast
+jump_npc 2307 same 1
 step_npc 2304 5
 move_char down 1
 sleep 16
 chg_speed 2308 fast
 move_npc 2308 right 1
+jump_npc 2307 same 1
 sleep 8
 chg_npc_dir 2308 left
 sleep 8
+jump_npc 2307 same 1
 move_char right 1
 sleep 32
+jump_npc 2307 same 1
 move_char right 1
 sleep 16
 msg 『…………
+jump_npc 2307 same 1
 chg_speed 2304 fast
 chg_npc_dir 2304 right
 sleep 8
@@ -73,6 +79,7 @@ sleep 8
 chg_npc_dir 2304 up
 sleep 8
 jump_npc 2304 same 4
+play_se thunder.wav
 jump_npc_target_pos 2307 6 4
 chg_npc_dir 2307 down
 sleep 4
@@ -88,6 +95,8 @@ chg_npc_dir 2307 right
 sleep 4
 chg_npc_dir 2307 up
 chg_npc_dir 2308 up
+jump_npc_target_pos 2306 6 6
+chg_npc_dir 2308 left
 sleep 4
 chg_npc_dir 2307 left
 sleep 4
@@ -96,41 +105,33 @@ sleep 4
 chg_npc_dir 2307 right
 sleep 4
 chg_npc_dir 2307 up
-slide_walk_npc 2306 down 2
-chg_npc_dir 2308 left
 sleep 4
 chg_npc_dir 2307 left
 sleep 4
 play_se damage.wav
 sleep 4
-chg_npc_dir 2307 up
+chg_npc_dir 2307 down
 sleep 4
-play_se killed.wav
-kill 2307
+chg_npc_img 2307 96
 play_se damage.wav
 slide_npc 2308 down 2
+sleep 4
 chg_npc_dir 2308 down
 sleep 4
 chg_npc_dir 2308 right
 sleep 4
 chg_npc_dir 2308 up
 sleep 4
+play_se damage.wav
 chg_npc_dir 2308 left
 sleep 4
-play_se damage.wav
-sleep 4
-chg_npc_dir 2308 down
-sleep 4
-chg_npc_dir 2308 right
 play_se killed.wav
-kill 2308
-sleep 8
-sleep 16
+chg_npc_img 2308 96
 chg_speed 2306 normal
 chg_npc_dir 2306 down
-sleep 32
-move_npc 2306 up 2
-sleep 32
+sleep 64
+move_npc 2306 up 1
+sleep 16
 chg_type 2306 npc
 chg_speed 2306 not_move
 set_flag_wall 2306
@@ -158,8 +159,9 @@ sleep 32
 set_talk_npc 2304
 msg バレット\n「チッ！！\n　……………ほ　ほうしゅうかよ…
 reset_talk_npc
-sleep 16
 chg_npc_dir 2306 up
+sleep 16
+chg_speed 2306 not_step
 chg_type 2309 npc2
 chg_speed 2309 not_move
 chg_char_dir down
@@ -207,3 +209,4 @@ play_se damage.wav
 sleep 8
 play_se damage.wav
 sleep 8
+kill_through 2302

@@ -4,13 +4,14 @@ set_talk_npc 2202
 msg ティファ\n「おもいだして　くれたみたいね\n　やくそく
 reset_talk_npc
 sleep 32
-chg_char_dir right
-sleep 8
-chg_char_dir up
-sleep 8
-chg_char_dir left
-sleep 8
-chg_char_dir up
+chg_npc_dir 2207 right
+chg_npc_img 2207 97
+step_npc 2207 3
+sleep 80
+chg_npc_img 2207 0
+chg_npc_dir 2207 up
+draw_char on
+kill 2207
 sleep 16
 msg 『おれは　えいゆうでも　ゆうめいでも　ない\n　やくそくは……まもれない
 sleep 32
@@ -75,11 +76,11 @@ chg_npc_dir 2202 right
 sleep 16
 msg ティファ\n「いいから　いいから
 sleep 16
-msg ティファ\n「ヒソヒソ……\n　ひとでに　こまってる　ってのが　ほんねでしょ？
+msg ティファ\n「ヒソヒソ……\n（ひとでに　こまってる　ってのが　ほんねでしょ？）
 chg_speed 2201 normal
 chg_npc_dir 2201 left
 sleep 16
-msg バレット\n「う……ぐぅ……\n　のこりの　へそくりは　マリンの　がくひだぞ……
+msg バレット\n「う……ぐぅ……\n（のこりの　へそくりは　マリンの　がくひだぞ……）
 sleep 32
 chg_speed 2201 slow
 move_npc 2201 right 1
@@ -108,6 +109,46 @@ stop_bgm
 draw_char off
 sleep 48
 play_se good_night_until_tomorrow.ogg
+create npc_event 2020 20 36 19 34 0 0 none
+create npc_event 2021 20 37 18 35 2 0 none
+create npc_event 2022 20 36 18 36 1 0 none
+create npc_event 2010 20 26 22 78 1 0 none
+kill_through 2015
+kill_through 2016
+kill_through 2017
+kill 2018
+kill 2019
+kill 2600
+kill 2608
+chg_speed 2008 not_move
+set_npc_pos 2006 20 33 20
+set_npc_pos 2007 20 32 20
+set_npc_pos 2008 20 33 21
+set_npc_pos 2009 20 33 19
+set_npc_pos 2602 26 6 8
+chg_npc_dir 2006 left
+chg_npc_dir 2007 right
+chg_npc_dir 2008 up
+chg_npc_dir 2009 down
+chg_param 2006 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
+chg_param 2007 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
+chg_param 2008 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
+chg_param 2009 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
+chg_param 2601 『なにが　しりたいんだ？\n\n\n\n#4\n　　きろくを　のこすには？\n　　みかたを　かいふくするには？\n　　まほうをつかった　かいふく\n　　そのた\n[[]][[]][[]][[]]
+create event_generator 2023 20 1 1 17 0 0 @nanabangai_slum17.txt
+create event_generator 2024 20 1 2 17 0 0 @nanabangai_slum18.txt
+create event_generator 2025 20 2 1 17 0 0 @nanabangai_slum19.txt
+create event_generator 2026 20 2 2 17 0 0 @nanabangai_slum20.txt
+create event_generator 2027 20 25 24 17 0 0 @nanabangai_slum21_1.txt
+create event_generator 2028 20 26 24 17 0 0 @nanabangai_slum21_2.txt
+create event_generator 2029 20 27 24 17 0 0 @nanabangai_slum21_3.txt
+create event_generator 2030 20 28 23 17 0 0 @nanabangai_slum21_4.txt
+create event_generator 2031 20 28 22 17 0 0 @nanabangai_slum21_5.txt
+create event_generator 2032 20 34 21 17 0 0 @nanabangai_slum22_1.txt
+create event_generator 2033 20 32 18 17 0 0 @nanabangai_slum22_2.txt
+create event_generator 2620 26 4 8 17 0 0 @beginner's_hall1.txt
+chg_npc_img 2691 29
+chg_speed 2400 not_step
 sleep 400
 recover_active_chara
 warp 23 2 8 right

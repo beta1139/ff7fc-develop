@@ -1,4 +1,35 @@
 wait_target_talked 2306
 chg_char_dir up
 sleep 48
-msg プレジデント　しんら\n　「……いちばん　まこうろ　ばくはじけんに\n　かんして　アバランチと　なのる　そしきから\n\n　はんこう　せいめいが　だされています\n\n\n\n　せいめいに　よると　アバランチは\n　こんごも　どうようの　テロを つづけることを\n よこく　しています\n\n　しかし　ミッドガル　しみんの　みなさん\n　あんしんして　ください\n\n\n　われわれ　しんら　カンパニーは\n　このような　ぼうりょくから　みなさんを\n　まもるために　ソルジャーの　とうにゅうを\n\n　けってい　しました\n　これで……
+create npc2 2316 23 5 2 20 1 0 
+sleep 8
+chg_npc_img 2316 17
+sleep 8
+chg_npc_img 2316 20
+sleep 8
+chg_npc_img 2316 17
+sleep 8
+chg_npc_img 2316 20
+sleep 8
+chg_npc_img 2316 17
+sleep 8
+chg_npc_img 2316 20
+sleep 8
+chg_npc_img 2316 17
+sleep 8
+chg_npc_img 2316 20
+sleep 8
+msg プレジデント　しんら\n「……いちばん　まこうろ　ばくはじけんに\n　かんして　アバランチと　なのる　そしきから\n　はんこう　せいめいが　だされています\n　せいめいに　よると　アバランチは\n　こんごも　どうようの　テロを つづけることを\n よこく　しています\n\n　しかし　ミッドガル　しみんの　みなさん\n　あんしんして　ください\n\n\n　われわれ　しんら　カンパニーは\n　このような　ぼうりょくから　みなさんを\n　まもるために　ソルジャーの　とうにゅうを\n　けってい　しました\n　これで……
+chg_npc_img 2316 17
+sleep 8
+chg_npc_img 2316 20
+sleep 8
+chg_npc_img 2316 17
+sleep 8
+chg_npc_img 2316 20
+sleep 8
+kill 2316
+create npc2 2314 23 5 3 17 0 0 
+create event_generator 2315 23 1 2 17 0 0 @azito7.txt
+chg_type 2306 npc
+chg_param 2306 ジェシー\n「でも　わたしの　ばくだんの　はれぶたい\n　ちょっと　うれしいんだ

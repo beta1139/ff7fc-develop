@@ -1,0 +1,12 @@
+wait_same_pos
+chg_speed 2010 normal
+chg_npc_dir 2010 up
+open_door 2090
+move_npc 2010 up 1
+sleep 16
+kill 2010
+close_door 2090
+kill 2028
+kill 2029
+kill 2030
+kill 2031

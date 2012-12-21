@@ -4,7 +4,7 @@ reset_talked_flag 162
 if_flag 3 0
 fadeout
 stop_bgm
-warp 17 4 4 down
+warp 17 30 4 down
 draw_char off
 set_flag 0 0
 set_flag 7 1
@@ -18,6 +18,14 @@ draw_char off
 chg_npc_img 2251 2
 sleep 48
 play_se good_night_until_tomorrow.ogg
+kill 1710
+kill 1706
+kill 1903
+kill 1904
+kill 1905
+kill 1910
+kill 1911
+kill 1912
 kill 2200
 kill 2202
 kill 2203
@@ -29,6 +37,42 @@ kill 2306
 kill 2307
 kill 2308
 kill 2309
+create npc_event 2020 20 36 19 34 0 0 none
+create npc_event 2021 20 37 18 35 2 0 none
+create npc_event 2022 20 36 18 36 1 0 none
+create npc_event 2010 20 26 22 78 1 0 none
+create npc 2006 20 33 20 71 2 0 「ウウ……よっぱらっちゃった\n　てづくりカクテル　おいしいんだもんなあ\n　きついんだもんなあ
+create npc 2007 20 32 20 88 3 0 「ねえ　ねえ　しってる？\n\n\n\n#2\n　　きょうみないね\n　　しらないよ\n\n\n[[「あ　そ！]]\n[[「ニュースの　そくほうが　はいったのよ\n　うえで　ばくだん　テロが　あったって\n　いうじゃない　それも　まこうろの　ばくはつ！！\n　これが　どんなに　たいへんな　ことか　わかる？\n#2\n　　きょうみないね\n　　わからないよ\n\n\n[[「あ　そ！]]\n[[「じじょうつうの　わたしに　いわせればね\n　ミッドガルの　でんりょくが　マヒしちゃったら\n　コンピューターとか　しんごうとか　いろいろ\n　とまっちゃうじゃない\n　けいざいてき　そんしつは　んーー\n　１０おくギルは　くだらないし\n　それに！！　たくさんの　つみなきひとびとが\n　しんだと　おもうのよ\n　ばくはが　まよなかだったから　まだいいわ\n　ねむってたひとは　そのまま　めがさめない　だけね]]]]
+create npc 2008 20 33 21 65 0 0 「ばくはつ！！　ばくはつ！！\n　スゲッー！！\n　アバランチ　かっくいー！！
+create npc 2009 20 33 19 70 1 0 「まったくよぉ！！\n　こんやは　どうなってんだかよ！！\n\n\n　さっきまで　ずいぶん　ながく　ていでん\n　してたから　みょうだと　おもったらよ\n\n\n　うえで　まこうろ　ばくはテロが\n　おきたって　いうじゃねぇか\n\n\n　さけ　かっくらいながら　ニュースみてりゃよ\n　とつぜん　みせを　おいだされる\n　たまんねぇよなぁ！！
+kill_through 2015
+kill_through 2016
+kill_through 2017
+kill 2018
+kill 2019
+kill 2600
+kill 2608
+set_npc_pos 2602 26 6 8
+sleep 16
+chg_param 2006 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
+chg_param 2007 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
+chg_param 2008 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
+chg_param 2009 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
+chg_param 2601 『なにが　しりたいんだ？\n\n\n\n#4\n　　きろくを　のこすには？\n　　みかたを　かいふくするには？\n　　まほうをつかった　かいふく\n　　そのた\n[[]][[]][[]][[]]
+create event_generator 2023 20 1 1 17 0 0 @nanabangai_slum17.txt
+create event_generator 2024 20 1 2 17 0 0 @nanabangai_slum18.txt
+create event_generator 2025 20 2 1 17 0 0 @nanabangai_slum19.txt
+create event_generator 2026 20 2 2 17 0 0 @nanabangai_slum20.txt
+create event_generator 2027 20 25 24 17 0 0 @nanabangai_slum21_1.txt
+create event_generator 2028 20 26 24 17 0 0 @nanabangai_slum21_2.txt
+create event_generator 2029 20 27 24 17 0 0 @nanabangai_slum21_3.txt
+create event_generator 2030 20 28 23 17 0 0 @nanabangai_slum21_4.txt
+create event_generator 2031 20 28 22 17 0 0 @nanabangai_slum21_5.txt
+create event_generator 2032 20 34 21 17 0 0 @nanabangai_slum22_1.txt
+create event_generator 2033 20 32 18 17 0 0 @nanabangai_slum22_2.txt
+create event_generator 2620 26 4 8 17 0 0 @beginner's_hall1.txt
+chg_npc_img 2691 29
+chg_speed 2400 not_step
 sleep 400
 recover_active_chara
 warp 23 2 8 right

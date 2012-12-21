@@ -34,7 +34,7 @@ sleep 16
 chg_npc_dir 2202 down
 sleep 16
 set_talk_npc 2202
-msg ティファ\n「バレット　ごくろうさま
+msg ティファ\n「バレット　おつかれさま
 reset_talk_npc
 sleep 16
 msg バレット\n「おう！！
@@ -135,5 +135,6 @@ create event_generator 2300 23 4 4 17 1 0 @azito1.txt
 create event_generator 2301 23 4 3 17 1 0 @azito2.txt
 create event_generator 2302 23 4 2 17 1 0 @azito3.txt
 create event_generator 2303 23 4 1 17 1 0 @azito4.txt
+create event_generator 2225 22 8 5 17 1 0 @seventhheaven5_3.txt
 kill_through 2014
 kill_through 2011
