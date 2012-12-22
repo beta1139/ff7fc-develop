@@ -43,7 +43,7 @@ msg 『お　おい！
 chg_npc_dir 1200 down
 msg バレット\n「かねの　はなしなら\n　ぶじに　アジトに　かえってからだ
 move_npc 1200 up 8
-sleep 120
+sleep 128
 kill 1200
 kill 1201
 kill 1202

@@ -130,6 +130,12 @@ enable_char_chg
 disable_char_chg
   セレクトボタンによるキャラチェンジ不可能にする
 
+chg_char_state_move
+  イベント中でもキャラをキー操作可能にする
+
+chg_char_state_event
+  イベント中にキャラをキー操作不可能にする
+
 =============== イベント操作系 ===============
 create (event_type) (event_id) (map_id) (x) (y) (image_id) (direction) (speed) (param)
   イベントを生成する。paramは一行で記述すること。改行は\nと記述する
@@ -240,6 +246,9 @@ door_open (event_id)
 door_close (event_id)
   グラフィックをドアがクローズしたものに変える
   (ただしevent_typeがmap_doorである場合に限る)
+
+chg_npc_y_offset (event_id) (offset)
+  キャラ表示のＹ座標のずらし分を設定
 
 =============== パラメータ操作系 ===============
 add_gil (val)

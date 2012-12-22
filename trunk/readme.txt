@@ -98,6 +98,10 @@ FF7FC Developing Version (2012/12/22 updated)
 	・以下のイベントスクリプトの命令追加
 	  ・enable_char_chg
 	  ・disable_char_chg
+	  ・chg_char_state_move
+	  ・chg_char_state_event
+	  ・chg_npc_y_offset
+	・Ｆ１押下でイベントデータの情報をファイル(event_info.txt)出力するようにした
   ・2012/12/20
     ・Part9@635のマージ
   ・2012/12/19

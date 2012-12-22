@@ -1,0 +1,22 @@
+set_eternal_event
+wait_target_talk 950013
+reset_talk_flag 950013
+set_flag 3 1
+set_flag 4 1
+if_flag 3 0
+if_flag 4 0
+msg aaa
+fi
+if_flag 4 1
+msg bbb
+fi
+fi
+if_flag 3 1
+if_flag 4 0
+msg ccc
+fi
+if_flag 4 1
+msg ddd
+fi
+fi
+
