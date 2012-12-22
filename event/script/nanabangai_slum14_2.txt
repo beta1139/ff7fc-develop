@@ -57,15 +57,10 @@ sleep 80
 recover_active_chara
 if_flag 9 0
 play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
-fadein
-jump_char down 2
-sleep 48
-chg_char_dir right
-create npc 2508 25 7 8 89 2 0 「いいゆめ　みたかい\n\n\n\n　やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフに　いきていく　きほんだぜ！\n　おっさん　おぼえときな
-sleep 16
 fi
 if_flag 9 1
 play_event_bgm 1-06-Barrett's_Theme.ogg
+fi
 fadein
 jump_char down 2
 sleep 48
