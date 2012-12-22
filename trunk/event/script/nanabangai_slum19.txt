@@ -1,5 +1,6 @@
 wait_event_invalid 2023
 wait_target_talked 2008
+chg_char_state_move
 chg_type 2008 npc_event
 chg_speed 2008 fast
 move_npc 2008 down 1
@@ -8,9 +9,8 @@ move_npc 2008 left 4
 sleep 32
 move_npc 2008 down 6
 sleep 48
-move_npc 2008 left 5
-sleep 40
-set_npc_pos 2008 20 22 28
+move_npc 2008 left 7
+sleep 56
 chg_npc_dir 2008 up
 chg_speed 2008 not_move
 chg_type 2008 npc3
