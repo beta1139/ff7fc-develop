@@ -123,6 +123,13 @@ jump_char (direction) (移動量)
 jump_char_target_pos (x) (y)
   キャラを指定の座標へジャンプで移動させる
 
+enable_char_chg
+  セレクトボタンによるキャラチェンジ可能にする
+  (デフォルトはキャラチェンジ不可能)
+
+disable_char_chg
+  セレクトボタンによるキャラチェンジ不可能にする
+
 =============== イベント操作系 ===============
 create (event_type) (event_id) (map_id) (x) (y) (image_id) (direction) (speed) (param)
   イベントを生成する。paramは一行で記述すること。改行は\nと記述する

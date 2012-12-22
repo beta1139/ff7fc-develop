@@ -95,6 +95,9 @@ FF7FC Developing Version (2012/12/22 updated)
     ・if分の入れ子対応した
 	・セレクトボタンでキャラチェンジなしにした
 	・エンカウントのエフェクト中のmap_objとmap_doorの表示がそのままなのを直した
+	・以下のイベントスクリプトの命令追加
+	  ・enable_char_chg
+	  ・disable_char_chg
   ・2012/12/20
     ・Part9@635のマージ
   ・2012/12/19
