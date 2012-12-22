@@ -1,5 +1,6 @@
 wait_event_invalid 2023
 wait_target_talked 2007
+chg_char_state_move
 chg_type 2007 npc_event
 chg_speed 2007 normal
 move_npc 2007 left 1

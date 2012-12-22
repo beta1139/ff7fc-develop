@@ -8,12 +8,11 @@ chg_char_dir right
 sleep 16
 move_npc 2020 right 4
 move_npc 2021 right 3
-sleep 16
 move_npc 2022 right 4
-sleep 32
+chg_char_state_move
+sleep 48
 kill 2021
 sleep 16
 kill 2020
-sleep 16
 kill 2022
 kill 2032

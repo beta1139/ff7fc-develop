@@ -9,6 +9,7 @@ sleep 16
 chg_npc_dir 2009 right
 chg_speed 2009 not_step
 sleep 16
+chg_char_dir right
 chg_npc_dir 2008 right
 jump_npc 2006 same 2
 loop 2
@@ -21,6 +22,7 @@ sleep 4
 chg_npc_dir 2006 left
 sleep 4
 pool
+chg_char_state_move
 move_npc 2006 right 1
 sleep 16
 move_npc 2006 up 1
