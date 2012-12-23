@@ -92,14 +92,27 @@ sleep 16
 msg バレット\n「２０００だ！
 sleep 24
 chg_npc_dir 2201 up
-sleep 32
-move_npc 2202 right 1
 sleep 16
+create npc_event 2207 22 5 10 0 0 1 none
+draw_char off
+chg_npc_dir 2207 down
+chg_npc_img 2207 103
+sleep 12
+chg_npc_dir 2207 left
+sleep 16
+move_npc 2202 right 1
+sleep 8
+chg_npc_img 2207 0
+chg_char_dir down
+draw_char on
+kill 2207
+sleep 8
 move_npc 2202 down 1
 sleep 32
 set_talk_npc 2202
 msg ティファ\n「ありがとう　クラウド
 reset_talk_npc
+chg_char_dir up
 sleep 48
 fadeout
 sleep 8
@@ -144,7 +157,7 @@ create event_generator 2028 20 26 24 17 0 0 @nanabangai_slum21_2.txt
 create event_generator 2029 20 27 24 17 0 0 @nanabangai_slum21_3.txt
 create event_generator 2030 20 28 23 17 0 0 @nanabangai_slum21_4.txt
 create event_generator 2031 20 28 22 17 0 0 @nanabangai_slum21_5.txt
-create event_generator 2032 20 34 21 17 0 0 @nanabangai_slum22_1.txt
+create event_generator 2032 20 33 22 17 0 0 @nanabangai_slum22_1.txt
 create event_generator 2033 20 32 18 17 0 0 @nanabangai_slum22_2.txt
 create event_generator 2620 26 4 8 17 0 0 @beginner's_hall1.txt
 chg_npc_img 2691 29

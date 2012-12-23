@@ -1,19 +1,19 @@
 wait_same_pos
+kill 2033
+chg_char_state_move
 chg_speed 2020 normal
 chg_speed 2021 normal
 chg_speed 2022 normal
 chg_npc_dir 2020 down
 chg_npc_dir 2021 down
-chg_char_dir up
 sleep 16
-move_npc 2020 right 6
-move_npc 2021 right 5
-move_npc 2022 right 6
+move_npc 2020 right 10
+move_npc 2021 right 11
 sleep 16
-chg_char_state_move
-sleep 48
+move_npc 2022 right 10
+sleep 144
 kill 2021
 sleep 16
 kill 2020
+sleep 16
 kill 2022
-kill 2033

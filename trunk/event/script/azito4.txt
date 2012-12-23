@@ -32,6 +32,17 @@ chg_speed 2304 normal
 jump_npc 2304 same 2
 sleep 32
 msg バレット\n「じぶんが　もとソルジャー　だからって\n　えらそうに　いうんじゃ　ねえよ！
+chg_char_dir down
+create npc_event 2319 23 2 6 0 1 1 none
+draw_char off
+chg_npc_img 2319 103
+sleep 12
+chg_npc_dir 2319 left
+sleep 24
+chg_npc_img 2319 0
+chg_char_dir down
+draw_char on
+kill 2319
 chg_type 2306 npc_event
 chg_type 2307 npc_event
 chg_type 2308 npc_event

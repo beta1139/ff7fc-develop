@@ -7,8 +7,8 @@ move_npc 2008 down 1
 sleep 8
 move_npc 2008 left 4
 sleep 32
-move_npc 2008 down 6
-sleep 48
+move_npc 2008 down 7
+sleep 56
 move_npc 2008 left 7
 sleep 56
 chg_npc_dir 2008 up
