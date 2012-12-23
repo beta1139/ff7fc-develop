@@ -1,0 +1,26 @@
+set_eternal_event
+wait_target_talk 651
+reset_talk_flag 651
+play_se elevator_start.wav
+loop 100
+dec_map_draw_y_offset
+sleep 1
+pool
+play_se_loop elevator_loop.wav
+loop 70
+dec_map_draw_y_offset
+sleep 1
+pool
+set_map_draw_y_offset 170
+warp 6 4 1 up
+loop 80
+dec_map_draw_y_offset
+sleep 1
+pool
+play_se elevator_end.wav
+loop 90
+dec_map_draw_y_offset
+sleep 1
+pool
+set_map_draw_y_offset 0
+

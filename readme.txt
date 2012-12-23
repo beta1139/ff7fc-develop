@@ -81,7 +81,6 @@ FF7FC Developing Version (2012/12/23 updated)
 
 ■実装保留項目
   ・マップに入ったときにマップ名を画面上部に表示させる
-  ・エレベーターＤＱ４風
   ・オープニング電車
   ・爆発
   ・ボス消滅アニメ
@@ -94,6 +93,10 @@ FF7FC Developing Version (2012/12/23 updated)
 	・イベントスクリプトの命令追加
 	  ・chg_char_img_tmp
 	  ・reset_char_img_tmp
+	  ・set_map_draw_y_offset
+	  ・inc_map_draw_y_offset
+	  ・dec_map_draw_y_offset
+	・エレベーターのイベントをＤＱ４風にした
   ・2012/12/22
 	・bgm_throughで戦闘ＢＧＭ鳴りっぱなし修正
 	・ショップを開いた後、セリフウィンドウにNPCが隠れなくなるバグ修正
