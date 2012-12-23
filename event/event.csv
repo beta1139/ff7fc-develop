@@ -1298,3 +1298,5 @@ event_generator,60011,600,7,13,17,0,0,@fake_save.txt
 npc3,141,6,2,1,34,3,0,"ジェシー
 「さ　そこのボタンを
 　おして！"
+npc3,142,6,18,1,34,2,0,none
+event_generator,143,6,2,2,17,0,0,@elevator.txt
