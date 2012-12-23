@@ -1,0 +1,2 @@
+wait_same_pos
+msg ジェシー\n「さ　そこのボタンを\n　おして！
