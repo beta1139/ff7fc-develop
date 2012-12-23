@@ -133,6 +133,11 @@ kill 2018
 kill 2019
 kill 2600
 kill_through 2608
+kill_through 2601
+kill_through 2610
+kill_through 2609
+sleep 16
+create npc 2601 26 3 8 90 3 0 「ガハハハハ！！\n　うえで　ゴタゴタ　やってくれりゃよ\n　ぶきやとしては　おおだすかり　ってやつよ
 chg_speed 2008 not_move
 set_npc_pos 2006 20 33 20
 set_npc_pos 2007 20 32 20
@@ -143,6 +148,7 @@ chg_npc_dir 2006 left
 chg_npc_dir 2007 right
 chg_npc_dir 2008 up
 chg_npc_dir 2009 down
+sleep 16
 chg_param 2006 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
 chg_param 2007 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
 chg_param 2008 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
@@ -162,7 +168,7 @@ create event_generator 2033 20 32 18 17 0 0 @nanabangai_slum22_2.txt
 create event_generator 2620 26 4 8 17 0 0 @beginner's_hall1.txt
 chg_npc_img 2691 29
 chg_speed 2400 not_step
-sleep 400
+sleep 368
 recover_active_chara
 warp 23 2 8 right
 create event_generator 2240 22 8 5 17 0 0 @seventhheaven8.txt
