@@ -29,4 +29,7 @@ move_npc 2006 up 1
 sleep 16
 move_npc 2006 right 2
 sleep 32
+chg_speed 2006 fast
+move_npc 2006 right 8
+sleep 64
 kill 2006
