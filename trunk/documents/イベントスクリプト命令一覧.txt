@@ -291,6 +291,15 @@ fadeout
 fadein
   フェードイン
 
+set_map_draw_y_offset
+  画面描画位置のＹ座標のずらし分を設定
+
+inc_map_draw_y_offset
+  画面描画位置のＹ座標のずらし分を1インクリメント
+
+dec_map_draw_y_offset
+  画面描画位置のＹ座標のずらし分を1デクリメント
+
 =============== サウンド系 ===============
 play_se (path)
   SEを再生させる。pathには./sound/se/の部分は不要
