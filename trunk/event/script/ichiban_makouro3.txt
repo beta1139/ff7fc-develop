@@ -1,6 +1,6 @@
 wait_target_talk 650
 reset_talk_flag 650
-msg 「スイッチオン
+msg スイッチオン
 play_se elevator_start.wav
 loop 100
 inc_map_draw_y_offset
@@ -23,11 +23,35 @@ move_npc 601 down 1
 sleep 16
 chg_char_dir down
 chg_npc_dir 601 up
-msg 「まこうろのせいで　このほしの　いのちは\n　まいにち　けずられていく\n　そして　いつのひか……　ゼロだ\n\n『わるいけど　きょうみがないな\n\n\n\n「ほしが　しんじまうんだぞ\n　えっ　クラウドさんよ！\n\n\n『オレが　かんがえてるのは　さっさとしごとを\n　おわらせたいって　ことだけだ\n　けいびへいや　ガードロボットが　こないうちにな
-move_npc 601 up 1
-sleep 16
-chg_char_dir up
+msg バレット\n「まこうろのせいで　このほしの　いのちは\n　まいにち　けずられていく\n　そして　いつのひか……　ゼロだ
+chg_char_dir right
+chg_char_img_tmp 96
+sleep 32
+msg クラウド\n『わるいけど　きょうみがないな
 kill 601
+create npc_event 145 6 20 2 95 1 0 none
+step_npc 145 4
+sleep 64
+inactive 145
+kill 145
+create npc3 146 6 20 2 1 0 0 none
+sleep 32
+msg バレット\n「ほしが　しんじまうんだぞ\n　えっ　クラウドさんよ！
+reset_char_img_tmp
+chg_char_dir down
+sleep 32
+msg クラウド\n『オレが　かんがえてるのは　さっさとしごとを\n　おわらせたいって　ことだけだ\n　けいびへいや　ガードロボットが　こないうちにな
+kill 146
+create npc_event 147 6 20 2 98 2 0 none
+step_npc 147 10
+sleep 160
+kill 147
+create npc_event 148 6 20 2 1 2 2 none
+move_npc 148 up 1
+sleep 32
+kill 148
+kill 142
+create npc_event 150 6 18 1 34 2 2 none
 loop 170
 inc_map_draw_y_offset
 sleep 1
@@ -42,5 +66,14 @@ loop 90
 inc_map_draw_y_offset
 sleep 1
 pool
+move_npc 150 down 1
+sleep 16
+move_npc 150 left 2
+sleep 16
+kill 150
+sleep 16
 create event_generator 660 6 0 0 17 0 0 @elevator_switch1.txt
+
+
+
 

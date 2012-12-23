@@ -1,7 +1,7 @@
 set_eternal_event
 wait_target_talk 651
 reset_talk_flag 651
-msg 「スイッチオン
+msg スイッチオン
 play_se elevator_start.wav
 loop 100
 dec_map_draw_y_offset
