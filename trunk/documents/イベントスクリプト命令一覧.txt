@@ -95,6 +95,14 @@ warp_ff3 (map_id) (x) (y) (direction)
 chg_char_img (idx)
   キャラ表示切替。idxには0~2を指定可。ステータス画面のキャラの並びに対応
 
+chg_char_img_tmp (idx)
+  キャラ画像を一時的に表示切替。chg_npc_imgのようにキャラの画像を変更
+  スクリプトの処理が終わると元の画像に戻る
+
+reset_char_img_tmp
+  chg_char_img_tmpで画像を切り替えている場合に、元の画像に戻したくなったら使う
+  使わなくても、スクリプトの処理が終わると勝手に元の画像に戻る
+
 backup_char_img
   現在表示中のキャラのidxを内部で保存
 
