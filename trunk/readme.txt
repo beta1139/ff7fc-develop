@@ -14,6 +14,7 @@ FF7FC Developing Version (2012/12/23 updated)
   ・エンカウント     : s
   ・デバッグ情報表示 : a
   ・エンカウントのオンオフ切り替え: a + s
+  ・イベント情報出力 : F1
 
 ■設定
   ・config.exe
