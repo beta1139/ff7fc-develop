@@ -66,6 +66,7 @@ chg_npc_dir 2202 down
 chg_npc_dir 2206 down
 sleep 16
 fi
+fi
 move_char down 3
 sleep 48
 chg_char_dir up
