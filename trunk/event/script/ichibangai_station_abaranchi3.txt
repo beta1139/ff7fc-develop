@@ -46,6 +46,7 @@ sleep 16
 chg_npc_dir 152 down
 chg_char_dir up
 msg 「もとソルジャー……\n　チッ　しんようできねえな
+msg バレット \n「キャンセルボタン(しょきせっていでは　z　)を\n　おしながら　ほうこうキーをおせば\n　はやくはしることができる\n　おくれずに　ついてこい！
 move_npc 152 left 1
 sleep 16
 move_npc 152 up 3
