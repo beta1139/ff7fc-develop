@@ -1,0 +1,6 @@
+wait_same_pos
+chg_char_state_move
+move_npc 3007 left 6
+sleep 48
+kill 3007
+kill 3009

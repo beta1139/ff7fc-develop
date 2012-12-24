@@ -37,9 +37,6 @@ npc3,138,5,23,4,34,3,0,"Yura
 　"
 npc2,139,5,24,5,17,0,0,
 event_generator,140,5,23,5,17,0,0,@jesse2.txt
-npc,400,4,1,27,36,3,0,"「おれは　だっしゅつこうを　かくほしておくっす！
-　しっかし　このおおきな　まこうろを
-　ばくはするなんて……　みものっすね！"
 event_generator,500,5,5,13,17,0,0,@ichiban_makouro2_1.txt
 npc,501,5,5,12,1,1,0,
 event_generator,502,5,4,12,17,0,0,@ichiban_makouro2_2.txt
@@ -1300,3 +1297,16 @@ npc3,141,6,2,1,34,3,0,"ジェシー
 　おして！"
 npc3,142,6,18,1,34,2,0,none
 event_generator,143,6,2,2,17,0,0,@elevator.txt
+npc_event,3001,3,8,13,35,0,3,none
+event_generator,3002,3,7,21,17,0,0,@bigs2.txt
+event_generator,3003,3,8,21,17,0,0,@bigs3.txt
+npc_event,3004,3,13,10,36,1,3,none
+event_generator,3005,3,13,12,17,0,0,@wedge1.txt
+event_generator,3006,3,12,12,17,0,0,@wedge2.txt
+npc_event,3007,3,8,5,34,3,3,none
+event_generator,3008,3,11,5,17,0,0,@jesse3.txt
+event_generator,3009,3,11,6,17,0,0,@jesse4.txt
+npc_event,4001,4,15,27,36,2,3,
+npc_event,4002,4,13,27,34,2,3,
+npc_event,4003,4,11,27,35,2,3,
+event_generator,4004,4,17,27,17,0,0,@ichiban_makouro4.txt

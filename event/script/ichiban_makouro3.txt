@@ -71,6 +71,7 @@ sleep 16
 move_npc 150 left 2
 sleep 16
 kill 150
+kill 141
 sleep 16
 create event_generator 660 6 0 0 17 0 0 @elevator_switch1.txt
 
