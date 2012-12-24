@@ -118,10 +118,6 @@ fadeout
 sleep 8
 kill 2201
 kill 2202
-stop_bgm
-draw_char off
-sleep 48
-play_se good_night_until_tomorrow.ogg
 create npc_event 2020 20 36 19 34 0 0 none
 create npc_event 2021 20 37 18 35 2 0 none
 create npc_event 2022 20 36 18 36 1 0 none
@@ -132,28 +128,25 @@ kill_through 2017
 kill 2018
 kill 2019
 kill 2600
+kill 2006
+kill 2007
+kill 2008
+kill 2009
 kill_through 2608
 kill_through 2601
 kill_through 2610
 kill_through 2609
-sleep 16
-create npc 2601 26 3 8 90 3 0 「ガハハハハ！！\n　うえで　ゴタゴタ　やってくれりゃよ\n　ぶきやとしては　おおだすかり　ってやつよ
-chg_speed 2008 not_move
-set_npc_pos 2006 20 33 20
-set_npc_pos 2007 20 32 20
-set_npc_pos 2008 20 33 21
-set_npc_pos 2009 20 33 19
+stop_bgm
+draw_char off
+sleep 48
+play_se good_night_until_tomorrow.ogg
+create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
+create npc 2007 20 32 20 88 3 0 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
+create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
+create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
+create npc 2601 26 3 8 90 3 0 『なにが　しりたいんだ？\n\n\n\n#4\n　　きろくを　のこすには？\n　　みかたを　かいふくするには？\n　　まほうをつかった　かいふく\n　　そのた\n[[]][[]][[]][[]]
+sleep 32
 set_npc_pos 2602 26 6 8
-chg_npc_dir 2006 left
-chg_npc_dir 2007 right
-chg_npc_dir 2008 up
-chg_npc_dir 2009 down
-sleep 16
-chg_param 2006 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
-chg_param 2007 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
-chg_param 2008 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
-chg_param 2009 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
-chg_param 2601 『なにが　しりたいんだ？\n\n\n\n#4\n　　きろくを　のこすには？\n　　みかたを　かいふくするには？\n　　まほうをつかった　かいふく\n　　そのた\n[[]][[]][[]][[]]
 create event_generator 2023 20 1 1 17 0 0 @nanabangai_slum17.txt
 create event_generator 2024 20 1 2 17 0 0 @nanabangai_slum18.txt
 create event_generator 2025 20 2 1 17 0 0 @nanabangai_slum19.txt
