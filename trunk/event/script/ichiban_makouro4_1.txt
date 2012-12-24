@@ -1,0 +1,8 @@
+chg_char_state_move
+move_npc 4001 left 14
+sleep 112
+kill 4001
+create npc 400 4 1 27 36 3 0 ウェッジ\n「おれは　だっしゅつこうを　かくほしておくっす！\n\n　\nウェッジ\n「しっかし　このおおきな　まこうろを\n　ばくはするなんて……　みものっすね！
+
+
+

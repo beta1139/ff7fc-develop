@@ -1,0 +1,7 @@
+chg_char_state_move
+move_npc 4002 left 4
+sleep 32
+move_npc 4002 up 20
+sleep 160
+kill 4002
+

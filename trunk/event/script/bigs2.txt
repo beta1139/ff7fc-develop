@@ -1,0 +1,22 @@
+wait_same_pos
+chg_char_state_move
+move_npc 3001 down 3
+sleep 60
+chg_npc_dir 3001 right
+sleep 16
+chg_npc_dir 3001 left
+sleep 16
+chg_npc_dir 3001 right
+sleep 16
+chg_npc_dir 3001 left
+sleep 16
+chg_npc_dir 3001 right
+sleep 16
+move_npc 3001 right 4
+sleep 32
+move_npc 3001 up 11
+sleep 88
+move_npc 3001 left 10
+sleep 80
+kill 3001
+kill 3003
