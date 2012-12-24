@@ -1,0 +1,43 @@
+wait_same_pos
+backup_char_img
+chg_char_img 0
+create npc_event 902 9 8 14 1 0 2 none
+move_npc 902 up 1
+sleep 15
+move_npc 902 left 1
+sleep 15
+chg_npc_dir 902 down
+msg 「When we blow this place\n it aint gonna be nothin\n more than a hunka junk.\n\n Cloud you set the bomb.\n\n\n\n『Shouldnt you do it?\n\n\n\n「Just do it! I gotta watch\n to make sure you dont\n pull nothin.\n\n『Fine Ill do it.
+screen_effect red
+msg2 178 Watch out！\nThis isnt just a reactor!!
+screen_effect off
+flush
+chg_char_dir left
+sleep 60
+chg_char_dir right
+sleep 15
+chg_char_dir left
+sleep 15
+chg_char_dir right
+sleep 30
+msg 「Whats wrong?
+chg_char_dir up
+msg 『Huh？\n「Whats wrong Cloud？\n Hurry it up！\n\n『...Yeah sorry.
+move_char up 1
+chg_npc_dir 902 right
+sleep 30
+step_char 3
+sleep 60
+chg_char_dir right
+sleep 30
+chg_char_dir left
+sleep 15
+chg_char_dir right
+sleep 15
+chg_char_dir left
+sleep 40
+msg 「Heads up!\n here it comes!
+boss_encount 204
+sleep 63
+set_flag 0 1
+create event_generator 903 9 8 13 17 1 0 @ichiban_makouro7_2.txt

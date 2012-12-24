@@ -1,0 +1,9 @@
+wait_talk
+inactive 2028
+chg_npc_dir 2028 up
+msg てきや\n「おー　クリア　しちまいやがったか。\n　それじゃ　こいつが　けいひんだ。　うけとりな。
+play_se set_heavy.wav
+create treasure_box 20284 2 8 24 1 1 0 2015
+create event_generator 20280 2 9 25 17 1 0 @game_clear2.txt
+chg_npc_dir 2028 right
+active 2028

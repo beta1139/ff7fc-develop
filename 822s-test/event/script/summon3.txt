@@ -1,0 +1,66 @@
+set_flag_wall 2009
+wait_talk
+inactive 2009
+set_eternal_event
+msg create　kill　sleepを　つかえば\nこんな　えんしゅつも　できるぞ。\n\n\nいでよッ！\n\n\n
+sleep 24
+flush
+play_se magic_attack.wav
+flush
+flush
+create npc_event 90000 2 12 13 8 1 2 none
+flush
+flush
+sleep 16
+kill 90000
+sleep 24
+create npc_event 90000 2 12 13 8 1 2 none
+sleep 20
+kill 90000
+sleep 20
+create npc_event 90000 2 12 13 8 1 2 none
+sleep 16
+kill 90000
+sleep 16
+create npc_event 90000 2 12 13 8 1 2 none
+sleep 12
+kill 90000
+sleep 12
+create npc_event 90000 2 12 13 8 1 2 none
+sleep 8
+kill 90000
+sleep 8
+create npc_event 90000 2 12 13 8 1 2 none
+sleep 32
+flush
+play_se thunder.wav
+kill 90000
+sleep 1
+create npc_event 90000 2 10 15 8 1 2 none
+sleep 16
+chg_char_dir left
+sleep 24
+flush
+play_se thunder.wav
+kill 90000
+sleep 1
+create npc_event 90000 2 14 15 8 1 2 none
+sleep 16
+chg_char_dir right
+sleep 24
+flush
+play_se thunder.wav
+kill 90000
+sleep 1
+create npc_event 90000 2 12 17 8 1 2 none
+sleep 16
+chg_char_dir down
+sleep 24
+move_npc 90000 up 2
+sleep 48
+encount 1
+sleep 100
+kill 90000
+play_bgm
+msg どうだ。　ふつうの　エンカウントよりも\nちょっとだけ　カッコイイだろう。\n\n\ncreateとkillのかんかくを　sleepで\nちょうせつし　てんめつを　ひょうげん。\nそして　createの　いちを　かえて\nワープを　ひょうげんしているのだ。\nただし　てんめつにかんしては\nけっこうムチャをしているので　コードが\nながくなってしまっている。　カッコイイが　しょうじき\nオススメは　できんな。
+active 2009

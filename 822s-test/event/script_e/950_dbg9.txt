@@ -1,0 +1,35 @@
+set_eternal_event
+wait_target_talk 95082
+backup_npc_dir 95082
+chg_dir_to_char 95082
+set_talk_npc 95082
+if_char_img 0
+msg クラウドさん　こんにちわ
+fi
+if_char_img 1
+msg バレットさん　こんにちわ
+fi
+if_char_img 2
+msg ティファさん　こんにちわ
+fi
+if_char_img 3
+msg エアリスさん　こんにちわ
+fi
+if_char_img 4
+msg レッド13さん　こんにちわ
+fi
+if_char_img 5
+msg ケットシーさん　こんにちわ
+fi
+if_char_img 6
+msg ユフィさん　こんにちわ
+fi
+if_char_img 7
+msg シドさん　こんにちわ
+fi
+if_char_img 8
+msg ヴィンセントさん　こんにちわ
+fi
+restore_npc_dir 95082
+reset_talk_flag 95082
+reset_talk_npc

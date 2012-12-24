@@ -1,0 +1,6 @@
+set_flag_wall 2039
+wait_talk
+chg_npc_dir 2039 up
+set_eternal_event
+msg ……ゲームがしたいなら……\nひだりのオトコに　はなしかければいい……
+chg_npc_dir 2039 down

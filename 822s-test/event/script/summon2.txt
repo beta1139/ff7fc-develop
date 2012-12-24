@@ -1,0 +1,38 @@
+set_flag_wall 2007
+wait_talk
+inactive 2007
+set_eternal_event
+msg npcは　いどうさせることで　かさねることが\nできるのだ。　それを　りようすれば　こんな\nうごきも　させられる。\n\nとりゃっ！
+screen_effect green
+create npc_event 90000 2 7 12 8 1 2 none
+sleep 16
+create npc_event 90001 2 9 12 8 1 2 none
+sleep 16
+create npc_event 90002 2 7 14 8 1 2 none
+sleep 16
+create npc_event 90003 2 9 14 8 1 2 none
+sleep 32
+move_npc 90000 left 1
+move_npc 90001 right 1
+move_npc 90002 left 1
+move_npc 90003 right 1
+sleep 16
+move_npc 90000 down 3
+move_npc 90001 down 3
+move_npc 90002 down 1
+move_npc 90003 down 1
+sleep 48
+move_npc 90000 right 2
+move_npc 90001 left 2
+move_npc 90002 right 2
+move_npc 90003 left 2
+sleep 32
+screen_effect off
+encount 1
+sleep 100
+kill 90000
+kill 90001
+kill 90002
+kill 90003
+msg sleepを　てきかくに　はさまないと　いどうが\nおわるまえに　つぎのいどうが　じっこうされてしまう。\nsleepのタイミングが　キモだな。
+active 2007

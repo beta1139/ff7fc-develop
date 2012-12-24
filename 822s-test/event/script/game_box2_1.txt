@@ -1,0 +1,13 @@
+set_flag_wall 2033
+wait_talk
+chg_npc_dir 2033 up
+play_se false.wav
+msg ざんねんながら　じゅんばんが　ちがいます。\n\n\n\nてきや\n「ざんねんだったな　にいちゃん!\n　まあ　また　ちょうせんしてくれや。
+create event_generator 20310 2 10 25 17 1 0 @game_box1_4.txt
+create event_generator 20320 2 11 25 17 1 0 @game_box2_4.txt
+create event_generator 20330 2 12 25 17 1 0 @game_box3_4.txt
+create event_generator 20340 2 13 25 17 1 0 @game_box4_4.txt
+create event_generator 20350 2 14 25 17 1 0 @game_box5_4.txt
+create event_generator 20282 2 9 25 17 1 0 @game_end.txt
+kill 20283
+chg_npc_dir 2033 down

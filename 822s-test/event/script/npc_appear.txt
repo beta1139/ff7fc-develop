@@ -1,0 +1,7 @@
+wait_same_pos
+create npc 20451 2 5 18 17 1 0 わたしのしょうめんにたったとき　はじめて\nnpcが　せっちされる。\n\n\nしょうめんにたったあと　さゆうやうしろのマスにたつと\nnpcと　のこり2マスのイベントが　きえる。\nこれで　しょうめんからしか　はなせない\nnpcのかんせいだ。\nこれはテストなので　どのほうこうからでも\nいちおうは　はなせるが　デフォルトのnpcを\nnpc2にすれば　ほんとうに　はなせなくなるぞ。\n\nデバッグモードで　イベントのいちをひょうじさせれば\nもっと　わかりやすいだろう。
+set_flag_wall 20451
+create event_generator 20421 2 4 18 17 1 0 @npc_appear_2.txt
+create event_generator 20431 2 6 18 17 1 0 @npc_appear_3.txt
+create event_generator 20441 2 5 17 17 1 0 @npc_appear_4.txt
+

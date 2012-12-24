@@ -1,0 +1,53 @@
+wait_same_pos
+active 1300
+chg_speed 1300 slow
+move_npc 1300 up 2
+sleep 64
+move_npc 1300 right 1
+sleep 32
+inactive 1300
+msg Flower girl\n「Excuse me. What happened?\n\n\n#2\n　　Get out of here\n　　Nothing... hey...\n\n\n[[]][[]]
+if_flag 3 0
+msg 「Really?\n I dont know whats going\n on. but all right.
+sub_likability 3 500
+active 1300
+chg_speed 1300 slow
+move_npc 1300 down 9
+sleep 32
+chg_char_dir down
+sleep 160
+move_npc 1300 right 1
+sleep 31
+move_npc 1300 down 3
+sleep 96
+kill 1300
+set_flag 7 2
+end
+fi
+if_flag 3 1
+msg 『Dont see many flowers\n around here.\n\n\n「Oh these?\n Do you like them？\n Theyre only one gil.\n\n#2\n　　Buy one\n　　Forget it\n\n\n[[]][[]]
+fi
+if_flag 3 0
+msg 「Oh thank you！！\n Here you are！
+add_likability 3 500
+sub_gil 1
+set_flag 7 1
+fi
+if_flag 3 1
+msg 「Ahh...not again.
+sub_likability 3 250
+set_flag 7 2
+fi
+active 1300
+chg_speed 1300 slow
+move_npc 1300 down 9
+sleep 32
+chg_char_dir down
+sleep 160
+move_npc 1300 right 1
+sleep 31
+move_npc 1300 down 3
+sleep 96
+kill 1300
+
+

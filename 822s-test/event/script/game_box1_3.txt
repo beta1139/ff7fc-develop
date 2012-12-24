@@ -1,0 +1,5 @@
+set_flag_wall 2031
+wait_talk
+chg_npc_dir 2031 up
+set_eternal_event
+msg たからばこ　ちょうじょ\n「いもうとが　4にんもいると　いろいろ\n　たいへんなんだよね。　おふろもみんな\n　メチャクチャながいし。\n　さあさあ　はやく　いもうとたちの\n　じゅんばんも　あてちゃって！

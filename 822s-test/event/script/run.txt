@@ -1,0 +1,34 @@
+set_flag_wall 2012
+wait_talk
+set_eternal_event
+inactive 2015
+inactive 2017
+inactive 2019
+msg いちについて　よーい　ドン！
+active 2015
+active 2017
+active 2019
+chg_speed 2015 slow
+chg_speed 2017 normal
+chg_speed 2019 fast
+move_npc 2015 right 1
+move_npc 2017 right 2
+move_npc 2019 right 4
+sleep 32
+move_npc 2015 left 1
+move_npc 2017 left 2
+move_npc 2019 left 4
+sleep 32
+inactive 2015
+inactive 2017
+inactive 2019
+msg みてのとおり　いどうにかかる　フレームすうは\nいどうそくどによって　ちがうんだ。\n\n\n32フレームで\nslowは　1マス\nnormalは　2マス\nfastは　4マス　すすむことができる。\nちなみに　イベントタイプは　npc%eventに\nしておかないと　かいわのあとに　うごきはじめ\nしかも　おうふく　してくれないよ。\n\nえ?　ぼく?　いやだなあ。\nたからばこが　うごくわけ　ないじゃない。
+active 2015
+active 2017
+active 2019
+chg_speed 2015 not_move
+chg_speed 2017 not_move
+chg_speed 2019 not_move
+chg_npc_dir 2015 right
+chg_npc_dir 2017 right
+chg_npc_dir 2019 right

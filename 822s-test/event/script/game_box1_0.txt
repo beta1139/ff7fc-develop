@@ -1,0 +1,8 @@
+set_flag_wall 2031
+wait_talk
+inactive 2031
+chg_npc_dir 2031 up
+set_eternal_event
+msg ゲームがしたい?　それなら　ひだりの　おとこの\nひとに　はなしかけてね。
+chg_npc_dir 2031 down
+active 2031

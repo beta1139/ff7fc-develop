@@ -1,0 +1,27 @@
+set_flag_wall 2011
+wait_talk
+inactive 2011
+set_eternal_event
+msg きみに　がめんエフェクトの　こうかを\nおしえてあげよう。
+screen_effect green
+msg2 80 これが\nscreen%effect green
+screen_effect off
+sleep 32
+screen_effect red
+msg2 80 これが\nscreen%effect red
+screen_effect off
+sleep 32
+screen_effect blue
+msg2 80 これが\nscreen%effect blue
+screen_effect off
+sleep 32
+flush
+flush
+sleep 32
+msg これが　flush\n2かい　いれてみた。
+fadeout
+sleep 80
+fadein
+sleep 80
+msg これが\nfadeoutとfadein\n\n\nいまのところ　つかえるのは　これだけだ。\nちなみに screen%effectちゅうは\nmsgで　メッセージを　いれると　がめんの　いろが\nふつうに　もどる。\nそこで　msg2で　メッセージをひょうじするわけだが\nmsg2のあとに　なんフレームひょうじするか\nせっていしなければ　ひょうじが　おわらないのだ。\nわすれんようにな。
+active 2011

@@ -1,0 +1,39 @@
+wait_talk
+msg どこからともなく　こえが　きこえてくる……
+play_se appear.wav
+screen_effect green
+sleep 48
+msg2 160 ふうじられしちからを　もとめるならば\n3つの　ほのおを　ともし\nおおぞらに　まことの　なまえを　つげよ……
+sleep 48
+screen_effect off
+kill 50013
+kill 50014
+kill 50101
+kill 50102
+kill 50103
+kill 50104
+kill 50105
+kill 50106
+kill 50107
+kill 50108
+kill 50109
+kill 50110
+kill 50111
+kill 50112
+kill 50200
+create event_generator 50113 5 11 12 17 1 0 @orb_fire_1.txt
+create event_generator 50114 5 13 14 17 1 0 @orb_fire_2.txt
+create event_generator 50115 5 14 16 17 1 0 @orb_fire_3.txt
+create event_generator 50116 5 13 18 17 1 0 @orb_fire_4.txt
+create event_generator 50117 5 11 20 17 1 0 @orb_fire_5.txt
+create event_generator 50118 5 9 21 17 1 0 @orb_fire_6.txt
+create event_generator 50119 5 7 20 17 1 0 @orb_fire_7.txt
+create event_generator 50120 5 5 18 17 1 0 @orb_fire_8.txt
+create event_generator 50121 5 4 16 17 1 0 @orb_fire_9.txt
+create event_generator 50122 5 5 14 17 1 0 @orb_fire_10.txt
+create event_generator 50123 5 7 12 17 1 0 @orb_fire_11.txt
+create event_generator 50124 5 9 11 17 1 0 @orb_fire_12.txt
+create event_generator 50201 5 9 4 17 1 0 @art_boss_1.txt
+create event_generator 50202 5 9 4 17 1 0 @art_boss_1.txt
+create event_generator 50203 5 9 4 17 1 0 @art_boss_1.txt
+create event_generator 50213 5 9 4 17 1 0 @art_true.txt

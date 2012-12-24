@@ -1,0 +1,17 @@
+set_flag_wall 2039
+wait_talk
+chg_npc_dir 2039 up
+play_se true1.wav
+sleep 4
+play_se true2.wav
+sleep 4
+play_se true1.wav
+sleep 4
+play_se true2.wav
+sleep 4
+play_se true1.wav
+sleep 4
+play_se true2.wav
+msg あたり……\nすえっこの　たからばこは　ワタシ……。\n\n\n……クリア　おめでとう……\nひだりのオトコに　はなしかけるといい……
+create event_generator 20351 2 14 25 17 1 0 @game_box5_3.txt
+create event_generator 20281 2 9 25 17 1 0 @game_clear.txt

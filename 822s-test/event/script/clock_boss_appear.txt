@@ -1,0 +1,119 @@
+wait_talk
+kill 50033
+kill 50034
+play_se appear.wav
+screen_effect green
+sleep 64
+msg2 80 \n　　　　　ふうじられしちからを　えんとする\n　　　　　　　ものどもに　さばきを……
+sleep 24
+play_se magicfire.wav
+create event_generator 50101 5 11 12 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50102 5 13 14 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50103 5 14 16 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50104 5 13 18 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50105 5 11 20 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50106 5 9 21 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50107 5 7 20 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50108 5 5 18 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50109 5 4 16 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50110 5 5 14 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50111 5 7 12 16 1 0 @dummy.txt
+sleep 4
+play_se magicfire.wav
+create event_generator 50112 5 9 11 16 1 0 @dummy.txt
+sleep 32
+kill 50101
+kill 50102
+kill 50103
+kill 50104
+kill 50105
+kill 50106
+kill 50107
+kill 50108
+kill 50109
+kill 50110
+kill 50111
+kill 50112
+sleep 16
+play_se magicfire.wav
+create event_generator 50101 5 11 14 16 1 0 @dummy.txt
+create event_generator 50102 5 12 16 16 1 0 @dummy.txt
+create event_generator 50103 5 11 18 16 1 0 @dummy.txt
+create event_generator 50104 5 9 19 16 1 0 @dummy.txt
+create event_generator 50105 5 7 18 16 1 0 @dummy.txt
+create event_generator 50106 5 6 16 16 1 0 @dummy.txt
+create event_generator 50107 5 7 14 16 1 0 @dummy.txt
+create event_generator 50108 5 9 13 16 1 0 @dummy.txt
+sleep 16
+kill 50101
+kill 50102
+kill 50103
+kill 50104
+kill 50105
+kill 50106
+kill 50107
+kill 50108
+sleep 16
+play_se magicfire.wav
+create npc_event 50101 5 10 15 16 1 0 none
+create npc_event 50102 5 10 16 16 1 0 none
+create npc_event 50103 5 10 17 16 1 0 none
+create npc_event 50104 5 9 17 16 1 0 none
+create npc_event 50105 5 8 17 16 1 0 none
+create npc_event 50106 5 8 16 16 1 0 none
+create npc_event 50107 5 8 15 16 1 0 none
+create npc_event 50108 5 9 15 16 1 0 none
+sleep 32
+screen_effect off
+flush
+boss_encount 3
+sleep 64
+kill 50101
+kill 50102
+kill 50103
+kill 50104
+kill 50105
+kill 50106
+kill 50107
+kill 50108
+kill 50045
+sleep 32
+create event_generator 50101 5 11 12 17 1 0 @orb_def.txt
+create event_generator 50102 5 13 14 17 1 0 @orb_def.txt
+create event_generator 50103 5 14 16 17 1 0 @orb_def.txt
+create event_generator 50104 5 13 18 17 1 0 @orb_def.txt
+create event_generator 50105 5 11 20 17 1 0 @orb_def.txt
+create event_generator 50106 5 9 21 17 1 0 @orb_def.txt
+create event_generator 50107 5 7 20 17 1 0 @orb_def.txt
+create event_generator 50108 5 5 18 17 1 0 @orb_def.txt
+create event_generator 50109 5 4 16 17 1 0 @orb_def.txt
+create event_generator 50110 5 5 14 17 1 0 @orb_def.txt
+create event_generator 50111 5 7 12 17 1 0 @orb_def.txt
+create event_generator 50112 5 9 11 17 1 0 @orb_def.txt
+sleep 32
+play_se materia_drop.wav
+create treasure_item 50500 5 11 16 2 1 0 4020
+sleep 16
+msg とけいから　なにかが　こぼれおちた。
+create event_generator 50052 5 9 16 17 1 0 @clock_end_set.txt
+create npc 50060 5 11 22 84 1 1 あそんでくれて　ありがとう。\nちょっと　むずかしかったかもしれないな。\n\n\nもう　しくみを　せつめいできないぐらい\nふくざつになっちゃったから　どうやって\nうごいているかは　スクリプトのファイルを\nのぞいて　かんがえてね。

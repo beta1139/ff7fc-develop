@@ -1,0 +1,6 @@
+set_flag_wall 2035
+wait_talk
+chg_npc_dir 2035 up
+set_eternal_event
+msg なんて　みるめのない　ヤロウだ！\nまあ　また　きなよ。　フタとじて　まってるからさ。
+chg_npc_dir 2035 down

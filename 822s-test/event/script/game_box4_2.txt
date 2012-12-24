@@ -1,0 +1,9 @@
+set_flag_wall 2037
+wait_talk
+chg_npc_dir 2037 up
+play_se true1.wav
+sleep 4
+play_se true2.wav
+msg ごめいとう。\nわたくしが　たからばこ　よんじょでございます。
+create event_generator 20341 2 13 25 17 1 0 @game_box4_3.txt
+create event_generator 20352 2 14 25 17 1 0 @game_box5_2.txt

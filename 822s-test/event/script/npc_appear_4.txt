@@ -1,0 +1,5 @@
+wait_same_pos
+kill 20451
+kill 20421
+kill 20431
+create event_generator 2041 2 5 19 17 1 0 @npc_appear.txt

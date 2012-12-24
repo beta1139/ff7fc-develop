@@ -1,0 +1,5 @@
+set_flag_wall 2035
+wait_talk
+chg_npc_dir 2035 up
+set_eternal_event
+msg たからばこ　さんじょ\n「ねくらヤロウかとおもったが　あんがい　おんなを\n　みるめが　あるんだな。\n\n　そんじゃ　はやいとこ　のこりもチャチャッと\n　えらんじまいな。\n

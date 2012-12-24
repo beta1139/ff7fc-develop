@@ -1,0 +1,4 @@
+wait_talk
+play_se magicfire.wav
+create npc2 50128 5 13 18 16 1 0 4
+create event_generator 50206 5 9 4 17 1 0 @art_boss_1.txt

@@ -1,0 +1,4 @@
+set_flag_wall 2017
+wait_talk
+set_eternal_event
+msg チョコボだって　あるきたい　ときも　あるんだよ。

@@ -1,0 +1,18 @@
+set_flag_wall 2028
+wait_talk
+inactive 2028
+chg_npc_dir 2028 up
+msg てきや\n「たからばこあて　ゲームだよ！\n\n\n　ここに　たからばこ　5しまいがいる。\n　ちょうじょから　じゅんばんに　たからばこを\n　あけられたら　ごうかしょうひん　プレゼント！\n\n　それじゃあ　ゲーム　スタート！
+kill 2030
+kill 2032
+kill 2034
+kill 2036
+kill 2038
+create event_generator 20312 2 10 25 17 1 0 @game_box1_2.txt
+create event_generator 20323 2 11 25 17 1 0 @game_box2_1.txt
+create event_generator 20333 2 12 25 17 1 0 @game_box3_1.txt
+create event_generator 20343 2 13 25 17 1 0 @game_box4_1.txt
+create event_generator 20353 2 14 25 17 1 0 @game_box5_1.txt
+create event_generator 20283 2 9 25 17 1 1 @game_playing.txt
+chg_npc_dir 2028 right
+inactive 2028

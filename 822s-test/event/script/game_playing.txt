@@ -1,0 +1,8 @@
+set_flag_wall 2028
+wait_talk
+inactive 2028
+set_eternal_event
+chg_npc_dir 2028 up
+msg ‚Ä‚«‚â\nu‚³‚ ‚³‚ @‚Í‚â‚­‚µ‚Ë‚¦‚Æ@‚¶‚©‚ñ‚¬‚ê‚É‚·‚é‚º?
+chg_npc_dir 2028 right
+active 2028

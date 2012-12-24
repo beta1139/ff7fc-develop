@@ -1,0 +1,3 @@
+wait_talk
+set_eternal_event
+msg とけいは　しずかに　ときを　つげている。

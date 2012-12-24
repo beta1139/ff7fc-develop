@@ -1,0 +1,4 @@
+wait_talk
+play_se magicfire.wav
+create npc2 50133 5 4 16 16 1 0 9
+kill 50203

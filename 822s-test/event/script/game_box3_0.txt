@@ -1,0 +1,8 @@
+set_flag_wall 2035
+wait_talk
+inactive 2035
+chg_npc_dir 2035 up
+set_eternal_event
+msg ゲームしてえなら　ひだりのおとこに　はなしかけな。
+chg_npc_dir 2035 down
+active 2035

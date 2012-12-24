@@ -1,0 +1,9 @@
+set_flag_wall 2035
+wait_talk
+chg_npc_dir 2035 up
+play_se true1.wav
+sleep 4
+play_se true2.wav
+msg あたりだ!\nおれが　さんじょの　たからばこさ。\nみためよりも　わかいだろ？\n
+create event_generator 20331 2 12 25 17 1 0 @game_box3_3.txt
+create event_generator 20342 2 13 25 17 1 0 @game_box4_2.txt

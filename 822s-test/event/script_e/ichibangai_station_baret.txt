@@ -1,0 +1,8 @@
+wait_same_pos
+chg_char_dir right
+msg ÅuCmon newcomer.\nÅ@Follow me.
+move_npc 108 right 8
+sleep 144
+kill 108
+set_flag 1 1
+set_flag 0 3

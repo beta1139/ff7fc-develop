@@ -1,0 +1,22 @@
+set_flag_wall 2005
+wait_talk
+inactive 2005
+set_eternal_event
+msg せいっ!
+sleep 32
+create npc_event 90000 2 3 12 8 1 2 none
+sleep 16
+create npc_event 90001 2 5 12 8 1 2 none
+sleep 16
+create npc_event 90002 2 3 14 8 1 2 none
+sleep 16
+create npc_event 90003 2 5 14 8 1 2 none
+sleep 48
+encount 1
+sleep 32
+kill 90000
+kill 90001
+kill 90002
+kill 90003
+msg ……へっくしょん！\n\n\n\n……エンカウントのちょくごに　msgをいれると\nせんとうが　キャンセルされちまうのさ\n\n\nencountとmsgのあいだに\nsleepを100ほど　いれれば　うまく\nせんとうにはいるはずだ。
+active 2005

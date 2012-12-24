@@ -1,0 +1,4 @@
+set_flag_wall 2019
+wait_talk
+set_eternal_event
+msg ブルルルルル!\nだれよりも　はやく。　それが　クルマの\nサガってやつさ。

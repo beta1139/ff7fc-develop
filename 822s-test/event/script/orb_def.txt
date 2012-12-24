@@ -1,0 +1,3 @@
+wait_talk
+set_eternal_event
+msg ‚Ù‚¤‚¬‚å‚­‚Í@‚ ‚â‚µ‚­@‚©‚ª‚â‚«‚ğ‚Í‚È‚Á‚Ä‚¢‚éB

@@ -1,0 +1,7 @@
+wait_talk
+set_eternal_event
+inactive 2028
+chg_npc_dir 2028 up
+msg てきや\n「きょうは　もう　みせじまいだ。\n　でんげんを　きってから　またきてくんな。
+chg_npc_dir 2028 right
+active 2028

@@ -1,0 +1,6 @@
+set_flag_wall 2003
+wait_talk
+inactive 2003
+set_eternal_event
+msg ヒッヒッヒッ。　いま　ワシは\nmsgコマンドで　しゃべっておる。\n\n\nイベントを　ふたつ　つくらにゃならんから\nただ　しゃべるだけの　npcには　つかわんことじゃ。\n\n\nアイタタタタ……。\nねちがえて　けさから　くびがうごかせんのじゃ！
+active 2003

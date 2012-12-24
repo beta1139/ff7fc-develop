@@ -1,0 +1,363 @@
+=============== トリガー系 ===============
+wait_same_pos
+  キャラとマップ上の座標が同じになるまで待つ
+
+wait_talk
+  話しかけられるまで待つ
+
+wait_event_invalid (event_idx)
+  event_idxのイベントが消えるまで待つ
+
+wait_target_talked (event_idx)
+  event_idxのイベントとの会話が終わるのを待つ
+
+wait_target_talk (event_idx)
+  event_idxのイベントが話しかけられるのを待つ
+
+=============== 状態制御系 ===============
+sleep (フレーム数)
+  スクリプトの処理を指定フレーム数分止める
+
+end
+  スクリプトの処理を終了する
+
+=============== 条件分岐系 ===============
+if_flag (flag_id) (val)
+(処理)
+fi
+  flag_idのイベントフラグの値がvalと等しければ処理を実行する
+
+if_party_mem (idx)
+(処理)
+fi
+  idxのキャラがパーティメンバーであれば処理を実行する
+  idxの値の対応は以下の通り
+  0: クラウド, 1: バレット, 2: ティファ, 3: エアリス, 
+  4: レッド13, 5: ユフィ, 6: ケットシー, 7: シド, 8: ヴィンセント
+
+if_active_mem (idx)
+(処理)
+fi
+  idxのキャラが戦闘参加メンバーであれば処理を実行する
+
+if_char_img (idx)
+(処理)
+fi
+  idxのキャラがマップ画面表示中キャラであれば処理を実行する
+
+if_owned_item (idx)
+(処理)
+fi
+  idxのアイテムを所有していれば処理を実行する
+
+=============== 繰り返し ===============
+loop (回数) 
+(処理)
+pool
+  指定した回数だけ処理を繰り返し実行する
+
+=============== エンカウント系 ===============
+encount (モンスターパーティID)
+  エンカウントさせる
+
+boss_encount (モンスターパーティID)
+  エンカウントさせる。BGMがボス戦のものとなる
+
+=============== キャラ操作系 ===============
+move_char (direction) (移動量)
+  キャラを移動させる
+
+step_char (回数)
+  キャラを足踏みさせる
+
+chg_char_dir (direction)
+  キャラの向きを変える
+
+add_party_mem (idx)
+  パーティメンバーを追加する。idxの値の対応は以下の通り
+  0: クラウド, 1: バレット, 2: ティファ, 3: エアリス, 
+  4: レッド13, 5: ケットシー, 6: ユフィ, 7: シド, 8: ヴィンセント
+
+del_party_mem (idx)
+  パーティメンバーを削除する。idxの値の対応は以下の通り
+  0: クラウド, 1: バレット, 2: ティファ, 3: エアリス, 
+  4: レッド13, 5: ケットシー, 6: ユフィ, 7: シド, 8: ヴィンセント
+
+draw_char (on/off)
+  キャラ表示/非表示切り替え
+
+warp (map_id) (x) (y) (direction)
+  キャラの位置をワープさせる
+
+warp_ff3 (map_id) (x) (y) (direction)
+  キャラの位置をFF3風エフェクトでワープさせる
+
+chg_char_img (idx)
+  キャラ表示切替。idxには0~2を指定可。ステータス画面のキャラの並びに対応
+
+chg_char_img_tmp (idx)
+  キャラ画像を一時的に表示切替。chg_npc_imgのようにキャラの画像を変更
+  スクリプトの処理が終わると元の画像に戻る
+
+reset_char_img_tmp
+  chg_char_img_tmpで画像を切り替えている場合に、元の画像に戻したくなったら使う
+  使わなくても、スクリプトの処理が終わると勝手に元の画像に戻る
+
+backup_char_img
+  現在表示中のキャラのidxを内部で保存
+
+restore_char_img
+  内部に保存していたidxでキャラ表示切替
+
+chg_event_move_char_speed (speed)
+  イベント中のキャラの移動速度変更
+  slow, normal, fastのみ指定可
+
+set_slide_char_flag
+  キャラが体の向きを変えずに歩行アニメなしで移動するようになる
+
+reset_slide_char_flag
+  set_slide_char_flagの解除
+
+set_slide_walk_char_flag
+  キャラが向きを変えずに移動するようになる
+
+reset_slide_walk_char_flag
+  set_slide_walk_char_flagの解除
+
+jump_char (direction) (移動量)
+  キャラを指定の方向へ移動量の分ジャンプで移動させる
+
+jump_char_target_pos (x) (y)
+  キャラを指定の座標へジャンプで移動させる
+
+enable_char_chg
+  セレクトボタンによるキャラチェンジ可能にする
+  (デフォルトはキャラチェンジ不可能)
+
+disable_char_chg
+  セレクトボタンによるキャラチェンジ不可能にする
+
+chg_char_state_move
+  イベント中でもキャラをキー操作可能にする
+
+chg_char_state_event
+  イベント中にキャラをキー操作不可能にする
+
+=============== イベント操作系 ===============
+create (event_type) (event_id) (map_id) (x) (y) (image_id) (direction) (speed) (param)
+  イベントを生成する。paramは一行で記述すること。改行は\nと記述する
+  なお、paramに@で始まる文字列を記述した場合には、@の後の文字列をファイル名とみなし、
+  "./event/script/ファイル名"の中身を読み込む
+
+kill (event_id) 
+  イベントを削除する
+  ※event_idのイベントが存在しない場合はデバッグ出力後強制終了します
+
+kill_through (event_id) 
+  イベントを削除する
+  ※event_idのイベントが存在しない場合でも強制終了しない
+
+move_npc (event_id) (direction) (移動量)
+  event_idで指定したNPCを移動させる
+
+slide_npc (event_id) (direction) (移動量)
+  event_idで指定したNPCを体の向きを変えずにdirectionの方向へスライドさせる
+
+slide_walk_npc (event_id) (direction) (移動量)
+  event_idで指定したNPCを体の向きを変えずにdirectionの方向へ移動させる
+
+step_npc (event_id) (回数)
+  キャラを足踏みさせる
+
+chg_npc_dir (event_id) (direction)
+  NPCの向きを変える
+
+chg_type (event_id) (type)
+  typeのパラメータを変更する
+
+chg_speed (event_id) (speed)
+  speedのパラメータを変更する
+
+chg_param (event_id) (string)
+  paramのパラメータを変更する
+
+inactive (event_id)
+  動きを止める
+
+active (event_id)
+  動ける状態にする
+
+set_eternal_event
+  イベントが消滅しないようにする
+
+set_flag_wall (event_id)
+  当たり判定フラグを有効にする
+
+reset_talked_flag
+  NPCに話しかけた後に立つフラグをリセットする
+  (同じNPCに対してwait_target_talkedを再使用するときなど使える)
+
+reset_talk_flag
+  NPCに話しかけた際に立つフラグをリセットする
+  (同じNPCに対してwait_target_talkを再使用するときなど使える)
+
+recover_talked_npc_dir
+  npc_shopに話しかけた後、話しかける前の方向に戻す
+  会話後に足踏みを開始させる
+
+backup_npc_dir (event_id)
+  event_idの方向を保存
+
+restore_npc_dir (event_id)
+  event_idの方向を保存しておいた方向で設定
+
+set_talk_npc (event_id)
+  会話中のNPCのIDをセット
+  (会話ウィンドウの上にNPCを表示させるため)
+
+reset_talk_npc
+  会話中のNPCのIDをリセット
+  (set_talk_npcを使用した場合は必ず会話後にリセットすること)
+
+chg_dir_to_char (event_id)
+  event_idのNPCの向きをキャラの方向に向ける
+
+set_npc_pos (event_id) (map_id) (x) (y)
+  event_idのNPCの座標を指定した位置に飛ばす
+
+jump_npc (event_id) (direction) (移動量)
+  event_idのNPCをdirectionの方向へ移動量だけジャンプさせる
+
+jump_npc_target_pos (event_id) (x) (y)
+  event_idのNPCを座標(x, y)の位置にジャンプで移動させる
+
+chg_npc_img (event_id) (image_id)
+  event_idのNPCの画像をimage_idの画像に変更
+
+set_slide_npc_flag (event_id)
+  npcが体の向きを変えずに歩行アニメなしで移動するようになる
+
+reset_slide_npc_flag (event_id)
+  set_slide_npc_flagの解除
+
+set_slide_walk_npc_flag (event_id)
+  npcが体の向きを変えずに移動するようになる
+
+reset_slide_walk_npc_flag (event_id)
+  set_slide_walk_npc_flagの解除
+
+door_open (event_id)
+  グラフィックをドアがオープンしたものに変える
+  (ただしevent_typeがmap_doorである場合に限る)
+  
+door_close (event_id)
+  グラフィックをドアがクローズしたものに変える
+  (ただしevent_typeがmap_doorである場合に限る)
+
+chg_npc_y_offset (event_id) (offset)
+  キャラ表示のＹ座標のずらし分を設定
+
+=============== パラメータ操作系 ===============
+add_gil (val)
+  ギルを増やす
+
+sub_gil (val)
+　ギルを減らす
+
+add_likability (idx) (val)
+　好感度を上げる
+  idxの値の対応は以下の通り
+  0: クラウド, 1: バレット, 2: ティファ, 3: エアリス, 
+  4: レッド13, 5: ユフィ, 6: ケットシー, 7: シド, 8: ヴィンセント
+
+sub_likability (idx) (val)
+　好感度を下げる
+
+recover_active_chara
+  active memberのHP MPを全回復させる
+
+=============== 画面エフェクト系 ===============
+screen_effect (color)
+  画面全体にエフェクトをかける。colorにはred blue green offが指定可
+  使用後はoff指定でエフェクト解除すること
+
+flush
+  短時間画面全体に白い矩形を描画する
+
+fadeout
+  フェードアウト
+
+fadein
+  フェードイン
+
+set_map_draw_y_offset
+  画面描画位置のＹ座標のずらし分を設定
+
+inc_map_draw_y_offset
+  画面描画位置のＹ座標のずらし分を1インクリメント
+
+dec_map_draw_y_offset
+  画面描画位置のＹ座標のずらし分を1デクリメント
+
+=============== サウンド系 ===============
+play_se (path)
+  SEを再生させる。pathには./sound/se/の部分は不要
+
+play_bgm
+  マップのBGMの再生を開始
+
+play_event_bgm (path)
+  pathで指定したBGMの再生を開始
+  pathには./sound/bgm/の部分は不要
+
+stop_se
+  SEの再生を停止
+
+stop_bgm
+  マップのBGMの再生を停止
+
+=============== メッセージ表示系 ===============
+msg (テキスト)
+  FF3風のウィンドウにテキスト表示
+  ※テキストは一行で記述すること。改行は\nと記述する
+
+msg2 (テキスト)
+  黒いウィンドウにテキスト表示
+  ※テキストは一行で記述すること。改行は\nと記述する
+
+set_text (line) (テキスト)
+  lineで指定した行にテキストを表示
+
+set_text_alpha (line) (alpha)
+  lineで指定した行に表示するテキストのアルファを設定
+  0～100の値を設定する
+
+clear_text (line)
+  lineで指定した行のテキストをクリア
+
+set_text_col (line) (start_pos) (end_pos) (col)
+  set_textで設定したテキストの表示色を設定する
+  (colは、While: 0, Red: 1, Green: 2, Blue: 3 のみ指定可)
+
+=============== ショップ系 ===============
+open_item_shop (id)
+open_weapon_shop (id)
+open_armor_shop (id)
+open_materia_shop (id)
+open_acce_shop (id)
+  ショップ画面を開く
+  idには./item/以下のテキストに記述してある
+  各アイテムのIDを'/'区切りで記述する
+
+=============== その他 ===============
+set_flag (ID) (value)
+  イベントフラグに値をセットする
+  フラグの意味については別紙"イベントフラグ管理表.xls"に記載
+
+start_countdown (min)
+  カウントダウンイベントを開始する
+
+end_countdown
+  カウントダウンイベントを終了する
+

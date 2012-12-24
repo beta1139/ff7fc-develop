@@ -1,0 +1,38 @@
+set_flag_wall 95080
+wait_talk
+inactive 95081
+set_eternal_event
+msg 『３かいまわって　ワンと　いいな
+active 95081
+chg_speed 95081 fast
+move_npc 95081 left 1
+sleep 7
+move_npc 95081 down 2
+sleep 15
+move_npc 95081 right 2
+sleep 15
+move_npc 95081 up 2
+sleep 15
+move_npc 95081 left 2
+sleep 15
+move_npc 95081 down 2
+sleep 15
+move_npc 95081 right 2
+sleep 15
+move_npc 95081 up 2
+sleep 15
+move_npc 95081 left 2
+sleep 15
+move_npc 95081 down 2
+sleep 15
+move_npc 95081 right 2
+sleep 15
+move_npc 95081 up 2
+sleep 15
+move_npc 95081 left 1
+sleep 7
+chg_npc_dir 95081 up
+inactive 95081
+msg ワン！
+active 95081
+chg_speed 95081 not_move

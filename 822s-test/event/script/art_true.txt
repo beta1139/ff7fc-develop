@@ -1,0 +1,37 @@
+wait_talk
+msg おおきなえが　かかっている。\nタイトルは……\n\n\nIUDICIUM\nET　INAUDAX\nET　VIATOR\n\nーさばきのひを　おそれる　ししゃー
+play_se appear_2.wav
+screen_effect red
+sleep 100
+play_se thunder.wav
+screen_effect off
+flush
+create npc 50215 5 7 1 88 1 0 1
+create npc 50216 5 8 1 88 2 0 2
+create npc 50217 5 9 1 88 0 0 0
+create npc 50218 5 10 1 88 3 0 3
+create npc 50219 5 11 1 89 1 0 1
+create npc 50220 5 7 2 89 2 0 2
+create npc 50221 5 8 2 89 0 0 3
+create npc 50222 5 9 2 89 3 0 0
+create npc 50223 5 10 2 90 1 0 0
+create npc 50224 5 11 2 90 2 0 0
+flush
+flush
+kill 50113
+kill 50114
+kill 50116
+kill 50117
+kill 50119
+kill 50120
+kill 50122
+kill 50123
+kill 50124
+kill 50127
+kill 50130
+kill 50133
+sleep 64
+msg うしろから　ときを　きざむおとが　きこえてくる……
+create npc 50214 5 9 4 17 1 0 おおきなえが　かかっている。\nタイトルは……\n\n\nIUDICIUM\nET　INAUDAX\nET　VIATOR\n\nーさばきのひを　おそれる　ししゃー
+create npc2 50045 5 9 15 86 1 0 none
+create event_generator 50032 5 9 16 17 1  @clock_boss_appear_set.txt

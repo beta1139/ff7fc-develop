@@ -1,0 +1,6 @@
+[dbg] func_name:Sound::set_sound_handle, line:73 >>> file open error!! (./sound/bgm/1-01-Prelude.ogg)
+[dbg] func_name:Sound::set_sound_handle, line:73 >>> file open error!! (./sound/bgm/the castle.ogg)
+[dbg] func_name:Sound::set_sound_handle, line:73 >>> file open error!! (./sound/bgm/1-02-Bombing_Mission.ogg)
+[dbg] func_name:Event::create_event_data_from_event_data, line:580 >>> event_id:90000 is already exist
+[dbg] func_name:Event::create_event_data_from_event_data, line:580 >>> event_id:90000 is already exist
+[dbg] func_name:Event::create_event_data_from_event_data, line:580 >>> event_id:90000 is already exist
