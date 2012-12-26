@@ -3,7 +3,7 @@ wait_target_talked 160
 reset_talked_flag 160
 if_flag 3 0
 add_party_mem 1
-warp 9 8 15 up
+warp 10 8 15 up
 set_flag 0 0
 fi
 if_flag 3 1
