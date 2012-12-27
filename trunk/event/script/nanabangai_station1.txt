@@ -1,6 +1,8 @@
 wait_same_pos
 play_se train_noise_close.ogg
 move_char left 20
+chg_npc_y_offset 1730 0
+chg_npc_y_offset 1731 0
 chg_npc_img 1775 5
 chg_npc_img 1776 11
 chg_npc_img 1777 12

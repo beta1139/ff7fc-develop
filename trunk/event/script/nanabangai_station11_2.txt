@@ -1,0 +1,32 @@
+wait_same_pos
+kill 1725
+kill 1727
+kill 1728
+kill 1729
+chg_speed 1722 normal
+chg_speed 1723 normal
+chg_speed 1724 normal
+chg_npc_dir 1722 down
+chg_npc_dir 1723 down
+chg_char_dir up
+sleep 16
+chg_npc_dir 1724 up
+move_npc 1722 right 1
+sleep 16
+kill 1724
+move_npc 1723 left 1
+move_npc 1722 up 1
+sleep 16
+kill 1722
+move_npc 1723 up 1
+sleep 16
+kill 1723
+chg_type 1706 npc_event
+chg_speed 1706 normal
+move_npc 1706 left 4
+sleep 48
+chg_char_state_move
+sleep 16
+chg_npc_dir 1706 down
+chg_type 1706 npc
+chg_speed 1706 not_move

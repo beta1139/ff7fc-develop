@@ -4,6 +4,7 @@ sleep 16
 chg_char_dir down
 chg_type 2006 npc_event
 chg_speed 2006 normal
+set_flag_wall 2006
 move_npc 2006 right 2
 sleep 16
 chg_npc_dir 2009 right
@@ -22,6 +23,8 @@ sleep 4
 chg_npc_dir 2006 left
 sleep 4
 pool
+create event_generator 1918 19 1 19 17 0 0 @nanabangai7_3.txt
+create event_generator 1919 19 1 20 17 0 0 @nanabangai7_4.txt
 chg_char_state_move
 move_npc 2006 right 1
 sleep 16

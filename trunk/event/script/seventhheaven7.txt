@@ -93,19 +93,13 @@ msg バレット\n「２０００だ！
 sleep 24
 chg_npc_dir 2201 up
 sleep 16
-create npc_event 2207 22 5 10 0 0 1 none
-draw_char off
-chg_npc_dir 2207 down
-chg_npc_img 2207 103
-sleep 12
-chg_npc_dir 2207 left
-sleep 16
-move_npc 2202 right 1
-sleep 8
-chg_npc_img 2207 0
 chg_char_dir down
-draw_char on
-kill 2207
+chg_char_img_tmp 103
+sleep 32
+chg_char_dir left
+sleep 48
+chg_char_dir down
+reset_char_img_tmp
 sleep 8
 move_npc 2202 down 1
 sleep 32
@@ -116,12 +110,31 @@ chg_char_dir up
 sleep 48
 fadeout
 sleep 8
+kill_through 1710
+kill_through 1712
+kill_through 1714
+kill_through 1715
+kill_through 1717
+kill_through 1706
+kill_through 1707
+kill_through 1711
+kill_through 1713
+kill_through 1716
+kill_through 1900
+kill_through 1901
+kill 1906
+kill 1907
+kill 1902
+kill 1908
 kill 2201
 kill 2202
 create npc_event 2020 20 36 19 34 0 0 none
 create npc_event 2021 20 37 18 35 2 0 none
 create npc_event 2022 20 36 18 36 1 0 none
 create npc_event 2010 20 26 22 78 1 0 none
+set_flag_wall 2020
+set_flag_wall 2021
+set_flag_wall 2022
 kill_through 2015
 kill_through 2016
 kill_through 2017
@@ -140,13 +153,24 @@ stop_bgm
 draw_char off
 sleep 48
 play_se good_night_until_tomorrow.ogg
+create npc 1706 17 10 4 94 1 0 「おはようございます\n　いちや　あけても　あいかわらず　ですね\n\n\n　けが　しないよう　おきをつけて\n　いってらっしゃい
+create npc3 1707 17 3 6 71 3 0 「ぼく　もう　たえられない
+create npc 1906 19 8 26 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
+create npc2 1907 19 7 26 32 0 0 
 create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
 create npc 2007 20 32 20 88 3 0 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
 create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
 create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
-create npc 2601 26 3 8 90 3 0 『なにが　しりたいんだ？\n\n\n\n#4\n　　きろくを　のこすには？\n　　みかたを　かいふくするには？\n　　まほうをつかった　かいふく\n　　そのた\n[[]][[]][[]][[]]
+create npc2 2601 26 3 8 90 3 0 
 sleep 32
 set_npc_pos 2602 26 6 8
+create event_generator 1718 17 1 1 17 0 0 @nanabangai_station7.txt
+create event_generator 1719 17 1 2 17 0 0 @nanabangai_station8.txt
+create event_generator 1720 17 2 1 17 0 0 @nanabangai_station9.txt
+create event_generator 1721 17 7 4 17 0 0 @nanabangai_station10.txt
+create event_generator 1913 19 1 1 17 0 0 @nanabangai5.txt
+create event_generator 1916 19 1 19 17 0 0 @nanabangai7_1.txt
+create event_generator 1917 19 1 20 17 0 0 @nanabangai7_2.txt
 create event_generator 2023 20 1 1 17 0 0 @nanabangai_slum17.txt
 create event_generator 2024 20 1 2 17 0 0 @nanabangai_slum18.txt
 create event_generator 2025 20 2 1 17 0 0 @nanabangai_slum19.txt
@@ -159,6 +183,7 @@ create event_generator 2031 20 28 22 17 0 0 @nanabangai_slum21_5.txt
 create event_generator 2032 20 33 22 17 0 0 @nanabangai_slum22_1.txt
 create event_generator 2033 20 32 18 17 0 0 @nanabangai_slum22_2.txt
 create event_generator 2620 26 4 8 17 0 0 @beginner's_hall1.txt
+create event_generator 2625 26 1 1 17 0 0 @beginner's_hall4.txt
 chg_npc_img 2691 29
 chg_speed 2400 not_step
 sleep 368
