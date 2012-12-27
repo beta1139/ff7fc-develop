@@ -144,6 +144,12 @@ chg_char_state_move
 chg_char_state_event
   イベント中にキャラをキー操作不可能にする
 
+backup_char_dir
+  キャラの向きを一時的に保存
+
+restore_char_dir
+  保存しといたキャラの向きを設定
+
 =============== イベント操作系 ===============
 create (event_type) (event_id) (map_id) (x) (y) (image_id) (direction) (speed) (param)
   イベントを生成する。paramは一行で記述すること。改行は\nと記述する
