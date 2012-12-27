@@ -89,6 +89,12 @@ FF7FC Developing Version (2012/12/26 updated)
   ・ジャンプのchg_speed
 
 ■更新履歴
+  ・2012/12/27
+	・イベントスクリプトの命令追加
+	  ・backup_char_dir
+	  ・restore_char_dir
+	・マップ間ワープ中にmap_objの表示が消えることがあったバグ修正
+	・ロードでthroughのマップから始めると無音になるバグ修正
   ・2012/12/26
     ・oggファイル再生開始時にLOOPSTARTコメントを読み取り、
 	　ループ位置を設定するようにした
