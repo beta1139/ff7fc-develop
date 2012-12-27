@@ -6,4 +6,6 @@ create event_generator 2260 22 5 12 17 0 0 @seventhheaven_out1_before.txt
 fi
 if_flag 9 1
 create event_generator 2262 22 5 12 17 0 0 @seventhheaven_out2_before.txt
+chg_char_img 0
+disable_char_chg
 fi

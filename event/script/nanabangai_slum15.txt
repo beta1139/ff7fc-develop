@@ -1,16 +1,12 @@
 wait_target_talked 2601
 if_flag 3 0
 chg_char_dir down
-create npc_event 2611 26 4 8 0 1 1 none
-draw_char off
-chg_npc_img 2611 103
-sleep 12
-chg_npc_dir 2611 left
-sleep 24
-chg_npc_img 2611 0
+chg_char_img_tmp 103
+sleep 32
 chg_char_dir left
-draw_char on
-kill 2611
+sleep 48
+chg_char_dir left
+reset_char_img_tmp
 msg 「そうか　もう　ききあきちまったか…\n　ひさしぶりの　でかい　ニュースだからよ\n　さきゆきが　きになるよな
 create npc 2609 26 3 8 90 3 0 「なんだ　やっぱり　しらないのか？\n\n\n\n　なんでもよう……\n　アバランチ　とかいう　テロしゅうだんが\n　いちばんまこうろを　ばくは　したって　はなしだ\n\n　おもてむきは　はんしんらが　どうしたとかって\n　せいめいが　でてるらしいがよ\n　しんそうはな……\n\n　むさべつ　たいりょう　さつじんが\n　もくてきだって　うわささ\n\n\n　ガハハハハ！！\n\n\n\n　わらわせて　くれるじゃねぇか！？\n　うえで　ゴタゴタ　やってくれりゃよ\n　ぶきやとしては　おおだすかり　ってやつよ\n\n　このざいこの　やまも　はけちまえば　いいがな
 kill 2601

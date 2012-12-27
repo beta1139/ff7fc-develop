@@ -1,5 +1,5 @@
 wait_same_pos
-kill 2033
+kill_through 2033
 chg_char_state_move
 chg_speed 2020 normal
 chg_speed 2021 normal

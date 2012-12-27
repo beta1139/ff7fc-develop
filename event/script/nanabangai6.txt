@@ -1,0 +1,29 @@
+wait_target_talk 1914
+chg_type 1906 npc_event
+chg_speed 1906 normal
+chg_type 1914 npc_event
+chg_speed 1914 normal
+chg_npc_dir 1914 right
+step_npc 1914 1
+sleep 16
+msg 「ソルジャーの　しゅっきんかぁ\n　ひさしぶり　ですよね\n　ねえ　せんぱい\n\n　ぼく　ソルジャーの　しけん\n　おっこち　ちゃったんですよ\n　このはなし　しましたっけ？
+step_npc 1914 5
+sleep 80
+chg_npc_dir 1906 left
+msg 「おう！！\n　ペラペラペラペラ……
+chg_speed 1906 fast
+jump_npc 1906 same 2
+sleep 32
+step_npc 1906 4
+msg 「すこしは　だまって　しごとできねえのか！
+chg_npc_dir 1906 up
+sleep 48
+chg_npc_dir 1914 left
+sleep 16
+msg 「……しゅん
+sleep 16
+chg_type 1906 npc
+chg_speed 1906 not_move
+create npc3 1907 19 7 26 32 2 0 「アバランチと　せんぱい……\n　どっちが　こわいんだろ？\n\n\n　きっと　せんぱいだな
+kill 1914
+chg_speed 1907 not_step

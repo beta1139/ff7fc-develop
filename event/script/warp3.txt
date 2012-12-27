@@ -18,11 +18,18 @@ draw_char off
 chg_npc_img 2251 2
 sleep 48
 play_se good_night_until_tomorrow.ogg
+kill 1700
 kill 1710
 kill 1706
+kill 1900
+kill 1901
 kill 1903
 kill 1904
 kill 1905
+kill 1906
+kill 1907
+kill 1902
+kill 1908
 kill 1910
 kill 1911
 kill 1912
@@ -41,10 +48,13 @@ create npc_event 2020 20 36 19 34 0 0 none
 create npc_event 2021 20 37 18 35 2 0 none
 create npc_event 2022 20 36 18 36 1 0 none
 create npc_event 2010 20 26 22 78 1 0 none
-create npc 2006 20 33 20 71 2 0 「ウウ……よっぱらっちゃった\n　てづくりカクテル　おいしいんだもんなあ\n　きついんだもんなあ
-create npc 2007 20 32 20 88 3 0 「ねえ　ねえ　しってる？\n\n\n\n#2\n　　きょうみないね\n　　しらないよ\n\n\n[[「あ　そ！]]\n[[「ニュースの　そくほうが　はいったのよ\n　うえで　ばくだん　テロが　あったって\n　いうじゃない　それも　まこうろの　ばくはつ！！\n　これが　どんなに　たいへんな　ことか　わかる？\n#2\n　　きょうみないね\n　　わからないよ\n\n\n[[「あ　そ！]]\n[[「じじょうつうの　わたしに　いわせればね\n　ミッドガルの　でんりょくが　マヒしちゃったら\n　コンピューターとか　しんごうとか　いろいろ\n　とまっちゃうじゃない\n　けいざいてき　そんしつは　んーー\n　１０おくギルは　くだらないし\n　それに！！　たくさんの　つみなきひとびとが\n　しんだと　おもうのよ\n　ばくはが　まよなかだったから　まだいいわ\n　ねむってたひとは　そのまま　めがさめない　だけね]]]]
-create npc 2008 20 33 21 65 0 0 「ばくはつ！！　ばくはつ！！\n　スゲッー！！\n　アバランチ　かっくいー！！
-create npc 2009 20 33 19 70 1 0 「まったくよぉ！！\n　こんやは　どうなってんだかよ！！\n\n\n　さっきまで　ずいぶん　ながく　ていでん\n　してたから　みょうだと　おもったらよ\n\n\n　うえで　まこうろ　ばくはテロが\n　おきたって　いうじゃねぇか\n\n\n　さけ　かっくらいながら　ニュースみてりゃよ\n　とつぜん　みせを　おいだされる\n　たまんねぇよなぁ！！
+set_flag_wall 2020
+set_flag_wall 2021
+set_flag_wall 2022
+create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
+create npc 2007 20 32 20 88 3 0 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
+create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
+create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
 kill_through 2015
 kill_through 2016
 kill_through 2017
@@ -54,11 +64,21 @@ kill 2600
 kill_through 2608
 set_npc_pos 2602 26 6 8
 sleep 16
-chg_param 2006 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
-chg_param 2007 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
-chg_param 2008 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
-chg_param 2009 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
-chg_param 2601 『なにが　しりたいんだ？\n\n\n\n#4\n　　きろくを　のこすには？\n　　みかたを　かいふくするには？\n　　まほうをつかった　かいふく\n　　そのた\n[[]][[]][[]][[]]
+chg_type 2601 npc2
+chg_param 2601 
+create npc 1706 17 10 4 94 1 0 「おはようございます\n　いちや　あけても　あいかわらず　ですね\n\n\n　けが　しないよう　おきをつけて\n　いってらっしゃい
+create npc3 1707 17 3 6 71 3 0 「ぼく　もう　たえられない
+create npc2 1708 17 4 6 72 2 0 
+create npc 1906 19 8 26 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
+create npc2 1907 19 7 26 32 0 0 
+sleep 32
+create event_generator 1718 17 1 1 17 0 0 @nanabangai_station7.txt
+create event_generator 1719 17 1 2 17 0 0 @nanabangai_station8.txt
+create event_generator 1720 17 2 1 17 0 0 @nanabangai_station9.txt
+create event_generator 1721 17 7 4 17 0 0 @nanabangai_station10.txt
+create event_generator 1913 19 1 1 17 0 0 @nanabangai5.txt
+create event_generator 1916 19 1 19 17 0 0 @nanabangai7_1.txt
+create event_generator 1917 19 1 20 17 0 0 @nanabangai7_2.txt
 create event_generator 2023 20 1 1 17 0 0 @nanabangai_slum17.txt
 create event_generator 2024 20 1 2 17 0 0 @nanabangai_slum18.txt
 create event_generator 2025 20 2 1 17 0 0 @nanabangai_slum19.txt
@@ -71,9 +91,25 @@ create event_generator 2031 20 28 22 17 0 0 @nanabangai_slum21_5.txt
 create event_generator 2032 20 34 21 17 0 0 @nanabangai_slum22_1.txt
 create event_generator 2033 20 32 18 17 0 0 @nanabangai_slum22_2.txt
 create event_generator 2620 26 4 8 17 0 0 @beginner's_hall1.txt
+create event_generator 2625 26 1 1 17 0 0 @beginner's_hall4.txt
 chg_npc_img 2691 29
 chg_speed 2400 not_step
-sleep 400
+chg_npc_img 1751 5
+chg_npc_img 1752 11
+chg_npc_img 1753 12
+chg_npc_img 1754 13
+chg_npc_img 1755 12
+chg_npc_img 1756 13
+chg_npc_img 1757 12
+chg_npc_img 1758 13
+chg_npc_img 1759 14
+chg_npc_img 1760 10
+chg_npc_img 1761 4
+chg_npc_y_offset 1730 0
+chg_npc_y_offset 1731 0
+chg_npc_y_offset 1800 0
+chg_npc_y_offset 1801 0
+sleep 368
 recover_active_chara
 warp 23 2 8 right
 create event_generator 2240 22 8 5 17 0 0 @seventhheaven8.txt
