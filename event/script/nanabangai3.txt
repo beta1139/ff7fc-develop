@@ -5,11 +5,11 @@ sleep 8
 chg_char_dir up
 fadeout
 draw_char off
-warp 701 7 17 up
+warp 701 7 53 up
 sleep 24
 fadein
-move_char up 10
-sleep 160
+move_char up 46
+sleep 734
 sleep 232
 fadeout
 sleep 24
