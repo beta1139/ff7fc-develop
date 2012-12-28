@@ -14,12 +14,70 @@
 
 #define RGB 0
 #define YUV 1
+#define HUE 2
+#define HSV 3
 
-#define ALGORITHM YUV
+#define ALGORITHM HSV
 
 double rgb_to_y(UI r, UI g, UI b)  { return (0.299*r + 0.587*g + 0.114*b); }
 double rgb_to_u(UI r, UI g, UI b) { return ( -0.14713*r - 0.28886*g + 0.436*b); }
 double rgb_to_v(UI r, UI g, UI b) { return (0.615*r - 0.51499*g - 0.10001*b); }
+
+double get_hue(UI r, UI g, UI b) { return atan((sqrt(3.0)*(g-b)) / (2*r-g-b)); }
+
+int get_rgb_max(UI r, UI g, UI b)
+{
+	UI max = r;
+	if(max < g){ max = g; }
+	if(max < b){ max = b; }
+	return max;
+}
+
+int get_rgb_min(UI r, UI g, UI b)
+{
+	UI min = r;
+	if(min > g){ min = g; }
+	if(min > b){ min = b; }
+	return min;
+}
+
+void get_hsv_from_rgb(double* h, double* s, double* v, UI r, UI g, UI b)
+{
+	int max = get_rgb_max(r, g, b);
+	int min = get_rgb_min(r, g, b);
+
+	*v = max;
+
+	if(*v == 0)
+	{
+		*s = 0;
+		*h = 0;
+	}
+	else
+	{
+		*s = 255.0*(max - min) / max;
+
+		if(max == min)
+		{
+			*h = 0;
+		}
+		else
+		{
+			if(r == max)
+			{
+				*h = 60*(b-g) / (max - min);
+			}
+			else if(g == max)
+			{
+				*h = 60*(2 + (r - b) / (max - min));
+			}
+			else
+			{
+				*h = 60*(4 + (g - r) / (max - min));
+			}
+		}
+	}
+}
 
 UI search_nearest_fc_col(UI col)
 {
@@ -86,6 +144,67 @@ UI search_nearest_fc_col(UI col)
 		cr_dis = sqrt((fc_cr-org_cr)*(fc_cr-org_cr));
 
 		double col_distance = y_dis + cb_dis + cr_dis;
+		if(col_distance < nearest_distance){
+			nearest_col_idx = i;
+			nearest_distance = col_distance;
+		}
+	}
+#elif (ALGORITHM==HUE)
+	UI org_r,org_g,org_b;
+	org_r = (col >> 16) & 0x000000ff;
+	org_g = (col >>  8) & 0x000000ff;
+	org_b = (col >>  0) & 0x000000ff;
+
+	double nearest_distance = 0x8FFFFFFF;
+	UI nearest_col_idx = 0;
+
+	double org_hue = get_hue(org_r, org_g, org_b);
+
+	UI fc_r,fc_g,fc_b;
+
+	for(int i=0; i<COL_DATA_NUM; i++){
+		fc_r = col_tbl[i].r;
+		fc_g = col_tbl[i].g;
+		fc_b = col_tbl[i].b;
+
+		double fc_hue = get_hue(fc_r, fc_g, fc_b);
+
+		double col_distance = (org_hue - fc_hue)*(org_hue - fc_hue);
+
+		if(col_distance < nearest_distance){
+			nearest_col_idx = i;
+			nearest_distance = col_distance;
+		}
+	}
+#elif (ALGORITHM==HSV)
+	UI org_r,org_g,org_b;
+	org_r = (col >> 16) & 0x000000ff;
+	org_g = (col >>  8) & 0x000000ff;
+	org_b = (col >>  0) & 0x000000ff;
+
+	double nearest_distance = 0x8FFFFFFFFFFFFFFF;
+	UI nearest_col_idx = 0;
+
+	double org_h, org_s, org_v;
+	get_hsv_from_rgb(&org_h, &org_s, &org_v, org_r, org_g, org_b);
+
+	UI fc_r,fc_g,fc_b;
+	double fc_h, fc_s, fc_v;
+	double h_dis, s_dis, v_dis;
+
+	for(int i=0; i<COL_DATA_NUM; i++){
+		fc_r = col_tbl[i].r;
+		fc_g = col_tbl[i].g;
+		fc_b = col_tbl[i].b;
+
+		get_hsv_from_rgb(&fc_h, &fc_s, &fc_v, fc_r, fc_g, fc_b);
+
+		h_dis = (fc_h-org_h)*(fc_h-org_h);
+		s_dis = (fc_s-org_s)*(fc_s-org_s);
+		v_dis = (fc_v-org_v)*(fc_v-org_v);
+
+		double col_distance = h_dis + s_dis + v_dis;
+
 		if(col_distance < nearest_distance){
 			nearest_col_idx = i;
 			nearest_distance = col_distance;
