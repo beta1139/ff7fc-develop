@@ -4,3 +4,22 @@
 [dbg] func_name:Event::create_event_data_from_event_data, line:580 >>> event_id:90000 is already exist
 [dbg] func_name:Event::create_event_data_from_event_data, line:580 >>> event_id:90000 is already exist
 [dbg] func_name:Event::create_event_data_from_event_data, line:580 >>> event_id:90000 is already exist
+[dbg] func_name:Event::create_event_data_from_text, line:803 >>> file open error (./event/script/biginer.txt)
+[dbg] func_name:Event::create_event_data_from_text, line:793 >>> 0x0d 0x0a not found: (./event/script/biginer1.txt)
+[dbg] func_name:EVENT_GENERATOR::read_script, line:2933 >>> id: 6002, unknown opecode: fade_in
+[dbg] func_name:MNG_FC_IMG::get_fc_img_handle, line:14 >>> file load error!! (./image/monster/yuuna.bmp)
+[dbg] func_name:EVENT_GENERATOR::read_script, line:2933 >>> id: 6002, unknown opecode: fadeoin
+[dbg] func_name:EVENT_GENERATOR::read_script, line:2933 >>> id: 6002, unknown opecode: sleep16
+[dbg] func_name:Graphics::set_str_jp_4, line:1117 >>> v
+[dbg] func_name:Graphics::set_str_jp_4, line:1117 >>> A
+[dbg] func_name:EVENT_GENERATOR::read_script, line:2391 >>> invalid param (0)
+[dbg] func_name:EVENT_GENERATOR::get_dirId_from_dirText, line:1786 >>> 2
+[dbg] func_name:EVENT_GENERATOR::get_dirId_from_dirText, line:1786 >>> 2
+[dbg] func_name:EVENT_GENERATOR::get_dirId_from_dirText, line:1786 >>> 0
+[dbg] func_name:EVENT_GENERATOR::read_script, line:2391 >>> invalid param (0)
+[dbg] func_name:Event::create_event_data_from_event_data, line:580 >>> event_id:7001 is already exist
+[dbg] func_name:Event::create_event_data_from_event_data, line:580 >>> event_id:7001 is already exist
+[dbg] func_name:Event::set_stop_flag, line:75 >>> id: 7001 not found
+[dbg] func_name:Event::set_stop_flag, line:75 >>> id: 7001 not found
+[dbg] func_name:Event::create_event_data_from_event_data, line:580 >>> event_id:7001 is already exist
+[dbg] func_name:Graphics::set_str_jp_4, line:1117 >>> _e
