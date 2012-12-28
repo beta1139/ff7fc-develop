@@ -43,17 +43,17 @@ sleep 16
 move_npc 2010 right 1
 chg_npc_dir 2004 up
 sleep 32
-play_se attack2.wav
+play_se fire.wav
 sleep 32
 chg_npc_dir 2010 down
 sleep 32
-play_se attack2.wav
+play_se fire.wav
 sleep 48
 create npc_event 2006 20 22 26 71 1 2 「ウウ……よっぱらっちゃった\n　てづくりカクテル　おいしいんだもんなあ\n　きついんだもんなあ
 chg_speed 2006 fast
 move_npc 2006 down 2
 sleep 16
-play_se attack2.wav
+play_se fire.wav
 move_npc 2006 right 2
 sleep 16
 move_npc 2006 down 6

@@ -49,11 +49,15 @@ move_npc 2201 left 1
 sleep 16
 chg_npc_dir 2202 down
 chg_npc_dir 2201 down
+chg_npc_dir 2201 left
+chg_npc_img 2201 98
 sleep 16
 msg バレット\n「やくそくは　やくそく　だからな！\n　ほら　かねだ！！
 sleep 16
+chg_npc_dir 2201 down
+chg_npc_img 2201 1
 move_npc 2201 down 1
-sleep 48
+sleep 16
 step_npc 2201 2
 sleep 32
 msg 「バレットの　へそくり\n　１５００ギル　てにいれた！
@@ -97,7 +101,9 @@ chg_char_dir down
 chg_char_img_tmp 103
 sleep 32
 chg_char_dir left
-sleep 48
+sleep 40
+move_npc 2202 right 1
+sleep 8
 chg_char_dir down
 reset_char_img_tmp
 sleep 8

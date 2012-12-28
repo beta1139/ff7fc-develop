@@ -1,7 +1,13 @@
 wait_same_pos
 msg 「まいど　おなじみ\n　しょしんしゃの　やかた　だよ～ん
 chg_char_dir left
+chg_type 2601 npc_event
+chg_speed 2601 normal
 sleep 16
+jump_npc 2601 same 1
+sleep 16
+step_npc 2601 4
+msg 「あんたが　しろうと　だってか\n　そのめは　そうじゃないって　いってるぜ
 jump_char_target_pos 5 8
 sleep 16
 chg_char_img_tmp 105
@@ -38,4 +44,6 @@ jump_char_target_pos 4 8
 sleep 16
 msg 『もとソルジャーを　なめるな\n　どれだけ　ものしりか　おしえてやる\n　しかも　むりょうでだ！
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
+chg_speed 2601 not_move
+chg_type 2601 npc2
 sleep 16

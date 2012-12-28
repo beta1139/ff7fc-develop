@@ -38,22 +38,26 @@ create event_generator 2622 26 4 8 17 0 0 @beginner's_hall3.txt
 end
 fi
 if_flag 3 2
+msg 『（まほうをつかった　かいふく）\n　Not Found
 create event_generator 2622 26 4 8 17 0 0 @beginner's_hall3.txt
 end
 fi
 if_flag 3 3
 msg 『なにが　しりたいんだ？\n\n\n\n#4\n　　ぶき　ぼうぐの　つかいかた\n　　マテリアの　そうちゃく\n　　マテリアの　こうどなつかいかた\n　　それいがい\n[[]][[]][[]][[]]
 if_flag 3 0
+msg 『（ぶき　ぼうぐの　つかいかた）\n　Not Found
 create event_generator 2622 26 4 8 17 0 0 @beginner's_hall3.txt
 end
 fi
 fi
 if_flag 3 1
+msg 『（マテリアの　そうちゃく）\n　Not Found
 create event_generator 2622 26 4 8 17 0 0 @beginner's_hall3.txt
 end
 fi
 fi
 if_flag 3 2
+msg 『（マテリアの　こうどなつかいかた）\n　Not Found
 create event_generator 2622 26 4 8 17 0 0 @beginner's_hall3.txt
 end
 fi
@@ -61,18 +65,21 @@ fi
 if_flag 3 3
 msg 『なにが　しりたいんだ？\n\n\n\n#4\n　　せんとうじの　たいけいについて\n　　じぶんのじょうたいを　チェック\n　　リミットわざの　つかいかた\n　　それいがい\n[[]][[]][[]][[]]
 if_flag 3 0
+msg 『（せんとうじの　たいけいについて）\n　Not Found
 create event_generator 2622 26 4 8 17 0 0 @beginner's_hall3.txt
 end
 fi
 fi
 fi
 if_flag 3 1
+msg 『（じぶんのじょうたいを　チェック）\n　Not Found
 create event_generator 2622 26 4 8 17 0 0 @beginner's_hall3.txt
 end
 fi
 fi
 fi
 if_flag 3 2
+msg 『（リミットわざの　つかいかた）\n　Not Found
 create event_generator 2622 26 4 8 17 0 0 @beginner's_hall3.txt
 end
 fi

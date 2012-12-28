@@ -28,9 +28,9 @@ sleep 32
 chg_char_dir left
 sleep 48
 chg_char_dir down
-reset_char_img_tmp
+sleep 16
 msg 『どのマップに　いけばいいんだい？
-chg_char_dir down
+reset_char_img_tmp
 fi
 if_flag 3 1
 move_char down 1
