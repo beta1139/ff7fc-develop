@@ -1,0 +1,110 @@
+set_eternal_event
+wait_talk
+msg まほうをつかった　かいふく
+fadeout
+sleep 24
+warp 7 7 6 up
+draw_char off
+sleep 24
+fadein
+sleep 32
+msg ここでは　まほうをつかった　かいふくを　おしえよう。
+sleep 32
+create npc_event 7001 7 12 1 91 1 1 ゆび
+play_se cursor.wav
+sleep 48
+set_npc_pos 7001 7 12 2
+play_se cursor.wav
+sleep 16
+step_npc 7001 4
+sleep 64
+chg_npc_dir 7001 left
+sleep 64
+msg メニューで　まほう　を　えらぶ。
+sleep 32
+set_npc_pos 7001 7 0 3
+play_se cursor.wav
+sleep 16
+set_npc_pos 7001 7 0 6
+chg_npc_y_offset 7001 4
+play_se cursor.wav
+sleep 16
+set_npc_pos 7001 7 0 10
+play_se cursor.wav
+sleep 16
+set_npc_pos 7001 7 0 6
+play_se cursor.wav
+sleep 16
+set_npc_pos 7001 7 0 3
+chg_npc_y_offset 7001 -4
+play_se cursor.wav
+sleep 48
+msg かいふくのまほうがつかえる　みかた　つまり…
+sleep 32
+msg かいふく　のマテリアを　そうびした　みかたを\nえらぶ。
+sleep 32
+warp 7 23 6 up
+set_npc_pos 7001 7 16 4
+play_se cursor.wav
+sleep 64
+msg ここでは　まほうマテリア　をつけたときの　まほう
+sleep 48
+set_npc_pos 7001 7 21 4
+play_se cursor.wav
+sleep 48
+msg しょうかんマテリア　をつけたとき　よびだせる\nしょうかんじゅう
+sleep 48
+set_npc_pos 7001 7 27 4
+play_se cursor.wav
+sleep 48
+msg てきのわざ　をつけたとき　おぼえた\nてきのわざが　わかる。
+sleep 32
+msg まほう　をえらぶと……
+sleep 32
+set_npc_pos 7001 7 21 4
+play_se cursor.wav
+sleep 16
+set_npc_pos 7001 7 16 4
+play_se cursor.wav
+sleep 64
+warp 7 39 6 up
+set_npc_pos 7001 7 32 5
+chg_npc_y_offset 7001 4
+play_se cursor.wav
+sleep 48
+msg つかえるまほうが　ひょうじされるので……
+sleep 32
+msg もし　ケアル　がつかえれば\nケアル　をえらんだあと……
+sleep 32
+warp 7 55 6 up
+set_npc_pos 7001 7 56 7
+chg_npc_y_offset 7001 -8
+play_se cursor.wav
+sleep 32
+set_npc_pos 7001 7 56 10
+play_se cursor.wav
+sleep 32
+set_npc_pos 7001 7 56 12
+play_se cursor.wav
+sleep 32
+set_npc_pos 7001 7 56 10
+play_se cursor.wav
+sleep 32
+set_npc_pos 7001 7 56 6
+chg_npc_y_offset 7001 8
+play_se cursor.wav
+sleep 48
+msg かいふくしたい　みかたを　えらべばいい。
+sleep 32
+msg やどやで　MPが　すぐかいふくできるじょうたいなら\nまほうでのかいふくのほうが　とくといえる。
+sleep 32
+msg いじょうだ。
+sleep 16
+fadeout
+sleep 24
+draw_char on
+warp 6 3 4 up
+fadein
+sleep 24
+msg よいおとしを。
+
