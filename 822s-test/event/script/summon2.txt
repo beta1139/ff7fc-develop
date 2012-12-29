@@ -29,10 +29,10 @@ move_npc 90003 left 2
 sleep 32
 screen_effect off
 encount 1
-sleep 100
 kill 90000
 kill 90001
 kill 90002
 kill 90003
+sleep 80
 msg sleepを　てきかくに　はさまないと　いどうが\nおわるまえに　つぎのいどうが　じっこうされてしまう。\nsleepのタイミングが　キモだな。
 active 2007
