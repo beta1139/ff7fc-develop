@@ -172,17 +172,23 @@ create npc_event 1566 15 11 14 112 1 2 none
 chg_npc_y_offset 1566 0
 slide_walk_npc 1566 down 8
 sleep 16
-create npc_event 1567 15 11 14 113 2 2 none
+create npc_event 1567 15 11 14 112 2 2 none
 chg_npc_y_offset 1567 0
 slide_walk_npc 1567 down 8
 sleep 16
-create npc_event 1568 15 11 14 113 1 2 none
+create npc_event 1568 15 11 14 112 1 2 none
 chg_npc_y_offset 1568 0
 slide_walk_npc 1568 down 8
 sleep 16
 kill 1561
+create npc_event 1569 15 11 14 113 2 2 none
+chg_npc_y_offset 1569 0
+slide_walk_npc 1569 down 8
 sleep 16
 kill 1562
+create npc_event 1570 15 11 14 113 1 2 none
+chg_npc_y_offset 1570 0
+slide_walk_npc 1570 down 8
 chg_npc_img 1580 97
 sleep 16
 kill 1580
@@ -191,11 +197,18 @@ sleep 16
 kill 1564
 sleep 16
 kill 1565
-fadeout
-sleep 80
+sleep 16
 kill 1566
+sleep 16
 kill 1567
+sleep 16
 kill 1568
+sleep 16
+kill 1569
+sleep 16
+kill 1570
+fadeout
+sleep 64
 kill_through 1301
 kill 1401
 kill 1402
@@ -334,17 +347,23 @@ create npc_event 1566 15 11 14 112 1 2 none
 chg_npc_y_offset 1566 0
 slide_walk_npc 1566 down 8
 sleep 16
-create npc_event 1567 15 11 14 113 2 2 none
+create npc_event 1567 15 11 14 112 2 2 none
 chg_npc_y_offset 1567 0
 slide_walk_npc 1567 down 8
 sleep 16
-create npc_event 1568 15 11 14 113 1 2 none
+create npc_event 1568 15 11 14 112 1 2 none
 chg_npc_y_offset 1568 0
 slide_walk_npc 1568 down 8
 sleep 16
 kill 1561
+create npc_event 1569 15 11 14 113 2 2 none
+chg_npc_y_offset 1569 0
+slide_walk_npc 1569 down 8
 sleep 16
 kill 1562
+create npc_event 1570 15 11 14 113 1 2 none
+chg_npc_y_offset 1570 0
+slide_walk_npc 1570 down 8
 chg_npc_img 1580 97
 sleep 16
 kill 1580
@@ -353,11 +372,18 @@ sleep 16
 kill 1564
 sleep 16
 kill 1565
-fadeout
-sleep 80
+sleep 16
 kill 1566
+sleep 16
 kill 1567
+sleep 16
 kill 1568
+sleep 16
+kill 1569
+sleep 16
+kill 1570
+fadeout
+sleep 64
 kill_through 1301
 kill 1401
 kill 1402
