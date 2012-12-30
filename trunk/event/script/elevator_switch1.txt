@@ -2,6 +2,7 @@ set_eternal_event
 wait_target_talk 650
 reset_talk_flag 650
 msg スイッチオン
+draw_countdown off
 play_se elevator_start.wav
 loop 100
 inc_map_draw_y_offset
@@ -23,5 +24,6 @@ loop 90
 inc_map_draw_y_offset
 sleep 1
 pool
+draw_countdown on
 set_map_draw_y_offset 0
 
