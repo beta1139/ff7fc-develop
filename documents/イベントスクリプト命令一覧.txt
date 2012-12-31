@@ -306,6 +306,32 @@ inc_map_draw_y_offset
 dec_map_draw_y_offset
   画面描画位置のＹ座標のずらし分を1デクリメント
 
+draw_image (image_idx) (dst_x) (dst_y) (src_x) (src_y) (src_w) (src_h) (layer) (file_name)
+  ./image/の下に格納したグラフィックの任意の矩形を画面の任意の座標に描画する
+  image_idx: まだ使ってない任意のidを設定する。event_idxとは別扱い
+  dst_x    : 描画先Ｘ座標 (0~256)
+  dst_y    : 描画先Ｙ座標 (0~240)
+  src_x    : 画像の左上Ｘ座標
+  src_y    : 画像の左上Ｙ座標
+  src_w    : 画像の幅
+  src_h    : 画像の高さ
+  layer    : 0:背景、1:前景
+  file_name: 画像名 (./image/の部分は省略したファイル名を指定する)
+
+erase_image (image_idx)
+  draw_imageで描画している画像を消す
+  （draw_image使用後は必ずerase_imageで消すこと）
+
+set_image_alpha (image_idx) (alpha)
+  image_idxで指定した画像のアルファ値を設定する
+  アルファ値は0~100の範囲で設定すること
+  
+inc_image_alpha (image_idx)
+  image_idxで指定した画像のアルファ値を1増やす
+
+dec_image_alpha
+  image_idxで指定した画像のアルファ値を1減らす
+
 =============== サウンド系 ===============
 play_se (path)
   SEを再生させる。pathには./sound/se/の部分は不要
