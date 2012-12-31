@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
-FF7FC Developing Version (2012/12/30 updated)
+FF7FC Developing Version (2012/12/31 updated)
 ----------------------------------------------------------------------
 ■プログラム製作者
   BETA
@@ -89,6 +89,13 @@ FF7FC Developing Version (2012/12/30 updated)
   ・ジャンプのchg_speed
 
 ■更新履歴
+  ・2012/12/31
+	・イベントスクリプトの命令追加
+	  ・draw_image
+	  ・erase_image
+	  ・set_image_alpha
+	  ・inc_image_alpha
+	  ・dec_image_alpha
   ・2012/12/30
 	・イベントスクリプトの命令追加
 	  ・draw_countdown

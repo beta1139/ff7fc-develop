@@ -1,6 +1,12 @@
 set_eternal_event
 wait_target_talk 95002
 reset_talk_flag 95002
+draw_image 0 0 0 0 0 256 240 1 newgame_or_continue_back.bmp
+set_image_alpha 0 0
+loop 100
+inc_image_alpha 0
+sleep 1
+pool
 set_text 2 あいうえお　かきくけこ　さしすせそ　たちつてと　なにぬねの
 set_text 4  abcde fghij klmno pqrst uvwxy z
 set_text 6 　　　　　　　　　　　Created By
@@ -194,4 +200,9 @@ set_text_col 6 0 31 0
 set_text_col 8 0 31 0
 set_text_col 10 0 31 0
 set_text_col 12 0 31 0
+loop 100
+dec_image_alpha 0
+sleep 1
+pool
+erase_image 0
 
