@@ -309,8 +309,8 @@ dec_map_draw_y_offset
 draw_image (image_idx) (dst_x) (dst_y) (src_x) (src_y) (src_w) (src_h) (layer) (file_name)
   ./image/の下に格納したグラフィックの任意の矩形を画面の任意の座標に描画する
   image_idx: まだ使ってない任意のidを設定する。event_idxとは別扱い
-  dst_x    : 描画先Ｘ座標 (0~256)
-  dst_y    : 描画先Ｙ座標 (0~240)
+  dst_x    : 描画先Ｘ座標
+  dst_y    : 描画先Ｙ座標
   src_x    : 画像の左上Ｘ座標
   src_y    : 画像の左上Ｙ座標
   src_w    : 画像の幅
@@ -331,6 +331,15 @@ inc_image_alpha (image_idx)
 
 dec_image_alpha
   image_idxで指定した画像のアルファ値を1減らす
+
+chg_image_pos (image_idx) (dst_x) (dst_y) (src_x) (src_y) (src_w) (src_h)
+  draw_imageで生成した画像の位置情報を再設定する
+
+chg_image_pos_offset (image_idx) (dst_x) (dst_y) (src_x) (src_y) (src_w) (src_h)
+  draw_imageで生成した画像の位置情報を差分で再設定する
+
+set_image_trans_col (image_idx) (R) (G) (B)
+  draw_imageで生成した画像の透過色を設定する
 
 =============== サウンド系 ===============
 play_se (path)

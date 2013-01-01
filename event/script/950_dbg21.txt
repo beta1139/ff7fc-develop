@@ -1,10 +1,29 @@
 set_eternal_event
 wait_target_talk 95002
 reset_talk_flag 95002
-draw_image 0 0 0 0 0 256 240 1 newgame_or_continue_back.bmp
+draw_image 0 -128 -128 0 0 128 128 1 newgame_or_continue_back.bmp
+draw_image 1 -128 256 0 128 128 120 1 newgame_or_continue_back.bmp
+draw_image 2 256 -128 128 0 128 128 1 newgame_or_continue_back.bmp
+draw_image 3 256 256 128 128 128 120 1 newgame_or_continue_back.bmp
 set_image_alpha 0 0
+set_image_alpha 1 0
+set_image_alpha 2 0
+set_image_alpha 3 0
+loop 28
+chg_image_pos_offset 0 1 1 0 0 0 0
+chg_image_pos_offset 1 1 -1 0 0 0 0
+chg_image_pos_offset 2 -1 1 0 0 0 0
+chg_image_pos_offset 3 -1 -1 0 0 0 0
+pool
 loop 100
 inc_image_alpha 0
+inc_image_alpha 1
+inc_image_alpha 2
+inc_image_alpha 3
+chg_image_pos_offset 0 1 1 0 0 0 0
+chg_image_pos_offset 1 1 -1 0 0 0 0
+chg_image_pos_offset 2 -1 1 0 0 0 0
+chg_image_pos_offset 3 -1 -1 0 0 0 0
 sleep 1
 pool
 set_text 2 あいうえお　かきくけこ　さしすせそ　たちつてと　なにぬねの
@@ -200,9 +219,19 @@ set_text_col 6 0 31 0
 set_text_col 8 0 31 0
 set_text_col 10 0 31 0
 set_text_col 12 0 31 0
-loop 100
+erase_image 0
+erase_image 1
+erase_image 2
+erase_image 3
+draw_image 0 0 0 0 0 256 120 1 newgame_or_continue_back.bmp
+draw_image 1 0 120 0 120 256 120 1 newgame_or_continue_back.bmp
+loop 128
 dec_image_alpha 0
+dec_image_alpha 1
+chg_image_pos_offset 0 -3 0 0 0 0 0
+chg_image_pos_offset 1 3 0 0 0 0 0
 sleep 1
 pool
 erase_image 0
+erase_image 1
 
