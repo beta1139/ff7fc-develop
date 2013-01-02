@@ -1,0 +1,52 @@
+imap <C-j> <C-\><C-n>:w<ENTER>
+vmap <C-j> <C-\><C-n>:w<ENTER>
+set incsearch
+set hlsearch
+set nobackup
+set showmatch
+set autoindent
+set errorbells
+"set vb t_tb=
+set number
+syntax on
+set scrolloff=999
+"winpos 0 0
+set tabstop=4
+set shiftwidth=4
+"colorscheme default
+colorscheme koehler
+set guicursor=a:blinkon0
+set guioptions-=T
+set guioptions-=m
+"set binary
+language en
+map <C-s> :w<ENTER>
+"imap ; ;<ENTER>
+imap <C-f> <ESC>ddo
+imap <C-l> <C-x><C-k>
+cnoremap <C-b> <left>
+cnoremap <C-f> <right>
+"noremap #8 :vimgrep /\<<C-R><C-W>\>/ **/*.{cpp,c,h}<CR>:copen<CR>
+map <C-n> :tabn<ENTER>
+map <C-p> :tabp<ENTER>
+cmap <C-b> <LEFT>
+cmap <C-f> <RIGHT>
+"set fileencoding=euc-jp
+noremap #3 yw:vimgrep <C-r>" **/*.{cpp,c,h}<CR>:copen<CR>
+noremap #4 yw:vimgrep <C-r>" **/../*.{cpp,c,h}<CR>:copen<CR>
+noremap #5 yw:vimgrep <C-r>" **/../../*.{cpp,c,h}<CR>:copen<CR>
+noremap #6 yw:vimgrep <C-r>" **/../../../*.{cpp,c,h}<CR>:copen<CR>
+map #7 :tabnew<ENTER>
+map #8 :TlistToggle<ENTER>
+map #9 :!ctags -R<ENTER>
+"set cursorline
+"highlight CursorLine guibg=blue ctermbg=Blue
+"set nowrap
+"set guioptions+=b
+"set bg=dark
+"set bg=light
+set tags+=./tags,../tags,../../tags,../../../tags,../../../../tags
+set list
+set listchars=tab:>.,trail:~
+:highlight SpecialKey guifg=#111111
+map #2 :source open_files.vim<ENTER>
