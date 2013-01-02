@@ -3,13 +3,28 @@ end_countdown
 create npc_event 420 4 9 7 0 1 2 none
 draw_char off
 move_npc 420 down 8
-sleep 128
+sleep 16
+create explode 421 4 13 3 0 0 0 none
+sleep 16
+create explode 422 4 4 10 0 0 0 none
+sleep 16
+create explode 423 4 14 7 0 0 0 none
+sleep 16
+create explode 424 4 5 4 0 0 0 none
+sleep 16
+create explode 425 4 11 8 0 0 0 none
+sleep 16
+create explode 426 4 9 2 0 0 0 none
+sleep 16
+create explode 427 4 6 8 0 0 0 none
+sleep 16
+create explode 428 4 13 4 0 0 0 none
 kill 420
 kill 400
 kill 104
 kill 105
 fadeout
-sleep 30
+sleep 32
 stop_bgm
 warp 12 5 21 up
 chg_char_img 0

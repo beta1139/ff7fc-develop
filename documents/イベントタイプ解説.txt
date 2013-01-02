@@ -54,4 +54,5 @@ treasure_item: マップ上に落ちている拾えるアイテム。拾うと消滅する。
 save_point: セーブポイント
 map_obj: マップオブジェクト。画像は./image/map_obj.bmpを使う
 map_door: マップドア。画像は./image/map_door.bmpを使う
+explode: 爆発エフェクト。アニメーション後、自動で消滅する
 
