@@ -2,9 +2,35 @@ set_eternal_event
 wait_target_talked 160
 reset_talked_flag 160
 if_flag 3 0
+stop_bgm
 add_party_mem 1
 warp 10 8 15 up
 set_flag 0 0
+play_bgm
+kill 114
+kill 115
+kill 116
+kill 130
+kill 131
+kill 132
+kill 134
+kill 135
+kill 136
+kill 137
+kill 138
+kill 139
+kill 140
+kill 141
+kill 142
+kill 143
+kill 500
+kill 501
+kill 502
+kill 503
+kill 600
+kill 806
+kill 807
+create npc 400 4 1 27 36 3 0 ウェッジ\n「おれは　だっしゅつこうを　かくほしておくっす！\n\n　\nウェッジ\n「しっかし　このおおきな　まこうろを\n　ばくはするなんて……　みものっすね！
 fi
 if_flag 3 1
 fadeout

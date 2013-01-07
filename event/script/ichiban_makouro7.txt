@@ -30,7 +30,9 @@ sleep 16
 chg_npc_dir 1002 right
 sleep 30
 step_char 3
-sleep 60
+sleep 56
+play_se alarm.ogg
+sleep 8
 chg_char_dir right
 sleep 30
 chg_char_dir left
@@ -39,7 +41,9 @@ chg_char_dir right
 sleep 15
 chg_char_dir left
 sleep 40
+screen_effect off
 msg 「ドゥドゥドゥペーイが　やってくるぜ
+stop_se
 boss_encount 204
 sleep 64
 set_flag 0 1

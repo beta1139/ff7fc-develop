@@ -1,0 +1,26 @@
+wait_same_pos
+kill 1410
+kill 1412
+kill_through 1301
+kill_through 1300
+set_flag_wall 1403
+set_flag_wall 1404
+move_npc 1403 left 1
+move_npc 1404 down 1
+chg_char_state_move
+sleep 8
+move_npc 1403 down 2
+move_npc 1404 left 1
+sleep 8
+move_npc 1404 down 2
+sleep 8
+move_npc 1403 left 1
+sleep 8
+move_npc 1403 down 15
+move_npc 1404 left 1
+sleep 8
+move_npc 1404 down 15
+sleep 112
+kill 1403
+sleep 8
+kill 1404

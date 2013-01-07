@@ -1,6 +1,8 @@
 wait_target_talk 650
 reset_talk_flag 650
 msg スイッチオン
+play_se button.ogg
+sleep 32
 play_se elevator_start.wav
 loop 100
 inc_map_draw_y_offset

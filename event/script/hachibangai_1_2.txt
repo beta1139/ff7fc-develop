@@ -1,0 +1,53 @@
+wait_same_pos
+kill 1330
+chg_char_state_move
+sleep 32
+loop 10
+create npc_event 1334 13 0 27 66 3 3 none
+set_flag_wall 1334
+move_npc 1334 right 6
+sleep 48
+move_npc 1334 down 4
+sleep 32
+open_door 1391
+create npc_event 1335 13 4 25 69 1 3 none
+set_flag_wall 1335
+move_npc 1334 right 7
+sleep 8
+chg_npc_dir 1335 up
+close_door 1391
+sleep 8
+move_npc 1335 down 1
+sleep 8
+move_npc 1335 left 4
+sleep 32
+kill 1335
+move_npc 1334 down 4
+sleep 32
+kill 1334
+sleep 32
+create npc_event 1334 13 13 35 73 0 3 none
+set_flag_wall 1334
+move_npc 1334 up 5
+sleep 40
+move_npc 1334 left 8
+sleep 40
+create npc_event 1335 13 8 25 68 1 3 none
+set_flag_wall 1335
+open_door 1390
+sleep 8
+chg_npc_dir 1335 up
+close_door 1390
+sleep 8
+move_npc 1335 down 4
+sleep 8
+move_npc 1334 up 3
+sleep 24
+move_npc 1335 right 5
+move_npc 1334 left 5
+sleep 40
+move_npc 1335 down 6
+kill 1334
+sleep 48
+kill 1335
+pool
