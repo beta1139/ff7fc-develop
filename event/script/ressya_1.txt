@@ -55,7 +55,7 @@ chg_npc_dir 1652 left
 chg_npc_dir 1653 left
 sleep 32
 msg アバランチのめんめん\n「ふう……
-sleep 132
+sleep 112
 open_door 1601
 create npc_event 1654 16 17 3 0 0 2 none
 play_se door_open.wav
