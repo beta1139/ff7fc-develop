@@ -126,6 +126,7 @@ step_npc 1557 4
 sleep 8
 msg へいし\n「よし　とらえろ！！
 play_se train_whistle_and_move.ogg
+sleep 8
 move_char up 1
 chg_speed 1580 fast
 move_npc 1580 up 1
@@ -353,6 +354,7 @@ step_npc 1557 4
 sleep 8
 msg へいし\n「よし　とらえろ！！
 play_se train_whistle_and_move.ogg
+sleep 8
 move_char up 1
 chg_speed 1580 fast
 move_npc 1580 up 1
