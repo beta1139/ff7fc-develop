@@ -1,4 +1,6 @@
 wait_target_talked 134
+play_se button.ogg
+sleep 32
 play_se door_open.wav
 kill 135
 kill 136

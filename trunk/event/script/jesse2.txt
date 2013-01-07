@@ -1,4 +1,6 @@
-wait_target_talked 138
+wait_target_talk 138
+play_se button.ogg
+sleep 32
 play_se door_open.wav
 kill 139
 chg_type 138 npc_event

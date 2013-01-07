@@ -26,6 +26,9 @@ kill 105
 fadeout
 sleep 32
 stop_bgm
+sleep 64
+play_se bomb.ogg
+sleep 368
 warp 12 5 21 up
 chg_char_img 0
 del_party_mem 1

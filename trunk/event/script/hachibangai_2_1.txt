@@ -1,0 +1,7 @@
+set_eternal_event
+wait_same_pos
+kill_through 1210
+kill_through 1301
+msg 『こっちは　しんらへいが　いるな……
+move_char right 1
+sleep 16

@@ -1,25 +1,170 @@
 wait_same_pos
-chg_speed 1300 slow
-move_npc 1300 up 2
+play_se warp_in.wav
+fadeout
+draw_char off
+sleep 16
+warp 13 7 17 down
+play_event_bgm 1-04-Anxious_Heart.ogg
 sleep 64
-move_npc 1300 right 1
+fadein
+chg_event_move_char_speed slow
+move_char down 8
+sleep 16
+move_npc 1327 right 2
+move_npc 1328 right 2
+move_npc 1320 right 2
+move_npc 1321 right 4
+move_npc 1324 right 2
+sleep 16
+move_npc 1323 right 1
+sleep 8
+open_door 1390
+sleep 8
+move_npc 1327 down 1
+move_npc 1328 down 1
+chg_npc_dir 1301 up
+open_door 1390
+create npc_event 1322 13 8 25 69 1 2 none
+move_npc 1322 down 4
+move_npc 1328 down 4
+sleep 16
+move_npc 1327 right 7
+move_npc 1328 right 7
+chg_npc_dir 1323 down
+sleep 16
+chg_npc_dir 1324 left
+sleep 16
+move_npc 1321 right 1
+sleep 16
+chg_npc_dir 1301 right
+move_npc 1320 left 3
+chg_npc_dir 1324 right
+sleep 16
+move_npc 1321 left 3
+sleep 16
+chg_npc_dir 1301 left
+sleep 16
+chg_npc_dir 1301 down
+move_npc 1322 up 2
+move_npc 1320 up 1
+sleep 8
+play_se bump.ogg
+jump_npc_target_pos 1301 11 27
+sleep 4
+chg_npc_dir 1301 left
+sleep 4
+chg_npc_dir 1301 up
+move_npc 1324 left 8
+move_npc 1321 up 1
+move_npc 1323 right 2
+chg_npc_dir 1328 left
+sleep 4
+chg_npc_dir 1301 right
+sleep 4
+chg_npc_dir 1301 down
+sleep 8
+chg_npc_dir 1322 right
+move_npc 1320 right 1
+move_npc 1321 right 2
+sleep 16
+move_npc 1320 down 1
+chg_npc_dir 1327 down
+sleep 16
+chg_npc_dir 1328 left
+move_npc 1322 left 8
+move_npc 1320 right 1
+move_npc 1321 down 1
+sleep 16
+move_npc 1320 down 1
+move_npc 1321 right 1
+chg_npc_dir 1328 right
+chg_npc_dir 1327 left
+sleep 16
+move_char right 6
+move_npc 1320 right 5
+move_npc 1321 down 1
+step_npc 1328 2
+sleep 16
+move_npc 1323 left 3
+move_npc 1321 right 5
 sleep 32
+kill 1324
+jump_npc 1327 same 2
+sleep 16
+chg_npc_dir 1323 up
+sleep 16
+close_door 1390
+move_npc 1320 down 6
+sleep 16
+kill 1322
+move_npc 1323 down 1
+move_npc 1327 left 4
+move_npc 1328 left 3
+move_npc 1321 down 6
+sleep 16
+chg_npc_dir 1301 up
+move_npc 1323 left 7
+sleep 16
+create npc_event 1325 13 15 7 31 2 2 none
+move_npc 1325 left 3
+sleep 16
+create npc_event 1326 13 15 7 31 2 2 none
+move_npc 1328 up 1
+move_npc 1326 left 3
+sleep 16
+move_npc 1328 left 5
+move_npc 1327 up 1
+sleep 16
+move_npc 1327 left 5
+kill 1320
+move_npc 1325 down 2
+chg_npc_dir 1301 left
+sleep 16
+kill 1321
+create npc 1329 13 5 29 84 3 1 「ニャーン
+set_flag_wall 1329
+move_npc 1326 down 1
+sleep 16
+sleep 16
+chg_npc_dir 1301 right
+kill 1323
+sleep 16
+kill 1328
+sleep 16
+kill 1327
+sleep 8
+chg_npc_dir 1301 down
+create npc_event 1310 13 16 25 0 2 1 none
+move_npc 1310 left 3
+sleep 64
+chg_npc_dir 1301 up
+sleep 32
+chg_event_move_char_speed normal
+chg_char_dir left
+draw_char on
+kill 1310
+chg_speed 1301 normal
+move_npc 1301 up 2
+sleep 32
+move_npc 1301 right 1
+sleep 16
 msg はなうり\n「ねえ　なにがあったの？\n\n\n#2\n　　にげたほうがいい\n　　きにするな……　それより\n\n\n[[]][[]]
 if_flag 3 0
 msg 「そうなの！？\n　なんだか　わからないけど　そうするわね
-sub_likability 3 500
-active 1300
-chg_speed 1300 slow
-move_npc 1300 down 6
-sleep 32
-chg_char_dir down
-sleep 160
-move_npc 1300 right 1
-sleep 32
-move_npc 1300 down 3
-sleep 96
-kill 1300
 set_flag 7 2
+sub_likability 3 500
+active 1301
+set_flag_wall 1301
+move_npc 1301 down 6
+sleep 16
+chg_char_dir down
+sleep 80
+move_npc 1301 right 1
+chg_char_state_move
+sleep 16
+move_npc 1301 down 4
+sleep 64
+kill 1301
 end
 fi
 if_flag 3 1
@@ -27,23 +172,26 @@ msg 『はな　なんて　めずらしいな\n\n\n\n「あ　これね　きにいってくれた？\n　１ギ
 fi
 if_flag 3 0
 msg 「わあ　ありがとう！\n　はい！
-add_likability 3 500
-sub_gil 1
+step_npc 1301 2
 set_flag 7 1
+add_likability 3 500
+sleep 64
+sub_gil 1
 fi
 if_flag 3 1
 msg 「……ちょっとがっかり　かな
-sub_likability 3 250
 set_flag 7 2
+sub_likability 3 250
 fi
-active 1300
-chg_speed 1300 slow
-move_npc 1300 down 6
+chg_speed 1301 slow
+set_flag_wall 1301
+move_npc 1301 down 6
 sleep 32
 chg_char_dir down
 sleep 160
-move_npc 1300 right 1
+move_npc 1301 right 1
+chg_char_state_move
 sleep 32
-move_npc 1300 down 3
-sleep 96
-kill 1300
+move_npc 1301 down 4
+sleep 128
+kill 1301
