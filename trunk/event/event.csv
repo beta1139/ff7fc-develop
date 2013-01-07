@@ -31,10 +31,7 @@ npc3,134,5,12,4,34,3,0,"ジェシー
 npc2,135,5,13,5,17,0,0,
 npc2,136,5,13,6,17,0,0,
 event_generator,137,5,12,4,17,0,0,@jesse1.txt
-npc3,138,5,23,4,34,3,0,"Yura
-「ジェシーセリフなしで　ボタンのおとのみなります
-　ボタンおしたときのおと　もとむ
-　"
+npc2,138,5,23,4,34,3,0,""
 npc2,139,5,24,5,17,0,0,
 event_generator,140,5,23,5,17,0,0,@jesse2.txt
 event_generator,500,5,5,13,17,0,0,@ichiban_makouro2_1.txt
@@ -58,26 +55,57 @@ event_generator,807,8,26,8,17,1,0,@nanaban_makouro_jesse_jump.txt
 save_point,950,9,3,8,0,0,0,
 event_generator,951,9,3,8,17,0,0,@save_msg.txt
 treasure_item,1000,10,8,17,3,0,0,4000
-event_generator,1001,10,8,14,17,0,0,@ichiban_makouro7.txt
+event_generator,1001,10,8,14,17,0,0,"@ichiban_makouro7.txt"
 npc_event,1200,12,4,20,1,3,0,
 npc_event,1201,12,6,20,34,2,0,
 npc_event,1202,12,7,20,35,2,0,
 npc_event,1203,12,7,21,36,2,0,
-npc_event,1300,13,10,9,3,1,0,
-event_generator,1301,13,12,7,17,0,0,@hanauri.txt
+event_generator,1210,12,6,2,17,0,0,"@hanauri.txt"
+npc_event,1301,13,11,28,3,1,0,
+npc_event,1302,13,5,29,17,3,2,""
+npc_event,1303,13,4,27,17,3,2,""
+npc_event,1304,13,13,31,17,0,2,""
+npc_event,1320,13,7,29,73,3,2,""
+npc_event,1321,13,3,29,74,3,2,""
+npc_event,1323,13,8,25,66,1,2,""
+npc_event,1324,13,3,26,31,3,2,""
+npc_event,1327,13,2,27,31,2,2,""
+npc_event,1328,13,1,27,31,2,2,""
+event_generator,1330,13,12,25,17,0,0,"@hachibangai_1_1.txt"
+event_generator,1331,13,13,26,17,0,0,"@hachibangai_1_2.txt"
+event_generator,1332,13,1,26,17,0,0,"@hachibangai_2_1.txt"
+event_generator,1333,13,1,27,17,0,0,"@hachibangai_2_2.txt"
+map_door,1390,13,8,24,6,0,0,0
+map_door,1391,13,4,24,6,0,0,0
 treasure_item,1400,14,1,20,4,1,0,1000
 npc3,1401,14,6,17,70,0,0,"「なにか　かべに　かいてあるな？
 　なに　なに…
 
 
-しんらに　だまされるな！
-まこうエネルギーは　えいえん　ではない！
-まこうは　ほしの　いのち！
-いつか　おわりが　やってくる！
-ほしの　きゅうせいしゅ　アバランチ"
-npc,1402,14,2,11,72,1,2,「いったい　なにが　おきたって　いうのよ
-event_generator,1500,15,8,7,17,0,0,@hachibangai_4_1.txt
-event_generator,1501,15,7,7,17,0,0,@hachibangai_4_2.txt
+「しんらに　だまされるな！
+　まこうエネルギーは　えいえん　ではない！
+　まこうは　ほしの　いのち！
+　いつか　おわりが　やってくる！
+　ほしの　きゅうせいしゅ　アバランチ"
+npc,1402,14,2,11,72,1,3,"「いったい　なにが　おきたって　いうのよ"
+npc_event,1403,14,4,10,73,1,3,""
+npc_event,1404,14,4,9,74,3,3,""
+event_generator,1410,14,4,4,17,0,0,"@hachibangai_3_1.txt"
+event_generator,1411,14,5,4,17,0,0,"@hachibangai_3_2.txt"
+event_generator,1412,14,6,4,17,0,0,"@hachibangai_3_2.txt"
+event_generator,1413,14,4,8,17,0,0,"@hachibangai_4_2.txt"
+event_generator,1414,14,5,8,17,0,0,"@hachibangai_4_2.txt"
+event_generator,1415,14,6,8,17,0,0,"@hachibangai_4_2.txt"
+event_generator,1500,15,8,7,17,0,0,"@hachibangai_5_1.txt"
+event_generator,1501,15,7,7,17,0,0,"@hachibangai_5_2.txt"
+npc_event,1510,15,6,24,66,0,0,""
+npc_event,1511,15,12,25,69,0,2,""
+npc_event,1512,15,16,26,73,0,2,""
+npc_event,1513,15,15,21,70,0,0,""
+npc_event,1514,15,7,28,74,0,3,""
+npc_event,1515,15,8,28,73,0,3,""
+npc_event,1516,15,6,19,72,0,2,""
+npc_event,1517,15,13,25,30,0,2,""
 event_generator,1600,16,9,5,17,0,0,@ressya_1.txt
 map_door,1601,16,17,3,0,0,0,0
 npc_event,1650,16,12,7,36,0,2,
