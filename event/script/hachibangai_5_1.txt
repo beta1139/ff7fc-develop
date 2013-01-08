@@ -116,6 +116,7 @@ sleep 48
 chg_npc_img 1580 0
 chg_npc_dir 1580 right
 sleep 24
+play_se_loop train_move_quiet.ogg
 play_event_bgm Ex-05-Anxious_Heart_short.ogg
 msg 『ざんねんだが　おまえらの　あいてを\n　してるほど　ヒマじゃないんでな
 step_npc 1557 2
@@ -344,6 +345,7 @@ sleep 48
 chg_npc_img 1580 0
 chg_npc_dir 1580 right
 sleep 24
+play_se_loop train_move_quiet.ogg
 play_event_bgm Ex-05-Anxious_Heart_short.ogg
 msg 『ざんねんだが　おまえらの　あいてを\n　してるほど　ヒマじゃないんでな
 step_npc 1557 2
