@@ -2,7 +2,7 @@ wait_same_pos
 kill 1330
 chg_char_state_move
 sleep 32
-loop 10
+loop_inf
 create npc_event 1334 13 0 27 66 3 3 none
 set_flag_wall 1334
 move_npc 1334 right 6
