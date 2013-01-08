@@ -56,6 +56,11 @@ loop (回数)
 pool
   指定した回数だけ処理を繰り返し実行する
 
+loop_inf
+(処理)
+pool
+  無限に処理を繰り返し実行する
+
 =============== エンカウント系 ===============
 encount (モンスターパーティID)
   エンカウントさせる
@@ -344,6 +349,9 @@ set_image_trans_col (image_idx) (R) (G) (B)
 =============== サウンド系 ===============
 play_se (path)
   SEを再生させる。pathには./sound/se/の部分は不要
+
+play_se_loop (path)
+  SEを繰り返し再生させる。pathには./sound/se/の部分は不要
 
 play_bgm
   マップのBGMの再生を開始
