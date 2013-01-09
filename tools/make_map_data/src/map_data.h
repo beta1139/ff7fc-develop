@@ -1,7 +1,7 @@
 #ifndef __MAP_DATA__
 #define __MAP_DATA__
 
-#include "main.h"
+#include "common.h"
 
 class MAPDATA
 {
@@ -19,7 +19,7 @@ class MAPDATA
 
 		void set_header(void);
 		void set_chip_data(int, int, int);
-		void save_map_data(void);
+		void save(void);
 };
 
 #endif /* __MAP_DATA__ */

@@ -37,20 +37,20 @@ void MAPDATA::set_chip_data(int x, int y, int map_idx)
 				__LINE__, x, y, offset);
 		exit(0);
 	}
-	p_map_data[offset + 0] = map_idx / 256;
-	p_map_data[offset + 1] = map_idx % 256;
+	p_map_data[offset + 0] = (map_idx >> 8);
+	p_map_data[offset + 1] = (map_idx & 0xff);
 }
 
-void MAPDATA::save_map_data(void)
+void MAPDATA::save(void)
 {
-	FILE* fp_map_data;
-	char map_data_name[30];
-	sprintf(map_data_name, "mapdata_%03d", m_map_id);
-	if((fp_map_data = fopen(map_data_name, "wb")) == NULL){
-		printf("file open error (file_name:%s)\n", map_data_name);
+	FILE* fp;
+	char name[30];
+	sprintf(name, "mapdata_%03d", m_map_id);
+	if((fp = fopen(name, "wb")) == NULL){
+		printf("file open error (file_name:%s)\n", name);
 		exit(0);
 	}
-	for(int i=0; i<m_data_size; i++){ fputc(p_map_data[i], fp_map_data); }
-	fclose(fp_map_data);
+	fwrite(p_map_data, m_data_size, 1, fp);
+	fclose(fp);
 }
 

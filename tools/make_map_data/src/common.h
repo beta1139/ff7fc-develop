@@ -1,5 +1,5 @@
-#ifndef __MAIN__
-#define __MAIN__
+#ifndef __COMMON_H__
+#define __COMMON_H__
 
 #pragma warning(disable:4996)
 
@@ -7,8 +7,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef unsigned char UC;
-typedef unsigned char UI;
+typedef unsigned char  UC;
+typedef unsigned short US;
+typedef unsigned int   UI;
 
 typedef struct
 {
@@ -29,4 +30,4 @@ typedef struct
 
 #define RGB_OFFSET (sizeof(BITMAP_FILE_HEADER) + sizeof(BITMAP_INFO_HEADER))
 
-#endif /* __MAIN__ */
+#endif /* __COMMON_H__ */

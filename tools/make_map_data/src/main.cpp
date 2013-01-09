@@ -1,4 +1,4 @@
-#include "main.h"
+#include "common.h"
 #include "map_chip.h"
 #include "map_image.h"
 #include "map_data.h"
@@ -35,7 +35,8 @@ int a_to_i(int c)
 bool is_same_chip(UC* chip_map, UC* chip_chip)
 {
 	for(int i=0; i<16*16*3; i++){
-		if(((double)chip_chip[i] < chip_map[i]*0.9) || (((double)chip_chip[i] > chip_map[i]*1.1))){
+		if(((double)chip_chip[i] < chip_map[i]*0.9) || (((double)chip_chip[i] > chip_map[i]*1.1)))
+		{
 			return false;
 		}
 	}
@@ -58,6 +59,16 @@ int get_map_id(char* str)
 	return map_id;
 }
 
+void print_chip_data(UC* data)
+{
+	for(int i=0; i<16*16*3; i++)
+	{
+		printf("%02x", data[i]);
+		if((i+1)%3 == 0) { printf(" "); }
+		if((i+1)%(16*3) == 0) { puts(""); }
+	}
+	puts("");
+}
 
 int main(int argc, char *argv[])
 {
@@ -68,7 +79,8 @@ int main(int argc, char *argv[])
 	for(int i=0; i<argc; i++){
 		if(strcmp(argv[i], "-m") == 0){
 			if(i+1 < argc){
-				p_map_image_name = argv[i+1];
+				p_map_image_name = (char*)malloc(strlen(argv[i+1]+1));
+				strcpy(p_map_image_name, argv[i+1]);
 				break;
 			}
 			else{ print_error_msg(); exit(0); }
@@ -82,7 +94,8 @@ int main(int argc, char *argv[])
 	for(int i=0; i<argc; i++){
 		if(strcmp(argv[i], "-c") == 0){
 			if(i+1 < argc){
-				p_map_chip_name = argv[i+1];
+				p_map_chip_name = (char*)malloc(strlen(argv[i+1]+1));
+				strcpy(p_map_chip_name, argv[i+1]);
 				break;
 			}
 			else{ print_error_msg(); exit(0); }
@@ -109,13 +122,16 @@ int main(int argc, char *argv[])
 	int chip_num_chip = mapchip.get_chip_num();
 	int chip_num_map = mapimage.get_chip_num();
 
-	UC chip_data_map[16*16*3];
-	UC chip_data_chip[16*16*3];
+	UC* chip_data_map  = (UC*)calloc(1, 16*16*3);
+	UC* chip_data_chip = (UC*)calloc(1, 16*16*3);
 
 	int found_num = 0;
 	int not_found_num = 0;
 
 	printf("=============== search chip idx ===============\n");
+	printf("chip_num_chip: %d\n", chip_num_chip);
+	printf("chip_num_map : %d\n", chip_num_map);
+	printf("-----------------------------------------------\n");
 
 	for(int j=0; j<chip_num_map; j++){
 		mapimage.get_chip_data(j, chip_data_map);
@@ -124,11 +140,11 @@ int main(int argc, char *argv[])
 		for(int i=0; i<chip_num_chip; i++){
 			mapchip.get_chip_data(i, chip_data_chip);
 
-			if(is_same_chip(chip_data_map, chip_data_chip)){
-			//if(memcmp(chip_data_map, chip_data_chip, sizeof(chip_data_map)) == 0){
+			//if(is_same_chip(chip_data_map, chip_data_chip)){
+			if(memcmp(chip_data_map, chip_data_chip, 16*16*3) == 0){
 				chip_idx = (i/16)*16 + i%16;
 				found_num++;
-				printf("chip found!!     (x:%4d, y:%4d, chip_id:%d)\n",
+				printf("chip found!!     (x:%4d, y:%4d, chip_id:%4d)\n",
 					   (j*16)%(mapimage.get_width()),
 					   ((j*16)/(mapimage.get_width()))*16,
 					   chip_idx);
@@ -137,17 +153,24 @@ int main(int argc, char *argv[])
 				break;
 			}
 		}
+
 		if(chip_idx == -1){
-			not_found_num++;
-			printf("chip not found!! (x:%4d, y:%4d)\n",
-				   (j*16)%(mapimage.get_width()),
-				   ((j*16)/(mapimage.get_width()))*16);
+			// マップチップ画像にマップチップ追加
+			int idx = mapchip.get_last_chip_idx();
+			mapchip.add_chip(chip_data_map);
+			chip_num_chip++;
 			mapdata.set_chip_data(((j*16)%(mapimage.get_width()))/16,
-								  ((j*16)/(mapimage.get_width())), 16);
+								  ((j*16)/(mapimage.get_width())), idx);
+			
+			not_found_num++;
+			printf("chip not found!! (x:%4d, y:%4d) add new chip (x:%4d, y:%4d, chip_id:%4d)\n",
+				   (j*16)%(mapimage.get_width()), ((j*16)/(mapimage.get_width()))*16,
+				   (idx*16)%(mapchip.get_width()), ((idx*16)/(mapchip.get_width()))*16, idx);
 		}
 	}
 
-	mapdata.save_map_data();
+	mapdata.save();
+	mapchip.save();
 
 	printf("\n");
 	printf("=============== result ===============\n");
