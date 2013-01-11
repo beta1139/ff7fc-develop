@@ -39,7 +39,8 @@ int main(void)
 
 			if(new_chip_idx == new_chip_num-1)
 			{
-				printf("map chip not found!! (x: %d, y: %d)\n", old_chip_idx%16, old_chip_idx);
+				printf("map chip not found!! (x: %d, y: %d)\n", (old_chip_idx%16)*16, (old_chip_idx/16)*16);
+				getchar();
 				exit(1);
 			}
 		}
@@ -69,6 +70,9 @@ int main(void)
 		}
 		mapdata.save(map_file_name);
 	}
+	system("cls");
+	printf("DONE!!\n");
+	getchar();
 
 	return 0;
 }
