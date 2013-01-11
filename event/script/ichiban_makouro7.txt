@@ -28,9 +28,10 @@ msg w‚¦H\nu‚Ç‚¤‚µ‚½@ƒNƒ‰ƒEƒh@‚³‚ñ‚æH\n ‚Í‚â‚­‚µ‚Ä‚­‚êI\n\nw‚ ‚ @‚·‚Ü‚È‚
 move_char up 1
 sleep 16
 chg_npc_dir 1002 right
-sleep 30
-step_char 3
-sleep 56
+sleep 32
+play_se timer.ogg
+step_char 6
+sleep 88
 play_se_loop alarm.ogg
 sleep 8
 chg_char_dir right

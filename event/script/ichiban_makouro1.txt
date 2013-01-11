@@ -28,13 +28,14 @@ sleep 32
 stop_bgm
 sleep 64
 play_se bomb.ogg
-sleep 368
+sleep 400
 warp 12 5 21 up
 chg_char_img 0
 del_party_mem 1
 draw_char on
 set_flag 0 0
-sleep 60
+play_se timer.ogg
+sleep 192
 play_bgm
 fadein
 sleep 80
