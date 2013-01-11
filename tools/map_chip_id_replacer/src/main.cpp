@@ -39,7 +39,7 @@ int main(void)
 
 			if(new_chip_idx == new_chip_num-1)
 			{
-				printf("map chip not found!! (x: %d, y: %d)\n", (old_chip_idx%16)*16, (old_chip_idx/16)*16);
+				printf("map chip not found!! map_chip.bmp (x: %d, y: %d)\n", (old_chip_idx%16)*16, (old_chip_idx/16)*16);
 				getchar();
 				exit(1);
 			}
@@ -58,7 +58,7 @@ int main(void)
 		if(mapdata.get_w() == 0) { continue; }
 
 		system("cls");
-		printf("replaceing chip idx (mapdata_%03d)\n", i);
+		printf("replacing chip idx (mapdata_%03d)\n", i);
 
 		for(int y=0; y<mapdata.get_h(); y++)
 		{
