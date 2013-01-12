@@ -1,6 +1,6 @@
 wait_same_pos
 end_countdown
-create npc_event 420 4 9 7 0 1 2 none
+create npc_event 420 4 7 7 0 1 2 none
 draw_char off
 move_npc 420 down 8
 sleep 16
