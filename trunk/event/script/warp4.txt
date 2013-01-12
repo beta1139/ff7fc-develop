@@ -1,0 +1,60 @@
+set_eternal_event
+wait_target_talked 163
+reset_talked_flag 163
+if_flag 3 0
+fadeout
+stop_bgm
+set_flag 1 1
+warp 5 25 5 left
+set_flag 0 2
+start_countdown 5
+play_event_bgm 1-07-Hurry_!.ogg
+create npc 400 4 1 27 36 3 0 ウェッジ\n「おれは　だっしゅつこうを　かくほしておくっす！\n\n　\nウェッジ\n「しっかし　このおおきな　まこうろを\n　ばくはするなんて……　みものっすね！
+create event_generator 410 4 9 7 17 1 0 @ichiban_makouro1.txt
+add_party_mem 1
+kill 132
+kill 137
+kill 140
+kill 130
+kill 131
+kill 134
+kill 500
+kill 501
+kill 502
+kill 503
+kill 138
+kill 114
+kill 115
+kill 116
+kill 135
+kill 136
+kill 139
+create npc_event 576 5 16 19 34 2 0 none
+create npc_event 577 5 14 17 35 1 0 none
+chg_npc_y_offset 577 0
+create npc2 579 5 12 19 17 0 0 
+create npc2 580 5 13 18 17 0 0 
+create npc2 581 5 13 20 17 0 0 
+create npc2 582 5 14 19 116 2 0 
+create npc2 583 5 15 19 116 2 0 
+create npc2 584 5 14 18 116 2 0 
+create npc2 586 5 14 19 116 2 0 
+create npc2 587 5 14 30 116 2 0 
+create npc2 588 5 14 31 116 2 0 
+create npc2 589 5 14 32 116 2 0 
+chg_npc_y_offset 582 0
+chg_npc_y_offset 583 0
+chg_npc_y_offset 584 0
+chg_npc_y_offset 586 0
+chg_npc_y_offset 587 0
+chg_npc_y_offset 588 0
+chg_npc_y_offset 589 0
+create event_generator 590 5 16 14 17 0 0 @makouro_gimmick_a01.txt
+create event_generator 592 5 1 1 17 0 0 @makouro_gimmick_a04.txt
+create event_generator 593 5 1 2 17 0 0 @makouro_gimmick_a05.txt
+create event_generator 594 5 1 1 17 0 0 @makouro_gimmick_a06.txt
+create event_generator 598 5 1 2 17 0 0 @makouro_gimmick_a10.txt
+fadein
+create event_generator 569 5 25 5 17 0 0 @makouro_gimmick_a00.txt
+create npc2 568 5 25 5 17 0 0 
+fi

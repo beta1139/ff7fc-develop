@@ -1,0 +1,87 @@
+wait_target_talk 587
+chg_char_state_event
+kill_through 590
+kill_through 591
+sleep 48
+chg_npc_img 576 114
+chg_npc_img 577 114
+chg_char_dir left
+chg_char_img_tmp 115
+sleep 64
+chg_char_dir right
+chg_npc_dir 576 right
+chg_npc_dir 577 up
+chg_npc_dir 583 down
+chg_npc_dir 584 down
+chg_npc_dir 587 down
+chg_npc_dir 588 down
+play_se button.ogg
+kill_through 592
+kill_through 593
+kill_through 594
+kill_through 595
+kill_through 596
+kill_through 597
+kill 586
+kill 589
+kill 579
+kill 580
+kill 581
+kill 582
+sleep 32
+reset_char_img_tmp
+chg_npc_img 576 34
+chg_npc_dir 576 left
+chg_npc_img 577 35
+chg_npc_dir 577 down
+create npc_event 578 5 13 19 0 3 2 none
+draw_char off
+draw_countdown off
+move_char up 10
+sleep 16
+chg_npc_dir 576 up
+chg_npc_dir 577 up
+chg_npc_dir 578 up
+sleep 144
+play_se door_open.wav
+chg_npc_y_offset 577 -4
+kill 570
+kill 571
+kill 573
+kill 574
+chg_speed 583 not_step
+chg_speed 584 not_step
+chg_speed 587 not_step
+create npc2 139 5 24 5 17 0 0 
+sleep 48
+move_char down 10
+chg_speed 576 fast
+move_npc 576 up 13
+sleep 16
+chg_speed 577 fast
+move_npc 577 up 1
+sleep 8
+move_npc 577 right 2
+sleep 16
+move_npc 577 up 10
+sleep 64
+move_npc 576 left 7
+sleep 16
+move_npc 577 left 7
+sleep 40
+move_npc 576 down 6
+chg_char_dir up
+draw_char on
+kill 578
+draw_countdown on
+chg_char_state_move
+sleep 16
+move_npc 577 down 6
+sleep 32
+move_npc 576 left 8
+sleep 16
+move_npc 577 left 8
+sleep 48
+kill 576
+sleep 16
+kill 577
