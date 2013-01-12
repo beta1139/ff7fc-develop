@@ -1,0 +1,50 @@
+set_eternal_event
+wait_target_talk 586
+reset_talk_flag 586
+chg_char_state_event
+sleep 32
+chg_char_dir left
+chg_char_img_tmp 115
+sleep 48
+kill 591
+sleep 16
+chg_char_dir right
+set_npc_pos 588 5 14 30
+set_npc_pos 589 5 14 19
+chg_npc_dir 589 down
+chg_npc_dir 582 down
+play_se switch.ogg
+sleep 4
+play_se_loop alarm.ogg
+sleep 28
+set_npc_pos 589 5 14 30
+set_npc_pos 582 5 14 19
+sleep 24
+reset_char_img_tmp
+chg_npc_dir 576 right
+chg_npc_img 576 114
+chg_npc_dir 577 up
+chg_npc_img 577 114
+chg_npc_dir 589 left
+chg_npc_dir 582 left
+chg_npc_dir 583 down
+chg_npc_dir 584 down
+play_se switch.ogg
+sleep 4
+play_se_loop alarm.ogg
+sleep 52
+chg_npc_img 576 34
+chg_npc_dir 576 left
+chg_npc_img 577 35
+chg_npc_dir 577 down
+chg_npc_dir 583 left
+chg_npc_dir 584 left
+draw_image 500 16 16 0 0 224 80 1 event/makouro.bmp
+sleep 96
+erase_image 500
+create event_generator 590 5 13 19 17 0 0 @makouro_gimmick_a03.txt
+create event_generator 592 5 1 1 17 0 0 @makouro_gimmick_a04.txt
+create event_generator 593 5 1 2 17 0 0 @makouro_gimmick_a05.txt
+create event_generator 594 5 1 2 17 0 0 @makouro_gimmick_a06.txt
+set_npc_pos 582 5 14 30
+set_npc_pos 586 5 14 19

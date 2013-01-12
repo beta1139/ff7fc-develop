@@ -1,0 +1,43 @@
+wait_same_pos
+draw_countdown off
+create npc2 573 5 13 5 17 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
+create npc2 574 5 13 6 17 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
+create map_obj 571 5 13 6 31 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
+create map_obj 570 5 13 5 31 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
+play_se_loop alarm.ogg
+draw_image 500 16 16 0 0 224 80 1 event/makouro3.bmp
+move_char left 5
+sleep 80
+create npc_event 578 5 20 5 1 2 2 none
+move_npc 578 left 2
+sleep 32
+jump_npc 578 same 2
+sleep 32
+erase_image 500
+msg バレット\n「おいっ！！　どうなってんだ\n　とびらが　ドラクエに　なってやがる！
+chg_npc_dir 578 right
+step_npc 578 2
+sleep 32
+msg バレット\n「おい！　まほうのかぎとか　もってねえぞ！
+sleep 16
+chg_char_dir down
+chg_char_img_tmp 103
+sleep 32
+chg_char_dir left
+sleep 48
+reset_char_img_tmp
+sleep 16
+move_npc 578 right 2
+sleep 32
+kill 578
+draw_countdown on
+chg_char_state_move
+loop inf
+draw_image 500 16 16 0 0 224 80 1 event/makouro3.bmp
+sleep 128
+erase_image 500
+draw_image 501 16 16 0 0 224 80 1 event/makouro4.bmp
+sleep 128
+erase_image 501
+sleep 80
+pool
