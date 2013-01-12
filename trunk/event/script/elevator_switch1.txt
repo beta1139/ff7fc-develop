@@ -15,7 +15,7 @@ inc_map_draw_y_offset
 sleep 1
 pool
 set_map_draw_y_offset -170
-warp 6 20 1 up
+warp 6 20 2 up
 loop 80
 inc_map_draw_y_offset
 sleep 1
