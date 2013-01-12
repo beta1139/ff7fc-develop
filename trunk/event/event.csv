@@ -52,8 +52,8 @@ npc,806,8,26,8,34,3,0,"ジェシー
 　そうすればはしごにつかまるわ。
 　あとは　ほうこうキーのじょうげで　のぼりおりするの"
 event_generator,807,8,26,8,17,1,0,@nanaban_makouro_jesse_jump.txt
-save_point,950,9,3,8,0,0,0,
-event_generator,951,9,3,8,17,0,0,@save_msg.txt
+save_point,950,9,6,10,0,0,0,
+event_generator,951,9,6,10,17,0,0,@save_msg.txt
 treasure_item,1000,10,8,17,3,0,0,4000
 event_generator,1001,10,8,14,17,0,0,"@ichiban_makouro7.txt"
 npc_event,1200,12,4,20,1,3,0,
