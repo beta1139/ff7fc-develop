@@ -50,6 +50,11 @@ if_owned_item (idx)
 fi
   idxのアイテムを所有していれば処理を実行する
 
+if_char_dir (direction)
+(処理)
+fi
+  キャラがdirectionで指定した方向を向いていれば処理を実行する
+
 =============== 繰り返し ===============
 loop (回数) 
 (処理)
