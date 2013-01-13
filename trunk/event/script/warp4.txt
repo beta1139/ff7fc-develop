@@ -13,16 +13,12 @@ create npc 400 4 1 27 36 3 0 ƒEƒFƒbƒW\nu‚¨‚ê‚Í@‚¾‚Á‚µ‚ã‚Â‚±‚¤‚ğ@‚©‚­‚Ù‚µ‚Ä‚¨‚
 create event_generator 410 4 7 7 17 1 0 @ichiban_makouro1.txt
 add_party_mem 1
 kill 132
-kill 137
-kill 140
 kill 130
 kill 131
-kill 134
 kill 500
 kill 501
 kill 502
 kill 503
-kill 138
 kill 114
 kill 115
 kill 116
