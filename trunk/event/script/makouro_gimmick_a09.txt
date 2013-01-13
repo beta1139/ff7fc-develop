@@ -14,6 +14,8 @@ chg_npc_dir 577 up
 chg_npc_img 577 114
 chg_npc_dir 583 down
 chg_npc_dir 584 down
+chg_speed 583 not_step
+chg_speed 584 not_step
 sleep 56
 chg_npc_img 576 34
 chg_npc_dir 576 left
@@ -21,6 +23,8 @@ chg_npc_img 577 35
 chg_npc_dir 577 down
 chg_npc_dir 583 left
 chg_npc_dir 584 left
+chg_speed 583 not_move
+chg_speed 584 not_move
 sleep 8
 chg_char_dir right
 chg_npc_dir 582 down

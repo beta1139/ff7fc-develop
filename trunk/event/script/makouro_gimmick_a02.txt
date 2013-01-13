@@ -26,6 +26,8 @@ set_npc_pos 589 5 14 30
 set_npc_pos 582 5 14 19
 chg_npc_dir 583 down
 chg_npc_dir 584 down
+chg_speed 583 not_step
+chg_speed 584 not_step
 play_se switch.ogg
 sleep 4
 play_se_loop alarm.ogg
@@ -36,6 +38,8 @@ chg_npc_img 577 35
 chg_npc_dir 577 down
 chg_npc_dir 583 left
 chg_npc_dir 584 left
+chg_speed 583 not_move
+chg_speed 584 not_move
 draw_image 500 16 16 0 0 224 80 1 event/makouro.bmp
 sleep 96
 erase_image 500

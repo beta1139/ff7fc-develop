@@ -9,7 +9,14 @@ chg_speed 134 fast
 sleep 16
 move_npc 134 down 1
 sleep 8
-move_npc 134 right 11
-sleep 80
+move_npc 134 right 10
+sleep 8
+chg_char_state_move
+sleep 72
+move_npc 134 up 1
+sleep 16
+chg_npc_dir 134 right
+sleep 16
+create npc2 138 5 22 6 34 3 0 
 kill 134
-
+create event_generator 140 5 23 5 17 0 0 @jesse2.txt

@@ -1,25 +1,26 @@
 wait_same_pos
 draw_countdown off
-create npc2 573 5 13 5 17 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
-create npc2 574 5 13 6 17 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
-create map_obj 571 5 13 6 31 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
-create map_obj 570 5 13 5 31 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
+create npc2 573 5 13 7 17 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
+create npc2 574 5 13 8 17 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
+create map_obj 571 5 13 7 31 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
+create map_obj 570 5 13 8 31 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
 play_se_loop alarm.ogg
 draw_image 500 16 16 0 0 224 80 1 event/makouro3.bmp
 move_char left 5
 sleep 80
-create npc_event 578 5 20 5 1 2 2 none
+create npc_event 578 5 19 7 1 2 2 none
 move_npc 578 left 2
 sleep 32
 jump_npc 578 same 2
 sleep 32
 erase_image 500
-msg バレット\n「おいっ！！　どうなってんだ\n　とびらが　ドラクエに　なってやがる！
+msg バレット\n「どうなってんだっ！\n　とびらが　ドラクエに　なってやがる！
+chg_speed 578 fast
 chg_npc_dir 578 right
-step_npc 578 2
-sleep 32
-msg バレット\n「おい！　まほうのかぎとか　もってねえぞ！
-sleep 16
+sleep 8
+step_npc 578 4
+msg バレット\n「おいっ！！　まほうのかぎとか　もってねえぞ！
+sleep 8
 chg_char_dir down
 chg_char_img_tmp 103
 sleep 32
@@ -27,6 +28,7 @@ chg_char_dir left
 sleep 48
 reset_char_img_tmp
 sleep 16
+chg_speed 578 normal
 move_npc 578 right 2
 sleep 32
 kill 578

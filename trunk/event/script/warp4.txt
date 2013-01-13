@@ -5,12 +5,12 @@ if_flag 3 0
 fadeout
 stop_bgm
 set_flag 1 1
-warp 5 25 5 left
+warp 5 24 7 left
 set_flag 0 2
 start_countdown 5
 play_event_bgm 1-07-Hurry_!.ogg
 create npc 400 4 1 27 36 3 0 ウェッジ\n「おれは　だっしゅつこうを　かくほしておくっす！\n\n　\nウェッジ\n「しっかし　このおおきな　まこうろを\n　ばくはするなんて……　みものっすね！
-create event_generator 410 4 9 7 17 1 0 @ichiban_makouro1.txt
+create event_generator 410 4 7 7 17 1 0 @ichiban_makouro1.txt
 add_party_mem 1
 kill 132
 kill 137
@@ -49,12 +49,12 @@ chg_npc_y_offset 586 0
 chg_npc_y_offset 587 0
 chg_npc_y_offset 588 0
 chg_npc_y_offset 589 0
-create event_generator 590 5 16 14 17 0 0 @makouro_gimmick_a01.txt
+create event_generator 590 5 15 14 17 0 0 @makouro_gimmick_a01.txt
 create event_generator 592 5 1 1 17 0 0 @makouro_gimmick_a04.txt
 create event_generator 593 5 1 2 17 0 0 @makouro_gimmick_a05.txt
 create event_generator 594 5 1 1 17 0 0 @makouro_gimmick_a06.txt
 create event_generator 598 5 1 2 17 0 0 @makouro_gimmick_a10.txt
 fadein
-create event_generator 569 5 25 5 17 0 0 @makouro_gimmick_a00.txt
-create npc2 568 5 25 5 17 0 0 
+create event_generator 569 5 24 7 17 0 0 @makouro_gimmick_a00.txt
+create npc2 568 5 24 7 17 0 0 
 fi
