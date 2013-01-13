@@ -7,16 +7,27 @@ play_se door_open.wav
 kill 114
 kill 115
 kill 116
-chg_speed 130 normal
-chg_speed 131 normal
+chg_speed 130 fast
+chg_speed 131 fast
 move_npc 130 right 1
 move_npc 131 left 1
-sleep 16
+chg_char_state_move
+sleep 8
 move_npc 130 up 7
-move_npc 131 up 9
-sleep 110
+move_npc 131 up 5
+sleep 40
+move_npc 131 right 3
+sleep 16
 move_npc 130 right 2
-sleep 32
+sleep 8
+move_npc 131 up 3
+sleep 8
+chg_npc_dir 130 down
+sleep 16
+create npc 133 5 10 6 35 1 0 ビッグス\n「ここの　あんごうを　にゅうしゅするために\n なんにんの　なかまが　ぎせいに　なったことか……
 kill 130
+chg_npc_dir 131 right
+sleep 16
+create npc3 134 5 12 6 34 3 0 ジェシー\n「コードかいじょ
+create event_generator 137 5 1 2 17 0 0 @jesse1.txt
 kill 131
-create npc 133 5 10 5 35 1 0 ビッグス\n「ここのあんごうをにゅうしゅするために\n なんにんのなかまがぎせいになったことか……
