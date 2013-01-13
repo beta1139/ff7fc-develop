@@ -19,59 +19,11 @@ sleep 16
 create explode 427 4 6 8 0 0 0 none
 sleep 16
 create explode 428 4 13 4 0 0 0 none
-kill 420
-kill 400
-kill 104
-kill 105
 fadeout
 sleep 32
 stop_bgm
 sleep 64
-kill_through 109
-kill_through 110
-kill_through 120
-kill_through 122
-kill_through 124
-kill_through 139
-kill_through 141
-kill_through 142
-kill_through 143
-kill_through 160
-kill_through 161
-kill_through 162
-kill_through 163
-kill_through 170
-kill_through 171
-kill_through 172
-kill_through 173
-kill_through 200
-kill_through 201
-kill_through 202
-kill_through 203
-kill_through 211
-kill_through 212
-kill_through 213
-kill_through 428
-kill_through 583
-kill_through 584
-kill_through 587
-kill_through 588
-kill_through 600
-kill_through 650
-kill_through 651
-kill_through 660
-kill_through 661
-kill_through 700
-kill_through 802
-kill_through 803
-kill_through 804
-kill_through 805
-kill_through 806
-kill_through 807
-kill_through 950
-kill_through 951
-kill_through 1000
-kill_through 1001
+kill_through_range 0 1099
 play_se bomb.ogg
 sleep 400
 warp 12 5 21 up
@@ -111,7 +63,5 @@ chg_npc_dir 1200 down
 msg バレット\n「かねの　はなしなら\n　ぶじに　アジトに　かえってからだ
 move_npc 1200 up 8
 sleep 128
-kill 1200
-kill 1201
-kill 1202
-kill 1203
+kill_through_range 1200 1203
+
