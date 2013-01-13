@@ -27,9 +27,15 @@ fadeout
 sleep 32
 stop_bgm
 sleep 64
+kill_through 109
+kill_through 110
 kill_through 120
 kill_through 122
 kill_through 124
+kill_through 139
+kill_through 141
+kill_through 142
+kill_through 143
 kill_through 160
 kill_through 161
 kill_through 162
@@ -38,6 +44,19 @@ kill_through 170
 kill_through 171
 kill_through 172
 kill_through 173
+kill_through 200
+kill_through 201
+kill_through 202
+kill_through 203
+kill_through 211
+kill_through 212
+kill_through 213
+kill_through 428
+kill_through 583
+kill_through 584
+kill_through 587
+kill_through 588
+kill_through 600
 kill_through 650
 kill_through 651
 kill_through 660
@@ -47,6 +66,12 @@ kill_through 802
 kill_through 803
 kill_through 804
 kill_through 805
+kill_through 806
+kill_through 807
+kill_through 950
+kill_through 951
+kill_through 1000
+kill_through 1001
 play_se bomb.ogg
 sleep 400
 warp 12 5 21 up
