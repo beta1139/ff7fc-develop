@@ -25,19 +25,19 @@ kill 116
 kill 135
 kill 136
 kill 139
+kill 600
 create npc_event 576 5 16 19 34 2 0 none
 create npc_event 577 5 14 17 35 1 0 none
 chg_npc_y_offset 577 0
-create npc2 579 5 12 19 17 0 0 
 create npc2 580 5 13 18 17 0 0 
 create npc2 581 5 13 20 17 0 0 
-create npc2 582 5 14 19 116 2 0 
-create npc2 583 5 15 19 116 2 0 
-create npc2 584 5 14 18 116 2 0 
-create npc2 586 5 14 19 116 2 0 
-create npc2 587 5 14 30 116 2 0 
-create npc2 588 5 14 31 116 2 0 
-create npc2 589 5 14 32 116 2 0 
+create npc2 582 5 14 19 116 0 0 
+create npc2 583 5 15 19 116 0 0 
+create npc2 584 5 14 18 116 0 0 
+create npc2 586 5 14 19 116 0 0 
+create npc2 587 5 14 30 116 0 0 
+create npc2 588 5 14 31 116 0 0 
+create npc2 589 5 14 32 116 0 0 
 chg_npc_y_offset 582 0
 chg_npc_y_offset 583 0
 chg_npc_y_offset 584 0
@@ -53,4 +53,3 @@ create event_generator 598 5 1 2 17 0 0 @makouro_gimmick_a10.txt
 fadein
 create event_generator 569 5 24 7 17 0 0 @makouro_gimmick_a00.txt
 create npc2 568 5 24 7 17 0 0 
-fi

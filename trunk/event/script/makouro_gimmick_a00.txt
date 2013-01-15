@@ -19,8 +19,7 @@ chg_speed 578 fast
 chg_npc_dir 578 right
 sleep 8
 step_npc 578 4
-msg バレット\n「おいっ！！　まほうのかぎとか　もってねえぞ！
-sleep 8
+msg バレット\n「おいっ！！　どうする！？
 chg_char_dir down
 chg_char_img_tmp 103
 sleep 32

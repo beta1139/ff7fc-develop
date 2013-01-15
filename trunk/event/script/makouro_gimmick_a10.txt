@@ -2,11 +2,20 @@ wait_target_talk 587
 chg_char_state_event
 kill_through 590
 kill_through 591
+erase_image 500
 sleep 48
+if_char_img 0
 chg_npc_img 576 114
 chg_npc_img 577 114
 chg_char_dir left
 chg_char_img_tmp 115
+fi
+if_char_img 1
+chg_npc_img 576 114
+chg_npc_img 577 114
+chg_char_dir left
+chg_char_img_tmp 116
+fi
 sleep 64
 chg_char_dir right
 chg_npc_dir 576 right
@@ -24,7 +33,6 @@ kill_through 596
 kill_through 597
 kill 586
 kill 589
-kill 579
 kill 580
 kill 581
 kill 582
@@ -34,14 +42,17 @@ chg_npc_img 576 34
 chg_npc_dir 576 left
 chg_npc_img 577 35
 chg_npc_dir 577 down
-create npc_event 578 5 13 19 0 3 2 none
+if_char_img 0
+create npc_event 579 5 13 19 0 3 2 none
 draw_char off
 draw_countdown off
 move_char up 7
 sleep 16
 chg_npc_dir 576 up
 chg_npc_dir 577 up
+chg_npc_img 578 1
 chg_npc_dir 578 up
+chg_npc_dir 579 up
 sleep 96
 play_se door_open.wav
 chg_npc_y_offset 577 -4
@@ -52,6 +63,7 @@ kill 574
 chg_speed 583 not_step
 chg_speed 584 not_step
 chg_speed 587 not_step
+chg_speed 588 not_step
 create npc2 139 5 24 7 17 0 0 
 sleep 32
 move_char down 7
@@ -65,25 +77,127 @@ sleep 16
 move_npc 576 left 1
 sleep 8
 move_npc 576 up 8
-sleep 48
+sleep 32
+chg_npc_dir 578 down
+sleep 16
 move_npc 577 left 6
 sleep 16
 move_npc 576 left 6
-sleep 16
-chg_char_dir up
-draw_char on
-kill 578
-draw_countdown on
-chg_char_state_move
+chg_speed 579 normal
+sleep 4
+chg_npc_dir 579 right
+sleep 4
+chg_npc_dir 579 down
+sleep 4
+chg_npc_dir 579 left
+sleep 4
+chg_npc_dir 579 up
+draw_image 500 16 16 0 0 224 80 1 event/makouro7.bmp
+add_likability 2 500
 sleep 16
 move_npc 577 down 5
 sleep 16
 move_npc 576 down 5
 sleep 16
+chg_npc_dir 578 left
+chg_npc_img 578 98
+chg_speed 578 fast
+step_npc 578 6
+sleep 8
 move_npc 577 left 8
-sleep 24
+sleep 16
 move_npc 576 left 8
-sleep 40
+sleep 8
+chg_npc_img 578 1
+chg_speed 578 normal
+move_npc 578 down 1
+sleep 32
+erase_image 500
+kill 578
+chg_char_img 0
+chg_char_dir up
+draw_char on
+kill 579
+draw_countdown on
+chg_char_state_move
+sleep 8
 kill 577
-sleep 24
+sleep 16
 kill 576
+fi
+if_char_img 1
+create npc_event 578 5 13 19 1 3 2 none
+draw_char off
+draw_countdown off
+move_char up 7
+sleep 16
+chg_npc_dir 576 up
+chg_npc_dir 577 up
+chg_npc_dir 578 up
+chg_npc_dir 579 up
+sleep 96
+play_se door_open.wav
+chg_npc_y_offset 577 -4
+kill 570
+kill 571
+kill 573
+kill 574
+chg_speed 583 not_step
+chg_speed 584 not_step
+chg_speed 587 not_step
+chg_speed 588 not_step
+create npc2 139 5 24 7 17 0 0 
+sleep 32
+move_char down 7
+chg_speed 576 fast
+move_npc 576 up 3
+chg_speed 577 fast
+move_npc 577 right 1
+sleep 8
+move_npc 577 up 9
+sleep 16
+move_npc 576 left 1
+sleep 8
+move_npc 576 up 8
+sleep 32
+chg_npc_dir 578 down
+sleep 16
+move_npc 577 left 6
+sleep 16
+move_npc 576 left 6
+chg_npc_dir 578 left
+chg_npc_img 578 98
+chg_speed 578 normal
+sleep 16
+sub_likability 1 500
+sub_likability 2 250
+msg バレット\n「おまえ　ほんとうに　もとソルジャーか？
+sleep 16
+move_npc 577 down 5
+chg_npc_dir 579 down
+chg_npc_img 579 98
+chg_speed 579 normal
+step_npc 579 2
+sleep 16
+move_npc 576 down 5
+sleep 24
+move_npc 577 left 8
+chg_npc_img 579 0
+move_npc 579 up 1
+sleep 16
+move_npc 576 left 8
+kill 578
+chg_char_img 0
+chg_char_dir up
+draw_char on
+kill 579
+draw_countdown on
+chg_char_state_move
+sleep 48
+kill 577
+sleep 16
+kill 576
+fi
+if_flag 10 0
+add_likability 1 500
+fi
