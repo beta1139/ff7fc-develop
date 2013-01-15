@@ -64,4 +64,3 @@ msg バレット\n「かねの　はなしなら\n　ぶじに　アジトに　かえってからだ
 move_npc 1200 up 8
 sleep 128
 kill_through_range 1200 1203
-
