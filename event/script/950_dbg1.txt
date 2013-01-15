@@ -1,4 +1,6 @@
 wait_event_invalid 95013
+play_se alarm.ogg
+msg3 180 ドロボー！　ドロボー！
 wait_same_pos
 create npc_event 950015 950 24 23 101 1 3 none
 create npc_event 950016 950 25 23 101 2 3 none
