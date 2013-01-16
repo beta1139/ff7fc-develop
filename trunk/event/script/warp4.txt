@@ -53,3 +53,6 @@ create event_generator 598 5 1 2 17 0 0 @makouro_gimmick_a10.txt
 fadein
 create event_generator 569 5 24 7 17 0 0 @makouro_gimmick_a00.txt
 create npc2 568 5 24 7 17 0 0 
+fi
+if_flag 3 1
+fi
