@@ -2,7 +2,7 @@ wait_target_talk 587
 chg_char_state_event
 kill_through 590
 kill_through 591
-erase_image 500
+erase_msg3
 sleep 48
 if_char_img 0
 chg_npc_img 576 114
@@ -92,7 +92,7 @@ sleep 4
 chg_npc_dir 579 left
 sleep 4
 chg_npc_dir 579 up
-draw_image 500 16 16 0 0 224 80 1 event/makouro7.bmp
+msg3 -1 『もとソルジャーを　なめるな
 add_likability 2 500
 sleep 16
 move_npc 577 down 5
@@ -112,7 +112,7 @@ chg_npc_img 578 1
 chg_speed 578 normal
 move_npc 578 down 1
 sleep 32
-erase_image 500
+erase_msg3
 kill 578
 chg_char_img 0
 chg_char_dir up
@@ -171,7 +171,7 @@ chg_speed 578 normal
 sleep 16
 sub_likability 1 500
 sub_likability 2 250
-msg バレット\n「おまえ　ほんとうに　もとソルジャーか？
+msg バレット\n「おまえ　ほんとに　もとソルジャーか？
 sleep 16
 move_npc 577 down 5
 chg_npc_dir 579 down
