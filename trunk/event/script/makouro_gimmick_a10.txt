@@ -171,7 +171,7 @@ chg_speed 578 normal
 sleep 16
 sub_likability 1 500
 sub_likability 2 250
-msg バレット\n「おまえ　ほんとに　もとソルジャーか？
+msg バレット\n「おまえ　ほんとうに　もとソルジャーか？
 sleep 16
 move_npc 577 down 5
 chg_npc_dir 579 down

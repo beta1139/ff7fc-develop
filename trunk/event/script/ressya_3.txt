@@ -1,22 +1,25 @@
-wait_event_invalid 1661
-wait_target_talked 1666
-wait_target_talked 1667
-wait_target_talked 1668
-wait_target_talked 1670
-wait_target_talked 1671
 wait_event_invalid 1675
-sleep 60
+sleep 32
+chg_npc_dir 1665 down
+sleep 16
+jump_npc_target_pos 1665 6 19
+sleep 16
+play_se bump.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 16
 play_se train_info.ogg
-msg しゃないアナウンス\n「まもなく　スラムななばんがい　れっしゃはかば\n　えき
+msg しゃないアナウンス\n「まもなく　スラムななばんがい\n　れっしゃはかば　えき
 sleep 32
 fadeout
-kill 1665
-kill 1666
-kill 1667
-kill 1668
-kill 1670
-kill 1671
+kill_through_range 1600 1699
 draw_char off
 warp 17 30 4 down
-sleep 24
+sleep 40
 fadein

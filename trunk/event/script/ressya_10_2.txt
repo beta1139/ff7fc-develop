@@ -1,0 +1,102 @@
+wait_target_talk 70411
+kill 70414
+kill 70416
+kill 70417
+erase_msg3
+msg 　かく　つうかポイントには　IDけんちエリアが\n　せっちされてるの
+jump_npc 70400 same 2
+sleep 32
+chg_speed 70400 fast
+step_npc 70400 4
+sleep 32
+chg_speed 70400 not_move
+msg ジェシー\n「じょうきゃく　すべての　みぶんや　なにからぜんぶ！\n　しんらビルの　ホストコンピュータと　れんどうして\n　チェック　されちゃうわけ
+sleep 32
+chg_speed 70400 not_step
+chg_npc_dir 70400 left
+msg ジェシー\n「ひそひそ……\n　（わたしたちは　どうみたって　ふしん　じんぶつ\n だから　ニセのIDで　つうかしてるの）
+chg_npc_dir 70401 right
+sleep 48
+chg_npc_dir 70400 up
+sleep 16
+fadeout
+clear_text 9
+kill 1673
+kill 70400
+kill 70401
+kill 70402
+kill 70403
+kill 70404
+kill 70405
+kill 70410
+kill 70411
+kill 70412
+kill 70413
+sleep 48
+warp 16 2 20 up
+create npc2 1680 16 2 21 17 0 0 
+create npc2 1681 16 3 20 17 0 0 
+create npc2 1682 16 2 19 34 2 4 
+create npc_event 1683 16 2 20 0 0 2 
+draw_char off
+create event_generator 1684 16 3 20 17 0 0 @ressya_11.txt
+create event_generator 1685 16 3 20 17 0 0 @ressya_11_2.txt
+create event_generator 1686 16 3 20 17 0 0 @ressya_11_3.txt
+fadein
+sleep 16
+draw_image 160 286 -240 0 0 256 240 1 event/red.bmp
+set_image_alpha 160 0
+sleep 16
+play_se_loop alarm.ogg
+chg_image_pos 160 0 0 0 0 256 240
+set_image_alpha 160 14
+sleep 4
+set_image_alpha 160 28
+sleep 4
+set_image_alpha 160 42
+sleep 4
+set_image_alpha 160 56
+sleep 4
+chg_npc_dir 1683 down
+set_image_alpha 160 42
+sleep 4
+set_image_alpha 160 28
+sleep 4
+set_image_alpha 160 14
+sleep 4
+set_image_alpha 160 0
+sleep 4
+set_image_alpha 160 14
+sleep 4
+set_image_alpha 160 28
+sleep 4
+set_image_alpha 160 42
+sleep 4
+set_image_alpha 160 56
+sleep 4
+chg_npc_dir 1682 down
+set_image_alpha 160 42
+sleep 4
+set_image_alpha 160 28
+sleep 4
+set_image_alpha 160 14
+msg3 -1 ジェシー\n「うわさを　すれば　ね
+chg_char_state_move
+loop_inf
+sleep 4
+set_image_alpha 160 0
+sleep 4
+set_image_alpha 160 14
+sleep 4
+set_image_alpha 160 28
+sleep 4
+set_image_alpha 160 42
+sleep 4
+set_image_alpha 160 56
+sleep 4
+set_image_alpha 160 42
+sleep 4
+set_image_alpha 160 28
+sleep 4
+set_image_alpha 160 14
+pool

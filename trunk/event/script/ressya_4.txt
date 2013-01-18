@@ -1,9 +1,174 @@
 wait_event_invalid 1661
 wait_target_talked 1667
-if_flag 3 0
-chg_param 1667 ジェシー\n「もうすぐ　えきに　つくね\n　クラウドと　いっぱい　はなせて　もえたわ
+sleep 16
+if_char_dir left
+move_char down 1
+sleep 16
+move_char left 1
+chg_npc_dir 1667 left
+sleep 16
 fi
-if_flag 3 1
-chg_param 1667 ジェシー\n「もうすぐ　えきに　つくね\n　クラウドと　いっぱい　はなせて　もえたわ\n\n　わたし　どうかせんに　ひが　ついたかもよ
-sub_likability 2 250
+if_char_dir up
+sleep 16
+chg_char_dir left
 fi
+set_talk_npc 1667
+msg ジェシー\n「わたし　こういうの　すきなのよ\n　ばくだんとか　モニタがめんとか　ハイテクかんけい
+reset_talk_npc
+sleep 48
+fadeout
+kill 1667
+kill_through 1676
+kill 1666
+create npc3 1662 16 5 22 35 0 4 ビッグス\n「スースー……ムニャムニャ……\n　バレット　いばってんじゃねえぞ……
+draw_char off
+warp 703 7 6 up
+create npc_event 70300 703 13 11 34 0 4 none
+create npc_event 70301 703 12 11 0 0 2 none
+sleep 24
+fadein
+sleep 16
+chg_npc_dir 70300 left
+msg ジェシー\n「さ　はじめるわよ
+chg_npc_dir 70300 up
+chg_speed 70300 not_move
+sleep 16
+play_se button.ogg
+draw_image 70302 -160 -240 0 0 256 240 0 event/midgar1.bmp
+set_image_alpha 70302 0
+sleep 16
+chg_image_pos 70302 16 0 0 0 160 240
+set_image_alpha 70302 50
+sleep 8
+set_image_alpha 70302 75
+sleep 8
+set_image_alpha 70302 100
+sleep 64
+msg ジェシー\n「これが　まこうとし　ミッドガルの\n　ぜんけい　フレームモデルね\n\n　スケールは　だいたい 1/10000って\n　とこかな
+sleep 80
+chg_npc_dir 70300 left
+msg ジェシー\n「うえの　プレートは　ちじょうから\n　やく50M　はなれているの
+chg_npc_dir 70300 up
+msg 　プレートをささえているのは\n　ちゅうしんの　おおきな　しちゅう\n　かく　くかくに　たてられた　はしら……\n\n　はしらは　きかいとう　とも　よばれているわ
+sleep 64
+chg_npc_dir 70300 left
+chg_speed 70300 not_step
+msg ジェシー\n「ヒソヒソ……\n　（ばくはした　いちばん　まこうろが\n　きたの　はずれに　あるの）\n　そこから　じゅんばんに　2　3……\n　8つの　まこうろが　ミッドガルの　でんりょく\n　きょうきゅうを　ささえているのよ
+sleep 32
+chg_npc_dir 70300 up
+chg_speed 70300 not_move
+sleep 32
+msg ジェシー\n「それぞれの　まちには　なまえも　あったんだけど\n　ミッドガルに　すむひとは　だれも\n　おぼえちゃいないわ\n　なまえ　なんかより　ばんごうで　よぶの\n　そういうところなのよ　ここは
+sleep 64
+chg_npc_dir 70300 left
+chg_speed 70300 not_step
+msg ジェシー\n「ふぅ…　つぎは　これ！\n　ほら　みて
+chg_npc_dir 70300 up
+sleep 32
+play_se button.ogg
+sleep 32
+fadeout
+kill 70300
+kill 70301
+draw_char off
+erase_image 70302
+warp 704 11 12 up
+create npc_event 70400 704 16 17 34 0 0 none
+create npc_event 70401 704 15 17 0 0 2 none
+create npc2 70410 704 11 11 17 0 0 
+create npc2 70411 704 10 12 17 0 0 
+create npc2 70412 704 12 12 17 0 0 
+create npc2 70413 704 11 13 17 0 0 
+create event_generator 70414 16 1 1 17 0 0 @ressya_10.txt
+create event_generator 70415 16 1 2 17 0 0 @ressya_10_2.txt
+create event_generator 70416 16 2 1 17 0 0 @ressya_10_3.txt
+create event_generator 70417 16 2 2 17 0 0 @ressya_10_4.txt
+sleep 24
+fadein
+chg_npc_dir 70400 up
+chg_speed 70400 not_move
+sleep 32
+clear_text 4
+msg ジェシー\n「わたしたちが　いま　のってる\n　れっしゃの　ルートが　これよ
+set_text 9 　　8iaX Station
+set_text_alpha 9 0
+sleep 4
+set_text_alpha 9 25
+sleep 4
+set_text_alpha 9 50
+sleep 4
+set_text_alpha 9 75
+sleep 4
+set_text_alpha 9 100
+create npc_event 70402 704 10 14 102 1 0 none
+create npc_event 70403 704 9 14 102 2 0 none
+create npc_event 70404 704 8 14 102 0 0 none
+create npc_event 70405 704 7 14 102 3 0 none
+loop 2
+set_npc_pos 70402 704 10 14
+set_npc_pos 70403 704 9 14
+set_npc_pos 70404 704 8 14
+set_npc_pos 70405 704 7 14
+sleep 4
+set_text_alpha 9 75
+sleep 4
+set_npc_pos 70402 704 11 14
+set_npc_pos 70403 704 10 14
+set_npc_pos 70404 704 9 14
+set_npc_pos 70405 704 8 14
+sleep 8
+set_text_alpha 9 100
+set_npc_pos 70402 704 12 14
+set_npc_pos 70403 704 11 14
+set_npc_pos 70404 704 10 14
+set_npc_pos 70405 704 9 14
+sleep 8
+set_npc_pos 70402 704 13 14
+set_npc_pos 70403 704 12 14
+set_npc_pos 70404 704 11 14
+set_npc_pos 70405 704 10 14
+sleep 4
+set_text_alpha 9 75
+sleep 4
+set_npc_pos 70402 704 14 14
+set_npc_pos 70403 704 13 14
+set_npc_pos 70404 704 12 14
+set_npc_pos 70405 704 11 14
+chg_npc_dir 70400 left
+chg_speed 70400 not_step
+sleep 8
+pool
+chg_npc_dir 70400 up
+chg_speed 70400 not_move
+msg3 -1 ジェシー\n「プレートを　ささえている　おおきな　はしらに\n　らせんじょうに　ルートが　とおっているの\n　いまは　はしらの　ちょうど　まんなか　あたりね
+chg_char_state_move
+loop_inf
+set_text_alpha 9 100
+set_npc_pos 70402 704 10 14
+set_npc_pos 70403 704 9 14
+set_npc_pos 70404 704 8 14
+set_npc_pos 70405 704 7 14
+sleep 8
+set_npc_pos 70402 704 11 14
+set_npc_pos 70403 704 10 14
+set_npc_pos 70404 704 9 14
+set_npc_pos 70405 704 8 14
+sleep 8
+set_npc_pos 70402 704 12 14
+set_npc_pos 70403 704 11 14
+set_npc_pos 70404 704 10 14
+set_npc_pos 70405 704 9 14
+sleep 4
+set_text_alpha 9 75
+sleep 4
+set_npc_pos 70402 704 13 14
+set_npc_pos 70403 704 12 14
+set_npc_pos 70404 704 11 14
+set_npc_pos 70405 704 10 14
+sleep 8
+set_npc_pos 70402 704 14 14
+set_npc_pos 70403 704 13 14
+set_npc_pos 70404 704 12 14
+set_npc_pos 70405 704 11 14
+sleep 8
+pool
