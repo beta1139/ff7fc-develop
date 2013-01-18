@@ -303,6 +303,20 @@ screen_effect (color)
   画面全体にエフェクトをかける。colorにはred blue green offが指定可
   使用後はoff指定でエフェクト解除すること
 
+set_screen_effect (effect_type) (R) (G) (B) (val)
+  effect_type: alpha, add, sub, mul, invの5種類を指定可
+  R,G,B      : 0~255を指定可
+  val        : エフェクトの強さ。0~100を指定可
+
+inc_screen_effect_val (inc_val)
+  エフェクトの強さをinc_valだけ増やす
+
+dec_screen_effect_val (dec_val)
+  エフェクトの強さをdec_valだけ減らす
+
+reset_screen_effect
+  エフェクト解除
+
 flush
   短時間画面全体に白い矩形を描画する
 
