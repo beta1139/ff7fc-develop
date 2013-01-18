@@ -139,10 +139,9 @@ npc,1671,16,11,19,70,1,4,"「しんらしんぶんの　ごうがい　みたかい？
 event_generator,1672,16,0,0,17,0,0,"@ressya_3.txt"
 event_generator,1673,16,0,0,17,0,0,"@ressya_4.txt"
 event_generator,1674,16,0,0,17,0,0,"@ressya_5.txt"
-event_generator,1675,16,7,20,17,0,0,"@ressya_6_1.txt"
-event_generator,1676,16,6,19,17,0,0,"@ressya_6_2.txt"
-event_generator,1677,16,8,19,17,0,0,"@ressya_6_3.txt"
-event_generator,1678,16,8,19,17,0,0,"@ressya_7.txt"
+event_generator,1675,16,7,20,17,0,0,"@ressya_6.txt"
+event_generator,1676,16,8,19,17,0,0,"@ressya_7.txt"
+event_generator,1678,16,19,21,17,0,0,"@ressya_9.txt"
 event_generator,1700,17,30,4,17,0,0,"@nanabangai_station1.txt"
 map_obj,1751,17,4,3,4,0,0,0
 map_obj,1752,17,5,3,4,0,0,0
