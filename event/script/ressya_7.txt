@@ -1,3 +1,3 @@
 wait_event_invalid 1661
 wait_target_talked 1666
-chg_param 1666 ビッグス\n「スースー……ムニャムニャ……\n　バレット　いばってんじゃねえぞ……
+chg_param 1666 ビッグス\n「さすがに　つかれたよ\n　えきにつくまで　ねむらせてくれ

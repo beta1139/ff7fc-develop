@@ -1,0 +1,35 @@
+wait_target_talk 1680
+kill 1685
+kill 1686
+erase_msg3
+sleep 32
+chg_npc_dir 1683 up
+sleep 48
+msg ジェシー\n「このひかりが　IDけんちエリア　つうかの\n　サインなの
+sleep 32
+chg_npc_dir 1682 right
+msg ジェシー\n「ひそひそ……\n　（くらくなるから　チカンが　おおいのよ\n　IDけんちエリアは……）
+sleep 32
+chg_npc_dir 1682 down
+msg ジェシー\n「ま　それは　さておき\n　もうすぐ　ちじょうに　かえれるってわけ\n　なんだか　ホっとするね
+sleep 96
+kill_through 70414
+kill_through 70415
+kill_through 70416
+kill_through 70417
+sleep 8
+erase_image 160
+kill 1680
+kill 1681
+draw_char on
+kill 1683
+stop_se
+sleep 16
+chg_npc_dir 1682 left
+sleep 16
+create npc 1669 16 2 19 34 2 0 ジェシー\n「そうだ　クラウド！\n　こんど　わたしの　てづくりさくひんを\n　プレゼントしちゃおうかな\n#2\n　　えんりょしとくよ\n　　たのしみにしてるよ\n\n\n[[「そう きっと　こうかい　するかもよ\n　わたし　ズガッーンと　ねにもつ　タイプなの]]\n[[　うん　じゃ　うでに　よりをかけて\n　ドッカーンと　せいさくするわ]]
+kill 1682
+create event_generator 1677 16 1 1 17 0 0 @ressya_8.txt
+chg_type 1665 npc2
+kill_through 1674
+chg_param 1668 ウェッジ\n「めが　チカチカしたっす\n　おれ　くらいの　だめっす　にがてっす
