@@ -289,6 +289,12 @@ door_close (event_id)
 chg_npc_y_offset (event_id) (offset)
   キャラ表示のＹ座標のずらし分を設定
 
+set_active_msg (event_id)
+  会話ウィンドウが開いているときも行動させる
+
+set_inactive_msg (event_id)
+  会話ウィンドウが開いているときも行動させるのをやめる
+
 =============== パラメータ操作系 ===============
 add_gil (val)
   ギルを増やす
