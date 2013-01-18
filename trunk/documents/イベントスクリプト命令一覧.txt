@@ -160,6 +160,16 @@ backup_char_dir
 restore_char_dir
   保存しといたキャラの向きを設定
 
+set_key_valid (key)
+  set_key_unvalidで無効にした(key)を有効にする
+  keyには以下を指定する
+	up, down, left, right, select, start, a, b, dbg1, dbg2
+
+set_key_unvalid (key)
+  (key)を無効にする
+  keyには以下を指定する
+	up, down, left, right, select, start, a, b, dbg1, dbg2
+
 =============== イベント操作系 ===============
 create (event_type) (event_id) (map_id) (x) (y) (image_id) (direction) (speed) (param)
   イベントを生成する。paramは一行で記述すること。改行は\nと記述する
