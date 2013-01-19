@@ -52,7 +52,7 @@ sleep 16
 chg_npc_dir 1665 right
 sleep 16
 set_talk_npc 1665
-msg バレット\n「うえの　せかい……　プレートせかい……\n\n\n　あの　くさったピザの　せいで\n　したの　にんげんが　どんなに\n　くるしんでることか……
+msg バレット\n「うえの　せかい……　プレートとし……\n\n\n　あの　くさったピザの　せいで\n　したの　にんげんが　どんなに\n　くるしんでることか……
 reset_talk_npc
 move_npc 1665 left 2
 sleep 96
@@ -92,7 +92,7 @@ sleep 32
 chg_npc_dir 1665 up
 sleep 32
 set_talk_npc 1665
-msg バレット\n「どんなに　けがれていても\n　じべたが　すきなのかもな
+msg バレット\n「どんなに　よごれていても\n　じべたが　すきなのかもな
 reset_talk_npc
 sleep 16
 chg_char_dir up
