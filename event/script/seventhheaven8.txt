@@ -46,9 +46,9 @@ sleep 16
 chg_speed 2202 normal
 chg_npc_dir 2202 left
 fi
+chg_type 2201 npc2
 chg_type 2202 npc
 chg_speed 2202 not_move
+set_flag_wall 2201
 set_flag_wall 2202
-create event_generator 2241 22 5 9 17 0 0 @seventhheaven9_1.txt
-create event_generator 2242 22 4 10 17 0 0 @seventhheaven9_2.txt
-create event_generator 2243 22 6 10 17 0 0 @seventhheaven9_3.txt
+create event_generator 2241 22 1 1 17 0 0 @seventhheaven9.txt
