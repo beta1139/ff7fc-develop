@@ -1,4 +1,5 @@
 wait_same_pos
+chg_char_state_move
 chg_type 2304 npc_event
 chg_speed 2304 normal
 move_npc 2304 down 1
@@ -57,3 +58,6 @@ chg_npc_dir 2304 up
 sleep 16
 chg_type 2304 npc
 chg_speed 2304 not_move
+loop_inf
+sleep 64
+pool
