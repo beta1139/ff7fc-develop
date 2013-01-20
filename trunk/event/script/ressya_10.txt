@@ -32,20 +32,48 @@ draw_char on
 create event_generator 1684 16 3 20 17 0 0 @ressya_11.txt
 chg_speed 1667 not_step
 fadein
-sleep 32
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
+sleep 16
+dec_map_draw_y_offset
 play_se_loop alarm.ogg
 create effect 1620 16 0 0 0 0 48 2
 sleep 16
 chg_char_dir down
 sleep 32
+inc_map_draw_y_offset
 chg_npc_dir 1667 down
-sleep 16
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
 msg3 -1 ジェシー\n「うわさを　すれば　ね
 chg_char_state_move
-sleep 32
+sleep 16
+dec_map_draw_y_offset
+sleep 16
 loop_inf
 create effect 1621 16 0 0 0 0 48 2
-sleep 96
+sleep 32
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
+sleep 16
+dec_map_draw_y_offset
+sleep 32
 create effect 1622 16 0 0 0 0 48 2
-sleep 96
+sleep 16
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
+sleep 16
+dec_map_draw_y_offset
+sleep 48
 pool

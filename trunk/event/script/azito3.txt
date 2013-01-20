@@ -1,9 +1,9 @@
 wait_target_talked 2306
-set_key_unvalid up
 set_key_unvalid left
 set_key_unvalid down
 set_key_unvalid right
 set_key_unvalid a
+set_key_unvalid start
 chg_char_dir up
 sleep 48
 create npc2 2316 23 5 2 20 1 0 
@@ -40,8 +40,8 @@ create npc2 2314 23 5 3 17 0 0
 create event_generator 2315 23 1 2 17 0 0 @azito7.txt
 chg_type 2306 npc
 chg_param 2306 ジェシー\n「でも　わたしの　ばくだんの　はれぶたい\n　ちょっと　うれしいんだ
-set_key_valid up
 set_key_valid left
 set_key_valid down
 set_key_valid right
 set_key_valid a
+set_key_valid start
