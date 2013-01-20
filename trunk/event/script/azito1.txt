@@ -58,6 +58,3 @@ chg_npc_dir 2304 up
 sleep 16
 chg_type 2304 npc
 chg_speed 2304 not_move
-loop_inf
-sleep 64
-pool
