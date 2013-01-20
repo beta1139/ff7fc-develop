@@ -1,5 +1,11 @@
 wait_event_invalid 1661
 wait_target_talked 1667
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid a
+set_key_unvalid start
 sleep 16
 if_char_dir left
 move_char down 1
@@ -13,10 +19,12 @@ sleep 16
 chg_char_dir left
 fi
 set_talk_npc 1667
+set_key_valid a
 msg ジェシー\n「わたし　こういうの　すきなのよ\n　ばくだんとか　モニタがめんとか　ハイテクかんけい
 reset_talk_npc
 sleep 48
 fadeout
+kill 1600
 kill_through 1676
 kill 1666
 create npc3 1662 16 5 22 35 0 4 ビッグス\n「スースー……ムニャムニャ……\n　バレット　いばってんじゃねえぞ……
@@ -75,10 +83,6 @@ create npc_event 70400 704 16 17 34 0 0 none
 create npc_event 70401 704 15 17 0 0 2 none
 create npc2 70410 704 11 11 17 0 0 
 create event_generator 70414 16 1 1 17 0 0 @ressya_10.txt
-set_key_unvalid up
-set_key_unvalid left
-set_key_unvalid down
-set_key_unvalid right
 sleep 24
 fadein
 chg_npc_dir 70400 up

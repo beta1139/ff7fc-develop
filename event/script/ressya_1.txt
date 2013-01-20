@@ -1,5 +1,4 @@
 wait_same_pos
-play_event_bgm Ex-01-Train_Noise_Close.ogg
 draw_char off
 step_npc 1650 3
 sleep 16
