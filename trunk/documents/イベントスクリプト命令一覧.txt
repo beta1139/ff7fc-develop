@@ -455,7 +455,10 @@ set_flag (ID) (value)
   フラグの意味については別紙"イベントフラグ管理表.xls"に記載
 
 start_countdown (min)
-  カウントダウンイベントを開始する
+  カウントダウンイベントを開始する(分単位)
+
+start_countdown_sec (sec)
+  カウントダウンイベントを開始する(秒単位)
 
 end_countdown
   カウントダウンイベントを終了する
