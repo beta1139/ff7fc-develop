@@ -14,6 +14,9 @@ wait_target_talked (event_idx)
 wait_target_talk (event_idx)
   event_idxのイベントが話しかけられるのを待つ
 
+wait_treasurebox_opened (event_idx)
+  event_idxの宝箱が空けられるまで待つ
+
 =============== 状態制御系 ===============
 sleep (フレーム数)
   スクリプトの処理を指定フレーム数分止める
