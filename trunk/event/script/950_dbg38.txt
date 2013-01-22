@@ -1,0 +1,5 @@
+wait_fake_countover
+end_fake_countdown
+play_se alarm.ogg
+create effect 950040 950 0 0 0 0 50 3
+
