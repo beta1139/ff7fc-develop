@@ -17,6 +17,9 @@ wait_target_talk (event_idx)
 wait_treasurebox_opened (event_idx)
   event_idxの宝箱が空けられるまで待つ
 
+wait_fake_countover
+  ダミーのカウントダウンが0になるまで待つ
+
 =============== 状態制御系 ===============
 sleep (フレーム数)
   スクリプトの処理を指定フレーム数分止める
@@ -467,5 +470,17 @@ end_countdown
   カウントダウンイベントを終了する
 
 draw_countdown (on/off)
+  カウントダウンウィンドウ表示／非表示切り替え
+
+start_fake_countdown (min)
+  カウントダウンイベントを開始する(分単位)
+
+start_fake_countdown_sec (sec)
+  カウントダウンイベントを開始する(秒単位)
+
+end_fake_countdown
+  カウントダウンイベントを終了する
+
+draw_fake_countdown (on/off)
   カウントダウンウィンドウ表示／非表示切り替え
 
