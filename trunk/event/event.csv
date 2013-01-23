@@ -116,9 +116,9 @@ event_generator,1600,16,9,5,17,0,0,"@ressya_move1.txt"
 event_generator,1602,16,9,5,17,0,0,"@ressya_1.txt"
 map_door,1601,16,17,3,0,0,0,0
 npc_event,1650,16,12,7,36,0,2,""
-npc_event,1651,16,11,4,1,1,2,""
+npc_event,1651,16,11,5,1,1,2,""
 npc_event,1652,16,8,7,35,0,2,""
-npc_event,1653,16,7,4,34,1,2,""
+npc_event,1653,16,7,5,34,1,2,""
 event_generator,1660,16,1,21,17,1,2,"@ressya_2.txt"
 npc_event,1661,16,9,19,73,1,2,""
 npc_event,1662,16,8,22,71,2,2,""
@@ -229,12 +229,12 @@ npc,1908,19,7,13,70,0,0,"「おっ！！
 
 　なあ！！　みてみろよ
 　いつ　みても　どでかい　はしら　だなぁ"
-event_generator,1910,19,2,19,17,0,0,@nanabangai_slum1_1.txt
-event_generator,1911,19,2,20,17,0,0,@nanabangai_slum1_2.txt
-event_generator,1912,19,2,21,17,0,0,@nanabangai_slum1_3.txt
+event_generator,1910,19,2,19,17,0,0,"@nanabangai_slum1_1.txt"
+event_generator,1911,19,2,20,17,0,0,"@nanabangai_slum1_2.txt"
+event_generator,1912,19,2,21,17,0,0,"@nanabangai_slum1_3.txt"
 save_point,1950,19,5,15,0,0,0,
-event_generator,1951,19,5,15,17,0,0,@save_msg.txt
-event_generator,2016,20,26,22,17,0,0,@nanabangai_slum5.txt
+event_generator,1951,19,5,15,17,0,0,"@save_msg.txt"
+event_generator,2016,20,26,22,17,0,0,"@nanabangai_slum5.txt"
 npc,2018,20,26,21,17,0,0,"「あけないよ！！
 　かえってちょうだい"
 npc,2019,20,27,33,17,0,0,"「ほんじつは　へいてん　いたしました
@@ -293,16 +293,16 @@ npc,2401,24,4,6,77,2,2,"「ハッハッ……
 
 　ハッハッ……
 　まあ　そんなもんですなあ]]"
-event_generator,2402,24,1,1,17,0,0,@nanabangai_slum23.txt
-event_generator,2500,25,4,7,17,0,0,@nanabangai_slum9.txt
+event_generator,2402,24,1,1,17,0,0,"@nanabangai_slum23.txt"
+event_generator,2500,25,4,7,17,0,0,"@nanabangai_slum9.txt"
 npc_event,2501,25,4,5,79,3,0,
 npc2,2502,25,4,6,17,0,0,
-event_generator,2503,25,1,1,17,0,0,@nanabangai_slum10.txt
+event_generator,2503,25,1,1,17,0,0,"@nanabangai_slum10.txt"
 npc2,2504,25,7,8,89,2,0,
-event_generator,2505,25,1,2,17,0,0,@nanabangai_slum11.txt
-event_generator,2701,27,4,6,17,0,0,@nanabangai_slum14_1.txt
-event_generator,2702,27,5,5,17,0,0,@nanabangai_slum14_2.txt
-event_generator,2703,27,6,6,17,0,0,@nanabangai_slum14_3.txt
+event_generator,2505,25,1,2,17,0,0,"@nanabangai_slum11.txt"
+event_generator,2701,27,4,6,17,0,0,"@nanabangai_slum14_1.txt"
+event_generator,2702,27,5,5,17,0,0,"@nanabangai_slum14_2.txt"
+event_generator,2703,27,6,6,17,0,0,"@nanabangai_slum14_3.txt"
 npc2,2600,26,4,7,17,0,0,
 npc,2601,26,3,8,90,3,0,"「ん………！！
 　なんだ　てめぇは？
@@ -344,13 +344,20 @@ npc,2601,26,3,8,90,3,0,"「ん………！！
 　ぶきやとしては　おおだすかり　ってやつよ
 
 　このざいこの　やまも　はけちまえば　いいがな]]"
-npc2,2602,26,6,6,66,2,0,
-npc2,2603,26,3,3,91,1,0,
-npc2,2604,26,4,3,70,1,0,
-npc2,2605,26,2,2,79,1,0,
-npc2,2606,26,2,5,65,1,0,
-npc2,2607,26,2,4,67,0,0,
-event_generator,2608,26,1,1,17,0,0,@nanabangai_slum15.txt
+npc_event,2602,26,6,6,66,2,0,"none"
+npc_event,2603,26,3,3,91,1,0,"none"
+npc_event,2604,26,4,3,70,1,0,"none"
+npc_event,2605,26,2,2,79,1,0,"none"
+npc_event,2606,26,2,4,67,0,0,"none"
+npc_event,2607,26,2,5,65,1,0,"none"
+npc,2608,26,6,5,40,1,0,"「うっとり……くるくる……
+　これがうわさの　（セーブポイント）！！"
+event_generator,2609,26,1,1,17,0,0,"@nanabangai_slum15.txt"
+event_generator,2632,26,4,6,17,0,0,"@beginner's_hall7.txt"
+event_generator,2633,26,4,6,17,0,0,"@beginner's_hall8.txt"
+event_generator,2635,26,6,4,17,0,0,"@save_msg.txt"
+event_generator,2640,26,1,1,17,0,0,"@beginner's_hall11.txt""
+event_generator,2643,26,1,1,17,0,0,"@beginner's_hall14.txt""
 map_obj,2691,26,4,7,30,0,0,0
 map_door,2090,20,26,21,1,0,0,0
 map_door,2091,20,27,33,1,0,0,0
@@ -365,14 +372,14 @@ map_door,2590,25,2,10,4,0,0,0
 map_door,2591,25,7,4,4,0,0,0
 map_door,2690,26,4,11,5,0,0,0
 map_door,2790,27,5,9,4,0,0,0
-event_generator,2100,21,5,9,17,0,0,@nanabangai_slum7.txt
-event_generator,2101,21,1,1,17,0,0,@nanabangai_slum8_1.txt
-event_generator,2102,21,1,2,17,0,0,@nanabangai_slum8_2.txt
+event_generator,2100,21,5,9,17,0,0,"@nanabangai_slum7.txt"
+event_generator,2101,21,1,1,17,0,0,"@nanabangai_slum8_1.txt"
+event_generator,2102,21,1,2,17,0,0,"@nanabangai_slum8_2.txt"
 npc_event,2106,21,4,5,77,0,0,マテリアや
 npc2,2107,21,4,6,17,0,0,
 npc2,2108,21,5,5,17,0,0,
-event_generator,2200,22,5,11,17,0,0,@seventhheaven1.txt
-event_generator,2260,22,5,12,17,0,0,@seventhheaven_out1_before.txt
+event_generator,2200,22,5,11,17,0,0,"@seventhheaven1.txt"
+event_generator,2260,22,5,12,17,0,0,"@seventhheaven_out1_before.txt"
 npc_event,2202,22,4,7,2,3,0,"ティファ
 「マリン　てれちゃってる　みたい"
 npc_event,2203,22,2,9,34,3,0,"ジェシー
@@ -494,10 +501,10 @@ npc3,2308,23,5,6,36,2,0,"ウェッジ
 npc,2309,23,3,4,37,2,0,"マリン
 「とうちゃーん
 　かっこいい！"
-event_generator,2360,23,4,4,17,0,0,@azito_out_before.txt
-event_generator,70200,702,11,12,17,0,0,@tifa'smemory1.txt
-npc_event,70201,702,11,21,17,0,2,
-npc_event,70202,702,11,20,17,1,2,
+event_generator,2360,23,4,4,17,0,0,"@azito_out_before.txt"
+event_generator,70200,702,11,12,17,0,0,"@tifa'smemory1.txt"
+npc_event,70201,702,11,21,17,0,2,"none"
+npc_event,70202,702,11,20,17,1,2,"none"
 npc,23300,233,7,8,26,1,0,"タークス:ツォン「おまえたちのあいてをしに
 ここにきたんじゃない
 はやく　でていくんだな"
