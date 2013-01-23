@@ -151,10 +151,10 @@ kill 2006
 kill 2007
 kill 2008
 kill 2009
-kill_through 2608
-kill_through 2601
-kill_through 2610
 kill_through 2609
+kill_through 2601
+kill_through 2611
+kill_through 2610
 stop_bgm
 draw_char off
 sleep 48
@@ -188,8 +188,11 @@ create event_generator 2030 20 28 23 17 0 0 @nanabangai_slum21_4.txt
 create event_generator 2031 20 28 22 17 0 0 @nanabangai_slum21_5.txt
 create event_generator 2032 20 33 22 17 0 0 @nanabangai_slum22_1.txt
 create event_generator 2033 20 32 18 17 0 0 @nanabangai_slum22_2.txt
+chg_npc_dir 2607 up
 create event_generator 2620 26 4 8 17 0 0 @beginner's_hall1.txt
 create event_generator 2625 26 1 1 17 0 0 @beginner's_hall4.txt
+create treasure_item 2628 26 5 8 3 0 0 4100
+create event_generator 2629 26 1 1 17 0 0 @beginner's_hall5.txt
 chg_npc_img 2691 29
 chg_speed 2400 not_step
 sleep 368

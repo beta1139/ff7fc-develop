@@ -23,6 +23,12 @@ kill 2627
 sleep 16
 chg_npc_dir 2601 right
 msg 『セーブできる　ばしょを　みつけたら\n　まず　セーブだな\n\n\n　いちおう　いっておくが\n　てきに　やられて　ファミコンに\n　やつあたり　するのは　やめろ\n\n　ぼうけんのしょが　きえて\n　あにきに　ぶんなぐられても　しらんぞ\n\n\n　そういうときは　いちど\n　ファミコンと　あたまを　ひやすことを　すすめる\n\n\n　いじょう\n　セーブをわすれて　なくことに　ならないように
+chg_type 2601 npc_event
+jump_npc 2601 same 1
+sleep 16
+jump_npc 2601 same 1
+sleep 16
+chg_type 2601 npc2
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
 end
 fi
@@ -32,11 +38,23 @@ sleep 16
 msg 『ひとつめは　まちにある\n　やどや　などの　かいふくポイント\n　ひとばん　ねれば　HP　MP　ぜんかいふくだ\n\n　ふたつめは　アイテムを　つかう　かいふく\n\n\n\n　みっつめは　まほうを　つかう　かいふくだが\n　まほうに　ついては　ほかで　せつめいする\n\n\n　ここでは　アイテムの　つかいかたを　おしえよう\n\n\n\n　メニューで　(アイテム)を　えらんでくれ\n　HPを　かいふくするには　ポーションだ\n\n\n　ポーションの　いちが　わからない　ばあいは\n　（せいとん）で　アイテムを　ならべかえられる\n\n\n　ついでに　いっておくと…（キーアイテム）は\n　もじどおり　つかうことは　できないが\n　もんだいを　とく　カギとなる\n\n　たいせつな　アイテムだ\n　さんこうに　してくれ
 sleep 16
 msg 『さて　（つかう）を　えらんで…\n　ポーションをえらび…\n　つかいたい　みかたを　えらぶ\n\n　すでに　まんたんの　ばあいは　つかえないぞ\n\n\n\n　MPのかいふくは　エーテルを　つかう\n　つかいかたは　ポーションの　ばあいと　おなじ\n　みかたを　えらんで　つかえばいい\n\n　アイテムめいの　よこの　すうじは\n　こすうを　あらわす\n　とうぜん　つかったものは　なくなってしまう\n\n　ポーションや　エーテルは\n　てきが　おとす　ばあいもあるが\n　みせで　うっているので　おおめに　かっておくといい\n\n　それと　わすれちゃいけないのが\n　せんとうふのうに　なったとき\n\n\n　やどやで　やすむか\n　（フェニックスのお）を　つかえば　ふっかつするぞ\n\n\n　いじょう\n　（まほうをつかった　かいふく）も\n　さんしょう　するように
+chg_type 2601 npc_event
+jump_npc 2601 same 1
+sleep 16
+jump_npc 2601 same 1
+sleep 16
+chg_type 2601 npc2
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
 end
 fi
 if_flag 3 2
 msg 『（まほうをつかった　かいふく）\n　Not Found
+chg_type 2601 npc_event
+jump_npc 2601 same 1
+sleep 16
+jump_npc 2601 same 1
+sleep 16
+chg_type 2601 npc2
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
 end
 fi
@@ -44,18 +62,36 @@ if_flag 3 3
 msg 『なにが　しりたいんだ？\n\n\n\n#4\n　　ぶき　ぼうぐの　つかいかた\n　　マテリアの　そうちゃく\n　　マテリアの　こうどなつかいかた\n　　それいがい\n[[]][[]][[]][[]]
 if_flag 3 0
 msg 『（ぶき　ぼうぐの　つかいかた）\n　Not Found
+chg_type 2601 npc_event
+jump_npc 2601 same 1
+sleep 16
+jump_npc 2601 same 1
+sleep 16
+chg_type 2601 npc2
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
 end
 fi
 fi
 if_flag 3 1
 msg 『（マテリアの　そうちゃく）\n　Not Found
+chg_type 2601 npc_event
+jump_npc 2601 same 1
+sleep 16
+jump_npc 2601 same 1
+sleep 16
+chg_type 2601 npc2
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
 end
 fi
 fi
 if_flag 3 2
 msg 『（マテリアの　こうどなつかいかた）\n　Not Found
+chg_type 2601 npc_event
+jump_npc 2601 same 1
+sleep 16
+jump_npc 2601 same 1
+sleep 16
+chg_type 2601 npc2
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
 end
 fi
@@ -64,6 +100,12 @@ if_flag 3 3
 msg 『なにが　しりたいんだ？\n\n\n\n#4\n　　せんとうじの　たいけいについて\n　　じぶんのじょうたいを　チェック\n　　リミットわざの　つかいかた\n　　それいがい\n[[]][[]][[]][[]]
 if_flag 3 0
 msg 『（せんとうじの　たいけいについて）\n　Not Found
+chg_type 2601 npc_event
+jump_npc 2601 same 1
+sleep 16
+jump_npc 2601 same 1
+sleep 16
+chg_type 2601 npc2
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
 end
 fi
@@ -71,6 +113,12 @@ fi
 fi
 if_flag 3 1
 msg 『（じぶんのじょうたいを　チェック）\n　Not Found
+chg_type 2601 npc_event
+jump_npc 2601 same 1
+sleep 16
+jump_npc 2601 same 1
+sleep 16
+chg_type 2601 npc2
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
 end
 fi
@@ -78,6 +126,12 @@ fi
 fi
 if_flag 3 2
 msg 『（リミットわざの　つかいかた）\n　Not Found
+chg_type 2601 npc_event
+jump_npc 2601 same 1
+sleep 16
+jump_npc 2601 same 1
+sleep 16
+chg_type 2601 npc2
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
 end
 fi
@@ -87,6 +141,12 @@ if_flag 3 3
 msg 『なにが　しりたいんだ？\n\n\n\n#3\n　　そのほかの　だいじな　ちゅういじこう\n　　はじめにもどる\n　　もうおしえることはない\n\n[[]][[]][[]]
 if_flag 3 0
 msg 『だいじなことがある！\n　セーブデータから　プレイを\n　さいかいするときの　ちゅういてんだ\n\n　こんご　バグや　イベントついか　などで\n　プログラムが　アップデート　されたときは\n　いちど　ニューゲームを　せんたくしてくれ\n\n　そうしないと　あたらしい　プログラムが\n　ちゃんと　はんえいされない\n\n\n　ニューゲームを　えらんだあとは\n　いつもどおり セーブデータから\n　プレイを　さいかいしてくれ\n\n　いじょうだ
+chg_type 2601 npc_event
+jump_npc 2601 same 1
+sleep 16
+jump_npc 2601 same 1
+sleep 16
+chg_type 2601 npc2
 create event_generator 2621 26 4 8 17 0 0 @beginner's_hall2.txt
 end
 fi

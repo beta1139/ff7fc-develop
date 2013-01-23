@@ -61,7 +61,7 @@ kill_through 2017
 kill 2018
 kill 2019
 kill 2600
-kill_through 2608
+kill_through 2609
 set_npc_pos 2602 26 6 8
 sleep 16
 chg_type 2601 npc2
@@ -90,8 +90,11 @@ create event_generator 2030 20 28 23 17 0 0 @nanabangai_slum21_4.txt
 create event_generator 2031 20 28 22 17 0 0 @nanabangai_slum21_5.txt
 create event_generator 2032 20 34 21 17 0 0 @nanabangai_slum22_1.txt
 create event_generator 2033 20 32 18 17 0 0 @nanabangai_slum22_2.txt
+chg_npc_dir 2607 up
 create event_generator 2620 26 4 8 17 0 0 @beginner's_hall1.txt
 create event_generator 2625 26 1 1 17 0 0 @beginner's_hall4.txt
+create treasure_item 2628 26 5 8 3 0 0 4100
+create event_generator 2629 26 1 1 17 0 0 @beginner's_hall5.txt
 chg_npc_img 2691 29
 chg_speed 2400 not_step
 chg_npc_img 1751 5

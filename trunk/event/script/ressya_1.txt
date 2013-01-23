@@ -12,18 +12,14 @@ chg_npc_dir 1651 left
 chg_npc_img 1651 98
 step_npc 1651 2
 sleep 16
-set_talk_npc 1651
 msg バレット\n「ケッ……！！\n　あのやろうが　かねも　もらわないで\n　いなくなるわけ　ないだろ！！
-reset_talk_npc
 sleep 48
 chg_npc_dir 1651 down
 chg_npc_img 1651 1
 chg_speed 1653 slow
 step_npc 1653 1
 sleep 16
-set_talk_npc 1653
 msg ジェシー\n「クラウド……
-reset_talk_npc
 sleep 48
 chg_speed 1653 normal
 step_npc 1652 2
@@ -34,9 +30,7 @@ chg_npc_dir 1651 left
 chg_npc_img 1651 98
 step_npc 1651 2
 sleep 16
-set_talk_npc 1651
 msg バレット\n「さあな……　しらねえよ\n\n\n　チッ！！\n　おまえらが　もうすこし　たよりになりゃよ……\n　あんな　やろう　やとわないでも　いいんだがな…
-reset_talk_npc
 chg_npc_dir 1651 down
 chg_npc_img 1651 1
 sleep 64
@@ -93,9 +87,7 @@ sleep 32
 msg ビッグス「クラウド！！\nジェシー「クラウド……\nウェッジ「クラウドさんっ！\n\n『やくそくの　じかんに　おくれたようだ
 jump_npc 1651 same 2
 sleep 16
-set_talk_npc 1651
 msg バレット\n「おい！　ちこくやろう！！\n　ずいぶん　はでな　おでまし　じゃねえか
-reset_talk_npc
 msg 『そうでもない　ふつうだ
 chg_npc_dir 1651 left
 chg_npc_img 1651 98
@@ -103,17 +95,13 @@ step_npc 1651 4
 sleep 64
 chg_npc_dir 1651 right
 chg_npc_img 1651 1
-set_talk_npc 1651
 msg バレット\n「ケッ！！\n　しんぱい　させやがって　かってな　やろうだ！
-reset_talk_npc
 msg 『ほう……？\n　しんぱい　してくれたのか
 step_npc 1651 2
 sleep 16
-set_talk_npc 1651
 msg バレット\n「なにっ！！　チッ……\n　ちこくの　ぶんは　ほうしゅうから ひく　からな
-reset_talk_npc
-move_npc 1651 down 2
-sleep 32
+move_npc 1651 down 1
+sleep 16
 move_npc 1651 right 5
 sleep 80
 chg_npc_dir 1651 left
@@ -137,20 +125,20 @@ chg_npc_dir 1652 up
 msg ビッグス\n「へへ……クラウド！\n　つぎの　さくせんも　がんばろうな
 chg_speed 1653 normal
 move_npc 1652 right 3
-move_npc 1653 down 2
-sleep 32
+move_npc 1653 down 1
+sleep 16
+move_npc 1653 right 8
+sleep 16
 kill 1650
 kill 1651
 kill 1652
-move_npc 1653 right 8
-sleep 32
+sleep 16
 move_char right 6
 sleep 96
 chg_npc_dir 1653 up
 msg ジェシー\n「やだ！　クラウド！！\n　かお　まっくろ
 step_npc 1653 3
 sleep 100
-sleep 
 msg ジェシー\n「はい　できあがり！
 move_npc 1653 right 2
 sleep 32
