@@ -1,5 +1,6 @@
 wait_same_pos
 chg_char_state_move
+create npc2 2305 23 2 5 17 0 0 
 chg_type 2304 npc_event
 chg_speed 2304 normal
 move_npc 2304 down 1
@@ -58,3 +59,4 @@ chg_npc_dir 2304 up
 sleep 16
 chg_type 2304 npc
 chg_speed 2304 not_move
+kill 2305
