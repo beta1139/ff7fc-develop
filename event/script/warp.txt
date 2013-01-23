@@ -57,7 +57,7 @@ kill 1203
 set_flag 0 0
 fi
 if_flag 3 2
-warp 16 9 5 up
+warp 16 9 5 down
 set_flag 0 0
 fi
 if_flag 3 3

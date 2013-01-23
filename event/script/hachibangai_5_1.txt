@@ -294,7 +294,7 @@ kill 1515
 kill 1516
 stop_bgm
 stop_se
-warp 16 9 5 up
+warp 16 9 5 down
 sleep 60
 fadein
 fi
@@ -523,7 +523,7 @@ kill 1515
 kill 1516
 stop_bgm
 stop_se
-warp 16 9 5 up
+warp 16 9 5 down
 sleep 60
 fadein
 fi
