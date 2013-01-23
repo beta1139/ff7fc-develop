@@ -16,6 +16,7 @@ sleep 48
 chg_npc_dir 70400 up
 sleep 16
 fadeout
+set_key_unvalid a
 clear_text 8
 kill 1673
 kill 70400
@@ -50,6 +51,7 @@ sleep 8
 dec_map_draw_y_offset
 sleep 8
 inc_map_draw_y_offset
+set_key_valid a
 msg3 -1 ジェシー\n「うわさを　すれば　ね
 chg_char_state_move
 sleep 16
