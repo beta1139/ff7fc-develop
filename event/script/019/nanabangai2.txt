@@ -1,0 +1,13 @@
+wait_target_talked 1907
+sleep 24
+chg_npc_dir 1907 right
+msg 「こっ　こんな　かんじで　いいでしょうか\n　せんぱい
+sleep 8
+chg_npc_dir 1906 left
+msg 「もっと　どうどうと　せんか！
+chg_npc_dir 1906 up
+sleep 24
+msg 「え　で　でも……　
+sleep 32
+chg_npc_dir 1907 up
+chg_param 1907 「あっ　あの……\n　すいません\n　ここから　さきは　たちいり　きんし　なんですが

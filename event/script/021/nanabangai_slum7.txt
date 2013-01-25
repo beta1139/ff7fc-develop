@@ -1,0 +1,13 @@
+wait_same_pos
+create npc_event 2105 21 5 9 0 0 2 none
+draw_char off
+move_char up 3
+sleep 48
+set_talk_npc 2106
+msg 「フーッ……\n　きょうも　ひまひま……\n\n\n　もう　このみせも　ダメかのう……\n　こんなスラムじゃ\n　まともな　クスリは　うれんなあ
+reset_talk_npc
+move_char down 3
+sleep 48
+chg_char_dir up
+draw_char on
+kill 2105

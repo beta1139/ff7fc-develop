@@ -1,0 +1,33 @@
+set_eternal_event
+wait_target_talk 2110
+reset_talk_flag 2110
+chg_npc_dir 2106 right
+jump_npc 2106 same 2
+sleep 8
+chg_npc_dir 2106 down
+sleep 8
+chg_npc_dir 2106 left
+sleep 8
+chg_npc_dir 2106 up
+sleep 8
+chg_npc_dir 2106 right
+msg 「はい！！　いらっしゃい！！\n　うりますよ！\n　かいますよ！\n\n#3\n　　アイテムをみたい\n　　マテリアをみたい\n　　きょうみないね\n\n[[]][[]][[……なんじゃあ\n　つまらんのぉ……]]
+if_flag 3 0
+open_item_shop 1000/1007/1008
+fi
+if_flag 3 1
+open_materia_shop 4000/4003/4004/4005
+fi
+if_flag 3 2
+sleep 16
+chg_npc_dir 2106 up
+sleep 64
+chg_npc_dir 2106 right
+sleep 16
+chg_npc_dir 2106 up
+sleep 32
+set_talk_npc 2106
+msg 「てすうりょうも　むりょう　なのになあ……
+reset_talk_npc
+fi
+sleep 16

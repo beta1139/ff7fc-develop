@@ -1,0 +1,38 @@
+wait_target_talked 2006
+move_char up 1
+sleep 16
+chg_char_dir down
+chg_type 2006 npc_event
+chg_speed 2006 normal
+set_flag_wall 2006
+move_npc 2006 right 2
+sleep 16
+chg_npc_dir 2009 right
+chg_speed 2009 not_step
+sleep 16
+chg_char_dir right
+chg_npc_dir 2008 right
+jump_npc 2006 same 2
+loop 2
+chg_npc_dir 2006 down
+sleep 4
+chg_npc_dir 2006 right
+sleep 4
+chg_npc_dir 2006 up
+sleep 4
+chg_npc_dir 2006 left
+sleep 4
+pool
+create event_generator 1918 19 1 19 17 0 0 @019/nanabangai7_3.txt
+create event_generator 1919 19 1 20 17 0 0 @019/nanabangai7_4.txt
+chg_char_state_move
+move_npc 2006 right 1
+sleep 16
+move_npc 2006 up 1
+sleep 16
+move_npc 2006 right 2
+sleep 32
+chg_speed 2006 fast
+move_npc 2006 right 8
+sleep 64
+kill 2006
