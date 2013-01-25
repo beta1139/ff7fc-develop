@@ -72,29 +72,29 @@ create npc2 1708 17 4 6 72 2 0
 create npc 1906 19 8 26 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
 create npc2 1907 19 7 26 32 0 0 
 sleep 32
-create event_generator 1718 17 1 1 17 0 0 @nanabangai_station7.txt
-create event_generator 1719 17 1 2 17 0 0 @nanabangai_station8.txt
-create event_generator 1720 17 2 1 17 0 0 @nanabangai_station9.txt
-create event_generator 1721 17 7 4 17 0 0 @nanabangai_station10.txt
-create event_generator 1913 19 1 1 17 0 0 @nanabangai5.txt
-create event_generator 1916 19 1 19 17 0 0 @nanabangai7_1.txt
-create event_generator 1917 19 1 20 17 0 0 @nanabangai7_2.txt
-create event_generator 2023 20 1 1 17 0 0 @nanabangai_slum17.txt
-create event_generator 2024 20 1 2 17 0 0 @nanabangai_slum18.txt
-create event_generator 2025 20 2 1 17 0 0 @nanabangai_slum19.txt
-create event_generator 2026 20 2 2 17 0 0 @nanabangai_slum20.txt
-create event_generator 2027 20 25 24 17 0 0 @nanabangai_slum21_1.txt
-create event_generator 2028 20 26 24 17 0 0 @nanabangai_slum21_2.txt
-create event_generator 2029 20 27 24 17 0 0 @nanabangai_slum21_3.txt
-create event_generator 2030 20 28 23 17 0 0 @nanabangai_slum21_4.txt
-create event_generator 2031 20 28 22 17 0 0 @nanabangai_slum21_5.txt
-create event_generator 2032 20 34 21 17 0 0 @nanabangai_slum22_1.txt
-create event_generator 2033 20 32 18 17 0 0 @nanabangai_slum22_2.txt
+create event_generator 1718 17 1 1 17 0 0 @017/nanabangai_station7.txt
+create event_generator 1719 17 1 2 17 0 0 @017/nanabangai_station8.txt
+create event_generator 1720 17 2 1 17 0 0 @017/nanabangai_station9.txt
+create event_generator 1721 17 7 4 17 0 0 @017/nanabangai_station10.txt
+create event_generator 1913 19 1 1 17 0 0 @019/nanabangai5.txt
+create event_generator 1916 19 1 19 17 0 0 @019/nanabangai7_1.txt
+create event_generator 1917 19 1 20 17 0 0 @019/nanabangai7_2.txt
+create event_generator 2023 20 1 1 17 0 0 @020/nanabangai_slum17.txt
+create event_generator 2024 20 1 2 17 0 0 @020/nanabangai_slum18.txt
+create event_generator 2025 20 2 1 17 0 0 @020/nanabangai_slum19.txt
+create event_generator 2026 20 2 2 17 0 0 @020/nanabangai_slum20.txt
+create event_generator 2027 20 25 24 17 0 0 @020/nanabangai_slum21_1.txt
+create event_generator 2028 20 26 24 17 0 0 @020/nanabangai_slum21_2.txt
+create event_generator 2029 20 27 24 17 0 0 @020/nanabangai_slum21_3.txt
+create event_generator 2030 20 28 23 17 0 0 @020/nanabangai_slum21_4.txt
+create event_generator 2031 20 28 22 17 0 0 @020/nanabangai_slum21_5.txt
+create event_generator 2032 20 34 21 17 0 0 @020/nanabangai_slum22_1.txt
+create event_generator 2033 20 32 18 17 0 0 @020/nanabangai_slum22_2.txt
 chg_npc_dir 2607 up
-create event_generator 2620 26 4 8 17 0 0 @beginner's_hall1.txt
-create event_generator 2625 26 1 1 17 0 0 @beginner's_hall4.txt
+create event_generator 2620 26 4 8 17 0 0 @026/beginner's_hall1.txt
+create event_generator 2625 26 1 1 17 0 0 @026/beginner's_hall4.txt
 create treasure_item 2628 26 5 8 3 0 0 4100
-create event_generator 2629 26 1 1 17 0 0 @beginner's_hall5.txt
+create event_generator 2629 26 1 1 17 0 0 @026/beginner's_hall5.txt
 chg_npc_img 2691 29
 chg_speed 2400 not_step
 chg_npc_img 1751 5
@@ -115,7 +115,7 @@ chg_npc_y_offset 1801 0
 sleep 368
 recover_active_chara
 warp 23 2 8 right
-create event_generator 2240 22 8 5 17 0 0 @seventhheaven8.txt
+create event_generator 2240 22 8 5 17 0 0 @022/seventhheaven8.txt
 draw_char on
 play_event_bgm 1-06-Barrett's_Theme.ogg
 fadein
@@ -128,7 +128,7 @@ chg_char_dir right
 set_flag 0 0
 set_flag 9 1
 kill 2260
-create event_generator 2261 22 5 13 17 0 0 @seventhheaven_out1.txt
+create event_generator 2261 22 5 13 17 0 0 @022/seventhheaven_out1.txt
 fi
 if_flag 3 2
 warp 600 11 16 up
