@@ -1,2 +1,0 @@
-wait_target_talked 2011
-chg_param 2011 バレット\n「よう！！　クラウド！！\n　チョロチョロ　すんじゃねぇ！！

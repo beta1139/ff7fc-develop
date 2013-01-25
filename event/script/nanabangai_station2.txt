@@ -1,4 +1,0 @@
-wait_target_talked 1706
-create npc 1711 17 7 4 94 1 0 「いつごろから　ですかね……\n　おきゃくさんと　わたしの　あいだにね\n　みえない　レールを　しいてしまうんですよ\n\n　おきゃくさんの　じんせいには\n　たちいらないようにね\n　わたしなんぞは　ただの　えきいん\n　そういう　いきかたが　らく　なんですかね
-kill 1706
-create event_generator 1712 17 2 2 17 0 0 @nanabangai_station3.txt

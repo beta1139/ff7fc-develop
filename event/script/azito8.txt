@@ -1,9 +1,0 @@
-wait_target_talked 2317
-if_flag 3 0
-msg 「そうかなあ\n　なんか　さびしそうなんだけど\n\n\n　おれみたいなので　よかったら\n　いつでもOKっすから
-chg_param 2317 ウェッジ\n「おれみたいなので　よかったら\n　いつでもOKっすから
-fi
-if_flag 3 1
-msg 「ひどいなあ\n　つめたいなあ
-chg_param 2317 ウェッジ\n「ひどいなあ\n　つめたいなあ
-fi
