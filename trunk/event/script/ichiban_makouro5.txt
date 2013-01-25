@@ -4,7 +4,7 @@ chg_type 800 npc_event
 chg_npc_dir 800 up
 msg 『だいじょうぶか？\n「うかつ！！　あしがはさまって……
 step_char 3
-sleep 60
+sleep 108
 msg 「サンキュー！
 active 800
 chg_speed 800 fast
