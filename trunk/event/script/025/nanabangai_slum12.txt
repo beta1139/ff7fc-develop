@@ -1,0 +1,46 @@
+set_eternal_event
+wait_target_talk 2506
+reset_talk_flag 2506
+backup_char_img
+chg_char_img 0
+chg_type 2506 npc_event
+chg_dir_to_char 2506
+set_talk_npc 2506
+msg 「おっさん　やすむきに　なったかい？\n\n\n\n#3\n　　1ギル\n　　10ギル\n　　あげない\n\n[[「チッ！！　おっさん\n　このはなしは　なかったことに　してくれ]][[「しめしめ……]][[]]
+reset_talk_npc
+if_flag 3 0
+chg_npc_dir 2506 left
+chg_type 2506 npc2
+fi
+if_flag 3 1
+chg_npc_dir 2506 right
+sleep 4
+chg_npc_dir 2506 down
+sleep 4
+chg_npc_dir 2506 left
+sleep 4
+chg_npc_dir 2506 up
+sleep 4
+chg_dir_to_char 2506
+set_talk_npc 2506
+msg 「すきな　ベッドで　やすんでいきな\n　いいゆめ　みなよな　おっさん
+reset_talk_npc
+sub_gil 10
+chg_npc_dir 2506 left
+chg_type 2506 npc
+chg_param 2506 「すきな　ベッドで　やすんでいきな\n　いいゆめ　みなよな　おっさん
+create event_generator 2700 27 5 6 17 1 0 @027/nanabangai_slum13.txt
+kill 2701
+kill 2702
+kill 2703
+fi
+if_flag 3 2
+jump_npc 2506 same 2
+sleep 32
+set_talk_npc 2506
+msg 「そりゃ　ドケチって　やつだぜ　おっさん
+reset_talk_npc
+chg_npc_dir 2506 left
+chg_type 2506 npc2
+fi
+restore_char_img

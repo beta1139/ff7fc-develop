@@ -1,0 +1,66 @@
+wait_same_pos
+kill 1413
+kill 1415
+chg_char_state_move
+loop_inf
+create npc_event 1405 14 6 4 73 1 3 none
+set_flag_wall 1405
+move_npc 1405 down 4
+sleep 32
+move_npc 1405 right 1
+sleep 8
+move_npc 1405 down 3
+sleep 24
+move_npc 1405 right 1
+sleep 8
+move_npc 1405 down 9
+sleep 56
+create npc_event 1406 14 4 4 69 1 3 none
+set_flag_wall 1406
+move_npc 1406 down 4
+sleep 16
+move_npc 1405 left 6
+sleep 16
+move_npc 1406 left 1
+sleep 8
+move_npc 1406 down 4
+sleep 24
+move_npc 1405 down 7
+sleep 8
+move_npc 1406 left 1
+sleep 8
+move_npc 1406 down 15
+sleep 40
+kill 1405
+sleep 64
+create npc_event 1405 14 6 4 73 1 3 none
+set_flag_wall 1405
+move_npc 1405 down 5
+sleep 16
+kill 1406
+sleep 24
+move_npc 1405 right 2
+sleep 16
+move_npc 1405 down 3
+sleep 24
+move_npc 1405 down 9
+sleep 64
+create npc_event 1406 14 4 4 68 1 3 none
+set_flag_wall 1406
+move_npc 1406 down 5
+sleep 8
+move_npc 1405 left 7
+sleep 32
+move_npc 1406 left 1
+sleep 8
+move_npc 1406 down 2
+sleep 16
+move_npc 1405 down 7
+move_npc 1406 left 1
+sleep 8
+move_npc 1406 down 16
+sleep 48
+kill 1405
+sleep 80
+kill 1406
+pool

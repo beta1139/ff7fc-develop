@@ -1,0 +1,99 @@
+wait_same_pos
+kill 2701
+kill 2703
+backup_char_img
+chg_char_img 0
+open_door 2790
+play_se door_open.wav
+create npc_event 2704 27 5 9 89 0 3 「やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフに　いきていく　きほんだぜ！\n　おっさん　おぼえときな
+move_npc 2704 up 3
+sleep 8
+close_door 2790
+sleep 8
+chg_char_dir down
+sleep 8
+create npc_event 2703 27 5 5 0 1 2 none
+draw_char off
+jump_npc 2704 same 2
+sleep 32
+chg_speed 2704 normal
+draw_char on
+kill 2703
+msg 「ただで　やすめる　ほど\n　スラムのまちは　あまくはないぜ\n\n\n　ベッドを　みたら　ねむくなって　きただろ\n\n\n\n#3\n　　10ギル\n　　やすまない\n\n\n[[]][[]]
+if_flag 3 0
+sub_gil 10
+chg_npc_dir 2704 right
+sleep 4
+chg_npc_dir 2704 down
+sleep 4
+chg_npc_dir 2704 left
+sleep 4
+chg_npc_dir 2704 up
+sleep 4
+set_talk_npc 2506
+msg 「いいゆめ　みなよな　おっさん
+reset_talk_npc
+move_npc 2704 down 3
+sleep 40
+open_door 2790
+sleep 8
+kill 2704
+close_door 2790
+sleep 32
+msg 『フゥッ……
+create npc_event 2710 27 5 5 0 1 2 none
+draw_char off
+sleep 32
+jump_npc_target_pos 2710 4 4
+jump_char_target_pos 4 4
+sleep 8
+chg_char_dir left
+sleep 8
+chg_npc_y_offset 2710 2
+chg_npc_dir 2710 down
+chg_char_dir down
+sleep 16
+chg_npc_dir 2710 right
+chg_npc_img 2710 96
+sleep 64
+fadeout
+stop_bgm
+draw_char on
+kill 2710
+sleep 32
+play_se care.wav
+sleep 80
+recover_active_chara
+if_flag 9 0
+play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+fi
+if_flag 9 1
+play_event_bgm 1-06-Barrett's_Theme.ogg
+fi
+fadein
+jump_char down 2
+sleep 48
+chg_char_dir right
+create npc 2508 25 7 8 89 2 0 「いいゆめ　みたかい\n\n\n\n　やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフに　いきていく　きほんだぜ！\n　おっさん　おぼえときな
+sleep 16
+fi
+if_flag 3 1
+create npc_event 2703 27 5 5 0 1 2 none
+draw_char off
+jump_npc 2704 same 2
+sleep 32
+draw_char on
+kill 2703
+msg 「ごうじょうだな！　もうっ！\n　やすめるときは　やすむ\n\n\n　セーブできるときに\n　セーブする\n\n\n　これがタフに　いきていく　きほんだぜ！\n　おっさん　おぼえときな
+move_npc 2704 right 1
+sleep 16
+chg_npc_dir 2704 left
+chg_type 2704 npc
+chg_speed 2704 not_move
+set_flag_wall 2704
+fi
+kill_through 2505
+kill_through 2504
+kill_through 2507
+kill_through 2506
+restore_char_img

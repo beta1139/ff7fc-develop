@@ -1,0 +1,4 @@
+wait_same_pos
+chg_char_dir up
+sleep 16
+msg 「あけないよ！！\n　かえってちょうだい！

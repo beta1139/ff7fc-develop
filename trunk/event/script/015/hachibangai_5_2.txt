@@ -1,0 +1,566 @@
+wait_same_pos
+kill 1500
+kill_through 1330
+kill_through 1331
+kill 1332
+kill 1333
+kill_through 1334
+kill_through 1335
+kill_through 1413
+kill_through 1414
+kill_through 1415
+kill_through 1405
+kill_through 1406
+create npc_event 1550 15 7 4 31 1 2 none
+create npc_event 1551 15 8 4 31 1 2 none
+msg 「おい！　そこのおとこ！！\n\n\n\n『しんらへいか……\n\n\n\n#2\n　　やってやる！\n　　めんどくさいからにげる\n\n\n[[]][[]]
+if_flag 3 0
+move_npc 1550 down 2
+move_npc 1551 down 2
+chg_char_dir up
+sleep 32
+encount 189
+sleep 64
+kill 1550
+kill 1551
+wait_encount_end
+create npc_event 1550 15 7 4 31 1 2 none
+create npc_event 1551 15 8 4 31 1 2 none
+msg 「なにごとだ！
+play_se gun_shot.ogg
+move_npc 1550 down 4
+move_npc 1551 down 4
+create npc_event 1554 15 2 10 31 3 2 none
+create npc_event 1555 15 2 11 31 3 2 none
+move_npc 1554 right 4
+move_npc 1555 right 4
+move_char down 4
+sleep 56
+play_se gun_shot.ogg
+sleep 8
+fi
+if_flag 3 1
+msg 「まてっ！
+play_se gun_shot.ogg
+move_npc 1550 down 4
+move_npc 1551 down 4
+create npc_event 1554 15 2 10 31 3 2 none
+create npc_event 1555 15 2 11 31 3 2 none
+move_npc 1554 right 4
+move_npc 1555 right 4
+move_char down 4
+sleep 56
+play_se gun_shot.ogg
+sleep 8
+fi
+msg #2\n　　やってやる！\n　　めんどくさいからにげる\n\n\n[[]][[]]
+if_flag 3 0
+chg_char_dir left
+encount 189
+sleep 64
+kill 1554
+kill 1555
+wait_encount_end
+create npc_event 1554 15 2 10 31 3 2 none
+create npc_event 1555 15 2 11 31 3 2 none
+msg 「なにごとだ！
+move_npc 1554 right 4
+move_npc 1555 right 4
+sleep 64
+create npc_event 1556 15 16 10 31 2 2 none
+create npc_event 1557 15 16 11 31 2 2 none
+move_npc 1550 down 2
+move_npc 1551 down 3
+move_npc 1554 right 2
+move_npc 1555 right 2
+move_npc 1556 left 2
+move_npc 1557 left 2
+move_char right 2
+sleep 32
+move_npc 1550 right 1
+move_npc 1554 right 1
+move_npc 1555 right 1
+move_npc 1556 left 1
+move_npc 1557 left 1
+move_char right 1
+sleep 16
+chg_npc_dir 1551 right
+move_char right 1
+sleep 16
+stop_bgm
+chg_char_dir left
+sleep 16
+chg_char_dir right
+sleep 16
+play_se train_whistle_quiet.ogg
+step_npc 1557 2
+sleep 16
+play_event_bgm Ex-04-Train_Move.ogg
+msg へいし\n「ここまでだな
+sleep 48
+chg_char_dir left
+create npc_event 1580 15 11 11 0 2 2 none
+draw_char off
+sleep 16
+step_npc 1550 2
+step_npc 1551 2
+step_npc 1554 2
+step_npc 1555 2
+sleep 64
+chg_npc_dir 1580 down
+chg_npc_img 1580 103
+sleep 32
+chg_npc_dir 1580 left
+sleep 48
+chg_npc_img 1580 0
+chg_npc_dir 1580 right
+sleep 24
+play_se_loop train_move_quiet.ogg
+play_event_bgm Ex-05-Anxious_Heart_short.ogg
+msg 『ざんねんだが　おまえらの　あいてを\n　してるほど　ヒマじゃないんでな
+step_npc 1557 2
+sleep 16
+msg へいし\n「たわごとを……
+chg_speed 1557 fast
+step_npc 1557 4
+sleep 8
+msg へいし\n「よし　とらえろ！！
+play_se train_whistle_and_move.ogg
+sleep 8
+move_char up 1
+chg_speed 1580 fast
+move_npc 1580 up 1
+chg_speed 1550 normal
+chg_speed 1551 normal
+chg_speed 1554 normal
+chg_speed 1555 normal
+chg_speed 1556 normal
+chg_speed 1557 normal
+move_npc 1550 right 1
+move_npc 1551 right 1
+move_npc 1554 right 1
+move_npc 1555 right 1
+move_npc 1556 left 1
+move_npc 1557 left 1
+sleep 8
+chg_speed 1580 normal
+jump_npc_target_pos 1580 11 14
+sleep 4
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+sleep 4
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+sleep 4
+chg_npc_dir 1550 down
+chg_npc_dir 1551 down
+chg_npc_dir 1554 down
+chg_npc_dir 1555 down
+chg_npc_dir 1556 down
+chg_npc_dir 1557 down
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+move_char down 2
+create npc_event 1561 15 11 14 112 3 2 none
+chg_npc_y_offset 1561 0
+slide_walk_npc 1561 down 8
+sleep 4
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+sleep 4
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+create npc_event 1562 15 11 14 112 0 2 none
+chg_npc_y_offset 1562 0
+slide_walk_npc 1562 down 8
+sleep 4
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+sleep 8
+create npc_event 1563 15 11 14 112 2 2 none
+chg_npc_y_offset 1563 0
+slide_walk_npc 1563 down 8
+sleep 8
+slide_npc 1580 down 8
+sleep 8
+create npc_event 1564 15 11 14 112 1 2 none
+chg_npc_y_offset 1564 0
+slide_walk_npc 1564 down 8
+move_char down 1
+move_npc 1516 down 1
+sleep 16
+create npc_event 1565 15 11 14 112 2 2 none
+chg_npc_y_offset 1565 0
+slide_walk_npc 1565 down 8
+jump_npc 1550 same 2
+jump_npc 1551 same 2
+jump_npc 1554 same 2
+jump_npc 1555 same 2
+jump_npc 1556 same 2
+jump_npc 1557 same 2
+move_char down 8
+chg_npc_dir 1516 up
+sleep 16
+create npc_event 1566 15 11 14 112 1 2 none
+chg_npc_y_offset 1566 0
+slide_walk_npc 1566 down 8
+sleep 16
+chg_npc_dir 1580 down
+chg_npc_dir 1513 left
+create npc_event 1567 15 11 14 112 2 2 none
+chg_npc_y_offset 1567 0
+slide_walk_npc 1567 down 8
+chg_npc_dir 1516 right
+sleep 16
+create npc_event 1568 15 11 14 112 1 2 none
+chg_npc_y_offset 1568 0
+slide_walk_npc 1568 down 8
+jump_npc 1513 same 2
+sleep 16
+jump_npc 1516 same 2
+kill 1561
+create npc_event 1569 15 11 14 112 2 2 none
+chg_npc_y_offset 1569 0
+slide_walk_npc 1569 down 8
+sleep 16
+jump_npc 1510 same 2
+jump_npc 1512 same 1
+jump_npc 1513 same 2
+kill 1562
+create npc_event 1570 15 11 14 112 1 2 none
+chg_npc_y_offset 1570 0
+slide_walk_npc 1570 down 8
+chg_npc_img 1580 97
+sleep 16
+create npc_event 1571 15 11 14 112 2 2 none
+chg_npc_y_offset 1571 0
+slide_walk_npc 1571 down 8
+jump_npc 1512 same 1
+move_npc 1517 down 1
+jump_npc 1516 same 2
+kill 1580
+kill 1563
+sleep 16
+create npc_event 1572 15 11 14 112 1 2 none
+chg_npc_y_offset 1572 0
+slide_walk_npc 1572 down 8
+jump_npc 1510 same 2
+chg_npc_dir 1511 left
+kill 1564
+sleep 16
+create npc_event 1573 15 11 14 113 2 2 none
+chg_npc_y_offset 1573 0
+slide_walk_npc 1573 down 8
+jump_npc 1512 same 1
+jump_npc 1516 same 2
+move_npc 1517 down 1
+chg_npc_dir 1511 right
+kill 1565
+sleep 16
+create npc_event 1574 15 11 14 113 1 2 none
+chg_npc_y_offset 1574 0
+slide_walk_npc 1574 down 8
+jump_npc 1513 same 2
+jump_npc 1512 same 1
+chg_npc_dir 1511 up
+kill 1566
+chg_speed 1516 not_move
+sleep 16
+jump_npc 1512 same 1
+chg_npc_dir 1514 up
+chg_npc_dir 1515 up
+move_npc 1517 down 1
+kill 1567
+sleep 16
+kill 1517
+kill 1568
+sleep 16
+jump_npc 1512 same 1
+kill 1569
+sleep 16
+kill 1570
+sleep 16
+kill 1571
+sleep 16
+kill 1572
+sleep 16
+kill 1573
+fadeout
+sleep 128
+kill 1574
+kill 1401
+kill 1402
+kill 1550
+kill 1551
+kill 1554
+kill 1555
+kill 1556
+kill 1557
+kill 1510
+kill 1511
+kill 1512
+kill 1513
+kill 1514
+kill 1515
+kill 1516
+stop_bgm
+stop_se
+warp 16 9 5 down
+sleep 60
+fadein
+fi
+if_flag 3 1
+create npc_event 1556 15 16 10 31 2 2 none
+create npc_event 1557 15 16 11 31 2 2 none
+move_npc 1550 down 2
+move_npc 1551 down 3
+move_npc 1554 right 2
+move_npc 1555 right 2
+move_npc 1556 left 2
+move_npc 1557 left 2
+move_char right 2
+sleep 32
+move_npc 1550 right 1
+move_npc 1554 right 1
+move_npc 1555 right 1
+move_npc 1556 left 1
+move_npc 1557 left 1
+move_char right 1
+sleep 16
+chg_npc_dir 1551 right
+move_char right 1
+sleep 16
+stop_bgm
+chg_char_dir left
+sleep 16
+chg_char_dir right
+sleep 16
+play_se train_whistle_quiet.ogg
+step_npc 1557 2
+sleep 16
+play_event_bgm Ex-04-Train_Move.ogg
+msg へいし\n「ここまでだな
+sleep 48
+chg_char_dir left
+create npc_event 1580 15 11 11 0 2 2 none
+draw_char off
+sleep 16
+step_npc 1550 2
+step_npc 1551 2
+step_npc 1554 2
+step_npc 1555 2
+sleep 64
+chg_npc_dir 1580 down
+chg_npc_img 1580 103
+sleep 32
+chg_npc_dir 1580 left
+sleep 48
+chg_npc_img 1580 0
+chg_npc_dir 1580 right
+sleep 24
+play_se_loop train_move_quiet.ogg
+play_event_bgm Ex-05-Anxious_Heart_short.ogg
+msg 『ざんねんだが　おまえらの　あいてを\n　してるほど　ヒマじゃないんでな
+step_npc 1557 2
+sleep 16
+msg へいし\n「たわごとを……
+chg_speed 1557 fast
+step_npc 1557 4
+sleep 8
+msg へいし\n「よし　とらえろ！！
+play_se train_whistle_and_move.ogg
+sleep 8
+move_char up 1
+chg_speed 1580 fast
+move_npc 1580 up 1
+chg_speed 1550 normal
+chg_speed 1551 normal
+chg_speed 1554 normal
+chg_speed 1555 normal
+chg_speed 1556 normal
+chg_speed 1557 normal
+move_npc 1550 right 1
+move_npc 1551 right 1
+move_npc 1554 right 1
+move_npc 1555 right 1
+move_npc 1556 left 1
+move_npc 1557 left 1
+sleep 8
+chg_speed 1580 normal
+jump_npc_target_pos 1580 11 14
+sleep 4
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+sleep 4
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+sleep 4
+chg_npc_dir 1550 down
+chg_npc_dir 1551 down
+chg_npc_dir 1554 down
+chg_npc_dir 1555 down
+chg_npc_dir 1556 down
+chg_npc_dir 1557 down
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+move_char down 2
+create npc_event 1561 15 11 14 112 3 2 none
+chg_npc_y_offset 1561 0
+slide_walk_npc 1561 down 8
+sleep 4
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+sleep 4
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+create npc_event 1562 15 11 14 112 0 2 none
+chg_npc_y_offset 1562 0
+slide_walk_npc 1562 down 8
+sleep 4
+chg_npc_img 1580 103
+sleep 4
+chg_npc_img 1580 0
+sleep 8
+create npc_event 1563 15 11 14 112 2 2 none
+chg_npc_y_offset 1563 0
+slide_walk_npc 1563 down 8
+sleep 8
+slide_npc 1580 down 8
+sleep 8
+create npc_event 1564 15 11 14 112 1 2 none
+chg_npc_y_offset 1564 0
+slide_walk_npc 1564 down 8
+move_char down 1
+move_npc 1516 down 1
+sleep 16
+create npc_event 1565 15 11 14 112 2 2 none
+chg_npc_y_offset 1565 0
+slide_walk_npc 1565 down 8
+jump_npc 1550 same 2
+jump_npc 1551 same 2
+jump_npc 1554 same 2
+jump_npc 1555 same 2
+jump_npc 1556 same 2
+jump_npc 1557 same 2
+move_char down 8
+chg_npc_dir 1516 up
+sleep 16
+create npc_event 1566 15 11 14 112 1 2 none
+chg_npc_y_offset 1566 0
+slide_walk_npc 1566 down 8
+sleep 16
+chg_npc_dir 1580 down
+chg_npc_dir 1513 left
+create npc_event 1567 15 11 14 112 2 2 none
+chg_npc_y_offset 1567 0
+slide_walk_npc 1567 down 8
+chg_npc_dir 1516 right
+sleep 16
+create npc_event 1568 15 11 14 112 1 2 none
+chg_npc_y_offset 1568 0
+slide_walk_npc 1568 down 8
+jump_npc 1513 same 2
+sleep 16
+jump_npc 1516 same 2
+kill 1561
+create npc_event 1569 15 11 14 112 2 2 none
+chg_npc_y_offset 1569 0
+slide_walk_npc 1569 down 8
+sleep 16
+jump_npc 1510 same 2
+jump_npc 1512 same 1
+jump_npc 1513 same 2
+kill 1562
+create npc_event 1570 15 11 14 112 1 2 none
+chg_npc_y_offset 1570 0
+slide_walk_npc 1570 down 8
+chg_npc_img 1580 97
+sleep 16
+create npc_event 1571 15 11 14 112 2 2 none
+chg_npc_y_offset 1571 0
+slide_walk_npc 1571 down 8
+jump_npc 1512 same 1
+move_npc 1517 down 1
+jump_npc 1516 same 2
+kill 1580
+kill 1563
+sleep 16
+create npc_event 1572 15 11 14 112 1 2 none
+chg_npc_y_offset 1572 0
+slide_walk_npc 1572 down 8
+jump_npc 1510 same 2
+chg_npc_dir 1511 left
+kill 1564
+sleep 16
+create npc_event 1573 15 11 14 113 2 2 none
+chg_npc_y_offset 1573 0
+slide_walk_npc 1573 down 8
+jump_npc 1512 same 1
+jump_npc 1516 same 2
+move_npc 1517 down 1
+chg_npc_dir 1511 right
+kill 1565
+sleep 16
+create npc_event 1574 15 11 14 113 1 2 none
+chg_npc_y_offset 1574 0
+slide_walk_npc 1574 down 8
+jump_npc 1513 same 2
+jump_npc 1512 same 1
+chg_npc_dir 1511 up
+kill 1566
+chg_speed 1516 not_move
+sleep 16
+jump_npc 1512 same 1
+chg_npc_dir 1514 up
+chg_npc_dir 1515 up
+move_npc 1517 down 1
+kill 1567
+sleep 16
+kill 1517
+kill 1568
+sleep 16
+jump_npc 1512 same 1
+kill 1569
+sleep 16
+kill 1570
+sleep 16
+kill 1571
+sleep 16
+kill 1572
+sleep 16
+kill 1573
+fadeout
+sleep 128
+kill 1574
+kill 1401
+kill 1402
+kill 1550
+kill 1551
+kill 1554
+kill 1555
+kill 1556
+kill 1557
+kill 1510
+kill 1511
+kill 1512
+kill 1513
+kill 1514
+kill 1515
+kill 1516
+stop_bgm
+stop_se
+warp 16 9 5 down
+sleep 60
+fadein
+fi

@@ -1,0 +1,13 @@
+wait_same_pos
+msg ティファ\n「ねぇ　クラウド\n　きぶんは　どう？
+sleep 16
+chg_char_dir up
+msg 『……ふつうさ\n　どうして　そんなことを　きく？\n\n\nティファ\n「ううん　なんでもない\n　ただ　つかれて　ないのかなって……
+chg_npc_dir 2202 down
+chg_type 2202 npc
+chg_speed 2202 not_move
+set_flag_wall 2202
+sleep 32
+chg_char_dir up
+sleep 16
+kill 2223
