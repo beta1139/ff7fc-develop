@@ -31,7 +31,7 @@ chg_npc_dir 1002 right
 sleep 32
 play_se timer.ogg
 step_char 6
-sleep 88
+sleep 180
 play_se_loop alarm.ogg
 sleep 8
 chg_char_dir right
