@@ -1,4 +1,0 @@
-wait_same_pos
-kill 1919
-kill_through 2023
-kill_through 2006

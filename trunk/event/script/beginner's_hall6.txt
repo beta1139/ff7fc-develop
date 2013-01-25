@@ -1,6 +1,0 @@
-wait_treasurebox_opened 2630
-jump_npc 2602 same 1
-sleep 16
-jump_npc 2602 same 1
-sleep 16
-msg 「いいですか？\n　こ～んな（たからばこ）には　おとくな　アイテムが\n　かくされています\n\n　ボトルタイプや　ふくろタイプなど\n　ほかにも　しゅるいがありますから\n　おみのがしないように

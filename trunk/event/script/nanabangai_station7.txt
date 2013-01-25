@@ -1,2 +1,0 @@
-wait_target_talked 1706
-chg_param 1706 「さあ　おはやく　ごじょうしゃ　ねがいます\n　もうすぐ　しゅっぱつしますよ

@@ -1,2 +1,0 @@
-wait_same_pos
-chg_speed 2308 not_step

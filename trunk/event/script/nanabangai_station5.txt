@@ -1,7 +1,0 @@
-wait_target_talked 1707
-set_talk_npc 1708
-msg 「エェ！
-reset_talk_npc
-create npc3 1716 17 3 6 71 3 0 「ね　どっかで　やすんで　いこう
-kill 1707
-create event_generator 1717 17 3 3 17 0 0 @nanabangai_station6.txt
