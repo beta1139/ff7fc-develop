@@ -30,7 +30,7 @@ sleep 48
 warp 16 2 20 up
 create npc2 1680 16 2 21 17 0 0 
 draw_char on
-create event_generator 1684 16 3 20 17 0 0 @ressya_11.txt
+create event_generator 1684 16 3 20 17 0 0 @016/ressya_11.txt
 chg_speed 1667 not_step
 fadein
 inc_map_draw_y_offset

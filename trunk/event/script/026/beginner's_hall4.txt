@@ -37,7 +37,7 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 chg_type 2601 npc2
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 if_flag 3 1
@@ -52,7 +52,7 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 chg_type 2601 npc2
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 if_flag 3 2
@@ -63,7 +63,7 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 chg_type 2601 npc2
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 if_flag 3 3
@@ -76,7 +76,7 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 chg_type 2601 npc2
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 fi
@@ -88,7 +88,7 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 chg_type 2601 npc2
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 fi
@@ -100,7 +100,7 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 chg_type 2601 npc2
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 fi
@@ -114,7 +114,7 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 chg_type 2601 npc2
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 fi
@@ -127,7 +127,7 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 chg_type 2601 npc2
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 fi
@@ -140,7 +140,7 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 chg_type 2601 npc2
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 fi
@@ -155,14 +155,14 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 chg_type 2601 npc2
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 fi
 fi
 fi
 if_flag 3 1
-create event_generator 2622 26 4 8 17 0 0 @26/beginner's_hall3.txt
+create event_generator 2622 26 4 8 17 0 0 @026/beginner's_hall3.txt
 end
 fi
 fi

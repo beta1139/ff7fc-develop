@@ -14,4 +14,4 @@ move_npc 800 up 8
 sleep 64
 kill 800
 kill 510
-create event_generator 410 4 7 7 17 1 0 @ichiban_makouro1.txt
+create event_generator 410 4 7 7 17 1 0 @004/ichiban_makouro1.txt

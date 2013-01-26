@@ -1,4 +1,4 @@
 wait_target_talked 2603
 msg 『おまえたちから　かねをとるほど\n　おちぶれちゃいない\n　ひまつぶしに　つきあってやる
-create event_generator 2641 26 4 5 17 0 0 @26/beginner's_hall12.txt
+create event_generator 2641 26 4 5 17 0 0 @026/beginner's_hall12.txt
 chg_type 2603 npc2

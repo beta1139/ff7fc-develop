@@ -23,7 +23,7 @@ step_npc 60001 3
 sleep 56
 msg 「シュッシュッ……\n　どうした　どうした！\n\n\n「アタシの　つよさに　ビビッてんだろ！！\n\n\n\n#2\n　　……まあな\n　　なんどやっても　おなじだ\n\n\n[[]][[]]
 if_flag 3 0
-create event_generator 60004 600 0 0 17 0 0 @yufi3.txt
+create event_generator 60004 600 0 0 17 0 0 @600/yufi3.txt
 end
 fi
 if_flag 3 1

@@ -1,50 +1,53 @@
-set_eternal_event
-wait_target_talk 589
-reset_talk_flag 589
-chg_char_state_event
+wait_same_pos
+kill 592
+kill 593
+kill 594
+create event_generator 595 5 1 1 17 0 0 @005/makouro_gimmick_a07.txt
+create event_generator 596 5 1 2 17 0 0 @005/makouro_gimmick_a08.txt
+create event_generator 597 5 1 2 17 0 0 @005/makouro_gimmick_a09.txt
+loop_inf
+chg_char_state_move
 sleep 32
-if_char_img 0
-chg_char_dir left
-chg_char_img_tmp 115
-fi
-if_char_img 1
-chg_char_dir left
-chg_char_img_tmp 116
-fi
-kill_through 590
+set_npc_pos 586 5 14 30
+set_npc_pos 587 5 14 19
+sleep 14
+set_npc_pos 587 5 14 30
+set_npc_pos 588 5 14 19
+sleep 16
+chg_npc_img 576 114
+chg_npc_img 577 114
+sleep 32
+set_npc_pos 588 5 14 30
+set_npc_pos 589 5 14 19
+sleep 32
+chg_npc_dir 576 right
+chg_npc_dir 577 up
 set_npc_pos 589 5 14 30
 set_npc_pos 582 5 14 19
-chg_npc_dir 576 right
-chg_npc_img 576 114
-chg_npc_dir 577 up
-chg_npc_img 577 114
 chg_npc_dir 583 down
 chg_npc_dir 584 down
-sleep 56
+chg_speed 583 not_step
+chg_speed 584 not_step
+play_se switch.ogg
+sleep 4
+play_se_loop alarm.ogg
+sleep 52
 chg_npc_img 576 34
 chg_npc_dir 576 left
 chg_npc_img 577 35
 chg_npc_dir 577 down
 chg_npc_dir 583 up
 chg_npc_dir 584 up
-sleep 8
-chg_char_dir right
-chg_npc_dir 582 down
-play_se switch.ogg
-sleep 4
-play_se_loop alarm.ogg
-sleep 52
-reset_char_img_tmp
-chg_npc_dir 582 up
+chg_speed 583 not_move
+chg_speed 584 not_move
 msg3 -1 ジェシー\n「しっぱいね　もういちど
 if_flag 10 0
 sleep 96
 erase_msg3
-create event_generator 591 5 13 19 17 0 0 @makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 1
-end
+pool
 fi
 if_flag 10 1
 sleep 32
@@ -52,11 +55,10 @@ chg_npc_dir 578 left
 chg_npc_img 578 98
 sleep 64
 erase_msg3
-create event_generator 591 5 13 19 17 0 0 @makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 2
-end
+pool
 fi
 if_flag 10 2
 sleep 16
@@ -64,11 +66,10 @@ chg_speed 578 normal
 step_npc 578 5
 sleep 80
 erase_msg3
-create event_generator 591 5 13 19 17 0 0 @makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 3
-end
+pool
 fi
 if_flag 10 3
 sleep 64
@@ -100,31 +101,29 @@ draw_char on
 kill 578
 sleep 24
 erase_image 500
-create event_generator 591 5 13 19 17 0 0 @makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 4
-end
+pool
 fi
 if_flag 10 4
 sleep 96
 erase_msg3
-create event_generator 591 5 13 19 17 0 0 @makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
+chg_npc_dir 579 up
 set_flag 10 5
-end
+pool
 fi
 if_flag 10 5
 sleep 48
 chg_npc_dir 579 left
 sleep 48
 erase_msg3
-create event_generator 591 5 13 19 17 0 0 @makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 6
-end
+pool
 fi
 if_flag 10 6
 sleep 16
@@ -157,9 +156,8 @@ draw_char on
 kill 579
 sleep 24
 erase_msg3
-create event_generator 591 5 13 19 17 0 0 @makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 1
-end
+pool
 fi

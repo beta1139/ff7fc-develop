@@ -30,4 +30,4 @@ chg_type 1906 npc
 chg_speed 1906 not_move
 create npc2 1914 19 7 26 32 0 0 
 kill 1907
-create event_generator 1915 19 2 1 17 0 0 @nanabangai6.txt
+create event_generator 1915 19 2 1 17 0 0 @019/nanabangai6.txt

@@ -19,4 +19,4 @@ chg_npc_dir 134 right
 sleep 16
 create npc2 138 5 22 6 34 3 0 
 kill 134
-create event_generator 140 5 23 5 17 0 0 @jesse2.txt
+create event_generator 140 5 23 5 17 0 0 @005/jesse2.txt

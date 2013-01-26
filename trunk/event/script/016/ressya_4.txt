@@ -82,7 +82,7 @@ warp 704 11 12 up
 create npc_event 70400 704 16 17 34 0 0 none
 create npc_event 70401 704 15 17 0 0 2 none
 create npc2 70410 704 11 11 17 0 0 
-create event_generator 70414 16 1 1 17 0 0 @ressya_10.txt
+create event_generator 70414 16 1 1 17 0 0 @016/ressya_10.txt
 sleep 24
 fadein
 chg_npc_dir 70400 up
