@@ -2,6 +2,7 @@ set_eternal_event
 wait_target_talk 650
 reset_talk_flag 650
 play_se button.ogg
+msg スイッチオン
 sleep 32
 draw_countdown off
 play_se elevator_start.wav

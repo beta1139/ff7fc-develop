@@ -1,7 +1,7 @@
 wait_target_talk 650
 reset_talk_flag 650
-msg スイッチオン
 play_se button.ogg
+msg スイッチオン
 sleep 32
 play_se elevator_start.wav
 loop 100
@@ -76,7 +76,3 @@ kill 150
 kill 141
 sleep 16
 create event_generator 660 6 0 0 17 0 0 @006/elevator_switch1.txt
-
-
-
-
