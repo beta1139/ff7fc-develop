@@ -1,5 +1,5 @@
 wait_treasurebox_opened 95011
 msg ドロボー！
 start_fake_countdown_sec 3
-create event_generator 950100 950 0 0 0 0 0 @950_dbg38.txt
+create event_generator 950100 950 0 0 0 0 0 @950/950_dbg38.txt
 

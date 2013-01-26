@@ -23,71 +23,71 @@ create armor_shop 95021 950 22 8 68 1 0 3000/3001/3002/3003/3004/3005/3006/3007/
 create acce_shop 95022 950 24 8 69 1 0 5000/5001/5002
 create materia_shop 95023 950 26 8 70 1 0 4000/4003/4004/4005
 create npc 95024 950 22 13 71 3 0 いいものが　たんさん　そろっているよ
-create event_generator 95030 950 16 22 17 1 0 @950_dbg1.txt
-create event_generator 95031 950 16 23 17 1 0 @950_dbg2.txt
+create event_generator 95030 950 16 22 17 1 0 @950/950_dbg1.txt
+create event_generator 95031 950 16 23 17 1 0 @950/950_dbg2.txt
 create npc 95032 950 20 20 73 1 2 フォントひょうじ　テスト\nあいうえおアイウエオ かきくけこカキクケコ\nさしすせそサシスセソ たちつてとタチツテト\nなにぬねのナニヌネノ はひふへほハヒフヘホ\nまみむめもマミムメモ やゆよヤユヨ\nらりるれろラリルレロ わをんワ　ン\nっゃゅょッャュョ ぁぃぅぇぉァィゥェォ\nabcdefghijklmn\nopqrstuvwxyz\nABCDEFGHIJKLMN\nOPQRSTUVWXYZ\n0123456789\n：「『。～－…！？％／→（）\nがぎぐげごガギグゲゴ ざじずぜぞザジズゼゾ\nだぢづでどダヂヅデド ばびぶべぼバビブベボ\nぱぴぷぺぽ
-create event_generator 95060 950 0 0 17 1 0 @950_dbg3.txt
-create event_generator 95061 950 0 0 17 1 0 @950_dbg4.txt
-create event_generator 95062 950 0 0 17 1 0 @950_dbg5.txt
-create event_generator 95063 950 0 0 17 1 0 @950_dbg6.txt
-create event_generator 95064 950 0 0 17 1 0 @950_dbg7.txt
+create event_generator 95060 950 0 0 17 1 0 @950/950_dbg3.txt
+create event_generator 95061 950 0 0 17 1 0 @950/950_dbg4.txt
+create event_generator 95062 950 0 0 17 1 0 @950/950_dbg5.txt
+create event_generator 95063 950 0 0 17 1 0 @950/950_dbg6.txt
+create event_generator 95064 950 0 0 17 1 0 @950/950_dbg7.txt
 create npc_shop 95070 950 21 10 1 1 0 アイテムを　かってください
 create npc_shop 95071 950 22 10 1 1 0 ぶきを　かってください
 create npc_shop 95072 950 23 10 1 1 0 ぼうぐを　かってください
 create npc_shop 95073 950 24 10 1 1 0 マテリアを　かってください
 create npc_shop 95074 950 25 10 1 1 0 アクセサリーを　かってください
-create event_generator 95080 950 0 0 17 1 0 @950_dbg8.txt
+create event_generator 95080 950 0 0 17 1 0 @950/950_dbg8.txt
 create npc 95081 950 23 34 2 0 0 『３かいまわって　ワンと　いいな
 create npc2 95082 950 27 18 79 1 2 none 
-create event_generator 95083 950 0 0 17 0 0 @950_dbg9.txt
-create event_generator 95084 950 0 0 17 1 0 @950_dbg12.txt
+create event_generator 95083 950 0 0 17 0 0 @950/950_dbg9.txt
+create event_generator 95084 950 0 0 17 1 0 @950/950_dbg12.txt
 create npc 95085 950 21 33 2 3 0 『10かい　あしぶみして　ワンと　いいな
-create event_generator 95086 950 0 0 17 1 0 @950_dbg13.txt
+create event_generator 95086 950 0 0 17 1 0 @950/950_dbg13.txt
 create npc 95087 950 25 33 2 2 0 『3チップぶん　ジャンプして　ワンと　いいな
-create event_generator 95040 950 0 0 17 1 0 @950_dbg14.txt
+create event_generator 95040 950 0 0 17 1 0 @950/950_dbg14.txt
 create npc 95041 950 25 32 2 2 0 『2チップぶん　ジャンプして　ワンと　いいな
-create event_generator 95042 950 0 0 17 1 0 @950_dbg15.txt
+create event_generator 95042 950 0 0 17 1 0 @950/950_dbg15.txt
 create npc 95043 950 25 31 2 2 0 『1チップぶん　ジャンプして　ワンと　いいな
-create event_generator 95044 950 0 0 17 1 0 @950_dbg16.txt
+create event_generator 95044 950 0 0 17 1 0 @950/950_dbg16.txt
 create npc 95045 950 25 30 2 2 0 『そのばで　ジャンプして　ワンと　いいな
-create event_generator 95046 950 0 0 17 1 0 @950_dbg17.txt
+create event_generator 95046 950 0 0 17 1 0 @950/950_dbg17.txt
 create npc 95047 950 25 34 2 2 0 『5チップぶん　ジャンプして　ワンと　いいな
-create event_generator 95048 950 0 0 17 1 0 @950_dbg18.txt
+create event_generator 95048 950 0 0 17 1 0 @950/950_dbg18.txt
 create npc 95049 950 25 35 2 2 0 『とおくに　ジャンプして　ワンと　いいな
-create event_generator 95050 950 0 0 17 1 0 @950_dbg19.txt
+create event_generator 95050 950 0 0 17 1 0 @950/950_dbg19.txt
 create npc 95051 950 20 30 2 3 0 『スライドバック
-create event_generator 95052 950 0 0 17 1 0 @950_dbg20.txt
+create event_generator 95052 950 0 0 17 1 0 @950/950_dbg20.txt
 create npc 95053 950 20 31 2 3 0 『スライドウォーク
 create npc2 95090 950 26 18 75 1 2 none
-create event_generator 95091 950 0 0 17 0 0 @950_dbg10.txt
+create event_generator 95091 950 0 0 17 0 0 @950/950_dbg10.txt
 create npc3 95092 950 24 21 76 2 0 わたしは　ふりむかない　npc です
 create npc2 95093 950 26 21 77 1 0 none
-create event_generator 95094 950 0 0 17 0 0 @950_dbg11.txt
-create event_generator 95095 950 30 27 17 0 0 @950_bed.txt
+create event_generator 95094 950 0 0 17 0 0 @950/950_dbg11.txt
+create event_generator 95095 950 30 27 17 0 0 @950/950_bed.txt
 create save_point 95001 950 10 22 0 0 0 none
 create npc2 95002 950 19 16 78 1 0 none
-create event_generator 95003 950 0 0 17 0 0 @950_dbg21.txt
+create event_generator 95003 950 0 0 17 0 0 @950/950_dbg21.txt
 create npc2 95004 950 17 16 79 1 0 none
-create event_generator 95005 950 0 0 17 0 0 @950_dbg22.txt
+create event_generator 95005 950 0 0 17 0 0 @950/950_dbg22.txt
 create npc2 95006 950 18 16 79 1 0 none
-create event_generator 95007 950 0 0 17 0 0 @950_dbg23.txt
-create event_generator 95008 950 15 25 17 0 0 @950_dbg24.txt
+create event_generator 95007 950 0 0 17 0 0 @950/950_dbg23.txt
+create event_generator 95008 950 15 25 17 0 0 @950/950_dbg24.txt
 create npc 950000 950 29 30 82 1 0 ここは　おれの　ばしょだ
-create event_generator 950001 950 0 0 0 0 0 @950_dbg25.txt
+create event_generator 950001 950 0 0 0 0 0 @950/950_dbg25.txt
 create npc 950002 950 31 21 83 1 0 けがを　しても　しらないから
-create event_generator 950003 950 32 22 17 0 0 @950_dbg26.txt
-create event_generator 950004 950 34 22 17 0 0 @950_dbg27.txt
-create event_generator 950005 950 38 21 17 0 0 @950_dbg28.txt
-create event_generator 950006 950 38 18 17 0 0 @950_dbg29.txt
-create event_generator 950007 950 36 18 17 0 0 @950_dbg30.txt
-create event_generator 950008 950 36 23 17 0 0 @950_dbg31.txt
-create event_generator 950009 950 38 23 17 0 0 @950_dbg32.txt
-create event_generator 950010 950 38 25 17 0 0 @950_dbg33.txt
-create event_generator 950011 950 32 25 17 0 0 @950_dbg34.txt
-create event_generator 950012 950 35 20 17 0 0 @950_dbg35.txt
+create event_generator 950003 950 32 22 17 0 0 @950/950_dbg26.txt
+create event_generator 950004 950 34 22 17 0 0 @950/950_dbg27.txt
+create event_generator 950005 950 38 21 17 0 0 @950/950_dbg28.txt
+create event_generator 950006 950 38 18 17 0 0 @950/950_dbg29.txt
+create event_generator 950007 950 36 18 17 0 0 @950/950_dbg30.txt
+create event_generator 950008 950 36 23 17 0 0 @950/950_dbg31.txt
+create event_generator 950009 950 38 23 17 0 0 @950/950_dbg32.txt
+create event_generator 950010 950 38 25 17 0 0 @950/950_dbg33.txt
+create event_generator 950011 950 32 25 17 0 0 @950/950_dbg34.txt
+create event_generator 950012 950 35 20 17 0 0 @950/950_dbg35.txt
 create npc2 950013 950 20 16 84 1 0 none
-create event_generator 950014 950 0 0 0 0 0 @950_dbg36.txt
-create event_generator 950015 950 0 0 0 0 0 @950_dbg37.txt
+create event_generator 950014 950 0 0 0 0 0 @950/950_dbg36.txt
+create event_generator 950015 950 0 0 0 0 0 @950/950_dbg37.txt
 warp 950 25 22 up
 play_bgm
 set_flag 0 0
