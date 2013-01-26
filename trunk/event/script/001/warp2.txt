@@ -87,7 +87,7 @@ create event_generator 950011 950 32 25 17 0 0 @950/950_dbg34.txt
 create event_generator 950012 950 35 20 17 0 0 @950/950_dbg35.txt
 create npc2 950013 950 20 16 84 1 0 none
 create event_generator 950014 950 0 0 0 0 0 @950/950_dbg36.txt
-create event_generator 950015 950 0 0 0 0 0 @950/950_dbg37.txt
+create event_generator 9500015 950 0 0 0 0 0 @950/950_dbg37.txt
 warp 950 25 22 up
 play_bgm
 set_flag 0 0
