@@ -9,6 +9,7 @@ msg 「サンキュー！
 active 800
 chg_speed 800 fast
 jump_npc 800 up 2
+set_layer 800 front
 sleep 40
 move_npc 800 up 8
 sleep 64
