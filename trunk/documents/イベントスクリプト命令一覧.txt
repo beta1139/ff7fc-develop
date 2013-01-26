@@ -301,6 +301,9 @@ set_active_msg (event_id)
 set_inactive_msg (event_id)
   会話ウィンドウが開いているときも行動させるのをやめる
 
+set_layer (event_id) (layer)
+  表示順序を変える。layerには、"back"か"front"を指定する
+
 =============== パラメータ操作系 ===============
 add_gil (val)
   ギルを増やす
