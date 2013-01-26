@@ -12,7 +12,7 @@ chg_char_dir left
 chg_char_img_tmp 116
 fi
 sleep 48
-kill 591
+kill_through 590
 sleep 16
 chg_char_dir right
 set_npc_pos 588 5 14 30
@@ -53,10 +53,7 @@ msg3 -1 ジェシー\n「しっぱいね　もういちど
 if_flag 10 0
 sleep 96
 erase_msg3
-create event_generator 590 5 13 19 17 0 0 @makouro_gimmick_a03.txt
-create event_generator 592 5 1 1 17 0 0 @makouro_gimmick_a04.txt
-create event_generator 593 5 1 2 17 0 0 @makouro_gimmick_a05.txt
-create event_generator 594 5 1 2 17 0 0 @makouro_gimmick_a06.txt
+create event_generator 591 5 13 19 17 0 0 @005/makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 1
@@ -68,10 +65,7 @@ chg_npc_dir 578 left
 chg_npc_img 578 98
 sleep 64
 erase_msg3
-create event_generator 590 5 13 19 17 0 0 @makouro_gimmick_a03.txt
-create event_generator 592 5 1 1 17 0 0 @makouro_gimmick_a04.txt
-create event_generator 593 5 1 2 17 0 0 @makouro_gimmick_a05.txt
-create event_generator 594 5 1 2 17 0 0 @makouro_gimmick_a06.txt
+create event_generator 591 5 13 19 17 0 0 @005/makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 2
@@ -83,10 +77,7 @@ chg_speed 578 normal
 step_npc 578 5
 sleep 80
 erase_msg3
-create event_generator 590 5 13 19 17 0 0 @makouro_gimmick_a03.txt
-create event_generator 592 5 1 1 17 0 0 @makouro_gimmick_a04.txt
-create event_generator 593 5 1 2 17 0 0 @makouro_gimmick_a05.txt
-create event_generator 594 5 1 2 17 0 0 @makouro_gimmick_a06.txt
+create event_generator 591 5 13 19 17 0 0 @005/makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 3
@@ -122,10 +113,7 @@ draw_char on
 kill 578
 sleep 24
 erase_image 500
-create event_generator 590 5 13 19 17 0 0 @makouro_gimmick_a03.txt
-create event_generator 592 5 1 1 17 0 0 @makouro_gimmick_a04.txt
-create event_generator 593 5 1 2 17 0 0 @makouro_gimmick_a05.txt
-create event_generator 594 5 1 2 17 0 0 @makouro_gimmick_a06.txt
+create event_generator 591 5 13 19 17 0 0 @005/makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 4
@@ -134,10 +122,7 @@ fi
 if_flag 10 4
 sleep 96
 erase_msg3
-create event_generator 590 5 13 19 17 0 0 @makouro_gimmick_a03.txt
-create event_generator 592 5 1 1 17 0 0 @makouro_gimmick_a04.txt
-create event_generator 593 5 1 2 17 0 0 @makouro_gimmick_a05.txt
-create event_generator 594 5 1 2 17 0 0 @makouro_gimmick_a06.txt
+create event_generator 591 5 13 19 17 0 0 @005/makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 5
@@ -148,10 +133,7 @@ sleep 48
 chg_npc_dir 579 left
 sleep 48
 erase_msg3
-create event_generator 590 5 13 19 17 0 0 @makouro_gimmick_a03.txt
-create event_generator 592 5 1 1 17 0 0 @makouro_gimmick_a04.txt
-create event_generator 593 5 1 2 17 0 0 @makouro_gimmick_a05.txt
-create event_generator 594 5 1 2 17 0 0 @makouro_gimmick_a06.txt
+create event_generator 591 5 13 19 17 0 0 @005/makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 6
@@ -188,10 +170,7 @@ draw_char on
 kill 579
 sleep 24
 erase_msg3
-create event_generator 590 5 13 19 17 0 0 @makouro_gimmick_a03.txt
-create event_generator 592 5 1 1 17 0 0 @makouro_gimmick_a04.txt
-create event_generator 593 5 1 2 17 0 0 @makouro_gimmick_a05.txt
-create event_generator 594 5 1 2 17 0 0 @makouro_gimmick_a06.txt
+create event_generator 591 5 13 19 17 0 0 @005/makouro_gimmick_a02.txt
 set_npc_pos 582 5 14 30
 set_npc_pos 586 5 14 19
 set_flag 10 1

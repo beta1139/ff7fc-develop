@@ -21,5 +21,5 @@ play_se bump.ogg
 create treasure_box 2630 26 5 8 0 0 0 1003
 kill 2638
 chg_char_dir right
-create event_generator 2631 26 1 1 17 0 0 @26/beginner's_hall6.txt
+create event_generator 2631 26 1 1 17 0 0 @026/beginner's_hall6.txt
 chg_event_move_char_speed normal

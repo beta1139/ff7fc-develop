@@ -29,5 +29,5 @@ kill 130
 chg_npc_dir 131 right
 sleep 16
 create npc3 134 5 12 6 34 3 0 ジェシー\n「コードかいじょ
-create event_generator 137 5 1 2 17 0 0 @jesse1.txt
+create event_generator 137 5 1 2 17 0 0 @005/jesse1.txt
 kill 131

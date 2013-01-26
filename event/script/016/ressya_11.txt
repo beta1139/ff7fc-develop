@@ -15,12 +15,12 @@ kill 70414
 kill 1680
 stop_se
 sleep 16
-create event_generator 1600 16 2 20 17 0 0 @ressya_move1.txt
+create event_generator 1600 16 2 20 17 0 0 @016/ressya_move1.txt
 chg_npc_dir 1667 left
 sleep 16
 create npc 1669 16 2 19 34 2 0 ジェシー\n「そうだ　クラウド！\n　こんど　わたしの　てづくりさくひんを\n　プレゼントしちゃおうかな\n#2\n　　えんりょしとくよ\n　　たのしみにしてるよ\n\n\n[[「そう きっと　こうかい　するかもよ\n　わたし　ズガッーンと　ねにもつ　タイプなの]]\n[[　うん　じゃ　うでに　よりをかけて\n　ドッカーンと　せいさくするわ]]
 kill 1667
-create event_generator 1677 16 1 1 17 0 0 @ressya_8.txt
+create event_generator 1677 16 1 1 17 0 0 @016/ressya_8.txt
 chg_type 1665 npc2
 kill_through 1674
 chg_param 1668 ウェッジ\n「めが　チカチカしたっす\n　おれ　くらいの　だめっす　にがてっす

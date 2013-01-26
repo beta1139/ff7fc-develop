@@ -17,7 +17,7 @@ msg eee
 end
 fi
 if_flag 3 1
-create event_generator 60005 600 0 0 17 0 0 @yufi4.txt
+create event_generator 60005 600 0 0 17 0 0 @600/yufi4.txt
 end
 fi
 
