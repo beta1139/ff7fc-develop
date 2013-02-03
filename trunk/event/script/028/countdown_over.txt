@@ -560,7 +560,7 @@ fadeout
 stop_se
 stop_bgm
 sleep 56
-warp 34 7 20 up
+warp 34 7 19 up
 draw_char on
 sleep 56
 chg_char_dir up
