@@ -323,6 +323,9 @@ sub_likability (idx) (val)
 recover_active_chara
   active memberのHP MPを全回復させる
 
+add_item (item_idx)
+  item_idxのアイテムを追加
+
 =============== 画面エフェクト系 ===============
 screen_effect (color)
   画面全体にエフェクトをかける。colorにはred blue green offが指定可
