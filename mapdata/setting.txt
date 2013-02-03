@@ -27,11 +27,11 @@ id,type,bgm,battle_back,monster_party_id
 25,1,through,0,188/189/190/191
 26,1,through,0,188/189/190/191
 27,1,through,0,188/189/190/191
-28,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
-29,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
-30,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
-31,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
-32,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
+28,1,through,0,188/189/190/191
+29,1,through,0,188/189/190/191
+30,1,through,0,188/189/190/191
+31,1,through,0,188/189/190/191
+32,1,through,0,188/189/190/191
 33,0,1-08-Lurking_in_the_Darkness.ogg,5,188/189/190/191
 34,0,1-08-Lurking_in_the_Darkness.ogg,5,188/189/190/191
 35,0,1-08-Lurking_in_the_Darkness.ogg,5,188/189/190/191
