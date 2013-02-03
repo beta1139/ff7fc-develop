@@ -1,0 +1,38 @@
+wait_same_pos
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid a
+set_key_unvalid start
+chg_npc_dir 3006 down
+chg_npc_y_offset 3006 0
+step_npc 3006 1
+msg3 48 「ニヒニヒ！！
+sleep 8
+play_se pick_up.wav
+chg_char_dir up
+sleep 8
+chg_speed 3007 fast
+move_npc 3007 down 2
+sleep 8
+play_se_loop alarm.ogg
+chg_speed 3006 fast
+move_npc 3006 left 8
+sleep 8
+move_npc 3007 right 3
+sleep 24
+erase_msg3
+kill 3007
+sleep 32
+set_npc_pos 3006 30 1 6
+chg_speed 3006 not_move
+chg_type 3006 npc3
+chg_npc_y_offset 3006 -4
+sub_gil 200
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+set_key_valid a
