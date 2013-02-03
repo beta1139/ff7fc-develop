@@ -17,6 +17,7 @@ play_se pick_up.wav
 sleep 16
 play_se_loop alarm.ogg
 msg ハイポーション　をてにいれた！
+add_item 1001
 chg_type 2909 npc
 chg_speed 2909 not_step
 chg_param 2909 「あ～ん？\n　あんた　がめついねえ
