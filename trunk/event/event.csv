@@ -15,19 +15,19 @@ npc_event,203,2,23,6,35,1,0,""
 event_generator,211,2,24,7,17,0,0,"@002/ichibangai_station_abaranchi1.txt"
 event_generator,212,2,25,7,17,0,0,"@002/ichibangai_station_abaranchi2.txt"
 event_generator,213,2,26,7,17,0,0,"@002/ichibangai_station_abaranchi3.txt"
-npc_event,3001,3,7,23,35,0,3,"none"
-event_generator,3002,3,6,28,17,0,0,"@003/bigs2.txt"
-event_generator,3003,3,7,28,17,0,0,"@003/bigs3.txt"
-npc_event,3004,3,13,18,36,1,3,"none"
-event_generator,3005,3,13,21,17,0,0,"@003/wedge1.txt"
-event_generator,3006,3,12,21,17,0,0,"@003/wedge2.txt"
-npc_event,3007,3,8,13,34,3,3,"none"
-event_generator,3008,3,11,15,17,0,0,"@003/jesse3.txt"
-event_generator,3009,3,11,16,17,0,0,"@003/jesse4.txt"
-npc_event,4001,4,13,26,36,2,3,""
-npc_event,4002,4,11,26,34,2,3,""
-npc_event,4003,4,9,26,35,2,3,""
-event_generator,4004,4,14,26,17,0,0,"@004/ichiban_makouro4.txt"
+npc_event,301,3,7,23,35,0,3,"none"
+event_generator,302,3,6,28,17,0,0,"@003/bigs2.txt"
+event_generator,303,3,7,28,17,0,0,"@003/bigs3.txt"
+npc_event,304,3,13,18,36,1,3,"none"
+event_generator,305,3,13,21,17,0,0,"@003/wedge1.txt"
+event_generator,306,3,12,21,17,0,0,"@003/wedge2.txt"
+npc_event,307,3,8,13,34,3,3,"none"
+event_generator,308,3,11,15,17,0,0,"@003/jesse3.txt"
+event_generator,309,3,11,16,17,0,0,"@003/jesse4.txt"
+npc_event,401,4,13,26,36,2,3,""
+npc_event,402,4,11,26,34,2,3,""
+npc_event,403,4,9,26,35,2,3,""
+event_generator,404,4,14,26,17,0,0,"@004/ichiban_makouro4.txt"
 door,114,5,8,10,0,0,0,""
 npc2,115,5,8,11,17,0,0,""
 npc2,116,5,9,11,17,0,0,""
@@ -144,6 +144,9 @@ event_generator,1675,16,7,20,17,0,0,"@016/ressya_6.txt"
 event_generator,1676,16,8,19,17,0,0,"@016/ressya_7.txt"
 event_generator,1678,16,19,21,17,0,0,"@016/ressya_9.txt"
 event_generator,1700,17,30,4,17,0,0,"@017/nanabangai_station1.txt"
+map_obj,1748,17,1,3,4,0,0,0
+map_obj,1749,17,2,3,4,0,0,0
+map_obj,1750,17,3,3,4,0,0,0
 map_obj,1751,17,4,3,4,0,0,0
 map_obj,1752,17,5,3,4,0,0,0
 map_obj,1753,17,6,3,4,0,0,0
@@ -502,7 +505,118 @@ npc,2309,23,3,4,37,2,0,"マリン
 「とうちゃーん
 　かっこいい！"
 event_generator,2360,23,4,4,17,0,0,"@023/azito_out_before.txt"
+npc_event,2803,28,15,4,34,1,0,"none"
+npc_event,2804,28,10,8,35,0,2,"none"
+npc_event,2805,28,11,4,36,1,0,"none"
+npc_event,2806,28,16,4,73,0,2,"none"
+npc,2807,28,3,4,77,1,4,"「ん……？
+　おれんちきて　あいさつするのは
+　あんただけ
+
+　かんしん　かんしん"
+event_generator,2810,28,11,5,17,0,0,"@028/train1.txt"
+event_generator,2811,28,5,6,17,0,0,"@028/train2.txt"
+event_generator,2812,28,18,6,17,0,0,"@028/train3_1.txt"
+event_generator,2813,28,17,5,17,0,0,"@028/train3_2.txt"
+event_generator,2814,28,16,4,17,0,0,"@028/train3_3.txt"
+event_generator,2817,28,1,1,17,0,0,"@028/target_talk.txt"
+event_generator,2823,28,19,6,17,0,0,"@028/countdown_end.txt"
 map_door,2850,28,3,10,0,0,0,0
+map_door,2851,28,17,3,0,0,0,0
+npc_event,2900,29,1,6,0,3,3,"none"
+npc_event,2901,29,2,6,34,2,3,"none"
+npc_event,2902,29,16,6,35,2,3,"none"
+npc_event,2903,29,14,6,36,2,3,"none"
+npc,2904,29,4,4,66,1,4,"「やぁ……
+　あんたたち　そうぞうしいねえ
+
+
+　まあまあ　おちついて"
+npc,2905,29,13,4,67,1,4,"「もぅ！！
+　いいおとなが　ドタバタと
+
+
+　れっしゃのなかでは
+　おぎょうぎよくしてね"
+npc_event,2906,29,10,7,65,1,0,"「ヒュ～ン！！
+　ヒュ～ン！！"
+npc_event,2907,29,11,7,89,3,0,"「ひょっとしてこれ
+　ボクら　だいピンチってやつかい？"
+npc,2908,29,18,8,47,0,4,"「あ～ん？
+　なっん～だっ！"
+event_generator,2910,29,13,6,17,0,0,"@028/countdown_start.txt"
+event_generator,2911,29,19,6,17,0,0,"@028/countdown_end.txt"
+event_generator,2912,29,1,1,17,0,0,"@029/target_talked1.txt"
+map_door,2951,29,17,3,0,0,0,0
+npc_event,3003,30,6,6,34,2,0,"none"
+npc_event,3004,30,7,6,77,2,3,"none"
+npc_event,3005,30,10,4,71,0,0,"ジョニー
+「さらば　グッバイ　アディオス！
+　ミッドガル！！"
+npc_event,3006,30,16,4,70,1,0,"「に　にげばがない……"
+npc_event,3007,30,16,5,72,0,0,"none"
+event_generator,3010,30,8,6,17,0,0,"@028/countdown_start.txt"
+event_generator,3011,30,19,6,17,0,0,"@028/countdown_end.txt"
+event_generator,3014,30,14,6,17,0,0,"@030/train6.txt"
+event_generator,3015,30,1,1,17,0,0,"@030/target_talked1.txt"
+event_generator,3016,30,1,1,17,0,0,"@030/target_talked2.txt"
+map_door,3051,30,17,3,0,0,0,0
+npc,3103,31,5,4,110,2,0,"「ブルブルブル……
+
+
+
+　ひどいんです
+　いまどき　おいはぎ
+　みぐるみ　はぐんですから"
+npc,3104,31,8,7,111,0,0,"「わかりますっ？
+
+
+
+　めがさめたら　すっぱだかで
+　おとこさんにんだったきぶん！
+
+
+　わかんないでしょうねぇ"
+npc,3105,31,15,4,110,3,0,"「こわい　としうえのじょせいが
+　ばくだんを　つきつけて……
+
+
+　ことわれませんでした　ハイ"
+npc,3106,31,11,5,72,2,3,"「ほら　とっときな！"
+event_generator,3110,31,1,6,17,0,0,"@028/countdown_start.txt"
+event_generator,3111,31,19,6,17,0,0,"@028/countdown_end.txt"
+event_generator,3112,31,1,1,17,0,0,"@031/target_talked.txt"
+map_door,3151,31,17,3,0,0,0,0
+npc_event,3203,32,16,4,107,1,0,"ジェシー
+「わたし　ジェシーよ
+　どう　クラウド？
+
+　しんらのせいふく　にあってるかな？
+
+
+
+#2
+　　そうだな……
+　　いまは　それどころじゃない
+
+
+[[]]
+[[]]"
+npc_event,3204,32,17,7,108,2,0,"ビッグス
+「おれだ　ビッグスだ
+　あとは　まかせとけ"
+npc_event,3205,32,11,7,109,2,0,"ウェッジ
+「わかるっすか？
+　おれ　ウェッジっす！
+
+　さくせん　ばっちりせいこうっすね "
+npc2,3208,32,13,4,33,0,0,""
+treasure_box3,3206,32,9,4,2,0,0,1000
+treasure_box3,3207,32,5,7,2,0,0,1000
+map_door,3251,32,17,3,0,0,0,0
+event_generator,3210,32,1,6,17,0,0,"@028/countdown_start.txt"
+event_generator,3214,32,1,1,17,0,0,"@032/target_talked2.txt"
+event_generator,3215,32,1,1,17,0,0,"@032/target_talked3.txt"
 event_generator,70200,702,11,12,17,0,0,"@702/tifa'smemory1.txt"
 npc_event,70201,702,11,21,17,0,2,"none"
 npc_event,70202,702,11,20,17,1,2,"none"
