@@ -290,7 +290,7 @@ kill 3111
 kill_through 3016
 kill_through 3017
 chg_type 3005 npc_event
-kill 3006
+kill_through 3006
 kill_through 3007
 kill_through 3008
 create npc_event 3000 30 17 6 0 3 2 none
