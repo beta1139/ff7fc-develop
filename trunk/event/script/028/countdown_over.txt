@@ -1,0 +1,572 @@
+wait_fake_countover
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+kill_through 2817
+kill_through 2818
+kill_through 2912
+kill_through 2913
+kill_through 3014
+kill_through 3017
+kill_through 3112
+fadeout
+sleep 16
+kill_through 2900
+draw_char off
+sleep 16
+end_fake_countdown
+if_flag 11 0
+kill 2823
+kill 2910
+kill 2911
+kill 3010
+kill 3011
+kill 3110
+kill 3111
+create npc_event 2800 28 17 6 0 3 2 none
+warp 28 17 6 up
+sleep 16
+fadein
+play_se train_info.ogg
+sleep 16
+create npc_event 2801 28 17 6 1 0 2 none
+create npc_event 2802 28 17 6 2 2 2 none
+move_npc 2801 up 1
+move_npc 2802 left 1
+set_active_msg 2801
+set_active_msg 2802
+chg_npc_dir 2800 down
+sleep 8
+play_se_loop alarm.ogg
+msg 「シャリョウ1　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
+sleep 8
+chg_npc_dir 2801 left
+chg_npc_img 2801 98
+sleep 16
+chg_npc_dir 2800 up
+chg_speed 2801 normal
+step_npc 2801 4
+sleep 64
+msg バレット\n「チッ！！　ウスノロッ！！\n　ここまでか……
+chg_npc_dir 2802 right
+sleep 16
+chg_npc_dir 2800 left
+sleep 32
+chg_npc_dir 2802 up
+chg_speed 2802 normal
+step_npc 2802 2
+msg ティファ\n「しかたないね
+chg_npc_img 2801 1
+move_npc 2801 up 1
+move_char up 1
+sleep 24
+chg_npc_dir 2800 up
+step_npc 2801 2
+sleep 32
+open_door 2851
+play_se door_open.wav
+sleep 32
+chg_speed 2801 fast
+chg_npc_img 2801 95
+chg_npc_dir 2801 up
+jump_npc 2801 same 1
+play_se_loop alarm.ogg
+sleep 16
+jump_npc 2801 same 1
+set_active_msg 2801
+msg バレット\n「こっから　とびおりるぞ！！\n　オレにつづけ　ナスボケッ！！
+chg_npc_dir 2801 down
+step_npc 2801 4
+sleep 32
+chg_speed 2801 normal
+chg_npc_img 2801 1
+chg_npc_dir 2801 up
+sleep 16
+slide_walk_npc 2801 down 1
+sleep 16
+chg_speed 2801 fast
+move_npc 2801 up 1
+sleep 8
+jump_npc 2801 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 2801
+move_char down 2
+sleep 16
+move_npc 2802 up 1
+sleep 16
+move_npc 2802 right 1
+sleep 16
+move_char up 1
+move_npc 2802 up 1
+sleep 24
+chg_npc_img 2802 98
+chg_npc_dir 2802 right
+step_npc 2802 3
+sleep 16
+msg ティファ\n「ああ～　たくさんバトルね\n　たいへんよ　きっと
+chg_npc_img 2802 2
+chg_npc_dir 2802 up
+sleep 16
+slide_walk_npc 2802 down 1
+sleep 16
+chg_speed 2802 fast
+move_npc 2802 up 1
+sleep 8
+jump_npc 2802 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+move_char down 2
+kill 2802
+sleep 32
+chg_npc_dir 2800 down
+sleep 32
+chg_npc_dir 2800 right
+chg_npc_img 2800 97
+step_npc 2800 3
+sleep 80
+chg_npc_img 2800 0
+chg_npc_dir 2800 up
+sleep 32
+chg_speed 2800 fast
+move_npc 2800 up 2
+move_char up 1
+sleep 16
+jump_npc 2800 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 2800
+move_char down 2
+sleep 8
+fi
+if_flag 11 1
+kill 2911
+kill 3010
+kill 3011
+kill 3110
+kill 3111
+chg_type 2906 npc_event
+chg_type 2907 npc_event
+create npc_event 2900 29 17 6 0 3 2 none
+warp 29 17 6 up
+sleep 16
+fadein
+play_se train_info.ogg
+sleep 16
+create npc_event 2901 29 17 6 1 0 2 none
+create npc_event 2902 29 17 6 2 2 2 none
+move_npc 2901 up 1
+move_npc 2902 left 1
+set_active_msg 2901
+set_active_msg 2902
+chg_npc_dir 2900 down
+sleep 8
+play_se_loop alarm.ogg
+msg 「シャリョウ2　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
+sleep 8
+chg_npc_dir 2901 left
+chg_npc_img 2901 98
+sleep 16
+chg_npc_dir 2900 up
+chg_speed 2901 normal
+step_npc 2901 4
+sleep 64
+msg バレット\n「チッ！！\n　もうおしまいかよ！
+chg_npc_dir 2902 right
+sleep 16
+chg_npc_dir 2900 left
+sleep 16
+chg_speed 2902 normal
+jump_npc 2902 same 1
+sleep 16
+step_npc 2902 3
+msg ティファ\n「ぜんぜんっだめね！
+chg_npc_img 2901 1
+move_npc 2901 up 1
+move_char up 1
+sleep 24
+chg_npc_dir 2900 up
+step_npc 2901 2
+sleep 32
+chg_npc_dir 2902 up
+open_door 2951
+play_se door_open.wav
+sleep 32
+chg_speed 2901 fast
+chg_npc_img 2901 95
+chg_npc_dir 2901 up
+jump_npc 2901 same 1
+play_se_loop alarm.ogg
+sleep 16
+jump_npc 2901 same 1
+set_active_msg 2901
+msg バレット\n「こっから　とびおりるぞ！！\n　オレにつづけ　こうきゅうとり！！
+chg_speed 2901 normal
+chg_npc_img 2901 1
+chg_npc_dir 2901 up
+sleep 16
+slide_walk_npc 2901 down 1
+sleep 16
+chg_speed 2901 fast
+move_npc 2901 up 1
+sleep 8
+jump_npc 2901 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 2901
+move_char down 2
+sleep 16
+move_npc 2902 up 1
+sleep 16
+move_npc 2902 right 1
+sleep 16
+move_char up 1
+move_npc 2902 up 1
+sleep 24
+chg_npc_img 2902 98
+chg_npc_dir 2902 right
+step_npc 2902 3
+sleep 16
+msg ティファ\n「ふぅっ～！\n　しっかりしてね！
+chg_npc_img 2902 2
+chg_npc_dir 2902 up
+sleep 16
+slide_walk_npc 2902 down 1
+sleep 16
+chg_speed 2902 fast
+move_npc 2902 up 1
+sleep 8
+jump_npc 2902 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+move_char down 2
+kill 2902
+sleep 8
+sleep 24
+chg_npc_dir 2900 down
+sleep 32
+chg_npc_dir 2900 right
+chg_npc_img 2900 97
+step_npc 2900 3
+sleep 80
+chg_npc_img 2900 0
+chg_npc_dir 2900 up
+sleep 32
+chg_speed 2900 fast
+move_npc 2900 up 2
+move_char up 1
+sleep 16
+jump_npc 2900 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 2900
+move_char down 2
+sleep 8
+fi
+if_flag 11 2
+kill 3011
+kill 3110
+kill 3111
+kill_through 3016
+kill_through 3017
+chg_type 3005 npc_event
+kill 3006
+kill_through 3007
+kill_through 3008
+create npc_event 3000 30 17 6 0 3 2 none
+warp 30 17 6 up
+sleep 16
+fadein
+play_se train_info.ogg
+sleep 16
+create npc_event 3001 30 17 6 1 0 2 none
+create npc_event 3002 30 17 6 2 2 2 none
+move_npc 3001 up 1
+move_npc 3002 left 1
+set_active_msg 3001
+set_active_msg 3002
+chg_npc_dir 3000 down
+sleep 8
+play_se_loop alarm.ogg
+msg 「シャリョウ3　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
+sleep 8
+chg_npc_dir 3001 left
+chg_npc_img 3001 98
+sleep 16
+chg_npc_dir 3000 up
+chg_speed 3001 normal
+step_npc 3001 4
+sleep 64
+msg バレット\n「チッ！！\n　ここまでか……
+chg_npc_dir 3002 right
+sleep 16
+chg_npc_dir 3000 left
+sleep 16
+chg_speed 3002 normal
+step_npc 3002 3
+msg ティファ\n「もうすこしだったのに
+chg_npc_img 3001 1
+move_npc 3001 up 1
+move_char up 1
+sleep 24
+chg_npc_dir 3000 up
+step_npc 3001 2
+sleep 32
+open_door 3051
+play_se door_open.wav
+chg_npc_dir 3002 up
+sleep 32
+chg_speed 3001 fast
+chg_npc_img 3001 1
+chg_npc_dir 3001 down
+jump_npc 3001 same 2
+play_se_loop alarm.ogg
+sleep 16
+set_active_msg 3001
+msg バレット\n「こっから　とびおりるぞ！！\n　オレにつづけ！！
+chg_speed 3001 normal
+chg_npc_img 3001 1
+chg_npc_dir 3001 up
+sleep 16
+slide_walk_npc 3001 down 1
+sleep 16
+chg_speed 3001 fast
+move_npc 3001 up 1
+sleep 8
+jump_npc 3001 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 3001
+move_char down 2
+sleep 16
+move_npc 3002 up 1
+sleep 16
+move_npc 3002 right 1
+sleep 16
+move_char up 1
+move_npc 3002 up 1
+sleep 24
+chg_npc_dir 3002 down
+sleep 16
+jump_npc 3002 same 1
+sleep 16
+jump_npc 3002 same 1
+set_active_msg 3001
+sleep 16
+step_npc 3002 3
+msg ティファ\n「どんまい！\n　どんまい！
+chg_npc_img 3002 2
+chg_npc_dir 3002 up
+sleep 16
+slide_walk_npc 3002 down 1
+sleep 16
+chg_speed 3002 fast
+move_npc 3002 up 1
+sleep 8
+jump_npc 3002 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+move_char down 2
+kill 3002
+sleep 8
+sleep 24
+chg_npc_dir 3000 down
+sleep 32
+chg_npc_dir 3000 right
+chg_npc_img 3000 97
+step_npc 3000 3
+sleep 80
+chg_npc_img 3000 0
+chg_npc_dir 3000 up
+sleep 32
+chg_speed 3000 fast
+move_npc 3000 up 2
+move_char up 1
+sleep 16
+jump_npc 3000 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 3000
+move_char down 2
+sleep 8
+fi
+if_flag 11 3
+kill 3111
+kill_through 3112
+kill 3106
+chg_type 3105 npc_event
+chg_type 3106 npc_event
+create npc_event 3100 31 17 6 0 3 2 none
+warp 31 17 6 up
+sleep 16
+fadein
+play_se train_info.ogg
+sleep 16
+create npc_event 3101 31 17 6 1 0 2 none
+create npc_event 3102 31 17 6 2 2 2 none
+move_npc 3101 up 1
+move_npc 3102 left 1
+set_active_msg 3101
+set_active_msg 3102
+chg_npc_dir 3100 down
+sleep 8
+play_se_loop alarm.ogg
+msg 「シャリョウ4　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
+sleep 8
+chg_npc_dir 3101 left
+chg_npc_img 3101 98
+sleep 16
+chg_npc_dir 3100 up
+chg_speed 3101 normal
+step_npc 3101 4
+sleep 64
+msg バレット\n「チッ！！\n　ここまでか……
+chg_npc_dir 3102 right
+sleep 16
+chg_npc_dir 3100 left
+sleep 16
+chg_speed 3102 normal
+step_npc 3102 3
+msg ティファ\n「もうすこしだったのに
+chg_npc_img 3101 1
+move_npc 3101 up 1
+move_char up 1
+sleep 24
+chg_npc_dir 3100 up
+step_npc 3101 2
+sleep 32
+open_door 3151
+play_se door_open.wav
+chg_npc_dir 3102 up
+sleep 32
+chg_speed 3101 fast
+chg_npc_img 3101 1
+chg_npc_dir 3101 down
+jump_npc 3101 same 2
+play_se_loop alarm.ogg
+sleep 16
+set_active_msg 3101
+msg バレット\n「こっから　とびおりるぞ！！\n　オレにつづけ！！
+chg_speed 3101 normal
+chg_npc_img 3101 1
+chg_npc_dir 3101 up
+sleep 16
+slide_walk_npc 3101 down 1
+sleep 16
+chg_speed 3101 fast
+move_npc 3101 up 1
+sleep 8
+jump_npc 3101 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 3101
+move_char down 2
+sleep 16
+move_npc 3102 up 1
+sleep 16
+move_npc 3102 right 1
+sleep 16
+move_char up 1
+move_npc 3102 up 1
+sleep 24
+chg_npc_dir 3102 down
+sleep 16
+jump_npc 3102 same 1
+sleep 16
+jump_npc 3102 same 1
+set_active_msg 3102
+sleep 16
+step_npc 3102 3
+msg ティファ\n「どんまい！\n　どんまい！
+chg_npc_dir 3102 up
+sleep 16
+slide_walk_npc 3102 down 1
+sleep 16
+chg_speed 3102 fast
+move_npc 3102 up 1
+sleep 8
+jump_npc 3102 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+move_char down 2
+kill 3102
+sleep 8
+sleep 24
+chg_npc_dir 3100 down
+sleep 32
+chg_npc_dir 3100 right
+chg_npc_img 3100 97
+step_npc 3100 3
+sleep 80
+chg_npc_img 3100 0
+chg_npc_dir 3100 up
+sleep 32
+chg_speed 3100 fast
+move_npc 3100 up 2
+move_char up 1
+sleep 16
+jump_npc 3100 up 4
+move_char up 1
+play_se jump.wav
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 3100
+move_char down 2
+sleep 8
+fi
+sleep 32
+kill_through 2815
+kill_through 3013
+reset_screen_effect
+reset_slide_walk_char_flag
+chg_event_move_char_speed normal
+fadeout
+stop_se
+stop_bgm
+sleep 56
+warp 34 7 7 up
+draw_char on
+sleep 56
+play_bgm
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+fadein

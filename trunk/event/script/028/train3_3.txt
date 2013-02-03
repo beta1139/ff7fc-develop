@@ -1,0 +1,37 @@
+wait_same_pos
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+kill 2812
+kill 2813
+chg_char_dir right
+sleep 16
+chg_speed 2802 normal
+chg_npc_dir 2802 left
+sleep 32
+msg ティファ\n「あら　もうなんどもみたって\n　かおしてるのね\n　ま　いいわ\n　もっとそばにきて
+jump_npc 2802 same 1
+sleep 16
+jump_npc 2802 same 1
+sleep 48
+chg_char_dir down
+chg_char_img_tmp 103
+sleep 24
+chg_char_dir left
+sleep 40
+reset_char_img_tmp
+chg_char_dir down
+sleep 16
+chg_npc_dir 2802 right
+move_char down 1
+sleep 16
+chg_speed 2802 not_move
+move_char right 2
+sleep 192
+kill_through 2810
+kill_through 2899
+create event_generator 2815 28 18 5 17 0 0 @028/train_move_alarm.txt
+sleep 16
+create event_generator 2816 28 18 5 17 0 0 @028/train4.txt

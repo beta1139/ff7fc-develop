@@ -1,0 +1,18 @@
+wait_same_pos
+end_fake_countdown
+if_flag 11 0
+warp_ff3 29 13 6 right
+draw_char off
+fi
+if_flag 11 1
+warp_ff3 30 8 6 right
+draw_char off
+fi
+if_flag 11 2
+warp_ff3 31 1 6 right
+fi
+if_flag 11 3
+kill 2822
+warp_ff3 32 1 6 right
+draw_char off
+fi
