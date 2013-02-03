@@ -146,11 +146,11 @@ sleep 8
 chg_speed 1580 normal
 jump_npc_target_pos 1580 11 14
 sleep 4
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 sleep 4
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 sleep 4
@@ -160,7 +160,7 @@ chg_npc_dir 1554 down
 chg_npc_dir 1555 down
 chg_npc_dir 1556 down
 chg_npc_dir 1557 down
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 move_char down 2
@@ -168,18 +168,18 @@ create npc_event 1561 15 11 14 112 3 2 none
 chg_npc_y_offset 1561 0
 slide_walk_npc 1561 down 8
 sleep 4
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 sleep 4
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 create npc_event 1562 15 11 14 112 0 2 none
 chg_npc_y_offset 1562 0
 slide_walk_npc 1562 down 8
 sleep 4
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 sleep 8
@@ -395,11 +395,11 @@ sleep 8
 chg_speed 1580 normal
 jump_npc_target_pos 1580 11 14
 sleep 4
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 sleep 4
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 sleep 4
@@ -409,7 +409,7 @@ chg_npc_dir 1554 down
 chg_npc_dir 1555 down
 chg_npc_dir 1556 down
 chg_npc_dir 1557 down
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 move_char down 2
@@ -417,18 +417,18 @@ create npc_event 1561 15 11 14 112 3 2 none
 chg_npc_y_offset 1561 0
 slide_walk_npc 1561 down 8
 sleep 4
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 sleep 4
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 create npc_event 1562 15 11 14 112 0 2 none
 chg_npc_y_offset 1562 0
 slide_walk_npc 1562 down 8
 sleep 4
-chg_npc_img 1580 103
+chg_npc_img 1580 115
 sleep 4
 chg_npc_img 1580 0
 sleep 8
