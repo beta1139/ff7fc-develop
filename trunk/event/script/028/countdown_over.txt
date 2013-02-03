@@ -560,9 +560,10 @@ fadeout
 stop_se
 stop_bgm
 sleep 56
-warp 34 7 7 up
+warp 34 7 20 up
 draw_char on
 sleep 56
+chg_char_dir up
 play_bgm
 set_key_valid up
 set_key_valid left
