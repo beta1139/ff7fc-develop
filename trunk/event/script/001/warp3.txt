@@ -98,20 +98,20 @@ create event_generator 2629 26 1 1 17 0 0 @026/beginner's_hall5.txt
 chg_npc_img 2691 29
 chg_speed 2400 not_step
 chg_npc_img 1751 5
-chg_npc_img 1752 11
-chg_npc_img 1753 12
-chg_npc_img 1754 13
-chg_npc_img 1755 12
-chg_npc_img 1756 13
-chg_npc_img 1757 12
-chg_npc_img 1758 13
-chg_npc_img 1759 14
-chg_npc_img 1760 10
-chg_npc_img 1761 4
-chg_npc_y_offset 1730 0
-chg_npc_y_offset 1731 0
-chg_npc_y_offset 1800 0
-chg_npc_y_offset 1801 0
+chg_npc_img 1752 6
+chg_npc_img 1753 7
+chg_npc_img 1754 8
+chg_npc_img 1755 7
+chg_npc_img 1756 8
+chg_npc_img 1757 7
+chg_npc_img 1758 8
+chg_npc_img 1759 7
+chg_npc_img 1760 8
+chg_npc_img 1761 7
+chg_npc_img 1762 8
+chg_npc_img 1763 9
+chg_npc_img 1764 10
+chg_npc_img 1765 4
 sleep 368
 recover_active_chara
 warp 23 2 8 right
@@ -131,7 +131,36 @@ kill 2260
 create event_generator 2261 22 5 13 17 0 0 @022/seventhheaven_out1.txt
 fi
 if_flag 3 2
-warp 600 11 16 up
-play_bgm
+fadeout
+kill_through_range 2000 2799
+set_npc_pos 1706 17 7 4
+create npc3 1707 17 3 6 106 1 0 none
+create npc_event 1708 17 4 6 106 2 2 none
+chg_npc_img 1751 5
+chg_npc_img 1752 6
+chg_npc_img 1753 7
+chg_npc_img 1754 8
+chg_npc_img 1755 7
+chg_npc_img 1756 8
+chg_npc_img 1757 7
+chg_npc_img 1758 8
+chg_npc_img 1759 7
+chg_npc_img 1760 8
+chg_npc_img 1761 7
+chg_npc_img 1762 8
+chg_npc_img 1763 9
+chg_npc_img 1764 10
+chg_npc_img 1765 4
+play_event_bgm 1-06-Barrett's_Theme.ogg
+sleep 32
+chg_npc_dir 1706 right
+warp 28 11 5 up
+draw_char off
+open_door 2850
+add_party_mem 1
+add_party_mem 2
 set_flag 0 0
+set_flag 1 1
+set_flag 9 1
+fadein
 fi
