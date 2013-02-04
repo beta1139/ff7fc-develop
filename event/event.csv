@@ -568,7 +568,7 @@ npc,3103,31,5,4,110,2,0,"「ブルブルブル……
 　ひどいんです
 　いまどき　おいはぎ
 　みぐるみ　はぐんですから"
-npc,3104,31,8,7,111,0,0,"「わかりますっ？
+npc,3104,31,8,7,111,0,2,"「わかりますっ？
 
 
 
@@ -617,8 +617,16 @@ map_door,3251,32,17,3,0,0,0,0
 event_generator,3210,32,1,6,17,0,0,"@028/countdown_start.txt"
 event_generator,3214,32,1,1,17,0,0,"@032/target_talked2.txt"
 event_generator,3215,32,1,1,17,0,0,"@032/target_talked3.txt"
-npc2,3301,33,5,15,31,3,0,""
-npc2,3302,33,5,17,31,3,0,""
+npc_event,3301,33,5,15,31,3,0,""
+npc_event,3302,33,5,17,31,3,0,""
+event_generator,3310,33,6,11,17,0,0,"@033/winding_tunnel2_1.txt"
+event_generator,3311,33,7,11,17,0,0,"@033/winding_tunnel2_2.txt"
+event_generator,3312,33,9,11,17,0,0,"@033/winding_tunnel2_3.txt"
+event_generator,3313,33,10,11,17,0,0,"@033/winding_tunnel2_4.txt"
+event_generator,3314,33,6,12,17,0,0,"@033/winding_tunnel3_1.txt"
+event_generator,3315,33,7,12,17,0,0,"@033/winding_tunnel3_2.txt"
+event_generator,3316,33,9,12,17,0,0,"@033/winding_tunnel3_3.txt"
+event_generator,3317,33,10,12,17,0,0,"@033/winding_tunnel3_4.txt"
 npc_event,3400,34,7,19,0,0,2,"none"
 npc_event,3401,34,7,17,1,1,2,"none"
 npc_event,3402,34,6,17,2,1,2,"none"
