@@ -13,30 +13,6 @@ msg ƒoƒŒƒbƒg\nu‚µ‚©‚µ@‚¢‚Ü‚³‚çƒmƒRƒmƒR\n@‚Ğ‚«‚©‚¦‚·‚±‚Æ‚Í‚Å‚«‚Ë‚¥\n@‚±‚Ì‚Ü‚Ü
 sleep 16
 chg_npc_dir 3401 down
 msg ƒoƒŒƒbƒg\nuƒrƒbƒOƒX@ƒEƒFƒbƒW@ƒWƒFƒV[‚Í\n@‚¤‚Ü‚­‚â‚Á‚½‚æ‚¤‚¾‚È\n@‚³‚Ÿ‚Ä@‚ ‚¢‚Â‚ç‚É@‚¨‚¢‚Â‚­‚ºI
-move_npc 3401 down 3
-move_char down 3
-move_npc 3402 down 2
-sleep 32
-move_npc 3402 right 1
-sleep 16
-kill 3402
-kill 3400
-chg_npc_dir 3401 up
-sleep 4
-chg_npc_dir 3401 right
-sleep 4
-chg_npc_dir 3401 down
-sleep 4
-chg_npc_dir 3401 left
-sleep 4
-chg_npc_dir 3401 up
-chg_char_dir up
-chg_char_img 1
-msg ƒoƒŒƒbƒg\nu‚³‚Ÿ‚Ä@5‚Î‚ñ‚Ü‚±‚¤‚ë‚Í\n@‚±‚Ìƒgƒ“ƒlƒ‹‚Ì‚¨‚­‚¾I
-kill 3401
-draw_char on
-chg_char_img 0
-enable_char_chg
 fi
 if_flag 11 1
 chg_npc_dir 3401 left
@@ -52,30 +28,6 @@ msg ƒoƒŒƒbƒg\nu‚µ‚©‚µ@‚¢‚Ü‚³‚çƒmƒRƒmƒR\n@‚Ğ‚«‚©‚¦‚·‚±‚Æ‚Í‚Å‚«‚Ë‚¥\n@‚±‚Ì‚Ü‚Ü
 sleep 16
 chg_npc_dir 3401 down
 msg ƒoƒŒƒbƒg\nuƒrƒbƒOƒX@ƒEƒFƒbƒW@ƒWƒFƒV[‚Í\n@‚¤‚Ü‚­‚â‚Á‚½‚æ‚¤‚¾‚È\n@‚³‚Ÿ‚Ä@‚ ‚¢‚Â‚ç‚É@‚¨‚¢‚Â‚­‚ºI
-move_npc 3401 down 3
-move_char down 3
-move_npc 3402 down 2
-sleep 32
-move_npc 3402 right 1
-sleep 16
-kill 3402
-kill 3400
-chg_npc_dir 3401 up
-sleep 4
-chg_npc_dir 3401 right
-sleep 4
-chg_npc_dir 3401 down
-sleep 4
-chg_npc_dir 3401 left
-sleep 4
-chg_npc_dir 3401 up
-chg_char_dir up
-chg_char_img 1
-msg ƒoƒŒƒbƒg\nu‚³‚Ÿ‚Ä@5‚Î‚ñ‚Ü‚±‚¤‚ë‚Í\n@‚±‚Ìƒgƒ“ƒlƒ‹‚Ì‚¨‚­‚¾I
-kill 3401
-draw_char on
-chg_char_img 0
-enable_char_chg
 fi
 if_flag 11 2
 chg_npc_dir 3401 left
@@ -91,30 +43,6 @@ msg ƒoƒŒƒbƒg\nu‚Ü‚¾@ƒIƒŒ‚½‚¿‚ª@‚¹‚ñ‚É‚ã‚¤‚µ‚½‚±‚Æ‚Í\n@ƒoƒŒ‚Ä‚¢‚È‚¢‚Í‚¸‚¾\n@
 sleep 16
 chg_npc_dir 3401 down
 msg ƒoƒŒƒbƒg\nuƒrƒbƒOƒX@ƒEƒFƒbƒW@ƒWƒFƒV[‚Í\n@‚¤‚Ü‚­‚â‚Á‚½‚æ‚¤‚¾‚È\n@‚³‚Ÿ‚Ä@‚ ‚¢‚Â‚ç‚É@‚¨‚¢‚Â‚­‚ºI
-move_npc 3401 down 3
-move_char down 3
-move_npc 3402 down 2
-sleep 32
-move_npc 3402 right 1
-sleep 16
-kill 3402
-kill 3400
-chg_npc_dir 3401 up
-sleep 4
-chg_npc_dir 3401 right
-sleep 4
-chg_npc_dir 3401 down
-sleep 4
-chg_npc_dir 3401 left
-sleep 4
-chg_npc_dir 3401 up
-chg_char_dir up
-chg_char_img 1
-msg ƒoƒŒƒbƒg\nu‚³‚Ÿ‚Ä@5‚Î‚ñ‚Ü‚±‚¤‚ë‚Í\n@‚±‚Ìƒgƒ“ƒlƒ‹‚Ì‚¨‚­‚¾I
-kill 3401
-draw_char on
-chg_char_img 0
-enable_char_chg
 fi
 if_flag 11 3
 chg_npc_dir 3401 left
@@ -130,30 +58,6 @@ msg ƒoƒŒƒbƒg\nu‚Ü‚¾@ƒIƒŒ‚½‚¿‚ª@‚¹‚ñ‚É‚ã‚¤‚µ‚½‚±‚Æ‚Í\n@ƒoƒŒ‚Ä‚¢‚È‚¢‚Í‚¸‚¾\n@
 sleep 16
 chg_npc_dir 3401 down
 msg ƒoƒŒƒbƒg\nuƒrƒbƒOƒX@ƒEƒFƒbƒW@ƒWƒFƒV[‚Í\n@‚¤‚Ü‚­‚â‚Á‚½‚æ‚¤‚¾‚È\n@‚³‚Ÿ‚Ä@‚ ‚¢‚Â‚ç‚É@‚¨‚¢‚Â‚­‚ºI
-move_npc 3401 down 3
-move_char down 3
-move_npc 3402 down 2
-sleep 32
-move_npc 3402 right 1
-sleep 16
-kill 3402
-kill 3400
-chg_npc_dir 3401 up
-sleep 4
-chg_npc_dir 3401 right
-sleep 4
-chg_npc_dir 3401 down
-sleep 4
-chg_npc_dir 3401 left
-sleep 4
-chg_npc_dir 3401 up
-chg_char_dir up
-chg_char_img 1
-msg ƒoƒŒƒbƒg\nu‚³‚Ÿ‚Ä@5‚Î‚ñ‚Ü‚±‚¤‚ë‚Í\n@‚±‚Ìƒgƒ“ƒlƒ‹‚Ì‚¨‚­‚¾I
-kill 3401
-draw_char on
-chg_char_img 0
-enable_char_chg
 fi
 if_flag 11 4
 jump_npc 3401 same 1
@@ -169,6 +73,7 @@ msg ƒoƒŒƒbƒg\nu‚µ‚©‚µ@5‚Î‚ñ‚Ü‚±‚¤‚ë‚É@‚½‚Ç‚è‚Â‚­‚Ü‚Å‚Í\n@‚ä‚¾‚ñ‚Í@‚«‚ñ‚à‚Â‚
 sleep 16
 chg_npc_dir 3401 down
 msg ƒoƒŒƒbƒg\nuƒrƒbƒOƒX@ƒEƒFƒbƒW@ƒWƒFƒV[‚ª\n@‚¹‚ñ‚±‚¤‚µ‚Ä‚¢‚é@‚Ä‚Í‚¸‚É‚È‚Á‚Ä‚é\n@‚¢‚­‚¼@‚¨‚Ü‚¦‚ç
+fi
 move_npc 3401 down 3
 move_char down 3
 move_npc 3402 down 2
@@ -193,4 +98,4 @@ kill 3401
 draw_char on
 chg_char_img 0
 enable_char_chg
-fi
+set_flag 1 0
