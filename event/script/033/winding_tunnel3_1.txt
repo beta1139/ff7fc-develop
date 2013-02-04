@@ -1,0 +1,91 @@
+set_eternal_event
+wait_same_pos
+chg_speed 3301 fast
+chg_speed 3302 fast
+chg_npc_dir 3302 up
+sleep 16
+move_npc 3301 right 1
+sleep 8
+chg_npc_dir 3301 up
+msg 「きさま　アバランチだな！
+chg_npc_dir 3302 left
+move_npc 3301 left 1
+sleep 12
+kill 3302
+kill 3301
+msg3 64 「テロリストのしゅうげきだ！
+sleep 64
+erase_msg3
+sleep 8
+msg3 64 「アバランチがおそってきたぞ！
+sleep 64
+erase_msg3
+sleep 8
+msg 『けいびへいの　ぞうえんが　くるようだ\n　このままでは　あぶない\n\n\n#2\n　　にげる\n　　ふみとどまる\n\n\n[[]][[]]
+if_flag 3 0
+chg_event_move_char_speed fast
+move_char up 9
+sleep 72
+chg_event_move_char_speed normal
+warp_ff3 34 6 25 up
+set_flag 11 5
+create npc_event 3301 33 5 15 31 3 0 none
+create npc_event 3302 33 5 17 31 3 0 none
+restore_char_img
+fi
+if_flag 3 1
+create npc_event 3301 33 5 15 31 3 3 none
+create npc_event 3302 33 5 17 31 3 3 none
+move_npc 3301 right 2
+move_npc 3302 right 1
+sleep 8
+move_npc 3302 up 3
+sleep 8
+move_npc 3301 up 2
+create npc_event 3303 33 5 17 31 3 3 none
+move_npc 3303 right 1
+sleep 8
+move_npc 3303 up 1
+sleep 8
+encount 190
+sleep 64
+kill 3301
+kill 3302
+kill 3303
+wait_encount_end
+msg3 64 「しんにゅうしゃだ！
+sleep 64
+erase_msg3
+sleep 8
+msg3 64 「アバランチがおそってきたぞ！
+sleep 64
+erase_msg3
+backup_char_img
+chg_char_img 0
+sleep 8
+create npc_event 3300 33 6 12 1 3 3 none
+move_npc 3300 right 1
+sleep 8
+chg_npc_dir 3300 left
+chg_char_dir right
+sleep 8
+jump_npc 3300 same 2
+sleep 32
+step_npc 3300 2
+msg バレット\n「おい！　めんどくせえ\n　ずらかるぞ！
+sleep 8
+chg_npc_img 3300 1
+move_npc 3300 left 1
+sleep 8
+kill 3300
+sleep 8
+chg_event_move_char_speed fast
+move_char up 9
+sleep 72
+chg_event_move_char_speed normal
+warp_ff3 34 6 25 up
+set_flag 11 5
+create npc_event 3301 33 5 15 31 3 0 none
+create npc_event 3302 33 5 17 31 3 0 none
+restore_char_img
+fi
