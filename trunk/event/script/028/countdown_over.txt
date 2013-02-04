@@ -1,4 +1,5 @@
 wait_fake_countover
+fadeout
 set_key_unvalid up
 set_key_unvalid left
 set_key_unvalid down
@@ -11,7 +12,6 @@ kill_through 2913
 kill_through 3014
 kill_through 3017
 kill_through 3112
-fadeout
 sleep 16
 kill_through 2900
 draw_char off
@@ -25,23 +25,32 @@ kill 3010
 kill 3011
 kill 3110
 kill 3111
-create npc_event 2800 28 17 6 0 3 2 none
+create npc_event 2800 28 18 6 0 3 2 none
 warp 28 17 6 up
-sleep 16
+move_npc 2800 right 1
+sleep 8
+chg_speed 2800 not_move
+sleep 8
 fadein
 play_se train_info.ogg
-sleep 16
+chg_speed 2800 normal
+move_npc 2800 right 1
+sleep 8
+chg_speed 2800 not_move
+sleep 8
+chg_npc_dir 2800 right
+sleep 8
+play_se_loop alarm.ogg
+msg 「シャリョウ1　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
+chg_speed 2800 normal
+move_npc 2800 left 2
+sleep 40
 create npc_event 2801 28 17 6 1 0 2 none
 create npc_event 2802 28 17 6 2 2 2 none
 move_npc 2801 up 1
 move_npc 2802 left 1
-set_active_msg 2801
-set_active_msg 2802
 chg_npc_dir 2800 down
-sleep 8
-play_se_loop alarm.ogg
-msg 「シャリョウ1　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
-sleep 8
+sleep 16
 chg_npc_dir 2801 left
 chg_npc_img 2801 98
 sleep 16
@@ -158,23 +167,32 @@ kill 3110
 kill 3111
 chg_type 2906 npc_event
 chg_type 2907 npc_event
-create npc_event 2900 29 17 6 0 3 2 none
+create npc_event 2900 29 18 6 0 3 2 none
 warp 29 17 6 up
-sleep 16
+move_npc 2900 right 1
+sleep 8
+chg_speed 2900 not_move
+sleep 8
 fadein
 play_se train_info.ogg
-sleep 16
+chg_speed 2900 normal
+move_npc 2900 right 1
+sleep 8
+chg_speed 2900 not_move
+sleep 8
+chg_npc_dir 2900 right
+sleep 8
+play_se_loop alarm.ogg
+msg 「シャリョウ2　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
+chg_speed 2900 normal
+move_npc 2900 left 2
+sleep 40
 create npc_event 2901 29 17 6 1 0 2 none
 create npc_event 2902 29 17 6 2 2 2 none
 move_npc 2901 up 1
 move_npc 2902 left 1
-set_active_msg 2901
-set_active_msg 2902
 chg_npc_dir 2900 down
-sleep 8
-play_se_loop alarm.ogg
-msg 「シャリョウ2　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
-sleep 8
+sleep 16
 chg_npc_dir 2901 left
 chg_npc_img 2901 98
 sleep 16
@@ -293,23 +311,32 @@ chg_type 3005 npc_event
 kill_through 3006
 kill_through 3007
 kill_through 3008
-create npc_event 3000 30 17 6 0 3 2 none
+create npc_event 3000 30 18 6 0 3 2 none
 warp 30 17 6 up
-sleep 16
+move_npc 3000 right 1
+sleep 8
+chg_speed 3000 not_move
+sleep 8
 fadein
 play_se train_info.ogg
-sleep 16
+chg_speed 3000 normal
+move_npc 3000 right 1
+sleep 8
+chg_speed 3000 not_move
+sleep 8
+chg_npc_dir 3000 right
+sleep 8
+play_se_loop alarm.ogg
+msg 「シャリョウ3　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
+chg_speed 3000 normal
+move_npc 3000 left 2
+sleep 40
 create npc_event 3001 30 17 6 1 0 2 none
 create npc_event 3002 30 17 6 2 2 2 none
 move_npc 3001 up 1
 move_npc 3002 left 1
-set_active_msg 3001
-set_active_msg 3002
 chg_npc_dir 3000 down
-sleep 8
-play_se_loop alarm.ogg
-msg 「シャリョウ3　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
-sleep 8
+sleep 16
 chg_npc_dir 3001 left
 chg_npc_img 3001 98
 sleep 16
@@ -425,12 +452,26 @@ kill_through 3112
 kill 3106
 chg_type 3105 npc_event
 chg_type 3106 npc_event
-create npc_event 3100 31 17 6 0 3 2 none
+create npc_event 3100 31 18 6 0 3 2 none
 warp 31 17 6 up
-sleep 16
+move_npc 3100 right 1
+sleep 8
+chg_speed 3100 not_move
+sleep 8
 fadein
 play_se train_info.ogg
-sleep 16
+chg_speed 3100 normal
+move_npc 3100 right 1
+sleep 8
+chg_speed 3100 not_move
+sleep 8
+chg_npc_dir 3100 right
+sleep 8
+play_se_loop alarm.ogg
+msg 「シャリョウ4　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
+chg_speed 3100 normal
+move_npc 3100 left 2
+sleep 40
 create npc_event 3101 31 17 6 1 0 2 none
 create npc_event 3102 31 17 6 2 2 2 none
 move_npc 3101 up 1
@@ -438,10 +479,7 @@ move_npc 3102 left 1
 set_active_msg 3101
 set_active_msg 3102
 chg_npc_dir 3100 down
-sleep 8
-play_se_loop alarm.ogg
-msg 「シャリョウ4　ドアロック　カンリョウ\n　ミカクニンID　エキマデ　ゴソウ
-sleep 8
+sleep 16
 chg_npc_dir 3101 left
 chg_npc_img 3101 98
 sleep 16
@@ -559,10 +597,9 @@ chg_event_move_char_speed normal
 fadeout
 stop_se
 stop_bgm
-sleep 56
-warp 34 7 19 up
-draw_char on
-sleep 56
+sleep 48
+warp 34 7 16 up
+sleep 48
 chg_char_dir up
 play_bgm
 set_key_valid up
