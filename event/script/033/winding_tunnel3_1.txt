@@ -8,11 +8,18 @@ move_npc 3301 right 1
 sleep 8
 chg_npc_dir 3301 up
 msg 「きさま　アバランチだな！
-chg_npc_dir 3302 left
-move_npc 3301 left 1
-sleep 12
-kill 3302
+move_npc 3301 up 2
+move_npc 3302 right 1
+sleep 8
+move_npc 3302 up 1
+sleep 8
+create npc_event 3303 33 5 15 32 3 3 none
+encount 218
+sleep 64
 kill 3301
+kill 3302
+kill 3303
+wait_encount_end
 msg3 64 「テロリストのしゅうげきだ！
 sleep 64
 erase_msg3
@@ -29,25 +36,25 @@ sleep 72
 chg_event_move_char_speed normal
 warp_ff3 34 6 25 up
 set_flag 11 5
-create npc_event 3301 33 5 15 31 3 0 none
-create npc_event 3302 33 5 17 31 3 0 none
+create npc_event 3301 33 5 15 32 3 0 none
+create npc_event 3302 33 5 17 32 3 0 none
 restore_char_img
 fi
 if_flag 3 1
-create npc_event 3301 33 5 15 31 3 3 none
-create npc_event 3302 33 5 17 31 3 3 none
+create npc_event 3301 33 5 15 32 3 3 none
+create npc_event 3302 33 5 17 32 3 3 none
 move_npc 3301 right 2
 move_npc 3302 right 1
 sleep 8
 move_npc 3302 up 3
 sleep 8
 move_npc 3301 up 2
-create npc_event 3303 33 5 17 31 3 3 none
+create npc_event 3303 33 5 17 32 3 3 none
 move_npc 3303 right 1
 sleep 8
 move_npc 3303 up 1
 sleep 8
-encount 190
+encount 218
 sleep 64
 kill 3301
 kill 3302
@@ -85,7 +92,7 @@ sleep 72
 chg_event_move_char_speed normal
 warp_ff3 34 6 25 up
 set_flag 11 5
-create npc_event 3301 33 5 15 31 3 0 none
-create npc_event 3302 33 5 17 31 3 0 none
+create npc_event 3301 33 5 15 32 3 0 none
+create npc_event 3302 33 5 17 32 3 0 none
 restore_char_img
 fi
