@@ -162,5 +162,7 @@ add_party_mem 2
 set_flag 0 0
 set_flag 1 1
 set_flag 9 1
+add_item 4000
+add_item 4100
 fadein
 fi
