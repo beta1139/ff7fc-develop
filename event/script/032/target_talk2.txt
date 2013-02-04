@@ -217,12 +217,11 @@ chg_event_move_char_speed normal
 fadeout
 stop_se
 stop_bgm
-sleep 56
-warp 34 7 19 up
-draw_char on
+sleep 48
+warp 34 7 16 up
 add_party_mem 1
 add_party_mem 2
-sleep 56
+sleep 48
 chg_char_dir up
 play_bgm
 set_key_valid up
