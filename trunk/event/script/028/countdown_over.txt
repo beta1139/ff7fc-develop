@@ -450,6 +450,7 @@ if_flag 11 3
 kill 3111
 kill_through 3112
 kill 3106
+kill 3104
 chg_type 3105 npc_event
 chg_type 3106 npc_event
 create npc_event 3100 31 18 6 0 3 2 none
