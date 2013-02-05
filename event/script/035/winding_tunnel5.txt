@@ -14,18 +14,14 @@ sleep 16
 kill 3501
 kill 3502
 sleep 32
-set_slide_walk_char_flag
-move_char right 1
-sleep 32
-reset_slide_walk_char_flag
-jump_char left 2
+move_char left 1
+sleep 16
+warp_ff3 36 2 2 down
+sleep 16
+jump_char down 3
 play_se jump.wav
-sleep 32
-warp_ff3 36 2 2 right
+sleep 48
+play_se landing.wav
+sleep 16
+chg_char_dir right
 restore_char_img
-set_slide_char_flag
-chg_event_move_char_speed fast
-move_char down 2
-sleep 32
-reset_slide_char_flag
-chg_event_move_char_speed normal
