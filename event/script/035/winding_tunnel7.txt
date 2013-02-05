@@ -54,6 +54,7 @@ jump_npc 3501 same 1
 sleep 16
 step_npc 3501 3
 fi
+set_talk_npc 3501
 msg バレット\n「クラウド　いくしかないぜ\n\n\n#2\n　　おりる\n　　おりない\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
