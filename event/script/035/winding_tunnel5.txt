@@ -29,4 +29,3 @@ move_char down 2
 sleep 32
 reset_slide_char_flag
 chg_event_move_char_speed normal
-set_flag 1 1
