@@ -688,6 +688,7 @@ npc,3910,39,10,3,34,1,0,"ジェシー
 　こころをこめたつもり　だったんだけどね
 　しっぱいしちゃった"
 event_generator,3920,39,0,0,17,0,0,"@039/target_talked.txt"
+treasure_item,3930,39,5,3,4,1,0,1000
 event_generator,4000,40,3,3,17,0,0,"@set_slide_walk.txt"
 event_generator,4100,41,10,1,17,0,0,"@set_slide_walk.txt"
 event_generator,4101,41,10,4,17,0,0,"@set_slide_walk.txt"
