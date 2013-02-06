@@ -671,6 +671,8 @@ npc,3810,38,6,11,36,1,0,"ウェッジ
 「クラウドさん　こっちっす
 　5ばんまこうろは　このハシゴのさきっす"
 event_generator,3900,39,10,10,17,0,0,"@reset_slide_walk.txt"
+event_generator,3901,39,7,2,17,0,0,"@reset_slide_walk.txt"
+event_generator,3902,39,2,6,17,0,0,"@reset_slide_walk.txt"
 npc,3910,39,10,3,34,1,0,"ジェシー
 「ごめんなさい
 
@@ -686,6 +688,22 @@ npc,3910,39,10,3,34,1,0,"ジェシー
 　こころをこめたつもり　だったんだけどね
 　しっぱいしちゃった"
 event_generator,3920,39,0,0,17,0,0,"@039/target_talked.txt"
+event_generator,4000,40,3,3,17,0,0,"@set_slide_walk.txt"
+event_generator,4100,41,10,1,17,0,0,"@set_slide_walk.txt"
+event_generator,4101,41,10,4,17,0,0,"@set_slide_walk.txt"
+event_generator,4102,41,10,5,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,4103,41,2,7,17,0,0,"@set_slide_walk.txt"
+event_generator,4104,41,2,8,17,0,0,"@reset_slide_walk_bottom.txt"
+npc,4110,41,4,9,35,3,0,"ビッグス
+「おれたちは　これでひきあげる
+　アジトでおちあおうぜ
+
+　クラウド　5ばんまこうろのばくは
+　よろしくたのむぜ！"
+event_generator,4120,41,0,0,17,0,0,"@041/target_talked.txt"
+treasure_item,4130,41,4,2,4,1,0,1070
+save_point,4131,41,6,2,0,0,0,
+event_generator,4132,41,6,2,17,0,0,"@save_msg.txt"
 event_generator,70200,702,11,12,17,0,0,"@702/tifa'smemory1.txt"
 npc_event,70201,702,11,21,17,0,2,"none"
 npc_event,70202,702,11,20,17,1,2,"none"
