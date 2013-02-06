@@ -653,6 +653,7 @@ npc,3505,35,9,14,17,0,0,"『このひかりのおびは
 npc2,3506,35,6,16,17,0,0,""
 event_generator,3510,35,0,0,17,0,0,"@035/winding_tunnel4.txt"
 event_generator,3600,36,12,4,17,0,0,"@reset_slide_walk.txt"
+treasure_item,3601,36,7,4,4,1,0,1003
 event_generator,3700,37,6,2,17,0,0,"@set_slide_walk.txt"
 event_generator,3701,37,6,6,17,0,0,"@set_slide_walk.txt"
 event_generator,3702,37,6,7,17,0,0,"@reset_slide_walk_bottom.txt"
@@ -660,6 +661,31 @@ event_generator,3703,37,1,8,17,0,0,"@reset_slide_walk.txt"
 event_generator,3704,37,1,9,17,0,0,"@set_slide_walk.txt"
 event_generator,3800,38,22,9,17,0,0,"@set_slide_walk.txt"
 event_generator,3801,38,22,10,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,3802,38,15,9,17,0,0,"@set_slide_walk.txt"
+event_generator,3803,38,15,11,17,0,0,"@set_slide_walk.txt"
+event_generator,3804,38,15,12,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,3805,38,5,8,17,0,0,"@set_slide_walk.txt"
+event_generator,3806,38,5,10,17,0,0,"@set_slide_walk.txt"
+event_generator,3807,38,5,11,17,0,0,"@reset_slide_walk_bottom.txt"
+npc,3810,38,6,11,36,1,0,"ウェッジ
+「クラウドさん　こっちっす
+　5ばんまこうろは　このハシゴのさきっす"
+event_generator,3900,39,10,10,17,0,0,"@reset_slide_walk.txt"
+npc,3910,39,10,3,34,1,0,"ジェシー
+「ごめんなさい
+
+
+　れっしゃのIDスキャンのミス
+　わたしのせいなの
+  
+  
+　クラウドのIDカード
+　わたしのとくべつせいにしたから……
+　あんなことに
+　
+　こころをこめたつもり　だったんだけどね
+　しっぱいしちゃった"
+event_generator,3920,39,0,0,17,0,0,"@039/target_talked.txt"
 event_generator,70200,702,11,12,17,0,0,"@702/tifa'smemory1.txt"
 npc_event,70201,702,11,21,17,0,2,"none"
 npc_event,70202,702,11,20,17,1,2,"none"
