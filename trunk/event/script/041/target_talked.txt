@@ -1,0 +1,34 @@
+wait_target_talked 4110
+chg_type 4110 npc_event
+chg_speed 4110 normal
+if_char_dir down
+move_npc 4110 right 1
+sleep 16
+move_npc 4110 up 1
+sleep 16
+chg_char_state_move
+move_npc 4110 right 5
+sleep 80
+move_npc 4110 up 7
+sleep 112
+kill 4110
+kill_through 3920
+kill 3910
+kill 3810
+end
+fi
+if_char_dir left
+move_npc 4110 up 1
+sleep 16
+move_npc 4110 right 6
+sleep 16
+chg_char_state_move
+sleep 80
+move_npc 4110 up 7
+sleep 112
+kill 4110
+kill_through 3920
+kill 3910
+kill 3810
+end
+fi
