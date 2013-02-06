@@ -61,6 +61,16 @@ if_char_dir (direction)
 fi
   キャラがdirectionで指定した方向を向いていれば処理を実行する
 
+if_char_slide_flag (on/off)
+(処理)
+fi
+  スライドフラグの設定が引数と等しければ処理を実行する
+
+if_char_slide_walk_flag (on/off)
+(処理)
+fi
+  スライドウォークフラグの設定が引数と等しければ処理を実行する
+
 =============== 繰り返し ===============
 loop (回数) 
 (処理)
