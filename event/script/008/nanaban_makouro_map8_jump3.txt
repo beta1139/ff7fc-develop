@@ -1,5 +1,0 @@
-set_eternal_event
-wait_talk
-jump_char_target_pos 29 8
-sleep 48
-chg_char_dir up
