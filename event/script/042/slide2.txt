@@ -1,0 +1,9 @@
+set_eternal_event
+wait_same_pos
+set_slide_char_flag
+chg_event_move_char_speed fast
+move_char down 1
+sleep 8
+reset_slide_char_flag
+chg_event_move_char_speed normal
+chg_char_dir down
