@@ -118,6 +118,9 @@ warp (map_id) (x) (y) (direction)
 warp_ff3 (map_id) (x) (y) (direction)
   キャラの位置をFF3風エフェクトでワープさせる
 
+warp_ff3_out (map_id) (x) (y) (direction)
+  キャラの位置をFF3風エフェクトでワープさせる
+
 chg_char_img (idx)
   キャラ表示切替。idxには0~2を指定可。ステータス画面のキャラの並びに対応
 
