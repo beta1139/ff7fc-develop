@@ -702,24 +702,24 @@ npc,3910,39,10,3,34,1,0,"ジェシー
 event_generator,3920,39,0,0,17,0,0,"@039/target_talked.txt"
 treasure_item,3930,39,5,3,4,1,0,1000
 event_generator,4000,40,3,3,17,0,0,"@set_slide_walk.txt"
-event_generator,4100,41,10,1,17,0,0,"@set_slide_walk.txt"
-event_generator,4101,41,10,4,17,0,0,"@set_slide_walk.txt"
-event_generator,4102,41,10,5,17,0,0,"@reset_slide_walk_bottom.txt"
-event_generator,4103,41,2,7,17,0,0,"@set_slide_walk.txt"
-event_generator,4104,41,2,8,17,0,0,"@reset_slide_walk_bottom.txt"
-npc,4110,41,4,9,35,3,0,"ビッグス
+event_generator,4100,41,6,9,17,0,0,"@set_slide_walk.txt"
+event_generator,4101,41,6,11,17,0,0,"@set_slide_walk.txt"
+event_generator,4102,41,6,12,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,4103,41,3,2,17,0,0,"@set_slide_walk.txt"
+event_generator,4104,41,3,4,17,0,0,"@reset_slide_walk_bottom.txt"
+npc,4110,41,2,4,35,1,0,"ビッグス
 「おれたちは　これでひきあげる
 　アジトでおちあおうぜ
 
 　クラウド　5ばんまこうろのばくは
 　よろしくたのむぜ！"
 event_generator,4120,41,0,0,17,0,0,"@041/target_talked.txt"
-treasure_item,4130,41,4,2,4,1,0,1070
-save_point,4131,41,6,2,0,0,0,
-event_generator,4132,41,6,2,17,0,0,"@save_msg.txt"
+treasure_item,4130,41,7,4,4,1,0,1070
+save_point,4131,41,7,7,0,0,0,
+event_generator,4132,41,7,7,17,0,0,"@save_msg.txt"
 event_generator,4200,42,25,5,17,0,0,"@042/slide1.txt"
+event_generator,4133,41,3,6,17,0,0,"@041/door_open.txt"
 event_generator,4201,42,25,22,17,0,0,"@042/slide2.txt"
-event_generator,4133,41,3,8,17,0,0,"@041/door_open.txt"
 map_door,4250,42,20,3,8,0,0,0
 map_door,4251,42,10,25,8,0,0,0
 event_generator,4300,43,19,8,17,0,0,"@008/makouro_jump1.txt"
