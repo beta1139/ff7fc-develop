@@ -1,0 +1,8 @@
+set_eternal_event
+wait_talk
+chg_char_dir left
+jump_char_target_pos 31 18
+play_se jump.wav
+sleep 32
+play_se landing.wav
+reset_slide_walk_char_flag
