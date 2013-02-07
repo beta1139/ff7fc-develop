@@ -371,8 +371,8 @@ event_generator,2609,26,1,1,17,0,0,"@026/nanabangai_slum15.txt"
 event_generator,2632,26,4,6,17,0,0,"@026/beginner's_hall7.txt"
 event_generator,2633,26,4,6,17,0,0,"@026/beginner's_hall8.txt"
 event_generator,2635,26,6,4,17,0,0,"@save_msg.txt"
-event_generator,2640,26,1,1,17,0,0,"@026/beginner's_hall11.txt""
-event_generator,2643,26,1,1,17,0,0,"@026/beginner's_hall14.txt""
+event_generator,2640,26,1,1,17,0,0,"@026/beginner's_hall11.txt"
+event_generator,2643,26,1,1,17,0,0,"@026/beginner's_hall14.txt"
 map_obj,2691,26,4,7,30,0,0,0
 map_door,2090,20,26,21,1,0,0,0
 map_door,2091,20,27,33,1,0,0,0
