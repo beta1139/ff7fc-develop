@@ -1,0 +1,29 @@
+wait_same_pos
+set_slide_char_flag
+chg_event_move_char_speed fast
+move_char down 16
+sleep 128
+reset_slide_char_flag
+chg_event_move_char_speed normal
+jump_char down 3
+play_se jump.wav
+loop 3
+sleep 3
+chg_char_dir down
+chg_char_img_tmp 105
+sleep 3
+reset_char_img_tmp
+chg_char_dir left
+sleep 3
+chg_char_dir down
+sleep 3
+chg_char_dir right
+pool
+loop 2
+sleep 3
+chg_char_dir down
+chg_char_img_tmp 105
+sleep 3
+reset_char_img_tmp
+pool
+play_se landing.wav
