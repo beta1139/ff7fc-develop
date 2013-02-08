@@ -1,0 +1,157 @@
+wait_same_pos
+chg_char_img 0
+set_flag 1 1
+create npc_event 4501 45 8 18 1 0 2 バレット\n「どうした？\n はやく　ばくだんをセットしてくれ
+move_npc 4501 down 3
+create npc_event 4502 45 8 18 2 0 2 ティファ\n「いそぎましょう　クラウド
+move_npc 4502 up 3
+sleep 48
+chg_npc_dir 4502 down
+sleep 16
+chg_npc_dir 4501 up
+sleep 24
+play_se beeeeep.wav
+chg_char_img_tmp 10
+chg_char_dir down
+sleep 16
+set_screen_effect sub 0 255 255 0
+loop 90
+inc_screen_effect_val 1
+sleep 1
+pool
+sleep 64
+fadeout
+draw_char off
+sleep 32
+warp 705 8 19 up
+chg_npc_y_offset 70500 -5
+chg_npc_y_offset 70502 -6
+sleep 32
+fadein
+sleep 32
+chg_event_move_char_speed slow
+move_char up 4
+sleep 144
+chg_speed 70502 normal
+msg ティファ\n「パパ……
+sleep 64
+step_npc 70502 2
+sleep 48
+msg ティファ\n「セフィロスね！
+sleep 32
+step_npc 70502 3
+sleep 48
+msg ティファ\n「セフィロスがやったのね！
+sleep 16
+chg_speed 70502 slow
+move_npc 70502 right 1
+sleep 16
+chg_speed 70502 not_step
+sleep 64
+msg ティファ\n「セフィロス……ソルジャー……\n　まこうろ……しんら……ぜんぶ！
+sleep 48
+chg_npc_img 70502 120
+msg ティファ\n「ぜんぶ　だいキライ！
+chg_speed 70502 slow
+slide_walk_npc 70502 left 1
+sleep 16
+chg_npc_img 70502 14
+chg_speed 70502 not_step
+chg_npc_dir 70502 up
+sleep 16
+chg_speed 70502 slow
+move_npc 70502 up 1
+sleep 26
+chg_speed 70502 not_step
+sleep 32
+chg_speed 70500 slow
+chg_speed 70502 slow
+slide_walk_npc 70502 down 1
+slide_walk_npc 70500 down 1
+sleep 16
+chg_speed 70500 not_step
+chg_speed 70502 not_step
+sleep 72
+chg_speed 70500 fast
+chg_speed 70502 fast
+move_npc 70502 up 3
+move_npc 70500 up 3
+sleep 20
+kill 70500
+kill 70502
+sleep 4
+chg_event_move_char_speed slow
+move_char down 4
+sleep 128
+chg_event_move_char_speed normal
+fadeout
+draw_char on
+sleep 32
+warp 45 8 18 down
+fadein
+sleep 32
+loop 90
+dec_screen_effect_val 1
+sleep 1
+pool
+flush
+sleep 8
+flush
+reset_char_img_tmp
+sleep 8
+reset_screen_effect
+sleep 32
+chg_char_dir left
+sleep 32
+chg_char_dir right
+sleep 15
+chg_char_dir left
+sleep 15
+chg_char_dir up
+jump_npc 4501 same 1
+sleep 16
+jump_npc 4501 same 1
+sleep 16
+step_npc 4501 3
+msg バレット\n「おい　しっかりしてくれよ
+chg_char_dir down
+move_npc 4502 down 2
+sleep 32
+step_npc 4502 2
+set_talk_npc 4502
+msg ティファ\n「だいじょうぶ？
+reset_talk_npc
+sleep 16
+chg_char_dir up
+sleep 32
+msg 『……ティファ
+sleep 8
+set_talk_npc 4502
+msg ティファ\n「ん？
+reset_talk_npc
+sleep 16
+chg_char_dir right
+sleep 16
+chg_char_dir down
+sleep 16
+chg_char_dir up
+sleep 16
+step_char 1
+sleep 16
+msg 『い……いや……\n　きにするな\n　さあ　いそごう！
+set_flag_wall 4501
+set_flag_wall 4502
+chg_type 4501 npc2
+chg_speed 4501 not_move
+create event_generator 4511 45 1 1 17 0 0 @045/target_talk.txt
+chg_char_state_move
+sleep 32
+move_npc 4502 up 3
+sleep 48
+move_npc 4502 left 1
+sleep 16
+move_npc 4502 up 1
+sleep 16
+chg_npc_dir 4502 right
+chg_speed 4502 not_move
+chg_type 4502 npc
