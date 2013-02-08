@@ -1,0 +1,29 @@
+wait_target_talk 4503
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+kill_through 4511
+play_se timer.ogg
+step_char 7
+sleep 144
+chg_type 4501 npc_event
+chg_speed 4501 normal
+move_npc 4501 up 8
+sleep 16
+chg_char_dir down
+chg_type 4502 npc_event
+chg_speed 4502 normal
+sleep 32
+move_npc 4502 right 1
+sleep 16
+kill 4502
+sleep 64
+kill 4501
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+set_flag 1 1
