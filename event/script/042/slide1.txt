@@ -1,6 +1,7 @@
 wait_same_pos
 set_slide_char_flag
 chg_event_move_char_speed fast
+play_se slide.ogg
 move_char down 16
 sleep 128
 reset_slide_char_flag
