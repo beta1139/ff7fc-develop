@@ -1,8 +1,6 @@
-wait_target_talk 650
-reset_talk_flag 650
+wait_talk
 play_se button.ogg
 msg スイッチオン
-sleep 32
 play_se elevator_start.wav
 loop 100
 inc_map_draw_y_offset
@@ -15,6 +13,7 @@ sleep 1
 pool
 set_map_draw_y_offset -170
 warp 6 20 2 up
+chg_char_dir up
 loop 170
 inc_map_draw_y_offset
 sleep 1
@@ -26,9 +25,11 @@ sleep 16
 chg_char_dir down
 chg_npc_dir 601 up
 msg バレット\n「まこうろのせいで　このほしの　いのちは\n　まいにち　けずられていく\n　そして　いつのひか……　ゼロだ
-chg_char_dir right
-chg_char_img_tmp 96
+chg_char_img_tmp 103
 sleep 32
+chg_char_dir left
+sleep 48
+chg_char_dir down
 msg クラウド\n『わるいけど　きょうみがないな
 kill 601
 create npc_event 145 6 20 3 95 1 0 none
@@ -39,9 +40,10 @@ kill 145
 create npc3 146 6 20 3 1 0 0 none
 sleep 32
 msg バレット\n「ほしが　しんじまうんだぞ\n　えっ　クラウドさんよ！
+sleep 16
 reset_char_img_tmp
 chg_char_dir down
-sleep 32
+sleep 16
 msg クラウド\n『オレが　かんがえてるのは　さっさとしごとを\n　おわらせたいって　ことだけだ\n　けいびへいや　ガードロボットが　こないうちにな
 kill 146
 create npc_event 147 6 20 3 98 2 0 none
@@ -53,6 +55,7 @@ move_npc 148 up 1
 sleep 32
 kill 148
 kill 142
+chg_char_dir up
 create npc_event 150 6 18 2 34 2 2 none
 loop 170
 inc_map_draw_y_offset
@@ -75,4 +78,4 @@ sleep 16
 kill 150
 kill 141
 sleep 16
-create event_generator 660 6 0 0 17 0 0 @006/elevator_switch1.txt
+create event_generator 660 6 4 1 17 0 0 @006/elevator_switch1.txt
