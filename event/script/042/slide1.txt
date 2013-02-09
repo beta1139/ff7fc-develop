@@ -1,6 +1,9 @@
 wait_same_pos
 kill_through 4120
 kill_through 4110
+kill_through 3920
+kill_through 3910
+kill_through 3810
 set_slide_char_flag
 chg_event_move_char_speed fast
 play_se slide.ogg
