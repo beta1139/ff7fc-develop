@@ -715,9 +715,10 @@ event_generator,4120,41,0,0,17,0,0,"@041/target_talked.txt"
 treasure_item,4130,41,7,4,4,1,0,1070
 save_point,4131,41,7,7,0,0,0,
 event_generator,4132,41,7,7,17,0,0,"@save_msg.txt"
-event_generator,4200,42,25,5,17,0,0,"@042/slide1.txt"
 event_generator,4133,41,3,6,17,0,0,"@041/door_open.txt"
-event_generator,4201,42,25,22,17,0,0,"@042/slide2.txt"
+event_generator,4200,42,20,3,17,0,0,"@reset_slide_walk.txt"
+event_generator,4201,42,25,5,17,0,0,"@042/slide1.txt"
+event_generator,4202,42,25,22,17,0,0,"@042/slide2.txt"
 map_door,4250,42,20,3,8,0,0,0
 map_door,4251,42,10,25,8,0,0,0
 event_generator,4300,43,19,8,17,0,0,"@008/makouro_jump1.txt"
