@@ -1,9 +1,7 @@
 set_eternal_event
-wait_target_talk 651
-reset_talk_flag 651
+wait_talk
 play_se button.ogg
 msg スイッチオン
-sleep 32
 draw_countdown off
 play_se elevator_start.wav
 loop 100
@@ -16,7 +14,12 @@ dec_map_draw_y_offset
 sleep 1
 pool
 set_map_draw_y_offset 170
+if_flag 9 0
 warp 6 4 2 up
+fi
+if_flag 9 1
+warp 46 4 2 up
+fi
 loop 80
 dec_map_draw_y_offset
 sleep 1
