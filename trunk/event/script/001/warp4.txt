@@ -20,6 +20,9 @@ kill 500
 kill 501
 kill 502
 kill 503
+kill 550
+kill 551
+kill 552
 kill 114
 kill 115
 kill 116
@@ -31,9 +34,9 @@ create npc_event 576 5 15 18 34 2 0 none
 create npc_event 577 5 16 17 35 2 2 none
 create npc2 580 5 13 18 17 0 0 
 create npc2 581 5 13 20 17 0 0 
-create npc_event 562 5 14 19 116 0 0 
-create npc_event 563 5 14 18 116 0 0 
-create npc_event 564 5 14 17 116 0 0 
+create npc_event 562 5 14 19 116 0 0 none
+create npc_event 563 5 14 18 116 0 0 none
+create npc_event 564 5 14 17 116 0 0 none
 create npc2 586 5 12 18 17 0 0 
 create npc2 587 5 12 30 17 0 0 
 create npc2 588 5 12 31 17 0 0 
