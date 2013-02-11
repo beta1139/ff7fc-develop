@@ -1,4 +1,7 @@
 wait_same_pos
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
 erase_msg3
 kill 568
 kill 569
@@ -10,61 +13,85 @@ sleep 8
 jump_npc 576 same 2
 sleep 32
 msg ジェシー\n「クラウド！\n\n\n　ロックの　かいじょは\n　さんにん　どうじに　ボタンを　おせばいいわ！\n　こっちへきて！
+create npc_event 579 5 15 14 0 1 2 none
+draw_char off
 move_char down 2
-sleep 32
+move_npc 579 down 2
+sleep 16
+chg_npc_dir 577 left
+sleep 16
 msg3 112 バレット\n「くそっ！\n　また　こざかしい　トラップを！
 create npc_event 578 5 15 16 95 1 2 none
 move_npc 578 down 1
+move_npc 579 left 2
 move_char left 2
-chg_npc_dir 577 down
 sleep 16
 chg_npc_dir 578 up
 jump_npc 578 same 2
 chg_npc_dir 576 left
 sleep 16
-move_char down 3
+move_npc 579 down 3
+move_char down 2
 sleep 16
 jump_npc 578 same 1
-sleep 16
+move_npc 576 left 1
+sleep 5
+chg_speed 576 not_step
+sleep 11
+chg_npc_dir 576 down
 chg_npc_img 578 1
-move_npc 578 down 1
-sleep 16
 jump_npc 578 left 2
-chg_char_dir right
-set_npc_pos 582 5 14 30
-sleep 32
-chg_npc_dir 578 right
 sleep 16
+move_npc 577 left 2
+move_npc 579 right 1
+sleep 5
+chg_speed 579 not_step
+sleep 11
+move_npc 578 down 1
+sleep 5
+chg_speed 577 not_step
+sleep 11
+chg_npc_dir 578 right
+chg_npc_dir 576 left
+sleep 16
+chg_char_dir left
+step_npc 576 2
 msg ジェシー\n「みんなで　どうじに　ボタンを　おせば\n　とびらの　ロックを　かいじょできるわ
+chg_npc_dir 576 down
 step_npc 576 2
 sleep 16
+chg_npc_dir 577 down
 chg_npc_dir 578 down
 sleep 16
 msg ジェシー\n「じゅんびは　いい？\n\n\n#2\n　　まかせろ\n　　もういちど　たのむ\n\n\n[[]][[]]
+set_key_unvalid up
+set_key_unvalid down
+chg_npc_dir 577 left
 if_flag 3 0
+chg_npc_dir 576 left
 loop_inf
 chg_char_state_move
 sleep 32
-set_npc_pos 586 5 14 30
-set_npc_pos 587 5 14 19
+set_npc_pos 586 5 12 30
+set_npc_pos 587 5 12 18
 sleep 14
-set_npc_pos 587 5 14 30
-set_npc_pos 588 5 14 19
+set_npc_pos 587 5 12 30
+set_npc_pos 588 5 12 18
 sleep 16
 chg_npc_img 576 114
+chg_npc_dir 577 down
 chg_npc_img 577 114
 sleep 32
-set_npc_pos 588 5 14 30
-set_npc_pos 589 5 14 19
+set_npc_pos 588 5 12 30
+set_npc_pos 589 5 12 18
 sleep 32
 chg_npc_dir 576 right
 chg_npc_dir 577 up
-set_npc_pos 589 5 14 30
-set_npc_pos 582 5 14 19
-chg_npc_dir 583 down
-chg_npc_dir 584 down
-chg_speed 583 not_step
-chg_speed 584 not_step
+set_npc_pos 589 5 12 30
+chg_npc_dir 563 down
+chg_npc_dir 564 down
+chg_speed 563 not_step
+chg_speed 564 not_step
 play_se switch.ogg
 sleep 4
 play_se_loop alarm.ogg
@@ -72,17 +99,16 @@ sleep 52
 chg_npc_img 576 34
 chg_npc_dir 576 left
 chg_npc_img 577 35
-chg_npc_dir 577 down
-chg_npc_dir 583 up
-chg_npc_dir 584 up
-chg_speed 583 not_move
-chg_speed 584 not_move
+chg_npc_dir 577 left
+chg_npc_dir 563 up
+chg_npc_dir 564 up
+chg_speed 563 not_move
+chg_speed 564 not_move
 msg3 -1 ジェシー\n「しっぱいね　もういちど
 if_flag 10 0
 sleep 96
 erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+set_npc_pos 586 5 12 18
 set_flag 10 1
 pool
 fi
@@ -92,27 +118,28 @@ chg_npc_dir 578 left
 chg_npc_img 578 98
 sleep 64
 erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+set_npc_pos 586 5 12 18
 set_flag 10 2
 pool
 fi
 if_flag 10 2
 sleep 16
+chg_npc_dir 577 down
 chg_speed 578 normal
 step_npc 578 5
 sleep 80
 erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+chg_npc_dir 577 left
+set_npc_pos 586 5 12 18
 set_flag 10 3
 pool
 fi
 if_flag 10 3
+chg_npc_dir 577 down
 sleep 64
 erase_msg3
 sleep 8
-draw_image 500 16 8 0 0 224 80 1 event/makouro1.bmp
+msg3 -1 バレット\n「なにやってんだっ！　ナスボケッ！\n　オレに　かわれ！！
 chg_speed 578 fast
 chg_npc_img 578 95
 chg_npc_dir 578 up
@@ -123,46 +150,51 @@ sleep 16
 chg_npc_dir 578 down
 step_npc 578 6
 chg_char_state_event
-chg_char_dir up
-create npc_event 579 5 13 19 0 0 3 none
-draw_char off
+chg_npc_dir 579 up
 sleep 48
 chg_npc_img 578 1
 move_npc 578 down 1
+chg_speed 579 fast
 slide_walk_npc 579 down 1
-chg_char_dir right
-chg_char_img 1
+chg_npc_dir 577 left
 sleep 8
-chg_npc_dir 578 right
-draw_char on
-kill 578
-sleep 24
-erase_image 500
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+chg_speed 579 normal
+move_npc 579 left 1
+chg_speed 578 normal
+move_npc 578 right 1
+chg_char_img 1
+sleep 5
+chg_speed 578 not_step
+chg_speed 579 not_step
+chg_npc_dir 579 up
+sleep 19
+erase_msg3
+set_npc_pos 586 5 12 18
 set_flag 10 4
 pool
 fi
 if_flag 10 4
 sleep 96
 erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+set_npc_pos 586 5 12 18
 chg_npc_dir 579 up
 set_flag 10 5
 pool
 fi
 if_flag 10 5
-sleep 48
+sleep 32
+chg_npc_dir 577 down
+sleep 16
 chg_npc_dir 579 left
 sleep 48
 erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+chg_npc_dir 577 left
+set_npc_pos 586 5 12 18
 set_flag 10 6
 pool
 fi
 if_flag 10 6
+chg_npc_dir 577 down
 sleep 16
 chg_npc_dir 579 down
 chg_npc_img 579 103
@@ -170,61 +202,63 @@ sleep 16
 chg_npc_dir 579 left
 sleep 32
 erase_msg3
-sleep 8
-sleep 24
+sleep 32
 chg_npc_img 579 0
 chg_npc_dir 579 up
 chg_char_state_event
 msg3 -1 『おまえと　しんじゅうする　つもりはない
 sleep 16
-chg_char_dir down
-create npc_event 578 5 13 19 1 1 3 none
-draw_char off
+chg_npc_dir 578 down
+chg_char_img 0
 sleep 48
 erase_msg3
-chg_char_dir right
-chg_npc_img 578 1
+chg_speed 578 fast
 slide_walk_npc 578 up 1
 chg_speed 579 fast
 move_npc 579 up 1
+chg_npc_dir 577 left
 sleep 8
+chg_speed 579 normal
+move_npc 579 right 1
+chg_speed 578 normal
+move_npc 578 left 1
+sleep 5
+chg_speed 578 not_step
+chg_speed 579 not_step
 chg_npc_dir 578 down
-chg_npc_dir 579 right
-chg_char_img 0
-draw_char on
-kill 579
-sleep 24
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+sleep 19
+set_npc_pos 586 5 12 18
 set_flag 10 1
 pool
 fi
 fi
 if_flag 3 1
+step_npc 576 2
 msg ジェシー\n「みんな　おなじ　タイミングで　ボタンを　おせば\n　とびらの　ロックを　かいじょできるわ\n\n　じかんが　ないから　はじめるわよ
+chg_npc_dir 576 left
 loop_inf
 chg_char_state_move
 sleep 32
-set_npc_pos 586 5 14 30
-set_npc_pos 587 5 14 19
+set_npc_pos 586 5 12 30
+set_npc_pos 587 5 12 18
 sleep 14
-set_npc_pos 587 5 14 30
-set_npc_pos 588 5 14 19
+set_npc_pos 587 5 12 30
+set_npc_pos 588 5 12 18
 sleep 16
 chg_npc_img 576 114
+chg_npc_dir 577 down
 chg_npc_img 577 114
 sleep 32
-set_npc_pos 588 5 14 30
-set_npc_pos 589 5 14 19
+set_npc_pos 588 5 12 30
+set_npc_pos 589 5 12 18
 sleep 32
 chg_npc_dir 576 right
 chg_npc_dir 577 up
-set_npc_pos 589 5 14 30
-set_npc_pos 582 5 14 19
-chg_npc_dir 583 down
-chg_npc_dir 584 down
-chg_speed 583 not_step
-chg_speed 584 not_step
+set_npc_pos 589 5 12 30
+chg_npc_dir 563 down
+chg_npc_dir 564 down
+chg_speed 563 not_step
+chg_speed 564 not_step
 play_se switch.ogg
 sleep 4
 play_se_loop alarm.ogg
@@ -232,17 +266,16 @@ sleep 52
 chg_npc_img 576 34
 chg_npc_dir 576 left
 chg_npc_img 577 35
-chg_npc_dir 577 down
-chg_npc_dir 583 up
-chg_npc_dir 584 up
-chg_speed 583 not_move
-chg_speed 584 not_move
+chg_npc_dir 577 left
+chg_npc_dir 563 up
+chg_npc_dir 564 up
+chg_speed 563 not_move
+chg_speed 564 not_move
 msg3 -1 ジェシー\n「しっぱいね　もういちど
 if_flag 10 0
 sleep 96
 erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+set_npc_pos 586 5 12 18
 set_flag 10 1
 pool
 fi
@@ -252,27 +285,28 @@ chg_npc_dir 578 left
 chg_npc_img 578 98
 sleep 64
 erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+set_npc_pos 586 5 12 18
 set_flag 10 2
 pool
 fi
 if_flag 10 2
 sleep 16
+chg_npc_dir 577 down
 chg_speed 578 normal
 step_npc 578 5
 sleep 80
 erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+chg_npc_dir 577 left
+set_npc_pos 586 5 12 18
 set_flag 10 3
 pool
 fi
 if_flag 10 3
+chg_npc_dir 577 down
 sleep 64
 erase_msg3
 sleep 8
-draw_image 500 16 8 0 0 224 80 1 event/makouro1.bmp
+msg3 -1 バレット\n「なにやってんだっ！　ナスボケッ！\n　オレに　かわれ！！
 chg_speed 578 fast
 chg_npc_img 578 95
 chg_npc_dir 578 up
@@ -283,46 +317,51 @@ sleep 16
 chg_npc_dir 578 down
 step_npc 578 6
 chg_char_state_event
-chg_char_dir up
-create npc_event 579 5 13 19 0 0 3 none
-draw_char off
+chg_npc_dir 579 up
 sleep 48
 chg_npc_img 578 1
 move_npc 578 down 1
+chg_speed 579 fast
 slide_walk_npc 579 down 1
-chg_char_dir right
-chg_char_img 1
+chg_npc_dir 577 left
 sleep 8
-chg_npc_dir 578 right
-draw_char on
-kill 578
-sleep 24
-erase_image 500
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+chg_speed 579 normal
+move_npc 579 left 1
+chg_speed 578 normal
+move_npc 578 right 1
+chg_char_img 1
+sleep 5
+chg_speed 578 not_step
+chg_speed 579 not_step
+chg_npc_dir 579 up
+sleep 19
+erase_msg3
+set_npc_pos 586 5 12 18
 set_flag 10 4
 pool
 fi
 if_flag 10 4
 sleep 96
 erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+set_npc_pos 586 5 12 18
 chg_npc_dir 579 up
 set_flag 10 5
 pool
 fi
 if_flag 10 5
-sleep 48
+sleep 32
+chg_npc_dir 577 down
+sleep 16
 chg_npc_dir 579 left
 sleep 48
 erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+chg_npc_dir 577 left
+set_npc_pos 586 5 12 18
 set_flag 10 6
 pool
 fi
 if_flag 10 6
+chg_npc_dir 577 down
 sleep 16
 chg_npc_dir 579 down
 chg_npc_img 579 103
@@ -336,25 +375,27 @@ chg_npc_dir 579 up
 chg_char_state_event
 msg3 -1 『おまえと　しんじゅうする　つもりはない
 sleep 16
-chg_char_dir down
-create npc_event 578 5 13 19 1 1 3 none
-draw_char off
+chg_npc_dir 578 down
+chg_char_img 0
 sleep 48
-chg_char_dir right
-chg_npc_img 578 1
+erase_msg3
+chg_speed 578 fast
 slide_walk_npc 578 up 1
 chg_speed 579 fast
 move_npc 579 up 1
+chg_npc_dir 577 left
 sleep 8
+chg_speed 579 normal
+move_npc 579 right 1
+chg_speed 578 normal
+move_npc 578 left 1
+sleep 5
+chg_speed 578 not_step
+chg_speed 579 not_step
 chg_npc_dir 578 down
-chg_npc_dir 579 right
-chg_char_img 0
-draw_char on
-kill 579
-sleep 24
-erase_msg3
-set_npc_pos 582 5 14 30
-set_npc_pos 586 5 14 19
+sleep 19
+chg_npc_dir 577 left
+set_npc_pos 586 5 12 18
 set_flag 10 1
 pool
 fi

@@ -1,4 +1,5 @@
 wait_same_pos
+start_countdown 5
 draw_countdown off
 create npc2 573 5 13 7 17 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
 create npc2 574 5 13 8 17 0 0 「セキュリティ　システム　サドウチュウ\n　トビラ　ロック　サレマシタ
@@ -13,12 +14,13 @@ move_npc 578 left 2
 sleep 32
 jump_npc 578 same 2
 sleep 32
-msg バレット\n「どうなってんだっ！\n　とびらが　ドラクエに　なってやがる！
 chg_speed 578 fast
+step_npc 578 2
+msg バレット\n「どうなってんだっ！\n　とびらが　しまってやがる！
 chg_npc_dir 578 right
 sleep 8
 step_npc 578 4
-msg バレット\n「おいっ！！　どうする！？
+msg バレット\n「おいっ！！　どうなってる！？
 chg_char_dir down
 chg_char_img_tmp 103
 sleep 32
@@ -35,6 +37,10 @@ chg_char_state_move
 loop inf
 msg3 128 「ヒジョウ　ケイカイ　システム　サドウチュウ\n　ヒジョウ　ケイカイ　システム　サドウチュウ
 sleep 128
+erase_msg3
+sleep 8
 msg3 128 「トビラ　ロック　サレマシタ
-sleep 208
+sleep 200
+erase_msg3
+sleep 8
 pool
