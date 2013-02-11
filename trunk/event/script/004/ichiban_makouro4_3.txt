@@ -1,8 +1,8 @@
 chg_char_state_move
-move_npc 4003 left 2
+move_npc 403 left 2
 sleep 16
-move_npc 4003 up 19
+move_npc 403 up 19
 sleep 152
-kill 4003
+kill 403
 
 
