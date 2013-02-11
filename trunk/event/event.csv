@@ -40,6 +40,9 @@ event_generator,132,5,1,1,17,0,0,"@005/bigs1.txt"
 npc2,135,5,13,7,17,0,0,""
 npc2,136,5,13,8,17,0,0,""
 npc2,139,5,23,7,17,0,0,""
+map_obj,550,5,13,8,31,0,0,0
+map_obj,551,5,13,7,31,0,0,0
+map_obj,552,5,23,7,31,0,0,0
 event_generator,500,5,5,14,17,0,0,"@005/ichiban_makouro2_1.txt"
 npc,501,5,5,13,1,1,0,""
 event_generator,502,5,4,13,17,0,0,"@005/ichiban_makouro2_2.txt"
