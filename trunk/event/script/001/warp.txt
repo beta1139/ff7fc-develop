@@ -11,6 +11,9 @@ kill_through_range 0 159
 kill_through_range 180 801
 kill 806
 kill 807
+create npc_event 562 5 14 19 116 1 4 none
+create npc_event 563 5 14 18 116 1 4 none
+create npc_event 564 5 14 17 116 1 4 none
 sleep 16
 create event_generator 660 6 4 1 17 0 0 @006/elevator_switch1.txt
 create event_generator 661 6 20 1 17 0 0 @006/elevator_switch2.txt
