@@ -2,6 +2,8 @@ wait_target_talked 134
 play_se button.ogg
 sleep 32
 play_se door_open.wav
+kill 550
+kill 551
 kill 135
 kill 136
 chg_type 134 npc_event
