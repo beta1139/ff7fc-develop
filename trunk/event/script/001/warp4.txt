@@ -6,6 +6,7 @@ fadeout
 stop_bgm
 set_flag 1 1
 warp 5 24 7 left
+chg_char_dir left
 set_flag 0 2
 start_countdown 5
 play_event_bgm 1-07-Hurry_!.ogg
@@ -26,21 +27,20 @@ kill 135
 kill 136
 kill 139
 kill 600
-create npc_event 576 5 16 19 34 2 0 none
-create npc_event 577 5 14 17 35 1 0 none
-chg_npc_y_offset 577 0
+create npc_event 576 5 15 18 34 2 0 none
+create npc_event 577 5 16 17 35 2 2 none
 create npc2 580 5 13 18 17 0 0 
 create npc2 581 5 13 20 17 0 0 
-create npc2 582 5 14 19 116 0 0 
-create npc2 583 5 15 19 116 0 0 
-create npc2 584 5 14 18 116 0 0 
-create npc2 586 5 14 19 116 0 0 
-create npc2 587 5 14 30 116 0 0 
-create npc2 588 5 14 31 116 0 0 
-create npc2 589 5 14 32 116 0 0 
-chg_npc_y_offset 582 0
-chg_npc_y_offset 583 0
-chg_npc_y_offset 584 0
+create npc_event 562 5 14 19 116 0 0 
+create npc_event 563 5 14 18 116 0 0 
+create npc_event 564 5 14 17 116 0 0 
+create npc2 586 5 12 18 17 0 0 
+create npc2 587 5 12 30 17 0 0 
+create npc2 588 5 12 31 17 0 0 
+create npc2 589 5 12 32 17 0 0 
+chg_npc_y_offset 562 -2
+chg_npc_y_offset 563 -2
+chg_npc_y_offset 564 -2
 chg_npc_y_offset 586 0
 chg_npc_y_offset 587 0
 chg_npc_y_offset 588 0
