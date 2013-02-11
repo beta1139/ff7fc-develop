@@ -744,6 +744,10 @@ event_generator,4510,45,8,18,17,0,0,"@045/goban_makouro1.txt"
 event_generator,4512,45,1,1,17,0,0,"@045/goban_makouro2.txt"
 event_generator,4600,46,4,1,17,0,0,"@006/elevator_switch1.txt"
 event_generator,4601,46,20,1,17,0,0,"@006/elevator_switch2.txt"
+npc2,4773,47,13,7,17,0,0,""
+npc2,4774,47,13,8,17,0,0,""
+map_obj,4770,47,13,7,31,0,0,0
+map_obj,4771,47,13,8,31,0,0,0
 npc_event,70500,705,8,14,120,0,3,"none"
 npc_event,70501,705,8,19,0,0,2,"none"
 npc_event,70502,705,8,15,14,3,0,"none"
