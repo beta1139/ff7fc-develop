@@ -1,13 +1,13 @@
 wait_same_pos
 chg_char_state_move
-move_npc 3004 up 3
+move_npc 304 up 3
 sleep 24
-move_npc 3004 left 8
+move_npc 304 left 8
 sleep 64
-move_npc 3004 up 2
+move_npc 304 up 2
 sleep 16
-move_npc 3004 left 4
+move_npc 304 left 4
 sleep 32
-kill 3004
-kill 3006
+kill 304
+kill 306
 

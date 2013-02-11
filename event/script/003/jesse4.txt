@@ -1,6 +1,6 @@
 wait_same_pos
 chg_char_state_move
-move_npc 3007 left 7
+move_npc 307 left 7
 sleep 56
-kill 3007
-kill 3008
+kill 307
+kill 308
