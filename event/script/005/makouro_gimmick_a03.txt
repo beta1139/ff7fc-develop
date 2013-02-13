@@ -1,166 +1,164 @@
 wait_same_pos
-kill_through 595
-kill_through 596
-kill_through 597
+kill_through 586
+kill_through 587
+kill_through 588
 loop_inf
 chg_char_state_move
 sleep 32
-set_npc_pos 586 5 12 30
-set_npc_pos 587 5 12 18
+set_npc_pos 563 5 12 30
+set_npc_pos 564 5 12 18
 sleep 14
-set_npc_pos 587 5 12 30
-set_npc_pos 588 5 12 18
+set_npc_pos 564 5 12 30
+set_npc_pos 565 5 12 18
 sleep 16
-chg_npc_img 576 114
-chg_npc_dir 577 down
-chg_npc_img 577 114
+chg_npc_img 570 114
+chg_npc_dir 571 down
+chg_npc_img 571 114
 sleep 32
-set_npc_pos 588 5 12 30
-set_npc_pos 589 5 12 18
+set_npc_pos 565 5 12 30
+set_npc_pos 566 5 12 18
 sleep 32
-chg_npc_dir 576 right
-chg_npc_dir 577 up
-set_npc_pos 589 5 12 30
-chg_npc_dir 563 down
-chg_npc_dir 564 down
-chg_speed 563 not_step
-chg_speed 564 not_step
+chg_npc_dir 570 right
+chg_npc_dir 571 up
+set_npc_pos 566 5 12 30
+chg_npc_dir 561 down
+chg_npc_dir 562 down
+chg_speed 561 not_step
+chg_speed 562 not_step
 play_se switch.ogg
 sleep 4
 play_se_loop alarm.ogg
 sleep 52
-chg_npc_img 576 34
-chg_npc_dir 576 left
-chg_npc_img 577 35
-chg_npc_dir 577 left
-chg_npc_dir 563 up
-chg_npc_dir 564 up
-chg_speed 563 not_move
-chg_speed 564 not_move
-msg3 -1 ジェシー\n「しっぱいね　もういちど
+chg_npc_img 570 34
+chg_npc_dir 570 left
+chg_npc_img 571 35
+chg_npc_dir 571 left
+chg_npc_dir 561 up
+chg_npc_dir 562 up
+chg_speed 561 not_move
+chg_speed 562 not_move
+msg3 -1 ティファ\n「しっぱいね　もういちど
 if_flag 10 0
 sleep 96
 erase_msg3
-set_npc_pos 586 5 12 18
+set_npc_pos 563 5 12 18
 set_flag 10 1
 pool
 fi
 if_flag 10 1
 sleep 32
-chg_npc_dir 578 left
-chg_npc_img 578 98
+chg_npc_dir 572 left
+chg_npc_img 572 98
 sleep 64
 erase_msg3
-set_npc_pos 586 5 12 18
+set_npc_pos 563 5 12 18
 set_flag 10 2
 pool
 fi
 if_flag 10 2
 sleep 16
-chg_npc_dir 577 down
-chg_speed 578 normal
-step_npc 578 5
+chg_npc_dir 571 down
+chg_speed 572 normal
+step_npc 572 5
 sleep 80
 erase_msg3
-chg_npc_dir 577 left
-set_npc_pos 586 5 12 18
+chg_npc_dir 571 left
+set_npc_pos 563 5 12 18
 set_flag 10 3
 pool
 fi
 if_flag 10 3
-chg_npc_dir 577 down
+chg_npc_dir 571 down
 sleep 64
 erase_msg3
 sleep 8
 msg3 -1 バレット\n「なにやってんだっ！　ナスボケッ！\n　オレに　かわれ！！
-chg_speed 578 fast
-chg_npc_img 578 95
-chg_npc_dir 578 up
-jump_npc 578 same 1
+chg_speed 572 fast
+chg_npc_img 572 95
+chg_npc_dir 572 up
+jump_npc 572 same 1
 sleep 16
-jump_npc 578 same 1
+jump_npc 572 same 1
 sleep 16
-chg_npc_dir 578 down
-step_npc 578 6
+chg_npc_dir 572 down
+step_npc 572 6
 chg_char_state_event
-chg_npc_dir 579 up
+chg_npc_dir 573 up
 sleep 48
-chg_npc_img 578 1
-move_npc 578 down 1
-chg_speed 579 fast
-slide_walk_npc 579 down 1
-chg_npc_dir 577 left
+chg_npc_img 572 1
+move_npc 572 down 1
+chg_speed 573 fast
+slide_walk_npc 573 down 1
+chg_npc_dir 571 left
 sleep 8
-chg_speed 579 normal
-move_npc 579 left 1
-chg_speed 578 normal
-move_npc 578 right 1
-chg_char_img 1
+chg_speed 573 normal
+move_npc 573 left 1
+chg_speed 572 normal
+move_npc 572 right 1
 sleep 5
-chg_speed 578 not_step
-chg_speed 579 not_step
-chg_npc_dir 579 up
+chg_speed 572 not_step
+chg_speed 573 not_step
+chg_npc_dir 573 up
 sleep 19
 erase_msg3
-set_npc_pos 586 5 12 18
+set_npc_pos 563 5 12 18
 set_flag 10 4
 pool
 fi
 if_flag 10 4
 sleep 96
 erase_msg3
-set_npc_pos 586 5 12 18
-chg_npc_dir 579 up
+set_npc_pos 563 5 12 18
+chg_npc_dir 573 up
 set_flag 10 5
 pool
 fi
 if_flag 10 5
 sleep 32
-chg_npc_dir 577 down
+chg_npc_dir 571 down
 sleep 16
-chg_npc_dir 579 left
+chg_npc_dir 573 left
 sleep 48
 erase_msg3
-chg_npc_dir 577 left
-set_npc_pos 586 5 12 18
+chg_npc_dir 571 left
+set_npc_pos 563 5 12 18
 set_flag 10 6
 pool
 fi
 if_flag 10 6
 sleep 16
-chg_npc_dir 577 down
-chg_npc_dir 579 down
-chg_npc_img 579 103
+chg_npc_dir 571 down
+chg_npc_dir 573 down
+chg_npc_img 573 103
 sleep 16
-chg_npc_dir 579 left
+chg_npc_dir 573 left
 sleep 32
 erase_msg3
 sleep 32
-chg_npc_img 579 0
-chg_npc_dir 579 up
+chg_npc_img 573 0
+chg_npc_dir 573 up
 chg_char_state_event
 msg3 -1 『おまえと　しんじゅうする　つもりはない
 sleep 16
-chg_npc_dir 578 down
-chg_char_img 0
+chg_npc_dir 572 down
 sleep 48
-erase_msg3
-chg_speed 578 fast
-slide_walk_npc 578 up 1
-chg_speed 579 fast
-move_npc 579 up 1
-chg_npc_dir 577 left
+chg_speed 572 fast
+slide_walk_npc 572 up 1
+chg_speed 573 fast
+move_npc 573 up 1
+chg_npc_dir 571 left
 sleep 8
-chg_speed 579 normal
-move_npc 579 right 1
-chg_speed 578 normal
-move_npc 578 left 1
+chg_speed 573 normal
+move_npc 573 right 1
+chg_speed 572 normal
+move_npc 572 left 1
 sleep 5
-chg_speed 578 not_step
-chg_speed 579 not_step
-chg_npc_dir 578 down
+chg_speed 572 not_step
+chg_speed 573 not_step
+chg_npc_dir 572 down
 sleep 19
-set_npc_pos 586 5 12 18
+erase_msg3
+set_npc_pos 563 5 12 18
 set_flag 10 1
 pool
 fi
