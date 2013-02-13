@@ -1,0 +1,246 @@
+wait_target_talk 4764
+chg_char_state_event
+kill_through 4781
+kill_through 4782
+erase_msg3
+sleep 48
+chg_npc_img 4770 117
+chg_npc_dir 4771 down
+chg_npc_img 4771 117
+chg_npc_dir 4772 left
+chg_npc_img 4772 115
+if_flag 1 1
+set_flag 9 1
+fi
+sleep 32
+if_flag 0 4
+set_flag 1 0
+fi
+sleep 32
+chg_npc_dir 4772 right
+chg_npc_dir 4770 right
+chg_npc_dir 4771 up
+chg_npc_dir 4761 down
+chg_npc_dir 4762 down
+chg_npc_dir 4760 down
+chg_speed 4760 not_step
+chg_speed 4761 not_step
+chg_speed 4762 not_step
+play_se button.ogg
+kill_through 4783
+kill_through 4784
+kill_through 4785
+kill_through 4786
+kill_through 4787
+kill_through 4788
+kill 4763
+kill 4764
+kill 4765
+kill 4766
+sleep 32
+chg_npc_img 4770 2
+chg_npc_dir 4770 left
+chg_npc_img 4771 1
+chg_npc_dir 4771 left
+chg_npc_img 4772 0
+sleep 11
+chg_speed 4770 normal
+slide_walk_npc 4770 right 1
+chg_speed 4771 normal
+slide_walk_npc 4771 right 1
+chg_speed 4772 normal
+slide_walk_npc 4772 left 1
+sleep 5
+move_char up 5
+chg_speed 4770 not_step
+chg_speed 4771 not_step
+chg_speed 4772 not_step
+chg_npc_dir 4770 up
+chg_npc_dir 4771 up
+chg_npc_dir 4772 up
+sleep 80
+kill 4750
+kill 4751
+kill 4740
+kill 4741
+play_se door_open.wav
+sleep 32
+move_char down 4
+sleep 32
+chg_npc_dir 4770 down
+chg_npc_dir 4771 down
+sleep 16
+if_flag 9 0
+set_flag 11 1
+fi
+sleep 16
+if_flag 11 0
+chg_npc_dir 4772 left
+chg_npc_img 4772 105
+create npc_event 4773 47 12 19 104 0 3 none
+create npc_event 4774 47 12 18 105 0 3 none
+jump_npc 4770 same 1
+loop 2
+sleep 2
+chg_npc_dir 4773 right
+chg_npc_dir 4774 right
+sleep 2
+chg_npc_dir 4773 down
+sleep 2
+chg_npc_dir 4773 left
+sleep 2
+chg_npc_dir 4773 up
+chg_npc_dir 4774 up
+pool
+jump_npc 4770 same 1
+loop 2
+sleep 2
+chg_npc_dir 4773 right
+chg_npc_dir 4774 right
+sleep 2
+chg_npc_dir 4773 down
+sleep 2
+chg_npc_dir 4773 left
+sleep 2
+chg_npc_dir 4773 up
+chg_npc_dir 4774 up
+pool
+step_npc 4770 2
+msg3 -1 ティファ\n「すご～い！　かんぺきだわ！
+chg_npc_img 4771 98
+chg_npc_dir 4771 left
+step_npc 4771 2
+loop 4
+sleep 2
+chg_npc_dir 4773 right
+chg_npc_dir 4774 right
+sleep 2
+chg_npc_dir 4773 down
+sleep 2
+chg_npc_dir 4773 left
+sleep 2
+chg_npc_dir 4773 up
+chg_npc_dir 4774 up
+pool
+loop 5
+sleep 3
+chg_npc_dir 4773 right
+chg_npc_dir 4774 right
+sleep 3
+chg_npc_dir 4773 down
+sleep 3
+chg_npc_dir 4773 left
+sleep 3
+chg_npc_dir 4773 up
+chg_npc_dir 4774 up
+pool
+kill 4773
+kill 4774
+chg_npc_img 4772 0
+chg_npc_dir 4772 up
+add_likability 1 500
+add_likability 2 1000
+set_flag 10 1
+fi
+if_flag 10 0
+jump_npc 4770 same 1
+sleep 16
+jump_npc 4770 same 1
+sleep 16
+step_npc 4770 2
+msg ティファ\n「すご～い！　かんぺきだわ！
+add_likability 1 500
+add_likability 2 500
+fi
+if_flag 9 0
+jump_npc 4770 same 1
+sleep 16
+chg_npc_img 4771 98
+chg_npc_dir 4771 left
+step_npc 4770 2
+set_talk_npc 4770
+msg ティファ\n「さすがね
+reset_talk_npc
+add_likability 1 250
+add_likability 2 500
+fi
+if_flag 1 1
+chg_npc_img 4771 98
+chg_npc_dir 4771 left
+sleep 16
+step_npc 4771 4
+msg バレット\n「もっとスムーズに　いきたいもんだぜ
+msg3 -1 ティファ\n「まぁまぁ……
+jump_npc 4770 same 1
+sleep 16
+jump_npc 4770 same 1
+chg_npc_dir 4772 right
+chg_npc_img 4772 97
+step_npc 4772 4
+sleep 16
+step_npc 4770 2
+sleep 56
+chg_npc_img 4772 0
+chg_npc_dir 4772 down
+sleep 8
+sub_likability 1 500
+sub_likability 2 250
+fi
+if_flag 0 4
+chg_npc_img 4770 98
+chg_npc_dir 4770 right
+sleep 16
+chg_npc_img 4771 98
+chg_npc_dir 4771 left
+chg_npc_dir 4772 up
+step_npc 4770 4
+set_talk_npc 4770
+msg テイファ\n「クラウド　ほんとにソルジャーなの？
+reset_talk_npc
+if_flag 11 3
+chg_npc_img 4771 1
+chg_npc_dir 4771 up
+step_npc 4771 2
+chg_npc_img 4770 2
+chg_npc_dir 4772 up
+msg バレット\n「いってやるな　ティファ\n　みんな　そうおもっている
+chg_npc_img 4772 98
+step_npc 4772 3
+sleep 56
+fi
+sub_likability 1 500
+sub_likability 2 1000
+fi
+sleep 16
+erase_msg3
+chg_npc_img 4770 2
+chg_npc_img 4771 1
+chg_npc_img 4772 0
+chg_speed 4770 normal
+chg_speed 4771 normal
+chg_speed 4772 normal
+move_npc 4770 up 1
+move_npc 4771 up 2
+move_npc 4772 up 3
+sleep 16
+move_npc 4770 left 2
+sleep 16
+move_npc 4771 left 2
+sleep 16
+kill 4770
+chg_char_dir up
+draw_char on
+kill 4772
+sleep 16
+kill 4771
+set_flag 9 1
+set_flag 1 1
+set_flag 0 0
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+chg_char_state_move
+restore_char_img
+erase_msg3

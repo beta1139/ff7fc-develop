@@ -1,0 +1,300 @@
+wait_same_pos
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+backup_char_img
+chg_char_img 0
+set_flag 9 1
+set_flag 1 0
+set_flag 0 0
+create npc_event 4770 47 15 14 2 1 2 none
+move_npc 4770 down 3
+sleep 48
+chg_npc_dir 4770 up
+msg ティファ\n「さんにんにんどうじに　ボタンをおせって\n　ジェシーがいってたわ
+create npc_event 4742 47 13 16 17 0 0 none
+create npc_event 4772 47 15 14 0 1 2 none
+draw_char off
+move_char down 2
+move_npc 4772 down 2
+sleep 16
+move_npc 4770 left 1
+sleep 5
+chg_speed 4770 not_step
+sleep 11
+msg3 112 バレット\n「チッ……\n　またかよ
+create npc_event 4771 47 15 16 98 2 2 none
+step_npc 4771 2
+move_npc 4772 left 2
+move_char left 2
+sleep 32
+move_npc 4772 down 3
+move_char down 1
+chg_npc_img 4771 1
+move_npc 4771 right 1
+sleep 16
+move_npc 4771 down 2
+sleep 32
+move_npc 4771 left 2
+move_npc 4772 right 1
+chg_char_dir up
+sleep 5
+chg_speed 4772 not_step
+sleep 16
+chg_speed 4771 not_step
+sleep 11
+erase_msg3
+sleep 8
+if_flag 10 0
+chg_npc_dir 4772 up
+msg 『バレット　あしを　ひっぱるなよ
+chg_npc_dir 4771 left
+chg_npc_img 4771 98
+step_npc 4771 3
+sleep 16
+chg_npc_dir 4772 right
+chg_npc_dir 4770 down
+msg3 80 ティファ\n「？
+sleep 64
+chg_npc_img 4771 1
+chg_npc_dir 4771 left
+sleep 16
+erase_msg3
+chg_npc_dir 4770 left
+set_flag 11 0
+fi
+if_flag 10 1
+set_flag 11 1
+fi
+if_flag 10 2
+set_flag 11 1
+fi
+if_flag 10 3
+set_flag 11 1
+fi
+if_flag 10 4
+set_flag 11 2
+fi
+if_flag 10 5
+set_flag 11 2
+fi
+if_flag 10 6
+set_flag 11 2
+fi
+if_flag 11 1
+chg_npc_dir 4771 left
+chg_npc_img 4771 98
+msg バレット\n「ぜんかいは　マグレじゃないってとこを\n　みせてもうらうぜ
+chg_npc_dir 4772 up
+msg 『バレット　あしを　ひっぱるなよ
+chg_npc_dir 4771 up
+chg_npc_img 4771 95
+jump_npc 4771 same 1
+sleep 16
+jump_npc 4771 same 1
+chg_npc_dir 4772 right
+chg_npc_dir 4770 down
+msg3 64 ティファ\n「？
+sleep 16
+chg_speed 4771 fast
+step_npc 4771 4
+sleep 32
+chg_npc_img 4771 1
+chg_npc_dir 4771 left
+sleep 16
+erase_msg3
+chg_npc_dir 4770 left
+fi
+if_flag 11 2
+chg_npc_dir 4771 left
+chg_npc_img 4771 98
+msg バレット\n「こんどこそ　たのむぜ？\n　もとソルジャー？さんよ
+chg_npc_dir 4772 down
+chg_npc_img 4772 103
+sleep 16
+chg_npc_dir 4772 left
+chg_npc_img 4771 1
+chg_npc_dir 4771 left
+chg_npc_dir 4770 down
+msg3 80 ティファ\n「？
+sleep 56
+chg_npc_img 4772 0
+chg_npc_dir 4772 right
+chg_npc_img 4771 1
+chg_npc_dir 4771 left
+sleep 24
+erase_msg3
+chg_npc_dir 4770 left
+fi
+sleep 24
+chg_char_dir left
+set_flag 10 0
+create event_generator 4783 47 1 1 17 0 0 @047/makouro_gimmick_b04.txt
+create event_generator 4784 47 1 2 17 0 0 @047/makouro_gimmick_b05.txt
+create event_generator 4785 47 1 1 17 0 0 @047/makouro_gimmick_b06.txt
+create event_generator 4789 47 1 2 17 0 0 @047/makouro_gimmick_b10.txt
+step_npc 4770 2
+msg ティファ\n「はじめるわよ
+loop_inf
+chg_char_state_move
+sleep 32
+set_npc_pos 4763 47 12 30
+set_npc_pos 4764 47 12 17
+sleep 10
+set_npc_pos 4764 47 12 30
+set_npc_pos 4765 47 12 17
+sleep 20
+chg_npc_img 4770 117
+chg_npc_dir 4771 down
+chg_npc_img 4771 117
+sleep 32
+set_npc_pos 4765 47 12 30
+set_npc_pos 4766 47 12 17
+sleep 32
+chg_npc_dir 4770 right
+chg_npc_dir 4771 up
+set_npc_pos 4766 47 12 30
+chg_npc_dir 4761 down
+chg_npc_dir 4762 down
+chg_speed 4761 not_step
+chg_speed 4762 not_step
+play_se switch.ogg
+sleep 56
+chg_npc_img 4770 2
+chg_npc_dir 4770 left
+chg_npc_img 4771 1
+chg_npc_dir 4771 left
+chg_npc_dir 4761 up
+chg_npc_dir 4762 up
+chg_speed 4761 not_move
+chg_speed 4762 not_move
+msg3 -1 ティファ\n「しっぱいね　もういちど
+if_flag 10 0
+sleep 96
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 1
+set_flag 9 0
+pool
+fi
+if_flag 10 1
+sleep 32
+chg_npc_dir 4771 down
+sleep 32
+chg_npc_dir 4771 left
+sleep 32
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 2
+pool
+fi
+if_flag 10 2
+sleep 16
+chg_npc_dir 4771 left
+chg_npc_img 4771 98
+chg_speed 4771 normal
+step_npc 4771 5
+sleep 80
+chg_npc_img 4771 1
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 3
+pool
+fi
+if_flag 10 3
+sleep 64
+erase_msg3
+sleep 8
+chg_char_state_event
+if_flag 11 3
+msg3 -1 バレット\n「このニセソルジャー！！　\n　ほうしゅうは　なしだっ！！
+fi
+if_flag 11 2
+msg3 -1 バレット\n「だから　ウスノロッ！！\n　いいかげんに　しやがれ！！
+set_flag 11 3
+fi
+if_flag 11 1
+msg3 -1 バレット\n「なにやってんだっ！\n　ぜんかいはマグレか！！
+set_flag 11 2
+fi
+if_flag 11 0
+msg3 -1 バレット\n「なにやってんだっ！　ほんきでやれ！！
+set_flag 11 1
+fi
+chg_speed 4771 fast
+chg_npc_img 4771 95
+chg_npc_dir 4771 up
+jump_npc 4771 same 1
+sleep 16
+jump_npc 4771 same 1
+sleep 16
+chg_npc_dir 4771 down
+step_npc 4771 6
+chg_npc_dir 4772 up
+sleep 48
+chg_npc_img 4771 1
+chg_npc_dir 4771 left
+sleep 8
+chg_npc_dir 4772 right
+sleep 24
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 4
+set_flag 1 1
+pool
+fi
+if_flag 10 4
+sleep 32
+chg_npc_dir 4770 down
+sleep 32
+chg_npc_dir 4770 left
+sleep 32
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 5
+pool
+fi
+if_flag 10 5
+sleep 16
+chg_npc_dir 4770 right
+chg_npc_img 4770 98
+sleep 64
+chg_npc_img 4770 2
+chg_npc_dir 4770 left
+sleep 16
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 6
+pool
+fi
+if_flag 10 6
+sleep 64
+erase_msg3
+sleep 8
+chg_char_state_event
+msg3 -1 ティファ\n「ちょっと　いいかげんに　してよね！！
+chg_npc_dir 4770 right
+chg_npc_img 4770 98
+step_npc 4770 4
+sleep 16
+chg_npc_dir 4771 left
+chg_npc_img 4771 98
+chg_npc_dir 4772 up
+sleep 64
+chg_npc_img 4770 2
+chg_npc_dir 4770 left
+sleep 8
+chg_npc_img 4771 1
+chg_npc_dir 4772 right
+sleep 24
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 1
+set_flag 0 4
+if_flag 11 1
+set_flag 11 2
+fi
+pool
+fi
