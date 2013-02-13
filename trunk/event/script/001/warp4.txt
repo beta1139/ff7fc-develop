@@ -30,32 +30,26 @@ kill 135
 kill 136
 kill 139
 kill 600
-create npc_event 576 5 15 18 34 2 0 none
-create npc_event 577 5 16 17 35 2 2 none
-create npc2 580 5 13 18 17 0 0 
-create npc2 581 5 13 20 17 0 0 
-create npc_event 562 5 14 19 116 0 0 none
-create npc_event 563 5 14 18 116 0 0 none
-create npc_event 564 5 14 17 116 0 0 none
-create npc2 586 5 12 18 17 0 0 
-create npc2 587 5 12 30 17 0 0 
-create npc2 588 5 12 31 17 0 0 
-create npc2 589 5 12 32 17 0 0 
+create npc2 542 5 24 7 17 0 0 
+create npc_event 560 5 14 19 116 0 0 none
+create npc_event 561 5 14 18 116 0 0 none
+create npc_event 562 5 14 17 116 0 0 none
+chg_npc_y_offset 560 -2
+chg_npc_y_offset 561 -2
 chg_npc_y_offset 562 -2
-chg_npc_y_offset 563 -2
-chg_npc_y_offset 564 -2
-chg_npc_y_offset 586 0
-chg_npc_y_offset 587 0
-chg_npc_y_offset 588 0
-chg_npc_y_offset 589 0
-create event_generator 590 5 15 14 17 0 0 @005/makouro_gimmick_a01.txt
-create event_generator 592 5 1 1 17 0 0 @005/makouro_gimmick_a04.txt
-create event_generator 593 5 1 2 17 0 0 @005/makouro_gimmick_a05.txt
-create event_generator 594 5 1 1 17 0 0 @005/makouro_gimmick_a06.txt
-create event_generator 598 5 1 2 17 0 0 @005/makouro_gimmick_a10.txt
+create npc2 563 5 12 18 17 0 0 
+create npc2 564 5 12 30 17 0 0 
+create npc2 565 5 12 31 17 0 0 
+create npc2 566 5 12 32 17 0 0 
+create npc_event 570 5 15 18 34 2 0 none
+create npc_event 571 5 16 17 35 2 2 none
+create event_generator 580 5 24 7 17 0 0 @005/makouro_gimmick_a00.txt
+create event_generator 581 5 15 14 17 0 0 @005/makouro_gimmick_a01.txt
+create event_generator 583 5 1 1 17 0 0 @005/makouro_gimmick_a04.txt
+create event_generator 584 5 1 2 17 0 0 @005/makouro_gimmick_a05.txt
+create event_generator 585 5 1 1 17 0 0 @005/makouro_gimmick_a06.txt
+create event_generator 589 5 1 2 17 0 0 @005/makouro_gimmick_a10.txt
 fadein
-create event_generator 569 5 24 7 17 0 0 @005/makouro_gimmick_a00.txt
-create npc2 568 5 24 7 17 0 0 
 fi
 if_flag 3 1
 warp 600 11 16 up
