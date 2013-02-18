@@ -1,11 +1,9 @@
 wait_same_pos
-set_flag 10 3
 if_flag 9 0
 add_party_mem 1
 add_party_mem 2
 fi
 sleep 16
-if_flag 10 3
 create npc_event 4802 48 7 24 1 1 2 none
 move_npc 4802 down 2
 sleep 16
@@ -409,20 +407,6 @@ sleep 16
 move_char left 1
 erase_msg3
 sleep 8
-fi
-if_flag 10 4
-stop_bgm
-create npc_event 4802 48 2 26 1 3 3 none
-create npc_event 4801 48 1 26 2 3 3 none
-create npc_event 4820 48 4 26 122 2 0 none
-set_active_msg 4802
-chg_event_move_char_speed fast
-move_char down 2
-sleep 16
-move_char left 1
-sleep 32
-play_event_bgm Ex-06-air_buster1.ogg
-fi
 step_npc 4801 1
 msg ティファ\n「これ　ソルジャーなの？
 jump_char same 1
