@@ -229,4 +229,6 @@ set_key_valid left
 set_key_valid down
 set_key_valid right
 set_key_valid start
+add_likability 1 500
+add_likability 2 500
 fadein
