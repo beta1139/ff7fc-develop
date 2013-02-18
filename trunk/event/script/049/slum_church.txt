@@ -247,8 +247,11 @@ sleep 16
 fadein
 sleep 16
 play_event_bgm 1-12-Flowers_Blooming_in_the_Church.ogg
-sleep 128
+sleep 112
 flush
+sleep 4
+flush
+sleep 16
 chg_npc_img 4900 0
 chg_npc_dir 4900 up
 chg_speed 4901 normal
