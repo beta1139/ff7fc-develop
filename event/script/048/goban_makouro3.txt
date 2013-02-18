@@ -1,9 +1,9 @@
 wait_same_pos
+set_flag 10 3
 if_flag 9 0
 add_party_mem 1
 add_party_mem 2
 fi
-sleep 16
 create npc_event 4802 48 7 24 1 1 2 none
 move_npc 4802 down 2
 sleep 16
@@ -231,13 +231,11 @@ move_char down 3
 chg_speed 4820 normal
 jump_npc 4820 same 2
 sleep 32
-chg_npc_dir 4807 down
-move_npc 4820 right 1
-sleep 16
 play_event_bgm Ex-07-air_buster2.ogg
+chg_npc_dir 4807 down
 chg_speed 4820 fast
-move_npc 4820 right 9
-sleep 8
+move_npc 4820 right 10
+sleep 16
 chg_npc_dir 4801 down
 sleep 8
 jump_npc_target_pos 4801 6 25
@@ -259,10 +257,12 @@ kill 4805
 sleep 8
 kill 4804
 sleep 8
+chg_speed 4820 not_move
 kill 4803
 sleep 40
 chg_npc_dir 4820 left
 sleep 16
+chg_speed 4820 normal
 jump_npc 4820 same 1
 sleep 16
 play_event_bgm Ex-06-air_buster1.ogg
@@ -433,11 +433,9 @@ sleep 4
 play_event_bgm Ex-08-nothing.ogg
 stop_bgm
 sleep 4
-if_flag 10 3
 boss_encount 234
 sleep 64
 wait_encount_end
-fi
 stop_bgm
 create npc_event 4800 48 5 26 0 2 2 none
 draw_char off
