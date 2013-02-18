@@ -16,26 +16,26 @@ create npc_event 2624 26 4 7 105 0 3 none
 loop 4
 sleep 2
 chg_npc_dir 2623 right
-chg_npc_dir 2624 right
+chg_npc_img 2624 17
 sleep 2
 chg_npc_dir 2623 down
 sleep 2
 chg_npc_dir 2623 left
 sleep 2
 chg_npc_dir 2623 up
-chg_npc_dir 2624 up
+chg_npc_img 2624 105
 pool
 loop 2
 sleep 3
 chg_npc_dir 2623 right
-chg_npc_dir 2624 right
+chg_npc_img 2624 17
 sleep 3
 chg_npc_dir 2623 down
 sleep 3
 chg_npc_dir 2623 left
 sleep 3
 chg_npc_dir 2623 up
-chg_npc_dir 2624 up
+chg_npc_img 2624 105
 pool
 kill 2623
 kill 2624
