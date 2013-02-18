@@ -83,27 +83,27 @@ jump_npc 4770 same 1
 loop 2
 sleep 2
 chg_npc_dir 4773 right
-chg_npc_dir 4774 right
+chg_npc_img 4774 17
 sleep 2
 chg_npc_dir 4773 down
 sleep 2
 chg_npc_dir 4773 left
 sleep 2
 chg_npc_dir 4773 up
-chg_npc_dir 4774 up
+chg_npc_img 4774 105
 pool
 jump_npc 4770 same 1
 loop 2
 sleep 2
 chg_npc_dir 4773 right
-chg_npc_dir 4774 right
+chg_npc_img 4774 17
 sleep 2
 chg_npc_dir 4773 down
 sleep 2
 chg_npc_dir 4773 left
 sleep 2
 chg_npc_dir 4773 up
-chg_npc_dir 4774 up
+chg_npc_img 4774 105
 pool
 step_npc 4770 2
 msg3 -1 ティファ\n「すご～い！　かんぺきだわ！
@@ -113,26 +113,26 @@ step_npc 4771 2
 loop 4
 sleep 2
 chg_npc_dir 4773 right
-chg_npc_dir 4774 right
+chg_npc_img 4774 17
 sleep 2
 chg_npc_dir 4773 down
 sleep 2
 chg_npc_dir 4773 left
 sleep 2
 chg_npc_dir 4773 up
-chg_npc_dir 4774 up
+chg_npc_img 4774 105
 pool
 loop 5
 sleep 3
 chg_npc_dir 4773 right
-chg_npc_dir 4774 right
+chg_npc_img 4774 17
 sleep 3
 chg_npc_dir 4773 down
 sleep 3
 chg_npc_dir 4773 left
 sleep 3
 chg_npc_dir 4773 up
-chg_npc_dir 4774 up
+chg_npc_img 4774 105
 pool
 kill 4773
 kill 4774
