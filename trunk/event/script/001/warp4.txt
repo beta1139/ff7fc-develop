@@ -2,6 +2,26 @@ set_eternal_event
 wait_target_talked 163
 reset_talked_flag 163
 if_flag 3 0
+stop_bgm
+fadeout
+sleep 16
+kill_through_range 1000 3299
+draw_char off
+warp 34 7 16 up
+add_party_mem 1
+add_party_mem 2
+add_item 4000
+add_item 4100
+set_flag 0 0
+set_flag 1 1
+set_flag 9 1
+set_flag 10 0
+set_flag 11 2
+sleep 16
+play_bgm
+fadein
+fi
+if_flag 3 1
 fadeout
 stop_bgm
 set_flag 1 1
@@ -51,10 +71,10 @@ create event_generator 585 5 1 1 17 0 0 @005/makouro_gimmick_a06.txt
 create event_generator 589 5 1 2 17 0 0 @005/makouro_gimmick_a10.txt
 fadein
 fi
-if_flag 3 1
+if_flag 3 2
 warp 600 11 16 up
 play_bgm
 set_flag 0 0
 fi
-if_flag 3 2
+if_flag 3 3
 fi
