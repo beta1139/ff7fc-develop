@@ -3,25 +3,8 @@ chg_dir_to_char 4798
 if_flag 3 0
 kill_through 4510
 kill_through 4512
-kill_through 4760
-kill_through 4761
-kill_through 4762
-kill_through 4763
-kill_through 4764
-kill_through 4765
-kill_through 4766
 kill_through 4781
 sleep 16
-create npc_event 4760 47 14 19 116 0 0 none
-create npc_event 4761 47 14 18 116 0 0 none
-create npc_event 4762 47 14 17 116 0 0 none
-chg_npc_y_offset 4760 -2
-chg_npc_y_offset 4761 -2
-chg_npc_y_offset 4762 -2
-create npc2 4763 47 12 17 17 0 0 
-create npc2 4764 47 12 30 17 0 0 
-create npc2 4765 47 12 31 17 0 0 
-create npc2 4766 47 12 32 17 0 0 
 create event_generator 4781 47 15 14 17 0 0 @047/makouro_gimmick_b01.txt
 set_talk_npc 4798
 msg i7\n「ボタンギミックイベントを　せいせいしました\n　わたしは　じっさいは　そんざいしないnpcですので\n　ころあいをみて　だれか　けしといてください
