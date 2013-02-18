@@ -1,5 +1,4 @@
 wait_same_pos
-set_flag 10 3
 if_flag 9 0
 add_party_mem 1
 add_party_mem 2
