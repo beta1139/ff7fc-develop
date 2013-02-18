@@ -41,12 +41,12 @@ id,type,bgm,battle_back,monster_party_id
 39,0,1-08-Lurking_in_the_Darkness.ogg,5,205/206/207/210/211/217
 40,0,1-08-Lurking_in_the_Darkness.ogg,5,205/206/207/210/211/217
 41,0,1-08-Lurking_in_the_Darkness.ogg,5,205/206/207/210/211/217
-42,0,1-03-Makou_Reactor.ogg,6,188/189/190/191
+42,0,1-03-Makou_Reactor.ogg,6,229/230/190/191
 43,0,1-03-Makou_Reactor.ogg,6,188/189/190/191
-44,0,1-03-Makou_Reactor.ogg,6,188/189/190/191
+44,0,1-03-Makou_Reactor.ogg,6,231/189/190/191
 45,0,1-03-Makou_Reactor.ogg,6,188/189/190/191
 46,1,1-03-Makou_Reactor.ogg,6,188/189/190/191
-47,0,1-03-Makou_Reactor.ogg,6,188/189/190/191
+47,0,1-03-Makou_Reactor.ogg,6,218/220/222
 48,0,through,6,188/189/190/191
 49,1,1-12-Flowers_Blooming_in_the_Church.ogg,0,188/189/190/191
 50,1,1-12-Flowers_Blooming_in_the_Church.ogg,0,188/189/190/191
