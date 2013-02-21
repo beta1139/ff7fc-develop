@@ -153,7 +153,6 @@ sleep 16
 msg はなうり\n「ねえ　なにがあったの？\n\n\n#2\n　　にげたほうがいい\n　　きにするな……　それより\n\n\n[[]][[]]
 if_flag 3 0
 msg 「そうなの！？\n　なんだか　わからないけど　そうするわね
-set_flag 7 2
 sub_likability 3 500
 active 1301
 set_flag_wall 1301
@@ -182,7 +181,6 @@ sub_gil 1
 fi
 if_flag 3 1
 msg 「……ちょっとがっかり　かな
-set_flag 7 2
 sub_likability 3 250
 fi
 chg_speed 1301 slow
