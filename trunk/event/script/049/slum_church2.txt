@@ -3,7 +3,6 @@ chg_type 4901 npc_event
 set_talk_npc 4901
 msg 「……また　あえたね
 reset_talk_npc
-set_flag 7 1
 if_char_dir down
 create npc_event 4900 49 5 10 0 1 2 none
 draw_char off
