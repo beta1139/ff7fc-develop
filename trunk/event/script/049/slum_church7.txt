@@ -1,0 +1,248 @@
+wait_same_pos
+play_event_bgm 1-13-Turk's_Theme.ogg
+chg_type 4903 npc_event
+chg_speed 4903 normal
+create npc_event 4907 49 6 21 31 0 2 none
+create npc_event 4908 49 6 22 31 0 2 none
+create npc_event 4909 49 6 23 31 0 2 none
+sleep 32
+move_char down 1
+sleep 8
+move_npc 4903 up 1
+set_active_msg 4903
+sleep 8
+msg 『どこの　だれだか　しらないが……
+sleep 24
+chg_char_dir right
+sleep 8
+chg_char_dir left
+sleep 8
+chg_char_dir right
+sleep 8
+chg_char_dir left
+sleep 8
+chg_char_dir down
+sleep 24
+msg 『しらない……？
+clear_text 6
+set_text_alpha 6 0
+sleep 8
+set_text 6 　 　   　　　　　『……しってるよ
+sleep 4
+set_text_alpha 6 25
+sleep 4
+set_text_alpha 6 50
+sleep 4
+set_text_alpha 6 75
+sleep 4
+set_text_alpha 6 100
+sleep 80
+set_screen_effect add 255 255 255 100
+play_se white_noise.ogg
+set_text_alpha 6 0
+clear_text 6
+sleep 24
+stop_se
+reset_screen_effect
+sleep 8
+flush
+sleep 8
+chg_char_dir right
+sleep 8
+chg_char_dir left
+sleep 8
+chg_char_dir down
+sleep 24
+msg 『そうだ……おれはしっている
+sleep 16
+step_char 1
+sleep 16
+msg 『そのせいふくは……
+move_npc 4907 up 4
+move_npc 4908 up 5
+move_npc 4909 up 6
+sleep 64
+move_npc 4907 left 1
+sleep 16
+chg_npc_dir 4907 up
+move_npc 4908 right 1
+sleep 16
+chg_npc_dir 4908 up
+step_npc 4903 2
+msg 「……おねえちゃん\n　こいつ　なんだか　へんだぞ　と
+jump_npc 4907 same 1
+jump_npc 4908 same 1
+jump_npc 4909 same 1
+sleep 16
+jump_npc 4907 same 1
+jump_npc 4908 same 1
+jump_npc 4909 same 1
+sleep 16
+jump_char same 1
+sleep 16
+chg_event_move_char_speed fast
+step_char 3
+sleep 24
+msg 『だまれ！　しんらのイヌめ！
+step_npc 4909 2
+msg 「レノさん！\n　こいつやっちまいますか？
+sleep 16
+chg_npc_dir 4903 down
+sleep 16
+msg レノ\n「かんがえちゅうだぞ　と
+chg_npc_dir 4903 up
+sleep 32
+chg_speed 4906 fast
+step_npc 4906 4
+set_talk_npc 4906
+msg エアリス\n「ここで　たたかってほしくない！\n　おはな　ふまないでほしいの！
+reset_talk_npc
+move_npc 4906 left 1
+sleep 8
+move_npc 4906 up 2
+sleep 16
+chg_npc_dir 4906 down
+sleep 8
+jump_npc 4906 same 1
+sleep 32
+chg_char_dir up
+sleep 16
+move_npc 4906 left 1
+sleep 8
+chg_char_dir down
+move_npc 4906 up 4
+sleep 16
+chg_event_move_char_speed normal
+step_char 1
+sleep 16
+chg_npc_dir 4906 down
+sleep 16
+chg_event_move_char_speed fast
+move_char up 1
+sleep 8
+move_char left 2
+jump_npc 4906 same 1
+sleep 16
+move_char up 2
+sleep 16
+move_char left 1
+sleep 8
+move_char up 3
+sleep 24
+chg_char_dir down
+sleep 8
+chg_speed 4906 normal
+step_npc 4906 1
+set_talk_npc 4906
+msg エアリス\n「でぐち　おくにあるから
+reset_talk_npc
+move_npc 4906 down 1
+sleep 8
+chg_speed 4906 fast
+kill 4906
+add_party_mem 3
+move_char up 3
+sleep 24
+chg_event_move_char_speed normal
+draw_char off
+sleep 32
+move_char down 6
+move_npc 4903 up 1
+sleep 32
+move_npc 4903 up 1
+sleep 32
+move_npc 4903 up 1
+sleep 32
+move_char right 3
+move_npc 4903 up 1
+sleep 16
+move_npc 4907 up 1
+move_npc 4908 up 1
+move_npc 4909 up 2
+sleep 16
+chg_speed 4907 not_move
+chg_speed 4908 not_move
+move_npc 4903 up 1
+sleep 16
+chg_speed 4909 not_move
+set_active_msg 4907
+set_active_msg 4908
+set_active_msg 4909
+sleep 16
+msg レノ\n「あれは…………まこうのめ
+sleep 16
+chg_npc_dir 4903 down
+sleep 16
+msg レノ\n「ま　いいかぁ\n　おしごとおしごと　と
+chg_npc_dir 4903 up
+sleep 16
+move_char up 1
+move_npc 4903 up 1
+sleep 16
+move_char left 3
+move_npc 4903 left 3
+sleep 48
+move_char up 3
+move_npc 4903 up 3
+sleep 64
+msg3 -1 レノ\n「あっ！
+jump_npc 4903 same 1
+sleep 64
+erase_msg3
+chg_event_move_char_speed fast
+move_char down 3
+chg_speed 4903 fast
+move_npc 4903 down 3
+sleep 24
+move_char right 1
+move_npc 4903 right 1
+sleep 24
+msg レノ\n「おはな　ふまないでね…だと
+sleep 32
+chg_npc_dir 4903 up
+chg_speed 4907 fast
+chg_speed 4908 fast
+chg_speed 4909 fast
+jump_npc 4907 same 2
+jump_npc 4908 same 2
+jump_npc 4909 same 2
+msg3 -1 「レノさん　ふんだ
+sleep 32
+jump_npc 4907 same 2
+jump_npc 4908 same 2
+jump_npc 4909 same 2
+sleep 32
+erase_msg3
+step_npc 4907 6
+step_npc 4908 6
+step_npc 4909 6
+sleep 8
+msg3 -1 「はな　ぐしゃぐしゃ！
+sleep 64
+erase_msg3
+sleep 8
+jump_npc 4907 same 1
+jump_npc 4908 same 1
+jump_npc 4909 same 1
+msg3 -1 「おこられる～！
+sleep 16
+jump_npc 4907 same 1
+jump_npc 4908 same 1
+jump_npc 4909 same 1
+sleep 16
+step_npc 4907 5
+step_npc 4908 5
+step_npc 4909 5
+sleep 40
+erase_msg3
+chg_event_move_char_speed normal
+fadeout
+sleep 32
+kill 4903
+kill 4907
+kill 4908
+kill 4909
+warp 50 1 1 right
+draw_char on
+sleep 48
+fadein

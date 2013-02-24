@@ -1,0 +1,137 @@
+wait_target_talk 4905
+chg_type 4905 npc_event
+step_npc 4905 2
+set_talk_npc 4905
+msg 「も～すこし　まってて
+reset_talk_npc
+if_char_dir down
+create npc_event 4900 49 6 11 0 1 2 none
+draw_char off
+move_char left 1
+move_npc 4900 left 1
+sleep 64
+move_char down 1
+move_npc 4900 down 1
+fi
+if_char_dir right
+create npc_event 4900 49 5 12 0 3 2 none
+draw_char off
+backup_npc_dir 4900
+fi
+if_char_dir up
+create npc_event 4900 49 6 13 0 0 2 none
+draw_char off
+move_char left 1
+move_npc 4900 left 1
+sleep 64
+move_char up 1
+move_npc 4900 up 1
+fi
+if_char_dir left
+create npc_event 4900 49 7 12 0 2 2 none
+draw_char off
+move_char down 1
+move_npc 4900 down 1
+sleep 56
+move_char left 1
+move_npc 4900 left 1
+sleep 56
+move_char left 1
+move_npc 4900 left 1
+sleep 56
+move_char up 1
+move_npc 4900 up 1
+fi
+sleep 24
+chg_speed 4905 normal
+sleep 32
+chg_npc_img 4905 3
+chg_npc_dir 4905 left
+set_talk_npc 4905
+msg 「あ！
+reset_talk_npc
+chg_char_dir right
+chg_npc_dir 4900 right
+chg_dir_to_char 4905
+jump_npc 4905 same 1
+sleep 16
+step_npc 4905 2
+set_talk_npc 4905
+msg 「そういえば　まだだった
+reset_talk_npc
+sleep 32
+step_npc 4905 2
+set_talk_npc 4905
+msg 「おたがい　なまえ　しらないね
+reset_talk_npc
+sleep 32
+step_npc 4905 2
+set_talk_npc 4905
+msg 「わたし　はなうりのエアリス\n　よろしくね
+reset_talk_npc
+sleep 16
+step_npc 4900 1
+sleep 8
+chg_type 4903 npc_event
+chg_npc_img 4903 30
+set_npc_pos 4903 49 6 19
+chg_speed 4903 normal
+move_npc 4903 up 1
+msg 『おれは　クラウドだ\n\n\n\n　しごとは……\n　しごとは　なんでもや　だ
+sleep 16
+chg_speed 4903 not_move
+sleep 16
+step_npc 4905 1
+set_talk_npc 4905
+msg 「はぁ……なんでもやさん
+reset_talk_npc
+chg_npc_dir 4905 up
+chg_npc_img 4905 15
+step_npc 4905 2
+sleep 16
+step_npc 4900 1
+sleep 16
+msg 『なんでもやるのさ
+jump_npc 4905 same 1
+sleep 16
+jump_npc 4905 same 1
+sleep 16
+step_npc 4905 4
+sleep 8
+jump_npc 4900 same 1
+sleep 16
+chg_speed 4900 fast
+step_npc 4900 2
+sleep 16
+msg 『なにが　おかしい！\n　どうしてわらう！
+chg_npc_dir 4905 left
+chg_npc_img 4905 3
+sleep 16
+chg_npc_img 4905 15
+step_npc 4905 2
+set_talk_npc 4905
+sleep 40
+msg 「ごめんなさい……でも　ね
+reset_talk_npc
+chg_speed 4903 normal
+move_npc 4903 up 1
+sleep 16
+chg_speed 4903 not_move
+chg_npc_img 4905 3
+chg_npc_dir 4905 down
+sleep 16
+chg_speed 4900 normal
+chg_npc_dir 4900 down
+sleep 64
+chg_npc_dir 4900 right
+sleep 16
+msg エアリス\n「タイミングわるいなぁ
+create npc 4906 49 6 12 3 1 4 エアリス\n「ねえ　クラウド\n　ボディガードも　しごとのうち？
+kill 4905
+chg_type 4903 npc3
+draw_char on
+kill 4900
+create event_generator 4914 49 5 15 17 0 0 @049/slum_church5_1.txt
+create event_generator 4915 49 6 15 17 0 0 @049/slum_church5_2.txt
+create event_generator 4916 49 7 15 17 0 0 @049/slum_church5_3.txt
+create event_generator 4917 49 1 1 17 0 0 @049/slum_church6.txt

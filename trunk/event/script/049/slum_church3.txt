@@ -1,0 +1,159 @@
+wait_target_talk 4904
+chg_type 4904 npc_event
+set_talk_npc 4904
+msg 「ね　マテリア　もってるんだね
+reset_talk_npc
+if_char_dir down
+create npc_event 4900 49 5 10 0 1 2 none
+draw_char off
+backup_npc_dir 4900
+fi
+if_char_dir right
+create npc_event 4900 49 4 11 0 3 2 none
+draw_char off
+backup_npc_dir 4900
+fi
+if_char_dir left
+create npc_event 4900 49 6 11 0 2 2 none
+draw_char off
+backup_npc_dir 4900
+fi
+if_char_dir up
+create npc_event 4900 49 5 12 0 0 2 none
+draw_char off
+backup_npc_dir 4900
+fi
+sleep 16
+chg_speed 4904 normal
+chg_npc_img 4904 3
+chg_dir_to_char 4904
+sleep 32
+step_npc 4904 1
+set_talk_npc 4904
+sleep 16
+msg 「わたしも　もってるんだ
+reset_talk_npc
+sleep 32
+step_npc 4900 1
+msg 『いまは　マテリアは　めずらしくも　なんともない
+sleep 16
+jump_npc 4904 same 1
+sleep 16
+step_npc 4904 2
+set_talk_npc 4904
+msg 「わたしのは　とくべつ\n　だって　なんのやくにも　たたないの
+reset_talk_npc
+sleep 16
+chg_npc_dir 4900 right
+chg_npc_img 4900 97
+step_npc 4900 1
+sleep 40
+chg_npc_img 4900 0
+restore_npc_dir 4900
+sleep 24
+step_npc 4900 2
+msg 『……やくにたたない？\n　つかいかたを　しらないだけだろ？
+sleep 16
+step_npc 4904 2
+set_talk_npc 4904
+msg 「そんなこと　ないけど……\n　でも　やくにたたなくていいの\n\n\n　みにつけてると　あんしんできるし\n　おかあさんが　のこしてくれた……
+reset_talk_npc
+if_char_dir down
+chg_npc_dir 4904 down
+fi
+if_char_dir left
+chg_npc_dir 4904 left
+fi
+if_char_dir up
+chg_npc_dir 4904 up
+fi
+if_char_dir right
+chg_npc_dir 4904 right
+fi
+sleep 80
+chg_dir_to_char 4904
+sleep 16
+step_npc 4904 2
+set_talk_npc 4904
+msg 「ね　いろいろ　おはなし　したいんだけど\n　どうかな？\n\n\n　せっかく　こうして\n　また　あえたんだし……ね？\n\n\n#2\n　　ああ　かまわない\n　　はなすことなどない\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+jump_npc 4904 same 1
+sleep 16
+step_npc 4904 3
+set_talk_npc 4904
+msg 「じゃ　まってて\n　おはなのていれ　すぐおわるから
+reset_talk_npc
+chg_npc_dir 4904 up
+chg_npc_img 4904 15
+jump_npc 4904 same 1
+sleep 16
+jump_npc 4904 same 1
+sleep 16
+step_npc 4904 2
+sleep 48
+chg_npc_img 4904 3
+fi
+if_flag 3 1
+if_char_dir down
+jump_npc 4904 same 1
+sleep 16
+fi
+if_char_dir left
+jump_npc 4904 same 1
+sleep 16
+fi
+if_char_dir up
+sleep 8
+chg_npc_img 4904 99
+fi
+if_char_dir right
+jump_npc 4904 same 1
+sleep 16
+fi
+step_npc 4904 2
+set_talk_npc 4904
+msg 「………………なるほど\n あ～あ　だれのせいかな～\n　せっかく　げんきにそだったのにね～\n　おはなさん　かわいそ
+reset_talk_npc
+chg_npc_dir 4900 right
+chg_npc_img 4900 97
+step_npc 4900 3
+sleep 80
+chg_npc_img 4904 3
+chg_npc_img 4900 0
+restore_npc_dir 4900
+fi
+if_char_dir down
+move_npc 4904 right 1
+sleep 16
+move_npc 4904 down 1
+sleep 16
+create npc2 4905 49 6 12 3 1 0 
+fi
+if_char_dir left
+move_npc 4904 down 1
+sleep 16
+move_npc 4904 right 1
+sleep 16
+create npc2 4905 49 6 12 3 3 0 
+fi
+if_char_dir up
+move_npc 4904 right 1
+sleep 16
+move_npc 4904 down 1
+sleep 16
+create npc2 4905 49 6 12 3 1 0 
+fi
+if_char_dir right
+move_npc 4904 right 1
+sleep 16
+move_npc 4904 down 1
+sleep 16
+create npc2 4905 49 6 12 3 1 0 
+fi
+kill 4904
+chg_npc_dir 4905 right
+chg_npc_img 4905 15
+create event_generator 4913 49 1 1 17 0 0 @049/slum_church4.txt
+draw_char on
+kill 4900
