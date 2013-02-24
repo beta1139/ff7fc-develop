@@ -866,6 +866,7 @@ sleep 3
 chg_npc_dir 4800 left
 sleep 48
 fadeout
+recover_active_chara
 sleep 40
 reset_screen_effect
 del_party_mem 1
