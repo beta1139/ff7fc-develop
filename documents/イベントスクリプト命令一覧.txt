@@ -121,6 +121,14 @@ warp_ff3 (map_id) (x) (y) (direction)
 warp_ff3_out (map_id) (x) (y) (direction)
   キャラの位置をFF3風エフェクトでワープさせる
 
+warp_ff3_2 (map_id) (x) (y) (warp_type) (direction)
+  キャラの位置をFF3風エフェクトでワープさせる
+  warp_type:
+    0: 画面分割で中央から外にスクロール、SEはwarp_in.wav
+	1: 画面分割で外から中央にスクロール、SEはwarp_out.wav
+	2: 外から中央にマスク→中央から外にマスク、SEはwarp_in.wav
+	3: 外から中央にマスク→中央から外にマスク、SEはwarp_out.wav
+
 chg_char_img (idx)
   キャラ表示切替。idxには0~2を指定可。ステータス画面のキャラの並びに対応
 
