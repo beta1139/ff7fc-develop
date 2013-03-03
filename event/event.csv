@@ -258,7 +258,7 @@ npc,2019,20,27,33,17,0,0,"「ほんじつは　へいてん　いたしました
 npc,2400,24,2,6,78,3,0,"「あんなこでも　いなくなってみるとね
 　なんだか　おちつかなくて
 　……ふしぎなものね"
-npc,2401,24,4,6,77,2,2,"「ハッハッ……
+npc,2401,24,4,6,77,2,1,"「ハッハッ……
 　むすこは　もう　たびだち　ましたかな？
 
 
@@ -312,14 +312,32 @@ npc,2401,24,4,6,77,2,2,"「ハッハッ……
 event_generator,2402,24,1,1,17,0,0,"@024/nanabangai_slum23.txt"
 event_generator,2500,25,4,7,17,0,0,"@025/nanabangai_slum9.txt"
 npc_event,2501,25,4,5,79,3,0,
-npc2,2502,25,4,6,17,0,0,
+npc2,2502,25,4,6,17,0,0,""
 event_generator,2503,25,1,1,17,0,0,"@025/nanabangai_slum10.txt"
-npc2,2504,25,7,8,89,2,0,
+npc2,2504,25,7,8,89,2,0,""
 event_generator,2505,25,1,2,17,0,0,"@025/nanabangai_slum11.txt"
+npc,2510,25,4,9,17,0,0,"「よう！！
+　なんだ　おまえ？
+
+
+　おれに　はなしかけるってことは　しろうとだな？
+
+
+
+#2
+　　しろうとだ
+　　おれは　もとソルジャーの　クラウドだ
+
+
+[[]]
+[[]]"
+npc_event,2511,25,4,10,51,0,0,"none"
+event_generator,2530,25,1,1,17,0,0,"@025/nanabangai_slum25.txt"
+event_generator,2531,25,2,10,17,0,0,"@025/nanabangai_slum26.txt"
 event_generator,2701,27,4,6,17,0,0,"@027/nanabangai_slum14_1.txt"
 event_generator,2702,27,5,5,17,0,0,"@027/nanabangai_slum14_2.txt"
 event_generator,2703,27,6,6,17,0,0,"@027/nanabangai_slum14_3.txt"
-npc2,2600,26,4,7,17,0,0,
+npc2,2600,26,4,7,17,0,0,""
 npc,2601,26,3,8,90,3,0,"「ん………！！
 　なんだ　てめぇは？
 　ここは　ぶがいしゃ　たちいりきんしだぞ
@@ -394,10 +412,11 @@ event_generator,2102,21,1,2,17,0,0,"@021/nanabangai_slum8_2.txt"
 npc_event,2106,21,4,5,77,0,0,マテリアや
 npc2,2107,21,4,6,17,0,0,
 npc2,2108,21,5,5,17,0,0,
-event_generator,2200,22,5,11,17,0,0,"@022/seventhheaven1.txt"
+event_generator,2200,22,5,13,17,0,0,"@022/seventhheaven1.txt"
 event_generator,2260,22,5,12,17,0,0,"@022/seventhheaven_out1_before.txt"
 npc_event,2202,22,4,7,2,3,0,"ティファ
-「マリン　てれちゃってる　みたい"
+「クラウド　ごめんね
+　マリン　てれちゃってる　みたい"
 npc_event,2203,22,2,9,34,3,0,"ジェシー
 「う。か。つ。……
 　なんだか　ドキドキしてる
@@ -780,7 +799,7 @@ npc,4902,49,6,23,17,0,0,"「もうすこし　じかんをやるぞ　と"
 npc3,4903,49,7,24,17,1,0,"「オレにかまうな　だと"
 event_generator,4910,49,20,11,17,0,0,"@049/slum_church1.txt"
 event_generator,4911,49,1,1,17,0,0,"@049/slum_church2.txt"
-event_generator,70200,702,11,12,17,0,0,"@702/tifa'smemory1.txt"
+event_generator,70200,702,11,16,17,0,0,"@702/tifa'smemory1.txt"
 npc_event,70201,702,11,21,17,0,2,"none"
 npc_event,70202,702,11,20,17,1,2,"none"
 npc_event,70500,705,8,14,121,0,3,"none"

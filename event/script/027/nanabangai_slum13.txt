@@ -30,6 +30,9 @@ sleep 80
 recover_active_chara
 if_flag 9 0
 play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+if_flag 0 4
+play_event_bgm 1-05-Tifa's_Theme.ogg
+fi
 fi
 if_flag 9 1
 play_event_bgm 1-06-Barrett's_Theme.ogg

@@ -44,6 +44,8 @@ kill 2306
 kill 2307
 kill 2308
 kill 2309
+kill_through 2530
+kill_through 2531
 create npc_event 2020 20 36 19 34 0 0 none
 create npc_event 2021 20 37 18 35 2 0 none
 create npc_event 2022 20 36 18 36 1 0 none
@@ -55,6 +57,7 @@ create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこを　みがく　たびに　でっ
 create npc 2007 20 32 20 88 3 0 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
 create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
 create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
+chg_param 2510 「てへへ…ひとばんじゃ　おぼえきれんぜ\n　おう！しろうと！！\n　わるいが　にかいのあいぼうから　おそわってくれ
 kill_through 2015
 kill_through 2016
 kill_through 2017
