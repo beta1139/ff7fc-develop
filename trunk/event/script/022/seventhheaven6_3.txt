@@ -65,11 +65,12 @@ draw_char off
 sleep 48
 chg_npc_dir 2207 right
 sleep 64
-move_char up 4
-sleep 64
+chg_event_move_char_speed slow
+move_char up 3
+sleep 96
 fadeout
 sleep 80
-warp 702 11 12 down
+warp 702 11 16 down
 fadein
 kill 2212
 kill 2230

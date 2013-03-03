@@ -1,10 +1,9 @@
 set_eternal_event
 wait_target_talk 2506
 reset_talk_flag 2506
-backup_char_img
-chg_char_img 0
 chg_type 2506 npc_event
 chg_dir_to_char 2506
+chg_speed 2506 not_step
 set_talk_npc 2506
 msg 「おっさん　やすむきに　なったかい？\n\n\n\n#3\n　　1ギル\n　　10ギル\n　　あげない\n\n[[「チッ！！　おっさん\n　このはなしは　なかったことに　してくれ]][[「しめしめ……]][[]]
 reset_talk_npc
@@ -35,12 +34,21 @@ kill 2702
 kill 2703
 fi
 if_flag 3 2
-jump_npc 2506 same 2
-sleep 32
+if_char_dir down
+create npc_event 2500 25 7 7 0 1 2 none
+draw_char off
+fi
+jump_npc 2506 same 1
+sleep 16
+step_npc 2506 2
 set_talk_npc 2506
 msg 「そりゃ　ドケチって　やつだぜ　おっさん
 reset_talk_npc
 chg_npc_dir 2506 left
 chg_type 2506 npc2
+if_char_dir down
+draw_char on
+kill 2500
 fi
-restore_char_img
+fi
+chg_speed 2506 not_move

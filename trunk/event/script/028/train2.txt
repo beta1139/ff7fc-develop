@@ -70,7 +70,9 @@ sleep 16
 jump_npc 2802 same 1
 sleep 16
 step_npc 2802 2
+set_talk_npc 2802
 msg ティファ\n「クラウド　こっち！\n　ろせんずモニタでも　みてよ
+reset_talk_npc
 move_npc 2802 right 2
 move_char left 5
 sleep 32

@@ -1,10 +1,12 @@
 wait_same_pos
-create npc_event 2207 22 5 11 0 0 0 none
+create npc_event 2207 22 5 13 0 0 0 none
 chg_speed 2207 normal
 draw_char off
-move_npc 2207 up 1
-move_char up 4
-sleep 64
+move_npc 2207 up 3
+move_char up 6
+sleep 16
+close_door 2290
+sleep 80
 msg ÅuÇ∆Ç§ÇøÇ·ÇÒÅIÅI
 chg_speed 2202 normal
 chg_speed 2206 normal
@@ -76,7 +78,7 @@ chg_type 2202 npc
 chg_type 2203 npc
 chg_type 2204 npc
 chg_type 2205 npc
-chg_type 2206 npc
+chg_type 2206 npc3
 chg_speed 2202 not_move
 chg_speed 2203 not_move
 chg_speed 2204 not_move

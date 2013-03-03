@@ -74,7 +74,9 @@ move_char up 2
 sleep 32
 chg_npc_dir 2201 up
 chg_npc_dir 2202 up
+set_talk_npc 2202
 msg ティファ\n「マリン！　おみせ　たのむね！
+reset_talk_npc
 sleep 16
 msg3 -1 マリン\n「うん！！\n　おしごと　がんばってね
 move_npc 2202 down 3
@@ -107,7 +109,9 @@ chg_npc_dir 2201 up
 move_char up 2
 sleep 32
 chg_npc_dir 2202 up
+set_talk_npc 2202
 msg ティファ\n「マリン！　おみせ　たのむね！
+reset_talk_npc
 sleep 16
 msg3 -1 マリン\n「うん！！\n　おしごと　がんばってね
 move_npc 2202 down 3

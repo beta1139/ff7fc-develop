@@ -62,4 +62,4 @@ create event_generator 2232 22 8 7 17 1 0 @022/seventhheaven6_3.txt
 chg_type 2307 npc3
 chg_speed 2307 not_step
 chg_param 2307 　へんじがない\n　ただのしかば\n\n\n……きぜつ　しているようだ
-chg_param 2308 ウェッジ\n「……う　うぅ……\n　せっかく　ひなんしたのに……
+set_flag 0 4

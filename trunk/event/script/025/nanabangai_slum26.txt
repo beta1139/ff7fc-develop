@@ -1,0 +1,7 @@
+wait_same_pos
+kill_through 1910
+kill_through 1911
+kill_through 1912
+kill_through 2013
+chg_type 2011 npc
+chg_param 2011 バレット\n「よし！\n　さきに　はいってろ

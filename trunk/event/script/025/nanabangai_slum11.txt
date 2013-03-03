@@ -1,8 +1,7 @@
 wait_target_talk 2504
 chg_dir_to_char 2504
-backup_char_img
-chg_char_img 0
 chg_type 2504 npc_event
+chg_speed 2504 not_step
 msg 「チッ！！\n　おっさん　しけたツラ　してんな\n　もしかして　つかれてんじゃないの？\n\n　いえの　さんかいで　やすませて　あげても\n　いいけど…\n\n\n　それには　ひとつ　じょうけんが　あるぜ\n　このオレに　こづかい　くれるならな\n\n\n#3\n　　1ギル\n　　10ギル\n　　あげない\n\n[[「チッ！！　おっさん\n　このはなしは　なかったことに　してくれ]][[「しめしめ……]][[]]
 if_flag 3 0
 chg_npc_dir 2504 left
@@ -33,8 +32,13 @@ kill 2702
 kill 2703
 fi
 if_flag 3 2
+if_char_dir down
+create npc_event 2500 25 7 7 0 1 2 none
+draw_char off
+fi
+jump_npc 2504 same 1
+sleep 16
 step_npc 2504 2
-sleep 32
 set_talk_npc 2504
 msg 「そりゃ　ドケチって　やつだぜ　おっさん
 reset_talk_npc
@@ -42,5 +46,8 @@ chg_npc_dir 2504 left
 create npc2 2506 25 7 8 89 2 0 
 kill 2504
 create event_generator 2507 25 2 1 17 1 0 @025/nanabangai_slum12.txt
+if_char_dir down
+draw_char on
+kill 2500
 fi
-restore_char_img
+fi
