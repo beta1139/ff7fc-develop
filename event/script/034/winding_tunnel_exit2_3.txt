@@ -1,31 +1,31 @@
 set_eternal_event
 wait_same_pos
 if_flag 11 0
-warp_ff3 34 8 4 down
+warp_ff3_2 34 8 4 3 down
 set_flag 11 5
 end
 fi
 if_flag 11 1
-warp_ff3 34 8 4 down
+warp_ff3_2 34 8 4 3 down
 set_flag 11 0
 end
 fi
 if_flag 11 2
-warp_ff3 34 8 4 down
+warp_ff3_2 34 8 4 3 down
 set_flag 11 1
 end
 fi
 if_flag 11 3
-warp_ff3 34 8 4 down
+warp_ff3_2 34 8 4 3 down
 set_flag 11 2
 end
 fi
 if_flag 11 4
-warp_ff3 34 8 4 down
+warp_ff3_2 34 8 4 3 down
 set_flag 11 3
 end
 fi
 if_flag 11 5
-warp_ff3 33 8 4 down
+warp_ff3_2 33 8 4 3 down
 end
 fi
