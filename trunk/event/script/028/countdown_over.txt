@@ -592,6 +592,8 @@ fi
 sleep 32
 kill_through 2815
 kill_through 3013
+kill_through 2820
+kill_through 2821
 reset_screen_effect
 reset_slide_walk_char_flag
 chg_event_move_char_speed normal

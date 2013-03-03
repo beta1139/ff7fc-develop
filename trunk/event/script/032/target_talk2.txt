@@ -208,10 +208,11 @@ sleep 16
 chg_npc_dir 3205 down
 sleep 64
 chg_npc_dir 3204 up
-sleep 8
+sleep 16
 kill_through 2815
 kill_through 3013
-sleep 8
+kill_through 2820
+kill_through 2821
 reset_screen_effect
 reset_slide_walk_char_flag
 chg_event_move_char_speed normal
