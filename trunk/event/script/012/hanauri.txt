@@ -123,8 +123,7 @@ move_npc 1325 down 2
 chg_npc_dir 1301 left
 sleep 16
 kill 1321
-create npc 1329 13 5 29 84 3 1 「ニャーン
-set_flag_wall 1329
+create npc2 1329 13 5 29 84 3 1 
 move_npc 1326 down 1
 sleep 16
 sleep 16
@@ -150,6 +149,7 @@ move_npc 1301 up 2
 sleep 32
 move_npc 1301 right 1
 sleep 16
+create event_generator 1340 13 1 1 17 0 0 @013/cat.txt
 msg はなうり\n「ねえ　なにがあったの？\n\n\n#2\n　　にげたほうがいい\n　　きにするな……　それより\n\n\n[[]][[]]
 if_flag 3 0
 msg 「そうなの！？\n　なんだか　わからないけど　そうするわね
@@ -195,3 +195,4 @@ sleep 32
 move_npc 1301 down 4
 sleep 128
 kill 1301
+
