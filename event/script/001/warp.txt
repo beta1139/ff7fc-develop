@@ -21,29 +21,85 @@ create npc 400 4 1 26 36 3 0 ƒEƒFƒbƒW\nu‚¨‚ê‚Í@‚¾‚Á‚µ‚ã‚Â‚±‚¤‚ğ@‚©‚­‚Ù‚µ‚Ä‚¨‚
 fi
 if_flag 3 1
 fadeout
+draw_char off
 sleep 30
 stop_bgm
-warp 12 5 21 up
+warp 11 4 5 up
+sleep 64
+fadein
+play_se timer.ogg
+sleep 48
+play_se_loop timer2.ogg
+step_npc 1103 4
+msg ƒrƒbƒOƒX\nu‚Ù‚µ‚Ì‚¢‚Ì‚¿cc@‚¿‚å‚Á‚Æ‚Í@‚Ì‚Ñ‚½‚©‚È
+sleep 16
+chg_npc_dir 1104 down
+sleep 16
+step_npc 1104 2
+msg ƒEƒFƒbƒW\nu‚»‚¤‚Á‚·‚Ë
+sleep 48
+chg_npc_dir 1101 left
+sleep 64
+msg ƒoƒŒƒbƒg\nucccc
+sleep 48
+chg_npc_dir 1104 up
+sleep 16
+stop_se
+sleep 16
+chg_speed 1102 fast
+chg_npc_dir 1102 down
+sleep 32
+chg_npc_dir 1100 up
+chg_npc_dir 1101 up
+jump_npc 1102 same 1
+sleep 16
+step_npc 1102 3
+msg ƒWƒFƒV[\nu‚Å‚«‚½I\n@‚³‚ª‚Á‚Ä
+sleep 16
+chg_speed 1100 fast
+chg_speed 1101 fast
+chg_speed 1103 fast
+chg_speed 1104 fast
+move_npc 1100 down 8
+move_npc 1101 down 8
+move_npc 1102 down 8
+move_npc 1103 down 8
+move_npc 1104 down 8
+sleep 80
+create explode 1140 11 4 4 0 0 0 none
+create explode 1141 11 4 3 0 0 0 none
+sleep 8
+create map_obj 1150 11 4 4 32 0 0 
+create map_obj 1151 11 4 3 32 0 0 
+create explode 1142 11 3 4 0 0 0 none
+create explode 1143 11 3 3 0 0 0 none
+play_se bomb_little.ogg
+fadeout
+sleep 160
+warp 12 5 23 up
 draw_char on
 set_flag 0 0
-play_se timer.ogg
-sleep 192
 play_bgm
+chg_npc_dir 1200 down
+chg_npc_dir 1201 down
+chg_npc_dir 1202 down
+chg_npc_dir 1203 down
 fadein
-sleep 80
-inactive 1200
-inactive 1201
-inactive 1202
-inactive 1203
+play_se jump.ogg
+jump_char up 2
+sleep 32
+play_se landing.ogg
 chg_npc_dir 1200 right
 chg_npc_dir 1201 left
 chg_npc_dir 1202 left
 chg_npc_dir 1203 left
-msg ƒrƒbƒOƒX\nu‚Ù‚µ‚Ì‚¢‚Ì‚¿cc\n@‚¿‚å‚Á‚Æ‚Í@‚Ì‚Ñ‚½‚©‚È\n\nƒEƒFƒbƒW\nu‚»‚¤‚Á‚·‚Ëcc\n\n\nƒoƒŒƒbƒg\nu‚³‚ @‚Ğ‚«‚ ‚°‚é‚¼\n@ƒ‰ƒ“ƒfƒu[‚¿‚Ä‚ñ‚Í@‚Í‚¿‚Î‚ñ‚ª‚¢ƒXƒe[ƒVƒ‡ƒ“I\n@‚©‚­‚¶@‚½‚ñ‚Ç‚­‚±‚¤‚Ç‚¤\n@‚ê‚Á‚µ‚á‚É@‚Ì‚è‚±‚Ş‚ñ‚¾I
-active 1200
-active 1201
-active 1202
-active 1203
+sleep 16
+jump_npc 1200 same 1
+sleep 16
+step_npc 1200 2
+set_talk_npc 1200
+msg ƒoƒŒƒbƒg\nu‚³‚ @‚Ğ‚«‚ ‚°‚é‚¼\n@ƒ‰ƒ“ƒfƒu[‚¿‚Ä‚ñ‚Í@‚Í‚¿‚Î‚ñ‚ª‚¢ƒXƒe[ƒVƒ‡ƒ“I\n@‚©‚­‚¶@‚½‚ñ‚Ç‚­‚±‚¤‚Ç‚¤\n@‚ê‚Á‚µ‚á‚É@‚Ì‚è‚±‚Ş‚ñ‚¾I
+reset_talk_npc
 chg_speed 1200 normal
 chg_speed 1201 normal
 chg_speed 1202 normal
@@ -55,7 +111,9 @@ move_npc 1200 right 1
 sleep 16
 msg w‚¨@‚¨‚¢I
 chg_npc_dir 1200 down
+set_talk_npc 1200
 msg ƒoƒŒƒbƒg\nu‚©‚Ë‚Ì@‚Í‚È‚µ‚È‚ç\n@‚Ô‚¶‚É@ƒAƒWƒg‚É@‚©‚¦‚Á‚Ä‚©‚ç‚¾
+reset_talk_npc
 move_npc 1200 up 8
 sleep 128
 kill 1200
