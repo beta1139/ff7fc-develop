@@ -24,12 +24,13 @@ kill 3301
 kill 3302
 kill 3303
 wait_encount_end
-msg3 64 「テロリストのしゅうげきだ！
-sleep 64
+play_event_bgm Ex-09-siren.ogg
+msg3 80 「テロリストのしゅうげきだ！
+sleep 80
 erase_msg3
 sleep 8
-msg3 64 「アバランチがおそってきたぞ！
-sleep 64
+msg3 80 「アバランチがおそってきたぞ！
+sleep 80
 erase_msg3
 sleep 8
 msg 『けいびへいの　ぞうえんが　くるようだ\n　このままでは　あぶない\n\n\n#2\n　　にげる\n　　ふみとどまる\n\n\n[[]][[]]
@@ -58,18 +59,20 @@ move_npc 3303 right 1
 sleep 8
 move_npc 3303 up 1
 sleep 8
+play_event_bgm Ex-08-nothing.ogg
 encount 218
 sleep 64
 kill 3301
 kill 3302
 kill 3303
 wait_encount_end
-msg3 64 「しんにゅうしゃだ！
-sleep 64
+play_event_bgm Ex-09-siren.ogg
+msg3 80 「しんにゅうしゃだ！
+sleep 80
 erase_msg3
 sleep 8
-msg3 64 「アバランチがおそってきたぞ！
-sleep 64
+msg3 80 「アバランチがおそってきたぞ！
+sleep 80
 erase_msg3
 backup_char_img
 chg_char_img 0
