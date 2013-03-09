@@ -75,6 +75,11 @@ save_point,950,9,6,10,0,0,0,
 event_generator,951,9,6,10,17,0,0,"@save_msg.txt"
 treasure_item,1000,10,8,17,3,0,0,4000
 event_generator,1001,10,8,14,17,0,0,"@010/ichiban_makouro7.txt"
+npc_event,1100,11,3,8,0,3,2,""
+npc_event,1101,11,4,9,1,0,2,""
+npc_event,1102,11,4,5,34,0,0,""
+npc_event,1103,11,3,11,35,0,2,""
+npc_event,1104,11,3,6,36,0,2,""
 npc_event,1200,12,4,20,1,3,0,""
 npc_event,1201,12,6,20,34,2,0,""
 npc_event,1202,12,7,20,35,2,0,""
