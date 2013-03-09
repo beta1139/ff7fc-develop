@@ -354,6 +354,7 @@ chg_speed 4820 not_move
 sleep 40
 slide_walk_npc 4802 left 1
 sleep 8
+play_event_bgm Ex-07-air_buster2.ogg
 chg_speed 4820 fast
 move_npc 4820 left 2
 slide_walk_npc 4802 left 1
@@ -368,6 +369,7 @@ msg3 -1 ティファ\n「たすけて　クラウド！
 sleep 32
 chg_event_move_char_speed fast
 move_char down 6
+play_event_bgm Ex-07-air_buster2.ogg
 chg_speed 4820 fast
 move_npc 4820 left 2
 slide_walk_npc 4802 left 2
