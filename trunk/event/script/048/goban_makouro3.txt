@@ -22,32 +22,21 @@ step_npc 4802 2
 msg バレット\n「こっちだ！
 move_npc 4802 right 3
 chg_char_dir right
-sleep 16
-create npc_event 4803 48 14 26 32 2 2 none
+sleep 32
+create npc_event 4803 48 14 26 32 2 1 none
 move_npc 4803 left 1
-sleep 16
-create npc_event 4804 48 14 26 32 2 2 none
 sleep 16
 chg_speed 4802 slow
-chg_speed 4803 slow
-chg_speed 4804 slow
 slide_walk_npc 4802 left 1
-move_npc 4803 left 1
-move_npc 4804 left 1
-sleep 32
-create npc_event 4805 48 14 26 32 2 1 none
-sleep 32
-slide_walk_npc 4802 left 1
-move_npc 4803 left 1
-move_npc 4804 left 1
-move_npc 4805 left 1
-sleep 32
-create npc_event 4806 48 14 26 32 2 1 none
-chg_speed 4802 normal
+sleep 16
+create npc_event 4804 48 14 26 32 2 1 none
+sleep 16
 chg_speed 4803 not_move
 chg_speed 4804 not_move
-chg_speed 4805 not_move
-chg_speed 4806 not_move
+sleep 16
+slide_walk_npc 4802 left 1
+sleep 32
+chg_speed 4802 normal
 step_npc 4802 2
 msg バレット\n「しんらへい！？
 chg_npc_dir 4802 left
@@ -164,8 +153,6 @@ move_npc 4802 up 3
 sleep 8
 chg_npc_dir 4803 up
 chg_npc_dir 4804 up
-chg_npc_dir 4805 up
-chg_npc_dir 4806 up
 sleep 16
 jump_npc 4802 same 2
 sleep 32
@@ -200,12 +187,8 @@ sleep 24
 play_se fingersnap.ogg
 chg_npc_dir 4803 left
 chg_npc_dir 4804 left
-chg_npc_dir 4805 left
-chg_npc_dir 4806 left
 chg_speed 4803 fast
 chg_speed 4804 fast
-chg_speed 4805 fast
-chg_speed 4806 fast
 sleep 40
 play_event_bgm Ex-06-air_buster1.ogg
 sleep 16
@@ -246,14 +229,8 @@ sleep 8
 chg_npc_dir 4800 right
 chg_npc_dir 4802 right
 chg_npc_dir 4801 right
-move_npc 4803 right 3
-move_npc 4804 right 2
-move_npc 4805 right 1
-chg_npc_dir 4806 right
-kill 4806
-sleep 8
-kill 4805
-sleep 8
+sleep 16
+move_npc 4803 right 1
 kill 4804
 sleep 8
 chg_speed 4820 not_move
@@ -264,7 +241,6 @@ sleep 16
 chg_speed 4820 normal
 jump_npc 4820 same 1
 sleep 16
-play_event_bgm Ex-06-air_buster1.ogg
 chg_speed 4820 not_move
 msg プレジデントしんら\n「わがしゃの　へいきかいはつ　ぶもんが\n　しさくした　きどうへい　（エアバスター）だ\n\n　キミたちとの　せんとうデータは\n　こんごの　かいはつの　きちょうなサンプルとして\n　りようさせてもらうよ
 chg_speed 4800 normal
@@ -400,9 +376,7 @@ sleep 8
 chg_npc_dir 4801 right
 sleep 8
 chg_speed 4820 not_move
-sleep 16
-play_event_bgm Ex-06-air_buster1.ogg
-sleep 16
+sleep 32
 move_char left 1
 erase_msg3
 sleep 8
