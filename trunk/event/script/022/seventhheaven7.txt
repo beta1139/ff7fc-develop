@@ -198,8 +198,6 @@ create event_generator 2629 26 1 1 17 0 0 @026/beginner's_hall5.txt
 chg_npc_img 2691 29
 chg_speed 2400 not_step
 sleep 400
-stop_bgm
-sleep 16
 recover_active_chara
 warp 23 2 8 right
 create event_generator 2240 22 8 5 17 0 0 @022/seventhheaven8.txt

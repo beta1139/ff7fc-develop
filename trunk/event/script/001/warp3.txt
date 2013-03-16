@@ -116,8 +116,6 @@ chg_npc_img 1763 9
 chg_npc_img 1764 10
 chg_npc_img 1765 4
 sleep 400
-stop_bgm
-sleep 16
 recover_active_chara
 warp 23 2 8 right
 create event_generator 2240 22 8 5 17 0 0 @022/seventhheaven8.txt
