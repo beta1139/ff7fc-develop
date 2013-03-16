@@ -140,6 +140,16 @@ kill_through 2014
 kill_through 2011
 kill_through 2015
 kill_through 2017
-kill_through 2007
-kill_through 2009
+kill 2007
+kill 2009
 sleep 8
+chg_npc_dir 2006 up
+set_npc_pos 2006 20 26 22
+chg_type 2006 npc3
+chg_param 2006 「ヘイ！！　あけてくれってんだよ！\n　ベイビー！！\n\n\n　おれだよ！　ジョニーだよ！\n　かあちゃ～ん！！
+create npc 2007 20 28 22 88 1 0 「あなた　しってる？\n\n\n\n#2\n　　なにを……\n　　きょうみない\n\n\n[[　あのティファちゃんの　おみせのことよ\n　（セブンスヘブン）ってさかば\n\n\n　わたしは　じじょうつうのうえに　おせっかいだから\n　いろいろしってるのよね\n　ききたいでしょう？\n\n#2\n　　すごくききたい\n　　きょうみない\n\n\n[[　あのさかばの　めいぶつ\n　バレットと　てしたの3にん\n　ときどき　こうなのよ\n\n　とつぜん　おきゃくをおいだして\n　ゴチャゴチャやってるの\n　なんか　あやしいのよ\n　かやくのにおいとか　するのよね\n　あぶないわ\n　きっと　いけないことを　しているに\n　ちがいないわ]][[]]]][[]]
+chg_param 2008 「いじょうなし！\n　ただいま　スパイちゅう！\n\n\n　ああ！！\n　なんかでてました！！\n　ほうこく～！！　ほうこく～！！
+create npc 2009 20 26 23 70 1 0 「このいえには　テレビがあんだけどよ\n　ケチなおばさんが　いれてくんねぇのさ\n　まあ　みてろって
+create event_generator 2034 20 1 1 17 0 0 @020/nanabangai_slum23.txt
+create event_generator 2035 20 1 1 17 0 0 @020/nanabangai_slum24.txt
+kill_through 2531
