@@ -131,8 +131,8 @@ move_npc 1653 right 8
 sleep 16
 kill 1650
 kill 1651
-kill 1652
 sleep 16
+kill 1652
 move_char right 6
 sleep 96
 chg_npc_dir 1653 up

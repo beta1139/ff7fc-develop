@@ -2,60 +2,58 @@ wait_same_pos
 create npc2 2305 23 2 5 17 0 0 
 chg_type 2304 npc_event
 chg_speed 2304 normal
-move_npc 2304 down 1
-sleep 16
 chg_npc_dir 2304 left
 chg_npc_img 2304 95
-play_se attack_tifa.wav
 step_npc 2304 1
-sleep 32
-chg_npc_img 2304 1
-move_npc 2304 up 1
-sleep 16
-chg_npc_dir 2304 left
-chg_npc_img 2304 95
 play_se attack_tifa.wav
-step_npc 2304 1
 sleep 8
+create map_obj 2350 23 1 4 37 0 0 
+sleep 16
+kill 2350
 chg_speed 2304 fast
-chg_npc_img 2304 1
-move_npc 2304 down 1
-sleep 8
-chg_npc_img 2304 95
 step_npc 2304 1
 play_se attack_tifa.wav
-chg_npc_dir 2304 left
-sleep 32
+sleep 4
+create map_obj 2350 23 1 4 37 0 0 
+sleep 12
+kill 2350
+step_npc 2304 1
+play_se attack_tifa.wav
+sleep 4
+create map_obj 2350 23 1 4 37 0 0 
+sleep 12
+kill 2350
+step_npc 2304 1
+play_se attack_tifa.wav
+sleep 4
+create map_obj 2350 23 1 4 37 0 0 
+sleep 12
+kill 2350
+sleep 16
 chg_speed 2304 normal
-chg_npc_img 2304 1
-move_npc 2304 up 1
-sleep 16
-chg_npc_dir 2304 left
-chg_npc_img 2304 95
-play_se attack_tifa.wav
 step_npc 2304 1
-sleep 16
-chg_npc_img 2304 1
-move_npc 2304 down 1
-sleep 16
-chg_npc_dir 2304 left
-chg_npc_img 2304 95
 play_se attack_tifa.wav
-step_npc 2304 1
 sleep 8
+create map_obj 2350 23 1 4 37 0 0 
+sleep 16
+kill 2350
 chg_speed 2304 fast
-chg_npc_img 2304 1
-move_npc 2304 up 1
-sleep 8
-chg_npc_dir 2304 left
-chg_npc_img 2304 95
-play_se attack_tifa.wav
 step_npc 2304 1
-sleep 48
+play_se attack_tifa.wav
+sleep 4
+create map_obj 2350 23 1 4 37 0 0 
+sleep 12
+kill 2350
+step_npc 2304 1
+play_se attack_tifa.wav
+sleep 4
+create map_obj 2350 23 1 4 37 0 0 
+sleep 12
+kill 2350
+sleep 16
 chg_speed 2304 normal
 chg_npc_img 2304 1
 chg_npc_dir 2304 up
-sleep 16
 chg_type 2304 npc
 chg_speed 2304 not_move
 kill 2305
