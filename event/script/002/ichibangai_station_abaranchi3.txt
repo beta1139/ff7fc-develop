@@ -4,27 +4,42 @@ sleep 16
 move_char left 2
 sleep 32
 chg_npc_dir 203 right
-inactive 201
-inactive 202
-inactive 203
 msg ビッグス\n「さすが　ソルジャー！\n　でもよ　はんしんらグループ　アバランチに\n　ソルジャーが　さんかするなんて　スゲエよな！
 chg_npc_dir 202 right
+sleep 16
+set_talk_npc 202
 msg ジェシー\n「そのはなしって　ほんとうだったの？\n　ソルジャーって　いったら　わたしたちの\n　てきでしょ？\n どうして　そのソルジャーが　わたしたち\n アバランチに　きょうりょく　するわけ？
+reset_talk_npc
+sleep 16
 chg_npc_dir 203 left
-msg ビッグス\n「はやとちりするな　ジェシー　もとソルジャー\n　なんだってさ　いまはもう　しんらをやめちまって\n　オレたちの　なかまってわけさ
+msg ビッグス\n「はやとちりするな　ジェシー\n　もとソルジャー　なんだってさ\n\n　いまはもう　しんらをやめちまって\n　オレたちの　なかまってわけさ
 chg_npc_dir 202 up
 chg_npc_dir 203 right
-msg ビッグス\n「まだ　なまえきいて　なかったよな\n　おしえてくれ\n\n『……クラウドだ\n「クラウドか　おれは……\n\n\n『あんたたちの　なまえなんて　きょうみないね\n　どうせ　このしごとが　おわったら　おわかれだ
+sleep 16
+msg ビッグス\n「まだ　なまえきいてなかったよな\n　おしえてくれ
+step_char 1
+sleep 16
+msg 『……クラウドだ
+msg3 64 ビッグス\n「クラウドか　おれは……
+sleep 56
+step_char 1
+sleep 8
+erase_msg3
+sleep 8
+msg 『あんたたちの　なまえなんて　きょうみないね\n　どうせ　このしごとが　おわったら　おわかれだ
 create npc_event 252 2 30 6 1 2 2 none
 move_npc 252 left 4
-sleep 64
+sleep 16
+chg_npc_dir 201 right
+chg_npc_dir 202 right
+sleep 48
+jump_npc 252 same 2
+set_active_msg 252
 chg_char_dir right
-msg 「なにやってんだ　オマエたち！\n　かたまって　こうどうするなって\n　いってんだろ！\n\n　ターゲットは　いちばんまこうろ\n　まこうろまえの　ブリッジに　しゅうごうだぞ！
+sleep 16
+msg バレット\n「なにやってんだ　オマエたち！\n　かたまって　こうどうするなって\n　いってんだろ！\n　ターゲットは　いちばんまこうろ\n　まこうろまえの　ブリッジに　しゅうごうだぞ！
 play_se door_open.wav
 kill 200
-active 201
-active 202
-active 203
 chg_speed 201 normal
 chg_speed 202 normal
 chg_speed 203 normal
@@ -45,8 +60,15 @@ kill 201
 sleep 16
 chg_npc_dir 252 down
 chg_char_dir up
-msg 「もとソルジャー……\n　チッ　しんようできねえな
+step_npc 252 1
+set_talk_npc 252
+msg バレット \n「もとソルジャー……\n　チッ　しんようできねえな
+reset_talk_npc
+jump_npc 252 same 1
+sleep 16
+set_talk_npc 252
 msg バレット \n「キャンセルボタン(しょきせっていでは　z　)を\n　おしながら　ほうこうキーをおせば\n　はやくはしることができる\n　おくれずに　ついてこい！
+reset_talk_npc
 move_npc 252 left 1
 sleep 16
 move_npc 252 up 3

@@ -10,7 +10,7 @@ sleep 16
 create npc_event 2800 28 3 10 0 3 2 none
 move_npc 2800 up 3
 sleep 32
-create npc_event 2801 28 3 10 1 0 2 バレット\n「ヘッ！　もとソルジャーの　ものしりさんよ\n　ごばんまこうろの　あたりはくわしいんだろ！\n\n　おまえさんの　しったかぶり　せつめいが\n　ききてえもんだな！
+create npc_event 2801 28 3 10 1 0 2 バレット\n「ヘッ！　もとソルジャーの　ものしりさんよ\n　5ばんまこうろの　あたりはくわしいんだろ！\n\n　おまえさんの　しったかぶり　せつめいが\n　ききてえもんだな！
 move_npc 2801 up 4
 sleep 16
 create npc_event 2802 28 3 10 2 0 2 ティファ\n「あら　もうなんどもみたって\n　かおしてるのね\n　ま　いいわ\n　もっとそばにきて
@@ -177,7 +177,6 @@ sleep 16
 step_npc 2801 4
 msg バレット\n「ケッ！　おちついたやろうだぜ！\n　こっちのペースが　くるっちまう…
 close_door 2850
-play_se door_open2.ogg
 sleep 16
 chg_npc_dir 2800 down
 sleep 32

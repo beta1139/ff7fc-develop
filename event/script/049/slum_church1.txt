@@ -269,7 +269,7 @@ sleep 16
 chg_npc_dir 4900 down
 sleep 32
 step_npc 4901 2
-msg 「ここ　スラムのきょうかい\n　ごばんがいよ
+msg 「ここ　スラムのきょうかい\n　5ばんがいよ
 chg_npc_dir 4900 left
 sleep 16
 jump_npc 4901 same 1

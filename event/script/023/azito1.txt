@@ -6,7 +6,7 @@ move_npc 2304 down 1
 sleep 16
 chg_npc_dir 2304 left
 chg_npc_img 2304 95
-play_se damage.wav
+play_se attack_tifa.wav
 step_npc 2304 1
 sleep 32
 chg_npc_img 2304 1
@@ -14,7 +14,7 @@ move_npc 2304 up 1
 sleep 16
 chg_npc_dir 2304 left
 chg_npc_img 2304 95
-play_se damage.wav
+play_se attack_tifa.wav
 step_npc 2304 1
 sleep 8
 chg_speed 2304 fast
@@ -23,7 +23,7 @@ move_npc 2304 down 1
 sleep 8
 chg_npc_img 2304 95
 step_npc 2304 1
-play_se damage.wav
+play_se attack_tifa.wav
 chg_npc_dir 2304 left
 sleep 32
 chg_speed 2304 normal
@@ -32,7 +32,7 @@ move_npc 2304 up 1
 sleep 16
 chg_npc_dir 2304 left
 chg_npc_img 2304 95
-play_se damage.wav
+play_se attack_tifa.wav
 step_npc 2304 1
 sleep 16
 chg_npc_img 2304 1
@@ -40,7 +40,7 @@ move_npc 2304 down 1
 sleep 16
 chg_npc_dir 2304 left
 chg_npc_img 2304 95
-play_se damage.wav
+play_se attack_tifa.wav
 step_npc 2304 1
 sleep 8
 chg_speed 2304 fast
@@ -49,7 +49,7 @@ move_npc 2304 up 1
 sleep 8
 chg_npc_dir 2304 left
 chg_npc_img 2304 95
-play_se damage.wav
+play_se attack_tifa.wav
 step_npc 2304 1
 sleep 48
 chg_speed 2304 normal

@@ -1,6 +1,8 @@
 set_eternal_event
 wait_target_talk 2806
 reset_talk_flag 2806
+create npc_event 2800 28 12 7 0 1 2 none
+draw_char off
 chg_type 2806 npc_event
 chg_speed 2806 normal
 set_active_msg 2806
@@ -10,3 +12,5 @@ msg しんらかちょう\n「ヒッ……！！\n\n\n　わ　わたしには　かまわないでくれたまえ
 chg_type 2806 npc2
 chg_speed 2806 not_step
 set_inactive_msg 2806
+draw_char on
+kill 2800

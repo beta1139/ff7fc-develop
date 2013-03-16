@@ -6,6 +6,7 @@ set_key_unvalid down
 set_key_unvalid right
 set_key_unvalid a
 set_key_unvalid start
+chg_type 1667 npc_event
 sleep 16
 if_char_dir left
 move_char down 1

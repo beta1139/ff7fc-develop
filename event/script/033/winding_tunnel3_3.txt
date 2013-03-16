@@ -49,12 +49,12 @@ fi
 if_flag 3 1
 create npc_event 3301 33 5 15 32 3 3 none
 create npc_event 3302 33 5 17 32 3 3 none
-move_npc 3301 right 5
-move_npc 3302 right 4
+move_npc 3301 right 4
+move_npc 3302 right 3
 sleep 16
 create npc_event 3303 33 5 17 32 3 3 none
-move_npc 3303 right 4
-sleep 16
+move_npc 3303 right 3
+sleep 8
 move_npc 3302 up 3
 sleep 8
 move_npc 3301 up 2

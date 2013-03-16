@@ -159,7 +159,7 @@ kill_through 2530
 stop_bgm
 draw_char off
 sleep 48
-play_se good_night_until_tomorrow.ogg
+play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
 create npc 1706 17 10 4 94 1 0 「おはようございます\n　いちや　あけても　あいかわらず　ですね\n\n\n　けが　しないよう　おきをつけて\n　いってらっしゃい
 create npc3 1707 17 3 6 71 3 0 「ぼく　もう　たえられない
 create npc 1906 19 8 26 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
@@ -197,7 +197,9 @@ create treasure_item 2628 26 5 8 3 0 0 4100
 create event_generator 2629 26 1 1 17 0 0 @026/beginner's_hall5.txt
 chg_npc_img 2691 29
 chg_speed 2400 not_step
-sleep 368
+sleep 400
+stop_bgm
+sleep 16
 recover_active_chara
 warp 23 2 8 right
 create event_generator 2240 22 8 5 17 0 0 @022/seventhheaven8.txt

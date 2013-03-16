@@ -20,7 +20,7 @@ chg_npc_img 2304 98
 sleep 24
 chg_npc_img 2304 95
 chg_speed 2304 normal
-play_se damage.wav
+play_se attack_tifa.wav
 step_npc 2304 1
 sleep 16
 chg_speed 2304 slow
@@ -197,37 +197,37 @@ move_char down 1
 chg_speed 2304 fast
 chg_npc_img 2304 95
 step_npc 2304 16
-play_se damage.wav
+play_se attack_tifa.wav
 sleep 8
-play_se damage.wav
+play_se attack_tifa.wav
 sleep 8
-play_se damage.wav
+play_se attack_tifa.wav
 sleep 8
-play_se damage.wav
-sleep 8
-move_char down 1
-play_se damage.wav
-sleep 8
-play_se damage.wav
-sleep 8
-play_se damage.wav
-sleep 8
-play_se damage.wav
+play_se attack_tifa.wav
 sleep 8
 move_char down 1
-play_se damage.wav
+play_se attack_tifa.wav
 sleep 8
-play_se damage.wav
+play_se attack_tifa.wav
 sleep 8
-play_se damage.wav
+play_se attack_tifa.wav
 sleep 8
-play_se damage.wav
+play_se attack_tifa.wav
+sleep 8
+move_char down 1
+play_se attack_tifa.wav
+sleep 8
+play_se attack_tifa.wav
+sleep 8
+play_se attack_tifa.wav
+sleep 8
+play_se attack_tifa.wav
 sleep 8
 move_char right 1
-play_se damage.wav
+play_se attack_tifa.wav
 sleep 8
-play_se damage.wav
+play_se attack_tifa.wav
 sleep 8
-play_se damage.wav
+play_se attack_tifa.wav
 sleep 8
 kill_through 2302
