@@ -2,7 +2,7 @@ wait_target_talk 2201
 chg_dir_to_char 2201
 chg_type 2201 npc_event
 chg_speed 2201 normal
-msg バレット\n「ひょうてきは　ごばんまこうろだ\n　まず　えきに　いく\n\n　くわしい　さくせんは　れっしゃの　なかでな
+msg バレット\n「ひょうてきは　5ばんまこうろだ\n　まず　えきに　いく\n\n　くわしい　さくせんは　れっしゃの　なかでな
 sleep 16
 chg_npc_dir 2201 right
 sleep 4

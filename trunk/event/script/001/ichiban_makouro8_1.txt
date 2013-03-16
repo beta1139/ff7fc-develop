@@ -7,5 +7,6 @@ fi
 if_char_dir down
 jump_char down 2
 fi
+play_se jump.wav
 sleep 32
-
+play_se landing.wav

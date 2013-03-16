@@ -6,14 +6,17 @@ sleep 16
 chg_npc_dir 60001 left
 sleep 32
 step_npc 60001 3
+play_se syu.ogg
 sleep 48
 chg_npc_dir 60001 right
 sleep 32
 step_npc 60001 3
+play_se syu.ogg
 sleep 48
 chg_npc_dir 60001 up
 sleep 32
 step_npc 60001 3
+play_se syu.ogg
 sleep 48
 msg 「ム　にげるき？\n　ちゃんと　しょうぶしろ！\n　しろったらしろ！
 chg_event_move_char_speed slow

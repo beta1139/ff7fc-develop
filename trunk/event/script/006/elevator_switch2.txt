@@ -2,7 +2,9 @@ set_eternal_event
 wait_talk
 play_se button.ogg
 msg スイッチオン
+if_flag 9 0
 draw_countdown off
+fi
 play_se elevator_start.wav
 loop 100
 dec_map_draw_y_offset
@@ -29,5 +31,7 @@ loop 90
 dec_map_draw_y_offset
 sleep 1
 pool
+if_flag 9 0
 draw_countdown on
+fi
 set_map_draw_y_offset 0

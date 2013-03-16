@@ -17,7 +17,7 @@ stop_bgm
 draw_char off
 chg_npc_img 2251 2
 sleep 48
-play_se good_night_until_tomorrow.ogg
+play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
 kill 1700
 kill 1710
 kill 1706
@@ -115,7 +115,9 @@ chg_npc_img 1762 8
 chg_npc_img 1763 9
 chg_npc_img 1764 10
 chg_npc_img 1765 4
-sleep 368
+sleep 400
+stop_bgm
+sleep 16
 recover_active_chara
 warp 23 2 8 right
 create event_generator 2240 22 8 5 17 0 0 @022/seventhheaven8.txt
