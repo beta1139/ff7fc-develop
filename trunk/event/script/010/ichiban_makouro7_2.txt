@@ -2,14 +2,12 @@ wait_same_pos
 sleep 8
 chg_char_dir down
 msg 『さあ　だっしゅつだ！
-
-
 move_npc 1002 right 1
 sleep 16
 restore_char_img
 kill 1002
 sleep 16
-msg　ばくはつ 5ふんまえ
+msg ばくはつ 5ふんまえ
 start_countdown 5
 kill_through 808
 kill_through 133
