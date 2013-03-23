@@ -75,7 +75,7 @@ chg_npc_dir 2800 up
 step_npc 2801 2
 sleep 32
 open_door 2851
-play_se door_open.wav
+play_se door_open_hard.wav
 sleep 32
 chg_speed 2801 fast
 chg_npc_img 2801 95
@@ -219,7 +219,7 @@ step_npc 2901 2
 sleep 32
 chg_npc_dir 2902 up
 open_door 2951
-play_se door_open.wav
+play_se door_open_hard.wav
 sleep 32
 chg_speed 2901 fast
 chg_npc_img 2901 95
@@ -360,7 +360,7 @@ chg_npc_dir 3000 up
 step_npc 3001 2
 sleep 32
 open_door 3051
-play_se door_open.wav
+play_se door_open_hard.wav
 chg_npc_dir 3002 up
 sleep 32
 chg_speed 3001 fast
@@ -403,7 +403,6 @@ sleep 16
 jump_npc 3002 same 1
 set_active_msg 3001
 sleep 16
-step_npc 3002 3
 msg ティファ\n「どんまい！\n　どんまい！
 chg_npc_img 3002 2
 chg_npc_dir 3002 up
@@ -504,7 +503,7 @@ chg_npc_dir 3100 up
 step_npc 3101 2
 sleep 32
 open_door 3151
-play_se door_open.wav
+play_se door_open_hard.wav
 chg_npc_dir 3102 up
 sleep 32
 chg_speed 3101 fast
@@ -547,7 +546,6 @@ sleep 16
 jump_npc 3102 same 1
 set_active_msg 3102
 sleep 16
-step_npc 3102 3
 msg ティファ\n「どんまい！\n　どんまい！
 chg_npc_dir 3102 up
 sleep 16

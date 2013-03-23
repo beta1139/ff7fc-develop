@@ -19,8 +19,6 @@ move_npc 2202 left 1
 sleep 16
 chg_npc_dir 2202 up
 sleep 64
-chg_npc_dir 2202 right
-sleep 32
 move_npc 2202 right 1
 sleep 16
 chg_npc_dir 2202 up
@@ -28,10 +26,9 @@ sleep 48
 chg_npc_dir 2202 down
 sleep 16
 set_talk_npc 2202
+play_se tifa_cocktail.wav
 msg ティファ\n「おまたせ
 reset_talk_npc
-sleep 16
-play_se recover.wav
 fi
 sleep 32
 set_talk_npc 2202

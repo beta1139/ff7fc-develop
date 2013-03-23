@@ -1,7 +1,7 @@
 wait_same_pos
-move_char down 7
-sleep 112
-sleep 16
+chg_event_move_char_speed slow
+move_char down 4
+sleep 128
 msg ティファ\n「ほら　むらの　きゅうすいとう\n\n\n　おぼえてる？
 sleep 16
 chg_npc_dir 70201 right
@@ -69,6 +69,7 @@ chg_npc_dir 70203 left
 sleep 16
 kill 70203
 sleep 80
+chg_event_move_char_speed normal
 move_char up 1
 sleep 16
 create npc_event 70203 702 11 17 86 1 1 none
@@ -111,9 +112,10 @@ msg ティファ\n「いいじゃないのよ～！\n　やくそくしなさい～！
 sleep 48
 msg 『わかった……やくそく　するよ
 sleep 48
-move_char up 10
-sleep 160
-sleep 32
+chg_event_move_char_speed slow
+move_char up 8
+sleep 288
+chg_event_move_char_speed normal
 fadeout
 chg_npc_img 2251 3
 create event_generator 2236 22 5 10 17 1 0 @022/seventhheaven7.txt

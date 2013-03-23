@@ -3,7 +3,7 @@ chg_type 130 npc_event
 chg_type 131 npc_event
 play_se button.ogg
 sleep 32
-play_se door_open.wav
+play_se door_open_hard.wav
 kill 114
 kill 115
 kill 116

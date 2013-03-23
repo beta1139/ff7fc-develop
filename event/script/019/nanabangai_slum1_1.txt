@@ -2,7 +2,6 @@ wait_same_pos
 move_char left 1
 sleep 16
 draw_char off
-warp 20 24 26 left
 warp_ff3_2 20 24 26 0 left
 create npc_event 2001 20 38 18 0 2 2 none
 create npc_event 2002 20 27 28 1 2 2 none
@@ -28,7 +27,7 @@ sleep 16
 move_npc 2010 left 1
 chg_npc_dir 2005 up
 open_door 2092
-play_se door_open.wav
+play_se door_open_hard.wav
 sleep 16
 kill 2002
 move_npc 2004 down 1
@@ -41,17 +40,17 @@ sleep 16
 move_npc 2010 right 1
 chg_npc_dir 2004 up
 sleep 32
-play_se fire.wav
+play_se attack_baret.wav
 sleep 32
 chg_npc_dir 2010 down
 sleep 32
-play_se fire.wav
+play_se attack_baret.wav
 sleep 48
 create npc_event 2006 20 22 26 71 1 2 「ウウ……よっぱらっちゃった\n　てづくりカクテル　おいしいんだもんなあ\n　きついんだもんなあ
 chg_speed 2006 fast
 move_npc 2006 down 2
 sleep 16
-play_se fire.wav
+play_se attack_baret.wav
 move_npc 2006 right 2
 sleep 16
 move_npc 2006 down 6
@@ -81,7 +80,7 @@ open_door 2090
 sleep 16
 kill 2010
 open_door 2092
-play_se door_open.wav
+play_se door_open_hard.wav
 create npc_event 2011 20 22 26 1 1 2 none
 chg_npc_img 2011 95
 step_npc 2011 4
@@ -201,6 +200,7 @@ sleep 208
 chg_speed 2012 normal
 move_npc 2012 up 1
 open_door 2092
+play_se door_open.wav
 sleep 16
 kill_through 2012
 close_door 2092

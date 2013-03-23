@@ -10,6 +10,7 @@ reset_talk_npc
 chg_type 2011 npc_event
 chg_speed 2011 not_step
 kill_through 2012
+close_door 2092
 if_flag 3 0
 jump_npc 2011 same 1
 sleep 16

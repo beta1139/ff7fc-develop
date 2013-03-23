@@ -38,7 +38,7 @@ set_active_msg 252
 chg_char_dir right
 sleep 16
 msg バレット\n「なにやってんだ　オマエたち！\n　かたまって　こうどうするなって\n　いってんだろ！\n　ターゲットは　いちばんまこうろ\n　まこうろまえの　ブリッジに　しゅうごうだぞ！
-play_se door_open.wav
+play_se door_open_hard.wav
 kill 200
 chg_speed 201 normal
 chg_speed 202 normal

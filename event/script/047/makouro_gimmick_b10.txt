@@ -63,7 +63,7 @@ kill 4750
 kill 4751
 kill 4740
 kill 4741
-play_se door_open.wav
+play_se door_open_hard.wav
 sleep 32
 move_char down 4
 sleep 32
