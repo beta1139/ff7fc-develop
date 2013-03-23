@@ -58,7 +58,7 @@ msg アバランチのめんめん\n「ふう……
 sleep 112
 open_door 1601
 create npc_event 1654 16 17 3 0 0 2 none
-play_se door_open.wav
+play_se door_open_hard.wav
 play_event_bgm Ex-02-Train_Noise_Open.ogg
 chg_speed 1654 fast
 move_npc 1654 down 2

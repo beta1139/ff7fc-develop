@@ -1,6 +1,7 @@
 set_eternal_event
 wait_target_talk 2314
 reset_talk_flag 2314
+play_se radio_noise.ogg
 create npc2 2316 23 5 2 20 1 0 
 sleep 8
 chg_npc_img 2316 17
@@ -9,23 +10,30 @@ chg_npc_img 2316 20
 sleep 8
 chg_npc_img 2316 17
 sleep 8
+play_se radio_noise.ogg
+chg_npc_img 2316 20
+sleep 8
+chg_npc_img 2316 17
+sleep 8
+play_se radio_noise.ogg
 chg_npc_img 2316 20
 sleep 8
 chg_npc_img 2316 17
 sleep 8
 chg_npc_img 2316 20
 sleep 8
-chg_npc_img 2316 17
-sleep 8
-chg_npc_img 2316 20
-sleep 8
+stop_se
 msg プレジデント　しんら\n「くりかえし　おつたえします\n\n\n　……いちばん　まこうろ　ばくはじけんに\n　かんして　アバランチと　なのる　そしきから\n　はんこう　せいめいが　だされています\n\n　せいめいに　よると　アバランチは\n　こんごも　どうようの　テロを つづけることを\n よこく　しています\n\n　しかし　ミッドガル　しみんの　みなさん\n　あんしんして　ください\n\n\n　われわれ　しんら　カンパニーは\n　このような　ぼうりょくから　みなさんを\n　まもるために　ソルジャーの　とうにゅうを\n　けっていしました\n　これで……
+play_se radio_noise.ogg
 chg_npc_img 2316 17
 sleep 8
 chg_npc_img 2316 20
 sleep 8
+play_se radio_noise.ogg
 chg_npc_img 2316 17
 sleep 8
 chg_npc_img 2316 20
 sleep 8
 kill 2316
+sleep 8
+stop_se

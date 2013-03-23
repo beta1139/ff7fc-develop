@@ -176,6 +176,7 @@ msg 『さて　どうするんだ？
 sleep 16
 step_npc 2801 4
 msg バレット\n「ケッ！　おちついたやろうだぜ！\n　こっちのペースが　くるっちまう…
+play_se door_open.wav
 close_door 2850
 sleep 16
 chg_npc_dir 2800 down

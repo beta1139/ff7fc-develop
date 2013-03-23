@@ -25,7 +25,7 @@ chg_npc_dir 2202 down
 sleep 32
 msg ティファ\n「だから　ねっ！\n　こんどこそ　やくそくを……
 sleep 64
-play_se door_open.wav
+play_se door_open_hard.wav
 chg_npc_img 2251 2
 sleep 16
 create npc_event 2201 22 8 4 1 1 0 none

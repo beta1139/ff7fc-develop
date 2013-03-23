@@ -92,7 +92,7 @@ chg_event_move_char_speed fast
 set_slide_walk_char_flag
 reset_char_img_tmp
 move_char up 3
-play_se jump.ogg
+play_se jump.wav
 sleep 2
 reset_char_img_tmp
 chg_char_dir up
@@ -105,24 +105,24 @@ chg_char_dir up
 reset_slide_walk_char_flag
 chg_event_move_char_speed normal
 sleep 12
-play_se landing.ogg
+play_se landing.wav
 sleep 16
 chg_char_dir down
 sleep 16
 create npc_event 1200 12 5 23 1 0 3 none
 jump_npc 1200 up 2
-play_se jump.ogg
+play_se jump.wav
 sleep 32
-play_se landing.ogg
+play_se landing.wav
 move_npc 1200 up 2
 sleep 16
 chg_npc_dir 1200 down
 chg_speed 1200 not_move
 create npc_event 1202 12 6 23 35 0 3 none
 jump_npc 1202 up 1
-play_se jump.ogg
+play_se jump.wav
 sleep 16
-play_se landing.ogg
+play_se landing.wav
 sleep 8
 move_npc 1202 up 1
 sleep 8
@@ -131,9 +131,9 @@ sleep 8
 move_npc 1202 up 3
 create npc_event 1201 12 6 23 34 0 3 none
 jump_npc 1201 up 1
-play_se jump.ogg
+play_se jump.wav
 sleep 16
-play_se landing.ogg
+play_se landing.wav
 sleep 8
 chg_npc_dir 1202 down
 chg_speed 1202 not_move
@@ -147,13 +147,13 @@ sleep 16
 chg_npc_dir 1201 down
 chg_speed 1201 not_move
 create npc_event 1203 12 5 23 36 0 3 none
-play_se jump.ogg
+play_se jump.wav
 jump_npc 1203 up 1
 sleep 8
 create npc_event 1252 12 5 22 80 3 0 none
 chg_npc_y_offset 1252 2
 sleep 8
-play_se landing.ogg
+play_se landing.wav
 jump_npc 1203 same 1
 jump_npc 1252 same 1
 sleep 16

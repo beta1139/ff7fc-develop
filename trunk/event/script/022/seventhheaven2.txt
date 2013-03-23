@@ -3,7 +3,7 @@ chg_type 2202 npc_event
 chg_type 2206 npc_event
 chg_speed 2202 normal
 chg_speed 2206 normal
-play_se door_open.wav
+play_se door_open_hard.wav
 open_door 2290
 move_char up 1
 sleep 16
@@ -75,7 +75,7 @@ chg_npc_dir 2206 left
 sleep 16
 step_npc 2201 1
 sleep 16
-play_se door_open.wav
+play_se door_open_hard.wav
 chg_npc_img 2251 2
 sleep 16
 move_npc 2201 right 1

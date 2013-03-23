@@ -676,17 +676,14 @@ event_generator,3426,34,7,26,17,0,0,"@034/winding_tunnel_exit2_2.txt"
 event_generator,3427,34,8,26,17,0,0,"@034/winding_tunnel_exit2_3.txt"
 event_generator,3428,34,9,26,17,0,0,"@034/winding_tunnel_exit2_4.txt"
 event_generator,3429,34,10,26,17,0,0,"@034/winding_tunnel_exit2_5.txt"
-npc,3503,35,7,14,17,0,0,"『このひかりのおびは
-　しんらの　けいほうセンサー
-　これいじょう　おくには　すすめないな"
-npc,3504,35,8,14,17,0,0,"『このひかりのおびは
-　しんらの　けいほうセンサー
-　これいじょう　おくには　すすめないな"
-npc,3505,35,9,14,17,0,0,"『このひかりのおびは
-　しんらの　けいほうセンサー
-　これいじょう　おくには　すすめないな"
+npc2,3503,35,7,14,17,0,0,""
+npc2,3504,35,8,14,17,0,0,""
+npc2,3505,35,9,14,17,0,0,""
 npc2,3506,35,6,16,17,0,0,""
 event_generator,3510,35,0,0,17,0,0,"@035/winding_tunnel4.txt"
+event_generator,3550,35,0,0,17,0,0,"@035/sensor1.txt"
+event_generator,3551,35,0,0,17,0,0,"@035/sensor2.txt"
+event_generator,3552,35,0,0,17,0,0,"@035/sensor3.txt"
 event_generator,3600,36,12,4,17,0,0,"@reset_slide_walk.txt"
 treasure_item,3601,36,7,4,4,1,0,1003
 event_generator,3700,37,6,2,17,0,0,"@set_slide_walk.txt"

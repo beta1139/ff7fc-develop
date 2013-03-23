@@ -242,7 +242,7 @@ chg_speed 3203 normal
 step_npc 3203 3
 sleep 16
 open_door 3251
-play_se door_open.wav
+play_se door_open_hard.wav
 sleep 32
 play_se_loop alarm.ogg
 sleep 8

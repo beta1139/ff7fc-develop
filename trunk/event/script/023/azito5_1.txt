@@ -1,5 +1,5 @@
 wait_same_pos
-play_se door_open.wav
+play_se door_open_hard.wav
 create npc_event 2305 23 4 1 2 1 0 ティファ\n「みんなには　あやまって　おくね
 chg_speed 2305 fast
 set_flag_wall 2305
