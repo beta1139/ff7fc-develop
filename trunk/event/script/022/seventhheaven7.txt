@@ -60,6 +60,7 @@ move_npc 2201 down 1
 sleep 16
 step_npc 2201 2
 sleep 32
+play_se pick_up.wav
 msg 「バレットの　へそくり\n　１５００ギル　てにいれた！
 add_gil 1500
 sleep 16
