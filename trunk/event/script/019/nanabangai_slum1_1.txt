@@ -196,7 +196,7 @@ create event_generator 2017 20 2 1 17 0 0 @020/nanabangai_slum6.txt
 set_npc_pos 2011 20 22 28
 chg_type 2011 npc2
 chg_char_state_move
-sleep 208
+sleep 192
 chg_speed 2012 normal
 move_npc 2012 up 1
 open_door 2092
