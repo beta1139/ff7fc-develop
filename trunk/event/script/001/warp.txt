@@ -3,6 +3,7 @@ wait_target_talked 160
 reset_talked_flag 160
 if_flag 3 0
 stop_bgm
+sleep 8
 add_party_mem 1
 warp 10 8 18 up
 set_flag 0 0
