@@ -47,11 +47,11 @@ create npc_event 1666 16 1 21 35 3 2 ƒrƒbƒOƒX\nu‚Ü‚¾@‚ê‚Á‚µ‚á‚Ì@‚Ğ‚¶‚å‚¤‚¯‚¢‚
 move_npc 1666 right 1
 sleep 16
 create npc_event 1667 16 1 21 34 3 2 ƒWƒFƒV[\nu‚Ë@ƒNƒ‰ƒEƒh\n@‚¢‚Á‚µ‚å‚É@‚İ‚È‚¢H\n\n@ƒ~ƒbƒhƒKƒ‹‚ê‚Á‚µ‚á@‚ë‚¹‚ñ‚¸@ƒfƒBƒXƒvƒŒƒC\n@‚Ó‚½‚è‚Å@‚İ‚ê‚Î@‚«‚Á‚Æ@‚½‚Ì‚µ‚¢‚Æ@‚¨‚à‚¤‚Ì\n@‚í‚½‚µ@‚¹‚Â‚ß‚¢‚µ‚Ä@‚ ‚°‚é‚Ë
-move_npc 1666 down 1
+move_npc 1666 up 1
 move_npc 1667 right 1
 sleep 16
 chg_npc_dir 1666 right
-move_npc 1667 up 1
+move_npc 1667 down 1
 sleep 16
 chg_npc_dir 1667 right
 move_npc 1664 down 2
@@ -70,21 +70,21 @@ kill 1661
 kill 1662
 kill 1663
 kill 1664
-move_npc 1666 right 3
-move_npc 1667 up 1
-move_npc 1668 right 1
+move_npc 1666 right 8
+move_npc 1667 right 8
+move_npc 1668 right 8
 sleep 16
 chg_npc_img 1665 1
 chg_npc_dir 1665 down
-chg_npc_dir 1667 left
-chg_speed 1667 not_move
-move_npc 1668 up 1
-sleep 16
-chg_npc_dir 1668 down
-sleep 16
+sleep 112
+set_npc_pos 1666 16 16 19
+set_npc_pos 1667 16 18 22
+set_npc_pos 1668 16 16 22
 chg_npc_dir 1666 up
-jump_npc_target_pos 1668 4 19
-sleep 32
+chg_npc_dir 1667 right
+chg_npc_dir 1668 down
+chg_speed 1667 not_move
+sleep 16
 chg_type 1665 npc
 chg_type 1666 npc
 chg_type 1667 npc
