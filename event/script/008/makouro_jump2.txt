@@ -1,6 +1,6 @@
 set_eternal_event
 wait_talk
-jump_char_target_pos 18 8
+jump_char left 3
 play_se jump.wav
 sleep 48
 play_se landing.wav

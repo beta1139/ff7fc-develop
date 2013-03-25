@@ -1,15 +1,17 @@
 wait_talk
-chg_speed 840 fast
+chg_speed 840 normal
 chg_type 840 npc_event
 create npc_event 800 8 29 20 0 1 2 none
 draw_char off
 step_npc 800 2
 sleep 16
 msg 『だいじょうぶか？
-step_npc 840 3
+step_npc 840 2
 msg ジェシー\n「うかつ！！　あしがはさまって……
 step_npc 800 3
 sleep 92
+chg_npc_img 840 34
+chg_npc_dir 840 left
 jump_npc 840 same 2
 loop 2
 sleep 4
@@ -21,14 +23,14 @@ chg_npc_dir 840 left
 sleep 4
 chg_npc_dir 840 up
 pool
+chg_speed 840 fast
 msg ジェシー\n「サンキュー！
-active 840
 jump_npc 840 up 2
 sleep 40
 move_npc 840 up 8
 sleep 64
-kill 840
 kill 510
 create event_generator 410 4 7 7 17 1 0 @004/ichiban_makouro1.txt
 draw_char on
 kill 800
+kill 840
