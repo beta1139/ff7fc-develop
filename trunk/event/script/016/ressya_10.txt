@@ -27,8 +27,8 @@ kill 70404
 kill 70405
 kill 70410
 sleep 48
-warp 16 2 20 up
-create npc2 1680 16 2 21 17 0 0 
+warp 16 18 21 down
+create npc2 1680 16 17 21 17 0 0 
 draw_char on
 create event_generator 1684 16 3 20 17 0 0 @016/ressya_11.txt
 chg_speed 1667 not_step
@@ -43,10 +43,10 @@ dec_map_draw_y_offset
 play_se_loop alarm.ogg
 create effect 1620 16 0 0 0 0 48 2
 sleep 16
-chg_char_dir down
+chg_char_dir left
 sleep 32
 inc_map_draw_y_offset
-chg_npc_dir 1667 down
+chg_npc_dir 1667 up
 sleep 8
 dec_map_draw_y_offset
 sleep 8

@@ -1,14 +1,14 @@
 wait_target_talk 1680
 erase_msg3
 sleep 32
-chg_char_dir up
+chg_char_dir down
 sleep 48
 msg ジェシー\n「このひかりが　IDけんちエリア　つうかの\n　サインなの
 sleep 32
-chg_npc_dir 1667 right
+chg_npc_dir 1667 left
 msg ジェシー\n「ひそひそ……\n　（くらくなるから　チカンが　おおいのよ\n　IDけんちエリアは……）
 sleep 32
-chg_npc_dir 1667 down
+chg_npc_dir 1667 up
 msg ジェシー\n「ま　それは　さておき\n　もうすぐ　ちじょうに　かえれるってわけ\n　なんだか　ホっとするね
 sleep 96
 kill 70414
@@ -19,9 +19,9 @@ kill_through 1622
 stop_se
 sleep 16
 create event_generator 1600 16 2 20 17 0 0 @016/ressya_move1.txt
-chg_npc_dir 1667 left
+chg_npc_dir 1667 right
 sleep 16
-create npc 1669 16 2 19 34 2 0 ジェシー\n「そうだ　クラウド！\n　こんど　わたしの　てづくりさくひんを\n　プレゼントしちゃおうかな\n#2\n　　えんりょしとくよ\n　　たのしみにしてるよ\n\n\n[[「そう きっと　こうかい　するかもよ\n　わたし　ズガッーンと　ねにもつ　タイプなの]]\n[[　うん　じゃ　うでに　よりをかけて\n　ドッカーンと　せいさくするわ]]
+create npc 1669 16 18 22 34 3 0 ジェシー\n「そうだ　クラウド！\n　こんど　わたしの　てづくりさくひんを\n　プレゼントしちゃおうかな\n#2\n　　えんりょしとくよ\n　　たのしみにしてるよ\n\n\n[[「そう きっと　こうかい　するかもよ\n　わたし　ズガッーンと　ねにもつ　タイプなの]]\n[[　うん　じゃ　うでに　よりをかけて\n　ドッカーンと　せいさくするわ]]
 kill 1667
 create event_generator 1677 16 1 1 17 0 0 @016/ressya_8.txt
 chg_type 1665 npc2
