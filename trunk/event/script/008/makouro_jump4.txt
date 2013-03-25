@@ -1,8 +1,7 @@
 set_eternal_event
 wait_talk
-chg_char_dir left
-jump_char_target_pos 26 8
+reset_slide_walk_char_flag
+jump_char left 3
 play_se jump.wav
 sleep 48
 play_se landing.wav
-reset_slide_walk_char_flag

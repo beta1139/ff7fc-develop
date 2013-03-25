@@ -28,15 +28,18 @@ stop_bgm
 set_flag 1 1
 warp 5 24 7 left
 chg_char_dir left
-set_flag 0 2
+set_flag 0 5
 start_countdown 5
-play_event_bgm 1-07-Hurry_!.ogg
-create npc 400 4 1 27 36 3 0 ウェッジ\n「おれは　だっしゅつこうを　かくほしておくっす！\n\n　\nウェッジ\n「しっかし　このおおきな　まこうろを\n　ばくはするなんて……　みものっすね！
+play_bgm
+create npc 400 4 1 26 36 3 0 ウェッジ\n「おれは　だっしゅつこうを　かくほしておくっす！\n\n\n　しっかし　このおおきな　まこうろを\n　ばくはするなんて……　みものっすね！
 create event_generator 410 4 7 7 17 1 0 @004/ichiban_makouro1.txt
 add_party_mem 1
 kill 132
 kill 130
 kill 131
+kill 401
+kill 402
+kill 403
 kill 500
 kill 501
 kill 502
