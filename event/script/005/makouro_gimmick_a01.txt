@@ -136,6 +136,7 @@ pool
 fi
 if_flag 10 3
 chg_npc_dir 571 down
+set_key_unvalid a
 sleep 64
 erase_msg3
 sleep 8
@@ -170,6 +171,7 @@ chg_npc_dir 573 up
 sleep 19
 erase_msg3
 set_npc_pos 563 5 12 18
+set_key_valid a
 set_flag 10 4
 pool
 fi
@@ -194,6 +196,7 @@ set_flag 10 6
 pool
 fi
 if_flag 10 6
+set_key_unvalid a
 chg_npc_dir 571 down
 sleep 16
 chg_npc_dir 573 down
@@ -228,6 +231,7 @@ chg_speed 573 not_step
 chg_npc_dir 572 down
 sleep 19
 set_npc_pos 563 5 12 18
+set_key_valid a
 set_flag 10 1
 pool
 fi
@@ -302,6 +306,7 @@ set_flag 10 3
 pool
 fi
 if_flag 10 3
+set_key_unvalid a
 chg_npc_dir 571 down
 sleep 64
 erase_msg3
@@ -337,6 +342,7 @@ chg_npc_dir 573 up
 sleep 19
 erase_msg3
 set_npc_pos 563 5 12 18
+set_key_valid a
 set_flag 10 4
 pool
 fi
@@ -361,6 +367,7 @@ set_flag 10 6
 pool
 fi
 if_flag 10 6
+set_key_unvalid a
 chg_npc_dir 571 down
 sleep 16
 chg_npc_dir 573 down
@@ -396,6 +403,7 @@ chg_npc_dir 572 down
 sleep 19
 chg_npc_dir 571 left
 set_npc_pos 563 5 12 18
+set_key_valid a
 set_flag 10 1
 pool
 fi

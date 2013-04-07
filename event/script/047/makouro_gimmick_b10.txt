@@ -170,7 +170,7 @@ chg_npc_dir 4771 left
 sleep 16
 step_npc 4771 4
 msg バレット\n「もっとスムーズに　いきたいもんだぜ
-msg3 -1 ティファ\n「まぁまぁ……
+msg3 -1 ティファ\n「どんまい！\n　どんまい！
 jump_npc 4770 same 1
 sleep 16
 jump_npc 4770 same 1
@@ -187,23 +187,20 @@ sub_likability 1 500
 sub_likability 2 250
 fi
 if_flag 0 4
-chg_npc_img 4770 98
-chg_npc_dir 4770 right
+chg_npc_dir 4770 up
+sleep 16
+chg_npc_dir 4772 up
+set_talk_npc 4770
+msg ティファ\n「ふぅっ～！\n　つかれたわ……
+reset_talk_npc
 sleep 16
 chg_npc_img 4771 98
 chg_npc_dir 4771 left
-chg_npc_dir 4772 up
-step_npc 4770 4
-set_talk_npc 4770
-msg テイファ\n「クラウド　ほんとにソルジャーなの？
-reset_talk_npc
 if_flag 11 3
-chg_npc_img 4771 1
-chg_npc_dir 4771 up
 step_npc 4771 2
-chg_npc_img 4770 2
 chg_npc_dir 4772 up
-msg バレット\n「いってやるな　ティファ\n　みんな　そうおもっている
+msg バレット\n「ほうしゅうは　ポーションでいいよな
+chg_npc_dir 4772 down
 chg_npc_img 4772 98
 step_npc 4772 3
 sleep 56
