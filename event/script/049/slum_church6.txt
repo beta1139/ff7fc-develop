@@ -6,25 +6,6 @@ step_npc 4906 1
 set_talk_npc 4906
 msg エアリス\n「なんでもやさん　でしょ？
 reset_talk_npc
-if_flag 0 0
-if_char_dir down
-create npc_event 4900 49 6 11 0 1 2 none
-draw_char off
-fi
-if_char_dir left
-create npc_event 4900 49 7 12 0 2 2 none
-draw_char off
-fi
-if_char_dir up
-create npc_event 4900 49 6 13 0 0 2 none
-draw_char off
-fi
-if_char_dir right
-create npc_event 4900 49 5 12 0 3 2 none
-draw_char off
-fi
-fi
-if_flag 0 4
 if_char_dir down
 create npc_event 4900 49 5 11 0 1 2 none
 draw_char off
@@ -40,7 +21,6 @@ fi
 if_char_dir right
 create npc_event 4900 49 4 12 0 3 2 none
 draw_char off
-fi
 fi
 backup_npc_dir 4900
 sleep 24
@@ -84,21 +64,6 @@ step_npc 4906 1
 set_talk_npc 4906
 msg エアリス\n「デート　いっかい！
 reset_talk_npc
-sleep 32
-if_char_dir down
-chg_npc_dir 4900 up
-fi
-if_char_dir left
-chg_npc_dir 4900 right
-fi
-if_char_dir up
-chg_npc_dir 4900 left
-fi
-if_char_dir right
-chg_npc_dir 4900 left
-fi
-sleep 48
-restore_npc_dir 4900
 sleep 64
 chg_npc_dir 4900 down
 chg_npc_img 4900 103
@@ -121,6 +86,6 @@ chg_npc_dir 4906 down
 kill_through 4914
 kill_through 4915
 kill_through 4916
+stop_bgm
 sleep 32
 fadein
-set_flag 0 0

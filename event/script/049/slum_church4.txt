@@ -1,7 +1,7 @@
-wait_target_talk 4905
-chg_type 4905 npc_event
-step_npc 4905 2
-set_talk_npc 4905
+wait_target_talk 4904
+chg_type 4904 npc_event
+step_npc 4904 2
+set_talk_npc 4904
 msg 「も～すこし　まってて
 reset_talk_npc
 if_char_dir down
@@ -43,30 +43,30 @@ move_char up 1
 move_npc 4900 up 1
 fi
 sleep 24
-chg_speed 4905 normal
+chg_speed 4904 normal
 sleep 32
-chg_npc_img 4905 3
-chg_npc_dir 4905 left
-set_talk_npc 4905
+chg_npc_img 4904 3
+chg_npc_dir 4904 left
+set_talk_npc 4904
 msg 「あ！
 reset_talk_npc
 chg_char_dir right
 chg_npc_dir 4900 right
-chg_dir_to_char 4905
-jump_npc 4905 same 1
+chg_dir_to_char 4904
+jump_npc 4904 same 1
 sleep 16
-step_npc 4905 2
-set_talk_npc 4905
+step_npc 4904 2
+set_talk_npc 4904
 msg 「そういえば　まだだった
 reset_talk_npc
 sleep 32
-step_npc 4905 2
-set_talk_npc 4905
+step_npc 4904 2
+set_talk_npc 4904
 msg 「おたがい　なまえ　しらないね
 reset_talk_npc
 sleep 32
-step_npc 4905 2
-set_talk_npc 4905
+step_npc 4904 2
+set_talk_npc 4904
 msg 「わたし　はなうりのエアリス\n　よろしくね
 reset_talk_npc
 sleep 16
@@ -81,22 +81,22 @@ msg 『おれは　クラウドだ\n\n\n\n　しごとは……\n　しごとは　なんでもや　だ
 sleep 16
 chg_speed 4903 not_move
 sleep 16
-step_npc 4905 1
-set_talk_npc 4905
+step_npc 4904 1
+set_talk_npc 4904
 msg エアリス\n「はぁ……なんでもやさん
 reset_talk_npc
-chg_npc_dir 4905 up
-chg_npc_img 4905 15
-step_npc 4905 2
+chg_npc_dir 4904 up
+chg_npc_img 4904 15
+step_npc 4904 2
 sleep 16
 step_npc 4900 1
 sleep 16
 msg 『なんでもやるのさ
-jump_npc 4905 same 1
+jump_npc 4904 same 1
 sleep 16
-jump_npc 4905 same 1
+jump_npc 4904 same 1
 sleep 16
-step_npc 4905 4
+step_npc 4904 4
 sleep 8
 jump_npc 4900 same 1
 sleep 16
@@ -104,12 +104,12 @@ chg_speed 4900 fast
 step_npc 4900 2
 sleep 16
 msg 『なにが　おかしい！\n　どうしてわらう！
-chg_npc_dir 4905 left
-chg_npc_img 4905 3
+chg_npc_dir 4904 left
+chg_npc_img 4904 3
 sleep 16
-chg_npc_img 4905 15
-step_npc 4905 2
-set_talk_npc 4905
+chg_npc_img 4904 15
+step_npc 4904 2
+set_talk_npc 4904
 sleep 40
 msg エアリス\n「ごめんなさい……でも　ね
 reset_talk_npc
@@ -117,21 +117,17 @@ chg_speed 4903 normal
 move_npc 4903 up 1
 sleep 16
 chg_speed 4903 not_move
-chg_npc_img 4905 3
-chg_npc_dir 4905 down
+chg_npc_img 4904 3
+chg_npc_dir 4904 down
 sleep 16
 chg_speed 4900 normal
 chg_npc_dir 4900 down
-sleep 64
-chg_npc_dir 4900 right
-sleep 16
-msg エアリス\n「タイミングわるいなぁ
-create npc 4906 49 6 12 3 1 4 エアリス\n「ねえ　クラウド\n　ボディガードも　しごとのうち？
-kill 4905
+chg_char_dir down
+create npc3 4905 49 6 12 3 1 4 エアリス\n「タイミングわるいなぁ
+kill 4904
 chg_type 4903 npc3
 draw_char on
 kill 4900
 create event_generator 4914 49 5 15 17 0 0 @049/slum_church5_1.txt
 create event_generator 4915 49 6 15 17 0 0 @049/slum_church5_2.txt
 create event_generator 4916 49 7 15 17 0 0 @049/slum_church5_3.txt
-create event_generator 4917 49 1 1 17 0 0 @049/slum_church6.txt

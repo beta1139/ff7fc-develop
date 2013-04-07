@@ -41,7 +41,7 @@ set_screen_effect add 255 255 255 100
 play_se white_noise.ogg
 set_text_alpha 6 0
 clear_text 6
-sleep 24
+sleep 20
 stop_se
 reset_screen_effect
 sleep 8
@@ -213,9 +213,9 @@ jump_npc 4908 same 2
 jump_npc 4909 same 2
 sleep 32
 erase_msg3
-step_npc 4907 6
-step_npc 4908 6
-step_npc 4909 6
+step_npc 4907 4
+step_npc 4908 4
+step_npc 4909 4
 sleep 8
 msg3 -1 ÅuÇÕÇ»Å@ÇÆÇµÇ·ÇÆÇµÇ·ÅI
 sleep 64
@@ -230,9 +230,6 @@ jump_npc 4907 same 1
 jump_npc 4908 same 1
 jump_npc 4909 same 1
 sleep 16
-step_npc 4907 5
-step_npc 4908 5
-step_npc 4909 5
 sleep 40
 erase_msg3
 chg_event_move_char_speed normal
