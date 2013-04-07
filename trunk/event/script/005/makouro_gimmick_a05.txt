@@ -91,6 +91,7 @@ set_flag 10 3
 end
 fi
 if_flag 10 3
+set_key_unvalid a
 chg_npc_dir 571 down
 sleep 64
 erase_msg3
@@ -127,6 +128,7 @@ sleep 19
 erase_msg3
 create event_generator 582 5 13 18 17 0 0 @005/makouro_gimmick_a02.txt
 set_npc_pos 563 5 12 18
+set_key_valid a
 set_flag 10 4
 end
 fi
@@ -152,6 +154,7 @@ set_flag 10 6
 end
 fi
 if_flag 10 6
+set_key_unvalid a
 sleep 16
 chg_npc_dir 571 down
 chg_npc_dir 573 down
@@ -187,6 +190,7 @@ sleep 19
 erase_msg3
 create event_generator 582 5 13 18 17 0 0 @005/makouro_gimmick_a02.txt
 set_npc_pos 563 5 12 18
+set_key_valid a
 set_flag 10 1
 end
 fi

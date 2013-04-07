@@ -74,10 +74,10 @@ erase_msg3
 sleep 8
 chg_char_state_event
 if_flag 11 3
-msg3 -1 バレット\n「このニセソルジャー！！　\n　ほうしゅうは　なしだっ！！
+msg3 -1 バレット\n「このニセソルジャー！！　\n　かねかえせっ！！
 fi
 if_flag 11 2
-msg3 -1 バレット\n「だから　ウスノロッ！！\n　いいかげんに　しやがれ！！
+msg3 -1 バレット\n「このウスノロッ！！\n　いいかげんに　しやがれ！！
 set_flag 11 3
 fi
 if_flag 11 1
@@ -85,7 +85,7 @@ msg3 -1 バレット\n「なにやってんだっ！\n　ぜんかいはマグレか！！
 set_flag 11 2
 fi
 if_flag 11 0
-msg3 -1 バレット\n「なにやってんだっ！　ほんきでやれ！！
+msg3 -1 バレット\n「なにやってんだっ！　ちゃんとやれ！！
 set_flag 11 1
 fi
 chg_speed 4771 fast
