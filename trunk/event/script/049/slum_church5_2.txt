@@ -1,17 +1,17 @@
 wait_same_pos
 kill 4914
 kill 4916
-chg_type 4906 npc_event
-chg_speed 4906 normal
-step_npc 4906 2
+chg_type 4905 npc_event
+chg_speed 4905 fast
+step_npc 4905 3
 sleep 16
 msg エアリス\n「クラウド！\n　かまっちゃダメ！
 chg_char_dir up
-move_npc 4906 left 1
+move_npc 4905 left 1
+sleep 8
+chg_npc_dir 4905 down
+jump_npc 4905 same 1
 sleep 16
-chg_npc_dir 4906 down
-jump_npc 4906 same 1
-sleep 16
-chg_speed 4906 not_step
-chg_type 4906 npc
-set_flag 0 4
+create npc 4906 49 5 12 3 1 4 エアリス\n「ねえ　クラウド\n　ボディガードも　しごとのうち？
+kill 4905
+create event_generator 4917 49 1 1 17 0 0 @049/slum_church6.txt
