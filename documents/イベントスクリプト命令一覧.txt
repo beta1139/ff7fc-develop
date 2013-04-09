@@ -20,6 +20,20 @@ wait_treasurebox_opened (event_idx)
 wait_fake_countover
   ダミーのカウントダウンが0になるまで待つ
 
+wait_key_push (key)
+  指定したキーが押されるまで待つ
+  keyには以下を指定する。
+  up, down, left, right, select, start, a, b, dbg1, dbg2
+
+wait_key_push_edge (key)
+  指定したキーが離された状態から押された状態になる瞬間を検出するまで待つ
+
+wait_key_release (key)
+  指定したキーが離されるまで待つ
+
+wait_key_release_edge (key)
+  指定したキーが押された状態から離された状態になる瞬間を検出するまで待つ
+
 =============== 状態制御系 ===============
 sleep (フレーム数)
   スクリプトの処理を指定フレーム数分止める
