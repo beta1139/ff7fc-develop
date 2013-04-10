@@ -1,0 +1,23 @@
+wait_same_pos
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+chg_char_state_move
+wait_key_push_edge a
+set_flag 12 1
+wait_key_release a
+wait_key_push_edge a
+set_flag 12 2
+wait_key_release a
+wait_key_push_edge a
+set_flag 12 3
+wait_key_release a
+wait_key_push_edge a
+set_flag 12 4
+wait_key_release a
+wait_key_push_edge a
+set_flag 12 5
+wait_key_release a
