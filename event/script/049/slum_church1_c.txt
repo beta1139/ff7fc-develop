@@ -16,7 +16,7 @@ fadeout
 erase_msg3
 sleep 16
 fadein
-if_flag 12 5
+if_flag 11 1
 msg3 -1 「ふぅ……\n　よかったぁ
 sleep 16
 fi
@@ -36,7 +36,7 @@ set_text_alpha 6 0
 set_text_alpha 7 0
 clear_text 6
 clear_text 7
-if_flag 12 5
+if_flag 11 1
 fadeout
 erase_msg3
 sleep 16
