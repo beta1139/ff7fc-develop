@@ -1,6 +1,16 @@
 set_eternal_event
 wait_target_talk 1329
 reset_talk_flag 1329
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
 chg_dir_to_char 1329
 play_se cat.ogg
-sleep 64
+sleep 24
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
