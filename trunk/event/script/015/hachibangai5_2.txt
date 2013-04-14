@@ -1,6 +1,6 @@
 wait_same_pos
 kill 1500
-kkill_through_range 1300 1399
+kill_through_range 1300 1399
 kill_through_range 1413 1415
 kill_through_range 1405 1406
 create npc_event 1550 15 7 4 31 1 2 none
