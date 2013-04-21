@@ -361,6 +361,9 @@ recover_active_chara
 add_item (item_idx)
   item_idxのアイテムを追加
 
+del_item (item_idx)
+  item_idxのアイテムを削除
+
 =============== 画面エフェクト系 ===============
 screen_effect (color)
   画面全体にエフェクトをかける。colorにはred blue green offが指定可
