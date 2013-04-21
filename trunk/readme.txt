@@ -87,6 +87,7 @@ FF7FC Developing Version (2013/1/8 updated)
   ・パーティアタック
   ・ジャンプのchg_speed
   ・ifの入れ子
+  ・マップエディタの当たり判定のコピペバグ
 
 ■更新履歴
   ・2013/1/8
