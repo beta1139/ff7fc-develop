@@ -86,6 +86,7 @@ FF7FC Developing Version (2013/1/8 updated)
   ・ボス消滅アニメ
   ・パーティアタック
   ・ジャンプのchg_speed
+  ・ifの入れ子
 
 ■更新履歴
   ・2013/1/8
