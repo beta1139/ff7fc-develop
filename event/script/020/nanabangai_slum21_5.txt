@@ -6,7 +6,7 @@ kill 2030
 chg_speed 2010 normal
 chg_npc_dir 2010 up
 open_door 2090
-play_se door_open.wav
+play_se door_open.ogg
 move_npc 2010 up 1
 chg_char_state_move
 sleep 16

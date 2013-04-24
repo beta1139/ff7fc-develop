@@ -26,7 +26,7 @@ sleep 48
 chg_npc_dir 2202 down
 sleep 16
 set_talk_npc 2202
-play_se tifa_cocktail.wav
+play_se tifa_cocktail.ogg
 msg ティファ\n「おまたせ
 reset_talk_npc
 fi

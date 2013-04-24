@@ -14,7 +14,7 @@ sleep 60
 msg アバランチのめんめん\n「ふう……
 sleep 120
 create npc_event 1654 16 17 3 0 0 2 none
-play_se door_open.wav
+play_se door_open.ogg
 chg_npc_dir 1650 right
 chg_npc_dir 1651 right
 chg_npc_dir 1652 right

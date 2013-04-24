@@ -4,7 +4,7 @@ kill 2703
 backup_char_img
 chg_char_img 0
 open_door 2790
-play_se door_open.wav
+play_se door_open.ogg
 create npc_event 2704 27 5 9 89 0 3 「やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフに　いきていく　きほんだぜ！\n　おっさん　おぼえときな
 move_npc 2704 up 3
 sleep 8
