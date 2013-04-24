@@ -1,5 +1,5 @@
 wait_same_pos
-play_se warp_in.wav
+play_se warp_in.ogg
 fadeout
 draw_char off
 sleep 16

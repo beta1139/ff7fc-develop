@@ -18,7 +18,7 @@ move_npc 152 left 3
 sleep 48
 chg_char_dir right
 msg ÅuThe hell you all doin!?\n I thought I told you\n never to move in a group!\n\n Our targets the North\n Mako Reactor.\n Well meet on the bridge\n in front of it.
-play_se door_open.wav
+play_se door_open.ogg
 kill 100
 active 101
 active 102

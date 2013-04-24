@@ -40,17 +40,17 @@ sleep 16
 move_npc 2010 right 1
 chg_npc_dir 2004 up
 sleep 32
-play_se attack_baret.wav
+play_se attack_baret.ogg
 sleep 32
 chg_npc_dir 2010 down
 sleep 32
-play_se attack_baret.wav
+play_se attack_baret.ogg
 sleep 48
 create npc_event 2006 20 22 26 71 1 2 「ウウ……よっぱらっちゃった\n　てづくりカクテル　おいしいんだもんなあ\n　きついんだもんなあ
 chg_speed 2006 fast
 move_npc 2006 down 2
 sleep 16
-play_se attack_baret.wav
+play_se attack_baret.ogg
 move_npc 2006 right 2
 sleep 16
 move_npc 2006 down 6
@@ -200,7 +200,7 @@ sleep 176
 chg_speed 2012 normal
 move_npc 2012 up 1
 open_door 2092
-play_se door_open.wav
+play_se door_open.ogg
 sleep 16
 kill_through 2012
 close_door 2092

@@ -3,7 +3,7 @@ wait_target_talk 2320
 reset_talk_flag 2320
 chg_char_dir down
 chg_char_img_tmp 115
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 step_char 1
 sleep 4
 create map_obj 2350 23 1 4 37 0 0 

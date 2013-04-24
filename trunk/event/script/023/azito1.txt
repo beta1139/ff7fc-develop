@@ -12,19 +12,19 @@ sleep 16
 kill 2350
 chg_speed 2304 fast
 step_npc 2304 1
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 4
 create map_obj 2350 23 1 4 37 0 0 
 sleep 12
 kill 2350
 step_npc 2304 1
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 4
 create map_obj 2350 23 1 4 37 0 0 
 sleep 12
 kill 2350
 step_npc 2304 1
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 4
 create map_obj 2350 23 1 4 37 0 0 
 sleep 12
@@ -32,20 +32,20 @@ kill 2350
 sleep 16
 chg_speed 2304 normal
 step_npc 2304 1
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 8
 create map_obj 2350 23 1 4 37 0 0 
 sleep 16
 kill 2350
 chg_speed 2304 fast
 step_npc 2304 1
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 4
 create map_obj 2350 23 1 4 37 0 0 
 sleep 12
 kill 2350
 step_npc 2304 1
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 4
 create map_obj 2350 23 1 4 37 0 0 
 sleep 12

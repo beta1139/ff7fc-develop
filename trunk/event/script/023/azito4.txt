@@ -22,7 +22,7 @@ chg_npc_img 2304 98
 sleep 24
 chg_npc_img 2304 95
 chg_speed 2304 normal
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 step_npc 2304 1
 sleep 8
 create map_obj 2350 23 1 4 37 0 0 
@@ -211,7 +211,7 @@ chg_speed 2304 fast
 chg_npc_img 2304 95
 step_npc 2304 16
 loop 4
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 4
 create map_obj 2350 23 1 4 37 0 0 
 sleep 4
@@ -219,7 +219,7 @@ kill 2350
 pool
 move_char down 1
 loop 4
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 4
 create map_obj 2350 23 1 4 37 0 0 
 sleep 4
@@ -227,7 +227,7 @@ kill 2350
 pool
 move_char down 1
 loop 4
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 4
 create map_obj 2350 23 1 4 37 0 0 
 sleep 4
@@ -235,7 +235,7 @@ kill 2350
 pool
 move_char right 1
 loop 3
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 4
 create map_obj 2350 23 1 4 37 0 0 
 sleep 4
