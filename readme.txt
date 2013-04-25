@@ -86,6 +86,8 @@ FF7FC Developing Version (2013/1/8 updated)
   ・ボス消滅アニメ
   ・パーティアタック
   ・ジャンプのchg_speed
+  ・メニューのアイテム欄を2列で表示する
+  ・if_owned_itemがキーアイテムに対応してないバグ修正
 
 ■更新履歴
   ・2013/1/8
