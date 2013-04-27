@@ -5,7 +5,7 @@ chg_speed 2304 normal
 chg_npc_dir 2304 left
 chg_npc_img 2304 95
 step_npc 2304 1
-play_se attack_tifa.wav
+play_se attack_tifa.ogg
 sleep 8
 create map_obj 2350 23 1 4 37 0 0 
 sleep 16
