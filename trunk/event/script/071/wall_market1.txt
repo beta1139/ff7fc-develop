@@ -1,0 +1,21 @@
+wait_same_pos
+move_char up 1
+kill_through_range 7100 7102
+sleep 16
+play_se warp_in.ogg
+fadeout
+draw_char off
+create event_generator 7200 72 9 21 17 0 0 @072/smoke1.txt
+sleep 16
+warp 72 9 21 up
+play_bgm
+fadein
+create event_generator 7210 72 9 21 17 0 0 @072/wall_market2.txt
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid a
+set_key_unvalid b
+set_key_unvalid start
+set_flag 9 1

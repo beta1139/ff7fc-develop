@@ -1,0 +1,135 @@
+set_eternal_event
+wait_target_talk 8510
+reset_talk_flag 8510
+chg_type 8510 npc_event
+chg_speed 8510 normal
+chg_dir_to_char 8510
+sleep 16
+step_npc 8510 2
+if_char_dir left
+msg3 -1 「ここは　ウォールマーケットの\n　おおもの　ドン　コルネオさまの　おやしきだ
+create npc_event 8521 85 11 15 3 1 2 none
+move_npc 8521 down 2
+sleep 32
+move_npc 8521 left 1
+sleep 16
+chg_npc_dir 8521 up
+wait_key_push_edge a
+erase_msg3
+sleep 16
+step_npc 8510 2
+msg 「いいか　ドンは　おとこにはきょうみないんだ\n　さっさとどっかへ……
+fi
+if_char_dir up
+set_talk_npc 8510
+msg 「ここは　ウォールマーケットの\n　おおもの　ドン　コルネオさまの　おやしきだ\n\n\n　いいか　ドンは　おとこにはきょうみないんだ\n　さっさとどっかへ……
+reset_talk_npc
+create npc_event 8521 85 10 16 3 1 2 none
+move_npc 8521 down 1
+move_char right 1
+sleep 16
+chg_npc_dir 8521 up
+chg_char_dir up
+fi
+if_char_dir right
+set_talk_npc 8510
+msg 「ここは　ウォールマーケットの\n　おおもの　ドン　コルネオさまの　おやしきだ\n\n\n　いいか　ドンは　おとこにはきょうみないんだ\n　さっさとどっかへ……
+reset_talk_npc
+create npc_event 8521 85 9 15 3 1 2 none
+move_npc 8521 down 1
+sleep 16
+move_npc 8521 right 1
+sleep 16
+move_npc 8521 down 1
+sleep 16
+chg_npc_dir 8521 up
+fi
+chg_npc_dir 8510 down
+sleep 16
+set_active_msg 8510
+jump_npc 8510 same 1
+set_talk_npc 8510
+msg 「ああっ　よくみたら\n　きれいなねえちゃんも\n　いっしょ！
+reset_talk_npc
+sleep 16
+step_npc 8510 4
+set_talk_npc 8510
+msg 「ね　どう？　うちのドンと\n　たのしいひとときを\n　すごしてみない？
+reset_talk_npc
+if_char_dir left
+move_npc 8521 right 2
+move_char down 3
+sleep 32
+move_npc 8521 down 1
+sleep 16
+fi
+if_char_dir up
+move_npc 8521 right 2
+sleep 16
+move_char down 2
+sleep 16
+move_npc 8521 down 1
+sleep 16
+fi
+if_char_dir right
+move_char down 1
+move_npc 8521 right 2
+sleep 16
+move_char right 2
+sleep 16
+move_npc 8521 down 1
+sleep 16
+chg_npc_dir 8521 left
+move_char down 2
+sleep 32
+fi
+chg_npc_dir 8521 left
+step_npc 8521 2
+msg エアリス\n「ね　ここがドンのやしきみたい\n　わたし　いってくるね\n\n　ティファさんに\n　あなたのこと\n　はなしてきてあげる
+move_npc 8521 up 1
+sleep 8
+chg_char_dir up
+step_char 1
+msg3 -1 『ダメだ
+sleep 8
+move_npc 8521 left 1
+sleep 16
+move_npc 8521 up 1
+sleep 16
+wait_key_push_edge a
+erase_msg3
+chg_npc_dir 8510 down
+sleep 16
+move_npc 8521 down 1
+sleep 16
+move_npc 8521 right 1
+sleep 16
+move_npc 8521 down 1
+chg_char_dir right
+sleep 16
+chg_npc_dir 8521 left
+step_npc 8521 1
+msg エアリス\n「どうして？
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 3
+sleep 80
+reset_char_img_tmp
+step_char 1
+sleep 16
+msg 『ここは……その……\n　……わかるだろ？
+sleep 16
+step_npc 8521 2
+msg エアリス\n「じゃあ　どうする？\n　あなたもはいる？
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+create event_generator 8501 85 11 18 17 0 0 @085/wall_market10.txt
+sleep 16
+chg_char_dir down
+step_char 1
+sleep 16
+msg3 -1 『おれは　おとこだからな\n　むりやりはいったら\n　さわぎになってしまう
+create event_generator 8502 85 11 18 17 0 0 @085/wall_market11.txt

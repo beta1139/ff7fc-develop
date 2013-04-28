@@ -1,0 +1,90 @@
+wait_same_pos
+chg_char_state_move
+wait_fake_countover
+chg_char_state_event
+set_key_valid a
+kill_through_range 8763 8774
+chg_char_dir down
+reset_char_img_tmp
+set_key_valid a
+sleep 16
+end_fake_countdown
+jump_npc 8715 same 1
+sleep 16
+step_npc 8715 2
+if_flag 16 20
+msg 「いまので　20かいいじょうね
+fi
+if_flag 16 19
+msg 「いまので　19かいね
+fi
+if_flag 16 18
+msg 「いまので　18かいね
+fi
+if_flag 16 17
+msg 「いまので　17かいね
+fi
+if_flag 16 16
+msg 「いまので　16かいね
+fi
+if_flag 16 15
+msg 「いまので　15かいね
+fi
+if_flag 16 14
+msg 「いまので　14かいね
+fi
+if_flag 16 13
+msg 「いまので　13かいね
+fi
+if_flag 16 12
+msg 「いまので　12かいね
+fi
+if_flag 16 11
+msg 「いまので　11かいね
+fi
+if_flag 16 10
+msg 「いまので　10かいね
+fi
+if_flag 16 9
+msg 「いまので　9かいね
+fi
+if_flag 16 8
+msg 「いまので　8かいね
+fi
+if_flag 16 7
+msg 「いまので　7かいね
+fi
+if_flag 16 6
+msg 「いまので　6かいね
+fi
+if_flag 16 5
+msg 「いまので　5かいね
+fi
+if_flag 16 4
+msg 「いまので　4かいね
+fi
+if_flag 16 3
+msg 「いまので　3かいね
+fi
+if_flag 16 2
+msg 「いまので　2かいね
+fi
+if_flag 16 1
+msg 「いまので　1かいね
+fi
+if_flag 16 0
+msg 「1かいも　できてないわよ
+fi
+sleep 16
+set_flag 16 0
+chg_npc_dir 8710 down
+sleep 16
+step_npc 8715 2
+step_npc 8715 2
+msg 「じゃあ　ほんばんやるわよ\n　ほんばん　はじめ！
+start_fake_countdown_sec 30
+create event_generator 8761 87 9 14 17 0 0 @087/wm_squat_end2.txt
+create event_generator 8762 87 9 14 17 0 0 @087/wm_squat_opponent.txt
+create event_generator 8763 87 9 14 17 0 0 @087/wm_squat_start.txt
+create event_generator 8764 87 9 14 17 0 0 @087/wm_squat_a.txt
+create event_generator 8765 87 9 14 17 0 0 @087/wm_squat_b.txt

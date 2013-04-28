@@ -1,0 +1,29 @@
+set_eternal_event
+wait_target_talk 7922
+reset_talk_flag 7922
+chg_type 7922 npc_event
+chg_dir_to_char 7922
+step_npc 7922 6
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+set_talk_npc 7922
+msg 「あんだよ！！　てめー！！\n　みせもんじゃねえぞ！！\n　オレは　いま　いそがしいんだよ！！
+step_npc 7922 4
+msg 「ビンビンに　かんじてんだよ！！\n　たたかいのよかん　ってやつをよ！！
+reset_talk_npc
+chg_type 7922 npc2
+set_flag_wall 7922

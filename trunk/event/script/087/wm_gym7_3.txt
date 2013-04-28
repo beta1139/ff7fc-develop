@@ -1,0 +1,40 @@
+wait_same_pos
+kill_through_range 8730 8733
+chg_npc_img 8710 111
+chg_npc_dir 8710 down
+chg_type 8719 npc_event
+set_screen_effect sub 255 255 255 80
+play_se radio_noise.ogg
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+chg_char_dir right
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+play_se radio_noise.ogg
+chg_char_dir left
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+chg_char_dir up
+sleep 8
+stop_se
+sleep 8
+chg_char_dir right
+sleep 16
+chg_speed 8719 normal
+set_active_msg 8719
+jump_npc 8719 same 1
+sleep 16
+jump_npc 8719 same 1
+msg 「ははは　きにしないでくれ\n　さいきん　でんきけいとうの\n　ちょうしがわるくてね
+chg_type 8719 npc
+chg_speed 8719 not_move
+set_inactive_msg 8719
+create event_generator 8733 87 11 19 17 0 0 @087/wm_squat.txt

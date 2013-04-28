@@ -1,0 +1,129 @@
+set_eternal_event
+wait_target_talk 7198
+reset_talk_flag 7198
+chg_dir_to_char 7198
+msg デバッグよう　ワープそうち\n「クエッ！\n　クラウドじょそうイベントちょくぜんまでとべます\n\n#2\n　　とぶ\n　　とばない\n\n\n[[]][[「あ　そ！]]
+if_flag 3 0
+set_flag 9 1
+set_flag 0 0
+fadeout
+kill_through_range 7100 7102
+create event_generator 7103 71 6 2 17 0 0 @071/kill_smoke1_1.txt
+create event_generator 7104 71 7 2 17 0 0 @071/kill_smoke1_1.txt
+create event_generator 7229 72 18 26 17 0 0 @072/kill_smoke1_2.txt
+kill_through 8500
+kill 8510
+sleep 8
+set_npc_pos 7221 72 6 29
+chg_type 7220 npc
+chg_type 7221 npc
+chg_type 7223 npc
+chg_type 7224 npc
+chg_type 7225 npc3
+set_flag_wall 7220
+set_flag_wall 7221
+set_flag_wall 7223
+set_flag_wall 7224
+set_flag_wall 7225
+sleep 16
+chg_speed 7221 normal
+chg_type 7222 npc
+set_flag_wall 7222
+chg_speed 7222 not_move
+sleep 8
+create npc2 8510 85 10 15 66 1 0 「おともだちも　か……\n　そりゃいいな\n\n\n　そのほうがドンもよろこぶし\n　もしかしたら……ウヒヒ
+sleep 8
+kill 7222
+create npc 7240 72 16 43 79 3 0 「やっぱり　ふんぎりがつかねえや\n　ええい　これあげるよ\n　これがなきゃ　はいれないからな
+kill 7601
+sleep 8
+create npc2 7513 75 6 14 17 0 0 
+create npc2 7612 76 5 6 17 0 0 
+kill 7511
+kill 7611
+chg_npc_img 7610 71
+chg_npc_dir 7610 up
+chg_speed 7610 not_move
+sleep 8
+create event_generator 7260 72 0 0 17 0 0 @072/wall_market12.txt
+create event_generator 7501 75 0 0 17 0 0 @075/wm_boutique1.txt
+create event_generator 7602 76 0 0 17 0 0 @076/wm_materia_shop2.txt
+chg_type 8510 npc
+chg_speed 8510 not_move
+set_flag 14 0
+sleep 8
+create npc2 7514 75 6 14 17 0 0 
+create npc2 8818 88 18 10 77 3 4 
+kill 7501
+kill 7513
+kill 8810
+sleep 8
+create event_generator 7502 75 0 0 17 0 0 @075/wm_boutique2.txt
+create event_generator 8808 88 0 0 17 0 0 @088/wm_yoidore8.txt
+sleep 8
+kill 7502
+kill 7514
+set_npc_pos 7510 75 4 8
+chg_npc_dir 7510 up
+create npc_event 7515 75 7 14 77 2 0 「そろったようじゃの\n　はやくきてみせてくれ
+create npc2 7516 75 6 14 17 0 0 「どうじゃ？\n　あえたかな？
+sleep 8
+create event_generator 7503 75 0 0 17 0 0 @075/wm_boutique3.txt
+set_flag 15 3
+kill 8808
+kill 8818
+sleep 8
+create npc2 8715 87 10 14 88 3 4 
+kill 8713
+sleep 8
+chg_type 7510 npc
+chg_type 7515 npc
+chg_type 7516 npc
+chg_param 7510 「どうです？\n　かつらは　てにはいりましたか？
+set_npc_pos 7516 75 9 13
+set_npc_pos 7515 75 9 14
+chg_npc_dir 7515 up
+create event_generator 8701 87 0 0 17 0 0 @087/wm_gym2.txt
+warp 84 17 30 up
+set_flag 15 5
+add_item 6002
+add_party_mem 3
+enable_char_chg
+sleep 8
+kill 7503
+sleep 8
+create map_obj 8750 87 10 6 40 0 0 
+disable_char_chg
+chg_speed 8715 not_move
+chg_speed 8712 not_move
+chg_type 8715 npc
+chg_type 8711 npc
+chg_type 8712 npc3
+chg_npc_dir 8711 up
+chg_npc_dir 8712 up
+chg_npc_dir 8715 up
+chg_npc_img 8710 17
+set_flag_wall 8711
+set_flag_wall 8712
+set_npc_pos 8710 87 10 6
+set_npc_pos 8711 87 11 8
+set_npc_pos 8712 87 9 7
+set_npc_pos 8715 87 10 7
+chg_param 8715 「だいじにつかってね
+chg_speed 8711 not_move
+chg_param 8719 「ははは\n　さいきん　でんきけいとうの\n　ちょうしがわるくてね
+kill_through 8700
+kill_through 8701
+kill_through 8709
+kill_through_range 8730 8733
+kill_through 8406
+kill 7516
+create event_generator 7504 75 9 7 17 0 0 @075/wm_boutique4.txt
+set_npc_pos 7515 75 4 11
+set_flag_wall 7515
+chg_npc_dir 7515 left
+chg_param 7510 「てにはいったようですね\n　さっそく　きがえてみてくださいよ
+add_item 6005
+warp_ff3_2 72 6 16 2 up
+fadein
+fi
