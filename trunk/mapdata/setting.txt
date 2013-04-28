@@ -70,7 +70,7 @@ id,type,bgm,battle_back,monster_party_id
 68,0,1-14-Underneath_the_Rotting_Pizza.ogg,4,188/189/190/191
 69,0,1-14-Underneath_the_Rotting_Pizza.ogg,4,188/189/190/191
 70,0,1-14-Underneath_the_Rotting_Pizza.ogg,4,188/189/190/191
-71,0,1-14-Underneath_the_Rotting_Pizza.ogg,4,188/189/190/191
+71,1,1-14-Underneath_the_Rotting_Pizza.ogg,4,188/189/190/191
 72,1,1-15-Oppressed_People.ogg,0,188/189/190/191
 73,1,1-15-Oppressed_People.ogg,0,188/189/190/191
 74,1,1-15-Oppressed_People.ogg,0,188/189/190/191
@@ -78,7 +78,7 @@ id,type,bgm,battle_back,monster_party_id
 76,1,1-15-Oppressed_People.ogg,0,188/189/190/191
 77,1,1-15-Oppressed_People.ogg,0,188/189/190/191
 78,1,1-15-Oppressed_People.ogg,0,188/189/190/191
-79,1,1-16-Honeybee_Manor.ogg,0,188/189/190/191
+79,1,1-15-Oppressed_People.ogg,0,188/189/190/191
 80,1,1-16-Honeybee_Manor.ogg,0,188/189/190/191
 81,1,1-16-Honeybee_Manor.ogg,0,188/189/190/191
 82,1,1-16-Honeybee_Manor.ogg,0,188/189/190/191
