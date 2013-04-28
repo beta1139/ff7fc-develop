@@ -1,0 +1,83 @@
+wait_same_pos
+wait_key_push_edge a
+erase_msg3
+sleep 32
+step_char 1
+sleep 16
+msg 『かといってエアリスに\n　いかせるわけには……\n　いや　しかし……
+sleep 16
+chg_char_dir left
+sleep 16
+step_char 1
+sleep 16
+msg 『まず　ティファのあんぜんが\n　かくにんできな……
+chg_char_dir right
+sleep 16
+step_char 1
+sleep 16
+msg 『なにが　おかしいんだ？\n　エアリス？
+kill 8501
+sleep 16
+chg_npc_img 8521 3
+chg_npc_dir 8521 left
+sleep 24
+jump_npc 8521 same 1
+sleep 16
+step_npc 8521 2
+msg エアリス\n「クラウド　おんなのこに\n　へんそうしなさい\n　それしかない　うん
+msg3 -1 『ええっ！？
+chg_event_move_char_speed fast
+jump_char same 1
+sleep 16
+step_char 2
+wait_key_push_edge a
+erase_msg3
+chg_char_dir down
+move_npc 8521 up 1
+sleep 16
+move_npc 8521 left 1
+sleep 16
+move_npc 8521 up 2
+sleep 32
+chg_npc_dir 8521 left
+step_npc 8521 2
+msg エアリス\n「ちょっとまっててね\n　きれいなともだち　つれてくるから
+move_npc 8521 down 2
+sleep 32
+move_npc 8521 right 1
+sleep 16
+move_npc 8521 down 1
+sleep 16
+chg_char_dir right
+step_char 2
+sleep 16
+msg 『エアリス！\n　いくらなんでも……
+chg_npc_dir 8521 left
+step_npc 8521 2
+msg エアリス\n「ティファさんが　しんぱいなんでしょ？\n　さ　はやくはやく！
+move_npc 8521 left 1
+kill 7222
+create npc 7240 72 16 43 79 3 0 「やっぱり　ふんぎりがつかねえや\n　ええい　これあげるよ\n　これがなきゃ　はいれないからな
+kill 7601
+sleep 8
+create npc2 7513 75 6 14 17 0 0 
+create npc2 7612 76 5 6 17 0 0 
+kill 7511
+kill 7611
+kill 7903
+chg_npc_img 7610 71
+chg_npc_dir 7610 up
+sleep 8
+create event_generator 7260 72 0 0 17 0 0 @072/wall_market12.txt
+create event_generator 7501 75 0 0 17 0 0 @075/wm_boutique1.txt
+create event_generator 7602 76 0 0 17 0 0 @076/wm_materia_shop2.txt
+kill 8521
+chg_type 8510 npc
+chg_speed 8510 not_move
+set_inactive_msg 8510
+chg_event_move_char_speed normal
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start

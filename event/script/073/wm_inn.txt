@@ -1,0 +1,146 @@
+set_eternal_event
+wait_target_talk 7320
+reset_talk_flag 7320
+if_flag 9 1
+create npc_event 7322 73 15 9 0 0 2 none
+fi
+if_flag 9 2
+kill_through 7300
+kill_through 7306
+chg_char_img_tmp 13
+create npc_event 7322 73 15 9 13 0 2 none
+fi
+draw_char off
+move_char up 1
+sleep 16
+step_npc 7321 2
+set_talk_npc 7321
+msg 「いらっしゃいませ\n　いっぱく　10ギルです\n\n\n#2\n　　とまる\n　　とまらない\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+if_gil_less 10
+set_talk_npc 7321
+msg 「おかねが　たりませんよ
+reset_talk_npc
+if_flag 9 2
+create event_generator 7306 73 15 9 17 0 0 @drag_cloud.txt 
+fi
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 7322
+end
+fi
+sub_gil 10
+if_flag 9 2
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 7322
+sleep 16
+chg_char_dir left
+stop_bgm
+create event_generator 7305 73 15 9 17 0 0 @073/wm_inn5.txt
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+chg_char_state_move
+loop_inf
+sleep 400
+pool
+fi
+move_char down 2
+sleep 16
+move_npc 7322 down 1
+sleep 16
+move_char left 4
+move_npc 7322 left 4
+sleep 64
+move_char up 4
+move_npc 7322 up 4
+sleep 64
+move_char left 1
+move_npc 7322 left 1
+sleep 16
+jump_npc_target_pos 7322 9 5
+jump_char_target_pos 9 5
+sleep 8
+chg_npc_dir 7322 left
+sleep 8
+chg_npc_dir 7322 down
+sleep 8
+chg_npc_y_offset 7322 4
+sleep 8
+chg_npc_dir 7322 right
+chg_npc_img 7322 96
+sleep 16
+kill 7321
+set_screen_effect sub 255 255 0 0
+loop 30
+inc_screen_effect_val 1
+sleep 1
+pool
+create event_generator 7305 73 9 5 17 0 0 @073/wm_inn5.txt
+fi
+if_flag 3 1
+step_npc 7321 2
+set_talk_npc 7321
+msg 「そうですか　またいらしてください
+reset_talk_npc
+move_char down 1
+if_flag 9 2
+create event_generator 7306 73 15 9 17 0 0 @drag_cloud.txt 
+fi
+sleep 16
+chg_char_dir up
+draw_char on
+kill 7322
+fi
+if_flag 14 2
+sleep 8
+fadeout
+sleep 32
+chg_npc_y_offset 7322 4
+set_npc_pos 7322 73 9 10
+chg_npc_img 7322 0
+chg_npc_dir 7322 up
+warp 73 9 10 up
+sleep 32
+set_screen_effect sub 255 255 0 30
+fadein
+step_npc 7322 1
+msg 『これのことか\n\n\n\n#4\n　　かわない\n　　200ギルのもの\n　　100ギルのもの\n　　50ギルのもの\n[[]][[]][[]][[]]
+if_flag 3 0
+fadeout
+end
+fi
+if_flag 3 1
+if_gil_less 200
+create event_generator 7302 73 9 10 17 0 0 @073/wm_inn2.txt
+end
+fi
+sub_gil 200
+set_flag 14 3
+fi
+if_flag 3 2
+if_gil_less 100
+create event_generator 7302 73 9 10 17 0 0 @073/wm_inn2.txt
+end
+fi
+sub_gil 100
+set_flag 14 4
+fi
+if_flag 3 3
+if_gil_less 50
+create event_generator 7302 73 9 10 17 0 0 @073/wm_inn2.txt
+end
+fi
+sub_gil 50
+set_flag 14 5
+fi
+create event_generator 7304 73 9 10 17 0 0 @073/wm_inn4.txt
+fi

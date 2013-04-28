@@ -1,0 +1,77 @@
+wait_same_pos
+step_npc 8715 2
+msg 「30びょうで　こなしたかいすうが\n　こいつらよりも　うえだったら\n　このかつらをあげるわ
+chg_npc_dir 8710 left
+sleep 16
+step_npc 8710 2
+msg 「ぜったいに\n　まけないすよ
+chg_char_dir right
+chg_npc_img 8710 125
+loop 2
+chg_npc_dir 8710 down
+sleep 8
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 2
+chg_npc_dir 8710 left
+sleep 8
+chg_npc_dir 8710 up
+sleep 2
+pool
+msg3 -1 「アニキのかつらは\n　わしらのもんじゃー！
+loop 2
+chg_npc_dir 8710 down
+sleep 8
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 2
+chg_npc_dir 8710 left
+sleep 8
+chg_npc_dir 8710 up
+sleep 2
+pool
+chg_npc_dir 8710 down
+wait_key_push_edge a
+erase_msg3
+sleep 8
+chg_npc_dir 8710 down
+step_npc 8715 2
+msg 「やかましいわね　こいつ
+sleep 16
+jump_npc 8715 same 1
+chg_char_dir down
+sleep 16
+chg_npc_img 8710 111
+chg_npc_dir 8710 down
+chg_speed 8710 not_move
+step_npc 8715 2
+msg 「ぶっつけほんばんってのも\n　かわいそうだから　れんしゅうする？\n\n\n#2\n　　かるく　れんしゅうでもする\n　　れんしゅうなど　ひつようない\n\n\n[[]][[]]
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+disable_char_chg
+chg_speed 8711 not_move
+chg_speed 8712 not_move
+if_flag 3 0
+step_npc 8715 2
+msg 「じゃ　れんしゅうはじめ！
+start_fake_countdown_sec 30
+chg_npc_dir 8710 right
+create event_generator 8760 87 9 14 17 0 0 @087/wm_squat_end.txt
+create event_generator 8763 87 9 14 17 0 0 @087/wm_squat_start.txt
+create event_generator 8764 87 9 14 17 0 0 @087/wm_squat_a.txt
+create event_generator 8765 87 9 14 17 0 0 @087/wm_squat_b.txt
+fi
+if_flag 3 1
+step_npc 8715 2
+msg 「じゃあ　ほんばんやるわよ\n　ほんばん　はじめ！
+start_fake_countdown_sec 30
+chg_speed 8710 normal
+create event_generator 8761 87 9 14 17 0 0 @087/wm_squat_end2.txt
+create event_generator 8762 87 9 14 17 0 0 @087/wm_squat_opponent.txt
+create event_generator 8763 87 9 14 17 0 0 @087/wm_squat_start.txt
+create event_generator 8764 87 9 14 17 0 0 @087/wm_squat_a.txt
+create event_generator 8765 87 9 14 17 0 0 @087/wm_squat_b.txt
+fi

@@ -1,0 +1,64 @@
+wait_same_pos
+chg_char_img_tmp 126
+chg_char_state_move
+loop_inf
+wait_key_push_edge select
+sleep 12
+chg_char_dir up
+play_se squat.ogg
+kill_through 8771
+kill_through 8774
+create event_generator 8772 87 9 14 17 0 0 @087/wm_squat_select2.txt
+sleep 4
+chg_char_dir left
+sleep 16
+wait_key_push_edge b
+sleep 12
+chg_char_dir up
+play_se squat.ogg
+kill_through 8770
+kill_through 8773
+create event_generator 8771 87 9 14 17 0 0 @087/wm_squat_b3.txt
+sleep 4
+chg_char_dir right
+sleep 16
+wait_key_push_edge a
+sleep 12
+chg_char_dir up
+play_se squat.ogg
+kill_through 8772
+create event_generator 8770 87 9 14 17 0 0 @087/wm_squat_a3.txt
+sleep 4
+chg_char_dir down
+sleep 8
+if_flag 16 19
+set_flag 16 20
+fi
+if_flag 16 18
+set_flag 16 19
+fi
+if_flag 16 17
+set_flag 16 18
+fi
+if_flag 16 16
+set_flag 16 17
+fi
+if_flag 16 15
+set_flag 16 16
+fi
+if_flag 16 14
+set_flag 16 15
+fi
+if_flag 16 13
+set_flag 16 14
+fi
+if_flag 16 12
+set_flag 16 13
+fi
+if_flag 16 11
+set_flag 16 12
+fi
+if_flag 16 10
+set_flag 16 11
+fi
+pool

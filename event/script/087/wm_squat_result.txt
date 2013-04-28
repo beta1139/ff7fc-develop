@@ -1,0 +1,246 @@
+wait_same_pos
+sleep 16
+chg_speed 8710 normal
+if_flag 17 7
+jump_npc 8715 same 1
+sleep 16
+jump_npc 8715 same 1
+sleep 16
+step_npc 8715 2
+msg 「あんた　すごいねぇ\n　やくそくどおり　これをあげるよ
+move_npc 8715 up 2
+sleep 16
+move_npc 8710 up 1
+sleep 16
+chg_npc_dir 8710 down
+chg_npc_dir 8715 left
+chg_char_dir right
+sleep 16
+step_npc 8715 2
+sleep 32
+play_se pick_up.wav
+add_item 6005
+msg キーアイテム（ブロンドのかつら）をてにいれた！
+sleep 16
+step_npc 8710 2
+set_talk_npc 8710
+msg 「アニキっー\n　くやしいっすよー\n　むちゃくちゃくやしいっすよー！
+reset_talk_npc
+chg_npc_dir 8721 right
+chg_speed 8715 fast
+move_npc 8715 down 2
+sleep 16
+fi
+if_flag 17 6
+jump_npc 8715 same 1
+sleep 16
+step_npc 8715 2
+msg 「あなた　よくがんばったわね\n　あたしの　おふるをあげるわね
+move_npc 8715 up 2
+sleep 16
+move_npc 8710 up 1
+sleep 16
+chg_npc_dir 8710 down
+chg_npc_dir 8715 left
+chg_char_dir right
+sleep 16
+step_npc 8715 2
+sleep 32
+play_se pick_up.wav
+add_item 6004
+msg キーアイテム（チャパツのかつら）をてにいれた！
+sleep 16
+step_npc 8710 2
+set_talk_npc 8710
+msg 「ア　アニキ\n　そ　それは\n　あっしがもらえるはず……
+reset_talk_npc
+chg_npc_dir 8721 right
+chg_speed 8715 fast
+move_npc 8715 down 2
+sleep 16
+fi
+if_flag 17 5
+step_npc 8715 2
+msg 「ざんねんでした\n　あなたのまけね\n\n\n　ふくやのオヤジのたのみだから\n　わたさないわけには　いかないから
+move_npc 8715 up 1
+sleep 16
+move_npc 8715 right 1
+chg_char_dir right
+sleep 16
+chg_npc_dir 8721 right
+chg_npc_dir 8710 right
+sleep 16
+step_npc 8715 4
+sleep 80
+set_active_msg 8715
+jump_npc 8715 same 1
+msg 「あれ　どこにしまったのかしら？
+sleep 16
+set_inactive_msg 8715
+chg_npc_dir 8710 down
+sleep 16
+step_npc 8710 2
+set_talk_npc 8710
+msg 「しかたあるまい
+reset_talk_npc
+chg_npc_dir 8715 left
+chg_npc_dir 8710 right
+chg_npc_img 8710 125
+chg_npc_dir 8721 down
+sleep 16
+chg_npc_dir 8710 up
+sleep 4
+chg_npc_dir 8710 left
+sleep 16
+chg_npc_img 8710 111
+chg_npc_dir 8710 up
+step_npc 8710 3
+play_se syu.ogg
+sleep 8
+jump_npc 8721 same 1
+sleep 16
+chg_npc_dir 8721 left
+sleep 40
+step_npc 8710 1
+play_se syu.ogg
+sleep 24
+stop_se
+chg_npc_dir 8710 left
+sleep 16
+step_npc 8710 2
+sleep 32
+chg_speed 8715 fast
+move_npc 8715 left 1
+sleep 8
+move_npc 8715 down 1
+sleep 8
+fi
+move_npc 8715 up 2
+sleep 16
+jump_npc 8715 same 3
+play_se thunder.wav
+jump_npc_target_pos 8710 10 6
+flush
+sleep 4
+chg_char_dir up
+chg_npc_dir 8715 right
+sleep 4
+flush
+chg_npc_dir 8721 up
+chg_char_dir up
+chg_npc_dir 8715 down
+sleep 4
+chg_npc_dir 8715 left
+sleep 4
+chg_npc_dir 8715 up
+loop 2
+sleep 4
+chg_npc_dir 8715 right
+sleep 4
+chg_npc_dir 8715 down
+sleep 4
+chg_npc_dir 8715 left
+sleep 4
+chg_npc_dir 8715 up
+pool
+play_se damage.wav
+create map_obj 8750 87 10 6 40 0 0 
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+step_npc 8715 4
+if_flag 17 7
+msg 「やかましー！\n　まけたあげくに　めそめそすんじゃねえ！
+fi
+if_flag 17 6
+msg 「やかましい！\n　シロウトさんとひきわけといて\n　ナマイキいってんじゃねえ！！
+fi
+if_flag 17 5
+msg 「こん　ボケ！\n　なんてとこに　かくしてやがんだ！
+fi
+sleep 32
+msg 「うう\n　アニキのテッケンは\n　ほねのズイまで\n　しびれやすぜ…
+if_flag 17 5
+chg_npc_dir 8715 left
+chg_speed 8715 normal
+sleep 8
+chg_char_dir right
+step_npc 8715 2
+msg 「ごめんね　ちょっとなんだけど\n　しょうどくすれば　つかえるから
+chg_npc_dir 8721 left
+chg_npc_img 8721 15
+step_npc 8721 3
+play_se pick_up.wav
+add_item 6003
+msg キーアイテム（クセゲのかつら）をてにいれた！
+sleep 16
+chg_npc_img 8721 3
+chg_npc_dir 8721 up
+fi
+chg_npc_img 8710 17
+chg_npc_dir 8711 up
+chg_speed 8712 fast
+move_npc 8712 left 2
+sleep 16
+move_npc 8712 up 8
+sleep 16
+chg_speed 8715 normal
+move_npc 8715 up 7
+sleep 48
+chg_npc_dir 8721 down
+chg_speed 8712 normal
+jump_npc 8712 up 2
+sleep 16
+move_npc 8721 down 1
+sleep 16
+kill 8721
+chg_speed 8711 fast
+move_npc 8711 up 4
+sleep 16
+set_key_valid b
+set_key_valid select
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+chg_char_state_move
+chg_speed 8712 fast
+move_npc 8712 right 1
+sleep 8
+chg_npc_dir 8712 up
+sleep 8
+jump_npc 8711 same 1
+jump_npc 8712 same 1
+sleep 16
+chg_speed 8715 not_move
+chg_speed 8712 not_move
+chg_type 8715 npc
+chg_type 8711 npc
+chg_type 8712 npc3
+set_flag_wall 8711
+set_flag_wall 8712
+chg_param 8715 「だいじにつかってね
+chg_speed 8711 not_move
+chg_param 8719 「ははは\n　さいきん　でんきけいとうの\n　ちょうしがわるくてね
+kill_through 8709
+kill_through 8406
+kill 7516
+create event_generator 7504 75 9 7 17 0 0 @075/wm_boutique4.txt
+set_npc_pos 7515 75 4 11
+set_flag_wall 7515
+chg_npc_dir 7515 left
+chg_param 7510 「てにはいったようですね\n　さっそく　きがえてみてくださいよ

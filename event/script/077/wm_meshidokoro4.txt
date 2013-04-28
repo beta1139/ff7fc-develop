@@ -1,0 +1,91 @@
+wait_same_pos
+draw_fake_countdown off
+start_fake_countdown_sec 7
+chg_char_state_move
+move_npc 7710 down 4
+move_npc 7711 up 2
+sleep 32
+chg_npc_dir 7711 left
+sleep 32
+chg_npc_dir 7710 right
+step_npc 7710 2
+sleep 32
+move_npc 7710 up 1
+sleep 16
+chg_npc_dir 7710 right
+sleep 16
+play_se fire.ogg
+step_npc 7710 4
+sleep 16
+create npc_event 7721 77 8 10 124 1 1 none
+set_layer 7721 front
+slide_npc 7721 up 2
+sleep 16
+chg_npc_dir 7721 left
+sleep 16
+chg_npc_dir 7721 up
+create npc_event 7722 77 8 10 124 1 1 none
+set_layer 7722 front
+slide_npc 7722 up 2
+sleep 16
+chg_npc_dir 7721 right
+chg_npc_dir 7722 left
+play_se fire.ogg
+jump_npc 7710 same 1
+sleep 16
+jump_npc 7710 same 1
+kill 7721
+chg_npc_dir 7722 up
+create npc_event 7723 77 8 10 124 1 1 none
+set_layer 7723 front
+slide_npc 7723 up 2
+sleep 16
+chg_npc_dir 7722 right
+chg_npc_dir 7723 left
+jump_npc 7710 same 1
+play_se fire.ogg
+sleep 16
+step_npc 7710 4
+kill 7722
+chg_npc_dir 7723 up
+create npc_event 7724 77 8 10 124 1 1 none
+set_layer 7724 front
+slide_npc 7724 up 2
+sleep 16
+chg_npc_dir 7723 right
+chg_npc_dir 7724 left
+play_se fire.ogg
+sleep 16
+kill 7723
+chg_npc_dir 7724 up
+create npc_event 7725 77 8 10 124 1 1 none
+set_layer 7725 front
+slide_npc 7725 up 2
+sleep 16
+chg_npc_dir 7724 right
+chg_npc_dir 7725 left
+play_se fire.ogg
+sleep 16
+jump_npc 7710 same 1
+kill 7724
+chg_npc_dir 7725 up
+create npc_event 7726 77 8 10 124 1 1 none
+set_layer 7726 front
+slide_npc 7726 up 2
+sleep 16
+step_npc 7710 4
+chg_npc_dir 7725 right
+chg_npc_dir 7726 left
+sleep 16
+kill 7725
+chg_npc_dir 7726 up
+sleep 16
+chg_npc_dir 7726 right
+sleep 16
+kill 7726
+sleep 16
+move_npc 7710 up 3
+sleep 48
+chg_npc_dir 7710 right
+sleep 16
+chg_speed 7710 not_move

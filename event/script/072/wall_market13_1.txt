@@ -1,0 +1,35 @@
+set_eternal_event
+wait_same_pos
+chg_char_img_tmp 13
+kill_through 7263
+create npc_event 7231 72 8 47 3 0 2 none
+move_npc 7231 up 2
+sleep 32
+chg_npc_dir 7231 down
+sleep 32
+move_char up 1
+sleep 16
+step_char 1
+sleep 16
+msg 『どうしたんだ　エアリス？
+sleep 16
+step_npc 7231 2
+set_talk_npc 7231
+msg 「……どうした？\n　あなた　そのままそと　でるの？\n　わたし　かまわないけど
+reset_talk_npc
+chg_char_dir right
+step_char 1
+sleep 16
+msg 『……そうだった
+jump_npc 7231 same 1
+sleep 16
+step_npc 7231 2
+set_talk_npc 7231
+msg 「しっかり　ね？\n　すてきなクラウド！
+reset_talk_npc
+chg_char_dir up
+sleep 16
+move_npc 7231 down 1
+sleep 16
+kill 7231
+create event_generator 7263 72 8 46 17 0 0 @drag_cloud.txt

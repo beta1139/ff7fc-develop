@@ -1,0 +1,15 @@
+wait_same_pos
+chg_npc_dir 7711 down
+if_flag 9 1
+msg 「いらっしゃい！\n　どうぞ　おすきなところへ
+fi
+if_flag 9 2
+kill_through_range 7708 7709
+chg_char_img_tmp 13
+msg 「すいませーん\n　いま　まんせきなんです\n　また　きてください
+fi
+sleep 16
+chg_npc_dir 7711 left
+if_flag 9 2
+create event_generator 7708 77 3 15 17 0 0 @drag_cloud.txt 
+fi

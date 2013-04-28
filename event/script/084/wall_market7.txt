@@ -1,0 +1,41 @@
+set_eternal_event
+wait_target_talk 8411
+reset_talk_flag 8411
+if_flag 9 2
+chg_char_img_tmp 13
+kill_through_range 8400 8402
+kill_through_range 8406 8409
+fi
+chg_type 8411 npc_event
+chg_type 8412 npc_event
+chg_speed 8411 normal
+chg_speed 8412 normal
+step_npc 8412 2
+set_talk_npc 8412
+msg 「ここのゴミ\n　どうにかならないのかしらねえ
+reset_talk_npc
+sleep 16
+step_npc 8411 4
+msg 「これってぜんぶ　あの　ほら……\n　ぶきやの　あそこのごしゅじん\n　ひとってきては　ためこんでるそうよ
+sleep 16
+jump_npc 8412 same 1
+sleep 16
+step_npc 8412 2
+set_talk_npc 8412
+msg 「ああ　あのおみせのなかに　せんしゃまでおいてる\n　あのごしゅじんね
+reset_talk_npc
+sleep 16
+step_npc 8411 2
+msg 「でも　どうみても\n　ゴミですわねえ
+chg_type 8411 npc2
+chg_type 8412 npc2
+chg_speed 8411 not_move
+chg_speed 8412 not_move
+if_flag 9 2
+if_char_dir down
+create event_generator 8407 84 9 31 17 0 0 @drag_cloud.txt
+fi
+if_char_dir right
+create event_generator 8407 84 8 32 17 0 0 @drag_cloud.txt
+fi
+fi

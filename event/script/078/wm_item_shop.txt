@@ -1,0 +1,110 @@
+set_eternal_event
+wait_target_talk 7811
+reset_talk_flag 7811
+if_flag 9 1
+create npc_event 7820 78 6 8 0 0 2 none
+fi
+if_flag 9 2
+kill_through 7800
+kill_through 7802
+create npc_event 7820 78 6 8 13 0 2 none
+chg_char_img_tmp 13
+fi
+draw_char off
+move_char up 1
+sleep 48
+chg_npc_dir 7810 down
+sleep 8
+msg3 -1 「うわっ！
+chg_speed 7810 fast
+jump_npc 7810 same 1
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+wait_key_push_edge a
+erase_msg3
+jump_npc 7810 same 1
+sleep 16
+step_npc 7810 2
+set_talk_npc 7810
+msg 「いるならいるって\n　いってくださいよ
+reset_talk_npc
+chg_speed 7810 normal
+if_flag 13 1
+sleep 16
+step_npc 7810 2
+set_talk_npc 7810
+msg 「おや　クーポンをおもちのようですね\n　それでは　しょうひんを　ひとつだけえらんでくだい\n\n\n#3\n　　しょうどくやく\n　　しょうしゅうやく\n　　しょうかやく\n\n[[]][[]][[]]
+reset_talk_npc
+del_item 6015
+if_flag 3 0
+step_npc 7810 2
+set_talk_npc 7810
+msg 「はいどうぞ
+reset_talk_npc
+play_se pick_up.wav
+add_item 6016
+msg キーアイテム（しょうどくやく）をてにいれた！
+fi
+if_flag 3 1
+step_npc 7810 2
+set_talk_npc 7810
+msg 「はいどうぞ
+reset_talk_npc
+play_se pick_up.wav
+add_item 6017
+msg キーアイテム（しょうしゅうやく）をてにいれた！
+fi
+if_flag 3 2
+step_npc 7810 2
+set_talk_npc 7810
+msg 「はいどうぞ
+reset_talk_npc
+play_se pick_up.wav
+add_item 6018
+add_item 1044
+msg キーアイテム（しょうかやく）をてにいれた！
+fi
+kill_through 8816
+move_char down 1
+if_flag 9 2
+create event_generator 7802 78 6 8 17 0 0 @drag_cloud.txt 
+fi
+sleep 16
+chg_npc_dir 7810 up
+chg_speed 7810 not_move
+chg_char_dir up
+draw_char on
+kill 7820
+if_flag 9 1
+create npc2 8816 88 3 6 66 3 4 
+create event_generator 8805 88 0 0 17 0 0 @088/wm_yoidore5.txt
+fi
+set_flag 13 2
+end
+fi
+sleep 8
+open_item_shop 1000/1007/1008/1012/1052/1013/1014/1001/1070
+move_char down 1
+if_flag 9 2
+create event_generator 7802 78 6 8 17 0 0 @drag_cloud.txt 
+fi
+sleep 16
+chg_npc_dir 7810 up
+chg_speed 7810 not_move
+chg_char_dir up
+draw_char on
+kill 7820

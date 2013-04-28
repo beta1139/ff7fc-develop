@@ -1,0 +1,88 @@
+wait_target_talk 8817
+chg_type 8817 npc_event
+chg_speed 8817 normal
+msg 「なんだよ………う………\n\n\n\n#2\n　　くすりをわたす\n　　くすりをわたさない\n\n\n[[]][[]]
+if_flag 3 0
+msg 「え？\n　ほんとうにくれるのかい？\n　ありがたくもらうよ
+step_char 2
+sleep 48
+if_owned_item 6016
+step_npc 8817 1
+msg 「なんだこりゃ………\n　まあいいか
+sleep 16
+msg 「やくにはたたなかったけど\n きもちはうれしかったよ\n おれいに　これあげるよ
+step_npc 8817 2
+sleep 32
+play_se pick_up.wav
+add_item 6009
+del_item 6016
+msg キーアイテム（コロン）をてにいれた
+set_flag 13 3
+fi
+if_owned_item 6017
+step_npc 8817 1
+msg 「なんだこりゃ………\n　まあいいか
+sleep 16
+msg 「やくにはたたなかったけど\n きもちはうれしかったよ\n おれいに　これあげるよ
+step_npc 8817 2
+sleep 32
+play_se pick_up.wav
+add_item 6010
+del_item 6017
+msg キーアイテム（フラワーコロン）をてにいれた
+set_flag 13 4
+fi
+if_owned_item 6018
+step_npc 8817 4
+sleep 64
+msg 「ふー　すっきりしたよ\n　おれいに　これあげるよ
+step_npc 8817 2
+sleep 32
+play_se pick_up.wav
+add_item 6011
+del_item 6018
+msg キーアイテム（セクシーコロン）をてにいれた
+set_flag 13 5
+fi
+chg_type 8815 npc_event
+chg_speed 8815 fast
+kill 8803
+sleep 16
+move_npc 8817 right 1
+move_char down 2
+sleep 16
+move_npc 8817 down 2
+sleep 16
+move_char right 2
+sleep 16
+move_npc 8817 right 2
+sleep 16
+move_char up 1
+sleep 16
+jump_npc 8815 same 1
+chg_char_dir down
+move_npc 8817 down 1
+sleep 16
+move_npc 8815 left 3
+move_npc 8817 right 5
+sleep 24
+move_npc 8815 up 2
+sleep 16
+move_npc 8815 left 1
+sleep 8
+chg_npc_dir 8815 right
+chg_speed 8815 not_step
+sleep 32
+move_npc 8817 down 2
+sleep 32
+move_npc 8817 right 6
+sleep 96
+kill 8817
+create event_generator 8807 88 4 7 17 0 0 @088/wm_yoidore7.txt
+fi
+if_flag 3 1
+create npc2 8816 88 3 6 66 3 4 
+kill 8817
+sleep 16
+create event_generator 8805 88 0 0 17 0 0 @088/wm_yoidore5.txt
+fi

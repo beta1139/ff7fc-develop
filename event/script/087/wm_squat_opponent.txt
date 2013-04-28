@@ -1,0 +1,426 @@
+wait_same_pos
+chg_char_state_move
+chg_npc_img 8710 125
+loop 4
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 24
+pool
+if_flag 16 2
+chg_npc_img 8710 111
+step_npc 8710 3
+sleep 48
+jump_npc 8710 same 1
+sleep 16
+jump_npc 8710 same 1
+sleep 16
+chg_npc_img 8710 125
+fi
+loop 2
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+pool
+if_flag 16 4
+chg_npc_img 8710 111
+step_npc 8710 3
+sleep 48
+msg3 104 「うぉー！！！　リズムがくるったぁーっ！
+jump_npc 8710 same 1
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+jump_npc 8710 same 1
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 4
+chg_npc_img 8710 125
+fi
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+if_flag 16 7
+chg_npc_dir 8710 down
+chg_npc_img 8710 111
+step_npc 8710 3
+sleep 48
+msg3 104 「うぉー！！！　リズムがーっ！
+jump_npc 8710 same 1
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+jump_npc 8710 same 1
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 4
+chg_npc_img 8710 125
+fi
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+if_flag 16 7
+chg_npc_img 8710 111
+step_npc 8710 3
+sleep 48
+msg3 104 「うぉー！！！　まけてたまるかぁーっ！
+jump_npc 8710 same 1
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+jump_npc 8710 same 1
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 4
+chg_npc_img 8710 125
+fi
+if_flag 16 8
+chg_npc_img 8710 111
+step_npc 8710 3
+sleep 48
+jump_npc 8710 same 1
+sleep 16
+jump_npc 8710 same 1
+sleep 16
+chg_npc_img 8710 125
+chg_npc_dir 8710 down
+fi
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+if_flag 16 10
+chg_npc_img 8710 111
+step_npc 8710 3
+sleep 48
+msg3 104 「まけてたまるかぁーっ！
+jump_npc 8710 same 1
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+jump_npc 8710 same 1
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 4
+chg_npc_img 8710 125
+fi
+set_screen_effect sub 255 255 255 80
+chg_npc_dir 8710 up
+play_se radio_noise.ogg
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+chg_npc_dir 8710 up
+play_se radio_noise.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 4
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+sleep 4
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+if_flag 16 11
+chg_npc_img 8710 111
+step_npc 8710 3
+sleep 48
+jump_npc 8710 same 1
+sleep 16
+jump_npc 8710 same 1
+sleep 16
+chg_npc_img 8710 125
+fi
+sleep 24
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+chg_npc_img 8710 111
+step_npc 8710 3
+sleep 48
+jump_npc 8710 same 1
+sleep 16
+jump_npc 8710 same 1
+sleep 16
+chg_npc_img 8710 125
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+set_flag 17 1
+if_flag 16 13
+chg_npc_img 8710 111
+msg3 104 「うぉー！！！　アニキっー！
+jump_npc 8710 same 1
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+jump_npc 8710 same 1
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 4
+step_npc 8710 3
+sleep 48
+chg_npc_img 8710 125
+fi
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+set_screen_effect sub 255 255 255 80
+play_se radio_noise.ogg
+chg_npc_dir 8710 left
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 4
+reset_screen_effect
+play_se radio_noise.ogg
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+sleep 12
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+set_flag 17 2
+if_flag 16 15
+chg_npc_img 8710 111
+msg3 104 「うぉー！！！　うぉーーーっ！
+jump_npc 8710 same 1
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+jump_npc 8710 same 1
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 4
+step_npc 8710 3
+sleep 48
+chg_npc_img 8710 125
+fi
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+set_flag 17 3
+loop_inf
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+sleep 16
+set_flag 17 4
+pool

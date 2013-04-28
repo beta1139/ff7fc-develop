@@ -1,0 +1,15 @@
+wait_target_talked 7240
+chg_type 7240 npc_event
+chg_speed 7240 normal
+chg_dir_to_char 7240
+step_npc 7240 2
+sleep 16
+kill 7924
+sleep 16
+play_se pick_up.wav
+add_item 6012
+msg （ミツバチのやかた　かいいんカード）をてにいれた！
+chg_type 7240 npc
+chg_param 7240 「…………
+chg_param 7923 「んっ！\n　どぞどぞ！
+create npc 7924 79 10 11 73 2 0 「おっ！　みぎてにかがやく　（かいいんカード）\n　どうぞ　おとおりください

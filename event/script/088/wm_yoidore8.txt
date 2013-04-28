@@ -1,0 +1,170 @@
+wait_target_talk 8818
+reset_talk_flag 8818
+chg_type 8818 npc_event
+chg_speed 8818 normal
+if_char_dir up
+move_char left 1
+sleep 16
+move_char up 2
+sleep 32
+create npc_event 8821 88 17 9 3 0 2 none
+fi
+if_char_dir right
+move_char up 1
+sleep 16
+create npc_event 8821 88 17 9 3 0 2 none
+fi
+if_char_dir down
+move_char left 1
+sleep 16
+create npc_event 8821 88 17 9 3 2 2 none
+fi
+chg_char_dir right
+move_npc 8821 down 1
+sleep 16
+chg_npc_dir 8821 right
+sleep 16
+step_npc 8821 2
+msg エアリス\n「あの～　ふくやのおやじさん　ですよね？
+sleep 48
+chg_npc_dir 8818 left
+sleep 16
+step_npc 8818 1
+msg 「たしかに　ふくやだが\n　あなたのおやじではないぞ
+sleep 24
+step_npc 8821 1
+msg エアリス\n「そんなこと　いってない……
+move_char right 1
+sleep 16
+chg_char_dir down
+create npc_event 8820 88 18 9 0 1 2 none
+draw_char off
+sleep 16
+step_npc 8820 1
+msg 『ふくをつくってくれ
+sleep 16
+chg_npc_dir 8818 up
+sleep 16
+step_npc 8818 2
+msg 「わしは　おとこモノのふくはつくらんのだが？\n　それに　あまり　きのりがせんしな
+sleep 16
+move_npc 8821 up 1
+sleep 16
+chg_npc_dir 8821 right
+step_npc 8821 2
+msg エアリス\n「クラウド　すこ～し　まってて\n　わたし　はなすから\n\n　むこうで　なにかのんでていいよ
+move_npc 8821 down 1
+move_char left 2
+move_npc 8820 left 2
+sleep 16
+chg_npc_dir 8821 right
+step_npc 8821 2
+msg3 88 エアリス\n「あのね　おじさん
+sleep 16
+chg_npc_dir 8818 left
+move_npc 8820 up 4
+move_char up 2
+sleep 64
+chg_npc_dir 8820 left
+sleep 8
+erase_msg3
+move_char down 3
+sleep 48
+move_char right 1
+sleep 16
+step_npc 8821 2
+msg エアリス\n「あのカレがね　いちどでいいから\n　おんなのこのかっこうしたい　っていうの\n\n　それでね　かわいいドレス\n　きせてあげたいんだけど……
+msg3 -1 「なんと！
+jump_npc 8818 same 2
+sleep 32
+wait_key_push_edge a
+erase_msg3
+chg_npc_dir 8818 up
+sleep 8
+chg_speed 8818 fast
+step_npc 8818 3
+msg 「あんな　ぶあいそうなヤツがか？
+jump_npc 8821 same 1
+sleep 16
+jump_npc 8821 same 1
+sleep 16
+step_npc 8821 2
+msg エアリス\n「ね　ね　どう？\n つくってくれる？
+sleep 48
+chg_npc_dir 8818 left
+sleep 16
+chg_speed 8818 normal
+jump_npc 8818 same 1
+sleep 16
+step_npc 8818 2
+msg 「ふむ　なかなかおもしろそうだのう\n　ふつうのふくばかり　つくっておったので\n　ちょっとあきとったんだよ
+step_npc 8821 2
+msg エアリス\n「じゃあ　つくってくれる？
+sleep 16
+chg_npc_dir 8818 right
+sleep 4
+chg_npc_dir 8818 down
+sleep 4
+chg_npc_dir 8818 left
+sleep 4
+msg 「ああ　よかろう\n　それでどんなドレスがいいんじゃ？
+sleep 16
+step_npc 8821 2
+msg エアリス\n「はだざわりは……\n\n\n#2\n　　さらっとしたの\n　　さわっとしたの\n\n\n[[]][[]]
+if_flag 3 0
+set_flag 15 1
+fi
+if_flag 3 1
+set_flag 15 2
+fi
+step_npc 8821 1
+msg エアリス\n「ひかりぐあいは……\n\n\n#2\n　　きらきらしたの\n　　つやつやしたの\n\n\n[[]][[]]
+if_flag 3 0
+if_flag 15 1
+set_flag 15 3
+fi
+if_flag 15 2
+set_flag 15 4
+fi
+fi
+if_flag 3 1
+if_flag 15 1
+set_flag 15 3
+fi
+if_flag 15 2
+set_flag 15 5
+fi
+fi
+jump_npc 8818 same 1
+sleep 16
+step_npc 8818 2
+msg 「ふんふん　ようわかったわい\n　しりあいに　そのてのことがシュミなやつが\n　おるので　ちょっときいてくるわい
+chg_npc_dir 8818 right
+chg_speed 8818 not_move
+chg_npc_dir 8821 up
+sleep 16
+jump_npc 8821 same 1
+chg_npc_dir 8820 down
+sleep 16
+move_npc 8820 down 4
+sleep 32
+move_char left 1
+sleep 16
+move_char up 1
+kill 7502
+move_npc 8821 up 1
+sleep 16
+chg_char_dir down
+draw_char on
+kill 8820
+move_npc 8821 left 1
+set_npc_pos 7510 75 4 8
+chg_npc_dir 7510 up
+create npc_event 7515 75 7 14 77 2 0 「そろったようじゃの\n　はやくきてみせてくれ
+create npc2 7516 75 6 14 17 0 0 「どうじゃ？\n　あえたかな？
+kill 7514
+sleep 16
+kill 8821
+chg_type 8818 npc
+chg_param 8818 「なんじゃ　そういそぎなさんな\n　イメージがわくまで　またんとな\n　ゴクゴク　ふー　うまいのう
+create event_generator 7503 75 0 0 17 0 0 @075/wm_boutique3.txt

@@ -1,0 +1,8 @@
+set_eternal_event
+wait_target_talked 164
+reset_talked_flag 164
+if_flag 3 0
+warp 71 6 8 up
+play_bgm
+set_flag 0 0
+fi
