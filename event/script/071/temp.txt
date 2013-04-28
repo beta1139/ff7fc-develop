@@ -87,7 +87,6 @@ create event_generator 8701 87 0 0 17 0 0 @087/wm_gym2.txt
 warp 84 17 30 up
 set_flag 15 5
 add_item 6002
-add_party_mem 3
 enable_char_chg
 sleep 8
 kill 7503
