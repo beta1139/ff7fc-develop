@@ -11,9 +11,13 @@ chg_type 8412 npc_event
 chg_speed 8411 normal
 chg_speed 8412 normal
 step_npc 8412 2
+if_char_dir down
 set_talk_npc 8412
+fi
 msg 「ここのゴミ\n　どうにかならないのかしらねえ
+if_char_dir down
 reset_talk_npc
+fi
 sleep 16
 step_npc 8411 4
 msg 「これってぜんぶ　あの　ほら……\n　ぶきやの　あそこのごしゅじん\n　ひとってきては　ためこんでるそうよ
@@ -21,9 +25,13 @@ sleep 16
 jump_npc 8412 same 1
 sleep 16
 step_npc 8412 2
+if_char_dir down
 set_talk_npc 8412
+fi
 msg 「ああ　あのおみせのなかに　せんしゃまでおいてる\n　あのごしゅじんね
+if_char_dir down
 reset_talk_npc
+fi
 sleep 16
 step_npc 8411 2
 msg 「でも　どうみても\n　ゴミですわねえ
