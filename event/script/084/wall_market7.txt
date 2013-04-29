@@ -10,14 +10,21 @@ chg_type 8411 npc_event
 chg_type 8412 npc_event
 chg_speed 8411 normal
 chg_speed 8412 normal
+if_char_dir right
+if_flag 9 1
+create npc_event 8420 84 8 32 0 3 2 none
+fi
+if_flag 9 2
+create npc_event 8420 84 8 32 13 3 2 none
+fi
+draw_char off
+move_char up 1
+sleep 16
+fi
 step_npc 8412 2
-if_char_dir down
 set_talk_npc 8412
-fi
 msg 「ここのゴミ\n　どうにかならないのかしらねえ
-if_char_dir down
 reset_talk_npc
-fi
 sleep 16
 step_npc 8411 4
 msg 「これってぜんぶ　あの　ほら……\n　ぶきやの　あそこのごしゅじん\n　ひとってきては　ためこんでるそうよ
@@ -25,16 +32,19 @@ sleep 16
 jump_npc 8412 same 1
 sleep 16
 step_npc 8412 2
-if_char_dir down
 set_talk_npc 8412
-fi
 msg 「ああ　あのおみせのなかに　せんしゃまでおいてる\n　あのごしゅじんね
-if_char_dir down
 reset_talk_npc
-fi
 sleep 16
 step_npc 8411 2
 msg 「でも　どうみても\n　ゴミですわねえ
+if_char_dir up
+move_char down 1
+sleep 16
+chg_char_dir right
+draw_char on
+kill 8420
+fi
 chg_type 8411 npc2
 chg_type 8412 npc2
 chg_speed 8411 not_move

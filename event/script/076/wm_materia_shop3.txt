@@ -70,14 +70,17 @@ sleep 32
 play_se pick_up.wav
 if_flag 14 3
 add_item 6008
+add_flag 18 4
 msg キーアイテム（ダイアのティアラ）をてにいれた
 fi
 if_flag 14 4
 add_item 6007
+add_flag 18 2
 msg キーアイテム（ルビーのティアラ）をてにいれた
 fi
 if_flag 14 5
 add_item 6006
+add_flag 18 1
 msg キーアイテム（ガラスのティアラ）をてにいれた
 fi
 chg_npc_dir 7621 left

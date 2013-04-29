@@ -1,7 +1,7 @@
 wait_same_pos
 sleep 16
 chg_speed 8710 normal
-if_flag 17 7
+if_flag 17 22
 jump_npc 8715 same 1
 sleep 16
 jump_npc 8715 same 1
@@ -20,6 +20,7 @@ step_npc 8715 2
 sleep 32
 play_se pick_up.wav
 add_item 6005
+add_flag 18 4
 msg キーアイテム（ブロンドのかつら）をてにいれた！
 sleep 16
 step_npc 8710 2
@@ -31,7 +32,7 @@ chg_speed 8715 fast
 move_npc 8715 down 2
 sleep 16
 fi
-if_flag 17 6
+if_flag 17 21
 jump_npc 8715 same 1
 sleep 16
 step_npc 8715 2
@@ -48,6 +49,7 @@ step_npc 8715 2
 sleep 32
 play_se pick_up.wav
 add_item 6004
+add_flag 18 2
 msg キーアイテム（チャパツのかつら）をてにいれた！
 sleep 16
 step_npc 8710 2
@@ -59,7 +61,7 @@ chg_speed 8715 fast
 move_npc 8715 down 2
 sleep 16
 fi
-if_flag 17 5
+if_flag 17 20
 step_npc 8715 2
 msg 「ざんねんでした\n　あなたのまけね\n\n\n　ふくやのオヤジのたのみだから\n　わたさないわけには　いかないから
 move_npc 8715 up 1
@@ -162,18 +164,18 @@ dec_map_draw_y_offset
 sleep 1
 pool
 step_npc 8715 4
-if_flag 17 7
+if_flag 17 22
 msg 「やかましー！\n　まけたあげくに　めそめそすんじゃねえ！
 fi
-if_flag 17 6
+if_flag 17 21
 msg 「やかましい！\n　シロウトさんとひきわけといて\n　ナマイキいってんじゃねえ！！
 fi
-if_flag 17 5
+if_flag 17 20
 msg 「こん　ボケ！\n　なんてとこに　かくしてやがんだ！
 fi
 sleep 32
 msg 「うう\n　アニキのテッケンは\n　ほねのズイまで\n　しびれやすぜ…
-if_flag 17 5
+if_flag 17 20
 chg_npc_dir 8715 left
 chg_speed 8715 normal
 sleep 8
@@ -185,6 +187,7 @@ chg_npc_img 8721 15
 step_npc 8721 3
 play_se pick_up.wav
 add_item 6003
+add_flag 18 1
 msg キーアイテム（クセゲのかつら）をてにいれた！
 sleep 16
 chg_npc_img 8721 3

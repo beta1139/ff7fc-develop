@@ -40,7 +40,14 @@ chg_npc_dir 7515 up
 sleep 64
 chg_param 8715 「う～ん　もうちょっとね
 play_se syu.ogg
-sleep 64
+sleep 32
+if_flag_greater 18 9
+chg_param 8715 「へぇ　まあまあね
+fi
+sleep 32
+if_flag_greater 18 15
+chg_param 8715 「あら　けっこういけてるじゃないの
+fi
 chg_char_img_tmp 13
 chg_speed 7521 normal
 msg 『……

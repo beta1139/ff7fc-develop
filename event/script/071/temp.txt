@@ -32,6 +32,7 @@ set_flag_wall 7222
 chg_speed 7222 not_move
 sleep 8
 create npc2 8510 85 10 15 66 1 0 「おともだちも　か……\n　そりゃいいな\n\n\n　そのほうがドンもよろこぶし\n　もしかしたら……ウヒヒ
+set_flag 18 0
 sleep 8
 kill 7222
 create npc 7240 72 16 43 79 3 0 「やっぱり　ふんぎりがつかねえや\n　ええい　これあげるよ\n　これがなきゃ　はいれないからな
@@ -87,6 +88,7 @@ create event_generator 8701 87 0 0 17 0 0 @087/wm_gym2.txt
 warp 84 17 30 up
 set_flag 15 5
 add_item 6002
+add_flag 18 4
 enable_char_chg
 sleep 8
 kill 7503
@@ -123,6 +125,7 @@ set_flag_wall 7515
 chg_npc_dir 7515 left
 chg_param 7510 「てにはいったようですね\n　さっそく　きがえてみてくださいよ
 add_item 6005
+add_flag 18 4
 warp_ff3_2 72 6 16 2 up
 fadein
 fi
