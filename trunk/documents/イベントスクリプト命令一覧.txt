@@ -47,6 +47,16 @@ if_flag (flag_id) (val)
 fi
   flag_idのイベントフラグの値がvalと等しければ処理を実行する
 
+if_flag_greater (flag_id) (val)
+(処理)
+fi
+  flag_idのイベントフラグの値がvalより大きければ処理を実行する
+
+if_flag_lesser (flag_id) (val)
+(処理)
+fi
+  flag_idのイベントフラグの値がvalより小さければ処理を実行する
+
 if_party_mem (idx)
 (処理)
 fi
@@ -522,7 +532,16 @@ open_acce_shop (id)
 =============== その他 ===============
 set_flag (ID) (value)
   イベントフラグに値をセットする
+  (最大値は255）
   フラグの意味については別紙"イベントフラグ管理表.xls"に記載
+
+add_flag (ID) (value)
+  IDのイベントフラグにvalueの値を加える
+  (最大値は255）
+
+sub_flag (ID) (value)
+  IDのイベントフラグからvalueの値を減らす
+  (最小値は0)
 
 start_countdown (min)
   カウントダウンイベントを開始する(分単位)
