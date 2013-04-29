@@ -17,7 +17,7 @@ sleep 32
 play_se pick_up.wav
 add_item 6009
 del_item 6016
-msg キーアイテム（コロン）をてにいれた
+msg キーアイテム（コロン）をてにいれた！
 set_flag 13 3
 fi
 if_owned_item 6017
@@ -30,7 +30,7 @@ sleep 32
 play_se pick_up.wav
 add_item 6010
 del_item 6017
-msg キーアイテム（フラワーコロン）をてにいれた
+msg キーアイテム（フラワーコロン）をてにいれた！
 set_flag 13 4
 fi
 if_owned_item 6018
@@ -42,7 +42,7 @@ sleep 32
 play_se pick_up.wav
 add_item 6011
 del_item 6018
-msg キーアイテム（セクシーコロン）をてにいれた
+msg キーアイテム（セクシーコロン）をてにいれた！
 set_flag 13 5
 fi
 chg_type 8815 npc_event
@@ -51,11 +51,16 @@ kill 8803
 sleep 16
 move_npc 8816 right 1
 move_char down 2
-sleep 16
+sleep 8
+open_door 8850
+play_se door_open.ogg
+sleep 8
 move_npc 8816 down 2
 sleep 16
 move_char right 2
-sleep 16
+sleep 8
+close_door 8850
+sleep 8
 move_npc 8816 right 2
 sleep 16
 move_char up 1
@@ -68,7 +73,12 @@ move_npc 8815 left 3
 move_npc 8816 right 5
 sleep 24
 move_npc 8815 up 2
-sleep 16
+sleep 4
+open_door 8850
+play_se door_open.ogg
+sleep 8
+close_door 8850
+sleep 4
 move_npc 8815 left 1
 sleep 8
 chg_npc_dir 8815 right
