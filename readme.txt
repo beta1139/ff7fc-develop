@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
-FF7FC Developing Version (2013/1/8 updated)
+FF7FC Developing Version (2013/4/29 updated)
 ----------------------------------------------------------------------
 ■プログラム製作者
   BETA
@@ -87,9 +87,11 @@ FF7FC Developing Version (2013/1/8 updated)
   ・パーティアタック
   ・ジャンプのchg_speed
   ・メニューのアイテム欄を2列で表示する
-  ・if_owned_itemがキーアイテムに対応してないバグ修正
 
 ■更新履歴
+  ・更新履歴は以下を参照
+    https://code.google.com/p/ff7fc-develop/source/list
+
   ・2013/1/8
 	・イベントスクリプトの命令追加
 	  ・loop_inf～pool文
