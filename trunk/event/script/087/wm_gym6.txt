@@ -57,6 +57,7 @@ chg_speed 8712 not_move
 if_flag 3 0
 step_npc 8715 2
 msg 「じゃ　れんしゅうはじめ！
+draw_fake_countdown on
 start_fake_countdown_sec 30
 chg_npc_dir 8710 right
 create event_generator 8760 87 9 14 17 0 0 @087/wm_squat_end.txt
@@ -67,6 +68,7 @@ fi
 if_flag 3 1
 step_npc 8715 2
 msg 「じゃあ　ほんばんやるわよ\n　ほんばん　はじめ！
+draw_fake_countdown on
 start_fake_countdown_sec 30
 chg_speed 8710 normal
 create event_generator 8761 87 9 14 17 0 0 @087/wm_squat_end2.txt
