@@ -31,39 +31,5 @@ create event_generator 8764 87 9 14 17 0 0 @087/wm_squat_a.txt
 sleep 4
 chg_char_dir down
 sleep 8
-if_flag 16 9
-set_flag 16 10
-kill_through_range 8763 8768
-create event_generator 8769 87 9 14 17 0 0 @087/wm_squat_start2.txt
-create event_generator 8770 87 9 14 17 0 0 @087/wm_squat_a3.txt
-create event_generator 8771 87 9 14 17 0 0 @087/wm_squat_b3.txt
-end
-fi
-if_flag 16 8
-set_flag 16 9
-fi
-if_flag 16 7
-set_flag 16 8
-fi
-if_flag 16 6
-set_flag 16 7
-fi
-if_flag 16 5
-set_flag 16 6
-fi
-if_flag 16 4
-set_flag 16 5
-fi
-if_flag 16 3
-set_flag 16 4
-fi
-if_flag 16 2
-set_flag 16 3
-fi
-if_flag 16 1
-set_flag 16 2
-fi
-if_flag 16 0
-set_flag 16 1
-fi
+add_flag 16 1
 pool

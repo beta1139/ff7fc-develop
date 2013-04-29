@@ -17,6 +17,7 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 24
 pool
 if_flag 16 2
@@ -45,6 +46,7 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
 pool
 if_flag 16 4
@@ -88,6 +90,7 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
 if_flag 16 7
 chg_npc_dir 8710 down
@@ -131,6 +134,7 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
 if_flag 16 7
 chg_npc_img 8710 111
@@ -184,6 +188,7 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
 if_flag 16 10
 chg_npc_img 8710 111
@@ -237,6 +242,7 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
 if_flag 16 11
 chg_npc_img 8710 111
@@ -263,6 +269,7 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
 chg_npc_img 8710 111
 step_npc 8710 3
@@ -287,6 +294,7 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
 chg_npc_dir 8710 up
 play_se squat.ogg
@@ -302,8 +310,8 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
-set_flag 17 1
 if_flag 16 13
 chg_npc_img 8710 111
 msg3 104 「うぉー！！！　アニキっー！
@@ -360,8 +368,8 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
-set_flag 17 2
 if_flag 16 15
 chg_npc_img 8710 111
 msg3 104 「うぉー！！！　うぉーーーっ！
@@ -403,8 +411,8 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
-set_flag 17 3
 loop_inf
 sleep 16
 chg_npc_dir 8710 up
@@ -421,6 +429,6 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
-sleep 16
-set_flag 17 4
+add_flag 17 1
+sleep 24
 pool

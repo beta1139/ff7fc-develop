@@ -54,6 +54,8 @@ set_key_unvalid start
 disable_char_chg
 chg_speed 8711 not_move
 chg_speed 8712 not_move
+set_flag 16 0
+set_flag 17 0
 if_flag 3 0
 step_npc 8715 2
 msg ÅuÇ∂Ç·Å@ÇÍÇÒÇµÇ„Ç§ÇÕÇ∂ÇﬂÅI

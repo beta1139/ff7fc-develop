@@ -19,150 +19,189 @@ sleep 16
 step_npc 8715 2
 reset_char_img_tmp
 chg_char_dir down
-if_flag 17 0
+if_flag_lesser 17 12
+msg 「こいつが　12かいいかで
+fi
+if_flag 17 12
 msg 「こいつが　12かいで
 fi
-if_flag 17 1
+if_flag 17 13
 msg 「こいつが　13かいで
 fi
-if_flag 17 2
+if_flag 17 14
 msg 「こいつが　14かいで
 fi
-if_flag 17 3
+if_flag 17 15
 msg 「こいつが　15かいで
 fi
-if_flag 17 4
+if_flag 17 16
 msg 「こいつが　16かいで
+fi
+if_flag 17 17
+msg 「こいつが　17かいで
+fi
+if_flag_greater 17 17
+msg 「こいつが　17かいいじょうで
 fi
 sleep 16
 step_npc 8715 2
-if_flag 16 20
+if_flag_greater 16 19
 msg 「あなたが　20かいいじょうね
-set_flag 17 7
+set_flag 17 22
 fi
 if_flag 16 19
 msg 「あなたが　19かいね
-set_flag 17 7
+set_flag 17 22
 fi
 if_flag 16 18
 msg 「あなたが　18かいね
-set_flag 17 7
+if_flag_greater 17 17
+create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 21
+end
+fi
+set_flag 17 22
 fi
 if_flag 16 17
 msg 「あなたが　17かいね
-set_flag 17 7
+if_flag_greater 17 17
+create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 20
+end
+fi
+if_flag 17 17
+create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 21
+end
+fi
+set_flag 17 22
 fi
 if_flag 16 16
 msg 「あなたが　16かいね
-if_flag 17 4
-set_flag 17 6
+if_flag_greater 17 16
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 20
 end
 fi
-set_flag 17 7
+if_flag 17 16
+create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 21
+end
+fi
+set_flag 17 22
 fi
 if_flag 16 15
 msg 「あなたが　15かいね
-if_flag 17 4
-set_flag 17 5
+if_flag_greater 17 15
+create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 20
+end
+fi
+if_flag 17 15
+set_flag 17 21
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 end
 fi
-if_flag 17 3
-set_flag 17 6
-create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
-end
-fi
-set_flag 17 7
+set_flag 17 22
 fi
 if_flag 16 14
 msg 「あなたが　14かいね
-if_flag 17 4
-set_flag 17 5
+if_flag_greater 17 14
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 20
 end
 fi
-if_flag 17 3
-set_flag 17 5
+if_flag 17 14
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 21
 end
 fi
-if_flag 17 2
-set_flag 17 6
-create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
-end
-fi
-set_flag 17 7
+set_flag 17 22
 fi
 if_flag 16 13
 msg 「あなたが　13かいね
-if_flag 17 1
-set_flag 17 6
+if_flag 17 13
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 21
 end
 fi
-if_flag 17 0
-set_flag 17 7
+if_flag_lesser 17 13
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 22
 end
 fi
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 12
 msg 「あなたが　12かいね
-if_flag 17 0
-set_flag 17 6
+if_flag_lesser 17 12
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 22
 end
 fi
-set_flag 17 5
+if_flag 17 12
+create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 21
+end
+fi
+set_flag 17 20
 fi
 if_flag 16 11
 msg 「あなたが　11かいね
-set_flag 17 5
+if_flag_lesser 17 11
+create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 22
+end
+fi
+if_flag 17 11
+create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 21
+end
+fi
+set_flag 17 20
 fi
 if_flag 16 10
 msg 「あなたが　10かいね
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 9
 msg 「あなたが　9かいね
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 8
 msg 「あなたが　8かいね
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 7
 msg 「あなたが　7かいね
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 6
 msg 「あなたが　6かいね
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 5
 msg 「あなたが　5かいね
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 4
 msg 「あなたが　4かいね
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 3
 msg 「あなたが　3かいね
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 2
 msg 「あなたが　2かいね
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 1
 msg 「あなたが　1かいね
-set_flag 17 5
+set_flag 17 20
 fi
 if_flag 16 0
 msg 「あなたは　1かいも　できてないわよ
-set_flag 17 5
+set_flag 17 20
 fi
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
