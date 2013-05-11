@@ -40,8 +40,7 @@ chg_char_dir up
 draw_char on
 kill 7322
 sleep 16
-chg_char_dir left
-stop_bgm
+chg_char_dir down
 create event_generator 7305 73 15 9 17 0 0 @073/wm_inn5.txt
 set_key_unvalid up
 set_key_unvalid left

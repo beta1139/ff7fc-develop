@@ -1,0 +1,29 @@
+wait_same_pos
+kill_through 7909
+set_active_msg 7931
+jump_npc 7931 same 1
+set_talk_npc 7931
+msg エアリス\n「キャッ！！\n　クラウド！！
+reset_talk_npc
+chg_speed 7920 normal
+chg_speed 7922 normal
+chg_speed 7924 normal
+move_npc 7920 right 2
+move_npc 7922 right 2
+move_npc 7924 right 3
+sleep 32
+chg_npc_dir 7920 left
+chg_npc_dir 7922 down
+chg_speed 7920 not_move
+chg_speed 7922 not_move
+chg_type 7920 npc3
+chg_type 7922 npc
+chg_param 7920 「エアリスちゃん～～\n　おはな　1ギルありがとう\n\n\n　おれ　たいせつにすっから！\n　おしばなにして　おまもりにすんだ
+chg_param 7922 「エアリスちゃん\n　デートにさそったらさ\n\n\n　100まんギルつまれてもいやだって\n　おはなは300ギルもするし……\n　いがいとショーバイじょうずだぜ　ありゃ
+set_inactive_msg 7931
+sleep 16
+chg_npc_dir 7924 left
+chg_speed 7924 not_move
+chg_type 7924 npc
+chg_param 7924 「エアリスちゃんから\n　きれいなおはな　かっちゃいましたよ\n\n\n　500ギル　ちょっとたかいかなあ\n　なまえきけたから　まあゆるしますか
+create event_generator 7909 79 3 12 17 0 0 @079/wall_market17.txt

@@ -1,0 +1,41 @@
+wait_target_talk 8216
+kill_through_range 8204 8206
+chg_speed 8217 normal
+chg_dir_to_char 8217
+set_talk_npc 8217
+msg ムッキー\n「こんなことでおちこんじゃ\n　いけないぞ\n\n　おじさんなんか\n　しょっちゅうなんだから
+reset_talk_npc
+if_flag 10 0
+create event_generator 8206 82 0 0 17 0 0 @082/honey_bee_inn19.txt
+fi
+set_flag 17 3
+kill_through 8216
+chg_speed 8217 normal
+move_npc 8217 right 2
+sleep 32
+move_npc 8217 up 2
+sleep 24
+open_door 8250
+play_se door_open.ogg
+sleep 8
+kill_through 8217
+sleep 16
+close_door 8250
+chg_char_state_move
+if_flag 10 0
+sleep 80
+kill_through 8206
+kill_through 8214
+chg_speed 8215 normal
+jump_npc 8215 right 1
+sleep 16
+jump_npc 8215 up 1
+sleep 8
+open_door 8250
+play_se door_open.ogg
+sleep 8
+kill_through 8215
+sleep 8
+close_door 8250
+set_flag 10 7
+fi

@@ -14,7 +14,7 @@ step_npc 8715 2
 msg ÅuÇªÇ±Ç‹Ç≈
 end_fake_countdown
 chg_npc_dir 8710 down
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 sleep 16
 step_npc 8715 2
 reset_char_img_tmp

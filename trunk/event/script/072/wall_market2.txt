@@ -1,7 +1,4 @@
 wait_same_pos
-if_flag 9 0
-add_party_mem 3
-fi
 chg_event_move_char_speed slow
 move_char down 17
 create npc_event 7230 72 9 50 0 0 2 none

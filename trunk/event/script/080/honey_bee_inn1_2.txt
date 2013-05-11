@@ -1,0 +1,53 @@
+wait_same_pos
+kill_through_range 7907 7908
+kill_through_range 8000 8001
+chg_npc_dir 7920 down
+chg_npc_dir 7921 left
+chg_npc_dir 7922 up
+chg_npc_dir 7923 left
+chg_npc_dir 7924 left
+chg_npc_dir 7931 right
+set_npc_pos 7920 79 2 11
+set_npc_pos 7921 79 6 12
+set_npc_pos 7922 79 2 13
+set_npc_pos 7924 79 3 12
+set_npc_pos 7931 79 2 12
+chg_type 7920 npc_event
+chg_type 7921 npc_event
+chg_type 7922 npc_event
+chg_type 7923 npc
+chg_type 7924 npc_event
+create event_generator 7911 79 9 10 17 0 0 @079/wall_market19.txt
+create event_generator 7912 79 10 10 17 0 0 @079/wall_market19.txt
+chg_param 7923 「あっ　おきゃくさん！！\n　もうすぐへいてんなんで……\n\n\n　わすれものなど　なさらぬよう\n　きをつけてくださいよ
+if_flag 17 0
+set_npc_pos 8011 80 9 11
+chg_npc_dir 8011 down
+chg_type 8011 npc_event
+chg_speed 8011 normal
+loop 5
+jump_npc 8011 down 1
+sleep 16
+pool
+set_talk_npc 8011
+msg 「ポ……▼\n　おきゃくさん▼
+reset_talk_npc
+set_active_msg 8011
+jump_npc 8011 same 1
+sleep 16
+jump_npc 8011 same 1
+set_talk_npc 8011
+msg 「はやくっはやくっ▼
+reset_talk_npc
+loop 7
+jump_npc 8011 up 1
+sleep 16
+pool
+jump_npc 8011 left 1
+sleep 16
+set_inactive_msg 8011
+chg_npc_dir 8011 down
+set_flag_wall 8011
+chg_speed 8011 not_move
+chg_type 8011 npc
+fi

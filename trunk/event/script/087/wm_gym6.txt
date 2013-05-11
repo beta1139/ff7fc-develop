@@ -41,9 +41,11 @@ sleep 16
 jump_npc 8715 same 1
 chg_char_dir down
 sleep 16
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 chg_npc_dir 8710 down
 chg_speed 8710 not_move
+set_flag 16 0
+set_flag 17 0
 step_npc 8715 2
 msg 「ぶっつけほんばんってのも\n　かわいそうだから　れんしゅうする？\n\n\n#2\n　　かるく　れんしゅうでもする\n　　れんしゅうなど　ひつようない\n\n\n[[]][[]]
 set_key_unvalid up
@@ -54,8 +56,6 @@ set_key_unvalid start
 disable_char_chg
 chg_speed 8711 not_move
 chg_speed 8712 not_move
-set_flag 16 0
-set_flag 17 0
 if_flag 3 0
 step_npc 8715 2
 msg 「じゃ　れんしゅうはじめ！
