@@ -21,7 +21,7 @@ sleep 32
 play_se pick_up.wav
 add_item 6005
 add_flag 18 4
-msg キーアイテム（ブロンドのかつら）をてにいれた！
+msg キーアイテム『ブロンドのかつら』をてにいれた！
 sleep 16
 step_npc 8710 2
 set_talk_npc 8710
@@ -50,7 +50,7 @@ sleep 32
 play_se pick_up.wav
 add_item 6004
 add_flag 18 2
-msg キーアイテム（チャパツのかつら）をてにいれた！
+msg キーアイテム『チャパツのかつら』をてにいれた！
 sleep 16
 step_npc 8710 2
 set_talk_npc 8710
@@ -94,7 +94,7 @@ chg_npc_dir 8710 up
 sleep 4
 chg_npc_dir 8710 left
 sleep 16
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 chg_npc_dir 8710 up
 step_npc 8710 3
 play_se syu.ogg
@@ -188,7 +188,7 @@ step_npc 8721 3
 play_se pick_up.wav
 add_item 6003
 add_flag 18 1
-msg キーアイテム（クセゲのかつら）をてにいれた！
+msg キーアイテム『クセゲのかつら』をてにいれた！
 sleep 16
 chg_npc_img 8721 3
 chg_npc_dir 8721 up

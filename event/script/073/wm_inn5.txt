@@ -5,14 +5,14 @@ sleep 16
 kill_through 7301
 fadeout
 fi
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 sleep 16
 play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
 recover_active_chara
 sleep 400
 if_flag 9 2
 warp 73 10 6 right
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 create event_generator 7306 73 10 6 17 0 0 @drag_cloud.txt
 set_key_valid up
 set_key_valid left
@@ -21,8 +21,7 @@ set_key_valid right
 set_key_valid start
 sleep 16
 fadein
-play_event_bgm 1-15-Oppressed_People.ogg
-set_flag 0 4
+play_bgm
 recover_active_chara
 msg 『あー　よくねた……\nHP MPが　かいふくした！
 create event_generator 7301 73 0 0 17 0 0 @073/wm_inn.txt
@@ -30,13 +29,13 @@ end
 fi
 loop 15
 dec_screen_effect_val 2
+sleep 1
 pool
 reset_screen_effect
 create npc_event 7321 73 15 7 68 1 0 none
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 sleep 16
-play_event_bgm 1-15-Oppressed_People.ogg
-set_flag 0 4
+play_bgm
 chg_npc_y_offset 7322 -4
 chg_npc_img 7322 0
 jump_npc_target_pos 7322 10 6

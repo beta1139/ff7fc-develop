@@ -1,0 +1,85 @@
+wait_target_talked 7924
+chg_type 7920 npc_event
+chg_type 7921 npc_event
+chg_type 7922 npc_event
+chg_type 7923 npc_event
+chg_type 7924 npc_event
+chg_speed 7920 slow
+chg_speed 7921 slow
+chg_speed 7922 slow
+chg_speed 7923 normal
+chg_speed 7924 normal
+move_npc 7923 down 1
+move_npc 7924 left 1
+sleep 16
+chg_npc_dir 7923 right
+chg_npc_dir 7924 right
+chg_speed 7923 not_move
+chg_speed 7924 not_move
+create npc_event 7931 79 10 12 3 0 2 none
+move_npc 7931 down 1
+sleep 16
+draw_fake_countdown off
+start_fake_countdown_sec 2
+sleep 24
+chg_char_dir down
+jump_npc 7920 down 2
+move_npc 7921 up 1
+move_npc 7922 left 2
+play_se jump.wav
+sleep 16
+jump_char same 1
+sleep 16
+move_npc 7921 right 1
+play_se landing.wav
+move_npc 7920 right 4
+step_char 2
+sleep 32
+chg_speed 7921 not_move
+chg_npc_dir 7922 up
+chg_speed 7922 not_move
+msg3 -1 『ここには　じょそうにひつようななにかがある\n　おれにはわかるんだ
+wait_key_push_edge a
+erase_msg3
+chg_npc_dir 7931 right
+wait_fake_countover
+sleep 16
+chg_npc_dir 7931 up
+step_npc 7931 2
+msg エアリス\n「…………ふ～～～～ん\n　そうやって　ごまかしますか
+chg_speed 7920 not_move
+end_fake_countdown
+chg_char_dir up
+chg_char_img_tmp 97
+sleep 20
+reset_char_img_tmp
+chg_char_dir right
+sleep 4
+chg_char_dir left
+sleep 4
+chg_char_dir right
+sleep 4
+chg_char_dir left
+sleep 4
+chg_char_dir down
+sleep 16
+chg_char_dir up
+sleep 16
+jump_char same 1
+sleep 16
+chg_event_move_char_speed fast
+step_char 2
+sleep 16
+msg 『いくぜ！！
+move_char up 2
+sleep 16
+chg_event_move_char_speed normal
+del_party_mem 3
+kill 7904
+kill 7905
+warp_ff3_2 80 8 17 2 up
+set_flag 10 0
+set_flag 11 0
+set_flag 16 0
+set_flag 17 0
+set_flag 19 0

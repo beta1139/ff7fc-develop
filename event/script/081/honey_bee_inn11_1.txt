@@ -1,0 +1,6 @@
+wait_target_talked 8131
+reset_talked_flag 8131
+sleep 8
+create npc3 8132 81 7 6 40 0 0 「イヤン▼\n\n\n\n　みないで～！！
+kill 8131
+create event_generator 8103 81 0 0 17 0 0 @081/honey_bee_inn11_2.txt

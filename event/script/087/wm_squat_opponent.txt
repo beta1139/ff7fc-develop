@@ -21,7 +21,7 @@ add_flag 17 1
 sleep 24
 pool
 if_flag 16 2
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
 jump_npc 8710 same 1
@@ -50,7 +50,7 @@ add_flag 17 1
 sleep 16
 pool
 if_flag 16 4
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
 msg3 104 「うぉー！！！　リズムがくるったぁーっ！
@@ -94,7 +94,7 @@ add_flag 17 1
 sleep 16
 if_flag 16 7
 chg_npc_dir 8710 down
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
 msg3 104 「うぉー！！！　リズムがーっ！
@@ -137,7 +137,7 @@ chg_npc_dir 8710 down
 add_flag 17 1
 sleep 16
 if_flag 16 7
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
 msg3 104 「うぉー！！！　まけてたまるかぁーっ！
@@ -163,7 +163,7 @@ sleep 4
 chg_npc_img 8710 125
 fi
 if_flag 16 8
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
 jump_npc 8710 same 1
@@ -191,7 +191,7 @@ chg_npc_dir 8710 down
 add_flag 17 1
 sleep 16
 if_flag 16 10
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
 msg3 104 「まけてたまるかぁーっ！
@@ -245,7 +245,7 @@ chg_npc_dir 8710 down
 add_flag 17 1
 sleep 16
 if_flag 16 11
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
 jump_npc 8710 same 1
@@ -271,7 +271,7 @@ sleep 4
 chg_npc_dir 8710 down
 add_flag 17 1
 sleep 16
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
 jump_npc 8710 same 1
@@ -313,7 +313,7 @@ chg_npc_dir 8710 down
 add_flag 17 1
 sleep 16
 if_flag 16 13
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 msg3 104 「うぉー！！！　アニキっー！
 jump_npc 8710 same 1
 loop 8
@@ -371,7 +371,7 @@ chg_npc_dir 8710 down
 add_flag 17 1
 sleep 16
 if_flag 16 15
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 msg3 104 「うぉー！！！　うぉーーーっ！
 jump_npc 8710 same 1
 loop 8

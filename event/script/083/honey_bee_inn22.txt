@@ -1,0 +1,344 @@
+wait_target_talked 8312
+chg_type 8312 npc_event
+chg_dir_to_char 8312
+chg_speed 8312 normal
+if_char_dir up
+create npc_event 8310 83 8 9 0 0 2 none
+fi
+if_char_dir down
+create npc_event 8310 83 8 7 0 1 2 none
+fi
+if_char_dir left
+create npc_event 8310 83 9 8 0 2 2 none
+fi
+if_char_dir right
+create npc_event 8310 83 7 8 0 3 2 none
+fi
+draw_char off
+step_npc 8310 1
+if_flag 3 0
+msg 『おれはいつだってひとりさ
+fi
+if_flag 3 1
+msg 『はなしたくないんだ
+fi
+sleep 16
+step_npc 8312 2
+set_talk_npc 8312
+msg 「はいはい▼（…ムッツリさん▼）\n\n\n\n　さ　みなさん　おまちかねですから\n\n\n\n#2\n　　みなさん……？\n　　なにしてるんだ　おれは？\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+fi
+if_flag 3 1
+fi
+loop 3
+play_se bump.ogg
+sleep 16
+pool
+play_se bump.ogg
+set_active_msg 8312
+chg_npc_dir 8312 up
+jump_npc 8312 same 1
+sleep 16
+chg_npc_dir 8310 up
+set_talk_npc 8312
+msg 「ほら　きたきた▼
+reset_talk_npc
+set_slide_walk_char_flag
+if_char_dir down
+move_char up 2
+jump_npc 8312 right 1
+sleep 16
+msg3 -1 「はい　みなさ～ん▼
+jump_npc 8312 up 1
+sleep 16
+loop 2
+jump_npc 8312 right 1
+sleep 16
+pool
+loop 2
+jump_npc 8312 up 1
+sleep 16
+pool
+fi
+if_char_dir up
+move_char up 4
+jump_npc 8312 up 1
+sleep 16
+msg3 -1 「はい　みなさ～ん▼
+loop 3
+jump_npc 8312 right 1
+sleep 16
+pool
+loop 2
+jump_npc 8312 up 1
+sleep 16
+pool
+fi
+if_char_dir left
+move_char up 3
+jump_npc 8312 up 1
+sleep 16
+msg3 -1 「はい　みなさ～ん▼
+loop 3
+jump_npc 8312 right 1
+sleep 16
+pool
+loop 2
+jump_npc 8312 up 1
+sleep 16
+pool
+fi
+if_char_dir right
+move_char up 3
+jump_npc 8312 up 1
+sleep 16
+msg3 -1 「はい　みなさ～ん▼
+loop 3
+jump_npc 8312 right 1
+sleep 16
+pool
+loop 2
+jump_npc 8312 up 1
+sleep 16
+pool
+fi
+step_npc 8312 2
+sleep 8
+play_se door_open2.ogg
+erase_msg3
+sleep 24
+move_npc 8312 right 1
+msg3 -1 「わっせ！！\n　わっせ！！
+create npc_event 8317 83 11 4 111 1 2 none
+move_npc 8317 down 3
+open_door 8350
+play_se door_open_hard.wav
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+jump_npc 8310 same 2
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+play_se_loop stomp.ogg
+create npc_event 8316 83 11 4 44 1 2 none
+move_npc 8316 down 2
+chg_npc_dir 8312 left
+chg_speed 8312 not_move
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+create npc_event 8315 83 11 4 44 1 2 none
+move_npc 8315 down 3
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+if_char_dir up
+chg_npc_dir 8310 left
+fi
+if_char_dir down
+move_npc 8310 down 2
+fi
+if_char_dir left
+move_npc 8310 down 1
+fi
+if_char_dir right
+move_char right 1
+move_npc 8310 right 1
+fi
+move_npc 8317 left 1
+move_npc 8316 left 1
+create npc_event 8314 83 11 4 111 1 2 none
+move_npc 8314 down 2
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+if_char_dir up
+chg_npc_dir 8310 down
+fi
+sleep 8
+if_char_dir up
+chg_npc_dir 8310 left
+fi
+if_char_dir left
+move_char left 1
+move_npc 8310 left 1
+fi
+if_char_dir right
+move_npc 8310 down 1
+fi
+chg_npc_dir 8317 down
+chg_npc_dir 8316 down
+chg_speed 8317 not_move
+chg_speed 8316 not_move
+create npc_event 8313 83 11 4 44 1 2 none
+move_npc 8313 down 1
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+if_char_dir up
+chg_npc_dir 8310 left
+fi
+chg_npc_dir 8310 down
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+stop_se
+chg_npc_dir 8315 down
+chg_npc_dir 8314 down
+chg_npc_dir 8313 down
+chg_speed 8315 not_move
+chg_speed 8314 not_move
+chg_speed 8313 not_move
+chg_speed 8310 fast
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_dir 8310 up
+step_npc 8310 3
+chg_speed 8317 normal
+chg_speed 8316 normal
+chg_speed 8315 normal
+chg_speed 8314 normal
+chg_speed 8313 normal
+move_npc 8317 left 2
+move_npc 8316 left 2
+move_npc 8315 left 2
+move_npc 8314 left 2
+move_npc 8313 left 2
+play_se_loop stomp.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_speed 8312 normal
+move_npc 8312 left 1
+move_char down 2
+play_se jump.wav
+chg_speed 8310 normal
+jump_npc 8310 down 2
+move_npc 8317 down 2
+move_npc 8316 down 2
+move_npc 8315 down 2
+move_npc 8314 down 2
+move_npc 8313 down 2
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+play_se_loop stomp.ogg
+chg_npc_dir 8312 up
+step_npc 8312 2
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+close_door 8350
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_speed 8316 not_move
+chg_speed 8315 not_move
+chg_speed 8314 not_move
+chg_speed 8313 not_move
+chg_npc_dir 8310 up
+erase_msg3
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+stop_se
+set_active_msg 8317
+set_active_msg 8316
+set_active_msg 8315
+set_active_msg 8314
+set_active_msg 8313
+jump_npc 8317 same 1
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+msg3 -1 「チィーッス！！
+sleep 8
+move_npc 8312 right 1
+sleep 16
+chg_npc_dir 8312 down
+chg_speed 8312 not_move
+sleep 24
+erase_msg3
+sleep 16
+create event_generator 8302 83 8 7 17 0 0 @083/honey_bee_inn23.txt
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+draw_fake_countdown off
+start_fake_countdown_sec 2
+chg_char_state_move
+loop_inf
+msg3 -1 「わっせ！！\n　わっせ！！
+jump_npc 8317 same 1
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+sleep 16
+jump_npc 8317 same 1
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+sleep 16
+jump_npc 8317 same 1
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+sleep 16
+erase_msg3
+jump_npc 8317 same 1
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+sleep 16
+pool

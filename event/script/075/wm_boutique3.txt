@@ -19,19 +19,19 @@ if_flag 15 3
 play_se pick_up.wav
 add_item 6000
 add_flag 18 1
-msg キーアイテム（コットンのドレス）をてにいれた！
+msg キーアイテム『コットンのドレス』をてにいれた！
 fi
 if_flag 15 4
 play_se pick_up.wav
 add_item 6001
 add_flag 18 2
-msg キーアイテム（サテンのドレス）をてにいれた！
+msg キーアイテム『サテンのドレス』をてにいれた！
 fi
 if_flag 15 5
 play_se pick_up.wav
 add_item 6002
 add_flag 18 4
-msg キーアイテム（シルクのドレス）をてにいれた！
+msg キーアイテム『シルクのドレス』をてにいれた！
 fi
 chg_char_dir left
 chg_npc_dir 7521 up

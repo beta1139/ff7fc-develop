@@ -212,6 +212,7 @@ sleep 104
 play_se syu.ogg
 sleep 64
 play_se syu.ogg
+chg_npc_img 7521 129
 sleep 64
 move_npc 7521 down 4
 sleep 24
@@ -237,7 +238,6 @@ set_talk_npc 7521
 msg ÅuÇ‡Ç§Å@Ç©ÇÌÇ¢Ç≠Ç»Ç¢Ç»ÇüÅI
 reset_talk_npc
 chg_npc_dir 7520 up
-chg_npc_img 7521 3
 sleep 16
 chg_event_move_char_speed normal
 move_char down 1

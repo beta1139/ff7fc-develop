@@ -2,7 +2,7 @@ set_eternal_event
 wait_target_talk 8715
 reset_talk_flag 8715
 kill_through 8733
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 chg_npc_dir 8710 down
 chg_type 8715 npc_event
 chg_type 8710 npc_event

@@ -2,6 +2,9 @@ set_eternal_event
 wait_target_talk 7198
 reset_talk_flag 7198
 chg_dir_to_char 7198
+if_flag 9 0
+add_party_mem 3
+fi
 msg デバッグよう　ワープそうち\n「クエッ！\n　クラウドじょそうイベントちょくぜんまでとべます\n\n#2\n　　とぶ\n　　とばない\n\n\n[[]][[「あ　そ！]]
 if_flag 3 0
 set_flag 9 1
@@ -126,6 +129,6 @@ chg_npc_dir 7515 left
 chg_param 7510 「てにはいったようですね\n　さっそく　きがえてみてくださいよ
 add_item 6005
 add_flag 18 4
-warp_ff3_2 72 6 16 2 up
+warp_ff3_2 72 16 45 2 down
 fadein
 fi

@@ -1,4 +1,7 @@
 wait_same_pos
+if_flag 9 0
+add_party_mem 3
+fi
 move_char up 1
 kill_through_range 7100 7102
 sleep 16
@@ -19,3 +22,9 @@ set_key_unvalid a
 set_key_unvalid b
 set_key_unvalid start
 set_flag 9 1
+set_flag 13 0
+set_flag 14 0
+set_flag 15 0
+set_flag 16 0
+set_flag 17 0
+set_flag 18 0

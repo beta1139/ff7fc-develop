@@ -57,7 +57,7 @@ msg 「はいどうぞ
 reset_talk_npc
 play_se pick_up.wav
 add_item 6016
-msg キーアイテム（しょうどくやく）をてにいれた！
+msg キーアイテム『しょうどくやく』をてにいれた！
 fi
 if_flag 3 1
 step_npc 7810 2
@@ -66,7 +66,7 @@ msg 「はいどうぞ
 reset_talk_npc
 play_se pick_up.wav
 add_item 6017
-msg キーアイテム（しょうしゅうやく）をてにいれた！
+msg キーアイテム『しょうしゅうやく』をてにいれた！
 fi
 if_flag 3 2
 step_npc 7810 2
@@ -75,8 +75,7 @@ msg 「はいどうぞ
 reset_talk_npc
 play_se pick_up.wav
 add_item 6018
-add_item 1044
-msg キーアイテム（しょうかやく）をてにいれた！
+msg キーアイテム『しょうかやく』をてにいれた！
 fi
 kill_through 8816
 move_char down 1

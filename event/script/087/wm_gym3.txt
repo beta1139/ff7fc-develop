@@ -68,7 +68,7 @@ chg_npc_dir 8710 down
 set_talk_npc 8710
 msg 「うぉー！！！
 reset_talk_npc
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 jump_npc 8710 same 1
 sleep 16
 chg_speed 8710 fast
@@ -180,7 +180,7 @@ chg_npc_dir 8710 down
 wait_key_push_edge a
 erase_msg3
 chg_npc_dir 8721 down
-chg_npc_img 8710 111
+chg_npc_img 8710 44
 move_npc 8710 down 2
 move_npc 8715 down 2
 chg_npc_dir 8711 down

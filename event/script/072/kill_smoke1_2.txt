@@ -11,7 +11,6 @@ sleep 8
 create event_generator 7201 72 18 25 17 0 0 @072/smoke1.txt
 create event_generator 7202 72 17 26 17 0 0 @072/smoke1.txt
 create event_generator 7203 72 18 27 17 0 0 @072/smoke1.txt
-set_flag 0 4
 if_flag 9 2
 loop_inf
 sleep 400

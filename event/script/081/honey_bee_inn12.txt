@@ -1,0 +1,158 @@
+set_eternal_event
+wait_target_talk 8133
+reset_talk_flag 8133
+if_flag 11 0
+chg_type 8133 npc_event
+chg_speed 8133 normal
+sleep 16
+loop 5
+play_se squat.ogg
+chg_npc_dir 8133 left
+sleep 8
+chg_npc_dir 8133 right
+sleep 8
+pool
+chg_npc_dir 8133 up
+set_talk_npc 8133
+msg 「フンフンフン……▼\n\n\n\n　う～ん▼\n　なかなかほそくなんないのよね\n　フンフンフンフン……
+reset_talk_npc
+if_char_dir down
+create npc_event 8120 81 9 6 0 1 2 none
+draw_char off
+fi
+chg_dir_to_char 8133
+sleep 16
+set_active_msg 8133
+jump_npc 8133 same 1
+set_talk_npc 8133
+msg 「あら　いやだ！！\n　おきゃくさん　こんなとこまで\n　はいってこないでね▼\n\n　（いやだわ……\n　エッチなおきゃくさん…）
+reset_talk_npc
+sleep 8
+if_char_dir down
+draw_char on
+kill 8120
+fi
+chg_npc_dir 8133 up
+chg_speed 8133 not_move
+chg_type 8133 npc2
+set_inactive_msg 8133
+add_flag 11 1
+end
+fi
+if_flag 11 1
+if_char_dir down
+create npc_event 8120 81 9 6 0 1 2 none
+draw_char off
+fi
+chg_type 8133 npc_event
+chg_speed 8133 normal
+loop 5
+jump_npc 8133 same 1
+play_se corneo_jump.ogg
+sleep 16
+pool
+sleep 24
+chg_dir_to_char 8133
+step_npc 8133 2
+set_talk_npc 8133
+msg 「あら！！\n　（……まだいたの\n　ま　いいわ　ちょうどいいし）\n\n　ねぇ　わたしのことどうおもう？\n\n\n\n#2\n　　きょうみないな\n　　……べつに\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+set_active_msg 8133
+jump_npc 8133 same 1
+set_talk_npc 8133
+msg 「ガーン！　ショック！！
+reset_talk_npc
+sleep 8
+if_char_dir down
+draw_char on
+kill 8120
+fi
+chg_npc_dir 8133 up
+chg_speed 8133 not_move
+chg_type 8133 npc2
+set_inactive_msg 8133
+add_flag 11 1
+end
+fi
+if_flag 3 1
+step_npc 8133 1
+set_talk_npc 8133
+msg 「あら！！　てれちゃってるのかしら\n　（フン！！なによ　ムッツリしちゃって……）
+reset_talk_npc
+if_char_dir down
+draw_char on
+kill 8120
+fi
+loop 7
+play_se squat.ogg
+chg_npc_dir 8133 left
+sleep 8
+chg_npc_dir 8133 right
+sleep 8
+pool
+chg_npc_dir 8133 up
+chg_speed 8133 not_move
+chg_type 8133 npc2
+fi
+fi
+if_flag 11 2
+chg_type 8133 npc_event
+chg_speed 8133 normal
+loop 6
+play_se squat.ogg
+chg_npc_dir 8133 left
+sleep 8
+chg_npc_dir 8133 right
+sleep 8
+pool
+chg_npc_dir 8133 up
+set_talk_npc 8133
+msg 「フンフンフンフン……\n　フンフンフンフン……\n　フンフンフンフン……\n\n　ハァハァ……\n　……ハードだわ
+reset_talk_npc
+if_char_dir down
+create npc_event 8120 81 9 6 0 1 2 none
+draw_char off
+fi
+chg_speed 8133 normal
+chg_dir_to_char 8133
+sleep 16
+set_active_msg 8133
+jump_npc 8133 same 1
+set_talk_npc 8133
+msg 「あら！！\n\n\n\n　どうかしら？\n\n\n\n#2\n　　まだだな……\n　　……べつに\n\n\n[[]][[]]
+reset_talk_npc
+if_char_dir down
+draw_char on
+kill 8120
+fi
+if_flag 3 0
+sleep 16
+chg_npc_dir 8133 up
+set_talk_npc 8133
+msg 「ムカッ……！！
+reset_talk_npc
+chg_speed 8133 fast
+step_npc 8133 16
+loop 16
+play_se squat.ogg
+chg_npc_dir 8133 left
+sleep 4
+chg_npc_dir 8133 right
+sleep 4
+pool
+chg_npc_dir 8133 up
+fi
+if_flag 3 1
+sleep 16
+chg_npc_dir 8133 up
+sleep 40
+step_npc 8133 2
+set_talk_npc 8133
+msg 「フン……！！\n　あなた　どうでもいいけど\n　ヒトをおこらせるサイノウあるかもよ
+reset_talk_npc
+fi
+set_inactive_msg 8133
+chg_speed 8133 not_move
+chg_type 8133 npc2
+fi

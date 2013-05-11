@@ -1,0 +1,53 @@
+set_eternal_event
+wait_target_talked 8017
+reset_talked_flag 8017
+if_flag 3 0
+chg_type 8011 npc_event
+chg_speed 8011 normal
+move_char up 1
+sleep 16
+step_char 1
+sleep 16
+msg 『きがかわったんだが…\n　……チェンジだ
+msg 「はぁ▼　はいはい▼\n　（ゆうじゅうふだん…）
+move_npc 8011 left 1
+sleep 16
+chg_npc_dir 8011 up
+sleep 16
+step_npc 8011 2
+sleep 16
+play_se door_open2.ogg
+sleep 16
+loop 3
+jump_npc 8011 down 1
+sleep 16
+pool
+move_char right 1
+jump_npc 8011 down 1
+sleep 16
+chg_char_dir left
+loop 3
+jump_npc 8011 down 1
+sleep 16
+pool
+step_npc 8011 2
+sleep 16
+play_se door_open2.ogg
+set_npc_pos 8017 80 3 15
+sleep 16
+loop 2
+jump_npc 8011 up 1
+sleep 16
+pool
+chg_npc_dir 8011 down
+sleep 16
+step_npc 8011 2
+set_talk_npc 8011
+msg 「は～い▼　どうぞ▼
+reset_talk_npc
+set_npc_pos 8016 80 5 6
+chg_speed 8011 not_move
+chg_type 8011 npc
+fi
+if_flag 3 1
+fi

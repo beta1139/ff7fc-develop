@@ -1,0 +1,240 @@
+wait_target_talk 8212
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+chg_event_move_char_speed slow
+if_char_dir down
+create npc_event 8210 82 7 10 0 1 2 none
+draw_char off
+move_char up 2
+sleep 64
+chg_char_dir down
+fi
+if_char_dir left
+create npc_event 8210 82 8 11 0 2 2 none
+draw_char off
+move_char up 3
+sleep 96
+chg_char_dir left
+fi
+clear_text 4
+clear_text 5
+sleep 16
+step_npc 8210 1
+set_text_alpha 4 0
+set_text_alpha 5 0
+set_text 4 　 　   　　　　『ん……あんたなのか……？
+sleep 8
+set_text_alpha 4 30
+sleep 8
+set_text_alpha 4 60
+sleep 8
+set_text_alpha 4 90
+wait_key_push_edge a
+set_text_alpha 4 60
+sleep 8
+set_text_alpha 4 30
+sleep 8
+set_text_alpha 4 0
+clear_text 4
+sleep 56
+set_text 4 　 　   　　　『こんなところでなにをしている？
+sleep 8
+set_text_alpha 4 30
+sleep 8
+set_text_alpha 4 60
+sleep 8
+set_text_alpha 4 90
+wait_key_push_edge a
+set_text_alpha 4 60
+sleep 8
+set_text_alpha 4 30
+sleep 8
+set_text_alpha 4 0
+clear_text 4
+sleep 80
+if_char_dir down
+chg_npc_dir 8213 up
+fi
+if_char_dir left
+chg_npc_dir 8213 right
+fi
+sleep 24
+chg_npc_dir 8210 down
+chg_npc_img 8210 120
+chg_speed 8210 normal
+play_se_loop beeeeep.wav
+sleep 48
+set_flag 17 1
+sleep 40
+set_text 4 　 　   　　　『そっちこそ　こんなとこで？
+set_text 5 　 　   　　　　　あそんでていいのかい？
+sleep 8
+set_text_alpha 4 22
+set_text_alpha 5 22
+sleep 8
+set_text_alpha 4 44
+set_text_alpha 5 44
+sleep 8
+set_text_alpha 4 67
+set_text_alpha 5 67
+sleep 8
+set_text_alpha 4 90
+set_text_alpha 5 90
+wait_key_push_edge a
+set_text_alpha 4 67
+set_text_alpha 5 67
+sleep 8
+set_text_alpha 4 44
+set_text_alpha 5 44
+sleep 8
+set_text_alpha 4 22
+set_text_alpha 5 22
+sleep 8
+set_text_alpha 4 0
+set_text_alpha 5 0
+clear_text 4
+clear_text 5
+sleep 56
+chg_speed 8210 fast
+set_flag 17 2
+set_text 4 　 　   　　　『いつでも　あたまかかえてれば
+set_text 5 　 　  　もんだいが　かいけつするとでも　おもってる？
+sleep 8
+set_text_alpha 4 22
+set_text_alpha 5 22
+sleep 8
+set_text_alpha 4 44
+set_text_alpha 5 44
+sleep 8
+set_text_alpha 4 67
+set_text_alpha 5 67
+sleep 8
+set_text_alpha 4 90
+set_text_alpha 5 90
+wait_key_push_edge a
+set_text_alpha 4 67
+set_text_alpha 5 67
+sleep 8
+set_text_alpha 4 44
+set_text_alpha 5 44
+sleep 8
+set_text_alpha 4 22
+set_text_alpha 5 22
+sleep 8
+set_text_alpha 4 0
+set_text_alpha 5 0
+clear_text 4
+clear_text 5
+sleep 56
+kill_through 8200
+chg_speed 8210 normal
+step_npc 8210 6
+loop 6
+chg_npc_img 8213 17
+sleep 8
+chg_npc_img 8213 10
+sleep 8
+pool
+chg_speed 8213 slow
+if_char_dir down
+move_npc 8213 up 1
+fi
+if_char_dir left
+move_npc 8213 right 1
+fi
+loop 2
+chg_npc_img 8213 10
+sleep 8
+chg_npc_img 8213 17
+sleep 8
+pool
+chg_npc_dir 8213 up
+loop 10
+chg_npc_img 8213 10
+sleep 8
+chg_npc_img 8213 17
+sleep 8
+pool
+kill_through 8212
+kill_through 8213
+chg_npc_img 8210 97
+sleep 32
+open_door 8250
+play_se door_open.ogg
+create npc2 8214 82 10 5 17 0 0 
+create npc_event 8215 82 11 4 40 1 2 none
+jump_npc 8215 down 1
+sleep 8
+close_door 8250
+sleep 8
+jump_npc 8215 down 1
+sleep 16
+jump_npc 8215 left 1
+sleep 16
+chg_npc_dir 8215 down
+chg_speed 8215 not_move
+sleep 24
+chg_npc_img 8210 105
+play_se bump.ogg
+sleep 8
+chg_speed 8215 normal
+jump_npc 8215 same 2
+sleep 16
+msg3 -1 「やだ！▼\n　おきゃくさん▼
+sleep 16
+chg_speed 8215 fast
+move_npc 8215 left 1
+if_char_dir down
+move_char down 2
+loop 8
+dec_screen_effect_val 1
+sleep 1
+pool
+move_npc 8215 down 4
+loop 32
+dec_screen_effect_val 1
+sleep 1
+pool
+move_npc 8215 left 1
+loop 8
+dec_screen_effect_val 1
+sleep 1
+pool
+step_npc 8215 8
+loop 16
+dec_screen_effect_val 1
+sleep 1
+pool
+fi
+if_char_dir left
+move_char down 3
+loop 8
+dec_screen_effect_val 1
+sleep 1
+pool
+move_npc 8215 down 5
+loop 40
+dec_screen_effect_val 1
+sleep 1
+pool
+chg_npc_dir 8215 left
+step_npc 8215 8
+loop 16
+dec_screen_effect_val 1
+sleep 1
+pool
+fi
+reset_screen_effect
+sleep 32
+fadeout
+erase_msg3
+sleep 16
+chg_event_move_char_speed normal
+kill 8210
+warp 82 21 8 down
+create event_generator 8202 82 21 8 17 0 0 @082/honey_bee_inn15.txt
+sleep 16
+fadein
