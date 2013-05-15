@@ -28,3 +28,5 @@ damage_critical.ogg
 attack_baret.ogg
 attack_earis.ogg
 magic_chant.ogg
+battle_escape.ogg
+recover2.ogg
