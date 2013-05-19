@@ -1,0 +1,134 @@
+wait_same_pos
+if_char_dir left
+create npc_event 9520 95 7 10 0 2 3 none
+fi
+if_char_dir down
+create npc_event 9520 95 7 10 0 0 3 none
+fi
+msg3 -1 コルネオ\n「ちょっとまった！
+chg_speed 9521 normal
+chg_speed 9522 normal
+sleep 16
+chg_event_move_char_speed fast
+draw_char off
+move_char up 2
+sleep 8
+play_se corneo_jump.ogg
+jump_npc_target_pos 9523 6 7
+sleep 8
+chg_npc_dir 9520 up
+sleep 8
+set_layer 9523 back
+chg_npc_dir 9523 down
+wait_key_push_edge a
+erase_msg3
+step_npc 9520 1
+sleep 8
+msg 『だまれ！
+chg_speed 9523 normal
+jump_npc 9523 same 1
+sleep 16
+step_npc 9523 2
+set_talk_npc 9523
+msg コルネオ\n「すぐおわるからきいてくれ
+reset_talk_npc
+sleep 24
+step_npc 9523 3
+set_talk_npc 9523
+msg コルネオ\n「おれたちみたいな　あくとうが　こうやって\n　べらべらとホントのことを\n　しゃべるのは　どんなときだとおもう？\n#3\n　　1　しをかくごしたとき\n　　2　しょうりをかくしんしているとき\n　　3　なにがなんだかわからないとき\n\n[[]][[]][[]]
+reset_talk_npc
+set_layer 9523 front
+play_se puy.ogg
+if_flag 3 0
+jump_npc 9523 same 2
+set_talk_npc 9523
+msg コルネオ\n「ほひ～！　はっずれ～！
+reset_talk_npc
+fi
+if_flag 3 1
+jump_npc 9523 same 2
+set_talk_npc 9523
+msg コルネオ\n「ほひ～！　あったり～！
+reset_talk_npc
+fi
+if_flag 3 2
+jump_npc 9523 same 1
+sleep 16
+play_se puy.ogg
+jump_npc 9523 same 1
+set_talk_npc 9523
+msg コルネオ\n「ほひ～！　おっし～！
+reset_talk_npc
+fi
+chg_npc_dir 9523 down
+sleep 4
+chg_npc_dir 9523 left
+sleep 4
+chg_npc_dir 9523 up
+sleep 4
+chg_npc_dir 9523 right
+sleep 4
+chg_npc_dir 9523 down
+chg_speed 9523 fast
+step_npc 9523 1
+play_se fingersnap.ogg
+sleep 48
+play_se door_open_hard.wav
+create map_obj 9551 95 5 10 41 0 0 
+create map_obj 9552 95 6 10 41 0 0 
+create map_obj 9553 95 7 10 41 0 0 
+create map_obj 9554 95 5 11 32 0 0 
+create map_obj 9555 95 6 11 32 0 0 
+create map_obj 9556 95 7 11 32 0 0 
+create map_obj 9557 95 5 12 42 0 0 
+create map_obj 9558 95 6 12 43 0 0 
+create map_obj 9559 95 7 12 42 0 0 
+set_layer 9557 front
+set_layer 9558 front
+set_layer 9559 front
+sleep 16
+chg_npc_y_offset 9520 -5
+chg_npc_y_offset 9521 -5
+chg_npc_y_offset 9522 -5
+sleep 1
+chg_npc_y_offset 9520 -6
+chg_npc_y_offset 9521 -6
+chg_npc_y_offset 9522 -6
+sleep 1
+chg_npc_y_offset 9520 -7
+chg_npc_y_offset 9521 -7
+chg_npc_y_offset 9522 -7
+sleep 1
+chg_npc_y_offset 9520 -8
+chg_npc_y_offset 9521 -8
+chg_npc_y_offset 9522 -8
+sleep 1
+chg_speed 9520 fast
+chg_speed 9521 fast
+chg_speed 9522 fast
+step_npc 9520 1
+step_npc 9521 1
+step_npc 9522 1
+sleep 8
+play_se barrel_falling.ogg
+slide_walk_npc 9520 down 2
+slide_walk_npc 9521 down 2
+slide_walk_npc 9522 down 2
+sleep 16
+chg_event_move_char_speed normal
+kill_through_range 9520 9522
+loop 3
+jump_npc 9523 same 1
+sleep 16
+jump_npc 9523 same 1
+sleep 32
+pool
+fadeout
+sleep 16
+play_event_bgm Ex-08-nothing.ogg
+sleep 32
+warp 140 1 1 up
+sleep 32
+play_event_bgm 1-09-Shinra_Company.ogg
+fadein
+msg ～イベントさくせい　ここまで\n\n\n\n　mapID:140のマップデータがありません\n　たぶんわたしはつくれないので　だれかおねがいします\n\n\n　つづきは　とりあえずよういできしだい\n　きがむいたら……

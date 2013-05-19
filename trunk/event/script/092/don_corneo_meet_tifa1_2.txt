@@ -1,0 +1,123 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through 9100
+kill_through 9121
+kill 9200
+chg_npc_dir 9222 right
+sleep 8
+chg_event_move_char_speed fast
+move_char right 3
+sleep 24
+create npc_event 9220 92 8 15 13 3 2 none
+draw_char off
+create npc_event 9221 92 10 6 129 1 2 エアリス\n「さあ　どうぞ　ヒミツのおはなし
+move_npc 9221 down 7
+sleep 112
+move_npc 9221 left 2
+sleep 64
+chg_npc_dir 9221 down
+sleep 32
+chg_npc_dir 9221 left
+sleep 32
+chg_npc_dir 9221 down
+sleep 32
+chg_npc_dir 9221 left
+sleep 16
+move_npc 9221 left 1
+sleep 16
+chg_speed 9221 slow
+move_npc 9221 up 1
+chg_event_move_char_speed slow
+move_char up 2
+sleep 32
+move_npc 9221 left 1
+sleep 32
+chg_speed 9221 normal
+step_npc 9221 2
+set_talk_npc 9221
+msg エアリス\n「……ティファ　さん？
+reset_talk_npc
+sleep 16
+chg_speed 9222 slow
+move_npc 9222 up 1
+sleep 32
+move_npc 9222 right 1
+sleep 32
+step_npc 9221 2
+set_talk_npc 9221
+msg エアリス\n「はじめまして\n　わたし　エアリス\n\n　あなたのこと\n　クラウドから　きいてるわ
+reset_talk_npc
+sleep 16
+chg_speed 9222 normal
+step_npc 9222 2
+set_talk_npc 9222
+msg ティファ\n「……あなたは？\n\n\n　あっ　こうえんにいたひと？\n　クラウドといっしょに……
+reset_talk_npc
+step_npc 9221 1
+set_talk_npc 9221
+msg エアリス\n「そ　クラウドといっしょに
+reset_talk_npc
+sleep 16
+chg_npc_dir 9222 left
+step_npc 9222 1
+set_talk_npc 9222
+msg ティファ\n「そう……
+reset_talk_npc
+jump_npc 9221 same 1
+sleep 16
+step_npc 9221 2
+set_talk_npc 9221
+msg エアリス\n「あんしんして\n　すこしまえに　しりあったばかりよ\n　なんでもないの
+reset_talk_npc
+sleep 16
+chg_npc_dir 9222 right
+step_npc 9222 2
+set_talk_npc 9222
+msg ティファ\n「あんしんって……なにをあんしんするの？
+reset_talk_npc
+sleep 16
+chg_speed 9222 fast
+step_npc 9222 2
+set_talk_npc 9222
+msg ティファ\n「ああ　かんちがいしないで\n\n\n　わたしとクラウドは\n　たんなるおさななじみよ\n　なんでもないの
+reset_talk_npc
+sleep 32
+step_npc 9221 2
+set_talk_npc 9221
+msg エアリス\n「ふたりして『なんでもない』\n　な～んていってると\n　クラウド　ちょっとかわいそう
+reset_talk_npc
+chg_npc_dir 9221 down
+sleep 16
+set_active_msg 9221
+jump_npc 9221 same 1
+set_talk_npc 9221
+msg エアリス\n「ね　クラウド？
+reset_talk_npc
+sleep 16
+chg_speed 9222 normal
+step_npc 9222 1
+set_talk_npc 9222
+msg ティファ\n「クラウド？
+reset_talk_npc
+move_char down 2
+sleep 32
+chg_npc_dir 9222 down
+sleep 32
+chg_speed 9221 not_move
+chg_speed 9222 not_step
+chg_type 9221 npc2
+chg_type 9222 npc2
+set_flag_wall 9221
+set_flag_wall 9222
+set_inactive_msg 9221
+chg_char_dir right
+draw_char on
+kill 9220
+chg_event_move_char_speed normal
+create event_generator 9202 92 0 0 17 0 0 @092/don_corneo_meet_tifa2.txt
+create event_generator 9204 92 10 5 17 0 0 @092/don_corneo_meet_tifa3_1.txt
+create event_generator 9206 92 6 15 17 0 0 @092/don_corneo_meet_tifa4.txt
+chg_char_state_move
+loop_inf
+sleep 400
+pool

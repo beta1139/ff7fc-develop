@@ -247,7 +247,7 @@ move_npc 8313 up 1
 sleep 16
 chg_npc_y_offset 8317 -8
 sleep 16
-play_se_loop bath.ogg
+play_se_loop squish.ogg
 move_npc 8316 down 1
 slide_walk_npc 8330 down 1
 move_npc 8315 down 1
@@ -504,6 +504,7 @@ sleep 1
 pool
 move_npc 8314 up 2
 move_npc 8315 up 3
+move_npc 8316 right 1
 chg_npc_dir 8317 up
 loop 8
 inc_map_draw_y_offset
@@ -517,7 +518,7 @@ sleep 1
 pool
 reset_slide_walk_char_flag
 move_char down 5
-move_npc 8316 right 1
+move_npc 8316 up 2
 kill 8313
 move_npc 8317 up 4
 loop 8
@@ -528,7 +529,6 @@ loop 8
 dec_map_draw_y_offset
 sleep 1
 pool
-move_npc 8316 up 2
 kill 8314
 loop 8
 inc_map_draw_y_offset
@@ -539,6 +539,7 @@ dec_map_draw_y_offset
 sleep 1
 pool
 kill 8315
+kill 8316
 loop 8
 inc_map_draw_y_offset
 sleep 1
@@ -547,7 +548,6 @@ loop 8
 dec_map_draw_y_offset
 sleep 1
 pool
-kill 8316
 sleep 16
 move_npc 8317 right 3
 sleep 48

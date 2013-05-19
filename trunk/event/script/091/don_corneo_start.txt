@@ -1,0 +1,44 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through 8503
+move_char up 6
+sleep 16
+create npc_event 9121 91 10 18 129 0 2 エアリス\n「ティファさん\n　どこにいるのかな……
+move_npc 9121 up 5
+sleep 80
+chg_speed 9122 normal
+jump_npc 9122 same 1
+msg3 -1 「お～い　おネエちゃんたち
+sleep 16
+chg_npc_dir 9121 left
+chg_char_dir left
+wait_key_push_edge a
+erase_msg3
+move_char left 3
+move_npc 9121 up 1
+sleep 16
+move_npc 9121 left 3
+sleep 32
+step_npc 9122 2
+msg3 -1 「いまドンに　しらせてくるからさ\n　ここでまっててくんな\n　ウロウロしないでくれよ
+sleep 16
+wait_key_push_edge a
+erase_msg3
+move_npc 9122 left 2
+sleep 48
+chg_char_dir right
+sleep 16
+step_npc 9121 2
+msg エアリス\n「いまのうち\n　さがしましょ　ティファさん
+del_party_mem 3
+chg_type 9121 npc
+set_flag_wall 9121
+chg_char_state_move
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_key_valid start
+loop_inf
+sleep 400
+pool

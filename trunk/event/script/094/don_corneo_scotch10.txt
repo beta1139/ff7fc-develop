@@ -1,0 +1,163 @@
+wait_target_talk 9428
+chg_char_img_tmp 13
+kill_through_range 9402 9408
+chg_npc_dir 9428 right
+set_talk_npc 9428
+msg ソッチ\n「ニヤニヤ……
+reset_talk_npc
+chg_type 9423 npc_event
+chg_type 9424 npc_event
+chg_type 9425 npc_event
+chg_type 9426 npc_event
+chg_type 9427 npc_event
+chg_type 9428 npc_event
+chg_speed 9423 slow
+chg_speed 9424 slow
+chg_speed 9425 slow
+chg_speed 9426 slow
+chg_speed 9427 slow
+chg_speed 9428 normal
+sleep 32
+step_npc 9428 2
+set_talk_npc 9428
+msg ソッチ\n「へへ……どうした？\n　なんならオレが\n　あいてしてやろうか？
+reset_talk_npc
+create npc_event 9420 94 8 6 13 2 2 none
+draw_char off
+move_npc 9423 right 2
+move_npc 9426 up 1
+move_npc 9427 up 1
+sleep 64
+chg_npc_dir 9423 up
+step_npc 9420 2
+msg 『いえ……\n　せっかくですけど\n　えんりょしますわ\n\n　だって……
+sleep 16
+set_active_msg 9428
+jump_npc 9428 same 1
+set_talk_npc 9428
+msg ソッチ\n「だって……？
+reset_talk_npc
+sleep 32
+step_npc 9420 2
+msg 『だって……
+sleep 32
+chg_speed 9420 fast
+step_npc 9420 3
+msg 『アンタらみたいなのは\n　シュミじゃないんでね！！
+chg_npc_dir 9420 down
+sleep 8
+chg_char_dir down
+draw_char on
+kill 9420
+chg_event_move_char_speed normal
+jump_char_target_pos 7 9
+play_se jump.wav
+sleep 8
+chg_npc_dir 9428 down
+sleep 8
+chg_npc_dir 9424 right
+chg_npc_dir 9424 down
+chg_npc_dir 9425 down
+chg_npc_dir 9426 down
+sleep 32
+play_se landing.wav
+sleep 16
+play_se syu.ogg
+loop 6
+chg_char_dir up
+sleep 2
+chg_char_dir right
+sleep 2
+chg_char_dir down
+sleep 2
+chg_char_dir left
+sleep 2
+pool
+chg_char_dir up
+reset_char_img_tmp
+sleep 16
+create npc_event 9420 94 7 9 0 0 2 none
+draw_char off
+jump_npc 9423 same 2
+jump_npc 9424 same 2
+jump_npc 9425 same 2
+jump_npc 9426 same 2
+jump_npc 9427 same 2
+sleep 32
+move_char up 2
+sleep 32
+step_npc 9428 2
+set_talk_npc 9428
+msg ソッチ\n「な……オトコ！？
+reset_talk_npc
+jump_npc 9428 same 2
+sleep 32
+chg_speed 9428 fast
+step_npc 9428 6
+set_talk_npc 9428
+msg ソッチ\n「このヤロー～！\n　だましやがったな！\n　やれ！やっちまえ！！
+reset_talk_npc
+move_char down 2
+sleep 16
+chg_speed 9424 normal
+chg_speed 9425 normal
+chg_speed 9426 normal
+play_se jump.wav
+jump_npc_target_pos 9424 8 9
+jump_npc_target_pos 9426 6 9
+jump_npc 9425 same 2
+sleep 16
+chg_npc_dir 9424 left
+chg_npc_dir 9426 right
+sleep 16
+play_se landing.wav
+sleep 24
+encount 243
+sleep 64
+kill 9424
+kill 9425
+kill 9426
+wait_encount_end
+sleep 16
+move_char up 2
+sleep 32
+step_npc 9428 2
+set_talk_npc 9428
+msg ソッチ\n「ク～！！\n　だらしないヤツらめ！\n\n　い　いくぞ！\n　てしたのイジを\n　みせてやる！！
+reset_talk_npc
+move_char down 2
+chg_speed 9423 normal
+chg_speed 9427 normal
+chg_speed 9428 normal
+chg_npc_dir 9423 right
+chg_npc_dir 9427 left
+sleep 16
+play_se jump.wav
+jump_npc_target_pos 9423 8 9
+jump_npc_target_pos 9427 6 9
+sleep 16
+jump_npc 9428 down 2
+chg_char_dir up
+sleep 32
+play_se landing.wav
+chg_npc_dir 9423 left
+chg_npc_dir 9427 right
+draw_char on
+kill 9420
+sleep 24
+encount 557
+sleep 64
+kill 9423
+kill 9427
+kill 9428
+wait_encount_end
+if_flag_lesser 18 10
+create event_generator 9101 91 9 5 17 0 0 @091/don_corneo_help_aeris1_1.txt
+create event_generator 9102 91 10 5 17 0 0 @091/don_corneo_help_aeris1_2.txt
+create event_generator 9212 92 10 3 17 0 0 @092/don_corneo_kotch1.txt
+fi
+if_flag_greater 18 9
+create event_generator 9103 91 13 6 17 0 0 @091/don_corneo_join_tifa1_1.txt
+create event_generator 9104 91 13 7 17 0 0 @091/don_corneo_join_tifa1_2.txt
+fi
+kill_through_range 9125 9128
