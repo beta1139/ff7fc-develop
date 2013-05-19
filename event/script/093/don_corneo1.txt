@@ -1,0 +1,19 @@
+wait_same_pos
+fadeout
+sleep 16
+draw_char off
+if_flag_lesser 18 10
+create npc_event 9522 95 7 8 130 3 4 none
+chg_npc_y_offset 9522 -6
+fi
+if_flag_greater 18 9
+create npc_event 9521 95 7 8 129 3 4 none
+chg_npc_y_offset 9521 -6
+fi
+create npc_event 9523 95 5 7 39 3 0 none
+sleep 16
+chg_npc_y_offset 9523 -2
+set_layer 9523 front
+warp 95 6 7 up
+close_door 9350
+fadein

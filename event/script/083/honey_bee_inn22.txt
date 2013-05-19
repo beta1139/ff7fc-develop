@@ -114,15 +114,16 @@ create npc_event 8317 83 11 4 111 1 2 none
 move_npc 8317 down 3
 open_door 8350
 play_se door_open_hard.wav
-loop 8
+loop 4
 inc_map_draw_y_offset
 sleep 1
 pool
 jump_npc 8310 same 2
-loop 8
+loop 4
 dec_map_draw_y_offset
 sleep 1
 pool
+sleep 8
 play_se_loop stomp.ogg
 create npc_event 8316 83 11 4 44 1 2 none
 move_npc 8316 down 2
@@ -138,14 +139,15 @@ sleep 1
 pool
 create npc_event 8315 83 11 4 44 1 2 none
 move_npc 8315 down 3
-loop 8
+loop 6
 inc_map_draw_y_offset
 sleep 1
 pool
-loop 8
+loop 6
 dec_map_draw_y_offset
 sleep 1
 pool
+sleep 4
 if_char_dir up
 chg_npc_dir 8310 left
 fi
@@ -187,16 +189,13 @@ chg_speed 8317 not_move
 chg_speed 8316 not_move
 create npc_event 8313 83 11 4 44 1 2 none
 move_npc 8313 down 1
-loop 8
-dec_map_draw_y_offset
-sleep 1
-pool
+sleep 8
 if_char_dir up
 chg_npc_dir 8310 left
 fi
 chg_npc_dir 8310 down
 loop 8
-inc_map_draw_y_offset
+dec_map_draw_y_offset
 sleep 1
 pool
 stop_se
@@ -207,10 +206,7 @@ chg_speed 8315 not_move
 chg_speed 8314 not_move
 chg_speed 8313 not_move
 chg_speed 8310 fast
-loop 8
-dec_map_draw_y_offset
-sleep 1
-pool
+sleep 8
 chg_npc_dir 8310 up
 step_npc 8310 3
 chg_speed 8317 normal
@@ -251,40 +247,27 @@ move_npc 8316 down 2
 move_npc 8315 down 2
 move_npc 8314 down 2
 move_npc 8313 down 2
-loop 8
-inc_map_draw_y_offset
-sleep 1
-pool
-loop 8
-dec_map_draw_y_offset
-sleep 1
-pool
+sleep 16
 play_se_loop stomp.ogg
 chg_npc_dir 8312 up
 step_npc 8312 2
-loop 8
+loop 4
 inc_map_draw_y_offset
 sleep 1
 pool
 close_door 8350
-loop 8
+loop 4
 dec_map_draw_y_offset
 sleep 1
 pool
+sleep 8
 chg_speed 8316 not_move
 chg_speed 8315 not_move
 chg_speed 8314 not_move
 chg_speed 8313 not_move
 chg_npc_dir 8310 up
 erase_msg3
-loop 8
-inc_map_draw_y_offset
-sleep 1
-pool
-loop 8
-dec_map_draw_y_offset
-sleep 1
-pool
+sleep 16
 stop_se
 set_active_msg 8317
 set_active_msg 8316

@@ -295,6 +295,9 @@ create event_generator 8809 88 20 13 17 0 0 @088/keep_drag2_in.txt
 create event_generator 8807 88 4 7 17 0 0 @088/wm_yoidore7.txt
 create event_generator 7261 72 8 47 17 0 0 @072/wall_market13_1.txt
 create event_generator 7262 72 9 47 17 0 0 @072/wall_market13_2.txt
+kill 8510
+create npc2 8512 85 10 15 66 1 0 
+create event_generator 8503 85 0 0 17 0 0 @085/wall_market21.txt
 set_flag 14 7
 set_flag 9 2
 sleep 8

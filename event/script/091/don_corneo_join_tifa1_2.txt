@@ -1,0 +1,56 @@
+wait_same_pos
+kill_through 9103
+create npc_event 9120 91 13 7 0 2 3 none
+draw_char off
+msg 「クラウド！！
+chg_event_move_char_speed fast
+move_char left 8
+sleep 64
+move_char up 1
+create npc_event 9121 91 2 6 2 3 3 none
+move_npc 9121 right 1
+sleep 24
+move_npc 9121 right 7
+move_char right 6
+sleep 24
+move_npc 9120 left 1
+sleep 8
+move_npc 9120 up 1
+sleep 8
+move_npc 9120 left 1
+sleep 16
+chg_char_dir left
+step_npc 9120 2
+msg 『ティファ！！\n\n\n\n#2\n　　だいじょうぶか？\n　　エアリスをたすけるぞ！！\n\n\n[[]][[]]
+set_active_msg 9121
+if_flag 3 0
+add_likability 2 300
+chg_speed 9121 normal
+jump_npc 9121 same 1
+sleep 4
+chg_npc_dir 9121 up
+sleep 4
+chg_npc_dir 9121 left
+sleep 4
+chg_npc_dir 9121 down
+sleep 4
+chg_npc_dir 9121 right
+sleep 16
+step_npc 9121 2
+msg ティファ「あったりまえ！\n　わたしをアマくみると\n　イタいめにあうんだから！！
+fi
+if_flag 3 1
+sub_likability 2 200
+jump_npc 9121 same 1
+msg ティファ「ちょっと　わたしはどうでもいいの？\n　……まあ　いいわ　いそぎましょ！
+fi
+chg_speed 9121 normal
+draw_char on
+kill 9120
+move_npc 9121 right 1
+sleep 16
+kill 9121
+create npc3 9223 92 10 13 134 0 4 コッチ\n「いちどでいい……\n　いちどでいいから……\n\n　カワイイおんなのコと\n　スウィ～トなコイビトどうしを\n　えんじてみたかっただけなのに……
+create event_generator 9214 92 0 0 17 0 0 @092/don_corneo_kotch3.txt
+chg_event_move_char_speed normal
+add_party_mem 2

@@ -1,0 +1,31 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through_range 9200 9206
+sleep 16
+chg_type 9221 npc_event
+chg_speed 9221 normal
+move_npc 9221 right 4
+chg_npc_dir 9222 right
+sleep 64
+move_npc 9221 up 3
+sleep 64
+set_active_msg 9221
+jump_npc 9221 same 1
+msg エアリス\n「な～に　テレてるの？\n　ダメ　ちゃんとはなさないと！
+move_char down 1
+sleep 16
+move_npc 9221 down 3
+sleep 48
+move_npc 9221 left 4
+sleep 64
+chg_npc_dir 9221 right
+set_inactive_msg 9221
+create event_generator 9202 92 0 0 17 0 0 @092/don_corneo_meet_tifa2.txt
+create event_generator 9204 92 10 5 17 0 0 @092/don_corneo_meet_tifa3_1.txt
+create event_generator 9206 92 6 15 17 0 0 @092/don_corneo_meet_tifa4.txt
+chg_speed 9221 not_move
+chg_type 9221 npc2
+chg_char_state_move
+loop_inf
+sleep 400
+pool

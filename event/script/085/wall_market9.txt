@@ -1,6 +1,4 @@
-set_eternal_event
 wait_target_talk 8510
-reset_talk_flag 8510
 chg_type 8510 npc_event
 chg_speed 8510 normal
 chg_dir_to_char 8510

@@ -1,0 +1,91 @@
+wait_same_pos
+wait_key_push_edge a
+erase_msg3
+kill_through 9212
+chg_npc_img 9223 133
+chg_npc_dir 9223 up
+sleep 4
+chg_npc_y_offset 9223 -7
+sleep 1
+chg_npc_y_offset 9223 -6
+sleep 1
+chg_npc_y_offset 9223 -5
+sleep 1
+chg_npc_y_offset 9223 -4
+sleep 1
+chg_speed 9223 normal
+slide_walk_npc 9223 down 8
+play_se_loop barrel_rolling.ogg
+chg_npc_img 9223 134
+sleep 8
+chg_npc_img 9223 133
+sleep 8
+msg3 -1 コッチ\n「ウワ～ア～ア～！！
+loop 7
+chg_npc_img 9223 134
+sleep 8
+chg_npc_img 9223 133
+sleep 8
+pool
+chg_npc_img 9223 134
+erase_msg3
+play_se bump.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 40
+chg_npc_dir 9221 up
+chg_speed 9220 fast
+step_npc 9220 1
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+msg 『エアリス！！\n\n\n\n#2\n　　だいじょうぶか？\n　　ティファをたすけるぞ！\n\n\n[[]][[]]
+chg_speed 9221 normal
+if_flag 3 0
+add_likability 3 300
+jump_npc 9221 same 1
+sleep 16
+step_npc 9221 2
+msg エアリス\n「いったでしょ\n　きけんなことにはなれてるって
+sleep 16
+step_npc 9221 2
+msg エアリス\n「でもホントはちょっと\n　ドキドキしたけどね！
+fi
+if_flag 3 1
+sub_likability 3 200
+chg_npc_dir 9221 left
+sleep 8
+chg_npc_dir 9221 up
+jump_npc 9221 same 1
+sleep 16
+step_npc 9221 1
+msg エアリス\n「え　ええ　そうね……\n　……うん　いそぎましょ！
+fi
+chg_char_dir down
+draw_char on
+kill 9220
+sleep 16
+move_npc 9221 up 1
+sleep 16
+kill 9221
+chg_speed 9223 not_step
+chg_type 9223 npc3
+set_flag_wall 9223
+create event_generator 9214 92 0 0 17 0 0 @092/don_corneo_kotch3.txt
+kill_through_range 9101 9102

@@ -1,0 +1,258 @@
+wait_same_pos
+sleep 32
+set_talk_npc 9523
+msg コルネオ\n「ホレ！　ホレ！！
+reset_talk_npc
+if_flag_lesser 18 10
+step_npc 9522 4
+fi
+if_flag_greater 18 9
+step_npc 9521 4
+fi
+sleep 16
+set_talk_npc 9523
+msg コルネオ\n「ほひ～！\n　もうガマンでき～ん！\n　いくぞ～！！
+reset_talk_npc
+set_flag 19 1
+sleep 8
+if_flag_lesser 18 10
+chg_speed 9522 fast
+step_npc 9522 4
+chg_event_move_char_speed fast
+move_char down 2
+sleep 20
+play_se door_open_hard.wav
+open_door 9550
+sleep 4
+create npc_event 9520 95 6 15 0 0 3 none
+move_npc 9520 up 5
+sleep 8
+create npc_event 9521 95 6 15 3 0 3 none
+move_npc 9521 up 5
+move_char up 2
+sleep 4
+close_door 9550
+sleep 12
+chg_npc_dir 9522 down
+sleep 16
+move_npc 9520 right 1
+sleep 8
+chg_npc_dir 9520 up
+step_npc 9522 1
+msg ティファ\n「クラウド！!
+kill_through 9500
+chg_speed 9523 normal
+sleep 8
+chg_npc_y_offset 9522 -5
+chg_npc_y_offset 9523 -3
+play_se corneo_jump.ogg
+jump_npc_target_pos 9523 7 8
+jump_npc 9522 right 2
+sleep 1
+chg_npc_y_offset 9522 -4
+chg_npc_y_offset 9523 -4
+sleep 1
+chg_npc_y_offset 9523 -5
+sleep 1
+chg_npc_y_offset 9523 -6
+sleep 1
+chg_npc_y_offset 9523 -7
+chg_npc_dir 9523 down
+sleep 1
+chg_npc_y_offset 9523 -8
+sleep 1
+chg_npc_y_offset 9523 -9
+sleep 1
+chg_npc_y_offset 9523 -10
+sleep 1
+chg_npc_dir 9522 up
+chg_npc_dir 9523 left
+sleep 4
+chg_npc_dir 9523 up
+sleep 4
+chg_npc_dir 9522 left
+chg_npc_dir 9523 right
+fi
+if_flag_greater 18 9
+chg_speed 9521 fast
+step_npc 9521 4
+chg_event_move_char_speed fast
+move_char down 2
+sleep 20
+play_se door_open_hard.wav
+open_door 9550
+sleep 4
+create npc_event 9520 95 6 15 0 0 3 none
+move_npc 9520 up 5
+sleep 8
+create npc_event 9522 95 6 15 2 0 3 none
+move_npc 9522 up 5
+move_char up 2
+sleep 4
+close_door 9550
+sleep 12
+chg_npc_dir 9521 down
+sleep 16
+move_npc 9520 right 1
+sleep 8
+chg_npc_dir 9520 up
+step_npc 9521 1
+msg エアリス\n「クラウド！!
+kill_through 9500
+chg_speed 9523 normal
+sleep 8
+chg_npc_y_offset 9521 -5
+chg_npc_y_offset 9523 -3
+play_se corneo_jump.ogg
+jump_npc_target_pos 9523 7 8
+jump_npc 9521 right 2
+sleep 1
+chg_npc_y_offset 9521 -4
+chg_npc_y_offset 9523 -4
+sleep 1
+chg_npc_y_offset 9523 -5
+sleep 1
+chg_npc_y_offset 9523 -6
+sleep 1
+chg_npc_y_offset 9523 -7
+chg_npc_dir 9523 down
+sleep 1
+chg_npc_y_offset 9523 -8
+sleep 1
+chg_npc_y_offset 9523 -9
+sleep 1
+chg_npc_y_offset 9523 -10
+sleep 1
+chg_npc_dir 9521 up
+chg_npc_dir 9523 left
+sleep 4
+chg_npc_dir 9523 up
+sleep 4
+chg_npc_dir 9521 left
+chg_npc_dir 9523 right
+fi
+sleep 4
+chg_npc_dir 9523 down
+sleep 4
+chg_npc_dir 9523 left
+sleep 4
+chg_npc_dir 9523 up
+sleep 4
+play_se bump.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 40
+step_npc 9523 2
+sleep 48
+jump_npc 9523 same 1
+sleep 8
+chg_npc_dir 9523 down
+sleep 24
+jump_npc 9523 same 2
+set_talk_npc 9523
+msg コルネオ\n「ほひ～！\n　なんだ　なんだ！　なにものだ！
+reset_talk_npc
+sleep 16
+if_flag_lesser 18 10
+chg_speed 9522 normal
+step_npc 9522 2
+msg ティファ\n「まだわからない？\n　ドン　コルネオ
+chg_npc_dir 9523 right
+sleep 8
+play_se syu.ogg
+loop 6
+chg_npc_dir 9522 left
+sleep 2
+chg_npc_dir 9522 up
+sleep 2
+chg_npc_dir 9522 right
+sleep 2
+chg_npc_dir 9522 down
+sleep 2
+pool
+chg_npc_dir 9522 left
+chg_npc_img 9522 2
+sleep 16
+jump_npc 9523 left 2
+chg_npc_dir 9523 right
+play_se puy.ogg
+sleep 32
+chg_speed 9523 fast
+step_npc 9523 4
+msg コルネオ\n「ほひ！？\n　な　なにがどういうこと？
+chg_speed 9520 normal
+chg_speed 9521 normal
+chg_speed 9522 slow
+move_npc 9520 up 1
+move_npc 9521 right 2
+move_npc 9522 down 1
+sleep 16
+move_npc 9520 right 1
+sleep 16
+move_npc 9520 up 2
+move_npc 9521 up 2
+move_npc 9522 left 1
+sleep 32
+chg_npc_dir 9520 left
+chg_npc_dir 9521 left
+chg_npc_dir 9522 left
+fi
+if_flag_greater 18 9
+chg_speed 9521 normal
+step_npc 9521 2
+msg エアリス\n「ごめんなさいね\n　コルネオさん
+chg_npc_dir 9523 right
+sleep 8
+play_se syu.ogg
+loop 6
+chg_npc_dir 9521 left
+sleep 2
+chg_npc_dir 9521 up
+sleep 2
+chg_npc_dir 9521 right
+sleep 2
+chg_npc_dir 9521 down
+sleep 2
+pool
+chg_npc_dir 9521 left
+chg_npc_img 9521 3
+sleep 16
+jump_npc 9523 left 2
+chg_npc_dir 9523 right
+play_se puy.ogg
+sleep 32
+chg_speed 9523 fast
+step_npc 9523 4
+msg コルネオ\n「ほひ！？\n　な　なにがどういうこと？
+chg_speed 9520 normal
+chg_speed 9521 normal
+chg_speed 9522 normal
+move_npc 9520 up 1
+sleep 16
+move_npc 9520 right 1
+move_npc 9522 right 2
+sleep 16
+move_npc 9520 up 2
+sleep 16
+move_npc 9521 left 1
+move_npc 9522 up 1
+sleep 16
+chg_npc_dir 9520 left
+chg_npc_dir 9521 left
+chg_npc_dir 9522 left
+fi
+create event_generator 9513 95 6 7 17 0 0 @095/don_corneo10.txt
