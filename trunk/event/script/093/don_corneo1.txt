@@ -5,10 +5,12 @@ draw_char off
 if_flag_lesser 18 10
 create npc_event 9522 95 7 8 130 3 4 none
 chg_npc_y_offset 9522 -6
+del_party_mem 3
 fi
 if_flag_greater 18 9
 create npc_event 9521 95 7 8 129 3 4 none
 chg_npc_y_offset 9521 -6
+del_party_mem 2
 fi
 create npc_event 9523 95 5 7 39 3 0 none
 sleep 16
