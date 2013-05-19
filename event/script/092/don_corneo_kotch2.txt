@@ -89,3 +89,4 @@ chg_type 9223 npc3
 set_flag_wall 9223
 create event_generator 9214 92 0 0 17 0 0 @092/don_corneo_kotch3.txt
 kill_through_range 9101 9102
+add_party_mem 3

@@ -130,5 +130,7 @@ sleep 32
 warp 140 1 1 up
 sleep 32
 play_event_bgm 1-09-Shinra_Company.ogg
+add_party_mem 2
+add_party_mem 3
 fadein
 msg ～イベントさくせい　ここまで\n\n\n\n　mapID:140のマップデータがありません\n　たぶんわたしはつくれないので　だれかおねがいします\n\n\n　つづきは　とりあえずよういできしだい\n　きがむいたら……
