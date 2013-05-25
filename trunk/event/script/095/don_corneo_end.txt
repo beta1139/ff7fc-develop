@@ -127,10 +127,10 @@ fadeout
 sleep 16
 play_event_bgm Ex-08-nothing.ogg
 sleep 32
-warp 140 1 1 up
+warp 140 10 22 up
 sleep 32
 play_event_bgm 1-09-Shinra_Company.ogg
 add_party_mem 2
 add_party_mem 3
+create event_generator 14000 140 10 22 17 0 0 @140/shinra_company_plot1.txt
 fadein
-msg ～イベントさくせい　ここまで\n\n\n\n　mapID:140のマップデータがありません\n　たぶんわたしはつくれないので　だれかおねがいします\n\n\n　つづきは　とりあえずよういできしだい\n　きがむいたら……

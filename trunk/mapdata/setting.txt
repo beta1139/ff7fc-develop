@@ -95,10 +95,10 @@ id,type,bgm,battle_back,monster_party_id
 93,1,1-18-Don_of_the_Slums.ogg,0,188/189/190/191
 94,1,1-18-Don_of_the_Slums.ogg,0,188/189/190/191
 95,1,1-18-Don_of_the_Slums.ogg,0,188/189/190/191
-96,0,1-08-Lurking_in_the_Darkness.ogg,25,188/189/190/191
-97,0,1-08-Lurking_in_the_Darkness.ogg,25,188/189/190/191
-98,0,through,4,188/189/190/191
-99,0,through,4,188/189/190/191
+96,0,1-08-Lurking_in_the_Darkness.ogg,25,245/246/247/248
+97,0,1-08-Lurking_in_the_Darkness.ogg,25,245/246/247/248
+98,0,1-04-Anxious_Heart.ogg,4,188/189/190/191
+99,0,1-04-Anxious_Heart.ogg,4,188/189/190/191
 100,0,1-10-Fighting.ogg,32,188/189/190/191
 101,0,1-10-Fighting.ogg,32,188/189/190/191
 102,0,1-10-Fighting.ogg,32,188/189/190/191

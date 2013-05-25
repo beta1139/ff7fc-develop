@@ -1,0 +1,68 @@
+wait_same_pos
+create npc_event 14020 140 14 11 20 1 2 none
+create npc_event 14021 140 8 28 23 0 1 none
+create npc_event 14022 140 16 14 26 0 2 none
+chg_event_move_char_speed normal
+move_npc 14021 up 6
+sleep 192
+move_npc 14021 right 6
+sleep 128
+move_char right 4
+sleep 64
+move_npc 14021 up 6
+move_char up 11
+sleep 144
+chg_speed 14020 normal
+sleep 48
+step_npc 14020 2
+set_talk_npc 14020
+msg プレジデントしんら\n「じゅんびのほうは？
+reset_talk_npc
+sleep 16
+chg_npc_dir 14022 down
+sleep 16
+chg_speed 14021 normal
+set_active_msg 14021
+jump_npc 14021 same 1
+sleep 16
+jump_npc 14021 same 1
+set_talk_npc 14021
+msg ハイデッカー\n「ガハハ！！　じゅんちょうじゅんちょう！\n　じっこうぶたいはタークスです
+reset_talk_npc
+sleep 16
+chg_npc_dir 14022 up
+sleep 16
+chg_speed 14022 fast
+step_npc 14022 4
+set_talk_npc 14022
+msg リーブ\n「プレジデント！\n　ほんとうにやるのですか？\n　たかが　すうにんのそしきをつぶすのに……
+reset_talk_npc
+sleep 32
+step_npc 14020 2
+set_talk_npc 14020
+msg プレジデントしんら\n「いまさらナニかね　リーブくん
+reset_talk_npc
+create event_generator 14001 140 14 11 17 0 0 @140/shinra_company_plot2.txt
+sleep 16
+chg_speed 14020 slow
+jump_npc 14020 left 1
+sleep 16
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+chg_char_state_move
+sleep 16
+move_npc 14020 up 2
+sleep 64
+move_npc 14020 left 4
+sleep 96
+chg_npc_dir 14022 left
+sleep 32
+move_npc 14020 down 5
+sleep 80
+move_char down 2
+sleep 80
+move_npc 14020 right 5
+sleep 160
