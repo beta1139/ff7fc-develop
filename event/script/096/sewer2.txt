@@ -1,0 +1,83 @@
+wait_same_pos
+chg_type 9621 npc_event
+chg_speed 9621 normal
+chg_type 9622 npc_event
+chg_speed 9622 normal
+sleep 16
+chg_npc_dir 9621 right
+kill_through_range 9601 9602
+sleep 32
+step_npc 9621 2
+set_talk_npc 9621
+msg エアリス\n「ま　さいあくのじたいからは\n　のがれられた……
+reset_talk_npc
+chg_char_dir up
+sleep 40
+play_se_loop alarm.ogg
+sleep 8
+chg_char_dir left
+sleep 15
+chg_npc_dir 9621 left
+chg_npc_dir 9622 down
+sleep 15
+chg_char_dir right
+chg_npc_dir 9622 left
+sleep 15
+chg_char_dir left
+chg_npc_dir 9622 up
+chg_npc_dir 9621 down
+sleep 15
+chg_char_dir right
+chg_npc_dir 9622 right
+sleep 15
+chg_npc_dir 9621 right
+sleep 25
+chg_char_dir left
+chg_npc_dir 9621 left
+chg_npc_dir 9622 down
+sleep 16
+step_npc 9621 2
+set_talk_npc 9621
+msg エアリス\n「……でもないみたい
+reset_talk_npc
+sleep 16
+stop_se
+if_flag 9 2
+boss_encount 244
+sleep 64
+wait_encount_end
+fi
+set_flag 1 0
+chg_char_dir right
+chg_npc_dir 9621 left
+sleep 16
+chg_npc_dir 9622 left
+step_npc 9622 2
+msg ティファ\n「もうダメだわ……\n　マリン……バレット\n　……スラムのひとたち
+chg_npc_dir 9621 down
+sleep 16
+jump_npc 9621 same 1
+sleep 16
+step_npc 9621 3
+set_talk_npc 9621
+msg エアリス\n「あきらめない　あきらめない\n　はしら　こわすなんて\n　そんなにかんたんじゃない　でしょ？
+reset_talk_npc
+chg_char_dir right
+chg_npc_dir 9622 up
+sleep 40
+chg_speed 9622 fast
+step_npc 9622 1
+sleep 32
+chg_speed 9622 normal
+step_npc 9622 2
+msg ティファ\n「…………そうね……そうよね！\n　まだじかんはあるわよね
+sleep 24
+move_npc 9621 down 1
+move_npc 9622 left 1
+sleep 16
+kill 9621
+kill 9622
+if_flag 9 0
+set_flag 9 2
+fi
+enable_char_chg

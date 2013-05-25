@@ -109,8 +109,8 @@ chg_npc_img 4904 3
 sleep 16
 chg_npc_img 4904 15
 step_npc 4904 2
-set_talk_npc 4904
 sleep 40
+set_talk_npc 4904
 msg エアリス\n「ごめんなさい……でも　ね
 reset_talk_npc
 chg_speed 4903 normal

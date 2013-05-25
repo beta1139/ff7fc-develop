@@ -7,4 +7,5 @@ play_bgm
 set_flag 0 0
 set_flag 9 1
 add_party_mem 3
+add_gil 1500
 fi

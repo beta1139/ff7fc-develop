@@ -1,0 +1,23 @@
+set_eternal_event
+wait_target_talk 9622
+reset_talk_flag 9622
+chg_type 9622 npc_event
+chg_dir_to_char 9622
+chg_speed 9622 normal
+step_char 1
+sleep 16
+msg 『だいじょうぶか？
+sleep 16
+set_active_msg 9622
+step_npc 9622 2
+msg エアリス\n「もう！\n　サイテーね　これ
+if_flag 19 0
+add_likability 2 300
+fi
+set_flag 11 1
+chg_type 9622 npc2
+chg_speed 9622 not_move
+set_inactive_msg 9622
+if_flag 19 1
+create event_generator 9603 96 6 25 17 0 0 @096/sewer2.txt
+fi
