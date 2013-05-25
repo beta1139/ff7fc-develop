@@ -407,6 +407,7 @@ chg_event_move_char_speed normal
 sleep 4
 play_event_bgm Ex-08-nothing.ogg
 stop_bgm
+set_flag 20 1
 sleep 4
 boss_encount 234
 sleep 64
@@ -848,4 +849,7 @@ reset_screen_effect
 del_party_mem 1
 del_party_mem 2
 warp 49 20 11 right
+remove_all_materia 1
+remove_all_materia 2
+set_flag 20 0
 fadein

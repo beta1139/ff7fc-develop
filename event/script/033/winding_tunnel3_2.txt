@@ -17,6 +17,7 @@ move_npc 3303 right 1
 sleep 8
 move_npc 3302 up 1
 move_npc 3303 up 1
+set_flag 20 1
 sleep 8
 encount 218
 sleep 64
@@ -102,4 +103,4 @@ set_flag 11 5
 create npc_event 3301 33 5 15 32 3 0 none
 create npc_event 3302 33 5 17 32 3 0 none
 restore_char_img
-fi
+fiset_flag 20 0

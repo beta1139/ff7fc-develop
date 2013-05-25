@@ -14,6 +14,7 @@ sleep 8
 move_npc 3302 up 1
 sleep 8
 create npc_event 3303 33 5 15 32 3 3 none
+set_flag 20 1
 encount 218
 sleep 64
 kill 3301
@@ -99,3 +100,4 @@ create npc_event 3301 33 5 15 32 3 0 none
 create npc_event 3302 33 5 17 32 3 0 none
 restore_char_img
 fi
+set_flag 20 0
