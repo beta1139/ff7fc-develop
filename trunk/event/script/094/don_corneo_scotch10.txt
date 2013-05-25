@@ -111,6 +111,7 @@ chg_npc_dir 9424 left
 chg_npc_dir 9426 right
 sleep 16
 play_se landing.wav
+set_flag 20 1
 sleep 24
 encount 243
 sleep 64
@@ -161,3 +162,4 @@ create event_generator 9103 91 13 6 17 0 0 @091/don_corneo_join_tifa1_1.txt
 create event_generator 9104 91 13 7 17 0 0 @091/don_corneo_join_tifa1_2.txt
 fi
 kill_through_range 9125 9128
+set_flag 20 0

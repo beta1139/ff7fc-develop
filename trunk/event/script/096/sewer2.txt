@@ -40,14 +40,12 @@ step_npc 9621 2
 set_talk_npc 9621
 msg エアリス\n「……でもないみたい
 reset_talk_npc
+set_flag 20 1
 sleep 16
 stop_se
-if_flag 9 2
 boss_encount 244
 sleep 64
 wait_encount_end
-fi
-set_flag 1 0
 chg_char_dir right
 chg_npc_dir 9621 left
 sleep 16
@@ -81,3 +79,5 @@ if_flag 9 0
 set_flag 9 2
 fi
 enable_char_chg
+set_flag 1 0
+set_flag 20 0
