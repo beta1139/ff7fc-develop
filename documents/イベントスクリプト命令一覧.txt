@@ -394,6 +394,12 @@ add_item (item_idx)
 del_item (item_idx)
   item_idxのアイテムを削除
 
+remove_all_materia (idx)
+  idxで指定したキャラの装備しているマテリアを全て外す
+  idxの値の対応は以下の通り
+  0: クラウド, 1: バレット, 2: ティファ, 3: エアリス, 
+  4: レッド13, 5: ユフィ, 6: ケットシー, 7: シド, 8: ヴィンセント
+
 =============== 画面エフェクト系 ===============
 screen_effect (color)
   画面全体にエフェクトをかける。colorにはred blue green offが指定可
