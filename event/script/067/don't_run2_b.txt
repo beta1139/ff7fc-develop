@@ -16,7 +16,7 @@ set_key_unvalid left
 set_key_unvalid right
 set_key_unvalid select
 set_key_unvalid start
-sleep 8
+sleep 12
 play_se barrel_hitting.ogg
 sleep 16
 chg_speed 6731 fast
