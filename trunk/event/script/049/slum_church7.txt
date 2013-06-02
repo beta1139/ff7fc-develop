@@ -239,7 +239,7 @@ kill 4903
 kill 4907
 kill 4908
 kill 4909
-warp 50 1 1 right
+warp 51 1 1 right
 draw_char on
 sleep 48
 fadein

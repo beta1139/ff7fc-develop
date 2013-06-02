@@ -1,0 +1,159 @@
+wait_same_pos
+sleep 32
+chg_speed 6622 slow
+move_npc 6622 up 1
+sleep 32
+move_npc 6622 left 1
+sleep 32
+chg_npc_dir 6620 up
+chg_npc_dir 6622 down
+sleep 32
+chg_speed 6622 normal
+step_npc 6622 2
+msg エアリス\n「ねぇ　これからどうするの？
+sleep 32
+step_npc 6620 2
+msg 『……7ばんがいは　とおいのか？\n　ティファのみせにいきたいんだ
+sleep 24
+step_npc 6622 2
+msg エアリス\n「ティファって……おんなのひと？
+sleep 16
+step_npc 6620 1
+msg 『ああ
+jump_npc 6622 same 1
+sleep 16
+step_npc 6622 1
+msg エアリス\n「かのじょ？
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_key_valid start
+step_npc 6620 1
+msg 『かのじょ？\n\n\n\n#2\n　　そんなんじゃない！\n　　そんなところだ\n\n\n[[]][[]]
+if_flag 3 0
+loop 2
+chg_npc_dir 6620 right
+sleep 6
+chg_npc_dir 6620 left
+sleep 6
+pool
+chg_npc_dir 6620 up
+chg_speed 6620 fast
+step_npc 6620 3
+chg_npc_dir 6622 up
+chg_npc_img 6622 15
+step_npc 6622 3
+sleep 24
+msg エアリス\n「ふふふ
+jump_npc 6622 same 1
+sleep 16
+step_npc 6622 2
+msg エアリス\n「そ～んなにムキにならなくても\n　いいとおもうけど
+chg_npc_img 6622 3
+chg_npc_dir 6622 down
+sleep 16
+fi
+if_flag 3 1
+step_npc 6620 1
+sleep 48
+step_npc 6622 1
+msg エアリス\n「ふ～ん　いいねえ
+sleep 32
+chg_npc_dir 6622 down
+fi
+step_npc 6622 2
+msg エアリス\n「でも　まあ　いいわ
+sleep 16
+step_npc 6622 2
+msg エアリス\n「7ばんがいだったわね\n　わたしがあんないしてあげる
+sleep 8
+chg_speed 6620 fast
+step_npc 6620 2
+msg 『じょうだんじゃない\n　またあぶないめにあったら\n　どうするんだ？
+sleep 16
+step_npc 6622 1
+msg エアリス\n「なれてるわ
+sleep 8
+chg_speed 6620 normal
+step_npc 6620 1
+msg 『なれてる！？
+sleep 16
+chg_npc_dir 6620 right
+sleep 40
+chg_npc_dir 6620 up
+step_npc 6620 2
+msg 『……まあ　そうだとしても\n　おんなのちからをかりるなんて…
+set_active_msg 6622
+chg_npc_dir 6622 down
+chg_npc_img 6622 99
+jump_npc 6622 same 1
+msg エアリス\n「おんな！！　おんなのちからなんて！？
+sleep 16
+step_npc 6622 3
+msg エアリス\n「そういういいかたされて\n　だまってるわけにはいかないわね
+sleep 16
+chg_npc_img 6622 3
+chg_npc_dir 6622 up
+sleep 32
+jump_npc 6622 same 1
+msg エアリス\n「おかあさん！\n　わたし　7ばんがいまで\n　クラウドをおくっていくから
+chg_event_move_char_speed normal
+move_char up 1
+sleep 16
+chg_speed 6622 not_move
+chg_npc_dir 6621 left
+sleep 16
+chg_npc_img 6621 38
+sleep 16
+move_npc 6621 down 3
+sleep 96
+chg_speed 6622 normal
+chg_speed 6621 normal
+step_npc 6621 2
+set_talk_npc 6621
+msg エルミナ\n「やれやれ\n　いいだしたらきかないからね
+reset_talk_npc
+chg_speed 6621 slow
+move_npc 6621 down 1
+sleep 32
+move_npc 6621 left 1
+sleep 32
+chg_npc_dir 6621 down
+chg_speed 6621 normal
+step_npc 6621 2
+set_talk_npc 6621
+msg エルミナ\n「でも　あしたにしたらどうだい？\n　きょうはもうおそくなってきたし
+reset_talk_npc
+sleep 16
+step_npc 6622 2
+msg エアリス\n「うん　わかった　おかあさん
+sleep 16
+step_npc 6621 2
+set_talk_npc 6621
+msg エルミナ\n「エアリス　ベッドのじゅんびをしておくれ
+reset_talk_npc
+jump_npc 6622 same 1
+sleep 32
+chg_speed 6622 slow
+move_npc 6622 right 1
+sleep 32
+move_npc 6622 up 4
+sleep 96
+fadeout
+sleep 32
+kill 6622
+chg_npc_dir 6621 up
+chg_type 6621 npc
+chg_speed 6621 not_step
+set_flag_wall 6621
+warp 66 9 11 up
+draw_char on
+kill 6620
+sleep 40
+fadein
+del_party_mem 3
+create npc2 6623 66 9 14 17 0 0 
+create npc2 6624 66 10 14 17 0 0 
+chg_event_move_char_speed normal
+sleep 16

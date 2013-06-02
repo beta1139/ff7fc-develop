@@ -1,0 +1,32 @@
+wait_same_pos
+kill_through_range 6705 6710
+kill_through_range 6714 6716
+create npc2 6732 67 5 9 17 0 0 
+create event_generator 6711 67 10 7 17 0 0 @067/don't_run2_b.txt
+create event_generator 6712 67 10 8 17 0 0 @067/don't_run2_b.txt
+create event_generator 6713 67 10 9 17 0 0 @067/don't_run2_b.txt
+chg_char_state_move
+wait_key_push b
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid select
+set_key_unvalid start
+sleep 8
+play_se barrel_hitting.ogg
+sleep 16
+chg_speed 6731 fast
+move_npc 6731 right 3
+sleep 24
+move_npc 6731 up 3
+sleep 20
+open_door 6751
+play_se door_open.ogg
+sleep 4
+chg_speed 6731 normal
+move_npc 6731 up 4
+sleep 64
+chg_npc_dir 6731 left
+sleep 16
+create event_generator 6721 67 0 0 17 0 0 @067/don't_run_msg.txt

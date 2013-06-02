@@ -23,62 +23,37 @@ play_bgm
 fadein
 fi
 if_flag 3 1
-fadeout
 stop_bgm
-set_flag 1 1
-warp 5 24 7 left
-chg_char_dir left
-set_flag 0 5
-start_countdown 5
+fadeout
+sleep 16
+warp 65 8 21 right
+set_flag 0 0
+set_flag 1 0
+set_flag 9 1
+add_party_mem 3
+add_gil 1500
+add_item 4000
+add_item 4100
+sleep 16
 play_bgm
-create npc 400 4 1 26 36 3 0 ウェッジ\n「おれは　だっしゅつこうを　かくほしておくっす！\n\n\n　しっかし　このおおきな　まこうろを\n　ばくはするなんて……　みものっすね！
-create event_generator 410 4 7 7 17 1 0 @004/ichiban_makouro1.txt
-add_party_mem 1
-kill 132
-kill 130
-kill 131
-kill 401
-kill 402
-kill 403
-kill 500
-kill 501
-kill 502
-kill 503
-kill 550
-kill 551
-kill 552
-kill 114
-kill 115
-kill 116
-kill 135
-kill 136
-kill 139
-kill 600
-create npc2 542 5 24 7 17 0 0 
-create npc_event 560 5 14 19 116 0 0 none
-create npc_event 561 5 14 18 116 0 0 none
-create npc_event 562 5 14 17 116 0 0 none
-chg_npc_y_offset 560 -2
-chg_npc_y_offset 561 -2
-chg_npc_y_offset 562 -2
-create npc2 563 5 12 18 17 0 0 
-create npc2 564 5 12 30 17 0 0 
-create npc2 565 5 12 31 17 0 0 
-create npc2 566 5 12 32 17 0 0 
-create npc_event 570 5 15 18 34 2 0 none
-create npc_event 571 5 16 17 35 2 2 none
-create event_generator 580 5 24 7 17 0 0 @005/makouro_gimmick_a00.txt
-create event_generator 581 5 15 14 17 0 0 @005/makouro_gimmick_a01.txt
-create event_generator 583 5 1 1 17 0 0 @005/makouro_gimmick_a04.txt
-create event_generator 584 5 1 2 17 0 0 @005/makouro_gimmick_a05.txt
-create event_generator 585 5 1 1 17 0 0 @005/makouro_gimmick_a06.txt
-create event_generator 589 5 1 2 17 0 0 @005/makouro_gimmick_a10.txt
 fadein
 fi
 if_flag 3 2
-warp 600 11 16 up
+stop_bgm
+fadeout
+sleep 16
+warp 71 6 8 up
 play_bgm
 set_flag 0 0
+set_flag 1 0
+set_flag 9 1
+add_party_mem 3
+add_gil 1500
+add_item 4000
+add_item 4100
+sleep 16
+play_bgm
+fadein
 fi
 if_flag 3 3
 fi

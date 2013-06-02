@@ -796,6 +796,25 @@ npc,4902,49,6,23,17,0,0,"「もうすこし　じかんをやるぞ　と"
 npc3,4903,49,7,24,17,1,0,"「オレにかまうな　だと"
 event_generator,4910,49,20,11,17,0,0,"@049/slum_church1.txt"
 event_generator,4911,49,1,1,17,0,0,"@049/slum_church2.txt"
+event_generator,5199,51,1,1,17,0,0,"@051/temp.txt"
+event_generator,6500,65,8,21,17,0,0,"@065/waterfall.txt"
+treasure_item,6530,65,29,20,4,0,0,1003
+treasure_item,6531,65,22,20,6,0,0,4313
+save_point,6540,65,15,21,0,0,0,
+event_generator,6541,65,15,21,17,0,0,"@save_msg.txt"
+map_door,6550,65,11,19,14,0,0,0
+event_generator,6600,66,9,14,17,0,0,"@066/aeris's_house1.txt"
+event_generator,6602,66,0,0,17,0,0,"@066/aeris's_house3.txt"
+npc_event,6621,66,17,12,38,1,0,"エルミナ
+「あんたの　そのめのかがやきは……
+　ソルジャーなんだろ？"
+event_generator,6700,67,12,7,17,0,0,"@067/aeris's_house4.txt"
+event_generator,6701,67,24,12,17,0,0,"@067/cloud's_memory1.txt"
+treasure_box,6740,67,3,10,0,0,0,1007
+treasure_box,6741,67,4,10,0,0,0,1000
+map_door,6750,67,5,9,14,0,0,0
+map_door,6751,67,11,12,14,0,0,0
+event_generator,6999,69,1,1,17,0,0,"@069/temp.txt"
 npc2,7198,71,9,8,61,2,0,""
 event_generator,7199,71,0,0,17,0,0,"@071/temp.txt"
 event_generator,7100,71,6,3,17,0,0,"@071/wall_market1.txt"
