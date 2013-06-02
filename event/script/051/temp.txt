@@ -1,0 +1,5 @@
+wait_same_pos
+draw_char off
+msg 　～そのご　あーだこーだで　ぶじにげだした\n　クラウドたちは　エアリスのいえにとうちゃく……
+warp_ff3_2 65 8 21 2 right
+draw_char on

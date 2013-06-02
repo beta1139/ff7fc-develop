@@ -1,0 +1,91 @@
+wait_same_pos
+if_flag 9 0
+add_party_mem 3
+fi
+kill_through 6500
+kill_through_range 6551 6581
+create npc_event 6620 66 9 14 0 0 2 none
+draw_char off
+create npc_event 6622 66 10 14 3 0 2 none
+move_npc 6622 up 3
+move_char up 3
+sleep 48
+step_npc 6622 2
+msg3 -1 エアリス\n「ただいま　おかあさん
+wait_key_push_edge a
+erase_msg3
+chg_npc_dir 6621 left
+chg_speed 6622 slow
+chg_speed 6621 slow
+chg_speed 6620 slow
+sleep 16
+chg_npc_dir 6622 right
+sleep 8
+move_npc 6621 left 1
+sleep 32
+move_npc 6621 up 1
+move_npc 6622 right 2
+move_npc 6620 up 1
+sleep 32
+move_npc 6621 left 1
+fadeout
+sleep 32
+set_npc_pos 6620 66 9 11
+set_npc_pos 6622 66 10 11
+set_npc_pos 6621 66 10 10
+chg_npc_dir 6620 up
+chg_npc_dir 6622 up
+chg_npc_dir 6621 down
+chg_speed 6620 normal
+chg_speed 6622 normal
+chg_speed 6621 normal
+warp 66 9 10 down
+sleep 40
+fadein
+step_npc 6622 2
+msg エアリス\n「このひと　クラウド\n　わたしのボディガードよ
+jump_npc 6621 same 1
+sleep 16
+step_npc 6621 2
+set_talk_npc 6621
+msg エルミナ\n「ボディガードって……\n　おまえ　またねらわれたのかい！？
+reset_talk_npc
+sleep 16
+chg_speed 6621 fast
+step_npc 6621 3
+set_talk_npc 6621
+msg エルミナ\n「からだは！？　ケガはないのかい！？
+reset_talk_npc
+sleep 16
+step_npc 6622 2
+msg エアリス\n「だいじょうぶ\n　きょうはクラウドもいてくれたし
+step_npc 6621 2
+sleep 56
+chg_npc_dir 6621 up
+sleep 48
+chg_npc_dir 6621 down
+sleep 16
+chg_speed 6621 slow
+move_npc 6621 left 1
+sleep 32
+chg_npc_dir 6621 down
+sleep 16
+chg_speed 6621 normal
+step_npc 6621 2
+set_talk_npc 6621
+msg エルミナ\n「ありがとうね　クラウドさん
+reset_talk_npc
+sleep 32
+create event_generator 6601 66 9 10 17 0 0 @066/aeris's_house2.txt
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+chg_char_state_move
+chg_speed 6621 slow
+move_npc 6621 right 1
+sleep 32
+move_npc 6621 up 5
+sleep 160
+chg_npc_img 6621 17

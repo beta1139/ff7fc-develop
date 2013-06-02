@@ -1,0 +1,43 @@
+wait_same_pos
+create npc_event 6731 67 13 10 3 0 2 none
+move_char right 1
+sleep 16
+chg_char_dir down
+sleep 16
+step_npc 6731 2
+msg エアリス\n「7ばんがいは　6ばんがいをぬけていくの\n　6ばんがい　ちょっときけんなところだから\n　こんやはゆっくりやすんでね
+move_char down 2
+sleep 32
+move_char left 2
+sleep 16
+move_npc 6731 up 1
+sleep 16
+chg_npc_dir 6731 left
+set_active_msg 6731
+jump_npc 6731 same 1
+msg エアリス\n「クラウド
+sleep 16
+chg_char_dir right
+sleep 16
+step_npc 6731 1
+msg エアリス\n「おやすみ
+sleep 24
+chg_speed 6731 slow
+move_npc 6731 up 2
+sleep 64
+move_npc 6731 left 1
+sleep 32
+kill 6731
+sleep 40
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 3
+sleep 80
+msg 『まいったな……
+sleep 16
+fadeout
+sleep 16
+warp 67 24 12 down
+draw_char off
+sleep 32
+fadein
