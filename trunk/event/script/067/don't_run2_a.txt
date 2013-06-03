@@ -18,7 +18,7 @@ set_key_unvalid right
 set_key_unvalid select
 set_key_unvalid start
 sleep 12
-play_se barrel_hitting.ogg
+play_se creak.ogg
 sleep 16
 chg_speed 6731 fast
 move_npc 6731 right 3

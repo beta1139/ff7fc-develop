@@ -36,6 +36,7 @@ add_item 4000
 add_item 4100
 sleep 16
 play_bgm
+enable_char_chg
 fadein
 fi
 if_flag 3 2
@@ -53,6 +54,7 @@ add_item 4000
 add_item 4100
 sleep 16
 play_bgm
+disable_char_chg
 fadein
 fi
 if_flag 3 3

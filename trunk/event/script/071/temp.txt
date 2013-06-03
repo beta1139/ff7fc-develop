@@ -28,6 +28,8 @@ set_flag_wall 7221
 set_flag_wall 7223
 set_flag_wall 7224
 set_flag_wall 7225
+chg_char_img 0
+disable_char_chg
 sleep 16
 chg_speed 7221 normal
 chg_type 7222 npc

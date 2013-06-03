@@ -1,10 +1,13 @@
 wait_same_pos
+add_party_mem 3
 clear_text 6
 clear_text 7
 sleep 16
+recover_active_chara
 set_text_alpha 5 0
 set_text_alpha 6 0
 sleep 48
+del_party_mem 3
 set_text 5 　 　   　　　　『……かなり　アレだな
 set_text 6 　 　   　　　　　つかれてるみたいだぞ
 sleep 8
@@ -85,7 +88,7 @@ warp 301 11 9 down
 draw_char off
 create npc_event 30120 301 11 10 12 2 2 none
 chg_npc_y_offset 30120 5
-create npc_event 30121 301 10 6 68 1 1 none
+create npc_event 30121 301 10 6 136 1 1 none
 sleep 32
 fadein
 move_npc 30121 down 2

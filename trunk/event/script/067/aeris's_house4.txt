@@ -19,7 +19,6 @@ msg エアリス\n「クラウド
 sleep 16
 chg_char_dir right
 sleep 16
-step_npc 6731 1
 msg エアリス\n「おやすみ
 sleep 24
 chg_speed 6731 slow

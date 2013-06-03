@@ -37,7 +37,7 @@ chg_npc_dir 9622 right
 draw_char on
 set_slide_char_flag
 chg_event_move_char_speed fast
-move_char down 8
+move_char down 9
 loop 2
 sleep 4
 chg_char_dir left
@@ -86,7 +86,6 @@ chg_char_dir right
 sleep 4
 chg_char_dir down
 chg_npc_dir 9621 left
-play_se landing.wav
 sleep 4
 chg_char_dir left
 sleep 4
@@ -103,12 +102,19 @@ chg_type 9622 npc2
 set_flag 19 0
 set_flag 11 0
 set_flag 1 1
-sleep 8
-chg_npc_dir 9621 right
-sleep 8
+play_se landing.wav
+sleep 4
 chg_char_dir right
+sleep 4
+chg_char_dir down
+chg_npc_dir 9621 right
+sleep 4
+chg_char_dir left
+sleep 4
+chg_char_dir up
 chg_npc_dir 9622 left
 sleep 8
+chg_char_dir right
 chg_npc_dir 9621 left
 sleep 8
 chg_npc_dir 9622 up
