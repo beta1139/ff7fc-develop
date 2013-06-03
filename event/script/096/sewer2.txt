@@ -13,25 +13,84 @@ msg エアリス\n「ま　さいあくのじたいからは\n　のがれられた……
 reset_talk_npc
 chg_char_dir up
 sleep 40
-play_se_loop alarm.ogg
-sleep 8
+play_se beast.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
 chg_char_dir left
-sleep 15
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
 chg_npc_dir 9621 left
 chg_npc_dir 9622 down
-sleep 15
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
 chg_char_dir right
 chg_npc_dir 9622 left
-sleep 15
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 3
 chg_char_dir left
 chg_npc_dir 9622 up
 chg_npc_dir 9621 down
-sleep 15
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
 chg_char_dir right
 chg_npc_dir 9622 right
-sleep 15
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 3
 chg_npc_dir 9621 right
-sleep 25
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
 chg_char_dir left
 chg_npc_dir 9621 left
 chg_npc_dir 9622 down

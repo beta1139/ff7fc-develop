@@ -1,4 +1,5 @@
 wait_same_pos
+chg_char_img 0
 if_flag 9 0
 add_party_mem 3
 fi
