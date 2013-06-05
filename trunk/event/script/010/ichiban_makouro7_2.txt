@@ -18,7 +18,7 @@ msg ばくはつ 5ふんまえ
 start_countdown 5
 fi
 kill_through 808
-kill_through 133
+kill_through 533
 create npc2 840 8 29 21 96 0 4 none
 create event_generator 801 8 29 21 17 0 0 @008/ichiban_makouro5.txt
 create npc 510 5 22 7 35 3 0 「ジェシーがまだ　あがってこないんだ！
