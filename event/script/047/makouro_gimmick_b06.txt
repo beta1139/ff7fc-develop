@@ -40,11 +40,7 @@ set_flag 9 0
 end
 fi
 if_flag 10 1
-sleep 32
-chg_npc_dir 4771 down
-sleep 32
-chg_npc_dir 4771 left
-sleep 32
+sleep 96
 erase_msg3
 create event_generator 4782 47 13 17 17 0 0 @047/makouro_gimmick_b02.txt
 set_npc_pos 4763 47 12 17
@@ -56,7 +52,7 @@ sleep 16
 chg_npc_dir 4771 left
 chg_npc_img 4771 98
 chg_speed 4771 normal
-step_npc 4771 5
+step_npc 4771 3
 sleep 80
 chg_npc_img 4771 1
 erase_msg3
@@ -71,14 +67,19 @@ erase_msg3
 sleep 8
 chg_char_state_event
 if_flag 11 3
-msg3 -1 バレット\n「このニセソルジャー！！　\n　かねかえせっ！！
+msg3 -1 バレット\n「！！！！！！！！
 fi
 if_flag 11 2
 msg3 -1 バレット\n「このウスノロッ！！\n　いいかげんに　しやがれ！！
 set_flag 11 3
 fi
 if_flag 11 1
+if_flag 99 0
 msg3 -1 バレット\n「なにやってんだっ！\n　ぜんかいはマグレか！！
+fi
+if_flag 99 1
+msg3 -1 バレット\n「なにやってんだっ！　ちゃんとやれ！！
+fi
 set_flag 11 2
 fi
 if_flag 11 0
@@ -94,13 +95,10 @@ jump_npc 4771 same 1
 sleep 16
 chg_npc_dir 4771 down
 step_npc 4771 6
-chg_npc_dir 4772 up
 sleep 48
 chg_npc_img 4771 1
 chg_npc_dir 4771 left
-sleep 8
-chg_npc_dir 4772 right
-sleep 24
+sleep 32
 erase_msg3
 create event_generator 4782 47 13 17 17 0 0 @047/makouro_gimmick_b02.txt
 set_npc_pos 4763 47 12 17
@@ -109,11 +107,7 @@ set_flag 1 1
 end
 fi
 if_flag 10 4
-sleep 32
-chg_npc_dir 4770 down
-sleep 32
-chg_npc_dir 4770 left
-sleep 32
+sleep 96
 erase_msg3
 create event_generator 4782 47 13 17 17 0 0 @047/makouro_gimmick_b02.txt
 set_npc_pos 4763 47 12 17
@@ -122,10 +116,8 @@ end
 fi
 if_flag 10 5
 sleep 16
-chg_npc_dir 4770 right
-chg_npc_img 4770 98
+chg_npc_dir 4770 down
 sleep 64
-chg_npc_img 4770 2
 chg_npc_dir 4770 left
 sleep 16
 erase_msg3
@@ -139,21 +131,17 @@ sleep 64
 erase_msg3
 sleep 8
 chg_char_state_event
-msg3 -1 ティファ\n「ちょっと　いいかげんに　してよね！！
 chg_npc_dir 4770 right
 chg_npc_img 4770 98
-step_npc 4770 4
+jump_npc 4770 same 1
+msg3 -1 ティファ\n「ちょっと！　マジメにやって！！
 sleep 16
+jump_npc 4770 same 1
 chg_npc_dir 4771 left
-chg_npc_img 4771 98
-chg_npc_dir 4772 up
 sleep 64
 chg_npc_img 4770 2
 chg_npc_dir 4770 left
-sleep 8
-chg_npc_img 4771 1
-chg_npc_dir 4772 right
-sleep 24
+sleep 32
 erase_msg3
 create event_generator 4782 47 13 17 17 0 0 @047/makouro_gimmick_b02.txt
 set_npc_pos 4763 47 12 17

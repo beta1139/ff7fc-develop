@@ -67,8 +67,20 @@ play_se door_open_hard.wav
 sleep 32
 move_char down 4
 sleep 32
+if_flag 0 0
 chg_npc_dir 4770 down
 chg_npc_dir 4771 down
+fi
+if_flag 0 4
+chg_npc_dir 4770 up
+if_flag 11 2
+chg_npc_dir 4771 left
+chg_npc_img 4771 98
+fi
+if_flag 11 3
+chg_npc_dir 4771 up
+fi
+fi
 sleep 16
 if_flag 9 0
 set_flag 11 1
@@ -161,7 +173,7 @@ step_npc 4770 2
 set_talk_npc 4770
 msg ティファ\n「さすがね
 reset_talk_npc
-add_likability 1 250
+add_likability 1 300
 add_likability 2 500
 fi
 if_flag 1 1
@@ -170,43 +182,59 @@ chg_npc_dir 4771 left
 sleep 16
 step_npc 4771 4
 msg バレット\n「もっとスムーズに　いきたいもんだぜ
-msg3 -1 ティファ\n「どんまい！\n　どんまい！
 jump_npc 4770 same 1
 sleep 16
 jump_npc 4770 same 1
+msg3 -1 ティファ\n「どんまい！\n　どんまい！
+sleep 16
+step_npc 4770 2
 chg_npc_dir 4772 right
 chg_npc_img 4772 97
 step_npc 4772 4
-sleep 16
-step_npc 4770 2
-sleep 56
+sleep 64
 chg_npc_img 4772 0
 chg_npc_dir 4772 down
 sleep 8
 sub_likability 1 500
-sub_likability 2 250
+sub_likability 2 300
 fi
 if_flag 0 4
-chg_npc_dir 4770 up
+if_flag 11 2
+chg_npc_dir 4770 down
 sleep 16
 chg_npc_dir 4772 up
-set_talk_npc 4770
-msg ティファ\n「ふぅっ～！\n　つかれたわ……
-reset_talk_npc
-sleep 16
-chg_npc_img 4771 98
-chg_npc_dir 4771 left
+step_npc 4770 2
+msg ティファ\n「……クラウド　ちょっとつかれてる？
+step_npc 4771 4
+chg_npc_dir 4772 right
+chg_npc_img 4772 97
+step_npc 4772 4
+sleep 64
+chg_npc_img 4772 0
+chg_npc_dir 4772 down
+sleep 8
+sub_likability 1 500
+sub_likability 2 300
+fi
 if_flag 11 3
-step_npc 4771 2
 chg_npc_dir 4772 up
-msg バレット\n「ほうしゅうは　ポーションでいいよな
+msg ティファ\n「………
+sleep 16
+chg_npc_dir 4772 up
+chg_npc_dir 4771 down
+sleep 24
+chg_npc_dir 4772 up
+set_active_msg 4771
+jump_npc 4771 same 1
+msg バレット\n「……ソルジャーってだれでもなれるんだな
+chg_speed 4772 slow
 chg_npc_dir 4772 down
 chg_npc_img 4772 98
-step_npc 4772 3
-sleep 56
-fi
+step_npc 4772 2
+sleep 72
 sub_likability 1 500
-sub_likability 2 1000
+sub_likability 2 500
+fi
 fi
 sleep 16
 erase_msg3

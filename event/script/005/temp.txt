@@ -7,6 +7,8 @@ msg i7\n「デバッグよう ワープそうちです\n　5ばんまこうろの\n　ボタンギミックイベ
 reset_talk_npc
 if_flag 3 0
 end_countdown
+kill_through 1003
+kill_through_range 1050 1051
 fadeout
 sleep 32
 set_flag 9 1
