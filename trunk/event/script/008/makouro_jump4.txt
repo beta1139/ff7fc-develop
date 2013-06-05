@@ -5,3 +5,5 @@ jump_char left 3
 play_se jump.wav
 sleep 48
 play_se landing.wav
+set_key_valid b
+set_flag 1 0

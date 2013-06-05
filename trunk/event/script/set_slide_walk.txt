@@ -2,3 +2,5 @@ set_eternal_event
 wait_same_pos
 set_slide_walk_char_flag
 chg_char_dir up
+set_key_unvalid b
+set_flag 1 1
