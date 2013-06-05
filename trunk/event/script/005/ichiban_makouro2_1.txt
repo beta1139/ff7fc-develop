@@ -1,8 +1,39 @@
 wait_same_pos
-chg_char_dir up
-msg 「……おい\n　おまえ　まこうろは　はじめてじゃ\n　ないんだろ？\n\n『まあな\n　ソルジャー……\n　しんらカンパニーの　にんげん　だったからな\n\n「このほしは　まこうエネルギーに　みちている\n　じゅうみんは　そのまこうエネルギーを　つかって\n　ひび　せいかつしている\n\n　でもだれも　まこうのほんしつを　しらねえんだ\n　おまえ　しってるか?\n\n\n「まこうは　このほしを　ながれる　ち　だ\n　それを　しんらってかいしゃは　ガンガン\n　すいだして　いやがる　この　へんちくりんな\n　スクラップでな……\n『のうがきはいい　さきをいそごう\n\n\n\n「クッ……\n　よし　ここからは　オレといっしょに\n　こうどう　してもらうぜ
 chg_type 501 npc_event
 chg_speed 501 normal
+chg_npc_dir 501 down
+chg_char_dir up
+sleep 16
+step_npc 501 2
+set_talk_npc 501
+msg バレット\n「……おい\n　おまえ　まこうろは\n　はじめてじゃないんだろ？
+reset_talk_npc
+sleep 16
+step_char 1
+sleep 16
+msg 『まあな\n　ソルジャー……\n　しんらカンパニーの　にんげんだったからな
+sleep 16
+step_npc 501 2
+set_talk_npc 501
+msg バレット\n「このほしは　まこうエネルギーに　みちている\n　じゅうみんは　そのまこうエネルギーをつかって\n　ひびせいかつしている\n　でも　だれも　まこうのほんしつを　しらねえんだ\n　おまえ　しってるか?
+reset_talk_npc
+chg_char_dir right
+sleep 32
+set_active_msg 501
+jump_npc 501 same 1
+set_talk_npc 501
+msg バレット\n「まこうは　このほしをながれる　『ち』だ\n　それを　しんらってかいしゃは\n　ガンガン　すいだしていやがる\n　このへんちくりんな\n　スクラップでな……
+reset_talk_npc
+chg_char_dir up
+sleep 16
+step_char 1
+sleep 16
+msg 『のうがきはいい　さきをいそごう
+sleep 16
+step_npc 501 2
+set_talk_npc 501
+msg バレット\n「クッ……\n\n\n　よし　ここからは　オレといっしょに\n　こうどう　してもらうぜ
+reset_talk_npc
 move_npc 501 down 1
 sleep 16
 kill 501

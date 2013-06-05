@@ -19,44 +19,52 @@ inc_map_draw_y_offset
 sleep 1
 pool
 set_map_draw_y_offset 0
-create npc_event 601 6 20 2 1 1 2 none
-move_npc 601 down 1
+create npc_event 602 6 20 2 1 1 2 none
+move_npc 602 down 1
 sleep 16
 chg_char_dir down
-chg_npc_dir 601 up
+chg_npc_dir 602 up
+sleep 16
+create npc_event 601 6 20 2 0 1 2 none
+draw_char off
+step_npc 602 2
 msg バレット\n「まこうろのせいで　このほしの　いのちは\n　まいにち　けずられていく\n　そして　いつのひか……　ゼロだ
-chg_char_img_tmp 103
+chg_npc_img 601 103
 sleep 32
-chg_char_dir left
+chg_npc_dir 601 left
 sleep 48
-chg_char_dir down
-msg クラウド\n『わるいけど　きょうみがないな
-kill 601
-create npc_event 145 6 20 3 95 1 0 none
-step_npc 145 4
+chg_npc_dir 601 down
+msg 『わるいけど　きょうみがないな
+chg_npc_dir 602 down
+chg_npc_img 602 95
+step_npc 602 4
 sleep 64
-inactive 145
-kill 145
-create npc3 146 6 20 3 1 0 0 none
-sleep 32
+chg_npc_img 602 1
+chg_npc_dir 602 up
+set_active_msg 602
+jump_npc 602 same 1
+sleep 16
+jump_npc 602 same 1
 msg バレット\n「ほしが　しんじまうんだぞ\n　えっ　クラウドさんよ！
 sleep 16
-reset_char_img_tmp
-chg_char_dir down
+chg_npc_img 601 0
+chg_npc_dir 601 down
 sleep 16
-msg クラウド\n『オレが　かんがえてるのは　さっさとしごとを\n　おわらせたいって　ことだけだ\n　けいびへいや　ガードロボットが　こないうちにな
-kill 146
-create npc_event 147 6 20 3 98 2 0 none
-step_npc 147 10
+step_npc 601 1
+msg 『オレが　かんがえてるのは　さっさとしごとを\n　おわらせたいって　ことだけだ\n　けいびへいや　ガードロボットが　こないうちにな
+draw_char on
+kill 601
+chg_npc_dir 602 left
+chg_npc_img 602 98
+step_npc 602 10
 sleep 160
-kill 147
-create npc_event 148 6 20 3 1 2 2 none
-move_npc 148 up 1
-sleep 32
-kill 148
-kill 142
-chg_char_dir up
-create npc_event 150 6 18 2 34 2 2 none
+chg_npc_img 602 1
+move_npc 602 up 1
+sleep 16
+kill 602
+kill 642
+create npc_event 650 6 18 2 34 2 2 none
+sleep 16
 loop 170
 inc_map_draw_y_offset
 sleep 1
@@ -71,11 +79,11 @@ loop 90
 inc_map_draw_y_offset
 sleep 1
 pool
-move_npc 150 down 1
+move_npc 650 down 1
 sleep 16
-move_npc 150 left 2
+move_npc 650 left 2
 sleep 16
-kill 150
-kill 141
+kill 650
+kill 641
 sleep 16
 create event_generator 660 6 4 1 17 0 0 @006/elevator_switch1.txt

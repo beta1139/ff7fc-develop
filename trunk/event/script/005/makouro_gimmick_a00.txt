@@ -1,5 +1,4 @@
 wait_same_pos
-start_countdown 5
 draw_countdown off
 create npc2 540 5 13 7 17 0 0 
 create npc2 541 5 13 8 17 0 0 
@@ -20,7 +19,7 @@ msg バレット\n「どうなってんだっ！\n　とびらが　しまってやがる！
 chg_npc_dir 572 right
 sleep 8
 step_npc 572 4
-msg バレット\n「おいっ！！　どうなってる！？
+msg バレット\n「おいっ！！　どうする！？
 chg_char_dir down
 chg_char_img_tmp 103
 sleep 32
@@ -34,6 +33,7 @@ sleep 32
 kill 572
 draw_countdown on
 chg_char_state_move
+set_flag 1 1
 loop inf
 msg3 128 「ヒジョウ　ケイカイ　システム　サドウチュウ\n　ヒジョウ　ケイカイ　システム　サドウチュウ
 sleep 128

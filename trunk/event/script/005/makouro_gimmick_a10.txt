@@ -109,8 +109,9 @@ sleep 24
 move_npc 570 down 5
 chg_npc_dir 572 left
 chg_npc_img 572 98
+sleep 8
 chg_speed 572 fast
-step_npc 572 6
+step_npc 572 5
 sleep 16
 move_npc 571 left 8
 sleep 24
@@ -221,5 +222,4 @@ fi
 if_flag 10 0
 add_likability 1 500
 fi
-create npc2 548 5 12 7 64 1 0 
-create event_generator 549 5 1 1 17 0 0 @005/temp.txt
+set_flag 1 0

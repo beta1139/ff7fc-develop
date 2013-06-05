@@ -61,6 +61,7 @@ play_se timer.ogg
 step_char 6
 sleep 180
 play_se_loop alarm.ogg
+create event_generator 1003 10 0 0 17 0 0 @010/ichiban_makouro_alarm.txt
 sleep 8
 chg_char_dir right
 sleep 15
@@ -79,10 +80,10 @@ step_npc 1002 2
 msg バレット\n「ほんかくてきに　やってくるぜ
 set_flag 20 1
 stop_se
+set_flag 0 5
+play_bgm
 encount 204
 sleep 64
 kill 950
 kill_through 951
-create event_generator 1003 10 8 13 17 1 0 @010/ichiban_makouro7_2.txt
-set_flag 0 5
-play_bgm
+create event_generator 1004 10 8 13 17 1 0 @010/ichiban_makouro7_2.txt

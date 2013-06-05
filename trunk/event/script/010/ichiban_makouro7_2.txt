@@ -1,4 +1,6 @@
 wait_same_pos
+play_event_bgm 1-02b-Bombing_Mission.ogg
+play_bgm
 sleep 8
 chg_char_dir down
 msg 『さあ　だっしゅつだ！
@@ -7,11 +9,39 @@ sleep 16
 restore_char_img
 kill 1002
 sleep 16
+if_flag 99 0
+msg ばくはつ 6ぷんまえ
+start_countdown 6
+fi
+if_flag 99 1
 msg ばくはつ 5ふんまえ
 start_countdown 5
+fi
 kill_through 808
 kill_through 133
 create npc2 840 8 29 21 96 0 4 none
 create event_generator 801 8 29 21 17 0 0 @008/ichiban_makouro5.txt
 create npc 510 5 22 7 35 3 0 「ジェシーがまだ　あがってこないんだ！
 set_flag 20 0
+if_flag 99 0
+chg_npc_dir 560 up
+chg_npc_dir 561 up
+chg_npc_dir 562 up
+chg_speed 560 not_move
+chg_speed 561 not_move
+chg_speed 562 not_move
+create npc2 542 5 24 7 17 0 0 
+create npc2 563 5 12 18 17 0 0 
+create npc2 564 5 12 30 17 0 0 
+create npc2 565 5 12 31 17 0 0 
+create npc2 566 5 12 32 17 0 0 
+create npc_event 570 5 15 18 34 2 0 none
+create npc_event 571 5 16 17 35 2 2 none
+create event_generator 580 5 24 7 17 0 0 @005/makouro_gimmick_a00.txt
+create event_generator 581 5 15 14 17 0 0 @005/makouro_gimmick_a01.txt
+create event_generator 583 5 1 1 17 0 0 @005/makouro_gimmick_a04.txt
+create event_generator 584 5 1 2 17 0 0 @005/makouro_gimmick_a05.txt
+create event_generator 585 5 1 1 17 0 0 @005/makouro_gimmick_a06.txt
+create event_generator 589 5 1 2 17 0 0 @005/makouro_gimmick_a10.txt
+fi
+set_flag 1 0

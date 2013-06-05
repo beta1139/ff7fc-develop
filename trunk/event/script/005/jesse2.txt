@@ -1,16 +1,16 @@
-wait_target_talk 138
+wait_target_talk 538
 play_se button.ogg
 sleep 32
 play_se door_open_hard.wav
 kill 552
-kill 139
-chg_type 138 npc_event
-chg_speed 138 fast
+kill 539
+chg_type 538 npc_event
+chg_speed 538 fast
 sleep 16
-move_npc 138 down 1
+move_npc 538 down 1
 sleep 8
-move_npc 138 right 2
+move_npc 538 right 2
 sleep 8
 chg_char_state_move
 sleep 8
-kill 138
+kill 538
