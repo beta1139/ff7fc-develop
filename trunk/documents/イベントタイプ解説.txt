@@ -49,6 +49,8 @@ treasure_box : 宝箱。画像は./image/treasure_box.bmpを使う。
                paramに./item/以下のテキストに記述してあるアイテムのIDを指定する
 treasure_box2: 宝箱。２回アイテムが取れる
 treasure_box3: 宝箱。一度もアイテムが取れない
+treasure_box4: 宝箱。異なる種類のアイテムを複数個取れる
+			   paramに/区切りで複数個のアイテムを指定する
 treasure_item: マップ上に落ちている拾えるアイテム。拾うと消滅する。
                画像は./image/treasure_item.bmpを使う
 treasure_materia: マップ上に落ちている拾えるアイテム。拾うと消滅する。
