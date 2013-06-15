@@ -51,6 +51,8 @@ treasure_box2: 宝箱。２回アイテムが取れる
 treasure_box3: 宝箱。一度もアイテムが取れない
 treasure_item: マップ上に落ちている拾えるアイテム。拾うと消滅する。
                画像は./image/treasure_item.bmpを使う
+treasure_materia: マップ上に落ちている拾えるアイテム。拾うと消滅する。
+                  画像は./image/treasure_materia.bmpを使う
 save_point: セーブポイント
 map_obj: マップオブジェクト。画像は./image/map_obj.bmpを使う
 map_door: マップドア。画像は./image/map_door.bmpを使う

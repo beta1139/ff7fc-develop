@@ -78,7 +78,7 @@ event_generator,924,9,13,10,17,0,0,"@set_slide_walk.txt"
 event_generator,925,9,13,11,17,0,0,"@reset_slide_walk_bottom.txt"
 save_point,950,9,6,10,0,0,0,
 event_generator,951,9,6,10,17,0,0,"@save_msg.txt"
-treasure_item,1000,10,8,17,3,0,0,4000
+treasure_materia,1000,10,8,17,3,0,0,4000
 event_generator,1001,10,8,14,17,0,0,"@010/ichiban_makouro7.txt"
 npc_event,1100,11,3,8,0,3,2,""
 npc_event,1101,11,4,9,1,0,2,""
@@ -101,7 +101,7 @@ event_generator,1332,13,5,26,17,0,0,"@013/hachibangai2.txt"
 event_generator,1333,13,5,27,17,0,0,"@013/hachibangai2.txt"
 map_door,1390,13,9,24,6,0,0,0
 map_door,1391,13,5,24,6,0,0,0
-treasure_item,1400,14,1,20,4,1,0,1000
+treasure_item,1400,14,1,20,0,1,0,1000
 npc3,1401,14,6,17,70,0,0,"「なにか　かべに　かいてあるな？
 　なに　なに…
 
@@ -687,7 +687,7 @@ event_generator,3550,35,0,0,17,0,0,"@035/sensor1.txt"
 event_generator,3551,35,0,0,17,0,0,"@035/sensor2.txt"
 event_generator,3552,35,0,0,17,0,0,"@035/sensor3.txt"
 event_generator,3600,36,12,4,17,0,0,"@reset_slide_walk.txt"
-treasure_item,3601,36,7,4,4,1,0,1003
+treasure_item,3601,36,7,4,0,1,0,1003
 event_generator,3700,37,6,2,17,0,0,"@set_slide_walk.txt"
 event_generator,3701,37,6,6,17,0,0,"@set_slide_walk.txt"
 event_generator,3702,37,6,7,17,0,0,"@reset_slide_walk_bottom.txt"
@@ -722,7 +722,7 @@ npc,3910,39,10,3,34,1,0,"ジェシー
 　こころを　こめたつもり　だったんだけどね
 　しっぱいしちゃった"
 event_generator,3920,39,0,0,17,0,0,"@039/target_talked.txt"
-treasure_item,3930,39,5,3,4,1,0,1000
+treasure_item,3930,39,5,3,0,1,0,1000
 event_generator,4000,40,3,3,17,0,0,"@set_slide_walk.txt"
 event_generator,4100,41,6,9,17,0,0,"@set_slide_walk.txt"
 event_generator,4101,41,6,11,17,0,0,"@set_slide_walk.txt"
@@ -736,7 +736,7 @@ npc,4110,41,2,4,35,1,0,"ビッグス
 　クラウド　5ばんまこうろの　ばくは
 　よろしくたのむぜ！"
 event_generator,4120,41,0,0,17,0,0,"@041/target_talked.txt"
-treasure_item,4130,41,7,4,4,1,0,1070
+treasure_item,4130,41,7,4,0,1,0,1070
 save_point,4131,41,7,7,0,0,0,
 event_generator,4132,41,7,7,17,0,0,"@save_msg.txt"
 event_generator,4133,41,3,6,17,0,0,"@041/door_open.txt"
@@ -783,8 +783,8 @@ event_generator,4910,49,20,11,17,0,0,"@049/slum_church1.txt"
 event_generator,4911,49,1,1,17,0,0,"@049/slum_church2.txt"
 event_generator,5199,51,1,1,17,0,0,"@051/temp.txt"
 event_generator,6500,65,8,21,17,0,0,"@065/waterfall.txt"
-treasure_item,6530,65,29,20,4,0,0,1003
-treasure_item,6531,65,22,20,6,0,0,4313
+treasure_item,6530,65,29,20,0,0,0,1003
+treasure_materia,6531,65,22,20,4,0,0,4313
 save_point,6540,65,15,21,0,0,0,
 event_generator,6541,65,15,21,17,0,0,"@save_msg.txt"
 map_door,6550,65,11,19,14,0,0,0
@@ -1158,7 +1158,7 @@ npc,9128,91,10,5,17,0,0,"　ドン　コルネオのオフィス
 event_generator,9200,92,5,12,17,0,0,"@092/don_corneo_meet_tifa1_1.txt"
 event_generator,9201,92,5,15,17,0,0,"@092/don_corneo_meet_tifa1_2.txt"
 npc_event,9222,92,3,13,130,2,2,"none"
-treasure_item,9230,92,2,12,5,1,0,1003
+treasure_item,9230,92,2,12,1,1,0,1003
 event_generator,9300,93,4,7,17,0,0,"@093/don_corneo_pick1_1.txt"
 event_generator,9301,93,5,7,17,0,0,"@093/don_corneo_pick1_2.txt"
 event_generator,9302,93,9,7,17,0,0,"@093/don_corneo_pick1_3.txt"
@@ -1199,7 +1199,7 @@ npc_event,9427,94,10,11,70,3,0,"「カモンベイベー！
 　グッドなビートで
 　ヒートアップ！"
 event_generator,9500,95,6,7,17,0,0,"@095/don_corneo2.txt"
-treasure_item,9530,95,5,6,5,1,0,1013
+treasure_item,9530,95,5,6,1,1,0,1013
 map_door,9550,95,6,15,13,0,0,0
 event_generator,9600,96,4,16,17,0,0,"@096/sewer1.txt"
 event_generator,9604,96,17,25,17,0,0,"@096/sewer3.txt"
@@ -1218,8 +1218,8 @@ event_generator,9672,96,17,17,17,0,0,"@reset_slide_walk.txt"
 event_generator,9673,96,17,18,17,0,0,"@set_slide_walk.txt"
 event_generator,9674,96,17,19,17,0,0,"@set_slide_walk.txt"
 event_generator,9675,96,17,20,17,0,0,"@reset_slide_walk_bottom.txt"
-treasure_item,9630,96,4,26,5,1,0,1000
-treasure_item,9631,96,18,13,2,0,0,4200
+treasure_item,9630,96,4,26,1,1,0,1000
+treasure_materia,9631,96,18,13,2,0,0,4200
 event_generator,9760,97,5,23,17,0,0,"@reset_slide_walk.txt"
 event_generator,9761,97,5,24,17,0,0,"@set_slide_walk.txt"
 event_generator,9762,97,5,25,17,0,0,"@set_slide_walk.txt"
