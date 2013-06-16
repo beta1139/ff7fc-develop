@@ -795,8 +795,7 @@ npc_event,6621,66,17,12,38,1,0,"エルミナ
 　ソルジャーなんだろ？"
 event_generator,6700,67,12,7,17,0,0,"@067/aeris's_house4.txt"
 event_generator,6701,67,24,12,17,0,0,"@067/cloud's_memory1.txt"
-treasure_box,6740,67,3,10,0,0,0,1007
-treasure_box,6741,67,4,10,0,0,0,1000
+treasure_box4,6740,67,4,10,0,0,0,1000/1007
 map_door,6750,67,5,9,14,0,0,0
 map_door,6751,67,11,12,14,0,0,0
 event_generator,6999,69,1,1,17,0,0,"@069/temp.txt"
