@@ -1,0 +1,44 @@
+set_eternal_event
+wait_talk
+play_se button.ogg
+msg スイッチオン
+if_flag 9 0
+if_flag 0 5
+draw_countdown off
+kill_through 1003
+kill_through_range 1050 1051
+fi
+fi
+play_se elevator_start.wav
+loop 100
+dec_map_draw_y_offset
+sleep 1
+pool
+play_se_loop elevator_loop.wav
+loop 70
+dec_map_draw_y_offset
+sleep 1
+pool
+set_map_draw_y_offset 170
+if_flag 9 0
+warp 6 4 2 up
+fi
+if_flag 9 1
+warp 46 4 2 up
+fi
+loop 80
+dec_map_draw_y_offset
+sleep 1
+pool
+play_se elevator_end.wav
+loop 90
+dec_map_draw_y_offset
+sleep 1
+pool
+if_flag 9 0
+if_flag 0 5
+draw_countdown on
+create event_generator 1003 10 0 0 17 0 0 @010/ichiban_makouro_alarm.txt
+fi
+fi
+set_map_draw_y_offset 0

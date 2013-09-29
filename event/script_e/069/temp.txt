@@ -1,0 +1,5 @@
+wait_same_pos
+draw_char off
+msg 　～そのご　こうえんで\n　エアリスとイチャイチャしてると\n　なにやら　ふしんなチョコボばしゃにのせられていく\n　ティファをはっけん\n　クラウドたちは　あとをつけていくことに……
+warp_ff3_2 71 2 10 2 right
+draw_char on

@@ -1,0 +1,18 @@
+wait_same_pos
+step_npc 3501 2
+set_talk_npc 3501
+msg バレット\n「はいらねぇのか？\n　ここをとおるいがいには　5ばんまこうろに\n　いくほうほうは　ないんだぜ
+reset_talk_npc
+chg_npc_img 3501 1
+move_npc 3501 right 1
+move_npc 3502 right 1
+sleep 16
+move_npc 3501 down 1
+move_npc 3502 up 1
+sleep 16
+kill 3501
+kill 3502
+kill 3506
+create npc2 3507 35 6 16 17 0 0 
+create event_generator 3513 35 7 16 17 0 0 @035/winding_tunnel7.txt
+restore_char_img

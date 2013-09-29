@@ -1,0 +1,10 @@
+set_eternal_event
+wait_target_talked 7923
+reset_talked_flag 7923
+if_flag 3 0
+kill_through 8500
+kill_through 8510
+sleep 8
+create npc2 8510 85 10 15 66 1 0 「おともだちも　か……\n　そりゃいいな\n\n\n　そのほうがドンもよろこぶし\n　もしかしたら……ウヒヒ
+create event_generator 8500 85 0 0 17 0 0 @085/wall_market9.txt
+fi

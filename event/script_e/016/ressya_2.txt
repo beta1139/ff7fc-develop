@@ -1,0 +1,99 @@
+wait_same_pos
+draw_char off
+chg_speed 1662 not_move
+chg_speed 1663 not_move
+sleep 16
+play_se train_info.ogg
+msg しゃないアナウンス\n「ミッドガル　はちばんがい　ステーション　はつ\n　さいしゅうれっしゃ\n\n　しゅうてん\n　スラムななばんがい　れっしゃはかば　えき\n\n\n　とうちゃく　よていじかんは　ミッドガルじ\n　０じ２３ぷん……
+play_se door_open_hard.wav
+create npc_event 1665 16 1 21 1 3 2 バレット\n「こどもじゃねえんだ\n　じっとしてろよ
+move_npc 1665 right 6
+chg_speed 1662 normal
+chg_speed 1663 normal
+chg_npc_dir 1662 left
+chg_npc_dir 1663 left
+sleep 48
+chg_npc_dir 1662 down
+chg_npc_dir 1663 down
+sleep 48
+move_npc 1665 up 1
+sleep 16
+chg_npc_dir 1665 left
+chg_npc_img 1665 98
+sleep 16
+jump_npc_target_pos 1665 7 19
+sleep 16
+play_se bump.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+create npc_event 1668 16 1 21 36 3 2 ウェッジ\n「アバランチで　なをあげて\n　いつか　おれだって……っす！\n\n　おれにも　あかるい　みらいが　まってるっすよね？\n\n\n\n#2\n　　なにを　きたいしてる？\n　　むりだな\n\n\n[[]][[]]
+move_npc 1668 right 2
+sleep 16
+create npc_event 1666 16 1 21 35 3 2 ビッグス\n「まだ　れっしゃの　ひじょうけいび　たいせいには\n　いこうしてない　みたいだな\n\n　あすは　そうはいかない　だろうけどな
+move_npc 1666 right 1
+sleep 16
+create npc_event 1667 16 1 21 34 3 2 ジェシー\n「ね　クラウド\n　いっしょに　みない？\n\n　ミッドガルれっしゃ　ろせんず　ディスプレイ\n　ふたりで　みれば　きっと　たのしいと　おもうの\n　わたし　せつめいして　あげるね
+move_npc 1666 up 1
+move_npc 1667 right 1
+sleep 16
+chg_npc_dir 1666 right
+move_npc 1667 down 1
+sleep 16
+chg_npc_dir 1667 right
+move_npc 1664 down 2
+sleep 32
+move_npc 1664 right 8
+sleep 32
+move_npc 1662 right 4
+move_npc 1663 right 4
+sleep 64
+msg 「これだから　しゅうでんは　まいるよ\n　はあ……
+move_npc 1661 down 1
+sleep 16
+move_npc 1661 right 1
+sleep 16
+kill 1661
+kill 1662
+kill 1663
+kill 1664
+move_npc 1666 right 8
+move_npc 1667 right 8
+move_npc 1668 right 8
+sleep 16
+chg_npc_img 1665 1
+chg_npc_dir 1665 down
+sleep 112
+set_npc_pos 1666 16 16 19
+set_npc_pos 1667 16 18 22
+set_npc_pos 1668 16 16 22
+chg_npc_dir 1666 up
+chg_npc_dir 1667 right
+chg_npc_dir 1668 down
+chg_speed 1667 not_move
+sleep 16
+chg_type 1665 npc
+chg_type 1666 npc
+chg_type 1667 npc
+chg_type 1668 npc
+chg_speed 1665 not_step
+chg_speed 1666 not_step
+chg_speed 1668 not_step
+set_flag_wall 1665
+set_flag_wall 1666
+set_flag_wall 1667
+set_flag_wall 1668
+draw_char on

@@ -1,0 +1,33 @@
+wait_target_talked 530
+chg_type 530 npc_event
+chg_type 531 npc_event
+play_se button.ogg
+sleep 32
+play_se door_open_hard.wav
+kill 514
+kill 515
+kill 516
+chg_speed 530 fast
+chg_speed 531 fast
+move_npc 530 right 1
+move_npc 531 left 1
+chg_char_state_move
+sleep 8
+move_npc 530 up 7
+move_npc 531 up 5
+sleep 40
+move_npc 531 right 3
+sleep 16
+move_npc 530 right 2
+sleep 8
+move_npc 531 up 3
+sleep 8
+chg_npc_dir 530 down
+sleep 16
+create npc 533 5 10 6 35 1 0 ビッグス\n「ここの　あんごうを　にゅうしゅするために\n なんにんの　なかまが　ぎせいに　なったことか……
+kill 530
+chg_npc_dir 531 right
+sleep 16
+create npc3 534 5 12 6 34 3 0 ジェシー\n「コードかいじょ
+create event_generator 537 5 1 2 17 0 0 @005/jesse1.txt
+kill 531

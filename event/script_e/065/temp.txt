@@ -1,0 +1,13 @@
+wait_same_pos
+fadeout
+kill_through 6500
+kill_through_range 6551 6581
+sleep 32
+warp 65 44 19 down
+draw_char off
+sleep 16
+fadein
+msg 　～けっきょくこのあと　エアリスにみつかり\n　なんだかんだで　ふたりで7ばんがいへ\n　むかうことに……
+add_party_mem 3
+warp_ff3_2 68 14 23 2 left
+draw_char on

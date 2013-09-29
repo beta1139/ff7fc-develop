@@ -1,0 +1,90 @@
+wait_target_talk 7513
+chg_type 7510 npc_event
+chg_speed 7510 normal
+move_char left 1
+sleep 16
+create npc_event 7521 75 4 14 3 3 2 none
+move_npc 7521 right 1
+move_char up 1
+sleep 16
+step_npc 7521 2
+msg エアリス\n「すいませ～ん！\n　ドレス1ちゃく くださいな
+chg_char_dir right
+sleep 16
+chg_npc_dir 7510 right
+sleep 40
+chg_npc_dir 7510 left
+step_npc 7510 2
+msg 「うーん　ちょっとじかんが\n　かかるかもしれませんが\n　かまいませんか？
+sleep 16
+step_npc 7521 2
+msg エアリス\n「なにかあったんですか？
+chg_char_dir left
+sleep 16
+step_npc 7510 2
+msg 「ちょっとおやじのやつ\n　スランプなんですよ\n　あ　ドレスはおれのおやじが\n　つくってるんですよ
+sleep 16
+step_npc 7521 2
+msg エアリス\n「その　おやじさん　どちらに？
+chg_char_dir up
+sleep 16
+step_npc 7510 1
+msg 「たぶん　いざかやで\n　のんだくれてますよ
+sleep 16
+jump_npc 7521 same 1
+sleep 16
+step_npc 7521 2
+msg エアリス\n「それじゃ……\n　おやじさん　どうにかしないと\n　ドレス　ダメってこと？
+chg_char_dir left
+sleep 8
+step_npc 7510 1
+msg 「はい　そうですね\n　こまったもんですよ
+sleep 48
+set_active_msg 7510
+jump_npc 7510 same 1
+msg 「！
+sleep 16
+chg_char_dir right
+chg_speed 7510 fast
+step_npc 7510 2
+msg 「もしかして　おきゃくさん\n　どうにかしてくださるんですか？
+chg_char_dir left
+jump_npc 7521 same 1
+sleep 16
+jump_npc 7521 same 1
+sleep 16
+step_npc 7521 2
+msg エアリス\n「だから～！　どうにかしないと\n　ドレス　てにはいらない　でしょ？
+jump_npc 7510 same 1
+sleep 16
+step_npc 7510 4
+msg 「ほんとうっすか！\n　おねがいしますよ　あのバカおやじを\n　どうにかしてくださいよ\n　もう　こまりはててたんすよ………
+chg_npc_dir 7521 up
+sleep 32
+chg_char_dir down
+chg_char_img_tmp 103
+sleep 32
+chg_char_dir left
+sleep 48
+chg_char_dir down
+sleep 32
+chg_npc_dir 7521 right
+sleep 16
+step_npc 7521 2
+msg エアリス\n「はいはい　どうにかします\n　クラウド　いきましょ！
+reset_char_img_tmp
+move_char down 1
+chg_npc_dir 7521 left
+sleep 16
+move_npc 7521 left 1
+create npc2 7514 75 6 14 17 0 0 
+create npc2 8818 88 18 10 77 3 4 
+kill 7513
+kill 8810
+sleep 16
+kill 7521
+chg_speed 7510 not_move
+set_inactive_msg 7510
+chg_type 7510 npc
+create event_generator 7502 75 0 0 17 0 0 @075/wm_boutique2.txt
+create event_generator 8808 88 0 0 17 0 0 @088/wm_yoidore8.txt

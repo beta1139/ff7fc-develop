@@ -1,0 +1,13 @@
+set_eternal_event
+wait_same_pos
+chg_char_dir left
+stop_bgm
+screen_effect blue
+play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
+sleep 400
+screen_effect off
+play_bgm
+move_char left 1
+sleep 16
+msg 『あー　よくねた……\nHP MPが　かいふくした！
+recover_active_chara

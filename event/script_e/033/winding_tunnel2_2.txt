@@ -1,0 +1,5 @@
+wait_same_pos
+kill 3310
+kill 3312
+kill 3313
+msg 『しんらの　けいびへいがいる\n　……もどるしかないか

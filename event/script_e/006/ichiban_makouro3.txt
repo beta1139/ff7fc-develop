@@ -1,0 +1,89 @@
+wait_talk
+play_se button.ogg
+msg スイッチオン
+play_se elevator_start.wav
+loop 100
+inc_map_draw_y_offset
+sleep 1
+pool
+play_se_loop elevator_loop.wav
+loop 70
+inc_map_draw_y_offset
+sleep 1
+pool
+set_map_draw_y_offset -170
+warp 6 20 2 up
+chg_char_dir up
+loop 170
+inc_map_draw_y_offset
+sleep 1
+pool
+set_map_draw_y_offset 0
+create npc_event 602 6 20 2 1 1 2 none
+move_npc 602 down 1
+sleep 16
+chg_char_dir down
+chg_npc_dir 602 up
+sleep 16
+create npc_event 601 6 20 2 0 1 2 none
+draw_char off
+step_npc 602 2
+msg バレット\n「まこうろのせいで　このほしの　いのちは\n　まいにち　けずられていく\n　そして　いつのひか……　ゼロだ
+chg_npc_img 601 103
+sleep 32
+chg_npc_dir 601 left
+sleep 48
+chg_npc_dir 601 down
+msg 『わるいけど　きょうみがないな
+chg_npc_dir 602 down
+chg_npc_img 602 95
+step_npc 602 4
+sleep 64
+chg_npc_img 602 1
+chg_npc_dir 602 up
+set_active_msg 602
+jump_npc 602 same 1
+sleep 16
+jump_npc 602 same 1
+msg バレット\n「ほしが　しんじまうんだぞ\n　えっ　クラウドさんよ！
+sleep 16
+chg_npc_img 601 0
+chg_npc_dir 601 down
+sleep 16
+step_npc 601 1
+msg 『オレが　かんがえてるのは　さっさとしごとを\n　おわらせたいって　ことだけだ\n　けいびへいや　ガードロボットが　こないうちにな
+draw_char on
+kill 601
+chg_npc_dir 602 left
+chg_npc_img 602 98
+step_npc 602 10
+sleep 160
+chg_npc_img 602 1
+move_npc 602 up 1
+sleep 16
+kill 602
+kill 642
+create npc_event 650 6 18 2 34 2 2 none
+sleep 16
+loop 170
+inc_map_draw_y_offset
+sleep 1
+pool
+set_map_draw_y_offset -170
+loop 80
+inc_map_draw_y_offset
+sleep 1
+pool
+play_se elevator_end.wav
+loop 90
+inc_map_draw_y_offset
+sleep 1
+pool
+move_npc 650 down 1
+sleep 16
+move_npc 650 left 2
+sleep 16
+kill 650
+kill 641
+sleep 16
+create event_generator 660 6 4 1 17 0 0 @006/elevator_switch1.txt

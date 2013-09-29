@@ -1,0 +1,23 @@
+set_eternal_event
+wait_target_talk 8815
+reset_talk_flag 8815
+chg_type 8815 npc_event
+chg_speed 8815 fast
+chg_dir_to_char 8815
+if_char_dir down
+create npc_event 8814 88 7 7 0 1 2 none
+draw_char off
+fi
+jump_npc 8815 same 1
+sleep 16
+step_npc 8815 6
+set_talk_npc 8815
+msg 「おい　どうにかしてくれよ\n　だれかがはいったきりでてこないんだ\n　もう　ガマンできないよ
+reset_talk_npc
+if_char_dir down
+draw_char on
+kill 8814
+fi
+chg_type 8815 npc2
+chg_npc_dir 8815 left
+chg_speed 8815 not_move

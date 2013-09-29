@@ -1,0 +1,85 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through_range 9509 9512
+sleep 8
+play_se puy.ogg
+jump_npc 9523 same 1
+msg コルネオ\n「ほひ　おれがキライなの？
+chg_speed 9523 fast
+step_npc 9523 3
+msg 　ま　まさか　ほ　ほかにスキなおとこでも？\n\n\n\n#2\n　　あなただけよ\n　　バレットっていうの……\n\n\n[[]][[]]
+if_flag 3 0
+step_char 1
+sleep 32
+create event_generator 9510 95 8 7 17 0 0 @095/don_corneo7.txt
+fi
+if_flag 3 1
+add_likability 1 500
+chg_char_dir up
+sleep 16
+step_char 1
+sleep 40
+chg_speed 9523 fast
+step_npc 9523 3
+chg_npc_dir 9523 up
+sleep 8
+chg_npc_dir 9523 right
+sleep 8
+chg_npc_dir 9523 up
+sleep 8
+chg_npc_dir 9523 right
+play_se puy.ogg
+jump_npc 9523 same 1
+sleep 16
+play_se puy.ogg
+jump_npc 9523 same 1
+create npc_event 9520 95 8 7 13 0 1 none
+draw_char off
+msg コルネオ\n「ほひ～！　ゆるせん！
+sleep 16
+chg_npc_dir 9523 down
+sleep 24
+chg_speed 9523 normal
+step_npc 9523 2
+msg コルネオ\n「ん？バレット？\n　どっかできいたような……
+sleep 16
+chg_npc_dir 9520 right
+sleep 32
+chg_speed 9520 normal
+step_npc 9520 1
+msg 『ホラ　あなたが\n　さぐらせていた\n　『アバランチ』の……
+sleep 16
+chg_npc_dir 9523 right
+chg_speed 9523 normal
+step_npc 9523 2
+msg コルネオ\n「ああ　そうそう\n　あの7ばんがいスラムの……
+sleep 16
+play_se corneo_jump.ogg
+jump_npc 9523 same 2
+sleep 32
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_speed 9523 fast
+step_npc 9523 4
+msg コルネオ\n「……って　なんでおまえが\n　それをしってるのよ！？
+create event_generator 9512 95 8 7 17 0 0 @095/don_corneo9.txt
+sleep 16
+fi
+chg_char_state_move
+loop_inf
+sleep 400
+pool

@@ -1,0 +1,8 @@
+chg_char_state_move
+move_npc 403 left 2
+sleep 16
+move_npc 403 up 19
+sleep 152
+kill 403
+
+

@@ -1,0 +1,34 @@
+set_eternal_event
+wait_target_talk 8611
+reset_talk_flag 8611
+if_flag 9 1
+create npc_event 8620 86 11 10 0 0 2 none
+fi
+if_flag 9 2
+kill_through_range 8601 8602
+chg_char_img_tmp 13
+create npc_event 8620 86 11 10 13 0 2 none
+fi
+draw_char off
+move_char up 1
+sleep 16
+step_npc 8610 2
+set_talk_npc 8610
+msg 「いらっしゃい\n\n\n\n#3\n　　ぶきをみたい\n　　ぼうぐをみたい\n　　きょうみないね\n\n[[]][[]][[]]
+reset_talk_npc
+if_flag 3 0
+open_weapon_shop 2301/2201/2101
+fi
+if_flag 3 1
+open_armor_shop 3002/3003
+fi
+if_flag 3 2
+fi
+move_char down 1
+sleep 16
+if_flag 9 2
+create event_generator 8602 86 11 10 17 0 0 @drag_cloud.txt 
+fi
+chg_char_dir up
+draw_char on
+kill 8620

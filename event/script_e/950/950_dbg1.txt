@@ -1,0 +1,101 @@
+wait_event_invalid 95013
+play_se alarm.ogg
+msg3 60 ドロボー！　ドロボー！
+create effect 9500040 950 0 0 0 0 50 6
+set_active_msg 9500040
+wait_same_pos
+create npc_event 950015 950 24 23 101 1 3 none
+create npc_event 950016 950 25 23 101 2 3 none
+create npc_event 950017 950 26 23 101 0 3 none
+create npc_event 950018 950 27 23 101 3 3 none
+create npc_event 950019 950 28 23 101 0 3 none
+create npc_event 950020 950 29 23 101 3 3 none
+create npc_event 950021 950 30 23 101 0 3 none
+create npc_event 950022 950 31 23 101 3 3 none
+create npc_event 950025 950 8 21 102 1 3 none
+create npc_event 950026 950 7 21 102 2 3 none
+create npc_event 950027 950 6 21 102 0 3 none
+create npc_event 950028 950 5 21 102 3 3 none
+create npc_event 950029 950 4 21 102 0 3 none
+create npc_event 950030 950 3 21 102 3 3 none
+create npc_event 950031 950 2 21 102 0 3 none
+create npc_event 950032 950 1 21 102 3 3 none
+chg_npc_y_offset 950015 0
+chg_npc_y_offset 950016 0
+chg_npc_y_offset 950017 0
+chg_npc_y_offset 950018 0
+chg_npc_y_offset 950019 0
+chg_npc_y_offset 950020 0
+chg_npc_y_offset 950021 0
+chg_npc_y_offset 950022 0
+chg_npc_y_offset 950025 0
+chg_npc_y_offset 950026 0
+chg_npc_y_offset 950027 0
+chg_npc_y_offset 950028 0
+chg_npc_y_offset 950029 0
+chg_npc_y_offset 950030 0
+chg_npc_y_offset 950031 0
+chg_npc_y_offset 950032 0
+set_slide_walk_npc_flag 950015
+set_slide_walk_npc_flag 950016
+set_slide_walk_npc_flag 950017
+set_slide_walk_npc_flag 950018
+set_slide_walk_npc_flag 950019
+set_slide_walk_npc_flag 950020
+set_slide_walk_npc_flag 950021
+set_slide_walk_npc_flag 950022
+set_slide_walk_npc_flag 950025
+set_slide_walk_npc_flag 950026
+set_slide_walk_npc_flag 950027
+set_slide_walk_npc_flag 950028
+set_slide_walk_npc_flag 950029
+set_slide_walk_npc_flag 950030
+set_slide_walk_npc_flag 950031
+set_slide_walk_npc_flag 950032
+move_npc 950015 left 11
+move_npc 950016 left 11
+move_npc 950017 left 11
+move_npc 950018 left 11
+move_npc 950019 left 11
+move_npc 950020 left 11
+move_npc 950021 left 11
+move_npc 950022 left 11
+move_npc 950025 right 11
+move_npc 950026 right 11
+move_npc 950027 right 11
+move_npc 950028 right 11
+move_npc 950029 right 11
+move_npc 950030 right 11
+move_npc 950031 right 11
+move_npc 950032 right 11
+sleep 96
+create npc_event 950023 950 14 22 31 1 2 none
+create npc_event 950033 950 18 22 31 0 2 none
+sleep 32
+chg_char_dir left
+move_npc 950023 right 1
+move_npc 950033 left 1
+sleep 16
+msg 「ドロボー！
+boss_encount 189
+sleep 64
+kill 950015
+kill 950016
+kill 950017
+kill 950018
+kill 950019
+kill 950020
+kill 950021
+kill 950022
+kill 950023
+kill 950025
+kill 950026
+kill 950027
+kill 950028
+kill 950029
+kill 950030
+kill 950031
+kill 950032
+kill 950033
+kill 95031
+

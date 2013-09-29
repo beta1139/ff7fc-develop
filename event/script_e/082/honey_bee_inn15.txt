@@ -1,0 +1,126 @@
+wait_same_pos
+msg 「たいへ～ん！\n　だれか～だれか　きて～▼
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 5
+clear_text 6
+clear_text 7
+sleep 80
+set_text 5 　 　   　　『とおくから　ながめてるだけじゃ？
+set_text 6 　 　   　　　なにもかわらないって
+set_text 7 　 　   　　　きづいたんだろ？
+sleep 8
+set_text_alpha 5 12
+set_text_alpha 6 12
+set_text_alpha 7 12
+sleep 8
+set_text_alpha 5 25
+set_text_alpha 6 25
+set_text_alpha 7 25
+sleep 8
+set_text_alpha 5 37
+set_text_alpha 6 37
+set_text_alpha 7 37
+sleep 8
+set_text_alpha 5 50
+set_text_alpha 6 50
+set_text_alpha 7 50
+wait_key_push_edge a
+set_text_alpha 5 37
+set_text_alpha 6 37
+set_text_alpha 7 37
+sleep 8
+set_text_alpha 5 25
+set_text_alpha 6 25
+set_text_alpha 7 25
+sleep 8
+set_text_alpha 5 12
+set_text_alpha 6 12
+set_text_alpha 7 12
+sleep 8
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 5
+clear_text 6
+clear_text 7
+sleep 16
+set_text 6 　 　   　　　　　　『なにいってる？
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 90
+wait_key_push_edge a
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 56
+set_text 6  　   　　　　　『うごきはじめたみたいだよ
+sleep 8
+set_text_alpha 6 12
+sleep 8
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 37
+sleep 8
+set_text_alpha 6 50
+wait_key_push_edge a
+set_text_alpha 6 37
+sleep 8
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 12
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 16
+set_text 6 　 　   　　　　　　　『なにが？
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 90
+wait_key_push_edge a
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 56
+set_text 6  　   　　　　　　『ほら　めをさまして！
+sleep 8
+set_text_alpha 6 12
+sleep 8
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 37
+sleep 8
+set_text_alpha 6 50
+wait_key_push_edge a
+set_text_alpha 6 37
+sleep 8
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 12
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+wait_key_push_edge a
+play_se_loop tsun_tsun.ogg
+msg 「モミモミモミ…\n　モミモミモミモミ……
+sleep 16
+create event_generator 8203 82 21 8 17 0 0 @082/honey_bee_inn16.txt
+msg3 -1 「タントントン……\n　タントントントン……
+chg_char_state_move
+loop_inf
+play_se tsun_tsun.ogg
+sleep 12
+pool

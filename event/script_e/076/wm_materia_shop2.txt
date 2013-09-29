@@ -1,0 +1,137 @@
+set_eternal_event
+wait_target_talk 7612
+reset_talk_flag 7612
+create npc_event 7620 76 5 7 0 0 2 none
+draw_char off
+move_char up 1
+chg_speed 7610 normal
+chg_npc_dir 7610 down
+if_flag 14 2
+chg_npc_dir 7610 down
+sleep 16
+chg_speed 7610 fast
+jump_npc 7610 same 1
+sleep 16
+step_npc 7610 2
+set_talk_npc 7610
+msg 「どうだった？
+reset_talk_npc
+step_npc 7620 1
+msg 『まだだ
+chg_npc_dir 7610 up
+chg_speed 7610 not_move
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 7620
+fi
+if_flag 14 1
+sleep 16
+step_npc 7610 2
+set_talk_npc 7610
+msg 「たのんだよ
+reset_talk_npc
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 7620
+chg_speed 7610 not_move
+fi
+if_flag 14 0
+sleep 32
+chg_npc_dir 7610 right
+sleep 16
+step_npc 7610 1
+set_talk_npc 7610
+msg 「なあ　おにいさん\n　おにいさんを　おとことみこんで\n　そうだんがあるんだけど\n　きいてくれないかな？\n『……\n\n\n\n#2\n　　いってみろ\n　　きょうみないな\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+chg_speed 7610 fast
+chg_npc_dir 7610 down
+jump_npc 7610 same 1
+sleep 16
+step_npc 7610 4
+set_talk_npc 7610
+msg 「ほんとうか！　そりゃありがたい\n\n\n\n　………で　わるいんだけど\n　そっちのおじょうさん\n　ちょっとだけむこうを\n　むいててくれないかな
+reset_talk_npc
+create npc_event 7621 76 5 7 3 0 2 none
+move_npc 7621 right 2
+sleep 32
+chg_npc_dir 7621 up
+sleep 16
+step_npc 7621 2
+msg エアリス\n「え～　どうして～？
+chg_npc_dir 7620 right
+sleep 16
+step_npc 7620 1
+msg 『………エアリス
+sleep 32
+chg_npc_dir 7621 right
+jump_npc 7621 same 1
+msg3 -1 エアリス\n「もうっ！
+sleep 16
+step_npc 7621 2
+wait_key_push_edge a
+erase_msg3
+chg_npc_dir 7620 up
+sleep 16
+chg_speed 7610 normal
+step_npc 7610 2
+set_talk_npc 7610
+msg 「すまないね　おじょうさん\n\n\n\n　で　ほんだいなんだけど\n　やどやのなかに　じどうはんばいきが\n　あるのはしっているか？\n\n　おれは　あのじどうはんばいきで\n　なにをうっているのか　きになってしょうがないんだよ\n　ちょっとじょせいには　たのめないモノらしいんだよ\n\n　え？　じぶんで　かいにいけって？\n　う～ん　じつはやどやのヤツとケンカしててね\n　いきにくいんだよね\n　なあ　たのむよ\n『……\n\n\n\n#2\n　　ひきうけよう\n　　きょうみないね\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+chg_speed 7610 fast
+step_npc 7610 3
+set_talk_npc 7610
+msg 「そうか　ありがたい\n　たのんだよ
+reset_talk_npc
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 7620
+chg_speed 7610 not_move
+step_npc 7621 2
+msg エアリス\n「もういいの？
+move_npc 7621 left 2
+sleep 32
+kill 7621
+set_flag 14 1
+fi
+if_flag 3 1
+step_npc 7610 1
+set_talk_npc 7610
+msg 「そうか　すまなかったな\n　わすれてくれ
+reset_talk_npc
+chg_npc_dir 7610 up
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 7620
+chg_speed 7610 not_move
+step_npc 7621 2
+msg エアリス\n「もういいの？
+move_npc 7621 left 2
+sleep 32
+kill 7621
+end
+fi
+fi
+if_flag 3 1
+step_npc 7610 1
+set_talk_npc 7610
+msg 「そうか　すまなかったな\n　わすれてくれ
+reset_talk_npc
+chg_npc_dir 7610 up
+chg_speed 7610 not_move
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 7620
+fi
+fi

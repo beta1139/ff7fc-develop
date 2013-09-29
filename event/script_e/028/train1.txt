@@ -1,0 +1,647 @@
+wait_same_pos
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+set_flag 0 0
+move_char left 3
+sleep 16
+create npc_event 2800 28 3 10 0 3 2 none
+move_npc 2800 up 3
+sleep 32
+create npc_event 2801 28 3 10 1 0 2 バレット\n「ヘッ！　もとソルジャーの　ものしりさんよ\n　5ばんまこうろの　あたりはくわしいんだろ！\n\n　おまえさんの　しったかぶり　せつめいが\n　ききてえもんだな！
+move_npc 2801 up 4
+sleep 16
+create npc_event 2802 28 3 10 2 0 2 ティファ\n「あら　もうなんどもみたって\n　かおしてるのね\n　ま　いいわ\n　もっとそばにきて
+move_npc 2802 up 5
+move_npc 2800 right 2
+sleep 48
+move_npc 2801 right 2
+sleep 16
+move_char right 3
+sleep 16
+move_npc 2801 right 2
+move_npc 2802 right 2
+sleep 32
+jump_npc 2801 same 2
+sleep 32
+step_npc 2801 2
+msg バレット\n「おう！
+chg_speed 2803 normal
+chg_speed 2805 normal
+move_npc 2803 down 1
+move_npc 2804 up 1
+move_npc 2805 down 1
+chg_npc_dir 2806 left
+sleep 16
+chg_npc_dir 2803 left
+chg_npc_dir 2804 left
+chg_npc_dir 2805 left
+sleep 16
+step_npc 2801 4
+msg バレット\n「こいつぁ　かしきりれっしゃ　じゃねえぞ！\n　ちれ　ちれ！！
+move_npc 2803 down 1
+move_npc 2804 right 7
+move_npc 2805 down 1
+sleep 16
+move_npc 2803 right 4
+move_npc 2805 right 8
+sleep 32
+chg_npc_dir 2806 down
+sleep 32
+kill 2803
+sleep 32
+move_npc 2804 up 1
+sleep 16
+move_npc 2804 right 2
+chg_npc_dir 2806 right
+sleep 16
+kill 2805
+sleep 16
+kill 2804
+set_talk_npc 2806
+msg 「また　あぶないひとたちと　いっしょか\n　わたしも　つくづく　うんがないな
+move_npc 2801 right 12
+set_active_msg 2801
+reset_talk_npc
+chg_npc_dir 2806 down
+sleep 16
+move_char down 1
+move_npc 2806 down 1
+sleep 16
+move_npc 2802 right 2
+move_npc 2806 left 4
+sleep 32
+move_npc 2802 down 2
+sleep 32
+chg_speed 2802 not_move
+move_npc 2806 down 2
+sleep 32
+chg_npc_dir 2806 up
+sleep 16
+move_npc 2800 up 1
+jump_npc_target_pos 2806 12 8
+sleep 112
+step_npc 2801 2
+msg バレット\n「んっ～！？
+sleep 32
+step_npc 2801 4
+msg バレット\n「んんっ～！？
+sleep 32
+move_npc 2801 left 7
+sleep 80
+chg_npc_dir 2802 right
+sleep 32
+move_npc 2801 down 1
+sleep 16
+chg_speed 2802 normal
+sleep 16
+jump_npc 2801 same 1
+sleep 16
+set_inactive_msg 2801
+msg バレット\n「おいっ！！\n　ずいぶんすいてやがるな\n\n　どうなってる？
+jump_npc 2806 same 1
+set_active_msg 2806
+msg 「ヒッ！！
+chg_npc_dir 2800 right
+sleep 16
+msg 「き　きみたち　みたいのがいるから\n　す　すいてるんじゃないか…
+chg_npc_dir 2801 left
+chg_npc_img 2801 98
+sleep 8
+jump_npc 2801 same 2
+sleep 32
+set_inactive_msg 2806
+play_se bump.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+jump_npc 2806 same 2
+set_active_msg 2806
+msg 「ヒ～～ッ！！
+sleep 32
+step_npc 2806 4
+msg 「ニュ　ニュースぐらいみてるだろ？\n　アバランチの　ばくだんテロよこくが\n　あったんだ\n\n　こんなひに　ミッドガルに　でかけるのは\n　しごとねっしんな　わたしたち\n　サラリーマンしんら　ぐらいさ
+jump_npc_target_pos 2801 12 6
+sleep 32
+step_npc 2801 4
+msg バレット\n「きっさま　しんらのもんか？
+set_inactive_msg 2806
+jump_npc 2806 same 1
+sleep 16
+jump_npc 2806 same 1
+set_active_msg 2806
+msg しんらかちょう\n「わ　わたしは　ぼうりょくには　くっしないぞ～\n　こ　このせきだって　ゆずらない
+slide_walk_npc 2801 down 1
+chg_speed 2802 fast
+move_npc 2802 right 4
+set_inactive_msg 2806
+set_active_msg 2802
+sleep 16
+msg ティファ\n「バレット！！
+step_npc 2801 5
+sleep 80
+set_inactive_msg 2802
+msg バレット\n「チッ！！\n　あんた　ついてるぜ
+chg_speed 2802 normal
+sleep 16
+move_char left 6
+chg_npc_img 2801 1
+move_npc 2801 up 1
+move_npc 2802 right 1
+sleep 16
+chg_npc_dir 2802 up
+chg_npc_img 2802 98
+move_npc 2801 left 5
+sleep 32
+chg_npc_img 2802 2
+move_npc 2802 left 4
+sleep 64
+step_npc 2800 2
+msg 『さて　どうするんだ？
+sleep 16
+step_npc 2801 4
+msg バレット\n「ケッ！　おちついたやろうだぜ！\n　こっちのペースが　くるっちまう…
+play_se door_open.ogg
+close_door 2850
+sleep 16
+chg_npc_dir 2800 down
+sleep 32
+play_se train_move_start.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 8
+chg_npc_dir 2801 up
+chg_npc_dir 2802 right
+sleep 8
+chg_speed 2802 not_move
+sleep 16
+chg_npc_dir 2800 right
+sleep 32
+msg3 -1 ティファ\n「れっしゃの　せつぞくが　すんだみたい\n　しゅっぱつするわ
+sleep 16
+chg_npc_dir 2801 left
+inc_map_draw_y_offset
+sleep 4
+dec_map_draw_y_offset
+sleep 4
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 32
+loop 2
+inc_map_draw_y_offset
+sleep 4
+dec_map_draw_y_offset
+sleep 4
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 32
+pool
+erase_msg3
+chg_npc_dir 2802 left
+chg_speed 2802 normal
+fadeout
+sleep 16
+warp 17 7 3 up
+sleep 16
+fadein
+chg_npc_img 1750 15
+chg_npc_img 1751 16
+chg_npc_img 1752 17
+chg_npc_img 1753 18
+chg_npc_img 1754 19
+chg_npc_img 1755 18
+chg_npc_img 1756 19
+chg_npc_img 1757 18
+chg_npc_img 1758 19
+chg_npc_img 1759 18
+chg_npc_img 1760 19
+chg_npc_img 1761 18
+chg_npc_img 1762 20
+chg_npc_img 1763 21
+chg_npc_img 1764 22
+sleep 8
+chg_npc_img 1751 23
+chg_npc_img 1752 24
+chg_npc_img 1753 25
+chg_npc_img 1754 26
+chg_npc_img 1755 25
+chg_npc_img 1756 26
+chg_npc_img 1757 25
+chg_npc_img 1758 26
+chg_npc_img 1759 25
+chg_npc_img 1760 26
+chg_npc_img 1761 25
+chg_npc_img 1762 27
+chg_npc_img 1763 28
+sleep 8
+move_npc 1706 right 1
+chg_npc_img 1750 5
+chg_npc_img 1751 6
+chg_npc_img 1752 7
+chg_npc_img 1753 8
+chg_npc_img 1754 7
+chg_npc_img 1755 8
+chg_npc_img 1756 7
+chg_npc_img 1757 8
+chg_npc_img 1758 7
+chg_npc_img 1759 8
+chg_npc_img 1760 7
+chg_npc_img 1761 8
+chg_npc_img 1762 9
+chg_npc_img 1763 10
+chg_npc_img 1764 4
+sleep 8
+chg_npc_img 1751 11
+chg_npc_img 1752 12
+chg_npc_img 1753 13
+chg_npc_img 1754 12
+chg_npc_img 1755 13
+chg_npc_img 1756 12
+chg_npc_img 1757 13
+chg_npc_img 1758 12
+chg_npc_img 1759 13
+chg_npc_img 1760 12
+chg_npc_img 1761 13
+chg_npc_img 1762 14
+sleep 8
+chg_npc_img 1749 15
+chg_npc_img 1750 16
+chg_npc_img 1751 17
+chg_npc_img 1752 18
+chg_npc_img 1753 19
+chg_npc_img 1754 18
+chg_npc_img 1755 19
+chg_npc_img 1756 18
+chg_npc_img 1757 19
+chg_npc_img 1758 18
+chg_npc_img 1759 19
+chg_npc_img 1760 18
+chg_npc_img 1761 20
+chg_npc_img 1762 21
+chg_npc_img 1763 22
+sleep 8
+chg_npc_img 1750 23
+chg_npc_img 1751 24
+chg_npc_img 1752 25
+chg_npc_img 1753 26
+chg_npc_img 1754 25
+chg_npc_img 1755 26
+chg_npc_img 1756 25
+chg_npc_img 1757 26
+chg_npc_img 1758 25
+chg_npc_img 1759 26
+chg_npc_img 1760 25
+chg_npc_img 1761 27
+chg_npc_img 1762 28
+sleep 8
+chg_npc_img 1749 5
+chg_npc_img 1750 6
+chg_npc_img 1751 7
+chg_npc_img 1752 8
+chg_npc_img 1753 7
+chg_npc_img 1754 8
+chg_npc_img 1755 7
+chg_npc_img 1756 8
+chg_npc_img 1757 7
+chg_npc_img 1758 8
+chg_npc_img 1759 7
+chg_npc_img 1760 8
+chg_npc_img 1761 9
+chg_npc_img 1762 10
+chg_npc_img 1763 4
+sleep 8
+chg_npc_dir 1706 left
+chg_npc_img 1750 11
+chg_npc_img 1751 12
+chg_npc_img 1752 13
+chg_npc_img 1753 12
+chg_npc_img 1754 13
+chg_npc_img 1755 12
+chg_npc_img 1756 13
+chg_npc_img 1757 12
+chg_npc_img 1758 13
+chg_npc_img 1759 12
+chg_npc_img 1760 13
+chg_npc_img 1761 14
+sleep 8
+chg_npc_img 1748 15
+chg_npc_img 1749 16
+chg_npc_img 1750 17
+chg_npc_img 1751 18
+chg_npc_img 1752 19
+chg_npc_img 1753 18
+chg_npc_img 1754 19
+chg_npc_img 1755 18
+chg_npc_img 1756 19
+chg_npc_img 1757 18
+chg_npc_img 1758 19
+chg_npc_img 1759 18
+chg_npc_img 1760 20
+chg_npc_img 1761 21
+chg_npc_img 1762 22
+sleep 8
+chg_npc_img 1749 23
+chg_npc_img 1750 24
+chg_npc_img 1751 25
+chg_npc_img 1752 26
+chg_npc_img 1753 25
+chg_npc_img 1754 26
+chg_npc_img 1755 25
+chg_npc_img 1756 26
+chg_npc_img 1757 25
+chg_npc_img 1758 26
+chg_npc_img 1759 25
+chg_npc_img 1760 27
+chg_npc_img 1761 28
+sleep 8
+chg_npc_img 1748 5
+chg_npc_img 1749 6
+chg_npc_img 1750 7
+chg_npc_img 1751 8
+chg_npc_img 1752 7
+chg_npc_img 1753 8
+chg_npc_img 1754 7
+chg_npc_img 1755 8
+chg_npc_img 1756 7
+chg_npc_img 1757 8
+chg_npc_img 1758 7
+chg_npc_img 1759 8
+chg_npc_img 1760 9
+chg_npc_img 1761 10
+chg_npc_img 1762 4
+sleep 4
+chg_npc_img 1749 11
+chg_npc_img 1750 12
+chg_npc_img 1751 13
+chg_npc_img 1752 12
+chg_npc_img 1753 13
+chg_npc_img 1754 12
+chg_npc_img 1755 13
+chg_npc_img 1756 12
+chg_npc_img 1757 13
+chg_npc_img 1758 12
+chg_npc_img 1759 13
+chg_npc_img 1760 14
+sleep 4
+chg_npc_img 1748 16
+chg_npc_img 1749 17
+chg_npc_img 1750 18
+chg_npc_img 1751 19
+chg_npc_img 1752 18
+chg_npc_img 1753 19
+chg_npc_img 1754 18
+chg_npc_img 1755 19
+chg_npc_img 1756 18
+chg_npc_img 1757 19
+chg_npc_img 1758 18
+chg_npc_img 1759 20
+chg_npc_img 1760 21
+chg_npc_img 1761 22
+sleep 4
+chg_npc_img 1748 23
+chg_npc_img 1749 24
+chg_npc_img 1750 25
+chg_npc_img 1751 26
+chg_npc_img 1752 25
+chg_npc_img 1753 26
+chg_npc_img 1754 25
+chg_npc_img 1755 26
+chg_npc_img 1756 25
+chg_npc_img 1757 26
+chg_npc_img 1758 25
+chg_npc_img 1759 27
+chg_npc_img 1760 28
+sleep 4
+chg_npc_img 1748 6
+chg_npc_img 1749 7
+chg_npc_img 1750 8
+chg_npc_img 1751 7
+chg_npc_img 1752 8
+chg_npc_img 1753 7
+chg_npc_img 1754 8
+chg_npc_img 1755 7
+chg_npc_img 1756 8
+chg_npc_img 1757 7
+chg_npc_img 1758 8
+chg_npc_img 1759 9
+chg_npc_img 1760 10
+chg_npc_img 1761 4
+sleep 4
+chg_npc_img 1748 11
+chg_npc_img 1749 12
+chg_npc_img 1750 13
+chg_npc_img 1751 12
+chg_npc_img 1752 13
+chg_npc_img 1753 12
+chg_npc_img 1754 13
+chg_npc_img 1755 12
+chg_npc_img 1756 13
+chg_npc_img 1757 12
+chg_npc_img 1758 13
+chg_npc_img 1759 14
+sleep 4
+chg_npc_img 1748 17
+chg_npc_img 1749 18
+chg_npc_img 1750 19
+chg_npc_img 1751 18
+chg_npc_img 1752 19
+chg_npc_img 1753 18
+chg_npc_img 1754 19
+chg_npc_img 1755 18
+chg_npc_img 1756 19
+chg_npc_img 1757 18
+chg_npc_img 1758 20
+chg_npc_img 1759 21
+chg_npc_img 1760 22
+sleep 4
+chg_npc_img 1748 24
+chg_npc_img 1749 25
+chg_npc_img 1750 26
+chg_npc_img 1751 25
+chg_npc_img 1752 26
+chg_npc_img 1753 25
+chg_npc_img 1754 26
+chg_npc_img 1755 25
+chg_npc_img 1756 26
+chg_npc_img 1757 25
+chg_npc_img 1758 27
+chg_npc_img 1759 28
+sleep 4
+chg_npc_img 1748 7
+chg_npc_img 1749 8
+chg_npc_img 1750 7
+chg_npc_img 1751 8
+chg_npc_img 1752 7
+chg_npc_img 1753 8
+chg_npc_img 1754 7
+chg_npc_img 1755 8
+chg_npc_img 1756 7
+chg_npc_img 1757 8
+chg_npc_img 1758 9
+chg_npc_img 1759 10
+chg_npc_img 1760 4
+sleep 4
+chg_npc_dir 1706 right
+chg_npc_img 1748 12
+chg_npc_img 1749 13
+chg_npc_img 1750 12
+chg_npc_img 1751 13
+chg_npc_img 1752 12
+chg_npc_img 1753 13
+chg_npc_img 1754 12
+chg_npc_img 1755 13
+chg_npc_img 1756 12
+chg_npc_img 1757 13
+chg_npc_img 1758 14
+sleep 4
+chg_npc_img 1748 18
+chg_npc_img 1749 19
+chg_npc_img 1750 18
+chg_npc_img 1751 19
+chg_npc_img 1752 18
+chg_npc_img 1753 19
+chg_npc_img 1754 18
+chg_npc_img 1755 19
+chg_npc_img 1756 18
+chg_npc_img 1757 20
+chg_npc_img 1758 21
+chg_npc_img 1759 22
+sleep 4
+chg_npc_img 1748 25
+chg_npc_img 1749 26
+chg_npc_img 1750 25
+chg_npc_img 1751 26
+chg_npc_img 1752 25
+chg_npc_img 1753 26
+chg_npc_img 1754 25
+chg_npc_img 1755 26
+chg_npc_img 1756 25
+chg_npc_img 1757 27
+chg_npc_img 1758 28
+sleep 4
+chg_npc_img 1748 8
+chg_npc_img 1749 7
+chg_npc_img 1750 8
+chg_npc_img 1751 7
+chg_npc_img 1752 8
+chg_npc_img 1753 7
+chg_npc_img 1754 8
+chg_npc_img 1755 7
+chg_npc_img 1756 8
+chg_npc_img 1757 9
+chg_npc_img 1758 10
+chg_npc_img 1759 4
+sleep 4
+chg_npc_img 1748 13
+chg_npc_img 1749 12
+chg_npc_img 1750 13
+chg_npc_img 1751 12
+chg_npc_img 1752 13
+chg_npc_img 1753 12
+chg_npc_img 1754 13
+chg_npc_img 1755 12
+chg_npc_img 1756 13
+chg_npc_img 1757 14
+sleep 4
+chg_npc_img 1748 19
+chg_npc_img 1749 18
+chg_npc_img 1750 19
+chg_npc_img 1751 18
+chg_npc_img 1752 19
+chg_npc_img 1753 18
+chg_npc_img 1754 19
+chg_npc_img 1755 18
+chg_npc_img 1756 20
+chg_npc_img 1757 21
+chg_npc_img 1758 22
+sleep 4
+chg_npc_img 1748 26
+chg_npc_img 1749 25
+chg_npc_img 1750 26
+chg_npc_img 1751 25
+chg_npc_img 1752 26
+chg_npc_img 1753 25
+chg_npc_img 1754 26
+chg_npc_img 1755 25
+chg_npc_img 1756 27
+chg_npc_img 1757 28
+sleep 4
+chg_npc_img 1748 7
+chg_npc_img 1749 8
+chg_npc_img 1750 7
+chg_npc_img 1751 8
+chg_npc_img 1752 7
+chg_npc_img 1753 8
+chg_npc_img 1754 7
+chg_npc_img 1755 8
+chg_npc_img 1756 9
+chg_npc_img 1757 10
+chg_npc_img 1758 4
+sleep 4
+chg_npc_img 1748 12
+chg_npc_img 1749 13
+chg_npc_img 1750 12
+chg_npc_img 1751 13
+chg_npc_img 1752 12
+chg_npc_img 1753 13
+chg_npc_img 1754 12
+chg_npc_img 1755 13
+chg_npc_img 1756 14
+sleep 4
+chg_npc_img 1748 18
+chg_npc_img 1749 19
+chg_npc_img 1750 18
+chg_npc_img 1751 19
+chg_npc_img 1752 18
+chg_npc_img 1753 19
+chg_npc_img 1754 18
+chg_npc_img 1755 20
+chg_npc_img 1756 21
+chg_npc_img 1757 22
+fadeout
+sleep 88
+warp 28 5 6 up
+fadein
+chg_char_state_move
+play_se_loop train_noise_close.ogg
+loop_inf
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
+sleep 16
+dec_map_draw_y_offset
+sleep 48
+pool

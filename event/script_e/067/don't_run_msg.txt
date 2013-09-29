@@ -1,0 +1,20 @@
+set_active_msg 6731
+jump_npc 6731 same 1
+msg エアリス\n「もう！　またタークス　きたのかと\n　おもったじゃない！\n　おとなしくやすんで！
+sleep 16
+fadeout
+sleep 32
+warp 67 3 13 down
+set_inactive_msg 6731
+set_npc_pos 6731 67 8 15
+chg_npc_dir 6731 down
+chg_speed 6731 not_move
+sleep 32
+fadein
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_key_valid select
+set_key_valid start
+create event_generator 6722 67 3 13 17 0 0 @067/don't_run_reset.txt

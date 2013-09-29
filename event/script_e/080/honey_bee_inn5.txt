@@ -1,0 +1,336 @@
+set_eternal_event
+wait_target_talked 8015
+reset_talked_flag 8015
+if_flag 3 0
+play_se thunder.wav
+msg 『…………
+play_se attack.ogg
+fi
+if_flag 3 1
+sleep 16
+msg 『……すごい！！
+fadeout
+sleep 16
+draw_char off
+warp 706 7 6 up
+create npc_event 70610 706 7 7 128 2 2 none
+create npc_event 70611 706 9 8 73 0 2 none
+set_active_msg 70610
+set_active_msg 70611
+sleep 16
+play_event_bgm 2-13-Trail_of_Blood.ogg
+fadein
+sleep 80
+play_se thunder.wav
+flush
+sleep 8
+flush
+if_flag 19 1
+sleep 16
+jump_npc 70611 same 1
+sleep 16
+chg_speed 70611 fast
+step_npc 70611 2
+msg 「ひそひそ……\n　（おいおい　またかよ！！）
+sleep 16
+chg_speed 70610 fast
+step_npc 70610 2
+msg 「ひそひそ……\n　（もうこれで　なんかいめだ？）
+sleep 16
+chg_speed 70611 normal
+step_npc 70611 2
+msg 「ひそひそ……\n　（しらねぇよ……\n　ハァ…おうさま　すぐちょうしにのるからなあ）
+sleep 16
+fi
+sleep 80
+play_se thunder.wav
+flush
+sleep 8
+flush
+set_text_alpha 5 0
+clear_text 5
+sleep 144
+set_text 5 　 　   　　　　……かぜが　やんだ……
+sleep 8
+set_text_alpha 5 30
+sleep 8
+set_text_alpha 5 60
+sleep 8
+set_text_alpha 5 90
+wait_key_push_edge a
+set_text_alpha 5 60
+sleep 8
+set_text_alpha 5 30
+sleep 8
+set_text_alpha 5 0
+clear_text 5
+sleep 48
+play_se thunder.wav
+flush
+sleep 8
+clear_text 6
+flush
+sleep 16
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text 6 　 　   　　　よみがえりし　まおうののろいか…
+set_text 5 　   　わが　さいあいの　じょうおうは　めざめぬ……
+sleep 8
+set_text_alpha 5 30
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 5 60
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 5 90
+set_text_alpha 6 90
+wait_key_push_edge a
+set_text_alpha 5 60
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 5 30
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 5 0
+set_text_alpha 6 0
+clear_text 5
+sleep 64
+play_se thunder.wav
+flush
+set_text 5 　 　   　　　　　ときは　みちた……
+sleep 8
+flush
+set_text_alpha 5 30
+sleep 8
+set_text_alpha 5 60
+sleep 8
+set_text_alpha 5 90
+wait_key_push_edge a
+set_text_alpha 5 60
+sleep 8
+set_text_alpha 5 30
+sleep 8
+set_text_alpha 5 0
+clear_text 5
+sleep 64
+play_se magic_attack.wav
+flush
+set_text 5 　 　　『…こだいより　かのちに　つたわる　でんせつ…』
+sleep 8
+flush
+set_text_alpha 5 30
+sleep 8
+set_text_alpha 5 60
+sleep 8
+set_text_alpha 5 90
+wait_key_push_edge a
+set_text_alpha 5 60
+sleep 8
+set_text_alpha 5 30
+sleep 8
+set_text_alpha 5 0
+clear_text 5
+sleep 64
+step_npc 70611 2
+msg 「ひそひそ……\n　（おい　そろそろやめないと\n　まずいんじゃないのかい？）
+sleep 32
+chg_speed 70610 normal
+step_npc 70610 2
+msg 「ひそひそ……\n　（プレジデントしんらと\n　かいしょくのやくそくだろ…）
+sleep 16
+step_npc 70611 2
+msg 「ひそひそ……\n　（おまえいえよ……）
+sleep 16
+jump_npc 70610 same 1
+sleep 16
+step_npc 70610 2
+msg 「ひそひそ……\n　（いえるわけないだろ……）
+sleep 32
+step_npc 70611 2
+msg 「ひそひそ……\n　（チェッ！！ま　いいか……）
+sleep 80
+play_se thunder.wav
+flush
+set_text 5 　 　　『…こだいより　かのちに　つたわる　でんせつ…』
+sleep 8
+flush
+set_text_alpha 5 30
+sleep 8
+set_text_alpha 5 60
+sleep 8
+set_text_alpha 5 90
+wait_key_push_edge a
+set_text_alpha 5 60
+sleep 8
+set_text_alpha 5 30
+sleep 8
+set_text_alpha 5 0
+clear_text 5
+sleep 40
+play_se magic_attack.wav
+flush
+step_npc 70611 2
+msg3 -1 「ひそひそ……\n　（まったく　うちのしゃちょうにも　あきれるよ）
+set_text 6 　 　  　　……もとめるは　やくそくのち……
+sleep 8
+flush
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 90
+wait_key_push_edge a
+erase_msg3
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 8
+play_se magic_attack.wav
+flush
+step_npc 70611 2
+msg3 -1 「ひそひそ……\n　（ミッドガルにしゅっちょうのときは　まいどだぜ）\n　ゴールドソーサーからはるばるきてよ…
+set_text 6 　 　  　　……あおき　ひとみ　もつもの……
+sleep 8
+flush
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 90
+wait_key_push_edge a
+erase_msg3
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 8
+play_se thunder.wav
+flush
+chg_speed 70610 fast
+step_npc 70610 3
+msg3 -1 「ひそひそ……\n　（おまえはまだいいよ　しょうめいがかりなんだから\n　おれなんてこのヨロイ！　すげえおもいんだぞぅ）
+set_text 6 　 　 　　……しらはの　たいけんを　せに……
+sleep 8
+flush
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 90
+wait_key_push_edge a
+erase_msg3
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 8
+play_se thunder.wav
+flush
+step_npc 70611 2
+msg3 -1 「ひそひそ……\n　（ハイハイ……これもしごとですから）
+set_text 6 　 　  　　……やくそくのちへ　みちびかん……
+sleep 8
+flush
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 90
+wait_key_push_edge a
+erase_msg3
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 8
+play_se magic_attack.wav
+flush
+chg_speed 70610 normal
+step_npc 70610 3
+msg 「ひそひそ……\n　（そういや　きいたかい？\n　しゃちょうの　おうさまどうらくが\n　おくさんにバレたってハナシ）
+sleep 80
+step_npc 70611 2
+msg 「ひそひそ……\n　（クックッ……うそ　ソレはつみみ）
+sleep 16
+step_npc 70610 2
+msg 「ひそひそ……\n　（あ　おわったみたいだぞ\n　ああ～たすかった！！）
+sleep 32
+create npc_event 70612 706 10 7 25 2 2 none
+move_npc 70612 left 1
+sleep 48
+chg_npc_dir 70610 right
+play_se thunder.wav
+flush
+sleep 8
+flush
+jump_npc 70610 same 1
+msg 「ゲッ！！　しゃちょう！！\n　じゃ　なかったおうさま……
+chg_speed 70610 fast
+chg_speed 70611 fast
+chg_speed 70612 fast
+move_npc 70612 left 5
+move_npc 70611 right 1
+move_npc 70610 left 3
+sleep 8
+play_se_loop attack.ogg
+msg3 -1 「うわ～　すいましぇ～ん\n　こだいののろいは　ゆるしてぇ～
+sleep 24
+move_npc 70610 up 1
+sleep 8
+chg_npc_dir 70612 up
+wait_key_push_edge a
+erase_msg3
+sleep 32
+stop_se
+fadeout
+sleep 16
+warp 80 12 14 down
+set_flag 19 1
+play_bgm
+draw_char on
+if_flag 17 0
+chg_type 8011 npc_event
+chg_speed 8011 normal
+fi
+kill 70610
+kill 70611
+kill 70612
+sleep 16
+fadein
+if_flag 17 0
+loop 4
+jump_npc 8011 right 1
+sleep 16
+pool
+loop 4
+jump_npc 8011 down 1
+sleep 16
+pool
+msg 「ポ……▼\n　おきゃくさん▼
+chg_char_dir up
+set_active_msg 8011
+jump_npc 8011 same 1
+sleep 16
+jump_npc 8011 same 1
+msg 「はやくっはやくっ▼
+sleep 8
+loop 4
+jump_npc 8011 up 1
+sleep 16
+pool
+loop 4
+jump_npc 8011 left 1
+sleep 16
+pool
+chg_npc_dir 8011 down
+fi
+fi

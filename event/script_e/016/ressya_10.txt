@@ -1,0 +1,81 @@
+wait_target_talk 70410
+erase_msg3
+sleep 32
+chg_npc_dir 70400 left
+msg ジェシー\n「かく　つうかポイントには　IDけんちエリアが\n　せっちされてるの
+jump_npc 70400 same 2
+sleep 32
+msg 　じょうきゃく　すべての　みぶんや　なにからぜんぶ！\n　しんらビルの　ホストコンピュータと　れんどうして\n　チェック　されちゃうわけ
+chg_npc_dir 70400 up
+sleep 32
+chg_speed 70400 not_step
+chg_npc_dir 70400 left
+msg ジェシー\n「ひそひそ……\n　（わたしたちは　どうみたって　ふしん　じんぶつ\n だから　ニセのIDで　つうかしてるの）
+chg_npc_dir 70401 right
+sleep 48
+chg_npc_dir 70400 up
+sleep 16
+fadeout
+set_key_unvalid a
+clear_text 8
+kill 1673
+kill 70400
+kill 70401
+kill 70402
+kill 70403
+kill 70404
+kill 70405
+kill 70410
+sleep 48
+warp 16 18 21 down
+create npc2 1680 16 17 21 17 0 0 
+draw_char on
+create event_generator 1684 16 3 20 17 0 0 @016/ressya_11.txt
+chg_speed 1667 not_step
+fadein
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
+sleep 16
+dec_map_draw_y_offset
+play_se_loop alarm.ogg
+create effect 1620 16 0 0 0 0 48 2
+sleep 16
+chg_char_dir left
+sleep 32
+inc_map_draw_y_offset
+chg_npc_dir 1667 up
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
+set_key_valid a
+msg3 -1 ジェシー\n「うわさを　すれば　ね
+chg_char_state_move
+sleep 16
+dec_map_draw_y_offset
+sleep 16
+loop_inf
+create effect 1621 16 0 0 0 0 48 2
+sleep 32
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
+sleep 16
+dec_map_draw_y_offset
+sleep 32
+create effect 1622 16 0 0 0 0 48 2
+sleep 16
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
+sleep 16
+dec_map_draw_y_offset
+sleep 48
+pool

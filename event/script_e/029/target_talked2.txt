@@ -1,0 +1,35 @@
+wait_target_talked 2909
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+msg 「ほしいのか？\n\n\n\n#2\n　　ああ……\n　　まちがいだ　それより\n\n\n[[]][[「あ～ん？\n　ひつようになったら　いっとくれ]]
+if_flag 3 0
+create npc_event 2900 29 18 7 0 1 2 none
+draw_char off
+chg_type 2909 npc_event
+chg_speed 2909 normal
+jump_npc 2909 same 1
+set_active_msg 2909
+msg 「ホゥ！\n　むりょう　ほうしにしとくぜ\n\n\n　あ～ん？\n　くせになるから　きをつけな
+step_npc 2909 2
+sleep 16
+play_se pick_up.wav
+sleep 16
+play_se_loop alarm.ogg
+msg ハイポーション　をてにいれた！
+add_item 1001
+chg_type 2909 npc
+chg_speed 2909 not_step
+chg_param 2909 「あ～ん？\n　あんた　がめついねえ
+set_inactive_msg 2909
+draw_char on
+kill 2900
+fi
+if_flag 3 1
+create npc 2908 29 18 8 47 0 4 「あ～ん？\n　なっん～だっ！
+kill 2909
+create event_generator 2912 29 1 1 17 0 0 @029/target_talked1.txt
+fi
+set_key_valid left
+set_key_valid right
+set_key_valid start

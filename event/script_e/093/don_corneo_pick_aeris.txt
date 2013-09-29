@@ -1,0 +1,89 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through 9304
+chg_speed 9323 normal
+move_npc 9323 left 2
+sleep 32
+chg_npc_dir 9323 down
+play_se barrel_hitting.ogg
+jump_npc 9323 same 1
+set_talk_npc 9323
+msg コルネオ\n「このほそっこいおなごだ！
+reset_talk_npc
+play_bgm
+chg_npc_dir 9320 left
+chg_npc_dir 9322 left
+sleep 32
+chg_speed 9321 normal
+step_npc 9321 2
+msg エアリスァ\n「まぁ　コルネオさんたら\n　おめがたかいわ
+sleep 24
+chg_npc_dir 9323 up
+sleep 16
+step_npc 9323 2
+set_talk_npc 9323
+msg コルネオ\n「あとはオマエたちにやる！
+reset_talk_npc
+move_char up 3
+sleep 48
+chg_speed 9324 normal
+chg_speed 9325 normal
+jump_npc 9324 same 1
+jump_npc 9325 same 1
+sleep 16
+step_npc 9324 2
+step_npc 9325 2
+msg 「ヘイ！！\n　いただきやっす！
+move_char down 3
+chg_npc_dir 9323 down
+sleep 48
+jump_npc 9323 same 1
+set_talk_npc 9323
+msg コルネオ\n「さ～て　いこうかの～！
+reset_talk_npc
+chg_npc_dir 9323 up
+sleep 16
+chg_speed 9323 slow
+move_npc 9323 up 3
+move_npc 9324 right 1
+sleep 16
+move_npc 9324 up 1
+sleep 16
+move_npc 9324 right 4
+sleep 64
+chg_npc_dir 9321 right
+chg_npc_dir 9323 down
+move_npc 9324 down 1
+sleep 32
+chg_speed 9320 normal
+chg_speed 9322 normal
+jump_npc 9320 same 1
+jump_npc 9322 same 1
+sleep 16
+step_npc 9320 1
+step_npc 9322 1
+sleep 32
+step_npc 9321 2
+sleep 48
+chg_speed 9321 slow
+move_npc 9321 up 3
+sleep 16
+chg_npc_dir 9320 up
+chg_npc_dir 9322 up
+sleep 96
+move_npc 9321 up 3
+move_npc 9323 up 2
+sleep 64
+move_npc 9323 right 1
+sleep 32
+fadeout
+sleep 16
+kill_through_range 9320 9325
+warp 94 7 9 down
+sleep 32
+fadein
+chg_event_move_char_speed normal
+chg_char_state_move
+loop_inf
+sleep 400
+pool

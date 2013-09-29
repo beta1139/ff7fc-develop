@@ -1,0 +1,19 @@
+set_eternal_event
+wait_same_pos
+chg_npc_dir 7711 down
+if_flag 9 2
+kill_through_range 7708 7709
+chg_char_img_tmp 13
+fi
+set_talk_npc 7711
+msg 「おきゃくさま　キッチンへは\n　はいらないでください
+reset_talk_npc
+move_char left 1
+if_flag 9 2
+create event_generator 7709 77 4 12 17 0 0 @drag_cloud.txt 
+fi
+sleep 16
+chg_npc_dir 7711 left
+if_char_dir left
+kill_through 7702
+fi

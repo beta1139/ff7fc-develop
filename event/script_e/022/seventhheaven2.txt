@@ -1,0 +1,154 @@
+wait_same_pos
+chg_type 2202 npc_event
+chg_type 2206 npc_event
+chg_speed 2202 normal
+chg_speed 2206 normal
+play_se door_open_hard.wav
+open_door 2290
+move_char up 1
+sleep 16
+close_door 2290
+create npc_event 2201 22 5 13 1 0 2 none
+move_npc 2201 up 3
+move_char right 2
+sleep 32
+move_npc 2202 left 1
+move_npc 2206 down 1
+chg_npc_dir 2204 right
+chg_npc_dir 2205 right
+chg_type 2203 npc_event
+chg_type 2204 npc_event
+chg_type 2205 npc_event
+chg_speed 2203 normal
+chg_speed 2204 normal
+chg_speed 2205 normal
+chg_char_dir left
+sleep 16
+chg_npc_dir 2202 right
+set_talk_npc 2206
+msg マリン\n「とうちゃん　おかえり！
+reset_talk_npc
+chg_npc_dir 2201 up
+msg バレット\n「マリン！　げんきに　してたか
+sleep 16
+chg_npc_dir 2202 down
+sleep 16
+set_talk_npc 2202
+msg ティファ\n「バレット　おつかれさま
+reset_talk_npc
+sleep 16
+msg バレット\n「おう！！
+if_flag 8 2
+msg バレット\n「その　はなは　どうしたんだ？
+set_talk_npc 2206
+msg マリン\n「クラウドに　もらったの
+reset_talk_npc
+add_likability 1 500
+msg バレット\n「そうか\n　ちゃんと　おれいは　いったのか
+sleep 16
+chg_npc_dir 2206 right
+sleep 16
+chg_npc_dir 2201 right
+set_talk_npc 2206
+msg マリン\n「クラウド　おはな　ありがとう
+reset_talk_npc
+fi
+sleep 16
+chg_npc_dir 2201 left
+sleep 16
+msg バレット\n「おめえら！！\n\n\n　かいぎを　はじめっぞ！！
+move_npc 2206 up 1
+move_npc 2201 up 2
+chg_npc_dir 2202 up
+sleep 16
+move_npc 2206 right 2
+sleep 16
+move_npc 2201 right 2
+sleep 16
+move_npc 2206 up 2
+sleep 16
+move_npc 2201 up 3
+sleep 16
+move_npc 2206 right 1
+sleep 16
+chg_npc_dir 2206 left
+sleep 16
+step_npc 2201 1
+sleep 16
+play_se door_open_hard.wav
+chg_npc_img 2251 2
+sleep 16
+move_npc 2201 right 1
+chg_npc_dir 2206 up
+sleep 16
+move_npc 2201 up 1
+move_npc 2206 up 2
+sleep 16
+kill 2201
+sleep 16
+kill 2206
+move_npc 2204 right 5
+move_npc 2205 right 1
+sleep 16
+move_npc 2202 up 2
+move_npc 2203 up 1
+move_npc 2205 up 2
+sleep 16
+move_npc 2203 right 6
+sleep 16
+move_npc 2202 right 2
+move_npc 2205 right 4
+sleep 32
+move_npc 2204 up 2
+move_npc 2202 up 2
+sleep 32
+chg_npc_dir 2202 left
+jump_npc_target_pos 2204 8 4
+move_npc 2205 up 2
+sleep 16
+chg_npc_img 2250 0
+move_npc 2202 left 2
+move_npc 2203 up 2
+sleep 16
+kill 2204
+jump_npc_target_pos 2205 8 4
+sleep 16
+chg_npc_dir 2202 right
+jump_npc_target_pos 2203 8 4
+sleep 16
+chg_npc_img 2250 1
+kill 2205
+sleep 16
+move_npc 2202 left 1
+kill 2203
+sleep 16
+chg_npc_dir 2202 down
+chg_type 2202 npc
+chg_speed 2202 not_move
+set_flag_wall 2202
+sleep 8
+msg ティファ\n「どうぞ　すわって
+create npc2 2211 22 8 4 17 0 0 
+create event_generator 2212 22 8 5 17 0 0 @022/seventhheaven3.txt
+create event_generator 2222 22 3 7 17 1 0 @022/seventhheaven4.txt
+create event_generator 2300 23 4 3 17 1 0 @023/azito1.txt
+create event_generator 2302 23 4 2 17 1 0 @023/azito3.txt
+create event_generator 2303 23 4 1 17 1 0 @023/azito4.txt
+create event_generator 2225 22 8 5 17 1 0 @022/seventhheaven5_3.txt
+kill_through 2014
+kill_through 2011
+kill_through 2015
+kill_through 2017
+kill 2007
+kill 2009
+sleep 8
+chg_npc_dir 2006 up
+set_npc_pos 2006 20 26 22
+chg_type 2006 npc3
+chg_param 2006 「ヘイ！！　あけてくれってんだよ！\n　ベイビー！！\n\n\n　おれだよ！　ジョニーだよ！\n　かあちゃ～ん！！
+create npc 2007 20 28 22 88 1 0 「あなた　しってる？\n\n\n\n#2\n　　なにを……\n　　きょうみない\n\n\n[[　あのティファちゃんの　おみせのことよ\n　（セブンスヘブン）ってさかば\n\n\n　わたしは　じじょうつうのうえに　おせっかいだから\n　いろいろしってるのよね\n　ききたいでしょう？\n\n#2\n　　すごくききたい\n　　きょうみない\n\n\n[[　あのさかばの　めいぶつ\n　バレットと　てしたの3にん\n　ときどき　こうなのよ\n\n　とつぜん　おきゃくをおいだして\n　ゴチャゴチャやってるの\n　なんか　あやしいのよ\n　かやくのにおいとか　するのよね\n　あぶないわ\n　きっと　いけないことを　しているに\n　ちがいないわ]][[]]]][[]]
+chg_param 2008 「いじょうなし！\n　ただいま　スパイちゅう！\n\n\n　ああ！！\n　なんかでてました！！\n　ほうこく～！！　ほうこく～！！
+create npc 2009 20 26 23 70 1 0 「このいえには　テレビがあんだけどよ\n　ケチなおばさんが　いれてくんねぇのさ\n　まあ　みてろって
+create event_generator 2034 20 1 1 17 0 0 @020/nanabangai_slum23.txt
+create event_generator 2035 20 1 1 17 0 0 @020/nanabangai_slum24.txt
+kill_through 2531

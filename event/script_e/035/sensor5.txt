@@ -1,0 +1,10 @@
+set_eternal_event
+wait_target_talk 3521
+reset_talk_flag 3521
+play_se_loop radio_noise.ogg
+msg 『ここまできて　けいほうセンサーの\n　せわになるのは　シロウトだけだ
+stop_se
+move_char down 1
+sleep 16
+move_char left 1
+sleep 16

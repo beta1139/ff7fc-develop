@@ -1,0 +1,139 @@
+wait_target_talk 2201
+chg_dir_to_char 2201
+chg_type 2201 npc_event
+chg_speed 2201 normal
+msg バレット\n「ひょうてきは　5ばんまこうろだ\n　まず　えきに　いく\n\n　くわしい　さくせんは　れっしゃの　なかでな
+sleep 16
+chg_npc_dir 2201 right
+sleep 4
+chg_npc_dir 2201 down
+sleep 4
+chg_npc_dir 2201 left
+sleep 4
+chg_npc_dir 2201 up
+sleep 4
+chg_dir_to_char 2201
+msg バレット\n「おう！　クラウド！\n\n\n　さくせんの　まえに　ひとつ\n　おまえさんに　ききたいことが　ある\n\n\n　じつはな……\n\n\n\n　おれは　マテリアの　つかいかたを\n　よく　しらねえ！\n\n\n　ひろった　マテリアは　おまえに　くれてやる\n　だから　おしえろ！\n\n\n『さて……\n\n\n\n#2\n　　めんどうだが　せつめい　しよう\n　　めんどくさい……\n\n\n[[　ググれカス]][[]]
+if_flag 3 0
+step_npc 2201 3
+msg バレット\n「なんだと　このやろう！\n\n\n　まあ　いいだろう\n　あとで　ジェシーにでも　きいておく　からな\n　だがな　マテリアは　おまえが　かんりしろ！
+fi
+if_flag 3 1
+sleep 16
+msg バレット\n「ソルジャーさんたちの　ひみつ　ってわけか\n\n\n　まあ　いいだろう\n　あとで　ジェシーにでも　きいておく　からな\n　だがな　マテリアは　おまえが　かんりしろ！
+fi
+sleep 16
+play_se ready.wav
+msg マテリアシステム\n　メニューを　ひらいて　マテリアを\n　えらぶことによって マテリアの　つけかえが\n　できるように　なります
+sleep 16
+chg_type 2202 npc_event
+chg_speed 2202 normal
+move_npc 2202 down 1
+sleep 16
+msg ティファ\n「クラウド！\n　ぶきや　にかいの　おじさんから　でんごんよ\n\n　あげたいものが　あるから　おみせに　よって\n　……だって\n　わすれないでね！
+if_char_dir down
+chg_char_dir up
+create npc_event 2207 22 5 9 0 0 2 none
+draw_char off
+move_npc 2202 left 2
+move_char up 2
+sleep 32
+chg_npc_dir 2202 up
+msg ティファ\n「マリン！　おみせ　たのむね！
+sleep 16
+msg3 -1 マリン\n「うん！！\n　おしごと　がんばってね
+move_npc 2202 down 2
+sleep 16
+move_char down 2
+sleep 16
+move_npc 2202 right 1
+sleep 16
+kill 2202
+move_npc 2201 up 1
+sleep 16
+kill 2201
+sleep 16
+chg_char_dir up
+draw_char on
+kill 2207
+chg_char_dir down
+chg_type 2206 npc
+chg_speed 2206 normal
+add_party_mem 1
+add_party_mem 2
+recover_active_chara
+enable_char_chg
+erase_msg3
+fi
+if_char_dir right
+chg_char_dir up
+create npc_event 2207 22 4 10 0 0 2 none
+draw_char off
+move_npc 2202 left 2
+move_char up 2
+sleep 32
+chg_npc_dir 2201 up
+chg_npc_dir 2202 up
+set_talk_npc 2202
+msg ティファ\n「マリン！　おみせ　たのむね！
+reset_talk_npc
+sleep 16
+msg3 -1 マリン\n「うん！！\n　おしごと　がんばってね
+move_npc 2202 down 3
+sleep 16
+move_char down 2
+sleep 16
+move_npc 2201 left 1
+sleep 16
+kill 2201
+kill 2202
+sleep 16
+chg_char_dir up
+draw_char on
+kill 2207
+chg_char_dir right
+chg_type 2206 npc
+chg_speed 2206 normal
+add_party_mem 1
+add_party_mem 2
+recover_active_chara
+enable_char_chg
+erase_msg3
+fi
+if_char_dir left
+chg_char_dir up
+create npc_event 2207 22 6 10 0 0 2 none
+draw_char off
+move_npc 2202 left 2
+chg_npc_dir 2201 up
+move_char up 2
+sleep 32
+chg_npc_dir 2202 up
+set_talk_npc 2202
+msg ティファ\n「マリン！　おみせ　たのむね！
+reset_talk_npc
+sleep 16
+msg3 -1 マリン\n「うん！！\n　おしごと　がんばってね
+move_npc 2202 down 3
+sleep 16
+move_char down 2
+sleep 16
+move_npc 2201 right 1
+sleep 16
+kill 2201
+move_npc 2202 right 2
+sleep 32
+kill 2202
+sleep 16
+chg_char_dir up
+draw_char on
+kill 2207
+chg_char_dir left
+chg_type 2206 npc
+chg_speed 2206 normal
+add_party_mem 1
+add_party_mem 2
+recover_active_chara
+enable_char_chg
+erase_msg3
+fi

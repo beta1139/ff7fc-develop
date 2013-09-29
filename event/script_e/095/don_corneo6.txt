@@ -1,0 +1,50 @@
+wait_target_talk 9523
+chg_char_img_tmp 13
+kill_through_range 9502 9508
+chg_type 9523 npc_event
+chg_speed 9523 not_move
+chg_dir_to_char 9523
+set_talk_npc 9523
+msg コルネオ\n「ほひ～！\n　なんどみてもカワイイの～
+reset_talk_npc
+chg_speed 9523 normal
+play_se corneo_jump.ogg
+chg_npc_dir 9523 up
+jump_npc 9523 up 1
+sleep 16
+chg_npc_dir 9523 down
+sleep 16
+play_se puy.ogg
+jump_npc 9523 same 1
+sleep 16
+play_se puy.ogg
+jump_npc 9523 same 1
+sleep 16
+chg_speed 9523 not_move
+sleep 16
+chg_event_move_char_speed slow
+move_char right 2
+sleep 64
+chg_npc_dir 9523 right
+move_char up 2
+sleep 32
+jump_npc 9523 right 1
+sleep 16
+chg_speed 9523 normal
+sleep 16
+chg_event_move_char_speed normal
+chg_char_dir left
+step_npc 9523 2
+msg コルネオ\n「お……おまえも　おれのことすきか？\n\n\n#2\n　　もちろんですわ\n　　え～と……\n\n\n[[]][[]]
+if_flag 3 0
+step_char 1
+sleep 32
+create event_generator 9510 95 8 7 17 0 0 @095/don_corneo7.txt
+fi
+if_flag 3 1
+create event_generator 9511 95 8 7 17 0 0 @095/don_corneo8.txt
+fi
+chg_char_state_move
+loop_inf
+sleep 400
+pool

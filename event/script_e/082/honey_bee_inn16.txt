@@ -1,0 +1,42 @@
+wait_same_pos
+wait_key_push_edge a
+erase_msg3
+kill_through 8202
+play_se_loop tsun_tsun.ogg
+sleep 16
+msg 「ツンツン……\n　……チクッン▼
+sleep 16
+msg 『うっ……\n　いてっ！！
+sleep 16
+play_se recover.wav
+recover_active_chara
+msg クラウドのHP/MPがかいふくした！
+play_se_loop attack_tifa.ogg
+set_text 6 　 　   　　　　　「めをさまして！！
+sleep 16
+set_text_alpha 6 33
+sleep 8
+set_text_alpha 6 33
+sleep 8
+set_text_alpha 6 100
+wait_key_push_edge a
+set_text_alpha 6 0
+clear_text 6
+fadeout
+sleep 16
+create npc_event 8210 82 10 8 96 3 2 none
+chg_npc_y_offset 8210 4
+set_npc_pos 8215 82 10 5
+chg_npc_dir 8215 down
+chg_speed 8215 not_move
+create npc2 8216 82 9 6 17 0 0 
+create npc_event 8217 82 10 9 111 0 3 none
+warp 82 10 8 down
+step_npc 8217 3
+fadein
+create event_generator 8204 82 10 8 17 0 0 @082/honey_bee_inn17.txt
+chg_char_state_move
+loop_inf
+step_npc 8217 4
+sleep 32
+pool

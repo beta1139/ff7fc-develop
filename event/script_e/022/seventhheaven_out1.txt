@@ -1,0 +1,11 @@
+wait_same_pos
+warp_ff3_2 20 22 26 3 down
+if_flag 9 0
+create event_generator 2260 22 5 12 17 0 0 @022/seventhheaven_out1_before.txt
+set_flag 0 4
+fi
+if_flag 9 1
+create event_generator 2262 22 5 12 17 0 0 @022/seventhheaven_out2_before.txt
+chg_char_img 0
+disable_char_chg
+fi

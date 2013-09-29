@@ -1,0 +1,44 @@
+set_eternal_event
+wait_target_talk 9621
+reset_talk_flag 9621
+if_char_dir right
+move_char down 1
+sleep 16
+move_char right 1
+sleep 16
+chg_char_dir up
+fi
+chg_type 9621 npc_event
+chg_dir_to_char 9621
+chg_speed 9621 normal
+step_char 1
+sleep 16
+msg 『だいじょうぶか？
+if_char_dir down
+create npc2 9620 96 5 8 0 1 2 none
+draw_char off
+fi
+sleep 16
+step_npc 9621 1
+set_talk_npc 9621
+msg エアリス\n「うん
+reset_talk_npc
+if_flag 19 0
+add_likability 3 300
+fi
+if_char_dir down
+draw_char on
+kill 9620
+fi
+set_flag 19 1
+chg_type 9621 npc2
+chg_speed 9621 not_move
+set_inactive_msg 9621
+if_flag 11 1
+if_char_dir up
+create event_generator 9603 96 6 25 17 0 0 @096/sewer2.txt
+fi
+if_char_dir right
+create event_generator 9603 96 5 24 17 0 0 @096/sewer2.txt
+fi
+fi

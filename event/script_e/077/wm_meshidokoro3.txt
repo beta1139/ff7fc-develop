@@ -1,0 +1,45 @@
+wait_same_pos
+chg_type 7710 npc_event
+chg_type 7711 npc_event
+chg_speed 7711 normal
+create event_generator 7705 77 4 9 17 0 0 @077/wm_meshidokoro4.txt
+chg_npc_dir 7711 up
+msg 「はい　なんにしましょう？\n\n\n\n『そうだな………\n\n\n\n#3\n　　やきにく　ていしょく\n　　さしみ　ていしょく\n　　きょうのおすすめ\n\n[[]][[]][[]]
+create npc_event 7720 77 4 9 0 3 2 none
+draw_char off
+if_flag 3 0
+jump_npc 7711 same 1
+sleep 16
+step_npc 7711 2
+msg 「やきにく　ていしょくでーす
+fi
+if_flag 3 1
+jump_npc 7711 same 1
+sleep 16
+step_npc 7711 2
+msg 「さしみ　ていしょくでーす
+fi
+if_flag 3 2
+jump_npc 7711 same 1
+sleep 16
+step_npc 7711 2
+msg 「おすすめでーす
+fi
+move_char up 1
+sleep 16
+chg_speed 7710 normal
+set_active_msg 7710
+jump_npc 7710 same 1
+set_talk_npc 7710
+msg 「あいよー！
+reset_talk_npc
+move_char down 1
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+sleep 16
+chg_char_dir right
+msg3 -1 「とうてんは　りょうきん　まえばらいになっております\n　おだいは　70ギルになります
+create event_generator 7706 77 4 9 17 0 0 @077/wm_meshidokoro5.txt

@@ -1,0 +1,14 @@
+set_eternal_event
+wait_target_talked 7717
+reset_talked_flag 7717
+chg_type 7717 npc_event
+chg_speed 7717 normal
+chg_dir_to_char 7717
+sleep 16
+step_npc 7717 2
+set_talk_npc 7717
+msg 「くすりや？\n　ほら　ねこのマスコットがあるところさ
+reset_talk_npc
+chg_npc_dir 7717 right
+chg_speed 7717 not_move
+chg_type 7717 npc3

@@ -1,0 +1,133 @@
+wait_same_pos
+wait_key_push_edge a
+erase_msg3
+sleep 32
+if_gil_less 70
+chg_speed 7711 fast
+chg_npc_dir 7711 right
+step_npc 7711 3
+msg3 -1 「てんちょう！　オーダーとりけしです
+sleep 48
+stop_se
+kill_through 7705
+kill_through_range 7721 7726
+chg_npc_dir 7710 right
+chg_speed 7710 not_move
+wait_key_push_edge a
+erase_msg3
+chg_npc_dir 7711 left
+sleep 16
+jump_npc 7711 same 2
+sleep 32
+step_npc 7711 2
+msg 「おきゃくさん！\n　おかねもないのに　ちゅうもんしちゃだめですよ\n　つぎは　おかねのあるときに　きてくださいね
+chg_speed 7711 normal
+slide_walk_npc 7720 left 1
+move_char left 1
+sleep 16
+chg_char_dir right
+move_npc 7711 down 2
+draw_char on
+kill 7720
+end_fake_countdown
+set_key_valid down
+set_key_valid left
+set_key_valid up
+set_key_valid right
+set_key_valid start
+chg_char_state_move
+sleep 32
+chg_npc_dir 7711 left
+chg_speed 7711 not_move
+chg_type 7710 npc
+chg_type 7711 npc
+set_inactive_msg 7710
+end
+fi
+step_npc 7720 2
+play_se coin.ogg
+sleep 16
+sub_gil 70
+sleep 16
+step_npc 7711 2
+msg 「ありがとうございます\n　しょうしょうおまちください
+chg_speed 7711 not_move
+wait_fake_countover
+chg_speed 7711 normal
+move_npc 7711 up 1
+sleep 16
+move_npc 7711 right 1
+sleep 16
+chg_npc_dir 7711 up
+step_npc 7711 4
+sleep 64
+move_npc 7711 down 1
+sleep 16
+move_npc 7711 left 1
+sleep 16
+step_npc 7711 2
+msg 「おまたせしました\n　どうぞ　ごゆっくり
+play_se recover.wav
+sleep 24
+step_npc 7720 6
+sleep 80
+set_key_valid up
+set_key_valid down
+msg 『……\n\n\n\n#3\n　　……………\n　　まあまあだな\n　　くちにあわなかった\n\n[[]][[]][[]]
+slide_walk_npc 7720 left 1
+move_char left 1
+sleep 16
+chg_char_dir right
+if_flag 3 0
+step_npc 7711 2
+msg 「ありがとうございました
+fi
+if_flag 3 1
+if_flag 13 0
+step_npc 7711 3
+msg 「ありがとうございました\n　くすりや　しょうひんクーポンをどうぞ\n　くすりやで　しょうひん　ひとつと　こうかんできます
+sleep 16
+step_npc 7711 3
+msg 「クーポンがなくなりましたので　このサービスは\n　しゅうりょうさせていただきます\n　つぎなるサービスにごきたいください
+play_se pick_up.wav
+add_item 6015
+msg キーアイテム\n『くすりやしょうひんクーポン』をてにいれた！
+chg_param 7224 「どうぞ　よっていってください
+move_npc 7711 down 2
+draw_char on
+kill 7720
+end_fake_countdown
+set_key_valid left
+set_key_valid right
+set_key_valid start
+chg_char_state_move
+sleep 32
+chg_npc_dir 7711 left
+chg_speed 7711 not_move
+chg_type 7710 npc
+chg_type 7711 npc
+set_inactive_msg 7710
+set_flag 13 1
+end
+fi
+step_npc 7711 2
+msg 「ありがとうございました
+fi
+if_flag 3 2
+step_npc 7711 2
+msg 「ありがとうございました
+fi
+move_npc 7711 down 2
+draw_char on
+kill 7720
+end_fake_countdown
+set_key_valid left
+set_key_valid right
+set_key_valid start
+chg_char_state_move
+sleep 32
+chg_npc_dir 7711 left
+chg_speed 7711 not_move
+chg_type 7710 npc
+chg_type 7711 npc
+set_inactive_msg 7710

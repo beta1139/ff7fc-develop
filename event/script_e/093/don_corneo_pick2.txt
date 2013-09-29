@@ -1,0 +1,153 @@
+wait_same_pos
+if_flag 9 0
+add_party_mem 2
+add_party_mem 3
+chg_npc_y_offset 9323 -1
+fi
+chg_char_img_tmp 13
+kill_through_range 9300 9303
+create npc_event 9321 93 7 9 129 2 1 none
+create npc_event 9322 93 7 9 130 3 1 none
+set_active_msg 9323
+move_npc 9321 left 2
+move_npc 9322 right 2
+sleep 32
+create npc_event 9320 93 7 9 13 0 1 none
+draw_char off
+sleep 32
+chg_npc_dir 9321 up
+chg_npc_dir 9322 up
+chg_speed 9321 not_move
+chg_speed 9322 not_move
+del_party_mem 2
+del_party_mem 3
+sleep 16
+chg_event_move_char_speed normal
+move_char up 1
+sleep 16
+chg_speed 9323 normal
+sleep 40
+jump_npc 9323 down 1
+play_se corneo_jump.ogg
+sleep 48
+chg_npc_dir 9323 left
+sleep 16
+chg_npc_dir 9323 right
+sleep 16
+chg_npc_dir 9323 down
+step_npc 9323 2
+sleep 64
+step_npc 9323 2
+set_talk_npc 9323
+msg コルネオ\n「ほひ～！\n　いいの～　いいの～！
+reset_talk_npc
+sleep 32
+chg_npc_y_offset 9323 -2
+sleep 1
+chg_npc_y_offset 9323 -3
+sleep 1
+chg_npc_y_offset 9323 -4
+sleep 1
+jump_char down 1
+jump_npc 9323 down 1
+play_se corneo_jump.ogg
+sleep 48
+chg_speed 9323 slow
+move_npc 9323 left 2
+sleep 96
+play_se puy.ogg
+jump_npc 9323 same 1
+chg_npc_dir 9323 down
+set_talk_npc 9323
+msg コルネオ\n「どのおなごにしようかな？\n　ほひ～ほひ～！
+reset_talk_npc
+chg_speed 9323 normal
+sleep 64
+chg_speed 9323 slow
+move_npc 9323 right 2
+sleep 96
+play_se puy.ogg
+jump_npc 9323 same 1
+chg_npc_dir 9323 down
+chg_npc_dir 9320 left
+set_talk_npc 9323
+msg コルネオ\n「このコにしようかな～？
+reset_talk_npc
+chg_speed 9323 normal
+sleep 64
+chg_speed 9323 slow
+move_npc 9323 right 2
+chg_npc_dir 9320 up
+sleep 96
+play_se puy.ogg
+jump_npc 9323 same 1
+chg_npc_dir 9323 down
+set_talk_npc 9323
+msg コルネオ\n「それともこのコかな～？
+reset_talk_npc
+chg_speed 9323 normal
+sleep 64
+chg_speed 9323 slow
+move_npc 9323 left 2
+sleep 96
+play_se puy.ogg
+jump_npc 9323 same 1
+chg_npc_dir 9323 down
+chg_npc_dir 9320 left
+sleep 64
+move_npc 9323 left 1
+chg_npc_dir 9320 up
+sleep 48
+chg_speed 9323 normal
+slide_walk_npc 9323 right 1
+sleep 48
+play_se puy.ogg
+jump_npc 9323 same 1
+chg_npc_dir 9323 down
+chg_npc_dir 9320 right
+sleep 48
+chg_speed 9323 slow
+move_npc 9323 right 1
+chg_npc_dir 9320 up
+sleep 32
+chg_speed 9323 fast
+slide_walk_npc 9323 left 1
+sleep 16
+play_se puy.ogg
+jump_npc 9323 same 1
+chg_npc_dir 9323 down
+chg_npc_dir 9320 left
+sleep 48
+play_se corneo_jump.ogg
+jump_npc 9323 same 2
+sleep 32
+chg_npc_dir 9320 up
+chg_speed 9323 fast
+step_npc 9323 4
+set_talk_npc 9323
+msg コルネオ\n「ほひ～！！\n　きめたき～めた！\n\n　こんやのあいては……
+reset_talk_npc
+chg_speed 9323 normal
+step_npc 9323 12
+if_flag_lesser 18 10
+create event_generator 9305 93 7 9 17 0 0 @093/don_corneo_pick_tifa.txt
+fi
+if_flag_greater 18 9
+create event_generator 9306 93 7 9 17 0 0 @093/don_corneo_pick_aeris.txt
+fi
+if_flag_greater 18 15
+sleep 16
+kill_through 9306
+create event_generator 9307 93 7 9 17 0 0 @093/don_corneo_pick_cloud.txt
+fi
+kill 9122
+chg_speed 9321 normal
+chg_speed 9322 normal
+play_event_bgm Ex-08-nothing.ogg
+play_se_loop barrel_rolling.ogg
+sleep 196
+chg_event_move_char_speed normal
+chg_char_state_move
+loop_inf
+sleep 400
+pool

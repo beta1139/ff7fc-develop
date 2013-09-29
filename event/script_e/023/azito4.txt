@@ -1,0 +1,244 @@
+wait_target_talked 2304
+chg_type 2304 npc_event
+chg_speed 2304 normal
+chg_npc_dir 2304 down
+create npc_event 2330 23 2 5 0 1 2 none
+draw_char off
+sleep 16
+move_npc 2330 down 1
+sleep 24
+chg_type 2309 npc_event
+chg_speed 2309 normal
+move_npc 2309 up 1
+sleep 16
+chg_npc_dir 2309 down
+sleep 32
+chg_npc_dir 2330 up
+sleep 16
+msg 『いや　いなかった\n　それは　かくじつだ
+sleep 16
+chg_npc_dir 2304 left
+chg_npc_img 2304 98
+sleep 24
+chg_npc_img 2304 95
+chg_speed 2304 normal
+play_se attack_tifa.ogg
+step_npc 2304 1
+sleep 8
+create map_obj 2350 23 1 4 37 0 0 
+sleep 8
+chg_speed 2304 slow
+chg_npc_img 2304 98
+sleep 8
+kill 2350
+sleep 24
+set_talk_npc 2304
+msg バレット\n「ずいぶんと　じしん　たっぷり　じゃねえか
+reset_talk_npc
+sleep 32
+msg 『もし　ソルジャーと　たたかって　いたら\n　あんたたちが　いきてる　はずない　からな
+chg_speed 2304 fast
+chg_npc_img 2304 95
+chg_npc_dir 2304 up
+jump_npc 2304 same 2
+sleep 32
+set_talk_npc 2304
+msg バレット\n「じぶんが　もとソルジャー　だからって\n　えらそうに　いうんじゃ　ねえよ！
+reset_talk_npc
+chg_npc_dir 2304 left
+chg_npc_img 2304 98
+step_npc 2304 4
+chg_npc_dir 2330 down
+chg_npc_img 2330 103
+sleep 32
+step_npc 2304 6
+chg_npc_dir 2330 left
+sleep 48
+chg_npc_dir 2304 down
+chg_npc_img 2304 95
+chg_speed 2304 normal
+step_npc 2304 5
+chg_npc_img 2330 0
+chg_npc_dir 2330 down
+chg_type 2306 npc_event
+chg_type 2307 npc_event
+chg_type 2308 npc_event
+chg_speed 2306 fast
+chg_speed 2307 normal
+chg_speed 2308 normal
+move_npc 2307 up 2
+sleep 16
+move_npc 2330 down 1
+sleep 16
+chg_npc_dir 2307 left
+sleep 16
+chg_speed 2307 fast
+jump_npc 2307 same 1
+move_npc 2330 down 1
+sleep 16
+chg_speed 2308 fast
+move_npc 2308 right 1
+jump_npc 2307 same 1
+sleep 8
+chg_npc_dir 2308 left
+sleep 8
+jump_npc 2307 same 1
+move_npc 2330 right 1
+chg_speed 2304 fast
+step_npc 2304 6
+sleep 32
+jump_npc 2307 same 1
+move_npc 2330 right 1
+sleep 16
+msg 『…………
+jump_npc 2307 same 1
+loop 2
+chg_npc_dir 2304 right
+sleep 4
+chg_npc_dir 2304 left
+sleep 4
+chg_npc_dir 2304 right
+sleep 4
+chg_npc_dir 2304 left
+sleep 4
+chg_npc_dir 2304 up
+sleep 4
+pool
+jump_npc 2304 same 4
+play_se thunder.wav
+jump_npc_target_pos 2307 6 4
+chg_npc_dir 2307 down
+sleep 4
+chg_npc_dir 2307 right
+sleep 4
+chg_npc_dir 2307 up
+sleep 4
+chg_npc_dir 2307 left
+sleep 4
+chg_npc_dir 2307 down
+sleep 4
+chg_npc_dir 2307 right
+sleep 4
+chg_npc_dir 2307 up
+chg_npc_dir 2308 up
+jump_npc_target_pos 2306 6 6
+chg_npc_dir 2308 left
+sleep 4
+chg_npc_dir 2307 left
+sleep 4
+chg_npc_dir 2307 down
+sleep 4
+chg_npc_dir 2307 right
+sleep 4
+chg_npc_dir 2307 up
+sleep 4
+chg_npc_dir 2307 left
+sleep 4
+play_se damage.wav
+sleep 4
+chg_npc_dir 2307 down
+sleep 4
+chg_npc_img 2307 96
+play_se damage.wav
+slide_npc 2308 down 2
+sleep 4
+chg_npc_dir 2308 down
+sleep 4
+chg_npc_dir 2308 right
+sleep 4
+chg_npc_dir 2308 up
+sleep 4
+play_se damage.wav
+chg_npc_dir 2308 left
+sleep 4
+play_se killed.wav
+chg_npc_img 2308 96
+chg_speed 2306 normal
+chg_npc_dir 2306 down
+sleep 64
+move_npc 2306 up 1
+sleep 16
+chg_type 2306 npc
+chg_speed 2306 not_move
+set_flag_wall 2306
+sleep 16
+chg_npc_dir 2304 left
+chg_npc_img 2304 98
+sleep 32
+set_talk_npc 2304
+msg バレット\n「たしかに　おまえは　つよい\n\n\n　おそらく　ソルジャーってのは\n　みんな　つよいんだろうさ\n\n\n　でもな　おまえは\n　はんらんそしき　アバランチに　やとわれてるみだ\n　しんらの　かたを　もつんじゃねえ！
+reset_talk_npc
+sleep 16
+chg_npc_dir 2330 up
+msg 『しんらの　かたを　もつ？\n　おれは　あんたの　しつもんに　こたえた　だけだ
+move_npc 2330 left 2
+sleep 32
+move_npc 2330 up 3
+sleep 64
+move_npc 2309 down 1
+sleep 16
+chg_npc_dir 2309 left
+sleep 16
+chg_npc_dir 2306 left
+sleep 32
+msg 『おれは　うえで　まっている\n　ほうしゅうの　はなしが　したい
+chg_speed 2304 slow
+step_npc 2304 2
+sleep 32
+chg_speed 2304 normal
+step_npc 2304 4
+sleep 32
+set_talk_npc 2304
+msg バレット\n「チッ！！\n　……………ほ　ほうしゅうかよ…
+reset_talk_npc
+draw_char on
+kill 2330
+chg_npc_dir 2306 up
+sleep 16
+chg_speed 2306 not_step
+chg_type 2309 npc2
+chg_speed 2309 not_move
+chg_char_dir down
+create event_generator 2310 23 5 7 17 1 0 @023/azito5_1.txt
+create event_generator 2311 23 5 8 17 1 0 @023/azito5_2.txt
+kill 2202
+kill_through 2222
+kill_through 2223
+kill_through 2224
+sleep 16
+move_char down 1
+chg_speed 2304 fast
+chg_npc_img 2304 95
+step_npc 2304 16
+loop 4
+play_se attack_tifa.ogg
+sleep 4
+create map_obj 2350 23 1 4 37 0 0 
+sleep 4
+kill 2350
+pool
+move_char down 1
+loop 4
+play_se attack_tifa.ogg
+sleep 4
+create map_obj 2350 23 1 4 37 0 0 
+sleep 4
+kill 2350
+pool
+move_char down 1
+loop 4
+play_se attack_tifa.ogg
+sleep 4
+create map_obj 2350 23 1 4 37 0 0 
+sleep 4
+kill 2350
+pool
+move_char right 1
+loop 3
+play_se attack_tifa.ogg
+sleep 4
+create map_obj 2350 23 1 4 37 0 0 
+sleep 4
+kill 2350
+pool
+kill_through 2302

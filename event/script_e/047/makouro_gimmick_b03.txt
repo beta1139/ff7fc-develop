@@ -1,0 +1,153 @@
+wait_same_pos
+kill_through 4786
+kill_through 4787
+kill_through 4788
+loop_inf
+chg_char_state_move
+sleep 32
+set_npc_pos 4763 47 12 30
+set_npc_pos 4764 47 12 17
+sleep 10
+set_npc_pos 4764 47 12 30
+set_npc_pos 4765 47 12 17
+sleep 20
+chg_npc_img 4770 117
+chg_npc_dir 4771 down
+chg_npc_img 4771 117
+sleep 32
+set_npc_pos 4765 47 12 30
+set_npc_pos 4766 47 12 17
+sleep 32
+chg_npc_dir 4770 right
+chg_npc_dir 4771 up
+set_npc_pos 4766 47 12 30
+chg_npc_dir 4761 down
+chg_npc_dir 4762 down
+chg_speed 4761 not_step
+chg_speed 4762 not_step
+play_se switch.ogg
+sleep 56
+chg_npc_img 4770 2
+chg_npc_dir 4770 left
+chg_npc_img 4771 1
+chg_npc_dir 4771 left
+chg_npc_dir 4761 up
+chg_npc_dir 4762 up
+chg_speed 4761 not_move
+chg_speed 4762 not_move
+msg3 -1 ティファ\n「しっぱいね　もういちど
+if_flag 10 0
+sleep 96
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 1
+set_flag 9 0
+pool
+fi
+if_flag 10 1
+sleep 96
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 2
+pool
+fi
+if_flag 10 2
+sleep 16
+chg_npc_dir 4771 left
+chg_npc_img 4771 98
+chg_speed 4771 normal
+step_npc 4771 3
+sleep 80
+chg_npc_img 4771 1
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 3
+pool
+fi
+if_flag 10 3
+sleep 64
+erase_msg3
+sleep 8
+chg_char_state_event
+if_flag 11 3
+msg3 -1 バレット\n「！！！！！！！！
+fi
+if_flag 11 2
+msg3 -1 バレット\n「このウスノロッ！！\n　いいかげんに　しやがれ！！
+set_flag 11 3
+fi
+if_flag 11 1
+if_flag 99 0
+msg3 -1 バレット\n「なにやってんだっ！\n　ぜんかいはマグレか！！
+fi
+if_flag 99 1
+msg3 -1 バレット\n「なにやってんだっ！　ちゃんとやれ！！
+fi
+set_flag 11 2
+fi
+if_flag 11 0
+msg3 -1 バレット\n「なにやってんだっ！　ちゃんとやれ！！
+set_flag 11 1
+fi
+chg_speed 4771 fast
+chg_npc_img 4771 95
+chg_npc_dir 4771 up
+jump_npc 4771 same 1
+sleep 16
+jump_npc 4771 same 1
+sleep 16
+chg_npc_dir 4771 down
+step_npc 4771 6
+sleep 48
+chg_npc_img 4771 1
+chg_npc_dir 4771 left
+sleep 32
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 4
+set_flag 1 1
+pool
+fi
+if_flag 10 4
+sleep 96
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 5
+pool
+fi
+if_flag 10 5
+sleep 16
+chg_npc_dir 4770 down
+sleep 64
+chg_npc_dir 4770 left
+sleep 16
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 6
+pool
+fi
+if_flag 10 6
+sleep 64
+erase_msg3
+sleep 8
+chg_char_state_event
+chg_npc_dir 4770 right
+chg_npc_img 4770 98
+jump_npc 4770 same 1
+msg3 -1 ティファ\n「ちょっと！　マジメにやって！！
+sleep 16
+jump_npc 4770 same 1
+chg_npc_dir 4771 left
+sleep 64
+chg_npc_img 4770 2
+chg_npc_dir 4770 left
+sleep 32
+erase_msg3
+set_npc_pos 4763 47 12 17
+set_flag 10 1
+set_flag 0 4
+if_flag 11 1
+set_flag 11 2
+fi
+pool
+fi

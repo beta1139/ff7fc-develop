@@ -1,0 +1,127 @@
+wait_same_pos
+if_flag 9 0
+draw_char off
+add_party_mem 2
+add_party_mem 3
+add_item 4000
+add_item 4100
+add_item 4003
+fi
+play_bgm
+chg_char_dir down
+create npc_event 9622 96 7 16 2 3 3 none
+slide_npc 9622 down 9
+play_se barrel_falling.ogg
+sleep 4
+chg_npc_dir 9622 down
+sleep 4
+chg_npc_dir 9622 left
+sleep 4
+chg_npc_dir 9622 up
+sleep 4
+chg_npc_dir 9622 right
+create npc_event 9621 96 6 16 3 2 3 none
+slide_npc 9621 down 8
+sleep 4
+chg_npc_dir 9621 up
+chg_npc_dir 9622 down
+sleep 4
+chg_npc_dir 9621 right
+chg_npc_dir 9622 left
+sleep 4
+chg_npc_dir 9621 down
+chg_npc_dir 9622 up
+sleep 4
+chg_npc_dir 9621 left
+chg_npc_dir 9622 right
+draw_char on
+set_slide_char_flag
+chg_event_move_char_speed fast
+move_char down 9
+loop 2
+sleep 4
+chg_char_dir left
+chg_npc_dir 9621 up
+chg_npc_dir 9622 down
+sleep 4
+chg_char_dir up
+chg_npc_dir 9621 right
+chg_npc_dir 9622 left
+sleep 4
+chg_char_dir right
+chg_npc_dir 9621 down
+chg_npc_dir 9622 up
+sleep 4
+chg_char_dir down
+chg_npc_dir 9621 left
+chg_npc_dir 9622 right
+pool
+sleep 4
+chg_char_dir left
+chg_npc_dir 9621 up
+chg_npc_dir 9622 down
+sleep 4
+chg_char_dir up
+chg_npc_dir 9621 right
+chg_npc_dir 9622 left
+play_se landing.wav
+sleep 4
+chg_char_dir right
+chg_npc_dir 9621 down
+chg_npc_dir 9622 up
+sleep 4
+chg_char_dir down
+chg_npc_dir 9621 left
+chg_npc_dir 9622 right
+play_se landing.wav
+sleep 4
+chg_char_dir left
+chg_npc_dir 9621 up
+sleep 4
+chg_char_dir up
+chg_npc_dir 9621 right
+chg_npc_dir 9622 right
+sleep 4
+chg_char_dir right
+sleep 4
+chg_char_dir down
+chg_npc_dir 9621 left
+sleep 4
+chg_char_dir left
+sleep 4
+chg_char_dir up
+chg_npc_dir 9622 up
+chg_speed 9622 not_move
+chg_speed 9621 not_move
+set_flag_wall 9621
+set_flag_wall 9622
+create event_generator 9601 96 0 0 17 0 0 @096/sewer_talk_aeris.txt
+create event_generator 9602 96 0 0 17 0 0 @096/sewer_talk_tifa.txt
+chg_type 9621 npc2
+chg_type 9622 npc2
+set_flag 19 0
+set_flag 11 0
+set_flag 1 1
+play_se landing.wav
+sleep 4
+chg_char_dir right
+sleep 4
+chg_char_dir down
+chg_npc_dir 9621 right
+sleep 4
+chg_char_dir left
+sleep 4
+chg_char_dir up
+chg_npc_dir 9622 left
+sleep 8
+chg_char_dir right
+chg_npc_dir 9621 left
+sleep 8
+chg_npc_dir 9622 up
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+chg_event_move_char_speed normal
+reset_slide_char_flag

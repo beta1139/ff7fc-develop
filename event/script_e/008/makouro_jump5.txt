@@ -1,0 +1,7 @@
+set_eternal_event
+wait_talk
+jump_char right 2
+play_se jump.wav
+sleep 32
+play_se landing.wav
+chg_char_dir up

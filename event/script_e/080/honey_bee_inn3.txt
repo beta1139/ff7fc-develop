@@ -1,0 +1,78 @@
+set_eternal_event
+wait_target_talked 8013
+reset_talked_flag 8013
+if_flag 3 0
+chg_type 8011 npc_event
+chg_speed 8011 normal
+move_char up 1
+sleep 16
+step_char 1
+sleep 16
+msg 『このへやにきめたよ
+loop 3
+jump_npc 8011 left 1
+sleep 16
+pool
+loop 3
+jump_npc 8011 down 1
+sleep 16
+pool
+step_npc 8011 2
+set_talk_npc 8011
+msg 「は～い▼\n　きめたら　あとはおへやに　はいるだけよ▼\n\n\n　もう　きもちはかわらない？\n\n\n\n#2\n　　なんどもいわせないでくれ\n　　まだきめかねているんだ\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+set_active_msg 8011
+jump_npc 8011 same 1
+sleep 16
+jump_npc 8011 same 1
+set_talk_npc 8011
+msg 「おこっちゃや～▼\n　（いやだ……\n　きっと　らんぼうなおきゃくね）
+reset_talk_npc
+sleep 16
+move_char right 1
+jump_npc 8011 down 1
+sleep 16
+chg_char_dir left
+jump_npc 8011 down 1
+sleep 32
+step_npc 8011 2
+sleep 16
+play_se door_open2.ogg
+set_npc_pos 8013 80 3 15
+sleep 16
+loop 2
+jump_npc 8011 up 1
+sleep 16
+pool
+chg_npc_dir 8011 down
+sleep 16
+step_npc 8011 2
+set_talk_npc 8011
+msg 「は～い▼　どうぞ▼
+reset_talk_npc
+set_inactive_msg 8011
+set_npc_pos 8012 80 3 6
+set_npc_pos 8016 80 5 6
+fi
+if_flag 3 1
+step_npc 8011 2
+set_talk_npc 8011
+msg 「いいわ～ん▼\n　ゆっくりかんがえて▼\n　（ムッツリさん！）
+reset_talk_npc
+loop 3
+jump_npc 8011 up 1
+sleep 16
+pool
+loop 3
+jump_npc 8011 right 1
+sleep 16
+pool
+chg_npc_dir 8011 down
+fi
+chg_speed 8011 not_move
+chg_type 8011 npc
+end
+fi
+if_flag 3 1
+fi

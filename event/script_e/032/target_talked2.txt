@@ -1,0 +1,44 @@
+wait_target_talked 3203
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+chg_dir_to_char 3203
+if_flag 3 0
+step_char 1
+sleep 16
+msg 『……すてきだよ　おとこまさりで
+if_char_dir down
+create npc_event 3200 32 16 6 0 1 2 none
+draw_char off
+fi
+chg_type 3203 npc_event
+chg_speed 3203 normal
+jump_npc 3203 same 1
+sleep 16
+draw_char on
+kill_through 3200
+step_npc 3203 4
+msg ジェシー\n「エッ！！　うれしいっ\n\n\n　……のかしら？
+chg_param 3203 ジェシー\n「うれしい……のかしら？
+chg_type 3203 npc
+chg_speed 3203 not_move
+fi
+if_flag 3 1
+add_likability 1 500
+add_likability 2 500
+step_char 1
+sleep 16
+msg 『いまは　さくせんに　しゅうちゅうしろ
+sleep 16
+chg_speed 3203 not_step
+msg ジェシー\n「ごめん　そうよね
+chg_param 3203 ジェシー\n「ごめん　そうよね
+fi
+chg_npc_dir 3203 up
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start

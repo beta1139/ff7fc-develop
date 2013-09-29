@@ -1,0 +1,24 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through 9211
+kill_through_range 9300 9303
+chg_speed 9324 normal
+chg_speed 9325 normal
+jump_npc 9324 same 1
+sleep 16
+step_npc 9324 2
+set_talk_npc 9324
+msg コッチ\n「よ～し　むすめども！\n\n\n　ドン　コルネオのまえに\n　せいれつするのだぁ！
+reset_talk_npc
+chg_event_move_char_speed slow
+move_char down 2
+sleep 64
+move_char left 3
+sleep 96
+chg_char_dir up
+create event_generator 9304 93 7 9 17 0 0 @093/don_corneo_pick2.txt
+sleep 32
+chg_char_state_move
+loop_inf
+sleep 400
+pool

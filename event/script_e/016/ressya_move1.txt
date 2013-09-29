@@ -1,0 +1,17 @@
+wait_same_pos
+if_char_dir down
+play_event_bgm Ex-01-Train_Noise_Close.ogg
+draw_char off
+fi
+sleep 16
+chg_char_state_move
+loop_inf
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
+sleep 16
+dec_map_draw_y_offset
+sleep 48
+pool

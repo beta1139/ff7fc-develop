@@ -1,0 +1,34 @@
+wait_target_talk 2011
+chg_dir_to_char 2011
+kill_through 1910
+kill_through 1911
+kill_through 1912
+kill 2014
+set_talk_npc 2011
+msg バレット\n「へへ……\n\n\n　おさななじみに　はやく　あいてえか？\n\n\n\n#2\n　　おさななじみ？\n　　そこ　どいてくれ\n\n\n[[]][[]]
+reset_talk_npc
+chg_type 2011 npc_event
+chg_speed 2011 not_step
+kill_through 2012
+close_door 2092
+if_flag 3 0
+jump_npc 2011 same 1
+sleep 16
+step_npc 2011 2
+set_talk_npc 2011
+msg バレット\n　「ヘッ！！\n　とぼけちゃってよ\n\n いいのかねえ…
+reset_talk_npc
+fi
+if_flag 3 1
+jump_npc 2011 same 1
+sleep 16
+step_npc 2011 2
+set_talk_npc 2011
+msg バレット\n　「ヘッ！\n　まあ　おちつけよ\n\n　まちのやつらに　あやしまれると\n　まずいからな…
+reset_talk_npc
+fi
+chg_speed 2011 not_move
+chg_npc_dir 2011 down
+chg_param 2011 バレット\n「よし！\n　さきに　はいってろ
+chg_type 2011 npc
+create event_generator 2014 20 1 1 17 0 0 @020/nanabangai_slum3.txt

@@ -1,0 +1,121 @@
+wait_same_pos
+chg_event_move_char_speed slow
+move_char down 17
+create npc_event 7230 72 9 50 0 0 2 none
+create npc_event 7231 72 9 42 3 0 2 none
+loop 2
+move_npc 7221 down 1
+sleep 64
+pool
+move_npc 7221 down 1
+sleep 32
+chg_speed 7223 normal
+jump_npc 7223 same 1
+sleep 16
+jump_npc 7223 same 1
+sleep 16
+move_npc 7221 down 1
+chg_speed 7223 not_move
+sleep 64
+move_npc 7221 down 1
+sleep 16
+chg_speed 7223 normal
+move_npc 7223 left 1
+move_npc 7231 up 6
+sleep 16
+move_npc 7223 up 1
+sleep 16
+chg_npc_dir 7223 right
+chg_speed 7223 not_move
+sleep 16
+chg_npc_dir 7220 right
+loop 2
+move_npc 7221 down 1
+sleep 64
+pool
+chg_speed 7223 normal
+move_npc 7223 down 1
+move_npc 7221 down 1
+move_npc 7222 down 1
+chg_npc_dir 7220 down
+sleep 16
+move_npc 7223 right 1
+move_npc 7231 down 2
+sleep 16
+chg_npc_dir 7223 up
+chg_speed 7223 not_move
+sleep 16
+chg_npc_dir 7231 left
+chg_npc_dir 7220 right
+sleep 16
+step_npc 7231 3
+chg_speed 7220 not_step
+move_npc 7221 down 1
+move_npc 7222 down 1
+sleep 32
+move_char down 7
+sleep 32
+step_npc 7220 2
+move_npc 7221 left 1
+move_npc 7222 down 1
+sleep 32
+chg_speed 7220 not_move
+sleep 16
+move_npc 7231 down 6
+sleep 16
+chg_npc_dir 7220 down
+chg_npc_dir 7222 up
+move_npc 7221 left 1
+set_active_msg 7230
+sleep 64
+move_npc 7221 left 1
+move_npc 7222 up 1
+sleep 16
+draw_fake_countdown off
+start_fake_countdown_sec 1
+move_npc 7230 up 1
+sleep 16
+jump_npc 7231 same 1
+sleep 16
+jump_npc 7231 same 1
+sleep 16
+move_npc 7230 up 4
+move_npc 7221 left 2
+move_npc 7222 up 1
+chg_char_dir up
+sleep 16
+set_key_valid a
+set_talk_npc 7231
+msg エアリス\n「ここ　いろんないみで　こわいところよ\n　とくに　おんなのこにはね\n　はやく　ティファさん　みつけなくちゃ
+reset_talk_npc
+wait_fake_countover
+move_npc 7222 right 1
+move_npc 7231 down 1
+draw_char on
+kill 7230
+sleep 16
+set_npc_pos 7221 72 6 29
+kill 7231
+chg_event_move_char_speed normal
+end_fake_countdown
+chg_type 7220 npc
+chg_type 7221 npc
+chg_type 7223 npc
+chg_type 7224 npc
+chg_type 7225 npc3
+set_flag_wall 7220
+set_flag_wall 7221
+set_flag_wall 7223
+set_flag_wall 7224
+set_flag_wall 7225
+sleep 16
+chg_speed 7221 normal
+chg_type 7222 npc
+set_flag_wall 7222
+chg_speed 7222 not_move
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+set_key_valid b

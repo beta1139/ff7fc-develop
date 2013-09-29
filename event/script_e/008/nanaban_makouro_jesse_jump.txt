@@ -1,0 +1,11 @@
+wait_target_talked 806
+chg_type 806 npc_event
+chg_speed 806 normal
+jump_npc 806 right 3
+sleep 64
+chg_npc_dir 806 up
+sleep 8
+slide_walk_npc 806 down 10
+sleep 128
+kill 806
+create npc 808 8 29 21 34 0 0 ジェシー\n「はしごのまえでは　『Aボタン』を　おして\n　そうすればはしごにつかまるわ\n　あとは　ほうこうキーのじょうげで　のぼりおりするの

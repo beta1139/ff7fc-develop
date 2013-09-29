@@ -1,0 +1,161 @@
+wait_target_talk 4901
+chg_type 4901 npc_event
+set_talk_npc 4901
+msg 「……また　あえたね
+reset_talk_npc
+if_char_dir up
+create npc_event 4900 49 5 12 0 0 2 none
+draw_char off
+backup_npc_dir 4900
+sleep 16
+chg_npc_dir 4900 left
+sleep 80
+chg_speed 4901 normal
+sleep 32
+fi
+if_char_dir down
+create npc_event 4900 49 5 10 0 1 2 none
+draw_char off
+sleep 16
+chg_npc_dir 4900 left
+sleep 32
+chg_char_dir up
+set_slide_char_flag
+move_npc 4900 left 1
+move_char left 1
+sleep 32
+move_npc 4900 down 1
+move_char down 1
+sleep 48
+move_npc 4900 down 1
+move_char down 1
+sleep 32
+move_npc 4900 right 1
+move_char right 1
+sleep 48
+fi
+if_char_dir right
+create npc_event 4900 49 4 11 0 3 2 none
+draw_char off
+sleep 16
+chg_npc_dir 4900 down
+sleep 32
+chg_char_dir up
+set_slide_char_flag
+move_npc 4900 down 1
+move_char down 1
+sleep 32
+move_npc 4900 right 1
+move_char right 1
+sleep 48
+fi
+if_char_dir left
+create npc_event 4900 49 6 11 0 2 2 none
+draw_char off
+sleep 16
+chg_npc_dir 4900 down
+sleep 32
+chg_char_dir up
+set_slide_char_flag
+move_npc 4900 down 1
+move_char down 1
+sleep 32
+move_npc 4900 left 1
+move_char left 1
+sleep 48
+fi
+chg_speed 4901 normal
+chg_npc_img 4901 3
+chg_dir_to_char 4901
+reset_slide_char_flag
+sleep 16
+jump_npc 4901 same 1
+sleep 16
+step_npc 4901 2
+sleep 16
+set_talk_npc 4901
+msg 「……おぼえてないの？\n\n\n\n#2\n　　あったことがある……\n　　たしか　しょたいめんだ\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+chg_npc_dir 4900 up
+sleep 16
+step_npc 4900 1
+fi
+if_flag 3 1
+chg_npc_dir 4900 up
+sleep 16
+step_npc 4901 2
+set_talk_npc 4901
+msg 「……おぼえてないかぁ\n　あなた　ボーッと　あるいてたしね
+reset_talk_npc
+if_flag 7 0
+sleep 32
+step_npc 4901 1
+set_talk_npc 4901
+msg 「まぁ　いっか
+reset_talk_npc
+fi
+if_flag 7 1
+sleep 32
+jump_npc 4901 same 1
+sleep 16
+step_npc 4901 2
+set_talk_npc 4901
+msg 「でも　おはな　かってくれたから\n　ゆるしてあげる
+reset_talk_npc
+fi
+sleep 16
+create event_generator 4912 49 5 12 17 0 0 @049/slum_church3.txt
+end
+fi
+msg 『ああ　おぼえてるさ\n\n\n\n#2\n　　はなをうってたな\n　　スラムのよっぱらい\n\n\n[[]][[]]
+if_flag 3 0
+jump_npc 4901 same 1
+sleep 16
+jump_npc 4901 same 1
+sleep 16
+step_npc 4901 2
+set_talk_npc 4901
+msg 「あっ！　うれしいな～！
+reset_talk_npc
+if_flag 7 0
+step_npc 4901 2
+set_talk_npc 4901
+msg 「でも　おはな　かってくれなかったね\n　まぁ　いっか
+reset_talk_npc
+fi
+if_flag 7 1
+step_npc 4901 2
+set_talk_npc 4901
+msg 「あのときは　おはな　かってくれて　ありがと
+reset_talk_npc
+fi
+fi
+if_flag 3 1
+chg_npc_img 4901 99
+step_npc 4901 2
+set_talk_npc 4901
+msg 「しつれいしちゃうわね！
+reset_talk_npc
+if_flag 7 0
+sleep 16
+chg_npc_img 4901 3
+chg_npc_dir 4901 right
+sleep 32
+set_talk_npc 4901
+msg 「な～んにも　おぼえてないんだ\n　まぁ　いっか
+reset_talk_npc
+fi
+if_flag 7 1
+chg_npc_img 4901 3
+sleep 40
+jump_npc 4901 same 1
+sleep 16
+step_npc 4901 2
+set_talk_npc 4901
+msg 「でも　おはな　かってくれたから\n　ゆるしてあげる
+reset_talk_npc
+fi
+fi
+sleep 16
+create event_generator 4912 49 5 12 17 0 0 @049/slum_church3.txt

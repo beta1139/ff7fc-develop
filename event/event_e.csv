@@ -1,80 +1,150 @@
-event_type,event_id,map_id,pos_x,pos_y,image_id,"direction(UP:0, DOWN:1, LEFT:2, RIGHT:3)","speed(not_move:0, slow:1, normal:2, fast:3)",param
-door,100,1,22,3,0,0,0,
-npc_event,101,1,24,5,36,1,0,""
-npc_event,102,1,22,5,34,0,0,""
-npc_event,103,1,23,6,35,1,0,""
-treasure_box2,104,1,8,20,2,0,0,1000
-treasure_box3,105,1,12,20,2,0,0,1000
-event_generator,107,1,2,19,17,0,0,"@ichibangai_station_baret.txt"
-npc_event,108,1,3,19,1,2,2,""
-event_generator,109,1,15,19,17,0,0,"@ichibangai_station_encount1.txt"
-event_generator,110,1,15,20,17,0,0,"@ichibangai_station_encount2.txt"
-event_generator,111,1,24,7,17,0,0,"@ichibangai_station_abaranchi1.txt"
-event_generator,112,1,25,7,17,0,0,"@ichibangai_station_abaranchi2.txt"
-event_generator,113,1,26,7,17,0,0,"@ichibangai_station_abaranchi3.txt"
-npc,400,4,1,27,36,3,0,"Wedge
-「I will secure our escape
- passage. You concentrate
- on the mission. Cloud.
- Geez.
- Were really gonna blow
- this huge furnace up?
+event_type,event_id,map_id,pos_x,pos_y,image_id,"direction(UP:0, DOWN:1, LEFT:2, RIGHT:3)","speed(not_move:0, slow:1, normal:2, fast:3, not_step:4)",param
+treasure_box2,104,1,8,12,2,0,0,1000
+treasure_box3,105,1,12,12,2,0,0,1000
+event_generator,107,1,2,11,17,0,0,"@001/ichibangai_station_baret.txt"
+npc_event,108,1,3,11,1,2,2,""
+event_generator,109,1,15,11,17,0,0,"@001/ichibangai_station_encount1.txt"
+event_generator,110,1,15,12,17,0,0,"@001/ichibangai_station_encount2.txt"
+event_generator,120,1,1,1,17,0,0,"@001/ichiban_makouro8_1.txt"
+npc2,122,1,14,10,17,1,0,""
+treasure_box,124,1,13,9,0,0,0,1003
+door,200,2,22,3,0,0,0,
+npc_event,201,2,24,5,36,1,0,""
+npc_event,202,2,22,5,34,0,0,""
+npc_event,203,2,23,6,35,1,0,""
+event_generator,211,2,24,7,17,0,0,"@002/ichibangai_station_abaranchi1.txt"
+event_generator,212,2,25,7,17,0,0,"@002/ichibangai_station_abaranchi2.txt"
+event_generator,213,2,26,7,17,0,0,"@002/ichibangai_station_abaranchi3.txt"
+npc_event,301,3,7,23,35,0,3,"none"
+event_generator,302,3,6,28,17,0,0,"@003/bigs2.txt"
+event_generator,303,3,7,28,17,0,0,"@003/bigs3.txt"
+npc_event,304,3,13,18,36,1,3,"none"
+event_generator,305,3,13,21,17,0,0,"@003/wedge1.txt"
+event_generator,306,3,12,21,17,0,0,"@003/wedge2.txt"
+npc_event,307,3,8,13,34,3,3,"none"
+event_generator,308,3,11,15,17,0,0,"@003/jesse3.txt"
+event_generator,309,3,11,16,17,0,0,"@003/jesse4.txt"
+npc_event,401,4,13,26,36,2,3,""
+npc_event,402,4,11,26,34,2,3,""
+npc_event,403,4,9,26,35,2,3,""
+event_generator,404,4,14,26,17,0,0,"@004/ichiban_makouro4.txt"
+event_generator,500,5,5,14,17,0,0,"@005/ichiban_makouro2_1.txt"
+npc,501,5,5,13,1,1,0,""
+event_generator,502,5,4,13,17,0,0,"@005/ichiban_makouro2_2.txt"
+event_generator,503,5,1,14,17,0,0,"@005/ichiban_makouro2_3.txt"
+door,514,5,8,11,0,0,0,""
+npc2,515,5,8,12,17,0,0,""
+npc2,516,5,9,12,17,0,0,""
+npc3,530,5,7,13,35,0,0,"ビッグス
+「コードかいじょ"
+npc,531,5,10,14,34,2,0,"ジェシー
+「わたしと　ビッグスが　ここのドアロックの
+　あんごうを　てにいれたの"
+event_generator,532,5,1,1,17,0,0,"@005/bigs1.txt"
+npc2,535,5,13,7,17,0,0,""
+npc2,536,5,13,8,17,0,0,""
+npc2,539,5,23,7,17,0,0,""
+map_obj,550,5,13,8,31,0,0,0
+map_obj,551,5,13,7,31,0,0,0
+map_obj,552,5,23,7,31,0,0,0
+event_generator,600,6,4,1,17,0,0,"@006/ichiban_makouro3.txt"
+npc,641,6,2,2,34,3,0,"ジェシー
+「さ　そこのボタンを
+　おして！"
+npc3,642,6,18,2,34,2,0,none
+event_generator,643,6,2,3,17,0,0,@006/elevator.txt
+event_generator,661,6,20,1,17,0,0,"@006/elevator_switch2.txt"
+map_door,700,7,10,25,8,0,0,0
+event_generator,802,8,19,8,17,0,0,"@008/makouro_jump1.txt"
+event_generator,803,8,20,8,17,0,0,"@008/makouro_jump2.txt"
+event_generator,804,8,27,8,17,0,0,"@008/makouro_jump3.txt"
+event_generator,805,8,29,7,17,0,0,"@008/makouro_jump4.txt"
+event_generator,820,8,32,18,17,0,0,"@008/makouro_jump5.txt"
+event_generator,821,8,33,17,17,0,0,"@008/makouro_jump6.txt"
+event_generator,830,8,29,8,17,0,0,"@set_slide_walk.txt"
+event_generator,831,8,29,15,17,0,0,"@set_slide_walk.txt"
+event_generator,832,8,29,16,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,833,8,33,18,17,0,0,"@set_slide_walk.txt"
+npc,806,8,26,8,34,3,0,"ジェシー
+「はしごのまえでは　『Aボタン』を　おして
+　そうすればはしごにつかまるわ
+　あとは　ほうこうキーのじょうげで　のぼりおりするの"
+event_generator,807,8,26,8,17,1,0,"@008/nanaban_makouro_jesse_jump.txt"
+event_generator,920,9,3,3,17,0,0,"@set_slide_walk.txt"
+event_generator,921,9,3,4,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,922,9,13,7,17,0,0,"@reset_slide_walk.txt"
+event_generator,923,9,13,8,17,0,0,"@set_slide_walk.txt"
+event_generator,924,9,13,10,17,0,0,"@set_slide_walk.txt"
+event_generator,925,9,13,11,17,0,0,"@reset_slide_walk_bottom.txt"
+save_point,950,9,6,10,0,0,0,
+event_generator,951,9,6,10,17,0,0,"@save_msg.txt"
+treasure_materia,1000,10,8,17,3,0,0,4000
+event_generator,1001,10,8,14,17,0,0,"@010/ichiban_makouro7.txt"
+npc_event,1100,11,3,8,0,3,2,""
+npc_event,1101,11,4,9,1,0,2,""
+npc_event,1102,11,4,5,34,0,0,""
+npc_event,1103,11,3,11,35,0,2,""
+npc_event,1104,11,3,6,36,0,2,""
+event_generator,1210,12,6,2,17,0,0,"@012/hanauri.txt"
+npc_event,1301,13,11,26,3,1,0,""
+npc_event,1302,13,5,29,17,3,2,""
+npc_event,1303,13,4,27,17,3,2,""
+npc_event,1304,13,13,31,17,0,2,""
+npc_event,1320,13,9,29,73,3,2,""
+npc_event,1321,13,4,29,74,3,2,""
+npc_event,1322,13,9,25,69,1,2,""
+npc_event,1327,13,21,25,90,2,2,""
+npc_event,1328,13,14,34,90,0,2,""
+event_generator,1330,13,16,25,17,0,0,"@013/hachibangai1.txt"
+event_generator,1331,13,5,25,17,0,0,"@013/hachibangai2.txt"
+event_generator,1332,13,5,26,17,0,0,"@013/hachibangai2.txt"
+event_generator,1333,13,5,27,17,0,0,"@013/hachibangai2.txt"
+map_door,1390,13,9,24,6,0,0,0
+map_door,1391,13,5,24,6,0,0,0
+treasure_item,1400,14,1,20,0,1,0,1000
+npc3,1401,14,6,17,70,0,0,"「なにか　かべに　かいてあるな？
+　なに　なに…
 
- Thisll be somethin to
- see!"
-event_generator,500,5,5,13,17,0,0,"@ichiban_makouro2_1.txt"
-npc,501,5,5,12,1,1,0,""
-event_generator,502,5,4,12,17,0,0,"@ichiban_makouro2_2.txt"
-event_generator,503,5,1,12,17,0,0,"@ichiban_makouro2_3.txt"
-event_generator,600,6,2,2,17,0,0,"@ichiban_makouro3.txt"
-treasure_item,900,9,8,26,2,0,0,4000
-event_generator,901,9,8,14,17,0,0,"@ichiban_makouro7.txt"
-npc_event,1200,12,4,20,1,3,0,""
-npc_event,1201,12,6,20,34,2,0,""
-npc_event,1202,12,7,20,35,2,0,""
-npc_event,1203,12,7,21,36,2,0,""
-npc_event,1300,13,10,9,3,1,0,""
-event_generator,1301,13,12,7,17,0,0,"@hanauri.txt"
-treasure_item,1400,14,1,20,5,1,0,1000
-npc,1401,14,6,17,70,0,0,"「Wonder what that is on
- the wall over there.
- Lets see...
 
-Dont be fooled by Shinra!
-
-
-
-Mako energy doesnt last
-forever!
-
-
-Mako is the planets
-lifesource!
-
-
-The end is in sight!
-
-
-
-Protectors of the planet:
-AVALANCHE"
-npc,1402,14,2,11,72,1,2,"「Just what the hells going
- on!?"
-event_generator,1500,15,8,7,17,0,0,"@hachibangai_4_1.txt"
-event_generator,1501,15,7,7,17,0,0,"@hachibangai_4_2.txt"
-event_generator,1600,16,9,5,17,0,0,"@ressya_1.txt"
+「しんらに　だまされるな！
+　まこうエネルギーは　えいえん　ではない！
+　まこうは　ほしの　いのち！
+　いつか　おわりが　やってくる！
+　ほしの　きゅうせいしゅ　アバランチ"
+npc,1402,14,2,11,72,1,3,"「いったい　なにが　おきたって　いうのよ"
+npc_event,1403,14,4,10,73,1,3,""
+npc_event,1404,14,4,9,74,3,3,""
+event_generator,1410,14,4,4,17,0,0,"@014/hachibangai3.txt"
+event_generator,1411,14,5,4,17,0,0,"@014/hachibangai3.txt"
+event_generator,1412,14,6,4,17,0,0,"@014/hachibangai3.txt"
+event_generator,1413,14,4,8,17,0,0,"@014/hachibangai4.txt"
+event_generator,1414,14,5,8,17,0,0,"@014/hachibangai4.txt"
+event_generator,1415,14,6,8,17,0,0,"@014/hachibangai4.txt"
+event_generator,1500,15,8,7,17,0,0,"@015/hachibangai5_1.txt"
+event_generator,1501,15,7,7,17,0,0,"@015/hachibangai5_2.txt"
+npc_event,1510,15,6,24,66,0,0,""
+npc_event,1511,15,12,25,69,0,2,""
+npc_event,1512,15,16,26,73,0,2,""
+npc_event,1513,15,15,21,70,0,0,""
+npc_event,1514,15,7,28,74,0,3,""
+npc_event,1515,15,8,28,73,0,3,""
+npc_event,1516,15,6,19,72,0,2,""
+npc_event,1517,15,13,25,30,0,2,""
+event_generator,1600,16,9,5,17,0,0,"@016/ressya_move1.txt"
+event_generator,1602,16,9,5,17,0,0,"@016/ressya_1.txt"
+map_door,1601,16,17,3,0,0,0,0
 npc_event,1650,16,12,7,36,0,2,""
-npc_event,1651,16,11,4,1,1,2,""
+npc_event,1651,16,11,5,1,1,2,""
 npc_event,1652,16,8,7,35,0,2,""
-npc_event,1653,16,7,4,34,1,2,""
-event_generator,1660,16,1,21,17,1,2,"@ressya_2.txt"
+npc_event,1653,16,7,5,34,1,2,""
+event_generator,1660,16,1,21,17,1,2,"@016/ressya_2.txt"
 npc_event,1661,16,9,19,73,1,2,""
 npc_event,1662,16,8,22,71,2,2,""
 npc_event,1663,16,7,22,72,3,2,""
 npc_event,1664,16,4,19,74,1,2,""
-npc,1670,16,13,19,77,1,4,"「ん……？　ここは　おれんち　だから
+npc,1670,16,13,19,77,1,4,"「ん……？　ここは　おれんちだから
 　まあ　ゆっくりしてけ"
-npc,1671,16,11,19,70,1,4,"「しんらしんぶんの　ごうがい　みたかい？
+npc,1671,16,11,22,70,1,0,"「しんらしんぶんの　ごうがい　みたかい？
 
 
 
@@ -82,46 +152,1089 @@ npc,1671,16,11,19,70,1,4,"「しんらしんぶんの　ごうがい　みたかい？
 　スラムに　ひそんでる　らしいぞ
 
 
-　しかし　まこうろ　ばくは　とは　かんがえたよな
+　しかし　まこうろばくは　とは　かんがえたよな
 　リーダーは　さしずめ　あたまの　きれるやつだな
-　つぎは　なに　やるんだろうな？"
-event_generator,1672,16,0,0,17,0,0,"@ressya_3.txt"
-event_generator,1673,16,0,0,17,0,0,"@ressya_4.txt"
-event_generator,1674,16,0,0,17,0,0,"@ressya_5.txt"
-npc,2000,20,29,21,69,1,0,"「ねえ　ねえ　しってる？
+　つぎは　なにやるんだろうな？"
+event_generator,1672,16,0,0,17,0,0,"@016/ressya_3.txt"
+event_generator,1673,16,0,0,17,0,0,"@016/ressya_4.txt"
+event_generator,1674,16,0,0,17,0,0,"@016/ressya_5.txt"
+event_generator,1675,16,7,20,17,0,0,"@016/ressya_6.txt"
+event_generator,1676,16,8,19,17,0,0,"@016/ressya_7.txt"
+event_generator,1678,16,19,21,17,0,0,"@016/ressya_9.txt"
+event_generator,1700,17,30,4,17,0,0,"@017/nanabangai_station1.txt"
+map_obj,1748,17,1,3,4,0,0,0
+map_obj,1749,17,2,3,4,0,0,0
+map_obj,1750,17,3,3,4,0,0,0
+map_obj,1751,17,4,3,4,0,0,0
+map_obj,1752,17,5,3,4,0,0,0
+map_obj,1753,17,6,3,4,0,0,0
+map_obj,1754,17,7,3,4,0,0,0
+map_obj,1755,17,8,3,4,0,0,0
+map_obj,1756,17,9,3,4,0,0,0
+map_obj,1757,17,10,3,4,0,0,0
+map_obj,1758,17,11,3,4,0,0,0
+map_obj,1759,17,12,3,4,0,0,0
+map_obj,1760,17,13,3,4,0,0,0
+map_obj,1761,17,14,3,4,0,0,0
+map_obj,1762,17,15,3,4,0,0,0
+map_obj,1763,17,16,3,4,0,0,0
+map_obj,1764,17,17,3,4,0,0,0
+map_obj,1765,17,18,3,4,0,0,0
+map_obj,1766,17,19,3,4,0,0,0
+map_obj,1767,17,20,3,4,0,0,0
+map_obj,1768,17,21,3,4,0,0,0
+map_obj,1769,17,22,3,4,0,0,0
+map_obj,1770,17,23,3,4,0,0,0
+map_obj,1771,17,24,3,4,0,0,0
+map_obj,1772,17,25,3,4,0,0,0
+map_obj,1773,17,26,3,4,0,0,0
+map_obj,1774,17,27,3,4,0,0,0
+map_obj,1775,17,28,3,5,0,0,0
+map_obj,1776,17,29,3,6,0,0,0
+map_obj,1777,17,30,3,7,0,0,0
+map_obj,1778,17,31,3,8,0,0,0
+map_obj,1779,17,32,3,7,0,0,0
+map_obj,1780,17,33,3,8,0,0,0
+map_obj,1781,17,34,3,7,0,0,0
+map_obj,1782,17,35,3,8,0,0,0
+map_obj,1783,17,36,3,7,0,0,0
+map_obj,1784,17,37,3,8,0,0,0
+map_obj,1785,17,38,3,7,0,0,0
+map_obj,1786,17,39,3,8,0,0,0
+map_obj,1787,17,40,3,9,0,0,0
+map_obj,1788,17,41,3,10,0,0,0
+npc_event,1706,17,4,4,94,3,1,"「ながいあいだ　えきいんを　していますとね
+　いろんな　じんせいの　ばめんを
+　もくげきすることに　なります
+
+　であい　わかれ　よろこび　かなしみ……
+　しょうしょうのことじゃ　おどろきません"
+event_generator,1710,17,1,2,17,0,0,"@017/nanabangai_station2.txt"
+event_generator,1900,19,1,1,17,0,0,"@019/nanabangai1.txt"
+event_generator,1901,19,1,2,17,0,0,"@019/nanabangai2.txt"
+event_generator,1902,19,2,1,17,0,0,"@019/nanabangai3.txt"
+event_generator,1903,19,10,19,17,0,0,"@019/nanabangai4_1.txt"
+event_generator,1904,19,10,20,17,0,0,"@019/nanabangai4_2.txt"
+event_generator,1905,19,10,21,17,0,0,"@019/nanabangai4_3.txt"
+npc,1906,19,8,26,32,0,0,"「きさま　なんのようだ？
+　このおれが　なにものか　しらんわけ　ないだろう？
+
+
+　ここからさきは　たちいりきんしだ
+　おれはここで　おまえみたいな　ふろうしゃを
+　おっぱらう　ケチなしごとを　してるんだ
+
+　わかったら　さっさとうせろ！！"
+npc,1907,19,7,26,32,0,0,"「あっ　あっ　あの……
+　すいません
+　ここからさきは　たちいりきんし　なんですが"
+npc,1908,19,7,13,70,0,0,"「おっ！！
+　おっおっと！！
+
+
+　ああ　なんてことを！！
+　じゃましないでくれよ……ったく！
+
+
+　ん？
+　あんたも　みにきたのか？
+
+
+　うえで　ばくだんテロが　あったんだってよ
+　このはしらが　ぶっとんだら　このスラムも
+　おわりだからな……
+
+　まぁ　しんぱいするだけ　むだだったな
+
+
+
+　なあ！！　みてみろよ
+　いつみても　どでかい　はしらだなぁ"
+event_generator,1910,19,2,19,17,0,0,"@019/nanabangai_slum1_1.txt"
+event_generator,1911,19,2,20,17,0,0,"@019/nanabangai_slum1_2.txt"
+event_generator,1912,19,2,21,17,0,0,"@019/nanabangai_slum1_3.txt"
+save_point,1950,19,5,15,0,0,0,
+event_generator,1951,19,5,15,17,0,0,"@save_msg.txt"
+event_generator,2016,20,26,22,17,0,0,"@020/nanabangai_slum5.txt"
+npc,2018,20,26,21,17,0,0,"「あけないよ！！
+　かえってちょうだい"
+npc,2019,20,27,33,17,0,0,"「ほんじつは　へいてん　いたしました
+　またの　ごらいてんを　おまちして　おります"
+map_door,2090,20,26,21,1,0,0,0
+map_door,2091,20,27,33,1,0,0,0
+map_door,2092,20,22,26,2,0,0,0
+map_door,2093,20,35,24,1,0,0,0
+map_door,2094,20,34,32,7,0,0,0
+map_door,2095,20,34,29,7,0,0,0
+map_door,2190,21,5,11,4,0,0,0
+map_door,2290,22,5,13,3,0,0,0
+map_door,2490,24,7,10,4,0,0,0
+map_door,2590,25,2,10,4,0,0,0
+map_door,2591,25,7,4,4,0,0,0
+map_door,2690,26,4,11,5,0,0,0
+map_door,2790,27,5,9,4,0,0,0
+event_generator,2100,21,5,9,17,0,0,"@021/nanabangai_slum7.txt"
+event_generator,2101,21,1,1,17,0,0,"@021/nanabangai_slum8_1.txt"
+event_generator,2102,21,1,2,17,0,0,"@021/nanabangai_slum8_2.txt"
+npc_event,2106,21,4,5,77,0,0,マテリアや
+npc2,2107,21,4,6,17,0,0,""
+npc2,2108,21,5,5,17,0,0,""
+event_generator,2200,22,5,13,17,0,0,"@022/seventhheaven1.txt"
+event_generator,2260,22,5,12,17,0,0,"@022/seventhheaven_out1_before.txt"
+npc_event,2202,22,4,7,2,3,0,"ティファ
+「クラウド　ごめんね
+　マリン　てれちゃってる　みたい"
+npc_event,2203,22,2,9,34,3,0,"ジェシー
+「う▼か▼つ▼……
+　なんだか　ドキドキしてる
+
+　なぜなの……？"
+npc_event,2204,22,3,8,35,1,0,"ビックス
+「ああ～！！
+　しごとのあとの　いっぱいは
+　こたえらんねぇなぁ
+　ヒック！！
+
+
+
+　クラウドさんも　おひとつ　どうですか？
 
 
 
 #2
-　　きょうみないね
-　　しらないよ
+　　いらないな
+　　そうだな　もらおうか
 
 
-[[「あ　そ！]]
-[[「ニュースの　そくほうが　はいったのよ
-　うえで　ばくだん　テロが　あったって
-　いうじゃない　それも　まこうろの　ばくはつ！！
-　これが　どんなに　たいへんな　ことか　わかる？
+[[「なに～！！
+　おれさまの　さけが　のめないってかぁ？
+
+
+　もとソルジャー　だからって
+　おたかく　とまってんじゃねえぞ！]]
+[[「おっ！！
+　いいこころがけ　じゃねぇか！！
+
+
+　もとソルジャーでも
+　ここじゃ　おめえも　しんじんだ
+　しんじんにとっちゃ　せんぱいのいうことは
+　ぜったい　だからな！]]"
+npc_event,2205,22,3,10,36,0,0,"ウェッジ
+「あ　クラウドさん！
+
+
+　ティファちゃんの　りょうりって
+　おいしいっすねえ
+　パクパク……
+
+　でも　きいてくれます？
+
+
+
 #2
-　　きょうみないね
-　　わからないよ
+　　なにを
+　　おまえの　はなしなんて　きょうみないね
 
 
-[[「あ　そ！]]
-[[「じじょうつうの　わたしに　いわせればね
-　ミッドガルの　でんりょくが　マヒしちゃったら
-　コンピューターとか　しんごうとか　いろいろ
-　とまっちゃうじゃない
-　けいざいてき　そんしつは　んーー
-　１０おくギルは　くだらないし
-　それに！！　たくさんの　つみなきひとびとが
-　しんだと　おもうのよ
-　ばくはが　まよなかだったから　まだいいわ
-　ねむってたひとは　そのまま　めがさめない　だけね]]]]"
-npc,2001,20,30,21,65,1,2,"「ばくはつ！！　ばくはつ！！
-　スゲッー！！
-　アバランチ　かっくいー！！"
-event_generator,2050,20,29,21,17,1,0,"@sram_1.txt"
+[[「ティファちゃんって
+　いつも　おれに
+　りょうりの　あじみを　させるっすよ
+
+　おかげで　ほら
+　おれ　こんなまるっこく　なっちゃって
+
+
+　うれしいやら　かなしいやら
+　おいしい　りょうりと　おさけが　ひょうばんで
+　おみせは　はんじょう　してるんですけどね]]
+[[「クラウドさん……
+　……いや　なんでも　ないっす]]"
+npc_event,2206,22,5,7,37,0,0,"マリン
+「…………"
+map_obj,2250,22,5,5,1,0,0,0
+map_obj,2251,22,8,4,3,0,0,0
+npc,2304,23,2,4,1,2,0,"バレット
+「おい　クラウドさんよ
+　ききたいことが　あるんだ
+
+　きょう　オレたちが　たたかった　あいてに
+　ソルジャーは　いたのか？"
+npc3,2306,23,6,4,34,0,0,"ジェシー
+「うかつ……
+
+
+　みてよ　このニュース……
+　こんなに　ばくはつしてる
+
+
+　やっぱり　わたしの　ばくだんの　せい？
+　でも　このコンピューターの　しじどおり
+　つくった　だけなのに
+
+　やだ！
+　どっかで　けいさん　まちがったかしら"
+npc,2307,23,3,6,35,3,0,"ビックス
+「……うぃ～
+　バレットのやつ　きが　たってるな
+　ほうしゅうの　はなしは　あとがいいぜ"
+npc3,2308,23,5,6,36,2,4,"ウェッジ
+「もしかして　おれ　かたまってます？
+
+
+#2
+　　ああ
+　　いや……
+
+
+[[「つぎの　さくせんは
+　5ばんまこうろ　ばくは！！
+　おれ　きんちょうしちまって　ガチガチ　なんすよ
+
+　クラウドさんは　さっすがすねー
+　ぜんぜん　きんちょうとか　しないでしょ？
+
+
+　もしかして　なにも　かんじないとか？
+　エヘヘ……そんなわけ　ないっすよね]]
+[[「いや～　いいっすよ
+　きを　つかって　くれなくても
+　おれ　からだに　にあわず　しょうしんものっすから]]"
+npc,2309,23,3,4,37,2,0,"マリン
+「とうちゃーん
+　かっこいい！"
+npc2,2320,23,1,4,17,0,0,""
+event_generator,2301,23,0,0,17,0,0,"@023/azito2.txt"
+event_generator,2360,23,4,4,17,0,0,"@023/azito_out_before.txt"
+npc,2400,24,2,6,78,3,0,"「あんなこでも　いなくなってみるとね
+　なんだか　おちつかなくて
+　……ふしぎなものね"
+npc,2401,24,4,6,77,2,1,"「ハッハッ……
+　むすこは　もう　たびだちましたかな？
+
+
+　こうして　かないと　わたし
+　ふたりきりに　なってみると
+　いやはや　さびしいもの　ですなあ
+
+　ハッハッ……　わかいうちはね
+　すきなことを　やらせてみようと　おもっていても
+　やっぱり　しんぱいなのは　いけませんなあ
+
+　おやとして　しゅぎょうが　たりませんなあ
+
+
+
+　ところで　あなた
+　こきょうは　おありですかな？
+
+
+#2
+　　ニブルヘイムという　むらだ
+　　そんな　めんどうなものは　すてたさ
+
+
+[[「ほう……あのニブルヘイムむら　ですか
+　ほら　なんねんかまえに　ニュースに
+　なったことが　ありましたなあ
+
+　あのときは　たしか……
+　まこうろの　じこでしたか
+
+
+　とうじは　さいしょの
+　おおきな　まこうろじこ　ということで
+　ずいぶん　わだいに　なりましたなあ]]
+[[「ハッハッ……
+　まあ　それもいいでしょうなあ
+
+
+　でも　もし　あなたにも　かぞくが
+　おありなら　てがみぐらい　かいてあげるのが
+　いいですなあ
+
+　こきょうはね　しらんぷりを　していても
+　いつでも　あなたを　まってますよ
+
+
+　ハッハッ……
+　まあ　そんなもんですなあ]]"
+event_generator,2402,24,1,1,17,0,0,"@024/nanabangai_slum23.txt"
+event_generator,2500,25,4,7,17,0,0,"@025/nanabangai_slum9.txt"
+npc_event,2501,25,4,5,79,3,0,
+npc2,2502,25,4,6,17,0,0,""
+event_generator,2503,25,1,1,17,0,0,"@025/nanabangai_slum10.txt"
+npc2,2504,25,7,8,89,2,0,""
+event_generator,2505,25,1,2,17,0,0,"@025/nanabangai_slum11.txt"
+npc,2510,25,4,9,17,0,0,"「よう！！
+　なんだ　おまえ？
+
+
+　おれに　はなしかけるってことは　しろうとだな？
+
+
+
+#2
+　　しろうとだ
+　　おれは　もとソルジャーの　クラウドだ
+
+
+[[]]
+[[]]"
+npc_event,2511,25,4,10,51,0,0,"none"
+event_generator,2530,25,1,1,17,0,0,"@025/nanabangai_slum25.txt"
+event_generator,2531,25,2,10,17,0,0,"@025/nanabangai_slum26.txt"
+event_generator,2701,27,4,6,17,0,0,"@027/nanabangai_slum14_1.txt"
+event_generator,2702,27,5,5,17,0,0,"@027/nanabangai_slum14_2.txt"
+event_generator,2703,27,6,6,17,0,0,"@027/nanabangai_slum14_3.txt"
+npc2,2600,26,4,7,17,0,0,""
+npc,2601,26,3,8,90,3,0,"「ん………！！
+　なんだ　てめぇは？
+　ここは　ぶがいしゃ　たちいりきんしだぞ
+
+　まあ　きょうは　とくべつだ
+　ここだけのはなし
+　いいニュースが　あったからな
+
+　あんたも　しってるか？
+
+
+
+#2
+　　また　そのはなしか
+　　…………
+
+
+[[]]
+[[「なんでもよう……
+　アバランチ　とかいう　テロしゅうだんが
+　いちばんまこうろを　ばくは　したって　はなしだ
+
+　おもてむきは　はんしんらが　どうしたとかって
+　せいめいが　でてるらしいがよ
+　しんそうはな……
+
+　むさべつ　たいりょう　さつじんが
+　もくてきだって　うわささ
+
+
+　ガハハハハ！！
+
+
+
+　わらわせて　くれるじゃねぇか！？
+　うえで　ゴタゴタ　やってくれりゃよ
+　ぶきやとしては　おおだすかり　ってやつよ
+
+　このざいこの　やまも　はけちまえば　いいがな]]"
+npc_event,2602,26,6,6,66,2,0,"none"
+npc_event,2603,26,3,3,91,1,0,"none"
+npc_event,2604,26,4,3,70,1,0,"none"
+npc_event,2605,26,2,2,79,1,0,"none"
+npc_event,2606,26,2,4,67,0,0,"none"
+npc_event,2607,26,2,5,65,1,0,"none"
+npc,2608,26,6,5,40,1,0,"「うっとり……くるくる……
+　これがうわさの　『セーブポイント』！！"
+event_generator,2609,26,1,1,17,0,0,"@026/nanabangai_slum15.txt"
+event_generator,2632,26,4,6,17,0,0,"@026/beginner's_hall7.txt"
+event_generator,2633,26,4,6,17,0,0,"@026/beginner's_hall8.txt"
+event_generator,2635,26,6,4,17,0,0,"@save_msg.txt"
+event_generator,2640,26,1,1,17,0,0,"@026/beginner's_hall11.txt"
+event_generator,2643,26,1,1,17,0,0,"@026/beginner's_hall14.txt"
+map_obj,2691,26,4,7,30,0,0,0
+npc_event,2803,28,15,4,34,1,0,"none"
+npc_event,2804,28,10,8,35,0,2,"none"
+npc_event,2805,28,11,4,36,1,0,"none"
+npc_event,2806,28,16,4,73,0,2,"none"
+npc,2807,28,3,4,77,1,4,"「ん……？
+　おれんちきて　あいさつするのは
+　あんただけ
+
+　かんしん　かんしん"
+event_generator,2810,28,11,5,17,0,0,"@028/train1.txt"
+event_generator,2811,28,5,6,17,0,0,"@028/train2.txt"
+event_generator,2812,28,18,6,17,0,0,"@028/train3_1.txt"
+event_generator,2813,28,17,5,17,0,0,"@028/train3_2.txt"
+event_generator,2814,28,16,4,17,0,0,"@028/train3_3.txt"
+event_generator,2817,28,1,1,17,0,0,"@028/target_talk.txt"
+event_generator,2823,28,19,6,17,0,0,"@028/countdown_end.txt"
+map_door,2850,28,3,10,0,0,0,0
+map_door,2851,28,17,3,0,0,0,0
+npc_event,2900,29,1,6,0,3,3,"none"
+npc_event,2901,29,2,6,34,2,3,"none"
+npc_event,2902,29,16,6,35,2,3,"none"
+npc_event,2903,29,14,6,36,2,3,"none"
+npc,2904,29,4,4,66,1,4,"「やぁ……
+　あんたたち　そうぞうしいねえ
+
+
+　まあまあ　おちついて"
+npc,2905,29,13,4,67,1,4,"「もぅ！！
+　いいおとなが　ドタバタと
+
+
+　れっしゃのなかでは
+　おぎょうぎよくしてね"
+npc_event,2906,29,10,7,65,1,0,"「ヒュ～ン！！
+　ヒュ～ン！！"
+npc_event,2907,29,11,7,89,3,0,"「ひょっとしてこれ
+　ボクら　だいピンチってやつかい？"
+npc,2908,29,18,8,47,0,4,"「あ～ん？
+　なっん～だっ！"
+event_generator,2910,29,13,6,17,0,0,"@028/countdown_start.txt"
+event_generator,2911,29,19,6,17,0,0,"@028/countdown_end.txt"
+event_generator,2912,29,1,1,17,0,0,"@029/target_talked1.txt"
+map_door,2951,29,17,3,0,0,0,0
+npc_event,3003,30,6,6,34,2,0,"none"
+npc_event,3004,30,7,6,77,2,3,"none"
+npc_event,3005,30,10,4,71,0,0,"ジョニー
+「さらば　グッバイ　アディオス！
+　ミッドガル！！"
+npc_event,3006,30,16,4,70,1,0,"「に　にげばがない……"
+npc_event,3007,30,16,5,72,0,0,"none"
+event_generator,3010,30,8,6,17,0,0,"@028/countdown_start.txt"
+event_generator,3011,30,19,6,17,0,0,"@028/countdown_end.txt"
+event_generator,3014,30,14,6,17,0,0,"@030/train6.txt"
+event_generator,3015,30,1,1,17,0,0,"@030/target_talked1.txt"
+event_generator,3016,30,1,1,17,0,0,"@030/target_talked2.txt"
+map_door,3051,30,17,3,0,0,0,0
+npc,3103,31,5,4,110,2,0,"「ブルブルブル……
+
+
+
+　ひどいんです
+　いまどき　おいはぎ
+　みぐるみ　はぐんですから"
+npc,3104,31,8,7,111,0,2,"「わかりますっ？
+
+
+
+　めがさめたら　すっぱだかで
+　おとこさんにんだったきぶん！
+
+
+　わかんないでしょうねぇ"
+npc,3105,31,15,4,110,3,0,"「こわい　としうえのじょせいが
+　ばくだんを　つきつけて……
+
+
+　ことわれませんでした　ハイ"
+npc,3106,31,11,5,72,2,3,"「ほら　とっときな！"
+event_generator,3110,31,1,6,17,0,0,"@028/countdown_start.txt"
+event_generator,3111,31,19,6,17,0,0,"@028/countdown_end.txt"
+event_generator,3112,31,1,1,17,0,0,"@031/target_talked.txt"
+map_door,3151,31,17,3,0,0,0,0
+npc_event,3203,32,16,4,107,1,0,"ジェシー
+「わたし　ジェシーよ
+　どう　クラウド？
+
+　しんらのせいふく　にあってるかな？
+
+
+
+#2
+　　そうだな……
+　　いまは　それどころじゃない
+
+
+[[]]
+[[]]"
+npc_event,3204,32,17,7,108,2,0,"ビッグス
+「おれだ　ビッグスだ
+　あとは　まかせとけ"
+npc_event,3205,32,11,7,109,2,0,"ウェッジ
+「わかるっすか？
+　おれ　ウェッジっす！
+
+　さくせん　ばっちりせいこうっすね "
+npc2,3208,32,13,4,33,0,0,""
+treasure_box3,3206,32,9,4,2,0,0,1000
+treasure_box3,3207,32,5,5,2,0,0,1000
+map_door,3251,32,17,3,0,0,0,0
+event_generator,3210,32,1,6,17,0,0,"@028/countdown_start.txt"
+event_generator,3214,32,1,1,17,0,0,"@032/target_talked2.txt"
+event_generator,3215,32,1,1,17,0,0,"@032/target_talked3.txt"
+npc_event,3301,33,5,15,32,3,0,""
+npc_event,3302,33,5,17,32,3,0,""
+event_generator,3310,33,6,11,17,0,0,"@033/winding_tunnel2_1.txt"
+event_generator,3311,33,7,11,17,0,0,"@033/winding_tunnel2_2.txt"
+event_generator,3312,33,9,11,17,0,0,"@033/winding_tunnel2_3.txt"
+event_generator,3313,33,10,11,17,0,0,"@033/winding_tunnel2_4.txt"
+event_generator,3314,33,6,12,17,0,0,"@033/winding_tunnel3_1.txt"
+event_generator,3315,33,7,12,17,0,0,"@033/winding_tunnel3_2.txt"
+event_generator,3316,33,9,12,17,0,0,"@033/winding_tunnel3_3.txt"
+event_generator,3317,33,10,12,17,0,0,"@033/winding_tunnel3_4.txt"
+npc_event,3400,34,7,19,0,0,2,"none"
+npc_event,3401,34,7,17,1,1,2,"none"
+npc_event,3402,34,6,17,2,1,2,"none"
+event_generator,3410,34,7,16,17,0,0,"@034/winding_tunnel1.txt"
+event_generator,3420,34,6,3,17,0,0,"@034/winding_tunnel_exit1_1.txt"
+event_generator,3421,34,7,3,17,0,0,"@034/winding_tunnel_exit1_2.txt"
+event_generator,3422,34,8,3,17,0,0,"@034/winding_tunnel_exit1_3.txt"
+event_generator,3423,34,9,3,17,0,0,"@034/winding_tunnel_exit1_4.txt"
+event_generator,3424,34,10,3,17,0,0,"@034/winding_tunnel_exit1_5.txt"
+event_generator,3425,34,6,26,17,0,0,"@034/winding_tunnel_exit2_1.txt"
+event_generator,3426,34,7,26,17,0,0,"@034/winding_tunnel_exit2_2.txt"
+event_generator,3427,34,8,26,17,0,0,"@034/winding_tunnel_exit2_3.txt"
+event_generator,3428,34,9,26,17,0,0,"@034/winding_tunnel_exit2_4.txt"
+event_generator,3429,34,10,26,17,0,0,"@034/winding_tunnel_exit2_5.txt"
+npc2,3503,35,7,14,17,0,0,""
+npc2,3504,35,8,14,17,0,0,""
+npc2,3505,35,9,14,17,0,0,""
+npc2,3506,35,6,16,17,0,0,""
+event_generator,3510,35,0,0,17,0,0,"@035/winding_tunnel4.txt"
+event_generator,3550,35,0,0,17,0,0,"@035/sensor1.txt"
+event_generator,3551,35,0,0,17,0,0,"@035/sensor2.txt"
+event_generator,3552,35,0,0,17,0,0,"@035/sensor3.txt"
+event_generator,3600,36,12,4,17,0,0,"@reset_slide_walk.txt"
+treasure_item,3601,36,7,4,0,1,0,1003
+event_generator,3700,37,6,2,17,0,0,"@set_slide_walk.txt"
+event_generator,3701,37,6,6,17,0,0,"@set_slide_walk.txt"
+event_generator,3702,37,6,7,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,3703,37,1,8,17,0,0,"@reset_slide_walk.txt"
+event_generator,3704,37,1,9,17,0,0,"@set_slide_walk.txt"
+event_generator,3800,38,22,9,17,0,0,"@set_slide_walk.txt"
+event_generator,3801,38,22,10,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,3802,38,15,9,17,0,0,"@set_slide_walk.txt"
+event_generator,3803,38,15,11,17,0,0,"@set_slide_walk.txt"
+event_generator,3804,38,15,12,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,3805,38,5,8,17,0,0,"@set_slide_walk.txt"
+event_generator,3806,38,5,10,17,0,0,"@set_slide_walk.txt"
+event_generator,3807,38,5,11,17,0,0,"@reset_slide_walk_bottom.txt"
+npc,3810,38,6,11,36,1,0,"ウェッジ
+「クラウドさん　こっちっす
+　5ばんまこうろは　このハシゴの　さきっす"
+event_generator,3900,39,10,10,17,0,0,"@reset_slide_walk.txt"
+event_generator,3901,39,7,2,17,0,0,"@reset_slide_walk.txt"
+event_generator,3902,39,2,6,17,0,0,"@reset_slide_walk.txt"
+npc,3910,39,10,3,34,1,0,"ジェシー
+「ごめんなさい
+
+
+　れっしゃの　IDスキャンのミス
+　わたしのせいなの
+  
+  
+　クラウドの　IDカード
+　わたしの　とくべつせいに　したから……
+　あんなことに
+　
+　こころを　こめたつもり　だったんだけどね
+　しっぱいしちゃった"
+event_generator,3920,39,0,0,17,0,0,"@039/target_talked.txt"
+treasure_item,3930,39,5,3,0,1,0,1000
+event_generator,4000,40,3,3,17,0,0,"@set_slide_walk.txt"
+event_generator,4100,41,6,9,17,0,0,"@set_slide_walk.txt"
+event_generator,4101,41,6,11,17,0,0,"@set_slide_walk.txt"
+event_generator,4102,41,6,12,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,4103,41,3,2,17,0,0,"@set_slide_walk.txt"
+event_generator,4104,41,3,4,17,0,0,"@reset_slide_walk_bottom.txt"
+npc,4110,41,2,4,35,1,0,"ビッグス
+「おれたちは　これでひきあげる
+　アジトで　おちあおうぜ
+
+　クラウド　5ばんまこうろの　ばくは
+　よろしくたのむぜ！"
+event_generator,4120,41,0,0,17,0,0,"@041/target_talked.txt"
+treasure_item,4130,41,7,4,0,1,0,1070
+save_point,4131,41,7,7,0,0,0,
+event_generator,4132,41,7,7,17,0,0,"@save_msg.txt"
+event_generator,4133,41,3,6,17,0,0,"@041/door_open.txt"
+event_generator,4200,42,20,3,17,0,0,"@reset_slide_walk.txt"
+event_generator,4201,42,25,5,17,0,0,"@042/slide1.txt"
+event_generator,4202,42,25,22,17,0,0,"@042/slide2.txt"
+map_door,4250,42,20,3,8,0,0,0
+map_door,4251,42,10,25,8,0,0,0
+event_generator,4300,43,19,8,17,0,0,"@008/makouro_jump1.txt"
+event_generator,4301,43,20,8,17,0,0,"@008/makouro_jump2.txt"
+event_generator,4302,43,27,8,17,0,0,"@008/makouro_jump3.txt"
+event_generator,4303,43,29,7,17,0,0,"@008/makouro_jump4.txt"
+event_generator,4304,43,32,18,17,0,0,"@008/makouro_jump5.txt"
+event_generator,4305,43,33,17,17,0,0,"@008/makouro_jump6.txt"
+event_generator,4306,43,29,8,17,0,0,"@set_slide_walk.txt"
+event_generator,4307,43,29,15,17,0,0,"@set_slide_walk.txt"
+event_generator,4308,43,29,16,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,4309,43,33,18,17,0,0,"@set_slide_walk.txt"
+event_generator,4400,44,3,3,17,0,0,"@set_slide_walk.txt"
+event_generator,4401,44,3,4,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,4402,44,13,7,17,0,0,"@reset_slide_walk.txt"
+event_generator,4403,44,13,8,17,0,0,"@set_slide_walk.txt"
+event_generator,4404,44,13,10,17,0,0,"@set_slide_walk.txt"
+event_generator,4405,44,13,11,17,0,0,"@reset_slide_walk_bottom.txt"
+save_point,4406,44,6,10,0,0,0,
+event_generator,4407,44,6,10,17,0,0,"@save_msg.txt"
+npc2,4503,45,8,12,17,0,0,""
+event_generator,4510,45,8,18,17,0,0,"@045/goban_makouro1.txt"
+event_generator,4512,45,1,1,17,0,0,"@045/goban_makouro2.txt"
+event_generator,4600,46,4,1,17,0,0,"@006/elevator_switch1.txt"
+event_generator,4601,46,20,1,17,0,0,"@006/elevator_switch2.txt"
+treasure_box,4700,47,19,12,0,0,0,1003
+save_point,4701,47,8,7,0,0,0,
+event_generator,4702,47,8,7,17,0,0,"@save_msg.txt"
+npc2,4740,47,13,7,17,0,0,""
+npc2,4741,47,13,8,17,0,0,""
+map_obj,4750,47,13,7,31,0,0,0
+map_obj,4751,47,13,8,31,0,0,0
+event_generator,4810,48,7,24,17,0,0,"@048/goban_makouro3.txt"
+npc2,4901,49,5,11,15,3,0,""
+npc,4902,49,6,23,17,0,0,"「もうすこし　じかんをやるぞ　と"
+npc3,4903,49,7,24,17,1,0,"「オレにかまうな　だと"
+event_generator,4910,49,20,11,17,0,0,"@049/slum_church1.txt"
+event_generator,4911,49,1,1,17,0,0,"@049/slum_church2.txt"
+event_generator,5199,51,1,1,17,0,0,"@051/temp.txt"
+event_generator,6500,65,8,21,17,0,0,"@065/waterfall.txt"
+treasure_item,6530,65,29,20,0,0,0,1003
+treasure_materia,6531,65,22,20,4,0,0,4313
+save_point,6540,65,15,21,0,0,0,
+event_generator,6541,65,15,21,17,0,0,"@save_msg.txt"
+map_door,6550,65,11,19,14,0,0,0
+event_generator,6600,66,9,14,17,0,0,"@066/aeris's_house1.txt"
+event_generator,6602,66,0,0,17,0,0,"@066/aeris's_house3.txt"
+npc_event,6621,66,17,12,38,1,0,"エルミナ
+「あんたの　そのめのかがやきは……
+　ソルジャーなんだろ？"
+event_generator,6700,67,12,7,17,0,0,"@067/aeris's_house4.txt"
+event_generator,6701,67,24,12,17,0,0,"@067/cloud's_memory1.txt"
+treasure_box4,6740,67,4,10,0,0,0,1000/1007
+map_door,6750,67,5,9,14,0,0,0
+map_door,6751,67,11,12,14,0,0,0
+event_generator,6999,69,1,1,17,0,0,"@069/temp.txt"
+npc2,7198,71,9,8,61,2,0,""
+event_generator,7199,71,0,0,17,0,0,"@071/temp.txt"
+event_generator,7100,71,6,3,17,0,0,"@071/wall_market1.txt"
+event_generator,7101,71,7,3,17,0,0,"@071/wall_market1.txt"
+event_generator,7102,71,8,3,17,0,0,"@071/wall_market1.txt"
+event_generator,7211,72,6,39,17,0,0,"@072/wall_market3_1.txt"
+event_generator,7212,72,7,38,17,0,0,"@072/wall_market3_2.txt"
+npc_event,7220,72,6,38,66,1,0,"「ちょっと　そこのおふたりさん
+　すこし　やすんでいかない？
+
+
+　きれいなへやが　あるんだけど
+　どうだい？"
+npc_event,7221,72,16,17,71,1,1,"「おっ！　そこのにいさん！
+　べっぴんさん　つれてるねぇ
+
+
+　ドンのところにいけば
+　いいかねになるよ！"
+npc_event,7222,72,16,41,79,1,1,"「いまいち　ふんぎりがつかねえな
+　う～ん
+
+
+　えっ？　なんのことだって？
+
+
+
+　へへへ　いわせんなよ
+　このみぎての　おくにある　みせのことだよ"
+npc_event,7223,72,9,33,89,0,0,"「ネコは　いいよね
+　これは　ちょっと　おおきすぎるよね"
+npc_event,7224,72,12,25,90,1,0,"「どうぞ　よっていってください
+　いまなら　くすりや　しょうひんクーポンを
+　サービスしますよ"
+npc_event,7225,72,5,17,70,0,0,"「どうしようかな
+　かっちゃおかな"
+npc,7226,72,18,18,77,0,0,"「たべるには　まだ　はやいようですな
+　もうしばらくしてから　おいでなさい"
+save_point,7227,72,18,26,0,0,0,
+event_generator,7228,72,18,26,17,0,0,"@save_msg.txt"
+map_door,7250,72,5,37,9,0,0,0
+map_door,7251,72,10,31,9,0,0,0
+map_door,7252,72,13,34,9,0,0,0
+map_door,7253,72,11,24,9,0,0,0
+map_door,7254,72,6,15,9,0,0,0
+map_door,7256,72,16,12,9,0,0,0
+event_generator,7300,73,19,11,17,0,0,"@073/kill_smoke2.txt"
+event_generator,7301,73,0,0,17,0,0,"@073/wm_inn.txt"
+npc2,7320,73,15,8,17,0,0,""
+npc_event,7321,73,15,7,68,1,0,"none"
+map_door,7350,73,13,14,4,0,0,0
+treasure_box,7351,73,17,15,0,0,0,1023
+event_generator,7400,74,6,13,17,0,0,"@074/kill_smoke3.txt"
+event_generator,7401,74,0,0,17,0,0,"@074/wm_item_dispenser.txt"
+npc2,7410,74,6,5,17,2,0,""
+event_generator,7500,75,4,17,17,0,0,"@075/kill_smoke4.txt"
+npc,7510,75,7,14,66,2,0,"「うまくいったようですね
+　かえってきてから　ずっとドレスを
+　つくってましたよ"
+npc,7511,75,6,14,17,0,0,"「いらっしゃいませ
+　ゆっくりみていってください"
+npc,7512,75,7,12,69,0,4,"「なによ　おさないでよ
+　マナー　わるいね"
+map_door,7550,75,4,17,9,0,0,0
+map_door,7551,75,9,6,4,0,0,0
+event_generator,7600,76,3,12,17,0,0,"@076/kill_smoke5.txt"
+event_generator,7601,76,0,0,17,0,0,"@076/wm_materia_shop1.txt"
+npc_event,7610,76,5,5,106,1,4,"none"
+npc2,7611,76,5,6,17,0,0,""
+map_door,7650,76,3,12,10,0,0,0
+map_door,7750,77,3,17,9,0,0,0
+treasure_box,7751,77,7,13,0,0,0,1016
+event_generator,7700,77,3,17,17,0,0,"@077/kill_smoke6.txt"
+event_generator,7701,77,8,6,17,0,0,"@077/kill_smoke6.txt"
+event_generator,7702,77,3,15,17,0,0,"@077/wm_meshidokoro1.txt"
+event_generator,7703,77,5,12,17,0,0,"@077/wm_meshidokoro2.txt"
+event_generator,7704,77,4,9,17,0,0,"@077/wm_meshidokoro3.txt"
+event_generator,7707,77,0,0,17,0,0,"@077/wm_meshidokoro6.txt"
+npc,7710,77,7,7,90,3,0,"「おきゃくさま　こまります
+　こちらは　じゅうぎょういん　せんようです"
+npc,7711,77,6,11,68,2,0,"「おきゃくさま　とうてんへは
+　しょうめんから　おはいりください"
+npc3,7712,77,4,5,79,3,0,"「ん…が…ぐふっ……
+　きゅうに　はなしかけるなよ"
+npc3,7713,77,4,6,71,3,0,"「きょうもこれで
+　くすりや　しょうひんクーポンをゲットだぜ"
+npc3,7714,77,4,7,66,3,0,"「おれはいつも
+　おすすめ　ていしょくさ"
+npc3,7715,77,4,8,70,3,0,"「こうやってメシがくえるのも
+　ドンのおかげだよ"
+npc3,7716,77,4,10,94,3,0,"「モグモグ………"
+npc3,7717,77,4,11,91,3,0,"「きょうもこれで
+　くすりや　しょうひんクーポンをゲットだぜ"
+event_generator,7800,78,6,13,17,0,0,"@078/kill_smoke7.txt"
+event_generator,7801,78,0,0,17,0,0,"@078/wm_item_shop.txt"
+npc_event,7810,78,6,6,66,0,0,"none"
+npc2,7811,78,6,7,17,0,0,""
+map_door,7850,78,6,13,9,0,0,0
+event_generator,7900,79,1,12,17,0,0,"@079/kill_smoke8.txt"
+event_generator,7903,79,0,0,17,0,0,"@079/wall_market4.txt"
+event_generator,7904,79,0,0,17,0,0,"@079/wall_market5.txt"
+event_generator,7905,79,0,0,17,0,0,"@079/wall_market6.txt"
+npc3,7920,79,4,11,71,3,0,"ジョニー
+「ああ……
+　はいるべきか……　
+
+　はいらざるべきか？
+
+
+
+　ああ……おれって　こういうとき
+　なんか　ブンガクてきに　なっちゃうんだよな
+　まいるぜ！！"
+npc,7921,79,9,13,31,0,1,"「くっ～～　どうしてもダメ……
+　ここからさきに　すすめないんです
+
+
+　ボクのレベルと　きゅうりょうじゃ　たりんです
+　みぶんが　ちがいすぎるです"
+npc2,7922,79,12,13,70,0,3,""
+npc,7923,79,9,11,90,3,0,"「いらっしゃい！！
+　もてないキミでも　ここ　ミツバチのやかた　でなら
+　うんめいの　カノジョに　であえるはず！！
+
+　あなたも　カノジョさがしですか
+
+
+
+#2
+　　ティファというこを　しらないか？
+　　おれは　こんなばしょには　きょうみない
+
+
+[[「おっ　あなた　ききみみはやいねえ
+　ティファちゃんは
+　ムチムチのシンジンさんだよ
+
+　でも　ざんねんです
+　ティファちゃんは　いま　めんせつちゅう
+
+
+　ミツバチのやかたの　ならわしでね
+　シンジンのこは　ドン　コルネオのやしきに
+　つれてかれるんだ
+
+　ドン　コルネオは　ゆうめいな　どくしんきぞく
+　そろそろ　みをかためるってんで
+　おヨメさんさがしに　ねっしんでね]]
+[[「ほう……まにあってますか
+　そりゃ　けっこうですな]]"
+npc,7924,79,10,11,131,2,0,"「ミツバチのやかたは　かいいんせいに
+　なっております
+　ざんねんですが　おひきとりください"
+event_generator,8000,80,8,17,17,0,0,"@080/honey_bee_inn1_1.txt"
+event_generator,8002,80,0,0,17,0,0,"@080/honey_bee_inn2.txt"
+event_generator,8003,80,0,0,17,0,0,"@080/honey_bee_inn3.txt"
+event_generator,8004,80,0,0,17,0,0,"@080/honey_bee_inn4.txt"
+event_generator,8005,80,0,0,17,0,0,"@080/honey_bee_inn5.txt"
+event_generator,8006,80,0,0,17,0,0,"@080/honey_bee_inn6.txt"
+event_generator,8007,80,0,0,17,0,0,"@080/honey_bee_inn7.txt"
+npc_event,8011,80,8,11,40,1,2,"「おへやをえらんでね▼
+　（へんなおきゃく……
+　ま　いつものこと▼）"
+npc,8012,80,5,6,17,0,0,"「アイの▼すばこ
+
+
+
+『あいているようだな
+
+
+
+#2
+　　このへやにするか
+　　ふみとどまる
+
+
+[[]]
+[[　…………]]"
+npc,8013,80,5,15,17,0,0,"「だんたいサマの▼すばこ
+
+
+
+『あいているようだな
+
+
+
+#2
+　　このへやにするか
+　　ふみとどまる
+
+
+[[]]
+[[　…………]]"
+npc,8014,80,12,6,17,0,0,"「コイビトの▼すばこ
+
+
+
+『しようちゅうのようだな
+
+
+
+#2
+　　ききみみをたてる
+　　のぞきみる
+
+
+[[]]
+[[]]"
+npc,8015,80,12,15,17,0,0,"「じょうおうバチの▼すばこ
+
+
+
+『しようちゅうのようだな
+
+
+
+#2
+　　ききみみをたてる
+　　のぞきみる
+
+
+[[]]
+[[]]"
+npc,8016,80,3,6,17,0,0,"「アイの▼すばこ
+
+
+
+『たのんだら　こっちにかえてくれるかな
+
+
+
+#2
+　　こっちのへやがいい
+　　ふみとどまる
+
+
+[[]]
+[[]]"
+npc,8017,80,3,15,17,0,0,"「だんたいサマの▼すばこ
+
+
+
+『たのんだら　こっちにかえてくれるかな
+
+
+
+#2
+　　こっちのへやがいい
+　　ふみとどまる
+
+
+[[]]
+[[]]"
+map_door,8050,80,8,4,11,0,0,0
+map_door,8051,80,5,6,11,0,0,0
+map_door,8052,80,5,15,11,0,0,0
+map_door,8053,80,12,6,11,0,0,0
+map_door,8054,80,12,15,11,0,0,0
+event_generator,8100,81,11,8,17,0,0,"@081/honey_bee_inn8.txt"
+event_generator,8101,81,0,0,17,0,0,"@081/honey_bee_inn10.txt"
+event_generator,8102,81,0,0,17,0,0,"@081/honey_bee_inn11_1.txt"
+event_generator,8104,81,0,0,17,0,0,"@081/honey_bee_inn12.txt"
+npc3,8130,81,6,6,40,0,0,"「ぬりぬりぬりぬり……
+
+
+
+　（やだ……ときどきいるのよね
+　こういう　デリカシーのないおとこ…
+　むしむし）"
+npc3,8131,81,7,6,40,0,0,"「キャッ▼
+
+
+
+　だめーっ～！"
+npc2,8133,81,9,7,40,0,0,""
+event_generator,8200,82,11,4,17,0,0,"@082/honey_bee_inn13.txt"
+event_generator,8201,82,11,4,17,0,0,"@082/honey_bee_inn14.txt"
+npc2,8211,82,11,4,17,0,0,""
+npc2,8212,82,7,11,17,0,0,""
+npc_event,8213,82,7,11,10,1,3,"none"
+map_door,8250,82,11,4,12,0,0,0
+event_generator,8300,83,11,4,17,0,0,"@083/honey_bee_inn21.txt"
+npc2,8311,83,11,4,17,0,0,""
+map_door,8350,83,11,4,12,0,0,0
+event_generator,8400,84,11,38,17,0,0,"@084/kill_smoke9.txt"
+event_generator,8401,84,12,38,17,0,0,"@084/kill_smoke9.txt"
+event_generator,8402,84,13,38,17,0,0,"@084/kill_smoke9.txt"
+event_generator,8403,84,0,0,17,0,0,"@084/wall_market7.txt"
+event_generator,8404,84,0,0,17,0,0,"@084/wall_market8.txt"
+npc2,8411,84,9,32,68,0,0,""
+npc2,8412,84,9,30,78,1,0,""
+map_door,8450,84,17,29,9,0,0,0
+map_door,8451,84,8,21,9,0,0,0
+map_door,8452,84,17,19,9,0,0,0
+npc,8510,85,10,15,66,1,0,"「いいか　ドンはおとこにはきょうみないんだ
+　さっさとどっかへいってくれ"
+npc2,8511,85,11,14,17,1,0,""
+map_door,8550,85,10,14,4,0,0,0
+map_door,8551,85,11,14,4,0,0,0
+event_generator,8600,86,0,0,17,0,0,"@086/wm_weapon_shop.txt"
+npc_event,8610,86,11,8,66,1,0,"none"
+npc2,8611,86,11,9,17,0,0,""
+npc_event,8612,86,4,14,79,0,0,""
+npc,8613,86,7,13,17,0,0,"「なにか　ようか？
+　しざいおきばの　もんくはきかねえぞ"
+npc,8614,86,7,14,17,0,0,"「なにか　ようか？
+　しざいおきばの　もんくはきかねえぞ"
+event_generator,8700,87,13,12,17,0,0,"@087/wm_gym1.txt"
+npc_event,8710,87,14,12,44,1,0,"none"
+npc_event,8711,87,13,15,110,3,0,"「あにきのアニキは
+　やっぱり　くものうえのマスラオじゃー"
+npc_event,8712,87,15,15,110,2,0,"「あにきー
+　しっかりしてくだせえー"
+npc3,8713,87,11,8,88,0,4,"「やーねぇ
+　またふとっちゃったわ"
+npc,8714,87,5,10,111,0,0,"「あなたも
+
+
+
+　ごいっしょにどうですか"
+npc,8719,87,12,19,111,2,0,"「きにしないでくれ
+　よくあることなんだ"
+event_generator,8730,87,9,19,17,0,0,"@087/wm_gym7_1.txt"
+event_generator,8731,87,10,19,17,0,0,"@087/wm_gym7_2.txt"
+event_generator,8732,87,11,19,17,0,0,"@087/wm_gym7_3.txt"
+event_generator,8733,87,10,23,17,0,0,"@087/wm_squat.txt"
+event_generator,8800,88,0,0,17,0,0,"@088/wm_yoidore1.txt"
+event_generator,8801,88,0,0,17,0,0,"@088/wm_yoidore2.txt"
+event_generator,8803,88,0,0,17,0,0,"@088/wm_yoidore3.txt"
+event_generator,8804,88,4,7,17,0,0,"@088/wm_yoidore4.txt"
+npc3,8810,88,18,10,77,3,4,"「ふ～
+　うまくいかんもんだのう"
+npc2,8811,88,13,10,66,0,0,""
+npc2,8812,88,14,9,88,2,0,""
+npc,8813,88,6,13,90,1,0,"「なんですか　おきゃくさん
+　ちゅうもんならカウンターごしに　おねがいします"
+npc2,8815,88,7,8,79,2,0,""
+npc,8816,88,3,6,66,3,4,"「ねえ　あんた　なんかくすりもってないかい？
+　はしゃぎすぎちゃってさ……う………"
+map_door,8850,88,4,7,4,0,0,0
+npc2,8910,89,12,37,17,0,0,""
+event_generator,9100,91,9,18,17,0,0,"@091/don_corneo_start.txt"
+npc_event,9122,91,4,12,131,3,0,"「ドンがこのへやで
+　おまちかねだよ
+　へへへ……"
+npc2,9123,91,9,18,17,0,0,"none"
+npc2,9124,91,10,18,17,0,0,"none"
+npc,9125,91,17,6,17,0,0,"かたくとざされている……"
+npc,9126,91,17,7,17,0,0,"かたくとざされている……"
+npc,9127,91,9,5,17,0,0,"　ドン　コルネオのオフィス
+　きょかなきものの
+　たちいりをきんず"
+npc,9128,91,10,5,17,0,0,"　ドン　コルネオのオフィス
+　きょかなきものの
+　たちいりをきんず"
+event_generator,9200,92,5,12,17,0,0,"@092/don_corneo_meet_tifa1_1.txt"
+event_generator,9201,92,5,15,17,0,0,"@092/don_corneo_meet_tifa1_2.txt"
+npc_event,9222,92,3,13,130,2,2,"none"
+treasure_item,9230,92,2,12,1,1,0,1003
+event_generator,9300,93,4,7,17,0,0,"@093/don_corneo_pick1_1.txt"
+event_generator,9301,93,5,7,17,0,0,"@093/don_corneo_pick1_2.txt"
+event_generator,9302,93,9,7,17,0,0,"@093/don_corneo_pick1_3.txt"
+event_generator,9303,93,10,7,17,0,0,"@093/don_corneo_pick1_4.txt"
+event_generator,9310,93,7,2,17,0,0,"@093/don_corneo1.txt"
+npc_event,9323,93,7,6,39,1,0,"none"
+npc_event,9324,93,4,6,133,1,0,"none"
+npc_event,9325,93,10,6,132,1,0,"none"
+map_door,9350,93,7,1,13,0,0,0
+event_generator,9400,94,7,9,17,0,0,"@094/don_corneo_scotch1.txt"
+event_generator,9402,94,7,12,17,0,0,"@094/don_corneo_scotch3.txt"
+npc_event,9423,94,4,9,131,1,0,"「おおッと！
+
+
+
+　そういそがないで
+　もっとオイラたちと
+　たのしもうぜ～"
+npc_event,9424,94,6,7,71,3,0,"「あんた　なかなか
+　いいカラダしてるねぇ
+　こう　ムッチリと……
+
+　……っていうより　なんか
+　ガッチリしてんなあ……"
+npc_event,9425,94,7,8,79,0,0,"「おお　キミのそのヒトミ
+　なんてふしぎなかがやき……
+　ぼくはもうキミのトリコさ！"
+npc_event,9426,94,9,9,66,1,0,"「さあ　おどりましょう
+　おじょうさん
+　ふたりでステップをふめば
+　みもこころもひとつに……"
+npc_event,9427,94,10,11,70,3,0,"「カモンベイベー！
+
+
+
+　オマエのハートは
+　キュートでタイト
+　グッドなビートで
+　ヒートアップ！"
+event_generator,9500,95,6,7,17,0,0,"@095/don_corneo2.txt"
+treasure_item,9530,95,5,6,1,1,0,1013
+map_door,9550,95,6,15,13,0,0,0
+event_generator,9600,96,4,16,17,0,0,"@096/sewer1.txt"
+event_generator,9604,96,17,25,17,0,0,"@096/sewer3.txt"
+event_generator,9606,96,17,6,17,0,0,"@096/sewer5_1.txt"
+event_generator,9607,96,18,7,17,0,0,"@096/sewer5_2.txt"
+npc2,9623,96,17,24,17,2,0,""
+event_generator,9660,96,7,21,17,0,0,"@reset_slide_walk.txt"
+event_generator,9661,96,7,22,17,0,0,"@set_slide_walk.txt"
+event_generator,9662,96,7,23,17,0,0,"@set_slide_walk.txt"
+event_generator,9663,96,7,24,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,9664,96,17,22,17,0,0,"@reset_slide_walk.txt"
+event_generator,9665,96,17,23,17,0,0,"@set_slide_walk.txt"
+event_generator,9666,96,17,24,17,0,0,"@set_slide_walk.txt"
+event_generator,9667,96,17,25,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,9672,96,17,17,17,0,0,"@reset_slide_walk.txt"
+event_generator,9673,96,17,18,17,0,0,"@set_slide_walk.txt"
+event_generator,9674,96,17,19,17,0,0,"@set_slide_walk.txt"
+event_generator,9675,96,17,20,17,0,0,"@reset_slide_walk_bottom.txt"
+treasure_item,9630,96,4,26,1,1,0,1000
+treasure_materia,9631,96,18,13,2,0,0,4200
+event_generator,9760,97,5,23,17,0,0,"@reset_slide_walk.txt"
+event_generator,9761,97,5,24,17,0,0,"@set_slide_walk.txt"
+event_generator,9762,97,5,25,17,0,0,"@set_slide_walk.txt"
+event_generator,9763,97,5,26,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,9764,97,4,2,17,0,0,"@set_slide_walk.txt"
+event_generator,9765,97,4,11,17,0,0,"@set_slide_walk.txt"
+event_generator,9766,97,4,12,17,0,0,"@reset_slide_walk_bottom.txt"
+event_generator,9800,98,5,28,17,0,0,"@098/train_graveyard1.txt"
+event_generator,9860,98,5,28,17,0,0,"@reset_slide_walk.txt"
+event_generator,70200,702,11,16,17,0,0,"@702/tifa'smemory1.txt"
+npc_event,70201,702,11,21,17,0,2,"none"
+npc_event,70202,702,11,20,17,1,2,"none"
+npc_event,70500,705,8,14,121,0,3,"none"
+npc_event,70501,705,8,19,0,0,2,"none"
+npc_event,70502,705,8,15,14,3,0,"none"
+npc_event,70503,705,9,15,21,2,0,"none"
 npc,23300,233,7,8,26,1,0,"タークス:ツォン「おまえたちのあいてをしに
 ここにきたんじゃない
 はやく　でていくんだな"
@@ -225,7 +1338,7 @@ npc,23903,239,14,14,17,1,0,"INFO　あに「ふあーあ　ねむねむ
 うーん　ZZZ"
 npc,24000,240,16,20,4,0,0,"レッド13「なぜ　オペラに　チョコボがでているのだ?
 りかいに　くるしむな……"
-npc,24001,240,9,8,60,1,3,"やくしゃチョコボ「クエッ　クエッ"
+npc,24001,240,9,8,60,1,3,やくしゃチョコボ「クエッ　クエッ
 npc,24002,240,11,7,66,1,0,"ラルス「マリアはー
 わたしーのー　きさきにー
 なーるーべーきーひーとーだ"
@@ -301,7 +1414,7 @@ npc,24305,243,9,6,17,0,0,"Gバイクだ!
 
 あかいヒゲオヤジが　なげたコウラが
 みどりのキョウリュウを　ふっとばした!"
-npc,24306,243,11,12,5,2,0,"「くにへ　かえるんだな……"
+npc,24306,243,11,12,5,2,0,「くにへ　かえるんだな……
 npc,24307,243,16,17,68,0,0,"スイーツ「キャー　かわいい!
 
 
@@ -316,7 +1429,7 @@ npc,24308,243,10,17,70,0,0,"チンピラ「いけ!!
 やれ!そこ!そこだ!
 いまだ!ぶっころせ!!
 ヒジつかえ　ヒジ!!"
-npc,24309,243,9,12,17,3,0,"「ザンギュラの　スーパーウリアッうえ"
+npc,24309,243,9,12,17,3,0,「ザンギュラの　スーパーウリアッうえ
 npc,24310,243,5,9,17,0,0,"スノーゲームだ!
 
 
@@ -624,7 +1737,7 @@ npc,48901,489,5,7,77,1,0,"「こだいウエポン？　せかいのしゅうまつ？
 「そもそもしんらやソルジャーぐんは
 　なにをやっちょるのだ？ああ？
 　ぶったるんどるわい！！"
-npc,48902,489,4,7,85,3,0,"「ワン！"
+npc,48902,489,4,7,85,3,0,「ワン！
 acce_shop,48903,489,9,7,68,3,0,5005/5019/5020/5021/5013/5014/5015
 npc,49000,490,8,8,77,0,0,"「なにやらよくないことが
 　おこっとるというじゃないか？
@@ -948,38 +2061,8 @@ npc,49402,494,9,7,17,0,0,"シド
 「ダメだな……。
 　カギが　かかってやがるのか？"
 weapon_shop,49403,494,9,9,66,1,0,2006/2207/2107/2405/2605/2504/2704/2804
-npc,95000,950,23,23,66,1,2,"デバッグエリアへようこそ
-
-
-
-ここに　いちどはいると　にどと
-でられないんだ"
-treasure_box,95010,950,10,19,0,1,0,1000
-treasure_box,95011,950,11,19,1,1,0,1001
-treasure_item,95012,950,10,20,1,1,0,4000
-treasure_item,95013,950,11,20,5,1,0,1005
-weapon_shop,95020,950,34,21,67,1,0,2000/2001/2002/2003/2004/2005/2100/2101/2102/2103/2104/2105/2200/2201/2202/2203/2204/2205/2300/2301/2302/2303/2304/2305/2400/2401/2402/2403/2404/2405/2500/2501/2502/2503/2504/2505/2600/2601/2602/2603/2604/2605/2700/2701/2702/2703/2704/2705/2800/2801/2802/2803/2804/2805
-armor_shop,95021,950,36,21,68,1,0,3000/3001/3002/3003/3004/3005/3006/3007/3008/3009
-acce_shop,95022,950,35,24,69,1,0,5000/5001/5002
-materia_shop,95023,950,37,24,70,1,0,4000/4003/4004/4005
-npc,95024,950,31,22,71,1,0,"いいものが　たんさん　そろっているよ"
-event_generator,95030,950,16,22,17,1,0,"@950_dbg1.txt"
-event_generator,95031,950,16,23,17,1,0,"@950_dbg2.txt"
-npc,95014,950,12,20,72,1,2,"アイテムを　かってに　とるのは　やめなよ
-ぜったいに　やめなよ！"
-event_generator,95060,950,0,0,17,1,0,"@950_dbg3.txt"
-event_generator,95061,950,0,0,17,1,0,"@950_dbg4.txt"
-event_generator,95062,950,0,0,17,1,0,"@950_dbg5.txt"
-event_generator,95063,950,0,0,17,1,0,"@950_dbg6.txt"
-event_generator,95064,950,0,0,17,1,0,"@950_dbg7.txt"
-npc_shop,95070,950,21,10,1,1,0,"アイテムを　かってください"
-npc_shop,95071,950,22,10,1,1,0,"ぶきを　かってください"
-npc_shop,95072,950,23,10,1,1,0,"ぼうぐを　かってください"
-npc_shop,95073,950,24,10,1,1,0,"マテリアを　かってください"
-npc_shop,95074,950,25,10,1,1,0,"アクセサリーを　かってください"
-event_generator,95080,950,23,30,17,1,0,"@950_dbg8.txt"
-npc_event,95081,950,23,30,2,0,0,""
-npc2,95082,950,27,18,79,1,2,""
-event_generator,95083,950,0,0,17,0,0,"@950_dbg9.txt"
-npc2,95090,950,26,18,75,1,2,""
-event_generator,95091,950,0,0,17,0,0,"@950_dbg10.txt"
+npc,60001,600,11,15,6,1,0,"「チクショ～……
+　このアタシがまけるなんて……"
+event_generator,60002,600,0,0,17,0,0,@600/yufi.txt
+save_point,60010,600,7,13,0,0,0,
+event_generator,60011,600,7,13,17,0,0,@600/fake_save.txt

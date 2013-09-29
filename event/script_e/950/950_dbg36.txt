@@ -1,0 +1,10 @@
+set_eternal_event
+wait_target_talk 950013
+reset_talk_flag 950013
+chg_char_img_tmp 103
+chg_char_dir down
+sleep 20
+chg_char_dir left
+msg w‚«‚å‚¤‚İ‚È‚¢‚Ë
+chg_char_dir down
+

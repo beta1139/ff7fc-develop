@@ -1,0 +1,410 @@
+wait_same_pos
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+erase_msg3
+kill 542
+kill 580
+chg_speed 570 normal
+chg_speed 571 normal
+chg_npc_dir 570 up
+chg_npc_dir 571 up
+sleep 8
+jump_npc 570 same 2
+sleep 32
+msg ジェシー\n「クラウド！\n\n\n　ロックのかいじょは\n　さんにんどうじに　ボタンをおせばいいわ！\n　こっちへきて！
+create npc_event 573 5 15 14 0 1 2 none
+draw_char off
+move_char down 2
+move_npc 573 down 2
+sleep 16
+chg_npc_dir 571 left
+sleep 16
+msg3 112 バレット\n「くそっ！\n　また　こざかしい　トラップを！
+create npc_event 572 5 15 16 95 1 2 none
+move_npc 572 down 1
+move_npc 573 left 2
+move_char left 2
+sleep 16
+chg_npc_dir 572 up
+jump_npc 572 same 2
+chg_npc_dir 570 left
+sleep 16
+move_npc 573 down 3
+move_char down 2
+sleep 16
+jump_npc 572 same 1
+move_npc 570 left 1
+sleep 5
+chg_speed 570 not_step
+sleep 11
+chg_npc_dir 570 down
+chg_npc_img 572 1
+jump_npc 572 left 2
+sleep 16
+move_npc 571 left 2
+move_npc 573 right 1
+sleep 5
+chg_speed 573 not_step
+sleep 11
+move_npc 572 down 1
+sleep 5
+chg_speed 571 not_step
+sleep 11
+chg_npc_dir 572 right
+chg_npc_dir 570 left
+sleep 16
+chg_char_dir left
+step_npc 570 2
+msg ジェシー\n「みんなでどうじに　ボタンをおせば\n　とびらのロックを　かいじょできるわ
+chg_npc_dir 570 down
+step_npc 570 2
+sleep 16
+chg_npc_dir 571 down
+chg_npc_dir 572 down
+sleep 16
+msg ジェシー\n「じゅんびは　いい？\n\n\n#2\n　　まかせろ\n　　もういちど　たのむ\n\n\n[[]][[]]
+set_key_unvalid up
+set_key_unvalid down
+chg_npc_dir 571 left
+if_flag 3 0
+chg_npc_dir 570 left
+loop_inf
+chg_char_state_move
+sleep 32
+set_npc_pos 563 5 12 30
+set_npc_pos 564 5 12 18
+sleep 14
+set_npc_pos 564 5 12 30
+set_npc_pos 565 5 12 18
+sleep 16
+chg_npc_img 570 114
+chg_npc_dir 571 down
+chg_npc_img 571 114
+sleep 32
+set_npc_pos 565 5 12 30
+set_npc_pos 566 5 12 18
+sleep 32
+chg_npc_dir 570 right
+chg_npc_dir 571 up
+set_npc_pos 566 5 12 30
+chg_npc_dir 561 down
+chg_npc_dir 562 down
+chg_speed 561 not_step
+chg_speed 562 not_step
+play_se switch.ogg
+sleep 4
+play_se_loop alarm.ogg
+sleep 52
+chg_npc_img 570 34
+chg_npc_dir 570 left
+chg_npc_img 571 35
+chg_npc_dir 571 left
+chg_npc_dir 561 up
+chg_npc_dir 562 up
+chg_speed 561 not_move
+chg_speed 562 not_move
+msg3 -1 ジェシー\n「しっぱいね　もういちど
+if_flag 10 0
+sleep 96
+erase_msg3
+set_npc_pos 563 5 12 18
+set_flag 10 1
+pool
+fi
+if_flag 10 1
+sleep 32
+chg_npc_dir 572 left
+chg_npc_img 572 98
+sleep 64
+erase_msg3
+set_npc_pos 563 5 12 18
+set_flag 10 2
+pool
+fi
+if_flag 10 2
+sleep 16
+chg_npc_dir 571 down
+chg_speed 572 normal
+step_npc 572 5
+sleep 80
+erase_msg3
+chg_npc_dir 571 left
+set_npc_pos 563 5 12 18
+set_flag 10 3
+pool
+fi
+if_flag 10 3
+chg_npc_dir 571 down
+set_key_unvalid a
+sleep 64
+erase_msg3
+sleep 8
+msg3 -1 バレット\n「なにやってんだっ！　ナスボケッ！\n　オレに　かわれ！！
+chg_speed 572 fast
+chg_npc_img 572 95
+chg_npc_dir 572 up
+jump_npc 572 same 1
+sleep 16
+jump_npc 572 same 1
+sleep 16
+chg_npc_dir 572 down
+step_npc 572 6
+chg_char_state_event
+chg_npc_dir 573 up
+sleep 48
+chg_npc_img 572 1
+move_npc 572 down 1
+chg_speed 573 fast
+slide_walk_npc 573 down 1
+chg_npc_dir 571 left
+sleep 8
+chg_speed 573 normal
+move_npc 573 left 1
+chg_speed 572 normal
+move_npc 572 right 1
+chg_char_img 1
+sleep 5
+chg_speed 572 not_step
+chg_speed 573 not_step
+chg_npc_dir 573 up
+sleep 19
+erase_msg3
+set_npc_pos 563 5 12 18
+set_key_valid a
+set_flag 10 4
+pool
+fi
+if_flag 10 4
+sleep 96
+erase_msg3
+set_npc_pos 563 5 12 18
+chg_npc_dir 573 up
+set_flag 10 5
+pool
+fi
+if_flag 10 5
+sleep 32
+chg_npc_dir 571 down
+sleep 16
+chg_npc_dir 573 left
+sleep 48
+erase_msg3
+chg_npc_dir 571 left
+set_npc_pos 563 5 12 18
+set_flag 10 6
+pool
+fi
+if_flag 10 6
+set_key_unvalid a
+chg_npc_dir 571 down
+sleep 16
+chg_npc_dir 573 down
+chg_npc_img 573 103
+sleep 16
+chg_npc_dir 573 left
+sleep 32
+erase_msg3
+sleep 32
+chg_npc_img 573 0
+chg_npc_dir 573 up
+chg_char_state_event
+msg3 -1 『おまえと　しんじゅうする　つもりはない
+sleep 16
+chg_npc_dir 572 down
+chg_char_img 0
+sleep 48
+erase_msg3
+chg_speed 572 fast
+slide_walk_npc 572 up 1
+chg_speed 573 fast
+move_npc 573 up 1
+chg_npc_dir 571 left
+sleep 8
+chg_speed 573 normal
+move_npc 573 right 1
+chg_speed 572 normal
+move_npc 572 left 1
+sleep 5
+chg_speed 572 not_step
+chg_speed 573 not_step
+chg_npc_dir 572 down
+sleep 19
+set_npc_pos 563 5 12 18
+set_key_valid a
+set_flag 10 1
+pool
+fi
+fi
+if_flag 3 1
+step_npc 570 2
+msg ジェシー\n「みんな　おなじタイミングで\n　めのまえのボタンをおせば\n　とびらのロックを　かいじょできるわ\n　じかんがないから　はじめるわよ
+chg_npc_dir 570 left
+loop_inf
+chg_char_state_move
+sleep 32
+set_npc_pos 563 5 12 30
+set_npc_pos 564 5 12 18
+sleep 14
+set_npc_pos 564 5 12 30
+set_npc_pos 565 5 12 18
+sleep 16
+chg_npc_img 570 114
+chg_npc_dir 571 down
+chg_npc_img 571 114
+sleep 32
+set_npc_pos 565 5 12 30
+set_npc_pos 566 5 12 18
+sleep 32
+chg_npc_dir 570 right
+chg_npc_dir 571 up
+set_npc_pos 566 5 12 30
+chg_npc_dir 561 down
+chg_npc_dir 562 down
+chg_speed 561 not_step
+chg_speed 562 not_step
+play_se switch.ogg
+sleep 4
+play_se_loop alarm.ogg
+sleep 52
+chg_npc_img 570 34
+chg_npc_dir 570 left
+chg_npc_img 571 35
+chg_npc_dir 571 left
+chg_npc_dir 561 up
+chg_npc_dir 562 up
+chg_speed 561 not_move
+chg_speed 562 not_move
+msg3 -1 ジェシー\n「しっぱいね　もういちど
+if_flag 10 0
+sleep 96
+erase_msg3
+set_npc_pos 563 5 12 18
+set_flag 10 1
+pool
+fi
+if_flag 10 1
+sleep 32
+chg_npc_dir 572 left
+chg_npc_img 572 98
+sleep 64
+erase_msg3
+set_npc_pos 563 5 12 18
+set_flag 10 2
+pool
+fi
+if_flag 10 2
+sleep 16
+chg_npc_dir 571 down
+chg_speed 572 normal
+step_npc 572 5
+sleep 80
+erase_msg3
+chg_npc_dir 571 left
+set_npc_pos 563 5 12 18
+set_flag 10 3
+pool
+fi
+if_flag 10 3
+set_key_unvalid a
+chg_npc_dir 571 down
+sleep 64
+erase_msg3
+sleep 8
+msg3 -1 バレット\n「なにやってんだっ！　ナスボケッ！\n　オレに　かわれ！！
+chg_speed 572 fast
+chg_npc_img 572 95
+chg_npc_dir 572 up
+jump_npc 572 same 1
+sleep 16
+jump_npc 572 same 1
+sleep 16
+chg_npc_dir 572 down
+step_npc 572 6
+chg_char_state_event
+chg_npc_dir 573 up
+sleep 48
+chg_npc_img 572 1
+move_npc 572 down 1
+chg_speed 573 fast
+slide_walk_npc 573 down 1
+chg_npc_dir 571 left
+sleep 8
+chg_speed 573 normal
+move_npc 573 left 1
+chg_speed 572 normal
+move_npc 572 right 1
+chg_char_img 1
+sleep 5
+chg_speed 572 not_step
+chg_speed 573 not_step
+chg_npc_dir 573 up
+sleep 19
+erase_msg3
+set_npc_pos 563 5 12 18
+set_key_valid a
+set_flag 10 4
+pool
+fi
+if_flag 10 4
+sleep 96
+erase_msg3
+set_npc_pos 563 5 12 18
+chg_npc_dir 573 up
+set_flag 10 5
+pool
+fi
+if_flag 10 5
+sleep 32
+chg_npc_dir 571 down
+sleep 16
+chg_npc_dir 573 left
+sleep 48
+erase_msg3
+chg_npc_dir 571 left
+set_npc_pos 563 5 12 18
+set_flag 10 6
+pool
+fi
+if_flag 10 6
+set_key_unvalid a
+chg_npc_dir 571 down
+sleep 16
+chg_npc_dir 573 down
+chg_npc_img 573 103
+sleep 16
+chg_npc_dir 573 left
+sleep 32
+erase_msg3
+sleep 32
+chg_npc_img 573 0
+chg_npc_dir 573 up
+chg_char_state_event
+msg3 -1 『おまえと　しんじゅうする　つもりはない
+sleep 16
+chg_npc_dir 572 down
+chg_char_img 0
+sleep 48
+erase_msg3
+chg_speed 572 fast
+slide_walk_npc 572 up 1
+chg_speed 573 fast
+move_npc 573 up 1
+chg_npc_dir 571 left
+sleep 8
+chg_speed 573 normal
+move_npc 573 right 1
+chg_speed 572 normal
+move_npc 572 left 1
+sleep 5
+chg_speed 572 not_step
+chg_speed 573 not_step
+chg_npc_dir 572 down
+sleep 19
+chg_npc_dir 571 left
+set_npc_pos 563 5 12 18
+set_key_valid a
+set_flag 10 1
+pool
+fi
+fi

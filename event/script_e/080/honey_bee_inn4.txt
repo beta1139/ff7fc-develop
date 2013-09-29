@@ -1,0 +1,169 @@
+set_eternal_event
+wait_target_talked 8014
+reset_talked_flag 8014
+if_flag 3 0
+play_se_loop barrel_falling.ogg
+msg 『…………
+stop_se
+end
+fi
+if_flag 3 1
+sleep 16
+msg 『……すごい！！
+fadeout
+sleep 8
+draw_char off
+warp 706 7 6 up
+create npc_event 70610 706 6 6 77 0 2 none
+create npc_event 70611 706 8 6 78 0 2 none
+create npc_event 70612 706 7 5 7 2 2 none
+sleep 8
+if_flag 16 3
+warp 706 7 20 up
+fi
+sleep 16
+play_event_bgm 2-20-Cait_Sith's_Theme.ogg
+fadein
+if_flag 16 0
+sleep 80
+step_npc 70610 1
+msg 「ハァ……
+sleep 80
+step_npc 70610 1
+msg 「フゥ……
+sleep 80
+step_npc 70611 2
+msg 「じいさん　なんです？\n　ためいきばっかりついて……
+sleep 80
+step_npc 70610 2
+msg 「ハァ……\n　そやかてなぁ　ばあさん…
+sleep 80
+step_npc 70611 2
+msg 「また　このへやのことですか
+sleep 80
+step_npc 70610 2
+msg 「ハァ……\n　なんぼ　むすこがかりてくれた\n　ゆうてもなぁ…\n\n　わしらに　こんなりっぱなへやはなぁ\n　まるいふとんに　カクカクふろ\n　わし　どうもおちつかんのやわ
+sleep 80
+step_npc 70611 3
+msg 「ええんとちゃいますか\n　ここらは　だいとかいのした　こうきゅうちなんですよ\n　ばちがあたるちゅうもんですよ
+sleep 80
+msg 「ハァ……
+sleep 64
+fi
+if_flag 16 1
+sleep 80
+step_npc 70610 1
+msg 「ハァ……
+sleep 80
+step_npc 70610 1
+msg 「フゥ……
+sleep 80
+step_npc 70610 2
+msg 「なぁ　ばあさん\n　むすこのつとめとる　かいしゃ\n　なんつうたかいのう……
+sleep 32
+step_npc 70611 2
+msg 「まぁ　じいさん\n　またわすれてしもて……
+sleep 80
+step_npc 70610 1
+msg 「はあ……\n　さいきん　どうもなぁ…
+sleep 64
+step_npc 70611 3
+msg 「しんらがいしゃですよ　しんらがいしゃ\n　だいとかいで　いちばんおおきなかいしゃですわ
+sleep 80
+step_npc 70610 1
+msg 「はあ　いちばんおおきいつうたら\n　りっぱなもんやな
+sleep 80
+step_npc 70611 3
+msg 「ほんまに\n　りっぱなもんですわ\n\n\n　なんや　ようさんしゅっせして\n　いまじゃ　ぶちょうさんや　ゆうてましたわ
+sleep 80
+step_npc 70610 2
+msg 「ほう……\n　わしらが　こんなへや　すめんのも\n　むすこが　えろうなったからやのう\n\n　ありがたいこっちゃで
+sleep 32
+step_npc 70611 2
+msg 「ほんま　ありがたいですなあ
+sleep 64
+fi
+if_flag 16 2
+sleep 80
+step_npc 70610 1
+msg 「ほんな　もうねよか…
+sleep 80
+step_npc 70611 1
+msg 「そうしますか
+sleep 80
+step_npc 70610 1
+msg 「おやすみなさい
+sleep 80
+step_npc 70611 1
+msg 「はい　おやすみなさい
+sleep 24
+play_se door_open2.ogg
+set_screen_effect sub 255 255 0 0
+loop 30
+inc_screen_effect_val 1
+sleep 1
+pool
+fi
+if_flag 16 3
+sleep 40
+play_se_loop barrel_hitting.ogg
+msg 「グーグー……
+sleep 80
+msg 「スヤスヤ……
+play_se barrel_falling.ogg
+sleep 48
+play_se_loop barrel_hitting.ogg
+sleep 64
+stop_se
+fi
+fadeout
+kill 70610
+kill 70611
+kill 70612
+sleep 16
+reset_screen_effect
+add_flag 16 1
+warp 80 12 7 up
+play_bgm
+if_flag 17 3
+draw_char on
+fi
+sleep 16
+if_flag 17 0
+create npc_event 8010 80 12 7 0 0 2 none
+chg_type 8011 npc_event
+chg_speed 8011 normal
+fi
+fadein
+if_flag 17 0
+jump_npc 8011 up 1
+sleep 16
+loop 4
+jump_npc 8011 right 1
+sleep 16
+pool
+chg_npc_dir 8011 up
+msg 「ポ……▼\n　おきゃくさん▼
+chg_npc_dir 8010 down
+chg_char_dir down
+set_active_msg 8011
+jump_npc 8011 same 1
+sleep 16
+jump_npc 8011 same 1
+msg 「はやくっはやくっ▼
+jump_npc 8011 down 1
+sleep 16
+draw_char on
+kill 8010
+loop 4
+jump_npc 8011 left 1
+sleep 16
+pool
+chg_npc_dir 8011 down
+set_inactive_msg 8011
+chg_speed 8011 not_move
+chg_type 8011 npc
+fi
+if_flag 16 4
+sub_flag 16 1
+fi

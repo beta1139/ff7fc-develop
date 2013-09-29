@@ -1,0 +1,198 @@
+wait_same_pos
+create npc_event 8721 87 9 14 3 0 2 none
+move_npc 8721 up 1
+sleep 16
+kill 8701
+create npc_event 8720 87 9 14 0 3 2 none
+draw_char off
+chg_npc_dir 8721 right
+step_npc 8715 2
+msg 「あなたね？\n　かわいくなりたいのは
+sleep 16
+step_npc 8720 1
+msg 『かわいく？
+jump_npc 8721 same 1
+sleep 16
+step_npc 8721 3
+set_talk_npc 8721
+msg エアリス\n「そうなの\n\n\n　それで　かつらなんだけど……
+reset_talk_npc
+chg_speed 8715 normal
+jump_npc 8715 same 3
+play_se cloud_makeup.ogg
+loop 2
+chg_npc_dir 8715 up
+sleep 4
+chg_npc_dir 8715 right
+sleep 4
+chg_npc_dir 8715 down
+sleep 4
+chg_npc_dir 8715 left
+sleep 4
+pool
+loop 2
+chg_npc_dir 8715 up
+sleep 2
+chg_npc_dir 8715 right
+sleep 2
+chg_npc_dir 8715 down
+sleep 2
+chg_npc_dir 8715 left
+sleep 2
+pool
+play_se landing.wav
+step_npc 8715 2
+msg 「ええ　きいてるわよ\n　でも　タダってわけにはねぇ
+chg_npc_dir 8715 up
+move_char up 1
+chg_npc_dir 8710 left
+sleep 16
+chg_speed 8710 fast
+move_npc 8710 left 4
+sleep 32
+chg_npc_dir 8721 up
+chg_speed 8710 normal
+chg_npc_img 8710 125
+loop 3
+chg_npc_dir 8710 down
+sleep 8
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 2
+chg_npc_dir 8710 left
+sleep 8
+chg_npc_dir 8710 up
+sleep 2
+pool
+chg_npc_dir 8710 down
+set_talk_npc 8710
+msg 「うぉー！！！
+reset_talk_npc
+chg_npc_img 8710 44
+jump_npc 8710 same 1
+sleep 16
+chg_speed 8710 fast
+step_npc 8710 4
+set_talk_npc 8710
+msg 「アニキ！\n　かわいいかっこうは\n　アニキをきわめたモノのみが\n　できるんですぜ！！
+reset_talk_npc
+chg_npc_dir 8711 left
+chg_npc_dir 8712 left
+sleep 16
+jump_npc 8711 same 1
+jump_npc 8712 same 1
+sleep 16
+jump_npc 8711 same 1
+jump_npc 8712 same 1
+chg_npc_dir 8721 right
+sleep 16
+msg 「そういうことじゃー！
+chg_npc_dir 8711 up
+jump_npc_target_pos 8711 11 12
+jump_npc_target_pos 8712 10 15
+play_se jump.wav
+sleep 16
+chg_npc_dir 8711 left
+sleep 64
+play_se landing.wav
+chg_npc_dir 8712 up
+chg_speed 8711 fast
+chg_speed 8712 fast
+step_npc 8711 3
+step_npc 8712 3
+set_talk_npc 8711
+msg 「ということで\n　わしらとしょうぶじゃー！
+reset_talk_npc
+chg_npc_dir 8715 down
+step_npc 8715 2
+msg 「そうね\n　こいつらとスクワットで\n　しょうぶしましょう
+chg_npc_dir 8721 down
+jump_npc 8711 same 1
+jump_npc 8712 same 1
+sleep 16
+step_npc 8711 2
+set_talk_npc 8711
+msg 「ようがす！\n　わしらが\n　コテンパンにして\n　さしあげますぜ！
+reset_talk_npc
+sleep 32
+step_npc 8720 1
+msg 『もしかして　あんたは
+sleep 16
+chg_npc_dir 8715 up
+chg_npc_dir 8721 down
+sleep 16
+step_npc 8721 2
+msg エアリス\n「きれいな おにいさん？
+sleep 16
+set_active_msg 8710
+jump_npc 8710 same 1
+set_talk_npc 8710
+msg 「いまごろ\n　なにいっとるんじゃい\n　アニキは　アニキは\n　それはもう…
+reset_talk_npc
+chg_npc_dir 8721 up
+chg_speed 8710 normal
+step_npc 8710 4
+jump_npc 8715 same 1
+chg_npc_img 8710 125
+chg_npc_dir 8710 down
+sleep 8
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 2
+chg_npc_dir 8710 left
+sleep 6
+chg_speed 8711 normal
+chg_speed 8712 normal
+step_npc 8715 2
+sleep 2
+chg_npc_dir 8710 up
+sleep 2
+chg_npc_dir 8710 down
+sleep 8
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 2
+chg_npc_dir 8710 left
+sleep 2
+msg3 -1 「あんた　いいから\n　こっちへきなさいよ
+sleep 6
+chg_npc_dir 8710 up
+sleep 2
+chg_npc_dir 8710 down
+sleep 8
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 2
+chg_npc_dir 8710 left
+sleep 8
+chg_npc_dir 8710 up
+sleep 2
+chg_npc_dir 8710 down
+sleep 8
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 2
+chg_npc_dir 8710 left
+sleep 8
+chg_npc_dir 8710 up
+sleep 2
+chg_npc_dir 8710 down
+wait_key_push_edge a
+erase_msg3
+chg_npc_dir 8721 down
+chg_npc_img 8710 44
+move_npc 8710 down 2
+move_npc 8715 down 2
+chg_npc_dir 8711 down
+move_npc 8712 down 2
+move_char down 1
+sleep 16
+chg_npc_dir 8720 down
+create event_generator 8703 87 9 14 17 0 0 @087/wm_gym4.txt
+sleep 16
+chg_npc_dir 8712 up
+chg_npc_dir 8715 up
+draw_char on
+kill 8720
+step_npc 8715 2
+msg 「じゃあ　ルールをせつめいするわね\n\n\n\n　かまえから（セレクトボタン）でしゃがむ\n　しゃがみから（Bボタン）でたつ\n　たちから（Aボタン）でかまえへ\n\n　セレクトボタン　Bボタン　Aボタン\n　と　じゅんばんにおすのよ\n\n\n　わかった？\n\n\n\n#2\n　　わからない\n　　わかった\n\n\n[[]][[]]

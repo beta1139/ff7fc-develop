@@ -1,0 +1,62 @@
+wait_same_pos
+kill_through_range 7200 7203
+kill_through_range 7292 7296
+if_flag 9 2
+chg_char_img_tmp 13
+kill_through 7500
+kill_through 7229
+kill_through 7504
+sleep 8
+fi
+create event_generator 7229 72 18 26 17 0 0 @072/kill_smoke1_2.txt
+create event_generator 7500 75 4 17 17 0 0 @075/kill_smoke4.txt
+sleep 8
+chg_char_state_move
+loop_inf
+create npc_event 7296 72 11 27 124 1 1 none
+set_layer 7296 front
+slide_npc 7296 up 2
+sleep 8
+create npc_event 7295 72 12 19 124 1 1 none
+set_layer 7295 front
+slide_npc 7295 up 2
+sleep 8
+chg_npc_dir 7296 left
+create npc_event 7293 72 12 28 124 1 1 none
+set_layer 7293 front
+slide_npc 7293 up 2
+sleep 8
+chg_npc_dir 7295 left
+sleep 8
+chg_npc_dir 7296 up
+chg_npc_dir 7293 left
+create npc_event 7292 72 13 29 124 1 1 none
+create npc_event 7294 72 18 17 124 1 1 none
+set_layer 7292 front
+set_layer 7294 front
+slide_npc 7292 up 2
+slide_npc 7294 up 2
+sleep 8
+chg_npc_dir 7295 up
+sleep 8
+chg_npc_dir 7296 right
+chg_npc_dir 7293 up
+chg_npc_dir 7292 left
+chg_npc_dir 7294 left
+sleep 8
+chg_npc_dir 7295 right
+sleep 8
+chg_npc_dir 7292 up
+chg_npc_dir 7294 up
+kill 7296
+chg_npc_dir 7293 right
+sleep 8
+kill 7295
+sleep 8
+kill 7293
+chg_npc_dir 7292 right
+chg_npc_dir 7294 right
+sleep 16
+kill 7292
+kill 7294
+pool

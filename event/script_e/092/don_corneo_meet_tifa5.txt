@@ -1,0 +1,105 @@
+wait_target_talk 9222
+chg_char_img_tmp 13
+kill_through_range 9202 9206
+chg_type 9221 npc_event
+chg_type 9222 npc_event
+chg_npc_dir 9221 left
+if_char_dir left
+move_char down 1
+sleep 16
+move_char left 1
+chg_npc_dir 9222 down
+sleep 16
+chg_char_dir up
+fi
+if_char_dir right
+move_char down 1
+sleep 16
+move_char right 1
+chg_npc_dir 9222 down
+sleep 16
+chg_char_dir up
+fi
+chg_npc_dir 9222 down
+set_talk_npc 9222
+msg ティファ\n「？？？？
+reset_talk_npc
+sleep 48
+chg_speed 9222 fast
+jump_npc 9222 same 2
+play_se puy.ogg
+sleep 32
+step_npc 9222 2
+set_talk_npc 9222
+msg ティファ\n「クラウド！？
+reset_talk_npc
+step_npc 9222 4
+set_talk_npc 9222
+msg ティファ\n「そのかっこうはどうしたの！？\n　ここでなにをしてるの！？
+reset_talk_npc
+sleep 16
+step_npc 9222 4
+set_talk_npc 9222
+msg ティファ\n「あ　それより\n　あれからどうしたの！？\n　からだはだいじょうぶ！？
+reset_talk_npc
+sleep 32
+chg_char_dir right
+sleep 8
+chg_char_dir left
+sleep 8
+chg_char_dir right
+sleep 8
+chg_char_dir left
+sleep 8
+step_char 1
+sleep 16
+msg 『そんなにいっぺんに　しつもんするな
+sleep 16
+chg_char_dir down
+step_char 1
+sleep 16
+msg 『このカッコウは……\n　ここにはいるためには　しかたなかった
+step_char 1
+sleep 16
+msg 『からだはだいじょうぶだ\n　エアリスにたすけてもらった
+chg_npc_dir 9222 right
+sleep 16
+chg_speed 9222 normal
+step_npc 9222 2
+set_talk_npc 9222
+msg ティファ\n「そうなの　エアリスさんが……
+reset_talk_npc
+chg_char_dir up
+step_char 1
+sleep 16
+msg 『ティファ　せつめいしてくれ\n　こんなとこで　なにをしているんだ
+sleep 32
+chg_npc_dir 9222 down
+sleep 16
+step_npc 9222 1
+set_talk_npc 9222
+msg ティファ\n「え　ええ……
+reset_talk_npc
+chg_speed 9221 normal
+sleep 40
+chg_npc_dir 9221 up
+sleep 16
+chg_speed 9221 normal
+set_active_msg 9221
+jump_npc 9221 same 1
+set_talk_npc 9221
+msg エアリス\n「オホン！\n　わたし　みみ　ふさいでるね
+reset_talk_npc
+move_npc 9221 right 3
+sleep 48
+create npc2 9223 92 4 12 130 1 4 ティファ\n「フフフ……そのかっこう\n　よくみるとナカナカじゃない\n\n　バレットがみたら\n　なんていうかな……
+kill 9222
+create event_generator 9208 92 10 5 17 0 0 @092/don_corneo_meet_tifa6_1.txt
+create event_generator 9210 92 0 0 17 0 0 @092/don_corneo_meet_tifa7.txt
+chg_speed 9221 not_move
+chg_type 9221 npc
+set_inactive_msg 9221
+chg_char_state_move
+loop_inf
+sleep 400
+pool

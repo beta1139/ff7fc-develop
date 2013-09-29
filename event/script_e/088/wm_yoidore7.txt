@@ -1,0 +1,22 @@
+set_eternal_event
+wait_same_pos
+if_flag 9 2
+chg_char_img_tmp 13
+kill_through 8830
+kill_through 8809
+fi
+chg_speed 8815 fast
+set_active_msg 8815
+jump_npc 8815 same 1
+set_talk_npc 8815
+msg ÅuÇ§ÇÌÅIÅ@Ç∆Ç∆Ç∆
+reset_talk_npc
+step_npc 8815 2
+move_char down 1
+close_door 8850
+sleep 16
+chg_speed 8815 not_step
+set_inactive_msg 8815
+if_flag 9 2
+create event_generator 8830 88 4 8 17 0 0 @drag_cloud.txt
+fi

@@ -1,0 +1,20 @@
+wait_target_talked 2510
+chg_speed 2511 not_step
+if_flag 3 0
+step_char 1
+sleep 16
+msg 『それがどうした\n　だれだって　さいしょは　しろうとだ
+jump_npc 2511 same 1
+sleep 16
+step_npc 2511 2
+msg 「しろうとのくせに　いばるんじゃねぇ\n　しんせつな　おれさまが\n　こんせつていねいに　おしえてやるぜ！\n\n　あすのあさに　かおあらって　でなおしてきな\n　おれさまだって　じゅんびが　ひつようだからな
+fi
+if_flag 3 1
+step_char 1
+sleep 16
+msg 『おれは　もとソルジャーの　クラウドだ\n　おまえに　ようなどない
+step_npc 2511 2
+msg 「フン！\n　おまえのなまえなんて　きいてねぇよ
+fi
+chg_param 2510 「あすのあさに　かおあらって　でなおしてきな\n　おれさまだって　じゅんびが　ひつようだからな
+chg_speed 2511 not_move

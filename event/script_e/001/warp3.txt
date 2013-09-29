@@ -1,0 +1,171 @@
+set_eternal_event
+wait_target_talked 162
+reset_talked_flag 162
+if_flag 3 0
+fadeout
+stop_bgm
+warp 17 30 4 down
+draw_char off
+set_flag 0 0
+set_flag 7 1
+play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+fadein
+fi
+if_flag 3 1
+fadeout
+stop_bgm
+draw_char off
+chg_npc_img 2251 2
+sleep 48
+play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
+kill 1700
+kill 1710
+kill 1706
+kill 1900
+kill 1901
+kill 1903
+kill 1904
+kill 1905
+kill 1906
+kill 1907
+kill 1902
+kill 1908
+kill 1910
+kill 1911
+kill 1912
+kill 2200
+kill 2202
+kill 2203
+kill 2204
+kill 2205
+kill 2206
+kill 2304
+kill 2306
+kill 2307
+kill 2308
+kill 2309
+kill_through 2530
+kill_through 2531
+create npc_event 2020 20 36 19 34 0 0 none
+create npc_event 2021 20 37 18 35 2 0 none
+create npc_event 2022 20 36 18 36 1 0 none
+create npc_event 2010 20 26 22 78 1 0 none
+set_flag_wall 2020
+set_flag_wall 2021
+set_flag_wall 2022
+create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
+create npc 2007 20 32 20 88 3 0 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
+create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
+create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
+chg_param 2510 「てへへ…ひとばんじゃ　おぼえきれんぜ\n　おう！しろうと！！\n　わるいが　にかいのあいぼうから　おそわってくれ
+kill_through 2015
+kill_through 2016
+kill_through 2017
+kill 2018
+kill 2019
+kill 2600
+kill_through 2609
+set_npc_pos 2602 26 6 8
+sleep 16
+chg_type 2601 npc2
+chg_param 2601 
+create npc 1706 17 10 4 94 1 0 「おはようございます\n　いちや　あけても　あいかわらず　ですね\n\n\n　けが　しないよう　おきをつけて\n　いってらっしゃい
+create npc3 1707 17 3 6 71 3 0 「ぼく　もう　たえられない
+create npc2 1708 17 4 6 72 2 0 
+create npc 1906 19 8 26 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
+create npc2 1907 19 7 26 32 0 0 
+sleep 32
+create event_generator 1718 17 1 1 17 0 0 @017/nanabangai_station7.txt
+create event_generator 1719 17 1 2 17 0 0 @017/nanabangai_station8.txt
+create event_generator 1720 17 2 1 17 0 0 @017/nanabangai_station9.txt
+create event_generator 1721 17 7 4 17 0 0 @017/nanabangai_station10.txt
+create event_generator 1913 19 1 1 17 0 0 @019/nanabangai5.txt
+create event_generator 1916 19 1 19 17 0 0 @019/nanabangai7_1.txt
+create event_generator 1917 19 1 20 17 0 0 @019/nanabangai7_2.txt
+create event_generator 2023 20 1 1 17 0 0 @020/nanabangai_slum17.txt
+create event_generator 2024 20 1 2 17 0 0 @020/nanabangai_slum18.txt
+create event_generator 2025 20 2 1 17 0 0 @020/nanabangai_slum19.txt
+create event_generator 2026 20 2 2 17 0 0 @020/nanabangai_slum20.txt
+create event_generator 2027 20 25 24 17 0 0 @020/nanabangai_slum21_1.txt
+create event_generator 2028 20 26 24 17 0 0 @020/nanabangai_slum21_2.txt
+create event_generator 2029 20 27 24 17 0 0 @020/nanabangai_slum21_3.txt
+create event_generator 2030 20 28 23 17 0 0 @020/nanabangai_slum21_4.txt
+create event_generator 2031 20 28 22 17 0 0 @020/nanabangai_slum21_5.txt
+create event_generator 2032 20 34 21 17 0 0 @020/nanabangai_slum22_1.txt
+create event_generator 2033 20 32 18 17 0 0 @020/nanabangai_slum22_2.txt
+chg_npc_dir 2607 up
+create event_generator 2620 26 4 8 17 0 0 @026/beginner's_hall1.txt
+create event_generator 2625 26 1 1 17 0 0 @026/beginner's_hall4.txt
+create treasure_item 2628 26 5 8 3 0 0 4100
+create event_generator 2629 26 1 1 17 0 0 @026/beginner's_hall5.txt
+chg_npc_img 2691 29
+chg_speed 2400 not_step
+chg_npc_img 1751 5
+chg_npc_img 1752 6
+chg_npc_img 1753 7
+chg_npc_img 1754 8
+chg_npc_img 1755 7
+chg_npc_img 1756 8
+chg_npc_img 1757 7
+chg_npc_img 1758 8
+chg_npc_img 1759 7
+chg_npc_img 1760 8
+chg_npc_img 1761 7
+chg_npc_img 1762 8
+chg_npc_img 1763 9
+chg_npc_img 1764 10
+chg_npc_img 1765 4
+sleep 400
+recover_active_chara
+warp 23 2 8 right
+create event_generator 2240 22 8 5 17 0 0 @022/seventhheaven8.txt
+draw_char on
+play_event_bgm 1-06-Barrett's_Theme.ogg
+fadein
+sleep 32
+chg_char_dir right
+sleep 8
+chg_char_dir left
+sleep 8
+chg_char_dir right
+set_flag 0 0
+set_flag 9 1
+kill 2260
+create event_generator 2261 22 5 13 17 0 0 @022/seventhheaven_out1.txt
+fi
+if_flag 3 2
+fadeout
+kill_through_range 2000 2799
+set_npc_pos 1706 17 7 4
+create npc3 1707 17 3 6 106 1 0 none
+create npc_event 1708 17 4 6 106 2 2 none
+chg_npc_img 1751 5
+chg_npc_img 1752 6
+chg_npc_img 1753 7
+chg_npc_img 1754 8
+chg_npc_img 1755 7
+chg_npc_img 1756 8
+chg_npc_img 1757 7
+chg_npc_img 1758 8
+chg_npc_img 1759 7
+chg_npc_img 1760 8
+chg_npc_img 1761 7
+chg_npc_img 1762 8
+chg_npc_img 1763 9
+chg_npc_img 1764 10
+chg_npc_img 1765 4
+play_event_bgm 1-06-Barrett's_Theme.ogg
+sleep 32
+chg_npc_dir 1706 right
+warp 28 11 5 up
+draw_char off
+open_door 2850
+add_party_mem 1
+add_party_mem 2
+set_flag 0 0
+set_flag 1 1
+set_flag 9 1
+add_item 4000
+add_item 4100
+fadein
+fi
