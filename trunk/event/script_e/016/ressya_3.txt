@@ -1,0 +1,30 @@
+wait_event_invalid 1675
+sleep 32
+chg_npc_dir 1665 down
+sleep 16
+jump_npc_target_pos 1665 6 19
+sleep 16
+play_se bump.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 16
+play_se train_info.ogg
+msg しゃないアナウンス\n「まもなく　スラムななばんがい\n　れっしゃはかば　えき
+sleep 32
+fadeout
+kill_through_range 1600 1699
+draw_char off
+warp 17 30 4 down
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+sleep 40
+fadein

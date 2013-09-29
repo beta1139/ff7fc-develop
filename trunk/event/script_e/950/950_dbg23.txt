@@ -1,0 +1,16 @@
+set_eternal_event
+wait_target_talk 95006
+reset_talk_flag 95006
+chg_type 95006 npc_event
+jump_npc 95006 same 2
+sleep 32
+flush
+play_se thunder.wav
+chg_type 95006 npc2
+set_slide_walk_char_flag
+chg_event_move_char_speed fast
+move_char down 10
+sleep 80
+play_se damage.wav
+reset_slide_walk_char_flag
+

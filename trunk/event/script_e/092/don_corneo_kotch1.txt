@@ -1,0 +1,127 @@
+wait_same_pos
+kill_through 9222
+create npc_event 9220 92 10 3 0 1 2 none
+draw_char off
+msg エアリス\n「イヤ～！！
+chg_event_move_char_speed fast
+move_char down 9
+move_npc 9220 down 1
+create npc_event 9221 92 4 12 3 0 3 none
+create npc_event 9223 92 4 14 133 0 3 コッチ\n「いちどでいい……\n　いちどでいいから……\n\n　カワイイおんなのコと\n　スウィ～トなコイビトどうしを\n　えんじてみたかっただけなのに……
+move_npc 9221 right 4
+move_npc 9223 up 2
+sleep 16
+move_npc 9223 right 4
+sleep 16
+move_npc 9221 down 3
+sleep 16
+move_npc 9223 down 3
+sleep 8
+move_npc 9221 left 4
+sleep 16
+move_char left 4
+move_npc 9223 left 4
+sleep 16
+msg3 -1 コッチ\n「ハハハハ……\n　まてよォ　こいつぅ！
+move_npc 9221 up 3
+sleep 16
+move_npc 9223 up 3
+sleep 8
+move_npc 9221 right 4
+sleep 16
+move_npc 9223 right 4
+sleep 16
+move_npc 9221 down 3
+sleep 16
+move_npc 9223 down 3
+sleep 8
+move_npc 9221 left 4
+sleep 16
+move_npc 9223 left 4
+sleep 16
+move_npc 9221 up 3
+sleep 16
+move_npc 9223 up 3
+sleep 8
+move_npc 9221 right 6
+sleep 16
+move_char right 4
+move_npc 9223 right 6
+sleep 8
+erase_msg3
+sleep 24
+move_char up 9
+move_npc 9221 up 8
+sleep 16
+move_npc 9223 up 7
+chg_npc_dir 9220 up
+chg_npc_img 9220 97
+jump_npc 9220 same 1
+sleep 16
+chg_npc_img 9220 0
+chg_npc_dir 9220 down
+chg_speed 9220 fast
+step_npc 9220 2
+sleep 16
+move_npc 9220 up 1
+sleep 8
+chg_npc_dir 9220 down
+sleep 8
+chg_npc_dir 9221 down
+sleep 8
+step_npc 9221 3
+msg3 -1 エアリス\n「ごめんなさ～い！
+chg_npc_y_offset 9223 -5
+sleep 1
+chg_npc_y_offset 9223 -6
+sleep 1
+chg_npc_y_offset 9223 -7
+sleep 1
+chg_npc_y_offset 9223 -8
+sleep 1
+chg_npc_y_offset 9223 -9
+sleep 1
+chg_npc_y_offset 9223 -10
+sleep 1
+chg_npc_y_offset 9223 -11
+sleep 1
+chg_npc_y_offset 9223 -12
+sleep 1
+wait_key_push_edge a
+erase_msg3
+jump_npc 9221 same 1
+sleep 2
+chg_npc_dir 9221 left
+sleep 2
+chg_npc_dir 9221 up
+chg_npc_dir 9223 right
+sleep 2
+chg_npc_dir 9221 right
+sleep 2
+chg_npc_dir 9221 down
+chg_npc_y_offset 9223 -11
+sleep 1
+chg_npc_y_offset 9223 -10
+sleep 1
+chg_npc_y_offset 9223 -9
+sleep 1
+chg_npc_y_offset 9223 -8
+sleep 1
+msg3 -1 コッチ\n「ト　トトト……
+chg_speed 9223 normal
+chg_npc_dir 9223 down
+chg_npc_img 9223 134
+create event_generator 9213 92 10 3 17 0 0 @092/don_corneo_kotch2.txt
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+chg_char_state_move
+loop_inf
+step_npc 9223 2
+sleep 16
+chg_npc_img 9223 133
+sleep 16
+chg_npc_img 9223 134
+pool

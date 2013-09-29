@@ -1,0 +1,12 @@
+set_eternal_event
+wait_target_talked 95087
+reset_talked_flag 95087
+chg_type 95087 npc_event
+chg_speed 95087 normal
+chg_npc_dir 95087 right
+jump_npc 95087 right 3
+sleep 48
+chg_npc_dir 95087 left
+msg ƒƒ“I
+chg_speed 95087 not_move
+chg_type 95087 npc

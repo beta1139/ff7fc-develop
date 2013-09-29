@@ -1,0 +1,20 @@
+wait_target_talk 3504
+play_se_loop radio_noise.ogg
+msg 『このひかりのおびは\n　しんらの　けいほうセンサー\n　これいじょう　おくには　すすめないな
+stop_se
+move_char down 1
+kill 3550
+kill 3552
+create npc2 3520 35 7 14 17 0 0 
+create npc2 3521 35 8 14 17 0 0 
+create npc2 3522 35 9 14 17 0 0 
+sleep 8
+kill 3503
+kill 3504
+kill 3505
+create event_generator 3553 35 0 0 17 0 0 @035/sensor4.txt
+create event_generator 3554 35 0 0 17 0 0 @035/sensor5.txt
+create event_generator 3555 35 0 0 17 0 0 @035/sensor6.txt
+sleep 8
+move_char left 1
+sleep 16

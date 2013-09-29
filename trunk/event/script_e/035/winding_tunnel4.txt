@@ -1,0 +1,111 @@
+wait_target_talk 3506
+backup_char_img
+chg_char_img 0
+if_char_dir left
+create npc_event 3501 35 7 16 1 3 2 none
+move_npc 3501 up 1
+sleep 16
+move_npc 3501 left 1
+create npc_event 3502 35 7 16 2 1 2 none
+move_npc 3502 down 1
+sleep 16
+chg_npc_dir 3501 down
+move_npc 3502 left 1
+sleep 16
+chg_npc_dir 3502 up
+sleep 16
+jump_npc 3501 same 1
+sleep 16
+step_npc 3501 3
+fi
+if_char_dir up
+create npc_event 3502 35 6 17 2 0 2 none
+move_char right 1
+sleep 16
+move_char up 1
+sleep 16
+chg_char_dir left
+create npc_event 3501 35 7 16 1 3 2 none
+move_npc 3501 up 1
+sleep 16
+move_npc 3501 left 1
+sleep 16
+chg_npc_dir 3501 down
+sleep 16
+jump_npc 3501 same 1
+sleep 16
+step_npc 3501 3
+fi
+if_char_dir down
+create npc_event 3501 35 6 15 1 1 2 none
+move_char right 1
+sleep 16
+move_char down 1
+sleep 16
+chg_char_dir left
+create npc_event 3502 35 7 16 2 1 2 none
+move_npc 3502 down 1
+sleep 16
+move_npc 3502 left 1
+sleep 16
+chg_npc_dir 3502 up
+sleep 16
+jump_npc 3501 same 1
+sleep 16
+step_npc 3501 3
+fi
+set_talk_npc 3501
+msg バレット\n「か～っ　せまっちい　あなだな\n　ここから　プレートのしたに　もぐれってのか？\n　たまんねぇぜ\n　どうする　クラウドさんよぉ？\n\n\n\n#3\n　　おりる\n　　おりない\n　　なかを　よくみてみる\n\n[[]][[]][[]]
+reset_talk_npc
+if_flag 3 0
+create event_generator 3511 35 7 16 17 0 0 @035/winding_tunnel5.txt
+end
+fi
+if_flag 3 1
+create event_generator 3512 35 7 16 17 0 0 @035/winding_tunnel6.txt
+end
+fi
+if_flag 3 2
+sleep 16
+step_npc 3502 3
+sleep 64
+msg ティファ\n「……ダクトのなかに\n　あしがかりに　なりそうな\n　ものはないわね
+sleep 16
+step_char 1
+sleep 16
+msg 『ああ　このダクトをおりたら\n　ここには　もどってこれないぞ
+sleep 32
+chg_char_dir right
+sleep 16
+chg_npc_dir 3501 up
+chg_npc_dir 3502 down
+chg_speed 3502 not_move
+sleep 64
+chg_char_dir left
+sleep 16
+chg_npc_dir 3501 right
+sleep 80
+chg_npc_dir 3501 down
+chg_speed 3502 normal
+sleep 32
+chg_npc_dir 3502 up
+chg_npc_dir 3501 up
+chg_npc_img 3501 95
+jump_npc 3501 same 1
+sleep 16
+jump_npc 3501 same 1
+sleep 16
+chg_npc_img 3501 98
+chg_npc_dir 3501 left
+step_npc 3501 3
+set_talk_npc 3501
+msg バレット\n「のんびりしてる　ヒマはないぜ\n　いつ　しんらのやつらに　おれたちの\n　こうどうが　ばれないとも　かぎらない\n　クラウド　いくしかないぜ\n\n\n\n#2\n　　おりる\n　　おりない\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+create event_generator 3511 35 7 16 17 0 0 @035/winding_tunnel5.txt
+end
+fi
+if_flag 3 1
+create event_generator 3512 35 7 16 17 0 0 @035/winding_tunnel6.txt
+fi
+fi

@@ -1,0 +1,32 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through_range 9502 9508
+chg_type 9523 npc_event
+create npc_event 9520 95 6 12 13 1 1 none
+draw_char off
+chg_event_move_char_speed normal
+move_char up 3
+move_npc 9520 up 1
+chg_speed 9523 normal
+sleep 48
+set_active_msg 9523
+jump_npc 9523 same 1
+set_talk_npc 9523
+msg コルネオ\n「ほひ～！\n\n\n　テレなくても\n　だいじょうぶ\n　ふたりきりだよ……
+reset_talk_npc
+chg_event_move_char_speed slow
+move_char down 2
+sleep 64
+chg_char_dir up
+draw_char on
+kill 9520
+chg_speed 9523 not_move
+chg_type 9523 npc2
+chg_event_move_char_speed normal
+create event_generator 9503 95 6 12 17 0 0 @095/don_corneo5_1.txt
+create event_generator 9505 95 8 8 17 0 0 @095/don_corneo_chg_right.txt
+create event_generator 9506 95 9 8 17 0 0 @095/don_corneo_chg_right.txt
+chg_char_state_move
+loop_inf
+sleep 400
+pool

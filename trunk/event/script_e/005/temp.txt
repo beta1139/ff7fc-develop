@@ -1,0 +1,35 @@
+set_eternal_event
+wait_target_talk 548
+reset_talk_flag 548
+chg_dir_to_char 548
+set_talk_npc 548
+msg i7\n「デバッグよう ワープそうちです\n　5ばんまこうろの\n　ボタンギミックイベントへ　とびますか？\n#2\n　　そうだな……\n　　きょうみないね\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+end_countdown
+kill_through 1003
+kill_through_range 1050 1051
+fadeout
+sleep 32
+set_flag 9 1
+set_flag 1 0
+set_flag 0 0
+warp 47 22 7 left
+add_party_mem 2
+create npc_event 4760 47 14 19 116 0 0 none
+create npc_event 4761 47 14 18 116 0 0 none
+create npc_event 4762 47 14 17 116 0 0 none
+chg_npc_y_offset 4760 -2
+chg_npc_y_offset 4761 -2
+chg_npc_y_offset 4762 -2
+create npc2 4763 47 12 18 17 0 0 
+create npc2 4764 47 12 30 17 0 0 
+create npc2 4765 47 12 31 17 0 0 
+create npc2 4766 47 12 32 17 0 0 
+enable_char_chg
+sleep 32
+play_bgm
+fadein
+fi
+if_flag 3 1
+fi

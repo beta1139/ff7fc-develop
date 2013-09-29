@@ -1,0 +1,2 @@
+wait_same_pos
+open_door 4250

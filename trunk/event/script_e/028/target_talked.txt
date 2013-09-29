@@ -1,0 +1,11 @@
+wait_target_talked 2807
+chg_dir_to_char 2807
+step_npc 2807 2
+sleep 16
+play_se pick_up.wav
+sleep 16
+play_se_loop alarm.ogg
+msg フェニックスのお　をてにいれた！
+add_item 1007
+chg_param 2807 「おれが　のたれじんだら\n　そいつでたのむよ
+chg_npc_dir 2807 down

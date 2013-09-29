@@ -1,0 +1,23 @@
+jump_npc_target_pos 60001 14 15
+sleep 70
+chg_npc_dir 60001 down
+chg_char_dir right
+sleep 16
+step_npc 60001 8
+sleep 120
+msg 「へへ　や～っぱりそうか\n　ま　アタシの　じつりょくからいえば\n　それもとうぜんだネ\n\n　アンタらも　がんばれよ\n　また　きがむいたら　あいて　してやるからさ\n　んじゃね！\n
+chg_char_dir up
+move_npc 60001 up 3
+sleep 90
+chg_npc_dir 60001 down
+sleep 48
+msg 「ホントに　いっちゃうからね！\n　ホントの　ホントだよ！\n\n\n#2\n　　ごじゆうに……\n　　ちょっとまった\n\n\n[[]][[]]
+if_flag 3 0
+msg eee
+end
+fi
+if_flag 3 1
+create event_generator 60005 600 0 0 17 0 0 @600/yufi4.txt
+end
+fi
+

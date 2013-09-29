@@ -1,0 +1,29 @@
+wait_event_invalid 1661
+wait_target_talked 1668
+chg_type 1668 npc_event
+chg_dir_to_char 1668
+chg_speed 1668 normal
+if_char_dir down
+create npc_event 1640 16 16 21 0 1 2 none
+draw_char off
+sleep 8
+fi
+if_flag 3 0
+jump_npc 1668 same 1
+sleep 16
+step_npc 1668 2
+msg ウェッジ\n「クラウドさんっ！！\n\n\n　おれ　いままで　ずっと　じんせい　わきやくって\n　かんじで　いきてきたっすよ\n\n\n　でも　アバランチに　はいって　ほしの　いのちを\n　すくえば　こんなおれでも……いろいろとね
+fi
+if_flag 3 1
+set_talk_npc 1668
+msg ウェッジ\n「ああ　ひどいなあ　クラウドさん\n　やっぱ　ダメっすかね　そうすかね
+reset_talk_npc
+fi
+if_char_dir down
+draw_char on
+kill 1640
+fi
+chg_npc_dir 1668 down
+chg_speed 1668 not_step
+chg_type 1668 npc
+chg_param 1668 ウェッジ\n「アバランチで　なをあげて\n　いつか　おれだって……　っす！

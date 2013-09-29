@@ -1,0 +1,8 @@
+wait_same_pos
+chg_speed 7921 slow
+slide_walk_npc 7921 right 1
+chg_char_state_move
+sleep 32
+chg_speed 7921 not_move
+chg_type 7921 npc3
+chg_param 7921 「くっ～～！　ボクもおはなほしい～！\n　でもでも　かわいいオンナのコのまえだと\n　きんちょうしちゃって……\n\n　なんだか　しぜんと\n　けいかいしちゃうんです～

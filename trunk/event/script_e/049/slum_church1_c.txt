@@ -1,0 +1,197 @@
+wait_same_pos
+msg3 -1 「あっ！　うごいた！
+sleep 48
+set_text 6 　 　   　　　　　　『……どうだ？
+sleep 8
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 50
+kill_through 4990
+wait_key_push_edge a
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+fadeout
+erase_msg3
+sleep 16
+fadein
+if_flag 11 1
+msg3 -1 「ふぅ……\n　よかったぁ
+sleep 16
+fi
+set_text 6 　 　   　　　　『ゆっくりな
+set_text 7 　 　   　　　　　すこしずつ　すこしずつ……
+sleep 8
+set_text_alpha 6 25
+set_text_alpha 7 25
+sleep 8
+set_text_alpha 6 50
+set_text_alpha 7 50
+wait_key_push_edge a
+set_text_alpha 6 25
+set_text_alpha 7 25
+sleep 8
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 6
+clear_text 7
+if_flag 11 1
+fadeout
+erase_msg3
+sleep 16
+fadein
+fi
+msg3 -1 「もしもし？
+sleep 16
+set_text 6 　 　   　　　　　『……わかってるさ
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 90
+wait_key_push_edge a
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+fadeout
+erase_msg3
+sleep 48
+fadein
+set_text 6 　   　　　　　『なあ……あんた　だれだ？
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 90
+wait_key_push_edge a
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 48
+msg3 -1 「もしも～し！
+wait_key_push_edge a
+fadeout
+erase_msg3
+sleep 16
+warp 49 6 11 right
+create npc_event 4900 49 6 11 0 3 2 none
+chg_npc_img 4900 105
+chg_type 4901 npc_event
+chg_npc_img 4901 3
+sleep 16
+fadein
+sleep 16
+play_event_bgm 1-12-Flowers_Blooming_in_the_Church.ogg
+sleep 128
+flush
+sleep 8
+chg_npc_img 4900 0
+chg_npc_dir 4900 up
+chg_speed 4901 normal
+sleep 16
+step_npc 4901 2
+msg 「だいじょうぶ？
+sleep 16
+chg_npc_dir 4900 left
+sleep 16
+chg_npc_dir 4900 right
+sleep 16
+chg_npc_dir 4900 down
+sleep 32
+step_npc 4901 2
+msg 「ここ　スラムのきょうかい\n　5ばんがいよ
+chg_npc_dir 4900 left
+sleep 16
+jump_npc 4901 same 1
+sleep 16
+step_npc 4901 2
+msg 「いきなり　おちてくるんだもん\n　おどろいちゃった
+chg_npc_dir 4900 down
+sleep 48
+chg_speed 4901 slow
+move_npc 4901 down 1
+sleep 32
+move_npc 4901 right 1
+sleep 32
+chg_npc_dir 4901 up
+chg_speed 4901 normal
+chg_npc_dir 4900 right
+sleep 16
+msg 『……おちてきた？
+sleep 32
+step_npc 4901 2
+msg 「やねと　はなばたけ　クッションに　なったのかな\n　うん　いいね
+sleep 16
+chg_npc_dir 4900 left
+sleep 16
+chg_npc_dir 4900 right
+sleep 16
+chg_npc_dir 4900 left
+sleep 64
+msg 『はなばたけ……あんたの　はなばたけ？
+chg_npc_dir 4900 up
+sleep 96
+chg_npc_dir 4900 down
+sleep 32
+chg_npc_dir 4900 right
+chg_npc_img 4900 97
+step_npc 4900 3
+sleep 80
+msg 『それはわるかったな
+sleep 16
+jump_npc 4901 same 1
+sleep 16
+step_npc 4901 3
+msg 「きにしないで　おはな　けっこうつよいし\n　ここ　とくべつな　ばしょだから
+chg_npc_dir 4900 down
+chg_npc_img 4900 0
+chg_speed 4901 slow
+move_npc 4901 left 2
+sleep 64
+move_npc 4901 up 1
+chg_npc_dir 4900 left
+sleep 32
+set_talk_npc 4901
+msg 「ミッドガルって\n　くさや　はな　あまりそだたないでしょ？\n　でも　ここだけ　はな　さくの
+reset_talk_npc
+move_npc 4901 down 1
+sleep 32
+chg_npc_dir 4900 down
+chg_speed 4901 normal
+sleep 32
+step_npc 4901 1
+msg 「すきなんだ　ここ
+chg_npc_img 4900 103
+sleep 32
+chg_npc_dir 4900 left
+sleep 48
+chg_npc_dir 4900 down
+chg_speed 4901 slow
+move_npc 4901 up 1
+sleep 16
+chg_npc_img 4900 0
+chg_npc_dir 4900 left
+sleep 16
+move_npc 4901 right 1
+sleep 56
+chg_npc_img 4901 15
+chg_speed 4901 not_move
+chg_type 4901 npc2
+chg_char_dir left
+draw_char on
+kill 4900
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+set_key_valid b

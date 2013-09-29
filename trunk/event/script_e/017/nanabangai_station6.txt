@@ -1,0 +1,19 @@
+wait_target_talked 1716
+set_talk_npc 1708
+msg 「エェ！
+reset_talk_npc
+sleep 32
+set_talk_npc 1708
+msg 「でも　このあたり\n　れっしゃ　はかば　しかないし\n　オバケ　でるっていうし
+reset_talk_npc
+sleep 16
+set_talk_npc 1716
+msg 「……しまった
+reset_talk_npc
+sleep 16
+set_talk_npc 1708
+msg 「……え？
+reset_talk_npc
+create npc3 1707 17 3 6 71 3 0 「こんやは　かえさないよ
+kill 1716
+create event_generator 1715 17 3 4 17 0 0 @017/nanabangai_station5.txt

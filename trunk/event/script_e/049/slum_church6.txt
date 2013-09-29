@@ -1,0 +1,91 @@
+wait_target_talked 4906
+chg_type 4906 npc_event
+chg_dir_to_char 4906
+chg_speed 4906 normal
+step_npc 4906 1
+set_talk_npc 4906
+msg エアリス\n「なんでもやさん　でしょ？
+reset_talk_npc
+if_char_dir down
+create npc_event 4900 49 5 11 0 1 2 none
+draw_char off
+fi
+if_char_dir left
+create npc_event 4900 49 6 12 0 2 2 none
+draw_char off
+fi
+if_char_dir up
+create npc_event 4900 49 5 13 0 0 2 none
+draw_char off
+fi
+if_char_dir right
+create npc_event 4900 49 4 12 0 3 2 none
+draw_char off
+fi
+backup_npc_dir 4900
+sleep 24
+chg_npc_dir 4900 right
+chg_npc_img 4900 97
+step_npc 4900 3
+sleep 80
+chg_npc_img 4900 0
+restore_npc_dir 4900
+msg 『……そうだけどな
+jump_npc 4906 same 1
+sleep 16
+step_npc 4906 2
+set_talk_npc 4906
+msg エアリス\n「ここから　つれだして\n　いえまで　つれてって
+reset_talk_npc
+sleep 16
+step_npc 4900 1
+msg 『おひきうけしましょう\n　しかし　やすくはない
+sleep 32
+if_char_dir down
+chg_npc_dir 4906 left
+fi
+if_char_dir left
+chg_npc_dir 4906 down
+fi
+if_char_dir up
+chg_npc_dir 4906 right
+fi
+if_char_dir right
+chg_npc_dir 4906 up
+fi
+set_talk_npc 4906
+msg エアリス「じゃあねえ……
+reset_talk_npc
+sleep 32
+chg_dir_to_char 4906
+jump_npc 4906 same 1
+sleep 16
+step_npc 4906 1
+set_talk_npc 4906
+msg エアリス\n「デート　いっかい！
+reset_talk_npc
+sleep 64
+chg_npc_dir 4900 down
+chg_npc_img 4900 103
+sleep 32
+chg_npc_dir 4900 left
+sleep 48
+chg_npc_dir 4900 down
+sleep 16
+fadeout
+chg_npc_img 4900 0
+restore_npc_dir 4900
+create event_generator 4918 49 6 13 17 0 0 @049/slum_church7.txt
+sleep 32
+chg_char_dir down
+draw_char on
+kill 4900
+warp 49 6 13 down
+set_npc_pos 4906 49 5 13
+chg_npc_dir 4906 down
+kill_through 4914
+kill_through 4915
+kill_through 4916
+stop_bgm
+sleep 32
+fadein

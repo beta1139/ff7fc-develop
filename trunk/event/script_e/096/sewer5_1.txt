@@ -1,0 +1,21 @@
+set_eternal_event
+wait_same_pos
+chg_char_dir right
+msg #2\n　　とびおりてみよう\n　　やめるか……\n\n\n[[]][[]]
+if_flag 3 0
+jump_char right 1
+play_se jump.wav
+sleep 16
+warp_ff3_2 97 9 21 2 up
+chg_event_move_char_speed fast
+set_slide_char_flag
+move_char down 1
+sleep 8
+play_se landing.wav
+reset_slide_char_flag
+chg_event_move_char_speed normal
+fi
+if_flag 3 1
+move_char down 1
+sleep 16
+fi

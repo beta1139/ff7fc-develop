@@ -1,0 +1,18 @@
+wait_target_talked 2011
+chg_type 2011 npc_event
+chg_speed 2011 normal
+if_char_dir left
+move_npc 2011 left 1
+fi
+if_char_dir right
+move_npc 2011 right 1
+fi
+if_char_dir up
+move_npc 2011 right 1
+fi
+sleep 16
+chg_npc_dir 2011 down
+sleep 16
+chg_speed 2011 not_move
+chg_type 2011 npc
+chg_param 2011 バレット\n「よう！！　クラウド！！\n　チョロチョロ　すんじゃねぇ！！

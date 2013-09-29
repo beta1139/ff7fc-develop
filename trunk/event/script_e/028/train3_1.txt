@@ -1,0 +1,45 @@
+wait_same_pos
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+kill 2813
+kill 2814
+chg_char_dir up
+create npc_event 2800 28 18 6 0 0 2 none
+draw_char off
+sleep 16
+move_char up 1
+chg_speed 2802 normal
+chg_npc_dir 2802 down
+sleep 32
+set_talk_npc 2802
+msg ティファ\n「あら　もうなんどもみたって\n　かおしてるのね\n　ま　いいわ\n　もっとそばにきて
+reset_talk_npc
+jump_npc 2802 same 1
+sleep 16
+jump_npc 2802 same 1
+sleep 48
+chg_npc_dir 2800 down
+chg_npc_img 2800 103
+sleep 24
+chg_npc_dir 2800 left
+sleep 40
+chg_npc_img 2800 0
+chg_npc_dir 2800 up
+sleep 16
+move_npc 2800 up 1
+sleep 32
+chg_npc_dir 2802 right
+chg_npc_dir 2800 right
+chg_char_dir right
+draw_char on
+kill 2800
+chg_speed 2802 not_move
+sleep 160
+kill_through 2810
+kill_through 2899
+create event_generator 2815 28 18 5 17 0 0 @028/train_move_alarm.txt
+sleep 16
+create event_generator 2816 28 18 5 17 0 0 @028/train4.txt

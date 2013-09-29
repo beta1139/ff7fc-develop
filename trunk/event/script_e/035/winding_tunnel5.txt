@@ -1,0 +1,37 @@
+wait_same_pos
+sleep 16
+step_npc 3501 2
+set_talk_npc 3501
+msg バレット\n「でもよ　ゾッとしねぇな
+reset_talk_npc
+chg_npc_img 3501 1
+move_npc 3501 right 1
+move_npc 3502 right 1
+sleep 16
+move_npc 3501 down 1
+move_npc 3502 up 1
+sleep 16
+kill 3501
+kill 3502
+create npc_event 3500 35 7 16 0 2 2 none
+draw_char off
+sleep 32
+move_npc 3500 left 1
+move_char left 1
+sleep 16
+chg_npc_y_offset 3500 -3
+sleep 8
+fadeout
+sleep 32
+draw_char on
+kill 3500
+warp 36 2 2 down
+chg_char_dir down
+sleep 16
+fadein
+jump_char down 3
+play_se jump.wav
+sleep 48
+chg_char_dir right
+play_se landing.wav
+restore_char_img

@@ -1,0 +1,15 @@
+set_eternal_event
+wait_target_talk 2211
+reset_talk_flag 2211
+jump_char up 1
+play_se jump.wav
+sleep 16
+warp_ff3_2 23 4 1 2 down
+chg_event_move_char_speed fast
+set_slide_char_flag
+move_char down 2
+sleep 16
+play_se landing.wav
+reset_slide_char_flag
+sleep 16
+chg_event_move_char_speed normal

@@ -1,0 +1,52 @@
+move_npc 60001 down 1
+chg_event_move_char_speed normal
+sleep 16
+move_npc 60001 left 1
+move_char up 4
+sleep 64
+move_char right 1
+sleep 72
+msg 「なんだよ　アタシに\n　まだ　なんかよう？\n\n\n　……ハハーン\n　さては　アレかな？\n\n\n　アタシが　あんまりつよいんで\n　ぜひ　たすけてほしいと！\n\n\n　この　アタシに　いっしょにきてくれと！\n　そういうこと？\n\n\n#2\n　　……そういうこと\n　　じょうだんじゃない\n\n\n[[]][[]]
+if_flag 3 0
+msg 「へへへ　やっぱりねえ\n　いや　まいったなあ\n　ウーン　どうしようかなあ\n\n　でも　そこまでいわれちゃ\n　この　アタシも　ことわれないし……\n\n\n　よし　わかった！\n　アンタらに　ついてって やるよ！\n\n\n#2\n　　……なまえは？\n　　……さきをいそごう\n\n\n[[]][[]]
+if_flag 3 0
+msg ggg
+end
+fi
+if_flag 3 1
+draw_char off
+create npc_event 60004 600 12 13 0 1 2 none
+move_npc 60004 down 8
+chg_npc_dir 60001 down
+sleep 16
+msg 「あれ　ちょ　ちょっと……
+sleep 45
+move_npc 60001 down 3
+sleep 45
+msg 「アタシ　ユフィ！\n　ひとつ　ヨロシク！
+chg_npc_dir 60001 up
+sleep 16
+step_npc 60001 4
+msg 「へへへ……うまくいったよ\n\n\n\n　あとは　　アレを　ナニして……\n　クックック……
+chg_npc_dir 60001 down
+sleep 45
+msg 「オ～イ　まってよ！\n　まってってば～！！
+move_npc 60001 down 20
+sleep 90
+fadeout
+stop_bgm
+warp 950 25 22 up
+draw_char on
+set_flag 0 0
+play_bgm
+fadein
+kill 60001
+add_party_mem 6
+end
+fi
+end
+fi
+if_flag 3 1
+msg fff
+end
+fi

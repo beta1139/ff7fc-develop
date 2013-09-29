@@ -1,0 +1,89 @@
+wait_same_pos
+backup_char_img
+chg_char_img 0
+create npc_event 1002 10 8 14 1 0 2 none
+move_npc 1002 up 1
+sleep 16
+move_npc 1002 left 1
+sleep 16
+chg_npc_dir 1002 down
+sleep 16
+jump_npc 1002 same 1
+sleep 16
+step_npc 1002 1
+set_talk_npc 1002
+msg バレット\n「ここも　ブッこわしちまえば\n　ただの　ガラクタだぜ　クラウド　さんよ\n　このばくだんを　セットしてくれ
+reset_talk_npc
+step_char 1
+sleep 16
+msg 『あんたが　やったほうが　いいんじゃ\n　ないのか？
+sleep 16
+step_npc 1002 1
+set_talk_npc 1002
+msg バレット\n「オレ？　オレは　みはらせてもらう\n　おまえさんが　おかしなまねを　しないようにな
+reset_talk_npc
+sleep 16
+msg 『すきに　してくれ
+play_se beeeeep.wav
+screen_effect red
+msg2 178 めをさませ！\nここは　ただの　はつでんしょじゃない！
+screen_effect off
+stop_se
+flush
+chg_char_dir left
+sleep 60
+chg_char_dir right
+sleep 15
+chg_char_dir left
+sleep 15
+chg_char_dir right
+sleep 30
+jump_npc 1002 same 1
+sleep 16
+step_npc 1002 1
+set_talk_npc 1002
+msg バレット\n「……うした？
+reset_talk_npc
+sleep 16
+chg_char_dir up
+msg 『え？
+step_npc 1002 2
+set_talk_npc 1002
+msg バレット\n「どうした　クラウド　さんよ？\n はやくしてくれ！
+reset_talk_npc
+sleep 16
+msg 『ああ　すまない
+move_char up 1
+sleep 16
+chg_npc_dir 1002 right
+sleep 32
+play_se timer.ogg
+step_char 6
+sleep 180
+play_se_loop alarm.ogg
+create event_generator 1003 10 0 0 17 0 0 @010/ichiban_makouro_alarm.txt
+sleep 8
+chg_char_dir right
+sleep 15
+chg_npc_dir 1002 left
+sleep 15
+chg_char_dir left
+sleep 15
+chg_char_dir right
+sleep 15
+chg_char_dir left
+sleep 15
+chg_npc_dir 1002 right
+sleep 25
+screen_effect off
+step_npc 1002 2
+msg バレット\n「ほんかくてきに　やってくるぜ
+set_flag 20 1
+stop_se
+set_flag 0 5
+play_bgm
+encount 204
+sleep 64
+kill 950
+kill_through 951
+create event_generator 1004 10 8 13 17 1 0 @010/ichiban_makouro7_2.txt

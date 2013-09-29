@@ -1,0 +1,19 @@
+wait_same_pos
+create npc_event 150 1 17 10 31 1 2 none
+move_npc 150 down 2
+sleep 16
+create npc_event 151 1 17 10 31 1 2 none
+move_npc 151 down 1
+sleep 16
+move_npc 150 left 1
+move_npc 151 left 1
+sleep 16
+set_flag 20 1
+encount 189
+sleep 64
+kill 150
+kill 151
+kill 110
+wait_encount_end
+set_flag 20 0
+set_flag 1 0

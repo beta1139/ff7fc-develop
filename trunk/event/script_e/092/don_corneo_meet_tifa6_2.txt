@@ -1,0 +1,25 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through_range 9206 9209
+chg_type 9221 npc_event
+chg_speed 9221 normal
+move_npc 9221 right 1
+sleep 16
+move_npc 9221 up 3
+sleep 48
+step_npc 9221 1
+msg エアリス\n「ねえ　ヒミツのおはなしは？
+move_char down 1
+sleep 16
+move_npc 9221 down 3
+sleep 48
+move_npc 9221 left 1
+sleep 16
+create event_generator 9208 92 10 5 17 0 0 @092/don_corneo_meet_tifa6_1.txt
+chg_npc_dir 9221 right
+chg_speed 9221 not_move
+chg_type 9221 npc
+chg_char_state_move
+loop_inf
+sleep 400
+pool

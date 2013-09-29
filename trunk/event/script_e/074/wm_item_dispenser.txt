@@ -1,0 +1,126 @@
+set_eternal_event
+wait_target_talk 7410
+reset_talk_flag 7410
+if_flag 9 2
+chg_char_img_tmp 13
+kill_through 7402
+fi
+msg 『アイテムディスペンサーだ\n\n\n\n　いっかい　50ギルのようだ\n　さて……\n\n\n#2\n　　なにがでるかな……\n　　きょうみないね\n\n\n[[]][[]]
+if_flag 3 0
+if_gil_less 50
+msg 『おかねがたらないな
+move_char down 1
+sleep 16
+if_flag 9 2
+create event_generator 7402 74 6 7 17 0 0 @drag_cloud.txt
+fi
+end
+fi
+sub_gil 50
+if_flag 9 1
+create npc_event 7420 74 6 6 0 0 2 none
+fi
+if_flag 9 2
+create npc_event 7420 74 6 6 13 0 2 none
+fi
+draw_char off
+chg_npc_y_offset 7420 -6
+sleep 3
+chg_npc_y_offset 7420 -8
+sleep 3
+if_flag 9 1
+chg_npc_img 7420 115
+fi
+if_flag 9 2
+chg_npc_img 7420 13
+fi
+sleep 8
+play_se coin.ogg
+sleep 24
+play_se switch.ogg
+sleep 44
+chg_npc_y_offset 7420 -6
+sleep 4
+chg_npc_y_offset 7420 -4
+if_flag 9 1
+chg_npc_img 7420 0
+fi
+if_flag 9 2
+chg_npc_img 7420 13
+fi
+play_se elevator_start.wav
+loop 3
+create map_obj 7450 74 5 5 38 0 0 
+create map_obj 7451 74 7 5 39 0 0 
+sleep 8
+kill 7450
+kill 7451
+sleep 8
+pool
+play_se_loop elevator_loop.wav
+loop 8
+create map_obj 7450 74 5 5 38 0 0 
+create map_obj 7451 74 7 5 39 0 0 
+sleep 4
+kill 7450
+kill 7451
+sleep 4
+pool
+stop_se
+sleep 16
+play_se_loop radio_noise.ogg
+msg 「………ヒ……\n　パー…………
+stop_se
+move_char up 2
+sleep 32
+loop 6
+create map_obj 7452 74 6 2 32 0 0 
+sleep 4
+kill 7452
+sleep 4
+pool
+play_se gun_shot.ogg
+sleep 4
+chg_speed 7420 normal
+jump_npc_target_pos 7420 6 8
+jump_char_target_pos 6 6
+msg3 -1 『うわっ！
+sleep 16
+create npc_event 7421 74 6 6 80 3 0 none
+sleep 8
+kill 7421
+sleep 8
+chg_speed 7420 fast
+step_npc 7420 2
+create npc_event 7421 74 6 6 80 3 0 none
+sleep 8
+kill 7421
+loop 2
+sleep 8
+create npc_event 7421 74 6 6 80 3 0 none
+sleep 8
+kill 7421
+pool
+wait_key_push_edge a
+erase_msg3
+move_char up 3
+sleep 48
+chg_speed 7420 normal
+step_npc 7420 1
+msg 『こわれてるぞ
+move_char down 5
+if_flag 9 2
+create event_generator 7402 74 6 8 17 0 0 @drag_cloud.txt 
+fi
+sleep 80
+chg_char_dir up
+draw_char on
+kill 7420
+fi
+if_flag 3 1
+move_char down 1
+if_flag 9 2
+create event_generator 7402 74 6 7 17 0 0 @drag_cloud.txt 
+fi
+sleep 16
+fi

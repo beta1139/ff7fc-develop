@@ -1,0 +1,56 @@
+wait_target_talk 3202
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+chg_dir_to_char 3202
+msg ティファ\n「……こわいね
+sleep 8
+chg_type 3202 npc_event
+chg_speed 3202 normal
+sleep 8
+step_char 2
+sleep 32
+msg 『いまさらなんだよ\n　だいたい　どうしてきたんだ？
+sleep 16
+chg_npc_dir 3202 up
+sleep 16
+step_npc 3202 1
+msg ティファ\n「だって……
+chg_type 3201 npc_event
+chg_speed 3201 normal
+sleep 16
+jump_npc 3201 same 2
+chg_npc_dir 3201 up
+loop 2
+sleep 4
+chg_npc_dir 3201 right
+sleep 4
+chg_npc_dir 3201 down
+sleep 4
+chg_npc_dir 3201 left
+sleep 4
+pool
+step_npc 3201 3
+msg バレット\n「おふたりさん　じかんがないぞ！
+chg_type 3201 npc
+chg_speed 3201 not_move
+sleep 32
+if_char_dir left
+chg_char_dir up
+set_slide_walk_char_flag
+move_char down 1
+fi
+move_npc 3202 right 1
+sleep 16
+move_npc 3202 up 1
+sleep 16
+create npc2 3209 32 16 4 2 0 4 none
+kill 3202
+sleep 16
+create event_generator 3216 32 1 1 17 0 0 @032/target_talk2.txt
+reset_slide_walk_char_flag
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start

@@ -1,0 +1,19 @@
+set_eternal_event
+wait_target_talked 95051
+reset_talked_flag 95051
+chg_type 95051 npc_event
+chg_speed 95051 normal
+set_slide_npc_flag 95051
+move_npc 95051 left 7
+sleep 112
+set_npc_pos 95051 950 20 22
+chg_npc_dir 95051 up
+chg_speed 95051 fast
+move_npc 95051 down 8
+sleep 64
+chg_npc_dir 95051 right
+msg ƒƒ“!
+chg_speed 95051 not_move
+chg_type 95051 npc
+reset_slide_npc_flag 95051
+

@@ -1,0 +1,24 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through_range 9402 9408
+chg_type 9423 npc_event
+chg_type 9424 npc_event
+chg_type 9425 npc_event
+chg_type 9426 npc_event
+chg_type 9427 npc_event
+chg_npc_dir 9424 down
+chg_npc_dir 9425 down
+chg_npc_dir 9426 down
+chg_npc_dir 9427 up
+sleep 4
+chg_type 9423 npc
+chg_type 9424 npc
+chg_type 9425 npc
+chg_type 9426 npc
+chg_type 9427 npc
+create event_generator 9404 94 8 11 17 0 0 @094/don_corneo_scotch5.txt
+create event_generator 9406 94 9 9 17 0 0 @094/don_corneo_scotch7.txt
+chg_char_state_move
+loop_inf
+sleep 400
+pool

@@ -1,0 +1,139 @@
+wait_same_pos
+chg_speed 9520 normal
+chg_speed 9521 normal
+chg_speed 9522 normal
+step_npc 9522 2
+msg3 -1 ティファ\n「わるいけど\n　しつもんするのは\n　わたしたちのほうよ
+sleep 16
+chg_npc_dir 9523 right
+wait_key_push_edge a
+erase_msg3
+sleep 16
+step_npc 9522 2
+msg ティファ\n「てしたに　なにをさぐらせてたの？\n　いいなさい！　いわないと……
+sleep 32
+step_npc 9520 1
+set_talk_npc 9520
+msg 『……きりおとすぞ
+reset_talk_npc
+jump_npc 9523 same 2
+play_se play_se puy.ogg
+sleep 32
+step_npc 9523 4
+msg コルネオ\n「や　やめてくれ！\n　ちゃんとはなす！　なんでもはなす！
+sleep 16
+step_npc 9522 1
+msg ティファ\n「さ　どうぞ
+sleep 8
+if_flag 19 2
+chg_npc_dir 9523 down
+fi
+sleep 8
+chg_npc_dir 9523 right
+step_npc 9523 4
+msg コルネオ\n「……かたうでが　『じゅう』のおとこのねぐらを\n　さがさせたんだ\n　そういういらいがあったんだ
+sleep 32
+step_npc 9522 1
+msg ティファ\n「だれから？
+jump_npc 9523 same 1
+msg コルネオ\n「ほひ～！\n　しゃべったらころされる！
+step_npc 9522 2
+msg ティファ\n「いいなさい！　いわないと……
+sleep 32
+step_npc 9521 1
+msg エアリス\n「……ねじりきっちゃうわよ
+chg_npc_dir 9523 left
+sleep 4
+chg_npc_dir 9523 right
+sleep 4
+jump_npc 9523 same 1
+msg コルネオ\n「ほひ～！\n　しんらのハイデッカーだ！\n\n　ちあんいじぶもん　そうかつ　ハイデッカーだ！
+sleep 24
+step_npc 9520 1
+set_talk_npc 9520
+msg 『ちあんいじぶもん　そうかつ！？
+reset_talk_npc
+jump_npc 9522 same 1
+sleep 16
+chg_speed 9522 fast
+step_npc 9522 3
+msg ティファ\n「しんらですって！！\n　しんらのもくてきは！？　いいなさい！\n\n　いわないと……
+sleep 40
+chg_speed 9522 normal
+step_npc 9522 1
+msg ティファ\n「……すりつぶすわよ
+if_flag 19 2
+chg_npc_dir 9523 down
+sleep 32
+jump_npc 9523 down 1
+chg_npc_y_offset 9523 -5
+sleep 1
+chg_npc_y_offset 9523 -6
+sleep 1
+chg_npc_y_offset 9523 -7
+sleep 1
+chg_npc_y_offset 9523 -8
+sleep 1
+chg_npc_y_offset 9523 -9
+sleep 1
+chg_npc_y_offset 9523 -10
+sleep 11
+chg_npc_dir 9523 right
+fi
+sleep 32
+chg_speed 9523 normal
+step_npc 9523 2
+msg コルネオ\n「ほひ……ねえちゃん……ほんきだな\n　……えらいえらい\n\n　……おれもふざけてるばあいじゃねえな
+sleep 16
+jump_npc 9523 same 1
+msg コルネオ\n「しんらはアバランチとかいう\n　ちっこいウラそしきを　つぶすつもりだ\n\n　アジトもろともな
+sleep 16
+step_npc 9523 3
+msg コルネオ\n「もじどおり　つぶしちまうんだ\n　プレートをささえるはしらをこわしてよ
+sleep 16
+step_npc 9522 1
+msg ティファ\n「はしらをこわす！？
+sleep 16
+jump_npc 9523 same 1
+sleep 16
+step_npc 9523 3
+msg コルネオ\n「どうなるかわかるだろ？\n　プレートがヒューッ　ドガガガ！！だ\n\n　アバランチのアジトは\n　7ばんがいスラムだってな\n\n\n　この6ばんがいスラムじゃなくて\n　おれはホッとしてるぜ
+sleep 40
+chg_npc_dir 9522 down
+msg ティファ\n「7ばんがいスラムがなくなる！？
+sleep 32
+chg_npc_dir 9522 up
+sleep 16
+chg_speed 9522 fast
+step_npc 9522 2
+msg ティファ\n「クラウド　7ばんがいへ\n　いっしょにいってくれる？
+chg_npc_dir 9520 down
+sleep 16
+step_npc 9520 1
+set_talk_npc 9520
+msg 『もちろんだ\n　ティファ
+chg_event_move_char_speed normal
+chg_speed 9522 normal
+move_npc 9521 down 2
+move_npc 9522 down 1
+sleep 16
+move_npc 9522 left 3
+sleep 16
+move_char right 2
+move_npc 9521 left 2
+sleep 32
+chg_npc_dir 9521 up
+chg_npc_dir 9522 up
+chg_speed 9521 not_move
+chg_speed 9522 not_move
+set_flag_wall 9521
+set_flag_wall 9522
+chg_char_dir down
+draw_char on
+kill 9520
+create event_generator 9506 95 7 10 17 0 0 @095/don_corneo_end.txt
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start

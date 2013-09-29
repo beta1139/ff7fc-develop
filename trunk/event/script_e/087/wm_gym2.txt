@@ -1,0 +1,26 @@
+set_eternal_event
+wait_target_talk 8715
+reset_talk_flag 8715
+kill_through 8733
+chg_npc_img 8710 44
+chg_npc_dir 8710 down
+chg_type 8715 npc_event
+chg_type 8710 npc_event
+if_char_dir right
+kill_through 8700
+create event_generator 8702 87 9 14 17 0 0 @087/wm_gym3.txt
+end
+fi
+set_talk_npc 8715
+msg 「シロウトさん\n　わたしにようがあるのなら\n　はいごから　こえをかけるのがマナーよ
+reset_talk_npc
+sleep 8
+if_char_dir down
+create event_generator 8733 87 10 13 17 0 0 @087/wm_squat.txt
+fi
+if_char_dir left
+create event_generator 8733 87 11 14 17 0 0 @087/wm_squat.txt
+fi
+if_char_dir up
+create event_generator 8733 87 10 15 17 0 0 @087/wm_squat.txt
+fi

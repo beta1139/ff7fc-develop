@@ -1,0 +1,41 @@
+set_eternal_event
+wait_target_talked 7920
+reset_talked_flag 7920
+chg_type 7920 npc_event
+chg_dir_to_char 7920
+chg_speed 7920 normal
+sleep 16
+jump_npc 7920 same 1
+sleep 16
+step_npc 7920 2
+set_talk_npc 7920
+msg ジョニー\n「あ！！　あんたは？\n\n\n　エェ！！　あんたも？\n\n\n\n#2\n　　ああ　おれもだ\n　　おまえといっしょにするな\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+jump_npc 7920 same 2
+sleep 32
+chg_speed 7920 fast
+step_npc 7920 4
+set_talk_npc 7920
+msg ジョニー\n「ティファちゃんの　おさななじみ　でありながら\n　あ　あたらしい　カノジョをつれて\n　こんなところへやってくる
+reset_talk_npc
+step_npc 7920 6
+set_talk_npc 7920
+msg ジョニー\n「なんというひとなんだ　あんたは！！
+reset_talk_npc
+fi
+if_flag 3 1
+step_npc 7920 2
+set_talk_npc 7920
+msg ジョニー\n「エッ……おれだってよ\n　よくかんがえた　すえのけつろんだ\n　さいごのミッドガルの　おもいでによ…
+reset_talk_npc
+chg_npc_dir 7920 right
+sleep 16
+set_talk_npc 7920
+msg ジョニー\n「でもよ……\n　あそこのおとこが　こわくて
+reset_talk_npc
+fi
+chg_npc_dir 7920 right
+chg_speed 7920 not_move
+chg_type 7920 npc3
+set_flag_wall 7920

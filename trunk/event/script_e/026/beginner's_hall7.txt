@@ -1,0 +1,236 @@
+wait_same_pos
+create npc_event 2626 26 4 6 0 0 2 none
+draw_char off
+move_char up 1
+sleep 16
+jump_npc 2606 same 2
+sleep 32
+jump_npc 2606 same 2
+sleep 32
+set_talk_npc 2606
+msg 「たしゅけて～！
+reset_talk_npc
+msg3 96 「ポカポカ\n　ポカポカ……！！
+jump_npc 2607 same 2
+sleep 32
+jump_npc 2607 same 2
+sleep 32
+move_npc 2626 up 1
+jump_npc 2607 same 2
+sleep 32
+chg_npc_dir 2626 left
+erase_msg3
+sleep 32
+msg 『そこでがまんだ\n　おまえの（リミットゲージ）は　たまりはじめている
+sleep 16
+chg_speed 2606 fast
+step_npc 2606 7
+set_talk_npc 2606
+msg 「びえ～ん！！
+reset_talk_npc
+sleep 16
+msg 『よし（リミットゲージ）は　いっぱいだ！\n　えんりょはいらない\n　（リミットわざ）でしょうぶだ！！
+sleep 16
+loop 2
+chg_npc_dir 2606 right
+sleep 2
+chg_npc_dir 2606 down
+sleep 2
+chg_npc_dir 2606 left
+sleep 2
+chg_npc_dir 2606 up
+sleep 2
+pool
+chg_npc_dir 2606 right
+sleep 2
+chg_npc_dir 2606 down
+sleep 8
+loop 2
+set_screen_effect alpha 0 147 59 25
+sleep 2
+set_screen_effect alpha 0 147 59 50
+sleep 2
+set_screen_effect alpha 0 147 59 25
+sleep 2
+set_screen_effect alpha 0 147 59 0
+sleep 2
+pool
+play_se magic_attack.wav
+loop 2
+set_screen_effect alpha 0 147 59 25
+sleep 2
+set_screen_effect alpha 0 147 59 50
+sleep 2
+set_screen_effect alpha 0 147 59 25
+sleep 2
+set_screen_effect alpha 0 147 59 0
+sleep 2
+pool
+reset_screen_effect
+jump_npc_target_pos 2607 2 6
+loop 4
+sleep 2
+chg_npc_dir 2607 left
+sleep 2
+chg_npc_dir 2607 down
+sleep 2
+chg_npc_dir 2607 right
+sleep 2
+chg_npc_dir 2607 up
+pool
+play_se damage.wav
+chg_npc_img 2607 106
+sleep 32
+msg 『じょうできだ
+chg_speed 2606 normal
+jump_npc 2606 down 1
+sleep 32
+jump_npc 2606 same 1
+sleep 16
+jump_npc 2606 same 1
+sleep 16
+chg_speed 2606 not_move
+sleep 32
+chg_npc_img 2607 65
+sleep 32
+chg_speed 2606 normal
+loop 2
+sleep 4
+chg_npc_dir 2607 left
+sleep 4
+chg_npc_dir 2607 down
+sleep 4
+chg_npc_dir 2607 right
+sleep 4
+chg_npc_dir 2607 up
+pool
+jump_npc 2607 same 2
+sleep 32
+msg3 96 「まほう！！\n　まほう！！
+jump_npc 2607 same 2
+sleep 32
+chg_npc_dir 2606 up
+jump_npc 2607 same 2
+sleep 32
+move_npc 2606 up 1
+move_char up 1
+sleep 16
+chg_speed 2606 not_move
+sleep 16
+erase_msg3
+sleep 16
+set_talk_npc 2606
+msg3 80 「たしゅけて～！
+reset_talk_npc
+sleep 80
+erase_msg3
+msg 『おちつけ！\n　あいてが　まほうをつかうときは\n　（マバリア）か（リフレク）で　たいこうするのだ\n\n　（マバリア）は　まほうのダメージを\n　はんぶんにする　まほうだ\n\n\n　（リフレク）は　まほうをはねかえすが\n　はねかえす　かいすうに　せいげんがあるから\n　きをつけろ
+set_screen_effect alpha 0 147 59 0
+sleep 16
+chg_npc_dir 2606 down
+sleep 16
+loop 42
+inc_screen_effect_val 1
+sleep 1
+pool
+play_se magic_attack.wav
+loop 8
+inc_screen_effect_val 1
+sleep 1
+pool
+play_se razer.wav
+flush
+move_char down 1
+sleep 16
+reset_screen_effect
+play_se magic_attack.wav
+jump_npc 2607 same 2
+loop 8
+sleep 2
+chg_npc_dir 2607 left
+sleep 2
+chg_npc_dir 2607 down
+sleep 2
+chg_npc_dir 2607 right
+sleep 2
+chg_npc_dir 2607 up
+pool
+play_se damage.wav
+chg_npc_img 2607 106
+sleep 32
+chg_speed 2606 not_move
+msg 『じょうできだ
+jump_npc 2606 down 1
+sleep 48
+chg_speed 2606 normal
+sleep 24
+chg_speed 2606 not_move
+chg_npc_img 2607 65
+sleep 48
+chg_npc_dir 2607 right
+sleep 16
+msg 「さすが　もとソルジャ！\n　どちたら　つよくなるの～！
+chg_npc_dir 2606 right
+move_char up 2
+sleep 32
+jump_npc 2603 same 1
+jump_npc 2604 same 1
+jump_npc 2605 same 1
+sleep 16
+jump_npc 2603 same 1
+jump_npc 2604 same 1
+jump_npc 2605 same 1
+sleep 16
+set_talk_npc 2605
+msg 「なるの～！
+reset_talk_npc
+sleep 16
+chg_npc_dir 2626 up
+sleep 16
+msg 『おれみたいに　つよくなりたければ\n　マテリアを　こうりつよく　そだて\n　さいてきな　くみあわせを　さがすことだな\n\n　そうびする　ぶきやぼうぐの　しゅるいによって\n　マテリアの　せいちょうする　スピードはちがう\n\n\n　ぶきやぼうぐの　あいているあなの　かたちによって\n　マテリアの　くみあわせは　むげんにひろがる\n\n\n　おれに　アドバイスできるのは\n　そのくらいのことだ\n　もっとも　うまれついたそしつが\n　なければ　おれのようには　なれんがな
+sleep 16
+jump_npc 2603 same 1
+jump_npc 2604 same 1
+jump_npc 2605 same 1
+sleep 16
+jump_npc 2603 same 1
+jump_npc 2604 same 1
+jump_npc 2605 same 1
+sleep 16
+set_talk_npc 2605
+msg 「わかんな～い！
+reset_talk_npc
+jump_npc 2607 same 1
+move_char down 2
+sleep 16
+jump_npc 2607 same 1
+sleep 16
+msg 「わかんな～い！
+sleep 16
+chg_npc_dir 2626 left
+sleep 16
+chg_npc_dir 2626 up
+sleep 16
+chg_npc_dir 2626 left
+sleep 16
+msg 『おれをおこらせるな！\n\n\n\n　だいじょうぶだ　まずはやってみろ\n　そのうち　なれてしまう
+chg_speed 2603 normal
+chg_speed 2605 normal
+jump_npc 2603 down 1
+sleep 16
+jump_npc 2605 down 1
+sleep 16
+jump_npc 2603 right 1
+sleep 16
+chg_npc_dir 2603 down
+jump_npc 2605 right 1
+sleep 16
+chg_npc_dir 2605 down
+sleep 16
+chg_speed 2603 not_move
+chg_speed 2605 not_move
+chg_type 2603 npc
+chg_param 2603 「ものしり　もとソルジャーさん！！\n　バトルのこと　オレたちさんにんぐみに\n　おしえてくださいよ！\n　ほうしゅう　はずみますから！
+chg_char_dir left
+draw_char on
+kill_through 2626

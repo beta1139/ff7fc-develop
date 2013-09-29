@@ -1,0 +1,591 @@
+wait_same_pos
+wait_key_push_edge a
+wait_fake_countover
+kill_through 8301
+erase_msg3
+sleep 16
+end_fake_countdown
+create npc_event 8330 83 8 11 0 0 2 none
+kill 8310
+chg_speed 8317 normal
+chg_speed 8316 normal
+chg_speed 8315 normal
+chg_speed 8314 normal
+chg_speed 8313 normal
+move_npc 8317 down 1
+move_npc 8316 down 1
+move_npc 8315 down 1
+move_npc 8314 down 1
+move_npc 8313 down 1
+sleep 16
+chg_speed 8316 not_move
+chg_speed 8315 not_move
+chg_speed 8314 not_move
+chg_speed 8313 not_move
+set_active_msg 8317
+jump_npc 8317 same 1
+msg ムッキー\n「ウッス！！\n\n\n　（にこにこにこにこ……にんまり）
+sleep 16
+chg_speed 8317 not_move
+chg_npc_dir 8330 left
+sleep 6
+chg_npc_dir 8330 right
+sleep 6
+chg_npc_dir 8330 left
+sleep 6
+chg_npc_dir 8330 right
+sleep 6
+set_key_valid up
+set_key_valid down
+chg_npc_dir 8330 up
+msg 『まいったな……\n\n\n\n　どうするか……？\n\n\n\n#2\n　　おれはかえらせてもらうよ\n　　みのきけんをかんじるな…\n\n\n[[]][[]]
+sleep 8
+if_flag 3 0
+jump_npc 8330 same 1
+sleep 16
+chg_speed 8330 fast
+step_npc 8330 2
+msg 『おまえたちに　つきあってる\n　ひまなどない\n\n\n　みちをあけてもらおうか！
+fi
+if_flag 3 1
+msg 『どうやら　おれは　ゼッタイゼツメイのききに\n　おちいってるようだな…
+fi
+chg_speed 8317 normal
+chg_npc_img 8317 127
+loop 4
+chg_npc_dir 8317 down
+sleep 8
+chg_npc_dir 8317 up
+play_se squat.ogg
+sleep 2
+chg_npc_dir 8317 left
+sleep 8
+chg_npc_dir 8317 up
+sleep 2
+pool
+chg_npc_dir 8317 down
+msg ムッキー\n「ハァハァ……
+chg_npc_img 8317 111
+jump_npc 8317 same 1
+sleep 16
+chg_speed 8317 fast
+step_npc 8317 4
+msg ムッキー\n「てれちゃだめだ！　てれちゃ！\n　かたいことはいいっこなしだ　ぼうず！
+chg_speed 8317 normal
+chg_npc_img 8317 127
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+sleep 8
+chg_npc_dir 8317 up
+play_se squat.ogg
+sleep 2
+chg_npc_dir 8317 left
+sleep 6
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+sleep 2
+chg_npc_dir 8317 up
+sleep 2
+loop 3
+chg_npc_dir 8317 down
+sleep 8
+chg_npc_dir 8317 up
+play_se squat.ogg
+sleep 2
+chg_npc_dir 8317 left
+sleep 8
+chg_npc_dir 8317 up
+sleep 2
+pool
+chg_npc_dir 8317 down
+msg ムッキー\n「ハァハァ……\n\n\n　ともにセイシュンのアカとアセを\n　ながそうではないか！
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+chg_npc_dir 8313 down
+chg_npc_dir 8314 down
+chg_npc_dir 8315 down
+chg_npc_dir 8316 down
+sleep 4
+chg_npc_dir 8313 left
+chg_npc_dir 8314 left
+chg_npc_dir 8315 left
+chg_npc_dir 8316 left
+sleep 4
+chg_npc_dir 8313 up
+chg_npc_dir 8314 up
+chg_npc_dir 8315 up
+chg_npc_dir 8316 up
+sleep 4
+chg_npc_dir 8313 right
+chg_npc_dir 8314 right
+chg_npc_dir 8315 right
+chg_npc_dir 8316 right
+sleep 4
+chg_npc_dir 8313 down
+chg_npc_dir 8314 down
+chg_npc_dir 8315 down
+chg_npc_dir 8316 down
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+msg 「ウィーッス！！
+sleep 16
+chg_event_move_char_speed slow
+move_char up 7
+chg_speed 8315 slow
+chg_speed 8314 slow
+chg_speed 8313 slow
+move_npc 8315 down 1
+move_npc 8314 down 1
+move_npc 8313 down 1
+chg_npc_img 8330 97
+sleep 32
+chg_npc_dir 8315 left
+chg_npc_dir 8314 left
+chg_speed 8315 not_move
+chg_speed 8314 not_move
+chg_speed 8313 not_move
+chg_speed 8330 fast
+loop 4
+step_npc 8330 2
+jump_npc 8317 same 1
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+sleep 16
+pool
+chg_npc_img 8317 111
+loop 2
+step_npc 8330 2
+jump_npc 8317 same 1
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+sleep 16
+pool
+play_se syu.ogg
+msg3 -1 ムッキー\n「ぼうず！！　きやせするタイプだな
+loop 4
+step_npc 8330 2
+jump_npc 8317 same 1
+jump_npc 8316 same 1
+jump_npc 8315 same 1
+jump_npc 8314 same 1
+jump_npc 8313 same 1
+sleep 16
+pool
+play_se syu.ogg
+sleep 32
+erase_msg3
+sleep 8
+msg3 -1 ムッキー\n「ハァハァ……
+sleep 16
+chg_npc_img 8330 0
+chg_speed 8330 slow
+chg_speed 8317 slow
+chg_speed 8316 slow
+chg_speed 8315 slow
+chg_speed 8314 slow
+chg_speed 8313 slow
+move_npc 8316 up 1
+move_npc 8317 up 2
+move_npc 8330 up 3
+move_npc 8315 left 1
+sleep 8
+play_se syu.ogg
+sleep 24
+move_npc 8316 left 1
+move_npc 8315 up 2
+sleep 32
+chg_npc_dir 8316 right
+chg_npc_dir 8317 left
+slide_walk_npc 8317 right 1
+chg_npc_dir 8314 left
+chg_npc_dir 8313 left
+sleep 8
+erase_msg3
+play_se syu.ogg
+sleep 8
+msg3 -1 ムッキー\n「りっぱなもんだ！！
+sleep 16
+slide_walk_npc 8316 left 1
+slide_walk_npc 8330 left 2
+move_npc 8317 left 3
+move_npc 8314 left 1
+sleep 32
+chg_npc_dir 8316 down
+slide_walk_npc 8316 down 1
+move_npc 8315 up 1
+move_npc 8314 up 2
+chg_npc_dir 8313 up
+sleep 16
+chg_npc_y_offset 8316 -8
+sleep 16
+chg_npc_dir 8316 right
+slide_walk_npc 8316 left 2
+slide_walk_npc 8330 down 1
+move_npc 8315 left 2
+move_npc 8313 left 1
+sleep 16
+erase_msg3
+chg_npc_y_offset 8330 -8
+sleep 16
+move_char down 6
+move_npc 8317 down 2
+slide_walk_npc 8330 left 1
+move_npc 8314 left 2
+move_npc 8313 up 1
+sleep 16
+chg_npc_y_offset 8317 -8
+sleep 16
+play_se_loop squish.ogg
+move_npc 8316 down 1
+slide_walk_npc 8330 down 1
+move_npc 8315 down 1
+move_npc 8313 left 2
+sleep 16
+chg_npc_y_offset 8315 -2
+sleep 16
+chg_npc_dir 8316 right
+chg_npc_dir 8317 left
+move_npc 8315 left 2
+move_npc 8314 down 1
+sleep 16
+chg_npc_y_offset 8314 -2
+sleep 16
+chg_npc_dir 8330 down
+move_npc 8314 left 1
+move_npc 8313 down 1
+sleep 16
+chg_npc_y_offset 8313 -2
+sleep 16
+chg_npc_dir 8315 right
+chg_npc_dir 8314 down
+chg_npc_dir 8313 left
+sleep 64
+msg ムッキー\n「ハァ　ビバビバ……\n　ふろはいいなあ\n\n　こころがやすらぐなあ
+sleep 16
+jump_npc 8317 same 1
+msg ムッキー\n「どうだ　ぼうず！\n\n\n　きもちいいだろ？\n\n\n\n#2\n　　…………\n　　くるしいな\n\n\n[[]][[]]
+sleep 16
+chg_npc_img 8330 97
+if_flag 3 0
+msg 『きぶんがわるい\n　だしてくれ…
+fi
+if_flag 3 1
+msg 『あつくるしいだけだ……
+fi
+jump_npc 8317 same 1
+msg ムッキー\n「がまん　がまん\n　10かぞえるまで　だめだ
+msg3 -1 『10……
+sleep 56
+erase_msg3
+sleep 8
+msg3 -1 『9……
+sleep 36
+erase_msg3
+sleep 8
+jump_npc 8317 same 1
+msg ムッキー\n「ぼうず　としはいくつだ？
+sleep 8
+msg3 -1 『8……
+sleep 36
+erase_msg3
+sleep 8
+msg 『21だ…
+jump_npc 8317 same 1
+msg ムッキー\n「ぼくのはんぶんも　いってないわけだ\n　いいねえ\n\n　どうだい？　ぼうず\n\n\n\n　ムッキーのせいしゅんサークルに\n　はいらないかい？\n\n\n#2\n　　きょうみないね\n　　…………\n\n\n[[]][[]]
+msg3 -1 『7……
+sleep 56
+erase_msg3
+sleep 8
+msg3 -1 『6……
+sleep 36
+erase_msg3
+sleep 8
+if_flag 3 0
+msg 『きょうみないね
+fi
+if_flag 3 1
+msg 『わるいが　ほかをあたってくれ
+fi
+sleep 16
+jump_npc 8317 same 1
+msg ムッキー\n「そうかい　ざんねんだなあ\n\n\n　これから　たいようのふりそそぐくに　での\n　がっしゅくもあるんだけど
+fi
+sleep 8
+msg3 -1 『5……
+sleep 56
+erase_msg3
+sleep 8
+msg3 -1 『4……
+sleep 56
+erase_msg3
+sleep 8
+msg3 -1 『3……
+sleep 56
+erase_msg3
+sleep 8
+msg3 -1 『2……
+sleep 56
+erase_msg3
+sleep 8
+msg3 -1 『1……
+sleep 56
+erase_msg3
+sleep 8
+msg 『さ　やくそくのじかんだ
+sleep 16
+jump_npc 8317 same 1
+msg ムッキー\n「すこしは　あそんでくれても\n　いいんじゃない？\n\n　………おじさん　さびしいよ…
+move_char up 6
+jump_npc 8313 same 1
+jump_npc 8314 same 1
+jump_npc 8315 same 1
+jump_npc 8316 same 1
+jump_npc 8317 same 1
+sleep 16
+jump_npc 8313 same 1
+jump_npc 8314 same 1
+jump_npc 8315 same 1
+jump_npc 8316 same 1
+jump_npc 8317 same 1
+chg_npc_dir 8330 up
+sleep 112
+stop_se
+move_npc 8313 up 1
+move_npc 8314 right 1
+move_npc 8315 right 2
+sleep 32
+chg_npc_y_offset 8313 -4
+move_npc 8313 right 3
+move_npc 8314 up 1
+chg_npc_img 8330 0
+move_npc 8330 up 1
+move_npc 8317 left 1
+sleep 32
+chg_npc_y_offset 8314 -4
+move_npc 8314 right 2
+move_npc 8315 up 1
+move_npc 8330 right 1
+move_npc 8317 up 1
+move_npc 8316 right 1
+sleep 48
+play_se syu.ogg
+chg_npc_y_offset 8315 -4
+move_npc 8315 right 1
+move_npc 8330 up 1
+move_npc 8317 right 1
+move_npc 8316 up 1
+sleep 32
+chg_speed 8330 normal
+chg_speed 8317 normal
+chg_speed 8316 normal
+chg_speed 8315 normal
+chg_speed 8314 normal
+chg_speed 8313 normal
+chg_npc_y_offset 8330 -4
+chg_npc_dir 8313 left
+move_npc 8314 down 1
+move_npc 8330 right 2
+move_npc 8317 up 1
+move_npc 8316 right 1
+move_npc 8315 right 1
+sleep 16
+move_npc 8315 down 3
+chg_npc_y_offset 8317 -4
+move_npc 8314 right 1
+move_npc 8317 right 2
+move_npc 8316 up 1
+sleep 16
+play_se syu.ogg
+chg_npc_y_offset 8316 -4
+chg_npc_dir 8314 left
+move_npc 8330 down 3
+move_npc 8316 right 2
+sleep 16
+chg_npc_dir 8313 down
+chg_npc_dir 8314 down
+chg_speed 8313 not_move
+chg_speed 8314 not_move
+move_npc 8317 down 2
+sleep 16
+move_npc 8315 right 1
+move_npc 8316 down 1
+sleep 16
+move_char down 6
+move_npc 8315 up 1
+chg_speed 8317 not_move
+chg_speed 8316 not_move
+chg_npc_dir 8330 up
+sleep 16
+chg_npc_dir 8315 down
+chg_speed 8315 not_move
+sleep 176
+chg_speed 8317 normal
+step_npc 8317 2
+msg ムッキー\n「ぼうず！！\n　これ　ぼくのだいじなもの\n\n　きょうのきねんに　ぼうずにあげよう！
+chg_npc_dir 8317 left
+sleep 4
+chg_npc_dir 8317 up
+sleep 4
+chg_npc_dir 8317 right
+sleep 4
+chg_npc_dir 8317 down
+sleep 4
+step_npc 8317 2
+play_se pick_up.wav
+add_item 6014
+msg キーアイテム『ビキニパンツ』をてにいれた！
+sleep 16
+chg_npc_dir 8317 up
+sleep 48
+jump_npc 8317 same 1
+sleep 16
+chg_npc_dir 8317 down
+step_npc 8317 1
+msg ムッキー\n「またあえるといいね！
+play_se_loop stomp.ogg
+chg_speed 8317 normal
+chg_speed 8316 normal
+chg_speed 8315 normal
+chg_speed 8314 normal
+chg_speed 8313 normal
+move_npc 8313 up 2
+move_npc 8314 up 3
+move_npc 8315 up 3
+move_npc 8316 up 3
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+move_npc 8313 right 2
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+move_npc 8314 right 2
+move_npc 8315 right 2
+move_npc 8316 right 2
+sleep 16
+move_npc 8313 up 2
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+move_npc 8314 up 2
+move_npc 8315 up 3
+move_npc 8316 right 1
+chg_npc_dir 8317 up
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+open_door 8350
+play_se door_open_hard.wav
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+reset_slide_walk_char_flag
+move_char down 5
+move_npc 8316 up 2
+kill 8313
+move_npc 8317 up 4
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+kill 8314
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+kill 8315
+kill 8316
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 16
+move_npc 8317 right 3
+sleep 48
+move_npc 8317 up 2
+sleep 32
+kill 8317
+chg_npc_dir 8330 down
+sleep 16
+chg_event_move_char_speed normal
+draw_char on
+kill 8330
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 3
+sleep 80
+msg 『すごいパンツだな……\n　これをおれがはくのか……\n\n\n　……しがたがない\n　ティファをたすけるためだからな
+create event_generator 8009 80 5 15 17 0 0 @080/honey_bee_inn20.txt
+kill 8311
+kill_through 8011
+kill_through_range 8002 8003
+kill_through_range 8006 8007
+kill_through_range 8016 8017
+set_npc_pos 8012 80 5 6
+set_npc_pos 8013 80 5 15
+chg_type 8012 npc2
+chg_type 8013 npc2
+sleep 16
+reset_char_img_tmp
+chg_char_dir up
+set_key_valid left
+set_key_valid right
+set_key_valid start
+chg_char_state_move
+sleep 48
+jump_npc 8312 left 1
+sleep 16
+jump_npc 8312 up 1
+sleep 16
+kill 8312
+sleep 8
+close_door 8350

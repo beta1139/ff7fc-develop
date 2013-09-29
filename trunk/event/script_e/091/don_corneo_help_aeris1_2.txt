@@ -1,0 +1,18 @@
+set_eternal_event
+wait_same_pos
+create npc_event 9120 91 10 5 0 0 2 none
+draw_char off
+chg_event_move_char_speed fast
+move_char left 4
+msg3 -1 エアリス\n「キャ～！！\n　イヤ～！！
+sleep 32
+wait_key_push_edge a
+erase_msg3
+move_char right 4
+sleep 32
+chg_event_move_char_speed normal
+move_char down 1
+move_npc 9120 down 1
+sleep 16
+draw_char on
+kill 9120

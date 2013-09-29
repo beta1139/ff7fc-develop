@@ -1,0 +1,234 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through_range 9509 9512
+loop 2
+chg_npc_dir 9523 down
+sleep 5
+chg_npc_dir 9523 left
+sleep 5
+chg_npc_dir 9523 up
+sleep 5
+chg_npc_dir 9523 right
+sleep 5
+pool
+jump_npc 9523 same 1
+sleep 16
+step_npc 9523 2
+set_talk_npc 9523
+msg コルネオ\n「ほひ　うれしいこといってくれるのォ！\n\n\n　ほんなら　ナ　ナニがしたい？\n\n\n\n#2\n　　あなたのス　キ　な　コ　ト\n　　べつに……\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+step_char 1
+sleep 32
+loop 2
+chg_npc_dir 9523 down
+sleep 3
+chg_npc_dir 9523 left
+sleep 3
+chg_npc_dir 9523 up
+sleep 3
+chg_npc_dir 9523 right
+sleep 3
+pool
+play_se puy.ogg
+jump_npc 9523 same 1
+sleep 16
+play_se puy.ogg
+jump_npc 9523 same 1
+sleep 16
+chg_speed 9523 fast
+step_npc 9523 3
+set_talk_npc 9523
+msg コルネオ\n「ほひほひ～！！　た　たまらん！\n　じゃあ　おねがい……
+reset_talk_npc
+play_se corneo_jump.ogg
+jump_npc 9523 same 2
+sleep 32
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_speed 9523 fast
+step_npc 9523 4
+set_talk_npc 9523
+msg コルネオ\n「チューして　チュー！！\n\n\n#2\n　　ええ……\n　　それはダメ……\n\n\n[[]][[]]
+reset_talk_npc
+create npc_event 9520 95 8 7 13 2 1 none
+draw_char off
+if_flag 3 0
+sleep 32
+chg_event_move_char_speed slow
+loop 2
+chg_speed 9520 slow
+move_npc 9520 left 1
+sleep 2
+chg_speed 9520 not_step
+sleep 40
+pool
+step_npc 9523 3
+chg_speed 9520 slow
+move_npc 9520 left 1
+sleep 2
+chg_speed 9520 not_step
+sleep 40
+chg_speed 9520 slow
+slide_walk_npc 9520 right 1
+sleep 6
+chg_speed 9520 not_step
+step_npc 9523 2
+sleep 24
+jump_npc 9523 same 1
+sleep 40
+chg_npc_dir 9520 right
+chg_speed 9520 fast
+step_npc 9520 2
+sleep 8
+chg_npc_dir 9520 left
+sleep 56
+chg_event_move_char_speed fast
+chg_speed 9520 normal
+move_char left 1
+move_npc 9520 left 1
+sleep 6
+chg_speed 9520 not_step
+msg3 -1 「ちょっとまったーッ！！
+sleep 16
+wait_key_push_edge a
+erase_msg3
+chg_speed 9520 fast
+slide_walk_npc 9520 right 1
+sleep 3
+chg_speed 9520 not_step
+chg_npc_dir 9523 down
+chg_npc_dir 9520 down
+sleep 16
+chg_event_move_char_speed fast
+move_char down 2
+sleep 20
+play_se door_open_hard.wav
+open_door 9550
+sleep 4
+create npc_event 9522 95 6 15 2 0 3 none
+move_npc 9522 up 5
+sleep 8
+create npc_event 9521 95 6 15 3 0 3 none
+move_npc 9521 up 5
+move_char up 2
+sleep 4
+close_door 9550
+sleep 12
+jump_npc 9523 same 1
+sleep 16
+move_npc 9522 right 1
+jump_npc 9523 same 1
+sleep 8
+chg_npc_dir 9522 up
+sleep 8
+chg_speed 9523 fast
+step_npc 9523 3
+msg コルネオ\n「ほひ～\n　なんだ　なんだ　なにものだ！
+sleep 16
+chg_speed 9522 normal
+step_npc 9522 2
+msg ティファ\n「クラウド……\n\n\n　まさかあなた\n　いまホンキで……
+move_char right 1
+sleep 8
+jump_npc 9520 same 1
+chg_npc_dir 9523 right
+sleep 16
+chg_npc_dir 9520 right
+sleep 4
+chg_npc_dir 9520 left
+sleep 4
+chg_npc_dir 9520 right
+sleep 4
+chg_npc_dir 9520 left
+sleep 4
+chg_npc_dir 9520 down
+chg_char_dir down
+draw_char on
+kill 9520
+sleep 24
+play_se syu.ogg
+loop 6
+chg_char_dir left
+sleep 2
+chg_char_dir up
+sleep 2
+chg_char_dir right
+sleep 2
+chg_char_dir down
+sleep 2
+pool
+chg_char_dir left
+reset_char_img_tmp
+sleep 8
+create npc_event 9520 95 8 7 0 2 2 none
+draw_char off
+sleep 8
+jump_char left 2
+jump_npc_target_pos 9523 5 7
+play_se puy.ogg
+sleep 32
+chg_speed 9523 fast
+step_npc 9523 4
+msg コルネオ\n「オ　オトコ！？\n　どーなってるの？
+chg_speed 9521 normal
+chg_speed 9522 slow
+move_npc 9522 up 1
+sleep 16
+move_npc 9521 right 2
+sleep 32
+move_npc 9521 up 2
+move_npc 9522 right 1
+sleep 32
+chg_npc_dir 9521 left
+chg_npc_dir 9522 left
+set_flag 19 2
+create event_generator 9513 95 6 7 17 0 0 @095/don_corneo10.txt
+end
+fi
+if_flag 3 1
+chg_speed 9523 fast
+step_npc 9523 4
+msg コルネオ\n「なんで？\n　なんでなんで？
+jump_npc 9523 same 1
+sleep 16
+jump_npc 9523 same 1
+sleep 32
+chg_npc_dir 9520 right
+sleep 32
+chg_speed 9520 normal
+step_npc 9520 1
+msg 『だって……
+sleep 32
+chg_npc_dir 9520 left
+sleep 16
+step_npc 9520 2
+msg 『あんたのそのくちは\n　じょうほうをもらすのに\n　つかってもらうからさ！！
+create event_generator 9512 95 8 7 17 0 0 @095/don_corneo9.txt
+chg_char_state_move
+loop_inf
+sleep 400
+pool
+fi
+fi
+if_flag 3 1
+create event_generator 9511 95 8 7 17 0 0 @095/don_corneo8.txt
+fi
+chg_char_state_move
+loop_inf
+sleep 400
+pool

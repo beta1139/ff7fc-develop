@@ -1,0 +1,237 @@
+set_eternal_event
+wait_target_talk 95002
+reset_talk_flag 95002
+draw_image 0 -128 -128 0 0 128 128 1 newgame_or_continue_back.bmp
+draw_image 1 -128 256 0 128 128 120 1 newgame_or_continue_back.bmp
+draw_image 2 256 -128 128 0 128 128 1 newgame_or_continue_back.bmp
+draw_image 3 256 256 128 128 128 120 1 newgame_or_continue_back.bmp
+set_image_alpha 0 0
+set_image_alpha 1 0
+set_image_alpha 2 0
+set_image_alpha 3 0
+loop 28
+chg_image_pos_offset 0 1 1 0 0 0 0
+chg_image_pos_offset 1 1 -1 0 0 0 0
+chg_image_pos_offset 2 -1 1 0 0 0 0
+chg_image_pos_offset 3 -1 -1 0 0 0 0
+pool
+loop 100
+inc_image_alpha 0
+inc_image_alpha 1
+inc_image_alpha 2
+inc_image_alpha 3
+chg_image_pos_offset 0 1 1 0 0 0 0
+chg_image_pos_offset 1 1 -1 0 0 0 0
+chg_image_pos_offset 2 -1 1 0 0 0 0
+chg_image_pos_offset 3 -1 -1 0 0 0 0
+sleep 1
+pool
+set_text 2 あいうえお　かきくけこ　さしすせそ　たちつてと　なにぬねの
+set_text 4  abcde fghij klmno pqrst uvwxy z
+set_text 6 　　　　　　　　　　　Created By
+set_text 8 　　　　　　　　FF7 Wo Famicon Ni
+set_text 10 　　　　Ishokusaseta Shokunin Wa
+set_text 12 　　　　　　　　　　KAMI　Nintei
+set_text_col 2 0 4 1
+set_text_col 2 6 10 3
+set_text_col 2 12 16 2
+set_text_col 2 18 22 0
+set_text_col 2 24 28 1
+set_text_col 4 1 5 3
+set_text_col 4 7 11 2
+set_text_col 4 13 17 0
+set_text_col 4 19 23 1
+set_text_col 4 25 29 3
+set_text_col 4 31 31 2
+set_text_col 6 0 31 0
+set_text_col 8 0 31 2
+set_text_col 10 0 15 3
+set_text_col 10 17 25 1
+set_text_col 10 27 28 0
+set_text_col 12 0 13 1
+set_text_col 12 15 20 2
+loop 8
+sleep 1
+set_text_alpha 2 25
+sleep 1
+set_text_alpha 2 0
+pool
+loop 8
+sleep 1
+set_text_alpha 2 50
+sleep 1
+set_text_alpha 2 25
+pool
+loop 8
+sleep 1
+set_text_alpha 2 75
+sleep 1
+set_text_alpha 2 50
+pool
+loop 8
+sleep 1
+set_text_alpha 2 100
+sleep 1
+set_text_alpha 2 75
+pool
+set_text_alpha 2 100
+loop 8
+sleep 1
+set_text_alpha 4 25
+sleep 1
+set_text_alpha 4 0
+pool
+loop 8
+sleep 1
+set_text_alpha 4 50
+sleep 1
+set_text_alpha 4 25
+pool
+loop 8
+sleep 1
+set_text_alpha 4 75
+sleep 1
+set_text_alpha 4 50
+pool
+loop 8
+sleep 1
+set_text_alpha 4 100
+sleep 1
+set_text_alpha 4 75
+pool
+set_text_alpha 4 100
+loop 8
+sleep 1
+set_text_alpha 6 25
+sleep 1
+set_text_alpha 6 0
+pool
+loop 8
+sleep 1
+set_text_alpha 6 50
+sleep 1
+set_text_alpha 6 25
+pool
+loop 8
+sleep 1
+set_text_alpha 6 75
+sleep 1
+set_text_alpha 6 50
+pool
+loop 8
+sleep 1
+set_text_alpha 6 100
+sleep 1
+set_text_alpha 6 75
+pool
+set_text_alpha 6 100
+loop 8
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+loop 8
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+loop 8
+sleep 1
+set_text_alpha 8 75
+sleep 1
+set_text_alpha 8 50
+pool
+loop 8
+sleep 1
+set_text_alpha 8 100
+sleep 1
+set_text_alpha 8 75
+pool
+set_text_alpha 8 100
+loop 8
+sleep 1
+set_text_alpha 10 25
+sleep 1
+set_text_alpha 10 0
+pool
+loop 8
+sleep 1
+set_text_alpha 10 50
+sleep 1
+set_text_alpha 10 25
+pool
+loop 8
+sleep 1
+set_text_alpha 10 75
+sleep 1
+set_text_alpha 10 50
+pool
+loop 8
+sleep 1
+set_text_alpha 10 100
+sleep 1
+set_text_alpha 10 75
+pool
+set_text_alpha 10 100
+loop 8
+sleep 1
+set_text_alpha 12 25
+sleep 1
+set_text_alpha 12 0
+pool
+loop 8
+sleep 1
+set_text_alpha 12 50
+sleep 1
+set_text_alpha 12 25
+pool
+loop 8
+sleep 1
+set_text_alpha 12 75
+sleep 1
+set_text_alpha 12 50
+pool
+loop 8
+sleep 1
+set_text_alpha 12 100
+sleep 1
+set_text_alpha 12 75
+pool
+set_text_alpha 12 100
+sleep 120
+clear_text 2
+clear_text 4
+clear_text 6
+clear_text 8
+clear_text 10
+clear_text 12
+set_text_alpha 2 0
+set_text_alpha 4 0
+set_text_alpha 6 0
+set_text_alpha 8 0
+set_text_alpha 10 0
+set_text_alpha 12 0
+set_text_col 2 0 31 0
+set_text_col 4 0 31 0
+set_text_col 6 0 31 0
+set_text_col 8 0 31 0
+set_text_col 10 0 31 0
+set_text_col 12 0 31 0
+erase_image 0
+erase_image 1
+erase_image 2
+erase_image 3
+draw_image 0 0 0 0 0 256 120 1 newgame_or_continue_back.bmp
+draw_image 1 0 120 0 120 256 120 1 newgame_or_continue_back.bmp
+loop 128
+dec_image_alpha 0
+dec_image_alpha 1
+chg_image_pos_offset 0 -3 0 0 0 0 0
+chg_image_pos_offset 1 3 0 0 0 0 0
+sleep 1
+pool
+erase_image 0
+erase_image 1
+

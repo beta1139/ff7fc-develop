@@ -1,3 +1,0 @@
-wait_event_invalid 1661
-wait_target_talked 1668
-chg_param 1668 「アバランチで　なをあげて　いつか　おれだって……\n　っす！

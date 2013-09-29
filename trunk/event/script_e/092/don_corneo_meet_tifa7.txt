@@ -1,0 +1,237 @@
+wait_target_talk 9223
+chg_char_img_tmp 13
+kill_through_range 9207 9209
+chg_type 9221 npc_event
+chg_type 9223 npc_event
+chg_speed 9223 normal
+chg_dir_to_char 9223
+set_talk_npc 9223
+msg ティファ\n「……とにかく　ぶじでよかったわ
+reset_talk_npc
+if_char_dir left
+move_char down 1
+sleep 16
+move_char left 1
+chg_npc_dir 9223 down
+sleep 16
+chg_char_dir up
+fi
+if_char_dir right
+move_char down 1
+sleep 16
+move_char right 1
+chg_npc_dir 9223 down
+sleep 16
+chg_char_dir up
+fi
+sleep 16
+step_char 1
+sleep 16
+msg 『ああ\n　で　なにがあったんだ？
+sleep 16
+step_npc 9223 2
+set_talk_npc 9223
+msg ティファ\n「5ばんまこうろから　もどったら\n　あやしいおとこが　うろついていたのよ\n\n　そのおとこをバレットがつかまえて\n　ギューッとしめて　はなしをききだしたの
+reset_talk_npc
+chg_speed 9221 normal
+step_char 1
+sleep 16
+msg 『ここのドンのなまえがでたわけか
+chg_npc_dir 9221 down
+sleep 40
+chg_npc_dir 9221 right
+step_npc 9223 1
+set_talk_npc 9223
+msg ティファ\n「そう　ドン　コルネオ\n\n\n　バレットはコルネオなんて\n　こあくとうだから　ほうっておけって\n　いうんだけど……
+reset_talk_npc
+sleep 16
+chg_npc_dir 9223 left
+step_npc 9223 1
+set_talk_npc 9223
+msg ティファ\n「なんだか　きになってしかたがないのよ
+reset_talk_npc
+sleep 16
+step_char 1
+sleep 16
+msg 『わかったよ\n　コルネオじしんから\n　はなしをきこうってわけだな
+sleep 16
+chg_npc_dir 9223 down
+sleep 16
+step_npc 9223 2
+set_talk_npc 9223
+msg ティファ\n「それで　なんとかここまできたけど\n　ちょっとこまってるの
+reset_talk_npc
+chg_npc_dir 9221 down
+sleep 48
+chg_npc_dir 9221 right
+step_npc 9223 2
+set_talk_npc 9223
+msg ティファ\n「コルネオは　じぶんのおヨメさんを\n　さがしてるらしいの\n\n　まいにち　3にんのおんなのコのなかから\n　ひとりをえらんで……あの……その
+reset_talk_npc
+jump_npc 9223 same 1
+sleep 16
+chg_speed 9223 fast
+step_npc 9223 4
+set_talk_npc 9223
+msg ティファ\n「とにかく！\n　そのひとりに　わたしがえらばれなければ\n　……こんやはアウトなのよ
+reset_talk_npc
+sleep 32
+chg_npc_dir 9221 down
+sleep 16
+chg_npc_dir 9221 left
+sleep 16
+chg_speed 9221 normal
+step_npc 9221 2
+set_talk_npc 9221
+msg エアリス\n「あの……きこえちゃったんだけど
+reset_talk_npc
+chg_char_dir right
+chg_npc_dir 9223 right
+sleep 16
+chg_speed 9221 slow
+move_npc 9221 left 3
+sleep 96
+chg_speed 9221 normal
+step_npc 9221 2
+set_talk_npc 9221
+msg エアリス\n「3にんのおんなのコが\n　ぜんいん　あなたのなかまだったら\n　もんだいナシ　じゃないかな？
+reset_talk_npc
+sleep 16
+chg_speed 9223 normal
+step_npc 9223 2
+set_talk_npc 9223
+msg ティファ\n「それはそうだけど……
+reset_talk_npc
+sleep 16
+step_npc 9221 2
+set_talk_npc 9221
+msg エアリス\n「ここにふたりいるわよ
+reset_talk_npc
+jump_char same 1
+sleep 16
+chg_event_move_char_speed fast
+step_char 2
+sleep 16
+msg 『ダメだ　エアリス！\n　あんたを　まきこむわけにはいかない
+chg_npc_dir 9221 down
+set_active_msg 9221
+jump_npc 9221 same 1
+set_talk_npc 9221
+msg エアリス\n「あら？　ティファさんなら\n　きけんなめにあってもいいの？
+reset_talk_npc
+chg_char_dir up
+jump_char same 1
+sleep 16
+chg_npc_dir 9221 left
+step_char 2
+sleep 16
+msg 『いや　ティファは……
+sleep 16
+move_npc 9223 right 1
+sleep 16
+chg_char_dir right
+step_npc 9223 1
+set_talk_npc 9223
+msg ティファ\n「いいの？
+reset_talk_npc
+draw_fake_countdown off
+start_fake_countdown_sec 1
+set_active_msg 9223
+chg_speed 9221 slow
+chg_speed 9223 slow
+move_npc 9221 right 3
+move_npc 9223 right 3
+sleep 16
+set_talk_npc 9221
+msg エアリス\n「わたし　スラムそだちだから\n　きけんなこと　なれてるの
+reset_talk_npc
+sleep 16
+wait_fake_countover
+chg_npc_dir 9221 left
+sleep 16
+end_fake_countdown
+chg_speed 9221 normal
+step_npc 9221 2
+set_talk_npc 9221
+msg エアリス\n「あなたこそ　わたし\n　しんじてくれる？
+reset_talk_npc
+sleep 16
+chg_speed 9223 normal
+step_npc 9223 2
+set_talk_npc 9223
+msg ティファ\n「ありがとう　エアリスさん
+reset_talk_npc
+sleep 16
+step_npc 9221 2
+set_talk_npc 9221
+msg エアリス\n「エアリス　でいいわよ
+reset_talk_npc
+sleep 16
+msg 「お～い！！
+chg_npc_dir 9221 up
+chg_npc_dir 9223 up
+chg_char_dir up
+create npc_event 9220 92 4 13 13 0 2 none
+create npc_event 9224 92 10 5 131 1 2 none
+draw_char off
+chg_event_move_char_speed normal
+move_char up 3
+move_npc 9224 down 4
+sleep 64
+step_npc 9224 2
+set_talk_npc 9224
+msg 「おねえちゃんたち　じかんだよ\n　コルネオさまが　おまちかねだ！
+reset_talk_npc
+chg_npc_dir 9224 up
+sleep 16
+draw_fake_countdown off
+start_fake_countdown_sec 2
+chg_event_move_char_speed slow
+chg_speed 9224 slow
+move_npc 9224 up 5
+move_char down 3
+sleep 32
+msg3 -1 「ウロウロするなっていったのに……\n　これだから　ちかごろの\n　おネエちゃんたちは……
+sleep 16
+wait_key_push_edge a
+erase_msg3
+wait_fake_countover
+sleep 16
+end_fake_countdown
+msg 「はやくしてくれよ！
+chg_npc_dir 9220 right
+chg_char_dir right
+sleep 16
+step_npc 9220 2
+chg_npc_dir 9221 left
+chg_npc_dir 9223 left
+msg 『きくまでもないと　おもうけど\n　あとのひとりはやっぱり……\n\n\n　おれ……なんだろうな？
+sleep 16
+chg_npc_dir 9223 right
+sleep 24
+step_npc 9223 1
+set_talk_npc 9223
+msg ティファ\n「きくまでも
+reset_talk_npc
+sleep 24
+step_npc 9221 1
+set_talk_npc 9221
+msg エアリス\n「ないわね
+reset_talk_npc
+draw_char on
+kill 9220
+chg_npc_dir 9221 down
+chg_npc_dir 9223 down
+chg_type 9221 npc
+chg_type 9223 npc
+chg_speed 9221 not_move
+chg_speed 9223 not_move
+chg_param 9221 エアリス\n「はやくいかないと\n　あやしまれない？
+set_inactive_msg 9221
+set_inactive_msg 9223
+kill 9224
+create event_generator 9211 92 10 10 17 0 0 @092/don_corneo_meet_tifa8.txt
+chg_char_state_move
+loop_inf
+sleep 400
+pool

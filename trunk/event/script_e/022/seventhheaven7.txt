@@ -1,0 +1,215 @@
+wait_same_pos
+sleep 16
+set_talk_npc 2202
+msg ティファ\n「おもいだして　くれたみたいね\n　やくそく
+reset_talk_npc
+sleep 32
+chg_npc_dir 2207 right
+chg_npc_img 2207 97
+step_npc 2207 3
+sleep 80
+chg_npc_img 2207 0
+chg_npc_dir 2207 up
+draw_char on
+kill 2207
+sleep 16
+msg 『おれは　えいゆうでも　ゆうめいでも　ない\n　やくそくは……まもれない
+sleep 32
+set_talk_npc 2202
+msg ティファ\n「でも　こどものころの　ゆめを\n　じつげん　したんでしょ\n\n　ちゃんと　ソルジャーに　なったんだもの
+reset_talk_npc
+sleep 64
+move_npc 2202 up 1
+sleep 32
+chg_npc_dir 2202 down
+sleep 32
+msg ティファ\n「だから　ねっ！\n　こんどこそ　やくそくを……
+sleep 64
+play_se door_open_hard.wav
+chg_npc_img 2251 2
+sleep 16
+create npc_event 2201 22 8 4 1 1 0 none
+chg_speed 2201 normal
+set_flag_wall 2201
+move_npc 2201 down 3
+chg_npc_dir 2202 right
+sleep 48
+move_npc 2201 left 1
+sleep 16
+move_npc 2201 down 1
+sleep 16
+move_npc 2201 left 1
+sleep 16
+chg_npc_dir 2201 down
+msg バレット\n「おい　ちょっと　まて！\n　ソルジャーさんよ！
+sleep 16
+move_npc 2202 left 1
+sleep 16
+move_npc 2201 left 1
+sleep 16
+chg_npc_dir 2202 down
+chg_npc_dir 2201 down
+chg_npc_dir 2201 left
+chg_npc_img 2201 98
+sleep 16
+msg バレット\n「やくそくは　やくそく　だからな！\n　ほら　かねだ！！
+sleep 16
+chg_npc_dir 2201 down
+chg_npc_img 2201 1
+move_npc 2201 down 1
+sleep 16
+step_npc 2201 2
+sleep 32
+play_se pick_up.wav
+msg 「バレットの　へそくり\n　１５００ギル　てにいれた！
+add_gil 1500
+sleep 16
+move_npc 2201 up 1
+sleep 24
+chg_npc_dir 2201 down
+sleep 48
+msg 『こんな　しけた　ほうしゅう\n　じょうだんじゃ　ないな
+sleep 16
+msg ティファ\n「え？　それじゃ！！
+sleep 16
+msg 『つぎの　ミッションは　あるのか？\n　ばいがくの　３０００ギルで\n　うけて　やってもいい
+jump_npc 2201 same 2
+sleep 48
+msg バレット\n「なんだと……！……！
+chg_speed 2202 normal
+chg_npc_dir 2202 right
+sleep 16
+msg ティファ\n「いいから　いいから
+sleep 16
+msg ティファ\n「ヒソヒソ……\n（ひとでに　こまってる　ってのが　ほんねでしょ？）
+chg_speed 2201 normal
+chg_npc_dir 2201 left
+sleep 16
+msg バレット\n「う……ぐぅ……\n（のこりの　へそくりは　マリンの　がくひだぞ……）
+sleep 32
+chg_speed 2201 slow
+move_npc 2201 right 1
+sleep 32
+move_npc 2201 up 2
+sleep 112
+chg_npc_dir 2201 down
+sleep 16
+msg バレット\n「２０００だ！
+sleep 24
+chg_npc_dir 2201 up
+sleep 16
+chg_char_dir down
+chg_char_img_tmp 103
+sleep 32
+chg_char_dir left
+sleep 40
+move_npc 2202 right 1
+sleep 8
+chg_char_dir down
+reset_char_img_tmp
+sleep 8
+move_npc 2202 down 1
+sleep 32
+set_talk_npc 2202
+msg ティファ\n「ありがとう　クラウド
+reset_talk_npc
+chg_char_dir up
+sleep 48
+fadeout
+sleep 8
+kill_through 1710
+kill_through 1712
+kill_through 1714
+kill_through 1715
+kill_through 1717
+kill_through 1706
+kill_through 1707
+kill_through 1711
+kill_through 1713
+kill_through 1716
+kill_through 1900
+kill_through 1901
+kill_through 1902
+kill 1906
+kill 1907
+kill_through 1908
+kill 2201
+kill 2202
+create npc_event 2020 20 36 19 34 0 0 none
+create npc_event 2021 20 37 18 35 2 0 none
+create npc_event 2022 20 36 18 36 1 0 none
+create npc_event 2010 20 26 22 78 1 0 none
+set_flag_wall 2020
+set_flag_wall 2021
+set_flag_wall 2022
+kill_through 2016
+kill_through 2034
+kill_through 2035
+kill 2018
+kill 2019
+kill 2600
+kill 2006
+kill 2007
+kill 2008
+kill 2009
+kill_through 2609
+kill_through 2601
+kill_through 2611
+kill_through 2610
+kill_through 2530
+stop_bgm
+draw_char off
+sleep 48
+play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
+create npc 1706 17 10 4 94 1 0 「おはようございます\n　いちや　あけても　あいかわらず　ですね\n\n\n　けが　しないよう　おきをつけて\n　いってらっしゃい
+create npc3 1707 17 3 6 71 3 0 「ぼく　もう　たえられない
+create npc 1906 19 8 26 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
+create npc2 1907 19 7 26 32 0 0 
+create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
+create npc 2007 20 32 20 88 3 0 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
+create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
+create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
+create npc2 2601 26 3 8 90 3 0 
+chg_param 2510 「てへへ…ひとばんじゃ　おぼえきれんぜ\n　おう！しろうと！！\n　わるいが　にかいのあいぼうから　おそわってくれ
+sleep 32
+set_npc_pos 2602 26 6 8
+create event_generator 1718 17 1 1 17 0 0 @017/nanabangai_station7.txt
+create event_generator 1719 17 1 2 17 0 0 @017/nanabangai_station8.txt
+create event_generator 1720 17 2 1 17 0 0 @017/nanabangai_station9.txt
+create event_generator 1721 17 7 4 17 0 0 @017/nanabangai_station10.txt
+create event_generator 1913 19 1 1 17 0 0 @019/nanabangai5.txt
+create event_generator 1916 19 1 19 17 0 0 @019/nanabangai7_1.txt
+create event_generator 1917 19 1 20 17 0 0 @019/nanabangai7_2.txt
+create event_generator 2023 20 1 1 17 0 0 @020/nanabangai_slum17.txt
+create event_generator 2024 20 1 2 17 0 0 @020/nanabangai_slum18.txt
+create event_generator 2025 20 2 1 17 0 0 @020/nanabangai_slum19.txt
+create event_generator 2026 20 2 2 17 0 0 @020/nanabangai_slum20.txt
+create event_generator 2027 20 25 24 17 0 0 @020/nanabangai_slum21_1.txt
+create event_generator 2028 20 26 24 17 0 0 @020/nanabangai_slum21_2.txt
+create event_generator 2029 20 27 24 17 0 0 @020/nanabangai_slum21_3.txt
+create event_generator 2030 20 28 23 17 0 0 @020/nanabangai_slum21_4.txt
+create event_generator 2031 20 28 22 17 0 0 @020/nanabangai_slum21_5.txt
+create event_generator 2032 20 33 22 17 0 0 @020/nanabangai_slum22_1.txt
+create event_generator 2033 20 32 18 17 0 0 @020/nanabangai_slum22_2.txt
+chg_npc_dir 2607 up
+create event_generator 2620 26 4 8 17 0 0 @026/beginner's_hall1.txt
+create event_generator 2625 26 1 1 17 0 0 @026/beginner's_hall4.txt
+create treasure_item 2628 26 5 8 3 0 0 4100
+create event_generator 2629 26 1 1 17 0 0 @026/beginner's_hall5.txt
+chg_npc_img 2691 29
+chg_speed 2400 not_step
+sleep 400
+recover_active_chara
+warp 23 2 8 right
+create event_generator 2240 22 8 5 17 0 0 @022/seventhheaven8.txt
+draw_char on
+play_event_bgm 1-06-Barrett's_Theme.ogg
+fadein
+sleep 32
+chg_char_dir right
+sleep 8
+chg_char_dir left
+sleep 8
+chg_char_dir right
+set_flag 0 0
+set_flag 9 1

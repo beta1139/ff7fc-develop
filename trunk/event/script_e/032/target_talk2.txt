@@ -1,0 +1,236 @@
+wait_target_talk 3209
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+kill_through 3212
+sleep 8
+chg_type 3209 npc_event
+chg_speed 3209 normal
+chg_type 3201 npc_event
+chg_type 3203 npc_event
+chg_type 3204 npc_event
+sleep 40
+chg_npc_dir 3209 right
+sleep 4
+chg_npc_dir 3209 up
+sleep 4
+chg_npc_dir 3209 left
+sleep 4
+chg_npc_dir 3209 down
+sleep 4
+chg_dir_to_char 3209
+msg ティファ\n「うん！！\n　きめた！
+chg_npc_dir 3201 up
+if_char_dir up
+create npc_event 3200 32 16 5 0 0 2 none
+draw_char off
+sleep 16
+move_char up 1
+move_npc 3209 right 1
+fi
+if_char_dir left
+create npc_event 3200 32 17 4 0 2 2 none
+draw_char off
+sleep 16
+chg_npc_dir 3200 up
+slide_walk_npc 3200 down 1
+move_npc 3209 right 1
+fi
+chg_npc_dir 3204 up
+sleep 16
+chg_npc_dir 3209 down
+sleep 16
+step_npc 3209 2
+msg ティファ\n「よっく　みてて\n　わたし　とぶから！！
+set_slide_walk_char_flag
+sleep 16
+chg_npc_dir 3209 up
+sleep 16
+if_char_dir left
+chg_npc_dir 3200 right
+slide_walk_npc 3200 left 1
+sleep 16
+fi
+slide_walk_npc 3209 down 2
+move_char down 1
+sleep 16
+if_char_dir up
+chg_npc_dir 3200 right
+fi
+sleep 40
+chg_speed 3209 fast
+move_npc 3209 up 2
+sleep 8
+chg_event_move_char_speed fast
+move_char up 1
+sleep 8
+chg_npc_dir 3200 up
+play_se jump.wav
+jump_npc 3209 up 4
+jump_char up 2
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 3209
+sleep 16
+if_char_dir left
+move_npc 3200 right 1
+move_char down 4
+sleep 16
+chg_speed 3201 normal
+move_npc 3201 up 1
+sleep 16
+chg_npc_dir 3201 left
+sleep 16
+chg_event_move_char_speed normal
+chg_char_dir right
+chg_npc_dir 3200 right
+fi
+if_char_dir up
+move_char down 3
+sleep 16
+chg_npc_dir 3200 right
+chg_speed 3201 normal
+move_npc 3201 up 1
+sleep 16
+chg_event_move_char_speed normal
+chg_npc_dir 3201 left
+sleep 16
+chg_char_dir right
+move_char right 1
+chg_npc_dir 3200 right
+move_npc 3200 right 1
+sleep 16
+fi
+step_npc 3200 1
+sleep 16
+msg 『さきに　いくが\n　かまわないな？
+step_npc 3201 3
+msg バレット\n「リーダーは　さいごまで\n　のこるもんだ\n\n　いいから　はやくいけ！
+chg_npc_dir 3200 up
+sleep 32
+move_npc 3200 up 1
+move_char up 1
+chg_npc_dir 3201 up
+jump_npc 3201 same 2
+sleep 32
+step_npc 3201 3
+msg バレット\n「おう！\n　けがすんなよ！\n\n　さくせんは　こっからが\n　ほんばんだぞ！
+chg_npc_dir 3200 down
+chg_npc_img 3200 103
+sleep 32
+chg_npc_dir 3200 left
+sleep 48
+chg_npc_dir 3200 down
+sleep 32
+chg_npc_img 3200 0
+chg_npc_dir 3200 up
+sleep 32
+slide_walk_npc 3200 down 1
+move_char down 1
+sleep 24
+chg_speed 3200 fast
+move_npc 3200 up 1
+chg_event_move_char_speed fast
+move_char up 1
+sleep 8
+play_se jump.wav
+jump_npc 3200 up 4
+jump_char up 2
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 3200
+sleep 16
+move_char down 3
+move_npc 3201 left 1
+sleep 16
+move_npc 3201 down 1
+sleep 16
+chg_event_move_char_speed normal
+chg_npc_dir 3201 left
+jump_npc 3201 same 2
+sleep 32
+chg_type 3205 npc_event
+chg_npc_dir 3205 right
+sleep 16
+chg_speed 3205 fast
+move_npc 3205 up 1
+sleep 8
+move_npc 3205 right 4
+sleep 32
+chg_speed 3205 not_move
+chg_npc_dir 3201 down
+sleep 16
+chg_npc_dir 3201 left
+sleep 16
+chg_npc_dir 3201 down
+sleep 16
+step_npc 3201 4
+msg バレット\n「じゃな！\n　あとしまつは　たのんだっ！
+jump_npc 3203 same 1
+jump_npc 3204 same 1
+jump_npc 3205 same 1
+sleep 16
+jump_npc 3203 same 1
+jump_npc 3204 same 1
+jump_npc 3205 same 1
+sleep 16
+chg_npc_dir 3201 left
+sleep 4
+chg_npc_dir 3201 down
+sleep 4
+chg_npc_dir 3201 right
+sleep 4
+chg_npc_dir 3201 up
+sleep 20
+chg_speed 3201 fast
+move_npc 3201 up 2
+sleep 8
+chg_event_move_char_speed fast
+move_char up 1
+sleep 8
+play_se jump.wav
+jump_npc 3201 up 4
+jump_char up 2
+sleep 24
+play_se_loop alarm.ogg
+sleep 40
+kill 3201
+move_char down 3
+sleep 32
+chg_npc_dir 3204 right
+sleep 16
+chg_npc_dir 3203 down
+sleep 16
+chg_npc_dir 3205 down
+sleep 64
+chg_npc_dir 3204 up
+sleep 16
+kill_through 2815
+kill_through 3013
+kill_through 2820
+kill_through 2821
+reset_screen_effect
+reset_slide_walk_char_flag
+chg_event_move_char_speed normal
+fadeout
+stop_se
+stop_bgm
+sleep 48
+warp 34 7 16 up
+add_party_mem 1
+add_party_mem 2
+sleep 48
+chg_char_dir up
+play_bgm
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+add_likability 1 500
+add_likability 2 500
+fadein

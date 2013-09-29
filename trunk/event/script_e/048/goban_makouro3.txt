@@ -1,0 +1,855 @@
+wait_same_pos
+if_flag 9 0
+add_party_mem 1
+add_party_mem 2
+fi
+create npc_event 4802 48 7 24 1 1 2 none
+move_npc 4802 down 2
+sleep 16
+create npc_event 4801 48 7 24 2 1 2 none
+move_npc 4801 down 2
+sleep 16
+move_npc 4802 right 1
+move_char down 1
+sleep 16
+chg_npc_dir 4802 left
+move_npc 4801 left 2
+sleep 16
+jump_npc 4802 same 1
+sleep 16
+chg_npc_dir 4801 right
+step_npc 4802 2
+msg バレット\n「こっちだ！
+move_npc 4802 right 3
+chg_char_dir right
+sleep 32
+create npc_event 4803 48 14 26 32 2 1 none
+move_npc 4803 left 1
+sleep 16
+chg_speed 4802 slow
+slide_walk_npc 4802 left 1
+sleep 16
+create npc_event 4804 48 14 26 32 2 1 none
+sleep 16
+chg_speed 4803 not_move
+chg_speed 4804 not_move
+sleep 16
+slide_walk_npc 4802 left 1
+sleep 32
+chg_speed 4802 normal
+step_npc 4802 2
+msg バレット\n「しんらへい！？
+chg_npc_dir 4802 left
+sleep 16
+chg_npc_dir 4802 right
+sleep 16
+jump_npc 4802 same 1
+sleep 16
+chg_speed 4802 fast
+step_npc 4802 4
+msg バレット\n「くそっ！\n　どうなってんだ？
+chg_char_dir down
+sleep 16
+stop_bgm
+msg3 -1 『……ワナ　か
+sleep 64
+play_se_loop footstep.ogg
+sleep 80
+erase_msg3
+sleep 8
+chg_char_dir up
+create npc_event 4800 48 7 25 0 0 2 none
+draw_char off
+sleep 24
+chg_npc_dir 4802 up
+chg_npc_dir 4801 up
+chg_event_move_char_speed slow
+move_char up 5
+create npc_event 4807 48 7 12 20 1 1 none
+move_npc 4807 down 1
+sleep 64
+move_npc 4807 down 1
+sleep 64
+play_event_bgm 1-09-Shinra_Company.ogg
+sleep 16
+stop_se
+sleep 16
+move_npc 4807 down 1
+sleep 96
+move_npc 4807 down 1
+sleep 96
+move_npc 4807 down 1
+sleep 8
+move_npc 4802 left 1
+sleep 8
+chg_npc_dir 4802 up
+sleep 16
+jump_npc 4802 same 2
+sleep 32
+step_npc 4802 4
+msg バレット\n「プ　プレジデントしんら？
+sleep 16
+chg_speed 4801 fast
+move_npc 4801 right 1
+sleep 8
+chg_npc_dir 4801 up
+move_npc 4807 down 1
+set_active_msg 4807
+sleep 16
+msg ティファ\n「なぜ　プレジデントが\n　ここにいるの？
+sleep 32
+move_npc 4807 down 1
+sleep 64
+chg_speed 4807 normal
+step_npc 4807 1
+set_talk_npc 4807
+msg プレジデントしんら\n「ほほう\n　きみたちがアレかね\n　……なんていったかな？
+reset_talk_npc
+jump_npc 4802 same 2
+sleep 32
+jump_npc 4802 same 2
+set_active_msg 4802
+msg バレット\n「アバランチだ！　おぼえておけ！\n　おまえは　プレジデントしんらだな
+chg_speed 4800 slow
+move_npc 4800 up 2
+sleep 64
+msg 『ひさしぶりだな　プレジデント
+sleep 16
+chg_npc_dir 4807 left
+sleep 48
+chg_npc_dir 4807 down
+sleep 16
+step_npc 4807 1
+set_talk_npc 4807
+msg プレジデントしんら\n「……ひさしぶり？\n　ああ　きみがアレかね\n\n　アバランチとやらに　さんかして\n　いるという　もとソルジャー\n　たしかに　そのめの　かがやきは\n　まこうを　あびたもの……\n　そのうらぎりものの　なまえは\n　なんといったかな？
+reset_talk_npc
+sleep 8
+chg_speed 4800 normal
+step_npc 4800 1
+sleep 8
+msg 『クラウド　だ
+sleep 16
+step_npc 4807 1
+set_talk_npc 4807
+msg プレジデントしんら\n「すまないが　ソルジャーの　なまえなんて\n　いちいち　おぼえとらんのでな\n\n　せめて　セフィロスぐらいには\n　なってもらわんと
+reset_talk_npc
+sleep 16
+chg_npc_dir 4807 left
+sleep 72
+chg_npc_dir 4807 down
+sleep 32
+step_npc 4807 3
+set_talk_npc 4807
+msg プレジデントしんら\n「そう　セフィロス……\n　ゆうしゅうな　ソルジャーであった\n　そう　ゆうしゅうすぎる……な
+reset_talk_npc
+sleep 16
+chg_speed 4800 slow
+slide_walk_npc 4800 down 1
+sleep 48
+msg 『セフィロスだと……？
+move_npc 4802 left 1
+sleep 8
+move_npc 4802 up 3
+sleep 8
+chg_npc_dir 4803 up
+chg_npc_dir 4804 up
+sleep 16
+jump_npc 4802 same 2
+sleep 32
+step_npc 4802 6
+msg バレット\n「んなこたぁ　どうでもいい！\n　もうすぐここは　ドッカン！！だぜ！\n　ざまあみやがれ！
+sleep 32
+step_npc 4807 2
+set_talk_npc 4807
+msg プレジデントしんら\n「そうだな\n　キミたち　ウジむしを　しまつするには\n　こうかすぎる　はなびではあるが……
+reset_talk_npc
+step_npc 4802 6
+msg バレット\n「ウジむしだと！？\n　いうにことかいて　ウジむしだと！\n\n　キサマらしんらは　このほしを　しに\n　おいやろうとする　キセイチュウじゃねぇか！\n　そのおやだまである　キサマが\n　なにをえらそうにホザく！
+chg_npc_dir 4807 up
+sleep 32
+set_talk_npc 4807
+msg プレジデントしんら\n「……そろそろ　キミたちの\n　あいてをするのにも　あきたよ\n\n　わしは　たぼうのみ　なのでな\n　もう　しつれいさせてもらうか\n　きょうは　かいしょくのよていが　あるものでな
+reset_talk_npc
+move_npc 4802 up 1
+sleep 8
+chg_npc_dir 4807 down
+jump_npc 4802 same 2
+msg バレット\n「かいしょくだと？　ふざけやがって！\n　おまえには　いいたいことが\n　まだまだあるんだ！
+step_npc 4807 1
+set_talk_npc 4807
+msg プレジデントしんら\n「キミたちの　あそびあいては\n　べつに　よういさせてもらった
+reset_talk_npc
+sleep 16
+chg_npc_dir 4807 left
+sleep 32
+stop_bgm
+sleep 24
+play_se fingersnap.ogg
+chg_npc_dir 4803 left
+chg_npc_dir 4804 left
+chg_speed 4803 fast
+chg_speed 4804 fast
+sleep 40
+play_event_bgm Ex-06-air_buster1.ogg
+sleep 16
+chg_npc_dir 4801 left
+sleep 16
+msg ティファ\n「！？　なんのおと？
+chg_npc_dir 4800 left
+sleep 16
+chg_npc_dir 4802 left
+sleep 16
+move_npc 4802 down 1
+sleep 8
+chg_npc_dir 4802 left
+jump_npc 4802 same 1
+sleep 8
+create npc_event 4820 48 1 26 122 3 0 none
+sleep 8
+step_npc 4802 3
+msg バレット\n「な　なんだコイツは！！
+chg_event_move_char_speed normal
+move_char down 3
+chg_speed 4820 normal
+jump_npc 4820 same 2
+sleep 32
+play_event_bgm Ex-07-air_buster2.ogg
+chg_npc_dir 4807 down
+chg_speed 4820 fast
+move_npc 4820 right 10
+sleep 16
+chg_npc_dir 4801 down
+sleep 8
+jump_npc_target_pos 4801 6 25
+sleep 16
+jump_npc 4801 down 1
+sleep 8
+chg_npc_dir 4802 down
+sleep 8
+chg_npc_dir 4800 right
+chg_npc_dir 4802 right
+chg_npc_dir 4801 right
+sleep 16
+move_npc 4803 right 1
+kill 4804
+sleep 8
+chg_speed 4820 not_move
+kill 4803
+sleep 40
+chg_npc_dir 4820 left
+sleep 16
+chg_speed 4820 normal
+jump_npc 4820 same 1
+sleep 16
+chg_speed 4820 not_move
+msg プレジデントしんら\n「わがしゃの　へいきかいはつ　ぶもんが\n　しさくした　きどうへい　（エアバスター）だ\n\n　キミたちとの　せんとうデータは\n　こんごの　かいはつの　きちょうなサンプルとして\n　りようさせてもらうよ
+chg_speed 4800 normal
+sleep 16
+step_npc 4800 1
+msg 『……きどうへい？
+sleep 16
+play_se_loop helicopter.ogg
+create npc_event 4821 48 4 29 123 1 2 none
+create npc_event 4822 48 5 29 123 0 2 none
+slide_walk_npc 4821 up 1
+slide_walk_npc 4822 up 1
+sleep 16
+kill 4821
+kill 4822
+sleep 64
+move_char up 3
+create npc_event 4821 48 4 24 123 1 2 none
+create npc_event 4822 48 5 24 123 0 2 none
+slide_walk_npc 4821 up 4
+slide_walk_npc 4822 up 4
+sleep 32
+chg_npc_dir 4800 up
+sleep 16
+chg_npc_dir 4802 up
+chg_npc_dir 4801 up
+sleep 16
+chg_speed 4821 not_move
+chg_speed 4822 not_move
+sleep 16
+step_npc 4807 1
+set_talk_npc 4807
+msg プレジデントしんら\n「では　しつれい
+reset_talk_npc
+chg_speed 4807 slow
+slide_walk_npc 4807 up 1
+chg_speed 4821 normal
+chg_speed 4822 normal
+slide_walk_npc 4821 up 1
+slide_walk_npc 4822 up 1
+sleep 8
+msg3 -1 『まて　プレジデント！
+chg_npc_dir 4807 down
+chg_speed 4800 fast
+move_npc 4800 up 4
+sleep 8
+chg_speed 4821 fast
+chg_speed 4822 fast
+slide_walk_npc 4821 right 3
+slide_walk_npc 4822 right 3
+sleep 24
+step_npc 4800 3
+chg_speed 4807 normal
+jump_npc 4807 down 1
+chg_speed 4821 not_move
+chg_speed 4822 not_move
+sleep 16
+kill 4807
+sleep 80
+erase_msg3
+chg_speed 4821 normal
+chg_speed 4822 normal
+slide_walk_npc 4821 left 1
+slide_walk_npc 4822 left 1
+sleep 16
+slide_walk_npc 4821 up 6
+slide_walk_npc 4822 up 6
+sleep 16
+move_char up 5
+sleep 80
+chg_speed 4821 fast
+chg_speed 4822 fast
+slide_walk_npc 4821 up 5
+slide_walk_npc 4822 up 5
+sleep 40
+kill 4821
+kill 4822
+move_char down 5
+sleep 40
+chg_npc_dir 4802 left
+chg_npc_img 4802 98
+slide_walk_npc 4802 down 3
+sleep 24
+chg_npc_img 4802 1
+chg_npc_dir 4802 right
+chg_npc_dir 4801 right
+sleep 16
+chg_char_dir up
+draw_char on
+kill 4800
+chg_npc_dir 4802 up
+jump_npc 4802 same 1
+sleep 16
+step_npc 4802 2
+msg バレット\n「おい　クラウド！\n　とりあえず　コイツを　なんとかするぞ！
+chg_speed 4820 fast
+jump_npc 4820 same 2
+sleep 16
+chg_npc_dir 4802 right
+chg_char_dir down
+sleep 16
+stop_se
+play_event_bgm Ex-07-air_buster2.ogg
+move_npc 4820 left 3
+sleep 8
+slide_walk_npc 4801 left 2
+sleep 8
+slide_walk_npc 4802 left 1
+sleep 8
+chg_speed 4820 not_move
+sleep 40
+slide_walk_npc 4802 left 1
+sleep 8
+play_event_bgm Ex-07-air_buster2.ogg
+chg_speed 4820 fast
+move_npc 4820 left 2
+slide_walk_npc 4802 left 1
+move_npc 4801 left 2
+sleep 16
+chg_speed 4820 not_move
+chg_npc_dir 4801 right
+sleep 32
+chg_npc_dir 4801 up
+step_npc 4801 1
+msg3 -1 ティファ\n「たすけて　クラウド！
+sleep 32
+chg_event_move_char_speed fast
+move_char down 6
+play_event_bgm Ex-07-air_buster2.ogg
+chg_speed 4820 fast
+move_npc 4820 left 2
+slide_walk_npc 4802 left 2
+move_npc 4801 left 1
+sleep 8
+chg_npc_dir 4801 right
+sleep 8
+chg_speed 4820 not_move
+sleep 32
+move_char left 1
+erase_msg3
+sleep 8
+step_npc 4801 1
+msg ティファ\n「これ　ソルジャーなの？
+jump_char same 1
+sleep 16
+step_char 1
+sleep 16
+msg 『まさか！　ただのきかいさ
+chg_npc_dir 4820 right
+sleep 16
+chg_npc_dir 4802 down
+chg_npc_img 4802 95
+step_npc 4802 5
+sleep 40
+chg_npc_dir 4802 right
+step_npc 4802 4
+msg バレット\n「なんでもいい！！\n　ぶっこわしてやるぜ！
+chg_npc_img 4802 1
+move_char left 1
+move_npc 4802 right 1
+move_npc 4801 right 1
+sleep 8
+chg_event_move_char_speed normal
+sleep 4
+play_event_bgm Ex-08-nothing.ogg
+stop_bgm
+set_flag 20 1
+sleep 4
+boss_encount 234
+sleep 64
+wait_encount_end
+stop_bgm
+create npc_event 4800 48 5 26 0 2 2 none
+draw_char off
+play_se thunder3.ogg
+loop 10
+chg_npc_dir 4820 down
+sleep 2
+chg_npc_dir 4820 left
+sleep 2
+chg_npc_dir 4820 up
+sleep 2
+chg_npc_dir 4820 right
+sleep 2
+pool
+kill 4820
+sleep 4
+create npc_event 4820 48 4 26 122 3 0 none
+sleep 4
+kill 4820
+sleep 4
+create npc_event 4820 48 4 26 122 1 0 none
+sleep 4
+kill 4820
+sleep 4
+create npc_event 4820 48 4 26 122 2 0 none
+sleep 4
+kill 4820
+sleep 4
+create npc_event 4820 48 4 26 122 0 0 none
+sleep 4
+kill 4820
+stop_bgm
+sleep 8
+flush
+create npc_event 4820 48 4 26 122 3 0 none
+create explode 4821 48 4 26 0 0 0 none
+sleep 2
+chg_npc_dir 4820 down
+sleep 2
+chg_npc_dir 4820 left
+sleep 2
+chg_npc_dir 4820 up
+sleep 2
+kill 4820
+play_se magic_attack.wav
+flush
+jump_npc_target_pos 4802 2 25
+jump_npc_target_pos 4801 1 26
+jump_npc 4800 up 2
+sleep 8
+jump_char up 2
+create explode 4822 48 4 25 0 0 0 none
+create map_obj 4850 48 4 26 32 0 0 
+create map_obj 4851 48 4 25 32 0 0 
+create map_obj 4852 48 4 27 32 0 0 
+chg_npc_dir 4800 up
+sleep 2
+chg_npc_dir 4800 right
+sleep 2
+chg_npc_dir 4800 down
+sleep 2
+chg_npc_dir 4800 left
+sleep 2
+create map_obj 4853 48 3 25 33 0 0 
+create map_obj 4854 48 3 26 35 0 0 
+create map_obj 4855 48 3 27 33 0 0 
+chg_npc_dir 4800 up
+sleep 2
+chg_npc_dir 4800 right
+sleep 2
+chg_npc_dir 4800 down
+sleep 2
+chg_npc_dir 4800 left
+sleep 2
+chg_npc_dir 4800 up
+create explode 4823 48 5 27 0 0 0 none
+create map_obj 4856 48 5 25 34 0 0 
+create map_obj 4857 48 5 26 36 0 0 
+create map_obj 4858 48 5 27 34 0 0 
+chg_speed 4802 fast
+slide_npc 4802 down 1
+sleep 2
+chg_npc_dir 4800 right
+sleep 2
+chg_npc_dir 4800 down
+sleep 2
+chg_npc_dir 4800 left
+sleep 2
+chg_npc_dir 4800 up
+sleep 2
+chg_npc_dir 4800 right
+sleep 2
+chg_npc_dir 4800 down
+sleep 2
+chg_npc_dir 4800 left
+sleep 2
+chg_speed 4800 fast
+slide_npc 4800 down 4
+jump_char down 2
+loop 4
+chg_npc_dir 4800 up
+sleep 2
+chg_npc_dir 4800 right
+sleep 2
+chg_npc_dir 4800 down
+sleep 2
+chg_npc_dir 4800 left
+sleep 2
+pool
+chg_npc_dir 4800 up
+chg_npc_img 4800 115
+sleep 4
+chg_npc_y_offset 4800 -2
+sleep 12
+slide_walk_npc 4802 left 1
+move_npc 4801 right 2
+chg_npc_y_offset 4800 -4
+sleep 4
+chg_speed 4802 not_step
+sleep 8
+chg_speed 4800 normal
+step_npc 4800 1
+chg_speed 4801 not_step
+sleep 4
+play_event_bgm 1-07-Hurry_!.ogg
+chg_speed 4802 fast
+step_npc 4802 1
+sleep 16
+jump_npc 4802 same 2
+sleep 16
+chg_npc_y_offset 4800 -3
+sleep 8
+step_npc 4800 1
+sleep 8
+step_npc 4802 3
+msg バレット\n「もうすぐ　ばくはつする！\n　いくぞ　ティファ！
+chg_npc_dir 4801 left
+chg_speed 4801 fast
+jump_npc 4801 same 1
+chg_npc_y_offset 4800 -4
+sleep 8
+step_npc 4800 1
+sleep 8
+step_npc 4801 2
+msg ティファ\n「バレット！\n　なんとかならないの？
+chg_npc_dir 4801 right
+sleep 16
+chg_speed 4802 normal
+step_npc 4802 1
+msg バレット\n「どうしようもねえな
+jump_npc 4801 same 2
+sleep 16
+chg_npc_y_offset 4800 -3
+sleep 8
+step_npc 4800 1
+sleep 8
+step_npc 4801 3
+msg ティファ\n「クラウド！\n　なんとかして　いきて！　しんじゃダメ！\n　はなしたいことが　たくさんあるの！
+chg_npc_y_offset 4800 -4
+step_npc 4800 1
+sleep 8
+step_npc 4800 2
+sleep 16
+msg 『わかってる　ティファ
+chg_npc_y_offset 4800 -3
+chg_speed 4802 fast
+jump_npc 4802 right 1
+slide_walk_npc 4801 left 1
+sleep 8
+chg_speed 4800 normal
+step_npc 4800 1
+sleep 8
+chg_speed 4802 normal
+jump_npc 4802 same 1
+msg バレット\n「おい　なんとかなりそうか？\n\n\n#2\n　　つよがる\n　　ダメかもしれない……\n\n\n[[]][[]]
+if_flag 3 0
+add_likability 1 250
+msg3 -1 『…………
+chg_npc_y_offset 4800 -4
+step_npc 4800 1
+sleep 56
+erase_msg3
+step_npc 4800 4
+sleep 8
+msg 『じぶんのしんぱいでも　してろ！\n　おれはいいから　ティファを！
+chg_npc_y_offset 4800 -3
+sleep 8
+step_npc 4800 1
+sleep 8
+step_npc 4802 2
+msg バレット\n「……そうか　いろいろわるかったな
+chg_npc_y_offset 4800 -4
+sleep 8
+step_npc 4800 4
+msg 『これでおわりみたいな　いいかたは\n　やめてくれ！
+fi
+if_flag 3 1
+add_likability 2 250
+sub_likability 1 300
+msg3 -1 『くっ！
+chg_npc_y_offset 4800 -4
+step_npc 4800 1
+sleep 56
+erase_msg3
+chg_speed 4800 fast
+step_npc 4800 6
+msg 『ながくは　もちそうにない\n　バレット……は　はやく！
+chg_npc_y_offset 4800 -3
+jump_npc 4802 same 1
+sleep 8
+step_npc 4800 3
+sleep 8
+jump_npc 4802 same 1
+sleep 16
+step_npc 4802 4
+msg バレット\n「なさけないこえ　だすんじゃねえよ\n　わるいが　なにもしてやれそうにない\n　じぶんで　なんとかしれくれ
+chg_npc_y_offset 4800 -4
+sleep 8
+chg_speed 4800 normal
+step_npc 4800 1
+msg 『バレット……
+fi
+step_npc 4802 1
+msg バレット\n「じゃ　あとでな
+chg_npc_y_offset 4800 -4
+sleep 8
+step_npc 4800 1
+sleep 8
+move_npc 4802 left 1
+move_npc 4801 right 1
+sleep 8
+jump_npc 4801 same 1
+sleep 8
+chg_npc_dir 4802 right
+sleep 8
+step_npc 4801 6
+sleep 16
+chg_speed 4800 fast
+step_npc 4800 4
+sleep 72
+stop_bgm
+flush
+chg_event_move_char_speed fast
+move_char up 1
+sleep 8
+move_char down 1
+sleep 8
+play_se bomb.ogg
+create explode 4824 48 10 21 0 0 0 none
+jump_npc 4800 same 1
+jump_npc 4801 same 2
+set_screen_effect alpha 255 0 0 0
+loop 16
+inc_screen_effect_val 3
+sleep 1
+pool
+create explode 4825 48 4 22 0 0 0 none
+slide_npc 4800 down 7
+move_char up 2
+sleep 16
+step_npc 4801 6
+create explode 4826 48 11 20 0 0 0 none
+move_char down 2
+sleep 16
+create explode 4827 48 2 21 0 0 0 none
+move_char up 2
+step_npc 4801 4
+sleep 16
+create explode 4828 48 8 23 0 0 0 none
+move_char down 2
+sleep 16
+chg_speed 4802 fast
+move_npc 4802 right 1
+create explode 4829 48 6 20 0 0 0 none
+move_char up 2
+sleep 4
+chg_speed 4802 not_move
+sleep 12
+create explode 4830 48 9 21 0 0 0 none
+move_char down 2
+sleep 16
+move_npc 4802 right 1
+create explode 4831 48 10 22 0 0 0 none
+move_char up 2
+sleep 16
+chg_speed 4802 fast
+slide_npc 4802 left 1
+slide_npc 4801 left 1
+create explode 4832 48 3 21 0 0 0 none
+move_char down 2
+kill 4800
+sleep 4
+chg_speed 4801 not_move
+chg_speed 4802 not_move
+sleep 12
+create explode 4833 48 7 20 0 0 0 none
+move_char up 2
+sleep 16
+chg_speed 4801 fast
+chg_speed 4802 fast
+slide_npc 4802 left 1
+slide_npc 4801 left 1
+create explode 4834 48 2 20 0 0 0 none
+move_char down 2
+sleep 10
+kill 4802
+sleep 6
+create explode 4835 48 10 24 0 0 0 none
+move_char down 2
+sleep 16
+slide_npc 4801 left 1
+create explode 4836 48 4 20 0 0 0 none
+move_char up 2
+sleep 4
+kill 4801
+sleep 12
+create explode 4837 48 12 22 0 0 0 none
+move_char down 2
+sleep 16
+create explode 4838 48 2 22 0 0 0 none
+move_char up 2
+sleep 16
+fadeout
+sleep 48
+create npc_event 4800 48 7 32 0 0 3 none
+slide_npc 4800 down 4
+warp 48 7 36 up
+sleep 24
+play_se blast_fall.ogg
+sleep 5
+chg_npc_dir 4800 left
+sleep 3
+fadein
+loop 4
+chg_npc_img 4800 0
+chg_npc_dir 4800 up
+slide_npc 4800 down 6
+move_char down 6
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+warp 48 7 36 up
+set_npc_pos 4800 48 7 36
+pool
+chg_npc_img 4800 0
+chg_npc_dir 4800 up
+slide_npc 4800 down 9
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+sleep 3
+chg_npc_dir 4800 left
+sleep 48
+fadeout
+recover_active_chara
+sleep 40
+reset_screen_effect
+del_party_mem 1
+del_party_mem 2
+warp 49 20 11 right
+remove_all_materia 1
+remove_all_materia 2
+set_flag 20 0
+fadein

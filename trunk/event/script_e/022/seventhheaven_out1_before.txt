@@ -1,0 +1,2 @@
+wait_same_pos
+create event_generator 2261 22 5 13 17 0 0 @022/seventhheaven_out1.txt

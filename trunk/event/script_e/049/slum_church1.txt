@@ -1,0 +1,175 @@
+wait_same_pos
+kill_through_range 2800 4899
+set_flag 11 0
+chg_event_move_char_speed normal
+draw_char off
+stop_bgm
+sleep 16
+clear_text 6
+clear_text 7
+clear_text 8
+sleep 16
+set_text_alpha 6 0
+sleep 128
+set_text 6 　 　   　　　　『……だいじょうぶか
+sleep 8
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 50
+wait_key_push_edge a
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 56
+set_text 6 　 　   　　　　『……きこえているか？
+sleep 8
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 50
+wait_key_push_edge a
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 48
+set_text 6 　 　   　　　　　　　『……ああ
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 90
+wait_key_push_edge a
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 48
+set_text 6 　 　   　　　　『あのときは……
+set_text 7 　 　   　　　　　ヒザすりむいただけで
+set_text 8 　 　   　　　　　すんだけど……
+sleep 8
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+sleep 8
+set_text_alpha 6 50
+set_text_alpha 7 50
+set_text_alpha 8 50
+wait_key_push_edge a
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+sleep 8
+set_text_alpha 6 0
+set_text_alpha 7 0
+set_text_alpha 8 0
+clear_text 6
+clear_text 7
+clear_text 8
+sleep 8
+set_text 6 　 　   　　　　　　『……あのとき？
+sleep 8
+set_text_alpha 6 45
+sleep 8
+set_text_alpha 6 90
+wait_key_push_edge a
+set_text_alpha 6 60
+sleep 8
+set_text_alpha 6 30
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 40
+set_text 6 　 　   　　　　　『こんどはどうかな？
+set_text 7 　 　   　　　　　　おきられるか？
+sleep 8
+set_text_alpha 6 25
+set_text_alpha 7 25
+sleep 8
+set_text_alpha 6 50
+set_text_alpha 7 50
+wait_key_push_edge a
+set_text_alpha 6 25
+set_text_alpha 7 25
+sleep 8
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 6
+clear_text 7
+sleep 40
+set_text 6 　 　   　　　　　　『……あのとき？
+set_text 7 　 　   　　　　　　　……こんどは？
+sleep 8
+set_text_alpha 6 30
+set_text_alpha 7 30
+sleep 8
+set_text_alpha 6 60
+set_text_alpha 7 60
+sleep 8
+set_text_alpha 6 90
+set_text_alpha 7 90
+wait_key_push_edge a
+set_text_alpha 6 60
+set_text_alpha 7 60
+sleep 8
+set_text_alpha 6 30
+set_text_alpha 7 30
+sleep 8
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 6
+sleep 8
+set_text 6 　 　   　　　　『……きにするな
+set_text 7 　 　   　　　　　いまは　からだのことだけ
+set_text 8 　 　   　　　　　かんがえるんだ
+sleep 4
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+sleep 4
+set_text_alpha 6 50
+set_text_alpha 7 50
+set_text_alpha 8 50
+wait_key_push_edge a
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+sleep 8
+set_text_alpha 6 0
+set_text_alpha 7 0
+set_text_alpha 8 0
+clear_text 6
+clear_text 7
+clear_text 8
+sleep 8
+set_text 6 　 　  　　　　『……からだ　うごかせるか？
+sleep 8
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 50
+wait_key_push_edge a
+set_text_alpha 6 25
+sleep 8
+set_text_alpha 6 0
+clear_text 6
+sleep 8
+set_text 6 　 　   　　　　　　『……やってみる
+sleep 4
+set_text_alpha 6 30
+sleep 4
+set_text_alpha 6 60
+sleep 4
+set_text_alpha 6 90
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid b
+set_key_unvalid start
+create event_generator 4990 49 20 11 17 0 0 @049/slum_church1_b.txt
+create event_generator 4991 49 20 11 17 0 0 @049/slum_church1_c.txt
+wait_key_push_edge a

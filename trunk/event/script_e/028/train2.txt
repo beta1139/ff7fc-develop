@@ -1,0 +1,98 @@
+wait_same_pos
+sleep 48
+step_npc 2800 2
+sleep 32
+msg 『こんかいのさくせんについて\n　きかせてくれ
+sleep 16
+step_npc 2801 2
+msg バレット\n「ヘッ！　しごとねっしんだな\n　クラウドさんよ！
+sleep 16
+step_npc 2801 4
+msg バレット\n「しかたねえ……\n　せ　せつめいしてやるっ！\n\n　ジェシーから　きいただろうが\n　うえのプレートとのきょうかいには　けんもんがある\n　れっしゃごと IDスキャンするシステムだ
+sleep 16
+jump_npc 2802 same 1
+sleep 16
+jump_npc 2802 same 1
+sleep 16
+step_npc 2802 2
+msg ティファ\n「しんら　じまんのね
+sleep 16
+step_npc 2801 3
+msg バレット\n「いままでのニセIDは\n　もうつかえね…
+sleep 16
+play_se train_info.ogg
+sleep 24
+play_se_loop train_noise_close.ogg
+chg_npc_dir 2802 right
+msg しゃないアナウンス\n「ほんじつも　ごじょうしゃ　ありがとうございます～\n　よんばんがいステーション　とうちゃくよていじこくは\n　ミッドガルじ　11じ45ふん～
+sleep 16
+chg_npc_dir 2802 left
+sleep 16
+step_npc 2802 2
+msg ティファ\n「IDけんちエリアまで\n　あと3ぷんってところね
+sleep 8
+chg_npc_dir 2801 right
+sleep 16
+move_npc 2801 right 4
+sleep 64
+chg_npc_dir 2801 left
+chg_npc_dir 2802 right
+msg バレット\n「よし　あと3ぷんたったら\n　れっしゃから　とびおりる\n\n　いいな！
+move_npc 2801 up 1
+sleep 16
+chg_npc_dir 2801 down
+sleep 16
+move_npc 2802 right 8
+jump_npc_target_pos 2801 11 4
+sleep 16
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+move_char right 5
+sleep 84
+move_npc 2802 up 2
+sleep 32
+chg_npc_dir 2802 left
+sleep 16
+jump_npc 2802 same 1
+sleep 16
+step_npc 2802 2
+set_talk_npc 2802
+msg ティファ\n「クラウド　こっち！\n　ろせんずモニタでも　みてよ
+reset_talk_npc
+move_npc 2802 right 2
+move_char left 5
+sleep 32
+move_npc 2802 up 1
+sleep 16
+chg_npc_dir 2802 right
+sleep 32
+chg_char_dir right
+draw_char on
+kill 2800
+set_flag_wall 2801
+set_flag_wall 2802
+set_flag_wall 2806
+chg_speed 2801 not_step
+chg_speed 2802 not_move
+chg_speed 2806 not_step
+chg_type 2801 npc
+chg_type 2806 npc2
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start

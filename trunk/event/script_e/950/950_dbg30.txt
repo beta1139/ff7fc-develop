@@ -1,0 +1,5 @@
+set_eternal_event
+wait_same_pos
+jump_char down 5
+sleep 80
+

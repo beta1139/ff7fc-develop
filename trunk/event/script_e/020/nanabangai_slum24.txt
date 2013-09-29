@@ -1,0 +1,41 @@
+set_eternal_event
+wait_target_talked 2007
+reset_talked_flag 2007
+if_flag 3 1
+backup_char_dir
+backup_npc_dir 2007
+chg_dir_to_char 2007
+chg_char_dir down
+chg_char_img_tmp 103
+sleep 32
+chg_char_dir left
+sleep 48
+chg_char_dir down
+sleep 32
+reset_char_img_tmp
+restore_char_dir
+set_talk_npc 2007
+msg 「あ　そ！\n　あなたって　クールなのね
+reset_talk_npc
+restore_npc_dir 2007
+end
+fi
+if_flag 4 1
+backup_npc_dir 2007
+chg_dir_to_char 2007
+chg_char_dir down
+chg_char_img_tmp 103
+sleep 32
+chg_char_dir left
+sleep 48
+chg_char_dir down
+sleep 32
+reset_char_img_tmp
+restore_char_dir
+set_talk_npc 2007
+msg 「あ　そ！\n　あなたって　クールなのね
+reset_char_img_tmp
+reset_talk_npc
+restore_npc_dir 2007
+end
+fi

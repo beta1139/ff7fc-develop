@@ -1,0 +1,74 @@
+wait_same_pos
+reset_slide_walk_char_flag
+if_flag 9 0
+add_party_mem 2
+add_party_mem 3
+add_item 4000
+add_item 4100
+add_item 4003
+set_flag 1 1
+fi
+backup_char_img
+chg_char_img 0
+move_char up 1
+sleep 16
+create npc_event 9821 98 5 27 3 3 2 none
+create npc_event 9822 98 5 27 2 0 2 none
+move_npc 9821 right 2
+move_npc 9822 up 1
+sleep 16
+chg_char_dir right
+move_npc 9822 right 1
+sleep 16
+chg_npc_dir 9821 up
+chg_npc_dir 9822 down
+sleep 40
+step_char 2
+sleep 32
+chg_npc_dir 9821 left
+msg 『エアリス\n　すっかりまきこんでしまって……
+sleep 16
+chg_npc_img 9821 15
+step_npc 9821 2
+sleep 40
+chg_npc_img 9821 3
+sleep 16
+jump_npc 9821 same 1
+sleep 16
+step_npc 9821 2
+set_talk_npc 9821
+msg エアリス\n「ここからかえれ！\n　な～ていわないでね
+reset_talk_npc
+sleep 32
+chg_char_dir up
+sleep 16
+chg_npc_dir 9821 up
+loop 2
+chg_npc_dir 9822 left
+sleep 16
+chg_npc_dir 9822 up
+sleep 16
+pool
+loop 2
+chg_npc_dir 9822 right
+sleep 16
+chg_npc_dir 9822 up
+sleep 16
+pool
+sleep 16
+chg_npc_dir 9822 down
+sleep 16
+step_npc 9822 2
+set_talk_npc 9822
+msg ティファ\n「え～と……あかりのついている\n　しゃりょうをぬけていけば　でられそうね
+reset_talk_npc
+sleep 16
+move_char right 1
+sleep 16
+move_npc 9821 left 1
+move_npc 9822 down 1
+sleep 16
+kill 9821
+kill 9822
+msg ～イベントさくせいここまで\n\n\n\n　げんじょうのマップだと\n　『れっしゃはかば』が10すうびょうぐらいで\n　ぬけれちゃうので　ちょっとかえたほうがいいかも
+restore_char_img

@@ -1,0 +1,105 @@
+wait_same_pos
+set_flag 19 0
+chg_speed 9523 normal
+set_active_msg 9523
+jump_npc 9523 same 1
+sleep 16
+jump_npc 9523 same 1
+sleep 16
+step_npc 9523 4
+set_talk_npc 9523
+msg コルネオ\n「ほひ～！\n\n\n　これこれ　そんなに\n　はずかしがらんで……\n\n\n　もっとちかくへ　な？
+reset_talk_npc
+sleep 32
+if_flag_lesser 18 10
+set_active_msg 9522
+chg_speed 9522 normal
+step_npc 9522 1
+msg ティファ\n「わかってるわ……\n\n\n　でもねドンコルネオ\n　そのまえにひとつだけ\n　きかせて……
+jump_npc 9523 same 1
+set_talk_npc 9523
+msg コルネオ\n「ん？　おお　あのコトか\n\n\n　な～にだいじょうぶ\n　おれァまだどくしんだ\n　あんしんしたか？ん～？
+reset_talk_npc
+fi
+if_flag_greater 18 9
+set_active_msg 9521
+chg_speed 9521 normal
+step_npc 9521 1
+msg エアリス\n「え　ええ……\n\n\n　でもねコルネオさん\n　そのまえにひとつ\n　おしえてほしいの……
+jump_npc 9523 same 1
+set_talk_npc 9523
+msg コルネオ\n「おお　おしえてやるぞ\n　てとり　あしとり　じっくりとな\n\n　ホレ！　ホレホレ！
+reset_talk_npc
+fi
+loop 2
+jump_npc 9523 same 1
+chg_npc_dir 9523 down
+sleep 4
+chg_npc_dir 9523 left
+sleep 4
+chg_npc_dir 9523 up
+sleep 4
+chg_npc_dir 9523 right
+sleep 4
+pool
+sleep 16
+jump_npc 9523 same 1
+play_se puy.ogg
+sleep 16
+if_flag_lesser 18 10
+jump_npc 9522 same 1
+chg_npc_dir 9522 left
+sleep 16
+chg_speed 9523 not_move
+chg_speed 9522 fast
+step_npc 9522 1
+msg ティファ\n「そ　そんなこと\n　きいてるんじゃなくて……
+jump_npc 9523 same 1
+play_se puy.ogg
+sleep 16
+step_npc 9522 3
+msg ティファ\n「ちょ　ちょっとまってよ！\n　イヤだ　まだダメだってば！！
+step_npc 9522 3
+fi
+if_flag_greater 18 9
+jump_npc 9521 same 1
+chg_npc_dir 9521 left
+sleep 16
+chg_speed 9523 not_move
+chg_speed 9521 fast
+step_npc 9521 1
+msg エアリス\n「い　いえ　ちがうの！\n　そうじゃなくて！
+jump_npc 9523 same 1
+play_se puy.ogg
+sleep 16
+step_npc 9521 3
+msg エアリス\n「ダメ！　ダメよ！\n　ちょ　ちょっとまって！！
+step_npc 9521 3
+fi
+create event_generator 9501 95 6 7 17 0 0 @095/don_corneo3.txt
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+chg_char_state_move
+loop_inf
+if_flag 19 0
+play_se puy.ogg
+jump_npc 9523 same 1
+sleep 16
+play_se puy.ogg
+jump_npc 9523 same 1
+sleep 32
+fi
+if_flag 19 1
+chg_npc_dir 9523 down
+sleep 4
+chg_npc_dir 9523 left
+sleep 4
+chg_npc_dir 9523 up
+sleep 4
+chg_npc_dir 9523 right
+sleep 4
+fi
+pool

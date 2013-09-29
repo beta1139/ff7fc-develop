@@ -1,0 +1,13 @@
+wait_same_pos
+chg_char_state_move
+move_npc 304 up 3
+sleep 24
+move_npc 304 left 8
+sleep 64
+move_npc 304 up 2
+sleep 16
+move_npc 304 left 4
+sleep 32
+kill 304
+kill 306
+

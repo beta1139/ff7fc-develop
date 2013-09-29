@@ -1,0 +1,49 @@
+wait_same_pos
+backup_char_img
+chg_char_img 0
+chg_char_dir down
+sleep 32
+msg 『フゥッ……
+sleep 32
+move_char left 2
+sleep 32
+move_char up 1
+sleep 16
+jump_char_target_pos 2 4
+sleep 8
+chg_char_dir left
+sleep 8
+chg_char_dir down
+sleep 16
+create npc_event 2710 27 2 4 0 1 0 none
+draw_char off
+chg_npc_dir 2710 right
+chg_npc_img 2710 96
+sleep 64
+fadeout
+stop_bgm
+kill 2710
+draw_char on
+sleep 32
+play_se care.wav
+sleep 80
+recover_active_chara
+if_flag 9 0
+play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+if_flag 0 4
+play_event_bgm 1-05-Tifa's_Theme.ogg
+fi
+fi
+if_flag 9 1
+play_event_bgm 1-06-Barrett's_Theme.ogg
+fi
+fadein
+jump_char down 2
+sleep 48
+chg_char_dir right
+restore_char_img
+create npc 2508 25 7 8 89 2 0 「いいゆめ　みたかい\n\n\n\n　やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフに　いきていく　きほんだぜ！\n　おっさん　おぼえときな
+sleep 16
+kill_through 2504
+kill_through 2507
+kill_through 2506

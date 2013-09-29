@@ -1,0 +1,4 @@
+wait_target_talked 1711
+create npc 1713 17 7 4 94 1 0 「それでもね　こころの　ふみきりが\n　いたむ　ときは　ありましたよ\n\n\n　せんそうちゅうの　ことでしたね\n　あのころは　つらい　ばめんが　おおかったです……\n\n\n　いや　そのはなしは\n　またの　きかいに……
+kill 1711
+create event_generator 1714 17 1 2 17 0 0 @017/nanabangai_station4.txt

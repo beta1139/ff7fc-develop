@@ -1,0 +1,145 @@
+wait_same_pos
+chg_speed 2802 normal
+sleep 16
+chg_npc_dir 2802 left
+sleep 32
+chg_char_dir left
+chg_type 2801 npc_event
+chg_npc_dir 2801 right
+sleep 16
+chg_npc_dir 2802 up
+sleep 16
+chg_npc_dir 2801 left
+sleep 32
+chg_npc_dir 2802 down
+sleep 32
+chg_char_dir up
+msg ティファ\n「おかしいわね\n　IDけんちエリアは　もっとさきなのに
+sleep 32
+chg_npc_dir 2802 left
+msg 「Aシキ　ヒジョウ　ケイカイ　タイセイ　ハツドウ\n　レッシャナイ　ミカクニンID　ケンチ
+chg_char_dir down
+msg 「レッシャナイ　ミカクニンID　ケンチ\n　カクシャリョウ　キンキュウ　チェック　ハイリマス
+chg_npc_dir 2801 right
+chg_npc_dir 2802 up
+msg 「クリカエシマス\n　Aシキ　ヒジョウケイカイ　タイセイ　ハツドウ
+chg_char_dir left
+sleep 64
+chg_npc_dir 2802 down
+chg_npc_dir 2801 left
+sleep 64
+chg_npc_dir 2802 left
+chg_char_dir down
+msg3 -1 「レッシャナイ　ミカクニンID　ケンチ\n　カクシャリョウ　キンキュウ　チェック　ハイリマス
+sleep 32
+chg_npc_dir 2801 right
+sleep 32
+chg_npc_dir 2801 left
+chg_char_dir up
+sleep 32
+chg_npc_dir 2801 down
+sleep 32
+chg_npc_dir 2802 down
+erase_msg3
+chg_npc_dir 2801 left
+chg_npc_img 2801 98
+sleep 8
+msg ティファ\n「どういうこと？
+play_event_bgm 1-07-Hurry_!.ogg
+play_se_loop alarm.ogg
+chg_speed 2801 fast
+jump_npc 2801 same 2
+sleep 32
+slide_walk_npc 2801 down 2
+sleep 16
+chg_npc_img 2801 1
+move_npc 2801 right 6
+sleep 16
+chg_npc_dir 2802 left
+chg_char_dir left
+sleep 32
+chg_npc_dir 2802 down
+chg_char_dir down
+create npc_event 2800 28 18 5 0 1 2 none
+draw_char off
+jump_npc 2801 same 2
+set_inactive_msg 2801
+sleep 16
+msg3 64 バレット\n「どうなってんだ！！
+sleep 16
+step_npc 2801 5
+sleep 48
+create npc_event 2803 28 19 6 34 2 3 none
+move_npc 2803 left 1
+sleep 8
+erase_msg3
+jump_npc 2803 same 2
+set_inactive_msg 2803
+sleep 16
+msg3 64 ジェシー\n「まっずいことに　なっちゃったわ
+sleep 16
+step_npc 2803 3
+sleep 48
+erase_msg3
+sleep 8
+step_npc 2803 3
+msg3 64 ジェシー\n「せつめいはあと\n　はやく！　こっちのしゃりょうに！
+sleep 32
+draw_char on
+kill 2800
+sleep 32
+erase_msg3
+chg_npc_dir 2803 right
+sleep 8
+move_npc 2803 right 1
+sleep 8
+kill 2803
+sleep 32
+msg3 80 バレット\n「チッ！\n　しくじりやがったな…
+chg_speed 2801 normal
+chg_npc_dir 2801 left
+chg_npc_img 2801 98
+step_npc 2801 3
+sleep 80
+erase_msg3
+sleep 8
+play_se train_info.ogg
+sleep 24
+chg_npc_img 2801 1
+chg_npc_dir 2801 up
+play_se_loop alarm.ogg
+msg 「シャリョウ1　ミカクニンID　ケンチ\n　ドアロック　ジュンビ
+jump_npc 2801 same 2
+loop 2
+sleep 4
+chg_npc_dir 2801 right
+sleep 4
+chg_npc_dir 2801 down
+sleep 4
+chg_npc_dir 2801 left
+sleep 4
+chg_npc_dir 2801 up
+pool
+chg_speed 2801 fast
+step_npc 2801 2
+msg バレット\n「いくぜ！\n　モタモタすんな！
+move_npc 2801 up 1
+chg_speed 2802 fast
+jump_npc 2802 same 1
+sleep 8
+kill 2807
+move_npc 2801 right 1
+sleep 8
+kill 2801
+move_npc 2802 down 1
+sleep 8
+kill 2802
+start_fake_countdown_sec 15
+create event_generator 2822 28 1 1 17 0 0 @028/countdown_over.txt
+create npc 2807 28 3 4 77 1 4 「ん……\n　こんなときでも　おれにあいさつか？\n\n\n　これまた　かんしん　かんしん\n　ごほうびに　いいものをあげよ
+create event_generator 2818 28 1 1 17 0 0 @028/target_talked.txt
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start

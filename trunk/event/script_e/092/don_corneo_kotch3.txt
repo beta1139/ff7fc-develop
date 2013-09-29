@@ -1,0 +1,9 @@
+set_eternal_event
+wait_target_talked 9223
+reset_talked_flag 9223
+chg_type 9223 npc_event
+chg_speed 9223 fast
+step_npc 9223 2
+msg 　キュー！！
+chg_type 9223 npc3
+chg_speed 9223 not_step

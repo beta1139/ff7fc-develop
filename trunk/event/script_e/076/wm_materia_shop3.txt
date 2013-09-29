@@ -1,0 +1,101 @@
+wait_target_talk 7613
+create npc_event 7620 76 5 7 0 0 2 none
+draw_char off
+chg_speed 7610 normal
+step_npc 7620 1
+msg 『もってきたぞ
+move_char up 1
+chg_npc_dir 7610 down
+sleep 16
+chg_speed 7610 fast
+jump_npc 7610 same 1
+sleep 16
+step_npc 7610 4
+set_talk_npc 7610
+msg 「おお　ほんとうか！！\n　あっ！
+reset_talk_npc
+create npc_event 7621 76 5 7 3 0 2 none
+move_npc 7621 right 2
+sleep 32
+chg_npc_dir 7621 up
+sleep 16
+jump_npc 7621 same 1
+sleep 16
+msg エアリス\n「もう
+chg_npc_dir 7621 right
+sleep 16
+step_npc 7610 3
+set_talk_npc 7610
+msg 「で　なんだった
+reset_talk_npc
+step_npc 7620 2
+sleep 32
+chg_speed 7610 normal
+step_npc 7610 1
+sleep 32
+jump_npc 7610 same 1
+sleep 16
+if_flag 14 3
+set_talk_npc 7610
+msg 「きあいじゅうてんドリンクゴールドセットか\n　あいつめ　きっちりしょうばいしてやがるぜ\n　まけてられんな　こりゃ
+reset_talk_npc
+fi
+if_flag 14 4
+set_talk_npc 7610
+msg 「スタミナかいふくドラッグセットか\n　あいつめ　きっちりしょうばいしてやがるぜ\n　まけてられんな　こりゃ
+reset_talk_npc
+fi
+if_flag 14 5
+set_talk_npc 7610
+msg 「キンにくスッキリぬりぐすりセットか\n　あいつめ　きっちりしょうばいしてやがるぜ\n　まけてられんな　こりゃ
+reset_talk_npc
+fi
+sleep 16
+step_npc 7610 3
+set_talk_npc 7610
+msg 「おにいさん　ありがとうよ\n　やるきになってきたぜ\n　きもちていどだけど　もらってくれよ
+reset_talk_npc
+move_npc 7610 right 1
+sleep 16
+chg_npc_dir 7610 up
+sleep 16
+jump_npc 7610 same 1
+sleep 32
+move_npc 7610 left 1
+sleep 16
+chg_npc_dir 7610 down
+sleep 16
+step_npc 7610 2
+sleep 32
+play_se pick_up.wav
+if_flag 14 3
+add_item 6008
+add_flag 18 4
+msg キーアイテム『ダイアのティアラ』をてにいれた
+fi
+if_flag 14 4
+add_item 6007
+add_flag 18 2
+msg キーアイテム『ルビーのティアラ』をてにいれた
+fi
+if_flag 14 5
+add_item 6006
+add_flag 18 1
+msg キーアイテム『ガラスのティアラ』をてにいれた
+fi
+chg_npc_dir 7621 left
+sleep 16
+chg_npc_dir 7610 down
+move_char down 1
+move_npc 7621 left 2
+sleep 16
+chg_char_dir up
+draw_char on
+kill 7620
+sleep 16
+kill 7621
+chg_speed 7610 not_move
+set_flag 14 6
+kill 7613
+create npc2 7614 76 5 6 17 0 0 
+create event_generator 7604 76 0 0 17 0 0 @076/wm_materia_shop4.txt

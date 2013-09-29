@@ -1,0 +1,86 @@
+wait_same_pos
+create npc_event 2202 22 8 4 2 1 0 none
+chg_speed 2202 normal
+set_flag_wall 2202
+jump_npc 2202 down 1
+sleep 16
+move_npc 2202 down 1
+sleep 16
+set_talk_npc 2202
+msg ティファ\n「クラウド　おねがい\n　ちからを　かして
+reset_talk_npc
+sleep 32
+move_char down 1
+sleep 16
+move_char left 2
+sleep 32
+sleep 16
+msg 『ティファ……わるいけどさ
+move_npc 2202 left 1
+sleep 16
+move_npc 2202 down 1
+sleep 16
+move_npc 2202 left 1
+sleep 16
+chg_npc_dir 2202 down
+set_talk_npc 2202
+msg ティファ\n「ほしが　やんでるの\n　このままじゃ　しんじゃう\n\n　だれかが　なんとか　しなくちゃ　ならないの
+reset_talk_npc
+chg_char_dir up
+sleep 16
+msg 『バレットたちが　なんとかするんだろ？\n　おれには　かんけい　ないさ
+chg_char_dir down
+move_char left 1
+sleep 16
+move_char down 2
+sleep 32
+msg ティファ\n「あーあ！\n　ほんとうに　いっちゃうんだ！
+sleep 16
+msg ティファ\n「かわいい　おさななじみの　たのみも\n　きかずに　いっちゃうんだ！
+sleep 16
+chg_char_dir up
+msg 『……\n\n\n\n#2\n　　よくいうぜ！\n　　……わるいな\n\n\n[[]][[]]
+if_flag 3 0
+add_likability 2 500
+fi
+sleep 16
+msg ティファ\n「……やくそくも　わすれちゃったんだ
+sleep 32
+msg 『やくそく？
+sleep 16
+msg ティファ\n「やっぱり　わすれてる
+chg_speed 2202 slow
+move_npc 2202 down 1
+sleep 32
+move_npc 2202 left 1
+sleep 32
+move_npc 2202 down 1
+sleep 32
+set_talk_npc 2202
+msg ティファ\n「おもいだして……\n　あれは　７ねんまえよ……
+reset_talk_npc
+create npc_event 2207 22 5 10 0 0 0 none
+chg_speed 2207 normal
+draw_char off
+sleep 48
+chg_npc_dir 2207 right
+sleep 64
+chg_event_move_char_speed slow
+move_char up 3
+sleep 96
+fadeout
+sleep 80
+warp 702 11 16 down
+fadein
+kill 2212
+kill 2230
+kill 2231
+kill 2305
+kill 2307
+kill 2309
+kill_through 2313
+kill 2312
+kill_through 2318
+kill 2317
+kill_through 2315
+kill_through 2314

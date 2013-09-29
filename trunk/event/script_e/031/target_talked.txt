@@ -1,0 +1,6 @@
+wait_target_talked 3106
+play_se pick_up.wav
+add_gil 100
+sleep 16
+play_se_loop alarm.ogg
+chg_type 3106 npc2

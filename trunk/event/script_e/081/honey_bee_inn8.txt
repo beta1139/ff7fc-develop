@@ -1,0 +1,9 @@
+wait_same_pos
+if_flag 17 0
+create event_generator 8008 80 8 4 17 0 0 @080/honey_bee_inn9.txt
+set_npc_pos 8011 80 8 9
+set_npc_pos 8012 80 5 6
+set_npc_pos 8013 80 5 15
+set_npc_pos 8016 80 3 6
+set_npc_pos 8017 80 3 15
+fi

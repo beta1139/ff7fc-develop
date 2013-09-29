@@ -1,0 +1,79 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through_range 9509 9512
+chg_npc_dir 9520 left
+sleep 16
+play_se syu.ogg
+loop 6
+chg_npc_dir 9520 up
+sleep 2
+chg_npc_dir 9520 right
+sleep 2
+chg_npc_dir 9520 down
+sleep 2
+chg_npc_dir 9520 left
+sleep 2
+pool
+chg_npc_img 9520 0
+reset_char_img_tmp
+sleep 16
+jump_char left 2
+jump_npc_target_pos 9523 5 7
+play_se puy.ogg
+sleep 32
+chg_speed 9523 fast
+step_npc 9523 4
+msg コルネオ\n「お　オトコ！？\n　ほひ～　だ　だましたな！！
+msg3 -1 　だれか！　だれか！！
+loop 3
+jump_npc 9523 same 1
+chg_npc_dir 9523 down
+sleep 8
+chg_npc_dir 9523 right
+sleep 8
+pool
+wait_key_push_edge a
+erase_msg3
+sleep 16
+msg 「おあいにくさま\n　あなたのコブンは\n　だれもこられないみたいよ
+chg_npc_dir 9523 down
+chg_event_move_char_speed fast
+move_char down 2
+sleep 16
+play_se door_open_hard.wav
+open_door 9550
+sleep 8
+create npc_event 9522 95 6 15 2 0 2 none
+move_npc 9522 up 5
+sleep 16
+create npc_event 9521 95 6 15 3 0 2 none
+move_npc 9521 up 5
+chg_event_move_char_speed normal
+move_char up 2
+sleep 8
+close_door 9550
+sleep 56
+move_npc 9522 right 1
+jump_npc 9523 same 2
+sleep 16
+chg_npc_dir 9522 up
+sleep 16
+chg_speed 9523 fast
+step_npc 9523 3
+msg コルネオ\n「おまえたちはさっきの！？\n　な　なにがどーなってるの？
+chg_speed 9521 normal
+chg_speed 9522 slow
+move_npc 9522 up 1
+sleep 16
+move_npc 9521 right 2
+sleep 32
+move_npc 9521 up 2
+move_npc 9522 right 1
+sleep 16
+chg_npc_dir 9523 right
+sleep 16
+chg_npc_dir 9521 left
+chg_npc_dir 9522 left
+set_flag 19 2
+create event_generator 9513 95 6 7 17 0 0 @095/don_corneo10.txt
+end

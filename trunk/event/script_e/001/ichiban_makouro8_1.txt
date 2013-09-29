@@ -1,0 +1,12 @@
+set_eternal_event
+wait_target_talk 122
+reset_talk_flag 122
+if_char_dir up
+jump_char up 2
+fi
+if_char_dir down
+jump_char down 2
+fi
+play_se jump.wav
+sleep 32
+play_se landing.wav

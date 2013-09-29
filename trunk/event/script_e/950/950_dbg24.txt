@@ -1,0 +1,4 @@
+set_eternal_event
+wait_same_pos
+warp_ff3 950 29 32 down
+

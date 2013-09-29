@@ -1,0 +1,10 @@
+wait_same_pos
+kill_through_range 8400 8402
+kill_through_range 8406 8409
+chg_char_img_tmp 13
+sleep 16
+chg_char_state_move
+create event_generator 8409 84 8 21 17 0 0 @084/keep_drag2_out.txt
+loop_inf
+sleep 400
+pool

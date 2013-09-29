@@ -1,0 +1,16 @@
+set_eternal_event
+wait_target_talk 95093
+backup_npc_dir 95093
+chg_dir_to_char 95093
+set_talk_npc 95093
+if_owned_item 1062
+msg ギサールのやさいを　もっていますね
+restore_npc_dir 95093
+reset_talk_flag 95093
+reset_talk_npc
+end
+fi
+msg ギサールのやさいを　もっていませんね\nきたのアイテムショップに　うっていますよ
+restore_npc_dir 95093
+reset_talk_flag 95093
+reset_talk_npc

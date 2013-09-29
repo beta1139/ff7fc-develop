@@ -1,0 +1,3 @@
+wait_target_talked 3005
+chg_speed 3005 not_step
+chg_param 3005 ジョニー\n「ぐっすん……
