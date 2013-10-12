@@ -124,11 +124,11 @@ sleep 16
 move_npc 1301 right 1
 sleep 16
 create event_generator 1340 13 1 1 17 0 0 @013/cat.txt
-msg はなうり\n「ねえ　なにがあったの？\n\n\n#2\n　　にげたほうがいい\n　　きにするな……　それより\n\n\n[[]][[]]
+msg Flower girl\n「Excuse me. What happened?\n\n\n#2\n　　Get out of here\n　　Nothing... hey...\n\n\n[[]][[]]
 if_flag 3 0
 set_active_msg 1301
 jump_npc 1301 same 1
-msg 「そうなの！？\n　なんだか　わからないけど　そうするわね
+msg 「Really?\n I dont know whats going\n on. but all right.
 sub_likability 3 500
 sleep 16
 chg_speed 1301 normal
@@ -144,14 +144,14 @@ kill 1301
 end
 fi
 if_flag 3 1
-msg 『……\n\n\n\n#2\n　　はな　なんて　めずらしいな\n　　いや　なんでもないんだ\n\n\n[[]][[]]
+msg 『……\n\n\n\n#2\n　　Flowers?\n　　Never mind\n\n\n[[]][[]]
 if_flag 3 0
 step_char 1
 sleep 32
 jump_npc 1301 same 1
 sleep 16
 step_npc 1301 2
-msg はなうり\n「あ　これね　きにいってくれた？\n　１ギルなんだけど　どう？\n\n#2\n　　もらおう\n　　やめとくよ\n\n\n[[]][[]]
+msg Flower girl\n「Oh these?\n Do you like them？\n Theyre only one gil.\n#2\n　　Buy one\n　　Forget it\n\n\n[[]][[]]
 if_flag 3 0
 chg_npc_dir 1301 up
 chg_npc_img 1301 15
@@ -160,7 +160,7 @@ sleep 24
 chg_npc_img 1301 3
 chg_npc_dir 1301 right
 step_npc 1301 2
-msg 「わあ　ありがとう！\n　はい！
+msg 「Oh thank you！！\n Here you are！
 play_se recover.wav
 set_flag 7 1
 add_likability 3 500
@@ -168,7 +168,7 @@ sub_gil 1
 fi
 if_flag 3 1
 step_npc 1301 1
-msg 「……ちょっとがっかり　かな
+msg 「Ahh...not again.
 sub_likability 3 250
 fi
 sleep 32
@@ -187,7 +187,7 @@ if_flag 3 1
 jump_npc 1301 same 1
 sleep 16
 step_npc 1301 2
-msg はなうり\n「もう！　きになるなぁ\n\n\n　あっ　ねぇ\n　おはなは　いらない？\n　たった１ギルよ\n\n#2\n　　もらおう\n　　やめとくよ\n\n\n[[]][[]]
+msg Flower girl\n「Oh these?\n Do you like them？\n Theyre only one gil.\n#2\n　　Buy one\n　　Forget it\n\n\n[[]][[]]
 if_flag 3 0
 chg_npc_dir 1301 up
 chg_npc_img 1301 15
@@ -196,7 +196,7 @@ sleep 24
 chg_npc_img 1301 3
 chg_npc_dir 1301 right
 step_npc 1301 2
-msg 「わあ　ありがとう！\n　はい！
+msg 「Oh thank you！！\n Here you are！
 play_se recover.wav
 set_flag 7 1
 add_likability 3 500
@@ -204,7 +204,7 @@ sub_gil 1
 fi
 if_flag 3 1
 step_npc 1301 1
-msg 「……ちょっとがっかり　かな
+msg 「Ahh...not again.
 sub_likability 3 250
 fi
 sleep 32

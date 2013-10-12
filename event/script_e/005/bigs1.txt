@@ -24,10 +24,10 @@ move_npc 531 up 3
 sleep 8
 chg_npc_dir 530 down
 sleep 16
-create npc 533 5 10 6 35 1 0 ビッグス\n「ここの　あんごうを　にゅうしゅするために\n なんにんの　なかまが　ぎせいに　なったことか……
+create npc 533 5 10 6 35 1 0 Biggs\n「Think how many of our\n people risked their lives.\n Just for this code……
 kill 530
 chg_npc_dir 531 right
 sleep 16
-create npc3 534 5 12 6 34 3 0 ジェシー\n「コードかいじょ
+create npc3 534 5 12 6 34 3 0 Jessie\n「Code deciphered
 create event_generator 537 5 1 2 17 0 0 @005/jesse1.txt
 kill 531

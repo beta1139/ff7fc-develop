@@ -1,4 +1,4 @@
 wait_same_pos
 set_talk_npc 141
-msg ジェシー\n「さ　そこのボタンを\n　おして！
+msg Jessie\n「Push the button over\n there!
 reset_talk_npc

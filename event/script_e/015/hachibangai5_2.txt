@@ -5,7 +5,7 @@ kill_through_range 1413 1415
 kill_through_range 1405 1406
 create npc_event 1550 15 7 4 31 1 2 none
 create npc_event 1551 15 8 4 31 1 2 none
-msg 「おい！　そこのおとこ！！\n\n\n\n『しんらへいか……\n\n\n\n#2\n　　やってやる！\n　　めんどくさいからにげる\n\n\n[[]][[]]
+msg 「Hey！　You threre！！\n\n\n\n『Shinra Soldiers……\n\n\n\n#2\n　　Fight Them！\n　　Later!\n\n\n[[]][[]]
 if_flag 3 0
 move_npc 1550 down 2
 move_npc 1551 down 2
@@ -18,7 +18,7 @@ kill 1551
 wait_encount_end
 create npc_event 1550 15 7 4 31 1 2 none
 create npc_event 1551 15 8 4 31 1 2 none
-msg 「なにごとだ！
+msg 「Whats the?
 play_se gun_shot.ogg
 move_npc 1550 down 4
 move_npc 1551 down 4
@@ -32,7 +32,7 @@ play_se gun_shot.ogg
 sleep 8
 fi
 if_flag 3 1
-msg 「まてっ！
+msg 「Halt!!
 play_se gun_shot.ogg
 move_npc 1550 down 4
 move_npc 1551 down 4
@@ -45,7 +45,7 @@ sleep 56
 play_se gun_shot.ogg
 sleep 8
 fi
-msg #2\n　　やってやる！\n　　めんどくさいからにげる\n\n\n[[]][[]]
+msg #2\n　　Fight Them!\n　　Later!\n\n\n[[]][[]]
 if_flag 3 0
 chg_char_dir left
 encount 189
@@ -55,7 +55,7 @@ kill 1555
 wait_encount_end
 create npc_event 1554 15 2 10 31 3 2 none
 create npc_event 1555 15 2 11 31 3 2 none
-msg 「なにごとだ！
+msg 「Whats the?
 move_npc 1554 right 4
 move_npc 1555 right 4
 sleep 64
@@ -88,7 +88,7 @@ play_se train_whistle_quiet.ogg
 step_npc 1557 2
 sleep 16
 play_event_bgm Ex-04-Train_Move.ogg
-msg へいし\n「ここまでだな
+msg Soldier\n「Thats as far as you go.
 sleep 48
 chg_char_dir left
 create npc_event 1580 15 11 11 0 2 2 none
@@ -109,14 +109,14 @@ chg_npc_dir 1580 right
 sleep 24
 play_se_loop train_move_quiet.ogg
 play_event_bgm Ex-05-Anxious_Heart_short.ogg
-msg 『ざんねんだが　おまえらの　あいてを\n　してるほど　ヒマじゃないんでな
+msg 『I dont have time to be\n messin around with you\n guys.
 step_npc 1557 2
 sleep 16
-msg へいし\n「たわごとを……
+msg 「Enough babbling...
 chg_speed 1557 fast
 step_npc 1557 4
 sleep 8
-msg へいし\n「よし　とらえろ！！
+msg 「Grab him!!
 play_se train_whistle_and_move.ogg
 sleep 8
 move_char up 1
@@ -349,7 +349,7 @@ play_se train_whistle_quiet.ogg
 step_npc 1557 2
 sleep 16
 play_event_bgm Ex-04-Train_Move.ogg
-msg へいし\n「ここまでだな
+msg Soldier\n「Thats as far as you go.
 sleep 48
 chg_char_dir left
 create npc_event 1580 15 11 11 0 2 2 none
@@ -370,14 +370,14 @@ chg_npc_dir 1580 right
 sleep 24
 play_se_loop train_move_quiet.ogg
 play_event_bgm Ex-05-Anxious_Heart_short.ogg
-msg 『ざんねんだが　おまえらの　あいてを\n　してるほど　ヒマじゃないんでな
+msg 『I dont have time\n to be messin around\n with you guys.
 step_npc 1557 2
 sleep 16
-msg へいし\n「たわごとを……
+msg 「Enough babbling...
 chg_speed 1557 fast
 step_npc 1557 4
 sleep 8
-msg へいし\n「よし　とらえろ！！
+msg 「Grab him!!
 play_se train_whistle_and_move.ogg
 sleep 8
 move_char up 1

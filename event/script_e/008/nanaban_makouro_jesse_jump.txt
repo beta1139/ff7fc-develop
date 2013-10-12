@@ -8,4 +8,4 @@ sleep 8
 slide_walk_npc 806 down 10
 sleep 128
 kill 806
-create npc 808 8 29 21 34 0 0 ジェシー\n「はしごのまえでは　『Aボタン』を　おして\n　そうすればはしごにつかまるわ\n　あとは　ほうこうキーのじょうげで　のぼりおりするの
+create npc 808 8 29 21 34 0 0 Jessie\n「Push the OK button in\n front of a ladder to grab\n on to it. After that use\n the Direction button to\n move up and down.
