@@ -108,16 +108,16 @@ play_se timer.ogg
 sleep 48
 play_se_loop timer2.ogg
 step_npc 1103 4
-msg ビッグス\n「ほしのいのち……　ちょっとは　のびたかな
+msg Biggs\n「That should keep the\n planet going...\n at least a little longer.
 sleep 16
 chg_npc_dir 1104 down
 sleep 16
 step_npc 1104 2
-msg ウェッジ\n「そうっすね
+msg Wedge\n「Yeah.
 sleep 48
 chg_npc_dir 1101 left
 sleep 64
-msg バレット\n「…………
+msg Barret\n「…………
 sleep 48
 chg_npc_dir 1104 up
 sleep 16
@@ -131,7 +131,7 @@ chg_npc_dir 1101 up
 jump_npc 1102 same 1
 sleep 16
 step_npc 1102 3
-msg ジェシー\n「できた！\n　さがって
+msg Jessie\n「OK！\n Now everyone get back.
 sleep 16
 chg_speed 1100 fast
 chg_speed 1101 fast
@@ -307,7 +307,7 @@ chg_speed 1203 not_move
 sleep 16
 step_npc 1200 2
 set_talk_npc 1200
-msg バレット\n「さあ　ひきあげるぞ\n　ランデブーちてんは　8ばんがいステーション！\n　かくじ　たんどくこうどう\n　れっしゃに　のりこむんだ！
+msg Baret\n「Alright.\n　Now Lets get out of here.\n\n Rendezvous at Sector 8\n station! Split up and\n get on the train!
 reset_talk_npc
 chg_speed 1200 normal
 chg_speed 1201 normal
@@ -318,10 +318,10 @@ move_npc 1202 up 8
 move_npc 1203 up 8
 move_npc 1200 right 1
 sleep 16
-msg 『お　おい！
+msg 『H hey！
 chg_npc_dir 1200 down
 set_talk_npc 1200
-msg バレット\n「かねの　はなしなら\n　ぶじに　アジトに　かえってからだ
+msg Baret\n「if its about your money.\n Wait til we get back.
 reset_talk_npc
 move_npc 1200 up 8
 sleep 128

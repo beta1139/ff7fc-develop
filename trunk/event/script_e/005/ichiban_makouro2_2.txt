@@ -5,27 +5,27 @@ chg_npc_dir 501 left
 chg_char_dir right
 sleep 16
 step_npc 501 2
-msg バレット\n「……おい\n　おまえ　まこうろは\n　はじめてじゃないんだろ？
+msg 「Yo!\n This your first time in\n a reactor?
 sleep 16
 step_char 1
 sleep 16
-msg 『まあな\n　ソルジャー……\n　しんらカンパニーの　にんげんだったからな
+msg 『No. After all.\n I did work for Shinra.\n You know.
 sleep 16
 step_npc 501 2
-msg バレット\n「このほしは　まこうエネルギーに　みちている\n　じゅうみんは　そのまこうエネルギーをつかって\n　ひびせいかつしている\n　でも　だれも　まこうのほんしつを　しらねえんだ\n　おまえ　しってるか?
+msg 「The planets full of Mako\n energy. People here use\n it everyday.
 chg_char_dir down
 sleep 32
 set_active_msg 501
 jump_npc 501 same 1
-msg バレット\n「まこうは　このほしをながれる　『ち』だ\n　それを　しんらってかいしゃは\n　ガンガン　すいだしていやがる\n　このへんちくりんな\n　スクラップでな……
+msg 「Its the life blood of\n this planet. But Shinra\n keeps suckin the blood\n out with these weird\n machines.
 chg_char_dir right
 sleep 16
 step_char 1
 sleep 16
-msg 『のうがきはいい　さきをいそごう
+msg 『Im not here for a\n lecture. Lets just do it.
 sleep 16
 step_npc 501 2
-msg バレット\n「クッ……\n\n\n　よし　ここからは　オレといっしょに\n　こうどう　してもらうぜ
+msg 「Alright!\n You come with me from\n now on.
 move_npc 501 left 1
 sleep 16
 kill 501

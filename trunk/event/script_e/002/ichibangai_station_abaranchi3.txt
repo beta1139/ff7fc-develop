@@ -4,29 +4,29 @@ sleep 16
 move_char left 2
 sleep 32
 chg_npc_dir 203 right
-msg ビッグス\n「さすが　ソルジャー！\n　でもよ　はんしんらグループ　アバランチに\n　ソルジャーが　さんかするなんて　スゲエよな！
+msg Biggs\n「Wow! You used to be in\n SOLDIER huh?\n\n ...Not everyday ya find\n one in a group like\n AVALANCHE.
 chg_npc_dir 202 right
 sleep 16
 set_talk_npc 202
-msg ジェシー\n「そのはなしって　ほんとうだったの？\n　ソルジャーって　いったら　わたしたちの\n　てきでしょ？\n どうして　そのソルジャーが　わたしたち\n アバランチに　きょうりょく　するわけ？
+msg Jessie\n「SOLDIER?\n Arent they the enemy?\n\n Whats he doing with us\n in AVALANCHE.
 reset_talk_npc
 sleep 16
 chg_npc_dir 203 left
-msg ビッグス\n「はやとちりするな　ジェシー\n　もとソルジャー　なんだってさ\n\n　いまはもう　しんらをやめちまって\n　オレたちの　なかまってわけさ
+msg Biggs\n「He was in SOLDIER.\n Jessie.\n But he quit and is with\n us now.
 chg_npc_dir 202 up
 chg_npc_dir 203 right
 sleep 16
-msg ビッグス\n「まだ　なまえきいてなかったよな\n　おしえてくれ
+msg Biggs\n「I didnt catch your name..
 step_char 1
 sleep 16
-msg 『……クラウドだ
-msg3 64 ビッグス\n「クラウドか　おれは……
+msg 『……Cloud.
+msg3 64 Biggs\n「Cloud eh? Im...
 sleep 56
 step_char 1
 sleep 8
 erase_msg3
 sleep 8
-msg 『あんたたちの　なまえなんて　きょうみないね\n　どうせ　このしごとが　おわったら　おわかれだ
+msg 『I dont care what your\n names are.\n Once this jobs over...\n Im outta here. 
 create npc_event 252 2 30 6 1 2 2 none
 move_npc 252 left 4
 sleep 16
@@ -37,7 +37,7 @@ jump_npc 252 same 2
 set_active_msg 252
 chg_char_dir right
 sleep 16
-msg バレット\n「なにやってんだ　オマエたち！\n　かたまって　こうどうするなって\n　いってんだろ！\n　ターゲットは　いちばんまこうろ\n　まこうろまえの　ブリッジに　しゅうごうだぞ！
+msg 「The hell you all doin!?\n I thought I told you\n never to move in a group!\n\n Our targets the North\n Mako Reactor.\n Well meet on the bridge\n in front of it.
 play_se door_open_hard.wav
 kill 200
 chg_speed 201 normal
@@ -62,12 +62,11 @@ chg_npc_dir 252 down
 chg_char_dir up
 step_npc 252 1
 set_talk_npc 252
-msg バレット \n「もとソルジャー……\n　チッ　しんようできねえな
+msg 「Ex-SOLDIER huh?\n I dont trust ya!
 reset_talk_npc
 jump_npc 252 same 1
 sleep 16
 set_talk_npc 252
-msg バレット \n「キャンセルボタン(しょきせっていでは　z　)を\n　おしながら　ほうこうキーをおせば\n　はやくはしることができる\n　おくれずに　ついてこい！
 reset_talk_npc
 move_npc 252 left 1
 sleep 16
