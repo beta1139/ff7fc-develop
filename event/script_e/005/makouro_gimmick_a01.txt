@@ -238,7 +238,7 @@ fi
 fi
 if_flag 3 1
 step_npc 570 2
-msg Jessie\n「Anyway, you must push the\n button in front of you\n to unlock the gate.\n　We don't have any time.\n　Let's do it!
+msg Jessie\n「Anyway, push the button\n in front of you to unlock\n the gate.\n　We don't have any time.\n　Let's do it!
 chg_npc_dir 570 left
 loop_inf
 chg_char_state_move
