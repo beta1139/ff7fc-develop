@@ -135,9 +135,10 @@ create event_generator 2300 23 4 3 17 1 0 @023/azito1.txt
 create event_generator 2302 23 4 2 17 1 0 @023/azito3.txt
 create event_generator 2303 23 4 1 17 1 0 @023/azito4.txt
 create event_generator 2225 22 8 5 17 1 0 @022/seventhheaven5_3.txt
+kill_through 2040
+kill_through 2041
 kill_through 2014
 kill_through 2011
-kill_through 2015
 kill_through 2017
 kill 2007
 kill 2009

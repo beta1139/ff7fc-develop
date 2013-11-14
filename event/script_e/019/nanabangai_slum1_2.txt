@@ -54,7 +54,7 @@ play_se attack_baret.ogg
 move_npc 2006 right 2
 sleep 16
 move_npc 2006 down 6
-create npc_event 2007 20 22 26 88 1 2 「ねえ　ねえ　しってる？\n\n\n\n#2\n　　きょうみないね\n　　しらないよ\n\n\n[[]]\n[[「ニュースの　そくほうが　はいったのよ\n　うえで　ばくだん　テロが　あったって\n　いうじゃない　それも　まこうろの　ばくはつ！！\n　これが　どんなに　たいへんなことか　わかる？\n#2\n　　きょうみないね\n　　わからないよ\n\n\n[[]]\n[[「じじょうつうの　わたしに　いわせればね\n　ミッドガルの　でんりょくが　マヒしちゃったら\n　コンピューターとか　しんごうとか　いろいろ\n　とまっちゃうじゃない\n　けいざいてき　そんしつは　んーー\n　１０おくギルは　くだらないし\n　それに！！　たくさんの　つみなきひとびとが\n　しんだと　おもうのよ\n　ばくはが　まよなかだったから　まだいいわ\n　ねむってたひとは　そのまま　めがさめない　だけね]]]]
+create npc_event 2007 20 22 26 88 1 2 
 chg_speed 2007 fast
 move_npc 2007 down 2
 sleep 16
@@ -150,7 +150,7 @@ sleep 16
 chg_npc_dir 2012 right
 chg_npc_dir 2011 down
 chg_type 2006 npc
-chg_type 2007 npc
+chg_type 2007 npc2
 chg_type 2009 npc
 chg_speed 2006 not_move
 chg_speed 2009 not_move
@@ -191,7 +191,7 @@ set_npc_pos 2006 20 31 31
 set_npc_pos 2009 20 30 31
 create event_generator 2013 20 1 1 17 0 0 @020/nanabangai_slum2.txt
 create event_generator 2014 20 1 1 17 0 0 @020/nanabangai_slum3.txt
-create event_generator 2015 20 1 2 17 0 0 @020/nanabangai_slum4.txt
+create event_generator 2040 20 1 1 17 0 0 @020/nanabangai_slum4_1.txt
 create event_generator 2017 20 2 1 17 0 0 @020/nanabangai_slum6.txt
 set_npc_pos 2011 20 22 28
 chg_type 2011 npc2
