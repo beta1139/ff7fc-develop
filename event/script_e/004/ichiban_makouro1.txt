@@ -307,7 +307,7 @@ chg_speed 1203 not_move
 sleep 16
 step_npc 1200 2
 set_talk_npc 1200
-msg Baret\n「Alright.\n　Now Lets get out of here.\n\n Rendezvous at Sector 8\n station! Split up and\n get on the train!
+msg Baret\n「Allright, now let's get\n out of here.\n\n Rendezvous at Sector 8\n station! Split up and\n get on the train!
 reset_talk_npc
 chg_speed 1200 normal
 chg_speed 1201 normal
@@ -318,10 +318,10 @@ move_npc 1202 up 8
 move_npc 1203 up 8
 move_npc 1200 right 1
 sleep 16
-msg 『H hey！
+msg 『H,hey！
 chg_npc_dir 1200 down
 set_talk_npc 1200
-msg Baret\n「if its about your money.\n Wait til we get back.
+msg Baret\n「If it's about your money.\n Wait til we get back.
 reset_talk_npc
 move_npc 1200 up 8
 sleep 128

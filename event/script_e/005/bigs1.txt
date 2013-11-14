@@ -24,7 +24,7 @@ move_npc 531 up 3
 sleep 8
 chg_npc_dir 530 down
 sleep 16
-create npc 533 5 10 6 35 1 0 Biggs\n「Think how many of our\n people risked their lives.\n Just for this code……
+create npc 533 5 10 6 35 1 0 Biggs\n「Think how many of our\n people risked their\n lives,\n just for this code...
 kill 530
 chg_npc_dir 531 right
 sleep 16

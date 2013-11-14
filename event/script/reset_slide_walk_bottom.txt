@@ -5,4 +5,6 @@ reset_slide_walk_char_flag
 chg_char_dir down
 fi
 set_key_valid b
+set_key_valid start
+set_key_valid dbg2
 set_flag 1 0

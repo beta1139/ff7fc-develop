@@ -11,7 +11,7 @@ set_talk_npc 202
 msg ジェシー\n「そのはなしって　ほんとうだったの？\n　ソルジャーって　いったら　わたしたちの\n　てきでしょ？\n どうして　そのソルジャーが　わたしたち\n アバランチに　きょうりょく　するわけ？
 reset_talk_npc
 sleep 16
-chg_npc_dir 203 left
+chg_npc_dir 203 up
 msg ビッグス\n「はやとちりするな　ジェシー\n　もとソルジャー　なんだってさ\n\n　いまはもう　しんらをやめちまって\n　オレたちの　なかまってわけさ
 chg_npc_dir 202 up
 chg_npc_dir 203 right
@@ -21,7 +21,7 @@ step_char 1
 sleep 16
 msg 『……クラウドだ
 msg3 64 ビッグス\n「クラウドか　おれは……
-sleep 56
+sleep 64
 step_char 1
 sleep 8
 erase_msg3
@@ -37,7 +37,7 @@ jump_npc 252 same 2
 set_active_msg 252
 chg_char_dir right
 sleep 16
-msg バレット\n「なにやってんだ　オマエたち！\n　かたまって　こうどうするなって\n　いってんだろ！\n　ターゲットは　いちばんまこうろ\n　まこうろまえの　ブリッジに　しゅうごうだぞ！
+msg 「なにやってんだ　オマエたち！\n　かたまって　こうどうするなって\n　いってんだろ！\n\n　ターゲットは　いちばんまこうろ\n　まこうろまえの　ブリッジに　しゅうごうだぞ！
 play_se door_open_hard.wav
 kill 200
 chg_speed 201 normal
@@ -60,12 +60,14 @@ kill 201
 sleep 16
 chg_npc_dir 252 down
 chg_char_dir up
-step_npc 252 1
-set_talk_npc 252
-msg バレット \n「もとソルジャー……\n　チッ　しんようできねえな
-reset_talk_npc
-jump_npc 252 same 1
 sleep 16
+chg_npc_dir 252 left
+chg_npc_img 252 98
+set_talk_npc 252
+msg 「もとソルジャー……\n　チッ　しんようできねえな
+reset_talk_npc
+sleep 16
+step_npc 252 1
 set_talk_npc 252
 msg バレット \n「キャンセルボタン(しょきせっていでは　z　)を\n　おしながら　ほうこうキーをおせば\n　はやくはしることができる\n　おくれずに　ついてこい！
 reset_talk_npc

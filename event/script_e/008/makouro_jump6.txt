@@ -7,4 +7,6 @@ play_se jump.wav
 sleep 32
 play_se landing.wav
 set_key_valid b
+set_key_valid start
+set_key_valid dbg2
 set_flag 1 0
