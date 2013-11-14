@@ -200,7 +200,6 @@ sleep 192
 chg_speed 2012 normal
 move_npc 2012 up 1
 open_door 2092
-play_se door_open.ogg
 sleep 16
 kill_through 2012
 close_door 2092
