@@ -7,25 +7,25 @@ msg Biggs\n「Wow! You used to be in\n SOLDIER huh?\n\n ...Not everyday ya find\n
 chg_npc_dir 202 right
 sleep 16
 set_talk_npc 202
-msg Jessie\n「SOLDIER?\n Arent they the enemy?\n\n Whats he doing with us\n in AVALANCHE.
+msg Jessie\n「SOLDIER?\n Aren't they the enemy?\n\n What's he doing with us\n in AVALANCHE.
 reset_talk_npc
 sleep 16
-chg_npc_dir 203 left
-msg Biggs\n「He was in SOLDIER.\n Jessie.\n But he quit and is with\n us now.
+chg_npc_dir 203 up
+msg Biggs\n「He was in SOLDIER,\n Jessie.\n\n But he quit and is with\n us now.
 chg_npc_dir 202 up
 chg_npc_dir 203 right
 sleep 16
-msg Biggs\n「I didnt catch your name..
+msg Biggs\n「Didn't catch your name..
 step_char 1
 sleep 16
 msg 『……Cloud.
-msg3 64 Biggs\n「Cloud eh? Im...
-sleep 56
+msg3 64 Biggs\n「Cloud, eh? Im...
+sleep 64
 step_char 1
 sleep 8
 erase_msg3
 sleep 8
-msg 『I dont care what your\n names are.\n Once this jobs over...\n Im outta here. 
+msg 『I don't care what your\n names are.\n Once this job's over...\n I'm outta here.
 create npc_event 252 2 30 6 1 2 2 none
 move_npc 252 left 4
 sleep 16
@@ -36,7 +36,7 @@ jump_npc 252 same 2
 set_active_msg 252
 chg_char_dir right
 sleep 16
-msg 「The hell you all doin!?\n I thought I told you\n never to move in a group!\n\n Our targets the North\n Mako Reactor.\n Well meet on the bridge\n in front of it.
+msg 「The hell you all doin'!?\n I thought I told you\n never to move in a group!\n\n Our target's the North\n Mako Reactor.\n We'll meet on the bridge\n in front of it.
 play_se door_open_hard.wav
 kill 200
 chg_speed 201 normal
@@ -59,14 +59,17 @@ kill 201
 sleep 16
 chg_npc_dir 252 down
 chg_char_dir up
-step_npc 252 1
+sleep 16
+chg_npc_dir 252 left
+chg_npc_img 252 98
 set_talk_npc 252
-msg 「Ex-SOLDIER huh?\n I dont trust ya!
+msg 「Ex-SOLDIER, huh?\n Don't trust ya!
 reset_talk_npc
-jump_npc 252 same 1
 sleep 16
 set_talk_npc 252
+msg Barret \n「If you push the\n Directional button while\n\n pushing the [CANCEL]\n button to run.\n (earlier marked Z)
 reset_talk_npc
+chg_npc_img 252 1
 move_npc 252 left 1
 sleep 16
 move_npc 252 up 3

@@ -1,4 +1,4 @@
 wait_same_pos
-set_talk_npc 141
-msg Jessie\nuPush the button over\n there!
+set_talk_npc 641
+msg Jessie\nuPush that button over\n there!
 reset_talk_npc

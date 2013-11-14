@@ -10,8 +10,8 @@ restore_char_img
 kill 1002
 sleep 16
 if_flag 99 0
-msg ばくはつ 6ぷんまえ
-start_countdown 6
+msg ばくはつ 10ぷんまえ
+start_countdown 10
 fi
 if_flag 99 1
 msg ばくはつ 5ふんまえ
@@ -19,7 +19,7 @@ start_countdown 5
 fi
 kill_through 808
 kill_through 533
-create npc2 840 8 29 21 96 0 4 none
+create npc2 840 8 29 21 34 2 0 none
 create event_generator 801 8 29 21 17 0 0 @008/ichiban_makouro5.txt
 create npc 510 5 22 7 35 3 0 「ジェシーがまだ　あがってこないんだ！
 set_flag 20 0

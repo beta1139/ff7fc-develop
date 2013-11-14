@@ -12,21 +12,38 @@ jump_npc 1002 same 1
 sleep 16
 step_npc 1002 1
 set_talk_npc 1002
-msg 「When we blow this place\n it aint gonna be nothin\n more than a hunka junk.\n\n Cloud you set the bomb.
+msg Barret\n「When we blow this place,\n it ain't gonna be nothin'\n more than a hunka junk.\n Cloud, you set the bomb.
 reset_talk_npc
 step_char 1
 sleep 16
-msg 『Shouldnt you do it?
+msg 『Shouldn't you do it?
 sleep 16
 step_npc 1002 1
 set_talk_npc 1002
-msg 「Just do it! I gotta watch\n to make sure you dont\n pull nothin.
+msg Barret\n「Jus'do it! I gotta watch\n to make sure you don't\n pull nothin'.
 reset_talk_npc
 sleep 16
-msg 『Fine Ill do it.
+msg 『Fine, be my quest.
 play_se beeeeep.wav
 screen_effect red
-msg2 178 Watch out！\nThis isnt just a reactor!!
+sleep 8
+clear_text 2
+clear_text 3
+set_text_alpha 2 0
+set_text_alpha 3 0
+sleep 8
+set_text 2 　 　   　　　　Watch out!！
+sleep 8
+set_text_alpha 2 90
+sleep 64
+set_text 3 　 　This isn't just a reactor!!
+sleep 8
+set_text_alpha 3 90
+sleep 80
+set_text_alpha 2 0
+set_text_alpha 3 0
+clear_text 2
+clear_text 3
 screen_effect off
 stop_se
 flush
@@ -42,17 +59,17 @@ jump_npc 1002 same 1
 sleep 16
 step_npc 1002 1
 set_talk_npc 1002
-msg 「Whats wrong?
+msg Barret\n「......What's wrong?
 reset_talk_npc
 sleep 16
 chg_char_dir up
 msg 『Huh？
 step_npc 1002 2
 set_talk_npc 1002
-msg 「Whats wrong Cloud？\n Hurry it up！
+msg Barret\n「What's wrong, Cloud？\n Hurry it up！
 reset_talk_npc
 sleep 16
-msg 『...Yeah sorry.
+msg 『...Yeah, sorry.
 move_char up 1
 sleep 16
 chg_npc_dir 1002 right
@@ -77,7 +94,7 @@ chg_npc_dir 1002 right
 sleep 25
 screen_effect off
 step_npc 1002 2
-msg 「Heads up!\n here it comes!
+msg Barret\n「Heads up,\n here they come!
 set_flag 20 1
 stop_se
 set_flag 0 5

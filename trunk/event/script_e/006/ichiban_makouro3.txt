@@ -1,6 +1,6 @@
 wait_talk
 play_se button.ogg
-msg Switch On.
+msg Switch ON.
 play_se elevator_start.wav
 loop 100
 inc_map_draw_y_offset
@@ -28,13 +28,13 @@ sleep 16
 create npc_event 601 6 20 2 0 1 2 none
 draw_char off
 step_npc 602 2
-msg 「Little by little the\n reactorsll drain out all\n the life. Then thatll be\n that.
+msg Barret\n「Little by little the\n reactors'll drain out all\n the life.\n Then that'll be that.
 chg_npc_img 601 103
 sleep 32
 chg_npc_dir 601 left
 sleep 48
 chg_npc_dir 601 down
-msg 『Its not my problem.
+msg 『It's not my problem.
 chg_npc_dir 602 down
 chg_npc_img 602 95
 step_npc 602 4
@@ -45,13 +45,13 @@ set_active_msg 602
 jump_npc 602 same 1
 sleep 16
 jump_npc 602 same 1
-msg 「The planets dyin.\n Cloud!
+msg Barret\n「The planet's dyin',\n Cloud!
 sleep 16
 chg_npc_img 601 0
 chg_npc_dir 601 down
 sleep 16
 step_npc 601 1
-msg 『The only thing I care\n about is finishin this\n job before security and\n the Roboguards come.
+msg 『The only thing I care\n about is finishin' this\n job before security and\n the Roboguards come.
 draw_char on
 kill 601
 chg_npc_dir 602 left
@@ -86,4 +86,9 @@ sleep 16
 kill 650
 kill 641
 sleep 16
+fi
 create event_generator 660 6 4 1 17 0 0 @006/elevator_switch1.txt
+create event_generator 720 7 9 11 17 0 0 @007/jessie_move.txt
+create npc_event 721 7 9 11 34 3 3 none
+create event_generator 880 8 13 8 17 0 0 @008/jessie_move2.txt
+create npc_event 881 8 13 8 34 3 3 none

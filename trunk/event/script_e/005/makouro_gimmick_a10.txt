@@ -101,28 +101,28 @@ sleep 4
 chg_npc_dir 573 left
 sleep 4
 chg_npc_dir 573 up
-msg3 -1 『もとソルジャーを　なめるな
+msg3 -1 『This is a piece of cake\n for Ex-SOLDIER.
 add_likability 2 500
 sleep 8
 move_npc 571 down 5
 sleep 24
-move_npc 570 down 5
 chg_npc_dir 572 left
 chg_npc_img 572 98
-sleep 8
 chg_speed 572 fast
-step_npc 572 5
-sleep 16
+move_npc 570 down 5
+sleep 24
 move_npc 571 left 8
 sleep 24
 move_npc 570 left 7
+wait_key_push_edge a
+erase_msg3
+step_npc 572 3
 sleep 24
 chg_npc_img 572 1
 chg_speed 572 normal
 move_npc 572 down 1
 sleep 16
 kill 571
-erase_msg3
 kill 572
 chg_char_img 0
 chg_char_dir up
@@ -183,7 +183,7 @@ chg_npc_img 572 98
 sleep 16
 sub_likability 1 500
 sub_likability 2 250
-msg バレット\n「おまえ　ほんとうに　もとソルジャーか？
+msg Barret\n「Are you really\n Ex-SOLDIER?
 move_npc 571 left 1
 move_npc 570 left 4
 sleep 8

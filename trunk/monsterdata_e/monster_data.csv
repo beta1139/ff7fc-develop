@@ -1,5 +1,5 @@
 monster_id,print_name,lv,hp,mp,attack,magic,defense,m.defense,dexterity,evade,exp,ap,gil,treasure,image
-0,EX-Soldier,2,30,0,6,0,4,0,50,0,16,2,10,1000/10,keibihei.bmp
+0,MP,2,30,0,6,0,4,0,50,0,16,2,10,1000/10,keibihei.bmp
 1,G.Hound,3,42,0,8,2,4,2,64,6,20,2,12,1000/10,guard_haund.bmp
 2,MonoDrive,2,28,28,3,3,6,4,49,6,18,3,8,1000/10,monodrive.bmp
 3,Sweeper,8,140,0,18,0,20,4,48,8,27,3,30,0,sweeper.bmp

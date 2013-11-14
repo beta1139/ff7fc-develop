@@ -1,2 +1,2 @@
 wait_same_pos
-msg ÅuOpen the menu.\n Choose the save\n you can save the state\n of the game.
+msg ÅwSave PointÅx\n Open the Menu and Choose\n [SAVE], you can save the\n state of the game.

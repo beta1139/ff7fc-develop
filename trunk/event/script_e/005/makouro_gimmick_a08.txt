@@ -58,7 +58,7 @@ chg_npc_img 572 1
 fi
 chg_npc_dir 560 up
 chg_speed 560 not_move
-msg3 -1 ジェシー\n「しっぱいね　もういちど
+msg3 -1 Jessie\n「No good.\n Let's try it again.
 if_flag 10 0
 sleep 96
 erase_msg3
@@ -106,7 +106,7 @@ chg_npc_dir 571 down
 sleep 64
 erase_msg3
 sleep 8
-msg3 -1 バレット\n「なにやってんだっ！　ナスボケッ！\n　オレに　かわれ！！
+msg3 -1 Barret\n「What the fuck are you \n doing? It's MY turn!
 chg_speed 572 fast
 chg_npc_img 572 95
 chg_npc_dir 572 up
@@ -186,7 +186,7 @@ sleep 32
 chg_npc_img 573 0
 chg_npc_dir 573 up
 chg_char_state_event
-msg3 -1 『おまえと　しんじゅうする　つもりはない
+msg3 -1 『I am SO offended.NOT.
 sleep 16
 chg_npc_dir 572 down
 sleep 48

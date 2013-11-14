@@ -55,8 +55,8 @@ npc3,642,6,18,2,34,2,0,none
 event_generator,643,6,2,3,17,0,0,@006/elevator.txt
 event_generator,661,6,20,1,17,0,0,"@006/elevator_switch2.txt"
 map_door,700,7,10,25,8,0,0,0
-event_generator,802,8,19,8,17,0,0,"@008/makouro_jump1.txt"
-event_generator,803,8,20,8,17,0,0,"@008/makouro_jump2.txt"
+event_generator,802,8,18,8,17,0,0,"@008/makouro_jump1.txt"
+event_generator,803,8,21,8,17,0,0,"@008/makouro_jump2.txt"
 event_generator,804,8,27,8,17,0,0,"@008/makouro_jump3.txt"
 event_generator,805,8,29,7,17,0,0,"@008/makouro_jump4.txt"
 event_generator,820,8,32,18,17,0,0,"@008/makouro_jump5.txt"

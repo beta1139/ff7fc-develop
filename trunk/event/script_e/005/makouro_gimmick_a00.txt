@@ -5,7 +5,7 @@ create npc2 541 5 13 8 17 0 0
 create map_obj 550 5 13 7 31 0 0 
 create map_obj 551 5 13 8 31 0 0 
 play_se_loop alarm.ogg
-msg3 144 「ヒジョウ　ケイカイ　システム　サドウチュウ\n　ヒジョウ　ケイカイ　システム　サドウチュウ
+msg3 144 「Emergency！ Emergency！\n　Emergency！ Emergency！
 move_char left 5
 sleep 80
 create npc_event 572 5 19 7 1 2 2 none
@@ -15,11 +15,11 @@ jump_npc 572 same 2
 sleep 32
 chg_speed 572 fast
 step_npc 572 2
-msg バレット\n「どうなってんだっ！\n　とびらが　しまってやがる！
+msg Barret\n「What's goin' on！\n　It's locked up!
 chg_npc_dir 572 right
 sleep 8
 step_npc 572 4
-msg バレット\n「おいっ！！　どうする！？
+msg Barret\n「Hey, what should we do?
 chg_char_dir down
 chg_char_img_tmp 103
 sleep 32
@@ -35,11 +35,11 @@ draw_countdown on
 chg_char_state_move
 set_flag 1 1
 loop inf
-msg3 128 「ヒジョウ　ケイカイ　システム　サドウチュウ\n　ヒジョウ　ケイカイ　システム　サドウチュウ
+msg3 128 「Emergency！ Emergency！\n　Emergency！ Emergency！
 sleep 128
 erase_msg3
 sleep 8
-msg3 128 「トビラ　ロック　サレマシタ
+msg3 128 「Floor ＃005: Locked Down
 sleep 200
 erase_msg3
 sleep 8

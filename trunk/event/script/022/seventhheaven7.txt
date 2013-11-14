@@ -133,8 +133,8 @@ kill_through 1902
 kill 1906
 kill 1907
 kill_through 1908
-kill 2201
-kill 2202
+kill_through 2201
+kill_through 2202
 create npc_event 2020 20 36 19 34 0 0 none
 create npc_event 2021 20 37 18 35 2 0 none
 create npc_event 2022 20 36 18 36 1 0 none

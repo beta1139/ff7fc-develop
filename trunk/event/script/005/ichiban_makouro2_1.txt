@@ -30,10 +30,13 @@ step_char 1
 sleep 16
 msg 『のうがきはいい　さきをいそごう
 sleep 16
-step_npc 501 2
+chg_npc_dir 501 left
+chg_npc_img 501 98
+step_npc 501 1
 set_talk_npc 501
 msg バレット\n「クッ……\n\n\n　よし　ここからは　オレといっしょに\n　こうどう　してもらうぜ
 reset_talk_npc
+chg_npc_img 501 1
 move_npc 501 down 1
 sleep 16
 kill 501

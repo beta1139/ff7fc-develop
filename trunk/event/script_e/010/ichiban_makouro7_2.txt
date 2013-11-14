@@ -3,26 +3,25 @@ play_event_bgm 1-02b-Bombing_Mission.ogg
 play_bgm
 sleep 8
 chg_char_dir down
-msg 『Come on.\n Lets get outta here！
+msg 『Come on,\n Let's get outta here！
 move_npc 1002 right 1
 sleep 16
 restore_char_img
 kill 1002
 sleep 16
-set_flag 99 1
 if_flag 99 0
-msg six minutes to detonation!
-start_countdown 6
+msg Ten minutes to detonation!
+start_countdown 10
 fi
 if_flag 99 1
-msg five minutes to detonation!
+msg 5 minutes to detonation!
 start_countdown 5
 fi
 kill_through 808
 kill_through 533
-create npc2 840 8 29 21 96 0 4 none
+create npc2 840 8 29 21 34 2 0 none
 create event_generator 801 8 29 21 17 0 0 @008/ichiban_makouro5.txt
-create npc 510 5 23 7 35 3 0 「Jessie has not come yet.
+create npc 510 5 22 7 35 3 0 Biggs\n「Jessie still hasn't\n come up yet!
 set_flag 20 0
 if_flag 99 0
 chg_npc_dir 560 up

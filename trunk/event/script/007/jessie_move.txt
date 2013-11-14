@@ -1,0 +1,25 @@
+wait_same_pos
+create event_generator 680 6 17 3 17 0 0 @006/kill_jessie_move.txt
+move_npc 721 right 1
+sleep 8
+chg_char_state_move
+move_npc 721 down 7
+sleep 56
+move_npc 721 right 11
+sleep 88
+move_npc 721 down 9
+sleep 72
+move_npc 721 left 10
+sleep 80
+move_npc 721 up 1
+sleep 8
+move_npc 721 left 1
+sleep 8
+move_npc 721 up 1
+sleep 4
+open_door 700
+sleep 4
+kill 721
+sleep 8
+close_door 700
+kill_through 680

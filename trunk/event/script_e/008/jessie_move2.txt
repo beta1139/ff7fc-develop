@@ -1,0 +1,11 @@
+wait_same_pos
+move_npc 881 right 5
+sleep 48
+jump_npc 881 right 3
+play_se jump.wav
+sleep 48
+play_se landing.wav
+sleep 8
+move_npc 881 right 2
+sleep 16
+kill 881

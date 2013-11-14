@@ -7,7 +7,7 @@ step_npc 800 2
 sleep 16
 msg 『You all right？
 step_npc 840 2
-msg 「My leg got stuck.
+msg Jessie\n「My leg got stuck.
 step_npc 800 3
 sleep 92
 chg_npc_img 840 34
@@ -24,7 +24,7 @@ sleep 4
 chg_npc_dir 840 up
 pool
 chg_speed 840 fast
-msg 「Thanks!
+msg Jessie\n「Thanks!
 jump_npc 840 up 2
 sleep 40
 move_npc 840 up 8

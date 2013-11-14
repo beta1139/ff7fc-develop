@@ -26,7 +26,24 @@ sleep 16
 msg 『すきに　してくれ
 play_se beeeeep.wav
 screen_effect red
-msg2 178 めをさませ！\nここは　ただの　はつでんしょじゃない！
+sleep 8
+clear_text 2
+clear_text 3
+set_text_alpha 2 0
+set_text_alpha 3 0
+sleep 8
+set_text 2 　 　   　　　　   めをさませ！
+sleep 8
+set_text_alpha 2 90
+sleep 64
+set_text 3 　 　    ここは　ただの　はつでんしょじゃない！
+sleep 8
+set_text_alpha 3 90
+sleep 80
+set_text_alpha 2 0
+set_text_alpha 3 0
+clear_text 2
+clear_text 3
 screen_effect off
 stop_se
 flush
@@ -82,7 +99,6 @@ set_flag 20 1
 stop_se
 set_flag 0 5
 play_bgm
-encount 204
 sleep 64
 kill 950
 kill_through 951

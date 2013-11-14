@@ -6,34 +6,37 @@ chg_char_dir up
 sleep 16
 step_npc 501 2
 set_talk_npc 501
-msg 「Yo!\n This your first time in\n a reactor?
+msg Barret \n「Yo! This your first time\n in a reactor?
 reset_talk_npc
 sleep 16
 step_char 1
 sleep 16
-msg 『No. After all.\n I did work for Shinra.\n You know.
+msg 『No. After all,\n I did work for Shinra,\n y'know.
 sleep 16
 step_npc 501 2
 set_talk_npc 501
-msg 「The planets full of Mako\n energy. People here use\n it everyday.
+msg Barret\n「The planet's full of Mako\n energy. People here use\n it everyday.
 reset_talk_npc
 chg_char_dir right
 sleep 32
 set_active_msg 501
 jump_npc 501 same 1
 set_talk_npc 501
-msg 「Its the life blood of\n this planet. But Shinra\n keeps suckin the blood\n out with these weird\n machines.
+msg Barret\n「It's the life blood of\n this planet. But Shinra\n keeps suckin' the blood\n out with these weird\n machines.
 reset_talk_npc
 chg_char_dir up
 sleep 16
 step_char 1
 sleep 16
-msg 『Im not here for a\n lecture. Lets just do it.
+msg 『I'm not here for a\n lecture. Let's just do it.
 sleep 16
-step_npc 501 2
+chg_npc_dir 501 left
+chg_npc_img 501 98
+step_npc 501 1
 set_talk_npc 501
-msg 「Alright!\n You come with me from\n now on.
+msg Barret\n「Alright!!\n You comin' with me from\n now on.
 reset_talk_npc
+chg_npc_img 501 1
 move_npc 501 down 1
 sleep 16
 kill 501
