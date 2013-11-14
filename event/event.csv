@@ -745,8 +745,8 @@ event_generator,4201,42,25,5,17,0,0,"@042/slide1.txt"
 event_generator,4202,42,25,22,17,0,0,"@042/slide2.txt"
 map_door,4250,42,20,3,8,0,0,0
 map_door,4251,42,10,25,8,0,0,0
-event_generator,4300,43,19,8,17,0,0,"@008/makouro_jump1.txt"
-event_generator,4301,43,20,8,17,0,0,"@008/makouro_jump2.txt"
+event_generator,4300,43,18,8,17,0,0,"@008/makouro_jump1.txt"
+event_generator,4301,43,21,8,17,0,0,"@008/makouro_jump2.txt"
 event_generator,4302,43,27,8,17,0,0,"@008/makouro_jump3.txt"
 event_generator,4303,43,29,7,17,0,0,"@008/makouro_jump4.txt"
 event_generator,4304,43,32,18,17,0,0,"@008/makouro_jump5.txt"
