@@ -47,6 +47,7 @@ npc2,539,5,23,7,17,0,0,""
 map_obj,550,5,13,8,31,0,0,0
 map_obj,551,5,13,7,31,0,0,0
 map_obj,552,5,23,7,31,0,0,0
+treasure_box,599,5,16,20,1,0,0,1007
 event_generator,600,6,4,1,17,0,0,"@006/ichiban_makouro3.txt"
 npc,641,6,2,2,34,3,0,"Jessie
 ÅuPush the button over
@@ -73,6 +74,7 @@ npc,806,8,26,8,34,3,0,"Jessie
  [Directional button] to
  move up and down."
 event_generator,807,8,26,8,17,1,0,"@008/nanaban_makouro_jesse_jump.txt"
+treasure_item,890,8,29,19,0,0,0,1000
 event_generator,920,9,3,3,17,0,0,"@set_slide_walk.txt"
 event_generator,921,9,3,4,17,0,0,"@reset_slide_walk_bottom.txt"
 event_generator,922,9,13,7,17,0,0,"@reset_slide_walk.txt"
