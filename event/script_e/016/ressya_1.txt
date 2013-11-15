@@ -54,7 +54,7 @@ sleep 64
 chg_npc_dir 1652 left
 chg_npc_dir 1653 left
 sleep 32
-msg アバランチのめんめん\n「ふう……
+msg ビッグス「ふう……\nジェシー「ふう……\nウェッジ「ふう……
 sleep 112
 open_door 1601
 create npc_event 1654 16 17 3 0 0 2 none
@@ -83,11 +83,18 @@ chg_speed 1652 not_move
 chg_speed 1653 not_move
 chg_speed 1654 normal
 move_npc 1654 left 2
+set_active_msg 1650
+set_active_msg 1652
+set_active_msg 1653
 sleep 32
+jump_npc 1650 same 2
+jump_npc 1652 same 2
+jump_npc 1653 same 2
 msg ビッグス「クラウド！！\nジェシー「クラウド……\nウェッジ「クラウドさんっ！\n\n『やくそくの　じかんに　おくれたようだ
 jump_npc 1651 same 2
 sleep 16
 msg バレット\n「おい！　ちこくやろう！！\n　ずいぶん　はでな　おでまし　じゃねえか
+step_npc 1654 1
 msg 『そうでもない　ふつうだ
 chg_npc_dir 1651 left
 chg_npc_img 1651 98
@@ -95,7 +102,10 @@ step_npc 1651 4
 sleep 64
 chg_npc_dir 1651 right
 chg_npc_img 1651 1
+step_npc 1651 2
 msg バレット\n「ケッ！！\n　しんぱい　させやがって　かってな　やろうだ！
+sleep 16
+step_npc 1654 1
 msg 『ほう……？\n　しんぱい　してくれたのか
 step_npc 1651 2
 sleep 16
@@ -104,9 +114,11 @@ move_npc 1651 down 1
 sleep 16
 move_npc 1651 right 5
 sleep 80
-chg_npc_dir 1651 left
-msg バレット\n「おい　おめえら！\n　ばしょ　かえるぞ　ついてこい！
 chg_speed 1650 normal
+chg_npc_dir 1651 left
+jump_npc 1651 same 1
+set_active_msg 1650
+msg バレット\n「おい　おめえら！\n　ばしょ　かえるぞ　ついてこい！
 move_npc 1651 right 2
 move_npc 1650 up 1
 sleep 16
