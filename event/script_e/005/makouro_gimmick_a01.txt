@@ -63,7 +63,7 @@ sleep 16
 chg_npc_dir 571 down
 chg_npc_dir 572 down
 sleep 16
-msg Jessie\n「Are you ready?\n\n\n#2\n　　Yeah.\n　　Sorry?\n\n\n[[]][[]]
+msg Jessie\n「You ready?\n\n\n#2\n　　Let's do it.\n　　huh?\n\n\n[[]][[]]
 set_key_unvalid up
 set_key_unvalid down
 chg_npc_dir 571 left
@@ -238,7 +238,7 @@ fi
 fi
 if_flag 3 1
 step_npc 570 2
-msg Jessie\n「Anyway, push the button\n in front of you to unlock.\n\n　We don't have any time.\n　Let's do it!
+msg Jessie\n「Anyway, push the button\n in front of you.\n\n　We don't have any time.\n　Let's do it!
 chg_npc_dir 570 left
 loop_inf
 chg_char_state_move

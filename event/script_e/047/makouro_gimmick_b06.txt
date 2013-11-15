@@ -29,7 +29,7 @@ sleep 56
 chg_npc_img 4772 0
 chg_npc_dir 4760 up
 chg_speed 4760 not_move
-msg3 -1 ティファ\n「しっぱいね　もういちど
+msg3 -1 Tifa\n「No good.\n Let's try it again.
 if_flag 10 0
 sleep 96
 erase_msg3
@@ -67,23 +67,23 @@ erase_msg3
 sleep 8
 chg_char_state_event
 if_flag 11 3
-msg3 -1 バレット\n「！！！！！！！！
+msg3 -1 Barret\n「FFFFFUUUUUUUUUU!!!!
 fi
 if_flag 11 2
-msg3 -1 バレット\n「このウスノロッ！！\n　いいかげんに　しやがれ！！
+msg3 -1 Barret\n「That's Enooooough！\n Don't fuck with me!
 set_flag 11 3
 fi
 if_flag 11 1
 if_flag 99 0
-msg3 -1 バレット\n「なにやってんだっ！\n　ぜんかいはマグレか！！
+msg3 -1 Barret\n「I knew it!\n That was just a fluke!
 fi
 if_flag 99 1
-msg3 -1 バレット\n「なにやってんだっ！　ちゃんとやれ！！
+msg3 -1 Barret\n「Yo,get serious!
 fi
 set_flag 11 2
 fi
 if_flag 11 0
-msg3 -1 バレット\n「なにやってんだっ！　ちゃんとやれ！！
+msg3 -1 Barret\n「Yo,get serious!
 set_flag 11 1
 fi
 chg_speed 4771 fast
@@ -134,7 +134,7 @@ chg_char_state_event
 chg_npc_dir 4770 right
 chg_npc_img 4770 98
 jump_npc 4770 same 1
-msg3 -1 ティファ\n「ちょっと！　マジメにやって！！
+msg3 -1 Tifa\n「Hey! Be serious!
 sleep 16
 jump_npc 4770 same 1
 chg_npc_dir 4771 left

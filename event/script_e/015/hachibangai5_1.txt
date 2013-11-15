@@ -5,7 +5,7 @@ kill_through_range 1413 1415
 kill_through_range 1405 1406
 create npc_event 1550 15 7 4 31 1 2 none
 create npc_event 1551 15 8 4 31 1 2 none
-msg 「Hey！　You threre！！\n\n\n\n『Shinra Soldiers……\n\n\n\n#2\n　　Fight Them！\n　　Later!\n\n\n[[]][[]]
+msg 「Hey！　You threre！！\n\n\n\n『Shinra-MP……\n\n\n\n#2\n　　Fight Them！\n　　Later!\n\n\n[[]][[]]
 if_flag 3 0
 move_npc 1550 down 2
 move_npc 1551 down 2
@@ -89,7 +89,7 @@ play_se train_whistle_quiet.ogg
 step_npc 1557 2
 sleep 16
 play_event_bgm Ex-04-Train_Move.ogg
-msg Soldier\n「That's as far as you go.
+msg MP\n「That's as far as you go.
 sleep 48
 chg_char_dir left
 create npc_event 1580 15 11 11 0 2 2 none
@@ -113,11 +113,11 @@ play_event_bgm Ex-05-Anxious_Heart_short.ogg
 msg 『I don't have time\n to be messin' around with you\n guys.
 step_npc 1557 2
 sleep 16
-msg Soldier\n「Enough babbling...
+msg MP\n「Enough babbling...
 chg_speed 1557 fast
 step_npc 1557 4
 sleep 8
-msg Soldier\n「Grab him!!
+msg MP\n「Grab him!!
 play_se train_whistle_and_move.ogg
 sleep 8
 move_char up 1
@@ -348,7 +348,7 @@ play_se train_whistle_quiet.ogg
 step_npc 1557 2
 sleep 16
 play_event_bgm Ex-04-Train_Move.ogg
-msg Soldier\n「That's as far as you go.
+msg MP\n「That's as far as you go.
 sleep 48
 chg_char_dir left
 create npc_event 1580 15 11 11 0 2 2 none
@@ -372,11 +372,11 @@ play_event_bgm Ex-05-Anxious_Heart_short.ogg
 msg 『I don't have time\n to be messin' around\n with you guys.
 step_npc 1557 2
 sleep 16
-msg Soldier\n「Enough babbling...
+msg MP\n「Enough babbling...
 chg_speed 1557 fast
 step_npc 1557 4
 sleep 8
-msg Soldier\n「Grab him!!
+msg MP\n「Grab him!!
 play_se train_whistle_and_move.ogg
 sleep 8
 move_char up 1

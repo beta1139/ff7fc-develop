@@ -13,7 +13,7 @@ create npc_event 4770 47 15 14 2 1 2 none
 move_npc 4770 down 3
 sleep 48
 chg_npc_dir 4770 up
-msg ティファ\n「さんにんにんどうじに　ボタンをおせって\n　ジェシーがいってたわ
+msg Tifa\n「Jessie said we all have\n to push the button at\n once.
 create npc_event 4742 47 13 16 17 0 0 none
 create npc_event 4772 47 15 14 0 1 2 none
 draw_char off
@@ -25,7 +25,7 @@ sleep 5
 chg_speed 4770 not_step
 sleep 11
 if_flag 99 0
-msg3 112 バレット\n「チッ……\n　またかよ
+msg3 112 Barret\n「Shit……Not again!
 create npc_event 4771 47 15 16 98 2 2 none
 step_npc 4771 2
 fi
@@ -55,14 +55,14 @@ sleep 8
 if_flag 10 0
 if_flag 99 0
 chg_npc_dir 4772 up
-msg 『バレット　あしを　ひっぱるなよ
+msg 『Barret, lots of luck.
 chg_npc_dir 4771 left
 chg_npc_img 4771 98
 step_npc 4771 3
 sleep 16
 chg_npc_dir 4772 right
 chg_npc_dir 4770 down
-msg3 80 ティファ\n「？
+msg3 80 Tifa\n「？
 sleep 64
 chg_npc_img 4771 1
 chg_npc_dir 4771 left
@@ -94,9 +94,9 @@ if_flag 11 1
 if_flag 99 0
 chg_npc_dir 4771 left
 chg_npc_img 4771 98
-msg バレット\n「ぜんかいは　マグレじゃないってとこを\n　みせてもうらうぜ
+msg Barret\n「Y'know the last time was\n just a fluke, Cloud.
 chg_npc_dir 4772 up
-msg 『バレット　あしを　ひっぱるなよ
+msg 『Barret, lots of luck.
 chg_npc_dir 4771 up
 chg_npc_img 4771 95
 jump_npc 4771 same 1
@@ -104,7 +104,7 @@ sleep 16
 jump_npc 4771 same 1
 chg_npc_dir 4772 right
 chg_npc_dir 4770 down
-msg3 64 ティファ\n「？
+msg3 64 Tifa\n「？
 sleep 16
 chg_speed 4771 fast
 step_npc 4771 4
@@ -120,7 +120,7 @@ if_flag 11 2
 if_flag 99 0
 chg_npc_dir 4771 left
 chg_npc_img 4771 98
-msg バレット\n「こんどこそ　たのむぜ？\n　もとソルジャー？さんよ
+msg Barret\n「I really hope Ex-SOLDIER\n works on it in earnest\n soon.
 chg_npc_dir 4772 down
 chg_npc_img 4772 103
 sleep 16
@@ -128,7 +128,7 @@ chg_npc_dir 4772 left
 chg_npc_img 4771 1
 chg_npc_dir 4771 left
 chg_npc_dir 4770 down
-msg3 80 ティファ\n「？
+msg3 80 Tifa\n「？
 sleep 56
 chg_npc_img 4772 0
 chg_npc_dir 4772 right
@@ -147,7 +147,7 @@ create event_generator 4784 47 1 2 17 0 0 @047/makouro_gimmick_b05.txt
 create event_generator 4785 47 1 1 17 0 0 @047/makouro_gimmick_b06.txt
 create event_generator 4789 47 1 2 17 0 0 @047/makouro_gimmick_b10.txt
 step_npc 4770 2
-msg ティファ\n「はじめるわよ
+msg Tifa\n「Let's start it!
 loop_inf
 chg_char_state_move
 sleep 32
@@ -181,7 +181,7 @@ chg_npc_dir 4761 up
 chg_npc_dir 4762 up
 chg_speed 4761 not_move
 chg_speed 4762 not_move
-msg3 -1 ティファ\n「しっぱいね　もういちど
+msg3 -1 Tifa\n「No good.\n Let's try it again.
 if_flag 10 0
 sleep 96
 erase_msg3
@@ -216,23 +216,23 @@ erase_msg3
 sleep 8
 chg_char_state_event
 if_flag 11 3
-msg3 -1 バレット\n「！！！！！！！！
+msg3 -1 Barret\n「FFFFFUUUUUUUUUU!!!!
 fi
 if_flag 11 2
-msg3 -1 バレット\n「このウスノロッ！！\n　いいかげんに　しやがれ！！
+msg3 -1 Barret\n「That's Enooooough！\n Don't fuck with me!
 set_flag 11 3
 fi
 if_flag 11 1
 if_flag 99 0
-msg3 -1 バレット\n「なにやってんだっ！\n　ぜんかいはマグレか！！
+msg3 -1 Barret\n「I knew it!\n That was just a fluke!
 fi
 if_flag 99 1
-msg3 -1 バレット\n「なにやってんだっ！　ちゃんとやれ！！
+msg3 -1 Barret\n「Yo,get serious!
 fi
 set_flag 11 2
 fi
 if_flag 11 0
-msg3 -1 バレット\n「なにやってんだっ！　ちゃんとやれ！！
+msg3 -1 Barret\n「Yo,get serious!
 set_flag 11 1
 fi
 chg_speed 4771 fast
@@ -280,7 +280,7 @@ chg_char_state_event
 chg_npc_dir 4770 right
 chg_npc_img 4770 98
 jump_npc 4770 same 1
-msg3 -1 ティファ\n「ちょっと！　マジメにやって！！
+msg3 -1 Tifa\n「Hey! Be serious!
 sleep 16
 jump_npc 4770 same 1
 chg_npc_dir 4771 left
