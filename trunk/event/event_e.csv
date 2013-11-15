@@ -780,7 +780,7 @@ event_generator,4510,45,8,18,17,0,0,"@045/goban_makouro1.txt"
 event_generator,4512,45,1,1,17,0,0,"@045/goban_makouro2.txt"
 event_generator,4600,46,4,1,17,0,0,"@006/elevator_switch1.txt"
 event_generator,4601,46,20,1,17,0,0,"@006/elevator_switch2.txt"
-treasure_box,4700,47,19,12,0,0,0,1003
+treasure_box,4700,47,19,12,1,0,0,1003
 save_point,4701,47,8,7,0,0,0,
 event_generator,4702,47,8,7,17,0,0,"@save_msg.txt"
 npc2,4740,47,13,7,17,0,0,""

@@ -153,6 +153,7 @@ chg_npc_dir 4772 up
 add_likability 1 500
 add_likability 2 1000
 set_flag 10 1
+wait_key_push_edge a
 fi
 if_flag 10 0
 jump_npc 4770 same 1

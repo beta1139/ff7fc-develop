@@ -99,6 +99,7 @@ set_flag 20 1
 stop_se
 set_flag 0 5
 play_bgm
+encount 204
 sleep 64
 kill 950
 kill_through 951
