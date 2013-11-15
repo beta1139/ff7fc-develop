@@ -10,6 +10,7 @@ msg ジェシー\n「ひそひそ……\n　（くらくなるから　チカンが　おおいのよ\n　IDけん
 sleep 32
 chg_npc_dir 1667 up
 msg ジェシー\n「ま　それは　さておき\n　もうすぐ　ちじょうに　かえれるってわけ\n　なんだか　ホっとするね
+chg_char_dir left
 sleep 96
 kill 70414
 kill 1680
@@ -18,7 +19,7 @@ kill_through 1621
 kill_through 1622
 stop_se
 sleep 16
-create event_generator 1600 16 2 20 17 0 0 @016/ressya_move1.txt
+create event_generator 1600 16 18 21 17 0 0 @016/ressya_move1.txt
 chg_npc_dir 1667 right
 sleep 16
 create npc 1669 16 18 22 34 3 0 ジェシー\n「そうだ　クラウド！\n　こんど　わたしの　てづくりさくひんを\n　プレゼントしちゃおうかな\n#2\n　　えんりょしとくよ\n　　たのしみにしてるよ\n\n\n[[「そう きっと　こうかい　するかもよ\n　わたし　ズガッーンと　ねにもつ　タイプなの]]\n[[　うん　じゃ　うでに　よりをかけて\n　ドッカーンと　せいさくするわ]]
