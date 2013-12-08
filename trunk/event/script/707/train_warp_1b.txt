@@ -1,0 +1,5 @@
+set_eternal_event
+wait_same_pos
+if_flag 13 0
+warp_ff3_2 707 17 10 2 up
+fi

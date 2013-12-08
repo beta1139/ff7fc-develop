@@ -1,0 +1,114 @@
+wait_same_pos
+backup_char_img
+chg_char_img 0
+if_flag 9 0
+add_party_mem 2
+add_party_mem 3
+add_item 4000
+add_item 4100
+add_item 4003
+fi
+set_flag 13 0
+set_flag 14 0
+set_flag 15 0
+kill_through_range 1700 1747
+kill_through_range 1903 1905
+kill_through_range 1910 1912
+sleep 16
+create npc_event 9821 98 9 32 3 3 2 none
+create npc_event 9822 98 9 32 2 0 2 none
+move_npc 9821 right 2
+move_npc 9822 up 1
+sleep 16
+chg_char_dir right
+move_npc 9822 right 1
+sleep 16
+chg_npc_dir 9821 up
+chg_npc_dir 9822 down
+sleep 40
+step_char 2
+sleep 32
+chg_npc_dir 9821 left
+msg 『エアリス\n　すっかりまきこんでしまって……
+sleep 16
+chg_npc_img 9821 15
+step_npc 9821 2
+sleep 40
+chg_npc_img 9821 3
+sleep 16
+jump_npc 9821 same 1
+sleep 16
+step_npc 9821 2
+set_talk_npc 9821
+msg エアリス\n「ここからかえれ！\n　な～ていわないでね
+reset_talk_npc
+sleep 32
+chg_char_dir up
+sleep 16
+chg_npc_dir 9821 up
+loop 2
+chg_npc_dir 9822 left
+sleep 16
+chg_npc_dir 9822 up
+sleep 16
+pool
+loop 2
+chg_npc_dir 9822 right
+sleep 16
+chg_npc_dir 9822 up
+sleep 16
+pool
+sleep 16
+chg_npc_dir 9822 down
+sleep 16
+step_npc 9822 2
+set_talk_npc 9822
+msg ティファ\n「え～と……あかりのついている\n　しゃりょうをぬけていけば　でられそうね
+reset_talk_npc
+sleep 16
+move_char right 1
+sleep 16
+move_npc 9821 left 1
+move_npc 9822 down 1
+sleep 16
+kill 9821
+kill 9822
+set_npc_pos 9911 99 22 16
+set_npc_pos 9912 99 22 17
+set_npc_pos 9913 99 22 18
+set_npc_pos 9914 99 22 19
+set_layer 9941 front
+set_layer 9942 front
+set_layer 9965 front
+set_layer 9966 front
+set_layer 9981 front
+set_layer 9982 front
+create event_generator 9900 99 23 24 17 0 0 @099/train_gimmick_a01.txt
+create event_generator 9902 99 29 23 17 0 0 @099/train_gimmick_b01.txt
+create npc 1706 17 14 9 94 0 4 「プレートがおちるって　うわさをききましたです\n　ながねんしたしんだ　このえきですから\n　どうしてもはなれられません……\n\n　いったいどうして……？\n　うそであってほしいです
+chg_npc_img 1748 4
+chg_npc_img 1749 4
+chg_npc_img 1750 4
+chg_npc_img 1751 5
+chg_npc_img 1752 11
+chg_npc_img 1753 12
+chg_npc_img 1754 13
+chg_npc_img 1755 12
+chg_npc_img 1756 13
+chg_npc_img 1757 12
+chg_npc_img 1758 13
+chg_npc_img 1759 12
+chg_npc_img 1760 13
+chg_npc_img 1761 12
+chg_npc_img 1762 13
+chg_npc_img 1763 14
+chg_npc_img 1764 10
+chg_npc_img 1765 4
+create event_generator 1910 19 14 19 17 0 0 @019/plate_support01.txt
+create event_generator 1911 19 14 20 17 0 0 @019/plate_support01.txt
+create event_generator 1912 19 14 21 17 0 0 @019/plate_support01.txt
+restore_char_img
+draw_image 9899 16 16 0 0 224 32 1 event/train_graveyard.bmp
+wait_key_push_edge a
+erase_image 9899
+set_flag 21 0

@@ -1,0 +1,45 @@
+wait_target_talk 70797
+play_event_bgm 2-13-Trail_of_Blood.ogg
+msg i7\n「みごとに　このかくしべやを　みつけた\n　こうきしんおうせいなおまえに　けいいをひょうす\n\n　ほうびにこれらをやろう
+chg_type 70797 npc_event
+chg_speed 70797 normal
+step_npc 70797 2
+sleep 48
+play_se recover.wav
+msg 『ラグナロク』をてにいれた！
+step_npc 70797 2
+sleep 48
+play_se recover.wav
+msg 『ラストエリクサー』をてにいれた！
+add_item 1006
+step_npc 70797 2
+sleep 48
+play_se recover.wav
+msg 『リボン』をてにいれた！
+add_item 5018
+step_npc 70797 2
+sleep 48
+play_se recover.wav
+msg 『バハムート』をてにいれた！
+add_item 4407
+sleep 16
+step_npc 70797 2
+msg i7\n「あのよでつかってくれ
+boss_encount 534
+sleep 16
+wait_encount_end
+set_active_msg 70797
+play_se corneo_jump.ogg
+jump_npc 70797 same 1
+sleep 16
+play_se corneo_jump.ogg
+jump_npc 70797 same 1
+msg i7\n「くそぉ　にげられたー\n\n\n　しかし　ほんぺんでは　こんなアイテム\n てにはいらないのだ　ザマーミロー
+loop 5
+chg_npc_img 70797 17
+sleep 8
+chg_npc_img 70797 49
+sleep 8
+pool
+play_se killed_ff3.wav
+kill 70797

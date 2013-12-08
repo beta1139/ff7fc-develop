@@ -1433,27 +1433,26 @@ chg_npc_img 1761 12
 chg_npc_img 1762 13
 chg_npc_img 1763 14
 sleep 8
-move_char down 3
+move_char down 2
 sleep 32
 move_npc 1706 right 2
-sleep 96
-chg_event_move_char_speed normal
-create npc_event 1707 17 7 4 71 1 2 「こんやは　かえさないよ
+sleep 64
+create npc_event 1707 17 14 9 71 1 2 「こんやは　かえさないよ
 move_npc 1707 down 2
 sleep 32
 move_npc 1707 left 4
-create npc_event 1708 17 7 4 72 1 2 none
+create npc_event 1708 17 14 9 72 1 2 none
 move_npc 1708 down 2
 sleep 32
 move_npc 1708 left 3
 sleep 32
 chg_npc_dir 1707 right
 sleep 16
-create npc_event 1705 17 7 4 36 1 2 none
+create npc_event 1705 17 14 9 36 1 2 none
 move_npc 1705 down 4
 step_npc 1707 2
 sleep 32
-create npc_event 1704 17 7 4 35 1 2 none
+create npc_event 1704 17 14 9 35 1 2 none
 move_npc 1704 down 1
 sleep 16
 move_npc 1704 right 2
@@ -1461,7 +1460,7 @@ sleep 16
 move_npc 1705 left 3
 step_npc 1708 2
 sleep 32
-create npc_event 1703 17 7 4 34 1 2 none
+create npc_event 1703 17 14 9 34 1 2 none
 move_npc 1703 down 1
 sleep 16
 chg_npc_dir 1705 right
@@ -1474,13 +1473,13 @@ move_npc 1703 down 2
 sleep 32
 chg_npc_dir 1705 right
 chg_npc_dir 1704 right
-create npc_event 1702 17 7 4 1 1 2 none
+create npc_event 1702 17 14 9 1 1 2 none
 move_npc 1702 down 3
 sleep 32
 chg_npc_dir 1704 up
 sleep 32
 chg_npc_dir 1703 right
-create npc_event 1701 17 7 4 0 1 1 none
+create npc_event 1701 17 14 9 0 1 1 none
 move_npc 1701 down 2
 sleep 32
 chg_npc_dir 1704 left
@@ -1511,14 +1510,16 @@ sleep 32
 chg_speed 1702 normal
 chg_npc_dir 1702 up
 msg バレット\n「よう！　クラウドさんよ！\n　あんたも　きいとけ！
+move_npc 1701 down 1
 sleep 16
 chg_npc_dir 1702 down
-sleep 32
+sleep 16
 chg_npc_dir 1706 down
 chg_type 1706 npc
 chg_speed 1706 not_move
 set_flag_wall 1706
-sleep 32
+sleep 16
+step_npc 1702 2
 msg バレット\n「こんかいの　さくせんは　せいこうだ\n　だがな　きをぬくなよ\n　ほんばんは　これからだ\n　あんな　ばくはつで　びびるな！
 sleep 16
 jump_npc 1702 same 2
@@ -1548,8 +1549,8 @@ chg_npc_dir 1705 left
 sleep 32
 chg_npc_dir 1702 right
 msg バレット\n「アジトに　しゅうごうだ！！\n　いくぞ！
-move_npc 1702 left 1
-sleep 16
+move_npc 1702 left 3
+sleep 48
 kill 1702
 move_npc 1705 up 1
 move_npc 1704 up 1
@@ -1563,6 +1564,8 @@ move_npc 1701 down 1
 sleep 16
 fadeout
 sleep 16
+chg_event_move_char_speed normal
+warp 17 14 13 down
 chg_type 1707 npc3
 chg_speed 1707 not_move
 set_flag_wall 1707
@@ -1574,6 +1577,6 @@ kill 1703
 kill 1705
 kill 1701
 draw_char on
-chg_char_dir down
-create event_generator 1715 17 3 4 17 0 0 @017/nanabangai_station5.txt
+create event_generator 1715 17 0 0 17 0 0 @017/nanabangai_station5.txt
+set_flag 1 1
 fadein

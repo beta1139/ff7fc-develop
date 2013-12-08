@@ -32,12 +32,12 @@ sleep 4
 chg_npc_dir 9121 right
 sleep 16
 step_npc 9121 2
-msg ティファ「あったりまえ！\n　わたしをアマくみると\n　イタいめにあうんだから！！
+msg ティファ\n「あったりまえ！\n　わたしをアマくみると　イタいめにあうんだから！！
 fi
 if_flag 3 1
 sub_likability 2 200
 jump_npc 9121 same 1
-msg ティファ「ちょっと　わたしはどうでもいいの？\n　……まあ　いいわ　いそぎましょ！
+msg ティファ\n「ちょっと　わたしはどうでもいいの？\n　……まあ　いいわ　いそぎましょ！
 fi
 chg_speed 9121 normal
 draw_char on

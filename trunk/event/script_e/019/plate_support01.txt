@@ -1,0 +1,4 @@
+wait_same_pos
+kill_through_range 1910 1912
+play_event_bgm 4-08-Hurry_Faster_!.ogg
+msg ～イベントさくせいここまで\n\n\n\n　プレートしちゅうのマップがほすぃ\n　ぼしゅうちゅうー\n\n\n　あと　このままななばんスラムにすすむと　\n　エラーでおちるので　きをつけて
