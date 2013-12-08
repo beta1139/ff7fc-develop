@@ -2137,4 +2137,3 @@ npc,60001,600,11,15,6,1,0,"「チクショ～……
 event_generator,60002,600,0,0,17,0,0,@600/yufi.txt
 save_point,60010,600,7,13,0,0,0,
 event_generator,60011,600,7,13,17,0,0,@600/fake_save.txt
-event_generator,14000,140,10,22,17,0,0,"@140/shinra_company_plot1.txt"
