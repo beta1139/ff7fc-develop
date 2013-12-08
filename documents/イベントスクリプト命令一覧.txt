@@ -400,6 +400,24 @@ remove_all_materia (idx)
   0: クラウド, 1: バレット, 2: ティファ, 3: エアリス, 
   4: レッド13, 5: ユフィ, 6: ケットシー, 7: シド, 8: ヴィンセント
 
+set_now_hp (idx) (val)
+  現在HPを設定
+
+set_max_hp (idx) (val)
+  最大HPを設定
+
+set_now_mp (idx) (val)
+  現在MPを設定
+
+set_max_mp (idx) (val)
+  最大MPを設定
+
+set_power (idx) (val)
+  力を設定
+
+set_vit(idx) (val)
+  体力を設定
+
 =============== 画面エフェクト系 ===============
 screen_effect (color)
   画面全体にエフェクトをかける。colorにはred blue green offが指定可
