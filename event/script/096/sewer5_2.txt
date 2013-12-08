@@ -6,7 +6,7 @@ if_flag 3 0
 jump_char up 1
 play_se jump.wav
 sleep 16
-warp_ff3_2 97 9 21 2 up
+warp_ff3_2 97 13 27 2 up
 chg_event_move_char_speed fast
 set_slide_char_flag
 move_char down 1

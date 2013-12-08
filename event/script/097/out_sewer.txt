@@ -1,0 +1,23 @@
+wait_same_pos
+backup_char_img
+create npc_event 9720 97 8 7 0 0 2 none
+draw_char off
+move_npc 9720 up 6
+sleep 96
+warp_ff3_2 98 9 33 2 up
+create event_generator 9767 97 8 8 17 0 0 @097/in_sewer.txt
+kill 9720
+restore_char_img
+draw_char on
+reset_slide_walk_char_flag
+if_flag 21 0
+draw_image 9899 16 16 0 0 224 32 1 event/train_graveyard.bmp
+fi
+jump_char up 1
+play_se jump.wav
+sleep 16
+play_se landing.wav
+if_flag 21 0
+wait_key_push_edge a
+erase_image 9899
+fi

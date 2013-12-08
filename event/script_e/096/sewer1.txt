@@ -9,36 +9,16 @@ add_item 4003
 fi
 play_bgm
 chg_char_dir down
-create npc_event 9622 96 7 16 2 3 3 none
-slide_npc 9622 down 9
-play_se barrel_falling.ogg
-sleep 4
-chg_npc_dir 9622 down
-sleep 4
-chg_npc_dir 9622 left
-sleep 4
-chg_npc_dir 9622 up
-sleep 4
-chg_npc_dir 9622 right
-create npc_event 9621 96 6 16 3 2 3 none
-slide_npc 9621 down 8
-sleep 4
-chg_npc_dir 9621 up
-chg_npc_dir 9622 down
-sleep 4
-chg_npc_dir 9621 right
-chg_npc_dir 9622 left
-sleep 4
-chg_npc_dir 9621 down
-chg_npc_dir 9622 up
-sleep 4
-chg_npc_dir 9621 left
-chg_npc_dir 9622 right
+create npc_event 9622 96 42 15 2 3 3 none
+create npc_event 9621 96 41 14 3 2 3 none
 draw_char on
 set_slide_char_flag
 chg_event_move_char_speed fast
-move_char down 9
-loop 2
+move_char down 12
+slide_npc 9621 down 12
+slide_npc 9622 down 12
+play_se barrel_falling.ogg
+loop 6
 sleep 4
 chg_char_dir left
 chg_npc_dir 9621 up
@@ -56,28 +36,48 @@ chg_char_dir down
 chg_npc_dir 9621 left
 chg_npc_dir 9622 right
 pool
-sleep 4
+warp_ff3_2 96 9 27 2 down
+set_npc_pos 9621 96 10 26
+set_npc_pos 9622 96 11 27
+loop 2
+inc_map_draw_y_offset
+sleep 2
+pool
 chg_char_dir left
 chg_npc_dir 9621 up
 chg_npc_dir 9622 down
-sleep 4
+loop 2
+dec_map_draw_y_offset
+sleep 2
+pool
 chg_char_dir up
 chg_npc_dir 9621 right
 chg_npc_dir 9622 left
-play_se landing.wav
-sleep 4
+play_se squish.ogg
+loop 2
+inc_map_draw_y_offset
+sleep 2
+pool
 chg_char_dir right
 chg_npc_dir 9621 down
 chg_npc_dir 9622 up
-sleep 4
+loop 2
+dec_map_draw_y_offset
+sleep 2
+pool
 chg_char_dir down
 chg_npc_dir 9621 left
 chg_npc_dir 9622 right
-play_se landing.wav
-sleep 4
+loop 2
+inc_map_draw_y_offset
+sleep 2
+pool
 chg_char_dir left
 chg_npc_dir 9621 up
-sleep 4
+loop 2
+dec_map_draw_y_offset
+sleep 2
+pool
 chg_char_dir up
 chg_npc_dir 9621 right
 chg_npc_dir 9622 right
@@ -102,21 +102,11 @@ chg_type 9622 npc2
 set_flag 19 0
 set_flag 11 0
 set_flag 1 1
-play_se landing.wav
 sleep 4
-chg_char_dir right
+stop_se
 sleep 4
 chg_char_dir down
-chg_npc_dir 9621 right
-sleep 4
-chg_char_dir left
-sleep 4
-chg_char_dir up
-chg_npc_dir 9622 left
-sleep 8
-chg_char_dir right
 chg_npc_dir 9621 left
-sleep 8
 chg_npc_dir 9622 up
 set_key_valid up
 set_key_valid left
@@ -125,3 +115,4 @@ set_key_valid right
 set_key_valid start
 chg_event_move_char_speed normal
 reset_slide_char_flag
+sleep 32

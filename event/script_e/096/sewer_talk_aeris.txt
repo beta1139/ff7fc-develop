@@ -15,7 +15,7 @@ step_char 1
 sleep 16
 msg ÅwÇæÇ¢Ç∂ÇÂÇ§Ç‘Ç©ÅH
 if_char_dir down
-create npc2 9620 96 5 8 0 1 2 none
+create npc2 9620 96 9 10 0 1 2 none
 draw_char off
 fi
 sleep 16
@@ -36,9 +36,9 @@ chg_speed 9621 not_move
 set_inactive_msg 9621
 if_flag 11 1
 if_char_dir up
-create event_generator 9603 96 6 25 17 0 0 @096/sewer2.txt
+create event_generator 9603 96 10 27 17 0 0 @096/sewer2.txt
 fi
 if_char_dir right
-create event_generator 9603 96 5 24 17 0 0 @096/sewer2.txt
+create event_generator 9603 96 9 26 17 0 0 @096/sewer2.txt
 fi
 fi

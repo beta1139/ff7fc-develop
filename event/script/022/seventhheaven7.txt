@@ -161,8 +161,8 @@ stop_bgm
 draw_char off
 sleep 48
 play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
-create npc 1706 17 10 4 94 1 0 「おはようございます\n　いちや　あけても　あいかわらず　ですね\n\n\n　けが　しないよう　おきをつけて\n　いってらっしゃい
-create npc3 1707 17 3 6 71 3 0 「ぼく　もう　たえられない
+create npc 1706 17 17 11 94 1 0 「おはようございます\n　いちや　あけても　あいかわらず　ですね\n\n\n　けが　しないよう　おきをつけて\n　いってらっしゃい
+create npc3 1707 17 10 11 71 3 0 「ぼく　もう　たえられない
 create npc 1906 19 8 26 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
 create npc2 1907 19 7 26 32 0 0 
 create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
@@ -176,7 +176,7 @@ set_npc_pos 2602 26 6 8
 create event_generator 1718 17 1 1 17 0 0 @017/nanabangai_station7.txt
 create event_generator 1719 17 1 2 17 0 0 @017/nanabangai_station8.txt
 create event_generator 1720 17 2 1 17 0 0 @017/nanabangai_station9.txt
-create event_generator 1721 17 7 4 17 0 0 @017/nanabangai_station10.txt
+create event_generator 1721 17 14 9 17 0 0 @017/nanabangai_station10.txt
 create event_generator 1913 19 1 1 17 0 0 @019/nanabangai5.txt
 create event_generator 1916 19 1 19 17 0 0 @019/nanabangai7_1.txt
 create event_generator 1917 19 1 20 17 0 0 @019/nanabangai7_2.txt

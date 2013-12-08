@@ -1,0 +1,61 @@
+wait_same_pos
+play_se door_open.ogg
+draw_char off
+chg_npc_img 9955 52
+sleep 16
+chg_npc_img 9955 50
+sleep 32
+play_se train_move_and_stop.ogg
+chg_event_move_char_speed slow
+move_char down 4
+kill 9949
+kill 9959
+chg_npc_img 9948 48
+chg_npc_img 9944 47
+create map_obj 9943 99 23 22 46 0 0 
+chg_npc_img 9954 50
+create map_obj 9953 99 24 22 49 0 0 
+sleep 32
+kill 9948
+kill 9958
+chg_npc_img 9947 48
+chg_npc_img 9943 47
+create map_obj 9942 99 23 23 46 0 0 
+chg_npc_img 9953 50
+create map_obj 9952 99 24 23 49 0 0 
+sleep 32
+kill 9947
+kill 9957
+chg_npc_img 9946 48
+chg_npc_img 9942 47
+create map_obj 9941 99 23 24 46 0 0 
+chg_npc_img 9952 50
+create map_obj 9951 99 24 24 49 0 0 
+sleep 32
+kill 9946
+kill 9956
+chg_npc_img 9945 48
+chg_npc_img 9941 47
+create map_obj 9940 99 23 25 46 0 0 
+chg_npc_img 9951 50
+create map_obj 9950 99 24 25 49 0 0 
+set_layer 9941 front
+set_layer 9942 front
+set_layer 9945 back
+sleep 40
+stop_se
+sleep 24
+play_se door_open.ogg
+chg_npc_img 9951 52
+sleep 24
+draw_char on
+chg_event_move_char_speed normal
+move_char right 1
+sleep 16
+chg_npc_img 9951 50
+set_npc_pos 9915 99 23 20
+set_npc_pos 9916 99 23 22
+set_npc_pos 9917 99 23 23
+set_npc_pos 9918 99 23 25
+create event_generator 9900 99 23 24 17 0 0 @099/train_gimmick_a01.txt
+set_flag 14 0

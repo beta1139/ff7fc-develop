@@ -232,7 +232,7 @@ chg_npc_dir 2802 left
 chg_speed 2802 normal
 fadeout
 sleep 16
-warp 17 7 3 up
+warp 17 15 8 up
 sleep 16
 fadein
 chg_npc_img 1750 15

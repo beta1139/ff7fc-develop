@@ -20,7 +20,7 @@ sleep 32
 fadeout
 kill_through_range 1600 1699
 draw_char off
-warp 17 30 4 down
+warp 17 37 8 down
 set_key_valid up
 set_key_valid left
 set_key_valid down

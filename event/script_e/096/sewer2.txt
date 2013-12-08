@@ -105,7 +105,6 @@ stop_se
 boss_encount 244
 sleep 64
 wait_encount_end
-chg_char_dir right
 chg_npc_dir 9621 left
 sleep 16
 chg_npc_dir 9622 left
@@ -113,13 +112,15 @@ step_npc 9622 2
 msg ティファ\n「もうダメだわ……\n　マリン……バレット\n　……スラムのひとたち
 chg_npc_dir 9621 down
 sleep 16
+chg_char_dir right
 jump_npc 9621 same 1
 sleep 16
 step_npc 9621 3
 set_talk_npc 9621
 msg エアリス\n「あきらめない　あきらめない\n　はしら　こわすなんて\n　そんなにかんたんじゃない　でしょ？
 reset_talk_npc
-chg_char_dir right
+chg_char_dir up
+sleep 24
 chg_npc_dir 9622 up
 sleep 40
 chg_speed 9622 fast
@@ -140,3 +141,4 @@ fi
 enable_char_chg
 set_flag 1 0
 set_flag 20 0
+set_flag 21 1
