@@ -1,6 +1,8 @@
 set_eternal_event
 wait_target_talk 9919
 reset_talk_flag 9919
+backup_char_img
+chg_char_img 0
 if_flag 13 1
 create npc_event 9929 99 29 22 2 0 2 none
 sleep 8
@@ -45,3 +47,4 @@ move_npc 9929 right 1
 sleep 16
 kill 9929
 fi
+restore_char_img
