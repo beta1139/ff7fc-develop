@@ -1245,10 +1245,6 @@ treasure_item,9830,98,10,24,2,1,0,1001
 treasure_item,9831,98,13,26,2,1,0,1001
 treasure_item,9832,98,10,9,2,1,0,1012
 treasure_item,70730,707,8,22,2,1,0,1000
-treasure_item,9930,99,24,40,2,1,0,1000
-treasure_item,9931,99,20,36,2,1,0,1000
-treasure_item,9932,99,13,34,2,1,0,1003
-treasure_item,9933,99,31,19,2,1,0,1001
 event_generator,9860,98,5,28,17,0,0,"@reset_slide_walk.txt"
 event_generator,9861,98,13,30,17,0,0,"@098/on_train_1.txt"
 event_generator,9862,98,13,31,17,0,0,"@098/off_train_1.txt"
@@ -1276,6 +1272,12 @@ npc2,9921,99,30,23,17,0,0,""
 npc2,9926,99,17,26,17,0,0,""
 npc2,9927,99,17,28,17,0,0,""
 npc2,9928,99,17,30,17,0,0,""
+treasure_item,9930,99,24,40,2,1,0,1000
+treasure_item,9931,99,20,36,2,1,0,1000
+treasure_item,9932,99,13,34,2,1,0,1003
+treasure_item,9933,99,31,19,2,1,0,1001
+event_generator,9938,99,23,15,17,0,0,"@099/train_graveyard_3.txt"
+event_generator,9939,99,24,15,17,0,0,"@099/train_graveyard_4.txt"
 map_obj,9940,99,23,25,46,0,0,0
 map_obj,9941,99,23,24,47,0,0,0
 map_obj,9942,99,23,23,47,0,0,0
