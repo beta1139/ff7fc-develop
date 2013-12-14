@@ -97,6 +97,7 @@ step_npc 1002 2
 msg Barret\nuHeads up,\n here they come!
 set_flag 20 1
 stop_se
+play_event_bgm 1-03-Makou_Reactor.ogg
 set_flag 0 5
 play_bgm
 encount 204
