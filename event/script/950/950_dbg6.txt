@@ -1,6 +1,8 @@
 set_eternal_event
 wait_target_talked 95073
+set_talk_npc 95073
 open_materia_shop 4000/4003/4007
 msg ‚Ü‚½‚Ì‚²‚è‚æ‚¤@‚¨‚Ü‚¿‚µ‚Ä‚¨‚è‚Ü‚·
+reset_talk_npc
 recover_talked_npc_dir
 reset_talked_flag 95073
