@@ -1,6 +1,8 @@
 set_eternal_event
 wait_target_talked 95071
+set_talk_npc 95071
 open_weapon_shop 2000/2003/2007
 msg ‚Ü‚½‚Ì‚²‚è‚æ‚¤@‚¨‚Ü‚¿‚µ‚Ä‚¨‚è‚Ü‚·
+reset_talk_npc
 recover_talked_npc_dir
 reset_talked_flag 95071
