@@ -1,4 +1,6 @@
 wait_same_pos
+create event_generator 6501 65 14 20 17 0 0 @065/kill_waterfall.txt
+create event_generator 6502 65 15 21 17 0 0 @065/kill_waterfall.txt
 chg_char_state_move
 loop_inf
 create map_obj 6551 65 10 7 44 0 0 

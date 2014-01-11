@@ -1,0 +1,62 @@
+wait_target_talked 5900
+reset_talked_flag 5900
+if_party_mem 3
+create npc_event 5901 59 3 8 0 0 2 none
+draw_char off
+sleep 48
+create npc_event 5902 59 3 8 3 1 1 none
+move_npc 5902 down 1
+sleep 32
+chg_npc_dir 5902 up
+sleep 32
+set_active_msg 5902
+jump_npc 5902 same 1
+msg エアリス\n「このひとなの……\n　ね　たすけてあげられない？
+sleep 32
+set_talk_npc 5900
+msg みすぼらしいおとこ\n「う……あ……あぁ……
+reset_talk_npc
+sleep 32
+loop 2
+chg_npc_dir 5901 right
+sleep 12
+chg_npc_dir 5901 left
+sleep 12
+pool
+sleep 24
+chg_npc_img 5901 103
+chg_npc_dir 5901 down
+sleep 16
+chg_npc_dir 5901 left
+sleep 48
+chg_npc_img 5901 0
+chg_npc_dir 5901 down
+sleep 32
+msg 『わるいがおれは　いしゃじゃない
+sleep 16
+chg_npc_dir 5902 left
+sleep 56
+chg_npc_dir 5902 up
+sleep 32
+chg_speed 5902 normal
+step_npc 5902 1
+set_talk_npc 5902
+msg エアリス\n「そう……そうよね……
+reset_talk_npc
+sleep 48
+jump_npc 5902 same 1
+set_talk_npc 5902
+msg エアリス\n「あら？　このひと　イレズミしてる\n　すうじの2　かな
+reset_talk_npc
+chg_npc_dir 5901 up
+sleep 24
+chg_char_dir up
+chg_speed 5902 slow
+move_npc 5902 up 1
+sleep 32
+kill 5902
+draw_char on
+kill 5901
+end
+fi
+create event_generator 5921 59 0 0 17 0 0 @059/gobangai_slums5b.txt

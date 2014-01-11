@@ -24,23 +24,23 @@ sleep 8
 chg_char_dir down
 sleep 24
 msg 『しらない……？
-clear_text 6
-set_text_alpha 6 0
+clear_text 7
+set_text_alpha 7 0
 sleep 8
-set_text 6 　 　   　　　　　『……しってるよ
+set_text 7 　 　   　　　　　『……しってるよ
 sleep 4
-set_text_alpha 6 25
+set_text_alpha 7 25
 sleep 4
-set_text_alpha 6 50
+set_text_alpha 7 50
 sleep 4
-set_text_alpha 6 75
+set_text_alpha 7 75
 sleep 4
-set_text_alpha 6 100
+set_text_alpha 7 100
 sleep 80
 set_screen_effect add 255 255 255 100
 play_se white_noise.ogg
-set_text_alpha 6 0
-clear_text 6
+set_text_alpha 7 0
+clear_text 7
 sleep 20
 stop_se
 reset_screen_effect
@@ -86,11 +86,9 @@ sleep 24
 msg 『だまれ！　しんらのイヌめ！
 step_npc 4909 2
 msg 「レノさん！\n　こいつやっちまいますか？
-sleep 16
-chg_npc_dir 4903 down
-sleep 16
+sleep 24
+step_npc 4903 1
 msg レノ\n「かんがえちゅうだぞ　と
-chg_npc_dir 4903 up
 sleep 32
 chg_speed 4906 fast
 step_npc 4906 4
@@ -177,26 +175,28 @@ msg レノ\n「ま　いいかぁ\n　おしごとおしごと　と
 chg_npc_dir 4903 up
 sleep 16
 move_char up 1
-move_npc 4903 up 1
-sleep 16
+move_npc 4903 up 2
+sleep 32
 move_char left 3
 move_npc 4903 left 3
 sleep 48
 move_char up 3
-move_npc 4903 up 3
-sleep 64
+move_npc 4903 up 2
+sleep 48
 msg3 -1 レノ\n「あっ！
 jump_npc 4903 same 1
 sleep 64
 erase_msg3
 chg_event_move_char_speed fast
-move_char down 3
+move_char down 2
 chg_speed 4903 fast
-move_npc 4903 down 3
-sleep 24
-move_char right 1
-move_npc 4903 right 1
-sleep 24
+move_npc 4903 down 2
+sleep 16
+move_char right 2
+move_npc 4903 right 2
+sleep 16
+chg_npc_dir 4903 down
+sleep 16
 msg レノ\n「おはな　ふまないでね…だと
 sleep 32
 chg_npc_dir 4903 up
@@ -229,7 +229,16 @@ sleep 16
 jump_npc 4907 same 1
 jump_npc 4908 same 1
 jump_npc 4909 same 1
-sleep 16
+sleep 48
+chg_npc_dir 4903 right
+sleep 4
+chg_npc_dir 4903 down
+sleep 4
+chg_npc_dir 4903 left
+sleep 4
+chg_npc_dir 4903 up
+sleep 4
+jump_npc 4903 same 1
 sleep 40
 erase_msg3
 chg_event_move_char_speed normal
@@ -239,7 +248,7 @@ kill 4903
 kill 4907
 kill 4908
 kill 4909
-warp 51 1 1 right
+warp_ff3_2 51 1 1 2 right
 draw_char on
 sleep 48
 fadein

@@ -128,6 +128,7 @@ kill 4904
 chg_type 4903 npc3
 draw_char on
 kill 4900
+chg_type 4902 npc2
 create event_generator 4914 49 5 15 17 0 0 @049/slum_church5_1.txt
 create event_generator 4915 49 6 15 17 0 0 @049/slum_church5_2.txt
 create event_generator 4916 49 7 15 17 0 0 @049/slum_church5_3.txt

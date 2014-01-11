@@ -1,10 +1,7 @@
-set_eternal_event
 wait_target_talk 7198
 reset_talk_flag 7198
 chg_dir_to_char 7198
-if_flag 9 0
 add_party_mem 3
-fi
 msg デバッグよう　ワープそうち\n「クエッ！\n　クラウドじょそうイベントちょくぜんまでとべます\n\n#2\n　　とぶ\n　　とばない\n\n\n[[]][[「あ　そ！]]
 if_flag 3 0
 set_flag 9 1
@@ -13,11 +10,13 @@ fadeout
 kill_through_range 7100 7102
 create event_generator 7103 71 6 2 17 0 0 @071/kill_smoke1_1.txt
 create event_generator 7104 71 7 2 17 0 0 @071/kill_smoke1_1.txt
-create event_generator 7229 72 18 26 17 0 0 @072/kill_smoke1_2.txt
+create event_generator 7278 72 18 26 17 0 0 @072/kill_smoke1_2.txt
 kill_through 8500
 kill 8510
 sleep 8
 set_npc_pos 7221 72 6 29
+set_npc_pos 7223 72 8 32
+chg_npc_dir 7223 right
 chg_type 7220 npc
 chg_type 7221 npc
 chg_type 7223 npc
@@ -36,7 +35,7 @@ chg_type 7222 npc
 set_flag_wall 7222
 chg_speed 7222 not_move
 sleep 8
-create npc2 8510 85 10 15 66 1 0 「おともだちも　か……\n　そりゃいいな\n\n\n　そのほうがドンもよろこぶし\n　もしかしたら……ウヒヒ
+create npc2 8510 85 10 15 131 1 0 「おともだちも　か……\n　そりゃいいな\n\n\n　そのほうがドンもよろこぶし\n　もしかしたら……ウヒヒ
 set_flag 18 0
 sleep 8
 kill 7222
@@ -131,6 +130,7 @@ chg_npc_dir 7515 left
 chg_param 7510 「てにはいったようですね\n　さっそく　きがえてみてくださいよ
 add_item 6005
 add_flag 18 4
-warp_ff3_2 72 16 45 2 down
+warp_ff3_2 72 6 16 2 up
 fadein
 fi
+kill_through_range 7198 7199

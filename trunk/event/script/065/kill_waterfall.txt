@@ -1,0 +1,4 @@
+wait_same_pos
+kill_through_range 6500 6502
+kill_through_range 6551 6581
+create event_generator 6503 65 15 20 17 0 0 @065/waterfall2.txt

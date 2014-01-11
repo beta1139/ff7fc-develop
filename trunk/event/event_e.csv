@@ -181,6 +181,11 @@ npc_event,1706,17,11,9,94,3,1,"「ながいあいだ　えきいんを　していますとね
 　であい　わかれ　よろこび　かなしみ……
 　しょうしょうのことじゃ　おどろきません"
 event_generator,1710,17,1,2,17,0,0,"@017/nanabangai_station2.txt"
+npc_event,1730,17,14,2,68,2,0,""
+npc_event,1731,17,18,2,66,1,0,""
+npc_event,1732,17,18,3,70,0,0,""
+npc_event,1733,17,28,2,72,1,0,""
+npc_event,1734,17,37,3,89,1,2,""
 map_obj,1748,17,8,8,4,0,0,0
 map_obj,1749,17,9,8,4,0,0,0
 map_obj,1750,17,10,8,4,0,0,0
@@ -780,7 +785,7 @@ event_generator,4510,45,8,18,17,0,0,"@045/goban_makouro1.txt"
 event_generator,4512,45,1,1,17,0,0,"@045/goban_makouro2.txt"
 event_generator,4600,46,4,1,17,0,0,"@006/elevator_switch1.txt"
 event_generator,4601,46,20,1,17,0,0,"@006/elevator_switch2.txt"
-treasure_box,4700,47,19,12,1,0,0,1003
+treasure_box,4700,47,19,12,0,0,0,1003
 save_point,4701,47,8,7,0,0,0,
 event_generator,4702,47,8,7,17,0,0,"@save_msg.txt"
 npc2,4740,47,13,7,17,0,0,""
@@ -788,13 +793,164 @@ npc2,4741,47,13,8,17,0,0,""
 map_obj,4750,47,13,7,31,0,0,0
 map_obj,4751,47,13,8,31,0,0,0
 event_generator,4810,48,7,24,17,0,0,"@048/goban_makouro3.txt"
-npc2,4901,49,5,11,15,3,0,""
+npc2,4901,49,5,11,15,1,0,""
 npc,4902,49,6,23,17,0,0,"「もうすこし　じかんをやるぞ　と"
-npc3,4903,49,7,24,17,1,0,"「オレにかまうな　だと"
+npc3,4903,49,7,24,30,2,4,"「オレにかまうな　だと"
 event_generator,4910,49,20,11,17,0,0,"@049/slum_church1.txt"
 event_generator,4911,49,1,1,17,0,0,"@049/slum_church2.txt"
+map_door,4950,49,6,23,16,0,0,0
 event_generator,5199,51,1,1,17,0,0,"@051/temp.txt"
-event_generator,6500,65,8,21,17,0,0,"@065/waterfall.txt"
+event_generator,5300,53,17,14,17,0,0,"@053/on_the_church.txt"
+map_door,5350,53,16,20,15,0,0,0
+event_generator,5400,54,39,11,17,0,0,"@054/gobangai_slums1.txt"
+event_generator,5401,54,35,14,17,0,0,"@054/gobangai_slums_jump1_1.txt"
+event_generator,5402,54,35,15,17,0,0,"@054/gobangai_slums_jump1_2.txt"
+event_generator,5403,54,34,13,17,0,0,"@054/gobangai_slums_jump2_1.txt"
+event_generator,5404,54,34,14,17,0,0,"@054/gobangai_slums_jump2_2.txt"
+event_generator,5405,54,32,13,17,0,0,"@054/gobangai_slums_jump3_1.txt"
+event_generator,5406,54,32,14,17,0,0,"@054/gobangai_slums_jump3_2.txt"
+event_generator,5407,54,31,11,17,0,0,"@054/gobangai_slums_jump4_1.txt"
+event_generator,5408,54,31,12,17,0,0,"@054/gobangai_slums_jump4_2.txt"
+event_generator,5409,54,29,11,17,0,0,"@054/gobangai_slums_jump5_1.txt"
+event_generator,5410,54,29,12,17,0,0,"@054/gobangai_slums_jump5_2.txt"
+event_generator,5411,54,28,13,17,0,0,"@054/gobangai_slums_jump6_1.txt"
+event_generator,5412,54,28,14,17,0,0,"@054/gobangai_slums_jump6_2.txt"
+event_generator,5413,54,26,13,17,0,0,"@054/gobangai_slums_jump7_1.txt"
+event_generator,5414,54,26,14,17,0,0,"@054/gobangai_slums_jump7_2.txt"
+event_generator,5415,54,25,15,17,0,0,"@054/gobangai_slums_jump8_1.txt"
+event_generator,5416,54,25,16,17,0,0,"@054/gobangai_slums_jump8_2.txt"
+event_generator,5417,54,23,15,17,0,0,"@054/gobangai_slums_jump9_1.txt"
+event_generator,5418,54,23,16,17,0,0,"@054/gobangai_slums_jump9_2.txt"
+event_generator,5419,54,20,13,17,0,0,"@054/gobangai_slums2.txt"
+event_generator,5420,54,19,13,17,0,0,"@054/gobangai_slums_jump10_1.txt"
+event_generator,5421,54,19,14,17,0,0,"@054/gobangai_slums_jump10_2.txt"
+event_generator,5422,54,16,15,17,0,0,"@054/gobangai_slums_jump11_1.txt"
+event_generator,5423,54,16,16,17,0,0,"@054/gobangai_slums_jump11_2.txt"
+event_generator,5424,54,13,17,17,0,0,"@054/gobangai_slums_jump12_1.txt"
+event_generator,5425,54,13,18,17,0,0,"@054/gobangai_slums_jump12_2.txt"
+save_point,5540,55,12,9,0,0,0,
+event_generator,5541,55,12,9,17,0,0,"@save_msg.txt"
+npc3,5622,56,8,9,70,3,0,"「あ～あ……たいくつだぜ
+　また6ばんがいスラムの
+　れいのみせに　いってみっかな……"
+npc,5623,56,9,9,71,1,0,"「ン～？
+　このへんじゃみねえカオだな
+　シッシッ！
+
+　このかべのむこうは　6ばんがいスラム
+　オメエみてえな　よそもんにゃあ
+　もったいないパラダイスよ"
+npc2,5740,57,22,19,17,1,4,""
+npc2,5741,57,23,19,17,1,4,""
+npc2,5742,57,24,19,17,1,4,""
+npc2,5743,57,25,19,17,1,4,""
+npc,5800,58,13,22,66,3,0,"「へんなんだよね　このドカンのなかのひと
+　なにをきいても　『ああ』とか『うう』しか
+　いわないんだよね"
+npc,5801,58,23,13,90,1,2,"「ウォールマーケットって
+　しってるかい？
+
+
+#2
+　　はい
+　　いいえ
+
+
+[[「へえ　そうかい
+　なら　そのうちオレのかいものも
+　たのもうか……]]
+[[「6ばんがいスラムにあるマーケットさ
+　あそこにいけば　なんでもそろうんだけど
+　とちゅうのみちがね……]]"
+npc,5802,58,14,12,72,0,3,"「どいたどいた！
+　ほしいものがあったら
+　みせのなかへどうぞ！"
+npc,5803,58,28,20,68,0,2,"「なにをしてるかって？
+　したをむいてあるいてるのよ
+
+
+　したには　いろいろおちてるけど
+　うえをみたって　なにも　おちてきやしないもの
+　でしょ？"
+npc,5804,58,28,14,85,1,2,"「バウバウ"
+event_generator,5820,58,13,20,17,0,0,"@058/gobangai_slums4.txt"
+map_door,5850,58,20,24,0,0,0,0
+map_door,5851,58,25,21,0,0,0,0
+map_door,5852,58,31,15,0,0,0,0
+npc,5900,59,3,7,79,1,4,"みすぼらしいおとこ
+「う……あ……あぁ……"
+event_generator,6000,60,0,0,17,0,0,"@060/gobangai_slums_materia_shop.txt"
+npc2,6022,60,6,6,17,0,0,""
+npc_event,6023,60,6,5,66,1,0,"none"
+map_door,6050,60,6,11,0,0,0,0
+event_generator,6100,61,0,0,17,0,0,"@061/gobangai_slums_item_shop.txt"
+npc2,6122,61,6,7,17,0,0,""
+npc_event,6123,61,6,6,78,1,0,"none"
+map_door,6150,61,6,13,0,0,0,0
+event_generator,6200,62,0,0,17,0,0,"@062/gobangai_slums6.txt"
+npc,6222,62,7,7,91,0,0,"「ケッ……！
+　プレジデントしんらのいうことなんて
+　みんなうそっぱちさ
+
+　だがな　アバランチだか
+　アバンチュールだかしらねえが
+　あいつらも　しんようならねえ
+
+　アレコレいってても
+　けっきょく　うえのれんちゅうが
+　うらやましいだけなのさ
+
+　なら　だれをしんじるか？
+　きまってんじゃねえか　おれだよおれ
+　おれはおれにウソをつかねえからな"
+map_door,6250,62,8,12,0,0,0,0
+map_door,6251,62,10,4,0,0,0,0
+event_generator,6300,63,0,0,17,0,0,"@063/gobangai_slums7.txt"
+npc,6322,63,7,7,106,0,0,"「グーグー……
+
+
+
+　……これで……だれにも……
+　みつからムニャムニャ……
+
+
+　1ばんうえと……2ばんめの……"
+npc,6323,63,9,3,17,0,0,"　　　　　　[かめどうらく　つうしん]
+　　　　　　　　　　ナンバー1
+
+
+　　　　　　　　　おいしいおさけで
+　　　　　　　　すてきなひととき……
+
+
+　　　　　　　　　　ぜひいちど
+　　　　　いざかや　『かめどうらく』へ！！"
+npc2,6324,63,9,6,17,0,0,""
+npc2,6422,64,9,5,17,0,0,""
+npc2,6423,64,8,6,17,0,0,""
+npc_event,6424,64,8,5,79,3,0,""
+npc2,6425,64,18,5,17,0,0,""
+npc2,6426,64,17,6,17,0,0,""
+npc_event,6427,64,18,6,72,2,0,""
+npc,6428,64,12,4,65,1,0,"「ブッブー！
+　つぎはミッドガル
+　ミッドガルです
+
+　おおりのおきゃくさまはブザーを
+　ならしてくださ～い！
+
+
+　ミッドガルってさあ
+　キラキラで
+　グイーングイーンで
+　シャキーンシャキーンなんだって
+　いいなあ
+　いってみたいなあ"
+event_generator,6400,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop1.txt"
+event_generator,6401,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop2.txt"
+event_generator,6402,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop3.txt"
+event_generator,6403,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop4.txt"
+event_generator,6500,65,15,20,17,0,0,"@065/waterfall.txt"
 treasure_item,6530,65,29,20,0,0,0,1003
 treasure_materia,6531,65,22,20,4,0,0,4313
 save_point,6540,65,15,21,0,0,0,
@@ -810,14 +966,16 @@ event_generator,6701,67,24,12,17,0,0,"@067/cloud's_memory1.txt"
 treasure_box4,6740,67,4,10,0,0,0,1000/1007
 map_door,6750,67,5,9,14,0,0,0
 map_door,6751,67,11,12,14,0,0,0
-event_generator,6999,69,1,1,17,0,0,"@069/temp.txt"
+event_generator,6800,68,12,8,17,0,0,"@068/rokubangai1.txt"
+event_generator,6900,69,15,27,17,0,0,"@069/midori_park1.txt"
 npc2,7198,71,9,8,61,2,0,""
 event_generator,7199,71,0,0,17,0,0,"@071/temp.txt"
 event_generator,7100,71,6,3,17,0,0,"@071/wall_market1.txt"
 event_generator,7101,71,7,3,17,0,0,"@071/wall_market1.txt"
 event_generator,7102,71,8,3,17,0,0,"@071/wall_market1.txt"
-event_generator,7211,72,6,39,17,0,0,"@072/wall_market3_1.txt"
-event_generator,7212,72,7,38,17,0,0,"@072/wall_market3_2.txt"
+event_generator,7110,71,2,8,17,0,0,"@071/rokubangai3_1.txt"
+event_generator,7111,71,2,9,17,0,0,"@071/rokubangai3_2.txt"
+event_generator,7112,71,2,10,17,0,0,"@071/rokubangai3_3.txt"
 npc_event,7220,72,6,38,66,1,0,"「ちょっと　そこのおふたりさん
 　すこし　やすんでいかない？
 
@@ -857,6 +1015,8 @@ map_door,7252,72,13,34,9,0,0,0
 map_door,7253,72,11,24,9,0,0,0
 map_door,7254,72,6,15,9,0,0,0
 map_door,7256,72,16,12,9,0,0,0
+event_generator,7281,72,6,39,17,0,0,"@072/wall_market3_1.txt"
+event_generator,7282,72,7,38,17,0,0,"@072/wall_market3_2.txt"
 event_generator,7300,73,19,11,17,0,0,"@073/kill_smoke2.txt"
 event_generator,7301,73,0,0,17,0,0,"@073/wm_inn.txt"
 npc2,7320,73,15,8,17,0,0,""
@@ -1105,7 +1265,7 @@ npc2,8412,84,9,30,78,1,0,""
 map_door,8450,84,17,29,9,0,0,0
 map_door,8451,84,8,21,9,0,0,0
 map_door,8452,84,17,19,9,0,0,0
-npc,8510,85,10,15,66,1,0,"「いいか　ドンはおとこにはきょうみないんだ
+npc,8510,85,10,15,131,1,0,"「いいか　ドンはおとこにはきょうみないんだ
 　さっさとどっかへいってくれ"
 npc2,8511,85,11,14,17,1,0,""
 map_door,8550,85,10,14,4,0,0,0
@@ -1169,7 +1329,7 @@ npc,9128,91,10,5,17,0,0,"　ドン　コルネオのオフィス
 event_generator,9200,92,5,12,17,0,0,"@092/don_corneo_meet_tifa1_1.txt"
 event_generator,9201,92,5,15,17,0,0,"@092/don_corneo_meet_tifa1_2.txt"
 npc_event,9222,92,3,13,130,2,2,"none"
-treasure_item,9230,92,2,12,1,1,0,1003
+treasure_item,9230,92,2,12,2,1,0,1003
 event_generator,9300,93,4,7,17,0,0,"@093/don_corneo_pick1_1.txt"
 event_generator,9301,93,5,7,17,0,0,"@093/don_corneo_pick1_2.txt"
 event_generator,9302,93,9,7,17,0,0,"@093/don_corneo_pick1_3.txt"
@@ -1188,13 +1348,13 @@ npc_event,9423,94,4,9,131,1,0,"「おおッと！
 　そういそがないで
 　もっとオイラたちと
 　たのしもうぜ～"
-npc_event,9424,94,6,7,71,3,0,"「あんた　なかなか
+npc_event,9424,94,6,7,90,3,0,"「あんた　なかなか
 　いいカラダしてるねぇ
 　こう　ムッチリと……
 
 　……っていうより　なんか
 　ガッチリしてんなあ……"
-npc_event,9425,94,7,8,79,0,0,"「おお　キミのそのヒトミ
+npc_event,9425,94,7,8,131,0,0,"「おお　キミのそのヒトミ
 　なんてふしぎなかがやき……
 　ぼくはもうキミのトリコさ！"
 npc_event,9426,94,9,9,66,1,0,"「さあ　おどりましょう
@@ -1308,6 +1468,10 @@ map_obj,9985,99,17,34,55,0,0,0
 map_obj,9989,99,18,26,50,0,0,0
 map_obj,9990,99,18,27,50,0,0,0
 map_obj,9991,99,18,28,50,0,0,0
+npc2,9996,99,2,2,66,1,0,""
+npc2,9997,99,2,3,70,0,0,""
+npc2,9998,99,12,2,72,1,2,""
+npc2,9999,99,6,2,89,0,2,""
 npc2,70797,707,2,74,49,3,0,""
 event_generator,70798,707,17,77,17,0,0,"@707/omake01.txt"
 event_generator,70799,707,0,0,17,0,0,"@707/omake02.txt"
@@ -2146,6 +2310,6 @@ npc,49402,494,9,7,17,0,0,"シド
 weapon_shop,49403,494,9,9,66,1,0,2006/2207/2107/2405/2605/2504/2704/2804
 npc,60001,600,11,15,6,1,0,"「チクショ～……
 　このアタシがまけるなんて……"
-event_generator,60002,600,0,0,17,0,0,@600/yufi.txt
+event_generator,60002,600,0,0,17,0,0,"@600/yufi.txt"
 save_point,60010,600,7,13,0,0,0,
-event_generator,60011,600,7,13,17,0,0,@600/fake_save.txt
+event_generator,60011,600,7,13,17,0,0,"@600/fake_save.txt"

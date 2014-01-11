@@ -65,6 +65,15 @@ kill 2018
 kill 2019
 kill 2600
 kill_through 2609
+set_npc_pos 1731 17 16 2
+set_npc_pos 1732 17 17 2
+set_npc_pos 1734 17 20 3
+chg_npc_dir 1731 right
+chg_npc_dir 1732 down
+chg_type 1730 npc2
+chg_type 1731 npc2
+chg_type 1732 npc2
+chg_speed 1730 normal
 set_npc_pos 2602 26 6 8
 sleep 16
 chg_type 2601 npc2
@@ -136,6 +145,15 @@ fi
 if_flag 3 2
 fadeout
 kill_through_range 2000 2799
+set_npc_pos 1731 17 16 2
+set_npc_pos 1732 17 17 2
+set_npc_pos 1734 17 20 3
+chg_npc_dir 1731 right
+chg_npc_dir 1732 down
+chg_type 1730 npc2
+chg_type 1731 npc2
+chg_type 1732 npc2
+chg_speed 1730 normal
 set_npc_pos 1706 17 14 9
 create npc3 1707 17 10 11 106 1 0 none
 create npc_event 1708 17 11 11 106 2 2 none

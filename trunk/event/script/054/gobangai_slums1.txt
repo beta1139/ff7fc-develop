@@ -1,0 +1,11 @@
+wait_same_pos
+set_key_unvalid start
+move_char left 1
+jump_npc_target_pos 5431 46 10
+sleep 16
+jump_char_target_pos 36 14
+play_se jump.wav
+sleep 56
+play_se landing.wav
+sleep 16
+kill 5431

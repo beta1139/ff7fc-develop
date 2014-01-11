@@ -95,6 +95,8 @@ draw_char on
 kill 7230
 sleep 16
 set_npc_pos 7221 72 6 29
+set_npc_pos 7223 72 8 32
+chg_npc_dir 7223 right
 kill 7231
 chg_event_move_char_speed normal
 end_fake_countdown

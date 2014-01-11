@@ -1,0 +1,96 @@
+wait_same_pos
+if_flag 9 0
+add_party_mem 3
+fi
+play_event_bgm 1-12-Flowers_Blooming_in_the_Church.ogg
+create npc_event 6921 69 16 35 3 0 1 
+move_npc 6921 up 8
+sleep 32
+create npc_event 6920 69 15 35 0 0 1 none
+move_npc 6920 up 8
+sleep 224
+chg_npc_dir 6921 left
+sleep 16
+chg_speed 6921 normal
+step_npc 6921 2
+set_talk_npc 6921
+msg エアリス\n「このおくに　7ばんがいへのゲートがあるの
+reset_talk_npc
+sleep 16
+chg_npc_dir 6920 right
+chg_speed 6920 normal
+step_npc 6920 1
+msg 『わかった\n　じゃあ　ここでわかれようか\n　ひとりでかえれるか？
+chg_npc_img 6921 15
+step_npc 6921 2
+sleep 32
+chg_npc_img 6921 3
+set_active_msg 6921
+jump_npc 6921 same 1
+set_talk_npc 6921
+msg エアリス\n「いや～ん　かえれない～！！\n　っていったらどうするの？\n\n#2\n　　いえまでおくる\n　　7ばんがいまでいっしょに\n\n\n[[]][[]]
+reset_talk_npc
+if_flag 3 0
+chg_npc_dir 6921 up
+chg_npc_img 6921 15
+step_npc 6921 3
+sleep 16
+msg エアリス\n「それってなんだかおかしくない？
+chg_npc_dir 6920 down
+sleep 24
+step_npc 6921 2
+sleep 32
+chg_npc_dir 6920 right
+chg_npc_img 6920 97
+step_npc 6920 3
+sleep 40
+msg3 -1 『そうだな
+step_npc 6921 2
+sleep 32
+wait_key_push a
+erase_msg3
+chg_npc_img 6920 0
+chg_npc_dir 6920 down
+fi
+if_flag 3 1
+jump_npc 6921 same 1
+msg エアリス\n「それもいいかもね\n　でも　クラウドこまらない？
+sleep 16
+step_npc 6920 1
+msg 『なにが？
+sleep 16
+chg_npc_img 6921 15
+step_npc 6921 2
+sleep 40
+chg_npc_img 6921 3
+msg エアリス\n「なんでもない
+fi
+sleep 16
+chg_npc_img 6921 3
+chg_npc_dir 6921 left
+sleep 16
+step_npc 6921 2
+msg エアリス\n「ちょっと　やすもっか
+set_flag_wall 6921
+sleep 16
+chg_npc_dir 6920 right
+sleep 16
+chg_speed 6921 slow
+move_npc 6921 up 3
+sleep 24
+chg_npc_dir 6920 up
+sleep 8
+draw_char on
+kill 6920
+chg_char_state_move
+sleep 64
+move_npc 6921 left 3
+sleep 96
+move_npc 6921 up 3
+sleep 96
+chg_npc_dir 6921 up
+chg_speed 6921 not_move
+chg_type 6921 npc2
+set_inactive_msg 6921
+create event_generator 6901 69 0 0 17 0 0 @069/midori_park2.txt
+create map_obj 6940 69 15 18 56 0 0 

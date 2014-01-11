@@ -12,8 +12,10 @@ set_flag 13 0
 set_flag 14 0
 set_flag 15 0
 kill_through_range 1700 1747
+kill_through_range 1730 1734
 kill_through_range 1903 1905
 kill_through_range 1910 1912
+kill_through_range 9996 9999
 sleep 16
 create npc_event 9821 98 9 32 3 3 2 none
 create npc_event 9822 98 9 32 2 0 2 none

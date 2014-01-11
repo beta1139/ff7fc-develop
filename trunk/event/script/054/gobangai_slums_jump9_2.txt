@@ -1,0 +1,13 @@
+set_eternal_event
+wait_same_pos
+jump_char_target_pos 21 14
+play_se jump.wav
+sleep 48
+play_se landing.wav
+sleep 16
+move_char left 1
+msg3 -1 エアリス\n「まって……\n　ちょっとまってってば！
+sleep 16
+move_char up 1
+sleep 16
+chg_char_dir right

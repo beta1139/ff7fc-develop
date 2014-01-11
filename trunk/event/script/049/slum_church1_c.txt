@@ -87,10 +87,11 @@ create npc_event 4900 49 6 11 0 3 2 none
 chg_npc_img 4900 105
 chg_type 4901 npc_event
 chg_npc_img 4901 3
+chg_npc_dir 4901 right
 sleep 16
 fadein
 sleep 16
-play_event_bgm 1-12-Flowers_Blooming_in_the_Church.ogg
+play_bgm
 sleep 128
 flush
 sleep 8
@@ -152,43 +153,67 @@ jump_npc 4901 same 1
 sleep 16
 step_npc 4901 3
 msg 「きにしないで　おはな　けっこうつよいし\n　ここ　とくべつな　ばしょだから
+sleep 32
 chg_npc_dir 4900 down
 chg_npc_img 4900 0
 chg_speed 4901 slow
 move_npc 4901 left 2
-sleep 64
+sleep 32
+msg3 -1 「ミッドガルって\n　くさや　はな　あまりそだたないでしょ？\n　でも　ここだけ　はな　さくの
+sleep 32
 move_npc 4901 up 1
 chg_npc_dir 4900 left
+wait_key_push a
+erase_msg3
 sleep 32
-set_talk_npc 4901
-msg 「ミッドガルって\n　くさや　はな　あまりそだたないでしょ？\n　でも　ここだけ　はな　さくの
-reset_talk_npc
 move_npc 4901 down 1
-sleep 32
-chg_npc_dir 4900 down
-chg_speed 4901 normal
-sleep 32
-step_npc 4901 1
-msg 「すきなんだ　ここ
-chg_npc_img 4900 103
-sleep 32
-chg_npc_dir 4900 left
 sleep 48
-chg_npc_dir 4900 down
+chg_speed 4901 normal
+step_npc 4901 1
+sleep 16
+msg 「すきなんだ　ここ
+chg_npc_dir 4900 up
+sleep 32
+chg_event_move_char_speed slow
+move_char up 4
+sleep 32
 chg_speed 4901 slow
 move_npc 4901 up 1
-sleep 16
-chg_npc_img 4900 0
-chg_npc_dir 4900 left
-sleep 16
+sleep 32
+set_screen_effect add 0 255 255 0
+play_se_loop baby_bird.ogg
 move_npc 4901 right 1
-sleep 56
+loop 10
+inc_screen_effect_val 1
+sleep 3
+pool
+sleep 2
+chg_npc_dir 4901 down
 chg_npc_img 4901 15
 chg_speed 4901 not_move
+loop 20
+inc_screen_effect_val 1
+sleep 3
+pool
+sleep 96
+flush
+sleep 8
+flush
+sleep 64
+move_char down 4
+loop 30
+dec_screen_effect_val 1
+sleep 3
+pool
+sleep 38
+stop_se
+reset_screen_effect
+sleep 16
 chg_type 4901 npc2
-chg_char_dir left
+chg_char_dir up
 draw_char on
 kill 4900
+chg_event_move_char_speed normal
 set_key_valid up
 set_key_valid left
 set_key_valid down

@@ -220,8 +220,6 @@ msg エアリス\n「ないわね
 reset_talk_npc
 draw_char on
 kill 9220
-chg_npc_dir 9221 down
-chg_npc_dir 9223 down
 chg_type 9221 npc
 chg_type 9223 npc
 chg_speed 9221 not_move

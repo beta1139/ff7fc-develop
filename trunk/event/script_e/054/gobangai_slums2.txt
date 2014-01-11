@@ -1,0 +1,153 @@
+wait_same_pos
+wait_key_push a
+erase_msg3
+create npc_event 5430 54 20 13 0 3 2 none
+draw_char off
+create npc_event 5431 54 31 11 3 2 1 エアリス\n「さ　いきましょ！\n　ボディーガードさん！
+sleep 16
+chg_event_move_char_speed slow
+move_char right 4
+sleep 64
+move_npc 5431 left 2
+sleep 64
+chg_speed 5431 fast
+step_npc 5431 2
+sleep 16
+chg_speed 5431 normal
+jump_npc_target_pos 5431 28 13
+play_se jump.wav
+sleep 32
+play_se landing.wav
+sleep 32
+chg_speed 5431 slow
+move_npc 5431 left 2
+sleep 64
+chg_speed 5431 not_move
+sleep 80
+chg_speed 5431 normal
+slide_walk_npc 5431 right 1
+sleep 32
+chg_speed 5431 fast
+step_npc 5431 2
+sleep 16
+slide_walk_npc 5431 left 1
+sleep 8
+chg_event_move_char_speed normal
+jump_npc_target_pos 5431 24 15
+play_se jump.wav
+sleep 48
+play_se landing.wav
+sleep 8
+move_npc 5431 left 1
+move_char left 4
+sleep 8
+jump_npc_target_pos 5431 22 13
+play_se jump.wav
+sleep 32
+play_se landing.wav
+sleep 16
+chg_speed 5431 slow
+move_npc 5431 left 1
+sleep 56
+chg_speed 5431 not_move
+loop 2
+chg_npc_dir 5431 up
+sleep 8
+chg_npc_dir 5431 right
+sleep 8
+chg_npc_dir 5431 down
+sleep 8
+chg_npc_dir 5431 left
+sleep 8
+pool
+msg エアリス\n「ハァ……\n　ハァ……\n\n　ひとりで……さきに……\n　いっちゃうんだもん……
+sleep 32
+move_char down 1
+move_npc 5430 down 1
+sleep 16
+chg_char_dir up
+chg_npc_dir 5431 down
+chg_speed 5431 normal
+sleep 24
+chg_npc_img 5430 103
+sleep 24
+chg_npc_dir 5430 left
+msg 『おかしいな……
+chg_npc_img 5430 0
+chg_npc_dir 5430 up
+sleep 16
+set_active_msg 5430
+jump_npc 5430 same 1
+msg 『ソルジャーのそしつが\n　あるんじゃなかったか？
+set_active_msg 542
+chg_speed 5431 normal
+chg_npc_img 5431 99
+jump_npc 5431 same 1
+sleep 16
+step_npc 5431 2
+set_talk_npc 5431
+msg エアリス\n「もう！　いじわる！
+reset_talk_npc
+sleep 32
+chg_npc_dir 5430 left
+chg_npc_img 5430 97
+step_npc 5430 6
+chg_npc_dir 5431 up
+chg_npc_img 5431 15
+jump_npc 5431 same 1
+sleep 16
+step_npc 5431 5
+sleep 112
+chg_npc_dir 5431 down
+chg_npc_img 5431 3
+chg_npc_img 5430 0
+chg_npc_dir 5430 up
+sleep 48
+step_npc 5431 2
+set_talk_npc 5431
+msg エアリス\n「ねぇ……クラウド\n　あなた　もしかして……\n\n　ソルジャー？
+reset_talk_npc
+sleep 16
+msg 『…………
+sleep 48
+step_npc 5430 1
+msg 『……もとソルジャーだ\n　どうしてわかった？
+sleep 16
+step_npc 5431 2
+set_talk_npc 5431
+msg エアリス\n「……あなたのめ\n　そのふしぎなかがやき……
+reset_talk_npc
+sleep 16
+step_npc 5430 1
+msg 『そう　これは　まこうをあびたもの……\n　ソルジャーのあかし\n\n\n　だが　どうして　あんたがそれを？
+sleep 32
+step_npc 5431 1
+set_talk_npc 5431
+msg エアリス\n「……ちょっと　ね
+reset_talk_npc
+step_npc 5430 1
+msg 『ちょっと……？
+jump_npc 5431 same 1
+set_talk_npc 5431
+msg エアリス\n「そ　ちょっと！
+reset_talk_npc
+sleep 24
+chg_npc_dir 5431 right
+sleep 4
+chg_npc_dir 5431 up
+sleep 4
+chg_npc_dir 5431 left
+sleep 4
+chg_npc_dir 5431 down
+sleep 4
+jump_npc 5431 same 1
+set_talk_npc 5431
+msg エアリス\n「さ　いきましょ！\n　ボディーガードさん！
+reset_talk_npc
+draw_char on
+kill 5430
+sleep 16
+chg_type 5431 npc
+set_flag_wall 5431
+chg_speed 5431 not_move
+chg_npc_dir 5431 left

@@ -2,10 +2,9 @@ wait_same_pos
 set_flag 0 0
 play_bgm
 kill_through_range 7103 7104
-kill_through_range 7200 7203
-kill 7229
-sleep 8
+kill_through_range 7270 7278
+kill_through_range 7292 7296
 chg_char_state_move
 sleep 8
-create event_generator 7200 72 8 53 17 0 0 @072/smoke1.txt
-create event_generator 7201 72 9 53 17 0 0 @072/smoke1.txt
+create event_generator 7270 72 8 53 17 0 0 @072/smoke1.txt
+create event_generator 7271 72 9 53 17 0 0 @072/smoke1.txt

@@ -17,12 +17,12 @@ if_char_dir down
 create npc_event 4900 49 5 10 0 1 2 none
 draw_char off
 sleep 16
-chg_npc_dir 4900 left
+chg_npc_dir 4900 right
 sleep 32
 chg_char_dir up
 set_slide_char_flag
-move_npc 4900 left 1
-move_char left 1
+move_npc 4900 right 1
+move_char right 1
 sleep 32
 move_npc 4900 down 1
 move_char down 1
@@ -30,8 +30,8 @@ sleep 48
 move_npc 4900 down 1
 move_char down 1
 sleep 32
-move_npc 4900 right 1
-move_char right 1
+move_npc 4900 left 1
+move_char left 1
 sleep 48
 fi
 if_char_dir right

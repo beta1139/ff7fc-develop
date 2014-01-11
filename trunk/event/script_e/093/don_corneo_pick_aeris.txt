@@ -84,6 +84,11 @@ sleep 32
 fadein
 chg_event_move_char_speed normal
 chg_char_state_move
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
 loop_inf
 sleep 400
 pool

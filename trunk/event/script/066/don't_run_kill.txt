@@ -7,5 +7,7 @@ set_key_valid right
 set_key_valid select
 set_key_valid start
 create npc 6520 65 11 19 17 0 0 w6‚Î‚ñ‚ª‚¢‚ğ‚±‚¦‚Ä7‚Î‚ñ‚ª‚¢‚Ö@‚©\n@‚Ğ‚Æ‚è‚Å‚È‚ñ‚Æ‚©‚È‚è‚»‚¤‚¾‚È
-create event_generator 6599 65 7 21 17 0 0 @065/temp.txt
-create event_generator 6500 65 11 20 17 0 0 @065/waterfall.txt
+kill_through_range 5622 5623
+create npc_event 5621 56 9 9 3 1 4 none
+create event_generator 5600 56 11 12 17 0 0 @056/gobangai_slums8_1.txt
+create event_generator 5601 56 12 13 17 0 0 @056/gobangai_slums8_2.txt

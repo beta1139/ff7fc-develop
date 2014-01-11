@@ -1,0 +1,18 @@
+set_eternal_event
+wait_target_talk 6022
+reset_talk_flag 6022
+create npc_event 6020 60 6 7 0 0 2 none
+draw_char off
+move_char up 1
+sleep 16
+chg_speed 6023 normal
+set_talk_npc 6023
+msg 「いいマテリアがそろってるぜ\n　みてってくんな！
+reset_talk_npc
+open_materia_shop 4003/4004/4005/4000
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 6020
+chg_speed 6023 not_move
