@@ -7,8 +7,6 @@ fadeout
 fi
 play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
 recover_active_chara
-draw_char on
-kill 7322
 sleep 400
 if_flag 9 2
 warp 73 9 6 right
