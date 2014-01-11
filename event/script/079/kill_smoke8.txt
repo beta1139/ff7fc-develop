@@ -1,7 +1,6 @@
 wait_same_pos
-kill_through_range 7200 7203
+kill_through_range 7270 7278
 kill_through_range 7292 7296
-kill 7229
 if_flag 9 2
 kill_through 7263
 chg_char_img_tmp 13
@@ -35,6 +34,9 @@ chg_npc_dir 7922 left
 chg_type 7922 npc
 chg_speed 7922 not_move
 set_flag_wall 7922
+set_flag_wall 7920
+set_flag_wall 7923
+set_flag_wall 7924
 sleep 16
 chg_npc_dir 7920 down
 chg_type 7920 npc
@@ -50,12 +52,11 @@ chg_type 7924 npc
 chg_param 7923 「お　わかいおなごに　ピチピチおはだ\n　う～ん　めがさめましたよ！\n\n\n　……ん？　かたいねぇ\n　きたえてるの？
 chg_param 7924 「ほんとっもう　きれいなコにしか\n　こえかけてないんだから\n\n\n　ん～　きみがいちばん\n　さいこうなんだなっあ\n\n\n　で　どう？\n　うちのおみせで　はたらいてみない？
 fi
-sleep 8
 chg_char_state_move
 sleep 8
-create event_generator 7201 72 21 43 17 0 0 @072/smoke8.txt
-create event_generator 7202 72 21 44 17 0 0 @072/smoke8.txt
-create event_generator 7203 72 21 45 17 0 0 @072/smoke8.txt
+create event_generator 7271 72 21 43 17 0 0 @072/smoke8.txt
+create event_generator 7272 72 21 44 17 0 0 @072/smoke8.txt
+create event_generator 7273 72 21 45 17 0 0 @072/smoke8.txt
 if_flag 9 2
 loop_inf
 sleep 400

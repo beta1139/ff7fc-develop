@@ -1,0 +1,68 @@
+wait_same_pos
+kill_through_range 4900 4901
+create npc_event 4920 49 6 16 0 0 2 none
+draw_char off
+move_char up 2
+chg_npc_dir 4922 down
+chg_npc_dir 4923 down
+chg_speed 4922 normal
+chg_speed 4923 normal
+sleep 32
+move_npc 4922 right 1
+sleep 16
+move_npc 4922 down 2
+sleep 32
+chg_npc_dir 4922 up
+move_npc 4923 down 3
+sleep 32
+chg_npc_dir 4922 down
+sleep 16
+step_npc 4922 2
+set_talk_npc 4922
+msg 「ヒーちゃんたちねえ\n　ここのおはなねえ\n　おせわしてんの
+reset_talk_npc
+sleep 16
+set_talk_npc 4923
+step_npc 4923 2
+msg 「……ダメ？\n\n\n\n#2\n　　ぜんぜんかまわない\n　　ダメ！\n\n\n[[]][[]]
+reset_talk_npc
+set_active_msg 4922
+set_active_msg 4923
+step_npc 4920 1
+if_flag 3 0
+msg 「たいせつにな
+jump_npc 4922 same 1
+jump_npc 4923 same 1
+msg 「うん！
+fi
+if_flag 3 1
+msg 「コドモにはむりだな
+sleep 16
+chg_npc_dir 4922 right
+chg_npc_dir 4923 left
+sleep 48
+chg_npc_dir 4922 down
+sleep 16
+jump_npc 4922 same 1
+msg 「ムリ？　ムリってな～に？\n　わかんな～い
+fi
+move_npc 4922 up 2
+move_npc 4923 up 3
+sleep 32
+move_npc 4922 left 1
+sleep 16
+chg_npc_dir 4922 right
+chg_speed 4922 not_move
+chg_npc_dir 4923 left
+chg_speed 4923 not_move
+move_char down 2
+sleep 32
+chg_char_dir up
+draw_char on
+kill 4920
+chg_type 4922 npc
+chg_type 4923 npc3
+set_flag_wall 4922
+set_flag_wall 4923
+set_inactive_msg 4922
+set_inactive_msg 4923

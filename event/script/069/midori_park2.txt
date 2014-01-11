@@ -1,0 +1,426 @@
+wait_target_talk 6921
+chg_type 6921 npc_event
+chg_speed 6921 normal
+set_layer 6940 front
+chg_npc_dir 6921 right
+sleep 24
+chg_npc_dir 6921 up
+sleep 24
+step_npc 6921 2
+set_talk_npc 6921
+msg エアリス\n「なつかしい　まだあったんだ
+reset_talk_npc
+if_char_dir left
+backup_char_dir
+create npc_event 6920 69 14 21 0 2 2 none
+fi
+if_char_dir up
+backup_char_dir
+create npc_event 6920 69 13 22 0 0 2 none
+fi
+if_char_dir down
+backup_char_dir
+create npc_event 6920 69 13 20 0 1 2 none
+fi
+if_char_dir right
+backup_char_dir
+create npc_event 6920 69 12 21 0 3 2 none
+fi
+draw_char off
+jump_npc 6921 same 1
+chg_npc_dir 6921 right
+sleep 4
+chg_npc_dir 6921 down
+sleep 4
+chg_npc_dir 6921 left
+sleep 4
+chg_npc_dir 6921 up
+sleep 4
+if_char_dir up
+move_char up 4
+move_npc 6921 up 4
+sleep 8
+chg_npc_dir 6920 up
+sleep 56
+fi
+if_char_dir left
+move_char up 4
+move_npc 6921 up 4
+sleep 8
+chg_npc_dir 6920 up
+sleep 56
+fi
+if_char_dir right
+move_char up 4
+move_npc 6921 up 4
+sleep 8
+chg_npc_dir 6920 up
+sleep 56
+fi
+if_char_dir down
+move_npc 6921 left 1
+sleep 16
+move_npc 6921 up 3
+move_char up 3
+sleep 32
+chg_npc_dir 6920 up
+sleep 16
+move_npc 6921 right 1
+sleep 16
+move_npc 6921 up 1
+sleep 16
+fi
+move_npc 6921 right 2
+restore_char_dir
+sleep 32
+if_char_dir down
+move_char down 1
+fi
+if_char_dir left
+move_char down 1
+fi
+if_char_dir right
+move_char down 1
+fi
+move_npc 6921 down 1
+sleep 24
+set_npc_pos 6921 69 36 17
+sleep 72
+set_npc_pos 6921 69 15 18
+set_layer 6921 front
+set_layer 6940 back
+jump_npc 6921 same 1
+sleep 32
+jump_npc 6921 same 1
+sleep 16
+step_npc 6921 2
+msg エアリス\n「クラウド　こっち！
+sleep 24
+chg_npc_dir 6920 down
+chg_npc_img 6920 103
+sleep 24
+chg_npc_dir 6920 left
+sleep 40
+chg_speed 6921 not_move
+chg_npc_img 6920 0
+chg_npc_dir 6920 up
+restore_char_dir
+sleep 24
+if_char_dir right
+move_npc 6920 right 1
+move_char right 1
+sleep 16
+chg_npc_dir 6921 down
+move_npc 6920 up 4
+sleep 64
+move_char right 1
+fi
+if_char_dir up
+move_npc 6920 up 5
+sleep 16
+chg_npc_dir 6921 down
+sleep 64
+move_char right 1
+fi
+if_char_dir left
+move_npc 6920 left 1
+sleep 16
+chg_npc_dir 6921 down
+move_npc 6920 up 4
+sleep 64
+fi
+if_char_dir down
+move_npc 6920 up 3
+sleep 16
+chg_npc_dir 6921 down
+sleep 32
+move_char right 1
+fi
+move_npc 6920 right 2
+sleep 16
+chg_npc_dir 6921 right
+move_char right 1
+sleep 16
+chg_speed 6921 normal
+jump_npc_target_pos 6921 14 18
+move_npc 6920 down 1
+sleep 24
+set_npc_pos 6920 69 36 17
+sleep 48
+set_layer 6920 front
+set_npc_pos 6920 69 15 18
+jump_npc 6920 same 1
+play_se landing.wav
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+move_npc 6920 right 1
+sleep 8
+chg_speed 6920 not_move
+chg_speed 6921 normal
+move_npc 6921 right 1
+sleep 8
+chg_speed 6921 not_move
+chg_npc_dir 6920 down
+sleep 8
+chg_npc_dir 6921 down
+sleep 72
+chg_speed 6921 normal
+step_npc 6921 2
+msg エアリス\n「あなた　クラスは？
+sleep 16
+chg_npc_dir 6920 left
+msg 『クラス？
+chg_npc_dir 6921 right
+sleep 16
+step_npc 6921 2
+msg エアリス\n「ソルジャーのクラス
+chg_npc_dir 6920 down
+sleep 32
+chg_speed 6920 normal
+step_npc 6920 1
+msg 『ああ　おれは……
+sleep 24
+set_screen_effect add 255 255 255 100
+play_se white_noise.ogg
+sleep 20
+stop_se
+reset_screen_effect
+sleep 24
+step_npc 6920 1
+msg 『クラス……\n　1ST（ファースト）だ
+chg_npc_dir 6921 down
+sleep 24
+step_npc 6921 2
+msg エアリス\n「ふ～ん　おんなじだ
+sleep 16
+chg_npc_dir 6920 left
+msg 『だれとおなじだって？
+sleep 16
+step_npc 6921 1
+msg エアリス\n「はじめてすきになったひと
+sleep 16
+chg_npc_dir 6920 down
+sleep 32
+step_npc 6920 1
+msg 『……つきあってた？
+sleep 32
+chg_npc_dir 6921 down
+chg_npc_img 6921 3
+step_npc 6921 2
+msg エアリス\n「そんなんじゃないの\n　ちょっと　いいなって\n　おもってた
+sleep 32
+chg_npc_dir 6920 left
+msg 『もしかしたら　しってるかもしれないな\n　そいつのなまえは？
+sleep 24
+chg_npc_dir 6921 right
+chg_npc_img 6921 15
+step_npc 6921 2
+sleep 40
+chg_npc_img 6921 3
+msg エアリス\n「もういいの
+chg_npc_img 6920 0
+chg_npc_img 6921 3
+chg_npc_dir 6921 down
+sleep 32
+chg_event_move_char_speed slow
+move_char up 4
+sleep 64
+chg_npc_dir 6920 down
+sleep 64
+play_se door_open_hard.wav
+create map_obj 6950 69 15 11 32 0 0 
+create map_obj 6951 69 16 11 32 0 0 
+sleep 4
+create npc_event 6925 69 15 11 60 1 1 none
+create npc_event 6924 69 15 10 17 2 1 none
+sleep 4
+create map_obj 6952 69 16 10 32 0 0 
+create map_obj 6953 69 15 10 32 0 0 
+sleep 8
+create map_obj 6954 69 15 9 32 0 0 
+set_layer 6954 front
+create map_obj 6955 69 16 9 32 0 0 
+sleep 16
+chg_npc_dir 6920 up
+sleep 24
+move_npc 6925 down 3
+slide_walk_npc 6924 down 4
+play_se stomp.ogg
+sleep 8
+chg_npc_img 6924 137
+sleep 8
+stop_se
+sleep 16
+create npc_event 6923 69 15 10 17 2 1 none
+slide_walk_npc 6923 down 3
+play_se stomp.ogg
+sleep 16
+chg_npc_img 6923 137
+stop_se
+sleep 16
+play_se stomp.ogg
+create npc_event 6922 69 15 10 17 2 1 none
+slide_walk_npc 6922 down 2
+sleep 16
+chg_npc_img 6922 138
+stop_se
+sleep 16
+chg_npc_img 6924 60
+chg_npc_dir 6924 down
+create npc_event 6929 69 15 10 17 1 1 none
+slide_walk_npc 6929 down 1
+move_npc 6925 right 1
+chg_npc_img 6925 137
+create npc_event 6926 69 15 13 137 0 1 none
+slide_walk_npc 6926 right 1
+play_se stomp.ogg
+sleep 8
+chg_npc_img 6929 137
+sleep 8
+stop_se
+sleep 16
+chg_npc_img 6923 60
+chg_npc_dir 6923 down
+chg_npc_dir 6924 right
+chg_npc_img 6924 137
+create npc_event 6927 69 15 13 137 0 1 none
+sleep 24
+msg 『（ん？　あのうしろ………）
+sleep 24
+jump_npc 6920 same 2
+msg3 -1 『ティファ！？
+chg_speed 6921 normal
+sleep 16
+chg_npc_dir 6921 up
+move_npc 6925 right 11
+slide_walk_npc 6926 right 11
+move_npc 6924 right 11
+slide_walk_npc 6927 right 11
+move_npc 6923 down 1
+slide_walk_npc 6922 down 2
+slide_walk_npc 6929 down 2
+play_se stomp.ogg
+sleep 16
+stop_se
+sleep 16
+chg_npc_img 6922 60
+chg_npc_dir 6922 down
+move_npc 6923 right 10
+chg_npc_img 6923 138
+create npc_event 6928 69 15 13 138 0 1 none
+slide_walk_npc 6928 right 10
+play_se stomp.ogg
+sleep 16
+stop_se
+sleep 16
+move_npc 6922 right 9
+chg_npc_img 6922 137
+chg_npc_dir 6929 up
+slide_walk_npc 6929 right 9
+loop 5
+play_se stomp.ogg
+sleep 16
+stop_se
+sleep 16
+pool
+erase_msg3
+loop 4
+play_se stomp.ogg
+sleep 16
+stop_se
+sleep 16
+pool
+kill_through_range 6954 6955
+play_se door_open_hard.wav
+sleep 8
+kill_through_range 6952 6953
+sleep 8
+kill_through_range 6950 6951
+kill_through_range 6922 6929
+set_active_msg 6921
+jump_npc 6921 same 1
+msg エアリス\n「あれにのっていたひとが　ティファさん？\n　どこにいくのかしら？\n　それに　ようすがへんだったわね……
+chg_npc_dir 6921 down
+sleep 16
+chg_npc_dir 6920 left
+move_npc 6921 right 1
+slide_walk_npc 6920 right 1
+sleep 8
+chg_speed 6920 not_move
+chg_speed 6921 not_move
+chg_npc_dir 6921 down
+chg_npc_dir 6920 left
+sleep 32
+chg_speed 6921 normal
+jump_npc 6921 down 1
+play_se jump.wav
+sleep 16
+play_se landing.wav
+sleep 8
+chg_speed 6920 normal
+move_npc 6921 down 2
+move_npc 6920 left 1
+sleep 16
+chg_npc_dir 6920 down
+sleep 16
+move_npc 6921 left 2
+sleep 16
+jump_npc 6920 same 1
+sleep 16
+move_npc 6921 up 7
+sleep 16
+chg_speed 6920 normal
+step_npc 6920 1
+chg_npc_dir 6920 left
+msg3 -1 『まて！
+sleep 48
+chg_npc_dir 6920 up
+sleep 32
+erase_msg3
+chg_speed 6920 fast
+sleep 16
+jump_npc 6920 same 2
+msg3 -1 『おれひとりでいい！\n　あんたはかえれ！
+move_npc 6921 right 12
+sleep 32
+step_npc 6920 3
+sleep 144
+erase_msg3
+chg_speed 6920 normal
+chg_npc_dir 6920 right
+chg_npc_img 6920 97
+step_npc 6920 2
+sleep 16
+kill 6921
+sleep 16
+chg_npc_dir 6920 up
+chg_npc_img 6920 0
+sleep 16
+chg_speed 6920 normal
+jump_npc 6920 up 2
+play_se jump.wav
+loop 4
+sleep 4
+chg_npc_img 6920 105
+chg_npc_dir 6920 right
+sleep 4
+chg_npc_img 6920 0
+chg_npc_dir 6920 up
+pool
+play_se landing.wav
+move_char down 2
+chg_event_move_char_speed normal
+sleep 32
+chg_char_dir up
+draw_char on
+kill 6920
+kill 6940
+create event_generator 6801 68 12 8 17 0 0 @068/rokubangai2.txt
+kill_through_range 6960 6963
+del_party_mem 3

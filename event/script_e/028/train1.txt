@@ -5,6 +5,16 @@ set_key_unvalid down
 set_key_unvalid right
 set_key_unvalid start
 set_flag 0 0
+chg_type 1730 npc_event
+chg_type 1731 npc_event
+chg_type 1732 npc_event
+chg_type 1733 npc_event
+chg_type 1734 npc_event
+chg_speed 1730 not_move
+chg_speed 1731 not_move
+chg_speed 1732 not_move
+chg_speed 1733 not_move
+chg_speed 1734 not_move
 move_char left 3
 sleep 16
 create npc_event 2800 28 3 10 0 3 2 none
@@ -231,10 +241,13 @@ erase_msg3
 chg_npc_dir 2802 left
 chg_speed 2802 normal
 fadeout
+set_npc_pos 1734 17 20 3
+chg_npc_dir 1734 down
 sleep 16
 warp 17 15 8 up
 sleep 16
 fadein
+jump_npc 1734 same 1
 chg_npc_img 1750 15
 chg_npc_img 1751 16
 chg_npc_img 1752 17
@@ -265,6 +278,7 @@ chg_npc_img 1761 25
 chg_npc_img 1762 27
 chg_npc_img 1763 28
 sleep 8
+jump_npc 1734 same 1
 move_npc 1706 right 1
 chg_npc_img 1750 5
 chg_npc_img 1751 6
@@ -370,6 +384,7 @@ chg_npc_img 1759 18
 chg_npc_img 1760 20
 chg_npc_img 1761 21
 chg_npc_img 1762 22
+jump_npc 1734 same 1
 sleep 8
 chg_npc_img 1749 23
 chg_npc_img 1750 24
@@ -400,6 +415,7 @@ chg_npc_img 1759 8
 chg_npc_img 1760 9
 chg_npc_img 1761 10
 chg_npc_img 1762 4
+jump_npc 1734 same 1
 sleep 4
 chg_npc_img 1749 11
 chg_npc_img 1750 12

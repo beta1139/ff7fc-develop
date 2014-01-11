@@ -1,0 +1,21 @@
+set_eternal_event
+wait_target_talk 6422
+reset_talk_flag 6422
+chg_dir_to_char 6424
+chg_speed 6424 normal
+msg 「じぶんのみは　じぶんでまもる\n　こいつがスラムのじょうしきよ！\n　そのためには　まずつええ　ぶき！だろ？\n\n#3\n　　ぶきをみたい\n　　アイテムをみたい\n　　きょうみないね\n\n[[]][[]][[]]
+if_flag 3 0
+open_armor_shop 3002
+step_char 1
+sleep 16
+msg 『ぶき　ないじゃないか
+jump_npc 6424 same 1
+chg_npc_dir 6424 left
+sleep 16
+fi
+if_flag 3 1
+open_item_shop 1020
+fi
+if_flag 3 2
+fi
+chg_speed 6424 not_move

@@ -1,5 +1,7 @@
 wait_same_pos
 draw_char off
-msg 　～そのご　あーだこーだで　ぶじにげだした\n　クラウドたちは　エアリスのいえにとうちゃく……
-warp_ff3_2 65 8 21 2 right
-draw_char on
+msg 　～きょうかいマップ　みさくせいのため\n　イベントしょうりゃく\n　やねうらイベントまで　ワープ
+create npc_event 5320 53 17 14 0 1 2 none
+create npc_event 5321 53 18 15 3 2 2 none
+warp_ff3_2 53 17 14 2 down
+play_event_bgm 1-12-Flowers_Blooming_in_the_Church.ogg

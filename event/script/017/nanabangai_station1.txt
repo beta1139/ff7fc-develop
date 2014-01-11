@@ -14,6 +14,7 @@ chg_npc_img 1784 13
 chg_npc_img 1785 12
 chg_npc_img 1786 13
 chg_npc_img 1787 14
+jump_npc 1734 same 1
 sleep 4
 chg_npc_img 1774 15
 chg_npc_img 1775 16
@@ -73,6 +74,7 @@ chg_npc_img 1783 13
 chg_npc_img 1784 12
 chg_npc_img 1785 13
 chg_npc_img 1786 14
+jump_npc 1734 same 1
 sleep 4
 chg_npc_img 1773 15
 chg_npc_img 1774 16
@@ -132,6 +134,7 @@ chg_npc_img 1782 13
 chg_npc_img 1783 12
 chg_npc_img 1784 13
 chg_npc_img 1785 14
+step_npc 1734 1
 sleep 4
 chg_npc_img 1772 15
 chg_npc_img 1773 16
@@ -191,6 +194,7 @@ chg_npc_img 1781 13
 chg_npc_img 1782 12
 chg_npc_img 1783 13
 chg_npc_img 1784 14
+chg_npc_dir 1734 left
 sleep 4
 chg_npc_img 1771 15
 chg_npc_img 1772 16
@@ -207,6 +211,7 @@ chg_npc_img 1782 18
 chg_npc_img 1783 20
 chg_npc_img 1784 21
 chg_npc_img 1785 22
+chg_npc_dir 1734 up
 sleep 4
 chg_npc_img 1772 23
 chg_npc_img 1773 24
@@ -221,6 +226,7 @@ chg_npc_img 1781 26
 chg_npc_img 1782 25
 chg_npc_img 1783 27
 chg_npc_img 1784 28
+chg_npc_dir 1734 right
 sleep 4
 chg_npc_img 1771 5
 chg_npc_img 1772 6
@@ -237,6 +243,7 @@ chg_npc_img 1782 8
 chg_npc_img 1783 9
 chg_npc_img 1784 10
 chg_npc_img 1785 4
+chg_npc_dir 1734 down
 sleep 4
 chg_npc_img 1772 11
 chg_npc_img 1773 12
@@ -250,6 +257,7 @@ chg_npc_img 1780 13
 chg_npc_img 1781 12
 chg_npc_img 1782 13
 chg_npc_img 1783 14
+chg_npc_dir 1734 left
 sleep 4
 chg_npc_img 1770 15
 chg_npc_img 1771 16
@@ -368,6 +376,7 @@ chg_npc_img 1778 13
 chg_npc_img 1779 12
 chg_npc_img 1780 13
 chg_npc_img 1781 14
+move_npc 1734 left 1
 sleep 4
 chg_npc_img 1768 15
 chg_npc_img 1769 16
@@ -486,6 +495,7 @@ chg_npc_img 1776 13
 chg_npc_img 1777 12
 chg_npc_img 1778 13
 chg_npc_img 1779 14
+move_npc 1734 left 1
 sleep 4
 chg_npc_img 1766 15
 chg_npc_img 1767 16
@@ -604,6 +614,7 @@ chg_npc_img 1774 13
 chg_npc_img 1775 12
 chg_npc_img 1776 13
 chg_npc_img 1777 14
+move_npc 1734 left 1
 sleep 4
 chg_npc_img 1764 15
 chg_npc_img 1765 16
@@ -722,6 +733,7 @@ chg_npc_img 1772 13
 chg_npc_img 1773 12
 chg_npc_img 1774 13
 chg_npc_img 1775 14
+move_npc 1734 left 1
 sleep 4
 chg_npc_img 1762 15
 chg_npc_img 1763 16
@@ -840,6 +852,7 @@ chg_npc_img 1770 13
 chg_npc_img 1771 12
 chg_npc_img 1772 13
 chg_npc_img 1773 14
+move_npc 1734 left 1
 sleep 4
 chg_npc_img 1760 15
 chg_npc_img 1761 16
@@ -958,6 +971,7 @@ chg_npc_img 1768 13
 chg_npc_img 1769 12
 chg_npc_img 1770 13
 chg_npc_img 1771 14
+move_npc 1734 left 1
 sleep 4
 chg_npc_img 1758 15
 chg_npc_img 1759 16
@@ -1076,6 +1090,7 @@ chg_npc_img 1766 13
 chg_npc_img 1767 12
 chg_npc_img 1768 13
 chg_npc_img 1769 14
+move_npc 1734 left 1
 sleep 4
 chg_npc_img 1756 15
 chg_npc_img 1757 16
@@ -1135,6 +1150,8 @@ chg_npc_img 1765 13
 chg_npc_img 1766 12
 chg_npc_img 1767 13
 chg_npc_img 1768 14
+chg_speed 1730 normal
+move_npc 1730 left 1
 sleep 4
 chg_npc_img 1755 15
 chg_npc_img 1756 16
@@ -1194,6 +1211,7 @@ chg_npc_img 1764 13
 chg_npc_img 1765 12
 chg_npc_img 1766 13
 chg_npc_img 1767 14
+move_npc 1734 left 1
 sleep 4
 chg_event_move_char_speed slow
 move_char left 3
@@ -1271,6 +1289,7 @@ chg_npc_img 1764 18
 chg_npc_img 1765 20
 chg_npc_img 1766 21
 chg_npc_img 1767 22
+move_npc 1734 left 1
 sleep 8
 chg_npc_img 1754 23
 chg_npc_img 1755 24
@@ -1315,6 +1334,8 @@ chg_npc_img 1763 12
 chg_npc_img 1764 13
 chg_npc_img 1765 14
 sleep 8
+move_npc 1734 left 1
+move_npc 1730 right 1
 chg_npc_img 1752 15
 chg_npc_img 1753 16
 chg_npc_img 1754 17
@@ -1389,6 +1410,7 @@ chg_npc_img 1762 18
 chg_npc_img 1763 20
 chg_npc_img 1764 21
 chg_npc_img 1765 22
+move_npc 1734 left 1
 sleep 8
 chg_npc_img 1752 23
 chg_npc_img 1753 24
@@ -1433,25 +1455,38 @@ chg_npc_img 1761 12
 chg_npc_img 1762 13
 chg_npc_img 1763 14
 sleep 8
+move_npc 1734 left 1
 move_char down 2
 sleep 32
+move_npc 1730 down 1
 move_npc 1706 right 2
-sleep 64
+loop 2
+move_npc 1734 left 1
+sleep 32
+pool
 create npc_event 1707 17 14 9 71 1 2 ÅuÇ±ÇÒÇ‚ÇÕÅ@Ç©Ç¶Ç≥Ç»Ç¢ÇÊ
 move_npc 1707 down 2
+move_npc 1734 left 1
 sleep 32
-move_npc 1707 left 4
+move_npc 1734 left 1
+move_npc 1707 left 3
 create npc_event 1708 17 14 9 72 1 2 none
 move_npc 1708 down 2
+move_npc 1730 up 1
 sleep 32
-move_npc 1708 left 3
-sleep 32
+chg_npc_dir 1734 down
+move_npc 1708 left 2
+sleep 16
+jump_npc 1734 same 1
 chg_npc_dir 1707 right
 sleep 16
+jump_npc 1734 same 1
 create npc_event 1705 17 14 9 36 1 2 none
 move_npc 1705 down 4
 step_npc 1707 2
-sleep 32
+sleep 16
+chg_speed 1734 not_move
+sleep 16
 create npc_event 1704 17 14 9 35 1 2 none
 move_npc 1704 down 1
 sleep 16
@@ -1485,6 +1520,11 @@ sleep 32
 chg_npc_dir 1704 left
 move_npc 1706 right 1
 sleep 32
+chg_speed 1730 normal
+chg_speed 1731 normal
+chg_speed 1732 normal
+chg_speed 1733 normal
+chg_speed 1734 normal
 chg_npc_dir 1706 up
 chg_npc_dir 1702 left
 chg_npc_img 1702 98
@@ -1564,6 +1604,13 @@ move_npc 1701 down 1
 sleep 16
 fadeout
 sleep 16
+chg_type 1730 npc2
+chg_type 1731 npc2
+chg_type 1732 npc2
+chg_type 1733 npc2
+chg_type 1734 npc2
+chg_speed 1731 not_move
+chg_speed 1732 not_move
 chg_event_move_char_speed normal
 warp 17 14 13 down
 chg_type 1707 npc3

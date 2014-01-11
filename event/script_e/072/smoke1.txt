@@ -1,16 +1,14 @@
 wait_same_pos
-kill_through_range 7200 7203
-kill_through_range 7292 7296
+kill_through_range 7271 7273
+kill_through 7279
 if_flag 9 2
 chg_char_img_tmp 13
-kill_through 7229
-sleep 8
 fi
+chg_char_state_move
+create event_generator 7278 72 18 26 17 0 0 @072/kill_smoke1_2.txt
+sleep 8
 create event_generator 7103 71 6 2 17 0 0 @071/kill_smoke1_1.txt
 create event_generator 7104 71 7 2 17 0 0 @071/kill_smoke1_1.txt
-create event_generator 7229 72 18 26 17 0 0 @072/kill_smoke1_2.txt
-sleep 8
-chg_char_state_move
 loop_inf
 create npc_event 7296 72 11 27 124 1 1 none
 set_layer 7296 front

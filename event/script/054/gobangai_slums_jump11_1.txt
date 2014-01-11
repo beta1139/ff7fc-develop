@@ -1,0 +1,17 @@
+wait_same_pos
+jump_char_target_pos 14 17
+play_se jump.wav
+sleep 32
+chg_type 5431 npc_event
+chg_speed 5431 normal
+move_npc 5431 left 2
+sleep 16
+play_se landing.wav
+sleep 16
+jump_npc_target_pos 5431 15 17
+play_se jump.wav
+sleep 32
+play_se landing.wav
+sleep 16
+chg_type 5431 npc
+chg_speed 5431 not_move

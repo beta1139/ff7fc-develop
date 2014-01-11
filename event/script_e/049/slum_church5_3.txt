@@ -3,8 +3,7 @@ kill 4914
 kill 4915
 chg_type 4905 npc_event
 chg_speed 4905 fast
-step_npc 4905 3
-sleep 16
+step_npc 4905 2
 msg エアリス\n「クラウド！\n　かまっちゃダメ！
 chg_char_dir up
 move_npc 4905 left 1

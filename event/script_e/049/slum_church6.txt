@@ -86,6 +86,6 @@ chg_npc_dir 4906 down
 kill_through 4914
 kill_through 4915
 kill_through 4916
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 sleep 32
 fadein

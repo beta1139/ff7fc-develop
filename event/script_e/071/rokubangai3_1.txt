@@ -1,0 +1,3 @@
+set_eternal_event
+wait_same_pos
+warp_ff3_2 69 24 13 3 left

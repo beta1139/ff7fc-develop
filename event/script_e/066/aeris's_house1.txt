@@ -3,8 +3,6 @@ chg_char_img 0
 if_flag 9 0
 add_party_mem 3
 fi
-kill_through 6500
-kill_through_range 6551 6581
 create npc_event 6620 66 9 14 0 0 2 none
 draw_char off
 create npc_event 6622 66 10 14 3 0 2 none

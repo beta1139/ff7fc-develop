@@ -25,10 +25,10 @@ jump_npc 8521 same 1
 sleep 16
 step_npc 8521 2
 msg エアリス\n「クラウド　おんなのこに\n　へんそうしなさい\n　それしかない　うん
-msg3 -1 『ええっ！？
 chg_event_move_char_speed fast
-jump_char same 1
-sleep 16
+jump_char same 2
+msg3 -1 『ええっ！？
+sleep 32
 step_char 2
 wait_key_push_edge a
 erase_msg3

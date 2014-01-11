@@ -1,0 +1,95 @@
+wait_same_pos
+kill_through_range 5600 5601
+move_char left 1
+sleep 16
+chg_npc_img 5621 99
+jump_npc 5621 same 1
+sleep 8
+create npc_event 5620 56 10 12 0 2 2 none
+draw_char off
+chg_npc_dir 5620 up
+sleep 16
+chg_event_move_char_speed slow
+move_char up 2
+jump_npc 5620 same 1
+loop 2
+chg_npc_img 5620 97
+sleep 8
+chg_npc_img 5620 0
+sleep 8
+pool
+sleep 32
+chg_speed 5621 normal
+step_npc 5621 3
+set_talk_npc 5621
+msg エアリス\n「おはやいしゅっぱつ　ね
+reset_talk_npc
+sleep 16
+chg_npc_dir 5620 right
+chg_npc_img 5620 97
+step_npc 5620 3
+sleep 80
+chg_event_move_char_speed normal
+chg_npc_img 5620 0
+chg_speed 5620 normal
+move_npc 5620 left 1
+move_char left 1
+sleep 16
+move_npc 5620 up 2
+sleep 32
+chg_speed 5620 normal
+step_npc 5620 2
+msg 『きけんだとわかっているのに\n　あんたにたよるわけにはいかないさ
+step_npc 5621 2
+set_talk_npc 5621
+msg エアリス\n「いいたいことはそれだけ？
+reset_talk_npc
+chg_npc_dir 5620 right
+chg_npc_img 5620 97
+step_npc 5620 1
+sleep 64
+chg_npc_img 5620 0
+chg_npc_dir 5620 up
+sleep 8
+chg_npc_img 5621 3
+sleep 32
+set_active_msg 5621
+jump_npc 5621 same 1
+set_talk_npc 5621
+msg エアリス\n「ティファさんのいる　[セブンスヘブン]　は\n　このさきの　[6ばんがい]　をとおらないと\n　いけないの\n　あんないしてあげる\n　さ　いきましょ！
+reset_talk_npc
+move_npc 5621 up 1
+sleep 16
+kill 5621
+sleep 8
+jump_npc 5620 same 1
+sleep 16
+chg_speed 5620 fast
+step_npc 5620 2
+sleep 40
+chg_event_move_char_speed fast
+chg_speed 5620 normal
+chg_npc_dir 5620 down
+chg_npc_img 5620 103
+sleep 32
+chg_npc_dir 5620 left
+sleep 48
+chg_npc_img 5620 0
+sleep 4
+chg_npc_dir 5620 right
+sleep 4
+chg_npc_dir 5620 down
+sleep 4
+chg_npc_dir 5620 left
+sleep 4
+chg_npc_dir 5620 up
+sleep 16
+draw_char on
+kill 5620
+move_char up 2
+sleep 16
+chg_event_move_char_speed normal
+warp_ff3_2 68 20 30 2 left
+add_party_mem 3
+kill 6520
+create event_generator 6760 67 5 11 17 0 0 @067/good_night.txt

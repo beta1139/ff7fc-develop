@@ -1,0 +1,18 @@
+set_eternal_event
+wait_target_talk 6122
+reset_talk_flag 6122
+create npc_event 6120 61 6 8 0 0 2 none
+draw_char off
+move_char up 1
+sleep 16
+chg_speed 6123 normal
+set_talk_npc 6123
+msg 「……ジロジロ……\n　……フン　アイテムは\n　かねとひきかえだよ
+reset_talk_npc
+open_item_shop 1000/1007/1008/1070
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 6120
+chg_speed 6123 not_move

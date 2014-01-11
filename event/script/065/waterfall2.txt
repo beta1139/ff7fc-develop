@@ -1,0 +1,70 @@
+wait_same_pos
+create event_generator 6504 65 14 20 17 0 0 @065/kill_waterfall2.txt
+create event_generator 6505 65 15 21 17 0 0 @065/kill_waterfall2.txt
+chg_char_state_move
+loop_inf
+create map_obj 6551 65 10 7 44 0 0 
+create map_obj 6552 65 10 8 44 0 0 
+create map_obj 6553 65 10 9 44 0 0 
+create map_obj 6554 65 10 10 45 0 0 
+create map_obj 6555 65 13 2 44 0 0 
+create map_obj 6556 65 14 2 44 0 0 
+create map_obj 6557 65 15 2 44 0 0 
+create map_obj 6558 65 13 3 44 0 0 
+create map_obj 6559 65 14 3 44 0 0 
+create map_obj 6560 65 15 3 44 0 0 
+create map_obj 6561 65 13 4 44 0 0 
+create map_obj 6562 65 14 4 44 0 0 
+create map_obj 6563 65 15 4 44 0 0 
+create map_obj 6564 65 13 5 44 0 0 
+create map_obj 6565 65 14 5 44 0 0 
+create map_obj 6566 65 15 5 44 0 0 
+create map_obj 6567 65 13 6 44 0 0 
+create map_obj 6568 65 14 6 44 0 0 
+create map_obj 6569 65 15 6 44 0 0 
+create map_obj 6570 65 13 7 44 0 0 
+create map_obj 6571 65 14 7 44 0 0 
+create map_obj 6572 65 15 7 44 0 0 
+create map_obj 6573 65 13 8 44 0 0 
+create map_obj 6574 65 14 8 44 0 0 
+create map_obj 6575 65 15 8 44 0 0 
+create map_obj 6576 65 13 9 44 0 0 
+create map_obj 6577 65 14 9 44 0 0 
+create map_obj 6578 65 15 9 44 0 0 
+create map_obj 6579 65 13 10 45 0 0 
+create map_obj 6580 65 14 10 45 0 0 
+create map_obj 6581 65 15 10 45 0 0 
+sleep 16
+kill 6551
+kill 6552
+kill 6553
+kill 6554
+kill 6555
+kill 6556
+kill 6557
+kill 6558
+kill 6559
+kill 6560
+kill 6561
+kill 6562
+kill 6563
+kill 6564
+kill 6565
+kill 6566
+kill 6567
+kill 6568
+kill 6569
+kill 6570
+kill 6571
+kill 6572
+kill 6573
+kill 6574
+kill 6575
+kill 6576
+kill 6577
+kill 6578
+kill 6579
+kill 6580
+kill 6581
+sleep 16
+pool

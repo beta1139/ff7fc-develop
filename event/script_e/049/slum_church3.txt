@@ -81,7 +81,7 @@ move_npc 4901 down 1
 sleep 16
 create npc2 4904 49 6 12 3 1 0 
 kill 4901
-chg_npc_dir 4904 right
+chg_npc_dir 4904 down
 chg_npc_img 4904 15
 create event_generator 4913 49 1 1 17 0 0 @049/slum_church4.txt
 draw_char on

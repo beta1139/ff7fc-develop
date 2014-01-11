@@ -1,0 +1,19 @@
+set_eternal_event
+wait_same_pos
+msg 『ここでねむれるな……\n\n\n\n#2\n　　ねむる\n　　ねむりたくない\n\n\n[[]][[]]
+if_flag 3 0
+sleep 16
+fadeout
+play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
+recover_active_chara
+sleep 400
+fadein
+play_bgm
+move_char up 1
+sleep 16
+msg 『あー　よくねた……\nHP MPが　かいふくした！
+fi
+if_flag 3 1
+move_char up 1
+sleep 16
+fi

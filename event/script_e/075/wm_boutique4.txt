@@ -60,9 +60,7 @@ chg_speed 7515 normal
 sleep 16
 jump_npc 7521 same 1
 close_door 7551
-sleep 16
-chg_speed 7521 not_move
-sleep 16
+sleep 32
 jump_npc 7515 same 1
 sleep 16
 jump_npc 7515 same 1
@@ -77,6 +75,7 @@ sleep 32
 chg_npc_dir 7510 down
 step_npc 7510 2
 msg 「そうだね　やってみようか
+chg_speed 7521 not_move
 chg_npc_dir 7510 right
 sleep 16
 step_npc 7510 2
@@ -110,10 +109,10 @@ move_char down 2
 chg_speed 7521 normal
 chg_npc_dir 7521 up
 chg_npc_img 7521 15
+loop 4
 jump_npc 7521 same 1
 sleep 16
-jump_npc 7521 same 1
-sleep 16
+pool
 step_npc 7521 4
 sleep 32
 set_talk_npc 7521
@@ -262,7 +261,10 @@ chg_param 7515 「うんうん　にあっとる　にあっとる
 chg_param 7221 「おっ！そこのべっぴんさん\n　いいしごとしょうかいするぜ！\n\n\n　ドンのとこへいってみな\n　たんまりかせげるぜ
 chg_param 7224 「どうぞ　よっていってください
 chg_param 7226 「なんじゃ？\n　おじょうさんがたも　たべるか？
-kill_through_range 7211 7212
+set_npc_pos 7223 72 9 33
+chg_npc_dir 7223 up
+chg_npc_dir 7225 right
+kill_through_range 7281 7282
 create npc2 7614 76 5 6 17 0 0 
 create event_generator 7604 76 0 0 17 0 0 @076/wm_materia_shop4.txt
 create npc3 7718 77 4 9 79 3 0 「モグモグ………
@@ -296,7 +298,7 @@ create event_generator 8807 88 4 7 17 0 0 @088/wm_yoidore7.txt
 create event_generator 7261 72 8 47 17 0 0 @072/wall_market13_1.txt
 create event_generator 7262 72 9 47 17 0 0 @072/wall_market13_2.txt
 kill 8510
-create npc2 8512 85 10 15 66 1 0 
+create npc2 8512 85 10 15 131 1 0 
 create event_generator 8503 85 0 0 17 0 0 @085/wall_market21.txt
 set_flag 14 7
 set_flag 9 2
