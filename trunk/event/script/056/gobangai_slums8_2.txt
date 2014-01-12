@@ -95,4 +95,6 @@ chg_event_move_char_speed normal
 warp_ff3_2 68 20 30 2 left
 add_party_mem 3
 kill 6520
+kill 6625
+kill 6731
 create event_generator 6760 67 5 11 17 0 0 @067/good_night.txt
