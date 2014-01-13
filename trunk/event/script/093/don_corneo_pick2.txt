@@ -61,12 +61,12 @@ chg_speed 9323 slow
 move_npc 9323 left 2
 sleep 96
 play_se puy.ogg
+chg_speed 9323 normal
 jump_npc 9323 same 1
 chg_npc_dir 9323 down
 set_talk_npc 9323
 msg コルネオ\n「どのおなごにしようかな？\n　ほひ～ほひ～！
 reset_talk_npc
-chg_speed 9323 normal
 sleep 64
 chg_speed 9323 slow
 move_npc 9323 right 2
@@ -96,10 +96,12 @@ chg_speed 9323 slow
 move_npc 9323 left 2
 sleep 96
 play_se puy.ogg
+chg_speed 9323 normal
 jump_npc 9323 same 1
 chg_npc_dir 9323 down
 chg_npc_dir 9320 left
 sleep 64
+chg_speed 9323 slow
 move_npc 9323 left 1
 chg_npc_dir 9320 up
 sleep 48
