@@ -3,12 +3,14 @@ chg_type 7240 npc_event
 chg_speed 7240 normal
 chg_dir_to_char 7240
 step_npc 7240 2
+chg_char_state_event
 sleep 16
 kill 7905
 kill 7921
 kill 7922
 kill 7924
 sleep 16
+chg_char_state_move
 play_se pick_up.wav
 add_item 6012
 msg 『ミツバチのやかた　かいいんカード』をてにいれた！
