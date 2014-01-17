@@ -1,6 +1,6 @@
 wait_same_pos
 kill_through_range 7911 7912
-create event_generator 7907 79 10 12 17 0 0 @079/wall_market15.txt
+create event_generator 7907 79 10 11 17 0 0 @079/wall_market15.txt
 create event_generator 7908 79 6 13 17 0 0 @079/wall_market16.txt
 create event_generator 8000 80 8 17 17 0 0 @080/honey_bee_inn1_1.txt
 create event_generator 8001 80 9 17 17 0 0 @080/honey_bee_inn1_2.txt
