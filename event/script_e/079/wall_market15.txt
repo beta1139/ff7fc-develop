@@ -5,4 +5,5 @@ chg_char_state_move
 sleep 32
 chg_speed 7921 not_move
 chg_type 7921 npc3
+set_flag_wall 7921
 chg_param 7921 「くっ～～！　ボクもおはなほしい～！\n　でもでも　かわいいオンナのコのまえだと\n　きんちょうしちゃって……\n\n　なんだか　しぜんと\n　けいかいしちゃうんです～
