@@ -9,6 +9,7 @@ if_flag 15 1
 set_layer 9968 back
 set_layer 9969 back
 set_npc_pos 9910 99 24 16
+set_layer 9910 back
 if_flag 14 0
 set_npc_pos 9915 99 23 16
 fi
@@ -21,6 +22,10 @@ set_npc_pos 9915 99 24 17
 set_npc_pos 9916 99 24 18
 set_npc_pos 9917 99 24 19
 set_npc_pos 9918 99 24 20
+set_layer 9915 back
+set_layer 9916 back
+set_layer 9917 back
+set_layer 9918 back
 set_layer 9945 back
 set_layer 9946 back
 kill 9901
