@@ -62,5 +62,10 @@ set_npc_pos 9915 99 23 16
 set_npc_pos 9916 99 23 17
 set_npc_pos 9917 99 23 18
 set_npc_pos 9918 99 23 19
+set_layer 9915 front
+set_layer 9916 front
+set_layer 9917 front
+set_layer 9918 front
 create event_generator 9901 99 23 20 17 0 0 @099/train_gimmick_a02.txt
+set_layer 9901 front
 set_flag 14 1

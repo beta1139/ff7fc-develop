@@ -87,6 +87,9 @@ set_layer 9981 front
 set_layer 9982 front
 create event_generator 9900 99 23 24 17 0 0 @099/train_gimmick_a01.txt
 create event_generator 9902 99 29 23 17 0 0 @099/train_gimmick_b01.txt
+set_layer 9902 front
+set_layer 9904 front
+set_layer 9919 front
 create npc 1706 17 14 9 94 0 4 「プレートがおちるって　うわさをききましたです\n　ながねんしたしんだ　このえきですから\n　どうしてもはなれられません……\n\n　いったいどうして……？\n　うそであってほしいです
 chg_npc_img 1748 4
 chg_npc_img 1749 4
@@ -114,3 +117,4 @@ draw_image 9899 16 16 0 0 224 32 1 event/train_graveyard.bmp
 wait_key_push_edge a
 erase_image 9899
 set_flag 21 0
+warp 99 26 27 up
