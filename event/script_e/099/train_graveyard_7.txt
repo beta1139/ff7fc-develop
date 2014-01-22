@@ -1,0 +1,66 @@
+wait_same_pos
+kill_through_range 9934 9935
+create npc_event 9937 99 24 32 0 0 2 none
+draw_char off
+create npc_event 9929 99 24 32 2 0 2 none
+move_npc 9929 right 1
+sleep 16
+chg_event_move_char_speed normal
+move_npc 9929 up 4
+move_char up 4
+sleep 8
+create npc_event 9936 99 24 32 3 0 2 none
+move_npc 9936 right 1
+sleep 16
+chg_npc_dir 9936 up
+sleep 56
+chg_npc_dir 9929 left
+sleep 32
+chg_npc_dir 9929 up
+sleep 32
+chg_npc_dir 9929 right
+sleep 32
+chg_npc_dir 9929 down
+sleep 16
+step_npc 9929 1
+msg ティファ\n「……どうしよう　いきどまりだわ
+sleep 16
+move_npc 9936 up 2
+sleep 40
+chg_npc_dir 9936 right
+sleep 32
+chg_npc_dir 9936 left
+sleep 32
+step_npc 9936 1
+msg エアリス\n「……う～ん
+move_npc 9937 up 1
+sleep 24
+chg_npc_dir 9937 right
+sleep 32
+chg_npc_dir 9937 left
+sleep 48
+chg_npc_dir 9937 up
+step_npc 9937 2
+msg 『このあたりのれっしゃはまだあたらしい\n　いくつかは　すこしうごくかもしれない
+sleep 16
+jump_npc 9929 same 1
+chg_npc_dir 9936 down
+sleep 16
+jump_npc 9936 same 1
+sleep 32
+move_char down 3
+move_npc 9929 down 3
+move_npc 9936 down 1
+sleep 16
+move_npc 9936 left 1
+sleep 16
+kill 9936
+sleep 16
+chg_char_dir up
+move_npc 9929 left 1
+sleep 16
+kill 9929
+draw_char on
+kill 9937
+event_generator,9908,99,29,22,17,0,0,"@099/train_graveyard_2.txt"
+event_generator,9936,99,29,22,17,0,0,"@099/train_graveyard_2b.txt"
