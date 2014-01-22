@@ -1436,6 +1436,8 @@ treasure_item,9930,99,24,40,2,1,0,1000
 treasure_item,9931,99,20,36,2,1,0,1000
 treasure_item,9932,99,13,34,2,1,0,1003
 treasure_item,9933,99,31,19,2,1,0,1001
+event_generator,9934,99,23,32,17,0,0,"@099/train_graveyard_5.txt"
+event_generator,9935,99,24,32,17,0,0,"@099/train_graveyard_6.txt"
 event_generator,9938,99,23,15,17,0,0,"@099/train_graveyard_3.txt"
 event_generator,9939,99,24,15,17,0,0,"@099/train_graveyard_4.txt"
 map_obj,9940,99,23,25,46,0,0,0

@@ -46,7 +46,10 @@ msg エアリス\n「ここからかえれ！\n　な～ていわないでね
 reset_talk_npc
 sleep 32
 chg_char_dir up
-sleep 16
+create npc_event 9820 98 9 32 0 0 2 none
+draw_char off
+chg_event_move_char_speed slow
+move_char up 4
 chg_npc_dir 9821 up
 loop 2
 chg_npc_dir 9822 left
@@ -67,7 +70,12 @@ step_npc 9822 2
 set_talk_npc 9822
 msg ティファ\n「え～と……あかりのついている\n　しゃりょうをぬけていけば　でられそうね
 reset_talk_npc
-sleep 16
+chg_event_move_char_speed normal
+move_char down 4
+sleep 64
+chg_char_dir up
+draw_char on
+kill 9820
 move_char right 1
 sleep 16
 move_npc 9821 left 1
@@ -117,4 +125,3 @@ draw_image 9899 16 16 0 0 224 32 1 event/train_graveyard.bmp
 wait_key_push_edge a
 erase_image 9899
 set_flag 21 0
-warp 99 26 27 up
