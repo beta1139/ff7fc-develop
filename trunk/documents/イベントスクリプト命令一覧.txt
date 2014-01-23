@@ -241,6 +241,9 @@ set_key_unvalid (key)
   keyには以下を指定する
 	up, down, left, right, select, start, a, b, dbg1, dbg2
 
+set_char_layer (front or back)
+  キャラの階層を設定
+
 =============== イベント操作系 ===============
 create (event_type) (event_id) (map_id) (x) (y) (image_id) (direction) (speed) (param)
   イベントを生成する。paramは一行で記述すること。改行は\nと記述する
