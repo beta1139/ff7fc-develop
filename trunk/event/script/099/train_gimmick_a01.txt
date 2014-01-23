@@ -68,4 +68,5 @@ set_layer 9917 front
 set_layer 9918 front
 create event_generator 9901 99 23 20 17 0 0 @099/train_gimmick_a02.txt
 set_layer 9901 front
+kill_through 9934
 set_flag 14 1
