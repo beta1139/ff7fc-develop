@@ -789,7 +789,6 @@ npc3,4903,49,7,24,30,2,4,"uƒIƒŒ‚É‚©‚Ü‚¤‚È@‚¾‚Æ"
 event_generator,4910,49,20,11,17,0,0,"@049/slum_church1.txt"
 event_generator,4911,49,1,1,17,0,0,"@049/slum_church2.txt"
 map_door,4950,49,6,23,16,0,0,0
-event_generator,5199,51,1,1,17,0,0,"@051/temp.txt"
 event_generator,5300,53,17,14,17,0,0,"@053/on_the_church.txt"
 map_door,5350,53,16,20,15,0,0,0
 event_generator,5400,54,39,11,17,0,0,"@054/gobangai_slums1.txt"
@@ -1406,7 +1405,7 @@ event_generator,9867,98,18,16,17,0,0,"@098/train_warp_3.txt"
 event_generator,9868,98,18,23,17,0,0,"@098/train_warp_4.txt"
 event_generator,9904,99,28,28,17,0,0,"@099/on_train_2.txt"
 event_generator,9906,99,17,27,17,0,0,"@099/train_gimmick_c01.txt"
-event_generator,9908,99,0,0,17,0,0,"@099/train_graveyard_2.txt"
+event_generator,9908,99,29,22,17,0,0,"@099/train_graveyard_2.txt"
 npc2,9910,99,23,15,17,0,0,""
 npc2,9911,99,23,16,17,0,0,""
 npc2,9912,99,23,17,17,0,0,""
@@ -1426,8 +1425,7 @@ treasure_item,9930,99,24,40,2,1,0,1000
 treasure_item,9931,99,20,36,2,1,0,1000
 treasure_item,9932,99,13,34,2,1,0,1003
 treasure_item,9933,99,31,19,2,1,0,1001
-event_generator,9934,99,23,32,17,0,0,"@099/train_graveyard_5.txt"
-event_generator,9935,99,24,32,17,0,0,"@099/train_graveyard_6.txt"
+event_generator,9934,99,23,16,17,0,0,"@099/train_graveyard_2.txt"
 event_generator,9938,99,23,15,17,0,0,"@099/train_graveyard_3.txt"
 event_generator,9939,99,24,15,17,0,0,"@099/train_graveyard_4.txt"
 map_obj,9940,99,23,25,46,0,0,0
