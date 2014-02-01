@@ -1,7 +1,6 @@
 wait_target_talk 6921
 chg_type 6921 npc_event
 chg_speed 6921 normal
-set_layer 6940 front
 chg_npc_dir 6921 right
 sleep 24
 chg_npc_dir 6921 up
@@ -88,7 +87,6 @@ set_npc_pos 6921 69 36 17
 sleep 72
 set_npc_pos 6921 69 15 18
 set_layer 6921 front
-set_layer 6940 back
 jump_npc 6921 same 1
 sleep 32
 jump_npc 6921 same 1
@@ -420,7 +418,6 @@ sleep 32
 chg_char_dir up
 draw_char on
 kill 6920
-kill 6940
 create event_generator 6801 68 12 8 17 0 0 @068/rokubangai2.txt
 kill_through_range 6960 6963
 del_party_mem 3
