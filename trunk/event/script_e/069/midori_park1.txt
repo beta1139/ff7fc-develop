@@ -31,15 +31,14 @@ set_talk_npc 6921
 msg エアリス\n「いや～ん　かえれない～！！\n　っていったらどうするの？\n\n#2\n　　いえまでおくる\n　　7ばんがいまでいっしょに\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
+step_npc 6921 1
+msg エアリス\n「それってなんだかおかしくない？
+chg_npc_dir 6920 down
+sleep 32
 chg_npc_dir 6921 up
 chg_npc_img 6921 15
 step_npc 6921 3
-sleep 16
-msg エアリス\n「それってなんだかおかしくない？
-chg_npc_dir 6920 down
-sleep 24
-step_npc 6921 2
-sleep 32
+sleep 56
 chg_npc_dir 6920 right
 chg_npc_img 6920 97
 step_npc 6920 3
@@ -53,9 +52,15 @@ chg_npc_img 6920 0
 chg_npc_dir 6920 down
 fi
 if_flag 3 1
-jump_npc 6921 same 1
+add_likability 3 100
+chg_npc_dir 6921 up
+chg_npc_img 6921 15
+step_npc 6921 4
+sleep 16
 msg エアリス\n「それもいいかもね\n　でも　クラウドこまらない？
 sleep 16
+chg_npc_img 6921 3
+chg_npc_dir 6921 left
 step_npc 6920 1
 msg 『なにが？
 sleep 16
@@ -88,9 +93,9 @@ move_npc 6921 left 3
 sleep 96
 move_npc 6921 up 3
 sleep 96
+reset_talk_flag 6921
 chg_npc_dir 6921 up
 chg_speed 6921 not_move
 chg_type 6921 npc2
 set_inactive_msg 6921
 create event_generator 6901 69 0 0 17 0 0 @069/midori_park2.txt
-create map_obj 6940 69 15 18 56 0 0 

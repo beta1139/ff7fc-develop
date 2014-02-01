@@ -32,6 +32,7 @@ set_key_valid start
 step_npc 6620 1
 msg 『かのじょ？\n\n\n\n#2\n　　そんなんじゃない！\n　　そんなところだ\n\n\n[[]][[]]
 if_flag 3 0
+add_likability 3 100
 loop 2
 chg_npc_dir 6620 right
 sleep 6
@@ -55,6 +56,7 @@ chg_npc_dir 6622 down
 sleep 16
 fi
 if_flag 3 1
+sub_likability 3 500
 step_npc 6620 1
 sleep 48
 step_npc 6622 1
