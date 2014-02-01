@@ -50,7 +50,7 @@ id,type,bgm,battle_back,monster_party_id
 48,1,through,20,218/220/222/223
 49,1,1-12-Flowers_Blooming_in_the_Church.ogg,13,188/189/190/191
 50,1,1-12-Flowers_Blooming_in_the_Church.ogg,13,188/189/190/191
-51,0,1-13-Turk's_Theme.ogg,13,188/189/190/191
+51,0,1-13-Turk's_Theme.ogg,13,5/6
 52,0,1-13-Turk's_Theme.ogg,13,188/189/190/191
 53,1,1-14-Underneath_the_Rotting_Pizza.ogg,4,188/189/190/191
 54,1,1-12-Flowers_Blooming_in_the_Church.ogg,4,188/189/190/191
@@ -95,7 +95,7 @@ id,type,bgm,battle_back,monster_party_id
 93,1,1-18-Don_of_the_Slums.ogg,4,188/189/190/191
 94,1,1-18-Don_of_the_Slums.ogg,4,188/189/190/191
 95,1,1-18-Don_of_the_Slums.ogg,4,188/189/190/191
-96,0,1-08-Lurking_in_the_Darkness.ogg,25,245/246/247/248
+96,1,1-08-Lurking_in_the_Darkness.ogg,25,245/246/247/248
 97,0,1-08-Lurking_in_the_Darkness.ogg,25,245/246/247/248
 98,0,1-04-Anxious_Heart.ogg,4,251/252/253/254
 99,0,through,4,251/252/253/254
