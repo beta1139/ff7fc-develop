@@ -37,7 +37,7 @@ chg_npc_dir 561 up
 chg_npc_dir 562 up
 chg_speed 561 not_move
 chg_speed 562 not_move
-msg3 -1 ティファ\n「しっぱいね　もういちど
+msg3 -1 ジェシー\n「しっぱいね　もういちど
 if_flag 10 0
 sleep 96
 erase_msg3
