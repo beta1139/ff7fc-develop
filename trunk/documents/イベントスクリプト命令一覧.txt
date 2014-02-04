@@ -507,6 +507,9 @@ play_event_bgm (path)
   pathで指定したBGMの再生を開始
   pathには./sound/bgm/の部分は不要
 
+play_map_bgm (idx)
+  指定したidのマップのBGMの再生を開始
+
 stop_se
   SEの再生を停止
 
