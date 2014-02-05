@@ -1,0 +1,77 @@
+set_flag 20 1
+if_flag 10 1
+if_flag 13 1
+chg_speed 5102 fast
+step_npc 5102 3
+set_talk_npc 5102
+msg 「こだいしゅ！\n　つかまえたぞ！
+reset_talk_npc
+fi
+fi
+if_flag 10 3
+chg_speed 5102 fast
+step_npc 5102 3
+set_flag 13 1
+set_talk_npc 5102
+msg 「こだいしゅ！\n　つかまえたぞ！
+reset_talk_npc
+fi
+encount 191
+sleep 64
+kill 5102
+if_flag 10 1
+if_flag 12 0
+create treasure_box3 5121 51 17 43 2 0 0 1000
+set_layer 5121 front
+warp 51 17 44 up
+fi
+if_flag 12 1
+create treasure_box3 5121 51 17 44 2 0 0 1000
+set_layer 5121 front
+warp 51 17 45 up
+fi
+fi
+if_flag 10 3
+create treasure_box3 5121 51 17 32 2 0 0 1000
+warp 51 17 31 down
+fi
+if_flag 10 1
+create event_generator 5166 51 20 37 17 0 0 @051/church_backroom3.txt
+fi
+wait_encount_end
+chg_event_move_char_speed normal
+if_flag 10 1
+play_se jump.wav
+chg_speed 5103 normal
+chg_speed 5131 normal
+jump_npc 5103 down 3
+jump_npc 5131 up 1
+jump_char up 1
+sleep 16
+play_se landing.wav
+step_npc 5131 1
+sleep 16
+move_char up 1
+move_npc 5131 up 1
+sleep 16
+move_npc 5103 down 1
+chg_char_dir down
+chg_npc_dir 5131 down
+step_npc 5131 2
+sleep 16
+chg_speed 5103 not_move
+sleep 16
+fi
+if_flag 10 3
+step_char 2
+sleep 32
+fi
+if_flag 13 0
+msg エアリス\n「ふぅ
+fi
+if_flag 13 1
+msg エアリス\n「ふぅ おどろいた
+fi
+kill_through 5131
+draw_char on
+set_flag 20 0

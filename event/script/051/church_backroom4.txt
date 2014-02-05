@@ -1,0 +1,140 @@
+wait_same_pos
+set_flag 10 3
+create event_generator 5168 51 20 20 17 0 0 @051/church_backroom5.txt
+set_layer 5168 front
+chg_speed 5103 normal
+jump_npc 5103 same 2
+chg_char_dir up
+chg_event_move_char_speed fast
+sleep 16
+step_char 2
+sleep 16
+chg_speed 5103 fast
+step_npc 5103 4
+create npc_event 5131 51 13 37 3 0 3 none
+set_layer 5131 front
+draw_char off
+set_active_msg 5131
+step_npc 5131 4
+msg エアリス\n「クラウド　たすけて！
+chg_npc_dir 5102 down
+chg_speed 5102 normal
+chg_speed 5103 normal
+move_npc 5103 down 1
+move_char up 2
+sleep 16
+msg 『エアリス！\n\n\n\n#3\n　　しばらくまっていろ！\n　　たたかえ！\n　　にげるんだ！\n\n[[]][[]][[]]
+if_flag 3 0
+chg_event_move_char_speed fast
+set_flag 12 1
+set_flag 13 0
+chg_speed 5103 slow
+set_active_msg 5103
+move_npc 5103 down 1
+sleep 16
+fadeout
+sleep 16
+del_party_mem 3
+add_party_mem 0
+if_flag 11 0
+warp 51 12 20 down
+fi
+if_flag 11 1
+warp 51 10 12 down
+fi
+if_flag 11 2
+warp 51 12 12 down
+fi
+if_flag 11 3
+warp 51 12 12 down
+fi
+if_flag 11 4
+warp 51 14 12 down
+fi
+if_flag 11 5
+warp 51 11 15 down
+set_char_layer front
+fi
+if_flag 11 6
+warp 51 13 15 down
+set_char_layer front
+fi
+if_flag 11 7
+warp 51 17 9 down
+fi
+if_flag 11 8
+warp 51 19 9 down
+fi
+if_flag 11 9
+warp 51 16 12 down
+set_char_layer front
+fi
+if_flag 11 10
+warp 51 18 12 down
+fi
+if_flag 11 11
+warp 51 18 15 down
+set_char_layer front
+fi
+if_flag 11 12
+warp 51 20 15 down
+fi
+sleep 8
+chg_char_dir down
+draw_char on
+kill_through 5130
+chg_event_move_char_speed normal
+chg_speed 5103 not_move
+fadein
+fi
+if_flag 3 1
+sub_likability 3 100
+set_flag 12 1
+set_flag 13 0
+move_char down 2
+sleep 16
+chg_speed 5131 fast
+step_npc 5131 1
+sleep 32
+step_npc 5131 2
+msg エアリス\n「わ　わかったわ
+play_se jump.wav
+chg_speed 5103 normal
+jump_npc 5103 down 2
+sleep 16
+step_npc 5131 2
+sleep 16
+chg_speed 5103 not_move
+play_se landing.wav
+create event_generator 5185 51 0 0 17 0 0 @051/church_encount3.txt
+fi
+if_flag 3 2
+set_flag 12 0
+kill_through 5130
+move_char down 2
+sleep 16
+chg_speed 5131 fast
+step_npc 5131 1
+sleep 32
+create npc_event 5130 51 12 20 0 1 0 none
+step_npc 5131 2
+msg エアリス\n「わ　わかったわ
+chg_npc_dir 5131 right
+sleep 16
+draw_char on
+kill 5131
+move_char right 6
+play_se jump.wav
+chg_speed 5103 normal
+jump_npc 5103 down 2
+sleep 32
+play_se landing.wav
+chg_speed 5103 not_move
+sleep 16
+chg_char_dir up
+create event_generator 5182 51 15 37 17 0 0 @051/create_encount3.txt
+set_layer 5182 front
+fi
+chg_speed 5102 not_move
+chg_npc_dir 5102 up
+chg_event_move_char_speed normal

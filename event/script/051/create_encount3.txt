@@ -1,0 +1,26 @@
+wait_same_pos
+chg_event_move_char_speed fast
+chg_speed 5103 fast
+if_flag 10 2
+chg_char_dir down
+jump_char same 1
+sleep 16
+reset_slide_walk_char_flag
+move_char up 2
+move_npc 5103 up 3
+sleep 16
+chg_char_dir down
+sleep 8
+fi
+if_flag 10 3
+set_active_msg 5103
+move_npc 5103 down 1
+sleep 8
+jump_char same 1
+move_npc 5103 right 1
+sleep 8
+jump_npc 5103 same 1
+sleep 8
+fi
+create event_generator 5185 51 0 0 17 0 0 @051/church_encount3.txt
+chg_event_move_char_speed normal

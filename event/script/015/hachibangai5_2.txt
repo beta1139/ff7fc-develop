@@ -1,5 +1,6 @@
 wait_same_pos
 set_flag 13 0
+set_flag 20 1
 kill_through_range 1500 1501
 kill_through_range 1300 1399
 kill_through_range 1413 1415
@@ -147,10 +148,8 @@ move_npc 1556 left 4
 move_npc 1557 left 4
 play_se gun_shot.ogg
 sleep 16
-if_flag 13 1
 create npc_event 1591 15 17 10 31 2 2 none
 move_npc 1591 left 3
-fi
 create npc_event 1595 15 10 10 80 3 0 none
 sleep 8
 kill 1595
@@ -221,9 +220,6 @@ create npc_event 1557 15 19 11 31 2 2 none
 msg3 -1 「こっちだ！！
 move_npc 1551 right 1
 move_npc 1555 right 5
-if_flag 13 0
-move_npc 1556 left 6
-fi
 if_flag 13 1
 move_npc 1556 left 5
 fi
@@ -232,10 +228,6 @@ move_npc 1556 left 6
 fi
 move_npc 1557 left 6
 sleep 16
-if_flag 13 0
-create npc_event 1591 15 19 10 141 2 2 none
-move_npc 1591 left 5
-fi
 if_flag 13 1
 move_npc 1591 left 1
 fi
@@ -252,10 +244,6 @@ sleep 16
 chg_char_dir right
 sleep 32
 erase_msg3
-if_flag 13 0
-chg_npc_img 1556 31
-chg_npc_img 1591 31
-fi
 if_flag 13 1
 chg_npc_img 1556 31
 chg_npc_img 1591 31
@@ -281,12 +269,6 @@ set_npc_pos 1556 15 13 10
 set_npc_pos 1591 15 14 10
 fi
 sleep 16
-if_flag 13 0
-chg_npc_img 1556 141
-chg_npc_img 1591 141
-step_npc 1556 1
-step_npc 1591 1
-fi
 if_flag 13 1
 chg_npc_img 1556 141
 chg_npc_img 1591 141
@@ -297,6 +279,7 @@ if_flag 13 2
 chg_npc_img 1556 141
 step_npc 1556 1
 fi
+play_se fingersnap.ogg
 sleep 48
 chg_char_dir left
 create npc_event 1580 15 11 11 0 2 2 none
@@ -307,9 +290,10 @@ chg_npc_img 1551 141
 chg_npc_img 1554 141
 chg_npc_img 1555 141
 step_npc 1550 1
-step_npc 1550 1
+step_npc 1551 1
 step_npc 1554 1
 step_npc 1555 1
+play_se fingersnap.ogg
 if_flag 13 2
 chg_npc_img 1590 141
 step_npc 1590 1
@@ -326,15 +310,17 @@ sleep 24
 play_se_loop train_move_quiet.ogg
 play_event_bgm Ex-05-Anxious_Heart_short.ogg
 step_npc 1580 2
-msg 『ざんねんだが　おまえらの　あいてを\n　してるほど　ヒマじゃないんでな
+msg3 -1 『ざんねんだが　おまえらの　あいてを\n　してるほど　ヒマじゃないんでな
+sleep 112
+chg_npc_img 1557 141
+step_npc 1557 1
+sleep 16
+erase_msg3
 chg_speed 1550 fast
 chg_speed 1551 fast
 chg_speed 1554 fast
 chg_speed 1555 fast
 chg_speed 1556 fast
-if_flag 13 0
-move_npc 1591 fast
-fi
 if_flag 13 1
 chg_speed 1591 fast
 fi
@@ -343,7 +329,9 @@ chg_speed 1590 fast
 fi
 step_npc 1557 2
 sleep 16
-msg へいし\n「たわごとを……
+msg3 -1 へいし\n「たわごとを……
+sleep 64
+erase_msg3
 chg_speed 1557 fast
 step_npc 1557 4
 sleep 8
@@ -353,11 +341,6 @@ chg_npc_img 1550 31
 chg_npc_img 1551 31
 chg_npc_img 1554 31
 chg_npc_img 1555 31
-if_flag 13 0
-chg_npc_img 1556 31
-chg_npc_img 1591 31
-step_npc 1591 4
-fi
 if_flag 13 1
 chg_npc_img 1556 31
 chg_npc_img 1591 31
@@ -391,21 +374,14 @@ move_npc 1554 right 1
 move_npc 1555 right 1
 move_npc 1556 left 1
 move_npc 1557 left 1
-if_flag 13 0
-chg_speed 1591 normal
-move_npc 1591 left 1
-fi
 if_flag 13 1
-move_npc 1591 down
+move_npc 1591 down 1
+sleep 8
+move_npc 1591 left 1
 fi
 if_flag 13 2
 move_npc 1590 down 1
-fi
 sleep 8
-if_flag 13 1
-move_npc 1591 left 1
-fi
-if_flag 13 2
 move_npc 1590 right 1
 fi
 chg_speed 1580 normal
@@ -431,9 +407,6 @@ chg_npc_dir 1556 down
 chg_npc_dir 1557 down
 chg_npc_dir 1580 right
 chg_npc_img 1580 105
-if_flag 13 0
-chg_npc_dir 1591 down
-fi
 if_flag 13 1
 chg_npc_dir 1591 down
 fi
@@ -473,7 +446,7 @@ create npc_event 1563 15 11 14 112 2 2 none
 chg_npc_y_offset 1563 0
 slide_walk_npc 1563 down 8
 sleep 8
-slide_npc 1580 down 8
+slide_npc 1580 down 6
 sleep 8
 create npc_event 1564 15 11 14 112 1 2 none
 chg_npc_y_offset 1564 0
@@ -490,9 +463,6 @@ jump_npc 1554 same 2
 jump_npc 1555 same 2
 jump_npc 1556 same 2
 jump_npc 1557 same 2
-if_flag 13 0
-jump_npc 1591 same 2
-fi
 if_flag 13 1
 jump_npc 1591 same 2
 fi
@@ -523,7 +493,10 @@ kill 1561
 create npc_event 1569 15 11 14 112 2 2 none
 chg_npc_y_offset 1569 0
 slide_walk_npc 1569 down 8
-sleep 16
+chg_npc_img 1580 143
+sleep 8
+slide_walk_npc 1580 down 2
+sleep 8
 jump_npc 1510 same 2
 jump_npc 1512 same 1
 jump_npc 1513 same 2
@@ -531,7 +504,6 @@ kill 1562
 create npc_event 1570 15 11 14 112 1 2 none
 chg_npc_y_offset 1570 0
 slide_walk_npc 1570 down 8
-chg_npc_img 1580 97
 sleep 16
 create npc_event 1571 15 11 14 112 2 2 none
 chg_npc_y_offset 1571 0
@@ -549,7 +521,7 @@ jump_npc 1510 same 2
 chg_npc_dir 1511 left
 kill 1564
 sleep 16
-create npc_event 1573 15 11 14 113 2 2 none
+create npc_event 1573 15 11 14 112 2 2 none
 chg_npc_y_offset 1573 0
 slide_walk_npc 1573 down 8
 jump_npc 1512 same 1
@@ -558,7 +530,7 @@ move_npc 1517 down 1
 chg_npc_dir 1511 right
 kill 1565
 sleep 16
-create npc_event 1574 15 11 14 113 1 2 none
+create npc_event 1574 15 11 14 112 1 2 none
 chg_npc_y_offset 1574 0
 slide_walk_npc 1574 down 8
 jump_npc 1513 same 2
@@ -587,11 +559,48 @@ kill 1572
 sleep 16
 kill 1573
 fadeout
-sleep 128
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid start
+sleep 32
 kill_through_range 1200 1599
-stop_bgm
-stop_se
-warp 16 9 5 down
-sleep 60
+warp 708 7 14 down
+draw_image 70810 0 -112 0 0 256 720 0 event/hachibangai_train.bmp
+create npc_event 70820 708 7 20 142 3 3 none
+create npc_event 70821 708 7 19 142 0 3 none
+create npc_event 70822 708 7 18 142 2 3 none
+create npc_event 70823 708 7 17 142 1 3 none
+create npc_event 70824 708 7 16 142 2 3 none
+create npc_event 70825 708 7 15 142 1 3 none
+create npc_event 70826 708 7 14 142 2 3 none
+create npc_event 70827 708 7 13 142 1 3 none
+create npc_event 70828 708 7 12 142 2 3 none
+create npc_event 70829 708 7 11 142 1 3 none
+create npc_event 70830 708 7 10 142 2 3 none
+create npc_event 70831 708 7 9 142 1 3 none
+create npc_event 70832 708 7 8 142 2 3 none
+create npc_event 70833 708 7 7 142 1 3 none
+create npc_event 70834 708 7 10 143 1 3 none
+chg_npc_y_offset 70820 0
+chg_npc_y_offset 70821 0
+chg_npc_y_offset 70822 0
+chg_npc_y_offset 70823 0
+chg_npc_y_offset 70824 0
+chg_npc_y_offset 70825 0
+chg_npc_y_offset 70826 0
+chg_npc_y_offset 70827 0
+chg_npc_y_offset 70828 0
+chg_npc_y_offset 70829 0
+chg_npc_y_offset 70830 0
+chg_npc_y_offset 70831 0
+chg_npc_y_offset 70832 0
+chg_npc_y_offset 70833 0
+sleep 32
+play_se_loop train_move_quiet.ogg
+create event_generator 70800 708 7 14 17 0 0 @708/hachibangai_train1.txt
+create event_generator 70801 708 7 14 17 0 0 @708/hachibangai_train2.txt
 set_flag 13 0
+set_flag 20 0
 fadein

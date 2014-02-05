@@ -1,0 +1,346 @@
+wait_same_pos
+set_flag 13 0
+chg_char_state_move
+sleep 32
+chg_event_move_char_speed slow
+move_char right 5
+sleep 144
+draw_image 70811 96 0 0 0 176 160 1 event/title_sequence.bmp
+set_image_alpha 70811 0
+loop 16
+inc_image_alpha 70811
+sleep 1
+pool
+set_text 3                FINAL FANTASY
+set_text 4                    VII FC
+set_text 6 　 　          FF7 Wo Famicom Ni
+set_text 7 　     　         Ishokusaseta
+set_text 8 　     　         Shokunin Wa
+set_text 9 　     　        "KAMI" Nintei
+set_text_col 6 0 29 3
+set_text_col 7 0 27 3
+set_text_col 8 0 26 3
+set_text_col 9 0 20 3
+set_text_col 9 22 27 3
+loop 8
+sleep 1
+inc_image_alpha 70811
+set_text_alpha 3 25
+sleep 1
+inc_image_alpha 70811
+set_text_alpha 3 0
+pool
+loop 8
+sleep 1
+inc_image_alpha 70811
+set_text_alpha 3 50
+sleep 1
+inc_image_alpha 70811
+set_text_alpha 3 25
+pool
+loop 8
+sleep 1
+inc_image_alpha 70811
+set_text_alpha 3 75
+sleep 1
+inc_image_alpha 70811
+set_text_alpha 3 50
+pool
+loop 8
+sleep 1
+inc_image_alpha 70811
+set_text_alpha 3 100
+sleep 1
+inc_image_alpha 70811
+set_text_alpha 3 75
+pool
+loop 8
+sleep 1
+set_text_alpha 4 25
+sleep 1
+set_text_alpha 4 0
+pool
+loop 8
+sleep 1
+set_text_alpha 4 50
+sleep 1
+set_text_alpha 4 25
+pool
+loop 8
+sleep 1
+set_text_alpha 4 75
+sleep 1
+set_text_alpha 4 50
+pool
+loop 8
+sleep 1
+set_text_alpha 4 100
+sleep 1
+set_text_alpha 4 75
+pool
+sleep 64
+loop 8
+sleep 1
+set_text_alpha 6 25
+sleep 1
+set_text_alpha 6 0
+pool
+loop 8
+sleep 1
+set_text_alpha 6 50
+sleep 1
+set_text_alpha 6 25
+pool
+loop 8
+sleep 1
+set_text_alpha 6 75
+sleep 1
+set_text_alpha 6 50
+pool
+loop 8
+sleep 1
+set_text_alpha 6 100
+sleep 1
+set_text_alpha 6 75
+pool
+loop 8
+sleep 1
+set_text_alpha 7 25
+sleep 1
+set_text_alpha 7 0
+pool
+loop 8
+sleep 1
+set_text_alpha 7 50
+sleep 1
+set_text_alpha 7 25
+pool
+loop 8
+sleep 1
+set_text_alpha 7 75
+sleep 1
+set_text_alpha 7 50
+pool
+loop 8
+sleep 1
+set_text_alpha 7 100
+sleep 1
+set_text_alpha 7 75
+pool
+loop 8
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+loop 8
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+loop 8
+sleep 1
+set_text_alpha 8 75
+sleep 1
+set_text_alpha 8 50
+pool
+loop 8
+sleep 1
+set_text_alpha 8 100
+sleep 1
+set_text_alpha 8 75
+pool
+loop 8
+sleep 1
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 9 0
+pool
+loop 8
+sleep 1
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 9 25
+pool
+loop 8
+sleep 1
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 9 50
+pool
+loop 8
+sleep 1
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 9 75
+pool
+sleep 64
+loop 8
+sleep 1
+set_text_alpha 6 50
+set_text_alpha 7 50
+set_text_alpha 8 50
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+set_text_alpha 9 25
+pool
+loop 8
+sleep 1
+set_text_alpha 6 0
+set_text_alpha 7 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+sleep 1
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+set_text_alpha 9 25
+pool
+loop 8
+sleep 1
+set_text_alpha 6 50
+set_text_alpha 7 50
+set_text_alpha 8 50
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 6 75
+set_text_alpha 7 75
+set_text_alpha 8 75
+set_text_alpha 9 75
+pool
+sleep 64
+loop 16
+set_text_alpha 6 50
+set_text_alpha 7 50
+set_text_alpha 8 50
+set_text_alpha 9 50
+sleep 1
+pool
+loop 16
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+set_text_alpha 9 25
+sleep 1
+pool
+loop 16
+set_text_alpha 6 0
+set_text_alpha 7 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+sleep 1
+pool
+set_text 6 　 　          We are looking for
+set_text 7 　 　             MAP CREATOR
+set_text 8 　 　             NSF CREATOR
+set_text 9 　 　             GAME TESTER
+set_text_col 6 0 29 0
+set_text_col 7 0 27 2
+set_text_col 8 0 26 2
+set_text_col 9 0 27 2
+loop 8
+sleep 1
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 6 0
+set_text_alpha 7 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+pool
+loop 8
+sleep 1
+set_text_alpha 6 50
+set_text_alpha 7 50
+set_text_alpha 8 50
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+set_text_alpha 9 25
+pool
+loop 8
+sleep 1
+set_text_alpha 6 75
+set_text_alpha 7 75
+set_text_alpha 8 75
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 6 50
+set_text_alpha 7 50
+set_text_alpha 8 50
+set_text_alpha 9 50
+pool
+loop 8
+sleep 1
+set_text_alpha 6 100
+set_text_alpha 7 100
+set_text_alpha 8 100
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 6 75
+set_text_alpha 7 75
+set_text_alpha 8 75
+set_text_alpha 9 75
+pool
+sleep 144
+set_flag 13 1
+slide_walk_npc 70820 down 12
+slide_walk_npc 70821 down 12
+slide_walk_npc 70822 down 12
+slide_walk_npc 70823 down 12
+slide_walk_npc 70824 down 12
+slide_walk_npc 70825 down 12
+slide_walk_npc 70826 down 12
+slide_walk_npc 70827 down 12
+slide_walk_npc 70828 down 12
+slide_walk_npc 70829 down 12
+slide_walk_npc 70830 down 12
+slide_walk_npc 70831 down 12
+slide_walk_npc 70832 down 12
+slide_walk_npc 70833 down 12
+slide_walk_npc 70834 down 12
+sleep 80
+fadeout
+sleep 16
+kill 70801
+sleep 16
+erase_image 70810
+erase_image 70811
+kill_through_range 70813 70899
+set_text_col 6 0 29 0
+set_text_col 7 0 27 0
+set_text_col 8 0 26 0
+set_text_col 9 0 20 0
+set_text_col 9 22 27 0
+clear_text 6
+clear_text 8
+clear_text 9
+set_text_alpha 3 0
+set_text_alpha 4 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+sleep 8
+chg_event_move_char_speed normal
+chg_char_state_event
+sleep 16
+set_key_valid up
+set_key_valid left
+set_key_valid down
+set_key_valid right
+set_key_valid start
+stop_se
+stop_bgm
+warp 16 9 5 down
+sleep 48
+set_flag 13 0
+fadein

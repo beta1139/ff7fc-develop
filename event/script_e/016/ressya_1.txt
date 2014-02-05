@@ -1,6 +1,10 @@
 wait_same_pos
 draw_char off
-step_npc 1650 3
+set_active_msg 1651
+set_active_msg 1652
+set_active_msg 1653
+set_active_msg 1654
+step_npc 1654 3
 sleep 16
 msg ウェッジ\n「クラウドさん　こなかったっすね
 sleep 48
@@ -10,9 +14,8 @@ msg ビッグス\n「クラウド……\n　やられちまったのかな
 sleep 16
 chg_npc_dir 1651 left
 chg_npc_img 1651 98
-step_npc 1651 2
-sleep 16
-msg バレット\n「ケッ……！！\n　あのやろうが　かねも　もらわないで\n　いなくなるわけ　ないだろ！！
+step_npc 1651 3
+msg バレット\n「ケッ……！！\n　あのやろうが　かねも　もらわないで\n　いなくなるわけないだろ！！
 sleep 48
 chg_npc_dir 1651 down
 chg_npc_img 1651 1
@@ -20,23 +23,60 @@ chg_speed 1653 slow
 step_npc 1653 1
 sleep 16
 msg ジェシー\n「クラウド……
+sleep 40
+create npc_event 1665 16 3 0 120 2 3 none
+slide_npc 1665 down 1
+sleep 8
+chg_speed 1665 normal
+slide_walk_npc 1665 left 2
+play_se stomp.ogg
+sleep 32
+chg_npc_dir 1651 left
+stop_se
+sleep 16
+chg_npc_dir 1652 left
+sleep 16
+kill 1665
+chg_npc_dir 1654 down
+chg_npc_dir 1653 up
 sleep 48
+chg_npc_dir 1651 down
+sleep 16
+chg_npc_dir 1652 up
+sleep 16
+chg_npc_dir 1654 up
+chg_npc_dir 1653 left
+sleep 64
 chg_speed 1653 normal
 step_npc 1652 2
 sleep 16
-msg ビッグス\n「なあ　クラウドってさ……\n　さいごまで　おれたち……　アバランチのために\n　たたかって　くれんのか？
+msg ビッグス\n「なあ　クラウドってさ……\n　さいごまで　おれたち……　アバランチのために\n　たたかってくれんのか？
 sleep 16
 chg_npc_dir 1651 left
 chg_npc_img 1651 98
 step_npc 1651 2
 sleep 16
-msg バレット\n「さあな……　しらねえよ\n\n\n　チッ！！\n　おまえらが　もうすこし　たよりになりゃよ……\n　あんな　やろう　やとわないでも　いいんだがな…
+msg バレット\n「さあな……　しらねえよ
+chg_npc_img 1651 117
+chg_npc_dir 1651 down
+chg_speed 1651 normal
+sleep 8
+chg_npc_dir 1651 up
+play_se attack_tifa.ogg
+sleep 8
+chg_npc_dir 1651 left
+chg_npc_img 1651 98
+msg バレット\n「チッ！！\n　おまえらが　もうすこし　たよりになりゃよ……\n　あんなやろう　やとわないでもいいんだがな…
+chg_npc_dir 1652 left
+sleep 64
+jump_npc 1654 same 1
+msg3 -1 ウェッジ\n「あ　バレットさん\n　おれたちの　きゅうりょう……
 chg_npc_dir 1651 down
 chg_npc_img 1651 1
-sleep 64
-step_npc 1650 1
-msg ウェッジ\n「あ　バレットさん\n　おれたちの　きゅうりょう……
-sleep 8
+sleep 16
+step_npc 1654 2
+wait_key_push a
+erase_msg3
 chg_npc_dir 1651 left
 chg_npc_img 1651 98
 sleep 16
@@ -47,115 +87,216 @@ step_npc 1651 1
 sleep 16
 chg_npc_img 1651 98
 sleep 24
-step_npc 1650 1
+step_npc 1654 1
+chg_npc_dir 1654 right
 msg ウェッジ\n「や　なんでもないっす……
-chg_npc_dir 1650 right
 sleep 64
-chg_npc_dir 1652 left
 chg_npc_dir 1653 left
 sleep 32
-msg ビッグス「ふう……\nジェシー「ふう……\nウェッジ「ふう……
-sleep 112
+step_npc 1654 1
+step_npc 1652 1
+step_npc 1653 1
+msg アバランチのめんめん\n「ふっ～～……
+sleep 72
+create npc_event 1665 16 12 0 120 0 3 none
+slide_npc 1665 down 1
+sleep 8
+slide_walk_npc 1665 right 8
+play_se stomp.ogg
+sleep 32
+chg_npc_img 1651 1
+chg_npc_dir 1651 right
+stop_se
+sleep 16
+chg_npc_dir 1651 up
+chg_npc_dir 1652 left
+sleep 16
+chg_npc_dir 1654 down
+chg_npc_dir 1653 up
+sleep 48
+chg_npc_dir 1651 down
+sleep 16
+chg_npc_dir 1652 up
+chg_npc_dir 1654 up
+chg_npc_dir 1653 right
+sleep 80
+play_se stomp.ogg
+set_npc_pos 1665 16 19 1
+chg_speed 1665 normal
+sleep 16
+stop_se
+sleep 8
+slide_walk_npc 1665 left 2
+play_se stomp.ogg
+sleep 8
+chg_npc_dir 1651 right
+chg_npc_dir 1653 down
+sleep 8
+stop_se
+sleep 16
+play_se stomp.ogg
+chg_npc_dir 1651 up
+chg_npc_dir 1652 down
+sleep 8
+chg_npc_dir 1665 up
+sleep 8
+stop_se
+sleep 16
+play_se jump.wav
+jump_npc 1665 same 1
+sleep 8
+set_layer 1665 back
+sleep 8
+chg_npc_dir 1652 up
+chg_npc_img 1665 0
+chg_npc_dir 1665 down
+chg_npc_dir 1654 down
+chg_npc_dir 1653 up
+sleep 24
+kill 1665
+sleep 64
 open_door 1601
-create npc_event 1654 16 17 3 0 0 2 none
+create npc_event 1650 16 17 3 0 0 2 none
 play_se door_open_hard.wav
 play_event_bgm Ex-02-Train_Noise_Open.ogg
-chg_speed 1654 fast
-move_npc 1654 down 2
+chg_speed 1650 fast
+move_npc 1650 down 2
 chg_npc_img 1651 1
-chg_npc_dir 1650 right
+chg_npc_dir 1654 right
 chg_npc_dir 1651 right
 chg_npc_dir 1652 right
 chg_npc_dir 1653 right
 sleep 2
-chg_npc_img 1654 105
+chg_npc_img 1650 105
 sleep 2
-chg_npc_img 1654 0
+chg_npc_img 1650 0
 sleep 2
-chg_npc_img 1654 105
+chg_npc_img 1650 105
 sleep 2
-chg_npc_img 1654 0
+chg_npc_img 1650 0
 sleep 8
-chg_npc_dir 1654 left
+chg_npc_dir 1650 left
 sleep 16
-chg_speed 1650 not_move
+chg_speed 1654 not_move
 chg_speed 1652 not_move
 chg_speed 1653 not_move
-chg_speed 1654 normal
-move_npc 1654 left 2
-set_active_msg 1650
-set_active_msg 1652
-set_active_msg 1653
-sleep 32
-jump_npc 1650 same 2
+chg_speed 1650 normal
+move_npc 1650 left 2
+sleep 16
+jump_npc 1654 same 2
 jump_npc 1652 same 2
 jump_npc 1653 same 2
-msg ビッグス「クラウド！！\nジェシー「クラウド……\nウェッジ「クラウドさんっ！\n\n『やくそくの　じかんに　おくれたようだ
+msg3 -1 ビッグス「クラウド！！\nジェシー「クラウド……\nウェッジ「クラウドさんっ！
+sleep 32
+wait_key_push a
+erase_msg3
+sleep 16
+step_npc 1650 1
+msg 『やくそくのじかんに　おくれたようだ
+sleep 16
 jump_npc 1651 same 2
 sleep 16
-msg バレット\n「おい！　ちこくやろう！！\n　ずいぶん　はでな　おでまし　じゃねえか
-step_npc 1654 1
-msg 『そうでもない　ふつうだ
+msg3 -1 バレット\n「おい！　ちこくやろう！！\n　ずいぶん　はでな　おでましじゃねえか
+sleep 16
+chg_speed 1651 fast
+step_npc 1651 2
+wait_key_push a
+erase_msg3
+chg_npc_dir 1650 down
+chg_npc_img 1650 103
+sleep 16
+msg3 -1 『そうでもない　ふつうだ
+chg_npc_dir 1650 left
+sleep 48
+chg_npc_img 1650 0
+wait_key_push a
+erase_msg3
+chg_speed 1651 normal
 chg_npc_dir 1651 left
 chg_npc_img 1651 98
 step_npc 1651 4
 sleep 64
 chg_npc_dir 1651 right
 chg_npc_img 1651 1
-step_npc 1651 2
-msg バレット\n「ケッ！！\n　しんぱい　させやがって　かってな　やろうだ！
+step_npc 1651 3
+msg バレット\n「ケッ！！\n　しんぱいさせやがって　かってなやろうだ！
 sleep 16
-step_npc 1654 1
+set_active_msg 1650
+jump_npc 1650 same 1
 msg 『ほう……？\n　しんぱい　してくれたのか
+sleep 8
 step_npc 1651 2
-sleep 16
-msg バレット\n「なにっ！！　チッ……\n　ちこくの　ぶんは　ほうしゅうから ひく　からな
+msg バレット\n「なにっ！！　チッ……\n　ちこくのぶんは　ほうしゅうから ひくからな
 move_npc 1651 down 1
 sleep 16
 move_npc 1651 right 5
 sleep 80
-chg_speed 1650 normal
+chg_speed 1654 normal
 chg_npc_dir 1651 left
 jump_npc 1651 same 1
-set_active_msg 1650
-msg バレット\n「おい　おめえら！\n　ばしょ　かえるぞ　ついてこい！
+msg バレット\n「おい　おめえら！\n　ばしょかえるぞ　ついてこい！
 move_npc 1651 right 2
-move_npc 1650 up 1
+move_npc 1654 up 1
 sleep 16
-move_npc 1650 right 3
+move_npc 1654 right 3
 sleep 48
-chg_npc_dir 1650 up
-chg_npc_dir 1654 down
-msg ウェッジ\n「あ　クラウドさん！！\n　おつかれっす！
+chg_npc_dir 1654 up
+chg_npc_dir 1650 down
+jump_npc 1654 same 1
+msg3 -1 ウェッジ\n「あ　クラウドさん！！\n　おつかれっす！
+sleep 16
+step_npc 1654 2
+wait_key_push a
+erase_msg3
+sleep 16
 chg_speed 1652 normal
-move_npc 1650 right 3
+move_npc 1654 right 3
 move_npc 1652 up 1
 sleep 16
 move_npc 1652 right 7
-sleep 112
+chg_npc_dir 1650 left
+sleep 96
+chg_npc_dir 1650 down
+sleep 16
 chg_npc_dir 1652 up
-msg ビッグス\n「へへ……クラウド！\n　つぎの　さくせんも　がんばろうな
+step_npc 1652 2
+msg ビッグス\n「へへ……クラウド！\n　つぎのさくせんも　がんばろうな
+sleep 16
 chg_speed 1653 normal
 move_npc 1652 right 3
 move_npc 1653 down 1
 sleep 16
 move_npc 1653 right 8
+chg_npc_dir 1650 left
 sleep 16
-kill 1650
+kill 1654
 kill 1651
 sleep 16
 kill 1652
 move_char right 6
-sleep 96
+sleep 80
+chg_npc_dir 1650 down
+sleep 16
 chg_npc_dir 1653 up
-msg ジェシー\n「やだ！　クラウド！！\n　かお　まっくろ
-step_npc 1653 3
+sleep 16
+jump_npc 1653 same 1
+msg3 -1 ジェシー\n「やだ！　クラウド！！\n　かお　まっくろ
+sleep 16
+chg_speed 1653 fast
+step_npc 1653 2
+wait_key_push a
+erase_msg3
+sleep 16
+chg_speed 1653 normal
+step_npc 1653 4
 sleep 100
+jump_npc 1653 same 1
 msg ジェシー\n「はい　できあがり！
+sleep 16
 move_npc 1653 right 2
 sleep 32
 move_npc 1653 up 2
-chg_npc_dir 1654 right
+chg_npc_dir 1650 right
 sleep 32
 set_talk_npc 1653
 msg ジェシー\n「あぶないから　しめとくね
@@ -167,6 +308,7 @@ sleep 20
 move_npc 1653 down 1
 sleep 16
 chg_npc_dir 1653 left
+step_npc 1653 2
 msg ジェシー\n「ね　まこうろで　たすけてくれて\n　ありがとう！
 move_npc 1653 down 1
 sleep 16
@@ -175,4 +317,4 @@ sleep 32
 kill 1653
 chg_char_dir right
 draw_char on
-kill 1654
+kill 1650

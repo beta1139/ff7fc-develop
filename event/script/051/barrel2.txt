@@ -1,0 +1,122 @@
+set_eternal_event
+wait_target_talk 5141
+reset_talk_flag 5141
+msg 『タル』がある\n　これをおしてやれば……\n\n\n『タル』をおしますか？\n\n\n\n#2\n　　はい\n　　いいえ\n\n\n[[]][[]]
+backup_char_dir
+if_flag 3 0
+if_char_dir right
+create npc_event 5130 51 12 12 0 3 2 none
+set_flag 11 3
+fi
+if_char_dir left
+create npc_event 5130 51 14 12 0 2 2 none
+set_flag 11 4
+fi
+draw_char off
+step_npc 5130 2
+sleep 16
+chg_type 5141 npc_event
+chg_speed 5141 fast
+sleep 16
+chg_npc_dir 5130 down
+chg_event_move_char_speed fast
+set_layer 5141 front
+play_se barrel_falling_long.ogg
+if_flag 10 0
+move_char down 23
+move_npc 5141 down 23
+sleep 16
+set_layer 5141 back
+sleep 24
+set_layer 5141 front
+loop 3
+jump_npc 5101 same 1
+sleep 16
+jump_npc 5101 same 1
+sleep 32
+pool
+fi
+if_flag 10 1
+move_char down 23
+move_npc 5141 down 23
+sleep 16
+set_layer 5141 back
+sleep 24
+set_layer 5141 front
+loop 3
+jump_npc 5102 same 1
+sleep 16
+jump_npc 5102 same 1
+sleep 32
+pool
+fi
+if_flag 10 2
+move_char down 14
+move_npc 5141 down 24
+sleep 192
+fi
+if_flag 10 3
+move_char down 23
+move_npc 5141 down 23
+sleep 16
+set_layer 5141 back
+sleep 24
+set_layer 5141 front
+sleep 80
+jump_npc 5103 same 1
+sleep 4
+chg_npc_dir 5103 left
+sleep 4
+chg_npc_dir 5103 up
+sleep 4
+chg_npc_dir 5103 right
+sleep 4
+chg_npc_dir 5103 down
+jump_npc 5103 same 2
+sleep 48
+create event_generator 5177 51 0 0 17 0 0 @051/barrel_hit.txt
+end
+fi
+play_se barrel_hitting.ogg
+if_flag 10 0
+move_char down 9
+fi
+if_flag 10 1
+move_char down 9
+fi
+if_flag 10 2
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5141 17
+sleep 8
+set_npc_pos 5141 51 0 57
+create event_generator 5176 51 0 0 17 0 0 @051/barrel_miss.txt
+end
+fi
+loop 4
+chg_npc_img 5141 17
+sleep 8
+chg_npc_img 5141 139
+sleep 8
+pool
+chg_npc_img 5141 17
+sleep 8
+set_npc_pos 5141 51 0 57
+create event_generator 5176 51 0 0 17 0 0 @051/barrel_miss.txt
+fi
+if_flag 3 1
+fi

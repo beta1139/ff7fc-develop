@@ -1,5 +1,5 @@
 wait_same_pos
-play_event_bgm 1-13-Turk's_Theme.ogg
+play_map_bgm 51
 chg_type 4903 npc_event
 chg_speed 4903 normal
 create npc_event 4907 49 6 21 31 0 2 none
@@ -138,7 +138,6 @@ move_npc 4906 down 1
 sleep 8
 chg_speed 4906 fast
 kill 4906
-add_party_mem 3
 move_char up 3
 sleep 24
 chg_event_move_char_speed normal
@@ -242,13 +241,16 @@ jump_npc 4903 same 1
 sleep 40
 erase_msg3
 chg_event_move_char_speed normal
-fadeout
-sleep 32
+warp_ff3_2 51 8 31 2 right
+chg_npc_y_offset 5140 0
+chg_npc_y_offset 5141 0
+chg_npc_y_offset 5142 0
+chg_npc_y_offset 5143 0
+chg_npc_y_offset 5144 0
+chg_npc_y_offset 5145 0
+add_party_mem 3
+draw_char on
 kill 4903
 kill 4907
 kill 4908
 kill 4909
-warp_ff3_2 51 1 1 2 right
-draw_char on
-sleep 48
-fadein

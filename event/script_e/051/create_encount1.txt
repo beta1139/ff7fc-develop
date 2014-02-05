@@ -1,0 +1,6 @@
+wait_same_pos
+set_active_msg 5101
+jump_npc 5101 same 1
+chg_char_dir left
+sleep 16
+create event_generator 5183 51 0 0 17 0 0 @051/church_encount1.txt
