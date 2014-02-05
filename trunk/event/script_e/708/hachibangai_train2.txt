@@ -1,0 +1,205 @@
+wait_same_pos
+step_npc 70820 4
+step_npc 70834 4
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 62 0 0 0 0
+sleep 1
+step_npc 70820 20
+step_npc 70834 20
+loop 5
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 62 0 0 0 0
+sleep 1
+pool
+loop_inf
+if_flag 13 0
+step_npc 70820 4
+step_npc 70834 4
+fi
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 62 0 0 0 0
+sleep 1
+pool

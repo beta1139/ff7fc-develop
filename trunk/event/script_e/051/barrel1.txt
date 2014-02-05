@@ -1,0 +1,106 @@
+set_eternal_event
+wait_target_talk 5140
+reset_talk_flag 5140
+msg 『タル』がある\n　これをおしてやれば……\n\n\n『タル』をおしますか？\n\n\n\n#2\n　　はい\n　　いいえ\n\n\n[[]][[]]
+backup_char_dir
+if_flag 3 0
+if_char_dir right
+create npc_event 5130 51 10 12 0 3 2 none
+set_flag 11 1
+fi
+if_char_dir left
+create npc_event 5130 51 12 12 0 2 2 none
+set_flag 11 2
+fi
+draw_char off
+step_npc 5130 2
+sleep 16
+chg_type 5140 npc_event
+chg_speed 5140 fast
+sleep 16
+chg_npc_dir 5130 down
+chg_event_move_char_speed fast
+set_layer 5140 front
+play_se barrel_falling_long.ogg
+if_flag 10 0
+move_char down 33
+move_npc 5140 down 33
+sleep 16
+set_layer 5140 back
+sleep 24
+set_layer 5140 front
+sleep 80
+loop 3
+jump_npc 5101 same 1
+sleep 16
+jump_npc 5101 same 1
+sleep 32
+pool
+fi
+if_flag 10 1
+move_char down 33
+move_npc 5140 down 33
+sleep 16
+set_layer 5140 back
+sleep 24
+set_layer 5140 front
+sleep 128
+loop 2
+jump_npc 5102 same 1
+sleep 16
+jump_npc 5102 same 1
+sleep 32
+pool
+fi
+if_flag 10 2
+move_char down 14
+move_npc 5140 down 24
+sleep 160
+move_char right 4
+sleep 32
+fi
+if_flag 10 3
+move_char down 23
+move_npc 5140 down 32
+sleep 176
+jump_npc 5103 same 1
+sleep 4
+chg_npc_dir 5103 left
+sleep 4
+chg_npc_dir 5103 up
+sleep 4
+chg_npc_dir 5103 right
+sleep 4
+chg_npc_dir 5103 down
+jump_npc 5103 same 2
+sleep 48
+jump_npc 5103 same 1
+sleep 16
+fi
+play_se barrel_hitting.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5140 17
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5140 139
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5140 17
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5140 139
+sleep 8
+set_npc_pos 5140 51 0 57
+create event_generator 5176 51 0 0 17 0 0 @051/barrel_miss.txt
+fi
+if_flag 3 1
+fi

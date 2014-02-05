@@ -1,0 +1,170 @@
+sub_likability 3 300
+chg_npc_dir 5131 up
+chg_speed 5131 normal
+set_active_msg 5131
+jump_npc 5131 same 2
+del_party_mem 0
+add_party_mem 3
+sleep 8
+stop_se
+set_talk_npc 5131
+msg エアリス\n「もう　クラウド\n　なにやってるのよ！
+reset_talk_npc
+chg_event_move_char_speed fast
+if_flag 10 0
+jump_npc 5101 same 1
+sleep 16
+if_flag 11 1
+move_char right 2
+fi
+if_flag 11 2
+move_char right 2
+fi
+if_flag 11 3
+move_char right 2
+fi
+if_flag 11 4
+move_char right 2
+fi
+if_flag 11 5
+move_char right 2
+fi
+if_flag 11 6
+move_char right 2
+fi
+if_flag 11 7
+move_char left 2
+fi
+if_flag 11 8
+move_char left 2
+fi
+if_flag 11 9
+move_char left 2
+fi
+if_flag 11 10
+move_char left 2
+fi
+if_flag 11 11
+move_char left 2
+fi
+if_flag 11 12
+move_char left 2
+fi
+chg_speed 5101 fast
+move_npc 5101 right 2
+chg_npc_dir 5131 left
+sleep 16
+create event_generator 5183 51 0 0 17 0 0 @051/church_encount1.txt
+fi
+if_flag 10 1
+if_flag 11 1
+move_char right 3
+fi
+if_flag 11 2
+move_char right 2
+fi
+if_flag 11 3
+move_char right 2
+fi
+if_flag 11 4
+move_char right 2
+fi
+if_flag 11 5
+move_char right 3
+fi
+if_flag 11 6
+move_char right 2
+fi
+if_flag 11 7
+move_char right 1
+fi
+if_flag 11 8
+move_char left 1
+fi
+if_flag 11 10
+move_char left 2
+fi
+if_flag 11 11
+move_char left 1
+fi
+if_flag 11 12
+move_char left 3
+fi
+sleep 8
+jump_npc 5102 same 1
+sleep 16
+chg_speed 5102 fast
+move_npc 5102 down 2
+chg_npc_dir 5131 up
+sleep 16
+create event_generator 5184 51 0 0 17 0 0 @051/church_encount2.txt
+fi
+if_flag 10 2
+if_flag 11 1
+move_char right 4
+fi
+if_flag 11 2
+move_char right 2
+fi
+if_flag 11 3
+move_char right 4
+fi
+if_flag 11 4
+move_char right 2
+fi
+if_flag 11 5
+move_char right 4
+fi
+if_flag 11 6
+move_char right 2
+fi
+if_flag 11 7
+move_char right 3
+fi
+if_flag 11 8
+move_char right 1
+fi
+if_flag 11 9
+move_char right 2
+fi
+jump_npc 5103 same 1
+sleep 16
+chg_npc_dir 5131 down
+chg_speed 5103 fast
+move_npc 5103 up 3
+sleep 24
+create event_generator 5185 51 0 0 17 0 0 @051/church_encount3.txt
+fi
+if_flag 10 3
+if_flag 11 1
+move_char right 1
+fi
+if_flag 11 2
+move_char right 1
+fi
+if_flag 11 5
+move_char right 1
+fi
+if_flag 11 7
+move_char left 1
+fi
+if_flag 11 8
+move_char left 1
+fi
+if_flag 11 9
+move_char left 1
+fi
+if_flag 11 10
+move_char left 1
+fi
+if_flag 11 11
+move_char left 1
+fi
+if_flag 11 12
+move_char left 1
+fi
+chg_speed 5103 fast
+move_npc 5103 down 1
+sleep 8
+create event_generator 5185 51 0 0 17 0 0 @051/church_encount3.txt
+fi

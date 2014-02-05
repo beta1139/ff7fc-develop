@@ -38,6 +38,24 @@ add_item 4000
 add_item 4100
 fi
 if_flag 4 2
+set_flag 0 0
+set_flag 1 0
+set_flag 9 1
+add_gil 1500
+add_item 4000
+add_item 4100
+add_party_mem 3
+kill_through_range 4900 4911
+warp_ff3_2 51 8 31 2 right
+chg_npc_y_offset 5140 0
+chg_npc_y_offset 5141 0
+chg_npc_y_offset 5142 0
+chg_npc_y_offset 5143 0
+chg_npc_y_offset 5144 0
+chg_npc_y_offset 5145 0
+draw_char on
+fi
+if_flag 4 3
 draw_char off
 create npc_event 5320 53 17 14 0 1 2 none
 create npc_event 5321 53 18 15 3 2 2 none

@@ -1,0 +1,518 @@
+wait_same_pos
+set_flag 10 0
+set_flag 11 0
+set_flag 12 0
+set_flag 13 0
+set_flag 14 0
+create event_generator 5165 51 17 45 17 0 0 @051/church_backroom2.txt
+create npc_event 5130 51 17 20 0 2 2 none
+kill_through_range 5190 5191
+draw_char off
+msg レノ\n「いたぞ　あそこだ！
+chg_event_move_char_speed fast
+move_char down 4
+sleep 32
+move_char left 3
+sleep 24
+move_char down 4
+sleep 32
+create npc_event 5100 51 8 31 30 3 3 none
+move_npc 5100 right 2
+sleep 8
+create npc_event 5101 51 8 31 31 3 3 none
+move_npc 5101 right 1
+sleep 8
+chg_speed 5100 not_move
+move_npc 5101 down 1
+sleep 8
+move_npc 5101 right 1
+create npc_event 5103 51 8 31 31 3 3 none
+move_npc 5103 right 1
+sleep 8
+chg_speed 5101 not_move
+chg_speed 5103 not_move
+create npc_event 5102 51 8 31 31 3 3 none
+move_npc 5102 down 1
+sleep 8
+move_npc 5102 right 1
+sleep 8
+chg_speed 5102 not_move
+sleep 40
+move_char up 4
+sleep 32
+move_char right 3
+sleep 24
+move_char up 4
+sleep 32
+create npc_event 5131 51 17 20 3 2 2 none
+move_npc 5131 right 1
+sleep 16
+chg_npc_dir 5131 left
+step_npc 5131 2
+msg エアリス\n「クラウド　あれ！
+move_npc 5130 left 1
+sleep 16
+step_npc 5130 1
+msg 『わかっている\n　どうやら　みのがすつもりはないようだな
+sleep 16
+move_npc 5131 left 1
+sleep 32
+step_npc 5131 2
+msg エアリス\n「どうしよう？
+chg_npc_dir 5130 right
+sleep 16
+step_npc 5130 1
+msg 『つかまるわけにはいかないんだろ？\n　それなら　こたえはひとつさ
+chg_npc_dir 5130 left
+step_npc 5130 1
+sleep 16
+jump_npc 5130 left 3
+play_se jump.wav
+sleep 48
+play_se landing.wav
+move_npc 5130 left 1
+sleep 16
+chg_npc_dir 5130 right
+sleep 16
+step_npc 5130 1
+msg 『さあ　エアリス\n　こっちだ
+sleep 32
+chg_speed 5131 slow
+move_npc 5131 left 1
+sleep 64
+chg_speed 5131 normal
+chg_npc_img 5131 15
+step_npc 5131 3
+sleep 80
+set_active_msg 5130
+jump_npc 5130 same 1
+msg 『だいじょうぶだ\n　おれがうけとめてやる
+chg_npc_img 5131 3
+sleep 32
+set_active_msg 5131
+jump_npc 5131 same 1
+msg エアリス\n「わかったわ\n　しっかりうけとめてね
+sleep 16
+chg_speed 5131 slow
+slide_walk_npc 5131 right 1
+move_char down 4
+sleep 32
+chg_speed 5131 fast
+step_npc 5131 6
+move_char left 3
+chg_speed 5100 normal
+msg3 -1 レノ\n「こだいしゅが　にげるぞ！\n　うて　うて！
+sleep 16
+set_active_msg 5100
+jump_npc 5100 same 1
+sleep 8
+move_char down 2
+chg_speed 5101 fast
+chg_speed 5103 fast
+chg_speed 5102 fast
+chg_npc_dir 5101 down
+chg_npc_dir 5102 down
+chg_npc_dir 5103 down
+chg_npc_img 5101 140
+chg_npc_img 5102 140
+chg_npc_img 5103 140
+play_se_loop gun_shot.ogg
+step_npc 5101 26
+step_npc 5102 26
+sleep 8
+chg_speed 5100 fast
+step_npc 5103 25
+sleep 16
+chg_npc_dir 5131 down
+create npc_event 5104 51 14 25 80 3 0 none
+sleep 8
+kill 5104
+chg_speed 5131 fast
+step_npc 5131 1
+create npc_event 5105 51 15 25 80 3 0 none
+sleep 8
+kill 5105
+create npc_event 5106 51 14 24 80 3 0 none
+chg_speed 5131 normal
+jump_npc 5131 same 1
+chg_npc_dir 5131 left
+sleep 8
+erase_msg3
+kill 5106
+create npc_event 5104 51 15 25 80 3 0 none
+sleep 8
+move_npc 5131 left 1
+kill 5104
+create npc_event 5105 51 14 23 80 3 0 none
+sleep 8
+chg_npc_dir 5131 right
+kill 5105
+create npc_event 5106 51 15 22 80 3 0 none
+sleep 8
+chg_npc_dir 5131 left
+kill 5106
+create npc_event 5104 51 17 21 80 3 0 none
+sleep 4
+create npc_event 5106 51 15 20 80 3 0 none
+sleep 4
+chg_npc_dir 5131 right
+chg_npc_dir 5100 down
+jump_npc 5100 same 1
+msg3 -1 レノ\n「あ　うつな！
+kill 5104
+create npc_event 5105 51 15 20 80 3 0 none
+sleep 4
+kill 5106
+sleep 4
+chg_npc_dir 5131 left
+chg_npc_dir 5100 left
+kill 5105
+create npc_event 5106 51 16 21 80 3 0 none
+sleep 8
+jump_npc 5100 same 1
+kill 5106
+create npc_event 5104 51 15 21 80 3 0 none
+sleep 8
+jump_npc 5131 same 1
+chg_npc_dir 5100 down
+step_npc 5100 4
+move_char up 4
+kill 5104
+create npc_event 5105 51 15 20 80 3 0 none
+sleep 8
+kill 5105
+create npc_event 5106 51 15 19 80 3 0 none
+sleep 8
+chg_speed 5131 fast
+step_npc 5131 4
+kill 5106
+create npc_event 5104 51 15 21 80 3 0 none
+sleep 4
+chg_npc_dir 5131 left
+sleep 4
+chg_npc_dir 5131 right
+kill 5104
+create npc_event 5105 51 15 20 80 3 0 none
+sleep 8
+move_char right 3
+kill 5105
+create npc_event 5106 51 15 19 80 3 0 none
+sleep 4
+chg_npc_dir 5131 up
+sleep 4
+chg_npc_dir 5131 left
+kill 5106
+chg_speed 5130 fast
+chg_npc_dir 5130 down
+jump_npc 5130 same 1
+sleep 4
+chg_npc_dir 5131 down
+sleep 4
+chg_npc_dir 5131 right
+erase_msg3
+chg_speed 5131 normal
+sleep 8
+move_char up 2
+loop 2
+chg_npc_dir 5131 left
+play_se gun_shot.ogg
+if_flag 10 0
+jump_npc 5131 same 1
+fi
+if_flag 10 1
+chg_npc_dir 5131 right
+fi
+create npc_event 5104 51 16 19 80 3 0 none
+sleep 8
+kill 5104
+create npc_event 5105 51 17 19 80 3 0 none
+sleep 4
+chg_npc_dir 5131 left
+sleep 4
+if_flag 10 0
+move_npc 5130 right 1
+chg_npc_dir 5131 up
+jump_npc 5131 same 1
+fi
+if_flag 10 1
+step_npc 5130 1
+chg_npc_dir 5131 left
+fi
+create npc_event 5104 51 16 19 80 3 0 none
+kill 5105
+sleep 4
+chg_npc_dir 5131 down
+sleep 4
+chg_npc_dir 5131 right
+kill 5104
+create npc_event 5105 51 15 20 80 3 0 none
+create npc_event 5106 51 17 20 80 3 0 none
+step_npc 5130 1
+sleep 4
+chg_npc_dir 5131 left
+sleep 4
+kill 5105
+kill 5106
+set_flag 10 1
+pool
+jump_npc 5130 same 2
+stop_se
+chg_speed 5131 normal
+jump_npc_target_pos 5131 15 21
+msg3 -1 エアリス\n「きゃあっ！
+chg_npc_dir 5100 right
+chg_npc_dir 5131 right
+sleep 12
+chg_npc_dir 5131 up
+sleep 12
+chg_speed 5131 fast
+slide_npc 5131 down 1
+sleep 8
+chg_npc_dir 5130 down
+chg_npc_dir 5101 right
+chg_npc_dir 5102 right
+chg_npc_dir 5103 right
+chg_npc_img 5101 31
+chg_npc_img 5102 31
+chg_npc_img 5103 31
+chg_npc_dir 5131 up
+sleep 4
+chg_npc_dir 5131 right
+sleep 4
+chg_npc_dir 5131 down
+sleep 4
+chg_npc_dir 5131 left
+sleep 4
+chg_speed 5130 fast
+chg_npc_dir 5130 up
+chg_npc_img 5130 97
+jump_npc 5130 same 1
+erase_msg3
+set_flag 0 1
+play_bgm
+play_se barrel_falling.ogg
+chg_speed 5131 fast
+slide_npc 5131 down 26
+move_char down 12
+chg_npc_dir 5131 up
+sleep 8
+chg_npc_dir 5131 down
+sleep 8
+msg3 -1 『エアリス！
+loop 5
+chg_npc_dir 5131 up
+sleep 4
+chg_npc_dir 5131 right
+sleep 4
+chg_npc_dir 5131 down
+sleep 4
+chg_npc_dir 5131 left
+sleep 4
+pool
+erase_msg3
+chg_npc_dir 5100 down
+draw_fake_countdown off
+start_fake_countdown_sec 1
+chg_npc_dir 5131 up
+sleep 4
+chg_npc_dir 5131 right
+sleep 4
+chg_npc_dir 5131 down
+sleep 4
+chg_npc_dir 5131 left
+sleep 4
+chg_npc_dir 5131 up
+sleep 4
+chg_npc_dir 5131 right
+sleep 4
+set_layer 5131 back
+chg_npc_dir 5131 down
+sleep 4
+chg_npc_dir 5131 left
+sleep 4
+chg_npc_dir 5101 down
+chg_npc_dir 5103 down
+chg_npc_dir 5102 down
+chg_speed 5100 normal
+step_npc 5100 2
+msg3 -1 レノ\n「やっちまったかな　と\n　ていこうするからだぞ　と
+chg_npc_dir 5131 up
+sleep 4
+chg_npc_dir 5131 right
+sleep 4
+chg_npc_dir 5131 down
+sleep 4
+chg_npc_dir 5131 left
+sleep 4
+set_layer 5131 front
+wait_key_push a
+erase_msg3
+wait_fake_countover
+move_char left 4
+sleep 32
+chg_speed 5100 not_move
+end_fake_countdown
+jump_npc 5101 same 2
+jump_npc 5103 same 2
+jump_npc 5102 same 2
+loop 2
+sleep 4
+chg_npc_dir 5101 left
+chg_npc_dir 5103 left
+chg_npc_dir 5102 left
+sleep 4
+chg_npc_dir 5101 up
+chg_npc_dir 5103 up
+chg_npc_dir 5102 up
+sleep 4
+chg_npc_dir 5101 right
+chg_npc_dir 5103 right
+chg_npc_dir 5102 right
+sleep 4
+chg_npc_dir 5101 down
+chg_npc_dir 5103 down
+chg_npc_dir 5102 down
+pool
+sleep 16
+play_se jump.wav
+slide_npc 5101 down 8
+move_char down 10
+sleep 8
+chg_speed 5100 slow
+chg_speed 5103 normal
+chg_speed 5102 normal
+move_npc 5103 down 1
+move_npc 5102 right 4
+sleep 16
+move_npc 5100 left 2
+move_npc 5103 right 4
+sleep 40
+play_se landing.wav
+sleep 8
+chg_speed 5101 normal
+jump_npc 5101 down 3
+play_se jump.wav
+move_npc 5102 up 1
+chg_speed 5131 not_move
+sleep 16
+kill 5100
+move_npc 5103 down 1
+sleep 16
+chg_speed 5103 not_move
+move_npc 5102 right 4
+sleep 16
+play_se landing.wav
+move_npc 5101 down 5
+sleep 48
+chg_npc_dir 5102 down
+chg_speed 5102 not_move
+sleep 32
+move_npc 5101 right 1
+chg_speed 5131 normal
+jump_npc 5131 same 2
+sleep 16
+chg_speed 5101 not_move
+msg エアリス\n「クラウド　たすけて！
+chg_npc_img 5130 0
+chg_npc_dir 5130 down
+sleep 16
+chg_speed 5131 not_move
+chg_speed 5101 slow
+move_npc 5101 right 1
+sleep 32
+move_char up 22
+chg_speed 5101 not_move
+sleep 176
+step_npc 5130 2
+msg 『くそっ！
+chg_npc_dir 5130 right
+sleep 12
+chg_npc_dir 5130 left
+sleep 12
+chg_npc_dir 5130 up
+sleep 12
+chg_npc_dir 5130 down
+move_char up 8
+sleep 64
+msg 『あれは……？
+move_char down 8
+sleep 64
+step_npc 5130 2
+msg 『エアリス！\n\n\n\n#3\n　　しばらくまっていろ！\n　　たたかえ！\n　　にげるんだ！\n\n[[]][[]][[]]
+set_flag 10 0
+set_flag 0 2
+del_party_mem 3
+if_flag 3 0
+set_flag 12 1
+set_flag 13 0
+sleep 16
+draw_char on
+kill 5130
+fi
+if_flag 3 1
+sub_likability 3 100
+set_flag 12 0
+set_flag 13 0
+chg_speed 5130 not_move
+fadeout
+del_party_mem 0
+add_party_mem 3
+sleep 16
+warp 51 15 48 up
+chg_event_move_char_speed fast
+chg_npc_dir 5131 up
+set_npc_pos 5130 51 12 14
+sleep 16
+fadein
+chg_speed 5131 fast
+step_npc 5131 1
+sleep 32
+step_npc 5131 2
+msg エアリス\n「わ　わかったわ
+chg_npc_dir 5131 left
+jump_char same 1
+jump_npc 5131 same 1
+chg_speed 5101 fast
+sleep 16
+move_char left 2
+move_npc 5131 left 2
+move_npc 5101 right 1
+sleep 8
+draw_char on
+kill 5131
+create event_generator 5183 51 0 0 17 0 0 @051/church_encount1.txt
+fi
+if_flag 3 2
+set_flag 12 0
+set_flag 13 1
+chg_speed 5130 not_move
+fadeout
+del_party_mem 0
+add_party_mem 3
+sleep 16
+warp 51 15 48 down
+chg_npc_dir 5131 up
+chg_speed 5131 fast
+set_npc_pos 5130 51 12 14
+sleep 16
+fadein
+chg_event_move_char_speed fast
+step_npc 5131 1
+sleep 32
+step_npc 5131 2
+sleep 8
+msg エアリス\n「わ　わかったわ
+chg_npc_dir 5131 down
+sleep 8
+draw_char on
+kill 5131
+chg_speed 5101 normal
+move_npc 5101 right 1
+move_char right 2
+sleep 16
+move_char up 3
+chg_speed 5101 not_move
+sleep 24
+create event_generator 5180 51 14 48 17 0 0 @051/create_encount1.txt
+fi
+chg_event_move_char_speed normal

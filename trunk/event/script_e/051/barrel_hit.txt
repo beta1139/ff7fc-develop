@@ -1,0 +1,339 @@
+msg3 -1 「ぐわっ！
+add_likability 3 100
+if_flag 10 0
+set_layer 5101 back
+play_se damage.wav
+chg_npc_img 5101 17
+jump_npc 5142 same 2
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5101 31
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5101 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5101 31
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+step_npc 5142 1
+chg_npc_img 5101 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5101 31
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+kill 5101
+create treasure_box3 5120 51 12 48 2 0 0 1000
+set_layer 5120 back
+loop 2
+sleep 8
+chg_npc_img 5142 17
+sleep 8
+chg_npc_img 5142 139
+pool
+sleep 8
+chg_npc_img 5142 17
+set_npc_pos 5142 51 0 57
+set_layer 5120 front
+set_flag 14 1
+fi
+if_flag 10 1
+slide_walk_npc 5102 down 5
+slide_walk_npc 5143 down 6
+move_char down 6
+loop 3
+sleep 8
+chg_npc_img 5102 31
+sleep 8
+chg_npc_img 5102 140
+set_layer 5102 back
+pool
+play_se damage.wav
+chg_npc_img 5102 17
+step_npc 5144 1
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5102 140
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5102 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5102 140
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5102 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5102 140
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5102 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5102 140
+chg_npc_img 5143 17
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5143 139
+chg_npc_img 5102 17
+sleep 8
+kill 5102
+create treasure_box3 5121 51 17 48 2 0 0 1000
+set_layer 5121 back
+chg_npc_img 5143 17
+sleep 8
+chg_npc_img 5143 139
+sleep 8
+chg_npc_img 5143 17
+set_npc_pos 5143 51 0 57
+set_layer 5121 front
+chg_event_move_char_speed normal
+chg_speed 5131 normal
+fi
+if_flag 10 2
+play_se barrel_hitting.ogg
+chg_speed 5103 fast
+jump_npc 5145 same 2
+chg_npc_img 5103 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 31
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 31
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+play_se barrel_falling.ogg
+slide_walk_npc 5103 down 7
+move_char down 7
+step_npc 5145 1
+sleep 8
+slide_npc 5145 down 7
+chg_npc_img 5103 140
+sleep 56
+play_se damage.wav
+chg_npc_img 5103 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 140
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 140
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 140
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 17
+sleep 8
+kill 5103
+create treasure_box3 5122 51 19 37 2 0 0 1000
+set_layer 5122 front
+sleep 8
+chg_npc_img 5145 17
+sleep 8
+chg_npc_img 5145 139
+sleep 8
+chg_npc_img 5145 17
+set_npc_pos 5145 51 0 57
+move_char up 7
+sleep 56
+chg_event_move_char_speed normal
+chg_speed 5131 normal
+fi
+fi
+if_flag 10 3
+play_se damage.wav
+chg_npc_img 5103 17
+jump_npc 5141 same 2
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 31
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 31
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 31
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 17
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_img 5103 31
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+kill 5103
+create treasure_box3 5122 51 13 35 2 0 0 1000
+set_layer 5122 front
+sleep 8
+chg_npc_img 5141 17
+sleep 8
+chg_npc_img 5141 139
+sleep 8
+chg_npc_img 5141 17
+set_npc_pos 5141 51 0 57
+set_npc_pos 5130 51 12 20
+fi
+wait_key_push a
+erase_msg3
+chg_npc_dir 5131 up
+sleep 16
+jump_npc 5131 same 2
+del_party_mem 0
+add_party_mem 3
+sleep 16
+msg エアリス\n「ありがとう　クラウド
+if_flag 10 1
+if_flag 11 7
+move_char right 1
+fi
+if_flag 11 8
+move_char left 1
+fi
+sleep 16
+play_se jump.wav
+set_layer 5131 front
+jump_npc 5131 left 1
+sleep 16
+move_char up 1
+move_npc 5131 up 1
+set_npc_pos 5103 51 13 37
+create event_generator 5166 51 20 37 17 0 0 @051/church_backroom3.txt
+sleep 16
+fi
+if_flag 10 3
+if_flag 11 3
+move_char right 1
+sleep 8
+move_char down 2
+sleep 16
+fi
+if_flag 11 4
+move_char left 1
+sleep 8
+move_char down 2
+sleep 16
+fi
+set_char_layer front
+fi
+if_flag 11 5
+move_char right 4
+sleep 32
+fi
+if_flag 11 6
+move_char right 2
+sleep 16
+fi
+if_flag 11 11
+move_char right 1
+sleep 8
+chg_npc_dir 5131 up
+sleep 8
+fi
+if_flag 11 12
+move_char left 1
+sleep 8
+chg_npc_dir 5131 up
+sleep 8
+fi
+chg_event_move_char_speed normal
+chg_speed 5130 not_move
+chg_npc_dir 5131 up
+chg_char_dir up
+draw_char on
+kill 5131
+if_flag 10 2
+chg_char_state_move
+set_npc_pos 5130 51 12 14
+chg_npc_dir 5130 up
+chg_speed 5130 fast
+slide_npc 5130 down 6
+play_se jump.wav
+sleep 24
+chg_npc_dir 5130 down
+sleep 24
+chg_speed 5130 not_move
+play_se landing.wav
+fi

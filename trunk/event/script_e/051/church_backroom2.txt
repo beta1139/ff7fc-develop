@@ -1,0 +1,166 @@
+wait_same_pos
+set_flag 10 1
+create npc_event 5131 51 17 45 3 0 2 none
+set_layer 5131 front
+set_active_msg 5131
+draw_char off
+chg_event_move_char_speed fast
+move_char up 6
+chg_speed 5102 fast
+move_npc 5102 down 10
+sleep 80
+set_active_msg 5131
+jump_npc 5131 same 2
+sleep 16
+msg エアリス\n「きゃあっ！
+chg_speed 5102 slow
+set_active_msg 5102
+move_npc 5102 down 1
+sleep 16
+chg_speed 5131 fast
+step_npc 5131 4
+msg エアリス\n「クラウド　たすけて！
+move_char up 2
+sleep 16
+msg 『エアリス！\n\n\n\n#3\n　　しばらくまっていろ！\n　　たたかえ！\n　　にげるんだ！\n\n[[]][[]][[]]
+if_flag 3 0
+chg_event_move_char_speed fast
+set_flag 12 1
+set_flag 13 0
+chg_speed 5102 not_move
+fadeout
+sleep 16
+del_party_mem 3
+add_party_mem 0
+if_flag 11 0
+warp 51 12 20 down
+fi
+if_flag 11 1
+warp 51 10 12 down
+fi
+if_flag 11 2
+warp 51 12 12 down
+fi
+if_flag 11 3
+warp 51 12 12 down
+fi
+if_flag 11 4
+warp 51 14 12 down
+fi
+if_flag 11 5
+warp 51 11 15 down
+set_char_layer front
+fi
+if_flag 11 6
+warp 51 13 15 down
+set_char_layer front
+fi
+if_flag 11 7
+warp 51 17 9 down
+fi
+if_flag 11 8
+warp 51 19 9 down
+fi
+if_flag 11 9
+warp 51 16 12 down
+set_char_layer front
+fi
+if_flag 11 10
+warp 51 18 12 down
+fi
+if_flag 11 11
+warp 51 18 15 down
+set_char_layer front
+fi
+if_flag 11 12
+warp 51 20 15 down
+fi
+sleep 16
+chg_char_dir down
+draw_char on
+kill_through 5130
+chg_event_move_char_speed normal
+fadein
+fi
+if_flag 3 1
+sub_likability 3 100
+set_flag 12 0
+set_flag 13 0
+move_char down 8
+sleep 32
+chg_speed 5131 fast
+step_npc 5131 1
+sleep 32
+step_npc 5131 2
+msg エアリス\n「わ　わかったわ
+jump_char same 1
+jump_npc 5131 same 1
+chg_speed 5102 fast
+sleep 16
+move_char up 1
+move_npc 5131 up 1
+move_npc 5102 down 1
+sleep 8
+create event_generator 5184 51 0 0 17 0 0 @051/church_encount2.txt
+fi
+if_flag 3 2
+if_flag 12 0
+set_flag 12 0
+fi
+if_flag 12 1
+set_flag 12 1
+fi
+set_flag 13 1
+move_char down 8
+sleep 32
+chg_speed 5131 fast
+step_npc 5131 1
+sleep 32
+step_npc 5131 2
+msg エアリス\n「わ　わかったわ
+chg_npc_dir 5131 down
+if_flag 14 0
+sleep 8
+move_npc 5131 down 3
+move_char down 3
+chg_speed 5102 not_move
+sleep 24
+move_npc 5131 left 3
+move_char left 3
+sleep 24
+create event_generator 5181 51 17 45 17 0 0 @051/create_encount2.txt
+draw_char on
+kill 5131
+fi
+if_flag 14 1
+move_npc 5131 down 3
+move_char down 3
+sleep 8
+chg_speed 5102 normal
+step_npc 5102 3
+sleep 16
+move_npc 5131 left 5
+move_char left 5
+set_layer 5131 front
+set_layer 5120 back
+sleep 40
+move_npc 5131 up 1
+move_char up 1
+move_npc 5102 up 4
+sleep 8
+draw_char on
+kill 5131
+if_flag 12 0
+set_layer 5120 back
+fi
+if_flag 12 1
+set_layer 5120 front
+fi
+chg_char_state_move
+create event_generator 5167 51 13 37 17 0 0 @051/church_backroom4.txt
+create event_generator 5181 51 17 31 17 0 0 @051/create_encount2.txt
+sleep 56
+chg_speed 5102 not_move
+fi
+fi
+chg_event_move_char_speed normal
