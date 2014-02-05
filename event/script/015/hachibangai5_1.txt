@@ -1,53 +1,4 @@
 wait_same_pos
-if_flag 9 2
-fadeout
-set_key_unvalid up
-set_key_unvalid left
-set_key_unvalid down
-set_key_unvalid right
-set_key_unvalid start
-draw_char off
-warp 708 7 14 down
-draw_image 70810 0 -112 0 0 256 720 0 event/hachibangai_train.bmp
-create npc_event 70820 708 7 20 142 3 3 none
-create npc_event 70821 708 7 19 142 0 3 none
-create npc_event 70822 708 7 18 142 2 3 none
-create npc_event 70823 708 7 17 142 1 3 none
-create npc_event 70824 708 7 16 142 2 3 none
-create npc_event 70825 708 7 15 142 1 3 none
-create npc_event 70826 708 7 14 142 2 3 none
-create npc_event 70827 708 7 13 142 1 3 none
-create npc_event 70828 708 7 12 142 2 3 none
-create npc_event 70829 708 7 11 142 1 3 none
-create npc_event 70830 708 7 10 142 2 3 none
-create npc_event 70831 708 7 9 142 1 3 none
-create npc_event 70832 708 7 8 142 2 3 none
-create npc_event 70833 708 7 7 142 1 3 none
-create npc_event 70834 708 7 10 143 1 3 none
-chg_npc_y_offset 70820 0
-chg_npc_y_offset 70821 0
-chg_npc_y_offset 70822 0
-chg_npc_y_offset 70823 0
-chg_npc_y_offset 70824 0
-chg_npc_y_offset 70825 0
-chg_npc_y_offset 70826 0
-chg_npc_y_offset 70827 0
-chg_npc_y_offset 70828 0
-chg_npc_y_offset 70829 0
-chg_npc_y_offset 70830 0
-chg_npc_y_offset 70831 0
-chg_npc_y_offset 70832 0
-chg_npc_y_offset 70833 0
-sleep 32
-play_se_loop train_move_quiet.ogg
-create event_generator 70800 708 7 14 17 0 0 @708/hachibangai_train1.txt
-create event_generator 70801 708 7 14 17 0 0 @708/hachibangai_train2.txt
-set_flag 13 0
-set_flag 20 0
-fadein
-end
-fi
-if_flag 9 0
 set_flag 13 0
 set_flag 20 1
 kill_through_range 1500 1501
@@ -670,4 +621,3 @@ create event_generator 70801 708 7 14 17 0 0 @708/hachibangai_train2.txt
 set_flag 13 0
 set_flag 20 0
 fadein
-fi
