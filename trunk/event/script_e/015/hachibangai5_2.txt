@@ -311,7 +311,7 @@ play_se_loop train_move_quiet.ogg
 play_event_bgm Ex-05-Anxious_Heart_short.ogg
 step_npc 1580 2
 msg3 -1 ÅwI don't have time\n to be messin' around \n with you guys.
-sleep 112
+sleep 128
 chg_npc_img 1557 141
 step_npc 1557 1
 sleep 16
@@ -330,13 +330,13 @@ fi
 step_npc 1557 2
 sleep 16
 msg3 -1 ÅuEnough babbling...
-sleep 64
+sleep 56
 erase_msg3
 chg_speed 1557 fast
 step_npc 1557 4
 sleep 8
 msg3 -1 ÅuGrab him!!
-sleep 16
+sleep 8
 chg_npc_img 1550 31
 chg_npc_img 1551 31
 chg_npc_img 1554 31
@@ -446,7 +446,7 @@ create npc_event 1563 15 11 14 112 2 2 none
 chg_npc_y_offset 1563 0
 slide_walk_npc 1563 down 8
 sleep 8
-slide_npc 1580 down 6
+slide_npc 1580 down 7
 sleep 8
 create npc_event 1564 15 11 14 112 1 2 none
 chg_npc_y_offset 1564 0
@@ -457,6 +457,7 @@ sleep 16
 create npc_event 1565 15 11 14 112 2 2 none
 chg_npc_y_offset 1565 0
 slide_walk_npc 1565 down 8
+chg_npc_img 1557 31
 jump_npc 1550 same 2
 jump_npc 1551 same 2
 jump_npc 1554 same 2
@@ -493,10 +494,7 @@ kill 1561
 create npc_event 1569 15 11 14 112 2 2 none
 chg_npc_y_offset 1569 0
 slide_walk_npc 1569 down 8
-chg_npc_img 1580 143
-sleep 8
-slide_walk_npc 1580 down 2
-sleep 8
+sleep 16
 jump_npc 1510 same 2
 jump_npc 1512 same 1
 jump_npc 1513 same 2
@@ -504,16 +502,20 @@ kill 1562
 create npc_event 1570 15 11 14 112 1 2 none
 chg_npc_y_offset 1570 0
 slide_walk_npc 1570 down 8
-sleep 16
+chg_npc_img 1580 143
+sleep 8
+slide_walk_npc 1580 down 1
+sleep 8
 create npc_event 1571 15 11 14 112 2 2 none
 chg_npc_y_offset 1571 0
 slide_walk_npc 1571 down 8
 jump_npc 1512 same 1
 move_npc 1517 down 1
 jump_npc 1516 same 2
-kill 1580
 kill 1563
-sleep 16
+sleep 8
+kill 1580
+sleep 8
 create npc_event 1572 15 11 14 112 1 2 none
 chg_npc_y_offset 1572 0
 slide_walk_npc 1572 down 8
@@ -567,7 +569,8 @@ set_key_unvalid start
 sleep 32
 kill_through_range 1200 1599
 warp 708 7 14 down
-draw_image 70810 0 -112 0 0 256 720 0 event/hachibangai_train.bmp
+draw_image 70810 80 -112 0 0 80 608 0 event/hachibangai_train.bmp
+draw_image 70812 48 -320 0 0 8 320 1 event/hachibangai_train2.bmp
 create npc_event 70820 708 7 20 142 3 3 none
 create npc_event 70821 708 7 19 142 0 3 none
 create npc_event 70822 708 7 18 142 2 3 none

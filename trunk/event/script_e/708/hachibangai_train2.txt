@@ -137,7 +137,6 @@ loop_inf
 if_flag 13 0
 step_npc 70820 4
 step_npc 70834 4
-fi
 chg_image_pos_offset 70810 0 -2 0 0 0 0
 sleep 1
 chg_image_pos_offset 70810 0 -2 0 0 0 0
@@ -202,4 +201,75 @@ chg_image_pos_offset 70810 0 -2 0 0 0 0
 sleep 1
 chg_image_pos_offset 70810 0 62 0 0 0 0
 sleep 1
+fi
+if_flag 13 1
+chg_image_pos_offset 70812 0 16 0 0 0 0
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70812 0 16 0 0 0 0
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70812 0 16 0 0 0 0
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70812 0 16 0 0 0 0
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 62 0 0 0 0
+sleep 1
+fi
 pool

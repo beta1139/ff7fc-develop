@@ -15,13 +15,12 @@ set_text 3                FINAL FANTASY
 set_text 4                    VII FC
 set_text 6 　 　          FF7 Wo Famicom Ni
 set_text 7 　     　         Ishokusaseta
-set_text 8 　     　         Shokunin Wa
-set_text 9 　     　        "KAMI" Nintei
+set_text 8 　     　          Shokunin Wa
+set_text 9 　     　         "KAMI" Nintei
 set_text_col 6 0 29 3
 set_text_col 7 0 27 3
-set_text_col 8 0 26 3
-set_text_col 9 0 20 3
-set_text_col 9 22 27 3
+set_text_col 8 0 27 3
+set_text_col 9 0 28 3
 loop 8
 sleep 1
 inc_image_alpha 70811
@@ -307,13 +306,16 @@ slide_walk_npc 70831 down 12
 slide_walk_npc 70832 down 12
 slide_walk_npc 70833 down 12
 slide_walk_npc 70834 down 12
-sleep 80
+sleep 8
+chg_image_pos_offset 70812 0 26 0 0 0 0
+sleep 72
 fadeout
 sleep 16
 kill 70801
 sleep 16
 erase_image 70810
 erase_image 70811
+erase_image 70812
 kill_through_range 70813 70899
 set_text_col 6 0 29 0
 set_text_col 7 0 27 0
