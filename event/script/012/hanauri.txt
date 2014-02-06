@@ -4,7 +4,7 @@ fadeout
 draw_char off
 sleep 16
 warp 13 13 17 down
-play_event_bgm 1-04-Anxious_Heart.ogg
+play_bgm
 sleep 96
 fadein
 sleep 64
