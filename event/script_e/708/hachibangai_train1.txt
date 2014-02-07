@@ -307,7 +307,7 @@ slide_walk_npc 70832 down 12
 slide_walk_npc 70833 down 12
 slide_walk_npc 70834 down 12
 sleep 8
-chg_image_pos_offset 70812 0 26 0 0 0 0
+chg_image_pos_offset 70812 0 8 0 0 0 0
 sleep 72
 fadeout
 sleep 16
