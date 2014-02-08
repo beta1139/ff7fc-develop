@@ -22,8 +22,10 @@ kill_through_range 9990 9993
 sleep 32
 chg_npc_dir 1706 right
 warp 28 11 5 up
+play_map_bgm 28
 draw_char off
 open_door 2850
+set_flag 12 0
 fadein
 fi
 if_flag 3 1

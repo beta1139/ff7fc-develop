@@ -1,0 +1,10 @@
+set_eternal_event
+wait_same_pos
+if_flag 12 1
+play_map_bgm 22
+set_flag 0 4
+fi
+if_flag 12 2
+play_map_bgm 28
+set_flag 0 4
+fi

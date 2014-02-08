@@ -13,10 +13,10 @@ chg_npc_dir 2207 up
 draw_char on
 kill 2207
 sleep 16
-msg 『おれは　えいゆうでも　ゆうめいでも　ない\n　やくそくは……まもれない
+msg 『おれは　えいゆうでも　ゆうめいでもない\n　やくそくは……まもれない
 sleep 32
 set_talk_npc 2202
-msg ティファ\n「でも　こどものころの　ゆめを\n　じつげん　したんでしょ\n\n　ちゃんと　ソルジャーに　なったんだもの
+msg ティファ\n「でも　こどものころのゆめを\n　じつげんしたんでしょ\n\n　ちゃんと　ソルジャーになったんだもの
 reset_talk_npc
 sleep 64
 move_npc 2202 up 1
@@ -41,7 +41,7 @@ sleep 16
 move_npc 2201 left 1
 sleep 16
 chg_npc_dir 2201 down
-msg バレット\n「おい　ちょっと　まて！\n　ソルジャーさんよ！
+msg バレット\n「おい　ちょっとまて！\n　ソルジャーさんよ！
 sleep 16
 move_npc 2202 left 1
 sleep 16
@@ -52,7 +52,7 @@ chg_npc_dir 2201 down
 chg_npc_dir 2201 left
 chg_npc_img 2201 98
 sleep 16
-msg バレット\n「やくそくは　やくそく　だからな！\n　ほら　かねだ！！
+msg バレット\n「やくそくは　やくそくだからな！\n　ほら　かねだ！！
 sleep 16
 chg_npc_dir 2201 down
 chg_npc_img 2201 1
@@ -60,19 +60,19 @@ move_npc 2201 down 1
 sleep 16
 step_npc 2201 2
 sleep 32
-play_se pick_up.wav
-msg 「バレットの　へそくり\n　１５００ギル　てにいれた！
+play_se coin.ogg
+msg 「バレットのへそくり\n　１５００ギル　てにいれた！
 add_gil 1500
 sleep 16
 move_npc 2201 up 1
 sleep 24
 chg_npc_dir 2201 down
 sleep 48
-msg 『こんな　しけた　ほうしゅう\n　じょうだんじゃ　ないな
+msg 『こんなしけた　ほうしゅう\n　じょうだんじゃないな
 sleep 16
 msg ティファ\n「え？　それじゃ！！
 sleep 16
-msg 『つぎの　ミッションは　あるのか？\n　ばいがくの　３０００ギルで\n　うけて　やってもいい
+msg 『つぎのミッションは　あるのか？\n　ばいがくの３０００ギルで\n　うけてやってもいい
 jump_npc 2201 same 2
 sleep 48
 msg バレット\n「なんだと……！……！
@@ -81,11 +81,11 @@ chg_npc_dir 2202 right
 sleep 16
 msg ティファ\n「いいから　いいから
 sleep 16
-msg ティファ\n「ヒソヒソ……\n（ひとでに　こまってる　ってのが　ほんねでしょ？）
+msg ティファ\n「ヒソヒソ……\n（ひとでに　こまってるってのが　ほんねでしょ？）
 chg_speed 2201 normal
 chg_npc_dir 2201 left
 sleep 16
-msg バレット\n「う……ぐぅ……\n（のこりの　へそくりは　マリンの　がくひだぞ……）
+msg バレット\n「う……ぐぅ……\n（のこりのへそくりは　マリンのがくひだぞ……）
 sleep 32
 chg_speed 2201 slow
 move_npc 2201 right 1
@@ -161,22 +161,27 @@ stop_bgm
 draw_char off
 sleep 48
 play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
-create npc 1706 17 17 11 94 1 0 「おはようございます\n　いちや　あけても　あいかわらず　ですね\n\n\n　けが　しないよう　おきをつけて\n　いってらっしゃい
+create npc 1706 17 17 11 94 1 0 「おはようございます\n　いちやあけても　あいかわらずですね\n\n\n　けがしないよう　おきをつけて\n　いってらっしゃい
 create npc3 1707 17 11 11 71 3 0 「ぼく　もう　たえられない
 create npc 1906 19 8 26 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
 create npc2 1907 19 7 26 32 0 0 
-create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこを　みがく　たびに　でっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
-create npc 2007 20 32 20 88 3 0 「きのう　おみせの　そとから　あなたたちのこと\n　まちの　みんなで　のぞきみ　してたのよ\n\n\n　ティファちゃんの　おさななじみ　なんて\n　にくいにくい！
-create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめる　あいてが\n　いなくなっちゃうよ！
-create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃ　いいけど\n\n\n　それだけが　きがかりだなあ
+create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこをみがく　たびにでっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
+create npc 2007 20 32 20 88 3 0 「きのう　おみせのそとから　あなたたちのこと\n　まちのみんなで　のぞきみしてたのよ\n\n\n　ティファちゃんの　おさななじみなんて\n　にくいにくい！
+create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめるあいてが\n　いなくなっちゃうよ！
+create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃいいけど\n\n\n　それだけが　きがかりだなあ
 create npc2 2601 26 3 8 90 3 0 
 chg_param 2510 「てへへ…ひとばんじゃ　おぼえきれんぜ\n　おう！しろうと！！\n　わるいが　にかいのあいぼうから　おそわってくれ
 sleep 32
-set_npc_pos 1732 17 16 2
 set_npc_pos 1731 17 17 2
+set_npc_pos 1732 17 16 2
 chg_npc_dir 1731 right
 chg_npc_dir 1732 down
+set_npc_pos 1734 17 20 3
+chg_speed 1734 not_move
 set_npc_pos 2602 26 6 8
+set_npc_pos 1809 18 4 3
+chg_npc_dir 1809 down
+chg_speed 1809 not_move
 create event_generator 1718 17 1 1 17 0 0 @017/nanabangai_station7.txt
 create event_generator 1719 17 1 2 17 0 0 @017/nanabangai_station8.txt
 create event_generator 1720 17 2 1 17 0 0 @017/nanabangai_station9.txt
@@ -207,7 +212,7 @@ recover_active_chara
 warp 23 2 8 right
 create event_generator 2240 22 8 5 17 0 0 @022/seventhheaven8.txt
 draw_char on
-play_event_bgm 1-06-Barrett's_Theme.ogg
+play_map_bgm 28
 fadein
 sleep 32
 chg_char_dir right
