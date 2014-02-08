@@ -9,7 +9,7 @@ sleep 16
 move_npc 2202 down 1
 sleep 16
 set_talk_npc 2202
-msg ティファ\n「クラウド　おねがい\n　ちからを　かして
+msg ティファ\n「クラウド　おねがい\n　ちからをかして
 reset_talk_npc
 sleep 32
 move_char down 1
@@ -24,11 +24,11 @@ move_npc 2202 down 1
 sleep 16
 chg_npc_dir 2202 down
 set_talk_npc 2202
-msg ティファ\n「ほしが　やんでるの\n　このままじゃ　しんじゃう\n\n　だれかが　なんとか　しなくちゃ　ならないの
+msg ティファ\n「ほしがやんでるの\n　このままじゃ　しんじゃう\n\n　だれかが　なんとかしなくちゃならないの
 reset_talk_npc
 chg_char_dir up
 sleep 16
-msg 『バレットたちが　なんとかするんだろ？\n　おれには　かんけい　ないさ
+msg 『バレットたちが　なんとかするんだろ？\n　おれには　かんけいないさ
 chg_char_dir down
 move_char left 1
 sleep 16

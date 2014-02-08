@@ -17,7 +17,7 @@ id,type,bgm,battle_back,monster_party_id
 15,1,1-04-Anxious_Heart.ogg,6,188/189/190/191
 16,1,2-04-On_that_Day_Five_Years_Ago.ogg,4,188/189/190/191
 17,1,through,4,188/189/190/191
-18,0,through,4,188/189/190/191
+18,0,through,4,1/193/202
 19,1,through,4,188/189/190/191
 20,1,through,4,188/189/190/191
 21,1,through,4,188/189/190/191
@@ -27,7 +27,7 @@ id,type,bgm,battle_back,monster_party_id
 25,1,through,4,188/189/190/191
 26,1,through,4,188/189/190/191
 27,1,through,4,188/189/190/191
-28,1,through,4,188/189/190/191
+28,1,1-06-Barrett's_Theme.ogg,4,188/189/190/191
 29,1,through,4,188/189/190/191
 30,1,through,4,188/189/190/191
 31,1,through,4,188/189/190/191

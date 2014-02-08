@@ -1,6 +1,9 @@
 wait_same_pos
 chg_npc_dir 2202 up
 sleep 16
+chg_speed 2202 normal
+set_active_msg 2202
+jump_npc 2202 same 1
 msg ティファ\n「おはよ！　クラウド！
 chg_char_dir up
 sleep 16
@@ -10,14 +13,16 @@ chg_npc_dir 2202 right
 move_char down 1
 sleep 16
 chg_char_dir left
-msg ティファ\n「よくねむれた？\n\n\n#2\n　　バレットの　イビキが　うるさくて……\n　　ティファが　そばに　いたから……\n\n\n[[]][[]]
+step_npc 2202 2
+msg ティファ\n「よくねむれた？\n\n\n#2\n　　バレットのイビキがうるさくて……\n　　ティファがそばにいたから……\n\n\n[[]][[]]
 if_flag 3 0
 add_likability 1 500
 chg_speed 2202 slow
 move_npc 2202 right 1
 sleep 32
 chg_char_dir down
-msg ティファ\n「ひそひそ……\n\n\n（ダメ……きこえちゃうよ\n　バレット　さくせんまえは　きが　たってるから）
+step_npc 2202 2
+msg ティファ\n「ひそひそ……\n\n\n（ダメ……きこえちゃうよ\n　バレット　さくせんまえは　きがたってるから）
 create npc_event 2207 22 8 6 0 0 0 none
 chg_speed 2207 normal
 draw_char off
@@ -30,22 +35,27 @@ chg_npc_dir 2207 down
 draw_char on
 kill 2207
 sleep 16
-msg ティファ\n「こんかいは　わたしも　いくね！
-sleep 16
 chg_speed 2202 normal
+jump_npc 2202 same 1
+msg ティファ\n「こんかいは　わたしもいくね！
+chg_char_dir left
+sleep 16
 move_npc 2202 left 1
 sleep 16
 fi
 if_flag 3 1
 add_likability 2 500
 sleep 16
-msg ティファ\n「それ　どういう　いみかしら
+step_npc 2202 2
+msg ティファ\n「それ　どういういみかしら
 sleep 16
-msg ティファ\n「こんかいは　わたしも　いくね！
+jump_npc 2202 same 1
+msg ティファ\n「こんかいは　わたしもいくね！
 sleep 16
 chg_speed 2202 normal
 chg_npc_dir 2202 left
 fi
+set_inactive_msg 2202
 chg_type 2201 npc2
 chg_type 2202 npc
 chg_speed 2202 not_move

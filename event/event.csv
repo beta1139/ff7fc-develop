@@ -217,6 +217,16 @@ map_obj,1785,17,45,8,7,0,0,0
 map_obj,1786,17,46,8,8,0,0,0
 map_obj,1787,17,47,8,9,0,0,0
 map_obj,1788,17,48,8,10,0,0,0
+event_generator,1800,99,9,9,17,0,0,"@018/nanabangai_station12_1.txt"
+event_generator,1801,99,9,10,17,0,0,"@018/nanabangai_station12_2.txt"
+event_generator,1802,99,9,11,17,0,0,"@018/nanabangai_station12_3.txt"
+event_generator,1803,99,9,12,17,0,0,"@018/nanabangai_station12_4.txt"
+event_generator,1804,99,9,13,17,0,0,"@018/nanabangai_station12_5.txt"
+event_generator,1805,99,9,14,17,0,0,"@018/nanabangai_station12_6.txt"
+npc2,1806,18,2,2,66,1,0,""
+npc2,1807,18,2,3,70,0,0,""
+npc2,1808,18,12,2,72,1,2,""
+npc2,1809,18,6,2,89,1,2,""
 event_generator,1900,19,1,1,17,0,0,"@019/nanabangai1.txt"
 event_generator,1901,19,1,2,17,0,0,"@019/nanabangai2.txt"
 event_generator,1902,19,2,1,17,0,0,"@019/nanabangai3.txt"
@@ -262,6 +272,9 @@ event_generator,1911,19,2,20,17,0,0,"@019/nanabangai_slum1_2.txt"
 event_generator,1912,19,2,21,17,0,0,"@019/nanabangai_slum1_3.txt"
 save_point,1950,19,5,15,0,0,0,
 event_generator,1951,19,5,15,17,0,0,"@save_msg.txt"
+event_generator,1960,19,14,19,17,0,0,"@019/nanabangai_station13.txt"
+event_generator,1961,19,14,20,17,0,0,"@019/nanabangai_station13.txt"
+event_generator,1962,19,14,21,17,0,0,"@019/nanabangai_station13.txt"
 event_generator,2016,20,26,22,17,0,0,"@020/nanabangai_slum5.txt"
 npc,2018,20,26,21,17,0,0,"「あけないよ！！
 　かえってちょうだい"
@@ -1488,7 +1501,7 @@ map_obj,9991,99,18,28,50,0,0,0
 npc2,9996,99,2,2,66,1,0,""
 npc2,9997,99,2,3,70,0,0,""
 npc2,9998,99,12,2,72,1,2,""
-npc2,9999,99,6,2,89,0,2,""
+npc2,9999,99,4,3,89,1,0,""
 npc2,70797,707,2,74,49,3,0,""
 event_generator,70798,707,17,77,17,0,0,"@707/omake01.txt"
 event_generator,70799,707,0,0,17,0,0,"@707/omake02.txt"
