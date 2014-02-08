@@ -1,17 +1,58 @@
 set_eternal_event
+kill_through 2500
 wait_target_talk 2506
 reset_talk_flag 2506
 chg_type 2506 npc_event
 chg_dir_to_char 2506
-chg_speed 2506 not_step
+chg_speed 2506 normal
 set_talk_npc 2506
-msg 「おっさん　やすむきに　なったかい？\n\n\n\n#3\n　　1ギル\n　　10ギル\n　　あげない\n\n[[「チッ！！　おっさん\n　このはなしは　なかったことに　してくれ]][[「しめしめ……]][[]]
+msg 「おっさん　やすむきになったかい？\n\n\n\n#3\n　　1ギル\n　　10ギル\n　　あげない\n\n[[]][[]][[]]
 reset_talk_npc
 if_flag 3 0
-chg_npc_dir 2506 left
+if_gil_less 1
+step_npc 2506 1
+msg 「おっさん　やきがまわったな\n　オレよりびんぼうじゃねえか
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 2
+sleep 64
+chg_char_dir down
+reset_char_img_tmp
+fi
+if_gil_equal 1
+step_npc 2506 1
+msg 「チッ！！　おっさん\n　このはなしは　なかったことにしてくれ
+sleep 16
+fi
+if_gil_greater 1
+step_npc 2506 1
+msg 「チッ！！　おっさん\n　このはなしは　なかったことにしてくれ
+sleep 16
+fi
 chg_type 2506 npc2
 fi
 if_flag 3 1
+if_gil_less 10
+step_npc 2506 1
+msg 「おっさん　やきがまわったな\n　オレよりびんぼうじゃねえか
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 2
+sleep 64
+chg_char_dir down
+reset_char_img_tmp
+chg_type 2506 npc2
+chg_npc_dir 2506 left
+chg_speed 2506 not_move
+set_inactive_msg 2056
+end
+fi
+step_char 2
+sleep 24
+play_se coin.ogg
+sleep 32
+step_npc 2506 2
+msg 「しめしめ……
 chg_npc_dir 2506 right
 sleep 4
 chg_npc_dir 2506 down
@@ -22,12 +63,12 @@ chg_npc_dir 2506 up
 sleep 4
 chg_dir_to_char 2506
 set_talk_npc 2506
-msg 「すきな　ベッドで　やすんでいきな\n　いいゆめ　みなよな　おっさん
+msg 「いいぜ　へやは　じゆうにつかってくれ
 reset_talk_npc
 sub_gil 10
 chg_npc_dir 2506 left
 chg_type 2506 npc
-chg_param 2506 「すきな　ベッドで　やすんでいきな\n　いいゆめ　みなよな　おっさん
+chg_param 2506 「すきなベッドで　やすんでいきな\n　いいゆめみなよな　おっさん
 create event_generator 2700 27 5 6 17 1 0 @027/nanabangai_slum13.txt
 kill 2701
 kill 2702
@@ -42,13 +83,13 @@ jump_npc 2506 same 1
 sleep 16
 step_npc 2506 2
 set_talk_npc 2506
-msg 「そりゃ　ドケチって　やつだぜ　おっさん
+msg 「そりゃ　ドケチってやつだぜ　おっさん
 reset_talk_npc
-chg_npc_dir 2506 left
 chg_type 2506 npc2
 if_char_dir down
 draw_char on
 kill 2500
 fi
 fi
+chg_npc_dir 2506 left
 chg_speed 2506 not_move

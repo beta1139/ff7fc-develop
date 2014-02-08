@@ -1,15 +1,57 @@
 wait_target_talk 2504
+kill_through 2500
 chg_dir_to_char 2504
 chg_type 2504 npc_event
-chg_speed 2504 not_step
-msg 「チッ！！\n　おっさん　しけたツラ　してんな\n　もしかして　つかれてんじゃないの？\n\n　いえの　さんかいで　やすませて　あげても\n　いいけど…\n\n\n　それには　ひとつ　じょうけんが　あるぜ\n　このオレに　こづかい　くれるならな\n\n\n#3\n　　1ギル\n　　10ギル\n　　あげない\n\n[[「チッ！！　おっさん\n　このはなしは　なかったことに　してくれ]][[「しめしめ……]][[]]
+chg_speed 2504 normal
+msg 「チッ！！\n　おっさん　しけたツラしてんな\n　もしかして　つかれてんじゃないの？\n\n　いえの3がいで　やすませてあげても\n　いいけど…\n\n\n　それには　ひとつ　じょうけんがあるぜ\n　このオレに　こづかいくれるならな\n\n\n#3\n　　1ギル\n　　10ギル\n　　あげない\n\n[[]][[]][[]]
 if_flag 3 0
+if_gil_less 1
+step_npc 2504 1
+msg 「おっさん　やきがまわったな\n　オレよりびんぼうじゃねえか
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 2
+sleep 64
+chg_char_dir down
+reset_char_img_tmp
+fi
+if_gil_equal 1
+step_npc 2504 1
+msg 「チッ！！　おっさん\n　このはなしは　なかったことにしてくれ
+sleep 16
+fi
+if_gil_greater 1
+step_npc 2504 1
+msg 「チッ！！　おっさん\n　このはなしは　なかったことにしてくれ
+sleep 16
+fi
 chg_npc_dir 2504 left
 create npc2 2506 25 7 8 89 2 0 
 kill 2504
 create event_generator 2507 25 2 1 17 1 0 @025/nanabangai_slum12.txt
 fi
 if_flag 3 1
+if_gil_less 10
+step_npc 2504 1
+msg 「おっさん　やきがまわったな\n　オレよりびんぼうじゃねえか
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 2
+sleep 64
+chg_char_dir down
+reset_char_img_tmp
+chg_npc_dir 2504 left
+create npc2 2506 25 7 8 89 2 0 
+kill 2504
+create event_generator 2507 25 2 1 17 1 0 @025/nanabangai_slum12.txt
+end
+fi
+step_char 2
+sleep 24
+play_se coin.ogg
+sleep 32
+step_npc 2504 2
+msg 「しめしめ……
 chg_npc_dir 2504 right
 sleep 4
 chg_npc_dir 2504 down
@@ -20,12 +62,13 @@ chg_npc_dir 2504 up
 sleep 4
 chg_dir_to_char 2504
 set_talk_npc 2504
-msg 「すきな　ベッドで　やすんでいきな\n　いいゆめ　みなよな　おっさん
+msg 「いいぜ　へやは　じゆうにつかってくれ
 reset_talk_npc
 sub_gil 10
+chg_speed 2504 not_move
 chg_npc_dir 2504 left
 chg_type 2504 npc
-chg_param 2504 「すきな　ベッドで　やすんでいきな\n　いいゆめ　みなよな　おっさん
+chg_param 2504 「すきなベッドで　やすんでいきな\n　いいゆめみなよな　おっさん
 create event_generator 2700 27 5 6 17 1 0 @027/nanabangai_slum13.txt
 kill 2701
 kill 2702
@@ -40,7 +83,7 @@ jump_npc 2504 same 1
 sleep 16
 step_npc 2504 2
 set_talk_npc 2504
-msg 「そりゃ　ドケチって　やつだぜ　おっさん
+msg 「そりゃ　ドケチってやつだぜ　おっさん
 reset_talk_npc
 chg_npc_dir 2504 left
 create npc2 2506 25 7 8 89 2 0 
