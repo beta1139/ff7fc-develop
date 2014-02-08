@@ -501,9 +501,6 @@ npc,2510,25,4,9,17,0,0,"「よう！！
 npc_event,2511,25,4,10,51,0,0,"none"
 event_generator,2530,25,1,1,17,0,0,"@025/nanabangai_slum25.txt"
 event_generator,2531,25,2,10,17,0,0,"@025/nanabangai_slum26.txt"
-event_generator,2701,27,4,6,17,0,0,"@027/nanabangai_slum14_1.txt"
-event_generator,2702,27,5,5,17,0,0,"@027/nanabangai_slum14_2.txt"
-event_generator,2703,27,6,6,17,0,0,"@027/nanabangai_slum14_3.txt"
 npc2,2600,26,4,7,17,0,0,""
 npc,2601,26,3,8,90,3,0,"「ん………！！
 　なんだ　てめぇは？
@@ -559,6 +556,9 @@ event_generator,2635,26,6,4,17,0,0,"@save_msg.txt"
 event_generator,2640,26,1,1,17,0,0,"@026/beginner's_hall11.txt"
 event_generator,2643,26,1,1,17,0,0,"@026/beginner's_hall14.txt"
 map_obj,2691,26,4,7,30,0,0,0
+event_generator,2701,27,4,6,17,0,0,"@027/nanabangai_slum14_1.txt"
+event_generator,2702,27,5,5,17,0,0,"@027/nanabangai_slum14_2.txt"
+event_generator,2703,27,6,6,17,0,0,"@027/nanabangai_slum14_3.txt"
 npc_event,2803,28,15,4,34,1,0,"none"
 npc_event,2804,28,10,8,35,0,2,"none"
 npc_event,2805,28,11,4,36,1,0,"none"

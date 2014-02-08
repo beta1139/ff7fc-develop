@@ -1,11 +1,10 @@
 wait_same_pos
-kill 2701
-kill 2703
+kill_through_range 2701 2703
 backup_char_img
 chg_char_img 0
 open_door 2790
 play_se door_open.ogg
-create npc_event 2704 27 5 9 89 0 3 「やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフに　いきていく　きほんだぜ！\n　おっさん　おぼえときな
+create npc_event 2704 27 5 9 89 0 3 「やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフにいきていく　きほんだぜ！\n　おっさん　おぼえときな
 move_npc 2704 up 3
 sleep 8
 close_door 2790
@@ -16,12 +15,36 @@ create npc_event 2703 27 5 5 0 1 2 none
 draw_char off
 jump_npc 2704 same 2
 sleep 32
-chg_speed 2704 normal
 draw_char on
 kill 2703
-msg 「ただで　やすめる　ほど\n　スラムのまちは　あまくはないぜ\n\n\n　ベッドを　みたら　ねむくなって　きただろ\n\n\n\n#3\n　　10ギル\n　　やすまない\n\n\n[[]][[]]
+step_npc 2704 2
+msg 「ただで　やすめるほど\n　スラムのまちは　あまくはないぜ\n\n\n　どうすんだい？\n\n\n\n　ベッドをみたら　ねむくなってきただろ\n\n\n\n#3\n　　10ギル\n　　やすまない\n\n\n[[]][[]]
 if_flag 3 0
+chg_speed 2704 normal
+if_gil_less 10
+step_npc 2704 1
+msg 「おっさん　くろうしてんだな\n　かねもってないじゃないか！
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 2
+sleep 16
+move_npc 2704 down 3
+sleep 40
+open_door 2790
+sleep 8
+chg_char_dir down
+reset_char_img_tmp
+kill 2704
+close_door 2790
+sleep 32
+create event_generator 2080 20 35 25 17 1 0 @020/nanabangai_slum27.txt
+end
+fi
 sub_gil 10
+step_char 2
+sleep 24
+play_se coin.ogg
+sleep 32
 chg_npc_dir 2704 right
 sleep 4
 chg_npc_dir 2704 down
@@ -30,9 +53,8 @@ chg_npc_dir 2704 left
 sleep 4
 chg_npc_dir 2704 up
 sleep 4
-set_talk_npc 2506
-msg 「いいゆめ　みなよな　おっさん
-reset_talk_npc
+step_npc 2704 2
+msg 「いいゆめみなよな　おっさん
 move_npc 2704 down 3
 sleep 40
 open_door 2790
@@ -77,23 +99,36 @@ fadein
 jump_char down 2
 sleep 48
 chg_char_dir right
-create npc 2508 25 7 8 89 2 0 「いいゆめ　みたかい\n\n\n\n　やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフに　いきていく　きほんだぜ！\n　おっさん　おぼえときな
+create npc 2508 25 7 8 89 2 0 「いいゆめみたかい\n\n\n\n　やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフにいきていく　きほんだぜ！\n　おっさん　おぼえときな
 sleep 16
 fi
 if_flag 3 1
 create npc_event 2703 27 5 5 0 1 2 none
 draw_char off
-jump_npc 2704 same 2
-sleep 32
+loop 2
+jump_npc 2704 same 1
+sleep 16
+pool
 draw_char on
 kill 2703
-msg 「ごうじょうだな！　もうっ！\n　やすめるときは　やすむ\n\n\n　セーブできるときに\n　セーブする\n\n\n　これがタフに　いきていく　きほんだぜ！\n　おっさん　おぼえときな
-move_npc 2704 right 1
+step_npc 2704 2
+msg 「ごうじょうだな！　もうっ！\n　やすめるときは　やすむ\n\n\n　セーブできるときに　セーブする\n\n\n\n　これがタフにいきていく　きほんだぜ！\n　おっさん　おぼえときな
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 2
 sleep 16
-chg_npc_dir 2704 left
-chg_type 2704 npc
-chg_speed 2704 not_move
-set_flag_wall 2704
+chg_speed 2704 normal
+move_npc 2704 down 3
+sleep 40
+open_door 2790
+sleep 8
+chg_char_dir down
+reset_char_img_tmp
+kill 2704
+close_door 2790
+sleep 32
+create event_generator 2080 20 35 25 17 1 0 @020/nanabangai_slum27.txt
+end
 fi
 kill_through 2505
 kill_through 2504
