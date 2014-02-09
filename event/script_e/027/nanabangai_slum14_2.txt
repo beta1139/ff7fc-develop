@@ -79,7 +79,7 @@ chg_npc_dir 2710 right
 chg_npc_img 2710 96
 sleep 64
 fadeout
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 draw_char on
 kill 2710
 sleep 32
