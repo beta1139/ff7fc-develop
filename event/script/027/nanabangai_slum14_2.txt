@@ -87,13 +87,13 @@ play_se care.wav
 sleep 80
 recover_active_chara
 if_flag 9 0
-play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+play_map_bgm 16
 if_flag 0 4
-play_event_bgm 1-05-Tifa's_Theme.ogg
+play_map_bgm 22
 fi
 fi
 if_flag 9 1
-play_event_bgm 1-06-Barrett's_Theme.ogg
+play_map_bgm 28
 fi
 fadein
 jump_char down 2
