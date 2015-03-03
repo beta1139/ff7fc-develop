@@ -21,6 +21,7 @@ sleep 1
 pool
 set_map_draw_y_offset 170
 if_flag 9 0
+reset_screen_effect
 warp 6 4 2 up
 fi
 if_flag 9 1
@@ -38,7 +39,6 @@ pool
 if_flag 9 0
 if_flag 0 5
 draw_countdown on
-create event_generator 1003 10 0 0 17 0 0 @010/ichiban_makouro_alarm.txt
 fi
 fi
 set_map_draw_y_offset 0

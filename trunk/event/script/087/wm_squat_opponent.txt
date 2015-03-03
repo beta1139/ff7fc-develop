@@ -18,9 +18,9 @@ play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
 add_flag 17 1
-sleep 24
+sleep 8
 pool
-if_flag 16 2
+if_flag_lesser 16 4
 chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
@@ -36,7 +36,7 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 left
-sleep 32
+sleep 24
 chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
@@ -47,9 +47,9 @@ play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
 add_flag 17 1
-sleep 16
+sleep 8
 pool
-if_flag 16 4
+if_flag 16 6
 chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
@@ -91,12 +91,12 @@ play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
 add_flag 17 1
-sleep 16
-if_flag 16 7
+sleep 8
+if_flag 16 9
 chg_npc_dir 8710 down
 chg_npc_img 8710 44
-step_npc 8710 3
-sleep 48
+step_npc 8710 2
+sleep 32
 msg3 104 「うぉー！！！　リズムがーっ！
 jump_npc 8710 same 1
 loop 8
@@ -124,145 +124,10 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 left
-sleep 32
-chg_npc_dir 8710 up
-play_se squat.ogg
-sleep 4
-chg_npc_dir 8710 right
-sleep 32
-chg_npc_dir 8710 up
-play_se squat.ogg
-sleep 4
-chg_npc_dir 8710 down
-add_flag 17 1
-sleep 16
-if_flag 16 7
-chg_npc_img 8710 44
-step_npc 8710 3
-sleep 48
-msg3 104 「うぉー！！！　まけてたまるかぁーっ！
-jump_npc 8710 same 1
-loop 8
-inc_map_draw_y_offset
-sleep 1
-pool
-loop 8
-dec_map_draw_y_offset
-sleep 1
-pool
-jump_npc 8710 same 1
-loop 6
-inc_map_draw_y_offset
-sleep 1
-pool
-loop 6
-dec_map_draw_y_offset
-sleep 1
-pool
-sleep 4
-chg_npc_img 8710 125
-fi
-if_flag 16 8
-chg_npc_img 8710 44
-step_npc 8710 3
-sleep 48
-jump_npc 8710 same 1
-sleep 16
-jump_npc 8710 same 1
-sleep 16
-chg_npc_img 8710 125
-chg_npc_dir 8710 down
-fi
-sleep 16
-chg_npc_dir 8710 up
-play_se squat.ogg
-sleep 4
-chg_npc_dir 8710 left
-sleep 32
-chg_npc_dir 8710 up
-play_se squat.ogg
-sleep 4
-chg_npc_dir 8710 right
-sleep 32
-chg_npc_dir 8710 up
-play_se squat.ogg
-sleep 4
-chg_npc_dir 8710 down
-add_flag 17 1
-sleep 16
-if_flag 16 10
-chg_npc_img 8710 44
-step_npc 8710 3
-sleep 48
-msg3 104 「まけてたまるかぁーっ！
-jump_npc 8710 same 1
-loop 8
-inc_map_draw_y_offset
-sleep 1
-pool
-loop 8
-dec_map_draw_y_offset
-sleep 1
-pool
-jump_npc 8710 same 1
-loop 6
-inc_map_draw_y_offset
-sleep 1
-pool
-loop 6
-dec_map_draw_y_offset
-sleep 1
-pool
-sleep 4
-chg_npc_img 8710 125
-fi
-set_screen_effect sub 255 255 255 80
-chg_npc_dir 8710 up
-play_se radio_noise.ogg
-sleep 8
-reset_screen_effect
-sleep 8
-set_screen_effect sub 255 255 255 80
-sleep 8
-reset_screen_effect
-chg_npc_dir 8710 up
-play_se radio_noise.ogg
-sleep 4
-chg_npc_dir 8710 right
-sleep 4
-set_screen_effect sub 255 255 255 80
-sleep 8
-reset_screen_effect
-sleep 8
-set_screen_effect sub 255 255 255 80
-sleep 8
-reset_screen_effect
-sleep 4
-chg_npc_dir 8710 up
-play_se squat.ogg
-sleep 4
-chg_npc_dir 8710 down
-add_flag 17 1
-sleep 16
-if_flag 16 11
-chg_npc_img 8710 44
-step_npc 8710 3
-sleep 48
-jump_npc 8710 same 1
-sleep 16
-jump_npc 8710 same 1
-sleep 16
-chg_npc_img 8710 125
-fi
 sleep 24
 chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
-chg_npc_dir 8710 left
-sleep 32
-chg_npc_dir 8710 up
-play_se squat.ogg
-sleep 4
 chg_npc_dir 8710 right
 sleep 32
 chg_npc_dir 8710 up
@@ -270,7 +135,39 @@ play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
 add_flag 17 1
+sleep 8
+if_flag 16 9
+msg3 104 「うぉー！！！　まけてたまるかぁーっ！
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_dir 8710 up
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_dir 8710 left
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 24
+chg_npc_dir 8710 up
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+sleep 4
+chg_npc_dir 8710 down
+add_flag 17 1
 sleep 16
+fi
+if_flag_lesser 16 9
 chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
@@ -279,6 +176,8 @@ sleep 16
 jump_npc 8710 same 1
 sleep 16
 chg_npc_img 8710 125
+chg_npc_dir 8710 down
+fi
 sleep 16
 chg_npc_dir 8710 up
 play_se squat.ogg
@@ -295,82 +194,235 @@ play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
 add_flag 17 1
+sleep 8
+if_flag_greater 16 10
+jump_npc 8710 same 1
 sleep 16
+jump_npc 8710 same 1
+sleep 16
+msg3 104 「まけてたまるかぁーっ！
+chg_npc_dir 8710 down
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
 chg_npc_dir 8710 up
 play_se squat.ogg
-sleep 4
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
 chg_npc_dir 8710 left
-sleep 32
-chg_npc_dir 8710 up
-play_se squat.ogg
-sleep 4
-chg_npc_dir 8710 right
-sleep 32
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
 chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
 add_flag 17 1
 sleep 16
-if_flag 16 13
+erase_msg3
+fi
+if_flag 99 0
+set_screen_effect sub 255 255 255 80
+play_se radio_noise.ogg
+sleep 8
+reset_screen_effect
+sleep 8
+chg_npc_dir 8710 up
+set_screen_effect sub 255 255 255 80
+sleep 4
+chg_npc_dir 8710 left
+sleep 4
+reset_screen_effect
+play_se radio_noise.ogg
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 4
+chg_npc_dir 8710 up
+sleep 4
+reset_screen_effect
+chg_npc_dir 8710 right
+sleep 16
+fi
+if_flag 99 1
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 24
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 16
+fi
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+add_flag 17 1
+sleep 8
+if_flag_lesser 16 13
 chg_npc_img 8710 44
-msg3 104 「うぉー！！！　アニキっー！
-jump_npc 8710 same 1
-loop 8
-inc_map_draw_y_offset
-sleep 1
-pool
-loop 8
-dec_map_draw_y_offset
-sleep 1
-pool
-jump_npc 8710 same 1
-loop 6
-inc_map_draw_y_offset
-sleep 1
-pool
-loop 6
-dec_map_draw_y_offset
-sleep 1
-pool
-sleep 4
 step_npc 8710 3
 sleep 48
+jump_npc 8710 same 1
+sleep 16
+jump_npc 8710 same 1
+sleep 16
 chg_npc_img 8710 125
 fi
+sleep 16
 chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
-set_screen_effect sub 255 255 255 80
-play_se radio_noise.ogg
 chg_npc_dir 8710 left
-sleep 8
-reset_screen_effect
-sleep 8
-set_screen_effect sub 255 255 255 80
-sleep 8
-reset_screen_effect
-sleep 8
-set_screen_effect sub 255 255 255 80
+sleep 24
 chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 right
+sleep 24
+chg_npc_dir 8710 up
+play_se squat.ogg
 sleep 4
-reset_screen_effect
-play_se radio_noise.ogg
+chg_npc_dir 8710 down
+add_flag 17 1
 sleep 8
-set_screen_effect sub 255 255 255 80
+chg_npc_img 8710 44
+chg_speed 8710 fast
+step_npc 8710 4
+sleep 32
+chg_speed 8710 normal
+jump_npc 8710 same 1
+sleep 16
+jump_npc 8710 same 1
+sleep 16
+chg_npc_img 8710 125
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+add_flag 17 1
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 left
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 32
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 down
+add_flag 17 1
+sleep 16
+if_flag_greater 16 14
 sleep 8
-reset_screen_effect
+chg_npc_dir 8710 up
+play_se squat.ogg
+msg3 104 「うぉー！！！　アニキっー！
+sleep 4
+chg_npc_dir 8710 left
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
 sleep 12
 chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
+chg_npc_dir 8710 right
+sleep 24
+chg_npc_dir 8710 down
+add_flag 17 1
+sleep 8
+fi
+sleep 16
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+if_flag 99 0
+set_screen_effect sub 255 255 255 80
+play_se radio_noise.ogg
+chg_npc_dir 8710 left
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+chg_npc_dir 8710 up
+reset_screen_effect
+sleep 4
+chg_npc_dir 8710 right
+sleep 4
+set_screen_effect sub 255 255 255 80
+play_se squat.ogg
+sleep 8
+reset_screen_effect
+play_se radio_noise.ogg
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+fi
+if_flag 99 1
+chg_npc_dir 8710 left
+sleep 24
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
+chg_npc_dir 8710 right
+sleep 28
+fi
+sleep 4
+chg_npc_dir 8710 up
+play_se squat.ogg
+sleep 4
 chg_npc_dir 8710 down
 add_flag 17 1
 sleep 16
-if_flag 16 15
+if_flag_greater 16 16
 chg_npc_img 8710 44
 msg3 104 「うぉー！！！　うぉーーーっ！
 jump_npc 8710 same 1
@@ -392,8 +444,10 @@ dec_map_draw_y_offset
 sleep 1
 pool
 sleep 4
-step_npc 8710 3
-sleep 48
+chg_speed 8710 fast
+step_npc 8710 2
+sleep 32
+chg_speed 8710 normal
 chg_npc_img 8710 125
 fi
 sleep 16
@@ -401,7 +455,7 @@ chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 left
-sleep 32
+sleep 24
 chg_npc_dir 8710 up
 play_se squat.ogg
 sleep 4
@@ -430,5 +484,5 @@ play_se squat.ogg
 sleep 4
 chg_npc_dir 8710 down
 add_flag 17 1
-sleep 24
+sleep 16
 pool

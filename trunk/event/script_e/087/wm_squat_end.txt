@@ -1,5 +1,25 @@
 wait_same_pos
 chg_char_state_move
+if_flag 99 0
+sleep 1400
+set_screen_effect sub 255 255 255 80
+play_se radio_noise.ogg
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+play_se radio_noise.ogg
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 80
+sleep 8
+reset_screen_effect
+fi
 wait_fake_countover
 chg_char_state_event
 set_key_valid a
@@ -12,8 +32,23 @@ end_fake_countdown
 jump_npc 8715 same 1
 sleep 16
 step_npc 8715 2
+if_flag_greater 16 24
+msg 「いまので　25かいね
+fi
+if_flag 16 24
+msg 「いまので　24かいね
+fi
+if_flag 16 23
+msg 「いまので　23かいね
+fi
+if_flag 16 22
+msg 「いまので　22かいね
+fi
+if_flag 16 21
+msg 「いまので　21かいね
+fi
 if_flag 16 20
-msg 「いまので　20かいいじょうね
+msg 「いまので　20かいね
 fi
 if_flag 16 19
 msg 「いまので　19かいね
@@ -79,7 +114,6 @@ sleep 16
 set_flag 16 0
 chg_npc_dir 8710 down
 sleep 16
-step_npc 8715 2
 step_npc 8715 2
 msg 「じゃあ　ほんばんやるわよ\n　ほんばん　はじめ！
 draw_fake_countdown on

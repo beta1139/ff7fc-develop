@@ -1,7 +1,7 @@
 wait_target_talked 534
 play_se button.ogg
 sleep 32
-play_se door_open_hard.wav
+play_se machine.wav
 kill 550
 kill 551
 kill 535

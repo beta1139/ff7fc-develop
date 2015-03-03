@@ -95,7 +95,9 @@ chg_speed 562 not_step
 play_se switch.ogg
 sleep 4
 play_se_loop alarm.ogg
-sleep 52
+sleep 36
+erase_msg3
+sleep 16
 chg_npc_img 570 34
 chg_npc_dir 570 left
 chg_npc_img 571 35
@@ -104,7 +106,7 @@ chg_npc_dir 561 up
 chg_npc_dir 562 up
 chg_speed 561 not_move
 chg_speed 562 not_move
-msg3 -1 Jessie\n「No good.\n Let's try it again.
+create event_generator 511 5 0 0 17 0 0 @005/gimmick_a_text1.txt
 if_flag 10 0
 sleep 96
 erase_msg3
@@ -140,12 +142,13 @@ set_key_unvalid a
 sleep 64
 erase_msg3
 sleep 8
-msg3 -1 Barret\n「What the fuck are you \n doing? It's MY turn!
+create event_generator 512 5 0 0 17 0 0 @005/gimmick_a_text2.txt
 chg_speed 572 fast
 chg_npc_img 572 95
 chg_npc_dir 572 up
 jump_npc 572 same 1
 sleep 16
+chg_char_img 1
 jump_npc 572 same 1
 sleep 16
 chg_npc_dir 572 down
@@ -163,7 +166,6 @@ chg_speed 573 normal
 move_npc 573 left 1
 chg_speed 572 normal
 move_npc 572 right 1
-chg_char_img 1
 sleep 5
 chg_speed 572 not_step
 chg_speed 573 not_step
@@ -209,7 +211,7 @@ sleep 32
 chg_npc_img 573 0
 chg_npc_dir 573 up
 chg_char_state_event
-msg3 -1 『I am SO offended.NOT.
+create event_generator 513 5 0 0 17 0 0 @005/gimmick_a_text3.txt
 sleep 16
 chg_npc_dir 572 down
 chg_char_img 0
@@ -266,7 +268,9 @@ chg_speed 562 not_step
 play_se switch.ogg
 sleep 4
 play_se_loop alarm.ogg
-sleep 52
+sleep 36
+erase_msg3
+sleep 16
 chg_npc_img 570 34
 chg_npc_dir 570 left
 chg_npc_img 571 35
@@ -275,7 +279,7 @@ chg_npc_dir 561 up
 chg_npc_dir 562 up
 chg_speed 561 not_move
 chg_speed 562 not_move
-msg3 -1 Jessie\n「No good.\n Let's try it again.
+create event_generator 511 5 0 0 17 0 0 @005/gimmick_a_text1.txt
 if_flag 10 0
 sleep 96
 erase_msg3
@@ -311,12 +315,13 @@ chg_npc_dir 571 down
 sleep 64
 erase_msg3
 sleep 8
-msg3 -1 Barret\n「What the fuck are you \n doing? It's MY turn!
+create event_generator 512 5 0 0 17 0 0 @005/gimmick_a_text2.txt
 chg_speed 572 fast
 chg_npc_img 572 95
 chg_npc_dir 572 up
 jump_npc 572 same 1
 sleep 16
+chg_char_img 1
 jump_npc 572 same 1
 sleep 16
 chg_npc_dir 572 down
@@ -334,7 +339,6 @@ chg_speed 573 normal
 move_npc 573 left 1
 chg_speed 572 normal
 move_npc 572 right 1
-chg_char_img 1
 sleep 5
 chg_speed 572 not_step
 chg_speed 573 not_step
@@ -380,7 +384,7 @@ sleep 32
 chg_npc_img 573 0
 chg_npc_dir 573 up
 chg_char_state_event
-msg3 -1 『I am SO offended.NOT.
+create event_generator 513 5 0 0 17 0 0 @005/gimmick_a_text3.txt
 sleep 16
 chg_npc_dir 572 down
 chg_char_img 0

@@ -6,7 +6,7 @@ msg ティファ\n「ねぇ　クラウド\n　きぶんは　どう？
 sleep 16
 chg_char_dir left
 msg 『……ふつうさ\n　どうして　そんなことを　きく？\n\n\nティファ\n「ううん　なんでもない\n　ただ　つかれて　ないのかなって……
-chg_npc_dir 2202 down
+chg_npc_dir 2202 up
 chg_type 2202 npc
 chg_speed 2202 not_move
 set_flag_wall 2202

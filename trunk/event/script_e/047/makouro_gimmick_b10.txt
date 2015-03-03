@@ -63,7 +63,7 @@ kill 4750
 kill 4751
 kill 4740
 kill 4741
-play_se door_open_hard.wav
+play_se machine.wav
 sleep 32
 move_char down 4
 sleep 32
@@ -79,6 +79,8 @@ chg_npc_img 4771 98
 fi
 if_flag 11 3
 chg_npc_dir 4771 up
+chg_npc_dir 4772 down
+chg_npc_img 4772 103
 fi
 fi
 sleep 16
@@ -118,7 +120,7 @@ chg_npc_dir 4773 up
 chg_npc_img 4774 105
 pool
 step_npc 4770 2
-msg3 -1 Tifa\n「Wow, you ROCK!\n That's perfect!
+msg3 -1 Tifa\n「Wow, you ROCK! Amazing!
 chg_npc_img 4771 98
 chg_npc_dir 4771 left
 step_npc 4771 2
@@ -151,9 +153,8 @@ kill 4774
 chg_npc_img 4772 0
 chg_npc_dir 4772 up
 add_likability 1 500
-add_likability 2 1000
+add_likability 2 500
 set_flag 10 1
-wait_key_push_edge a
 fi
 if_flag 10 0
 jump_npc 4770 same 1
@@ -161,34 +162,30 @@ sleep 16
 jump_npc 4770 same 1
 sleep 16
 step_npc 4770 2
-msg Tifa\n「Wow, you ROCK! Amazing!
-add_likability 1 500
+msg3 -1 Tifa\n「Wow, you ROCK! Amazing!
+sleep 64
+add_likability 1 300
 add_likability 2 500
 fi
 if_flag 9 0
 jump_npc 4770 same 1
 sleep 16
-chg_npc_img 4771 98
-chg_npc_dir 4771 left
-step_npc 4770 2
-set_talk_npc 4770
-msg Tifa\n「That's great.
-reset_talk_npc
-add_likability 1 300
-add_likability 2 500
+step_npc 4770 1
+sleep 16
+add_likability 1 100
+add_likability 2 100
 fi
 if_flag 1 1
 chg_npc_img 4771 98
 chg_npc_dir 4771 left
 sleep 16
 step_npc 4771 4
-msg Barret\n「Do a better job next\n time.
+sleep 32
 jump_npc 4770 same 1
 sleep 16
 jump_npc 4770 same 1
 msg3 -1 Tifa\n「No problem.Let's go!
-sleep 16
-step_npc 4770 2
+sleep 32
 chg_npc_dir 4772 right
 chg_npc_img 4772 97
 step_npc 4772 4
@@ -196,17 +193,15 @@ sleep 64
 chg_npc_img 4772 0
 chg_npc_dir 4772 down
 sleep 8
-sub_likability 1 500
-sub_likability 2 300
+sub_likability 1 100
 fi
 if_flag 0 4
 if_flag 11 2
-chg_npc_dir 4770 down
 sleep 16
 chg_npc_dir 4772 up
-step_npc 4770 2
-msg Tifa\n「……Cloud, are you tired?
 step_npc 4771 4
+msg Barret\n「Do a better job next\n time.
+sleep 16
 chg_npc_dir 4772 right
 chg_npc_img 4772 97
 step_npc 4772 4
@@ -214,30 +209,65 @@ sleep 64
 chg_npc_img 4772 0
 chg_npc_dir 4772 down
 sleep 8
-sub_likability 1 500
+sub_likability 1 300
 sub_likability 2 300
 fi
 if_flag 11 3
-chg_npc_dir 4772 up
-msg Tifa\n「………
+chg_npc_dir 4772 left
+sleep 16
+chg_npc_dir 4771 up
 sleep 16
 chg_npc_dir 4772 up
-chg_npc_dir 4771 down
-sleep 24
+sleep 8
 chg_npc_dir 4772 up
-set_active_msg 4771
+chg_npc_img 4772 0
+msg 『You let me down.
+chg_npc_dir 4770 right
+chg_npc_img 4770 98
+chg_npc_dir 4771 up
+chg_npc_img 4771 95
+sleep 8
+jump_npc 4770 same 1
 jump_npc 4771 same 1
-msg Barret\n「Oh,I am\n SOOO offended. NOT.
-chg_speed 4772 slow
-chg_npc_dir 4772 down
-chg_npc_img 4772 98
+sleep 8
+chg_npc_dir 4772 up
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 
+pool
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 
+pool
+jump_npc 4770 same 1
+jump_npc 4771 same 1
+sleep 16
+jump_npc 4772 same 1
+chg_npc_img 4772 97
+sleep 8
+chg_speed 4771 fast
+step_npc 4771 4
+chg_npc_img 4772 0
+sleep 8
+jump_npc 4772 same 1
+chg_npc_img 4772 97
+sleep 16
+chg_npc_dir 4772 right
 step_npc 4772 2
-sleep 72
+sleep 40
+chg_npc_img 4772 0
 sub_likability 1 500
 sub_likability 2 500
 fi
 fi
-sleep 16
 erase_msg3
 chg_npc_img 4770 2
 chg_npc_img 4771 1

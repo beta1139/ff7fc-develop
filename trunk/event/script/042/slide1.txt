@@ -39,7 +39,7 @@ create npc_event 4762 47 14 17 116 0 0 none
 chg_npc_y_offset 4760 -2
 chg_npc_y_offset 4761 -2
 chg_npc_y_offset 4762 -2
-create npc2 4763 47 12 18 17 0 0 
+create npc2 4763 47 12 17 17 0 0 
 create npc2 4764 47 12 30 17 0 0 
 create npc2 4765 47 12 31 17 0 0 
 create npc2 4766 47 12 32 17 0 0 

@@ -414,6 +414,7 @@ pool
 play_se landing.wav
 move_char down 2
 chg_event_move_char_speed normal
+kill_through 7199
 sleep 32
 chg_char_dir up
 draw_char on
@@ -421,3 +422,4 @@ kill 6920
 create event_generator 6801 68 12 8 17 0 0 @068/rokubangai2.txt
 kill_through_range 6960 6963
 del_party_mem 3
+create event_generator 7199 71 0 0 17 0 0 @071/temp.txt

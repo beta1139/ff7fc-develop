@@ -2,7 +2,7 @@ wait_same_pos
 flush
 play_se beeeeep.wav
 play_event_bgm 1-17-Who_are_You.ogg
-set_screen_effect sub 125 125 125 0
+set_screen_effect sub 140 140 140 0
 loop 8
 inc_screen_effect_val 1
 sleep 1

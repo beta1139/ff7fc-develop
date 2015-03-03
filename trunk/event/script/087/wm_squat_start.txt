@@ -11,7 +11,7 @@ kill_through 8768
 create event_generator 8766 87 9 14 17 0 0 @087/wm_squat_select.txt
 sleep 4
 chg_char_dir left
-sleep 16
+sleep 8
 wait_key_push_edge b
 sleep 12
 chg_char_dir up
@@ -21,7 +21,7 @@ kill_through 8767
 create event_generator 8765 87 9 14 17 0 0 @087/wm_squat_b.txt
 sleep 4
 chg_char_dir right
-sleep 16
+sleep 8
 wait_key_push_edge a
 sleep 12
 chg_char_dir up

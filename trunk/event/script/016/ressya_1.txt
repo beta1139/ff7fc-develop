@@ -148,8 +148,6 @@ sleep 8
 set_layer 1665 back
 sleep 8
 chg_npc_dir 1652 up
-chg_npc_img 1665 0
-chg_npc_dir 1665 down
 chg_npc_dir 1654 down
 chg_npc_dir 1653 up
 sleep 24
@@ -308,6 +306,7 @@ sleep 20
 move_npc 1653 down 1
 sleep 16
 chg_npc_dir 1653 left
+sleep 16
 step_npc 1653 2
 msg ジェシー\n「ね　まこうろで　たすけてくれて\n　ありがとう！
 move_npc 1653 down 1

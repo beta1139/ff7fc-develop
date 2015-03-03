@@ -14,9 +14,9 @@ fadeout
 sleep 8
 draw_char off
 warp 706 7 6 up
-create npc_event 70610 706 6 6 77 0 2 none
-create npc_event 70611 706 8 6 78 0 2 none
-create npc_event 70612 706 7 5 7 2 2 none
+create npc_event 70610 706 6 6 77 3 2 none
+create npc_event 70611 706 8 6 78 2 2 none
+create npc_event 70612 706 7 5 7 1 2 none
 sleep 8
 if_flag 16 3
 warp 706 7 20 up

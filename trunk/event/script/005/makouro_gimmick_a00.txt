@@ -1,18 +1,27 @@
 wait_same_pos
+kill_through 1003
+kill_through_range 1050 1051
 draw_countdown off
 create npc2 540 5 13 7 17 0 0 
 create npc2 541 5 13 8 17 0 0 
 create map_obj 550 5 13 7 31 0 0 
 create map_obj 551 5 13 8 31 0 0 
 play_se_loop alarm.ogg
+set_screen_effect sub 255 255 0 0
 msg3 144 「ヒジョウ　ケイカイ　システム　サドウチュウ\n　ヒジョウ　ケイカイ　システム　サドウチュウ
 move_char left 5
-sleep 80
+loop 14
+inc_screen_effect_val 1
+sleep 1
+pool
+sleep 66
 create npc_event 572 5 19 7 1 2 2 none
 move_npc 572 left 2
 sleep 32
 jump_npc 572 same 2
 sleep 32
+erase_msg3
+sleep 8
 chg_speed 572 fast
 step_npc 572 2
 msg バレット\n「どうなってんだっ！\n　とびらが　しまってやがる！
@@ -31,9 +40,21 @@ chg_speed 572 normal
 move_npc 572 right 2
 sleep 32
 kill 572
+create map_obj 552 5 23 7 31 0 0 
+play_se machine.wav
 draw_countdown on
 chg_char_state_move
 set_flag 1 1
+msg3 128 「ヒジョウ　ケイカイ　システム　サドウチュウ\n　ヒジョウ　ケイカイ　システム　サドウチュウ
+sleep 32
+play_se_loop alarm.ogg
+sleep 96
+erase_msg3
+sleep 8
+msg3 128 「トビラ　ロック　サレマシタ
+sleep 200
+erase_msg3
+sleep 8
 loop inf
 msg3 128 「ヒジョウ　ケイカイ　システム　サドウチュウ\n　ヒジョウ　ケイカイ　システム　サドウチュウ
 sleep 128

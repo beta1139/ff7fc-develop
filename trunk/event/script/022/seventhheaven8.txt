@@ -56,9 +56,9 @@ chg_speed 2202 normal
 chg_npc_dir 2202 left
 fi
 set_inactive_msg 2202
-chg_type 2201 npc2
+chg_type 2206 npc2
 chg_type 2202 npc
 chg_speed 2202 not_move
-set_flag_wall 2201
+set_flag_wall 2206
 set_flag_wall 2202
 create event_generator 2241 22 1 1 17 0 0 @022/seventhheaven9.txt

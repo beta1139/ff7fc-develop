@@ -10,3 +10,5 @@ fi
 play_se jump.wav
 sleep 32
 play_se landing.wav
+kill_through 165
+kill_through 175

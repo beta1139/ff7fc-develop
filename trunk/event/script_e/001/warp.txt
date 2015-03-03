@@ -70,13 +70,22 @@ move_npc 1102 down 8
 move_npc 1103 down 8
 move_npc 1104 down 8
 sleep 72
-create explode 1140 11 4 4 0 0 0 none
-create explode 1141 11 4 3 0 0 0 none
+create explode 1140 11 4 0 0 0 0 none
+create explode 1141 11 4 1 0 0 0 none
+create explode 1142 11 4 2 0 0 0 none
+create explode 1143 11 4 3 0 0 0 none
+create explode 1144 11 4 4 0 0 0 none
 sleep 8
-create map_obj 1150 11 4 4 32 0 0 
-create map_obj 1151 11 4 3 32 0 0 
-create explode 1142 11 3 4 0 0 0 none
-create explode 1143 11 3 3 0 0 0 none
+create map_obj 1150 11 4 0 32 0 0 
+create map_obj 1151 11 4 1 32 0 0 
+create map_obj 1152 11 4 2 32 0 0 
+create map_obj 1153 11 4 3 32 0 0 
+create map_obj 1154 11 4 4 32 0 0 
+create explode 1145 11 3 0 0 0 0 none
+create explode 1146 11 3 1 0 0 0 none
+create explode 1147 11 3 2 0 0 0 none
+create explode 1148 11 3 3 0 0 0 none
+create explode 1149 11 3 4 0 0 0 none
 play_se bomb_little.ogg
 fadeout
 sleep 160
@@ -85,10 +94,14 @@ warp 12 6 23 up
 draw_char on
 set_flag 0 0
 play_bgm
-create npc_event 1250 12 5 23 80 3 0 none
-create npc_event 1251 12 6 23 80 3 0 none
-chg_npc_y_offset 1250 2
-chg_npc_y_offset 1251 2
+create npc_event 1260 12 4 23 80 3 0 
+create npc_event 1261 12 5 23 80 3 0 
+create npc_event 1262 12 6 23 80 3 0 
+create npc_event 1263 12 7 23 80 3 0 
+chg_npc_y_offset 1260 2
+chg_npc_y_offset 1261 2
+chg_npc_y_offset 1262 2
+chg_npc_y_offset 1263 2
 sleep 32
 fadein
 sleep 48
@@ -195,10 +208,12 @@ jump_npc 1252 same 1
 sleep 16
 pool
 step_npc 1203 6
+play_se syu.ogg
 kill 1252
 sleep 8
 create npc_event 1252 12 4 21 80 3 0 none
 chg_npc_y_offset 1252 2
+play_se syu.ogg
 sleep 8
 kill 1252
 sleep 8
@@ -246,7 +261,11 @@ move_npc 1202 up 8
 move_npc 1203 up 8
 move_npc 1200 right 1
 sleep 16
-msg 『H,hey！
+jump_char same 1
+msg3 -1 『H,hey！
+wait_key_push_edge a
+erase_msg3
+sleep 16
 chg_npc_dir 1200 down
 set_talk_npc 1200
 msg Baret\n「If it's about your money.\n Wait til we get back.
@@ -258,6 +277,12 @@ kill 1201
 kill 1202
 kill 1203
 set_flag 0 0
+chg_type 1261 npc2
+chg_type 1262 npc2
+chg_type 1263 npc2
+create event_generator 1211 12 0 0 17 0 0 @012/fire1.txt
+create event_generator 1212 12 0 0 17 0 0 @012/fire2.txt
+create event_generator 1213 12 0 0 17 0 0 @012/fire3.txt
 fi
 if_flag 3 2
 warp 16 9 5 down

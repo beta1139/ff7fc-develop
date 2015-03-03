@@ -63,7 +63,7 @@ sleep 16
 fi
 if_flag 17 20
 step_npc 8715 2
-msg 「ざんねんでした\n　あなたのまけね\n\n\n　ふくやのオヤジのたのみだから\n　わたさないわけには　いかないから
+msg 「ざんねんでした\n　あなたのまけね\n\n\n　ふくやのオヤジの　たのみだから\n　わたさないわけには　いかないから
 move_npc 8715 up 1
 sleep 16
 move_npc 8715 right 1
@@ -168,7 +168,7 @@ if_flag 17 22
 msg 「やかましー！\n　まけたあげくに　めそめそすんじゃねえ！
 fi
 if_flag 17 21
-msg 「やかましい！\n　シロウトさんとひきわけといて\n　ナマイキいってんじゃねえ！！
+msg 「やかましい！\n　シロウトさんと　ひきわけといて\n　ナマイキいってんじゃねえ！！
 fi
 if_flag 17 20
 msg 「こん　ボケ！\n　なんてとこに　かくしてやがんだ！
@@ -238,7 +238,6 @@ set_flag_wall 8711
 set_flag_wall 8712
 chg_param 8715 「だいじにつかってね
 chg_speed 8711 not_move
-chg_param 8719 「ははは\n　さいきん　でんきけいとうの\n　ちょうしがわるくてね
 kill_through 8709
 kill_through 8406
 kill 7516
@@ -247,3 +246,6 @@ set_npc_pos 7515 75 4 11
 set_flag_wall 7515
 chg_npc_dir 7515 left
 chg_param 7510 「てにはいったようですね\n　さっそく　きがえてみてくださいよ
+if_flag 99 0
+chg_param 8719 「ははは\n　さいきん　でんきけいとうの\n　ちょうしがわるくてね
+fi

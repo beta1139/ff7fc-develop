@@ -31,7 +31,7 @@ fi
 sleep 8
 chg_npc_dir 9523 right
 step_npc 9523 4
-msg コルネオ\n「……かたうでが　『じゅう』のおとこのねぐらを\n　さがさせたんだ\n　そういういらいがあったんだ
+msg コルネオ\n「……かたうでが　『じゅう』のおとこの　ねぐらを\n　さがさせたんだ\n　そういういらいがあったんだ
 sleep 32
 step_npc 9522 1
 msg ティファ\n「だれから？
@@ -47,7 +47,7 @@ sleep 4
 chg_npc_dir 9523 right
 sleep 4
 jump_npc 9523 same 1
-msg コルネオ\n「ほひ～！\n　しんらのハイデッカーだ！\n\n　ちあんいじぶもん　そうかつ　ハイデッカーだ！
+msg コルネオ\n「ほひ～！\n　しんらの　ハイデッカーだ！\n\n　ちあんいじぶもん　そうかつ　ハイデッカーだ！
 sleep 24
 step_npc 9520 1
 set_talk_npc 9520
@@ -83,13 +83,13 @@ fi
 sleep 32
 chg_speed 9523 normal
 step_npc 9523 2
-msg コルネオ\n「ほひ……ねえちゃん……ほんきだな\n　……えらいえらい\n\n　……おれもふざけてるばあいじゃねえな
+msg コルネオ\n「ほひ……ねえちゃん……ほんきだな\n　……えらいえらい\n\n　……おれも　ふざけてるばあいじゃねえな
 sleep 16
 jump_npc 9523 same 1
-msg コルネオ\n「しんらはアバランチとかいう\n　ちっこいウラそしきを　つぶすつもりだ\n\n　アジトもろともな
+msg コルネオ\n「しんらは　アバランチとかいう\n　ちっこいウラそしきを　つぶすつもりだ\n\n　アジトもろともな
 sleep 16
 step_npc 9523 3
-msg コルネオ\n「もじどおり　つぶしちまうんだ\n　プレートをささえるはしらをこわしてよ
+msg コルネオ\n「もじどおり　つぶしちまうんだ\n　プレートをささえる　はしらをこわしてよ
 sleep 16
 step_npc 9522 1
 msg ティファ\n「はしらをこわす！？
@@ -100,7 +100,7 @@ step_npc 9523 3
 msg コルネオ\n「どうなるかわかるだろ？\n　プレートがヒューッ　ドガガガ！！だ\n\n　アバランチのアジトは\n　7ばんがいスラムだってな\n\n\n　この6ばんがいスラムじゃなくて\n　おれはホッとしてるぜ
 sleep 40
 chg_npc_dir 9522 down
-msg ティファ\n「7ばんがいスラムがなくなる！？
+msg ティファ\n「7ばんがいスラムが　なくなる！？
 sleep 32
 chg_npc_dir 9522 up
 sleep 16
@@ -109,8 +109,6 @@ step_npc 9522 2
 msg ティファ\n「クラウド　7ばんがいへ\n　いっしょにいってくれる？
 chg_npc_dir 9520 down
 sleep 16
-step_npc 9520 1
-set_talk_npc 9520
 msg 『もちろんだ\n　ティファ
 chg_event_move_char_speed normal
 chg_speed 9522 normal

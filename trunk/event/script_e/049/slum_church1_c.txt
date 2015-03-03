@@ -168,29 +168,20 @@ erase_msg3
 sleep 32
 move_npc 4901 down 1
 sleep 48
-chg_speed 4901 normal
 step_npc 4901 1
-sleep 16
 msg ÅuÇ∑Ç´Ç»ÇÒÇæÅ@Ç±Ç±
 chg_npc_dir 4900 up
 sleep 32
 chg_event_move_char_speed slow
 move_char up 4
 sleep 32
-chg_speed 4901 slow
-move_npc 4901 up 1
-sleep 32
 set_screen_effect add 0 255 255 0
 play_se_loop baby_bird.ogg
-move_npc 4901 right 1
 loop 10
 inc_screen_effect_val 1
 sleep 3
 pool
 sleep 2
-chg_npc_dir 4901 down
-chg_npc_img 4901 15
-chg_speed 4901 not_move
 loop 20
 inc_screen_effect_val 1
 sleep 3
@@ -201,10 +192,23 @@ sleep 8
 flush
 sleep 64
 move_char down 4
-loop 30
+loop 6
 dec_screen_effect_val 1
 sleep 3
 pool
+move_npc 4901 up 1
+loop 12
+dec_screen_effect_val 1
+sleep 3
+pool
+move_npc 4901 right 1
+loop 12
+dec_screen_effect_val 1
+sleep 3
+pool
+chg_npc_dir 4901 down
+chg_npc_img 4901 15
+chg_speed 4901 not_move
 sleep 38
 stop_se
 reset_screen_effect

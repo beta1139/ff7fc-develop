@@ -1,0 +1,173 @@
+wait_same_pos
+sleep 16
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 3 　 　   　　　　クラウド.ストライフ
+set_text 8 　　　　　　もと　しんらカンパニー　せいえいせんし
+set_text 9 　　　　　　　　　『ソルジャー』の　いちいん
+set_text 10 　　　　　げんざいは　ひとり　ほうろうする　なんでもや
+set_text 11 　　　　　てにした　たいけんは　すべてを　りょうだんする
+warp 2 24 20 left
+loop 4
+sleep 1
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 3 0
+pool
+chg_char_dir down
+loop 4
+sleep 1
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 3 25
+pool
+chg_char_dir right
+loop 4
+sleep 1
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 3 50
+pool
+chg_char_dir up
+loop 4
+sleep 1
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 3 75
+pool
+chg_char_dir left
+loop 4
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+chg_char_dir down
+create npc_event 290 2 24 20 0 1 4 none
+draw_char off
+loop 4
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+jump_npc 290 same 3
+loop 4
+sleep 1
+set_text_alpha 8 75
+sleep 1
+set_text_alpha 8 50
+pool
+chg_npc_img 290 105
+loop 4
+sleep 1
+set_text_alpha 8 100
+sleep 1
+set_text_alpha 8 75
+pool
+chg_npc_img 290 0
+loop 4
+sleep 1
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 9 0
+pool
+chg_npc_img 290 105
+loop 4
+sleep 1
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 9 25
+pool
+chg_npc_img 290 0
+loop 4
+sleep 1
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 9 50
+pool
+chg_npc_img 290 105
+loop 4
+sleep 1
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 9 75
+pool
+chg_npc_img 290 143
+loop 4
+sleep 1
+set_text_alpha 10 25
+sleep 1
+set_text_alpha 10 0
+pool
+loop 4
+sleep 1
+set_text_alpha 10 50
+sleep 1
+set_text_alpha 10 25
+pool
+loop 4
+sleep 1
+set_text_alpha 10 75
+sleep 1
+set_text_alpha 10 50
+pool
+chg_npc_img 290 0
+loop 4
+sleep 1
+set_text_alpha 10 100
+sleep 1
+set_text_alpha 10 75
+pool
+loop 4
+sleep 1
+set_text_alpha 11 25
+sleep 1
+set_text_alpha 11 0
+pool
+loop 4
+sleep 1
+set_text_alpha 11 50
+sleep 1
+set_text_alpha 11 25
+pool
+loop 4
+sleep 1
+set_text_alpha 11 75
+sleep 1
+set_text_alpha 11 50
+pool
+loop 4
+sleep 1
+set_text_alpha 11 100
+sleep 1
+set_text_alpha 11 75
+pool
+wait_key_push_edge a
+fadeout
+sleep 16
+chg_npc_dir 290 left
+set_npc_pos 290 2 24 6
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+sleep 16
+warp 2 24 6 left
+fadein
+sleep 16

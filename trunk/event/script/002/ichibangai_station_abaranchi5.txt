@@ -1,0 +1,61 @@
+wait_event_invalid 215
+step_npc 290 1
+sleep 16
+msg 『……クラウドだ
+jump_npc 203 same 1
+sleep 16
+msg ビッグス\n「クラウドか　おれは……
+chg_speed 203 not_step
+step_npc 290 2
+msg 『あんたたちの　なまえなんて　きょうみないね\n　どうせ　このしごとが　おわったら　おわかれだ
+create npc_event 252 2 30 6 1 2 3 none
+move_npc 252 left 4
+chg_speed 203 not_move
+sleep 16
+chg_npc_dir 201 right
+chg_npc_dir 202 right
+sleep 16
+draw_char on
+kill 290
+jump_npc 252 same 2
+set_active_msg 252
+chg_char_dir right
+sleep 16
+msg 「なにやってんだ　オマエたち！\n　かたまって　こうどうするなって\n　いってんだろ！\n\n　ターゲットは　いちばんまこうろ\n　まこうろまえの　ブリッジに　しゅうごうだぞ！
+chg_npc_dir 202 up
+jump_npc 201 same 1
+jump_npc 203 same 1
+sleep 16
+step_npc 202 2
+chg_npc_dir 201 left
+chg_npc_dir 203 up
+sleep 32
+play_se door_open_hard.wav
+kill 200
+chg_speed 201 fast
+chg_speed 202 fast
+chg_speed 203 fast
+move_npc 202 up 3
+move_npc 203 up 4
+sleep 8
+move_npc 201 left 1
+sleep 8
+move_npc 201 up 3
+sleep 8
+kill 202
+chg_speed 252 normal
+move_npc 252 up 1
+sleep 8
+kill 203
+sleep 8
+kill 201
+move_npc 252 left 2
+sleep 32
+chg_npc_dir 252 down
+chg_char_dir up
+sleep 16
+chg_npc_dir 252 left
+chg_npc_img 252 98
+set_talk_npc 252
+msg 「もとソルジャー……\n　チッ　しんようできねえな
+reset_talk_npc

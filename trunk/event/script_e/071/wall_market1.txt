@@ -14,6 +14,12 @@ chg_char_img 0
 disable_char_chg
 fadein
 create event_generator 7280 72 9 21 17 0 0 @072/wall_market2.txt
+if_flag 99 1
+kill_through 7351
+kill_through 7751
+kill_through 8719
+kill_through_range 8730 8732
+fi
 set_key_unvalid up
 set_key_unvalid left
 set_key_unvalid down

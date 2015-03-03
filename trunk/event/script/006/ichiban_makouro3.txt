@@ -50,7 +50,6 @@ sleep 16
 chg_npc_img 601 0
 chg_npc_dir 601 down
 sleep 16
-step_npc 601 1
 msg 『オレが　かんがえてるのは　さっさとしごとを\n　おわらせたいって　ことだけだ\n　けいびへいや　ガードロボットが　こないうちにな
 draw_char on
 kill 601

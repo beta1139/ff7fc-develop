@@ -50,7 +50,6 @@ sleep 16
 chg_npc_img 601 0
 chg_npc_dir 601 down
 sleep 16
-step_npc 601 1
 msg ÅwThe only thing I care\n about is finishin' this\n job before security and\n the Roboguards come.
 draw_char on
 kill 601
@@ -86,7 +85,6 @@ sleep 16
 kill 650
 kill 641
 sleep 16
-fi
 create event_generator 660 6 4 1 17 0 0 @006/elevator_switch1.txt
 create event_generator 720 7 9 11 17 0 0 @007/jessie_move.txt
 create npc_event 721 7 9 11 34 3 3 none

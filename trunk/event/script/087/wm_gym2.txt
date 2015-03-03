@@ -12,9 +12,8 @@ create event_generator 8702 87 9 14 17 0 0 @087/wm_gym3.txt
 end
 fi
 set_talk_npc 8715
-msg 「シロウトさん\n　わたしにようがあるのなら\n　はいごから　こえをかけるのがマナーよ
+msg 「シロウトさん\n　わたしに　ようがあるのなら\n　はいごから　こえをかけるのがマナーよ
 reset_talk_npc
-sleep 8
 if_char_dir down
 create event_generator 8733 87 10 13 17 0 0 @087/wm_squat.txt
 fi

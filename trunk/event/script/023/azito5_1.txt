@@ -1,5 +1,11 @@
 wait_same_pos
+create npc_event 2330 23 5 7 0 3 2 none
+draw_char off
+chg_type 2304 npc_event
+chg_speed 2304 normal
 play_se door_open_hard.wav
+move_char up 2
+sleep 16
 create npc_event 2305 23 4 1 2 1 0 ティファ\n「みんなには　あやまって　おくね
 chg_speed 2305 fast
 set_flag_wall 2305
@@ -20,24 +26,36 @@ msg ティファ\n「まって　クラウド！
 sleep 16
 chg_npc_img 2304 1
 chg_npc_dir 2304 right
+chg_speed 2330 fast
 sleep 16
+step_npc 2304 2
+set_talk_npc 2304
 msg バレット\n「ティファ！\n　そんなヤツ　ほうっておけ！\n\n　どうやら　しんらに\n　みれん　タラタラ　らしいからな！
+reset_talk_npc
 chg_npc_dir 2309 left
-chg_char_dir left
+chg_npc_dir 2330 left
+sleep 8
+step_npc 2330 2
 msg 『だまれ！\n　おれは　しんらにも　ソルジャーにも\n　みれんは　ない！
-move_char right 1
+sleep 8
+chg_speed 2330 normal
+move_npc 2330 right 1
 sleep 16
 chg_npc_dir 2309 right
-move_char up 1
+move_npc 2330 up 1
 move_npc 2305 down 1
 sleep 16
-move_char left 1
+move_npc 2330 left 1
 chg_npc_dir 2305 up
 sleep 16
-move_char up 1
+move_npc 2330 up 1
 sleep 16
+chg_npc_dir 2330 left
 chg_char_dir left
+step_npc 2330 2
 msg 『でも　かんちがい　するな！\n\n\n\n　ほしの　いのちにも\n　おまえたち　アバランチの　かつどうにも\n　きょうみは　ない！
+draw_char on
+kill 2330
 move_npc 2309 up 1
 sleep 16
 move_npc 2309 left 1

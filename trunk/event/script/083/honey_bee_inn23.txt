@@ -48,7 +48,17 @@ step_npc 8330 2
 msg 『おまえたちに　つきあってる\n　ひまなどない\n\n\n　みちをあけてもらおうか！
 fi
 if_flag 3 1
+set_screen_effect alpha 0 0 0 0
+loop 10
+inc_screen_effect_val 10
+sleep 4
+pool
 msg 『どうやら　おれは　ゼッタイゼツメイのききに\n　おちいってるようだな…
+loop 10
+dec_screen_effect_val 10
+sleep 4
+pool
+reset_screen_effect
 fi
 chg_speed 8317 normal
 chg_npc_img 8317 127

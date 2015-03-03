@@ -9,39 +9,242 @@ close_door 2290
 sleep 80
 msg 「とうちゃん！！
 chg_speed 2202 normal
-chg_speed 2206 normal
+chg_speed 2201 normal
 chg_npc_dir 2202 down
-move_npc 2206 down 1
+move_npc 2201 down 1
 sleep 24
-move_npc 2206 left 1
+move_npc 2201 left 1
 sleep 16
 move_npc 2202 right 1
-move_npc 2206 up 1
+move_npc 2201 up 1
 sleep 16
 move_npc 2202 down 1
-move_npc 2206 right 1
+move_npc 2201 right 1
 sleep 16
-chg_npc_dir 2206 down
+chg_npc_dir 2201 down
 chg_npc_dir 2202 left
 sleep 16
 msg 「ほら　マリン！\n　クラウドに\n　おかえりなさいは？
 move_npc 2202 down 1
 sleep 16
-move_npc 2206 down 1
+move_npc 2201 down 1
+step_npc 2202 1
 msg 「おかえりなさい　クラウド\n　さくせんは　うまくいった　みたいね
 sleep 32
+create npc_event 4990 49 20 11 2 1 0 none
+step_npc 2202 2
 msg 「バレットとは　ケンカ　しなかった？\n\n\n\n#2\n　　やっちゃった\n　　ガマンした\n\n\n[[「やっぱり？\n\n\n\n　バレットは　あんな　ひとだし\n　クラウドは　こどもの　ころから\n　ケンカ　ばかり　してたしね\n\n　……ちょっと　しんぱい　だったんだ]]\n[[「ふーん\n　クラウドも　おとなに　なったのね\n　こどもの　ころは　すぐ　ケンカ　だったのに]]
+sleep 8
+move_char down 2
+sleep 40
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 3 　 　   　　　　ティファ.ロックハート
+set_text 8 　　　　　　　もちまえの　あかるさで　なかまたちを
+set_text 9 　　　　　　　　ゆうきづける　まえむきな　じょせい
+set_text 10 　　　かわいいかおに　にあわず　かくとうじゅつの　つかいて
+set_text 11 　　　　　　　　　クラウドとは　おさななじみ
+warp 49 20 11 down
+loop 4
+sleep 1
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 3 0
+pool
+loop 4
+sleep 1
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 3 25
+pool
+chg_npc_dir 4990 right
+loop 2
+sleep 1
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 3 50
+pool
+chg_npc_dir 4990 up
+loop 2
+sleep 1
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 3 50
+pool
+chg_npc_dir 4990 left
+loop 2
+sleep 1
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 3 75
+pool
+chg_npc_dir 4990 down
+loop 2
+sleep 1
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 3 75
+pool
+chg_npc_dir 4990 right
+loop 2
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+chg_npc_dir 4990 up
+loop 2
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+chg_npc_dir 4990 left
+loop 2
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+chg_npc_dir 4990 down
+loop 2
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+chg_speed 4990 not_step
+loop 4
+sleep 1
+set_text_alpha 8 75
+sleep 1
+set_text_alpha 8 50
+pool
+loop 4
+sleep 1
+set_text_alpha 8 100
+sleep 1
+set_text_alpha 8 75
+pool
+loop 4
+sleep 1
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 9 0
+pool
+loop 4
+sleep 1
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 9 25
+pool
+loop 4
+sleep 1
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 9 50
+pool
+loop 4
+sleep 1
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 9 75
+pool
+loop 4
+sleep 1
+set_text_alpha 10 25
+sleep 1
+set_text_alpha 10 0
+pool
+loop 4
+sleep 1
+set_text_alpha 10 50
+sleep 1
+set_text_alpha 10 25
+pool
+loop 4
+sleep 1
+set_text_alpha 10 75
+sleep 1
+set_text_alpha 10 50
+pool
+loop 4
+sleep 1
+set_text_alpha 10 100
+sleep 1
+set_text_alpha 10 75
+pool
+loop 4
+sleep 1
+set_text_alpha 11 25
+sleep 1
+set_text_alpha 11 0
+pool
+loop 4
+sleep 1
+set_text_alpha 11 50
+sleep 1
+set_text_alpha 11 25
+pool
+loop 4
+sleep 1
+set_text_alpha 11 75
+sleep 1
+set_text_alpha 11 50
+pool
+loop 4
+sleep 1
+set_text_alpha 11 100
+sleep 1
+set_text_alpha 11 75
+pool
+wait_key_push_edge a
+fadeout
 sleep 16
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+warp 22 5 9 up
+kill 4990
+fadein
+sleep 16
+step_npc 2202 1
 msg ティファ\n「よかった　みんな　ぶじで
+set_layer 2202 front
 sleep 32
 if_flag 7 1
-msg ティファ\n「あら？\n　おはな　なんて　めずらしいわね\n\n　スラムじゃ　めったに　さかないのよ\n\n\n\n　でも……\n\n\n\n　プレゼントに　おはな　なんて\n　クラウド　そうなんだ～\n\n\n『そんなんじゃないさ\n\n\n\n#2\n　　ティファにあげる\n　　マリンにあげる\n\n\n[[]][[]]
+set_active_msg 2202
+jump_npc 2202 same 1
+msg ティファ\n「あら？\n　おはな　なんて　めずらしいわね\n\n　スラムじゃ　めったに　さかないのよ\n\n\n\n　でも……\n\n\n\n　プレゼントに　おはな　なんて\n　クラウド　そうなんだ～
+sleep 8
+chg_speed 2207 fast
+step_npc 2207 1
+msg 『そんなんじゃないさ\n\n\n\n#2\n　　ティファにあげる\n　　マリンにあげる\n\n\n[[]][[]]
+sleep 16
+chg_speed 2207 normal
 if_flag 3 0
 sleep 16
 step_npc 2207 2
 add_likability 2 500
 set_flag 8 1
 sleep 40
+step_npc 2202 1
 msg ティファ\n「ありがとう　クラウド\n　ん～　いいかおり！
 chg_npc_dir 2202 left
 sleep 16
@@ -55,22 +258,23 @@ sleep 16
 fi
 if_flag 3 1
 move_npc 2202 left 1
-move_npc 2206 down 1
+move_npc 2201 down 1
 sleep 16
 chg_npc_dir 2202 right
 step_npc 2207 2
 set_flag 8 2
 sleep 40
-move_npc 2206 up 1
+move_npc 2201 up 1
 move_npc 2202 right 1
 sleep 16
 chg_npc_dir 2202 down
-chg_npc_dir 2206 down
+chg_npc_dir 2201 down
 sleep 16
 fi
 fi
-move_char down 3
-sleep 48
+set_inactive_msg 2202
+move_char down 1
+sleep 16
 chg_char_dir up
 draw_char on
 kill 2207
@@ -78,15 +282,15 @@ chg_type 2202 npc
 chg_type 2203 npc
 chg_type 2204 npc
 chg_type 2205 npc
-chg_type 2206 npc3
+chg_type 2201 npc3
 chg_speed 2202 not_move
 chg_speed 2203 not_move
 chg_speed 2204 not_move
 chg_speed 2205 not_move
-chg_speed 2206 not_move
+chg_speed 2201 not_move
 set_flag_wall 2202
 set_flag_wall 2203
 set_flag_wall 2204
 set_flag_wall 2205
-set_flag_wall 2206
+set_flag_wall 2201
 create event_generator 2210 22 5 11 17 1 0 @022/seventhheaven2.txt

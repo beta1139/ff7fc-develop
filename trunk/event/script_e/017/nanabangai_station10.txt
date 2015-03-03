@@ -16,10 +16,7 @@ sleep 16
 chg_npc_dir 1706 up
 sleep 48
 fadeout
-sleep 32
-kill_through_range 9982 9985
-kill_through_range 9990 9993
-sleep 32
+sleep 64
 chg_npc_dir 1706 right
 warp 28 11 5 up
 play_map_bgm 28

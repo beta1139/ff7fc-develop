@@ -4,7 +4,8 @@ chg_speed 501 normal
 chg_npc_dir 501 left
 chg_char_dir right
 sleep 16
-step_npc 501 2
+set_active_msg 501
+jump_npc 501 same 1
 msg Barret \n「Yo! This your first time\n in a reactor?
 sleep 16
 step_char 1
@@ -15,9 +16,8 @@ step_npc 501 2
 msg Barret\n「The planet's full of Mako\n energy. People here use\n it everyday.
 chg_char_dir down
 sleep 32
-set_active_msg 501
-jump_npc 501 same 1
-msg Barret\n「Its the life blood of\n this planet. But Shinra\n keeps suckin the blood\n out with these weird\n machines.
+step_npc 501 1
+msg Barret\n「It's the life blood of\n this planet. But Shinra\n keeps suckin the blood\n out with these weird\n machines.
 chg_char_dir right
 sleep 16
 step_char 1
