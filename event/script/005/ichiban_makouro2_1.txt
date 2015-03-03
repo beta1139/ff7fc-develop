@@ -4,7 +4,8 @@ chg_speed 501 normal
 chg_npc_dir 501 down
 chg_char_dir up
 sleep 16
-step_npc 501 2
+set_active_msg 501
+jump_npc 501 same 1
 set_talk_npc 501
 msg バレット\n「……おい\n　おまえ　まこうろは\n　はじめてじゃないんだろ？
 reset_talk_npc
@@ -19,8 +20,7 @@ msg バレット\n「このほしは　まこうエネルギーに　みちている\n　じゅうみんは　その
 reset_talk_npc
 chg_char_dir right
 sleep 32
-set_active_msg 501
-jump_npc 501 same 1
+step_npc 501 1
 set_talk_npc 501
 msg バレット\n「まこうは　このほしをながれる　『ち』だ\n　それを　しんらってかいしゃは\n　ガンガン　すいだしていやがる\n　このへんちくりんな\n　スクラップでな……
 reset_talk_npc

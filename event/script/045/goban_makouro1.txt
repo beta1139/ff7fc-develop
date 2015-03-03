@@ -9,7 +9,6 @@ sleep 48
 chg_npc_dir 4502 down
 sleep 16
 chg_npc_dir 4501 up
-sleep 24
 play_se beeeeep.wav
 chg_char_img_tmp 10
 chg_char_dir down
@@ -23,7 +22,7 @@ sleep 64
 fadeout
 draw_char off
 sleep 32
-warp 705 8 19 up
+warp 705 8 18 up
 chg_npc_y_offset 70500 -5
 chg_npc_y_offset 70502 -6
 sleep 32
@@ -32,8 +31,8 @@ sleep 16
 fadein
 sleep 32
 chg_event_move_char_speed slow
-move_char up 4
-sleep 144
+move_char up 3
+sleep 112
 chg_speed 70502 normal
 msg ティファ\n「パパ……
 sleep 64
@@ -51,14 +50,14 @@ sleep 16
 chg_speed 70502 not_step
 sleep 64
 msg ティファ\n「セフィロス……ソルジャー……\n　まこうろ……しんら……ぜんぶ！
-sleep 48
-chg_npc_img 70502 120
-msg ティファ\n「ぜんぶ　だいキライ！
 chg_speed 70502 slow
 slide_walk_npc 70502 left 1
 sleep 16
-chg_npc_img 70502 14
 chg_speed 70502 not_step
+sleep 48
+chg_npc_img 70502 120
+msg ティファ\n「ぜんぶ　だいキライ！
+chg_npc_img 70502 14
 chg_npc_dir 70502 up
 sleep 16
 chg_speed 70502 slow
@@ -83,8 +82,8 @@ kill 70500
 kill 70502
 sleep 4
 chg_event_move_char_speed slow
-move_char down 4
-sleep 128
+move_char down 3
+sleep 96
 chg_event_move_char_speed normal
 fadeout
 draw_char on

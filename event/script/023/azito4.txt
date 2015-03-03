@@ -32,19 +32,23 @@ chg_npc_img 2304 98
 sleep 8
 kill 2350
 sleep 24
+step_npc 2304 2
 set_talk_npc 2304
 msg バレット\n「ずいぶんと　じしん　たっぷり　じゃねえか
 reset_talk_npc
 sleep 32
+step_npc 2330 1
 msg 『もし　ソルジャーと　たたかって　いたら\n　あんたたちが　いきてる　はずない　からな
-chg_speed 2304 fast
+chg_speed 2304 normal
 chg_npc_img 2304 95
 chg_npc_dir 2304 up
 jump_npc 2304 same 2
 sleep 32
+step_npc 2304 3
 set_talk_npc 2304
 msg バレット\n「じぶんが　もとソルジャー　だからって\n　えらそうに　いうんじゃ　ねえよ！
 reset_talk_npc
+chg_speed 2304 fast
 chg_npc_dir 2304 left
 chg_npc_img 2304 98
 step_npc 2304 4
@@ -68,6 +72,7 @@ chg_speed 2307 normal
 chg_speed 2308 normal
 move_npc 2307 up 2
 sleep 16
+msg3 -1 『…………
 move_npc 2330 down 1
 sleep 16
 chg_npc_dir 2307 left
@@ -90,8 +95,8 @@ sleep 32
 jump_npc 2307 same 1
 move_npc 2330 right 1
 sleep 16
-msg 『…………
 jump_npc 2307 same 1
+erase_msg3
 loop 2
 chg_npc_dir 2304 right
 sleep 4
@@ -180,7 +185,8 @@ sleep 16
 chg_npc_dir 2309 left
 sleep 16
 chg_npc_dir 2306 left
-sleep 32
+sleep 16
+step_npc 2330 1
 msg 『おれは　うえで　まっている\n　ほうしゅうの　はなしが　したい
 chg_speed 2304 slow
 step_npc 2304 2
@@ -196,7 +202,7 @@ kill 2330
 chg_npc_dir 2306 up
 sleep 16
 chg_speed 2306 not_step
-chg_type 2309 npc2
+chg_type 2309 npc3
 chg_speed 2309 not_move
 chg_char_dir down
 create event_generator 2310 23 5 7 17 1 0 @023/azito5_1.txt
@@ -242,3 +248,8 @@ sleep 4
 kill 2350
 pool
 kill_through 2302
+chg_speed 2304 not_step
+chg_type 2304 npc3
+chg_param 2304 バレット\n「チッ！！\n　……………ほ　ほうしゅうかよ…
+chg_npc_img 2304 1
+chg_npc_dir 2304 up

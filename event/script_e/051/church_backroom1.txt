@@ -375,8 +375,8 @@ chg_npc_dir 5102 down
 pool
 sleep 16
 play_se jump.wav
-slide_npc 5101 down 8
-move_char down 10
+slide_npc 5101 down 12
+move_char down 14
 sleep 8
 chg_speed 5100 slow
 chg_speed 5103 normal
@@ -386,28 +386,23 @@ move_npc 5102 right 4
 sleep 16
 move_npc 5100 left 2
 move_npc 5103 right 4
-sleep 40
-play_se landing.wav
-sleep 8
-chg_speed 5101 normal
-jump_npc 5101 down 3
-play_se jump.wav
+sleep 48
 move_npc 5102 up 1
 chg_speed 5131 not_move
 sleep 16
 kill 5100
 move_npc 5103 down 1
-sleep 16
+sleep 8
+play_se landing.wav
+sleep 8
+chg_speed 5101 normal
+move_npc 5101 down 4
 chg_speed 5103 not_move
 move_npc 5102 right 4
-sleep 16
-play_se landing.wav
-move_npc 5101 down 5
-sleep 48
+sleep 64
+move_npc 5101 right 1
 chg_npc_dir 5102 down
 chg_speed 5102 not_move
-sleep 32
-move_npc 5101 right 1
 chg_speed 5131 normal
 jump_npc 5131 same 2
 sleep 16
@@ -435,8 +430,8 @@ chg_npc_dir 5130 down
 move_char up 8
 sleep 64
 msg 『あれは……？
-move_char down 8
-sleep 64
+move_char down 4
+sleep 32
 step_npc 5130 2
 msg 『エアリス！\n\n\n\n#3\n　　しばらくまっていろ！\n　　たたかえ！\n　　にげるんだ！\n\n[[]][[]][[]]
 set_flag 10 0

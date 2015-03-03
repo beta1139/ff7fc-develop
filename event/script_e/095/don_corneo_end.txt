@@ -37,6 +37,7 @@ step_npc 9523 3
 set_talk_npc 9523
 msg コルネオ\n「おれたちみたいな　あくとうが　こうやって\n　べらべらとホントのことを\n　しゃべるのは　どんなときだとおもう？\n#3\n　　1　しをかくごしたとき\n　　2　しょうりをかくしんしているとき\n　　3　なにがなんだかわからないとき\n\n[[]][[]][[]]
 reset_talk_npc
+sleep 16
 set_layer 9523 front
 play_se puy.ogg
 if_flag 3 0
@@ -127,10 +128,10 @@ fadeout
 sleep 16
 play_event_bgm Ex-08-nothing.ogg
 sleep 32
-warp 140 10 22 up
+warp 140 7 28 up
 sleep 32
 play_event_bgm 1-09-Shinra_Company.ogg
 add_party_mem 2
 add_party_mem 3
-create event_generator 14000 140 10 22 17 0 0 @140/shinra_company_plot1.txt
+create event_generator 14000 140 7 28 17 0 0 @140/shinra_company_plot1.txt
 fadein

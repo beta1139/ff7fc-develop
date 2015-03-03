@@ -1,0 +1,20 @@
+if_flag 11 3
+msg3 -1 バレット\n「いいかげんにしろ！！\n　PS4で　リマスターとかあああ！！
+fi
+if_flag 11 2
+msg3 -1 バレット\n「いいかげんにしろ！！\n　ウスノロッ！！
+set_flag 11 3
+fi
+if_flag 11 1
+if_flag 99 0
+msg3 -1 バレット\n「なにやってんだっ！\n　ぜんかいはマグレか！！
+fi
+if_flag 99 1
+msg3 -1 バレット\n「なにやってんだっ！ちゃんとやれ！！
+fi
+set_flag 11 2
+fi
+if_flag 11 0
+msg3 -1 バレット\n「なにやってんだっ！
+set_flag 11 1
+fi

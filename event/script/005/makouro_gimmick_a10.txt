@@ -1,9 +1,10 @@
 wait_target_talk 564
+reset_talk_flag 564
 chg_char_state_event
-kill_through 581
-kill_through 582
 erase_msg3
+kill_through_range 581 588
 sleep 48
+erase_msg3
 if_char_img 0
 chg_npc_img 570 114
 chg_npc_dir 571 down
@@ -34,17 +35,11 @@ chg_speed 560 not_step
 chg_speed 561 not_step
 chg_speed 562 not_step
 play_se button.ogg
-kill_through 583
-kill_through 584
-kill_through 585
-kill_through 586
-kill_through 587
-kill_through 588
-kill 563
-kill 564
-kill 565
-kill 566
+kill_through 1003
+kill_through_range 1050 1051
+kill_through_range 563 566
 sleep 32
+chg_char_state_move
 if_char_img 0
 chg_npc_img 573 0
 fi
@@ -75,12 +70,18 @@ chg_npc_img 572 1
 chg_npc_dir 572 up
 chg_npc_dir 573 up
 sleep 96
-play_se door_open_hard.wav
+play_se machine.wav
 kill 550
 kill 551
+kill 552
 kill 540
 kill 541
-sleep 32
+loop 16
+dec_screen_effect_val 1
+sleep 1
+pool
+reset_screen_effect
+sleep 16
 move_char down 7
 chg_speed 571 fast
 move_npc 571 up 9
@@ -157,12 +158,18 @@ chg_npc_dir 571 up
 chg_npc_dir 572 up
 chg_npc_dir 573 up
 sleep 96
-play_se door_open_hard.wav
+play_se machine.wav
 kill 550
 kill 551
+kill 552
 kill 540
 kill 541
-sleep 32
+loop 14
+dec_screen_effect_val 1
+sleep 1
+pool
+reset_screen_effect
+sleep 18
 move_char down 7
 chg_speed 571 fast
 move_npc 571 up 9
@@ -183,7 +190,9 @@ chg_npc_img 572 98
 sleep 16
 sub_likability 1 500
 sub_likability 2 250
-msg バレット\n「おまえ　ほんとうに　もとソルジャーか？
+chg_speed 572 normal
+step_npc 572 4
+msg バレット\n「たいした　ソルジャーさまだぜ
 move_npc 571 left 1
 move_npc 570 left 4
 sleep 8

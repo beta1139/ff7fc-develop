@@ -96,7 +96,168 @@ chg_npc_dir 4801 up
 move_npc 4807 down 1
 set_active_msg 4807
 sleep 16
+create npc_event 4990 49 20 11 20 1 4 none
 msg ティファ\n「なぜ　プレジデントが\n　ここにいるの？
+move_char up 2
+sleep 72
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 3 　 　   　　　　　プレジデントしんら
+set_text 8 　　　　　せかいの　エネルギーしじょうを　ぎゅうじる
+set_text 9 　　　　　　　　　しんらカンパニー　しゃちょう
+set_text 10 　　　　りえきを　あげるためには　しゅだんを　えらばず
+set_text 11 　　　じゃまものは　なにをまきぞえにしても　はいじょする
+warp 49 20 11 down
+loop 4
+sleep 1
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 3 0
+pool
+loop 4
+sleep 1
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 3 25
+pool
+chg_npc_dir 4990 left
+loop 4
+sleep 1
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 3 50
+pool
+loop 4
+sleep 1
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 3 75
+pool
+chg_npc_dir 4990 up
+loop 4
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+loop 4
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+chg_npc_dir 4990 right
+loop 4
+sleep 1
+set_text_alpha 8 75
+sleep 1
+set_text_alpha 8 50
+pool
+loop 4
+sleep 1
+set_text_alpha 8 100
+sleep 1
+set_text_alpha 8 75
+pool
+chg_npc_dir 4990 down
+chg_speed 4990 not_step
+loop 4
+sleep 1
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 9 0
+pool
+loop 4
+sleep 1
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 9 25
+pool
+loop 4
+sleep 1
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 9 50
+pool
+loop 4
+sleep 1
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 9 75
+pool
+loop 4
+sleep 1
+set_text_alpha 10 25
+sleep 1
+set_text_alpha 10 0
+pool
+loop 4
+sleep 1
+set_text_alpha 10 50
+sleep 1
+set_text_alpha 10 25
+pool
+loop 4
+sleep 1
+set_text_alpha 10 75
+sleep 1
+set_text_alpha 10 50
+pool
+loop 4
+sleep 1
+set_text_alpha 10 100
+sleep 1
+set_text_alpha 10 75
+pool
+loop 4
+sleep 1
+set_text_alpha 11 25
+sleep 1
+set_text_alpha 11 0
+pool
+loop 4
+sleep 1
+set_text_alpha 11 50
+sleep 1
+set_text_alpha 11 25
+pool
+loop 4
+sleep 1
+set_text_alpha 11 75
+sleep 1
+set_text_alpha 11 50
+pool
+loop 4
+sleep 1
+set_text_alpha 11 100
+sleep 1
+set_text_alpha 11 75
+pool
+wait_key_push_edge a
+fadeout
+sleep 16
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+warp 48 7 20 up
+kill 4990
+fadein
 sleep 32
 move_npc 4807 down 1
 sleep 64
@@ -391,10 +552,12 @@ sleep 16
 msg 『まさか！　ただのきかいさ
 chg_npc_dir 4820 right
 sleep 16
+chg_speed 4802 normal
 chg_npc_dir 4802 down
 chg_npc_img 4802 95
-step_npc 4802 5
-sleep 40
+step_npc 4802 3
+sleep 48
+chg_speed 4802 fast
 chg_npc_dir 4802 right
 step_npc 4802 4
 msg バレット\n「なんでもいい！！\n　ぶっこわしてやるぜ！

@@ -24,23 +24,28 @@ sleep 8
 chg_char_dir down
 sleep 24
 msg 『しらない……？
-clear_text 7
-set_text_alpha 7 0
+set_screen_effect sub 255 255 0 0
+clear_text 3
+set_text_alpha 3 0
 sleep 8
-set_text 7 　 　   　　　　　『……しってるよ
+set_text 3 　 　   　　　　　『……しってるよ』
 sleep 4
-set_text_alpha 7 25
+inc_screen_effect_val 10
+set_text_alpha 3 25
 sleep 4
-set_text_alpha 7 50
+inc_screen_effect_val 10
+set_text_alpha 3 50
 sleep 4
-set_text_alpha 7 75
+inc_screen_effect_val 10
+set_text_alpha 3 75
 sleep 4
-set_text_alpha 7 100
-sleep 80
+inc_screen_effect_val 10
+set_text_alpha 3 100
+sleep 48
+set_text_alpha 3 0
+clear_text 3
 set_screen_effect add 255 255 255 100
 play_se white_noise.ogg
-set_text_alpha 7 0
-clear_text 7
 sleep 20
 stop_se
 reset_screen_effect
@@ -81,8 +86,8 @@ sleep 16
 jump_char same 1
 sleep 16
 chg_event_move_char_speed fast
-step_char 3
-sleep 24
+step_char 1
+sleep 8
 msg 『だまれ！　しんらのイヌめ！
 step_npc 4909 2
 msg 「レノさん！\n　こいつやっちまいますか？
@@ -161,6 +166,7 @@ chg_speed 4907 not_move
 chg_speed 4908 not_move
 move_npc 4903 up 1
 sleep 16
+create npc_event 4990 49 20 11 30 1 4 none
 chg_speed 4909 not_move
 set_active_msg 4907
 set_active_msg 4908
@@ -170,9 +176,168 @@ msg レノ\n「あれは…………まこうのめ
 sleep 16
 chg_npc_dir 4903 down
 sleep 16
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 3 　 　   　　　　　　　　レノ
+set_text 8 　　　　　　しんらカンパニー　そうむぶ　ちょうさか
+set_text 9 　　　　　　　つうしょう　『タークス』　のメンバー
+set_text 10 　　　　　ひょうひょうとした　たいどとは　うらはらに
+set_text 11 　　　　　　あたえられた　にんむは　れいこくにこなす
+warp 49 20 11 down
+loop 4
+sleep 1
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 3 0
+pool
+loop 4
+sleep 1
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 3 25
+pool
+chg_npc_dir 4990 right
+loop 4
+sleep 1
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 3 50
+pool
+chg_npc_dir 4990 up
+loop 4
+sleep 1
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 3 75
+pool
+chg_npc_dir 4990 left
+loop 4
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+chg_npc_dir 4990 down
+loop 4
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+loop 4
+sleep 1
+set_text_alpha 8 75
+sleep 1
+set_text_alpha 8 50
+pool
+loop 4
+sleep 1
+set_text_alpha 8 100
+sleep 1
+set_text_alpha 8 75
+pool
+loop 4
+sleep 1
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 9 0
+pool
+loop 4
+sleep 1
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 9 25
+pool
+loop 4
+sleep 1
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 9 50
+pool
+loop 4
+sleep 1
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 9 75
+pool
+loop 4
+sleep 1
+set_text_alpha 10 25
+sleep 1
+set_text_alpha 10 0
+pool
+loop 4
+sleep 1
+set_text_alpha 10 50
+sleep 1
+set_text_alpha 10 25
+pool
+loop 4
+sleep 1
+set_text_alpha 10 75
+sleep 1
+set_text_alpha 10 50
+pool
+loop 4
+sleep 1
+set_text_alpha 10 100
+sleep 1
+set_text_alpha 10 75
+pool
+loop 4
+sleep 1
+set_text_alpha 11 25
+sleep 1
+set_text_alpha 11 0
+pool
+loop 4
+sleep 1
+set_text_alpha 11 50
+sleep 1
+set_text_alpha 11 25
+pool
+loop 4
+sleep 1
+set_text_alpha 11 75
+sleep 1
+set_text_alpha 11 50
+pool
+loop 4
+sleep 1
+set_text_alpha 11 100
+sleep 1
+set_text_alpha 11 75
+pool
+wait_key_push_edge a
+fadeout
+sleep 16
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+warp 49 6 11 down
+fadein
+sleep 16
+step_npc 4903 1
 msg レノ\n「ま　いいかぁ\n　おしごとおしごと　と
 chg_npc_dir 4903 up
 sleep 16
+kill 4990
 move_char up 1
 move_npc 4903 up 2
 sleep 32

@@ -8,18 +8,19 @@ move_npc 2202 left 1
 sleep 16
 move_npc 2202 down 1
 sleep 16
+step_npc 2202 1
 set_talk_npc 2202
 msg ティファ\n「クラウド　おねがい\n　ちからをかして
 reset_talk_npc
-sleep 48
+sleep 32
 move_char down 1
-sleep 16
+sleep 32
 msg 『ティファ……わるいけどさ
-move_npc 2202 down 1
-sleep 16
 move_npc 2202 left 1
 sleep 16
-chg_npc_dir 2202 down
+move_npc 2202 down 1
+sleep 16
+step_npc 2202 1
 set_talk_npc 2202
 msg ティファ\n「ほしがやんでるの\n　このままじゃ　しんじゃう\n\n　だれかが　なんとかしなくちゃならないの
 reset_talk_npc
@@ -34,44 +35,61 @@ sleep 32
 msg ティファ\n「あーあ！\n　ほんとうに　いっちゃうんだ！
 sleep 16
 msg ティファ\n「かわいい　おさななじみの　たのみも\n　きかずに　いっちゃうんだ！
-sleep 16
-chg_char_dir up
+create npc_event 2207 22 5 10 0 0 1 none
+draw_char off
+chg_npc_dir 2207 left
+sleep 4
+chg_npc_dir 2207 up
+move_char up 2
+sleep 32
 msg 『……\n\n\n\n#2\n　　よくいうぜ！\n　　……わるいな\n\n\n[[]][[]]
+sleep 16
+chg_speed 2202 slow
+move_npc 2202 left 1
+sleep 16
 if_flag 3 0
 add_likability 2 500
 fi
 sleep 16
-msg ティファ\n「……やくそくも　わすれちゃったんだ
-sleep 32
-msg 『やくそく？
-sleep 16
-msg ティファ\n「やっぱり　わすれてる
 chg_speed 2202 slow
-move_npc 2202 down 1
+step_npc 2202 1
+set_talk_npc 2202
+msg ティファ\n「……やくそくも　わすれちゃったんだ
+reset_talk_npc
 sleep 32
-move_npc 2202 left 1
-sleep 32
-move_npc 2202 down 1
-sleep 32
+step_npc 2207 1
+sleep 16
+msg 『やくそく？
+chg_npc_dir 2202 down
+sleep 16
+chg_speed 2202 normal
+set_active_msg 2202
+jump_npc 2202 same 1
+set_talk_npc 2202
+msg ティファ\n「やっぱり　わすれてる
+reset_talk_npc
+sleep 16
+chg_speed 2202 slow
+chg_event_move_char_speed slow
+move_npc 2202 down 2
+sleep 64
+chg_speed 2202 slow
+step_npc 2202 1
 set_talk_npc 2202
 msg ティファ\n「おもいだして……\n　あれは　７ねんまえよ……
 reset_talk_npc
-create npc_event 2207 22 5 10 0 0 0 none
 chg_speed 2207 normal
-draw_char off
 sleep 48
 chg_npc_dir 2207 right
 sleep 64
-chg_event_move_char_speed slow
 move_char up 3
 sleep 96
 fadeout
 sleep 80
 warp 702 11 16 down
 fadein
+kill_through_range 2230 2232
 kill 2212
-kill 2231
-kill 2232
 kill 2305
 kill 2307
 kill 2309

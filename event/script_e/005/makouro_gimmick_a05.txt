@@ -1,4 +1,3 @@
-set_eternal_event
 wait_target_talk 565
 reset_talk_flag 565
 chg_char_state_event
@@ -45,6 +44,7 @@ play_se switch.ogg
 sleep 4
 play_se_loop alarm.ogg
 sleep 36
+erase_msg3
 chg_npc_img 570 34
 chg_npc_dir 570 left
 chg_npc_img 571 35
@@ -57,11 +57,19 @@ if_char_img 1
 chg_npc_img 572 1
 fi
 chg_npc_dir 560 up
-msg3 -1 Jessie\nÅuNo good.\n Let's try it again.
+chg_speed 560 not_move
+create event_generator 511 5 0 0 17 0 0 @005/gimmick_a_text1.txt
 if_flag 10 0
-sleep 96
+sleep 80
+kill_through 1003
+kill_through_range 1050 1051
+sleep 16
 erase_msg3
+kill_through_range 583 585
 create event_generator 582 5 13 18 17 0 0 @005/makouro_gimmick_a02.txt
+create event_generator 586 5 1 7 17 0 0 @005/makouro_gimmick_a07.txt
+create event_generator 587 5 1 8 17 0 0 @005/makouro_gimmick_a08.txt
+create event_generator 588 5 1 9 17 0 0 @005/makouro_gimmick_a09.txt
 set_npc_pos 563 5 12 18
 set_flag 10 1
 end
@@ -70,9 +78,16 @@ if_flag 10 1
 sleep 32
 chg_npc_dir 572 left
 chg_npc_img 572 98
-sleep 64
+sleep 48
+kill_through 1003
+kill_through_range 1050 1051
+sleep 16
 erase_msg3
+kill_through_range 583 585
 create event_generator 582 5 13 18 17 0 0 @005/makouro_gimmick_a02.txt
+create event_generator 586 5 1 7 17 0 0 @005/makouro_gimmick_a07.txt
+create event_generator 587 5 1 8 17 0 0 @005/makouro_gimmick_a08.txt
+create event_generator 588 5 1 9 17 0 0 @005/makouro_gimmick_a09.txt
 set_npc_pos 563 5 12 18
 set_flag 10 2
 end
@@ -82,9 +97,16 @@ sleep 16
 chg_npc_dir 571 down
 chg_speed 572 normal
 step_npc 572 5
-sleep 80
+sleep 64
+kill_through 1003
+kill_through_range 1050 1051
+sleep 16
 erase_msg3
+kill_through_range 583 585
 create event_generator 582 5 13 18 17 0 0 @005/makouro_gimmick_a02.txt
+create event_generator 586 5 1 7 17 0 0 @005/makouro_gimmick_a07.txt
+create event_generator 587 5 1 8 17 0 0 @005/makouro_gimmick_a08.txt
+create event_generator 588 5 1 9 17 0 0 @005/makouro_gimmick_a09.txt
 chg_npc_dir 571 left
 set_npc_pos 563 5 12 18
 set_flag 10 3
@@ -96,12 +118,13 @@ chg_npc_dir 571 down
 sleep 64
 erase_msg3
 sleep 8
-msg3 -1 Barret\nÅuWhat the fuck are you \n doing? It's MY turn!
+create event_generator 512 5 0 0 17 0 0 @005/gimmick_a_text2.txt
 chg_speed 572 fast
 chg_npc_img 572 95
 chg_npc_dir 572 up
 jump_npc 572 same 1
 sleep 16
+chg_char_img 1
 jump_npc 572 same 1
 sleep 16
 chg_npc_dir 572 down
@@ -113,7 +136,6 @@ chg_npc_img 572 1
 move_npc 572 down 1
 chg_speed 573 fast
 slide_walk_npc 573 down 1
-chg_char_img 1
 chg_npc_dir 571 left
 sleep 8
 chg_speed 573 normal
@@ -124,18 +146,32 @@ sleep 5
 chg_speed 572 not_step
 chg_speed 573 not_step
 chg_npc_dir 573 up
-sleep 19
+sleep 3
+kill_through 1003
+kill_through_range 1050 1051
+sleep 16
 erase_msg3
+kill_through_range 583 585
 create event_generator 582 5 13 18 17 0 0 @005/makouro_gimmick_a02.txt
+create event_generator 586 5 1 7 17 0 0 @005/makouro_gimmick_a07.txt
+create event_generator 587 5 1 8 17 0 0 @005/makouro_gimmick_a08.txt
+create event_generator 588 5 1 9 17 0 0 @005/makouro_gimmick_a09.txt
 set_npc_pos 563 5 12 18
 set_key_valid a
 set_flag 10 4
 end
 fi
 if_flag 10 4
-sleep 96
+sleep 80
+kill_through 1003
+kill_through_range 1050 1051
+sleep 16
 erase_msg3
+kill_through_range 583 585
 create event_generator 582 5 13 18 17 0 0 @005/makouro_gimmick_a02.txt
+create event_generator 586 5 1 7 17 0 0 @005/makouro_gimmick_a07.txt
+create event_generator 587 5 1 8 17 0 0 @005/makouro_gimmick_a08.txt
+create event_generator 588 5 1 9 17 0 0 @005/makouro_gimmick_a09.txt
 set_npc_pos 563 5 12 18
 set_flag 10 5
 end
@@ -145,9 +181,16 @@ sleep 32
 chg_npc_dir 571 down
 sleep 16
 chg_npc_dir 573 left
-sleep 48
+sleep 32
+kill_through 1003
+kill_through_range 1050 1051
+sleep 16
 erase_msg3
+kill_through_range 583 585
 create event_generator 582 5 13 18 17 0 0 @005/makouro_gimmick_a02.txt
+create event_generator 586 5 1 7 17 0 0 @005/makouro_gimmick_a07.txt
+create event_generator 587 5 1 8 17 0 0 @005/makouro_gimmick_a08.txt
+create event_generator 588 5 1 9 17 0 0 @005/makouro_gimmick_a09.txt
 chg_npc_dir 571 left
 set_npc_pos 563 5 12 18
 set_flag 10 6
@@ -167,8 +210,9 @@ sleep 32
 chg_npc_img 573 0
 chg_npc_dir 573 up
 chg_char_state_event
-msg3 -1 ÅwI am SO offended.NOT.
+create event_generator 513 5 0 0 17 0 0 @005/gimmick_a_text3.txt
 sleep 16
+chg_char_img 0
 chg_npc_dir 572 down
 sleep 48
 chg_speed 572 fast
@@ -185,10 +229,16 @@ sleep 5
 chg_speed 572 not_step
 chg_speed 573 not_step
 chg_npc_dir 572 down
-chg_char_img 0
-sleep 19
+sleep 3
+kill_through 1003
+kill_through_range 1050 1051
+sleep 16
 erase_msg3
+kill_through_range 583 585
 create event_generator 582 5 13 18 17 0 0 @005/makouro_gimmick_a02.txt
+create event_generator 586 5 1 7 17 0 0 @005/makouro_gimmick_a07.txt
+create event_generator 587 5 1 8 17 0 0 @005/makouro_gimmick_a08.txt
+create event_generator 588 5 1 9 17 0 0 @005/makouro_gimmick_a09.txt
 set_npc_pos 563 5 12 18
 set_key_valid a
 set_flag 10 1

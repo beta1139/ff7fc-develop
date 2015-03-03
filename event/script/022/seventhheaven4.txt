@@ -1,49 +1,122 @@
 wait_same_pos
 chg_char_dir up
 create npc_event 2207 22 3 7 0 0 0 none
+chg_type 2202 npc_event
+chg_speed 2202 normal
 chg_speed 2207 normal
+set_active_msg 2202
 draw_char off
+set_flag 13 0
 sleep 16
 move_char up 1
 sleep 16
 set_talk_npc 2202
-msg ティファ\n「ねぇ……\n　なんか　のむ？\n\n#2\n　　いまは　そんな　きぶんじゃないな\n　　キツイの　くれないか\n\n\n[[「もう　わたしだって　おさけ　くらい\n　つくれる　ように　なったのよ\n　おきゃくさん　だって\n\n　ティファちゃんの　つくる　おさけは\n　おいしいよって いって　くれるんだから]]\n[[「まってて\n　いま　つくるから]]
+msg ティファ\n「ねぇ……\n　なんか　のむ？\n\n#2\n　　いまは　そんな　きぶんじゃないな\n　　キツイの　くれないか\n\n\n[[]]\n[[]]
 reset_talk_npc
+if_flag 3 0
+chg_npc_dir 2202 right
+chg_npc_img 2202 98
+jump_npc 2202 same 1
+set_talk_npc 2202
+msg ティファ\n「もう　わたしだって　おさけくらい\n　つくれるように　なったのよ
+reset_talk_npc
+chg_npc_img 2202 2
+chg_npc_dir 2202 down
+set_talk_npc 2202
+msg ティファ\n「おきゃくさんだって\n　ティファちゃんの　つくる　おさけは\n　おいしいよって いってくれるんだから
+reset_talk_npc
+sleep 16
+fi
 if_flag 3 1
+set_flag 13 1
 add_likability 2 500
+jump_npc 2202 same 1
+set_talk_npc 2202
+msg ティファ\n「まってて\n　いま　つくるから
+reset_talk_npc
+sleep 16
 chg_type 2202 npc_event
-chg_speed 2202 normal
 chg_npc_dir 2202 up
+sleep 16
+step_npc 2202 2
 sleep 64
 move_npc 2202 left 1
 sleep 16
 chg_npc_dir 2202 up
-sleep 64
+sleep 24
+jump_npc 2202 same 1
+play_se squat.ogg
+sleep 8
+play_se squat.ogg
+sleep 8
+jump_npc 2202 same 1
+play_se squat.ogg
+sleep 8
+play_se squat.ogg
+sleep 40
 move_npc 2202 right 1
 sleep 16
 chg_npc_dir 2202 up
+sleep 16
+step_npc 2202 2
 sleep 48
 chg_npc_dir 2202 down
 sleep 16
-set_talk_npc 2202
+jump_npc 2202 same 1
+sleep 8
 play_se tifa_cocktail.ogg
+set_talk_npc 2202
 msg ティファ\n「おまたせ
 reset_talk_npc
 fi
+set_inactive_msg 2202
+sleep 40
+chg_npc_dir 2202 right
+sleep 4
+chg_npc_dir 2202 up
 sleep 32
+step_npc 2202 2
 set_talk_npc 2202
-msg ティファ\n「なんだか　ほっとしちゃった\n　クラウドが　ぶじ　もどってきて\n\n『きゅうに　どうした？\n　あのていどの　しごと　なんでもないさ
+msg ティファ\n「なんだか　ほっとしちゃった\n　クラウドが　ぶじ　もどってきて
 reset_talk_npc
+if_flag 13 0
+sleep 24
+step_npc 2207 1
+fi
+if_flag 13 1
+sleep 24
+play_se tifa_cocktail.ogg
+step_npc 2207 1
 sleep 32
+fi
+msg 『きゅうに　どうした？\n　あのていどの　しごと　なんでもないさ
+reset_talk_npc
+sleep 16
+chg_npc_dir 2202 down
+sleep 32
+chg_speed 2202 slow
+step_npc 2202 1
 set_talk_npc 2202
 msg ティファ\n「そうね……\n\n\n　クラウド　ソルジャーに\n　なったんだもんね
 reset_talk_npc
-sleep 16
+sleep 24
+chg_speed 2202 normal
+step_npc 2202 1
 set_talk_npc 2202
 msg ティファ\n「……こんかいの　ほうしゅう　なんだけど\n　バレットからもらってね
 reset_talk_npc
-sleep 16
+if_flag 13 0
+sleep 24
+step_npc 2207 1
+fi
+if_flag 13 1
+sleep 24
+step_npc 2207 1
+play_se tifa_cocktail.ogg
+sleep 40
+fi
 msg 『そうするよ\n　ほうしゅうを　もらえば　また　おわかれだな
+sleep 16
 move_char down 1
 sleep 32
 chg_char_dir up
@@ -54,3 +127,4 @@ chg_type 2202 npc
 chg_speed 2202 not_move
 create event_generator 2223 22 8 5 17 1 0 @022/seventhheaven5_1.txt
 create event_generator 2224 22 5 11 17 1 0 @022/seventhheaven5_2.txt
+set_flag 13 0

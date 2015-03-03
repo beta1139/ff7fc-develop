@@ -34,11 +34,11 @@ kill 1910
 kill 1911
 kill 1912
 kill 2200
+kill 2201
 kill 2202
 kill 2203
 kill 2204
 kill 2205
-kill 2206
 kill 2304
 kill 2306
 kill 2307
@@ -111,7 +111,7 @@ create event_generator 2033 20 32 18 17 0 0 @020/nanabangai_slum22_2.txt
 chg_npc_dir 2607 up
 create event_generator 2620 26 4 8 17 0 0 @026/beginner's_hall1.txt
 create event_generator 2625 26 1 1 17 0 0 @026/beginner's_hall4.txt
-create treasure_item 2628 26 5 8 3 0 0 4100
+create treasure_materia 2628 26 5 8 3 0 0 4100
 create event_generator 2629 26 1 1 17 0 0 @026/beginner's_hall5.txt
 chg_npc_img 2691 29
 chg_speed 2400 not_step

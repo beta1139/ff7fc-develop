@@ -40,24 +40,57 @@ fi
 if_flag 17 17
 msg 「こいつが　17かいで
 fi
-if_flag_greater 17 17
-msg 「こいつが　17かいいじょうで
+if_flag 17 18
+msg 「こいつが　18かいで
+fi
+if_flag_greater 17 18
+msg 「こいつが　19かいで
 fi
 sleep 16
 step_npc 8715 2
-if_flag_greater 16 19
-msg 「あなたが　20かいいじょうね
+if_flag_greater 16 24
+msg 「あなたが　25かいね
+set_flag 17 22
+fi
+if_flag 16 24
+msg 「あなたが　24かいね
+set_flag 17 22
+fi
+if_flag 16 23
+msg 「あなたが　23かいね
+set_flag 17 22
+fi
+if_flag 16 22
+msg 「あなたが　22かいね
+set_flag 17 22
+fi
+if_flag 16 21
+msg 「あなたが　21かいね
+set_flag 17 22
+fi
+if_flag 16 20
+msg 「あなたが　20かいね
 set_flag 17 22
 fi
 if_flag 16 19
 msg 「あなたが　19かいね
+if_flag_greater 17 18
+create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 21
+end
+fi
 set_flag 17 22
 fi
 if_flag 16 18
 msg 「あなたが　18かいね
-if_flag_greater 17 17
+if_flag 17 18
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 set_flag 17 21
+end
+fi
+if_flag_greater 17 18
+create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
+set_flag 17 20
 end
 fi
 set_flag 17 22

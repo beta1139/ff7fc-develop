@@ -1,0 +1,184 @@
+wait_same_pos
+create npc_event 291 2 24 6 0 0 4 none
+draw_char off
+create npc_event 290 2 24 20 98 2 4 none
+sleep 16
+move_char up 1
+sleep 16
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 3 　 　   　　　　バレット.ウォーレス
+set_text 8 　　　　　はんしんらそしき　『アバランチ』のリーダー
+set_text 9 　　　あっとうてきな　パワーと　みぎうでに　そうびされた　
+set_text 10 　　　　　　とくべつせいの　ガンで　てきを　けちらす
+set_text 11 　　　　　　よくもわるくも　いっちょくせんな　おとこ
+warp 2 24 20 down
+loop 4
+sleep 1
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 3 0
+pool
+chg_npc_img 290 1
+chg_npc_dir 290 down
+loop 4
+sleep 1
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 3 25
+pool
+chg_npc_dir 290 right
+loop 4
+sleep 1
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 3 50
+pool
+chg_npc_dir 290 up
+loop 4
+sleep 1
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 3 75
+pool
+chg_npc_dir 290 left
+loop 4
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+chg_npc_dir 290 down
+loop 4
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+chg_npc_img 290 98
+chg_npc_dir 290 left
+step_npc 290 2
+loop 4
+sleep 1
+set_text_alpha 8 75
+sleep 1
+set_text_alpha 8 50
+pool
+loop 4
+sleep 1
+set_text_alpha 8 100
+sleep 1
+set_text_alpha 8 75
+pool
+loop 4
+sleep 1
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 9 0
+pool
+loop 4
+sleep 1
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 9 25
+pool
+loop 4
+sleep 1
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 9 50
+pool
+loop 4
+sleep 1
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 9 75
+pool
+loop 4
+sleep 1
+set_text_alpha 10 25
+sleep 1
+set_text_alpha 10 0
+pool
+loop 4
+sleep 1
+set_text_alpha 10 50
+sleep 1
+set_text_alpha 10 25
+pool
+loop 4
+sleep 1
+set_text_alpha 10 75
+sleep 1
+set_text_alpha 10 50
+pool
+loop 4
+sleep 1
+set_text_alpha 10 100
+sleep 1
+set_text_alpha 10 75
+pool
+loop 4
+sleep 1
+set_text_alpha 11 25
+sleep 1
+set_text_alpha 11 0
+pool
+loop 4
+sleep 1
+set_text_alpha 11 50
+sleep 1
+set_text_alpha 11 25
+pool
+loop 4
+sleep 1
+set_text_alpha 11 75
+sleep 1
+set_text_alpha 11 50
+pool
+loop 4
+sleep 1
+set_text_alpha 11 100
+sleep 1
+set_text_alpha 11 75
+pool
+wait_key_push_edge a
+fadeout
+sleep 16
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+sleep 16
+kill 290
+draw_char on
+kill 291
+warp 2 24 6 up
+fadein
+sleep 16
+step_npc 252 1
+set_talk_npc 252
+msg バレット \n「キャンセルボタン(しょきせっていでは　z　)を\n　おしながら　ほうこうキーをおせば\n　はやくはしることができる\n　おくれずに　ついてこい！
+reset_talk_npc
+chg_npc_img 252 1
+move_npc 252 left 1
+sleep 16
+move_npc 252 up 3
+sleep 48
+kill 252
+kill_through_range 211 213

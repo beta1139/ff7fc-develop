@@ -1,24 +1,188 @@
 wait_same_pos
-create npc_event 14020 140 14 11 20 1 2 none
-create npc_event 14021 140 8 28 23 0 1 none
-create npc_event 14022 140 16 14 26 0 2 none
+create npc_event 14020 140 14 17 20 1 2 none
+create npc_event 14021 140 8 30 23 0 1 none
+create npc_event 14022 140 16 20 26 0 2 none
 chg_event_move_char_speed normal
 move_npc 14021 up 6
 sleep 192
+chg_event_move_char_speed normal
 move_npc 14021 right 6
-sleep 128
-move_char right 4
-sleep 64
-move_npc 14021 up 6
+move_char right 7
+sleep 112
 move_char up 11
-sleep 144
+sleep 80
+move_npc 14021 up 3
+sleep 96
 chg_speed 14020 normal
-sleep 48
+sleep 16
 step_npc 14020 2
 set_talk_npc 14020
 msg プレジデントしんら\n「じゅんびのほうは？
 reset_talk_npc
 sleep 16
+create npc_event 4990 49 20 11 23 0 2 none
+move_char down 4
+sleep 64
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 3 　 　   　　　　　　ハイデッカー
+set_text 8 　　　　　しんらカンパニー　ちあんいじぶもん　そうかつ
+set_text 9 　　　　　　タークスや　ソルジャーたちを　したがえ
+set_text 10 　　　プレジデントの　かたうでとして　けんせいを　ふるう
+set_text 11 　　　　　　　　　わらいごえは　『ガハハ！！』
+warp 49 20 11 down
+loop 4
+sleep 1
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 3 0
+pool
+loop 4
+sleep 1
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 3 25
+pool
+chg_npc_dir 4990 right
+loop 4
+sleep 1
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 3 50
+pool
+loop 4
+sleep 1
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 3 75
+pool
+chg_npc_dir 4990 down
+loop 4
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+loop 4
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+loop 4
+sleep 1
+set_text_alpha 8 75
+sleep 1
+set_text_alpha 8 50
+pool
+loop 4
+sleep 1
+set_text_alpha 8 100
+sleep 1
+set_text_alpha 8 75
+pool
+chg_npc_img 4990 135
+step_npc 4990 6
+loop 4
+sleep 1
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 9 0
+pool
+loop 4
+sleep 1
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 9 25
+pool
+loop 4
+sleep 1
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 9 50
+pool
+loop 4
+sleep 1
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 9 75
+pool
+loop 4
+sleep 1
+set_text_alpha 10 25
+sleep 1
+set_text_alpha 10 0
+pool
+loop 4
+sleep 1
+set_text_alpha 10 50
+sleep 1
+set_text_alpha 10 25
+pool
+loop 4
+sleep 1
+set_text_alpha 10 75
+sleep 1
+set_text_alpha 10 50
+pool
+loop 4
+sleep 1
+set_text_alpha 10 100
+sleep 1
+set_text_alpha 10 75
+pool
+loop 4
+sleep 1
+set_text_alpha 11 25
+sleep 1
+set_text_alpha 11 0
+pool
+loop 4
+sleep 1
+set_text_alpha 11 50
+sleep 1
+set_text_alpha 11 25
+pool
+loop 4
+sleep 1
+set_text_alpha 11 75
+sleep 1
+set_text_alpha 11 50
+pool
+loop 4
+sleep 1
+set_text_alpha 11 100
+sleep 1
+set_text_alpha 11 75
+pool
+chg_npc_img 4990 23
+wait_key_push_edge a
+sleep 16
+chg_npc_dir 4990 up
+fadeout
+sleep 16
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+warp 140 14 17 up
+kill 4990
+fadein
 chg_npc_dir 14022 down
 sleep 16
 chg_speed 14021 normal
@@ -27,7 +191,7 @@ jump_npc 14021 same 1
 sleep 16
 jump_npc 14021 same 1
 set_talk_npc 14021
-msg ハイデッカー\n「ガハハ！！　じゅんちょうじゅんちょう！\n　じっこうぶたいはタークスです
+msg ハイデッカー\n「ガハハ！！　じゅんちょうじゅんちょう！\n　じっこうぶたいは　タークスです
 reset_talk_npc
 sleep 16
 chg_npc_dir 14022 up
@@ -35,14 +199,181 @@ sleep 16
 chg_speed 14022 fast
 step_npc 14022 4
 set_talk_npc 14022
-msg リーブ\n「プレジデント！\n　ほんとうにやるのですか？\n　たかが　すうにんのそしきをつぶすのに……
+msg リーブ\n「プレジデント！\n　ほんとうにやるのですか？\n　たかが　すうにんのそしきを　つぶすのに……
 reset_talk_npc
+move_char right 2
+sleep 16
+jump_npc 14022 same 1
+sleep 16
+create npc_event 4990 49 20 11 26 0 3 none
+move_char down 3
+step_npc 14022 2
+sleep 48
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 3 　 　   　　　　リーブ.トゥエスティ 
+set_text 8 　　　　しんらカンパニー　とし　かいはつぶもん　そうかつ
+set_text 9 　　　　　すぐれた　エンジニアでもあり　ミッドガルの　
+set_text 10 　　　　　　　　まこうろ　せっけいも　たんとう
+set_text 11 　　　　　ミッドガルへの　あいじょうは　だれよりもふかい
+warp 49 20 11 down
+loop 4
+sleep 1
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 3 0
+pool
+loop 4
+sleep 1
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 3 25
+pool
+chg_npc_dir 4990 left
+loop 4
+sleep 1
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 3 50
+pool
+loop 4
+sleep 1
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 3 75
+pool
+chg_npc_dir 4990 down
+loop 4
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+loop 4
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+loop 4
+sleep 1
+set_text_alpha 8 75
+sleep 1
+set_text_alpha 8 50
+pool
+loop 4
+sleep 1
+set_text_alpha 8 100
+sleep 1
+set_text_alpha 8 75
+pool
+loop 4
+sleep 1
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 9 0
+pool
+loop 4
+sleep 1
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 9 25
+pool
+loop 4
+sleep 1
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 9 50
+pool
+loop 4
+sleep 1
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 9 75
+pool
+loop 4
+sleep 1
+set_text_alpha 10 25
+sleep 1
+set_text_alpha 10 0
+pool
+loop 4
+sleep 1
+set_text_alpha 10 50
+sleep 1
+set_text_alpha 10 25
+pool
+loop 4
+sleep 1
+set_text_alpha 10 75
+sleep 1
+set_text_alpha 10 50
+pool
+loop 4
+sleep 1
+set_text_alpha 10 100
+sleep 1
+set_text_alpha 10 75
+pool
+loop 4
+sleep 1
+set_text_alpha 11 25
+sleep 1
+set_text_alpha 11 0
+pool
+loop 4
+sleep 1
+set_text_alpha 11 50
+sleep 1
+set_text_alpha 11 25
+pool
+loop 4
+sleep 1
+set_text_alpha 11 75
+sleep 1
+set_text_alpha 11 50
+pool
+loop 4
+sleep 1
+set_text_alpha 11 100
+sleep 1
+set_text_alpha 11 75
+pool
+wait_key_push_edge a
+sleep 16
+chg_npc_dir 4990 up
+fadeout
+sleep 16
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+warp 140 14 17 up
+kill 4990
+fadein
 sleep 32
-step_npc 14020 2
+jump_npc 14020 same 1
+sleep 16
+step_npc 14020 1
 set_talk_npc 14020
 msg プレジデントしんら\n「いまさらナニかね　リーブくん
 reset_talk_npc
-create event_generator 14001 140 14 11 17 0 0 @140/shinra_company_plot2.txt
+create event_generator 14001 140 14 17 17 0 0 @140/shinra_company_plot2.txt
 sleep 16
 chg_speed 14020 slow
 move_npc 14020 left 1
@@ -54,15 +385,15 @@ set_key_unvalid right
 set_key_unvalid start
 chg_char_state_move
 sleep 16
-move_npc 14020 up 2
-sleep 64
+move_npc 14020 up 1
+sleep 32
 move_npc 14020 left 4
 sleep 96
 chg_npc_dir 14022 left
 sleep 32
-move_npc 14020 down 5
+move_npc 14020 down 4
 sleep 80
 move_char down 2
-sleep 80
-move_npc 14020 right 5
-sleep 160
+sleep 48
+move_npc 14020 right 4
+sleep 144

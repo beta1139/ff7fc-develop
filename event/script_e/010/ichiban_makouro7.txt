@@ -7,7 +7,7 @@ sleep 16
 move_npc 1002 left 1
 sleep 16
 chg_npc_dir 1002 down
-sleep 16
+sleep 8
 jump_npc 1002 same 1
 sleep 16
 step_npc 1002 1
@@ -55,23 +55,26 @@ chg_char_dir left
 sleep 15
 chg_char_dir right
 sleep 30
+set_active_msg 1002
 jump_npc 1002 same 1
-sleep 16
-step_npc 1002 1
 set_talk_npc 1002
 msg Barret\n「......What's wrong?
 reset_talk_npc
 sleep 16
 chg_char_dir up
 msg 『Huh？
+chg_npc_dir 1002 left
+chg_npc_img 1002 98
 step_npc 1002 2
 set_talk_npc 1002
 msg Barret\n「What's wrong, Cloud？\n Hurry it up！
 reset_talk_npc
 sleep 16
+set_inactive_msg 1002
 msg 『...Yeah, sorry.
 move_char up 1
 sleep 16
+chg_npc_img 1002 1
 chg_npc_dir 1002 right
 sleep 32
 play_se timer.ogg

@@ -1,0 +1,18 @@
+wait_same_pos
+create event_generator 215 2 24 6 17 0 0 @002/profile_cloud.txt
+create event_generator 216 2 0 0 17 0 0 @002/ichibangai_station_abaranchi5.txt
+create event_generator 217 2 24 6 17 0 0 @002/profile_barret.txt
+chg_npc_dir 203 right
+msg ビッグス\n「さすが　ソルジャー！\n　でもよ　はん『しんら』グループ　アバランチに\n　ソルジャーが　さんかするなんて　スゲエよな！
+chg_npc_dir 202 right
+sleep 16
+set_talk_npc 202
+msg ジェシー\n「そのはなしって　ほんとうだったの？\n　ソルジャーって　いったら　わたしたちの\n　てきでしょ？\n どうして　そのソルジャーが　わたしたち\n アバランチに　きょうりょく　するわけ？
+reset_talk_npc
+sleep 16
+chg_npc_dir 203 up
+msg ビッグス\n「はやとちりするな　ジェシー\n　[もと]ソルジャー　なんだってさ\n\n　いまはもう　しんらをやめちまって\n　オレたちの　なかまってわけさ
+chg_npc_dir 202 up
+chg_npc_dir 203 right
+sleep 16
+msg ビッグス\n「まだ　なまえきいてなかったよな\n　おしえてくれ

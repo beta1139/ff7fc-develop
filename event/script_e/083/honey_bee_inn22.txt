@@ -143,11 +143,14 @@ loop 6
 inc_map_draw_y_offset
 sleep 1
 pool
+chg_npc_dir 8310 up
+chg_npc_img 8310 97
 loop 6
 dec_map_draw_y_offset
 sleep 1
 pool
 sleep 4
+chg_npc_img 8310 0
 if_char_dir up
 chg_npc_dir 8310 left
 fi

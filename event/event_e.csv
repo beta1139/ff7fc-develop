@@ -15,6 +15,7 @@ npc_event,203,2,23,6,35,1,0,""
 event_generator,211,2,24,7,17,0,0,"@002/ichibangai_station_abaranchi1.txt"
 event_generator,212,2,25,7,17,0,0,"@002/ichibangai_station_abaranchi2.txt"
 event_generator,213,2,26,7,17,0,0,"@002/ichibangai_station_abaranchi3.txt"
+event_generator,214,2,24,6,17,0,0,"@002/ichibangai_station_abaranchi4.txt"
 npc_event,301,3,7,23,35,0,3,"none"
 event_generator,302,3,6,28,17,0,0,"@003/bigs2.txt"
 event_generator,303,3,7,28,17,0,0,"@003/bigs3.txt"
@@ -311,6 +312,8 @@ npc2,2107,21,4,6,17,0,0,""
 npc2,2108,21,5,5,17,0,0,""
 event_generator,2200,22,5,13,17,0,0,"@022/seventhheaven1.txt"
 event_generator,2260,22,5,12,17,0,0,"@022/seventhheaven_out1_before.txt"
+npc_event,2201,22,5,7,37,0,0,"マリン
+「…………"
 npc_event,2202,22,4,7,2,3,0,"ティファ
 「クラウド　ごめんね
 　マリン　てれちゃってる　みたい"
@@ -380,8 +383,6 @@ npc_event,2205,22,3,10,36,0,0,"ウェッジ
 　おみせは　はんじょう　してるんですけどね]]
 [[「クラウドさん……
 　……いや　なんでも　ないっす]]"
-npc_event,2206,22,5,7,37,0,0,"マリン
-「…………"
 map_obj,2250,22,5,5,1,0,0,0
 map_obj,2251,22,8,4,3,0,0,0
 npc,2304,23,2,4,1,2,0,"バレット
@@ -798,7 +799,7 @@ event_generator,4510,45,8,18,17,0,0,"@045/goban_makouro1.txt"
 event_generator,4512,45,1,1,17,0,0,"@045/goban_makouro2.txt"
 event_generator,4600,46,4,1,17,0,0,"@006/elevator_switch1.txt"
 event_generator,4601,46,20,1,17,0,0,"@006/elevator_switch2.txt"
-treasure_box,4700,47,19,12,0,0,0,1003
+treasure_box,4700,47,19,12,1,0,0,1003
 save_point,4701,47,8,7,0,0,0,
 event_generator,4702,47,8,7,17,0,0,"@save_msg.txt"
 npc2,4740,47,13,7,17,0,0,""
@@ -808,7 +809,7 @@ map_obj,4751,47,13,8,31,0,0,0
 event_generator,4810,48,7,24,17,0,0,"@048/goban_makouro3.txt"
 npc2,4901,49,5,11,15,1,0,""
 npc,4902,49,6,23,17,0,0,"「もうすこし　じかんをやるぞ　と"
-npc3,4903,49,7,24,30,2,4,"「オレにかまうな　だと"
+npc3,4903,49,7,24,30,0,4,"「オレにかまうな　だと"
 event_generator,4910,49,20,11,17,0,0,"@049/slum_church1.txt"
 event_generator,4911,49,1,1,17,0,0,"@049/slum_church2.txt"
 map_door,4950,49,6,23,16,0,0,0
@@ -1409,7 +1410,7 @@ npc_event,9427,94,10,11,70,3,0,"「カモンベイベー！
 　グッドなビートで
 　ヒートアップ！"
 event_generator,9500,95,6,7,17,0,0,"@095/don_corneo2.txt"
-treasure_item,9530,95,5,6,1,1,0,1013
+treasure_item,9530,95,3,7,1,1,0,1013
 map_door,9550,95,6,15,13,0,0,0
 event_generator,9600,96,40,15,17,0,0,"@096/sewer1.txt"
 event_generator,9604,96,21,27,17,0,0,"@096/sewer3.txt"
@@ -1455,7 +1456,7 @@ event_generator,9867,98,18,16,17,0,0,"@098/train_warp_3.txt"
 event_generator,9868,98,18,23,17,0,0,"@098/train_warp_4.txt"
 event_generator,9904,99,28,28,17,0,0,"@099/on_train_2.txt"
 event_generator,9906,99,17,27,17,0,0,"@099/train_gimmick_c01.txt"
-event_generator,9908,99,29,22,17,0,0,"@099/train_graveyard_2.txt"
+event_generator,9908,99,29,22,17,0,0,"@099/train_graveyard_2a.txt"
 npc2,9910,99,23,15,17,0,0,""
 npc2,9911,99,23,16,17,0,0,""
 npc2,9912,99,23,17,17,0,0,""
@@ -1475,7 +1476,7 @@ treasure_item,9930,99,24,40,2,1,0,1000
 treasure_item,9931,99,20,36,2,1,0,1000
 treasure_item,9932,99,13,34,2,1,0,1003
 treasure_item,9933,99,31,19,2,1,0,1001
-event_generator,9934,99,23,16,17,0,0,"@099/train_graveyard_2.txt"
+event_generator,9934,99,23,16,17,0,0,"@099/train_graveyard_2b.txt"
 event_generator,9938,99,23,15,17,0,0,"@099/train_graveyard_3.txt"
 event_generator,9939,99,24,15,17,0,0,"@099/train_graveyard_4.txt"
 map_obj,9940,99,23,25,46,0,0,0
@@ -1511,7 +1512,7 @@ map_obj,9991,99,18,28,50,0,0,0
 npc2,9996,99,2,2,66,1,0,""
 npc2,9997,99,2,3,70,0,0,""
 npc2,9998,99,12,2,72,1,2,""
-npc2,9999,99,6,2,89,0,2,""
+npc2,9999,99,4,3,89,1,0,""
 npc2,70797,707,2,74,49,3,0,""
 event_generator,70798,707,17,77,17,0,0,"@707/omake01.txt"
 event_generator,70799,707,0,0,17,0,0,"@707/omake02.txt"

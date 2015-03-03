@@ -1,19 +1,26 @@
 wait_same_pos
+create npc_event 2207 22 5 11 0 1 2 none
 chg_type 2202 npc_event
-chg_type 2206 npc_event
+chg_type 2201 npc_event
 chg_speed 2202 normal
-chg_speed 2206 normal
+chg_speed 2201 normal
 play_se door_open_hard.wav
 open_door 2290
-move_char up 1
+draw_char off
+move_npc 2207 up 1
+move_char up 2
 sleep 16
 close_door 2290
-create npc_event 2201 22 5 13 1 0 2 none
-move_npc 2201 up 3
+create npc_event 2206 22 5 13 1 0 2 none
+move_npc 2206 up 3
+move_npc 2207 right 2
+sleep 16
 move_char right 2
-sleep 32
+sleep 16
+chg_npc_dir 2207 left
+sleep 16
 move_npc 2202 left 1
-move_npc 2206 down 1
+jump_npc 2201 down 1
 chg_npc_dir 2204 right
 chg_npc_dir 2205 right
 chg_type 2203 npc_event
@@ -22,14 +29,27 @@ chg_type 2205 npc_event
 chg_speed 2203 normal
 chg_speed 2204 normal
 chg_speed 2205 normal
-chg_char_dir left
+set_active_msg 2206
 sleep 16
 chg_npc_dir 2202 right
-set_talk_npc 2206
+set_active_msg 2201
+set_active_msg 2202
+jump_npc 2201 same 2
+play_se puy.ogg
+set_talk_npc 2201
 msg マリン\n「とうちゃん　おかえり！
 reset_talk_npc
-chg_npc_dir 2201 up
+chg_npc_dir 2206 up
+jump_npc 2206 same 1
+sleep 16
+jump_npc 2206 same 1
 msg バレット\n「マリン！　げんきに　してたか
+jump_npc 2201 same 1
+sleep 16
+jump_npc 2201 same 1
+jump_npc 2206 same 1
+sleep 16
+jump_npc 2201 same 1
 sleep 16
 chg_npc_dir 2202 down
 sleep 16
@@ -37,56 +57,64 @@ set_talk_npc 2202
 msg ティファ\n「バレット　おつかれさま
 reset_talk_npc
 sleep 16
+step_npc 2206 1
 msg バレット\n「おう！！
+set_inactive_msg 2201
 if_flag 8 2
+jump_npc 2206 same 1
 msg バレット\n「その　はなは　どうしたんだ？
-set_talk_npc 2206
+step_npc 2201 2
+set_talk_npc 2201
 msg マリン\n「クラウドに　もらったの
 reset_talk_npc
 add_likability 1 500
 msg バレット\n「そうか\n　ちゃんと　おれいは　いったのか
 sleep 16
-chg_npc_dir 2206 right
-sleep 16
 chg_npc_dir 2201 right
-set_talk_npc 2206
+sleep 16
+chg_npc_dir 2206 right
+step_npc 2201 2
+set_talk_npc 2201
 msg マリン\n「クラウド　おはな　ありがとう
 reset_talk_npc
 fi
-sleep 16
-chg_npc_dir 2201 left
-sleep 16
-msg バレット\n「おめえら！！\n\n\n　かいぎを　はじめっぞ！！
-move_npc 2206 up 1
-move_npc 2201 up 2
-chg_npc_dir 2202 up
-sleep 16
-move_npc 2206 right 2
-sleep 16
-move_npc 2201 right 2
-sleep 16
-move_npc 2206 up 2
-sleep 16
-move_npc 2201 up 3
-sleep 16
-move_npc 2206 right 1
+set_inactive_msg 2206
 sleep 16
 chg_npc_dir 2206 left
 sleep 16
-step_npc 2201 1
+jump_npc 2206 same 1
+msg バレット\n「おめえら！！\n\n\n　かいぎを　はじめっぞ！！
+sleep 16
+move_npc 2201 up 1
+move_npc 2206 up 2
+chg_npc_dir 2202 up
+sleep 16
+move_npc 2201 right 2
+sleep 16
+move_npc 2206 right 2
+sleep 16
+move_npc 2201 up 2
+sleep 16
+move_npc 2206 up 3
+sleep 16
+move_npc 2201 right 1
+sleep 16
+chg_npc_dir 2201 left
+sleep 16
+step_npc 2206 1
 sleep 16
 play_se door_open_hard.wav
 chg_npc_img 2251 2
 sleep 16
-move_npc 2201 right 1
-chg_npc_dir 2206 up
+move_npc 2206 right 1
+chg_npc_dir 2201 up
 sleep 16
-move_npc 2201 up 1
-move_npc 2206 up 2
-sleep 16
-kill 2201
+move_npc 2206 up 1
+move_npc 2201 up 2
 sleep 16
 kill 2206
+sleep 16
+kill 2201
 move_npc 2204 right 5
 move_npc 2205 right 1
 sleep 16
@@ -128,6 +156,7 @@ chg_speed 2202 not_move
 set_flag_wall 2202
 sleep 8
 msg ティファ\n「どうぞ　すわって
+move_char down 1
 create npc2 2211 22 8 4 17 0 0 
 create event_generator 2212 22 8 5 17 0 0 @022/seventhheaven3.txt
 create event_generator 2222 22 3 7 17 1 0 @022/seventhheaven4.txt
@@ -142,7 +171,10 @@ kill_through 2011
 kill_through 2017
 kill 2007
 kill 2009
-sleep 8
+sleep 16
+chg_char_dir left
+draw_char on
+kill 2207
 chg_npc_dir 2006 up
 set_npc_pos 2006 20 26 22
 chg_type 2006 npc3

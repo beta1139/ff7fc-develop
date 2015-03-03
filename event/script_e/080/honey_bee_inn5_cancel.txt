@@ -1,0 +1,56 @@
+wait_key_push_edge b
+kill_through 8005
+sleep 16
+fadeout
+sleep 32
+stop_se
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 12 0
+clear_text 5
+clear_text 6
+clear_text 12
+erase_msg3
+warp 80 12 14 down
+play_bgm
+draw_char on
+if_flag 17 0
+chg_type 8011 npc_event
+chg_speed 8011 normal
+fi
+kill_through_range 70610 70612
+sleep 16
+fadein
+if_flag 17 0
+loop 4
+jump_npc 8011 right 1
+sleep 16
+pool
+loop 4
+jump_npc 8011 down 1
+sleep 16
+pool
+msg 「ポ……▼\n　おきゃくさん▼
+chg_char_dir up
+set_active_msg 8011
+jump_npc 8011 same 1
+sleep 16
+jump_npc 8011 same 1
+msg 「はやくっはやくっ▼
+sleep 8
+loop 4
+jump_npc 8011 up 1
+sleep 16
+pool
+loop 4
+jump_npc 8011 left 1
+sleep 16
+pool
+chg_npc_dir 8011 down
+fi
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_key_valid start
+create event_generator 8005 80 0 0 17 0 0 @080/honey_bee_inn5.txt

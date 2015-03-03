@@ -2,6 +2,12 @@ set_eternal_event
 wait_target_talked 164
 reset_talked_flag 164
 if_flag 3 0
+if_flag 99 1
+kill_through 7351
+kill_through 7751
+kill_through 8719
+kill_through_range 8730 8732
+fi
 warp_ff3_2 97 8 11 2 up
 set_slide_walk_char_flag
 add_party_mem 2

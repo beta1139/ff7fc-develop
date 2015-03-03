@@ -1,5 +1,6 @@
 wait_same_pos
 if_party_mem 3
+reset_talked_flag 5900
 chg_char_dir left
 sleep 16
 create npc_event 5806 58 13 20 3 3 1 none

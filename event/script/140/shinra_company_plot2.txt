@@ -7,14 +7,14 @@ wait_key_push_edge a
 erase_msg3
 sleep 8
 step_npc 14022 4
-msg3 -1 　しかし　わたしは　としかいはつせきにんしゃとして\n　ミッドガルのけんぞう　うんえいの\n　すべてにかかわってきました\n　ですから…
+msg3 -1 　しかし　わたしは　としかいはつ　せきにんしゃとして\n　ミッドガルの　けんぞう　うんえいの\n　すべてにかかわってきました\n　ですから…
 wait_key_push_edge a
 erase_msg3
 sleep 16
 jump_npc 14021 same 1
 sleep 16
 step_npc 14021 2
-msg3 -1 ハイデッカー\n「リーブ　そういうこじんてきなもんだいは\n　あさのうちにトイレで　ながしちまうんだな！
+msg3 -1 ハイデッカー\n「リーブ　そういう　こじんてきなもんだいは\n　あさのうちに　トイレでながしちまうんだな！
 wait_key_push_edge a
 erase_msg3
 sleep 16
@@ -28,8 +28,10 @@ sleep 16
 chg_npc_dir 14021 down
 sleep 32
 chg_npc_dir 14021 left
-sleep 48
+sleep 32
 chg_npc_dir 14021 down
+sleep 32
+move_npc 14021 down 1
 sleep 16
 step_npc 14021 2
 msg3 -1 ハイデッカー\n「しちょう！？
@@ -45,19 +47,19 @@ wait_event_invalid 14000
 chg_npc_dir 14021 up
 sleep 16
 jump_npc 14021 same 1
-chg_npc_dir 14021 left
+chg_npc_dir 14021 right
 sleep 4
 chg_npc_dir 14021 down
 sleep 4
-chg_npc_dir 14021 right
+chg_npc_dir 14021 left
 sleep 4
 chg_npc_dir 14021 up
 sleep 4
 msg ハイデッカー\n「それではしつれいします！
 chg_npc_dir 14021 down
 sleep 8
-move_npc 14021 down 2
-sleep 48
+move_npc 14021 down 1
+sleep 32
 chg_npc_img 14021 135
 step_npc 14021 2
 sleep 32
@@ -66,7 +68,7 @@ step_npc 14021 4
 sleep 32
 chg_speed 14021 normal
 chg_npc_img 14021 23
-move_npc 14021 down 4
+move_npc 14021 left 6
 sleep 40
 chg_speed 14022 fast
 move_npc 14022 down 3
@@ -75,47 +77,61 @@ chg_npc_dir 14020 down
 sleep 16
 move_npc 14022 left 1
 sleep 8
-kill 14021
-move_npc 14022 down 2
+move_npc 14022 left 2
 sleep 16
 step_npc 14022 4
-sleep 32
+sleep 8
+move_npc 14021 down 7
+sleep 16
+chg_npc_dir 14022 down
+sleep 40
 chg_speed 14020 slow
-move_npc 14020 down 4
+move_npc 14020 down 2
 move_char down 3
-sleep 144
+sleep 56
+kill 14021
+sleep 24
 chg_speed 14020 normal
 step_npc 14020 2
 msg プレジデントしんら\n「きみは　つかれているんだよ\n　きゅうかをとって　りょこうでもいってなさい
-sleep 32
-chg_npc_dir 14022 left
-sleep 48
+sleep 16
 chg_npc_dir 14022 down
+sleep 48
+chg_npc_dir 14022 left
 chg_speed 14022 normal
 sleep 32
-move_npc 14022 down 6
-sleep 96
 move_npc 14022 left 5
-sleep 64
-chg_speed 14020 slow
-move_char down 3
-move_npc 14020 down 3
-sleep 16
-set_active_msg 14022
-move_npc 14022 down 5
-sleep 80
-chg_speed 14020 normal
-step_npc 14020 2
-msg プレジデントしんら\n「7ばんがいを　はかいする\n　アバランチのしわざとして　ほうどうする\n　しんらカンパニーによる　きゅうじょかつどう
+sleep 56
+chg_npc_dir 14020 right
+sleep 24
+move_npc 14022 down 7
 sleep 32
+chg_speed 14020 slow
+move_npc 14020 right 1
+sleep 64
+set_active_msg 14022
+kill_through_range 70500 70589
+create npc_event 70590 705 14 23 20 0 2 none
+sleep 16
 kill 14022
-step_npc 14020 1
+move_npc 14020 down 1
+move_char down 1
+sleep 64
+chg_npc_dir 14020 up
+sleep 48
+warp 705 14 23 up
+step_npc 70590 1
+msg プレジデントしんら\n「7ばんがいを　はかいする\n　アバランチのしわざとして　ほうどうする\n　しんらカンパニーによる　きゅうじょかつどう
+sleep 16
+chg_npc_dir 70590 left
+sleep 24
 msg プレジデントしんら\n「フフフ…かんぺきだ
 sleep 16
 fadeout
 sleep 32
 play_event_bgm Ex-08-nothing.ogg
 kill 14020
+kill 70590
 warp 96 40 15 down
 sleep 48
 fadein

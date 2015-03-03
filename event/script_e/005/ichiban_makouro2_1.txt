@@ -4,7 +4,8 @@ chg_speed 501 normal
 chg_npc_dir 501 down
 chg_char_dir up
 sleep 16
-step_npc 501 2
+set_active_msg 501
+jump_npc 501 same 1
 set_talk_npc 501
 msg Barret \nÅuYo! This your first time\n in a reactor?
 reset_talk_npc
@@ -19,8 +20,7 @@ msg Barret\nÅuThe planet's full of Mako\n energy. People here use\n it everyday.
 reset_talk_npc
 chg_char_dir right
 sleep 32
-set_active_msg 501
-jump_npc 501 same 1
+step_npc 501 1
 set_talk_npc 501
 msg Barret\nÅuIt's the life blood of\n this planet. But Shinra\n keeps suckin' the blood\n out with these weird\n machines.
 reset_talk_npc

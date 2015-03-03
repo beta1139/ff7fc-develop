@@ -20,7 +20,20 @@ set_active_msg 70611
 sleep 16
 play_event_bgm 2-13-Trail_of_Blood.ogg
 fadein
-sleep 80
+sleep 8
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+clear_text 12
+sleep 8
+chg_char_state_move
+sleep 16
+create event_generator 8020 80 0 1 17 0 0 @080/honey_bee_inn5_cancel.txt
+set_text 12 　 　   　　　　　　　　　　　　　　　B キャンセル
+set_text_alpha 12 50
+sleep 48
 play_se thunder.wav
 flush
 sleep 8
@@ -29,6 +42,8 @@ if_flag 19 1
 sleep 16
 jump_npc 70611 same 1
 sleep 16
+kill_through 8020
+set_text_alpha 12 0
 chg_speed 70611 fast
 step_npc 70611 2
 msg 「ひそひそ……\n　（おいおい　またかよ！！）
@@ -41,6 +56,8 @@ chg_speed 70611 normal
 step_npc 70611 2
 msg 「ひそひそ……\n　（しらねぇよ……\n　ハァ…おうさま　すぐちょうしにのるからなあ）
 sleep 16
+create event_generator 8020 80 0 1 17 0 0 @080/honey_bee_inn5_cancel.txt
+set_text_alpha 12 50
 fi
 sleep 80
 play_se thunder.wav
@@ -131,6 +148,8 @@ sleep 8
 set_text_alpha 5 0
 clear_text 5
 sleep 64
+kill_through 8020
+set_text_alpha 12 0
 step_npc 70611 2
 msg 「ひそひそ……\n　（おい　そろそろやめないと\n　まずいんじゃないのかい？）
 sleep 32
@@ -148,7 +167,10 @@ msg 「ひそひそ……\n　（いえるわけないだろ……）
 sleep 32
 step_npc 70611 2
 msg 「ひそひそ……\n　（チェッ！！ま　いいか……）
-sleep 80
+sleep 16
+create event_generator 8020 80 0 1 17 0 0 @080/honey_bee_inn5_cancel.txt
+set_text_alpha 12 50
+sleep 64
 play_se thunder.wav
 flush
 set_text 5 　 　　『…こだいより　かのちに　つたわる　でんせつ…』
@@ -254,6 +276,8 @@ clear_text 6
 sleep 8
 play_se magic_attack.wav
 flush
+kill_through 8020
+set_text_alpha 12 0
 chg_speed 70610 normal
 step_npc 70610 3
 msg 「ひそひそ……\n　（そういや　きいたかい？\n　しゃちょうの　おうさまどうらくが\n　おくさんにバレたってハナシ）
@@ -271,6 +295,7 @@ chg_npc_dir 70610 right
 play_se thunder.wav
 flush
 sleep 8
+clear_text 12
 flush
 jump_npc 70610 same 1
 msg 「ゲッ！！　しゃちょう！！\n　じゃ　なかったおうさま……
@@ -333,4 +358,11 @@ sleep 16
 pool
 chg_npc_dir 8011 down
 fi
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_key_valid start
 fi
+
+
