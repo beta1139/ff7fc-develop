@@ -10,7 +10,7 @@ msg 『だいじょうぶか？
 sleep 16
 set_active_msg 9622
 step_npc 9622 2
-msg エアリス\n「もう！\n　サイテーね　これ
+msg ティファ\n「もう！\n　サイテーね　これ
 if_flag 19 0
 add_likability 2 300
 fi
