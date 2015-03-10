@@ -36,9 +36,9 @@ chg_speed 9621 not_move
 set_inactive_msg 9621
 if_flag 11 1
 if_char_dir up
-create event_generator 9603 96 10 27 17 0 0 @096/sewer2.txt
+create event_generator 9603 96 10 30 17 0 0 @096/sewer2.txt
 fi
 if_char_dir right
-create event_generator 9603 96 9 26 17 0 0 @096/sewer2.txt
+create event_generator 9603 96 9 29 17 0 0 @096/sewer2.txt
 fi
 fi

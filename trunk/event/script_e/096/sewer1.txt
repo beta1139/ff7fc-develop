@@ -36,9 +36,9 @@ chg_char_dir down
 chg_npc_dir 9621 left
 chg_npc_dir 9622 right
 pool
-warp_ff3_2 96 9 27 2 down
-set_npc_pos 9621 96 10 26
-set_npc_pos 9622 96 11 27
+warp_ff3_2 96 9 30 2 down
+set_npc_pos 9621 96 10 29
+set_npc_pos 9622 96 11 30
 loop 2
 inc_map_draw_y_offset
 sleep 2

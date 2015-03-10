@@ -1,3 +1,3 @@
 wait_same_pos
-set_npc_pos 9623 96 20 26
-create event_generator 9605 96 20 27 17 0 0 @096/sewer4.txt
+set_npc_pos 9623 96 20 29
+create event_generator 9605 96 20 30 17 0 0 @096/sewer4.txt
