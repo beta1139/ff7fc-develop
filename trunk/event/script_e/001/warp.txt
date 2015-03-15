@@ -2,7 +2,7 @@ set_eternal_event
 wait_target_talked 160
 reset_talked_flag 160
 if_flag 3 0
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 sleep 8
 add_party_mem 1
 warp 10 8 18 up
@@ -27,7 +27,7 @@ if_flag 3 1
 fadeout
 draw_char off
 sleep 30
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 warp 11 4 5 up
 sleep 64
 fadein

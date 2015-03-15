@@ -1437,7 +1437,7 @@ event_generator,9762,97,9,32,17,0,0,"@set_slide_walk.txt"
 event_generator,9763,97,9,33,17,0,0,"@reset_slide_walk_bottom.txt"
 event_generator,9764,97,8,17,17,0,0,"@set_slide_walk.txt"
 event_generator,9765,97,8,18,17,0,0,"@reset_slide_walk_bottom.txt"
-event_generator,9766,97,8,7,17,0,0,"@097/out_sewer.txt"
+event_generator,9766,97,8,12,17,0,0,"@097/out_sewer.txt"
 event_generator,9800,98,9,32,17,0,0,"@098/train_graveyard_1.txt"
 save_point,9801,98,12,34,0,0,0,
 event_generator,9802,98,12,34,17,0,0,"@save_msg.txt"

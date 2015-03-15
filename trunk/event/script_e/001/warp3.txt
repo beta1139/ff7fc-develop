@@ -3,17 +3,18 @@ wait_target_talked 162
 reset_talked_flag 162
 if_flag 3 0
 fadeout
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 warp 17 37 8 down
 draw_char off
 set_flag 0 0
 set_flag 7 1
+sleep 16
 play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
 fadein
 fi
 if_flag 3 1
 fadeout
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 draw_char off
 chg_npc_img 2251 2
 sleep 48

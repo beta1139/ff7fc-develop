@@ -3,7 +3,7 @@ kill_through_range 2800 4899
 set_flag 11 0
 chg_event_move_char_speed normal
 draw_char off
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 sleep 16
 clear_text 6
 clear_text 7

@@ -7,18 +7,17 @@ add_item 4000
 add_item 4100
 add_item 4003
 fi
-play_bgm
 chg_char_dir down
 create npc_event 9622 96 42 15 2 3 3 none
 create npc_event 9621 96 41 14 3 2 3 none
 draw_char on
 set_slide_char_flag
 chg_event_move_char_speed fast
-move_char down 12
-slide_npc 9621 down 12
-slide_npc 9622 down 12
-play_se barrel_falling.ogg
-loop 6
+move_char down 18
+slide_npc 9621 down 18
+slide_npc 9622 down 18
+play_se falling.ogg
+loop 10
 sleep 4
 chg_char_dir left
 chg_npc_dir 9621 up
@@ -115,4 +114,4 @@ set_key_valid right
 set_key_valid start
 chg_event_move_char_speed normal
 reset_slide_char_flag
-sleep 32
+sleep 16
