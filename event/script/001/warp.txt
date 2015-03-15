@@ -2,7 +2,7 @@ set_eternal_event
 wait_target_talked 160
 reset_talked_flag 160
 if_flag 3 0
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 sleep 8
 add_party_mem 1
 warp 10 8 18 up
@@ -24,10 +24,13 @@ create event_generator 661 6 20 1 17 0 0 @006/elevator_switch2.txt
 create npc 400 4 1 26 36 3 0 ウェッジ\n「おれは　だっしゅつこうを　かくほしておくっす！\n\n\n　しっかし　このおおきな　まこうろを\n　ばくはするなんて……　みものっすね！
 fi
 if_flag 3 1
+set_flag 0 0
+warp 12 6 23 up
+end
 fadeout
 draw_char off
 sleep 30
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 warp 11 4 5 up
 sleep 64
 fadein

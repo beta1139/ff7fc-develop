@@ -34,10 +34,11 @@ msg 「オ～イ　まってよ！\n　まってってば～！！
 move_npc 60001 down 20
 sleep 90
 fadeout
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 warp 950 25 22 up
 draw_char on
 set_flag 0 0
+sleep 16
 play_bgm
 fadein
 kill 60001

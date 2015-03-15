@@ -231,7 +231,7 @@ sleep 16
 if_flag 13 1
 move_npc 1591 left 1
 fi
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 play_se train_whistle_quiet.ogg
 jump_char same 1
 sleep 16
@@ -250,7 +250,7 @@ chg_npc_img 1591 31
 fi
 fi
 if_flag 3 1
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 play_se train_whistle_quiet.ogg
 move_char up 1
 sleep 16

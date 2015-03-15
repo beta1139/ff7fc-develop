@@ -32,6 +32,7 @@ chg_npc_dir 1301 up
 move_npc 1327 down 1
 sleep 16
 chg_npc_dir 1301 right
+chg_speed 1301 normal
 move_npc 1322 up 2
 move_npc 1328 up 5
 move_npc 1327 left 1
@@ -51,7 +52,6 @@ sleep 4
 chg_npc_dir 1301 right
 sleep 4
 chg_npc_dir 1301 down
-chg_speed 1301 normal
 sleep 4
 chg_npc_dir 1322 right
 move_npc 1320 down 2

@@ -319,9 +319,8 @@ erase_image 70812
 kill_through_range 70813 70899
 set_text_col 6 0 29 0
 set_text_col 7 0 27 0
-set_text_col 8 0 26 0
-set_text_col 9 0 20 0
-set_text_col 9 22 27 0
+set_text_col 8 0 27 0
+set_text_col 9 0 28 0
 clear_text 6
 clear_text 8
 clear_text 9
@@ -341,7 +340,7 @@ set_key_valid down
 set_key_valid right
 set_key_valid start
 stop_se
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 warp 16 9 5 down
 sleep 48
 set_flag 13 0

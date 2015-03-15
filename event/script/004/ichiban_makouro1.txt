@@ -45,7 +45,7 @@ sleep 16
 kill 420
 sleep 72
 flush
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 sleep 8
 flush
 sleep 16
