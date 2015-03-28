@@ -24,9 +24,6 @@ create event_generator 661 6 20 1 17 0 0 @006/elevator_switch2.txt
 create npc 400 4 1 26 36 3 0 ウェッジ\n「おれは　だっしゅつこうを　かくほしておくっす！\n\n\n　しっかし　このおおきな　まこうろを\n　ばくはするなんて……　みものっすね！
 fi
 if_flag 3 1
-set_flag 0 0
-warp 12 6 23 up
-end
 fadeout
 draw_char off
 sleep 30
