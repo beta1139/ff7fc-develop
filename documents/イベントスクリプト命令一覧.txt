@@ -2,6 +2,9 @@
 wait_same_pos
   キャラとマップ上の座標が同じになるまで待つ
 
+wait_not_same_pos
+  キャラとマップ上の座標が異なるまで待つ
+
 wait_talk
   話しかけられるまで待つ
 
