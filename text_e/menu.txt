@@ -1,8 +1,8 @@
 NEXTLV
 LIMIT
 CFG
-ゆびのいちをきおくするかどうか
-バトルのじかんのすすみかた
+Remember Cursor
+Battle Speed
 Face Graphics
 Cursor
 Ini
@@ -37,39 +37,39 @@ EVADE
 M.ATTACK
 M.GUARD
 M.EVADE
-EXP：
-つぎのレベルまであと：
-LIMITLV：
-パーティをつくってください
+EXP:
+EXP to next lv:
+LIMITLV:
+Organize a Party
 Load
-Enemy was wiped out
+Enemy exterminated
 GIL acquired
 EXP acquired
-どうぐや
-ぶきや
-ぼうぐや
-マテリアや
-アクセサリや
-いらっしゃい　どのようなごようけんで？
-かう
-うる
-でる
-なににいたしましょうか？
-いくつ？
-ありがとうございます　ほかには？
-なにを　うりますか？
-ぜんぶ
-それなら　　　　　　　ギルになります
+Items
+Weapons
+Armors
+Materias
+Accessories
+May I help you?
+Buy
+Sell
+Exit
+What do you want?
+How many?
+Anything else?
+What would you sell?
+Everything
+It's       gil.
 none
 none
 M.GRD
- was lv up
+ level up
 AP acquired
 SUMMONS
 E.MGC
 ConsMP
 Found
-！
+!
  Materia
-ばくはにまきこまれて　パーティはぜんめつした……
+The whole party was blown up…
 
