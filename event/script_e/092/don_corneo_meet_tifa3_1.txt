@@ -11,7 +11,7 @@ move_npc 9221 up 3
 sleep 64
 set_active_msg 9221
 jump_npc 9221 same 1
-msg エアリス\n「な～に　テレてるの？\n　ダメ　ちゃんとはなさないと！
+msg Aeris\n「Stop being shy!\n You need to talk.
 move_char down 1
 sleep 16
 move_npc 9221 down 3

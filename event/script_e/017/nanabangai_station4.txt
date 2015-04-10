@@ -1,2 +1,2 @@
 wait_target_talked 1713
-chg_param 1713 「しはつの　しゅっぱつじこくは\n　ミッドガルじ　05じ04ぷんに　なります
+chg_param 1713 「The first train leaves\n at 05:04 Midgar Standard\n Time.

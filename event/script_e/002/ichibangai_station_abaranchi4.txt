@@ -3,16 +3,16 @@ create event_generator 215 2 24 6 17 0 0 @002/profile_cloud.txt
 create event_generator 216 2 0 0 17 0 0 @002/ichibangai_station_abaranchi5.txt
 create event_generator 217 2 24 6 17 0 0 @002/profile_barret.txt
 chg_npc_dir 203 right
-msg Biggs\n「Wow! You used to be in\n SOLDIER huh?\n\n ...Not everyday ya find\n one in a group like\n AVALANCHE.
+msg Biggs\n「Wow! You do fight like a\n SOLDIER that you are.\n\n It's great to have one\n with us, the anti-Shinra\n eco-warriors AVALANCHE.
 chg_npc_dir 202 right
 sleep 16
 set_talk_npc 202
-msg Jessie\n「SOLDIER?\n Aren't they the enemy?\n\n What's he doing with us\n in AVALANCHE.
+msg Jessie\n「Is that a fact?\n SOLDIERS are our enemy,\n aren't they?\n What's a SOLDIER doing\n helping us AVALANCHE?
 reset_talk_npc
 sleep 16
 chg_npc_dir 203 up
-msg Biggs\n「He was in SOLDIER,\n Jessie.\n\n But he quit and is with\n us now.
+msg Biggs\n「Easy, Jessie.\n He WAS a SOLDIER.\n\n But not any more and\n now he's with us.
 chg_npc_dir 202 up
 chg_npc_dir 203 right
 sleep 16
-msg Biggs\n「Didn't catch your name..
+msg Biggs\n「Didn't catch your name.\n You're……?

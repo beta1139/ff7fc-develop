@@ -16,14 +16,14 @@ play_se_loop alarm.ogg
 sleep 8
 step_npc 2902 3
 set_key_valid a
-msg 「シャリョウ1　ロック　カンリョウ\n　ケイカイ　レベル2　イコウ
+msg 「CAR NO.1 LOCKED DOWN\n ACTIVATING ALERT LEVEL 2
 jump_npc 2902 same 1
 chg_event_move_char_speed fast
 move_char left 12
 move_npc 2903 left 8
 sleep 8
 step_npc 2902 4
-msg3 64 ビッグス\n「いそぐんだ！
+msg3 64 Biggs\n「Hurry!
 sleep 16
 chg_npc_dir 2907 left
 slide_walk_npc 2901 right 2
@@ -39,7 +39,7 @@ erase_msg3
 sleep 8
 jump_npc 2903 same 1
 set_active_msg 2903
-msg3 64 ウェッジ\n「とびら　ロックされるっす！
+msg3 64 Wedge\n「They're locking the door!
 chg_npc_dir 2901 right
 sleep 8
 kill 2902
@@ -62,19 +62,19 @@ sleep 8
 erase_msg3
 sleep 8
 jump_npc 2901 same 2
-msg3 56 ジェシー\n「とにかく　はしって！
+msg3 56 Jessie\n「Just run!
 sleep 32
 step_npc 2901 6
 sleep 16
 kill 2903
 sleep 8
 erase_msg3
-msg ジェシー\n「さくせん2に　チェンジよ！
+msg Jessie\n「Switching to plan B!
 play_se train_info.ogg
 move_npc 2901 right 7
 sleep 24
 play_se_loop alarm.ogg
-msg 「シャリョウ2　ミカクニンID　ケンチ\n　ドアロック　ジュウビチュウ
+msg 「UNIDENTIFIED PASSENGER\n DETECTED IN CAR NO.2\n LOCKING DOWN IN PROGRESS
 sleep 16
 kill 2901
 chg_type 2906 npc3
@@ -146,7 +146,7 @@ sleep 16
 play_se_loop alarm.ogg
 chg_npc_dir 3001 left
 set_key_valid a
-msg 「シャリョウ2　ロック　カンリョウ\n　ケイカイ　レベル3　イコウ
+msg 「CAR NO.2 LOCKED DOWN\n ACTIVATING ALERT LEVEL 3
 kill 2815
 create event_generator 3020 30 8 6 17 0 0 @030/train_move.txt
 end
@@ -162,7 +162,7 @@ play_se train_info.ogg
 sleep 24
 play_se_loop alarm.ogg
 set_key_valid a
-msg 「シャリョウ3　ロック　カンリョウ\n　ケイカイ　レベル4　イコウ
+msg 「CAR NO.3 LOCKED DOWN\n ACTIVATING ALERT LEVEL 4
 start_fake_countdown_sec 18
 set_key_valid up
 set_key_valid left
@@ -191,13 +191,13 @@ chg_npc_dir 3200 left
 slide_walk_npc 3200 right 1
 sleep 8
 play_se_loop alarm.ogg
-create npc_event 3201 32 6 6 1 2 3 バレット\n「おう！！\n　じかんがねえ！！
+create npc_event 3201 32 6 6 1 2 3 Baret\n「Yo!\n We got no time!
 slide_walk_npc 3201 right 1
 set_active_msg 3201
-create npc_event 3202 32 6 6 2 2 3 ティファ\n「……こわいね
+create npc_event 3202 32 6 6 2 2 3 Tifa\n「……I'm scared.
 slide_walk_npc 3202 up 1
 set_key_valid a
-msg 「シャリョウ4　ロック　カンリョウ\n　ケイカイ　レベルMAX　イコウ
+msg 「CAR NO.3 LOCKED DOWN\n ACTIVATING MAXIMUM ALERT
 move_char right 7
 sleep 16
 move_npc 3201 right 9
@@ -219,7 +219,7 @@ chg_npc_dir 3205 right
 sleep 16
 chg_speed 3201 fast
 step_npc 3201 4
-msg バレット\n「よしっ！！\n　うまくいったな！
+msg Baret\n「Good!\n We've made it!
 chg_speed 3201 normal
 move_npc 3201 left 2
 chg_npc_dir 3203 left
@@ -228,7 +228,7 @@ chg_npc_dir 3204 left
 jump_npc 3201 same 1
 sleep 16
 step_npc 3201 2
-msg バレット\n「おう！！\n　こっちだ！！
+msg Baret\n「Hey!\n Over here!
 chg_speed 3203 fast
 move_npc 3203 right 1
 chg_speed 3202 normal
@@ -269,7 +269,7 @@ chg_npc_dir 3201 left
 sleep 4
 pool
 step_npc 3201 2
-msg バレット\n「いくぜ！！\n　こっから　ダイブだ！！
+msg Baret\n「Let's go!\n We hop off here!
 chg_event_move_char_speed normal
 move_char left 7
 sleep 16

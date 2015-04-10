@@ -5,10 +5,10 @@ if_flag 9 2
 chg_char_img_tmp 13
 kill_through 7402
 fi
-msg 『アイテムディスペンサーだ\n\n\n\n　いっかい　50ギルのようだ\n　さて……\n\n\n#2\n　　なにがでるかな……\n　　きょうみないね\n\n\n[[]][[]]
+msg 『It's an item lottery.\n\n\n\n 50 Gil a try.\n Well……\n\n\n#2\n  Let's try my luck……\n  Not interested.\n\n\n[[]][[]]
 if_flag 3 0
 if_gil_less 50
-msg 『おかねがたらないな
+msg 『Not enough money.
 move_char down 1
 sleep 16
 if_flag 9 2
@@ -69,7 +69,7 @@ pool
 stop_se
 sleep 16
 play_se_loop radio_noise.ogg
-msg 「………ヒ……\n　パー…………
+msg 「……Vee……\n Brr…………
 stop_se
 move_char up 2
 sleep 32
@@ -84,7 +84,7 @@ sleep 4
 chg_speed 7420 normal
 jump_npc_target_pos 7420 6 8
 jump_char_target_pos 6 6
-msg3 -1 『うわっ！
+msg3 -1 『Oops!
 sleep 16
 create npc_event 7421 74 6 6 80 3 0 none
 sleep 8
@@ -107,7 +107,7 @@ move_char up 3
 sleep 48
 chg_speed 7420 normal
 step_npc 7420 1
-msg 『こわれてるぞ
+msg 『It's broken.
 move_char down 5
 if_flag 9 2
 create event_generator 7402 74 6 8 17 0 0 @drag_cloud.txt 

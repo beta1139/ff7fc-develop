@@ -13,25 +13,25 @@ jump_npc 7515 same 1
 chg_char_dir right
 sleep 16
 step_npc 7515 2
-msg 「よう　きたな\n　できとるよ\n　さっそくきてみなさい
+msg 「Ah, you're here.\n It's done.\n Put it on right away.
 chg_speed 7515 not_move
 if_flag 15 3
 play_se pick_up.wav
 add_item 6000
 add_flag 18 1
-msg キーアイテム『コットンのドレス』をてにいれた！
+msg You got the key item\n"Cotton Dress\n (Cot.Dress)"!
 fi
 if_flag 15 4
 play_se pick_up.wav
 add_item 6001
 add_flag 18 2
-msg キーアイテム『サテンのドレス』をてにいれた！
+msg You got the key item\n"Stain Dress (Sat.Dress)"!
 fi
 if_flag 15 5
 play_se pick_up.wav
 add_item 6002
 add_flag 18 4
-msg キーアイテム『シルクのドレス』をてにいれた！
+msg You got the key item\n"Silk Dress (SilkDress)"!
 fi
 chg_char_dir left
 chg_npc_dir 7521 up
@@ -103,7 +103,7 @@ play_se syu.ogg
 sleep 64
 create npc_event 7520 75 9 4 0 0 2 none
 draw_char off
-msg 『これ……どうやってきるんだ？
+msg 『How……do I put this on?
 chg_speed 7521 normal
 move_npc 7521 up 2
 sleep 48
@@ -112,7 +112,7 @@ sleep 8
 open_door 7551
 play_se door_open.ogg
 sleep 8
-msg3 -1 『わ！　なにをするんだ
+msg3 -1 『Hey! What'cha doing!
 loop 8
 inc_map_draw_y_offset
 sleep 1
@@ -133,7 +133,7 @@ wait_key_push_edge a
 erase_msg3
 sleep 16
 step_npc 7521 2
-msg エアリス\n「やっぱり　ちょっとへん\n　かつら　ひつようだね
+msg Aeris\n「Still don't look right.\n We'll need a wig.
 move_char down 8
 move_npc 7521 down 6
 chg_speed 7515 normal
@@ -147,7 +147,7 @@ sleep 32
 chg_npc_dir 7515 up
 sleep 32
 step_npc 7515 2
-msg 「うむうむ　そうだろうとおもって\n　しりあいに　はなしをしておいたんじゃ\n\n\n　（おとこ　おとこ　おとこ）というかんばんを\n　だしとるジムがあるじゃろ？\n　そこに　あんたとおなじシュミのひとがいるんじゃ\n　かれに　そうだんしてみるとよいじゃろう
+msg 「Yes, yes, I thought so.\n I've already talked to a\n friend of mine.\n\n Do you know that training\n gym? There is a man who\n shares your taste.\n You should talk to him.
 chg_speed 7515 not_move
 move_char up 2
 move_npc 7521 up 1
@@ -161,11 +161,11 @@ sleep 16
 close_door 7551
 sleep 64
 step_npc 7520 1
-msg 『……おなじシュミ？\n　エアリス　おやじさんに\n　どんなせつめいをしたんだ？
+msg 『……My taste?\n Aeris, what did you\n tell him about me?
 jump_npc 7521 same 1
 sleep 16
 step_npc 7521 2
-msg エアリス\n「いいじゃない　なんでも\n　ドレス　きれいだしね！
+msg Aeris\n「Don't worry about that.\n Isn't that dress pretty?
 move_npc 7521 up 1
 draw_char on
 kill 7520
@@ -176,7 +176,7 @@ kill 7521
 chg_type 7510 npc
 chg_type 7515 npc
 chg_type 7516 npc
-chg_param 7510 「どうです？\n　かつらは　てにはいりましたか？
+chg_param 7510 「How was it?\n Did you get the wig?
 set_npc_pos 7516 75 9 13
 create event_generator 8701 87 0 0 17 0 0 @087/wm_gym2.txt
 create event_generator 8730 87 9 19 17 0 0 @087/wm_gym7_1.txt

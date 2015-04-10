@@ -1,8 +1,8 @@
 wait_same_pos
-msg ティファ\n「ねぇ　クラウド\n　きぶんは　どう？
+msg Tifa\n「Look, Cloud.\n How are you?
 sleep 16
 chg_char_dir up
-msg 『……ふつうさ\n　どうして　そんなことを　きく？\n\n\nティファ\n「ううん　なんでもない\n　ただ　つかれて　ないのかなって……
+msg 『……As usual.\n Why do you ask?\n\n\nTifa\n「Well. Nothing.\n I just wondered if\n you aren't tired……
 chg_npc_dir 2202 up
 chg_type 2202 npc
 chg_speed 2202 not_move

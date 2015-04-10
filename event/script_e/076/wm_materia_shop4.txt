@@ -17,13 +17,13 @@ sleep 16
 if_flag 14 6
 step_npc 7610 2
 set_talk_npc 7610
-msg 「またよってくれよ\n　ちゃんとしょうばいしてるからさ
+msg 「Please come again.\n I'll be doing an\n honest business.
 reset_talk_npc
 fi
 if_flag 14 7
 step_npc 7610 2
 set_talk_npc 7610
-msg 「すいませんねえ\n　ちょっときらしちゃって\n　なんにもないんですよ
+msg 「I'm sorry.\n We're out of stock and\n there's nothing left.
 reset_talk_npc
 fi
 move_char down 1

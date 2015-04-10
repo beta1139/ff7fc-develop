@@ -2,6 +2,6 @@ set_eternal_event
 wait_same_pos
 kill_through 1210
 kill_through 1301
-msg 『Shinra-MP……\n Better not go this way.
+msg 『Shinra Guards that way……
 move_char right 1
 sleep 16

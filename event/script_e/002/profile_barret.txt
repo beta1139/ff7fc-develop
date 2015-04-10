@@ -16,11 +16,11 @@ set_text_alpha 9 0
 set_text_alpha 10 0
 set_text_alpha 11 0
 sleep 8
-set_text 3 　 　   　　　Barret Wallace
-set_text 8 　　　　　　　　　　　　profile
-set_text 9 　　　　　　　　　　　　profile　
-set_text 10 　　　　　　　　　　　　profile
-set_text 11 　　　　　　　　　　　　profile
+set_text 3          Baret Wallace
+set_text 8     The leader of AVALANCHE
+set_text 9     Wields a gun planted in
+set_text 10      place of his right arm
+set_text 11  Hot tempered but noble minded
 warp 2 24 20 down
 loop 4
 sleep 1
@@ -173,7 +173,7 @@ fadein
 sleep 16
 step_npc 252 1
 set_talk_npc 252
-msg Barret\n「If you push the\n Directional button while\n\n pushing the [CANCEL]\n button to run.\n (earlier marked Z)
+msg Baret\n「Move while holding down\n CANCEL(default Z) button\n to run faster.\n Don't lag behind!
 reset_talk_npc
 chg_npc_img 252 1
 move_npc 252 left 1

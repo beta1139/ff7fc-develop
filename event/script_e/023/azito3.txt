@@ -29,7 +29,7 @@ chg_npc_img 2316 20
 sleep 8
 stop_se
 set_key_valid a
-msg プレジデント　しんら\n「……いちばん　まこうろ　ばくはじけんに\n　かんして　アバランチと　なのる　そしきから\n　はんこう　せいめいが　だされています\n　せいめいに　よると　アバランチは\n　こんごも　どうようの　テロを つづけることを\n よこく　しています\n\n　しかし　ミッドガル　しみんの　みなさん\n　あんしんして　ください\n\n\n　われわれ　しんら　カンパニーは\n　このような　ぼうりょくから　みなさんを\n　まもるために　ソルジャーの　とうにゅうを\n　けっていしました\n　これで……
+msg President Shinra\n「……bombing of No.1 reactor\n was claimed by a group\n called AVALANCHE.\n Their statement makes\n clear of their intentions\n to carry on with similar\n activities.\n However, honest citizens\n of the city of Midgar\n need not worry any more.\n\n We Shinra Company have\n decided to send SOLDIERS\n in order to protect you\n from such violence.\n It will……
 set_key_unvalid a
 play_se radio_noise.ogg
 chg_npc_img 2316 17
@@ -47,7 +47,7 @@ stop_se
 create npc2 2314 23 5 3 17 0 0 
 create event_generator 2315 23 1 2 17 0 0 @023/azito7.txt
 chg_type 2306 npc
-chg_param 2306 ジェシー\n「でも　わたしの　ばくだんの　はれぶたい\n　ちょっと　うれしいんだ
+chg_param 2306 Jessie\n「But to tell the truth I'm\n sort of satisfied that my\n bombs worked well.
 set_key_valid left
 set_key_valid down
 set_key_valid right

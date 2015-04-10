@@ -6,8 +6,8 @@ fi
 if_flag 9 1
 set_flag 0 4
 warp_ff3_2 22 8 4 3 down
-create npc_event 2201 22 3 5 37 1 0 おしごと　がんばってね
-create npc_event 2202 22 6 6 2 2 0 ティファ\n「ビッグスたちは　そとで　たいき　してるわ
+create npc_event 2201 22 3 5 37 1 0 Have fun at work.
+create npc_event 2202 22 6 6 2 2 0 Tifa\n「Others are waiting\n outside.
 create npc_event 2206 22 5 10 1 0 0 none
 sleep 16
 fi

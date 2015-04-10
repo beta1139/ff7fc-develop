@@ -1,7 +1,7 @@
 wait_same_pos
 if_flag 3 0
 step_npc 8715 2
-msg 「じゃあ　もういちどせつめいするわよ\n\n\n\n　かまえから（セレクトボタン）でしゃがむ\n　しゃがみから（Bボタン）でたつ\n　たちから（Aボタン）でかまえへ\n\n　セレクトボタン　Bボタン　Aボタン\n　と　じゅんばんにおすのよ\n\n\n　わかった？\n\n\n\n#2\n　　わからない\n　　わかった\n\n\n[[]][[]]
+msg 「Now I'll explain again.\n\n\n\n From preparation, press\n SELECT to squat down,\n press CANCEL to stand up,\n then press OK to prepare.\n That's SELECT, CANCEL, OK\n buttons in that order.\n\n\n Do you get it?\n\n\n\n#2\n  No, I don't.\n  Got it.\n\n\n[[]][[]]
 if_flag 3 0
 create event_generator 8703 87 9 14 17 0 0 @087/wm_gym4.txt
 fi

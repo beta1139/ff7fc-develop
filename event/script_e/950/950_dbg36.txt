@@ -5,6 +5,6 @@ chg_char_img_tmp 103
 chg_char_dir down
 sleep 20
 chg_char_dir left
-msg w‚«‚å‚¤‚İ‚È‚¢‚Ë
+msg wNot interested.
 chg_char_dir down
 

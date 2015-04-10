@@ -8,7 +8,7 @@ chg_speed 2806 normal
 set_active_msg 2806
 jump_npc 2806 same 1
 sleep 16
-msg しんらかちょう\n「ヒッ……！！\n\n\n　わ　わたしには　かまわないでくれたまえ\n　（ヒッヒッ……\n　かいしゃのみんなに　じまんしちゃおう…）
+msg Shinra Manager\n「Yikes……!\n\n\n P-please leave me alone.\n (Hmm……This will make a\n good topic at work……)
 chg_type 2806 npc2
 chg_speed 2806 not_step
 set_inactive_msg 2806

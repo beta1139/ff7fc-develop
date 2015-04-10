@@ -6,7 +6,7 @@ set_key_valid left
 set_key_valid right
 set_key_valid select
 set_key_valid start
-create npc 6520 65 11 19 17 0 0 『6ばんがいをこえて7ばんがいへ　か\n　ひとりでなんとかなりそうだな
+create npc 6520 65 11 19 17 0 0 『To Slum 7 through Slum 6.\n I Guess I can handle that\n by myself.
 kill_through_range 5622 5623
 create npc_event 5621 56 9 9 3 1 4 none
 create event_generator 5600 56 11 12 17 0 0 @056/gobangai_slums8_1.txt

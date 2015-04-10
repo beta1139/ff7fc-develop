@@ -102,7 +102,7 @@ sleep 4
 chg_npc_dir 573 left
 sleep 4
 chg_npc_dir 573 up
-msg3 -1 『This is a piece of cake\n for Ex-SOLDIER.
+msg3 -1 『It's a cinch for\n an ex-SOLDIER.
 add_likability 2 500
 sleep 8
 move_npc 571 down 5
@@ -192,7 +192,7 @@ sub_likability 1 500
 sub_likability 2 250
 chg_speed 572 normal
 step_npc 572 4
-msg Barret\n「Oh,You are \n GREAT-SOLDIER.
+msg Baret\n「Some SOLDIER you are.
 move_npc 571 left 1
 move_npc 570 left 4
 sleep 8

@@ -11,19 +11,19 @@ sleep 16
 move_char up 1
 sleep 16
 set_talk_npc 2202
-msg ティファ\n「ねぇ……\n　なんか　のむ？\n\n#2\n　　いまは　そんな　きぶんじゃないな\n　　キツイの　くれないか\n\n\n[[]]\n[[]]
+msg Tifa\n「Look……\n Wanna drink something?\n\n#2\n  I don't feel like it.\n  Give me a hard one.\n\n\n[[]]\n[[]]
 reset_talk_npc
 if_flag 3 0
 chg_npc_dir 2202 right
 chg_npc_img 2202 98
 jump_npc 2202 same 1
 set_talk_npc 2202
-msg ティファ\n「もう　わたしだって　おさけくらい\n　つくれるように　なったのよ
+msg Tifa\n「You think I can't\n mix a good drink?
 reset_talk_npc
 chg_npc_img 2202 2
 chg_npc_dir 2202 down
 set_talk_npc 2202
-msg ティファ\n「おきゃくさんだって\n　ティファちゃんの　つくる　おさけは\n　おいしいよって いってくれるんだから
+msg Tifa\n「Ask any of my customers.\n Everyone agrees that my\n drinks are good.
 reset_talk_npc
 sleep 16
 fi
@@ -32,7 +32,7 @@ set_flag 13 1
 add_likability 2 500
 jump_npc 2202 same 1
 set_talk_npc 2202
-msg ティファ\n「まってて\n　いま　つくるから
+msg Tifa\n「Just a sec.\n It's coming.
 reset_talk_npc
 sleep 16
 chg_type 2202 npc_event
@@ -66,7 +66,7 @@ jump_npc 2202 same 1
 sleep 8
 play_se tifa_cocktail.ogg
 set_talk_npc 2202
-msg ティファ\n「おまたせ
+msg Tifa\n「There you go.
 reset_talk_npc
 fi
 set_inactive_msg 2202
@@ -77,7 +77,7 @@ chg_npc_dir 2202 up
 sleep 32
 step_npc 2202 2
 set_talk_npc 2202
-msg ティファ\n「なんだか　ほっとしちゃった\n　クラウドが　ぶじ　もどってきて
+msg Tifa\n「I'm kind of relieved\n that you're back safely.
 reset_talk_npc
 if_flag 13 0
 sleep 24
@@ -89,7 +89,7 @@ play_se tifa_cocktail.ogg
 step_npc 2207 1
 sleep 32
 fi
-msg 『きゅうに　どうした？\n　あのていどの　しごと　なんでもないさ
+msg 『What's the matter?\n Today's job was nothing.
 reset_talk_npc
 sleep 16
 chg_npc_dir 2202 down
@@ -97,13 +97,13 @@ sleep 32
 chg_speed 2202 slow
 step_npc 2202 1
 set_talk_npc 2202
-msg ティファ\n「そうね……\n\n\n　クラウド　ソルジャーに\n　なったんだもんね
+msg Tifa\n「I suppose so……\n\n\n You really became a\n SOLDIER, Could.
 reset_talk_npc
 sleep 24
 chg_speed 2202 normal
 step_npc 2202 1
 set_talk_npc 2202
-msg ティファ\n「……こんかいの　ほうしゅう　なんだけど\n　バレットからもらってね
+msg Tifa\n「……You speak to Baret\n about your money.
 reset_talk_npc
 if_flag 13 0
 sleep 24
@@ -115,7 +115,7 @@ step_npc 2207 1
 play_se tifa_cocktail.ogg
 sleep 40
 fi
-msg 『そうするよ\n　ほうしゅうを　もらえば　また　おわかれだな
+msg 『I'll do that.\n Then it's gonna be\n another good-bye.
 sleep 16
 move_char down 1
 sleep 32

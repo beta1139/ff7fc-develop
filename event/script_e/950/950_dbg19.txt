@@ -12,7 +12,7 @@ chg_speed 95051 fast
 move_npc 95051 down 8
 sleep 64
 chg_npc_dir 95051 right
-msg ƒƒ“!
+msg Bow!
 chg_speed 95051 not_move
 chg_type 95051 npc
 reset_slide_npc_flag 95051

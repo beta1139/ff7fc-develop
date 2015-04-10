@@ -1,23 +1,23 @@
 NEXTLV
 LIMIT
 CFG
-Remember Cursor
-Battle Speed
-Face Graphics
+Save cursor pos
+Battle time mode
+Face graphics
 Cursor
 Ini
 Save
 Activ
 Wait
-FaceGraph
-Org
+Face Type
+Orig
 Amano
 ITEM
 MAGIC
 MTRIA
 EQUIP
 STATS
-FORM
+ORDER
 PHS
 SAVE
 GIL
@@ -26,7 +26,7 @@ TIDY
 KEYITEM
 POWER
 SPEED
-VIT
+VITAL
 MAGIC
 MIND
 LUCK
@@ -40,36 +40,36 @@ M.EVADE
 EXP:
 EXP to next lv:
 LIMITLV:
-Organize a Party
-Load
+Organize a party
+LOAD
 Enemy exterminated
-GIL acquired
-EXP acquired
-Items
-Weapons
-Armors
-Materias
-Accessories
+ GIL acquired
+ EXP acquired
+ITEM
+WPN
+ARM
+MTR
+ACCS
 May I help you?
 Buy
 Sell
-Exit
+ Go
 What do you want?
-How many?
+CNT?
 Anything else?
-What would you sell?
-Everything
-It's       gil.
+What do you sell?
+ALL
+It's       Gil.
 none
-none
+remove
 M.GRD
  level up
-AP acquired
+ AP acquired
 SUMMONS
-E.MGC
-ConsMP
-Found
+E.KNACK
+MP Cost
+You got
 !
- Materia
-The whole party was blown upÅc
+ materia
+Your party was blown upÅcÅc
 

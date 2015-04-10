@@ -13,5 +13,5 @@ sleep 2
 chg_char_dir left
 pool
 sleep 2
-msg ÅwÇ–Ç·Ç¡ÇŸÇ¢ÅI
+msg ÅwYippee!
 

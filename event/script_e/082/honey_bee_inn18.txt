@@ -3,7 +3,7 @@ kill_through_range 8204 8206
 chg_speed 8217 normal
 chg_dir_to_char 8217
 set_talk_npc 8217
-msg ムッキー\n「こんなことでおちこんじゃ\n　いけないぞ\n\n　おじさんなんか\n　しょっちゅうなんだから
+msg Mukki\n「Try no to get youself\n disappointed by this.\n\n That kind of thing\n always happens to me.
 reset_talk_npc
 if_flag 10 0
 create event_generator 8206 82 0 0 17 0 0 @082/honey_bee_inn19.txt

@@ -19,7 +19,7 @@ sleep 16
 chg_npc_dir 9929 up
 sleep 16
 step_npc 9929 1
-msg ティファ\n「……れっしゃ　うごかせないかしら？
+msg Tifa\n「……Can't we move this car?
 move_npc 9929 up 1
 sleep 16
 kill 9929
@@ -42,7 +42,7 @@ sleep 16
 chg_npc_dir 9929 up
 sleep 16
 step_npc 9929 2
-msg エアリス\n「……れっしゃ　うごかせないかな？
+msg Aeris\n「……Can't we move this car?
 move_char down 1
 sleep 16
 move_npc 9929 left 1

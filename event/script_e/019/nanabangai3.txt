@@ -16,11 +16,11 @@ sleep 24
 warp 19 8 13 up
 draw_char on
 fadein
-msg 「ほら……\n　なんだか　すてきで　ふしぎな　ばしょ　だろ
+msg 「See?\n This place is kinda\n wonderfully mysterious,\n isn't it?
 chg_npc_dir 1908 right
 sleep 24
 chg_char_dir left
-msg 「おれの　ばしょだが　たまには\n　みにきても　いいぞ\n　じゃな！！　きょうだい！
+msg 「It's my place but you may\n come and watch sometimes.\n Bye, brother!
 chg_type 1908 npc_event
 active 1908
 chg_speed 1908 fast

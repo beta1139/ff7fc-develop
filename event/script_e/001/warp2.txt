@@ -12,55 +12,55 @@ play_bgm
 set_flag 0 0
 fi
 if_flag 3 2
-create npc 95000 950 23 23 66 1 2 デバッグエリアへようこそ\n\n\n\nここに　いちどはいると　にどと\nでられないんだ
+create npc 95000 950 23 23 66 1 2 Welcome to Debug Area.\n\n\n\nOnce you are here,\nyou can not get out.
 create treasure_box 95010 950 10 19 0 1 0 1000
 create treasure_box 95011 950 11 19 1 1 0 1001
-create treasure_item 95012 950 10 20 1 1 0 4000
-create treasure_item 95013 950 11 20 4 1 0 1005
-create npc 95014 950 12 20 72 1 2 アイテムを　かってに　とるのは　やめなよ\nぜったいに　やめなよ！
+create treasure_materia 95012 950 10 20 3 1 0 4000
+create treasure_item 95013 950 11 20 1 1 0 1005
+create npc 95014 950 12 20 72 1 2 You shouldn't steal items.\nYou're warned!
 create weapon_shop 95020 950 20 8 67 1 0 2000/2001/2002/2003/2004/2005/2100/2101/2102/2103/2104/2105/2200/2201/2202/2203/2204/2205/2300/2301/2302/2303/2304/2305/2400/2401/2402/2403/2404/2405/2500/2501/2502/2503/2504/2505/2600/2601/2602/2603/2604/2605/2700/2701/2702/2703/2704/2705/2800/2801/2802/2803/2804/2805
 create armor_shop 95021 950 22 8 68 1 0 3000/3001/3002/3003/3004/3005/3006/3007/3008/3009
 create acce_shop 95022 950 24 8 69 1 0 5000/5001/5002
 create materia_shop 95023 950 26 8 70 1 0 4000/4003/4004/4005
-create npc 95024 950 22 13 71 3 0 いいものが　たんさん　そろっているよ
+create npc 95024 950 22 13 71 3 0 We have many fine goods.
 create event_generator 95030 950 16 22 17 1 0 @950/950_dbg1.txt
 create event_generator 95031 950 16 23 17 1 0 @950/950_dbg2.txt
-create npc 95032 950 20 20 73 1 2 フォントひょうじ　テスト\nあいうえおアイウエオ かきくけこカキクケコ\nさしすせそサシスセソ たちつてとタチツテト\nなにぬねのナニヌネノ はひふへほハヒフヘホ\nまみむめもマミムメモ やゆよヤユヨ\nらりるれろラリルレロ わをんワ　ン\nっゃゅょッャュョ ぁぃぅぇぉァィゥェォ\nabcdefghijklmn\nopqrstuvwxyz\nABCDEFGHIJKLMN\nOPQRSTUVWXYZ\n0123456789\n：「『。～－…！？％／→（）\nがぎぐげごガギグゲゴ ざじずぜぞザジズゼゾ\nだぢづでどダヂヅデド ばびぶべぼバビブベボ\nぱぴぷぺぽ
+create npc 95032 950 20 20 73 1 2 FONT DISPLAY TEST\nあいうえおアイウエオ かきくけこカキクケコ\nさしすせそサシスセソ たちつてとタチツテト\nなにぬねのナニヌネノ はひふへほハヒフヘホ\nまみむめもマミムメモ やゆよヤユヨ\nらりるれろラリルレロ わをんワ ン\nっゃゅょッャュョ ぁぃぅぇぉァィゥェォ\nabcdefghijklmn\nopqrstuvwxyz\nABCDEFGHIJKLMN\nOPQRSTUVWXYZ\n0123456789\n:「『.~-……!?%/→()\nがぎぐげごガギグゲゴ ざじずぜぞザジズゼゾ\nだぢづでどダヂヅデド ばびぶべぼバビブベボ\nぱぴぷぺぽ
 create event_generator 95060 950 0 0 17 1 0 @950/950_dbg3.txt
 create event_generator 95061 950 0 0 17 1 0 @950/950_dbg4.txt
 create event_generator 95062 950 0 0 17 1 0 @950/950_dbg5.txt
 create event_generator 95063 950 0 0 17 1 0 @950/950_dbg6.txt
 create event_generator 95064 950 0 0 17 1 0 @950/950_dbg7.txt
-create npc_shop 95070 950 21 10 1 1 0 アイテムを　かってください
-create npc_shop 95071 950 22 10 1 1 0 ぶきを　かってください
-create npc_shop 95072 950 23 10 1 1 0 ぼうぐを　かってください
-create npc_shop 95073 950 24 10 1 1 0 マテリアを　かってください
-create npc_shop 95074 950 25 10 1 1 0 アクセサリーを　かってください
+create npc_shop 95070 950 21 10 1 1 0 We deal in items.
+create npc_shop 95071 950 22 10 1 1 0 We deal in weapons.
+create npc_shop 95072 950 23 10 1 1 0 We deal in armors.
+create npc_shop 95073 950 24 10 1 1 0 We deal in materias.
+create npc_shop 95074 950 25 10 1 1 0 We deal in accessories.
 create event_generator 95080 950 0 0 17 1 0 @950/950_dbg8.txt
-create npc 95081 950 23 34 2 0 0 『３かいまわって　ワンと　いいな
+create npc 95081 950 23 34 2 0 0 『Turn around 3 times\n and bark!
 create npc2 95082 950 27 18 79 1 2 none 
 create event_generator 95083 950 0 0 17 0 0 @950/950_dbg9.txt
 create event_generator 95084 950 0 0 17 1 0 @950/950_dbg12.txt
-create npc 95085 950 21 33 2 3 0 『10かい　あしぶみして　ワンと　いいな
+create npc 95085 950 21 33 2 3 0 『Stamp your feet 10 times\n and bark!
 create event_generator 95086 950 0 0 17 1 0 @950/950_dbg13.txt
-create npc 95087 950 25 33 2 2 0 『3チップぶん　ジャンプして　ワンと　いいな
+create npc 95087 950 25 33 2 2 0 『Jump over 3 tiles\n and bark!
 create event_generator 95040 950 0 0 17 1 0 @950/950_dbg14.txt
-create npc 95041 950 25 32 2 2 0 『2チップぶん　ジャンプして　ワンと　いいな
+create npc 95041 950 25 32 2 2 0 『Jump over 2 tiles\n and bark!
 create event_generator 95042 950 0 0 17 1 0 @950/950_dbg15.txt
-create npc 95043 950 25 31 2 2 0 『1チップぶん　ジャンプして　ワンと　いいな
+create npc 95043 950 25 31 2 2 0 『Jump over 1 tile\n and bark!
 create event_generator 95044 950 0 0 17 1 0 @950/950_dbg16.txt
-create npc 95045 950 25 30 2 2 0 『そのばで　ジャンプして　ワンと　いいな
+create npc 95045 950 25 30 2 2 0 『Jump where you are\n and bark!
 create event_generator 95046 950 0 0 17 1 0 @950/950_dbg17.txt
-create npc 95047 950 25 34 2 2 0 『5チップぶん　ジャンプして　ワンと　いいな
+create npc 95047 950 25 34 2 2 0 『Jump over 5 tiles\n and bark!
 create event_generator 95048 950 0 0 17 1 0 @950/950_dbg18.txt
-create npc 95049 950 25 35 2 2 0 『とおくに　ジャンプして　ワンと　いいな
+create npc 95049 950 25 35 2 2 0 『Jump far away and bark!
 create event_generator 95050 950 0 0 17 1 0 @950/950_dbg19.txt
-create npc 95051 950 20 30 2 3 0 『スライドバック
+create npc 95051 950 20 30 2 3 0 『Slide back
 create event_generator 95052 950 0 0 17 1 0 @950/950_dbg20.txt
-create npc 95053 950 20 31 2 3 0 『スライドウォーク
+create npc 95053 950 20 31 2 3 0 『Slide walk
 create npc2 95090 950 26 18 75 1 2 none
 create event_generator 95091 950 0 0 17 0 0 @950/950_dbg10.txt
-create npc3 95092 950 24 21 76 2 0 わたしは　ふりむかない　npc です
+create npc3 95092 950 24 21 76 2 0 I'm an npc and I don't\nturn around.
 create npc2 95093 950 26 21 77 1 0 none
 create event_generator 95094 950 0 0 17 0 0 @950/950_dbg11.txt
 create event_generator 95095 950 30 27 17 0 0 @950/950_bed.txt
@@ -72,9 +72,9 @@ create event_generator 95005 950 0 0 17 0 0 @950/950_dbg22.txt
 create npc2 95006 950 18 16 79 1 0 none
 create event_generator 95007 950 0 0 17 0 0 @950/950_dbg23.txt
 create event_generator 95008 950 15 25 17 0 0 @950/950_dbg24.txt
-create npc 950000 950 29 30 82 1 0 ここは　おれの　ばしょだ
+create npc 950000 950 29 30 82 1 0 This is my place.
 create event_generator 950001 950 0 0 0 0 0 @950/950_dbg25.txt
-create npc 950002 950 31 21 83 1 0 けがを　しても　しらないから
+create npc 950002 950 31 21 83 1 0 Try not to get hurt.
 create event_generator 950003 950 32 22 17 0 0 @950/950_dbg26.txt
 create event_generator 950004 950 34 22 17 0 0 @950/950_dbg27.txt
 create event_generator 950005 950 38 21 17 0 0 @950/950_dbg28.txt

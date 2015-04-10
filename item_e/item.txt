@@ -1,103 +1,103 @@
 id,name,buy_val,sell_val,text
-1000,Potion,50,25,Restores HP by 100
-1001,Hi-Potion,300,150,Restores HP by 500
-1002,X-Potion,0,1,HPをぜんかいふく
-1003,Ether,1500,750,Restores MP by 100
-1004,Turbo Ether,0,1,MPをぜんかいふく
-1005,Elixir,0,1,HP/MPをぜんかいふく
-1006,Megalixir,0,1,ぜんいんのHP/MPをぜんかいふく
-1007,FenixDown,300,150,Restores life
-1008,Antidote,80,40,どくじょうたいをちりょう
-1009,Soft,150,75,せきかじょうたいをかいふく
-1010,Maiden's Kiss,150,75,カエルじょうたいをちりょう
-1011,Cornucopia,150,75,ミニマムじょうたいをちりょう
-1012,Echo Screen,100,50,ちんもくじょうたいをちりょう
-1013,Hyper,100,50,いかりじょうたいにする
-1014,Tranquilizer,100,50,かなしいじょうたいにする
-1015,Remedy,1000,500,すべてのじょうたいいじょうをちりょう
-1016,Smoke Bomb,300,150,せんとうからりだつする
-1017,Speed Drink,1000,500,ヘイストをかける
-1018,Hero Drink,0,1,ステータスじょうしょう
-1019,Vaccine,0,1,レジストをかける
-1020,Grenade,80,40,ぶつりダメージをあたえる
-1021,Shrapnel,0,1,ぶつりダメージをあたえる
-1022,Right Arm,0,1,きょうりょくなぶつりダメージをあたえる
-1023,Hourglass,0,1,ストップじょうたいにする
-1024,Kiss of Death,0,1,そくしじょうたいにする
-1025,Spider Web,0,1,スロウじょうたいにする
-1026,Dream Powder,0,1,すいみんじょうたいにする
-1027,Mute Mask,0,1,ちんもくじょうたいにする
-1028,War Gong,0,1,バーサクじょうたいにする
-1029,Loco Weed,0,1,こんらんじょうたいにする
-1030,Fire Fang,0,1,ほのおぞくせいダメージをあたえる
-1031,Fire Veil,800,400,ほのおぞくせいダメージをあたえる
-1032,Antarctic Wind,0,1,れいきぞくせいダメージをあたえる
-1033,Ice Crystal,0,1,れいきぞくせいダメージをあたえる
-1034,Bolt Plume,0,1,かみなりぞくせいダメージをあたえる
-1035,Swift Bolt,800,400,かみなりぞくせいダメージをあたえる
-1036,Earth Drum,0,1,つちぞくせいダメージをあたえる
-1037,Earth Mallet,0,1,つちぞくせいダメージをあたえる
-1038,Deadly Waste0,1,どくぞくせいダメージをあたえる
-1039,M-Tentacles,0,1,どくぞくせいダメージをあたえる
-1040,Stardust,0,1,むぞくせいこうげきを４かいおこなう
-1041,Vampire Fang,0,1,HPをきゅうしゅうする
-1042,Ghost Hand,0,1,MPをきゅうしゅうする
-1043,Vagyrisk Claw,0,1,せきかじょうたいにする
-1044,Light Curtain,0,1,ぜんたいにバリアをかける
-1045,Lunar Curtain,0,1,ぜんたいにマバリアをかける
-1046,Mirror,0,1,ぜんたいにリフレクをかける
-1047,Holy Torch,0,1,ぜんたいにデスペルをかける
-1048,Bird Wing,0,1,かぜぞくせいダメージをあたえる
-1049,Dragon Scale,0,1,みずぞくせいダメージをあたえる
-1050,Impaler,500,250,カエルじょうたいにする
-1051,Shrivel,500,250,ミニマムじょうたいにする
-1052,Eye Drops,50,25,くらやみじょうたいをかいふくする
-1053,Molotov,400,200,ほのおぞくせいダメージをあたえる
-1054,S-Mine,1000,500,ぶつりダメージをあたえる
-1055,8inch Cannon,0,1,ぶつりダメージをあたえる
-1056,Graviball,0,1,HPを3/4にする
-1057,T/S Bomb,0,1,HPを1/2にする
-1058,Ink,0,1,くらやみじょうたいにする
-1059,Dazers,0,1,マヒじょうたいにする
-1060,Dragon Fang,0,1,かみなりぞくせいのダメージをあたえる
-1061,Cauldron,0,1,どくこんらんすいみんちんもくミニマムカエルじょうたいにする
-1062,Gysahl Greens,100,50,チョコボのえさ
-1063,Krakka Greens,250,125,チョコボのえさ
-1064,Tantal Greens,400,200,チョコボのえさ
-1065,Pahsana Greens,800,400,チョコボのえさ
-1066,Curiel Greens,1000,500,チョコボのえさ
-1067,Mimett Greens,1500,750,チョコボのえさ
-1068,Reagan Greens,3000,1500,チョコボのえさ
-1069,Sylkis Greens,5000,2500,チョコボのえさ
-1070,Tent,500,250,ぜんいんのHP MPをぜんかいふく
-1071,Power Source,500,250,ちからを1じょうしょうさせる
-1072,Guard Source,500,250,たいりょくを1じょうしょうさせる
-1073,Magic Source,500,250,まりょくを1じょうしょうさせる
-1074,Mind Source,500,250,せいしんを1じょうしょうさせる
-1075,Speed Source,500,250,すばやさを1じょうしょうさせる
-1076,Luck Source,500,250,うんを1じょうしょうさせる
-1077,Pepio Nut,100,50,チョコボのカップリングじにしよう
-1078,Luchile Nut,200,100,チョコボのカップリングじにしよう
-1079,Saraha Nut,400,200,チョコボのカップリングじにしよう
-1080,Lasan Nut,600,300,チョコボのカップリングじにしよう
-1081,Pram Nut,1500,750,チョコボのカップリングじにしよう
-1082,Porov Nut,2000,1000,チョコボのカップリングじにしよう
-1083,Carob Nut,0,1,チョコボのカップリングじにしよう
-1084,Battery,300,0,プレートだんめんでしよう
-1085,Tissue,0,0,なし
-1086,Omnislash,0,0,クラウドのきゅうきょくリミットわざ
-1087,Catastrophe,0,0,バレットのきゅうきょくリミットわざ
-1088,Final Heaven,0,0,ティファのきゅうきょくリミットわざ
-1089,Great Gospel,0,0,エアリスのきゅうきょくリミットわざ
-1090,Cosmo Memory,0,0,レッドXIIIのきゅうきょくリミットわざ
-1091,All Creation,0,0,ユフィのきゅうきょくリミットわざ
-1092,Chaos,0,0,ヴィンセントのきゅうきょくリミットわざ
-1093,Highwind,0,0,シドのきゅうきょくリミットわざ
-1094,1/35 soldier,0,25,なし
-1095,Super Sweeper,0,25,なし
-1096,Masamune Blade,0,25,なし
-1097,Save Crystal,0,0,セーブポイントをさくせいする
-1098,Combat Diary,0,0,なし
-1099,Autograph,0,0,なし
-1100,Gambler,0,0,なし
-1101,Zeio Nut
+1000,Potion,50,25,Restores 100 HP
+1001,Hi-Potion,300,150,Restores 500 HP
+1002,X-Potion,0,1,Fully restores HP
+1003,Ether,1500,750,Restores 100 MP
+1004,X-Ether,0,1,Fully restores MP
+1005,Elixir,0,1,Fully restores HP/MP
+1006,Megalixir,0,1,Fully restores party's HP/MP
+1007,FenixTail,300,150,Revives a dead member
+1008,Antidote,80,40,Cures Poison status
+1009,GoldPin,150,75,Cures Petrify status
+1010,MaidenLip,150,75,Cures Toad status
+1011,Expander,150,75,Cures Mini status
+1012,EchoMask,100,50,Cures Mute status
+1013,Stimulant,100,50,Causes Fury status
+1014,Sedative,100,50,Causes Sad status
+1015,Remedy,1000,500,Cures any status anomaly
+1016,SmokeBomb,300,150,Escape from a battle
+1017,SpeedDrug,1000,500,Casts Haste
+1018,HeroDrug,0,1,Reise parameters
+1019,Vaccine,0,1,Casts Resist
+1020,Grenade,80,40,Physical damage
+1021,BomPiece,0,1,Physical damage
+1022,BomArm,0,1,Powerful physical damage
+1023,Hourglass,0,1,Causes Stop status
+1024,DeathKiss,0,1,Causes immediate death
+1025,SpiderWeb,0,1,Causes Slow status
+1026,DreamDust,0,1,Causes Sleep status
+1027,MuteMask,0,1,Causes Mute status
+1028,WarGong,0,1,Causes Berserk status
+1029,LocoWeed,0,1,Causes Daze status
+1030,FireFang,0,1,Fire elemental damage
+1031,NinjaFire,800,400,Fire elemental damage
+1032,PolarWind,0,1,Ice elemental damage
+1033,IceBlock,0,1,Ice elemental damage
+1034,BoltPlume,0,1,Bolt elemental damage
+1035,NinjaBolt,800,400,Bolt elemental damage
+1036,EarthDrum,0,1,Earth elemental damage
+1037,EarthBang,0,1,Earth elemental damage
+1038,Pollutant,0,1,Poison elemental damage
+1039,MalboVine,0,1,Poison elemental damage
+1040,Stardust,0,1,Neutral damage x4
+1041,VampFang,0,1,Drains HP
+1042,GhostHand,0,1,Drains MP
+1043,MedusaEye,0,1,Causes Petrify status
+1044,LightVeil,0,1,Casts Barrier to all
+1045,LunarVeil,0,1,Casts M-Barrier to all
+1046,Mirror,0,1,Casts Reflect to all
+1047,HolyTorch,0,1,Casts Despell to all
+1048,RocWing,0,1,Wind elemental damage
+1049,LevScale,0,1,Water elemental damage
+1050,Tadpole,500,250,Causes Toad status
+1051,Shrinker,500,250,Causes Mini status
+1052,EyeDrops,50,25,Cures Blind status
+1053,Molotov,400,200,Fire elemental damage
+1054,S-Mine,1000,500,Physical damage
+1055,203-Shell,0,1,Physical damage
+1056,Graviball,0,1,Reduces HP by 25%
+1057,T/S-Bomb,0,1,Reduces HP by half
+1058,Sepia,0,1,Causes Blind status
+1059,Taser,0,1,Causes Paralyze status
+1060,WyrmFang,0,1,Bolt elemental damage
+1061,Cauldron,0,1,Causes 6 status anomalies
+1062,G.Veggie,100,50,Chocobo feed(Gysahl Veggie)
+1063,K.Veggie,250,125,Chocobo feed(Karakka Veggie)
+1064,T.Veggie,400,200,Chocobo feed(Tantal Veggie)
+1065,P.Veggie,800,400,Chocobo feed(Pahsana Veggie)
+1066,C.Veggie,1000,500,Chocobo feed(Curiel Veggie)
+1067,M.Veggie,1500,750,Chocobo feed(Mimett Veggie)
+1068,R.Veggie,3000,1500,Chocobo feed(Reagan Veggie)
+1069,S.Veggie,5000,2500,Chocobo feed(Sylkis Veggie)
+1070,Tent,500,250,Fully Restores party's HP/MP
+1071,PowerUp,500,250,Reises Strength by 1 pt
+1072,GuardUp,500,250,Raises Stamina by 1 pt
+1073,MagicUp,500,250,Raises Magic by 1 pt
+1074,MindUp,500,250,Raises Sprit by 1 pt
+1075,SpeedUp,500,250,Raises Agility by 1 pt
+1076,LuckUp,500,250,Raises Luck by 1 pt
+1077,PepioNut,100,50,Used to breed Chocobo
+1078,LuchilNut,200,100,Used to breed Chocobo
+1079,SarahaNut,400,200,Used to breed Chocobo
+1080,LasanNut,600,300,Used to breed Chocobo
+1081,PramNut,1500,750,Used to breed Chocobo
+1082,PorovNut,2000,1000,Used to breed Chocobo
+1083,CarobNut,0,1,Used to breed Chocobo
+1084,Battery,300,0,Used at the Plate gap
+1085,Tissue,0,0,A little coarse
+1086,Omnislash,0,0,Cloud's Ultimate Limit Break
+1087,Catastrof,0,0,Baret's Ultimate Limit Break
+1088,F.Heaven,0,0,Tifa's Ultimate Limit Break
+1089,G.Gospel,0,0,Aeris's Ultimate Limit Break
+1090,C.Memory,0,0,Red13's Ultimate Limit Break
+1091,Creation,0,0,Yufi's Ultimate Limit Break
+1092,Chaos,0,0,Vince's Ultimate Limit Break
+1093,Highwind,0,0,Cid's Ultimate Limit Break
+1094,S.Soldier,0,25,1/35 Shinra Soldier Figures
+1095,S.Sweeper,0,25,Super Sweeper Figure
+1096,Masamune,0,25,A fake
+1097,S.Crystal,0,0,Creates a Save Point
+1098,Diary1,0,0,Dio's diary part 1
+1099,Autograph,0,0,Dio's autograph
+1100,Diary2,0,0,Dio's diary part 2
+1101,ZeioNut,0,0,Used to breed Chocobo

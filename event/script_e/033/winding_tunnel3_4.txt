@@ -7,7 +7,7 @@ sleep 16
 move_npc 3301 right 1
 sleep 8
 chg_npc_dir 3301 up
-msg 「きさま　アバランチだな！
+msg 「You're AVALANCE!
 move_npc 3301 right 4
 move_npc 3302 right 5
 sleep 8
@@ -27,15 +27,15 @@ kill 3302
 kill 3303
 wait_encount_end
 play_event_bgm Ex-09-siren.ogg
-msg3 80 「テロリストのしゅうげきだ！
+msg3 80 「Terrorists raid!
 sleep 80
 erase_msg3
 sleep 8
-msg3 80 「アバランチがおそってきたぞ！
+msg3 80 「AVALANCHE attacks!
 sleep 80
 erase_msg3
 sleep 8
-msg 『けいびへいの　ぞうえんが　くるようだ\n　このままでは　あぶない\n\n\n#2\n　　にげる\n　　ふみとどまる\n\n\n[[]][[]]
+msg 『Their reinforcement\n is on the way.\n We'll be outnumbered.\n\n#2\n  Run away.\n  Hold ground.\n\n\n[[]][[]]
 if_flag 3 0
 chg_event_move_char_speed fast
 move_char up 9
@@ -69,12 +69,12 @@ kill 3302
 kill 3303
 wait_encount_end
 play_event_bgm Ex-09-siren.ogg
-msg3 80 「しんにゅうしゃだ！
+msg3 80 「Intruders!
 sleep 80
 erase_msg3
 sleep 8
 backup_char_img
-msg3 80 「アバランチがおそってきたぞ！
+msg3 80 「AVALANCHE attacks!
 sleep 80
 erase_msg3
 chg_char_img 0
@@ -88,7 +88,7 @@ sleep 8
 jump_npc 3300 same 2
 sleep 32
 step_npc 3300 2
-msg バレット\n「おい！　めんどくせえ\n　ずらかるぞ！
+msg Baret\n「Hey!\n We're getting nowhere.\n Let's get outta here!
 sleep 8
 chg_npc_img 3300 1
 move_npc 3300 right 1

@@ -1,0 +1,89 @@
+set_eternal_event
+wait_target_talked 165
+reset_talked_flag 165
+chg_dir_to_char 165
+if_flag 3 0
+if_flag 99 0
+msg 「Already enabled.
+end
+fi
+if_flag 99 1
+set_slide_char_flag
+chg_npc_dir 165 up
+if_char_dir down
+create npc_event 180 1 7 11 0 1 2 none
+draw_char off
+move_char up 2
+sleep 32
+fi
+if_char_dir right
+create npc_event 180 1 6 12 0 3 2 none
+draw_char off
+move_char up 3
+sleep 48
+fi
+msg 「With Extension enabled,\n elements not existed in\n the original are added.\n\n「See that a treasue box\n appears to the right.
+play_se bump.ogg
+create npc2 122 1 14 10 17 1 0 
+create treasure_box 124 1 13 9 0 0 0 1003
+sleep 32
+create event_generator 120 1 1 1 17 0 0 @001/ichiban_makouro8_1.txt
+chg_dir_to_char 165
+set_flag 99 2
+msg 「Extension enabled.
+sleep 16
+msg 「I'll disappear if you\n try to get the treasure.
+fi
+fi
+if_flag 3 1
+if_flag 99 0
+set_slide_char_flag
+chg_npc_dir 165 up
+if_char_dir down
+create npc_event 180 1 7 11 0 1 2 none
+draw_char off
+move_char up 2
+sleep 32
+fi
+if_char_dir right
+create npc_event 180 1 6 12 0 3 2 none
+draw_char off
+move_char up 3
+sleep 48
+fi
+msg 「With Extension disabled,\n elements not existed in\n the original are removed\n as much as possible.\n「See that the treasure\n box on the right\n disappears.
+play_se killed.wav
+kill_through 120
+kill_through 122
+kill_through 124
+sleep 32
+chg_dir_to_char 165
+set_flag 99 3
+msg 「Extension disabled.
+fi
+if_flag 99 1
+msg 「Already disabled.
+end
+fi
+fi
+if_flag 3 2
+end
+fi
+if_flag 99 2
+set_flag 99 0
+fi
+if_flag 99 3
+set_flag 99 1
+fi
+chg_npc_dir 165 up
+if_char_dir down
+move_char down 2
+sleep 32
+fi
+if_char_dir right
+move_char down 3
+sleep 48
+fi
+draw_char on
+kill 180
+reset_slide_char_flag

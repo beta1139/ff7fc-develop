@@ -10,27 +10,27 @@ chg_npc_dir 6622 down
 sleep 32
 chg_speed 6622 normal
 step_npc 6622 2
-msg エアリス\n「ねぇ　これからどうするの？
+msg Aeris\n「Look, what are we\n gonna do now?
 sleep 32
 step_npc 6620 2
-msg 『……7ばんがいは　とおいのか？\n　ティファのみせにいきたいんだ
+msg 『……Is Slum 7 far?\n I'm going to Tifa's bar.
 sleep 24
 step_npc 6622 2
-msg エアリス\n「ティファって……おんなのひと？
+msg Aeris\n「Tifa……Is that a girl?
 sleep 16
 step_npc 6620 1
-msg 『ああ
+msg 『Yeah.
 jump_npc 6622 same 1
 sleep 16
 step_npc 6622 1
-msg エアリス\n「かのじょ？
+msg Aeris\n「Your girlfriend?
 set_key_valid up
 set_key_valid down
 set_key_valid left
 set_key_valid right
 set_key_valid start
 step_npc 6620 1
-msg 『かのじょ？\n\n\n\n#2\n　　そんなんじゃない！\n　　そんなところだ\n\n\n[[]][[]]
+msg 『Girlfriend?\n\n\n\n#2\n  No way!\n  Something like that.\n\n\n[[]][[]]
 if_flag 3 0
 add_likability 3 100
 loop 2
@@ -46,11 +46,11 @@ chg_npc_dir 6622 up
 chg_npc_img 6622 15
 step_npc 6622 3
 sleep 24
-msg エアリス\n「ふふふ
+msg Aeris\n「Giggle.
 jump_npc 6622 same 1
 sleep 16
 step_npc 6622 2
-msg エアリス\n「そ～んなにムキにならなくても\n　いいとおもうけど
+msg Aeris\n「You don't need to\n deny it to me.
 chg_npc_img 6622 3
 chg_npc_dir 6622 down
 sleep 16
@@ -60,46 +60,46 @@ sub_likability 3 500
 step_npc 6620 1
 sleep 48
 step_npc 6622 1
-msg エアリス\n「ふ～ん　いいねえ
+msg Aeris\n「How romantic!
 sleep 32
 chg_npc_dir 6622 down
 fi
 step_npc 6622 2
-msg エアリス\n「でも　まあ　いいわ
+msg Aeris\n「Hm. Oh, well.
 sleep 16
 step_npc 6622 2
-msg エアリス\n「7ばんがいだったわね\n　わたしがあんないしてあげる
+msg Aeris\n「So, Slum 7 it is.\n I'll show you the way.
 sleep 8
 chg_speed 6620 fast
 step_npc 6620 2
-msg 『じょうだんじゃない\n　またあぶないめにあったら\n　どうするんだ？
+msg 『Forget it.\n You could be in a\n danger again.
 sleep 16
 step_npc 6622 1
-msg エアリス\n「なれてるわ
+msg Aeris\n「I'm used to it.
 sleep 8
 chg_speed 6620 normal
 step_npc 6620 1
-msg 『なれてる！？
+msg 『Used to it!?
 sleep 16
 chg_npc_dir 6620 right
 sleep 40
 chg_npc_dir 6620 up
 step_npc 6620 2
-msg 『……まあ　そうだとしても\n　おんなのちからをかりるなんて…
+msg 『……Well, even so,\n You're only a girl, so……
 set_active_msg 6622
 chg_npc_dir 6622 down
 chg_npc_img 6622 99
 jump_npc 6622 same 1
-msg エアリス\n「おんな！！　おんなのちからなんて！？
+msg Aeris\n「Only! Did you jsut say\n 'only a girl' now!?
 sleep 16
 step_npc 6622 3
-msg エアリス\n「そういういいかたされて\n　だまってるわけにはいかないわね
+msg Aeris\n「I just can't let you\n get away with that.
 sleep 16
 chg_npc_img 6622 3
 chg_npc_dir 6622 up
 sleep 32
 jump_npc 6622 same 1
-msg エアリス\n「おかあさん！\n　わたし　7ばんがいまで\n　クラウドをおくっていくから
+msg Aeris\n「Mother!\n I'm taking Cloud to\n Slum 7.
 chg_event_move_char_speed normal
 move_char up 1
 sleep 16
@@ -114,7 +114,7 @@ chg_speed 6622 normal
 chg_speed 6621 normal
 step_npc 6621 2
 set_talk_npc 6621
-msg エルミナ\n「やれやれ\n　いいだしたらきかないからね
+msg Elmyra\n「Oh, my.\n I know better than to\n try stopping you, but
 reset_talk_npc
 chg_speed 6621 slow
 move_npc 6621 down 1
@@ -125,15 +125,15 @@ chg_npc_dir 6621 down
 chg_speed 6621 normal
 step_npc 6621 2
 set_talk_npc 6621
-msg エルミナ\n「でも　あしたにしたらどうだい？\n　きょうはもうおそくなってきたし
+msg Elmyra\n「Why don't you wait\n till tomorrow?\n It's late today.
 reset_talk_npc
 sleep 16
 step_npc 6622 2
-msg エアリス\n「うん　わかった　おかあさん
+msg Aeris\n「Yes, I do that, Mother.
 sleep 16
 step_npc 6621 2
 set_talk_npc 6621
-msg エルミナ\n「エアリス　ベッドのじゅんびをしておくれ
+msg Elmyra\n「Aeris, you make the beds.
 reset_talk_npc
 jump_npc 6622 same 1
 sleep 32

@@ -1,2 +1,2 @@
 wait_target_talked 3910
-chg_param 3910 ジェシー\n「こんどは　もっとましなもの\n　プレゼントするわ\n\n　さきにアジトにかえって　けんきゅうかいはつに\n　はげんでるからね
+chg_param 3910 Jessie\n「I'll do better the\n next time.\n\n Can't wait to be back at\n the den and continue my\n research.

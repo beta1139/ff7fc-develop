@@ -3,7 +3,7 @@ wait_target_talk 548
 reset_talk_flag 548
 chg_dir_to_char 548
 set_talk_npc 548
-msg i7\n「デバッグよう ワープそうちです\n　5ばんまこうろの\n　ボタンギミックイベントへ　とびますか？\n#2\n　　そうだな……\n　　きょうみないね\n\n\n[[]][[]]
+msg i7\n「Debug Warp Gate\n Jump to No.5 reactor\n button gimmic event?\n#2\n  Why not?\n  Not interested.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 end_countdown

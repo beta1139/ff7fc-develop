@@ -4,33 +4,33 @@ backup_npc_dir 95090
 chg_dir_to_char 95090
 set_talk_npc 95090
 if_active_mem 0
-msg クラウドさん
+msg Cloud
 fi
 if_active_mem 1
-msg バレットさん
+msg Barret
 fi
 if_active_mem 2
-msg ティファさん
+msg Tifa
 fi
 if_active_mem 3
-msg エアリスさん
+msg Earis
 fi
 if_active_mem 4
-msg レッド13さん
+msg Red XIII
 fi
 if_active_mem 5
-msg ケットシーさん
+msg Cait Seth
 fi
 if_active_mem 6
-msg ユフィさん
+msg Yuffie
 fi
 if_active_mem 7
-msg シドさん
+msg Cid
 fi
 if_active_mem 8
-msg ヴィンセントさん
+msg Vincent
 fi
-msg こんにちわ
+msg Hello,
 restore_npc_dir 95090
 reset_talk_flag 95090
 reset_talk_npc

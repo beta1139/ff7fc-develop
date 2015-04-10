@@ -8,7 +8,7 @@ chg_dir_to_char 3203
 if_flag 3 0
 step_char 1
 sleep 16
-msg 『……すてきだよ　おとこまさりで
+msg 『……You look great.\n A real amazon.
 if_char_dir down
 create npc_event 3200 32 16 6 0 1 2 none
 draw_char off
@@ -20,8 +20,8 @@ sleep 16
 draw_char on
 kill_through 3200
 step_npc 3203 4
-msg ジェシー\n「エッ！！　うれしいっ\n\n\n　……のかしら？
-chg_param 3203 ジェシー\n「うれしい……のかしら？
+msg Jessie\n「Gee, I'm happy!\n\n\n ……Or am I?
+chg_param 3203 Jessie\n「Happy……am I?
 chg_type 3203 npc
 chg_speed 3203 not_move
 fi
@@ -30,11 +30,11 @@ add_likability 1 500
 add_likability 2 500
 step_char 1
 sleep 16
-msg 『いまは　さくせんに　しゅうちゅうしろ
+msg 『You conentrate on\n the mission now.
 sleep 16
 chg_speed 3203 not_step
-msg ジェシー\n「ごめん　そうよね
-chg_param 3203 ジェシー\n「ごめん　そうよね
+msg Jessie\n「Yeah, sorry.
+chg_param 3203 Jessie\n「Year, sorry.
 fi
 chg_npc_dir 3203 up
 set_key_valid up

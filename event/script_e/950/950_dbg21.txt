@@ -26,12 +26,12 @@ chg_image_pos_offset 2 -1 1 0 0 0 0
 chg_image_pos_offset 3 -1 -1 0 0 0 0
 sleep 1
 pool
-set_text 2 あいうえお　かきくけこ　さしすせそ　たちつてと　なにぬねの
+set_text 2 あいうえお かきくけこ さしすせそ たちつてと なにぬねの
 set_text 4  abcde fghij klmno pqrst uvwxy z
-set_text 6 　　　　　　　　　　　Created By
-set_text 8 　　　　　　　　FF7 Wo Famicon Ni
-set_text 10 　　　　Ishokusaseta Shokunin Wa
-set_text 12 　　　　　　　　　　KAMI　Nintei
+set_text 6            Created By
+set_text 8        FF7 Wo Famicon Ni
+set_text 10     Ishokusaseta Shokunin Wa
+set_text 12           KAMI Nintei
 set_text_col 2 0 4 1
 set_text_col 2 6 10 3
 set_text_col 2 12 16 2

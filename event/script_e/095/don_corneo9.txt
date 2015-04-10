@@ -23,8 +23,8 @@ play_se puy.ogg
 sleep 32
 chg_speed 9523 fast
 step_npc 9523 4
-msg コルネオ\n「お　オトコ！？\n　ほひ～　だ　だましたな！！
-msg3 -1 　だれか！　だれか！！
+msg Corneo\n「G-guy!?\n Ho-ho, you tricked me!
+msg3 -1  Someone! Someone!
 loop 3
 jump_npc 9523 same 1
 chg_npc_dir 9523 down
@@ -35,7 +35,7 @@ pool
 wait_key_push_edge a
 erase_msg3
 sleep 16
-msg 「おあいにくさま\n　あなたのコブンは\n　だれもこられないみたいよ
+msg 「I'm afraid all of your\n men are unavairable at\n the moment.
 chg_npc_dir 9523 down
 chg_event_move_char_speed fast
 move_char down 2
@@ -60,7 +60,7 @@ chg_npc_dir 9522 up
 sleep 16
 chg_speed 9523 fast
 step_npc 9523 3
-msg コルネオ\n「おまえたちはさっきの！？\n　な　なにがどーなってるの？
+msg Corneo\n「You're today's girls!?\n W-what on earth is this?
 chg_speed 9521 normal
 chg_speed 9522 slow
 move_npc 9522 up 1

@@ -15,7 +15,7 @@ chg_npc_dir 2309 down
 sleep 32
 chg_npc_dir 2330 up
 sleep 16
-msg 『いや　いなかった\n　それは　かくじつだ
+msg 『No, there wasn't.\n There couldn't be.
 sleep 16
 chg_npc_dir 2304 left
 chg_npc_img 2304 98
@@ -34,11 +34,11 @@ kill 2350
 sleep 24
 step_npc 2304 2
 set_talk_npc 2304
-msg バレット\n「ずいぶんと　じしん　たっぷり　じゃねえか
+msg Baret\n「How can you be so sure?
 reset_talk_npc
 sleep 32
 step_npc 2330 1
-msg 『もし　ソルジャーと　たたかって　いたら\n　あんたたちが　いきてる　はずない　からな
+msg 『You all wouldn't\n be here breathing\n if there was.
 chg_speed 2304 normal
 chg_npc_img 2304 95
 chg_npc_dir 2304 up
@@ -46,7 +46,7 @@ jump_npc 2304 same 2
 sleep 32
 step_npc 2304 3
 set_talk_npc 2304
-msg バレット\n「じぶんが　もとソルジャー　だからって\n　えらそうに　いうんじゃ　ねえよ！
+msg Baret\n「Stop being so fuckin'\n proud because you were\n a SOLDIER!
 reset_talk_npc
 chg_speed 2304 fast
 chg_npc_dir 2304 left
@@ -72,7 +72,7 @@ chg_speed 2307 normal
 chg_speed 2308 normal
 move_npc 2307 up 2
 sleep 16
-msg3 -1 『…………
+msg3 -1 『……
 move_npc 2330 down 1
 sleep 16
 chg_npc_dir 2307 left
@@ -171,11 +171,11 @@ chg_npc_dir 2304 left
 chg_npc_img 2304 98
 sleep 32
 set_talk_npc 2304
-msg バレット\n「たしかに　おまえは　つよい\n\n\n　おそらく　ソルジャーってのは\n　みんな　つよいんだろうさ\n\n\n　でもな　おまえは\n　はんらんそしき　アバランチに　やとわれてるみだ\n　しんらの　かたを　もつんじゃねえ！
+msg Baret\n「You certainly are\n fuckin' strong.\n\n I suppose all fuckin'\n SOLDIERS are fuckin'\n strong as well.\n\n But you're working for\n AVALANCHE now.\n Don't you ever fuckin'\n side with fuckin' Shinra!
 reset_talk_npc
 sleep 16
 chg_npc_dir 2330 up
-msg 『しんらの　かたを　もつ？\n　おれは　あんたの　しつもんに　こたえた　だけだ
+msg 『Side with Shinra?\n I only answered your\n question.
 move_npc 2330 left 2
 sleep 32
 move_npc 2330 up 3
@@ -187,7 +187,7 @@ sleep 16
 chg_npc_dir 2306 left
 sleep 16
 step_npc 2330 1
-msg 『おれは　うえで　まっている\n　ほうしゅうの　はなしが　したい
+msg 『I'm waiting upstairs.\n We'll talk about money.
 chg_speed 2304 slow
 step_npc 2304 2
 sleep 32
@@ -195,7 +195,7 @@ chg_speed 2304 normal
 step_npc 2304 4
 sleep 32
 set_talk_npc 2304
-msg バレット\n「チッ！！\n　……………ほ　ほうしゅうかよ…
+msg Baret\n「Tsk!\n ……Money, is it……
 reset_talk_npc
 draw_char on
 kill 2330
@@ -250,6 +250,6 @@ pool
 kill_through 2302
 chg_speed 2304 not_step
 chg_type 2304 npc3
-chg_param 2304 バレット\n「チッ！！\n　……………ほ　ほうしゅうかよ…
+chg_param 2304 Baret\n「Tsk!\n ……Money, is it……
 chg_npc_img 2304 1
 chg_npc_dir 2304 up

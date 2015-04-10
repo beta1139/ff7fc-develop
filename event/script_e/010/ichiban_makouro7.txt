@@ -12,18 +12,18 @@ jump_npc 1002 same 1
 sleep 16
 step_npc 1002 1
 set_talk_npc 1002
-msg Barret\n「When we blow this place,\n it ain't gonna be nothin'\n more than a hunka junk.\n Cloud, you set the bomb.
+msg Baret\n「Blow this up and it\n ain't gonna be nothin'\n more than a hunka junk.\n Cloud, you set the bomb.
 reset_talk_npc
 step_char 1
 sleep 16
-msg 『Shouldn't you do it?
+msg 『Why don't you\n do it yourself?
 sleep 16
 step_npc 1002 1
 set_talk_npc 1002
-msg Barret\n「Jus'do it! I gotta watch\n to make sure you don't\n pull nothin'.
+msg Baret\n「Jus' do it! I gotta\n watch that you don't\n pull nothin' funny.
 reset_talk_npc
 sleep 16
-msg 『Fine, be my quest.
+msg 『As you wish.
 play_se beeeeep.wav
 screen_effect red
 sleep 8
@@ -32,11 +32,11 @@ clear_text 3
 set_text_alpha 2 0
 set_text_alpha 3 0
 sleep 8
-set_text 2 　 　   　　　　Watch out!！
+set_text 2             Wake up!
 sleep 8
 set_text_alpha 2 90
 sleep 64
-set_text 3 　 　This isn't just a reactor!!
+set_text 3  This is not just a power plant
 sleep 8
 set_text_alpha 3 90
 sleep 80
@@ -58,20 +58,20 @@ sleep 30
 set_active_msg 1002
 jump_npc 1002 same 1
 set_talk_npc 1002
-msg Barret\n「......What's wrong?
+msg Baret\n「……at's wrong?
 reset_talk_npc
 sleep 16
 chg_char_dir up
-msg 『Huh？
+msg 『Huh?
 chg_npc_dir 1002 left
 chg_npc_img 1002 98
 step_npc 1002 2
 set_talk_npc 1002
-msg Barret\n「What's wrong, Cloud？\n Hurry it up！
+msg Baret\n「What's wrong, Cloud?\n Hurry it up!
 reset_talk_npc
 sleep 16
 set_inactive_msg 1002
-msg 『...Yeah, sorry.
+msg 『……Yeah, sorry.
 move_char up 1
 sleep 16
 chg_npc_img 1002 1
@@ -97,7 +97,7 @@ chg_npc_dir 1002 right
 sleep 25
 screen_effect off
 step_npc 1002 2
-msg Barret\n「Heads up,\n here they come!
+msg Baret\n「Here they come!
 set_flag 20 1
 stop_se
 play_event_bgm 1-03-Makou_Reactor.ogg

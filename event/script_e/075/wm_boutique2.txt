@@ -4,9 +4,9 @@ reset_talk_flag 7514
 chg_type 7510 npc_event
 chg_speed 7510 normal
 step_npc 7510 2
-msg 「どうでした？
+msg 「How was it?
 sleep 16
 step_char 1
 sleep 16
-msg 「まだ　あっていない
+msg 「Haven't seen him yet.
 chg_speed 7510 not_move

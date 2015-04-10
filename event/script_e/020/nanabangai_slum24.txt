@@ -15,7 +15,7 @@ sleep 32
 reset_char_img_tmp
 restore_char_dir
 set_talk_npc 2007
-msg 「あ　そ！\n　あなたって　クールなのね
+msg 「Uh-huh!\n So you play it cool.
 reset_talk_npc
 restore_npc_dir 2007
 end
@@ -33,7 +33,7 @@ sleep 32
 reset_char_img_tmp
 restore_char_dir
 set_talk_npc 2007
-msg 「あ　そ！\n　あなたって　クールなのね
+msg 「Uh-huh!\n So you play it cool.
 reset_char_img_tmp
 reset_talk_npc
 restore_npc_dir 2007

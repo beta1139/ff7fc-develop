@@ -55,7 +55,7 @@ sleep 16
 step_npc 3501 3
 fi
 set_talk_npc 3501
-msg バレット\n「か～っ　せまっちい　あなだな\n　ここから　プレートのしたに　もぐれってのか？\n　たまんねぇぜ\n　どうする　クラウドさんよぉ？\n\n\n\n#3\n　　おりる\n　　おりない\n　　なかを　よくみてみる\n\n[[]][[]][[]]
+msg Baret\n「Fuck, what a cramped\n chute. Must we go in?\n I don't like it.\n What now, Cloud?\n\n\n\n#3\n  Go down.\n  Don't.\n  Look inside.\n\n[[]][[]][[]]
 reset_talk_npc
 if_flag 3 0
 create event_generator 3511 35 7 16 17 0 0 @035/winding_tunnel5.txt
@@ -69,11 +69,11 @@ if_flag 3 2
 sleep 16
 step_npc 3502 3
 sleep 64
-msg ティファ\n「……ダクトのなかに\n　あしがかりに　なりそうな\n　ものはないわね
+msg Tifa\n「……I don't see any\n handholds in the chute.
 sleep 16
 step_char 1
 sleep 16
-msg 『ああ　このダクトをおりたら\n　ここには　もどってこれないぞ
+msg 『Year. Once we go down,\n we can't come back up.
 sleep 32
 chg_char_dir right
 sleep 16
@@ -99,7 +99,7 @@ chg_npc_img 3501 98
 chg_npc_dir 3501 left
 step_npc 3501 3
 set_talk_npc 3501
-msg バレット\n「のんびりしてる　ヒマはないぜ\n　いつ　しんらのやつらに　おれたちの\n　こうどうが　ばれないとも　かぎらない\n　クラウド　いくしかないぜ\n\n\n\n#2\n　　おりる\n　　おりない\n\n\n[[]][[]]
+msg Baret\n「We don't have much time.\n We could be discovered\n by them any time now.\n We gotta go, Cloud.\n\n\n\n#2\n  Go down.\n  Don't.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 create event_generator 3511 35 7 16 17 0 0 @035/winding_tunnel5.txt

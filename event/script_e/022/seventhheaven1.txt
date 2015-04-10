@@ -7,7 +7,7 @@ move_char up 6
 sleep 16
 close_door 2290
 sleep 80
-msg 「とうちゃん！！
+msg 「Daddee!
 chg_speed 2202 normal
 chg_speed 2201 normal
 chg_npc_dir 2202 down
@@ -24,16 +24,16 @@ sleep 16
 chg_npc_dir 2201 down
 chg_npc_dir 2202 left
 sleep 16
-msg 「ほら　マリン！\n　クラウドに\n　おかえりなさいは？
+msg 「Now, Marlene!\n Did you say hello\n to Cloud?
 move_npc 2202 down 1
 sleep 16
 move_npc 2201 down 1
 step_npc 2202 1
-msg 「おかえりなさい　クラウド\n　さくせんは　うまくいった　みたいね
+msg 「Hi, Cloud.\n I see the mission\n went well.
 sleep 32
 create npc_event 4990 49 20 11 2 1 0 none
 step_npc 2202 2
-msg 「バレットとは　ケンカ　しなかった？\n\n\n\n#2\n　　やっちゃった\n　　ガマンした\n\n\n[[「やっぱり？\n\n\n\n　バレットは　あんな　ひとだし\n　クラウドは　こどもの　ころから\n　ケンカ　ばかり　してたしね\n\n　……ちょっと　しんぱい　だったんだ]]\n[[「ふーん\n　クラウドも　おとなに　なったのね\n　こどもの　ころは　すぐ　ケンカ　だったのに]]
+msg 「You didn't quarrel with\n Baret, did you?\n\n\n#2\n  Couldn't be helped.\n  I held back.\n\n\n[[「Just as I thought.\n\n\n\n Baret's like that and\n you've always been so\n quick tempered since\n we were kids.\n ……I should have known.]]\n[[「Uh-huh.\n So you grew up some.\n You were so quick\n tempered as a kid.]]
 sleep 8
 move_char down 2
 sleep 40
@@ -48,11 +48,11 @@ set_text_alpha 9 0
 set_text_alpha 10 0
 set_text_alpha 11 0
 sleep 8
-set_text 3 　 　   　　　　ティファ.ロックハート
-set_text 8 　　　　　　　もちまえの　あかるさで　なかまたちを
-set_text 9 　　　　　　　　ゆうきづける　まえむきな　じょせい
-set_text 10 　　　かわいいかおに　にあわず　かくとうじゅつの　つかいて
-set_text 11 　　　　　　　　　クラウドとは　おさななじみ
+set_text 3          Tifa Lockhart
+set_text 8      Her innate vigor never
+set_text 9  fails to cheer up her friends
+set_text 10    Proficient in martial arts
+set_text 11     Cloud's childhood friend
 warp 49 20 11 down
 loop 4
 sleep 1
@@ -225,17 +225,17 @@ kill 4990
 fadein
 sleep 16
 step_npc 2202 1
-msg ティファ\n「よかった　みんな　ぶじで
+msg Tifa\n「I'm glad everyone's safe.
 set_layer 2202 front
 sleep 32
 if_flag 7 1
 set_active_msg 2202
 jump_npc 2202 same 1
-msg ティファ\n「あら？\n　おはな　なんて　めずらしいわね\n\n　スラムじゃ　めったに　さかないのよ\n\n\n\n　でも……\n\n\n\n　プレゼントに　おはな　なんて\n　クラウド　そうなんだ～
+msg Tifa\n「Oh?\n I haven't seen a flower\n for some time.\n They rarely bloom in the\n slums.\n\n\n But……\n\n\n\n I din't know you're\n a flower kind of guy.
 sleep 8
 chg_speed 2207 fast
 step_npc 2207 1
-msg 『そんなんじゃないさ\n\n\n\n#2\n　　ティファにあげる\n　　マリンにあげる\n\n\n[[]][[]]
+msg 『It's not like that.\n\n\n\n#2\n  Give it to Tifa.\n  Give it to Marlene.\n\n\n[[]][[]]
 sleep 16
 chg_speed 2207 normal
 if_flag 3 0
@@ -245,14 +245,14 @@ add_likability 2 500
 set_flag 8 1
 sleep 40
 step_npc 2202 1
-msg ティファ\n「ありがとう　クラウド\n　ん～　いいかおり！
+msg Tifa\n「Thank you, Cloud.\n Hmm, it smells good!
 chg_npc_dir 2202 left
 sleep 16
 chg_npc_dir 2202 up
 sleep 16
 chg_npc_dir 2202 right
 sleep 16
-msg ティファ\n「おみせを　はなで　いっぱいに　しちゃおうかな
+msg Tifa\n「Maybe I could fill this\n place with flowers.
 chg_npc_dir 2202 down
 sleep 16
 fi

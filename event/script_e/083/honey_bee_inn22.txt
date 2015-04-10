@@ -17,15 +17,15 @@ fi
 draw_char off
 step_npc 8310 1
 if_flag 3 0
-msg 『おれはいつだってひとりさ
+msg 『I'm always alone.
 fi
 if_flag 3 1
-msg 『はなしたくないんだ
+msg 『I don't wanna talk.
 fi
 sleep 16
 step_npc 8312 2
 set_talk_npc 8312
-msg 「はいはい▼（…ムッツリさん▼）\n\n\n\n　さ　みなさん　おまちかねですから\n\n\n\n#2\n　　みなさん……？\n　　なにしてるんだ　おれは？\n\n\n[[]][[]]
+msg 「Okay, dear▼(……A nerd▼)\n\n\n\n Now others're waiting.\n\n\n\n#2\n  Others……?\n  What am I doing here?\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 fi
@@ -42,14 +42,14 @@ jump_npc 8312 same 1
 sleep 16
 chg_npc_dir 8310 up
 set_talk_npc 8312
-msg 「ほら　きたきた▼
+msg 「Here they come▼
 reset_talk_npc
 set_slide_walk_char_flag
 if_char_dir down
 move_char up 2
 jump_npc 8312 right 1
 sleep 16
-msg3 -1 「はい　みなさ～ん▼
+msg3 -1 「Hi, everybody▼
 jump_npc 8312 up 1
 sleep 16
 loop 2
@@ -65,7 +65,7 @@ if_char_dir up
 move_char up 4
 jump_npc 8312 up 1
 sleep 16
-msg3 -1 「はい　みなさ～ん▼
+msg3 -1 「Hi, everybody▼
 loop 3
 jump_npc 8312 right 1
 sleep 16
@@ -79,7 +79,7 @@ if_char_dir left
 move_char up 3
 jump_npc 8312 up 1
 sleep 16
-msg3 -1 「はい　みなさ～ん▼
+msg3 -1 「Hi, everybody▼
 loop 3
 jump_npc 8312 right 1
 sleep 16
@@ -93,7 +93,7 @@ if_char_dir right
 move_char up 3
 jump_npc 8312 up 1
 sleep 16
-msg3 -1 「はい　みなさ～ん▼
+msg3 -1 「Hi, everybody▼
 loop 3
 jump_npc 8312 right 1
 sleep 16
@@ -109,7 +109,7 @@ play_se door_open2.ogg
 erase_msg3
 sleep 24
 move_npc 8312 right 1
-msg3 -1 「わっせ！！\n　わっせ！！
+msg3 -1 「Heigh-ho!\n Heigh-ho!
 create npc_event 8317 83 11 4 111 1 2 none
 move_npc 8317 down 3
 open_door 8350
@@ -282,7 +282,7 @@ jump_npc 8316 same 1
 jump_npc 8315 same 1
 jump_npc 8314 same 1
 jump_npc 8313 same 1
-msg3 -1 「チィーッス！！
+msg3 -1 「Hello!
 sleep 8
 move_npc 8312 right 1
 sleep 16
@@ -301,7 +301,7 @@ draw_fake_countdown off
 start_fake_countdown_sec 2
 chg_char_state_move
 loop_inf
-msg3 -1 「わっせ！！\n　わっせ！！
+msg3 -1 「Heigh-ho!\n Heigh-ho!
 jump_npc 8317 same 1
 jump_npc 8316 same 1
 jump_npc 8315 same 1

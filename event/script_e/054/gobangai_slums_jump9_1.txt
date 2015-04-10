@@ -6,6 +6,6 @@ sleep 48
 play_se landing.wav
 sleep 16
 move_char left 1
-msg3 -1 エアリス\n「まって……\n　ちょっとまってってば！
+msg3 -1 Aeris\n「Wait……\n Wait for me, please!
 sleep 16
 chg_char_dir right

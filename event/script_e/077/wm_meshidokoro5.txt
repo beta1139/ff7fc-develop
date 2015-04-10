@@ -6,7 +6,7 @@ if_gil_less 70
 chg_speed 7711 fast
 chg_npc_dir 7711 right
 step_npc 7711 3
-msg3 -1 「てんちょう！　オーダーとりけしです
+msg3 -1 「Master!\n The order's cancelled.
 sleep 48
 stop_se
 kill_through 7705
@@ -20,7 +20,7 @@ sleep 16
 jump_npc 7711 same 2
 sleep 32
 step_npc 7711 2
-msg 「おきゃくさん！\n　おかねもないのに　ちゅうもんしちゃだめですよ\n　つぎは　おかねのあるときに　きてくださいね
+msg 「Hey, mister!\n You can't order if you\n don't have money. Come\n with money the next time.
 chg_speed 7711 normal
 slide_walk_npc 7720 left 1
 move_char left 1
@@ -50,7 +50,7 @@ sleep 16
 sub_gil 70
 sleep 16
 step_npc 7711 2
-msg 「ありがとうございます\n　しょうしょうおまちください
+msg 「Thank you.\n Wait a minute, please.
 chg_speed 7711 not_move
 wait_fake_countover
 chg_speed 7711 normal
@@ -66,33 +66,33 @@ sleep 16
 move_npc 7711 left 1
 sleep 16
 step_npc 7711 2
-msg 「おまたせしました\n　どうぞ　ごゆっくり
+msg 「Here you are.\n Please enjoy.
 play_se recover.wav
 sleep 24
 step_npc 7720 6
 sleep 80
 set_key_valid up
 set_key_valid down
-msg 『……\n\n\n\n#3\n　　……………\n　　まあまあだな\n　　くちにあわなかった\n\n[[]][[]][[]]
+msg 『……\n\n\n\n#3\n  ……\n  Not bad.\n  Not to my taste.\n\n[[]][[]][[]]
 slide_walk_npc 7720 left 1
 move_char left 1
 sleep 16
 chg_char_dir right
 if_flag 3 0
 step_npc 7711 2
-msg 「ありがとうございました
+msg 「Thank you.
 fi
 if_flag 3 1
 if_flag 13 0
 step_npc 7711 3
-msg 「ありがとうございました\n　くすりや　しょうひんクーポンをどうぞ\n　くすりやで　しょうひん　ひとつと　こうかんできます
+msg 「Thank you.\n Here's your coupon.\n You can redeem it for\n an item at the pharmacy.
 sleep 16
 step_npc 7711 3
-msg 「クーポンがなくなりましたので　このサービスは\n　しゅうりょうさせていただきます\n　つぎなるサービスにごきたいください
+msg 「That was the last coupon.\n Today's coupon service\n is finished.\n Wait for the next chance.
 play_se pick_up.wav
 add_item 6015
-msg キーアイテム\n『くすりやしょうひんクーポン』をてにいれた！
-chg_param 7224 「どうぞ　よっていってください
+msg You got the key item\n"Pharmacy Coupon"!
+chg_param 7224 「Please, have a seat.
 move_npc 7711 down 2
 draw_char on
 kill 7720
@@ -111,11 +111,11 @@ set_flag 13 1
 end
 fi
 step_npc 7711 2
-msg 「ありがとうございました
+msg 「Thank you.
 fi
 if_flag 3 2
 step_npc 7711 2
-msg 「ありがとうございました
+msg 「Thank you.
 fi
 move_npc 7711 down 2
 draw_char on

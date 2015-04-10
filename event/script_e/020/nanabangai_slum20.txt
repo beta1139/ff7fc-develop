@@ -1,3 +1,3 @@
 wait_event_invalid 2023
 wait_target_talked 2009
-chg_param 2009 「はぁ……　ジョニーのやつ　いっちまった\n　なんだか　きゅうに　はりあい\n　なくなっちゃったよ\n\n　おれって　じぶんで　いうのも　なんだけど\n　さけ　のんでないと\n　さびしがりやさん　なわけよ
+chg_param 2009 「Sigh……Now that Johnny's\n gone, my life's become\n suddenly duller somehow.\n\n I get lonely easily when\n I'm not drinking.\n Surprising, do you say?

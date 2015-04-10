@@ -2,7 +2,7 @@ set_eternal_event
 wait_target_talk 1261
 reset_talk_flag 1261
 jump_char same 1
-msg3 -1 wOuch!!
+msg3 -1 wOuch!
 sleep 16
 wait_key_push_edge a
 erase_msg3

@@ -12,21 +12,21 @@ chg_speed 8411 normal
 chg_speed 8412 normal
 step_npc 8412 2
 set_talk_npc 8412
-msg 「ここのゴミ\n　どうにかならないのかしらねえ
+msg 「All these garbage!\n Someone should do\n something about this.
 reset_talk_npc
 sleep 16
 step_npc 8411 4
-msg 「これってぜんぶ　あの　ほら……\n　ぶきやの　あそこのごしゅじん\n　ひとってきては　ためこんでるそうよ
+msg 「All of these, you know……\n Bulked up by the keeper\n of that weapon shop.
 sleep 16
 jump_npc 8412 same 1
 sleep 16
 step_npc 8412 2
 set_talk_npc 8412
-msg 「ああ　あのおみせのなかに　せんしゃまでおいてる\n　あのごしゅじんね
+msg 「Oh, you mean that man\n with a tank in his shop.
 reset_talk_npc
 sleep 16
 step_npc 8411 2
-msg 「でも　どうみても\n　ゴミですわねえ
+msg 「But garbage is garbage,\n don't you think?
 chg_type 8411 npc2
 chg_type 8412 npc2
 chg_speed 8411 not_move

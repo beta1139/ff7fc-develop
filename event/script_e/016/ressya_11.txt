@@ -3,13 +3,13 @@ erase_msg3
 sleep 32
 chg_char_dir down
 sleep 48
-msg ジェシー\n「このひかりが　IDけんちエリア　つうかの\n　サインなの
+msg Jessie\n「This light indicates\n that we're passing the\n ID scan area.
 sleep 32
 chg_npc_dir 1667 left
-msg ジェシー\n「ひそひそ……\n　（くらくなるから　チカンが　おおいのよ\n　IDけんちエリアは……）
+msg Jessie\n「-whisper-(Sometimes we\n get gropers because the\n light gets dimmer here.)
 sleep 32
 chg_npc_dir 1667 up
-msg ジェシー\n「ま　それは　さておき\n　もうすぐ　ちじょうに　かえれるってわけ\n　なんだか　ホっとするね
+msg Jessie\n「Anyway. We'll soon be\n back on the surface.\n What a relief.
 chg_char_dir left
 sleep 96
 kill 70414
@@ -22,12 +22,12 @@ sleep 16
 create event_generator 1600 16 18 21 17 0 0 @016/ressya_move1.txt
 chg_npc_dir 1667 right
 sleep 16
-create npc 1669 16 18 22 34 3 0 ジェシー\n「そうだ　クラウド！\n　こんど　わたしの　てづくりさくひんを\n　プレゼントしちゃおうかな\n#2\n　　えんりょしとくよ\n　　たのしみにしてるよ\n\n\n[[「そう きっと　こうかい　するかもよ\n　わたし　ズガッーンと　ねにもつ　タイプなの]]\n[[　うん　じゃ　うでに　よりをかけて\n　ドッカーンと　せいさくするわ]]
+create npc 1669 16 18 22 34 3 0 Jessie\n「Say, Cloud! May I give\n you something, one of my\n handmade gadgets?\n#2\n  No, thank you.\n  That seems nice.\n\n\n[[「Yeah? See if you don't\n regret it. I'm a one to\n hold a GRUDGE, you know.]]\n[[「Okay. You can expect\n something WONDERFUL.]]
 kill 1667
 create event_generator 1677 16 1 1 17 0 0 @016/ressya_8.txt
 chg_type 1665 npc2
 kill_through 1674
-chg_param 1668 ウェッジ\n「めが　チカチカしたっす\n　おれ　くらいの　だめっす　にがてっす
+chg_param 1668 Wedge\n「I'm seeing stars.\n I'm not really good\n at dark places.
 set_key_valid up
 set_key_valid left
 set_key_valid down

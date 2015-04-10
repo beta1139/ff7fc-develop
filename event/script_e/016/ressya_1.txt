@@ -6,23 +6,23 @@ set_active_msg 1653
 set_active_msg 1654
 step_npc 1654 3
 sleep 16
-msg ウェッジ\n「クラウドさん　こなかったっすね
+msg Wedge\n「Cloud didn't show up.
 sleep 48
 step_npc 1652 3
 sleep 16
-msg ビッグス\n「クラウド……\n　やられちまったのかな
+msg Biggs\n「Cloud……\n I wonder he's okay.
 sleep 16
 chg_npc_dir 1651 left
 chg_npc_img 1651 98
 step_npc 1651 3
-msg バレット\n「ケッ……！！\n　あのやろうが　かねも　もらわないで\n　いなくなるわけないだろ！！
+msg Baret\n「Heck!\n A guy like that'd never\n leave without his money.
 sleep 48
 chg_npc_dir 1651 down
 chg_npc_img 1651 1
 chg_speed 1653 slow
 step_npc 1653 1
 sleep 16
-msg ジェシー\n「クラウド……
+msg Jessie\n「Cloud……
 sleep 40
 create npc_event 1665 16 3 0 120 2 3 none
 slide_npc 1665 down 1
@@ -50,13 +50,13 @@ sleep 64
 chg_speed 1653 normal
 step_npc 1652 2
 sleep 16
-msg ビッグス\n「なあ　クラウドってさ……\n　さいごまで　おれたち……　アバランチのために\n　たたかってくれんのか？
+msg Biggs\n「Do you think he's gonna\n fight for us AVALANCHE……\n all the way to the end?
 sleep 16
 chg_npc_dir 1651 left
 chg_npc_img 1651 98
 step_npc 1651 2
 sleep 16
-msg バレット\n「さあな……　しらねえよ
+msg Baret\n「How the fuck\n should I know?
 chg_npc_img 1651 117
 chg_npc_dir 1651 down
 chg_speed 1651 normal
@@ -66,11 +66,11 @@ play_se attack_tifa.ogg
 sleep 8
 chg_npc_dir 1651 left
 chg_npc_img 1651 98
-msg バレット\n「チッ！！\n　おまえらが　もうすこし　たよりになりゃよ……\n　あんなやろう　やとわないでもいいんだがな…
+msg Baret\n「Tsk! If you guys weren't\n so sloppy, I wouldn't use\n a guy like him.
 chg_npc_dir 1652 left
 sleep 64
 jump_npc 1654 same 1
-msg3 -1 ウェッジ\n「あ　バレットさん\n　おれたちの　きゅうりょう……
+msg3 -1 Wedge\n「Hey, Baret.\n About our money……
 chg_npc_dir 1651 down
 chg_npc_img 1651 1
 sleep 16
@@ -89,14 +89,14 @@ chg_npc_img 1651 98
 sleep 24
 step_npc 1654 1
 chg_npc_dir 1654 right
-msg ウェッジ\n「や　なんでもないっす……
+msg Wedge\n「Erm, never mind.
 sleep 64
 chg_npc_dir 1653 left
 sleep 32
 step_npc 1654 1
 step_npc 1652 1
 step_npc 1653 1
-msg アバランチのめんめん\n「ふっ～～……
+msg AVALANCHE\n「Sigh……
 sleep 72
 create npc_event 1665 16 12 0 120 0 3 none
 slide_npc 1665 down 1
@@ -184,17 +184,17 @@ sleep 16
 jump_npc 1654 same 2
 jump_npc 1652 same 2
 jump_npc 1653 same 2
-msg3 -1 ビッグス「クラウド！！\nジェシー「クラウド……\nウェッジ「クラウドさんっ！
+msg3 -1 Biggs 「Cloud!\nJessie「Cloud!\nWedge 「Cloud!
 sleep 32
 wait_key_push a
 erase_msg3
 sleep 16
 step_npc 1650 1
-msg 『やくそくのじかんに　おくれたようだ
+msg 『Guess I'm late.
 sleep 16
 jump_npc 1651 same 2
 sleep 16
-msg3 -1 バレット\n「おい！　ちこくやろう！！\n　ずいぶん　はでな　おでましじゃねえか
+msg3 -1 Baret\n「Right you are!\n Feeling hammy, huh?
 sleep 16
 chg_speed 1651 fast
 step_npc 1651 2
@@ -203,7 +203,7 @@ erase_msg3
 chg_npc_dir 1650 down
 chg_npc_img 1650 103
 sleep 16
-msg3 -1 『そうでもない　ふつうだ
+msg3 -1 『Not rally. I'm as usual.
 chg_npc_dir 1650 left
 sleep 48
 chg_npc_img 1650 0
@@ -217,14 +217,14 @@ sleep 64
 chg_npc_dir 1651 right
 chg_npc_img 1651 1
 step_npc 1651 3
-msg バレット\n「ケッ！！\n　しんぱいさせやがって　かってなやろうだ！
+msg Baret\n「Fuck!\n Just wasted our\n time sweatin'.
 sleep 16
 set_active_msg 1650
 jump_npc 1650 same 1
-msg 『ほう……？\n　しんぱい　してくれたのか
+msg 『Yeah?\n You worried for me?
 sleep 8
 step_npc 1651 2
-msg バレット\n「なにっ！！　チッ……\n　ちこくのぶんは　ほうしゅうから ひくからな
+msg Baret\n「What!? Tsk……\n It'll come off your\n pay for being late.
 move_npc 1651 down 1
 sleep 16
 move_npc 1651 right 5
@@ -232,7 +232,7 @@ sleep 80
 chg_speed 1654 normal
 chg_npc_dir 1651 left
 jump_npc 1651 same 1
-msg バレット\n「おい　おめえら！\n　ばしょかえるぞ　ついてこい！
+msg Baret\n「Guys!\n Get your asses over here!
 move_npc 1651 right 2
 move_npc 1654 up 1
 sleep 16
@@ -241,7 +241,7 @@ sleep 48
 chg_npc_dir 1654 up
 chg_npc_dir 1650 down
 jump_npc 1654 same 1
-msg3 -1 ウェッジ\n「あ　クラウドさん！！\n　おつかれっす！
+msg3 -1 Wedge\n「Cloud!\n Good job!
 sleep 16
 step_npc 1654 2
 wait_key_push a
@@ -258,7 +258,7 @@ chg_npc_dir 1650 down
 sleep 16
 chg_npc_dir 1652 up
 step_npc 1652 2
-msg ビッグス\n「へへ……クラウド！\n　つぎのさくせんも　がんばろうな
+msg Biggs\n「Hey……Cloud!\n I guess we're gonna work\n together again.
 sleep 16
 chg_speed 1653 normal
 move_npc 1652 right 3
@@ -278,7 +278,7 @@ sleep 16
 chg_npc_dir 1653 up
 sleep 16
 jump_npc 1653 same 1
-msg3 -1 ジェシー\n「やだ！　クラウド！！\n　かお　まっくろ
+msg3 -1 Jessie\n「Oh, Cloud!\n Your face's all sooty.
 sleep 16
 chg_speed 1653 fast
 step_npc 1653 2
@@ -289,7 +289,7 @@ chg_speed 1653 normal
 step_npc 1653 4
 sleep 100
 jump_npc 1653 same 1
-msg ジェシー\n「はい　できあがり！
+msg Jessie\n「There you are.
 sleep 16
 move_npc 1653 right 2
 sleep 32
@@ -297,7 +297,7 @@ move_npc 1653 up 2
 chg_npc_dir 1650 right
 sleep 32
 set_talk_npc 1653
-msg ジェシー\n「あぶないから　しめとくね
+msg Jessie\n「Let me shut this.
 reset_talk_npc
 sleep 20
 close_door 1601
@@ -308,7 +308,7 @@ sleep 16
 chg_npc_dir 1653 left
 sleep 16
 step_npc 1653 2
-msg ジェシー\n「ね　まこうろで　たすけてくれて\n　ありがとう！
+msg Jessie\n「Look, thanks for helping\n me at the reactor.
 move_npc 1653 down 1
 sleep 16
 move_npc 1653 right 2

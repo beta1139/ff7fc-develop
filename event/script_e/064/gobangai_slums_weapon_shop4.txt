@@ -3,5 +3,5 @@ wait_target_talk 6426
 reset_talk_flag 6426
 chg_dir_to_char 6427
 chg_speed 6427 normal
-msg 「ん？　ぶきがほしいのか？\n　ならざんねんだな……\n\n\n　おまえらにうる　ぶきはない！\n　なぜなら……\n\n\n　みせはあっち　むこうだからな
+msg 「Yeah? You want a weapon?\n I'm sorry but……\n\n\n I have no weapon for you!\n Because……\n\n\n The shop is over there.
 chg_speed 6427 not_move

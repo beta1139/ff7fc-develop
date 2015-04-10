@@ -15,7 +15,7 @@ sleep 1
 pool
 sleep 16
 play_se train_info.ogg
-msg しゃないアナウンス\n「まもなく　スラムななばんがい\n　れっしゃはかば　えき
+msg Train PA\n「We will soon arrive at\n Slum 7, Train Graveyard\n Station.
 sleep 32
 fadeout
 kill_through_range 1600 1699

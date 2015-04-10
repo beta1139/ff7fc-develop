@@ -2,7 +2,7 @@ set_flag 20 1
 if_flag 13 1
 chg_speed 5101 fast
 step_npc 5101 3
-msg 「こだいしゅ！\n　つかまえたぞ！
+msg 「The Ancient!\n I got her!
 fi
 if_flag 10 1
 set_flag 12 0
@@ -48,10 +48,10 @@ fi
 step_char 2
 sleep 32
 if_flag 13 0
-msg エアリス\n「ふぅ
+msg Aeris\n「Phew!
 fi
 if_flag 13 1
-msg エアリス\n「ふぅ おどろいた
+msg Aeris\n「Phew! That was close.
 fi
 chg_speed 5102 not_move
 set_flag 14 1

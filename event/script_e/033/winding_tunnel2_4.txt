@@ -2,4 +2,4 @@ wait_same_pos
 kill 3310
 kill 3311
 kill 3312
-msg 『しんらの　けいびへいがいる\n　……もどるしかないか
+msg 『There are Shinra Guards.\n ……Can't go any further.

@@ -12,12 +12,12 @@ chg_speed 8811 normal
 chg_speed 8812 normal
 step_npc 8811 2
 set_talk_npc 8811
-msg 「…それでね…
+msg 「……and then……
 reset_talk_npc
 sleep 16
 step_npc 8812 2
 set_talk_npc 8812
-msg 「ふふふ　へー
+msg 「Giggle. Is that so?
 reset_talk_npc
 fi
 chg_type 8811 npc2

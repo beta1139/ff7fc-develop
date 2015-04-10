@@ -1,5 +1,5 @@
 wait_same_pos
-msg 「めをさまして！！
+msg 「Wake up!
 sleep 80
 kill_through 8203
 chg_npc_img 8210 0
@@ -50,12 +50,12 @@ dec_map_draw_y_offset
 sleep 1
 pool
 step_npc 8217 2
-msg ムッキー\n「ふぅ～▼\n　よかったぁ▼
+msg Mukki\n「Sigh▼\n Thank god▼
 sleep 16
 chg_npc_dir 8217 left
 sleep 16
 step_npc 8217 2
-msg ムッキー\n「ぼうずっ！！\n　たおれちゃったんだって？
+msg Mukki\n「Kid!\n So you've passed out?
 sleep 16
 chg_char_dir right
 set_key_valid up
@@ -65,15 +65,15 @@ set_key_valid right
 set_key_valid start
 sleep 16
 step_npc 8217 2
-msg ムッキー\n「だめだ　だめだ\n\n\n　きんちょうしちゃいかんなあ\n\n\n\n#2\n　　ああ……？\n　　うう……？\n\n\n[[]][[]]
+msg Mukki\n「That's no good.\n\n\n You seem to have\n got too nervous.\n\n\n#2\n  Ahh……?\n  Uhh……?\n\n\n[[]][[]]
 chg_npc_dir 8217 down
 sleep 16
 step_npc 8217 2
 if_flag 3 0
-msg ムッキー\n「んっ……？\n　ま　せいしゅんは　ながくてみじかし\n\n　つぎ　がんばんなさい
+msg Mukki\n「Huh……?\n Well, youth is wasted\n on the young.\n You can do better\n the next time.
 fi
 if_flag 3 1
-msg ムッキー\n「んっ……？\n　ま　せいしゅんは　ながくてみじかし\n\n　つぎ　がんばんなさい
+msg Mukki\n「Huh……?\n Well, youth is wasted\n on the young.\n You can do better\n the next time.
 fi
 play_se jump.wav
 chg_char_dir down
@@ -83,7 +83,7 @@ play_se landing.wav
 sleep 16
 chg_npc_dir 8217 up
 step_npc 8217 2
-msg ムッキー\n「もうじかんだっ▼\n　じゃね▼
+msg Mukki\n「Oh, I gotta go▼\n Bye▼
 move_npc 8217 left 2
 sleep 32
 move_npc 8217 up 4

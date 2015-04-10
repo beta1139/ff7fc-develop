@@ -7,15 +7,15 @@ create npc_event 8720 87 9 14 0 3 2 none
 draw_char off
 chg_npc_dir 8721 right
 step_npc 8715 2
-msg 「あなたね？\n　かわいくなりたいのは
+msg 「So you are him?\n The one wanting\n to dress pretty.
 sleep 16
 step_npc 8720 1
-msg 『かわいく？
+msg 『Pretty?
 jump_npc 8721 same 1
 sleep 16
 step_npc 8721 3
 set_talk_npc 8721
-msg エアリス\n「そうなの\n\n\n　それで　かつらなんだけど……
+msg Aeris\n「Yes, he is.\n\n\n Now, about the wig……
 reset_talk_npc
 chg_speed 8715 normal
 jump_npc 8715 same 3
@@ -42,7 +42,7 @@ sleep 2
 pool
 play_se landing.wav
 step_npc 8715 2
-msg 「ええ　きいてるわよ\n　でも　タダってわけにはねぇ
+msg 「Yes, I heard from him.\n But it can't be for free.
 chg_npc_dir 8715 up
 move_char up 1
 chg_npc_dir 8710 left
@@ -66,7 +66,7 @@ sleep 2
 pool
 chg_npc_dir 8710 down
 set_talk_npc 8710
-msg 「うぉー！！！
+msg 「Wait!
 reset_talk_npc
 chg_npc_img 8710 44
 jump_npc 8710 same 1
@@ -74,7 +74,7 @@ sleep 16
 chg_speed 8710 fast
 step_npc 8710 4
 set_talk_npc 8710
-msg 「アニキ！\n　かわいいかっこうは\n　アニキをきわめたモノのみが\n　できるんですぜ！！
+msg 「Brother!\n Only people who work\n real hard to be bretty\n can be pretty!
 reset_talk_npc
 chg_npc_dir 8711 left
 chg_npc_dir 8712 left
@@ -86,7 +86,7 @@ jump_npc 8711 same 1
 jump_npc 8712 same 1
 chg_npc_dir 8721 right
 sleep 16
-msg 「そういうことじゃー！
+msg 「That's right!
 chg_npc_dir 8711 up
 jump_npc_target_pos 8711 11 12
 jump_npc_target_pos 8712 10 15
@@ -101,33 +101,33 @@ chg_speed 8712 fast
 step_npc 8711 3
 step_npc 8712 3
 set_talk_npc 8711
-msg 「ということで\n　わしらとしょうぶじゃー！
+msg 「Did you hear him?\n It's you agains us!
 reset_talk_npc
 chg_npc_dir 8715 down
 step_npc 8715 2
-msg 「そうね\n　こいつらとスクワットで\n　しょうぶしましょう
+msg 「Let's see.\n How about a squat\n match with them?
 chg_npc_dir 8721 down
 jump_npc 8711 same 1
 jump_npc 8712 same 1
 sleep 16
 step_npc 8711 2
 set_talk_npc 8711
-msg 「ようがす！\n　わしらが\n　コテンパンにして\n　さしあげますぜ！
+msg 「Well, then!\n We're gonna\n beat you to\n smithereens!
 reset_talk_npc
 sleep 32
 step_npc 8720 1
-msg 『もしかして　あんたは
+msg 『So, you are, perhaps,
 sleep 16
 chg_npc_dir 8715 up
 chg_npc_dir 8721 down
 sleep 16
 step_npc 8721 2
-msg エアリス\n「きれいな おにいさん？
+msg Aeris\n「a pretty Brother?
 sleep 16
 set_active_msg 8710
 jump_npc 8710 same 1
 set_talk_npc 8710
-msg 「いまごろ\n　なにいっとるんじゃい\n　アニキは　アニキは\n　それはもう…
+msg 「A little slow on the\n uptake, aren't you?\n Brother is, our Brother\n is, really……
 reset_talk_npc
 chg_npc_dir 8721 up
 chg_speed 8710 normal
@@ -154,7 +154,7 @@ play_se squat.ogg
 sleep 2
 chg_npc_dir 8710 left
 sleep 2
-msg3 -1 「あんた　いいから\n　こっちへきなさいよ
+msg3 -1 「Anyway.\n You come over here.
 sleep 6
 chg_npc_dir 8710 up
 sleep 2
@@ -195,4 +195,4 @@ chg_npc_dir 8715 up
 draw_char on
 kill 8720
 step_npc 8715 2
-msg 「じゃあ　ルールをせつめいするわね\n\n\n\n　かまえから（セレクトボタン）でしゃがむ\n　しゃがみから（Bボタン）でたつ\n　たちから（Aボタン）でかまえへ\n\n　セレクトボタン　Bボタン　Aボタン\n　と　じゅんばんにおすのよ\n\n\n　わかった？\n\n\n\n#2\n　　わからない\n　　わかった\n\n\n[[]][[]]
+msg 「I'll explain the rules.\n\n\n\n From preparation, press\n SELECT to squat down,\n press CANCEL to stand up,\n then press OK to prepare.\n That's SELECT, CANCEL, OK\n buttons in that order.\n\n\n Do you get it?\n\n\n\n#2\n  No, I don't.\n  Got it.\n\n\n[[]][[]]

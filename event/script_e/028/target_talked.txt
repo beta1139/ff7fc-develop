@@ -5,7 +5,7 @@ sleep 16
 play_se pick_up.wav
 sleep 16
 play_se_loop alarm.ogg
-msg フェニックスのお　をてにいれた！
+msg You got FenixTail!
 add_item 1007
-chg_param 2807 「おれが　のたれじんだら\n　そいつでたのむよ
+chg_param 2807 「Please use that for me\n when I died.
 chg_npc_dir 2807 down

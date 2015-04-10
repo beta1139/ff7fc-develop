@@ -30,13 +30,13 @@ loop 4
 jump_npc 8011 down 1
 sleep 16
 pool
-msg 「ポ……▼\n　おきゃくさん▼
+msg 「Hi……▼\n Honey▼
 chg_char_dir up
 set_active_msg 8011
 jump_npc 8011 same 1
 sleep 16
 jump_npc 8011 same 1
-msg 「はやくっはやくっ▼
+msg 「Come on, now▼
 sleep 8
 loop 4
 jump_npc 8011 up 1

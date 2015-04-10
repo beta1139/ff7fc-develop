@@ -5,7 +5,7 @@ kill_through 1911
 kill_through 1912
 kill 2014
 set_talk_npc 2011
-msg バレット\n「へへ……\n\n\n　おさななじみに　はやく　あいてえか？\n\n\n\n#2\n　　おさななじみ？\n　　そこ　どいてくれ\n\n\n[[]][[]]
+msg Baret\n「He-he……\n\n\n Can't wait to see your\n you-know-who?\n\n\n#2\n  Who?\n  Move over.\n\n\n[[]][[]]
 reset_talk_npc
 chg_type 2011 npc_event
 chg_speed 2011 not_step
@@ -16,7 +16,7 @@ jump_npc 2011 same 1
 sleep 16
 step_npc 2011 2
 set_talk_npc 2011
-msg バレット\n　「ヘッ！！\n　とぼけちゃってよ\n\n いいのかねえ…
+msg Baret\n 「Heh!\n You can't fool me.\n\n You know what I mean.
 reset_talk_npc
 fi
 if_flag 3 1
@@ -24,11 +24,11 @@ jump_npc 2011 same 1
 sleep 16
 step_npc 2011 2
 set_talk_npc 2011
-msg バレット\n　「ヘッ！\n　まあ　おちつけよ\n\n　まちのやつらに　あやしまれると\n　まずいからな…
+msg Baret\n 「Heh!\n Take it easy.\n\n We can't afford to draw\n suspicions around here……
 reset_talk_npc
 fi
 chg_speed 2011 not_move
 chg_npc_dir 2011 down
-chg_param 2011 バレット\n「よし！\n　さきに　はいってろ
+chg_param 2011 Baret\n「Okay!\n You wait inside.
 chg_type 2011 npc
 create event_generator 2014 20 1 1 17 0 0 @020/nanabangai_slum3.txt

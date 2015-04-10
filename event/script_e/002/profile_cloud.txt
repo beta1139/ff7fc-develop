@@ -11,11 +11,11 @@ set_text_alpha 9 0
 set_text_alpha 10 0
 set_text_alpha 11 0
 sleep 8
-set_text 3 　 　   　　　　Cloud Strife
-set_text 8 　　　　　　　　　　　　profile
-set_text 9 　　　　　　　　　　　　profile　
-set_text 10 　　　　　　　　　　　　profile
-set_text 11 　　　　　　　　　　　　profile
+set_text 3           Cloud Strife
+set_text 8    Former member of SOLDIER,
+set_text 9    Shinra's elite force team
+set_text 10  Now operating as a freelancer
+set_text 11   His blade defeats everything
 warp 2 24 20 left
 loop 4
 sleep 1

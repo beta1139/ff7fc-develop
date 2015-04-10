@@ -184,7 +184,7 @@ sleep 32
 jump_npc 4770 same 1
 sleep 16
 jump_npc 4770 same 1
-msg3 -1 Tifa\n「No problem.Let's go!
+msg3 -1 Tifa\n「No problem. Let's go!
 sleep 32
 chg_npc_dir 4772 right
 chg_npc_img 4772 97
@@ -200,7 +200,7 @@ if_flag 11 2
 sleep 16
 chg_npc_dir 4772 up
 step_npc 4771 4
-msg Barret\n「Do a better job next\n time.
+msg Baret\n「Do it right this time.
 sleep 16
 chg_npc_dir 4772 right
 chg_npc_img 4772 97
@@ -221,7 +221,7 @@ chg_npc_dir 4772 up
 sleep 8
 chg_npc_dir 4772 up
 chg_npc_img 4772 0
-msg 『You let me down.
+msg 『I new it.
 chg_npc_dir 4770 right
 chg_npc_img 4770 98
 chg_npc_dir 4771 up

@@ -14,13 +14,13 @@ sleep 16
 chg_speed 6921 normal
 step_npc 6921 2
 set_talk_npc 6921
-msg エアリス\n「このおくに　7ばんがいへのゲートがあるの
+msg Aeris\n「The gate to Slum 7\n is up this way.
 reset_talk_npc
 sleep 16
 chg_npc_dir 6920 right
 chg_speed 6920 normal
 step_npc 6920 1
-msg 『わかった\n　じゃあ　ここでわかれようか\n　ひとりでかえれるか？
+msg 『Got it.\n Then we part here.\n Can you go home alone?
 chg_npc_img 6921 15
 step_npc 6921 2
 sleep 32
@@ -28,11 +28,11 @@ chg_npc_img 6921 3
 set_active_msg 6921
 jump_npc 6921 same 1
 set_talk_npc 6921
-msg エアリス\n「いや～ん　かえれない～！！\n　っていったらどうするの？\n\n#2\n　　いえまでおくる\n　　7ばんがいまでいっしょに\n\n\n[[]][[]]
+msg Aeris\n「No way, I'm too scared!\n ……what if I say so?\n\n#2\n  Take her home.\n  Take her to Slum 7.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 step_npc 6921 1
-msg エアリス\n「それってなんだかおかしくない？
+msg Aeris\n「Isn't it ridiculous?
 chg_npc_dir 6920 down
 sleep 32
 chg_npc_dir 6921 up
@@ -43,7 +43,7 @@ chg_npc_dir 6920 right
 chg_npc_img 6920 97
 step_npc 6920 3
 sleep 40
-msg3 -1 『そうだな
+msg3 -1 『Yeah, it is.
 step_npc 6921 2
 sleep 32
 wait_key_push a
@@ -57,25 +57,25 @@ chg_npc_dir 6921 up
 chg_npc_img 6921 15
 step_npc 6921 4
 sleep 16
-msg エアリス\n「それもいいかもね\n　でも　クラウドこまらない？
+msg Aeris\n「That's okay by me.\n But won't she\n misunderstand?
 sleep 16
 chg_npc_img 6921 3
 chg_npc_dir 6921 left
 step_npc 6920 1
-msg 『なにが？
+msg 『About what?
 sleep 16
 chg_npc_img 6921 15
 step_npc 6921 2
 sleep 40
 chg_npc_img 6921 3
-msg エアリス\n「なんでもない
+msg Aeris\n「Never mind.
 fi
 sleep 16
 chg_npc_img 6921 3
 chg_npc_dir 6921 left
 sleep 16
 step_npc 6921 2
-msg エアリス\n「ちょっと　やすもっか
+msg Aeris\n「Shall we sit a while?
 set_flag_wall 6921
 sleep 16
 chg_npc_dir 6920 right

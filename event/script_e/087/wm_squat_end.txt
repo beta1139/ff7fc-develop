@@ -33,89 +33,89 @@ jump_npc 8715 same 1
 sleep 16
 step_npc 8715 2
 if_flag_greater 16 24
-msg 「いまので　25かいね
+msg 「You did 25 times.
 fi
 if_flag 16 24
-msg 「いまので　24かいね
+msg 「You did 24 times.
 fi
 if_flag 16 23
-msg 「いまので　23かいね
+msg 「You did 23 times.
 fi
 if_flag 16 22
-msg 「いまので　22かいね
+msg 「You did 22 times.
 fi
 if_flag 16 21
-msg 「いまので　21かいね
+msg 「You did 21 times.
 fi
 if_flag 16 20
-msg 「いまので　20かいね
+msg 「You did 20 times.
 fi
 if_flag 16 19
-msg 「いまので　19かいね
+msg 「You did 19 times.
 fi
 if_flag 16 18
-msg 「いまので　18かいね
+msg 「You did 18 times.
 fi
 if_flag 16 17
-msg 「いまので　17かいね
+msg 「You did 17 times.
 fi
 if_flag 16 16
-msg 「いまので　16かいね
+msg 「You did 16 times.
 fi
 if_flag 16 15
-msg 「いまので　15かいね
+msg 「You did 15 times.
 fi
 if_flag 16 14
-msg 「いまので　14かいね
+msg 「You did 14 times.
 fi
 if_flag 16 13
-msg 「いまので　13かいね
+msg 「You did 13 times.
 fi
 if_flag 16 12
-msg 「いまので　12かいね
+msg 「You did 12 times.
 fi
 if_flag 16 11
-msg 「いまので　11かいね
+msg 「You did 11 times.
 fi
 if_flag 16 10
-msg 「いまので　10かいね
+msg 「You did 10 times.
 fi
 if_flag 16 9
-msg 「いまので　9かいね
+msg 「You did 9 times.
 fi
 if_flag 16 8
-msg 「いまので　8かいね
+msg 「You did 8 times.
 fi
 if_flag 16 7
-msg 「いまので　7かいね
+msg 「You did 7 times.
 fi
 if_flag 16 6
-msg 「いまので　6かいね
+msg 「You did 6 times.
 fi
 if_flag 16 5
-msg 「いまので　5かいね
+msg 「You did 5 times.
 fi
 if_flag 16 4
-msg 「いまので　4かいね
+msg 「You did 4 times.
 fi
 if_flag 16 3
-msg 「いまので　3かいね
+msg 「You did 3 times.
 fi
 if_flag 16 2
-msg 「いまので　2かいね
+msg 「You did twice.
 fi
 if_flag 16 1
-msg 「いまので　1かいね
+msg 「You did once.
 fi
 if_flag 16 0
-msg 「1かいも　できてないわよ
+msg 「You didn't do even once.
 fi
 sleep 16
 set_flag 16 0
 chg_npc_dir 8710 down
 sleep 16
 step_npc 8715 2
-msg 「じゃあ　ほんばんやるわよ\n　ほんばん　はじめ！
+msg 「Now the real match.\n Start!
 draw_fake_countdown on
 start_fake_countdown_sec 30
 create event_generator 8761 87 9 14 17 0 0 @087/wm_squat_end2.txt

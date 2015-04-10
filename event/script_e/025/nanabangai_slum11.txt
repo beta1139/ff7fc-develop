@@ -3,11 +3,11 @@ kill_through 2500
 chg_dir_to_char 2504
 chg_type 2504 npc_event
 chg_speed 2504 normal
-msg 「チッ！！\n　おっさん　しけたツラしてんな\n　もしかして　つかれてんじゃないの？\n\n　いえの3がいで　やすませてあげても\n　いいけど…\n\n\n　それには　ひとつ　じょうけんがあるぜ\n　このオレに　こづかいくれるならな\n\n\n#3\n　　1ギル\n　　10ギル\n　　あげない\n\n[[]][[]][[]]
+msg 「Tsk!\n Man, you look glum.\n You're tired, aren't you?\n\n You may rest im my room\n at the third floor……\n\n\n With one condition.\n You must gimme some\n pocket money.\n\n#3\n  Give him 1 Gil.\n  Give him 10 Gil.\n  Nope.\n\n[[]][[]][[]]
 if_flag 3 0
 if_gil_less 1
 step_npc 2504 1
-msg 「おっさん　やきがまわったな\n　オレよりびんぼうじゃねえか
+msg 「Man, how pathetic.\n You're poorer than me.
 chg_char_dir right
 chg_char_img_tmp 97
 step_char 2
@@ -17,12 +17,12 @@ reset_char_img_tmp
 fi
 if_gil_equal 1
 step_npc 2504 1
-msg 「チッ！！　おっさん\n　このはなしは　なかったことにしてくれ
+msg 「Tsk! Man,\n Forget what I've said.
 sleep 16
 fi
 if_gil_greater 1
 step_npc 2504 1
-msg 「チッ！！　おっさん\n　このはなしは　なかったことにしてくれ
+msg 「Tsk! Man,\n Forget what I've said.
 sleep 16
 fi
 chg_npc_dir 2504 left
@@ -33,7 +33,7 @@ fi
 if_flag 3 1
 if_gil_less 10
 step_npc 2504 1
-msg 「おっさん　やきがまわったな\n　オレよりびんぼうじゃねえか
+msg 「Man, how pathetic.\n You're poorer than me.
 chg_char_dir right
 chg_char_img_tmp 97
 step_char 2
@@ -51,7 +51,7 @@ sleep 24
 play_se coin.ogg
 sleep 32
 step_npc 2504 2
-msg 「しめしめ……
+msg 「Nice……
 chg_npc_dir 2504 right
 sleep 4
 chg_npc_dir 2504 down
@@ -62,13 +62,13 @@ chg_npc_dir 2504 up
 sleep 4
 chg_dir_to_char 2504
 set_talk_npc 2504
-msg 「いいぜ　へやは　じゆうにつかってくれ
+msg 「Now you can use my room.
 reset_talk_npc
 sub_gil 10
 chg_speed 2504 not_move
 chg_npc_dir 2504 left
 chg_type 2504 npc
-chg_param 2504 「すきなベッドで　やすんでいきな\n　いいゆめみなよな　おっさん
+chg_param 2504 「Use whichever bed you\n like. Sweet dreams, man.
 create event_generator 2700 27 5 6 17 1 0 @027/nanabangai_slum13.txt
 kill 2701
 kill 2702
@@ -83,7 +83,7 @@ jump_npc 2504 same 1
 sleep 16
 step_npc 2504 2
 set_talk_npc 2504
-msg 「そりゃ　ドケチってやつだぜ　おっさん
+msg 「That's insulting, man.
 reset_talk_npc
 chg_npc_dir 2504 left
 create npc2 2506 25 7 8 89 2 0 

@@ -6,11 +6,11 @@ chg_dir_to_char 9622
 chg_speed 9622 normal
 step_char 1
 sleep 16
-msg 『だいじょうぶか？
+msg 『Are you all right?
 sleep 16
 set_active_msg 9622
 step_npc 9622 2
-msg ティファ\n「もう！\n　サイテーね　これ
+msg Tifa\n「Gosh!\n What a bummer!
 if_flag 19 0
 add_likability 2 300
 fi

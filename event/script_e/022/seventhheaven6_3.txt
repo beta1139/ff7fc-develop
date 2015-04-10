@@ -8,14 +8,14 @@ move_npc 2202 down 1
 sleep 16
 step_npc 2202 1
 set_talk_npc 2202
-msg ティファ\n「クラウド　おねがい\n　ちからをかして
+msg Tifa\n「Please, Cloud.\n Give us a hand.
 reset_talk_npc
 sleep 32
 move_char down 1
 sleep 16
 move_char left 2
 sleep 48
-msg 『ティファ……わるいけどさ
+msg 『Tifa……I'm sorry.
 move_npc 2202 left 1
 sleep 16
 move_npc 2202 down 1
@@ -25,19 +25,19 @@ sleep 16
 chg_npc_dir 2202 down
 step_npc 2202 1
 set_talk_npc 2202
-msg ティファ\n「ほしがやんでるの\n　このままじゃ　しんじゃう\n\n　だれかが　なんとかしなくちゃならないの
+msg Tifa\n「The planet is suffering.\n It's dying as it is.\n\n Somebody's got to do\n something about it.
 reset_talk_npc
 chg_char_dir up
 sleep 16
-msg 『バレットたちが　なんとかするんだろ？\n　おれには　かんけいないさ
+msg 『Baret and his gang are\n working on it, right?\n That's not my business.
 chg_char_dir down
 move_char left 1
 sleep 16
 move_char down 2
 sleep 32
-msg ティファ\n「あーあ！\n　ほんとうに　いっちゃうんだ！
+msg Tifa\n「Oh, my!\n So you're really leaving!
 sleep 16
-msg ティファ\n「かわいい　おさななじみの　たのみも\n　きかずに　いっちゃうんだ！
+msg Tifa\n「How can you just refuse\n a dear friend's request!
 create npc_event 2207 22 5 10 0 0 1 none
 draw_char off
 chg_npc_dir 2207 left
@@ -45,7 +45,7 @@ sleep 4
 chg_npc_dir 2207 up
 move_char up 2
 sleep 32
-msg 『……\n\n\n\n#2\n　　よくいうぜ！\n　　……わるいな\n\n\n[[]][[]]
+msg 『……\n\n\n\n#2\n  Who's dear?\n  ……Sorry.\n\n\n[[]][[]]
 sleep 16
 chg_speed 2202 slow
 move_npc 2202 left 1
@@ -57,19 +57,19 @@ sleep 16
 chg_speed 2202 slow
 step_npc 2202 1
 set_talk_npc 2202
-msg ティファ\n「……やくそくも　わすれちゃったんだ
+msg Tifa\n「……Don't you even remember\n our promise?
 reset_talk_npc
 sleep 32
 step_npc 2207 1
 sleep 16
-msg 『やくそく？
+msg 『Promise?
 chg_npc_dir 2202 down
 sleep 16
 chg_speed 2202 normal
 set_active_msg 2202
 jump_npc 2202 same 1
 set_talk_npc 2202
-msg ティファ\n「やっぱり　わすれてる
+msg Tifa\n「So you've forgotten!
 reset_talk_npc
 sleep 16
 chg_speed 2202 slow
@@ -79,7 +79,7 @@ sleep 64
 chg_speed 2202 slow
 step_npc 2202 1
 set_talk_npc 2202
-msg ティファ\n「おもいだして……\n　あれは　７ねんまえよ……
+msg Tifa\n「Remember……\n 7 years ago……
 reset_talk_npc
 chg_speed 2207 normal
 sleep 48

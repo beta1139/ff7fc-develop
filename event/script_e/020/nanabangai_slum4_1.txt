@@ -4,7 +4,7 @@ set_key_unvalid left
 set_key_unvalid right
 set_key_unvalid start
 chg_dir_to_char 2007
-msg 「ねえ　ねえ　しってる？\n\n\n\n#2\n　　きょうみないね\n　　しらないよ\n\n\n[[]]\n[[「ニュースの　そくほうが　はいったのよ\n　うえで　ばくだん　テロが　あったって\n　いうじゃない　それも　まこうろの　ばくはつ！！\n　これが　どんなに　たいへんな　ことかわかる？\n#2\n　　きょうみないね\n　　わからないよ\n\n\n[[]]\n[[「じじょうつうの　わたしに　いわせればね\n　ミッドガルの　でんりょくが　マヒしちゃったら\n　コンピューターとか　しんごうとか　いろいろ\n　とまっちゃうじゃない\n　けいざいてき　そんしつは　んーー\n　１０おくギルは　くだらないし\n　それに！！　たくさんの　つみなきひとびとが\n　しんだと　おもうのよ\n　ばくはが　まよなかだったから　まだいいわ\n　ねむってたひとは　そのまま　めがさめない　だけね]]]]
+msg 「Hey, did you hear?\n\n\n\n#2\n  Not interested.\n  No, I didn't.\n\n\n[[]]\n[[「We got a news flash.\n A reactor was bombed in\n the Upside! Do you know\n what it means?\n#2\n  Not interested.\n  No, I don't.\n\n\n[[]]\n[[「When Midgar's power\n stopped, computers and\n lights and everything\n also stopped working.\n The net loss must be no\n less than 1 billion Gil!\n And! I bet a good deal of\n common people have died.\n It happened in the middle\n of the night so there\n must be a ton of people\n who won't wake up again.]]]]
 if_flag 3 0
 set_key_unvalid up
 set_key_unvalid down
@@ -21,7 +21,7 @@ sleep 32
 reset_char_img_tmp
 restore_char_dir
 set_talk_npc 2007
-msg 「あ　そ！
+msg 「Uh-huh!
 reset_talk_npc
 restore_npc_dir 2007
 create event_generator 2041 20 1 1 17 0 0 @020/nanabangai_slum4_2.txt
@@ -48,7 +48,7 @@ sleep 32
 reset_char_img_tmp
 restore_char_dir
 set_talk_npc 2007
-msg 「あ　そ！
+msg 「Uh-huh!
 reset_char_img_tmp
 reset_talk_npc
 restore_npc_dir 2007
@@ -62,7 +62,7 @@ set_key_valid start
 end
 fi
 if_flag 4 1
-chg_param 2007 「とにかく　まこうろの　ばくはつで\n　ミッドガルは　だいこんらん　らしいの！
+chg_param 2007 「Anyway the explosion\n has put the whole Midgar\n in a total chaos!
 chg_type 2007 npc
 chg_npc_dir 2007 down
 fi

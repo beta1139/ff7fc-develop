@@ -21,7 +21,7 @@ sleep 4
 chg_npc_dir 3209 down
 sleep 4
 chg_dir_to_char 3209
-msg ティファ\n「うん！！\n　きめた！
+msg Tifa\n「Okay!\n Right!
 chg_npc_dir 3201 up
 if_char_dir up
 create npc_event 3200 32 16 5 0 0 2 none
@@ -43,7 +43,7 @@ sleep 16
 chg_npc_dir 3209 down
 sleep 16
 step_npc 3209 2
-msg ティファ\n「よっく　みてて\n　わたし　とぶから！！
+msg Tifa\n「Watch, Cloud.\n I'll jump off!
 set_slide_walk_char_flag
 sleep 16
 chg_npc_dir 3209 up
@@ -106,9 +106,9 @@ sleep 16
 fi
 step_npc 3200 1
 sleep 16
-msg 『さきに　いくが\n　かまわないな？
+msg 『Do you mind\n if I go first?
 step_npc 3201 3
-msg バレット\n「リーダーは　さいごまで\n　のこるもんだ\n\n　いいから　はやくいけ！
+msg Baret\n「A leader's got to\n bring up the rear.\n\n Shut up and go!
 chg_npc_dir 3200 up
 sleep 32
 move_npc 3200 up 1
@@ -117,7 +117,7 @@ chg_npc_dir 3201 up
 jump_npc 3201 same 2
 sleep 32
 step_npc 3201 3
-msg バレット\n「おう！\n　けがすんなよ！\n\n　さくせんは　こっからが\n　ほんばんだぞ！
+msg Baret\n「Yo!\n Don't get yourself hurt!\n\n The mission's only\n startin'!
 chg_npc_dir 3200 down
 chg_npc_img 3200 103
 sleep 32
@@ -169,7 +169,7 @@ sleep 16
 chg_npc_dir 3201 down
 sleep 16
 step_npc 3201 4
-msg バレット\n「じゃな！\n　あとしまつは　たのんだっ！
+msg Baret\n「Bye!\n You wind things up!
 jump_npc 3203 same 1
 jump_npc 3204 same 1
 jump_npc 3205 same 1

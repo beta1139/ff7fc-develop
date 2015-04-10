@@ -3,7 +3,7 @@ wait_key_push a
 erase_msg3
 create npc_event 5430 54 20 13 0 3 2 none
 draw_char off
-create npc_event 5431 54 31 11 3 2 1 エアリス\n「さ　いきましょ！\n　ボディーガードさん！
+create npc_event 5431 54 31 11 3 2 1 Aeris\n「Let's go,\n my dear bodyguard!
 sleep 16
 chg_event_move_char_speed slow
 move_char right 4
@@ -60,7 +60,7 @@ sleep 8
 chg_npc_dir 5431 left
 sleep 8
 pool
-msg エアリス\n「ハァ……\n　ハァ……\n\n　ひとりで……さきに……\n　いっちゃうんだもん……
+msg Aeris\n「Gasp……\n Pant……\n\n Why……you……just……go……\n by yourself……
 sleep 32
 move_char down 1
 move_npc 5430 down 1
@@ -72,13 +72,13 @@ sleep 24
 chg_npc_img 5430 103
 sleep 24
 chg_npc_dir 5430 left
-msg 『おかしいな……
+msg 『That's funny……
 chg_npc_img 5430 0
 chg_npc_dir 5430 up
 sleep 16
 set_active_msg 5430
 jump_npc 5430 same 1
-msg 『ソルジャーのそしつが\n　あるんじゃなかったか？
+msg 『I thought you have it\n in you to be a SOLDIER?
 set_active_msg 542
 chg_speed 5431 normal
 chg_npc_img 5431 99
@@ -86,7 +86,7 @@ jump_npc 5431 same 1
 sleep 16
 step_npc 5431 2
 set_talk_npc 5431
-msg エアリス\n「もう！　いじわる！
+msg Aeris\n「Hey! That's not nice!
 reset_talk_npc
 sleep 32
 chg_npc_dir 5430 left
@@ -105,31 +105,31 @@ chg_npc_dir 5430 up
 sleep 48
 step_npc 5431 2
 set_talk_npc 5431
-msg エアリス\n「ねぇ……クラウド\n　あなた　もしかして……\n\n　ソルジャー？
+msg Aeris\n「Say……Cloud.\n Are you, perhaps……\n\n A SOLDIER?
 reset_talk_npc
 sleep 16
-msg 『…………
+msg 『……
 sleep 48
 step_npc 5430 1
-msg 『……もとソルジャーだ\n　どうしてわかった？
+msg 『……An ex-SOLDIER.\n How did you know?
 sleep 16
 step_npc 5431 2
 set_talk_npc 5431
-msg エアリス\n「……あなたのめ\n　そのふしぎなかがやき……
+msg Aeris\n「……Your eyes.\n That unusual gleam……
 reset_talk_npc
 sleep 16
 step_npc 5430 1
-msg 『そう　これは　まこうをあびたもの……\n　ソルジャーのあかし\n\n\n　だが　どうして　あんたがそれを？
+msg 『Yeah, this is the sign\n of a SOLDIER, the one who\n immersed in Mako.\n\n But how did you know it?
 sleep 32
 step_npc 5431 1
 set_talk_npc 5431
-msg エアリス\n「……ちょっと　ね
+msg Aeris\n「……because.
 reset_talk_npc
 step_npc 5430 1
-msg 『ちょっと……？
+msg 『Because……?
 jump_npc 5431 same 1
 set_talk_npc 5431
-msg エアリス\n「そ　ちょっと！
+msg Aeris\n「Yes, because!
 reset_talk_npc
 sleep 24
 chg_npc_dir 5431 right
@@ -142,7 +142,7 @@ chg_npc_dir 5431 down
 sleep 4
 jump_npc 5431 same 1
 set_talk_npc 5431
-msg エアリス\n「さ　いきましょ！\n　ボディーガードさん！
+msg Aeris\n「Well, let's go,\n my dear bodyguard!
 reset_talk_npc
 draw_char on
 kill 5430

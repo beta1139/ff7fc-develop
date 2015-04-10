@@ -1,13 +1,13 @@
 wait_target_talked 1906
 sleep 24
 chg_npc_dir 1907 right
-msg 「さっ　さすが　せんぱい！！
+msg 「Gee, you did great, Boss!
 sleep 16
 chg_npc_dir 1906 left
-msg 「おう！！\n　むだぐち　たたくんじゃねえ！
+msg 「You!\n Stop yammering!
 chg_npc_dir 1906 up
 sleep 24
-msg 「え　で　でも……　
+msg 「Uh, y-yes…… 
 sleep 32
 chg_npc_dir 1907 up
-chg_param 1906 「ここからさきは　たちいり　きんしだ！\n　わかったら　さっさと　うせろ！！
+chg_param 1906 「This place is off limit!\n Get lost immediately!

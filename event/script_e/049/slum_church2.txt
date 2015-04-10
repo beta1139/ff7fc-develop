@@ -1,7 +1,7 @@
 wait_target_talk 4901
 chg_type 4901 npc_event
 set_talk_npc 4901
-msg 「……また　あえたね
+msg 「……Hello, again.
 reset_talk_npc
 if_char_dir up
 create npc_event 4900 49 5 12 0 0 2 none
@@ -74,7 +74,7 @@ sleep 16
 step_npc 4901 2
 sleep 16
 set_talk_npc 4901
-msg 「……おぼえてないの？\n\n\n\n#2\n　　あったことがある……\n　　たしか　しょたいめんだ\n\n\n[[]][[]]
+msg 「……Don't you remember?\n\n\n\n#2\n  I've seen her……\n  I'm sure I haven't.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 chg_npc_dir 4900 up
@@ -86,13 +86,13 @@ chg_npc_dir 4900 up
 sleep 16
 step_npc 4901 2
 set_talk_npc 4901
-msg 「……おぼえてないかぁ\n　あなた　ボーッと　あるいてたしね
+msg 「……You don't.\n You did look distracted\n anyway.
 reset_talk_npc
 if_flag 7 0
 sleep 32
 step_npc 4901 1
 set_talk_npc 4901
-msg 「まぁ　いっか
+msg 「Oh, well.
 reset_talk_npc
 fi
 if_flag 7 1
@@ -101,14 +101,14 @@ jump_npc 4901 same 1
 sleep 16
 step_npc 4901 2
 set_talk_npc 4901
-msg 「でも　おはな　かってくれたから\n　ゆるしてあげる
+msg 「But you bought a flower\n so I guess it's okay.
 reset_talk_npc
 fi
 sleep 16
 create event_generator 4912 49 5 12 17 0 0 @049/slum_church3.txt
 end
 fi
-msg 『ああ　おぼえてるさ\n\n\n\n#2\n　　はなをうってたな\n　　スラムのよっぱらい\n\n\n[[]][[]]
+msg 『Year, I remember.\n\n\n\n#2\n  You're the flower girl.\n  You're the drunk.\n\n\n[[]][[]]
 if_flag 3 0
 jump_npc 4901 same 1
 sleep 16
@@ -116,18 +116,18 @@ jump_npc 4901 same 1
 sleep 16
 step_npc 4901 2
 set_talk_npc 4901
-msg 「あっ！　うれしいな～！
+msg 「Yes! You remember!
 reset_talk_npc
 if_flag 7 0
 step_npc 4901 2
 set_talk_npc 4901
-msg 「でも　おはな　かってくれなかったね\n　まぁ　いっか
+msg 「But you didn't buy a\n flower.\n Oh, well.
 reset_talk_npc
 fi
 if_flag 7 1
 step_npc 4901 2
 set_talk_npc 4901
-msg 「あのときは　おはな　かってくれて　ありがと
+msg 「I was glad you bought\n a flower then.
 reset_talk_npc
 fi
 fi
@@ -135,7 +135,7 @@ if_flag 3 1
 chg_npc_img 4901 99
 step_npc 4901 2
 set_talk_npc 4901
-msg 「しつれいしちゃうわね！
+msg 「That's insulting!
 reset_talk_npc
 if_flag 7 0
 sleep 16
@@ -143,7 +143,7 @@ chg_npc_img 4901 3
 chg_npc_dir 4901 right
 sleep 32
 set_talk_npc 4901
-msg 「な～んにも　おぼえてないんだ\n　まぁ　いっか
+msg 「Don't you remember\n anything?\n Oh, well.
 reset_talk_npc
 fi
 if_flag 7 1
@@ -153,7 +153,7 @@ jump_npc 4901 same 1
 sleep 16
 step_npc 4901 2
 set_talk_npc 4901
-msg 「でも　おはな　かってくれたから\n　ゆるしてあげる
+msg 「But you bought a flower\n so I guess it's okay.
 reset_talk_npc
 fi
 fi

@@ -4,7 +4,7 @@ backup_char_img
 chg_char_img 0
 open_door 2790
 play_se door_open.ogg
-create npc_event 2704 27 5 9 89 0 3 「やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフにいきていく　きほんだぜ！\n　おっさん　おぼえときな
+create npc_event 2704 27 5 9 89 0 3 「Rest while you can rest.\n Save while you can save.\n\n\n It's the basic fact of\n survival!\n Remember it, man.
 move_npc 2704 up 3
 sleep 8
 close_door 2790
@@ -18,12 +18,12 @@ sleep 32
 draw_char on
 kill 2703
 step_npc 2704 2
-msg 「ただで　やすめるほど\n　スラムのまちは　あまくはないぜ\n\n\n　どうすんだい？\n\n\n\n　ベッドをみたら　ねむくなってきただろ\n\n\n\n#3\n　　10ギル\n　　やすまない\n\n\n[[]][[]]
+msg 「Don't you ever think\n you can get anything\n for free in the slums.\n\n How 'bout that?\n\n\n\n Seeing beds makes you\n sleepy, doesn't it?\n\n\n#3\n  Pay him 10 Gil.\n  Don't rest.\n\n\n[[]][[]]
 if_flag 3 0
 chg_speed 2704 normal
 if_gil_less 10
 step_npc 2704 1
-msg 「おっさん　くろうしてんだな\n　かねもってないじゃないか！
+msg 「Man, how pathetic!\n You're broke.
 chg_char_dir right
 chg_char_img_tmp 97
 step_char 2
@@ -54,7 +54,7 @@ sleep 4
 chg_npc_dir 2704 up
 sleep 4
 step_npc 2704 2
-msg 「いいゆめみなよな　おっさん
+msg 「Sweet dreams, man.
 move_npc 2704 down 3
 sleep 40
 open_door 2790
@@ -62,7 +62,7 @@ sleep 8
 kill 2704
 close_door 2790
 sleep 32
-msg 『フゥッ……
+msg 『Yawn……
 create npc_event 2710 27 5 5 0 1 2 none
 draw_char off
 sleep 32
@@ -99,7 +99,7 @@ fadein
 jump_char down 2
 sleep 48
 chg_char_dir right
-create npc 2508 25 7 8 89 2 0 「いいゆめみたかい\n\n\n\n　やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフにいきていく　きほんだぜ！\n　おっさん　おぼえときな
+create npc 2508 25 7 8 89 2 0 「Did you sleep well?\n\n\n\n Rest while you can rest.\n Save while you can save.\n\n\n It's the basic fact of\n survival!\n Remember it, man.
 sleep 16
 fi
 if_flag 3 1
@@ -112,7 +112,7 @@ pool
 draw_char on
 kill 2703
 step_npc 2704 2
-msg 「ごうじょうだな！　もうっ！\n　やすめるときは　やすむ\n\n\n　セーブできるときに　セーブする\n\n\n\n　これがタフにいきていく　きほんだぜ！\n　おっさん　おぼえときな
+msg 「You're stubborn, man!\n Rest while you can rest.\n\n\n Save while you can save.\n\n\n\n It's the basic of\n survival!\n Remember it, man.
 chg_char_dir right
 chg_char_img_tmp 97
 step_char 2

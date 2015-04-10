@@ -19,7 +19,7 @@ chg_npc_dir 9323 left
 sleep 4
 chg_npc_dir 9323 down
 set_talk_npc 9323
-msg コルネオ\n「このほねぶとのおなごだ！
+msg Corneo\n「This robust gurl!
 reset_talk_npc
 draw_char on
 kill 9320
@@ -41,12 +41,12 @@ sleep 16
 create npc_event 9320 93 7 9 13 0 3 none
 draw_char off
 step_npc 9320 4
-msg 『ちょ　ちょ　ちょっとまて！\n　いや　まってください！
+msg 『H-hold it, you pervert!\n I mean, just a sec!
 jump_npc 9323 same 1
 sleep 16
 jump_npc 9323 same 1
 set_talk_npc 9323
-msg コルネオ\n「ほひ～！\n\n\n　そのこばむしぐさが\n　ういの～　うぶいの～
+msg Corneo\n「Ho-ho!\n\n\n That maidenly shyness!\n Ooh, I'm aroused!
 reset_talk_npc
 step_npc 9320 8
 sleep 24
@@ -54,7 +54,7 @@ chg_npc_dir 9323 up
 sleep 16
 step_npc 9323 2
 set_talk_npc 9323
-msg コルネオ\n「あとはオマエたちにやる！
+msg Corneo\n「The rest are yours!
 reset_talk_npc
 move_char up 3
 sleep 48
@@ -65,13 +65,13 @@ jump_npc 9325 same 1
 sleep 16
 step_npc 9324 2
 step_npc 9325 2
-msg 「ヘイ！！\n　いただきやっす！
+msg 「Yes!\n Thank you, sir!
 move_char down 3
 chg_npc_dir 9323 down
 sleep 48
 jump_npc 9323 same 1
 set_talk_npc 9323
-msg コルネオ\n「さ～て　いこうかの～！
+msg Corneo\n「Now, we shall go!
 reset_talk_npc
 chg_speed 9323 slow
 move_npc 9323 left 2

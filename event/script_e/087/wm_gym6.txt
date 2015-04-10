@@ -1,10 +1,10 @@
 wait_same_pos
 step_npc 8715 2
-msg 「30びょうで　こなしたかいすうが\n　こいつらよりも　うえだったら\n　このかつらをあげるわ
+msg 「This wig is yours\n if you can manage more\n squats than they do in\n 30 seconds, 
 chg_npc_dir 8710 left
 sleep 16
 step_npc 8710 2
-msg 「ぜったいに\n　まけないすよ
+msg 「I'll win,\n Brother.
 chg_char_dir right
 chg_npc_img 8710 125
 loop 2
@@ -18,7 +18,7 @@ sleep 8
 chg_npc_dir 8710 up
 sleep 2
 pool
-msg3 -1 「アニキのかつらは\n　わしらのもんじゃー！
+msg3 -1 「Our Brother's\n wig is ours!
 loop 2
 chg_npc_dir 8710 down
 sleep 8
@@ -36,7 +36,7 @@ erase_msg3
 sleep 8
 chg_npc_dir 8710 down
 step_npc 8715 2
-msg 「やかましいわね　こいつ
+msg 「You! Pipe it down!
 sleep 16
 jump_npc 8715 same 1
 chg_char_dir down
@@ -47,7 +47,7 @@ chg_speed 8710 not_move
 set_flag 16 0
 set_flag 17 0
 step_npc 8715 2
-msg 「ぶっつけほんばんってのも\n　かわいそうだから　れんしゅうする？\n\n\n#2\n　　かるく　れんしゅうでもする\n　　れんしゅうなど　ひつようない\n\n\n[[]][[]]
+msg 「You may practice it\n if it's your first time.\n\n\n#2\n  I'll do some practice.\n  I don't need a practice.\n\n\n[[]][[]]
 set_key_unvalid up
 set_key_unvalid left
 set_key_unvalid down
@@ -58,7 +58,7 @@ chg_speed 8711 not_move
 chg_speed 8712 not_move
 if_flag 3 0
 step_npc 8715 2
-msg 「じゃ　れんしゅうはじめ！
+msg 「Now the practice, start!
 draw_fake_countdown on
 start_fake_countdown_sec 30
 chg_npc_dir 8710 right
@@ -69,7 +69,7 @@ create event_generator 8765 87 9 14 17 0 0 @087/wm_squat_b.txt
 fi
 if_flag 3 1
 step_npc 8715 2
-msg 「じゃあ　ほんばんやるわよ\n　ほんばん　はじめ！
+msg 「Now the real match.\n Start!
 draw_fake_countdown on
 start_fake_countdown_sec 30
 chg_speed 8710 normal

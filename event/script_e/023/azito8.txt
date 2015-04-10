@@ -1,9 +1,9 @@
 wait_target_talked 2317
 if_flag 3 0
-msg 「そうかなあ\n　なんか　さびしそうなんだけど\n\n\n　おれみたいなので　よかったら\n　いつでもOKっすから
-chg_param 2317 ウェッジ\n「おれみたいなので　よかったら\n　いつでもOKっすから
+msg 「Is that so?\n You do look kinda lonely.\n\n\n I'm always willing\n if you'll have me.
+chg_param 2317 Wedge\n「I'm always willing\n if you'll have me.
 fi
 if_flag 3 1
-msg 「ひどいなあ\n　つめたいなあ
-chg_param 2317 ウェッジ\n「ひどいなあ\n　つめたいなあ
+msg 「Ouch!\n You're cold.
+chg_param 2317 Wedge\n「Ouch!\n You're cold.
 fi

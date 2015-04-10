@@ -8,57 +8,57 @@ move_npc 7521 right 1
 move_char up 1
 sleep 16
 step_npc 7521 2
-msg エアリス\n「すいませ～ん！\n　ドレス1ちゃく くださいな
+msg Aeris\n「Excuse me!\n Do you have a dress?
 chg_char_dir right
 sleep 16
 chg_npc_dir 7510 right
 sleep 40
 chg_npc_dir 7510 left
 step_npc 7510 2
-msg 「うーん　ちょっとじかんが\n　かかるかもしれませんが\n　かまいませんか？
+msg 「Hmm, I'm afraid\n it may take some time.\n Is that acceptable?
 sleep 16
 step_npc 7521 2
-msg エアリス\n「なにかあったんですか？
+msg Aeris\n「What's the matter?
 chg_char_dir left
 sleep 16
 step_npc 7510 2
-msg 「ちょっとおやじのやつ\n　スランプなんですよ\n　あ　ドレスはおれのおやじが\n　つくってるんですよ
+msg 「My father's in a\n kind of slump.\n Ah, it's him who'll\n be making your dress.
 sleep 16
 step_npc 7521 2
-msg エアリス\n「その　おやじさん　どちらに？
+msg Aeris\n「Where is the father?
 chg_char_dir up
 sleep 16
 step_npc 7510 1
-msg 「たぶん　いざかやで\n　のんだくれてますよ
+msg 「I bet he's\n drunk in the bar.
 sleep 16
 jump_npc 7521 same 1
 sleep 16
 step_npc 7521 2
-msg エアリス\n「それじゃ……\n　おやじさん　どうにかしないと\n　ドレス　ダメってこと？
+msg Aeris\n「You mean we need to do\n something about your\n father to get a dress?
 chg_char_dir left
 sleep 8
 step_npc 7510 1
-msg 「はい　そうですね\n　こまったもんですよ
+msg 「I'm afraid so.\n Oh dear.
 sleep 48
 set_active_msg 7510
 jump_npc 7510 same 1
-msg 「！
+msg 「!
 sleep 16
 chg_char_dir right
 chg_speed 7510 fast
 step_npc 7510 2
-msg 「もしかして　おきゃくさん\n　どうにかしてくださるんですか？
+msg 「If I'm not mistaken,\n are you planning to do\n something about that?
 chg_char_dir left
 jump_npc 7521 same 1
 sleep 16
 jump_npc 7521 same 1
 sleep 16
 step_npc 7521 2
-msg エアリス\n「だから～！　どうにかしないと\n　ドレス　てにはいらない　でしょ？
+msg Aeris\n「What do you think?\n We definitely need\n a dress.
 jump_npc 7510 same 1
 sleep 16
 step_npc 7510 4
-msg 「ほんとうっすか！\n　おねがいしますよ　あのバカおやじを\n　どうにかしてくださいよ\n　もう　こまりはててたんすよ………
+msg 「Do you mean it?\n Oh, please do something\n with that silly father. \n I'm totally at a loss……
 chg_npc_dir 7521 up
 sleep 32
 chg_char_dir down
@@ -71,7 +71,7 @@ sleep 32
 chg_npc_dir 7521 right
 sleep 16
 step_npc 7521 2
-msg エアリス\n「はいはい　どうにかします\n　クラウド　いきましょ！
+msg Aeris\n「Yeah, yeah.\n We'll do something.\n Let's go, Cloud!
 reset_char_img_tmp
 move_char down 1
 chg_npc_dir 7521 left

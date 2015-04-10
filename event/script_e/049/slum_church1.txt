@@ -11,7 +11,7 @@ clear_text 8
 sleep 16
 set_text_alpha 6 0
 sleep 128
-set_text 6 　 　   　　　　『……だいじょうぶか
+set_text 6           『……You okay?
 sleep 8
 set_text_alpha 6 25
 sleep 8
@@ -22,7 +22,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 56
-set_text 6 　 　   　　　　『……きこえているか？
+set_text 6        『……Can you hear me?
 sleep 8
 set_text_alpha 6 25
 sleep 8
@@ -33,7 +33,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 48
-set_text 6 　 　   　　　　　　　『……ああ
+set_text 6              『……Yeah
 sleep 8
 set_text_alpha 6 30
 sleep 8
@@ -48,9 +48,9 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 48
-set_text 6 　 　   　　　　『あのときは……
-set_text 7 　 　   　　　　　ヒザすりむいただけで
-set_text 8 　 　   　　　　　すんだけど……
+set_text 6           『That time……
+set_text 7          you only had a
+set_text 8          scraped knee……
 sleep 8
 set_text_alpha 6 25
 set_text_alpha 7 25
@@ -71,7 +71,7 @@ clear_text 6
 clear_text 7
 clear_text 8
 sleep 8
-set_text 6 　 　   　　　　　　『……あのとき？
+set_text 6           『……That time?
 sleep 8
 set_text_alpha 6 45
 sleep 8
@@ -84,8 +84,8 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 40
-set_text 6 　 　   　　　　　『こんどはどうかな？
-set_text 7 　 　   　　　　　　おきられるか？
+set_text 6      『How about this time?
+set_text 7         Can you get up?
 sleep 8
 set_text_alpha 6 25
 set_text_alpha 7 25
@@ -101,8 +101,8 @@ set_text_alpha 7 0
 clear_text 6
 clear_text 7
 sleep 40
-set_text 6 　 　   　　　　　　『……あのとき？
-set_text 7 　 　   　　　　　　　……こんどは？
+set_text 6           『……That time?
+set_text 7           ……This time?
 sleep 8
 set_text_alpha 6 30
 set_text_alpha 7 30
@@ -123,9 +123,9 @@ set_text_alpha 6 0
 set_text_alpha 7 0
 clear_text 6
 sleep 8
-set_text 6 　 　   　　　　『……きにするな
-set_text 7 　 　   　　　　　いまは　からだのことだけ
-set_text 8 　 　   　　　　　かんがえるんだ
+set_text 6           『……Never mind
+set_text 7         Just concentrate
+set_text 8           on your body
 sleep 4
 set_text_alpha 6 25
 set_text_alpha 7 25
@@ -146,7 +146,7 @@ clear_text 6
 clear_text 7
 clear_text 8
 sleep 8
-set_text 6 　 　  　　　　『……からだ　うごかせるか？
+set_text 6        『……Can you move it?
 sleep 8
 set_text_alpha 6 25
 sleep 8
@@ -157,7 +157,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 8
-set_text 6 　 　   　　　　　　『……やってみる
+set_text 6            『……I'll try
 sleep 4
 set_text_alpha 6 30
 sleep 4

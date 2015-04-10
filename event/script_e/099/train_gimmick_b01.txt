@@ -3,7 +3,7 @@ play_se door_open.ogg
 draw_char off
 create map_obj 9980 99 28 23 53 0 0 
 sleep 16
-msg ÅwÇ±ÇÃÇÍÇ¡ÇµÇ·Å@Ç§Ç≤Ç≠Çº
+msg ÅwWe can move this car.
 kill 9980
 sleep 32
 play_se train_move_and_stop.ogg

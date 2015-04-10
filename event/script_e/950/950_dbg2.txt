@@ -72,7 +72,7 @@ chg_char_dir left
 move_npc 950023 right 1
 move_npc 950033 left 1
 sleep 16
-msg 「ドロボー！
+msg 「Thief!
 boss_encount 189
 sleep 64
 kill 950015

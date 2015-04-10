@@ -11,7 +11,7 @@ sleep 8
 move_npc 4903 up 1
 set_active_msg 4903
 sleep 8
-msg 『どこの　だれだか　しらないが……
+msg 『Though I don't know\n who you are……
 sleep 24
 chg_char_dir right
 sleep 8
@@ -23,12 +23,12 @@ chg_char_dir left
 sleep 8
 chg_char_dir down
 sleep 24
-msg 『しらない……？
+msg 『Don't know……?
 set_screen_effect sub 255 255 0 0
 clear_text 3
 set_text_alpha 3 0
 sleep 8
-set_text 3 　 　   　　　　　『……しってるよ』
+set_text 3           『……I do know
 sleep 4
 inc_screen_effect_val 10
 set_text_alpha 3 25
@@ -58,11 +58,11 @@ chg_char_dir left
 sleep 8
 chg_char_dir down
 sleep 24
-msg 『そうだ……おれはしっている
+msg 『Yes……I do know.
 sleep 16
 step_char 1
 sleep 16
-msg 『そのせいふくは……
+msg 『That uniform……
 move_npc 4907 up 4
 move_npc 4908 up 5
 move_npc 4909 up 6
@@ -74,7 +74,7 @@ move_npc 4908 right 1
 sleep 16
 chg_npc_dir 4908 up
 step_npc 4903 2
-msg 「……おねえちゃん\n　こいつ　なんだか　へんだぞ　と
+msg 「……Hey, sis.\n You've got some weirdo\n here, ya know.
 jump_npc 4907 same 1
 jump_npc 4908 same 1
 jump_npc 4909 same 1
@@ -88,17 +88,17 @@ sleep 16
 chg_event_move_char_speed fast
 step_char 1
 sleep 8
-msg 『だまれ！　しんらのイヌめ！
+msg 『Shut up! Shinra bastard!
 step_npc 4909 2
-msg 「レノさん！\n　こいつやっちまいますか？
+msg 「Mr.Reno!\n Shall we beat him?
 sleep 24
 step_npc 4903 1
-msg レノ\n「かんがえちゅうだぞ　と
+msg Reno\n「I'm thinking, ya know.
 sleep 32
 chg_speed 4906 fast
 step_npc 4906 4
 set_talk_npc 4906
-msg エアリス\n「ここで　たたかってほしくない！\n　おはな　ふまないでほしいの！
+msg Aeris\n「Don't fight here!\n Don't tread on flowers!
 reset_talk_npc
 move_npc 4906 left 1
 sleep 8
@@ -137,7 +137,7 @@ sleep 8
 chg_speed 4906 normal
 step_npc 4906 1
 set_talk_npc 4906
-msg エアリス\n「でぐち　おくにあるから
+msg Aeris\n「Threre's an entrance\n that way.
 reset_talk_npc
 move_npc 4906 down 1
 sleep 8
@@ -172,7 +172,7 @@ set_active_msg 4907
 set_active_msg 4908
 set_active_msg 4909
 sleep 16
-msg レノ\n「あれは…………まこうのめ
+msg Reno\n「That was……Mako eyes.
 sleep 16
 chg_npc_dir 4903 down
 sleep 16
@@ -187,11 +187,11 @@ set_text_alpha 9 0
 set_text_alpha 10 0
 set_text_alpha 11 0
 sleep 8
-set_text 3 　 　   　　　　　　　　レノ
-set_text 8 　　　　　　しんらカンパニー　そうむぶ　ちょうさか
-set_text 9 　　　　　　　つうしょう　『タークス』　のメンバー
-set_text 10 　　　　　ひょうひょうとした　たいどとは　うらはらに
-set_text 11 　　　　　　あたえられた　にんむは　れいこくにこなす
+set_text 3               Reno
+set_text 8    A member of TURKS, Shinra
+set_text 9      intelligence division
+set_text 10    Contrary to his easy mien
+set_text 11   he is a cold-hearted expert
 warp 49 20 11 down
 loop 4
 sleep 1
@@ -334,7 +334,7 @@ warp 49 6 11 down
 fadein
 sleep 16
 step_npc 4903 1
-msg レノ\n「ま　いいかぁ\n　おしごとおしごと　と
+msg Reno\n「Well, alright.\n A job's a job, ya know.
 chg_npc_dir 4903 up
 sleep 16
 kill 4990
@@ -347,7 +347,7 @@ sleep 48
 move_char up 3
 move_npc 4903 up 2
 sleep 48
-msg3 -1 レノ\n「あっ！
+msg3 -1 Reno\n「Oops!
 jump_npc 4903 same 1
 sleep 64
 erase_msg3
@@ -361,7 +361,7 @@ move_npc 4903 right 2
 sleep 16
 chg_npc_dir 4903 down
 sleep 16
-msg レノ\n「おはな　ふまないでね…だと
+msg Reno\n「Don't tread……did she say?
 sleep 32
 chg_npc_dir 4903 up
 chg_speed 4907 fast
@@ -370,7 +370,7 @@ chg_speed 4909 fast
 jump_npc 4907 same 2
 jump_npc 4908 same 2
 jump_npc 4909 same 2
-msg3 -1 「レノさん　ふんだ
+msg3 -1 「You did it, Mr.Reno!
 sleep 32
 jump_npc 4907 same 2
 jump_npc 4908 same 2
@@ -381,14 +381,14 @@ step_npc 4907 4
 step_npc 4908 4
 step_npc 4909 4
 sleep 8
-msg3 -1 「はな　ぐしゃぐしゃ！
+msg3 -1 「The flowers're ruined!
 sleep 64
 erase_msg3
 sleep 8
 jump_npc 4907 same 1
 jump_npc 4908 same 1
 jump_npc 4909 same 1
-msg3 -1 「おこられる～！
+msg3 -1 「You'll be told off!
 sleep 16
 jump_npc 4907 same 1
 jump_npc 4908 same 1

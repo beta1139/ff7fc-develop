@@ -1,20 +1,20 @@
 wait_target_talked 3008
 chg_dir_to_char 3008
-msg 「ばれてます？\n\n\n\n#2\n　　ん……？\n　　そうだ\n\n\n[[「ほんじゃまっ\n　そういうことで]][[]]
+msg 「Are you aware?\n\n\n\n#2\n  What?\n  Yep.\n\n\n[[「Never mind.\n See ya.]][[]]
 if_flag 3 0
 chg_type 3008 npc
-chg_param 3008 「ほんじゃまっ\n　そういうことで
+chg_param 3008 「Never mind.\n See ya.
 fi
 if_flag 3 1
 chg_type 3008 npc_event
 chg_speed 3008 fast
 step_npc 3008 4
-msg 「すいましぇ～ん\n　かえしま～しゅ
+msg 「I'm sorry.\n I'll return it.
 play_se pick_up.wav
 add_gil 100
 sleep 16
 play_se_loop alarm.ogg
 chg_type 3008 npc
-chg_param 3008 「ほんじゃまっ\n　そういうことで
+chg_param 3008 「Never mind.\n See ya.
 chg_speed 3008 not_move
 fi

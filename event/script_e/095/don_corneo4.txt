@@ -10,7 +10,7 @@ jump_npc 9523 same 1
 sleep 16
 step_npc 9523 4
 set_talk_npc 9523
-msg コルネオ\n「ほひ～！\n　やっとふたりきり……\n\n　さあコネコちゃん……\n　おれのムネへカモ～ン！
+msg Corneo\n「Ho-ho!\n Alone at last……\n\n Now, my pretty kitten……\n Come on in to my arms!
 reset_talk_npc
 chg_event_move_char_speed slow
 move_char down 1

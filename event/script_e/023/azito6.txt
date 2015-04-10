@@ -7,8 +7,8 @@ jump_npc 2312 same 2
 sleep 32
 chg_npc_dir 2312 right
 step_npc 2312 4
-msg ジェシー\n「やだ！　クラウド！\n　きこえちゃったかしら
+msg Jessie\n「Oops, Cloud!\n Did you hear that?
 sleep 32
 chg_type 2312 npc3
 chg_speed 2312 not_step
-chg_param 2312 ジェシー\n「……
+chg_param 2312 Jessie\n「……

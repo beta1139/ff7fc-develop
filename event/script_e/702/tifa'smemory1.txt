@@ -2,13 +2,13 @@ wait_same_pos
 chg_event_move_char_speed slow
 move_char down 4
 sleep 128
-msg ティファ\n「ほら　むらの　きゅうすいとう\n\n\n　おぼえてる？
+msg Tifa\n「See, the water tower\n in our village.\n\n Remember?
 sleep 16
 chg_npc_dir 70201 right
 sleep 96
-msg 『ああ……あのときか
+msg 『Ah……That evening.
 sleep 48
-msg 『ティファ　なかなか　こなくて\n　ちょっと　さむかったな
+msg 『You ware late showing up\n and I was a little cold.
 sleep 80
 fadeout
 kill 70201
@@ -31,7 +31,7 @@ sleep 16
 chg_npc_dir 70203 right
 sleep 32
 chg_npc_dir 70204 down
-msg ティファ\n「お ま た せ
+msg Tifa\n「Sorry I'm late.
 move_npc 70204 down 3
 sleep 96
 move_npc 70204 right 3
@@ -39,29 +39,29 @@ sleep 96
 chg_npc_dir 70204 down
 sleep 96
 chg_npc_dir 70204 right
-msg ティファ\n「なーに？\n　はなしが　あるって
+msg Tifa\n「Well?\n What's the word?
 sleep 16
 chg_npc_dir 70204 down
 sleep 48
 step_npc 70203 1
-msg 『おれ……はるに　なったら　むらを　でて\n　ミッドガルへ　いくよ
+msg 『I'm……In spring,\n I'm gonna leave this\n village to Midgar.
 sleep 96
 step_npc 70204 1
-msg ティファ\n「……おとこのこ　たちって\n　みーんな　むらを　でてっちゃうね
+msg Tifa\n「……All boys're gonna leave\n the village, aren't they?
 sleep 32
 step_npc 70203 1
-msg 『おれは　みんなとは　ちがう\n　ただ　しごとを　さがす　だけじゃない
+msg 『I'm different from them.\n I'm not only after a job.
 sleep 64
 chg_npc_dir 70203 left
 sleep 32
-msg 『おれ ソルジャーに　なりたいんだ
+msg 『I wanna be a SOLDIER.
 sleep 32
 chg_npc_dir 70203 right
 sleep 32
-msg 『セフィロス　みたいな\n　さいこうの　ソルジャーに
+msg 『The best SOLDIER ever,\n just like Sephiroth.
 sleep 16
 step_npc 70204 1
-msg ティファ\n「セフィロス……\n　えいゆう　セフィロス　か
+msg Tifa\n「Sephiroth……\n The Hero Sephiroth.
 sleep 32
 move_npc 70203 up 4
 sleep 16
@@ -82,51 +82,51 @@ move_npc 70203 down 1
 sleep 64
 chg_speed 70204 normal
 step_npc 70204 1
-msg ティファ\n「ソルジャーに　なるのって\n　むずかしいんでしょ？
+msg Tifa\n「It's very difficult\n to become a SOLDIER,\n isn't it?
 sleep 32
 step_npc 70203 1
-msg 『……しばらくの　あいだ\n　むらには　もどれないな　きっと
+msg 『……I won't be able to\n come back for some time.
 sleep 80
 chg_npc_dir 70204 left
 sleep 16
 chg_npc_dir 70204 down
 sleep 16
-msg 『……うん？
+msg 『……What?
 sleep 32
 chg_speed 70204 slow
 step_npc 70204 1
-msg ティファ\n「だいかつやく　したら\n　しんぶんにも　のるかな？
+msg Tifa\n「If you succeed, will you\n be on the newspapers?
 sleep 32
-msg 『がんばるよ
+msg 『I'll do my best.
 sleep 16
 chg_npc_dir 70204 left
-msg ティファ\n「ね　やくそく　しない？
+msg Tifa\n「Look, let's make\n a promise.
 sleep 32
 chg_npc_dir 70204 down
 sleep 16
 chg_speed 70204 normal
 step_npc 70204 2
-msg ティファ\n「あのね　クラウドが　ゆうめいに　なって\n　そのとき　わたしが　こまってたら……\n\n　クラウド　わたしを　たすけに　きてね
+msg Tifa\n「Well, when you become\n famous and if I'm in\n trouble then……\n You come help me, Cloud.
 sleep 16
-msg 『はぁ？
+msg 『Huh?
 sleep 16
 move_npc 70203 right 1
 sleep 16
 step_npc 70204 3
 sleep 16
-msg ティファ\n「わたしが　ピンチのときに\n　ヒーローが　あらわれて　たすけて　くれるの\n\n　いちどくらい　けいけん　したいじゃない？
+msg Tifa\n「When I'm in distress\n a hero just arrives to\n help me.\n I wanna have such\n an experience once\n in my life.
 chg_npc_dir 70203 down
 sleep 16
-msg 『はぁ？
+msg 『Huh?
 sleep 16
 chg_npc_dir 70204 up
 sleep 16
 set_active_msg 70204
 jump_npc 70204 same 1
-msg ティファ\n「いいじゃないのよ～！\n　やくそくしなさい～！
+msg Tifa\n「Come on, Cloud!\n Promise me!
 sleep 48
 set_inactive_msg 70204
-msg 『わかった……やくそく　するよ
+msg 『All right……I promise.
 sleep 48
 chg_event_move_char_speed slow
 move_char up 8

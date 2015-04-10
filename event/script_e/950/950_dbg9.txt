@@ -4,31 +4,31 @@ backup_npc_dir 95082
 chg_dir_to_char 95082
 set_talk_npc 95082
 if_char_img 0
-msg クラウドさん　こんにちわ
+msg Hello, Cloud
 fi
 if_char_img 1
-msg バレットさん　こんにちわ
+msg Hello, Barret
 fi
 if_char_img 2
-msg ティファさん　こんにちわ
+msg Hello, Tifa
 fi
 if_char_img 3
-msg エアリスさん　こんにちわ
+msg Hello, Aeris
 fi
 if_char_img 4
-msg レッド13さん　こんにちわ
+msg Hello, Red XIII
 fi
 if_char_img 5
-msg ケットシーさん　こんにちわ
+msg Hello, Cait Seth
 fi
 if_char_img 6
-msg ユフィさん　こんにちわ
+msg Hello, Yuffie
 fi
 if_char_img 7
-msg シドさん　こんにちわ
+msg Hello, Cid
 fi
 if_char_img 8
-msg ヴィンセントさん　こんにちわ
+msg Hello, Vincent
 fi
 restore_npc_dir 95082
 reset_talk_flag 95082

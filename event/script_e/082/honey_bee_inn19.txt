@@ -3,13 +3,13 @@ kill_through_range 8204 8206
 chg_speed 8215 normal
 chg_dir_to_char 8215
 set_talk_npc 8215
-msg 「ごめんなさいね……▼\n　いろいろとオトナのじじょうってもんが\n　あるのよ▼\n\n　これ　おわびのしるし▼\n　たいせつにあつかってね
+msg 「I'm sorry……▼\n There are some\n unmentionable\n reasons▼\n Take this as an apology▼\n Use it with care.
 reset_talk_npc
 step_npc 8215 2
 sleep 32
 play_se pick_up.wav
 add_item 6013
-msg キーアイテム『ランジェリー』をてにいれた！
+msg You got the key item\n"Lingerie"!
 if_char_dir right
 create npc_event 8210 82 9 5 0 3 2 none
 fi
@@ -23,7 +23,7 @@ draw_char off
 sleep 32
 chg_npc_dir 8210 down
 chg_npc_img 8210 103
-msg 「こんなヌノキレを　おれが！？\n　まったく　どうかしてるな
+msg 「Must I put this scrap\n of cloth on!?\n I'm not myself today.
 sleep 16
 chg_npc_img 8210 0
 if_char_dir right

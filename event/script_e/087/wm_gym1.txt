@@ -2,7 +2,7 @@ wait_same_pos
 kill_through 8733
 chg_npc_img 8710 44
 chg_npc_dir 8710 down
-msg 「はい 1 2 3\n　スクワットはリズムですよ
+msg 「Now 1 2 3\n Rhythm's all in squat.
 chg_speed 8711 normal
 chg_speed 8712 normal
 jump_npc 8711 same 1
@@ -13,11 +13,11 @@ jump_npc 8712 same 1
 sleep 16
 chg_speed 8711 not_move
 chg_speed 8712 not_move
-msg 「あにきー！\n　がんばりやすぜー！
+msg 「Brother!\n I'll do my best!
 sleep 16
 set_active_msg 8710
 jump_npc 8710 same 1
-msg 「これで\n　どうだー！
+msg 「How!\n About!\n This!
 chg_speed 8710 normal
 chg_npc_img 8710 125
 loop 3
@@ -93,6 +93,6 @@ sleep 6
 chg_npc_dir 8710 up
 sleep 2
 create event_generator 8733 87 13 12 17 0 0 @087/wm_squat.txt
-create npc 8709 87 14 12 17 0 0 「はい 1 2 3\n　スクワットはリズムですよ
+create npc 8709 87 14 12 17 0 0 「Now 1 2 3\n Rhythm's all in squat.
 set_inactive_msg 8710
 sleep 8

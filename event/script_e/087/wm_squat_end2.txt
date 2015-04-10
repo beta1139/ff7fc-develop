@@ -11,7 +11,7 @@ erase_msg3
 sleep 16
 reset_screen_effect
 step_npc 8715 2
-msg 「そこまで
+msg 「Time up.
 end_fake_countdown
 chg_npc_dir 8710 down
 chg_npc_img 8710 44
@@ -20,60 +20,60 @@ step_npc 8715 2
 reset_char_img_tmp
 chg_char_dir down
 if_flag_lesser 17 12
-msg 「こいつが　12かいいかで
+msg 「He did less than 12.
 fi
 if_flag 17 12
-msg 「こいつが　12かいで
+msg 「He did 12 times.
 fi
 if_flag 17 13
-msg 「こいつが　13かいで
+msg 「He did 13 times.
 fi
 if_flag 17 14
-msg 「こいつが　14かいで
+msg 「He did 14 times.
 fi
 if_flag 17 15
-msg 「こいつが　15かいで
+msg 「He did 15 times.
 fi
 if_flag 17 16
-msg 「こいつが　16かいで
+msg 「He did 16 times.
 fi
 if_flag 17 17
-msg 「こいつが　17かいで
+msg 「He did 17 times.
 fi
 if_flag 17 18
-msg 「こいつが　18かいで
+msg 「He did 18 times.
 fi
 if_flag_greater 17 18
-msg 「こいつが　19かいで
+msg 「He did 19 times.
 fi
 sleep 16
 step_npc 8715 2
 if_flag_greater 16 24
-msg 「あなたが　25かいね
+msg 「You did 25 times.
 set_flag 17 22
 fi
 if_flag 16 24
-msg 「あなたが　24かいね
+msg 「You did 24 times.
 set_flag 17 22
 fi
 if_flag 16 23
-msg 「あなたが　23かいね
+msg 「You did 23 times.
 set_flag 17 22
 fi
 if_flag 16 22
-msg 「あなたが　22かいね
+msg 「You did 22 times.
 set_flag 17 22
 fi
 if_flag 16 21
-msg 「あなたが　21かいね
+msg 「You did 21 times.
 set_flag 17 22
 fi
 if_flag 16 20
-msg 「あなたが　20かいね
+msg 「You did 20 times.
 set_flag 17 22
 fi
 if_flag 16 19
-msg 「あなたが　19かいね
+msg 「You did 19 times.
 if_flag_greater 17 18
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 set_flag 17 21
@@ -82,7 +82,7 @@ fi
 set_flag 17 22
 fi
 if_flag 16 18
-msg 「あなたが　18かいね
+msg 「You did 18 times.
 if_flag 17 18
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 set_flag 17 21
@@ -96,7 +96,7 @@ fi
 set_flag 17 22
 fi
 if_flag 16 17
-msg 「あなたが　17かいね
+msg 「You did 17 times.
 if_flag_greater 17 17
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 set_flag 17 20
@@ -110,7 +110,7 @@ fi
 set_flag 17 22
 fi
 if_flag 16 16
-msg 「あなたが　16かいね
+msg 「You did 16 times.
 if_flag_greater 17 16
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 set_flag 17 20
@@ -124,7 +124,7 @@ fi
 set_flag 17 22
 fi
 if_flag 16 15
-msg 「あなたが　15かいね
+msg 「You did 15 times.
 if_flag_greater 17 15
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 set_flag 17 20
@@ -138,7 +138,7 @@ fi
 set_flag 17 22
 fi
 if_flag 16 14
-msg 「あなたが　14かいね
+msg 「You did 14 times.
 if_flag_greater 17 14
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 set_flag 17 20
@@ -152,7 +152,7 @@ fi
 set_flag 17 22
 fi
 if_flag 16 13
-msg 「あなたが　13かいね
+msg 「You did 13 times.
 if_flag 17 13
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 set_flag 17 21
@@ -166,7 +166,7 @@ fi
 set_flag 17 20
 fi
 if_flag 16 12
-msg 「あなたが　12かいね
+msg 「You did 12 times.
 if_flag_lesser 17 12
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 set_flag 17 22
@@ -180,7 +180,7 @@ fi
 set_flag 17 20
 fi
 if_flag 16 11
-msg 「あなたが　11かいね
+msg 「You did 11 times.
 if_flag_lesser 17 11
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt
 set_flag 17 22
@@ -194,47 +194,47 @@ fi
 set_flag 17 20
 fi
 if_flag 16 10
-msg 「あなたが　10かいね
+msg 「You did 10 times.
 set_flag 17 20
 fi
 if_flag 16 9
-msg 「あなたが　9かいね
+msg 「You did 9 times.
 set_flag 17 20
 fi
 if_flag 16 8
-msg 「あなたが　8かいね
+msg 「You did 8 times.
 set_flag 17 20
 fi
 if_flag 16 7
-msg 「あなたが　7かいね
+msg 「You did 7 times.
 set_flag 17 20
 fi
 if_flag 16 6
-msg 「あなたが　6かいね
+msg 「You did 6 times.
 set_flag 17 20
 fi
 if_flag 16 5
-msg 「あなたが　5かいね
+msg 「You did 5 times.
 set_flag 17 20
 fi
 if_flag 16 4
-msg 「あなたが　4かいね
+msg 「You did 4 times.
 set_flag 17 20
 fi
 if_flag 16 3
-msg 「あなたが　3かいね
+msg 「You did 3 times.
 set_flag 17 20
 fi
 if_flag 16 2
-msg 「あなたが　2かいね
+msg 「You did twice.
 set_flag 17 20
 fi
 if_flag 16 1
-msg 「あなたが　1かいね
+msg 「You did once.
 set_flag 17 20
 fi
 if_flag 16 0
-msg 「あなたは　1かいも　できてないわよ
+msg 「You didn't do even once.
 set_flag 17 20
 fi
 create event_generator 8780 87 9 14 17 0 0 @087/wm_squat_result.txt

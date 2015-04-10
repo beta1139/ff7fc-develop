@@ -1,6 +1,6 @@
 wait_event_invalid 95013
 play_se alarm.ogg
-msg3 60 ドロボー！　ドロボー！
+msg3 60 Thief! Thief!
 create effect 9500040 950 0 0 0 0 50 6
 set_active_msg 9500040
 wait_same_pos
@@ -76,7 +76,7 @@ chg_char_dir left
 move_npc 950023 right 1
 move_npc 950033 left 1
 sleep 16
-msg 「ドロボー！
+msg 「Thief!
 boss_encount 189
 sleep 64
 kill 950015

@@ -1,20 +1,20 @@
 if_flag 11 3
-msg3 -1 Barret\n「FF7 PS4 Is\n The Ultimate Troll.
+msg3 -1 Baret\n「FF7 PS4 Is\n The Ultimate Troll.
 fi
 if_flag 11 2
-msg3 -1 Barret\n「That's Enoough！\n Don't fuck with me!
+msg3 -1 Baret\n「Stop goofing around!\n You clumsy oaf!
 set_flag 11 3
 fi
 if_flag 11 1
 if_flag 99 0
-msg3 -1 Barret\n「I knew it!\n That was just a fluke!
+msg3 -1 Baret\n「I knew it!\n That was just a fluke!
 fi
 if_flag 99 1
-msg3 -1 Barret\n「Yo,get serious!
+msg3 -1 Baret\n「Yo, get serious!
 fi
 set_flag 11 2
 fi
 if_flag 11 0
-msg3 -1 Barret\n「Yo,get serious!
+msg3 -1 Baret\n「Yo, get serious!
 set_flag 11 1
 fi

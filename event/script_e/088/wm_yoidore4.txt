@@ -3,7 +3,7 @@ chg_type 8816 npc_event
 chg_speed 8816 slow
 step_npc 8816 2
 set_talk_npc 8816
-msg 「う…………あんたなにあけてんだよ……\n　みてんじゃねえよ…………
+msg 「Hey……shut the door……\n Stop staring……
 reset_talk_npc
 if_flag 13 2
 chg_type 8816 npc2

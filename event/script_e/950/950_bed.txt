@@ -9,5 +9,5 @@ screen_effect off
 play_bgm
 move_char left 1
 sleep 16
-msg 『あー　よくねた……\nHP MPが　かいふくした！
+msg 『Yawn……\nRestored HP and MP!
 recover_active_chara

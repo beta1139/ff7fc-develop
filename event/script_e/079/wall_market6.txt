@@ -21,9 +21,9 @@ dec_map_draw_y_offset
 sleep 1
 pool
 set_talk_npc 7922
-msg 「あんだよ！！　てめー！！\n　みせもんじゃねえぞ！！\n　オレは　いま　いそがしいんだよ！！
+msg 「Hey, Asshole!\n What are you lookin at!\n I got no time for you!
 step_npc 7922 4
-msg 「ビンビンに　かんじてんだよ！！\n　たたかいのよかん　ってやつをよ！！
+msg 「I'm getting excited to\n the pit of my stomach!
 reset_talk_npc
 chg_type 7922 npc2
 set_flag_wall 7922

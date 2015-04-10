@@ -9,7 +9,7 @@ create npc_event 1663 16 19 21 94 2 3 none
 chg_event_move_char_speed normal
 reset_slide_walk_char_flag
 step_npc 1663 2
-msg 「たのみますよぅ！！ \n　ほかの　おきゃくさんの　めいわくに　なります
+msg 「Puh-leeze! \n Stop bothering other\n passengers.
 chg_npc_dir 1663 right
 sleep 8
 kill 1663

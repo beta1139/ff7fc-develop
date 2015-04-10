@@ -7,7 +7,7 @@ move_char up 1
 sleep 16
 chg_speed 6023 normal
 set_talk_npc 6023
-msg 「いいマテリアがそろってるぜ\n　みてってくんな！
+msg 「All my materias\n are good quality!
 reset_talk_npc
 open_materia_shop 4003/4004/4005/4000
 move_char down 1

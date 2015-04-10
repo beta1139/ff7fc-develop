@@ -3,12 +3,12 @@ wait_target_talk 6422
 reset_talk_flag 6422
 chg_dir_to_char 6424
 chg_speed 6424 normal
-msg 「じぶんのみは　じぶんでまもる\n　こいつがスラムのじょうしきよ！\n　そのためには　まずつええ　ぶき！だろ？\n\n#3\n　　ぶきをみたい\n　　アイテムをみたい\n　　きょうみないね\n\n[[]][[]][[]]
+msg 「Only you can protect\n yourself in the slums.\n For that you need good\n weapons! Don't you?\n#3\n  Show me weapons.\n  Show me items.\n  Not interested.\n\n[[]][[]][[]]
 if_flag 3 0
 open_armor_shop 3002
 step_char 1
 sleep 16
-msg 『ぶき　ないじゃないか
+msg 『You don't have a weapon!
 jump_npc 6424 same 1
 chg_npc_dir 6424 left
 sleep 16

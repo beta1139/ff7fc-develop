@@ -54,11 +54,11 @@ create npc_event 2010 20 26 22 78 1 0 none
 set_flag_wall 2020
 set_flag_wall 2021
 set_flag_wall 2022
-create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこをみがく　たびにでっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
-create npc 2007 20 32 20 88 3 0 「きのう　おみせのそとから　あなたたちのこと\n　まちのみんなで　のぞきみしてたのよ\n\n\n　ティファちゃんの　おさななじみなんて\n　にくいにくい！
-create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめるあいてが\n　いなくなっちゃうよ！
-create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃいいけど\n\n\n　それだけが　きがかりだなあ
-chg_param 2510 「てへへ…ひとばんじゃ　おぼえきれんぜ\n　おう！しろうと！！\n　わるいが　にかいのあいぼうから　おそわってくれ
+create npc 2006 20 33 20 71 2 0 Johnny\n「I'm off to a journey\n to be a real man!\n Adios, amigo!\n Hey, you! You take good\n care of Tifa!
+create npc 2007 20 32 20 88 3 0 「Last night everybody was\n watching you two through\n the window.\n\n So you're Tifa's\n childhood friend?\n (wink wink, nudge nudge)
+create npc 2008 20 33 21 65 0 0 「Oh, dear!\n I won't have anyone\n to tease any more!
+create npc 2009 20 33 19 70 1 0 「I hope Johnny won't get\n snared by some sluts.\n\n\n That's my only worry.
+chg_param 2510 「Heck……I couldn't remember\n it all in one night.\n Hey, newbie. You learn\n from my buddy upstairs.
 kill_through 2015
 kill_through 2016
 kill_through 2017
@@ -85,10 +85,10 @@ set_npc_pos 2602 26 6 8
 sleep 16
 chg_type 2601 npc2
 chg_param 2601 
-create npc 1706 17 17 9 94 1 0 「おはようございます\n　いちやあけても　あいかわらずですね\n\n\n　けがしないよう　おきをつけて\n　いってらっしゃい
-create npc3 1707 17 10 11 71 3 0 「ぼく　もう　たえられない
+create npc 1706 17 17 9 94 1 0 「Good morning.\n Another fine day\n is starting.\n\n Be careful and try not\n to hurt youself.
+create npc3 1707 17 10 11 71 3 0 「I can't stand any more!
 create npc2 1708 17 11 11 72 2 0 
-create npc 1906 19 8 26 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
+create npc 1906 19 8 26 32 0 0 「You!\n You can't go any further!
 create npc2 1907 19 7 26 32 0 0 
 sleep 32
 create event_generator 1718 17 1 1 17 0 0 @017/nanabangai_station7.txt

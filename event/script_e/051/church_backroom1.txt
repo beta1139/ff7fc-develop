@@ -8,7 +8,7 @@ create event_generator 5165 51 17 45 17 0 0 @051/church_backroom2.txt
 create npc_event 5130 51 17 20 0 2 2 none
 kill_through_range 5190 5191
 draw_char off
-msg レノ\n「いたぞ　あそこだ！
+msg Reno\n「Got them, over there!
 chg_event_move_char_speed fast
 move_char down 4
 sleep 32
@@ -49,20 +49,20 @@ move_npc 5131 right 1
 sleep 16
 chg_npc_dir 5131 left
 step_npc 5131 2
-msg エアリス\n「クラウド　あれ！
+msg Aeris\n「Cloud, look!
 move_npc 5130 left 1
 sleep 16
 step_npc 5130 1
-msg 『わかっている\n　どうやら　みのがすつもりはないようだな
+msg 『I know.\n I see they don't\n mean to let us go.
 sleep 16
 move_npc 5131 left 1
 sleep 32
 step_npc 5131 2
-msg エアリス\n「どうしよう？
+msg Aeris\n「What should we do?
 chg_npc_dir 5130 right
 sleep 16
 step_npc 5130 1
-msg 『つかまるわけにはいかないんだろ？\n　それなら　こたえはひとつさ
+msg 『We can't afford to get\n caught, can we?\n Then we have no choice.
 chg_npc_dir 5130 left
 step_npc 5130 1
 sleep 16
@@ -75,7 +75,7 @@ sleep 16
 chg_npc_dir 5130 right
 sleep 16
 step_npc 5130 1
-msg 『さあ　エアリス\n　こっちだ
+msg 『Aeris.\n This way.
 sleep 32
 chg_speed 5131 slow
 move_npc 5131 left 1
@@ -86,12 +86,12 @@ step_npc 5131 3
 sleep 80
 set_active_msg 5130
 jump_npc 5130 same 1
-msg 『だいじょうぶだ\n　おれがうけとめてやる
+msg 『You'll be fine.\n I'll catch you.
 chg_npc_img 5131 3
 sleep 32
 set_active_msg 5131
 jump_npc 5131 same 1
-msg エアリス\n「わかったわ\n　しっかりうけとめてね
+msg Aeris\n「Okay.\n Don't let me go.
 sleep 16
 chg_speed 5131 slow
 slide_walk_npc 5131 right 1
@@ -101,7 +101,7 @@ chg_speed 5131 fast
 step_npc 5131 6
 move_char left 3
 chg_speed 5100 normal
-msg3 -1 レノ\n「こだいしゅが　にげるぞ！\n　うて　うて！
+msg3 -1 Reno\n「The Ancient is getting\n away! Shoot!
 sleep 16
 set_active_msg 5100
 jump_npc 5100 same 1
@@ -158,7 +158,7 @@ sleep 4
 chg_npc_dir 5131 right
 chg_npc_dir 5100 down
 jump_npc 5100 same 1
-msg3 -1 レノ\n「あ　うつな！
+msg3 -1 Reno\n「Oops, no, don't!
 kill 5104
 create npc_event 5105 51 15 20 80 3 0 none
 sleep 4
@@ -259,7 +259,7 @@ jump_npc 5130 same 2
 stop_se
 chg_speed 5131 normal
 jump_npc_target_pos 5131 15 21
-msg3 -1 エアリス\n「きゃあっ！
+msg3 -1 Aeris\n「Ow!
 chg_npc_dir 5100 right
 chg_npc_dir 5131 right
 sleep 12
@@ -298,7 +298,7 @@ chg_npc_dir 5131 up
 sleep 8
 chg_npc_dir 5131 down
 sleep 8
-msg3 -1 『エアリス！
+msg3 -1 『Aeris!
 loop 5
 chg_npc_dir 5131 up
 sleep 4
@@ -335,7 +335,7 @@ chg_npc_dir 5103 down
 chg_npc_dir 5102 down
 chg_speed 5100 normal
 step_npc 5100 2
-msg3 -1 レノ\n「やっちまったかな　と\n　ていこうするからだぞ　と
+msg3 -1 Reno\n「Wonder if I've done it.\n She shouldn't have fled,\n ya know.
 chg_npc_dir 5131 up
 sleep 4
 chg_npc_dir 5131 right
@@ -407,7 +407,7 @@ chg_speed 5131 normal
 jump_npc 5131 same 2
 sleep 16
 chg_speed 5101 not_move
-msg エアリス\n「クラウド　たすけて！
+msg Aeris\n「Cloud, Help!
 chg_npc_img 5130 0
 chg_npc_dir 5130 down
 sleep 16
@@ -419,7 +419,7 @@ move_char up 22
 chg_speed 5101 not_move
 sleep 176
 step_npc 5130 2
-msg 『くそっ！
+msg 『Shit!
 chg_npc_dir 5130 right
 sleep 12
 chg_npc_dir 5130 left
@@ -429,11 +429,11 @@ sleep 12
 chg_npc_dir 5130 down
 move_char up 8
 sleep 64
-msg 『あれは……？
+msg 『What's that……?
 move_char down 4
 sleep 32
 step_npc 5130 2
-msg 『エアリス！\n\n\n\n#3\n　　しばらくまっていろ！\n　　たたかえ！\n　　にげるんだ！\n\n[[]][[]][[]]
+msg 『Aeris!\n\n\n\n#3\n  Hold it!\n  Beat him!\n  Run for it!\n\n[[]][[]][[]]
 set_flag 10 0
 set_flag 0 2
 del_party_mem 3
@@ -463,7 +463,7 @@ chg_speed 5131 fast
 step_npc 5131 1
 sleep 32
 step_npc 5131 2
-msg エアリス\n「わ　わかったわ
+msg Aeris\n「I, I try.
 chg_npc_dir 5131 left
 jump_char same 1
 jump_npc 5131 same 1
@@ -496,7 +496,7 @@ step_npc 5131 1
 sleep 32
 step_npc 5131 2
 sleep 8
-msg エアリス\n「わ　わかったわ
+msg Aeris\n「I, I try.
 chg_npc_dir 5131 down
 sleep 8
 draw_char on

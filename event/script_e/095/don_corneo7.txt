@@ -15,7 +15,7 @@ jump_npc 9523 same 1
 sleep 16
 step_npc 9523 2
 set_talk_npc 9523
-msg コルネオ\n「ほひ　うれしいこといってくれるのォ！\n\n\n　ほんなら　ナ　ナニがしたい？\n\n\n\n#2\n　　あなたのス　キ　な　コ　ト\n　　べつに……\n\n\n[[]][[]]
+msg Corneo\n「Oh, you please me!\n\n\n Then,\n W-what do you want now?\n\n\n#2\n  What you want▼\n  Nothing……\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 step_char 1
@@ -39,7 +39,7 @@ sleep 16
 chg_speed 9523 fast
 step_npc 9523 3
 set_talk_npc 9523
-msg コルネオ\n「ほひほひ～！！　た　たまらん！\n　じゃあ　おねがい……
+msg Corneo\n「Ho-ho! I'm exploding!\n Then, please……
 reset_talk_npc
 play_se corneo_jump.ogg
 jump_npc 9523 same 2
@@ -63,7 +63,7 @@ pool
 chg_speed 9523 fast
 step_npc 9523 4
 set_talk_npc 9523
-msg コルネオ\n「チューして　チュー！！\n\n\n#2\n　　ええ……\n　　それはダメ……\n\n\n[[]][[]]
+msg Corneo\n「Kiss me, now!\n\n\n#2\n  Yes……\n  I'm sorry……\n\n\n[[]][[]]
 reset_talk_npc
 create npc_event 9520 95 8 7 13 2 1 none
 draw_char off
@@ -103,7 +103,7 @@ move_char left 1
 move_npc 9520 left 1
 sleep 6
 chg_speed 9520 not_step
-msg3 -1 「ちょっとまったーッ！！
+msg3 -1 「Hoooold it!
 sleep 16
 wait_key_push_edge a
 erase_msg3
@@ -138,11 +138,11 @@ chg_npc_dir 9522 up
 sleep 8
 chg_speed 9523 fast
 step_npc 9523 3
-msg コルネオ\n「ほひ～\n　なんだ　なんだ　なにものだ！
+msg Corneo\n「Ho!\n Who? What? Who are you?
 sleep 16
 chg_speed 9522 normal
 step_npc 9522 2
-msg ティファ\n「クラウド……\n\n\n　まさかあなた\n　いまホンキで……
+msg Tifa\n「Cloud……\n\n\n Weren't you now seriously\n going to……?
 move_char right 1
 sleep 8
 jump_npc 9520 same 1
@@ -184,7 +184,7 @@ play_se puy.ogg
 sleep 32
 chg_speed 9523 fast
 step_npc 9523 4
-msg コルネオ\n「オ　オトコ！？\n　どーなってるの？
+msg Corneo\n「G-guy!?\n What's going on?
 chg_speed 9521 normal
 chg_speed 9522 slow
 move_npc 9522 up 1
@@ -203,7 +203,7 @@ fi
 if_flag 3 1
 chg_speed 9523 fast
 step_npc 9523 4
-msg コルネオ\n「なんで？\n　なんでなんで？
+msg Corneo\n「Why?\n Whywhywhy?
 jump_npc 9523 same 1
 sleep 16
 jump_npc 9523 same 1
@@ -212,12 +212,12 @@ chg_npc_dir 9520 right
 sleep 32
 chg_speed 9520 normal
 step_npc 9520 1
-msg 『だって……
+msg 『Because……
 sleep 32
 chg_npc_dir 9520 left
 sleep 16
 step_npc 9520 2
-msg 『あんたのそのくちは\n　じょうほうをもらすのに\n　つかってもらうからさ！！
+msg 『You use your mouth\n to give us some\n information we want!
 create event_generator 9512 95 8 7 17 0 0 @095/don_corneo9.txt
 chg_char_state_move
 loop_inf

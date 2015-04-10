@@ -1,6 +1,8 @@
 set_eternal_event
 wait_target_talked 95074
+set_talk_npc 95074
 open_acce_shop 5000/5003/5007
-msg ‚Ü‚½‚Ì‚²‚è‚æ‚¤@‚¨‚Ü‚¿‚µ‚Ä‚¨‚è‚Ü‚·
+msg Thank you.
+reset_talk_npc
 recover_talked_npc_dir
 reset_talked_flag 95074

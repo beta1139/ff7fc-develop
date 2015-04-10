@@ -6,7 +6,7 @@ chg_speed 2304 normal
 play_se door_open_hard.wav
 move_char up 3
 sleep 16
-create npc_event 2305 23 4 1 2 1 0 ティファ\n「みんなには　あやまって　おくね
+create npc_event 2305 23 4 1 2 1 0 Tifa\n「I'll set you right\n with others.
 chg_speed 2305 fast
 set_flag_wall 2305
 chg_type 2309 npc_event
@@ -21,7 +21,7 @@ move_npc 2305 right 1
 sleep 16
 move_npc 2305 down 2
 sleep 32
-msg ティファ\n「まって　クラウド！
+msg Tifa\n「Wait, Cloud!
 sleep 16
 chg_npc_img 2304 1
 chg_npc_dir 2304 right
@@ -29,13 +29,13 @@ chg_speed 2330 fast
 sleep 16
 step_npc 2304 2
 set_talk_npc 2304
-msg バレット\n「ティファ！\n　そんなヤツ　ほうっておけ！\n\n　どうやら　しんらに\n　みれん　タラタラ　らしいからな！
+msg Baret\n「Tifa!\n Leave him alone!\n\n He seems to regret\n quitting Shinra!
 reset_talk_npc
 chg_npc_dir 2309 left
 chg_npc_dir 2330 left
 sleep 8
 step_npc 2330 2
-msg 『だまれ！\n　おれは　しんらにも　ソルジャーにも\n　みれんは　ない！
+msg 『Shut up!\n I've nothing to do with\n Shinra or SOLDIER!
 sleep 8
 chg_speed 2330 normal
 move_npc 2330 up 1
@@ -54,7 +54,7 @@ sleep 16
 chg_npc_dir 2330 left
 chg_char_dir left
 step_npc 2330 2
-msg 『でも　かんちがい　するな！\n\n\n\n　ほしの　いのちにも\n　おまえたち　アバランチの　かつどうにも\n　きょうみは　ない！
+msg 『But don't take me wrong!\n\n\n\n I've nothing to do with\n the planet's life or\n your AVALANCHE as well!
 draw_char on
 kill 2330
 move_npc 2309 up 1
@@ -67,10 +67,10 @@ chg_speed 2309 not_move
 chg_type 2305 npc
 chg_speed 2305 not_step
 kill 2310
-create npc3 2312 23 6 5 34 0 0 ジェシー\n「ほうしゅう……\n\n\n　ああ　まいったわ\n　たしか　こうがくって　やくそくよね\n\n\n　う～ん！\n　ま　いいか　くちやくそくだし\n　さ　けいさんしなきゃ…
+create npc3 2312 23 6 5 34 0 0 Jessie\n「His pay……\n\n\n Oh, damn.\n He certainly doesn't\n come cheap.\n\n Ugh!\n Oh well, a deal's a deal.\n Let's do the figures……
 chg_speed 2312 not_step
 kill 2306
-create npc3 2317 23 6 8 96 2 0 ウェッジ\n「……クラウドさん\n\n\n　きょうみない　とかいいながら…\n　おれに　はなしかけてる\n\n\n　クラウドさん……\n　ほんとは　ともだち　ほしいんっすよね\n\n\n　ね　そうなんでしょ？\n\n\n\n#2\n　　じょうだんじゃない\n　　やっぱり　きょうみない\n\n\n[[]][[]]
+create npc3 2317 23 6 8 96 2 0 Wedge\n「……Cloud.\n\n\n You say you're not\n interested, but you\n keep talking to me.\n\n Cloud,\n Admit that you wanna\n make friends.\n\n Don't you?\n\n\n\n#2\n  Don't make me laugh.\n  Still not interested.\n\n\n[[]][[]]
 chg_speed 2317 not_step
 kill 2308
 create event_generator 2313 23 1 1 17 1 0 @023/azito6.txt
@@ -80,5 +80,5 @@ create event_generator 2231 22 7 7 17 1 0 @022/seventhheaven6_2.txt
 create event_generator 2232 22 8 7 17 1 0 @022/seventhheaven6_3.txt
 chg_type 2307 npc3
 chg_speed 2307 not_step
-chg_param 2307 　へんじがない\n　ただのしかば\n\n\n……きぜつ　しているようだ
+chg_param 2307  No reply.\n\n\n\n ……He's out cold.
 set_flag 0 4

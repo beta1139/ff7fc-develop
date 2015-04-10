@@ -5,4 +5,5 @@ ITEM
 RUN
 GRD
 CHG
+DEAD
 

@@ -5,7 +5,7 @@ chg_type 9523 npc_event
 chg_speed 9523 not_move
 chg_dir_to_char 9523
 set_talk_npc 9523
-msg コルネオ\n「ほひ～！\n　なんどみてもカワイイの～
+msg Corneo\n「Ho-ho!\n The more pretty,\n the more I look!
 reset_talk_npc
 chg_speed 9523 normal
 play_se corneo_jump.ogg
@@ -35,7 +35,7 @@ sleep 16
 chg_event_move_char_speed normal
 chg_char_dir left
 step_npc 9523 2
-msg コルネオ\n「お……おまえも　おれのことすきか？\n\n\n#2\n　　もちろんですわ\n　　え～と……\n\n\n[[]][[]]
+msg Corneo\n「D……Do you love me?\n\n\n#2\n  Of course.\n  Well……\n\n\n[[]][[]]
 if_flag 3 0
 step_char 1
 sleep 32

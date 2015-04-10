@@ -2,7 +2,7 @@ wait_target_talk 2108
 reset_talk_flag 2108
 chg_npc_dir 2106 right
 set_talk_npc 2106
-msg 「おっ！！　こりゃこりゃ！\n　こりゃ　めずらしい\n　あんた　まさか　きゃくかね？
+msg 「Oh, well, well!\n Are you, by any chance,\n a customer?
 reset_talk_npc
 jump_npc 2106 same 2
 sleep 8
@@ -13,7 +13,7 @@ sleep 8
 chg_npc_dir 2106 up
 sleep 8
 chg_npc_dir 2106 right
-msg 「はい！！　いらっしゃい！！\n　うりますよ！\n　かいますよ！\n\n#3\n　　アイテムをみたい\n　　マテリアをみたい\n　　きょうみないね\n\n[[]][[]][[……なんじゃあ\n　つまらんのぉ……]]
+msg 「Welcome, Welcome!\n We sell!\n We buy!\n\n#3\n  Show me items.\n  Show me materias.\n  Not interested.\n\n[[]][[]][[……Hmph. \n Just as I thought.]]
 if_flag 3 0
 open_item_shop 1000/1007/1008
 fi
@@ -29,7 +29,7 @@ sleep 16
 chg_npc_dir 2106 up
 sleep 32
 set_talk_npc 2106
-msg 「そうりょうも　むりょう　なのになあ……
+msg 「We offer free shipping……?
 reset_talk_npc
 fi
 kill 2107

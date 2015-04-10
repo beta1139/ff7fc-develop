@@ -2,22 +2,22 @@ set_eternal_event
 wait_target_talked 8130
 reset_talked_flag 8130
 if_flag 10 0
-chg_param 8130 「パフパフパフパフ……\n\n\n\n　（フン……！\n　じぶんのたちばが　わかってないのね\n　みじめなおとこ　もうかんぜんにむしむし）
+chg_param 8130 「……\n\n\n\n (Humph……!\n He doesn't know his\n standing. How pathetic.\n I'll ignore him.)
 set_flag 10 1
 end
 fi
 if_flag 10 1
-chg_param 8130 「ピタピタピタピタ……\n\n\n\n　（しっ　しつこいわね！\n　ハイ！　あっち　いって！\n　のらイヌおとこ……\n\n　（そうだ　なまえはポチにしましょう！）
+chg_param 8130 「……\n\n\n\n (Ugh, he's persistent!\n Shoo! Go away!\n You street dog……)\n\n (I know,\n I'll call him Fido!)
 set_flag 10 2
 end
 fi
 if_flag 10 2
-chg_param 8130 「かきかきかきかき……\n\n\n\n　（どうしましょう……\n　つきまとわれている？　わたし？\n　かえりみちに　まちぶせとかされていたら…\n\n　（やるわ…きっと　このポチお　なら…）
+chg_param 8130 「……\n\n\n\n (What should I do……\n Am I stalked? Am I?\n What if I got ambushed\n on my way home……)\n (He'd do that……\n I'm sure this Fido's not\n above that……)
 set_flag 10 3
 end
 fi
 if_flag 10 3
-chg_param 8130 「シャカシャカシャカシャカ……\n\n\n\n　（ねらわれている？　わたし？\n　このおとこ　きもちわるい……\n　めのイロとかヘンだし\n\n　（そうね　こういうおとこは　きずつけちゃダメ\n　あいさつだけでもしてあげましょ）
+chg_param 8130 「……\n\n\n\n (Is he after me? Is he?\n This guy's kinda scary……\n His eyes got odd colors.\n\n (I know, I shouldn't hurt\n feelings of such guys.\n Maybe if I greet nicely……
 set_flag 10 4
 end
 fi
@@ -31,19 +31,19 @@ sleep 16
 chg_speed 8130 normal
 step_npc 8130 2
 set_talk_npc 8130
-msg 「ポッ……\n　こ　こんちは\n\n\n　きょうは　いいおてんきね\n\n\n\n#2\n　　じこしょうかいする\n　　さよならだ\n\n\n[[]][[]]
+msg 「Ahem……\n H-hello.\n\n\n Nice weather, isn't it?\n\n\n\n#2\n  Introduce myself.\n  Say good-bye.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 step_char 1
 sleep 16
-msg 『そういえば　じこしょうかいが\n　まだだったな\n\n\n　おれは　なんでもやの　クラウドだ
+msg 『I haven't introduced\n myself yet.\n\n\n I'm Cloud, a handyman.
 sleep 16
 chg_speed 8130 normal
 step_npc 8130 2
 set_talk_npc 8130
-msg 「あら　そう……\n　クラウドさん　ごくろうさま\n\n\n　（なによっ！　すぐチョーシにのるんだから\n　あんたのなまえはポチなのよ！）
+msg 「Is that so……\n Nice to meet you, Cloud.\n\n\n (You! Know your place!\n Your name is Fido!)
 reset_talk_npc
-chg_param 8130 「ごきげんよう…クラウドさん
+chg_param 8130 「Nice to meet you……Cloud.
 set_flag 10 6
 chg_speed 8130 not_move
 chg_type 8130 npc3
@@ -52,9 +52,9 @@ if_flag 3 1
 chg_speed 8130 normal
 step_npc 8130 2
 set_talk_npc 8130
-msg 「バイバイ！！\n　（フッ～▼\n　たすかった…）
+msg 「Bye-bye!\n (Phew▼\n Thank heaven……)
 reset_talk_npc
-chg_param 8130 「ポッ……\n　こ　こんちは\n\n\n　きょうは　いいおてんきね\n\n\n\n#2\n　　じこしょうかいする\n　　さよならだ\n\n\n[[]][[]]
+chg_param 8130 「Ahem……\n H-hello.\n\n\n Nice weather, isn't it?\n\n\n\n#2\n  Introduce myself.\n  Say good-bye.\n\n\n[[]][[]]
 chg_speed 8130 not_move
 chg_type 8130 npc3
 set_flag 10 5
@@ -65,15 +65,15 @@ if_flag 10 5
 if_flag 3 0
 step_char 1
 sleep 16
-msg 『そういえば　じこしょうかいが\n　まだだったな\n\n\n　おれは　なんでもやの　クラウドだ
+msg 『I haven't introduced\n myself yet.\n\n\n I'm Cloud, a handyman.
 sleep 16
 chg_type 8130 npc_event
 chg_speed 8130 normal
 step_npc 8130 2
 set_talk_npc 8130
-msg 「あら　そう……\n　クラウドさん　ごくろうさま\n\n\n　（なによっ！　すぐチョーシにのるんだから\n　あんたのなまえはポチなのよ！）
+msg 「Is that so……\n Nice to meet you, Cloud.\n\n\n (You! Know your place!\n Your name is Fido!)
 reset_talk_npc
-chg_param 8130 「ごきげんよう…クラウドさん
+chg_param 8130 「Nice to meet you……Cloud.
 set_flag 10 6
 chg_speed 8130 not_move
 chg_type 8130 npc3
@@ -83,20 +83,20 @@ chg_type 8130 npc_event
 chg_speed 8130 normal
 step_npc 8130 2
 set_talk_npc 8130
-msg 「バイバイ！！\n　（フッ～▼\n　たすかった…）
+msg 「Bye-bye!\n (Phew▼\n Thank heaven……)
 reset_talk_npc
-chg_param 8130 「ポッ……\n　こ　こんちは\n\n\n　きょうは　いいおてんきね\n\n\n\n#2\n　　じこしょうかいする\n　　さよならだ\n\n\n[[]][[]]
+chg_param 8130 「Ahem……\n H-hello.\n\n\n Nice weather, isn't it?\n\n\n\n#2\n  Introduce myself.\n  Say good-bye.\n\n\n[[]][[]]
 chg_speed 8130 not_move
 chg_type 8130 npc3
 fi
 fi
 if_flag 10 7
 sleep 16
-msg 『じょそうするとなれば……\n　にゅうねんな　じゅんびがひつようだ\n\n\n　ここなら　おけしょうできそうだ\n\n\n\n#2\n　　けしょうしてもらおう\n　　やめておこう\n\n\n[[]][[]]
+msg 『If I'm gonna be in drag……\n I'll need some elaborate\n preparations.\n\n I think I can ask her to\n do my face here.\n\n\n#2\n  Ask her to do my face.\n  Rather not.\n\n\n[[]][[]]
 if_flag 3 0
 step_char 2
 sleep 32
-msg 『たのみがあるんだ\n　おれにも　けしょうをしてくれないか
+msg 『I wanna ask you a favor.\n Will you do my face, too?
 chg_type 8130 npc_event
 chg_speed 8130 normal
 sleep 32
@@ -108,12 +108,12 @@ chg_speed 8130 not_move
 sleep 8
 play_se_loop tsun_tsun.ogg
 set_talk_npc 8130
-msg 「ぬりぬりぬりぬり……
+msg 「Pat pat pat pat……
 reset_talk_npc
 wait_fake_countover
 stop_se
 set_talk_npc 8130
-msg 「プッ……▼
+msg 「……chuckle▼
 reset_talk_npc
 chg_npc_dir 8130 up
 chg_type 8130 npc2
@@ -122,11 +122,11 @@ end_fake_countdown
 add_flag 18 2
 sleep 32
 kill_through_range 8102 8104
-create npc 8134 81 7 6 40 0 0 「……………………プッ▼
+create npc 8134 81 7 6 40 0 0 「……chuckle▼
 kill_through_range 8131 8132
 sleep 32
-chg_param 8130 「……………………プッ▼
-chg_param 8133 「……………………プッ▼
+chg_param 8130 「……chuckle▼
+chg_param 8133 「……chuckle▼
 chg_type 8130 npc3
 chg_type 8133 npc
 set_flag 10 8

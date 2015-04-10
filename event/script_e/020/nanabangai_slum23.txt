@@ -1,2 +1,2 @@
 wait_target_talked 2009
-chg_param 2009 「そういえばよ\n　このななばんがいスラムにも\n　がいとうテレビが　あったんだけどよ\n\n　そいつをぶっこわしたのが　あのバレットさ\n\n\n\n　あんときは　たしかプレジデントしんらが\n　しゅつえんしてたな\n\n\n　きょうのニュースでも　プレジデントしんらが\n　でるだろうからよ\n\n\n　こりゃ　ティファちゃんの　おみせのテレビも\n　やばいかもな\n\n\n　ガンガンガンガンガンガン！！\n　って　れいのハンドガンで　いきなりだぜ！
+chg_param 2009 「You know,\n we had a street tv\n in this Slum 7,\n\n But Baret smashed it.\n\n\n\n That was when President\n Shinra was on the show.\n\n\n Since it's likely\n President'll be on\n today's news as well,\n\n Perhaps the tv in Tifa's\n bar'll go this time.\n\n\n Like rat-tat-tat! with\n that big gun on his arm.

@@ -2,7 +2,7 @@ wait_target_talk 2206
 chg_dir_to_char 2206
 chg_type 2206 npc_event
 chg_speed 2206 normal
-msg バレット\n「ひょうてきは　5ばんまこうろだ\n　まず　えきにいく\n\n　くわしいさくせんは　れっしゃのなかでな
+msg Baret\n「Today's target's No.5\n reactor. First we gotta\n get to the station.\n We'll discuss the details\n in the train.
 sleep 16
 chg_npc_dir 2206 right
 sleep 4
@@ -13,25 +13,25 @@ sleep 4
 chg_npc_dir 2206 up
 sleep 4
 chg_dir_to_char 2206
-msg バレット\n「おう！　クラウド！\n\n\n　さくせんのまえに　ひとつ\n　おまえさんに　ききたいことがある\n\n\n　じつはな……\n\n\n\n　おれは　マテリアのつかいかたを\n　よくしらねえ！\n\n\n　ひろったマテリアは　おまえにくれてやる\n　だからおしえろ！\n\n\n『さて……\n\n\n\n#2\n　　めんどうだが　せつめいしよう\n　　めんどくさい……\n\n\n[[　ググれカス]][[]]
+msg Baret\n「Yo, Cloud!\n\n\n I got something to ask\n you before the mission.\n\n\n It's……\n\n\n\n I don't know how to use\n materias!\n\n\n All materias we're gonna\n get are yours.\n So you gotta tell me!\n\n『Well……\n\n\n\n#2\n  I'll kindly explain.\n  Can't be bothered.\n\n\n[[『Just Google it.]][[]]
 if_flag 3 0
 step_npc 2206 3
-msg バレット\n「なんだと　このやろう！\n\n\n　まあ　いいだろう\n　あとで　ジェシーにでも　きいておくからな\n　だがな　マテリアは　おまえがかんりしろ！
+msg Baret\n「You asshole!\n\n\n Well, awright.\n I'll ask Jessie later.\n But you're in charge of\n materias!
 fi
 if_flag 3 1
 sleep 16
 step_npc 2206 3
-msg バレット\n「ソルジャーさんたちの　ひみつってわけか\n\n\n　まあ　いいだろう\n　あとで　ジェシーにでも　きいておくからな\n　だがな　マテリアはおまえがかんりしろ！
+msg Baret\n「So that's a SOLDIER's\n trade secret?\n\n Well, awright.\n I'll ask Jessie later.\n But you're in charge of\n materias!
 fi
 sleep 16
 play_se ready.wav
-msg マテリアシステム\n　[メニュー]　をひらいて　マテリアを\n　えらぶことによって マテリアのつけかえが\n　できるようになります
+msg Materia system\n Open MENU and select\n MTRIA to manage\n materias.
 sleep 16
 chg_type 2202 npc_event
 chg_speed 2202 normal
 move_npc 2202 down 1
 sleep 16
-msg ティファ\n「クラウド！\n　ぶきやにかいの　おじさんから　でんごんよ\n\n　あげたいものがあるから　おみせによって\n　……だって\n　わすれないでね！
+msg Tifa\n「Cloud!\n A word from a man at the\n weapon shop upstairs.\n Says that you have to go\n to his shop to receive\n something from him.\n Don't forget!
 if_char_dir down
 chg_char_dir up
 create npc_event 2207 22 5 9 0 0 2 none
@@ -40,9 +40,9 @@ move_npc 2202 left 2
 move_char up 2
 sleep 32
 chg_npc_dir 2202 up
-msg ティファ\n「マリン！　おみせ　たのむね！
+msg Tifa\n「Marlene! You take good\n care of the place!
 sleep 16
-msg3 -1 マリン\n「うん！！\n　おしごとがんばってね
+msg3 -1 Marlene\n「Yes!\n Have fun at work.
 move_npc 2202 down 2
 sleep 16
 move_char down 2
@@ -76,10 +76,10 @@ sleep 32
 chg_npc_dir 2206 up
 chg_npc_dir 2202 up
 set_talk_npc 2202
-msg ティファ\n「マリン！　おみせ　たのむね！
+msg Tifa\n「Marlene! You take good\n care of the place!
 reset_talk_npc
 sleep 16
-msg3 -1 マリン\n「うん！！\n　おしごとがんばってね
+msg3 -1 Marlene\n「Yes!\n Have fun at work.
 move_npc 2202 down 3
 sleep 16
 move_char down 2
@@ -111,10 +111,10 @@ move_char up 2
 sleep 32
 chg_npc_dir 2202 up
 set_talk_npc 2202
-msg ティファ\n「マリン！　おみせ　たのむね！
+msg Tifa\n「Marlene! You take good\n care of the place!
 reset_talk_npc
 sleep 16
-msg3 -1 マリン\n「うん！！\n　おしごとがんばってね
+msg3 -1 Marlene\n「Yes!\n Have fun at work.
 move_npc 2202 down 3
 sleep 16
 move_char down 2

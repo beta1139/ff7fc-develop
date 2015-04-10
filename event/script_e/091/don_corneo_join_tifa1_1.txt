@@ -2,7 +2,7 @@ wait_same_pos
 kill_through 9104
 create npc_event 9120 91 13 6 0 2 3 none
 draw_char off
-msg 「クラウド！！
+msg 「Cloud!
 chg_event_move_char_speed fast
 move_char left 8
 sleep 64
@@ -16,7 +16,7 @@ move_npc 9120 left 2
 sleep 16
 chg_char_dir left
 step_npc 9120 1
-msg 『ティファ！！\n\n\n\n#2\n　　だいじょうぶか？\n　　エアリスをたすけるぞ！！\n\n\n[[]][[]]
+msg 『Tifa!\n\n\n\n#2\n  Are you all right?\n  We gotta help Aeris!\n\n\n[[]][[]]
 set_active_msg 9121
 if_flag 3 0
 add_likability 2 300
@@ -32,12 +32,12 @@ sleep 4
 chg_npc_dir 9121 right
 sleep 16
 step_npc 9121 2
-msg ティファ\n「あったりまえ！\n　わたしをアマくみると　イタいめにあうんだから！！
+msg Tifa\n「Sure I am!\n Make little of me and you\n learn it the hard way!
 fi
 if_flag 3 1
 sub_likability 2 200
 jump_npc 9121 same 1
-msg ティファ\n「ちょっと　わたしはどうでもいいの？\n　……まあ　いいわ　いそぎましょ！
+msg Tifa\n「Hey, what about me?\n ……Oh, well. Let's go!
 fi
 chg_speed 9121 normal
 draw_char on
@@ -45,7 +45,7 @@ kill 9120
 move_npc 9121 right 1
 sleep 16
 kill 9121
-create npc3 9223 92 10 13 134 0 4 コッチ\n「いちどでいい……\n　いちどでいいから……\n\n　カワイイおんなのコと\n　スウィ～トなコイビトどうしを\n　えんじてみたかっただけなのに……
+create npc3 9223 92 10 13 134 0 4 Kotch\n「Just once……\n Just once in my life……\n\n I just wanted to play\n sweet lovers with a\n pretty girl……
 create event_generator 9214 92 0 0 17 0 0 @092/don_corneo_kotch3.txt
 chg_event_move_char_speed normal
 add_party_mem 2

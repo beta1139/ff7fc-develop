@@ -53,7 +53,7 @@ if_flag 16 6
 chg_npc_img 8710 44
 step_npc 8710 3
 sleep 48
-msg3 104 「うぉー！！！　リズムがくるったぁーっ！
+msg3 104 「Roar! Missed the rhythm!
 jump_npc 8710 same 1
 loop 8
 inc_map_draw_y_offset
@@ -97,7 +97,7 @@ chg_npc_dir 8710 down
 chg_npc_img 8710 44
 step_npc 8710 2
 sleep 32
-msg3 104 「うぉー！！！　リズムがーっ！
+msg3 104 「Roar! My rhythm!
 jump_npc 8710 same 1
 loop 8
 inc_map_draw_y_offset
@@ -137,7 +137,7 @@ chg_npc_dir 8710 down
 add_flag 17 1
 sleep 8
 if_flag 16 9
-msg3 104 「うぉー！！！　まけてたまるかぁーっ！
+msg3 104 「Roar! Never give up!
 loop 8
 inc_map_draw_y_offset
 sleep 1
@@ -200,7 +200,7 @@ jump_npc 8710 same 1
 sleep 16
 jump_npc 8710 same 1
 sleep 16
-msg3 104 「まけてたまるかぁーっ！
+msg3 104 「Never give up!
 chg_npc_dir 8710 down
 loop 8
 inc_map_draw_y_offset
@@ -353,7 +353,7 @@ if_flag_greater 16 14
 sleep 8
 chg_npc_dir 8710 up
 play_se squat.ogg
-msg3 104 「うぉー！！！　アニキっー！
+msg3 104 「Roar! Brother!
 sleep 4
 chg_npc_dir 8710 left
 loop 8
@@ -424,7 +424,7 @@ add_flag 17 1
 sleep 16
 if_flag_greater 16 16
 chg_npc_img 8710 44
-msg3 104 「うぉー！！！　うぉーーーっ！
+msg3 104 「Roar! Roaaaarrrr!
 jump_npc 8710 same 1
 loop 8
 inc_map_draw_y_offset

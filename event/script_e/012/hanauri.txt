@@ -52,6 +52,7 @@ sleep 4
 chg_npc_dir 1301 right
 sleep 4
 chg_npc_dir 1301 down
+chg_speed 1301 normal
 sleep 4
 chg_npc_dir 1322 right
 move_npc 1320 down 2
@@ -124,11 +125,11 @@ sleep 16
 move_npc 1301 right 1
 sleep 16
 create event_generator 1340 13 1 1 17 0 0 @013/cat.txt
-msg Flower girl\n「Excuse me. \n\n\n What happened?\n\n\n\n#2\n　　You'd better get out.\n　　Nothing... hey,listen...\n\n\n[[]][[]]
+msg Flower girl\n「Look, what's going on?\n\n\n#2\n  You'd better leave here.\n  Never mind. By the way……\n\n\n[[]][[]]
 if_flag 3 0
 set_active_msg 1301
 jump_npc 1301 same 1
-msg Flower girl\n「Really?\n I don't know what's going\n on, but all right.
+msg Flower girl\n「Is that so?\n Well……Okay, I'll do that.
 sub_likability 3 500
 sleep 16
 chg_speed 1301 normal
@@ -144,16 +145,16 @@ kill 1301
 end
 fi
 if_flag 3 1
-msg 『……\n\n\n\n#2\n　　Flowers?\n　　Never mind\n\n\n[[]][[]]
+msg 『……\n\n\n\n#2\n  Flowers? That's rare.\n  Sorry, nothing.\n\n\n[[]][[]]
 if_flag 3 0
 step_char 1
 sleep 16
-msg 『Don't see many flowers\n around here.
+msg 『You don't see many\n of them these days.
 sleep 16
 jump_npc 1301 same 1
 sleep 16
 step_npc 1301 2
-msg Flower girl\n「Oh, these?\n Do you like them？\n They're only one gil.\n#2\n　　Buy one\n　　Forget it\n\n\n[[]][[]]
+msg Flower girl\n「Yeah. Do you like it?\n Only 1 Gil each.\n\n#2\n  I'll have one.\n  Forget it.\n\n\n[[]][[]]
 if_flag 3 0
 chg_npc_dir 1301 up
 chg_npc_img 1301 15
@@ -162,7 +163,7 @@ sleep 24
 chg_npc_img 1301 3
 chg_npc_dir 1301 right
 step_npc 1301 2
-msg Flower girl\n「Oh, thank you！！\n\n\n Here you are！
+msg Flower girl\n「Oh, thank you!\n Here you are!
 play_se recover.wav
 set_flag 7 1
 add_likability 3 500
@@ -170,7 +171,7 @@ sub_gil 1
 fi
 if_flag 3 1
 step_npc 1301 1
-msg Flower girl\n「Ahh...not again.
+msg Flower girl\n「……I see.
 sub_likability 3 250
 fi
 sleep 32
@@ -189,7 +190,7 @@ if_flag 3 1
 jump_npc 1301 same 1
 sleep 16
 step_npc 1301 2
-msg Flower girl\n「What!\n Tell me!\n\n Un,excuse me,\n would you like to\n buy some flowers?\n They're only one gil.\n#2\n　　Buy one\n　　Forget it\n\n\n[[]][[]]
+msg Flower girl\n「Hey, don't hold back!\n\n\n Uh, hello.\n How about some flowers?\n Only 1 Gil each.\n\n#2\n  I'll have one.\n  Forget it.\n\n\n[[]][[]]
 if_flag 3 0
 chg_npc_dir 1301 up
 chg_npc_img 1301 15
@@ -198,7 +199,7 @@ sleep 24
 chg_npc_img 1301 3
 chg_npc_dir 1301 right
 step_npc 1301 2
-msg Flower girl\n「Oh, thank you！！\n\n\n Here you are！
+msg Flower girl\n「Oh, thank you!\n Here you are!
 play_se recover.wav
 set_flag 7 1
 add_likability 3 500
@@ -206,7 +207,7 @@ sub_gil 1
 fi
 if_flag 3 1
 step_npc 1301 1
-msg Flower girl\n「Ahh...not again.
+msg Flower girl\n「……I see.
 sub_likability 3 250
 fi
 sleep 32

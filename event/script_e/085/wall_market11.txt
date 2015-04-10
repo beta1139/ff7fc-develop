@@ -4,18 +4,18 @@ erase_msg3
 sleep 32
 step_char 1
 sleep 16
-msg 『かといってエアリスに\n　いかせるわけには……\n　いや　しかし……
+msg 『I couldn't let\n Aeris to go in……\n Well, but……
 sleep 16
 chg_char_dir left
 sleep 16
 step_char 1
 sleep 16
-msg 『まず　ティファのあんぜんが\n　かくにんできな……
+msg 『I need to make sure\n that Tifa's safe……
 chg_char_dir right
 sleep 16
 step_char 1
 sleep 16
-msg 『なにが　おかしいんだ？\n　エアリス？
+msg 『What's so funny?\n Aeris?
 kill 8501
 sleep 16
 chg_npc_img 8521 3
@@ -24,10 +24,10 @@ sleep 24
 jump_npc 8521 same 1
 sleep 16
 step_npc 8521 2
-msg エアリス\n「クラウド　おんなのこに\n　へんそうしなさい\n　それしかない　うん
+msg Aeris\n「Cloud.\n You dress up as a girl.\n That's the only way.
 chg_event_move_char_speed fast
 jump_char same 2
-msg3 -1 『ええっ！？
+msg3 -1 『What!?
 sleep 32
 step_char 2
 wait_key_push_edge a
@@ -41,7 +41,7 @@ move_npc 8521 up 2
 sleep 32
 chg_npc_dir 8521 left
 step_npc 8521 2
-msg エアリス\n「ちょっとまっててね\n　きれいなともだち　つれてくるから
+msg Aeris\n「You wait a while.\n I'm gonna take a pretty\n friend of mine.
 move_npc 8521 down 2
 sleep 32
 move_npc 8521 right 1
@@ -51,13 +51,13 @@ sleep 16
 chg_char_dir right
 step_char 2
 sleep 16
-msg 『エアリス！\n　いくらなんでも……
+msg 『Aeris!\n That's too……
 chg_npc_dir 8521 left
 step_npc 8521 2
-msg エアリス\n「ティファさんが　しんぱいなんでしょ？\n　さ　はやくはやく！
+msg Aeris\n「You're worried for Tifa,\n don't you? Then be quick!
 move_npc 8521 left 1
 kill 7222
-create npc 7240 72 16 43 79 3 0 「やっぱり　ふんぎりがつかねえや\n　ええい　これあげるよ\n　これがなきゃ　はいれないからな
+create npc 7240 72 16 43 79 3 0 「I still can't decide.\n Hang it! Hey, take this.\n I couldn't get in anyway\n if I didn't have it.
 kill 7601
 sleep 8
 create npc2 7513 75 6 14 17 0 0 

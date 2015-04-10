@@ -8,7 +8,7 @@ move_char up 1
 sleep 16
 step_char 1
 sleep 16
-msg 『このへやにきめたよ
+msg 『I'll take this room.
 loop 3
 jump_npc 8011 left 1
 sleep 16
@@ -19,7 +19,7 @@ sleep 16
 pool
 step_npc 8011 2
 set_talk_npc 8011
-msg 「は～い▼\n　きめたら　あとはおへやに　はいるだけよ▼\n\n\n　もう　きもちはかわらない？\n\n\n\n#2\n　　なんどもいわせないでくれ\n　　まだきめかねているんだ\n\n\n[[]][[]]
+msg 「All right▼\n Now you just go in▼\n\n\n Are you sure about that?\n\n\n\n#2\n  Don't make me repeat.\n  I can't decide yet.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 set_active_msg 8011
@@ -27,7 +27,7 @@ jump_npc 8011 same 1
 sleep 16
 jump_npc 8011 same 1
 set_talk_npc 8011
-msg 「おこっちゃや～▼\n　（いやだ……\n　きっと　らんぼうなおきゃくね）
+msg 「Honey, don't get angry▼\n (Oh, no……\n He got a temper.)
 reset_talk_npc
 sleep 16
 move_char right 1
@@ -49,7 +49,7 @@ chg_npc_dir 8011 down
 sleep 16
 step_npc 8011 2
 set_talk_npc 8011
-msg 「は～い▼　どうぞ▼
+msg 「Yes▼ Come in▼
 reset_talk_npc
 set_inactive_msg 8011
 set_npc_pos 8012 80 3 6
@@ -58,7 +58,7 @@ fi
 if_flag 3 1
 step_npc 8011 2
 set_talk_npc 8011
-msg 「いいわ～ん▼\n　ゆっくりかんがえて▼\n　（ムッツリさん！）
+msg 「As you like▼\n Take your time▼\n (Eew, shilly-shally!)
 reset_talk_npc
 loop 3
 jump_npc 8011 up 1

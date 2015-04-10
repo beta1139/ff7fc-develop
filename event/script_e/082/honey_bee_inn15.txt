@@ -1,5 +1,5 @@
 wait_same_pos
-msg 「たいへ～ん！\n　だれか～だれか　きて～▼
+msg 「Oh, my god!\n Someone! Help▼
 set_text_alpha 5 0
 set_text_alpha 6 0
 set_text_alpha 7 0
@@ -7,9 +7,9 @@ clear_text 5
 clear_text 6
 clear_text 7
 sleep 80
-set_text 5 　 　   　　『とおくから　ながめてるだけじゃ？
-set_text 6 　 　   　　　なにもかわらないって
-set_text 7 　 　   　　　きづいたんだろ？
+set_text 5 『You've realized that you can't
+set_text 6 change anything just by watching
+set_text 7     from afar, haven't you?
 sleep 8
 set_text_alpha 5 12
 set_text_alpha 6 12
@@ -46,7 +46,7 @@ clear_text 5
 clear_text 6
 clear_text 7
 sleep 16
-set_text 6 　 　   　　　　　　『なにいってる？
+set_text 6   『What are you talking about?
 sleep 8
 set_text_alpha 6 30
 sleep 8
@@ -61,7 +61,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 56
-set_text 6  　   　　　　　『うごきはじめたみたいだよ
+set_text 6     『It's beginning to move
 sleep 8
 set_text_alpha 6 12
 sleep 8
@@ -80,7 +80,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 16
-set_text 6 　 　   　　　　　　　『なにが？
+set_text 6           『What's 'it'?
 sleep 8
 set_text_alpha 6 30
 sleep 8
@@ -95,7 +95,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 56
-set_text 6  　   　　　　　　『ほら　めをさまして！
+set_text 6          『Now wake up!
 sleep 8
 set_text_alpha 6 12
 sleep 8
@@ -115,10 +115,10 @@ set_text_alpha 6 0
 clear_text 6
 wait_key_push_edge a
 play_se_loop tsun_tsun.ogg
-msg 「モミモミモミ…\n　モミモミモミモミ……
+msg 「Knead, knead, knead……\n Kneadkneadkneadknead……
 sleep 16
 create event_generator 8203 82 21 8 17 0 0 @082/honey_bee_inn16.txt
-msg3 -1 「タントントン……\n　タントントントン……
+msg3 -1 「Tap, tap, tap……\n Taptaptaptap……
 chg_char_state_move
 loop_inf
 play_se tsun_tsun.ogg

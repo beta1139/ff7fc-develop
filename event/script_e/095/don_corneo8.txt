@@ -4,10 +4,10 @@ kill_through_range 9509 9512
 sleep 8
 play_se puy.ogg
 jump_npc 9523 same 1
-msg コルネオ\n「ほひ　おれがキライなの？
+msg Corneo\n「Ho? Don't you like me?
 chg_speed 9523 fast
 step_npc 9523 3
-msg 　ま　まさか　ほ　ほかにスキなおとこでも？\n\n\n\n#2\n　　あなただけよ\n　　バレットっていうの……\n\n\n[[]][[]]
+msg  You don't have no other\n guy, do you?\n\n\n#2\n  I have no other man.\n  His name is Baret……\n\n\n[[]][[]]
 if_flag 3 0
 step_char 1
 sleep 32
@@ -35,24 +35,24 @@ play_se puy.ogg
 jump_npc 9523 same 1
 create npc_event 9520 95 8 7 13 0 1 none
 draw_char off
-msg コルネオ\n「ほひ～！　ゆるせん！
+msg Corneo\n「Ho-ho!\n I can't stand that!
 sleep 16
 chg_npc_dir 9523 down
 sleep 24
 chg_speed 9523 normal
 step_npc 9523 2
-msg コルネオ\n「ん？バレット？\n　どっかできいたような……
+msg Corneo\n「Huh? Baret?\n Don't I know that name……?
 sleep 16
 chg_npc_dir 9520 right
 sleep 32
 chg_speed 9520 normal
 step_npc 9520 1
-msg 『ホラ　あなたが\n　さぐらせていた\n　『アバランチ』の……
+msg 『You know, the leader of\n AVALANCHE, well, the one\n you were inquiring……
 sleep 16
 chg_npc_dir 9523 right
 chg_speed 9523 normal
 step_npc 9523 2
-msg コルネオ\n「ああ　そうそう\n　あの7ばんがいスラムの……
+msg Corneo\n「Oh, yeah, yeah.\n I sent my men to Slum 7……
 sleep 16
 play_se corneo_jump.ogg
 jump_npc 9523 same 2
@@ -75,7 +75,7 @@ sleep 1
 pool
 chg_speed 9523 fast
 step_npc 9523 4
-msg コルネオ\n「……って　なんでおまえが\n　それをしってるのよ！？
+msg Corneo\n「……Hey! Why on earth\n do you know about that!?
 create event_generator 9512 95 8 7 17 0 0 @095/don_corneo9.txt
 sleep 16
 fi

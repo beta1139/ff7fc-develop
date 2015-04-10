@@ -1,6 +1,6 @@
 wait_talk
 play_se button.ogg
-msg Switch ON.
+msg Switch On.
 play_se elevator_start.wav
 loop 100
 inc_map_draw_y_offset
@@ -28,13 +28,13 @@ sleep 16
 create npc_event 601 6 20 2 0 1 2 none
 draw_char off
 step_npc 602 2
-msg Barret\n「Little by little the\n reactors'll drain out all\n the life.\n Then that'll be that.
+msg Baret\n「Reactors keep sucking the\n planet's life everyday.\n Then somday……it's gone.
 chg_npc_img 601 103
 sleep 32
 chg_npc_dir 601 left
 sleep 48
 chg_npc_dir 601 down
-msg 『It's not my problem.
+msg 『That's not my problem.
 chg_npc_dir 602 down
 chg_npc_img 602 95
 step_npc 602 4
@@ -45,12 +45,12 @@ set_active_msg 602
 jump_npc 602 same 1
 sleep 16
 jump_npc 602 same 1
-msg Barret\n「The planet's dyin',\n Cloud!
+msg Baret\n「The planet's dyin',\n MISTER Cloud!
 sleep 16
 chg_npc_img 601 0
 chg_npc_dir 601 down
 sleep 16
-msg 『The only thing I care\n about is finishin' this\n job before security and\n the Roboguards come.
+msg 『My only concern is to\n finish this job before\n running into securities\n and guard robots.
 draw_char on
 kill 601
 chg_npc_dir 602 left

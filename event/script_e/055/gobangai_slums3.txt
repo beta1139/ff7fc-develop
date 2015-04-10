@@ -53,7 +53,7 @@ chg_speed 5521 normal
 move_npc 5521 left 1
 sleep 40
 step_npc 5521 2
-msg エアリス\n「フ～！　やっとおりられた！\n　さて　と……
+msg Aeris\n「Phew!\n The ground, at last!\n Now……
 sleep 16
 chg_npc_dir 5521 down
 sleep 32
@@ -67,7 +67,7 @@ sleep 48
 chg_npc_dir 5521 down
 set_active_msg 5521
 jump_npc 5521 same 1
-msg エアリス\n「こっちよ　わたしのいえは\n　あのひとたちが　こないうちに\n　いそぎましょ
+msg Aeris\n「My house is this way.\n Let's make it before\n those people catch up.
 sleep 16
 move_char down 4
 move_npc 5521 down 4
@@ -81,6 +81,6 @@ kill 5521
 set_key_valid start
 create event_generator 4900 49 5 16 17 0 0 @049/slum_church8_1.txt
 create event_generator 4901 49 6 16 17 0 0 @049/slum_church8_2.txt
-create npc_event 4922 49 5 12 65 3 0 「きれいだねえ！
-create npc_event 4923 49 7 11 67 2 0 「あとで　おみずあげますからね～
+create npc_event 4922 49 5 12 65 3 0 「How pretty!
+create npc_event 4923 49 7 11 67 2 0 「Water is coming later.
 set_flag 1 0

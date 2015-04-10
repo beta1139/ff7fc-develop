@@ -2,48 +2,48 @@ wait_target_talk 8816
 chg_type 8816 npc_event
 chg_speed 8816 normal
 chg_npc_dir 8816 right
-msg 「なんだよ………う………\n\n\n\n#2\n　　くすりをわたす\n　　くすりをわたさない\n\n\n[[]][[]]
+msg 「What do you want……Ugh……\n\n\n\n#2\n  Give him the medicine.\n  Don't.\n\n\n[[]][[]]
 if_flag 3 0
-msg 「え？\n　ほんとうにくれるのかい？\n　ありがたくもらうよ
+msg 「What?\n Are you sure?\n I accept it with thanks.
 step_char 2
 sleep 48
 if_owned_item 6016
 step_npc 8816 1
-msg 「なんだこりゃ………\n　まあいいか
+msg 「What's this……?\n Well, okay.
 sleep 16
-msg 「やくにはたたなかったけど\n きもちはうれしかったよ\n おれいに　これあげるよ
+msg 「It was useless to me\n but thanks anyway.\n Take this as my thanks.
 step_npc 8816 2
 sleep 32
 play_se pick_up.wav
 add_item 6009
 del_item 6016
 add_flag 18 1
-msg キーアイテム（コロン）をてにいれた！
+msg You got the key item\n"Cologne"!
 fi
 if_owned_item 6017
 step_npc 8816 1
-msg 「なんだこりゃ………\n　まあいいか
+msg 「What's this……?\n Well, okay.
 sleep 16
-msg 「やくにはたたなかったけど\n きもちはうれしかったよ\n おれいに　これあげるよ
+msg 「It was useless to me\n but thanks anyway.\n Take this as my thanks.
 step_npc 8816 2
 sleep 32
 play_se pick_up.wav
 add_item 6010
 del_item 6017
 add_flag 18 2
-msg キーアイテム（フラワーコロン）をてにいれた！
+msg You got the key item\n"Floral Cologne\n (F.Cologne)"!
 fi
 if_owned_item 6018
 step_npc 8816 4
 sleep 64
-msg 「ふー　すっきりしたよ\n　おれいに　これあげるよ
+msg 「Phew, I'm refreshed.\n Take this for my thanks.
 step_npc 8816 2
 sleep 32
 play_se pick_up.wav
 add_item 6011
 del_item 6018
 add_flag 18 4
-msg キーアイテム（セクシーコロン）をてにいれた！
+msg You got the key item\n"Sexy Cologne\n (S.Cologne)"!
 fi
 chg_type 8815 npc_event
 chg_speed 8815 fast

@@ -8,7 +8,7 @@ chg_npc_dir 9323 down
 play_se barrel_hitting.ogg
 jump_npc 9323 same 1
 set_talk_npc 9323
-msg コルネオ\n「このほそっこいおなごだ！
+msg Corneo\n「This slender girl!
 reset_talk_npc
 play_bgm
 chg_npc_dir 9320 left
@@ -16,13 +16,13 @@ chg_npc_dir 9322 left
 sleep 32
 chg_speed 9321 normal
 step_npc 9321 2
-msg エアリスァ\n「まぁ　コルネオさんたら\n　おめがたかいわ
+msg Aeris\n「Oh, Mr.Corneo. You are\n such a good judge.
 sleep 24
 chg_npc_dir 9323 up
 sleep 16
 step_npc 9323 2
 set_talk_npc 9323
-msg コルネオ\n「あとはオマエたちにやる！
+msg Corneo\n「The rest are yours!
 reset_talk_npc
 move_char up 3
 sleep 48
@@ -33,13 +33,13 @@ jump_npc 9325 same 1
 sleep 16
 step_npc 9324 2
 step_npc 9325 2
-msg 「ヘイ！！\n　いただきやっす！
+msg 「Yes!\n Thank you, sir!
 move_char down 3
 chg_npc_dir 9323 down
 sleep 48
 jump_npc 9323 same 1
 set_talk_npc 9323
-msg コルネオ\n「さ～て　いこうかの～！
+msg Corneo\n「Now, we shall go!
 reset_talk_npc
 chg_npc_dir 9323 up
 sleep 16

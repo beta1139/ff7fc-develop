@@ -15,12 +15,12 @@ move_char up 1
 sleep 16
 step_npc 7321 2
 set_talk_npc 7321
-msg 「いらっしゃいませ\n　いっぱく　10ギルです\n\n\n#2\n　　とまる\n　　とまらない\n\n\n[[]][[]]
+msg 「Welcome to our inn.\n 10 Gil for a night.\n\n\n#2\n  Stay the night.\n  Don't.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 if_gil_less 10
 set_talk_npc 7321
-msg 「おかねが　たりませんよ
+msg 「You don't have\n enough money.
 reset_talk_npc
 if_flag 9 2
 create event_generator 7306 73 15 9 17 0 0 @drag_cloud.txt 
@@ -81,7 +81,7 @@ fi
 if_flag 3 1
 step_npc 7321 2
 set_talk_npc 7321
-msg 「そうですか　またいらしてください
+msg 「Please come again.
 reset_talk_npc
 move_char down 1
 if_flag 9 2
@@ -105,7 +105,7 @@ sleep 32
 set_screen_effect sub 255 255 0 30
 fadein
 step_npc 7322 1
-msg 『これのことか\n\n\n\n#4\n　　かわない\n　　200ギルのもの\n　　100ギルのもの\n　　50ギルのもの\n[[]][[]][[]][[]]
+msg 『So this is what he meant.\n\n\n\n#4\n  Don't buy.\n  Buy a 200 Gil item.\n  Buy a 100 Gil item.\n  Buy a 50 Gil item.\n[[]][[]][[]][[]]
 if_flag 3 0
 sleep 16
 fadeout

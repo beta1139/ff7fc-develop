@@ -8,7 +8,7 @@ sleep 16
 move_npc 9221 up 3
 sleep 48
 step_npc 9221 1
-msg エアリス\n「ねえ　ヒミツのおはなしは？
+msg Aeris\n「Are you done with\n your tete-a-tete?
 move_char down 1
 sleep 16
 move_npc 9221 down 3

@@ -2,5 +2,6 @@ chg_char_state_move
 move_npc 401 left 12
 sleep 96
 kill 401
-create npc 400 4 1 26 36 3 0 Wedge\nÅuI'll secure the escape\n passage. Concentrate\n on the mission, Cloud.\n Geez, we're really gonna\n blow this huge furnace\n up?\n\n This'll be somethin, to\n see!
+create npc 400 4 1 26 36 3 0 Wedge\nÅuI'll secure the escape\n route. You take care of\n the reactor.\n Geez, when this huge\n bustard goes up, it'll\n be somethin' to see!
+
 

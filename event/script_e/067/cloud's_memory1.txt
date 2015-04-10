@@ -8,8 +8,8 @@ set_text_alpha 5 0
 set_text_alpha 6 0
 sleep 48
 del_party_mem 3
-set_text 5 　 　   　　　　『……かなり　アレだな
-set_text 6 　 　   　　　　　つかれてるみたいだぞ
+set_text 5           『……You know,
+set_text 6      You look rather tired
 sleep 8
 set_text_alpha 5 25
 set_text_alpha 6 25
@@ -25,7 +25,7 @@ set_text_alpha 6 0
 clear_text 5
 clear_text 6
 sleep 48
-set_text 6 　 　   　　　　　　　『…………！？
+set_text 6               『……!?
 sleep 8
 set_text_alpha 6 30
 sleep 8
@@ -40,8 +40,8 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 48
-set_text 5 　 　   　　　　『こんなキチンとしたベッド
-set_text 6 　 　   　　　　　　……ひさしぶりだ
+set_text 5  『Do you emember the last time
+set_text 6  you've slept in a proper bed?
 sleep 8
 set_text_alpha 5 25
 set_text_alpha 6 25
@@ -57,7 +57,7 @@ set_text_alpha 6 0
 clear_text 5
 clear_text 6
 sleep 48
-set_text 6 　 　   　　　　　『……ああ　そうだな
+set_text 6          『……Yeah, I do.
 sleep 8
 set_text_alpha 6 30
 sleep 8
@@ -72,7 +72,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 48
-set_text 6 　 　   　　　　　『あれいらい　かな
+set_text 6            『That was……
 sleep 8
 set_text_alpha 6 25
 sleep 8
@@ -96,7 +96,7 @@ sleep 64
 chg_speed 30121 normal
 step_npc 30121 2
 set_talk_npc 30121
-msg 「ほんとうにりっぱになってぇ
+msg 「Look how handsome\n my son has become!
 reset_talk_npc
 chg_speed 30121 slow
 move_npc 30121 down 1
@@ -106,11 +106,11 @@ sleep 32
 chg_npc_dir 30121 down
 chg_speed 30121 normal
 step_npc 30121 2
-msg 「そんなんじゃ　あれだね\n　おんなのこも　ほっとかないだろ？
+msg 「Such a nice boy.\n Girls don't leave you\n alone, do they?
 sleep 32
 chg_npc_dir 30120 down
 sleep 32
-msg 『……べつに
+msg 『……Not really.
 sleep 32
 chg_speed 30121 slow
 move_npc 30121 left 1
@@ -121,16 +121,16 @@ chg_npc_dir 30121 right
 sleep 16
 chg_speed 30121 normal
 step_npc 30121 2
-msg 「……しんぱいなんだよ\n　とかいには　いろいろゆうわくが\n　おおいんだろ？\n\n　ちゃんとした　かのじょがいれば\n　かあさん　すこしは\n　あんしんできるってもんだ
+msg 「……I'm worried for you.\n You have many temptations\n in the city, don't you?\n\n I wouldn't worry so\n if only you had a\n steady girlfrend.
 sleep 32
 chg_npc_dir 30120 right
 sleep 32
-msg 『……おれはだいじょうぶだよ
+msg 『……I'm all right.
 sleep 32
 step_npc 30121 2
-msg 「あんたにはねぇ……\n\n\n\n　ちょっとしたおねえさんで\n　あんたをグイグイひっぱっていく\n\n\n　そんなおんなのこが\n　ピッタリだとおもうんだけどね
+msg 「For a boy like you……\n\n\n\n A little older than you\n and whom you can put\n good trust in.\n\n I believe such a girl\n would be perfect for you.
 sleep 32
-msg 『……きょうみないな
+msg 『……Not interested.
 sleep 48
 fadeout
 sleep 32
@@ -144,7 +144,7 @@ fadein
 sleep 32
 chg_npc_img 6730 0
 chg_npc_dir 6730 down
-msg 『……いつのまにか\n　ねむってしまったのか
+msg 『……I didn't know\n that I fell asleep.
 chg_npc_y_offset 6730 4
 jump_npc_target_pos 6730 4 13
 jump_char_target_pos 4 13
@@ -173,11 +173,11 @@ move_char right 1
 sleep 16
 move_char up 3
 sleep 48
-msg 『6ばんがいをこえて7ばんがいへ　か\n　ひとりでなんとかなりそうだな
+msg 『To Slum 7 through Slum 6.\n I Guess I can handle that\n by myself.
 create event_generator 6702 67 5 8 17 0 0 @067/don't_run1_a.txt
 create event_generator 6720 67 11 12 17 0 0 @067/don't_run4.txt
 create event_generator 6603 66 10 5 17 0 0 @066/don't_run_kill.txt
 kill_through_range 6623 6624
-create npc 6625 66 10 5 17 0 0 『ひとりでなんとかなるだろう
+create npc 6625 66 10 5 17 0 0 『I Guess I can handle that\n by myself.
 kill_through_range 6600 6602
 kill 6621

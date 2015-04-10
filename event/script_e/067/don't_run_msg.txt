@@ -1,6 +1,6 @@
 set_active_msg 6731
 jump_npc 6731 same 1
-msg エアリス\n「もう！　またタークス　きたのかと\n　おもったじゃない！\n　おとなしくやすんで！
+msg Aeris\n「Gosh! I thought it's\n that awful TURKS again!\n Be quiet and go sleep!
 sleep 16
 fadeout
 sleep 32

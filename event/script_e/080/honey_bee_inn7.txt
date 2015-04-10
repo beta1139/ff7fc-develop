@@ -8,8 +8,8 @@ move_char up 1
 sleep 16
 step_char 1
 sleep 16
-msg 『きがかわったんだが…\n　……チェンジだ
-msg 「はぁ▼　はいはい▼\n　（ゆうじゅうふだん…）
+msg 『I've changed my mind……\n ……Let me change the room.
+msg 「Yes▼ As you wish▼\n (Shilly-shally……)
 move_npc 8011 left 1
 sleep 16
 chg_npc_dir 8011 up
@@ -43,7 +43,7 @@ chg_npc_dir 8011 down
 sleep 16
 step_npc 8011 2
 set_talk_npc 8011
-msg 「は～い▼　どうぞ▼
+msg 「Yes▼ Come in▼
 reset_talk_npc
 set_npc_pos 8016 80 5 6
 chg_speed 8011 not_move

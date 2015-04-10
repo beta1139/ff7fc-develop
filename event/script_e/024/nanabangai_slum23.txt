@@ -1,2 +1,2 @@
 wait_target_talked 2401
-chg_param 2401 「ハッハッ……\n　そろそろ　ふたりきりに　してくれませんか\n\n\n　かないと　ふたりきりの　じかん\n　というものをね　しみじみ　すごしたいのですよ
+chg_param 2401 「Ha-ha……\n Isn't it about time\n you leave us alone?\n\n I'd like to spend some\n quiet hours with my wife\n alone.

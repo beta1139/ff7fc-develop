@@ -10,7 +10,7 @@ move_npc 6622 up 3
 move_char up 3
 sleep 48
 step_npc 6622 2
-msg3 -1 エアリス\n「ただいま　おかあさん
+msg3 -1 Aeris\n「Hello, Mother.
 wait_key_push_edge a
 erase_msg3
 chg_npc_dir 6621 left
@@ -42,22 +42,22 @@ warp 66 9 10 down
 sleep 40
 fadein
 step_npc 6622 2
-msg エアリス\n「このひと　クラウド\n　わたしのボディガードよ
+msg Aeris\n「This is Cloud,\n He's my bodyguard.
 jump_npc 6621 same 1
 sleep 16
 step_npc 6621 2
 set_talk_npc 6621
-msg エルミナ\n「ボディガードって……\n　おまえ　またねらわれたのかい！？
+msg Elmyra\n「Bodyguard……\n Were you chased again!?
 reset_talk_npc
 sleep 16
 chg_speed 6621 fast
 step_npc 6621 3
 set_talk_npc 6621
-msg エルミナ\n「からだは！？　ケガはないのかい！？
+msg Elmyra\n「Are you all right!?\n No injuries!?
 reset_talk_npc
 sleep 16
 step_npc 6622 2
-msg エアリス\n「だいじょうぶ\n　きょうはクラウドもいてくれたし
+msg Aeris\n「I'm okay.\n I had Cloud with me.
 step_npc 6621 2
 sleep 56
 chg_npc_dir 6621 up
@@ -72,7 +72,7 @@ sleep 16
 chg_speed 6621 normal
 step_npc 6621 2
 set_talk_npc 6621
-msg エルミナ\n「ありがとうね　クラウドさん
+msg Elmyra\n「Thank you, Cloud.
 reset_talk_npc
 sleep 32
 create event_generator 6601 66 9 10 17 0 0 @066/aeris's_house2.txt

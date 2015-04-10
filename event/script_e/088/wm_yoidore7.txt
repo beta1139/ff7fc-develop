@@ -9,7 +9,7 @@ chg_speed 8815 fast
 set_active_msg 8815
 jump_npc 8815 same 1
 set_talk_npc 8815
-msg 「うわ！　ととと
+msg 「Hey! Oops.
 reset_talk_npc
 step_npc 8815 2
 move_char down 1

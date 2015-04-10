@@ -5,25 +5,25 @@ chg_type 1907 npc_event
 chg_speed 1907 normal
 chg_npc_dir 1907 right
 step_npc 1907 1
-msg 「せんぱい！！\n　LOVELESSのチケット　とれたんですけど\n　いっしょに　いきません？
+msg 「Boss!\n I've come by a couple\n of LOVELESS tickets.\n Would you come along?
 chg_npc_dir 1906 left
 step_npc 1906 1
 sleep 16
-msg 「やめとけ！\n　ミッドガルは　ひじょう　けいかい　たいせいに\n　はいってる
+msg 「Forget it!\n Midgar is now on\n red alert.
 chg_npc_dir 1906 up
 step_npc 1907 1
 sleep 16
-msg 「あっ　せんぱい！\n　ぼくのこと　しんぱい　してくれてるんですか！
+msg 「Gee, Boss!\n Do you worry for me?
 chg_npc_dir 1906 left
 jump_npc 1906 same 2
 sleep 32
 step_npc 1906 1
 sleep 16
-msg 「そんなんじゃねえ！！\n　テロリストは　スラムに　ひそんでる\n　おれたちだって　きを　ぬけねぇ
+msg 「No way!\n The terrorists are holed\n up in the slums.\n We can't get careless.
 chg_npc_dir 1906 up
 sleep 16
 step_npc 1907 1
-msg 「ああ　アバランチですか？\n\n\n\n　だいじょうぶですよ\n　なんてったって　ソルジャーが\n　けいびに　どうにゅう　されたんですから
+msg 「You mean AVALANCE?\n\n\n\n It's all right.\n After all, SOLDIERS\n are brought into the\n guard operations.
 sleep 16
 chg_npc_dir 1907 up
 chg_type 1906 npc

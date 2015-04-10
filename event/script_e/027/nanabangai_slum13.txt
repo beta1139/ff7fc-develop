@@ -3,7 +3,7 @@ backup_char_img
 chg_char_img 0
 chg_char_dir down
 sleep 32
-msg 『フゥッ……
+msg 『Yawn……
 sleep 32
 move_char left 2
 sleep 32
@@ -42,7 +42,7 @@ jump_char down 2
 sleep 48
 chg_char_dir right
 restore_char_img
-create npc 2508 25 7 8 89 2 0 「いいゆめみたかい\n\n\n\n　やすめるときは　やすむ\n　セーブできるときに　セーブする\n\n\n　これがタフにいきていく　きほんだぜ！\n　おっさん　おぼえときな
+create npc 2508 25 7 8 89 2 0 「Did you sleep well?\n\n\n\n Rest while you can rest.\n Save while you can save.\n\n\n It's the basic fact of\n survival!\n Remember it, man.
 sleep 16
 kill_through 2504
 kill_through 2507

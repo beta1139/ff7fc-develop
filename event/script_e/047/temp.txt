@@ -19,12 +19,12 @@ kill_through 4781
 sleep 16
 create event_generator 4781 47 15 14 17 0 0 @047/makouro_gimmick_b01.txt
 set_talk_npc 4798
-msg i7\n「ボタンギミックイベントを　せいせいしました\n　わたしは　じっさいは　そんざいしないnpcですので\n　ころあいをみて　だれか　けしといてください
+msg i7\n「An extra button\n event was created.\n \n I shouldn't actually be\n here so someone please\n erase me in a good time.
 reset_talk_npc
 fi
 if_flag 3 1
 set_talk_npc 4798
-msg i7\n「なにもしませんでした\　わたしは　じっさいは　そんざいしないnpcですので\n　ころあいをみて　だれか　けしといてください
+msg i7\n「I didn't do anything.\n\n\n I shouldn't actually be\n here so someone please\n erase me in a good time.
 reset_talk_npc
 fi
 kill 4798

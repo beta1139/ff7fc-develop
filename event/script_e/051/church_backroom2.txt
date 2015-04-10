@@ -12,17 +12,17 @@ sleep 80
 set_active_msg 5131
 jump_npc 5131 same 2
 sleep 16
-msg エアリス\n「きゃあっ！
+msg Aeris\n「Eek!
 chg_speed 5102 slow
 set_active_msg 5102
 move_npc 5102 down 1
 sleep 16
 chg_speed 5131 fast
 step_npc 5131 4
-msg エアリス\n「クラウド　たすけて！
+msg Aeris\n「Cloud, Help!
 move_char up 2
 sleep 16
-msg 『エアリス！\n\n\n\n#3\n　　しばらくまっていろ！\n　　たたかえ！\n　　にげるんだ！\n\n[[]][[]][[]]
+msg 『Aeris!\n\n\n\n#3\n  Hold it!\n  Beat him!\n  Run for it!\n\n[[]][[]][[]]
 if_flag 3 0
 chg_event_move_char_speed fast
 set_flag 12 1
@@ -92,7 +92,7 @@ chg_speed 5131 fast
 step_npc 5131 1
 sleep 32
 step_npc 5131 2
-msg エアリス\n「わ　わかったわ
+msg Aeris\n「I, I try.
 jump_char same 1
 jump_npc 5131 same 1
 chg_speed 5102 fast
@@ -117,7 +117,7 @@ chg_speed 5131 fast
 step_npc 5131 1
 sleep 32
 step_npc 5131 2
-msg エアリス\n「わ　わかったわ
+msg Aeris\n「I, I try.
 chg_npc_dir 5131 down
 if_flag 14 0
 sleep 8

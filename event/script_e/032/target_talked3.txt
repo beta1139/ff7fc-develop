@@ -1,2 +1,2 @@
 wait_target_talked 3205
-chg_param 3205 ウェッジ\n「かんけいないけど\n　このかっこう……\n\n　かんけいないけど\n　このかっこう……\n　おれの　おとうとに　そっくりなんすよ\n\n　いまごろ　どうしてるかなあ
+chg_param 3205 Wedge\n「Incidentally,\n with this cloth……\n\n With this cloth,\n I look exactly like\n my brother.\n\n Wonder how he's doing?

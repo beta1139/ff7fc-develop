@@ -14,4 +14,4 @@ sleep 56
 chg_npc_dir 2008 up
 chg_speed 2008 not_move
 chg_type 2008 npc3
-chg_param 2008 「ああ～　いざとなると　ゆうきが　でない\n　だめだな　ボクって\n　まだ　こどもだな～
+chg_param 2008 「Ahh, I don't have the\n guts at this last moment.\n I guess I'm still a baby.

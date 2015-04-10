@@ -3,7 +3,7 @@ reset_talked_flag 6322
 sleep 24
 chg_char_dir right
 sleep 48
-msg 「…………\n\n\n\n#2\n　　……かえそうか……\n　　……これがスラムのきびしさだ\n\n\n[[]][[]]
+msg 「……\n\n\n\n#2\n  ……I think I return it.\n  ……It's the life.\n\n\n[[]][[]]
 if_flag 3 0
 if_gil_less 5
 sleep 16
@@ -11,7 +11,7 @@ chg_char_dir right
 chg_char_img_tmp 97
 step_char 3
 sleep 80
-msg 「…………もうつかってしまった
+msg 「……already spent it.
 reset_char_img_tmp
 chg_char_dir down
 end
@@ -22,7 +22,7 @@ step_char 1
 sleep 16
 sub_gil 5
 play_se coin.ogg
-msg 「5ギルをかえした！
+msg 「You returned 5 Gil!
 set_flag 12 2
 fi
 if_flag 3 1

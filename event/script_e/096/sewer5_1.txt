@@ -1,7 +1,7 @@
 set_eternal_event
 wait_same_pos
 chg_char_dir right
-msg #2\n　　とびおりてみよう\n　　やめるか……\n\n\n[[]][[]]
+msg #2\n  Let's jump down.\n  Better not……\n\n\n[[]][[]]
 if_flag 3 0
 jump_char right 1
 play_se jump.wav

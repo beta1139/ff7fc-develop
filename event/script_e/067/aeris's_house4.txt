@@ -5,7 +5,7 @@ sleep 16
 chg_char_dir down
 sleep 16
 step_npc 6731 2
-msg エアリス\n「7ばんがいは　6ばんがいをぬけていくの\n　6ばんがい　ちょっときけんなところだから\n　こんやはゆっくりやすんでね
+msg Aeris\n「Slum 7 is beyond Slum 6.\n It's a bit dangerous so\n take a good rest tonight.
 move_char down 2
 sleep 32
 move_char left 2
@@ -15,12 +15,12 @@ sleep 16
 chg_npc_dir 6731 left
 set_active_msg 6731
 jump_npc 6731 same 1
-msg エアリス\n「クラウド
+msg Aeris\n「Cloud.
 sleep 16
 chg_char_dir right
 sleep 16
 step_npc 6731 1
-msg エアリス\n「おやすみ
+msg Aeris\n「Good night.
 sleep 24
 chg_speed 6731 slow
 move_npc 6731 up 2
@@ -33,7 +33,7 @@ chg_char_dir right
 chg_char_img_tmp 97
 step_char 3
 sleep 80
-msg 『まいったな……
+msg 『What a mess……
 sleep 16
 fadeout
 sleep 16

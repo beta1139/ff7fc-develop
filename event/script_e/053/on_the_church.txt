@@ -3,54 +3,54 @@ kill_through_range 4900 4949
 kill_through_range 4951 4999
 sleep 16
 step_npc 5321 2
-msg エアリス\n「フフフ……\n　まださがしてるね
+msg Aeris\n「Tee-hee……\n Still looking for us.
 sleep 16
 chg_npc_dir 5320 right
 step_npc 5320 1
-msg 『はじめてじゃないな？\n　やつらがおそってきたのは？
+msg 『This isn't the first\n time you got chased by\n them, is it?
 sleep 24
 step_npc 5321 1
-msg エアリス\n「……まあ　ね
+msg Aeris\n「……You're right.
 step_npc 5320 1
-msg 『タークスだよ　あいつらは
+msg 『They're TURKS.
 sleep 16
 step_npc 5321 1
-msg エアリス\n「ふ～ん……
+msg Aeris\n「Uh-huh……
 chg_npc_dir 5320 down
 sleep 16
 step_npc 5320 1
-msg 『タークスは　しんらのそしき\n　ソルジャーの　じんざいをみつけだし\n　スカウトするのがやくめだ
+msg 『TURKS is a Shinra\n division responsible for\n recruiting prospective\n SOLDIERS.
 sleep 16
 set_active_msg 5321
 jump_npc 5321 same 1
-msg エアリス\n「こんなに　らんぼうなやりかたで？\n　まるで　ひとさらいみたい
+msg Aeris\n「In such a rough way?\n It's almost kidnapping.
 step_npc 5320 1
-msg 『それにウラじゃ\n　きたないことをやっている\n\n\n　スパイ　ころしや……\n　いろいろだ
+msg 『Also a lot of dirty jobs\n behind the scene.\n\n\n Espionage, assasination……\n the like.
 sleep 16
 step_npc 5321 1
-msg エアリス\n「そんなかおしてるね
+msg Aeris\n「They look like it.
 sleep 24
 chg_npc_dir 5320 right
 sleep 16
 step_npc 5320 1
-msg 『でも　どうして\n　あんたがねらわれる？\n　なにかわけがあるんだろ？
+msg 『But why are they\n after you?\n There must be a reason?
 sleep 16
 chg_npc_dir 5321 down
 sleep 32
 step_npc 5321 1
-msg エアリス\n「う～ん……べつに
+msg Aeris\n「Hmm……Not really.
 sleep 16
 chg_npc_dir 5321 up
 jump_npc 5321 same 1
-msg エアリス\n「あ　わたしソルジャーのそしつが\n　あるのかも！
+msg Aeris\n「Aha, maybe I have it\n in me to be a SOLDIER!
 sleep 24
 chg_npc_dir 5320 down
 sleep 16
 step_npc 5320 1
-msg 『そうかもな\n　なりたいのか？
+msg 『It's a possibility.\n Do you want to?
 sleep 16
 step_npc 5321 2
-msg エアリス\n「どうかな～\n　でも　あんなヤツらに\n　つかまるのはイヤ！
+msg Aeris\n「I don't know.\n But I know I don't want\n to be caught by them!
 chg_npc_dir 5321 left
 sleep 16
 chg_npc_img 5321 15
@@ -61,7 +61,7 @@ chg_npc_dir 5321 up
 jump_npc 5320 same 1
 sleep 16
 step_npc 5320 1
-msg 『それじゃあ　いくぞ！
+msg 『Then let's go!
 jump_npc 5320 up 1
 play_se jump.wav
 sleep 16

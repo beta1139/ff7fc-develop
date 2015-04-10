@@ -8,7 +8,7 @@ sleep 32
 chg_speed 7610 normal
 step_npc 7610 2
 set_talk_npc 7610
-msg 「………いまは　やすみだよ
+msg 「……We're closed.
 reset_talk_npc
 chg_speed 7610 not_step
 move_char down 1

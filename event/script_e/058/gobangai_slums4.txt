@@ -10,7 +10,7 @@ chg_char_dir right
 chg_npc_dir 5806 left
 step_npc 5806 2
 sleep 32
-msg エアリス\n「ここのひと　びょうきみたいなの\n\n\n　ちかくでたおれていたのを\n　だれかがたすけたんだって
+msg Aeris\n「The man inside is sick.\n\n\n Someone has helped him\n lying sick on the street.
 sleep 16
 move_npc 5806 left 1
 sleep 32

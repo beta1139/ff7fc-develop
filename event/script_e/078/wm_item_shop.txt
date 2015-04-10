@@ -15,7 +15,7 @@ move_char up 1
 sleep 48
 chg_npc_dir 7810 down
 sleep 8
-msg3 -1 「うわっ！
+msg3 -1 「Yikes!
 chg_speed 7810 fast
 jump_npc 7810 same 1
 loop 8
@@ -40,42 +40,42 @@ jump_npc 7810 same 1
 sleep 16
 step_npc 7810 2
 set_talk_npc 7810
-msg 「いるならいるって\n　いってくださいよ
+msg 「Stop creeping up\n on me from behind!
 reset_talk_npc
 chg_speed 7810 normal
 if_flag 13 1
 sleep 16
 step_npc 7810 2
 set_talk_npc 7810
-msg 「おや　クーポンをおもちのようですね\n　それでは　しょうひんを　ひとつだけえらんでくだい\n\n\n#3\n　　しょうどくやく\n　　しょうしゅうやく\n　　しょうかやく\n\n[[]][[]][[]]
+msg 「Oh, I see you have\n our coupon.\n Please choose one of\n our goods.\n#3\n  Germicide.\n  Deodorant.\n  Digestive.\n\n[[]][[]][[]]
 reset_talk_npc
 del_item 6015
 if_flag 3 0
 step_npc 7810 2
 set_talk_npc 7810
-msg 「はいどうぞ
+msg 「There you go.
 reset_talk_npc
 play_se pick_up.wav
 add_item 6016
-msg キーアイテム『しょうどくやく』をてにいれた！
+msg You got the key item\n"Germicide"!
 fi
 if_flag 3 1
 step_npc 7810 2
 set_talk_npc 7810
-msg 「はいどうぞ
+msg 「There you go.
 reset_talk_npc
 play_se pick_up.wav
 add_item 6017
-msg キーアイテム『しょうしゅうやく』をてにいれた！
+msg You got the key item\n"Deodorant"!
 fi
 if_flag 3 2
 step_npc 7810 2
 set_talk_npc 7810
-msg 「はいどうぞ
+msg 「There you go.
 reset_talk_npc
 play_se pick_up.wav
 add_item 6018
-msg キーアイテム『しょうかやく』をてにいれた！
+msg You got the key item\n"Digestive"!
 fi
 kill_through 8816
 move_char down 1

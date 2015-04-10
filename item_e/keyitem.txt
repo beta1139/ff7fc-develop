@@ -1,45 +1,45 @@
 id,name,text
-6000,コットンのドレス,コットンでおられたドレス
-6001,サテンのドレス,サテンでおられたドレス
-6002,シルクのドレス,シルクでおられたドレス
-6003,クセゲのかつら,クセゲになっているかつら
-6004,チャパツのかつら,ちゃいろいかみのかつら
-6005,ブロンドのかつら,キンパツのかつら
-6006,ガラスのティアラ,ガラスのティアラ
-6007,ルビーのティアラ,ルビーのティアラ
-6008,ダイヤのティアラ,ダイヤのティアラ
-6009,コロン,やすモノのこうすい
-6010,フラワーコロン,ハナのかおりがするこうすい
-6011,セクシーコロン,セクシーなかおりがするこうすい
-6012,かいいんカード,ハチミツのやかたのかいいんカード
-6013,ランジェリー,ステキなかおりのしたぎ
-6014,ビキニパンツ,するどいくいこみのパンツ
-6015,くすりやクーポン,くすりやで　けいひんとこうかんできる
-6016,しょうどくやく,しょうどくやく
-6017,しょうしゅうやく,しょうしゅうやく
-6018,しょうかやく,しょうかやく
-6019,カードキー６０,test
-6020,カードキー６２,test
-6021,カードキー６５,test
-6022,カードキー６６,test
-6023,カードキー６８,test
-6024,ミッドガルパーツ,test
+6000,Cot.Dress,A dress made of cotton
+6001,Sat.Dress,A dress made of satin
+6002,SilkDress,A dress made of silk
+6003,Curly Wig,A wig with curly hair
+6004,Brown Wig,A wig with brown hair
+6005,BlondeWig,A wig with blonde hair
+6006,Gls.Tiara,A glass tiara
+6007,RubyTiara,A ruby tiara
+6008,Dmd.Tiara,A diamond tiara
+6009,Cologne,Cheap perfume
+6010,F.Cologne,Floral perfume
+6011,S.Cologne,Sexy perfume
+6012,Mem.Card,Honeybee Inn Member's card
+6013,Lingerie,Scented underware
+6014,Bikini,Tight-fitting briefs
+6015,Coupon,Redeemable at the pharmacy
+6016,Germicide,A tube of germicide
+6017,Deodorant,A spray of deodorant
+6018,Digestive,A bottle of digestive
+6019,Keycard60,test
+6020,Keycard62,test
+6021,Keycard65,test
+6022,Keycard66,test
+6023,Keycard68,test
+6024,MgarParts,test
 6025,PHS,test
-6026,ゴールドチケット,test
-6027,キーストーン,test
-6028,みずがみさまのうろこ,test
-6029,だいひょうがのちず,test
-6030,Aクーポン,test
-6031,Bクーポン,test
-6032,Cクーポン,test
-6033,くろマテリア,test
-6034,ミスリル,test
-6035,スノーボード,test
-6036,ヒュージマテリア１,test
-6037,ヒュージマテリア２,test
-6038,ヒュージマテリア３,test
-6039,ヒュージマテリア４,test
-6040,こだいしゅのかぎ,test
-6041,ルナハープ,test
-6042,ちかしつのかぎ,test
-6043,ごばんがいゲートのかぎ,test
+6026,Gold Pass,test
+6027,Keystone,test
+6028,Lev.Scale,test
+6029,Glac.Map,test
+6030,A Coupon,test
+6031,B Coupon,test
+6032,C Coupon,test
+6033,Black Mtr,test
+6034,Mythril,test
+6035,Snowboard,test
+6036,HugeMtr1,test
+6037,HugeMtr2,test
+6038,HugeMtr3,test
+6039,HugeMtr4,test
+6040,Cetra Key,test
+6041,LunarHarp,test
+6042,CellarKey,test
+6043,Sect5 Key,test

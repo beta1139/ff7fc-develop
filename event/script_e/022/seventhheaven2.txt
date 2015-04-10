@@ -37,13 +37,13 @@ set_active_msg 2202
 jump_npc 2201 same 2
 play_se puy.ogg
 set_talk_npc 2201
-msg マリン\n「とうちゃん　おかえり！
+msg Marlene\n「Hi, Daddee!
 reset_talk_npc
 chg_npc_dir 2206 up
 jump_npc 2206 same 1
 sleep 16
 jump_npc 2206 same 1
-msg バレット\n「マリン！　げんきに　してたか
+msg Baret\n「Marlene! How are you?
 jump_npc 2201 same 1
 sleep 16
 jump_npc 2201 same 1
@@ -54,28 +54,28 @@ sleep 16
 chg_npc_dir 2202 down
 sleep 16
 set_talk_npc 2202
-msg ティファ\n「バレット　おつかれさま
+msg Tifa\n「Hi, Baret.
 reset_talk_npc
 sleep 16
 step_npc 2206 1
-msg バレット\n「おう！！
+msg Baret\n「Yo!
 set_inactive_msg 2201
 if_flag 8 2
 jump_npc 2206 same 1
-msg バレット\n「その　はなは　どうしたんだ？
+msg Baret\n「What's with that flower?
 step_npc 2201 2
 set_talk_npc 2201
-msg マリン\n「クラウドに　もらったの
+msg Marlene\n「Cloud gave it to me.
 reset_talk_npc
 add_likability 1 500
-msg バレット\n「そうか\n　ちゃんと　おれいは　いったのか
+msg Baret\n「Is that so?\n Did you say thank you?
 sleep 16
 chg_npc_dir 2201 right
 sleep 16
 chg_npc_dir 2206 right
 step_npc 2201 2
 set_talk_npc 2201
-msg マリン\n「クラウド　おはな　ありがとう
+msg Marlene\n「Cloud, thank you\n for the  flower.
 reset_talk_npc
 fi
 set_inactive_msg 2206
@@ -83,7 +83,7 @@ sleep 16
 chg_npc_dir 2206 left
 sleep 16
 jump_npc 2206 same 1
-msg バレット\n「おめえら！！\n\n\n　かいぎを　はじめっぞ！！
+msg Baret\n「Guys!\n\n\n Meeting time!
 sleep 16
 move_npc 2201 up 1
 move_npc 2206 up 2
@@ -155,7 +155,7 @@ chg_type 2202 npc
 chg_speed 2202 not_move
 set_flag_wall 2202
 sleep 8
-msg ティファ\n「どうぞ　すわって
+msg Tifa\n「Here, why don't\n you take a perch?
 move_char down 1
 create npc2 2211 22 8 4 17 0 0 
 create event_generator 2212 22 8 5 17 0 0 @022/seventhheaven3.txt
@@ -178,10 +178,10 @@ kill 2207
 chg_npc_dir 2006 up
 set_npc_pos 2006 20 26 22
 chg_type 2006 npc3
-chg_param 2006 「ヘイ！！　あけてくれってんだよ！\n　ベイビー！！\n\n\n　おれだよ！　ジョニーだよ！\n　かあちゃ～ん！！
-create npc 2007 20 28 22 88 1 0 「あなた　しってる？\n\n\n\n#2\n　　なにを……\n　　きょうみない\n\n\n[[　あのティファちゃんの　おみせのことよ\n　（セブンスヘブン）ってさかば\n\n\n　わたしは　じじょうつうのうえに　おせっかいだから\n　いろいろしってるのよね\n　ききたいでしょう？\n\n#2\n　　すごくききたい\n　　きょうみない\n\n\n[[　あのさかばの　めいぶつ\n　バレットと　てしたの3にん\n　ときどき　こうなのよ\n\n　とつぜん　おきゃくをおいだして\n　ゴチャゴチャやってるの\n　なんか　あやしいのよ\n　かやくのにおいとか　するのよね\n　あぶないわ\n　きっと　いけないことを　しているに\n　ちがいないわ]][[]]]][[]]
-chg_param 2008 「いじょうなし！\n　ただいま　スパイちゅう！\n\n\n　ああ！！\n　なんかでてました！！\n　ほうこく～！！　ほうこく～！！
-create npc 2009 20 26 23 70 1 0 「このいえには　テレビがあんだけどよ\n　ケチなおばさんが　いれてくんねぇのさ\n　まあ　みてろって
+chg_param 2006 「Hey! I say open the door!\n Please!\n\n\n It's me! Johnny!\n Mom-mee!
+create npc 2007 20 28 22 88 1 0 「Do you know?\n\n\n\n#2\n  What?\n  Not interested.\n\n\n[[「It's about Tifa's bar,\n The Seventh Heaven.\n\n\n I'm well informed because\n I'm really nosy.\n You wanna listen?\n\n#2\n  I'm all ears.\n  Not interested.\n\n\n[[「That bar's regulars,\n Baret and his sidekicks,\n They're up to something.\n\n Kicking other customers\n out to do something in\n secret. It sometimes\n smells like gunpoweder.\n It's dangerous.\n They must be doing\n something illegal.]][[]]]][[]]
+chg_param 2008 「Everything normal!\n I'm on a scout mission!\n\n\n Oh!\n I've got something!\n Report! Report!
+create npc 2009 20 26 23 70 1 0 「This house has a tv\n but the lady won't let\n us watch that.
 create event_generator 2034 20 1 1 17 0 0 @020/nanabangai_slum23.txt
 create event_generator 2035 20 1 1 17 0 0 @020/nanabangai_slum24.txt
 kill_through 2531

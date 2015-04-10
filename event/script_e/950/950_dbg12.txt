@@ -5,6 +5,6 @@ chg_type 95085 npc_event
 chg_speed 95085 normal
 step_npc 95085 10
 sleep 160
-msg ƒƒ“I
+msg Bow!
 chg_speed 95085 not_move
 chg_type 95085 npc

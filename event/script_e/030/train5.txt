@@ -39,7 +39,7 @@ sleep 32
 jump_npc 3001 same 1
 sleep 16
 step_npc 3001 3
-msg バレット\n「よし！！\n　ぬけたか！？
+msg Baret\n「Right!\n We've got through!?
 sleep 4
 chg_npc_dir 3003 up
 sleep 4
@@ -54,7 +54,7 @@ jump_npc 3003 same 1
 sleep 16
 chg_speed 3003 not_move
 step_npc 3003 4
-msg ジェシー\n「まだよ　すぐつぎのけんちが　はじまるわ\n　バレたらアウトよ\n\n　でも　しんぱいしないで\n　まえの　しゃりょうに　じゅんじゅんに\n　うつっていけば　やりすごせるわ！
+msg Jessie\n「Not yet. The next\n scan'll start soon.\n We mustn't be discovered.\n But don't worry too much.\n Keep moving to the front\n and we'll be okay!
 chg_speed 3003 fast
 chg_npc_dir 3003 right
 sleep 8
@@ -92,7 +92,7 @@ sleep 8
 kill 3004
 move_npc 3003 right 2
 sleep 8
-create npc3 3004 30 15 7 106 3 0 「むぎゅ～～
+create npc3 3004 30 15 7 106 3 0 「Squish……
 sleep 8
 chg_speed 3006 normal
 chg_speed 3007 normal
@@ -129,7 +129,7 @@ draw_char on
 kill 3000
 sleep 16
 play_se train_info.ogg
-msg 「ミカクニンID\n　レッシャ　ゼンハンブ　イドウチュウ\n　ゲンザイイチ　サイカクニンチュウ
+msg 「UNIDENTIFIED PASSENGER\n DISPLACEMENT DETECTED\n VERIFICATION IN PROGRESS
 play_se_loop alarm.ogg
 kill_through 3020
 chg_type 3005 npc3

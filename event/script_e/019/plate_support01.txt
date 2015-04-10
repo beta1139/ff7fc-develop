@@ -1,4 +1,4 @@
 wait_same_pos
 kill_through_range 1910 1912
 play_event_bgm 4-08-Hurry_Faster_!.ogg
-msg ～イベントさくせいここまで\n\n\n\n　プレートしちゅうのマップがほすぃ\n　ぼしゅうちゅうー\n\n\n　あと　このままななばんスラムにすすむと　\n　エラーでおちるので　きをつけて
+msg ~events creation\n completed up to this\n point.\n\n We need map data for\n the supporting post.\n Someone?\n\n Don't go on to Slum 7\n from here bacause it'll\n make the program crash.

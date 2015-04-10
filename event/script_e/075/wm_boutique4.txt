@@ -6,7 +6,7 @@ sleep 32
 chg_npc_dir 7521 up
 sleep 16
 step_npc 7521 2
-msg エアリス\n「きがえるの？\n\n\n#2\n　　かくごをきめた\n　　いまはきがえない\n\n\n[[]][[]]
+msg Aeris\n「You gonna change?\n\n\n#2\n  No use dillydallying.\n  Not yet.\n\n\n[[]][[]]
 if_flag 3 0
 kill_through 7260
 kill_through_range 7602 7604
@@ -38,15 +38,15 @@ chg_event_move_char_speed normal
 play_se syu.ogg
 chg_npc_dir 7515 up
 sleep 64
-chg_param 8715 「う～ん　もうちょっとね
+chg_param 8715 「Hmm, you can do\n better than that.
 play_se syu.ogg
 sleep 32
 if_flag_greater 18 9
-chg_param 8715 「へぇ　まあまあね
+chg_param 8715 「Well, not half bad.
 fi
 sleep 32
 if_flag_greater 18 15
-chg_param 8715 「あら　けっこういけてるじゃないの
+chg_param 8715 「Hey, you look great.
 fi
 chg_char_img_tmp 13
 chg_speed 7521 normal
@@ -66,7 +66,7 @@ sleep 16
 jump_npc 7515 same 1
 sleep 16
 step_npc 7515 2
-msg 「ほう　これはなかなかどうして\n　あたらしい　しょうばいになるかもしれんぞ
+msg 「Well, this is not bad.\n This could be a new line\n of our business.
 sleep 16
 jump_npc 7515 same 1
 sleep 16
@@ -74,18 +74,18 @@ step_npc 7515 3
 sleep 32
 chg_npc_dir 7510 down
 step_npc 7510 2
-msg 「そうだね　やってみようか
+msg 「Yes. Let's try it.
 chg_speed 7521 not_move
 chg_npc_dir 7510 right
 sleep 16
 step_npc 7510 2
-msg 「あんたたち\n　おもしろいものをみせてもらったよ\n　おやじも　やるきをだしてくれたし\n　そのドレスのだいきんはサービスしとくよ
+msg 「Look, It was fun helping\n you two, and Father's got\n motivated again.\n That dress is our gift.
 chg_speed 7521 normal
 chg_npc_dir 7521 left
 sleep 32
 chg_npc_dir 7521 up
 step_npc 7521 2
-msg エアリス\n「おしとやかにあるいてね\n　クラウドちゃん
+msg Aeris\n「Try moving gracefully\n from now on, Cloud girl.
 sleep 16
 chg_char_dir right
 sleep 16
@@ -99,7 +99,7 @@ chg_char_dir right
 sleep 16
 step_char 1
 sleep 16
-msg 『……なにが　おしとやかにだ
+msg 『……Grace be damned.
 chg_event_move_char_speed slow
 chg_speed 7521 not_move
 chg_npc_img 7521 3
@@ -116,7 +116,7 @@ pool
 step_npc 7521 4
 sleep 32
 set_talk_npc 7521
-msg エアリス\n「クラウドちゃん　かわいい
+msg Aeris\n「You're cute, Cloud girl.
 reset_talk_npc
 chg_npc_img 7521 3
 chg_npc_dir 7521 down
@@ -125,7 +125,7 @@ sleep 16
 create npc_event 7520 75 8 10 13 1 2 none
 draw_char off
 set_talk_npc 7521
-msg エアリス\n「でも　いいな　それ\n　ね　わたしににあうドレス　な～い？
+msg Aeris\n「That's really nice.\n Look, do you have a\n dress that suits me?
 reset_talk_npc
 chg_npc_dir 7520 right
 chg_speed 7520 not_move
@@ -140,24 +140,24 @@ chg_npc_dir 7521 left
 sleep 16
 step_npc 7510 2
 set_talk_npc 7510
-msg 「これは　どうでしょう？
+msg 「How about this?
 reset_talk_npc
 chg_npc_dir 7515 right
 jump_npc 7515 same 1
 sleep 16
 step_npc 7515 2
-msg 「いやいや　こっちのほうがいいぞ
+msg 「No, no, this is better.
 chg_npc_dir 7510 down
 chg_speed 7510 fast
 step_npc 7510 3
 set_talk_npc 7510
-msg 「おやじ　なにいってんだよ\n　これがいいって
+msg 「Come on, Father,\n This is the one.
 reset_talk_npc
 chg_npc_dir 7515 up
 sleep 8
 chg_speed 7515 fast
 step_npc 7515 4
-msg3 96 「なにをいっとる\n　こっちじゃよ
+msg3 96 「Don't be silly.\n Definitely this one.
 move_npc 7521 left 5
 sleep 48
 step_npc 7510 3
@@ -169,18 +169,18 @@ erase_msg3
 move_npc 7521 left 1
 sleep 16
 step_npc 7521 2
-msg 「あ　あたし　これがいい
+msg 「I want this one.
 move_npc 7521 right 6
 jump_npc 7510 same 1
 jump_npc 7515 same 1
-msg3 56 「え？
+msg3 56 「What?
 sleep 32
 chg_npc_dir 7510 right
 chg_npc_dir 7515 right
 sleep 24
 erase_msg3
 sleep 8
-msg3 -1 エアリス\n「ちょっと　きがえてくるね
+msg3 -1 Aeris\n「Let me try it on.
 sleep 32
 chg_npc_dir 7520 up
 move_npc 7521 up 2
@@ -196,7 +196,7 @@ chg_npc_img 7521 99
 sleep 24
 step_npc 7521 2
 set_talk_npc 7521
-msg エアリス\n「……のぞいちゃダメよ
+msg Aeris\n「……No peeking.
 reset_talk_npc
 chg_npc_img 7521 3
 move_npc 7521 up 4
@@ -222,7 +222,7 @@ close_door 7551
 sleep 24
 step_npc 7521 2
 set_talk_npc 7521
-msg 「どう　にあってる？
+msg 「Well? How do I look?
 reset_talk_npc
 chg_npc_dir 7520 down
 sleep 16
@@ -234,7 +234,7 @@ jump_npc 7521 same 1
 sleep 16
 step_npc 7521 2
 set_talk_npc 7521
-msg 「もう　かわいくないなぁ！
+msg 「Pooh! You're mean.
 reset_talk_npc
 chg_npc_dir 7520 up
 sleep 16
@@ -255,20 +255,20 @@ chg_speed 7515 not_move
 chg_type 7510 npc
 chg_type 7512 npc
 chg_type 7515 npc
-chg_param 7510 「……なんだか\n　すごいもんですね
-chg_param 7512 「あなたって\n\n\n\n　ヘン
-chg_param 7515 「うんうん　にあっとる　にあっとる
-chg_param 7221 「おっ！そこのべっぴんさん\n　いいしごとしょうかいするぜ！\n\n\n　ドンのとこへいってみな\n　たんまりかせげるぜ
-chg_param 7224 「どうぞ　よっていってください
-chg_param 7226 「なんじゃ？\n　おじょうさんがたも　たべるか？
+chg_param 7510 「……She's kind of\n ……extraordinary.
+chg_param 7512 「You are……\n\n\n\n ……queer.
+chg_param 7515 「Yes, yes. You look fine.
+chg_param 7221 「Hey, you cutie!\n I got a perfect\n job for you!\n\n You gotta see Don.\n You'll be making\n really good money.
+chg_param 7224 「Please, have a seat.
+chg_param 7226 「What is it?\n You ladies have a bite?
 set_npc_pos 7223 72 9 33
 chg_npc_dir 7223 up
 chg_npc_dir 7225 right
 kill_through_range 7281 7282
 create npc2 7614 76 5 6 17 0 0 
 create event_generator 7604 76 0 0 17 0 0 @076/wm_materia_shop4.txt
-create npc3 7718 77 4 9 79 3 0 「モグモグ………
-create npc_event 7922 79 4 13 70 1 0 「おっかしいなあ\n　バリバリにツンツンのヘアスタイル！\n　みおぼえがあるんだけどなあ
+create npc3 7718 77 4 9 79 3 0 「Munch, munch……
+create npc_event 7922 79 4 13 70 1 0 「Let me see.\n That desperately spiky\n hair style!\n I'm sure I have seen it.
 set_npc_pos 7923 79 6 13
 set_npc_pos 7924 79 6 12
 chg_type 7920 npc_event
@@ -290,7 +290,7 @@ set_npc_pos 8815 88 3 6
 chg_type 8815 npc_event
 chg_npc_dir 8815 right
 chg_speed 8815 not_step
-create npc 8709 87 14 12 17 0 0 「はい 1 2 3\n　スクワットはリズムですよ
+create npc 8709 87 14 12 17 0 0 「Now 1 2 3\n Rhythm's all in squat.
 create event_generator 8733 87 10 23 17 0 0 @087/wm_squat.txt
 create event_generator 8601 86 11 15 17 0 0 @086/keep_drag1_in.txt
 create event_generator 8809 88 20 13 17 0 0 @088/keep_drag2_in.txt
