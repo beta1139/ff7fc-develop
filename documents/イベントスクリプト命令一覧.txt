@@ -477,6 +477,11 @@ erase_image (image_idx)
   draw_imageで描画している画像を消す
   （draw_image使用後は必ずerase_imageで消すこと）
 
+erase_image_range (min_image_idx, max_image_idx)
+  min_image_idx以上かつmax_image_idx以下の
+  draw_imageで描画している画像を消す
+  （draw_image使用後は必ずerase_imageで消すこと）
+
 set_image_alpha (image_idx) (alpha)
   image_idxで指定した画像のアルファ値を設定する
   アルファ値は0~100の範囲で設定すること
