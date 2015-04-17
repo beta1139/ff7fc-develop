@@ -10,7 +10,7 @@ chg_npc_dir 1665 right
 sleep 16
 set_key_valid a
 set_talk_npc 1665
-msg Baret,\n「Look……we're nearing the\n surface. Our home without\n no day or no night.\n If it weren't for that\n fuckin' Midgar Plate……\n we could see the big sky.
+msg Baret,\n`Look==we're nearing the\n surface. Our home without\n no day or no night.\n If it weren't for that\n fuckin' Midgar Plate==\n we could see the big sky.
 reset_talk_npc
 if_char_dir right
 sleep 16
@@ -31,7 +31,7 @@ sleep 16
 fi
 chg_char_dir up
 sleep 40
-msg 『A city in the air……\n Looks kinda unsettling.
+msg {A city in the air==\n Looks kinda unsettling.
 chg_speed 1665 normal
 chg_npc_dir 1665 down
 jump_npc 1665 same 1
@@ -42,12 +42,12 @@ sleep 16
 chg_npc_dir 1665 right
 sleep 32
 set_talk_npc 1665
-msg Baret\n「Huh?\n You find it that way?
+msg Baret\n`Huh?\n You find it that way?
 chg_npc_dir 1665 left
 sleep 32
 chg_npc_dir 1665 right
 sleep 32
-msg Baret\n「……I'm surprised.
+msg Baret\n`==I'm surprised.
 reset_talk_npc
 sleep 24
 chg_speed 1665 slow
@@ -58,12 +58,12 @@ sleep 16
 chg_npc_dir 1665 right
 sleep 16
 set_talk_npc 1665
-msg Baret\n「Upside……\n The Plate city……\n\n How much misery that \n fuckin' pizza's bringing\n to the people below.
+msg Baret\n`Upside==\n The Plate city==\n\n How much misery that \n fuckin' pizza's bringing\n to the people below.
 reset_talk_npc
 move_npc 1665 left 2
 sleep 96
 set_talk_npc 1665
-msg Baret\n「Now Downside's just\n a drift of dirty air.
+msg Baret\n`Now Downside's just\n a drift of dirty air.
 reset_talk_npc
 sleep 32
 move_npc 1665 down 1
@@ -76,13 +76,13 @@ sleep 32
 chg_speed 1665 fast
 step_npc 1665 4
 set_talk_npc 1665
-msg Baret\n「And the reactors keep\n sucking Mako energy.\n\n The land became more\n and more barren and\n now it can not purify\n the air any more.
+msg Baret\n`And the reactors keep\n sucking Mako energy.\n\n The land became more\n and more barren and\n now it can not purify\n the air any more.
 reset_talk_npc
 sleep 32
 chg_char_dir down
 sleep 64
 chg_char_dir left
-msg 『Why doesn't everyone\n move up……?
+msg {Why doesn't everyone\n move up==?
 chg_npc_img 1665 1
 chg_speed 1665 slow
 move_npc 1665 right 3
@@ -92,15 +92,15 @@ sleep 32
 chg_npc_dir 1665 right
 sleep 16
 set_talk_npc 1665
-msg Baret\n「Beats me. No money.\n Or maybe……
+msg Baret\n`Beats me. No money.\n Or maybe==
 reset_talk_npc
 sleep 32
 chg_npc_dir 1665 up
 sleep 32
 set_talk_npc 1665
-msg Baret\n「Maybe we still love\n the ground, however\n rank it has become.
+msg Baret\n`Maybe we still love\n the ground, however\n rank it has become.
 reset_talk_npc
 sleep 16
 chg_char_dir up
 sleep 64
-msg 『I know……\n Nobody chooses to live\n in the slums.\n\n Everyone's the same with\n this train. Can't go off\n one's fixed rails.
+msg {I know==\n Nobody chooses to live\n in the slums.\n\n Everyone's the same with\n this train. Can't go off\n one's fixed rails.

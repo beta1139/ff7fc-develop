@@ -1,1 +1,1 @@
-msg3 -1 Tifa\nuHey! Be serious!
+msg3 -1 Tifa\n`Hey! Get serious!

@@ -6,13 +6,13 @@ set_key_unvalid right
 set_key_unvalid start
 step_char 2
 sleep 32
-msg ÅwDon't tell me.\n You keep a watch on me,\n right?
+msg {Don't tell me.\n You keep a watch on me,\n right?
 sleep 16
 chg_type 4501 npc_event
 step_npc 4501 2
 sleep 32
 chg_type 4501 npc2
-msg Baret\nÅuThat's right.\n\n\n I can't fully trust you\n just because you're\n Tifa's old friend.
+msg Baret\n`That's right.\n\n\n I can't fully trust you\n just because you're\n Tifa's old friend.
 chg_type 4501 npc
 set_key_valid up
 set_key_valid left

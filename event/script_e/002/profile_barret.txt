@@ -173,7 +173,7 @@ fadein
 sleep 16
 step_npc 252 1
 set_talk_npc 252
-msg Baret\nÅuMove while holding down\n CANCEL(default Z) button\n to run faster.\n Don't lag behind!
+msg Baret\n`Move while holding down\n CANCEL(default Z) button\n to run faster.\n Don't lag behind!
 reset_talk_npc
 chg_npc_img 252 1
 move_npc 252 left 1

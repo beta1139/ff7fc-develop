@@ -4,7 +4,7 @@ chg_dir_to_char 4906
 chg_speed 4906 normal
 step_npc 4906 1
 set_talk_npc 4906
-msg Aeris\n「You do anything,\n don't you?
+msg Aeris\n`You do everything,\n don't you?
 reset_talk_npc
 if_char_dir down
 create npc_event 4900 49 5 11 0 1 2 none
@@ -30,16 +30,16 @@ step_npc 4900 3
 sleep 80
 chg_npc_img 4900 0
 restore_npc_dir 4900
-msg 『……Yeah, I do.
+msg {==Yeah, I do.
 jump_npc 4906 same 1
 sleep 16
 step_npc 4906 2
 set_talk_npc 4906
-msg Aeris\n「Take me out from here\n and bring me home.
+msg Aeris\n`Take me out from here\n and bring me home.
 reset_talk_npc
 sleep 16
 step_npc 4900 1
-msg 『I'll undertake it.\n But I don't come cheap.
+msg {I'll undertake it.\n But I don't come cheap.
 sleep 32
 if_char_dir down
 chg_npc_dir 4906 left
@@ -54,7 +54,7 @@ if_char_dir right
 chg_npc_dir 4906 up
 fi
 set_talk_npc 4906
-msg Aeris「Let me see……
+msg Aeris\n`Let me see==
 reset_talk_npc
 sleep 32
 chg_dir_to_char 4906
@@ -62,7 +62,7 @@ jump_npc 4906 same 1
 sleep 16
 step_npc 4906 1
 set_talk_npc 4906
-msg Aeris\n「I let you take\n me out on a date!
+msg Aeris\n`I let you take\n me out on a date!
 reset_talk_npc
 sleep 64
 chg_npc_dir 4900 down

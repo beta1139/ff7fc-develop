@@ -4,19 +4,19 @@ set_key_unvalid down
 set_key_unvalid right
 set_key_unvalid start
 chg_dir_to_char 3202
-msg Tifa\n「……I'm scared.
+msg Tifa\n`==I'm scared.
 sleep 8
 chg_type 3202 npc_event
 chg_speed 3202 normal
 sleep 8
 step_char 2
 sleep 32
-msg 『It's too late for that.\n Why are you here in the\n first place?
+msg {It's too late for that.\n Why are you here in the\n first place?
 sleep 16
 chg_npc_dir 3202 up
 sleep 16
 step_npc 3202 1
-msg Tifa\n「Because……
+msg Tifa\n`Because==
 chg_type 3201 npc_event
 chg_speed 3201 normal
 sleep 16
@@ -32,7 +32,7 @@ chg_npc_dir 3201 left
 sleep 4
 pool
 step_npc 3201 3
-msg Baret\n「You two!\n We got no time for that!
+msg Baret\n`You two!\n We got no time for that!
 chg_type 3201 npc
 chg_speed 3201 not_move
 sleep 32

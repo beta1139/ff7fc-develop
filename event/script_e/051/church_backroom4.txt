@@ -16,14 +16,14 @@ set_layer 5131 front
 draw_char off
 set_active_msg 5131
 step_npc 5131 4
-msg Aeris\n「Cloud, Help!
+msg Aeris\n`Cloud, Help!
 chg_npc_dir 5102 down
 chg_speed 5102 normal
 chg_speed 5103 normal
 move_npc 5103 down 1
 move_char up 2
 sleep 16
-msg 『Aeris!\n\n\n\n#3\n  Hold it!\n  Beat him!\n  Run for it!\n\n[[]][[]][[]]
+msg {Aeris!\n\n\n\n#3\n  Hold it!\n  Beat him!\n  Run for it!\n\n[[]][[]][[]]
 if_flag 3 0
 chg_event_move_char_speed fast
 set_flag 12 1
@@ -97,7 +97,7 @@ chg_speed 5131 fast
 step_npc 5131 1
 sleep 32
 step_npc 5131 2
-msg Aeris\n「I, I try.
+msg Aeris\n`I, I try.
 play_se jump.wav
 chg_speed 5103 normal
 jump_npc 5103 down 2
@@ -118,7 +118,7 @@ step_npc 5131 1
 sleep 32
 create npc_event 5130 51 12 20 0 1 0 none
 step_npc 5131 2
-msg Aeris\n「I, I try.
+msg Aeris\n`I, I try.
 chg_npc_dir 5131 right
 sleep 16
 draw_char on

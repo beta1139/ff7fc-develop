@@ -10,33 +10,33 @@ move_npc 2202 down 1
 sleep 16
 step_npc 2202 1
 set_talk_npc 2202
-msg Tifa\n「Please, Cloud.\n Give us a hand.
+msg Tifa\n`Please, Cloud.\n Give us a hand.
 reset_talk_npc
 sleep 32
 move_char down 1
 sleep 16
 move_char left 1
 sleep 32
-msg 『Tifa……I'm sorry.
+msg {Tifa==I'm sorry.
 move_npc 2202 left 1
 sleep 16
 move_npc 2202 down 1
 sleep 16
 step_npc 2202 1
 set_talk_npc 2202
-msg Tifa\n「The planet is suffering.\n It's dying as it is.\n\n Somebody's got to do\n something about it.
+msg Tifa\n`The planet is suffering.\n It's dying as it is.\n\n Somebody's got to do\n something about it.
 reset_talk_npc
 chg_char_dir up
 sleep 16
-msg 『Baret and his gang are\n working on it, right?\n That's not my business.
+msg {Baret and his gang are\n working on it, right?\n That's not my business.
 chg_char_dir down
 move_char left 1
 sleep 16
 move_char down 2
 sleep 32
-msg Tifa\n「Oh, my!\n So you're really leaving!
+msg Tifa\n`Oh, my!\n So you're really leaving!
 sleep 16
-msg Tifa\n「How can you just refuse\n a dear friend's request!
+msg Tifa\n`How dare you just refuse\n a dear friend's request!
 create npc_event 2207 22 5 10 0 0 1 none
 draw_char off
 chg_npc_dir 2207 left
@@ -44,7 +44,7 @@ sleep 4
 chg_npc_dir 2207 up
 move_char up 2
 sleep 32
-msg 『……\n\n\n\n#2\n  Who's dear?\n  ……Sorry.\n\n\n[[]][[]]
+msg {==\n\n\n\n#2\n  Who's dear?\n  ==Sorry.\n\n\n[[]][[]]
 sleep 16
 chg_speed 2202 slow
 move_npc 2202 left 1
@@ -56,19 +56,19 @@ sleep 16
 chg_speed 2202 slow
 step_npc 2202 1
 set_talk_npc 2202
-msg Tifa\n「……Don't you even remember\n our promise?
+msg Tifa\n`==Don't you even remember\n our promise?
 reset_talk_npc
 sleep 32
 step_npc 2207 1
 sleep 16
-msg 『Promise?
+msg {Promise?
 chg_npc_dir 2202 down
 sleep 16
 chg_speed 2202 normal
 set_active_msg 2202
 jump_npc 2202 same 1
 set_talk_npc 2202
-msg Tifa\n「So you've forgotten!
+msg Tifa\n`So you've forgotten!
 reset_talk_npc
 sleep 16
 chg_speed 2202 slow
@@ -78,7 +78,7 @@ sleep 64
 chg_speed 2202 slow
 step_npc 2202 1
 set_talk_npc 2202
-msg Tifa\n「Remember……\n 7 years ago……
+msg Tifa\n`Remember==\n 7 years ago==
 reset_talk_npc
 chg_speed 2207 normal
 sleep 48

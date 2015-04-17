@@ -2,7 +2,7 @@ wait_target_talked 2908
 set_key_unvalid left
 set_key_unvalid right
 set_key_unvalid start
-msg 「Do you want it?\n\n\n\n#2\n  Yeah……\n  Forget it.\n\n\n[[]][[「Is that so?\n Ask me when you need it.]]
+msg `Do you want it?\n\n\n\n#2\n  Yeah==\n  Forget it.\n\n\n[[]][[`Is that so?\n Ask me when you need it.]]
 if_flag 3 0
 create npc_event 2900 29 18 7 0 1 2 none
 draw_char off
@@ -10,7 +10,7 @@ chg_type 2908 npc_event
 chg_speed 2908 normal
 jump_npc 2908 same 1
 set_active_msg 2908
-msg 「Here!\n It's for free.\n\n\n Be careful 'cause it's\n addictive.
+msg `Here!\n It's for free.\n\n\n Be careful 'cause it's\n addictive.
 step_npc 2908 2
 sleep 16
 play_se pick_up.wav
@@ -20,12 +20,12 @@ msg You got Hi-Potion.
 add_item 1001
 chg_type 2908 npc
 chg_speed 2908 not_step
-chg_param 2908 「Huh?\n Greedy, aren't you?
+chg_param 2908 `Huh?\n Greedy, aren't you?
 draw_char on
 kill 2900
 fi
 if_flag 3 1
-create npc 2909 29 18 8 47 0 4 「Huh?\n What do you want?
+create npc 2909 29 18 8 47 0 4 `Huh?\n What do you want?
 kill 2908
 create event_generator 2913 29 1 1 17 0 0 @029/target_talked2.txt
 fi

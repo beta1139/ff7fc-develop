@@ -108,16 +108,16 @@ play_se timer.ogg
 sleep 48
 play_se_loop timer2.ogg
 step_npc 1103 4
-msg Biggs\n「That should help the\n planet keep going……\n at least a little longer.
+msg Biggs\n`That should help the\n planet keep going==\n at least a little longer.
 sleep 16
 chg_npc_dir 1104 down
 sleep 16
 step_npc 1104 2
-msg Wedge\n「I guess.
+msg Wedge\n`I guess.
 sleep 48
 chg_npc_dir 1101 left
 sleep 64
-msg Baret\n「……
+msg Baret\n`==
 sleep 48
 chg_npc_dir 1104 up
 sleep 16
@@ -131,7 +131,7 @@ chg_npc_dir 1101 up
 jump_npc 1102 same 1
 sleep 16
 step_npc 1102 3
-msg Jessie\n「I got it!\n Everyone stand back.
+msg Jessie\n`I got it!\n Everyone stand back.
 sleep 16
 chg_speed 1100 fast
 chg_speed 1101 fast
@@ -322,7 +322,7 @@ chg_speed 1203 not_move
 sleep 16
 step_npc 1200 2
 set_talk_npc 1200
-msg Baret\n「Awright, now let's get\n back to the den.\n\n Rendezvous at Sector 8\n station! Split up and\n get on the train!
+msg Baret\n`Awright, now let's get\n back to the den.\n\n Rendezvous at Sector 8\n station! Split up and\n get on the train!
 reset_talk_npc
 chg_speed 1200 normal
 chg_speed 1201 normal
@@ -334,13 +334,13 @@ move_npc 1203 up 8
 move_npc 1200 right 1
 sleep 16
 jump_char same 1
-msg3 -1 『H, hey!
+msg3 -1 {H, hey!
 wait_key_push_edge a
 erase_msg3
 sleep 16
 chg_npc_dir 1200 down
 set_talk_npc 1200
-msg Baret\n「If it's about your money,\n wait till we get back.
+msg Baret\n`If it's about your money,\n wait till we get back.
 reset_talk_npc
 move_npc 1200 up 8
 sleep 128

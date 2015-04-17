@@ -25,7 +25,7 @@ sleep 16
 step_npc 8210 1
 set_text_alpha 4 0
 set_text_alpha 5 0
-set_text 4        『Huh……Is that you……?
+set_text 4        {Huh==Is that you==?
 sleep 8
 set_text_alpha 4 30
 sleep 8
@@ -40,7 +40,7 @@ sleep 8
 set_text_alpha 4 0
 clear_text 4
 sleep 56
-set_text 4    『What are you doing here?
+set_text 4    {What are you doing here?
 sleep 8
 set_text_alpha 4 30
 sleep 8
@@ -69,7 +69,7 @@ play_se_loop beeeeep.wav
 sleep 48
 set_flag 17 1
 sleep 40
-set_text 4         『What about you?
+set_text 4         {What about you?
 set_text 5  Can you afford to play around?
 sleep 8
 set_text_alpha 4 22
@@ -100,7 +100,7 @@ clear_text 5
 sleep 56
 chg_speed 8210 fast
 set_flag 17 2
-set_text 4  『Do you believe you can solve
+set_text 4  {Do you believe you can solve
 set_text 5   everything by just worrying?
 sleep 8
 set_text_alpha 4 22
@@ -183,7 +183,7 @@ sleep 8
 chg_speed 8215 normal
 jump_npc 8215 same 2
 sleep 16
-msg3 -1 「Oh, no!▼\n Look, honey▼
+msg3 -1 `Oh, no!@\n Look, honey@
 sleep 16
 chg_speed 8215 fast
 move_npc 8215 left 1

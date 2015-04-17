@@ -2,34 +2,34 @@ wait_same_pos
 sleep 48
 step_npc 2800 2
 sleep 32
-msg 『Tell me about\n today's mission.
+msg {Tell me about\n today's mission.
 sleep 16
 step_npc 2801 2
-msg Baret\n「Heck! You become eager\n all of a sudden, Cloud!
+msg Baret\n`Heck! You become eager\n all of a sudden, Cloud!
 sleep 16
 step_npc 2801 4
-msg Baret\n「Well, okay.\n I'll explain!\n\n As Jessie told you, they\n have checkpoints at the\n boudaries to the Plate.\n\n There they got systems\n that can scan the whole\n train in one go.
+msg Baret\n`Well, okay.\n I'll explain!\n\n As Jessie told you, they\n have checkpoints at the\n boudaries to the Plate.\n\n There they got systems\n that can scan the whole\n train in one go.
 sleep 16
 jump_npc 2802 same 1
 sleep 16
 jump_npc 2802 same 1
 sleep 16
 step_npc 2802 2
-msg Tifa\n「Shinra's proud of them.
+msg Tifa\n`Shinra's very proud\n of them.
 sleep 16
 step_npc 2801 3
-msg Baret\n「We can't use our old\n fake ID any more……
+msg Baret\n`We can't use our old\n fake ID any more==
 sleep 16
 play_se train_info.ogg
 sleep 24
 play_se_loop train_noise_close.ogg
 chg_npc_dir 2802 right
-msg Train PA\n「Thank you for riding.\n Arriving at Sector 4\n Station at 11:45……
+msg Train PA\n`Thank you for riding.\n Arriving at Sector 4\n Station at 11:45==
 sleep 16
 chg_npc_dir 2802 left
 sleep 16
 step_npc 2802 2
-msg Tifa\n「3 more minutes to\n the ID scan area.
+msg Tifa\n`3 more minutes to\n the ID scan area.
 sleep 8
 chg_npc_dir 2801 right
 sleep 16
@@ -37,7 +37,7 @@ move_npc 2801 right 4
 sleep 64
 chg_npc_dir 2801 left
 chg_npc_dir 2802 right
-msg Baret\n「Right. We're gonna hop\n off in 3 minutes.\n\n Get ready!
+msg Baret\n`Right. We're gonna hop\n off in 3 minutes.\n\n Get ready!
 move_npc 2801 up 1
 sleep 16
 chg_npc_dir 2801 down
@@ -71,7 +71,7 @@ jump_npc 2802 same 1
 sleep 16
 step_npc 2802 2
 set_talk_npc 2802
-msg Tifa\n「Cloud, come here!\n Watch this route display.
+msg Tifa\n`Cloud, come here!\n Watch this route display.
 reset_talk_npc
 move_npc 2802 right 2
 move_char left 5

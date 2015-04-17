@@ -7,7 +7,7 @@ chg_dir_to_char 7717
 sleep 16
 step_npc 7717 2
 set_talk_npc 7717
-msg ÅuPharmacy?\n There, that shop with\n a cat ornament.
+msg `Pharmacy?\n There, that shop with\n a cat ornament.
 reset_talk_npc
 chg_npc_dir 7717 right
 chg_speed 7717 not_move

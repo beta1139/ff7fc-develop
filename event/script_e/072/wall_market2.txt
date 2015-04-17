@@ -86,7 +86,7 @@ chg_char_dir up
 sleep 16
 set_key_valid a
 set_talk_npc 7231
-msg Aeris\nÅuThis is not a safe place,\n especially for girls.\n We must find Tifa soon.
+msg Aeris\n`This is not a safe place,\n especially for girls.\n We must find Tifa soon.
 reset_talk_npc
 wait_fake_countover
 move_npc 7222 right 1

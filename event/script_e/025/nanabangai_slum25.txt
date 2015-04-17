@@ -3,18 +3,18 @@ chg_speed 2511 not_step
 if_flag 3 0
 step_char 1
 sleep 16
-msg 『What's wrong with that?\n Everyone's a beginner\n in the beginning.
+msg {What's wrong with that?\n Everyone's a beginner\n in the beginning.
 jump_npc 2511 same 1
 sleep 16
 step_npc 2511 2
-msg 「Close your big mouth,\n beginner. I'll kindly\n give you a painstakingly\n detailed explanation!\n Come back in the morning\n with a clearer brain.\n I'll do some homework\n for your lesson.
+msg `Close your big mouth,\n beginner. I'll kindly\n give you a painstakingly\n detailed explanation!\n Come back in the morning\n with a clearer brain.\n I'll do some homework\n for your lesson.
 fi
 if_flag 3 1
 step_char 1
 sleep 16
-msg 『I'm Cloud, an ex-SOLDIER.\n I don't need you.
+msg {I'm Cloud, an ex-SOLDIER.\n I don't need you.
 step_npc 2511 2
-msg 「Huh!\n Who asked your name?
+msg `Huh!\n Who asked your name?
 fi
-chg_param 2510 「Come back in the morning\n with a clearer brain.\n I'll do some homework\n for your lesson.
+chg_param 2510 `Come back in the morning\n with a clearer brain.\n I'll do some homework\n for your lesson.
 chg_speed 2511 not_move

@@ -3,7 +3,7 @@ if_flag 13 1
 chg_speed 5103 fast
 step_npc 5103 3
 set_talk_npc 5103
-msg ÅuThe Ancient!\n I got her!
+msg `The Ancient!\n I got her!
 reset_talk_npc
 fi
 encount 191
@@ -36,9 +36,9 @@ chg_event_move_char_speed normal
 step_char 2
 sleep 32
 if_flag 13 0
-msg Aeris\nÅuPhew!
+msg Aeris\n`Phew!
 fi
 if_flag 13 1
-msg Aeris\nÅuPhew! That was close.
+msg Aeris\n`Phew! That was close.
 fi
 set_flag 20 0

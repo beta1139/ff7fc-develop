@@ -6,9 +6,9 @@ move_char up 4
 sleep 64
 move_char right 1
 sleep 72
-msg 「なんだよ　アタシに\n　まだ　なんかよう？\n\n\n　……ハハーン\n　さては　アレかな？\n\n\n　アタシが　あんまりつよいんで\n　ぜひ　たすけてほしいと！\n\n\n　この　アタシに　いっしょにきてくれと！\n　そういうこと？\n\n\n#2\n　　……そういうこと\n　　じょうだんじゃない\n\n\n[[]][[]]
+msg `What is it?\n You still want something?\n\n\n ==Aha!\n I know it.\n\n\n Since I'm so strong,\n you want me to help you!\n\n\n You want me to come\n along with you!\n Is that it?\n\n#2\n  ==You got it.\n  No way.\n\n\n[[]][[]]
 if_flag 3 0
-msg 「へへへ　やっぱりねえ\n　いや　まいったなあ\n　ウーン　どうしようかなあ\n\n　でも　そこまでいわれちゃ\n　この　アタシも　ことわれないし……\n\n\n　よし　わかった！\n　アンタらに　ついてって やるよ！\n\n\n#2\n　　……なまえは？\n　　……さきをいそごう\n\n\n[[]][[]]
+msg `Aha! Just as I thought.\n So you really want me to?\n Hmm, what should I do?\n\n Even I couldn't refuse\n such an ernest request==\n\n\n All right!\n I'll come along with you!\n\n\n#2\n  ==Name?\n  ==Let's go.\n\n\n[[]][[]]
 if_flag 3 0
 msg ggg
 end
@@ -19,18 +19,18 @@ create npc_event 60004 600 12 13 0 1 2 none
 move_npc 60004 down 8
 chg_npc_dir 60001 down
 sleep 16
-msg 「あれ　ちょ　ちょっと……
+msg `H-hey, you==
 sleep 45
 move_npc 60001 down 3
 sleep 45
-msg 「アタシ　ユフィ！\n　ひとつ　ヨロシク！
+msg `I'm Yufi!\n You can count on me!
 chg_npc_dir 60001 up
 sleep 16
 step_npc 60001 4
-msg 「へへへ……うまくいったよ\n\n\n\n　あとは　　アレを　ナニして……\n　クックック……
+msg `Tee-hee==It went well.\n\n\n\n Then==that==and==\n Tee-hee-hee==
 chg_npc_dir 60001 down
 sleep 45
-msg 「オ～イ　まってよ！\n　まってってば～！！
+msg `Hey, wait!\n Wait for me!
 move_npc 60001 down 20
 sleep 90
 fadeout

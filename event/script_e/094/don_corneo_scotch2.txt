@@ -2,11 +2,11 @@ wait_same_pos
 wait_key_push_edge a
 erase_msg3
 sleep 16
-msg3 -1 Scotch\n「Let's have a sweet\n time, shall we?
+msg3 -1 Scotch\n`Let's have a sweet\n time, shall we?
 wait_key_push_edge a
 erase_msg3
 sleep 32
-msg3 -1 Scotch\n「This is all\n thanks to our big\n Don Corneo!
+msg3 -1 Scotch\n`This is all\n thanks to our big\n Don Corneo!
 wait_key_push_edge a
 erase_msg3
 sleep 32
@@ -19,14 +19,14 @@ jump_npc 9424 same 1
 jump_npc 9425 same 1
 jump_npc 9426 same 1
 jump_npc 9427 same 1
-msg3 -1 「Yessir!\n Don Corneo\n rules!
+msg3 -1 `Yessir!\n Don Corneo\n rules!
 wait_key_push_edge a
 erase_msg3
 wait_event_invalid 9400
 chg_npc_dir 9428 down
 sleep 16
 step_npc 9428 2
-msg Scotch\n「Heh-heh……\n Now, are you ready,\n ladies?
+msg Scotch\n`Heh-heh==\n Now, are you ready,\n ladies?
 chg_char_img_tmp 13
 move_char down 4
 sleep 16

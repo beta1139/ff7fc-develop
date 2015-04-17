@@ -1,5 +1,5 @@
 wait_same_pos
-msg ÅwNot enough money.\n Let's choose another.\n\n\n#4\n  Dont' buy.\n  Buy a 200 Gil item.\n  Buy a 10 0Gil item.\n  Buy a 50 Gil item.\n[[]][[]][[]][[]]
+msg {Not enough money.\n Let's choose another.\n\n\n#4\n  Dont' buy.\n  Buy a 200 Gil item.\n  Buy a 10 0Gil item.\n  Buy a 50 Gil item.\n[[]][[]][[]][[]]
 if_flag 3 0
 sleep 16
 fadeout

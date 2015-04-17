@@ -2,16 +2,16 @@ wait_target_talk 8816
 chg_type 8816 npc_event
 chg_speed 8816 normal
 chg_npc_dir 8816 right
-msg 「What do you want……Ugh……\n\n\n\n#2\n  Give him the medicine.\n  Don't.\n\n\n[[]][[]]
+msg `What do you want==Ugh==\n\n\n\n#2\n  Give him the medicine.\n  Don't.\n\n\n[[]][[]]
 if_flag 3 0
-msg 「What?\n Are you sure?\n I accept it with thanks.
+msg `What?\n Are you sure?\n I accept it with thanks.
 step_char 2
 sleep 48
 if_owned_item 6016
 step_npc 8816 1
-msg 「What's this……?\n Well, okay.
+msg `What's this==?\n Well, okay.
 sleep 16
-msg 「It was useless to me\n but thanks anyway.\n Take this as my thanks.
+msg `It was useless to me\n but thanks anyway.\n Take this as my thanks.
 step_npc 8816 2
 sleep 32
 play_se pick_up.wav
@@ -22,9 +22,9 @@ msg You got the key item\n"Cologne"!
 fi
 if_owned_item 6017
 step_npc 8816 1
-msg 「What's this……?\n Well, okay.
+msg `What's this==?\n Well, okay.
 sleep 16
-msg 「It was useless to me\n but thanks anyway.\n Take this as my thanks.
+msg `It was useless to me\n but thanks anyway.\n Take this as my thanks.
 step_npc 8816 2
 sleep 32
 play_se pick_up.wav
@@ -36,7 +36,7 @@ fi
 if_owned_item 6018
 step_npc 8816 4
 sleep 64
-msg 「Phew, I'm refreshed.\n Take this for my thanks.
+msg `Phew, I'm refreshed.\n Take this for my thanks.
 step_npc 8816 2
 sleep 32
 play_se pick_up.wav

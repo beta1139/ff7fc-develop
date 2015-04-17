@@ -19,7 +19,7 @@ chg_npc_dir 7920 left
 chg_npc_dir 7922 left
 step_npc 7923 2
 step_npc 7924 2
-msg 「Wow! There goes a chick!
+msg `Wow! There goes a chick!
 chg_speed 7922 normal
 move_npc 7920 left 2
 move_npc 7922 left 1
@@ -41,7 +41,7 @@ sleep 16
 chg_npc_dir 7920 down
 chg_type 7920 npc
 chg_speed 7920 not_move
-chg_param 7920 「Uh……Erm\n I, I'm……\n\n\n W……Well……\n\n\n\n I'm J-Johnny……\n Nice to meetcha.
+chg_param 7920 `Uh==Erm\n I, I'm==\n\n\n W==Well==\n\n\n\n I'm J-Johnny==\n Nice to meetcha.
 move_npc 7924 left 1
 sleep 16
 chg_npc_dir 7923 up
@@ -49,8 +49,8 @@ chg_speed 7923 not_move
 chg_speed 7924 not_move
 chg_type 7923 npc
 chg_type 7924 npc
-chg_param 7923 「Look, a young girl with\n fine taut creamy skin!\n Ooh, I'm wide awake now!\n\n ……Hm? Firm, aren't you?\n Are you toning up?
-chg_param 7924 「We chat up pretty\n girls only, really.\n\n\n Hmmm, You're the best\n girl ever, really.\n\n\n Well? Why don't you\n work at our place?
+chg_param 7923 `Look, a young girl with\n fine taut creamy skin!\n Ooh, I'm wide awake now!\n\n ==Hm? Firm, aren't you?\n Are you toning up?
+chg_param 7924 `We chat up pretty\n girls only, really.\n\n\n Hmmm, You're the best\n girl ever, really.\n\n\n Well? Why don't you\n work at our place?
 fi
 chg_char_state_move
 sleep 8

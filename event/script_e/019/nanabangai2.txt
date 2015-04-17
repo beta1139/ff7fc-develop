@@ -1,13 +1,13 @@
 wait_target_talked 1907
 sleep 24
 chg_npc_dir 1907 right
-msg 「H-how about this,\n Boss?
+msg `H-how am I doing,\n Boss?
 sleep 8
 chg_npc_dir 1906 left
-msg 「Chin up higher!
+msg `Chin up higher!
 chg_npc_dir 1906 up
 sleep 24
-msg 「Uh, y-yes…… 
+msg `Uh, y-yes== 
 sleep 32
 chg_npc_dir 1907 up
-chg_param 1907 「H-hey, look……\n Excuse me,\n but you can't go\n in any farther……
+chg_param 1907 `H-hey, look==\n Excuse me,\n but you can't go\n in any farther==

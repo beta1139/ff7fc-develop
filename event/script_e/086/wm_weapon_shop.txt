@@ -14,7 +14,7 @@ move_char up 1
 sleep 16
 step_npc 8610 2
 set_talk_npc 8610
-msg ÅuMay I help you?\n\n\n\n#3\n  Show me weapons.\n  Show me armors.\n  Not interested.\n\n[[]][[]][[]]
+msg `May I help you?\n\n\n\n#3\n  Show me weapons.\n  Show me armors.\n  Not interested.\n\n[[]][[]][[]]
 reset_talk_npc
 if_flag 3 0
 open_weapon_shop 2301/2201/2101

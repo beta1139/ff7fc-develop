@@ -13,7 +13,7 @@ create npc_event 4770 47 15 14 2 1 2 none
 move_npc 4770 down 3
 sleep 48
 chg_npc_dir 4770 up
-msg Tifa\n「Jessie said that we need\n to push these buttons all\n at once.
+msg Tifa\n`Jessie said that we need\n to push these buttons all\n at once.
 create npc_event 4742 47 13 16 17 0 0 none
 create npc_event 4772 47 15 14 0 1 2 none
 draw_char off
@@ -25,7 +25,7 @@ sleep 5
 chg_speed 4770 not_step
 sleep 11
 if_flag 99 0
-msg3 112 Baret\n「Shit……\n Not again!
+msg3 112 Baret\n`Fuck==\n Not again!
 create npc_event 4771 47 15 16 98 2 2 none
 step_npc 4771 2
 fi
@@ -55,7 +55,7 @@ sleep 8
 if_flag 10 0
 if_flag 99 0
 chg_npc_dir 4772 up
-msg 『Baret,\n don't drag us down.
+msg {Don't you drag\n us down, Baret.
 chg_npc_dir 4771 left
 chg_npc_img 4771 98
 step_npc 4771 3
@@ -92,9 +92,9 @@ if_flag 11 1
 if_flag 99 0
 chg_npc_dir 4771 left
 chg_npc_img 4771 98
-msg Baret\n「Y'know the last time was\n just a fluke, Cloud.
+msg Baret\n`Show me the last time\n wasn't a fluke, Cloud.
 chg_npc_dir 4772 up
-msg 『Baret,\n don't drag us down.
+msg {Don't you drag\n us down, Baret.
 chg_npc_dir 4771 up
 chg_npc_img 4771 95
 jump_npc 4771 same 1
@@ -117,7 +117,7 @@ if_flag 11 2
 if_flag 99 0
 chg_npc_dir 4771 left
 chg_npc_img 4771 98
-msg Baret\n「Do it right this time.\n Earn your pay.
+msg Baret\n`Do it right this time.\n Earn your pay.
 chg_npc_dir 4772 down
 chg_npc_img 4772 103
 sleep 16
@@ -142,7 +142,7 @@ create event_generator 4784 47 1 5 17 0 0 @047/makouro_gimmick_b05.txt
 create event_generator 4785 47 1 6 17 0 0 @047/makouro_gimmick_b06.txt
 create event_generator 4789 47 1 10 17 0 0 @047/makouro_gimmick_b10.txt
 step_npc 4770 2
-msg Tifa\n「Here we go!
+msg Tifa\n`Here we go!
 loop_inf
 chg_char_state_move
 sleep 32

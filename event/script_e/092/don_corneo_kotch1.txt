@@ -2,12 +2,12 @@ wait_same_pos
 kill_through 9222
 create npc_event 9220 92 10 3 0 1 2 none
 draw_char off
-msg Aeris\n「Help!
+msg Aeris\n`Help!
 chg_event_move_char_speed fast
 move_char down 9
 move_npc 9220 down 1
 create npc_event 9221 92 4 12 3 0 3 none
-create npc_event 9223 92 4 14 133 0 3 Kotch\n「Just once……\n Just once in my life……\n\n I just wanted to be\n sweet lovers with a\n pretty girl……
+create npc_event 9223 92 4 14 133 0 3 Kotch\n`Just once==\n Just once in my life==\n\n I just wanted to be\n sweet lovers with a\n pretty girl==
 move_npc 9221 right 4
 move_npc 9223 up 2
 sleep 16
@@ -22,7 +22,7 @@ sleep 16
 move_char left 4
 move_npc 9223 left 4
 sleep 16
-msg3 -1 Kotch\n「Ha-ha……\n Hold it, my dear!
+msg3 -1 Kotch\n`Ha-ha==\n Hold it, my dear!
 move_npc 9221 up 3
 sleep 16
 move_npc 9223 up 3
@@ -70,7 +70,7 @@ sleep 8
 chg_npc_dir 9221 down
 sleep 8
 step_npc 9221 3
-msg3 -1 Aeris\n「I'm sorry!
+msg3 -1 Aeris\n`I'm sorry!
 chg_npc_y_offset 9223 -5
 sleep 1
 chg_npc_y_offset 9223 -6
@@ -107,7 +107,7 @@ chg_npc_y_offset 9223 -9
 sleep 1
 chg_npc_y_offset 9223 -8
 sleep 1
-msg3 -1 Kotch\n「Oh! Aww……
+msg3 -1 Kotch\n`Oh! Aww==
 chg_speed 9223 normal
 chg_npc_dir 9223 down
 chg_npc_img 9223 134

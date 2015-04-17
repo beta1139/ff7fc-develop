@@ -16,7 +16,7 @@ chg_npc_dir 2106 left
 sleep 8
 chg_npc_dir 2106 down
 set_talk_npc 2106
-msg 「Welcome, Welcome!\n We sell!\n We buy!\n\n#3\n  Show me items.\n  Show me materias.\n  Not interested.\n\n[[]][[]][[……Hmph. \n Just as I thought.]]
+msg `Welcome, Welcome!\n We sell!\n We buy!\n\n#3\n  Show me items.\n  Show me materias.\n  Not interested.\n\n[[]][[]][[==Hmph. \n Just as I thought.]]
 reset_talk_npc
 if_flag 3 0
 open_item_shop 1000/1007/1008
@@ -33,7 +33,7 @@ sleep 16
 chg_npc_dir 2106 left
 sleep 32
 set_talk_npc 2106
-msg 「We offer free shipping……?
+msg `We offer free shipping==?
 reset_talk_npc
 fi
 sleep 16

@@ -8,7 +8,7 @@ set_key_unvalid start
 chg_npc_dir 3006 down
 chg_npc_y_offset 3006 0
 step_npc 3006 1
-msg3 48 ÅuHee-hee!
+msg3 48 `Hee-hee!
 sleep 8
 play_se pick_up.wav
 chg_char_dir up

@@ -7,7 +7,7 @@ sleep 16
 jump_npc 8715 same 1
 sleep 16
 step_npc 8715 2
-msg 「I'm impressed.\n It's yours as promissed.
+msg `I'm impressed.\n It's yours as promissed.
 move_npc 8715 up 2
 sleep 16
 move_npc 8710 up 1
@@ -25,7 +25,7 @@ msg You got the key item\n"Blonde Wig (BlondeWig)"!
 sleep 16
 step_npc 8710 2
 set_talk_npc 8710
-msg 「Brother,\n I'm defeated!\n It's way way frustrating!
+msg `Brother,\n I'm defeated!\n It's way way frustrating!
 reset_talk_npc
 chg_npc_dir 8721 right
 chg_speed 8715 fast
@@ -36,7 +36,7 @@ if_flag 17 21
 jump_npc 8715 same 1
 sleep 16
 step_npc 8715 2
-msg 「You did well.\n You can have my cast-off.
+msg `You did well.\n You can have my cast-off.
 move_npc 8715 up 2
 sleep 16
 move_npc 8710 up 1
@@ -54,7 +54,7 @@ msg You got the key item\n"Brown Wig"!
 sleep 16
 step_npc 8710 2
 set_talk_npc 8710
-msg 「B-Brother\n Th-that is, that was\n going to be mine……
+msg `B-Brother\n Th-that is, that was\n going to be mine==
 reset_talk_npc
 chg_npc_dir 8721 right
 chg_speed 8715 fast
@@ -63,7 +63,7 @@ sleep 16
 fi
 if_flag 17 20
 step_npc 8715 2
-msg 「Too bad,\n You lose.\n\n\n Since I was asked by the\n tailor, I'll give……
+msg `Too bad,\n You lose.\n\n\n Since I was asked by the\n tailor, I'll give==
 move_npc 8715 up 1
 sleep 16
 move_npc 8715 right 1
@@ -76,14 +76,14 @@ step_npc 8715 4
 sleep 80
 set_active_msg 8715
 jump_npc 8715 same 1
-msg 「Well, where did it go?
+msg `Well, where did it go?
 sleep 16
 set_inactive_msg 8715
 chg_npc_dir 8710 down
 sleep 16
 step_npc 8710 2
 set_talk_npc 8710
-msg 「Since you asked……
+msg `Since you asked==
 reset_talk_npc
 chg_npc_dir 8715 left
 chg_npc_dir 8710 right
@@ -165,23 +165,23 @@ sleep 1
 pool
 step_npc 8715 4
 if_flag 17 22
-msg 「Shut up!\n Stop whining, you\n disgracing loser!
+msg `Shut up!\n Stop whining, you\n disgracing loser!
 fi
 if_flag 17 21
-msg 「Shut up!\n Don't be proud of making\n a tie with an amature!
+msg `Shut up!\n Don't be proud of making\n a tie with an amature!
 fi
 if_flag 17 20
-msg 「You idiot!\n What a place to hide it!
+msg `You idiot!\n What a place to hide it!
 fi
 sleep 32
-msg 「Aww\n Brother's puch\n rattled my bones\n to the marrow……
+msg `Aww\n Brother's puch\n rattled my bones\n to the marrow==
 if_flag 17 20
 chg_npc_dir 8715 left
 chg_speed 8715 normal
 sleep 8
 chg_char_dir right
 step_npc 8715 2
-msg 「I'm afraid it's not in\n very good condition,\n but still usable so……
+msg `I'm afraid it's not in\n very good condition,\n but still usable so==
 chg_npc_dir 8721 left
 chg_npc_img 8721 15
 step_npc 8721 3
@@ -236,7 +236,7 @@ chg_type 8711 npc
 chg_type 8712 npc3
 set_flag_wall 8711
 set_flag_wall 8712
-chg_param 8715 「Take good care of that.
+chg_param 8715 `Take good care of that.
 chg_speed 8711 not_move
 kill_through 8709
 kill_through 8406
@@ -245,7 +245,7 @@ create event_generator 7504 75 9 7 17 0 0 @075/wm_boutique4.txt
 set_npc_pos 7515 75 4 11
 set_flag_wall 7515
 chg_npc_dir 7515 left
-chg_param 7510 「I see you have them all.\n Put them on, will you?
+chg_param 7510 `I see you have them all.\n Put them on, will you?
 if_flag 99 0
-chg_param 8719 「Ha-ha\n The electric wiring's\n cranky these days.
+chg_param 8719 `Ha-ha\n The electric wiring's\n cranky these days.
 fi

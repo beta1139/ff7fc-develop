@@ -5,13 +5,13 @@ chg_char_dir right
 sleep 16
 step_npc 60001 8
 sleep 120
-msg 「へへ　や～っぱりそうか\n　ま　アタシの　じつりょくからいえば\n　それもとうぜんだネ\n\n　アンタらも　がんばれよ\n　また　きがむいたら　あいて　してやるからさ\n　んじゃね！\n
+msg `Aha! Just as I thought.\n That's understandable\n given my strength.\n\n Don't get ashamed.\n Maybe I'll play with you\n again some other day.\n Bye!
 chg_char_dir up
 move_npc 60001 up 3
 sleep 90
 chg_npc_dir 60001 down
 sleep 48
-msg 「ホントに　いっちゃうからね！\n　ホントの　ホントだよ！\n\n\n#2\n　　ごじゆうに……\n　　ちょっとまった\n\n\n[[]][[]]
+msg `I'm really going!\n I mean it!\n\n\n#2\n  As you wish==\n  Wait a minute.\n\n\n[[]][[]]
 if_flag 3 0
 msg eee
 end

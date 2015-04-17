@@ -2,7 +2,7 @@ wait_target_talk 70410
 erase_msg3
 sleep 32
 chg_npc_dir 70400 left
-msg Jessie\nÅuAn ID scan area is set\n up at every chekpoint.
+msg Jessie\n`An ID scan area is set\n up at every chekpoint.
 jump_npc 70400 same 2
 sleep 32
 msg  Passengers' identities\n and such are checked\n against host computers\n at Shinra headquarters.
@@ -10,7 +10,7 @@ chg_npc_dir 70400 up
 sleep 32
 chg_speed 70400 not_step
 chg_npc_dir 70400 left
-msg Jessie\nÅu-whisper-(Of course we\n look suspicious beyond\n doubt so we use fake ID.)
+msg Jessie\n`(Of course we look\n too suspicious so\n we use fake ID.)
 chg_npc_dir 70401 right
 sleep 48
 chg_npc_dir 70400 up
@@ -52,7 +52,7 @@ dec_map_draw_y_offset
 sleep 8
 inc_map_draw_y_offset
 set_key_valid a
-msg3 -1 Jessie\nÅuJust as I was saying.
+msg3 -1 Jessie\n`Just as I was saying.
 chg_char_state_move
 sleep 16
 dec_map_draw_y_offset

@@ -19,24 +19,24 @@ chg_npc_dir 4922 down
 sleep 16
 step_npc 4922 2
 set_talk_npc 4922
-msg 「We wanna be tendin'\n these flowers.
+msg `We wanna be tendin'\n these flowers.
 reset_talk_npc
 sleep 16
 set_talk_npc 4923
 step_npc 4923 2
-msg 「……Can we?\n\n\n\n#2\n  That's all right.\n  No!\n\n\n[[]][[]]
+msg `==Can we?\n\n\n\n#2\n  That's all right.\n  No!\n\n\n[[]][[]]
 reset_talk_npc
 set_active_msg 4922
 set_active_msg 4923
 step_npc 4920 1
 if_flag 3 0
-msg 「You take good care.
+msg `You take good care.
 jump_npc 4922 same 1
 jump_npc 4923 same 1
-msg 「Yes!
+msg `Yes!
 fi
 if_flag 3 1
-msg 『It's too laborious\n for kids like you.
+msg {It's too laborious\n for kids like you.
 sleep 16
 chg_npc_dir 4922 right
 chg_npc_dir 4923 left
@@ -44,7 +44,7 @@ sleep 48
 chg_npc_dir 4922 down
 sleep 16
 jump_npc 4922 same 1
-msg 「L'brius? What's l'brius?\n We don' unnerstan'.
+msg `L'brius? What's l'brius?\n We don' unnerstan'.
 fi
 move_npc 4922 up 2
 move_npc 4923 up 3

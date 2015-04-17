@@ -15,10 +15,10 @@ play_se pick_up.wav
 add_item 6012
 msg You got "The Honeybee Inn\nMember's Card (Mem.Card)"!
 chg_type 7240 npc
-chg_param 7240 「……
-chg_param 7923 「Oh!\n Please go ahead!
-create npc 7924 79 10 11 131 2 0 「Oh! That's "Member's Card"\n shining in your hand.\n Do please come in.
-create npc 7921 79 8 14 31 0 0 「Groan! This is no good……\n I can't go any farther.\n\n\n My level and salary are\n not enough at all.\n I'm unworthy here.
+chg_param 7240 `==
+chg_param 7923 `Oh!\n Please go ahead!
+create npc 7924 79 10 11 131 2 0 `Oh! That's "Member's Card"\n shining in your hand.\n Do please come in.
+create npc 7921 79 8 14 31 0 0 `Groan! This is no good==\n I can't go any farther.\n\n\n My level and salary are\n not enough at all.\n I'm unworthy here.
 create npc2 7922 79 12 14 70 0 0 
 create event_generator 7905 79 0 0 17 0 0 @079/wall_market6.txt
 create event_generator 7906 79 0 0 17 0 0 @079/wall_market14.txt

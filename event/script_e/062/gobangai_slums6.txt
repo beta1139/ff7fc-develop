@@ -1,2 +1,2 @@
 wait_target_talked 6222
-chg_param 6222 uI trust only myself.\n 'Cause I don't lie to\n myself.
+chg_param 6222 `I trust only myself.\n 'Cause I don't lie to\n myself.

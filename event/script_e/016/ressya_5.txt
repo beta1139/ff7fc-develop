@@ -12,11 +12,11 @@ if_flag 3 0
 jump_npc 1668 same 1
 sleep 16
 step_npc 1668 2
-msg Wedge\n「Gee, Cloud!\n\n\n I've always been a minor\n player in my whole life.\n\n\n But if I saved the planet\n with AVALANCHE, then\n maybe even I could be\n someone.
+msg Wedge\n`Gee, Cloud!\n\n\n I've always been a minor\n player my whole life.\n\n\n But if I saved the\n planet with AVALANCHE,\n then maybe even I\n could be someone.
 fi
 if_flag 3 1
 set_talk_npc 1668
-msg Wedge\n「Ooh, that's harsh, Cloud.\n But, well,\n I guess you're right……
+msg Wedge\n`Ooh, that's harsh, Cloud.\n But, well,\n I guess you're right==
 reset_talk_npc
 fi
 if_char_dir down
@@ -26,4 +26,4 @@ fi
 chg_npc_dir 1668 down
 chg_speed 1668 not_step
 chg_type 1668 npc
-chg_param 1668 Wedge\n「Work hard in AVALANCE\n and someday I'm gonna\n make a big name……!
+chg_param 1668 Wedge\n`Work hard in AVALANCE\n and someday I'm gonna\n make a big name==!

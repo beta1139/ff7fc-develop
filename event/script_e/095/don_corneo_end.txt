@@ -5,7 +5,7 @@ fi
 if_char_dir down
 create npc_event 9520 95 7 10 0 0 3 none
 fi
-msg3 -1 Corneo\n「Wait a minute!
+msg3 -1 Corneo\n`Wait a minute!
 chg_speed 9521 normal
 chg_speed 9522 normal
 sleep 16
@@ -24,18 +24,18 @@ wait_key_push_edge a
 erase_msg3
 step_npc 9520 1
 sleep 8
-msg 『Shut up!
+msg {Shut up!
 chg_speed 9523 normal
 jump_npc 9523 same 1
 sleep 16
 step_npc 9523 2
 set_talk_npc 9523
-msg Corneo\n「Just let me ask this!
+msg Corneo\n`Just let me ask this!
 reset_talk_npc
 sleep 24
 step_npc 9523 3
 set_talk_npc 9523
-msg Corneo\n「Why do you think a thug\n like me is now telling\n the truth this easily?\n#3\n  1 You are stumped.\n  2 You are confident.\n  3 You are dumbfounded.\n\n[[]][[]][[]]
+msg Corneo\n`Why do you think a thug\n like me is now telling\n the truth this easily?\n#3\n  1 You are stumped.\n  2 You are confident.\n  3 You are dumbfounded.\n\n[[]][[]][[]]
 reset_talk_npc
 sleep 16
 set_layer 9523 front
@@ -43,13 +43,13 @@ play_se puy.ogg
 if_flag 3 0
 jump_npc 9523 same 2
 set_talk_npc 9523
-msg Corneo\n「Ho-ho! Wrong!
+msg Corneo\n`Ho-ho! Wrong!
 reset_talk_npc
 fi
 if_flag 3 1
 jump_npc 9523 same 2
 set_talk_npc 9523
-msg Corneo\n「Ho-ho! Correct!
+msg Corneo\n`Ho-ho! Correct!
 reset_talk_npc
 fi
 if_flag 3 2
@@ -58,7 +58,7 @@ sleep 16
 play_se puy.ogg
 jump_npc 9523 same 1
 set_talk_npc 9523
-msg Corneo\n「Ho-ho! Close!
+msg Corneo\n`Ho-ho! Close!
 reset_talk_npc
 fi
 chg_npc_dir 9523 down

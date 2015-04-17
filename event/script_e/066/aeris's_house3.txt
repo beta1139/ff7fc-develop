@@ -3,16 +3,16 @@ chg_type 6621 npc_event
 chg_dir_to_char 6621
 step_char 1
 sleep 16
-msg 『Yeah.\n But it's in the past……
+msg {Yeah.\n But it's in the past==
 sleep 16
 chg_npc_dir 6621 up
 sleep 40
 chg_speed 6621 normal
 step_npc 6621 2
 set_talk_npc 6621
-msg Elmyra\n「……\n I hate to say this, but……\n\n Will you leave during\n the night?\n Without telling Aeris.
+msg Elmyra\n`==\n I hate to say this,\n but==\n Will you leave during\n the night?\n Without telling Aeris.
 reset_talk_npc
 chg_speed 6621 not_step
 chg_type 6621 npc3
-chg_param 6621 Elmyra\n「A SOLDIER……\n I don't want Aeris to\n break her heart again……
+chg_param 6621 Elmyra\n`A SOLDIER==\n I don't want Aeris to\n break her heart again==
 chg_npc_dir 6621 up

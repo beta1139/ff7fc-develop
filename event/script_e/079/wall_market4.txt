@@ -5,6 +5,6 @@ if_flag 3 0
 kill_through 8500
 kill_through 8510
 sleep 8
-create npc2 8510 85 10 15 131 1 0 「Another friend……\n That sounds good.\n\n\n That'll make Don happier\n and maybe……he-he.
+create npc2 8510 85 10 15 131 1 0 `Another friend==\n That sounds good.\n\n\n That'll make Don happier\n and maybe==he-he.
 create event_generator 8500 85 0 0 17 0 0 @085/wall_market9.txt
 fi

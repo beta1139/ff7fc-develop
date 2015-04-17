@@ -19,7 +19,7 @@ jump_npc 4802 same 1
 sleep 16
 chg_npc_dir 4801 right
 step_npc 4802 2
-msg Baret\n「This way!
+msg Baret\n`This way!
 move_npc 4802 right 3
 chg_char_dir right
 sleep 32
@@ -38,7 +38,7 @@ slide_walk_npc 4802 left 1
 sleep 32
 chg_speed 4802 normal
 step_npc 4802 2
-msg Baret\n「Shinra Guards!?
+msg Baret\n`Shinra Guards!?
 chg_npc_dir 4802 left
 sleep 16
 chg_npc_dir 4802 right
@@ -47,11 +47,11 @@ jump_npc 4802 same 1
 sleep 16
 chg_speed 4802 fast
 step_npc 4802 4
-msg Baret\n「Fuck!\n What's goin' on?
+msg Baret\n`Fuck!\n What's goin' on?
 chg_char_dir down
 sleep 16
 play_event_bgm Ex-08-nothing.ogg
-msg3 -1 『……A trap.
+msg3 -1 {==A trap.
 sleep 64
 play_se_loop footstep.ogg
 sleep 80
@@ -87,7 +87,7 @@ sleep 16
 jump_npc 4802 same 2
 sleep 32
 step_npc 4802 4
-msg Baret\n「P-President Shinra?
+msg Baret\n`P-President Shinra?
 sleep 16
 chg_speed 4801 fast
 move_npc 4801 right 1
@@ -97,7 +97,7 @@ move_npc 4807 down 1
 set_active_msg 4807
 sleep 16
 create npc_event 4990 49 20 11 20 1 4 none
-msg Tifa\n「What's President\n doing here?
+msg Tifa\n`What's President\n doing here?
 move_char up 2
 sleep 72
 clear_text 3
@@ -264,17 +264,17 @@ sleep 64
 chg_speed 4807 normal
 step_npc 4807 1
 set_talk_npc 4807
-msg President Shinra\n「Hmph.\n So you are them.\n ……what was that?
+msg President Shinra\n`Hmph.\n So you are them.\n ==what was that?
 reset_talk_npc
 jump_npc 4802 same 2
 sleep 32
 jump_npc 4802 same 2
 set_active_msg 4802
-msg Baret\n「It's AVALANCHE!\n Remember it well!\n You're President Shinra.
+msg Baret\n`It's AVALANCHE!\n Remember it well!\n You're President Shinra.
 chg_speed 4800 slow
 move_npc 4800 up 2
 sleep 64
-msg 『It's been a while,\n President.
+msg {It's been a while,\n President.
 sleep 16
 chg_npc_dir 4807 left
 sleep 48
@@ -282,17 +282,17 @@ chg_npc_dir 4807 down
 sleep 16
 step_npc 4807 1
 set_talk_npc 4807
-msg President Shinra\n「……While?\n Oh, so you are the one.\n\n An ex-SOLDIER cooperating\n with one AVALANCHE.\n Your eyes indeed indicate\n the immersion to Mako……\n What was the name of that\n traitor?
+msg President Shinra\n`==While?\n Oh, so you are the one.\n\n An ex-SOLDIER cooperating\n with one AVALANCHE.\n Your eyes indeed indicate\n the immersion to Mako==\n What was the name of that\n traitor?
 reset_talk_npc
 sleep 8
 chg_speed 4800 normal
 step_npc 4800 1
 sleep 8
-msg 『It's Cloud.
+msg {It's Cloud.
 sleep 16
 step_npc 4807 1
 set_talk_npc 4807
-msg President Shinra\n「Forgive me if I do not\n remember every and each\n SOLDIER's name.\n Unless you are as good\n as that Sephiroth.
+msg President Shinra\n`Forgive me if I do not\n remember every and each\n SOLDIER's name.\n Unless you are as good\n as that Sephiroth.
 reset_talk_npc
 sleep 16
 chg_npc_dir 4807 left
@@ -301,13 +301,13 @@ chg_npc_dir 4807 down
 sleep 32
 step_npc 4807 3
 set_talk_npc 4807
-msg President Shinra\n「Yes, Sephiroth……\n He was excellent.\n Too excellent, indeed.
+msg President Shinra\n`Yes, Sephiroth==\n He was excellent.\n Too excellent, indeed.
 reset_talk_npc
 sleep 16
 chg_speed 4800 slow
 slide_walk_npc 4800 down 1
 sleep 48
-msg 『Dis you say Sephiroth……?
+msg {Dis you say Sephiroth==?
 move_npc 4802 left 1
 sleep 8
 move_npc 4802 up 3
@@ -318,27 +318,27 @@ sleep 16
 jump_npc 4802 same 2
 sleep 32
 step_npc 4802 6
-msg Baret\n「Stop yammerin'! This\n place'll go BOOM soon!\n Serves you right!
+msg Baret\n`Stop yammerin'! This\n place'll go BOOM soon!\n Serves you right!
 sleep 32
 step_npc 4807 2
 set_talk_npc 4807
-msg President Shinra\n「Indeed. Although this\n place is wasted for the\n likes of you MAGGOTS……
+msg President Shinra\n`Indeed. Although this\n place is wasted for the\n likes of you MAGGOTS==
 reset_talk_npc
 step_npc 4802 6
-msg Baret\n「MAGGOTS!?\n You dare call us MAGGOTS!\n\n Then you and your Shinra\n are nothing more than \n PARASITES eating away\n this planet!
+msg Baret\n`MAGGOTS!?\n You dare call us MAGGOTS!\n\n Then you and your Shinra\n are nothing more than \n PARASITES eating away\n this planet!
 chg_npc_dir 4807 up
 sleep 32
 set_talk_npc 4807
-msg President Shinra\n「……I have become tired of \n entertaining you.\n\n Please excuse me now for\n I am a busy person.\n I have an engagement to\n dine this evening.
+msg President Shinra\n`==I have become tired of \n entertaining you.\n\n Please excuse me now for\n I am a busy person.\n I have an engagement to\n dine this evening.
 reset_talk_npc
 move_npc 4802 up 1
 sleep 8
 chg_npc_dir 4807 down
 jump_npc 4802 same 2
-msg Baret\n「Engagement? You fuck!\n I still got a whole lot\n of things to tell you!
+msg Baret\n`Engagement? You fuck!\n I still got a whole lot\n of things to tell you!
 step_npc 4807 1
 set_talk_npc 4807
-msg President Shinra\n「I have taken the liberty\n of arranging another\n entertainment for you.
+msg President Shinra\n`I have taken the liberty\n of arranging another\n entertainment for you.
 reset_talk_npc
 sleep 16
 chg_npc_dir 4807 left
@@ -355,7 +355,7 @@ play_event_bgm Ex-06-air_buster1.ogg
 sleep 16
 chg_npc_dir 4801 left
 sleep 16
-msg Tifa\n「!? What's this noise?
+msg Tifa\n`!? What's this noise?
 chg_npc_dir 4800 left
 sleep 16
 chg_npc_dir 4802 left
@@ -368,7 +368,7 @@ sleep 8
 create npc_event 4820 48 1 26 122 3 0 none
 sleep 8
 step_npc 4802 3
-msg Baret\n「W-what the fuck is this!
+msg Baret\n`W-what the fuck is this!
 chg_event_move_char_speed normal
 move_char down 3
 chg_speed 4820 normal
@@ -403,11 +403,11 @@ chg_speed 4820 normal
 jump_npc 4820 same 1
 sleep 16
 chg_speed 4820 not_move
-msg President Shinra\n「Our Research Division's\n latest prototype mech\n soldier, AirBuster.\n We will thankfully make\n use of the data that is\n to be collected during\n the battle with you.
+msg President Shinra\n`Our Research Division's\n latest prototype mech\n soldier, AirBuster.\n We will thankfully make\n use of data which is\n to be collected during\n the battle with you.
 chg_speed 4800 normal
 sleep 16
 step_npc 4800 1
-msg 『……mech soldier?
+msg {==mech soldier?
 sleep 16
 play_se_loop helicopter.ogg
 create npc_event 4821 48 4 29 123 1 2 none
@@ -434,7 +434,7 @@ chg_speed 4822 not_move
 sleep 16
 step_npc 4807 1
 set_talk_npc 4807
-msg President Shinra\n「You will excuse me now.
+msg President Shinra\n`You will excuse me now.
 reset_talk_npc
 chg_speed 4807 slow
 slide_walk_npc 4807 up 1
@@ -443,7 +443,7 @@ chg_speed 4822 normal
 slide_walk_npc 4821 up 1
 slide_walk_npc 4822 up 1
 sleep 8
-msg3 -1 『Wait, President!
+msg3 -1 {Wait, President!
 chg_npc_dir 4807 down
 chg_speed 4800 fast
 move_npc 4800 up 4
@@ -496,7 +496,7 @@ chg_npc_dir 4802 up
 jump_npc 4802 same 1
 sleep 16
 step_npc 4802 2
-msg Baret\n「Hey, Cloud!\n We gotta get rid of\n this bastard first! 
+msg Baret\n`Hey, Cloud!\n We gotta get rid of\n this bastard first! 
 chg_speed 4820 fast
 jump_npc 4820 same 2
 sleep 16
@@ -526,7 +526,7 @@ chg_npc_dir 4801 right
 sleep 32
 chg_npc_dir 4801 up
 step_npc 4801 1
-msg3 -1 Tifa\n「Help me, Cloud!
+msg3 -1 Tifa\n`Help me, Cloud!
 sleep 32
 chg_event_move_char_speed fast
 move_char down 6
@@ -544,12 +544,12 @@ move_char left 1
 erase_msg3
 sleep 8
 step_npc 4801 1
-msg Tifa\n「Is this a SOLDIER?
+msg Tifa\n`Is this a SOLDIER?
 jump_char same 1
 sleep 16
 step_char 1
 sleep 16
-msg 『No way!\n It's only a machine.
+msg {No way!\n It's only a machine.
 chg_npc_dir 4820 right
 sleep 16
 chg_speed 4802 normal
@@ -560,7 +560,7 @@ sleep 48
 chg_speed 4802 fast
 chg_npc_dir 4802 right
 step_npc 4802 4
-msg Baret\n「Whatever!\n I'm gonna blow it up!
+msg Baret\n`Whatever!\n I'm gonna blow it up!
 chg_npc_img 4802 1
 move_char left 1
 move_npc 4802 right 1
@@ -709,7 +709,7 @@ sleep 8
 step_npc 4800 1
 sleep 8
 step_npc 4802 3
-msg Baret\n「It'll blow up soon!\n Let's go, Tifa!
+msg Baret\n`The reactor's blowing\n up soon! C'mon, Tifa!
 chg_npc_dir 4801 left
 chg_speed 4801 fast
 jump_npc 4801 same 1
@@ -718,12 +718,12 @@ sleep 8
 step_npc 4800 1
 sleep 8
 step_npc 4801 2
-msg Tifa\n「Baret!\n Can't you do something?
+msg Tifa\n`Baret!\n Can't you do something?
 chg_npc_dir 4801 right
 sleep 16
 chg_speed 4802 normal
 step_npc 4802 1
-msg Baret\n「I can't do nothing.
+msg Baret\n`I can't do nothing.
 jump_npc 4801 same 2
 sleep 16
 chg_npc_y_offset 4800 -3
@@ -731,13 +731,13 @@ sleep 8
 step_npc 4800 1
 sleep 8
 step_npc 4801 3
-msg Tifa\n「Cloud! Don't die!\n We still have a lot\n of things to talk!
+msg Tifa\n`Cloud! Don't die!\n We still have a lot\n of things to talk!
 chg_npc_y_offset 4800 -4
 step_npc 4800 1
 sleep 8
 step_npc 4800 2
 sleep 16
-msg 『I know, Tifa
+msg {I know, Tifa
 chg_npc_y_offset 4800 -3
 chg_speed 4802 fast
 jump_npc 4802 right 1
@@ -748,39 +748,39 @@ step_npc 4800 1
 sleep 8
 chg_speed 4802 normal
 jump_npc 4802 same 1
-msg Baret\n「Hey, ya gonna make it?\n\n\n#2\n  Play tough.\n  Maybe not……\n\n\n[[]][[]]
+msg Baret\n`Hey, ya gonna make it?\n\n\n#2\n  Play tough.\n  Maybe not==\n\n\n[[]][[]]
 if_flag 3 0
 add_likability 1 250
-msg3 -1 『……
+msg3 -1 {==
 chg_npc_y_offset 4800 -4
 step_npc 4800 1
 sleep 56
 erase_msg3
 step_npc 4800 4
 sleep 8
-msg 『Mind your own business!\n You take care of Tifa!
+msg {Mind your own business!\n You take care of Tifa!
 chg_npc_y_offset 4800 -3
 sleep 8
 step_npc 4800 1
 sleep 8
 step_npc 4802 2
-msg Baret\n「……Ok.\n You know, you were cool.
+msg Baret\n`==Ok.\n You know, you were cool.
 chg_npc_y_offset 4800 -4
 sleep 8
 step_npc 4800 4
-msg 『Stop acting like I'm\n already dead!
+msg {Stop acting like I'm\n already dead!
 fi
 if_flag 3 1
 add_likability 2 250
 sub_likability 1 300
-msg3 -1 『Gasp!
+msg3 -1 {Gasp!
 chg_npc_y_offset 4800 -4
 step_npc 4800 1
 sleep 56
 erase_msg3
 chg_speed 4800 fast
 step_npc 4800 6
-msg 『Can't hold much longer.\n Baret, quickly!
+msg {Can't hold much longer.\n Baret, quickly!
 chg_npc_y_offset 4800 -3
 jump_npc 4802 same 1
 sleep 8
@@ -789,15 +789,15 @@ sleep 8
 jump_npc 4802 same 1
 sleep 16
 step_npc 4802 4
-msg Baret\n「Stop whimperin'. Sorry\n but I can't do nothing.\n Try to save yourself.
+msg Baret\n`Stop whimperin'. Sorry\n but I can't do nothing.\n Try to save yourself.
 chg_npc_y_offset 4800 -4
 sleep 8
 chg_speed 4800 normal
 step_npc 4800 1
-msg 『Baret……
+msg {Baret==
 fi
 step_npc 4802 1
-msg Baret\n「See ya.
+msg Baret\n`See ya.
 chg_npc_y_offset 4800 -4
 sleep 8
 step_npc 4800 1

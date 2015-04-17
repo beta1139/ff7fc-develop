@@ -6,12 +6,12 @@ chg_type 2501 npc
 move_char up 1
 sleep 16
 set_talk_npc 2501
-msg ÅuOho!\n Hey, you!
+msg `Oho!\n Hey, you!
 reset_talk_npc
 chg_npc_dir 2520 up
 sleep 16
 set_talk_npc 2501
-msg ÅuYou must buy something\n from me, or else.\n\n\n#3\n  Show me weapons.\n  Show me armors.\n  Show me items.\n\n[[]][[]][[]]
+msg `You must buy something\n from me, or else.\n\n\n#3\n  Show me weapons.\n  Show me armors.\n  Show me items.\n\n[[]][[]][[]]
 reset_talk_npc
 if_flag 3 0
 open_weapon_shop 2101

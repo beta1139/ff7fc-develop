@@ -6,12 +6,12 @@ chg_type 2506 npc_event
 chg_dir_to_char 2506
 chg_speed 2506 normal
 set_talk_npc 2506
-msg 「Man, changed your mind?\n\n\n\n#3\n  Give him 1 Gil.\n  Give him 10 Gil.\n  Nope.\n\n[[]][[]][[]]
+msg `Man, changed your mind?\n\n\n\n#3\n  Give him 1 Gil.\n  Give him 10 Gil.\n  Nope.\n\n[[]][[]][[]]
 reset_talk_npc
 if_flag 3 0
 if_gil_less 1
 step_npc 2506 1
-msg 「Man, how pathetic.\n You're poorer than me.
+msg `Man, how pathetic.\n You're poorer than me.
 chg_char_dir right
 chg_char_img_tmp 97
 step_char 2
@@ -21,12 +21,12 @@ reset_char_img_tmp
 fi
 if_gil_equal 1
 step_npc 2506 1
-msg 「Tsk! Man,\n Forget what I've said.
+msg `Tsk! Man,\n Forget what I've said.
 sleep 16
 fi
 if_gil_greater 1
 step_npc 2506 1
-msg 「Tsk! Man,\n Forget what I've said.
+msg `Tsk! Man,\n Forget what I've said.
 sleep 16
 fi
 chg_type 2506 npc2
@@ -34,7 +34,7 @@ fi
 if_flag 3 1
 if_gil_less 10
 step_npc 2506 1
-msg 「Man, how pathetic.\n You're poorer than me.
+msg `Man, how pathetic.\n You're poorer than me.
 chg_char_dir right
 chg_char_img_tmp 97
 step_char 2
@@ -52,7 +52,7 @@ sleep 24
 play_se coin.ogg
 sleep 32
 step_npc 2506 2
-msg 「Nice……
+msg `Nice==
 chg_npc_dir 2506 right
 sleep 4
 chg_npc_dir 2506 down
@@ -63,12 +63,12 @@ chg_npc_dir 2506 up
 sleep 4
 chg_dir_to_char 2506
 set_talk_npc 2506
-msg 「Now you can use the room.
+msg `Now you can use the room.
 reset_talk_npc
 sub_gil 10
 chg_npc_dir 2506 left
 chg_type 2506 npc
-chg_param 2506 「Use whichever bed you\n like. Sweet dreams, man.
+chg_param 2506 `Use whichever bed you\n like. Sweet dreams, man.
 create event_generator 2700 27 5 6 17 1 0 @027/nanabangai_slum13.txt
 kill 2701
 kill 2702
@@ -83,7 +83,7 @@ jump_npc 2506 same 1
 sleep 16
 step_npc 2506 2
 set_talk_npc 2506
-msg 「That's insulting, man.
+msg `That's insulting, man.
 reset_talk_npc
 chg_type 2506 npc2
 if_char_dir down

@@ -46,7 +46,7 @@ chg_npc_dir 2010 down
 sleep 32
 play_se attack_baret.ogg
 sleep 48
-create npc_event 2006 20 22 26 71 1 2 「Hic……I got drunk.\n That cocktail was too\n good and too hard.
+create npc_event 2006 20 22 26 71 1 2 `Hic==I got drunk.\n That cocktail was too\n good and too hard.
 chg_speed 2006 fast
 move_npc 2006 down 2
 sleep 16
@@ -58,7 +58,7 @@ create npc_event 2007 20 22 26 88 1 2
 chg_speed 2007 fast
 move_npc 2007 down 2
 sleep 16
-create npc_event 2008 20 22 26 65 1 2 「Ka-boom! Ka-boom!\n Cool!\n AVALANCHE rules!
+create npc_event 2008 20 22 26 65 1 2 `Ka-boom! Ka-boom!\n Cool!\n AVALANCHE rules!
 move_npc 2008 down 2
 move_npc 2007 right 2
 sleep 32
@@ -68,7 +68,7 @@ move_npc 2008 right 1
 sleep 16
 chg_npc_dir 2008 left
 sleep 16
-create npc_event 2009 20 22 26 70 1 2 「Heavens!\n What on earth's going on\n tonight?\n\n The blackout has lasted\n for ages and I was\n thinking there's some\n strange shit going on.\n Then it turns out that\n a Mako reactor was blown\n up by a terrorist group.\n\n And I was watching the\n news in a bar and then\n got thrown out of it.\n Heavens!
+create npc_event 2009 20 22 26 70 1 2 `Heavens!\n What on earth's going on\n tonight?\n\n The blackout has lasted\n for ages and I was\n thinking there's some\n strange shit going on.\n Then it turns out that\n a Mako reactor was blown\n up by a terrorist group.\n\n And I was watching the\n news in a bar and then\n got thrown out of it.\n Heavens!
 chg_speed 2009 fast
 move_npc 2009 down 1
 sleep 8
@@ -206,4 +206,4 @@ close_door 2092
 sleep 112
 kill_through 2013
 chg_type 2011 npc
-chg_param 2011 Baret\n「Right!\n You wait inside.
+chg_param 2011 Baret\n`Right!\n You wait inside.

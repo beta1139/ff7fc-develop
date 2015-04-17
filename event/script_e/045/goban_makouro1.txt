@@ -1,9 +1,9 @@
 wait_same_pos
 chg_char_img 0
 set_flag 1 1
-create npc_event 4501 45 8 18 1 0 2 Baret\n「What's the matter?\n Quick, set up the bomb.
+create npc_event 4501 45 8 18 1 0 2 Baret\n`What's the matter?\n Quick, set up the bomb.
 move_npc 4501 down 3
-create npc_event 4502 45 8 18 2 0 2 Tifa\n「Hurry up, Cloud.
+create npc_event 4502 45 8 18 2 0 2 Tifa\n`Hurry up, Cloud.
 move_npc 4502 up 3
 sleep 48
 chg_npc_dir 4502 down
@@ -34,29 +34,29 @@ chg_event_move_char_speed slow
 move_char up 3
 sleep 112
 chg_speed 70502 normal
-msg Tifa\n「Papa……
+msg Tifa\n`Papa==
 sleep 64
 step_npc 70502 2
 sleep 48
-msg Tifa\n「It's Sephiroth!
+msg Tifa\n`It's Sephiroth!
 sleep 32
 step_npc 70502 3
 sleep 48
-msg Tifa\n「Sephiroth did it!
+msg Tifa\n`Sephiroth did it!
 sleep 16
 chg_speed 70502 slow
 move_npc 70502 right 1
 sleep 16
 chg_speed 70502 not_step
 sleep 64
-msg Tifa\n「Sephiroth……SOLDIER……\n reactors……Shinra……\n all of them……
+msg Tifa\n`Sephiroth==SOLDIER==\n reactors==Shinra==\n all of them==
 chg_speed 70502 slow
 slide_walk_npc 70502 left 1
 sleep 16
 chg_speed 70502 not_step
 sleep 48
 chg_npc_img 70502 120
-msg Tifa\n「I hate them all!
+msg Tifa\n`I hate them all!
 chg_npc_img 70502 14
 chg_npc_dir 70502 up
 sleep 16
@@ -119,21 +119,21 @@ sleep 16
 jump_npc 4501 same 1
 sleep 16
 step_npc 4501 3
-msg Baret\n「Hey, get a grip.
+msg Baret\n`Hey, get a grip.
 chg_char_dir down
 move_npc 4502 down 2
 sleep 32
 step_npc 4502 2
 set_talk_npc 4502
-msg Tifa\n「Are you all right?
+msg Tifa\n`Are you all right?
 reset_talk_npc
 sleep 16
 chg_char_dir up
 sleep 32
-msg 『……Tifa
+msg {==Tifa
 sleep 8
 set_talk_npc 4502
-msg Tifa\n「Yes?
+msg Tifa\n`Yes?
 reset_talk_npc
 sleep 16
 chg_char_dir right
@@ -144,7 +144,7 @@ chg_char_dir up
 sleep 16
 step_char 1
 sleep 16
-msg 『N-no……\n Never mind.\n Gotta hurry up!
+msg {N-no==\n Never mind.\n Gotta hurry up!
 set_flag_wall 4501
 set_flag_wall 4502
 chg_type 4501 npc2

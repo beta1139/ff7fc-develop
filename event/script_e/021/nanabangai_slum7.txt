@@ -4,7 +4,7 @@ draw_char off
 move_char up 3
 sleep 48
 set_talk_npc 2106
-msg 「Sigh……\n Slack as usual.\n\n\n I may have to wind up\n the business……\n You can't sell proper\n drugs in slums like this.
+msg `Sigh==\n Slack as usual.\n\n\n I may have to wind up\n the business==\n You can't sell proper\n drugs in slums like this.
 reset_talk_npc
 move_char down 3
 sleep 48

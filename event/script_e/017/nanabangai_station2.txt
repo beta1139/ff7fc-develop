@@ -1,4 +1,4 @@
 wait_target_talked 1706
-create npc 1711 17 14 9 94 1 0 uSince some time agocc\n I started to build\n invisible walls between\n me and passengers,\n just so I wouldn't step\n into their real lives.\n I am only an attendant\n and that suits me well.
+create npc 1711 17 14 9 94 1 0 `Since some time ago==\n I started to build\n invisible walls between\n me and passengers,\n just so I wouldn't step\n into their real lives.\n I am only an attendant\n and that suits me well.
 kill 1706
 create event_generator 1712 17 1 1 17 0 0 @017/nanabangai_station3.txt

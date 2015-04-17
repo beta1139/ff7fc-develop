@@ -1,13 +1,13 @@
 wait_event_invalid 215
 step_npc 290 1
 sleep 16
-msg 『……Cloud.
+msg {==Cloud.
 jump_npc 203 same 1
 sleep 16
-msg Biggs\n「Cloud. I'm……
+msg Biggs\n`Cloud. I'm==
 chg_speed 203 not_step
 step_npc 290 2
-msg 『I'm not interested in\n your names.\n Once this job's done,\n I'm gone already.
+msg {I'm not interested in\n your names.\n Once this job's done,\n I'm gone already.
 create npc_event 252 2 30 6 1 2 3 none
 move_npc 252 left 4
 chg_speed 203 not_move
@@ -21,7 +21,7 @@ jump_npc 252 same 2
 set_active_msg 252
 chg_char_dir right
 sleep 16
-msg 「The hell y'all doin'!?\n I thought I told you\n never to stick together!\n\n Our target's No.1 Mako\n reactor.\n We'll meet at the bridge\n in front of it.
+msg `The fuck y'all doin'!?\n I thought I told you\n never to stick together!\n\n Our target's No.1 Mako\n reactor.\n We'll meet at the bridge\n in front of it.
 chg_npc_dir 202 up
 jump_npc 201 same 1
 jump_npc 203 same 1
@@ -57,5 +57,5 @@ sleep 16
 chg_npc_dir 252 left
 chg_npc_img 252 98
 set_talk_npc 252
-msg 「Ex-SOLDIER, is it?\n Tsk……I don't like it!
+msg `Ex-SOLDIER, is it?\n Tsk==I don't like it!
 reset_talk_npc

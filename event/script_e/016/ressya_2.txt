@@ -4,9 +4,9 @@ chg_speed 1662 not_move
 chg_speed 1663 not_move
 sleep 16
 play_se train_info.ogg
-msg Train PA\n「Today's last train\n leaving Midgar\n Sector 8 Station,\n Bound for Slum 7,\n Train Graveyard Station.\n\n\n Estimated time of\n arrival is 0:23\n Midgar Standard Time……
+msg Train PA\n`Today's last train\n leaving Midgar\n Sector 8 Station,\n Bound for Slum 7,\n Train Graveyard Station.\n\n\n Estimated time of\n arrival is 0:23\n Midgar Standard Time==
 play_se door_open_hard.wav
-create npc_event 1665 16 1 21 1 3 2 Baret\n「Stop prowling around\n like a kid.
+create npc_event 1665 16 1 21 1 3 2 Baret\n`Stop prowling around\n like a kid.
 move_npc 1665 right 6
 chg_speed 1662 normal
 chg_speed 1663 normal
@@ -40,13 +40,13 @@ loop 6
 dec_map_draw_y_offset
 sleep 1
 pool
-create npc_event 1668 16 1 21 36 3 2 Wedge\n「Work hard in AVALANCE\n and someday I'm gonna\n make a big name……!\n You think I can have\n a rosy future?\n\n\n#2\n  What are you expecting?\n  Forget it.\n\n\n[[]][[]]
+create npc_event 1668 16 1 21 36 3 2 Wedge\n`Work hard in AVALANCE\n and someday I'm gonna\n make a big name==!\n You think I can have\n a rosy future?\n\n\n#2\n  What are you expecting?\n  Forget it.\n\n\n[[]][[]]
 move_npc 1668 right 2
 sleep 16
-create npc_event 1666 16 1 21 35 3 2 Biggs\n「I see they're not\n on red alert yet.\n\n Won't be this easy\n tomorrow, though.
+create npc_event 1666 16 1 21 35 3 2 Biggs\n`I see they're not\n on red alert yet.\n\n Won't be this easy\n tomorrow, though.
 move_npc 1666 right 1
 sleep 16
-create npc_event 1667 16 1 21 34 3 2 Jessie\n「Cloud,\n Would you watch\n this with me?\n Midgar Train System\n Display. It'll be fun\n if we watch together.\n I'll explain it to you.
+create npc_event 1667 16 1 21 34 3 2 Jessie\n`Cloud, why don't you\n watch this with me?\n\n Midgar Train System\n Display. It'll be fun\n if we watch together.\n I'll explain it to you.
 move_npc 1666 up 1
 move_npc 1667 right 1
 sleep 16
@@ -61,7 +61,7 @@ sleep 32
 move_npc 1662 right 4
 move_npc 1663 right 4
 sleep 64
-msg 「This is why I hate\n the last train. Sigh……
+msg `This is why I hate\n the last train. Sigh==
 move_npc 1661 down 1
 sleep 16
 move_npc 1661 right 1

@@ -1,6 +1,6 @@
 set_eternal_event
 wait_same_pos
-msg wWellcc\n\n\n\n#2\n  Get on.\n  Not yet.\n\n\n[[]][[]]
+msg {Well==\n\n\n\n#2\n  Get on.\n  Not yet.\n\n\n[[]][[]]
 if_flag 3 0
 draw_char off
 move_char up 1

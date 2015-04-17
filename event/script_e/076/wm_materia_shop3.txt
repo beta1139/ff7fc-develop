@@ -3,7 +3,7 @@ create npc_event 7620 76 5 7 0 0 2 none
 draw_char off
 chg_speed 7610 normal
 step_npc 7620 1
-msg 『I brought it.
+msg {I brought it.
 move_char up 1
 chg_npc_dir 7610 down
 sleep 16
@@ -12,7 +12,7 @@ jump_npc 7610 same 1
 sleep 16
 step_npc 7610 4
 set_talk_npc 7610
-msg 「Now, let me have it.\n Oh!
+msg `Now, let me have it.\n Oh!
 reset_talk_npc
 create npc_event 7621 76 5 7 3 0 2 none
 move_npc 7621 right 2
@@ -21,12 +21,12 @@ chg_npc_dir 7621 up
 sleep 16
 jump_npc 7621 same 1
 sleep 16
-msg Aeris\n「Hey.
+msg Aeris\n`Hey.
 chg_npc_dir 7621 right
 sleep 16
 step_npc 7610 3
 set_talk_npc 7610
-msg 『So, what is it?
+msg {So, what is it?
 reset_talk_npc
 step_npc 7620 2
 sleep 32
@@ -37,23 +37,23 @@ jump_npc 7610 same 1
 sleep 16
 if_flag 14 3
 set_talk_npc 7610
-msg 「Energy Charge Drink Set.\n He has a good head for\n business. Hmm, I got to\n keep up with him.
+msg `Energy Charge Drink Set.\n He has a good head for\n business. Hmm, I got to\n keep up with him.
 reset_talk_npc
 fi
 if_flag 14 4
 set_talk_npc 7610
-msg 「Stamina Restore Drug Set.\n He has a good head for\n business. Hmm, I got to\n keep up with him.
+msg `Stamina Restore Drug Set.\n He has a good head for\n business. Hmm, I got to\n keep up with him.
 reset_talk_npc
 fi
 if_flag 14 5
 set_talk_npc 7610
-msg 「Muscle Relax Salve Set.\n He has a good head for\n business. Hmm, I got to\n keep up with him.
+msg `Muscle Relax Salve Set.\n He has a good head for\n business. Hmm, I got to\n keep up with him.
 reset_talk_npc
 fi
 sleep 16
 step_npc 7610 3
 set_talk_npc 7610
-msg 「Thank you, young man.\n I got some inspiration.\n Take this as a token of\n my gratitude.
+msg `Thank you, young man.\n I got some inspiration.\n Take this as a token of\n my gratitude.
 reset_talk_npc
 move_npc 7610 right 1
 sleep 16

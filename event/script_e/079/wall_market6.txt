@@ -21,9 +21,9 @@ dec_map_draw_y_offset
 sleep 1
 pool
 set_talk_npc 7922
-msg ÅuHey, Asshole!\n What are you lookin at!\n I got no time for you!
+msg `Hey, Asshole!\n What are you lookin at!\n I got no time for you!
 step_npc 7922 4
-msg ÅuI'm getting excited to\n the pit of my stomach!
+msg `I'm getting excited to\n the pit of my stomach!
 reset_talk_npc
 chg_type 7922 npc2
 set_flag_wall 7922

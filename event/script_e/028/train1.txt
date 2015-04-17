@@ -20,10 +20,10 @@ sleep 16
 create npc_event 2800 28 3 10 0 3 2 none
 move_npc 2800 up 3
 sleep 32
-create npc_event 2801 28 3 10 1 0 2 Baret\n「Hey, Mister Know-it-all!\n So you're familiar with\n No.5 reactor's vicinity.\n I wanna hear your oh-so-\n useful explanations.
+create npc_event 2801 28 3 10 1 0 2 Baret\n`Hey, Mister Know-it-all!\n So you're familiar with\n No.5 reactor's vicinity.\n I wanna hear your oh-so-\n useful explanations.
 move_npc 2801 up 4
 sleep 16
-create npc_event 2802 28 3 10 2 0 2 Tifa\n「I see you've already\n watched it many times.\n Never mind.\n Come over here.
+create npc_event 2802 28 3 10 2 0 2 Tifa\n`I see you've already\n watched it many times.\n Never mind.\n Come over here.
 move_npc 2802 up 5
 move_npc 2800 right 2
 sleep 48
@@ -37,7 +37,7 @@ sleep 32
 jump_npc 2801 same 2
 sleep 32
 step_npc 2801 2
-msg Baret\n「Yo!
+msg Baret\n`Yo!
 chg_speed 2803 normal
 chg_speed 2805 normal
 move_npc 2803 down 1
@@ -50,7 +50,7 @@ chg_npc_dir 2804 left
 chg_npc_dir 2805 left
 sleep 16
 step_npc 2801 4
-msg Baret\n「This ain't no\n reserved car!\n Stop sticking together!
+msg Baret\n`This ain't no\n reserved car!\n Stop sticking together!
 move_npc 2803 down 1
 move_npc 2804 right 7
 move_npc 2805 down 1
@@ -71,7 +71,7 @@ kill 2805
 sleep 16
 kill 2804
 set_talk_npc 2806
-msg 「Those hooligans again.\n How unlucky of me.
+msg `Those hooligans again.\n How unlucky of me.
 move_npc 2801 right 12
 set_active_msg 2801
 reset_talk_npc
@@ -94,10 +94,10 @@ move_npc 2800 up 1
 jump_npc_target_pos 2806 12 8
 sleep 112
 step_npc 2801 2
-msg Baret\n「Huh?
+msg Baret\n`Huh?
 sleep 32
 step_npc 2801 4
-msg Baret\n「Well?
+msg Baret\n`Well?
 sleep 32
 move_npc 2801 left 7
 sleep 80
@@ -110,13 +110,13 @@ sleep 16
 jump_npc 2801 same 1
 sleep 16
 set_inactive_msg 2801
-msg Baret\n「Hey!\n This car's deserted.\n\n What's the matter?
+msg Baret\n`Hey!\n This car's deserted.\n\n What's the matter?
 jump_npc 2806 same 1
 set_active_msg 2806
-msg 「Yikes!
+msg `Yikes!
 chg_npc_dir 2800 right
 sleep 16
-msg 「Th-that's because of\n the likes of you……
+msg `Th-that's because of\n the likes of you==
 chg_npc_dir 2801 left
 chg_npc_img 2801 98
 sleep 8
@@ -142,31 +142,31 @@ sleep 1
 pool
 jump_npc 2806 same 2
 set_active_msg 2806
-msg 「Eeeeek!
+msg `Eeeeek!
 sleep 32
 step_npc 2806 4
-msg 「Did you watch the news?\n Another bombing was\n warned by AVALANCHE.\n\n Only Shinra employees\n like me would go\n to Midgar on a day\n like this.
+msg `D-don't you watch the\n news? Another bombing\n was warned by AVALANCHE.\n\n Only very loyal Shinra\n employees like me would\n go to Midgar on a day\n like this.
 jump_npc_target_pos 2801 12 6
 sleep 32
 step_npc 2801 4
-msg Baret\n「You Shinra?
+msg Baret\n`You Shinra?
 set_inactive_msg 2806
 jump_npc 2806 same 1
 sleep 16
 jump_npc 2806 same 1
 set_active_msg 2806
-msg Shinra Manager\n「I, I won't give in\n to any vaiolence.\n N-nor give up this seat.
+msg Shinra Manager\n`I-I won't give in\n to any vaiolence.\n N-nor give up this seat.
 slide_walk_npc 2801 down 1
 chg_speed 2802 fast
 move_npc 2802 right 4
 set_inactive_msg 2806
 set_active_msg 2802
 sleep 16
-msg Tifa\n「Baret!
+msg Tifa\n`Baret!
 step_npc 2801 5
 sleep 80
 set_inactive_msg 2802
-msg Baret\n「Tsk!\n You lucky bastard.
+msg Baret\n`Tsk!\n You lucky bastard.
 chg_speed 2802 normal
 sleep 16
 move_char left 6
@@ -182,10 +182,10 @@ chg_npc_img 2802 2
 move_npc 2802 left 4
 sleep 64
 step_npc 2800 2
-msg 『What now?
+msg {What now?
 sleep 16
 step_npc 2801 4
-msg Baret\n「Tsk! Calm as ever.\n That throws me out\n of my stride……
+msg Baret\n`Tsk! Calm as ever.\n You throw me out\n of my stride==
 play_se door_open.ogg
 close_door 2850
 sleep 16
@@ -216,7 +216,7 @@ chg_speed 2802 not_move
 sleep 16
 chg_npc_dir 2800 right
 sleep 32
-msg3 -1 Tifa\n「I think they finished\n connecting the cars.\n We're starting.
+msg3 -1 Tifa\n`I think they finished\n connecting the cars.\n We're starting.
 sleep 16
 chg_npc_dir 2801 left
 inc_map_draw_y_offset

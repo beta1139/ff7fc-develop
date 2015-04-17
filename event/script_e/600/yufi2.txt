@@ -18,13 +18,13 @@ sleep 32
 step_npc 60001 3
 play_se syu.ogg
 sleep 48
-msg 「ム　にげるき？\n　ちゃんと　しょうぶしろ！\n　しろったらしろ！
+msg `Hm, you afraid?\n You fight me!\n Are you listening?
 chg_event_move_char_speed slow
 move_char down 1
 sleep 16
 step_npc 60001 3
 sleep 56
-msg 「シュッシュッ……\n　どうした　どうした！\n\n\n「アタシの　つよさに　ビビッてんだろ！！\n\n\n\n#2\n　　……まあな\n　　なんどやっても　おなじだ\n\n\n[[]][[]]
+msg `Come on, come on==\n Hey, what't the matter!\n\n\n`You scared of me,\n aren't you?\n\n\n#2\n  ==Yeah.\n  Don't waste my time.\n\n\n[[]][[]]
 if_flag 3 0
 create event_generator 60004 600 0 0 17 0 0 @600/yufi3.txt
 end

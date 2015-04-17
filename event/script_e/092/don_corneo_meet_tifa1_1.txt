@@ -8,7 +8,7 @@ sleep 8
 chg_event_move_char_speed fast
 move_char right 3
 sleep 24
-create npc_event 9221 92 10 4 129 1 2 Aeris\n「Now.\n You can talk in secret.
+create npc_event 9221 92 10 4 129 1 2 Aeris\n`Now.\n You can talk in secret.
 move_npc 9221 down 9
 sleep 144
 move_npc 9221 left 2
@@ -31,7 +31,7 @@ sleep 32
 chg_speed 9221 normal
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n「……So you are Tifa?
+msg Aeris\n`==So you are Tifa?
 reset_talk_npc
 sleep 16
 chg_speed 9222 slow
@@ -41,59 +41,59 @@ move_npc 9222 right 1
 sleep 32
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n「Nice to meet you.\n I'm Aeris.\n\n I've heard about you\n from Cloud.
+msg Aeris\n`Nice to meet you.\n I'm Aeris.\n\n I've heard about you\n from Cloud.
 reset_talk_npc
 sleep 16
 chg_speed 9222 normal
 step_npc 9222 2
 set_talk_npc 9222
-msg Tifa\n「……Who are you?\n\n\n Oh, did I see you\n in the park?\n With Cloud……
+msg Tifa\n`==Who are you?\n\n\n Oh, did I see you\n in the park?\n With Cloud==
 reset_talk_npc
 step_npc 9221 1
 set_talk_npc 9221
-msg Aeris\n「Yep. With Cloud.
+msg Aeris\n`Yep. With Cloud.
 reset_talk_npc
 sleep 16
 chg_npc_dir 9222 left
 step_npc 9222 1
 set_talk_npc 9222
-msg Tifa\n「I see……
+msg Tifa\n`I see==
 reset_talk_npc
 jump_npc 9221 same 1
 sleep 16
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n「Don't worry.\n We met just a while ago.\n Nothing between us.
+msg Aeris\n`Don't worry.\n We met just a while ago.\n Nothing between us.
 reset_talk_npc
 sleep 16
 chg_npc_dir 9222 right
 step_npc 9222 2
 set_talk_npc 9222
-msg Tifa\n「Worry……What's to worry?
+msg Tifa\n`Worry==What's to worry?
 reset_talk_npc
 sleep 16
 chg_speed 9222 fast
 step_npc 9222 2
 set_talk_npc 9222
-msg Tifa\n「Oh, don't misunderstand.\n\n\n I and Cloud are only\n childhood friends.\n Nothing between us.
+msg Tifa\n`Oh, don't misunderstand.\n\n\n I and Cloud are only\n childhood friends.\n Nothing between us.
 reset_talk_npc
 sleep 32
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n「So he is 'nothing'\n to both of us?\n Oh, poor Cloud!
+msg Aeris\n`So he is 'nothing'\n to both of us?\n Oh, poor Cloud!
 reset_talk_npc
 chg_npc_dir 9221 right
 sleep 16
 set_active_msg 9221
 jump_npc 9221 same 1
 set_talk_npc 9221
-msg Aeris\n「Aren't you, Cloud?
+msg Aeris\n`Aren't you, Cloud?
 reset_talk_npc
 sleep 16
 chg_speed 9222 normal
 step_npc 9222 1
 set_talk_npc 9222
-msg Tifa\n「Cloud?
+msg Tifa\n`Cloud?
 reset_talk_npc
 chg_speed 9221 not_move
 chg_speed 9222 not_step

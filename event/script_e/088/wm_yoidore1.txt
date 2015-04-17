@@ -12,7 +12,7 @@ chg_speed 8811 normal
 chg_speed 8812 normal
 step_npc 8811 2
 set_talk_npc 8811
-msg 「……and then……
+msg `==and then==
 reset_talk_npc
 if_char_dir up
 if_flag 9 1
@@ -27,7 +27,7 @@ fi
 sleep 16
 step_npc 8812 2
 set_talk_npc 8812
-msg 「Giggle. Is that so?
+msg `Giggle. Is that so?
 reset_talk_npc
 if_char_dir up
 move_char down 1

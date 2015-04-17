@@ -1464,7 +1464,7 @@ loop 2
 move_npc 1734 left 1
 sleep 32
 pool
-create npc_event 1707 17 14 9 71 1 2 「I won't let you\n go tonight.
+create npc_event 1707 17 14 9 71 1 2 `I won't let you\n go tonight.
 move_npc 1707 down 2
 move_npc 1734 left 1
 sleep 32
@@ -1529,7 +1529,7 @@ chg_npc_dir 1706 up
 chg_npc_dir 1702 left
 chg_npc_img 1702 98
 step_npc 1702 2
-msg Baret\n「Yo!\n Listen up!
+msg Baret\n`Yo!\n Listen up!
 sleep 16
 chg_npc_dir 1703 up
 move_npc 1705 right 2
@@ -1549,7 +1549,7 @@ chg_npc_dir 1705 up
 sleep 32
 chg_speed 1702 normal
 chg_npc_dir 1702 up
-msg Baret\n「Hey, Cloud!\n You, too!
+msg Baret\n`Hey, Cloud!\n You, too!
 move_npc 1701 down 1
 sleep 16
 chg_npc_dir 1702 down
@@ -1560,7 +1560,7 @@ chg_speed 1706 not_move
 set_flag_wall 1706
 sleep 16
 step_npc 1702 2
-msg Baret\n「We did well this time\n but don't get slack.\n We're just startin'.\n Don't wet youself with\n today's crappy firework.
+msg Baret\n`We did well this time\n but don't get slack.\n We're just startin'.\n Don't wet youself with\n today's crappy firework.
 sleep 16
 jump_npc 1702 same 2
 loop 2
@@ -1575,7 +1575,7 @@ sleep 4
 pool
 chg_npc_dir 1702 up
 chg_npc_img 1702 95
-msg Baret\n「Much bigger one's comin'.
+msg Baret\n`Much bigger one's comin'.
 chg_npc_dir 1702 down
 chg_npc_img 1702 1
 sleep 16
@@ -1588,7 +1588,7 @@ sleep 16
 chg_npc_dir 1705 left
 sleep 32
 chg_npc_dir 1702 right
-msg Baret\n「We'll meet at the den!\n Come on!
+msg Baret\n`We'll meet at the den!\n C'mon!
 move_npc 1702 left 3
 sleep 48
 kill 1702

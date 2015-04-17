@@ -19,7 +19,7 @@ chg_type 7923 npc
 chg_type 7924 npc_event
 create event_generator 7911 79 9 10 17 0 0 @079/wall_market19.txt
 create event_generator 7912 79 10 10 17 0 0 @079/wall_market19.txt
-chg_param 7923 「Excuse me!\n We are closing soon……\n\n\n Please see that you\n leave nothing behind.
+chg_param 7923 `Excuse me!\n We are closing soon==\n\n\n Please see that you\n leave nothing behind.
 if_flag 17 0
 set_npc_pos 8011 80 9 11
 chg_npc_dir 8011 down
@@ -30,14 +30,14 @@ jump_npc 8011 down 1
 sleep 16
 pool
 set_talk_npc 8011
-msg 「Hi……▼\n Honey▼
+msg `Hi==@\n Honey@
 reset_talk_npc
 set_active_msg 8011
 jump_npc 8011 same 1
 sleep 16
 jump_npc 8011 same 1
 set_talk_npc 8011
-msg 「Come on, now▼
+msg `Come on, now@
 reset_talk_npc
 loop 7
 jump_npc 8011 up 1

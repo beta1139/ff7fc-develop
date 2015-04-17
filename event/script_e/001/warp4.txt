@@ -83,8 +83,8 @@ warp_ff3_2 71 6 8 2 up
 sleep 16
 create event_generator 4900 49 5 16 17 0 0 @049/slum_church8_1.txt
 create event_generator 4901 49 6 16 17 0 0 @049/slum_church8_2.txt
-create npc_event 4922 49 5 12 65 3 0 uHow pretty!
-create npc_event 4923 49 7 11 67 2 0 uWater is coming later.
+create npc_event 4922 49 5 12 65 3 0 `How pretty!
+create npc_event 4923 49 7 11 67 2 0 `Water is coming later.
 create event_generator 6760 67 5 11 17 0 0 @067/good_night.txt
 set_flag 0 0
 set_flag 1 0

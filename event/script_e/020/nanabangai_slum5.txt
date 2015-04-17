@@ -1,4 +1,4 @@
 wait_same_pos
 chg_char_dir up
 sleep 16
-msg ÅuI won't open!\n Now leave us alone!
+msg `I won't open!\n Now leave us alone!

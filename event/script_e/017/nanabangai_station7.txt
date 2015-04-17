@@ -1,2 +1,2 @@
 wait_target_talked 1706
-chg_param 1706 ÅuGet aboard please.\n We are leaving soon.
+chg_param 1706 `Get aboard please.\n We are leaving soon.

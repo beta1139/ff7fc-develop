@@ -11,19 +11,19 @@ id,name,buy_val,sell_val,text
 1009,GoldPin,150,75,Cures Petrify status
 1010,MaidenLip,150,75,Cures Toad status
 1011,Expander,150,75,Cures Mini status
-1012,EchoMask,100,50,Cures Mute status
+1012,EchoSmoke,100,50,Cures Mute status
 1013,Stimulant,100,50,Causes Fury status
 1014,Sedative,100,50,Causes Sad status
 1015,Remedy,1000,500,Cures any status anomaly
 1016,SmokeBomb,300,150,Escape from a battle
-1017,SpeedDrug,1000,500,Casts Haste
+1017,SwiftDrug,1000,500,Casts Haste
 1018,HeroDrug,0,1,Reise parameters
 1019,Vaccine,0,1,Casts Resist
 1020,Grenade,80,40,Physical damage
 1021,BomPiece,0,1,Physical damage
 1022,BomArm,0,1,Powerful physical damage
 1023,Hourglass,0,1,Causes Stop status
-1024,DeathKiss,0,1,Causes immediate death
+1024,FatalKiss,0,1,Causes immediate death
 1025,SpiderWeb,0,1,Causes Slow status
 1026,DreamDust,0,1,Causes Sleep status
 1027,MuteMask,0,1,Causes Mute status

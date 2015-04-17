@@ -8,12 +8,12 @@ loop 4
 jump_npc 8011 up 1
 sleep 16
 pool
-msg 「Hi……▼\n Honey▼
+msg `Hi==@\n Honey@
 set_active_msg 8011
 jump_npc 8011 same 1
 sleep 16
 jump_npc 8011 same 1
-msg 「Come on, now▼
+msg `Come on, now@
 loop 4
 jump_npc 8011 down 1
 sleep 16

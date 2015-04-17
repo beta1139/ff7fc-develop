@@ -3,27 +3,27 @@ chg_speed 9520 normal
 chg_speed 9521 normal
 chg_speed 9522 normal
 step_npc 9522 2
-msg3 -1 Tifa\n「I'm afraid\n we are the ones\n asking questions.
+msg3 -1 Tifa\n`I'm afraid\n we are the ones\n asking questions.
 sleep 16
 chg_npc_dir 9523 right
 wait_key_push_edge a
 erase_msg3
 sleep 16
 step_npc 9522 2
-msg Tifa\n「What did you sent\n your men after?\n Tell us! Or……
+msg Tifa\n`What did you sent\n your men after?\n Tell us! Or==
 sleep 32
 step_npc 9520 1
 set_talk_npc 9520
-msg 『……We'll cut it off!
+msg {==We'll cut it off!
 reset_talk_npc
 jump_npc 9523 same 2
 play_se play_se puy.ogg
 sleep 32
 step_npc 9523 4
-msg Corneo\n「Don't! Please!\n I'll tell you!\n Tell you everything!
+msg Corneo\n`Don't! Please!\n I'll tell you!\n Tell you everything!
 sleep 16
 step_npc 9522 1
-msg Tifa\n「Now, go on.
+msg Tifa\n`Now, go on.
 sleep 8
 if_flag 19 2
 chg_npc_dir 9523 down
@@ -31,37 +31,37 @@ fi
 sleep 8
 chg_npc_dir 9523 right
 step_npc 9523 4
-msg Corneo\n「……I was after a man with\n a gun on his right arm.\n That was the commision.
+msg Corneo\n`==I was after a man with\n a gun on his right arm.\n That was the commision.
 sleep 32
 step_npc 9522 1
-msg Tifa\n「By who?
+msg Tifa\n`By who?
 jump_npc 9523 same 1
-msg Corneo\n「Ho-ho!\n He's gonna kill me\n if I tell!
+msg Corneo\n`Ho-ho!\n He's gonna kill me\n if I tell!
 step_npc 9522 2
-msg Tifa\n「Tell us! Of……
+msg Tifa\n`Tell us! Of==
 sleep 32
 step_npc 9521 1
-msg Aeris\n「……We'll wrench it off!
+msg Aeris\n`==We'll wrench it off!
 chg_npc_dir 9523 left
 sleep 4
 chg_npc_dir 9523 right
 sleep 4
 jump_npc 9523 same 1
-msg Corneo\n「Ho-ho!\n Heidegger at Shinra!\n\n Heidegger the Manager\n of Security Department!
+msg Corneo\n`Ho-ho!\n Heidegger from Shinra!\n\n The Security Department\n Manager Heidegger!
 sleep 24
 step_npc 9520 1
 set_talk_npc 9520
-msg 『Security Manager!?
+msg {Security Manager!?
 reset_talk_npc
 jump_npc 9522 same 1
 sleep 16
 chg_speed 9522 fast
 step_npc 9522 3
-msg Tifa\n「Did you just say Shinra?\n What's their purpose?\n Tell us! Or……
+msg Tifa\n`Did you just say Shinra?\n What's their purpose?\n Tell us! Or==
 sleep 40
 chg_speed 9522 normal
 step_npc 9522 1
-msg Tifa\n「……We'll grind it down.
+msg Tifa\n`==We'll grind it down.
 if_flag 19 2
 chg_npc_dir 9523 down
 sleep 32
@@ -83,33 +83,33 @@ fi
 sleep 32
 chg_speed 9523 normal
 step_npc 9523 2
-msg Corneo\n「Ho……lassie……\n So you're serious.\n ……Good for you.\n ……Guess I should get\n serious, too.
+msg Corneo\n`Ho==lassie==\n So you're serious.\n ==Good for you.\n ==Guess I should get\n serious, too.
 sleep 16
 jump_npc 9523 same 1
-msg Corneo\n「Shinra is planning to\n squish AVALANCHE.\n\n Together with their base.
+msg Corneo\n`Shinra is planning to\n squish AVALANCHE.\n\n Together with their base.
 sleep 16
 step_npc 9523 3
-msg Corneo\n「Literally squish.\n By destroying a post\n supporting the Plate.
+msg Corneo\n`Literally squish.\n By destroying a post\n supporting the Plate.
 sleep 16
 step_npc 9522 1
-msg Tifa\n「Destroy a post!?
+msg Tifa\n`Destroy a post!?
 sleep 16
 jump_npc 9523 same 1
 sleep 16
 step_npc 9523 3
-msg Corneo\n「See what'll happen?\n That seciton of the Plate\n comes down and BOOM!\n I heard that AVALACHE's\n base is in Slum 7.\n\n\n I'm relieved that it was\n not this Slum 6.
+msg Corneo\n`See what'll happen?\n That seciton of the Plate\n comes down and BOOM!\n I heard that AVALACHE's\n base is in Slum 7.\n\n\n I'm relieved that it was\n not this Slum 6.
 sleep 40
 chg_npc_dir 9522 down
-msg Tifa\n「The whole Slum 7'll\n be gone!
+msg Tifa\n`The whole Slum 7'll\n be gone!
 sleep 32
 chg_npc_dir 9522 up
 sleep 16
 chg_speed 9522 fast
 step_npc 9522 2
-msg Tifa\n「Cloud, will to come\n to Slum 7 with me?
+msg Tifa\n`Cloud, will to come\n to Slum 7 with me?
 chg_npc_dir 9520 down
 sleep 16
-msg 『Of course,\n Tifa
+msg {Of course,\n Tifa
 chg_event_move_char_speed normal
 chg_speed 9522 normal
 move_npc 9521 down 2

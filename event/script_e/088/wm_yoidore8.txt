@@ -25,15 +25,15 @@ sleep 16
 chg_npc_dir 8821 right
 sleep 16
 step_npc 8821 2
-msg Aeris\n「Hello, I presume you're\n the tailor's father?
+msg Aeris\n`Hello, I presume you're\n the tailor's father?
 sleep 48
 chg_npc_dir 8818 left
 sleep 16
 step_npc 8818 1
-msg 「I'm indeed a tailor.\n But I'm not your father.
+msg `I'm indeed a tailor.\n But I'm not your father.
 sleep 24
 step_npc 8821 1
-msg Aeris\n「I didn't say that……
+msg Aeris\n`I didn't say that==
 move_char right 1
 sleep 16
 chg_char_dir down
@@ -41,25 +41,25 @@ create npc_event 8820 88 18 9 0 1 2 none
 draw_char off
 sleep 16
 step_npc 8820 1
-msg 『Please make me a dress.
+msg {Please make me a dress.
 sleep 16
 chg_npc_dir 8818 up
 sleep 16
 step_npc 8818 2
-msg 「I don't make men's\n clothes. Also I'm not\n interested very much.
+msg `I don't make men's\n clothes. Also I'm not\n interested very much.
 sleep 16
 move_npc 8821 up 1
 sleep 16
 chg_npc_dir 8821 right
 step_npc 8821 2
-msg Aeris\n「Cloud, just a moment.\n Let me talk.\n\n You drink something\n over there.
+msg Aeris\n`Cloud, just a moment.\n Let me talk.\n\n You drink something\n over there.
 move_npc 8821 down 1
 move_char left 2
 move_npc 8820 left 2
 sleep 16
 chg_npc_dir 8821 right
 step_npc 8821 2
-msg3 88 Aeris\n「Look, mister.
+msg3 88 Aeris\n`Look, mister.
 sleep 16
 chg_npc_dir 8818 left
 move_npc 8820 up 4
@@ -73,8 +73,8 @@ sleep 48
 move_char right 1
 sleep 16
 step_npc 8821 2
-msg Aeris\n「That boy, he says he\n wants to dress up as a\n girl once in his life.\n So I thought I'd help him\n find a pretty dress……
-msg3 -1 「What!
+msg Aeris\n`That boy, he says he\n wants to dress up as a\n girl once in his life.\n So I thought I'd help him\n find a pretty dress==
+msg3 -1 `What!
 jump_npc 8818 same 2
 sleep 32
 wait_key_push_edge a
@@ -83,13 +83,13 @@ chg_npc_dir 8818 up
 sleep 8
 chg_speed 8818 fast
 step_npc 8818 3
-msg 「That roughish one?
+msg `That roughish one?
 jump_npc 8821 same 1
 sleep 16
 jump_npc 8821 same 1
 sleep 16
 step_npc 8821 2
-msg Aeris\n「Well, so. Please?\n Will you do that?
+msg Aeris\n`Well, so. Please?\n Will you do that?
 sleep 48
 chg_npc_dir 8818 left
 sleep 16
@@ -97,9 +97,9 @@ chg_speed 8818 normal
 jump_npc 8818 same 1
 sleep 16
 step_npc 8818 2
-msg 「That sounds interesting.\n I am somewhat tired of\n making ordinary clothes.
+msg `That sounds interesting.\n I am somewhat tired of\n making ordinary clothes.
 step_npc 8821 2
-msg Aeris\n「Then, will you make it?
+msg Aeris\n`Then, will you make it?
 sleep 16
 chg_npc_dir 8818 right
 sleep 4
@@ -107,10 +107,10 @@ chg_npc_dir 8818 down
 sleep 4
 chg_npc_dir 8818 left
 sleep 4
-msg 「Yes, certainly.\n What kind of dress\n do you want?
+msg `Yes, certainly.\n What kind of dress\n do you want?
 sleep 16
 step_npc 8821 2
-msg Aeris\n「The texture is……\n\n\n#2\n  Smooth.\n  Fluffy.\n\n\n[[]][[]]
+msg Aeris\n`The texture is==\n\n\n#2\n  Smooth.\n  Fluffy.\n\n\n[[]][[]]
 if_flag 3 0
 set_flag 15 1
 fi
@@ -118,7 +118,7 @@ if_flag 3 1
 set_flag 15 2
 fi
 step_npc 8821 1
-msg Aeris\n「The sheen is……\n\n\n#2\n  Sparkling.\n  Glossy.\n\n\n[[]][[]]
+msg Aeris\n`The sheen is==\n\n\n#2\n  Sparkling.\n  Glossy.\n\n\n[[]][[]]
 if_flag 3 0
 if_flag 15 1
 set_flag 15 3
@@ -138,7 +138,7 @@ fi
 jump_npc 8818 same 1
 sleep 16
 step_npc 8818 2
-msg 「Hm, I understand well.\n I have a friend who is\n into that kind of things.\n Let me talk to him first.
+msg `Hm, I understand well.\n I have a friend who is\n into that kind of things.\n Let me talk to him first.
 chg_npc_dir 8818 right
 chg_speed 8818 not_move
 chg_npc_dir 8821 up
@@ -160,11 +160,11 @@ kill 8820
 move_npc 8821 left 1
 set_npc_pos 7510 75 4 8
 chg_npc_dir 7510 up
-create npc_event 7515 75 7 14 77 2 0 「So you have them all.\n Now put them on,\n will you?
-create npc2 7516 75 6 14 17 0 0 「How was it?\n Did you see him?
+create npc_event 7515 75 7 14 77 2 0 `So you have them all.\n Now put them on,\n will you?
+create npc2 7516 75 6 14 17 0 0 `How was it?\n Did you see him?
 kill 7514
 sleep 16
 kill 8821
 chg_type 8818 npc
-chg_param 8818 「Do not rush me so.\n It will come to me.\n Ahh, nice drink here.
+chg_param 8818 `Do not rush me so.\n It will come to me.\n Ahh, nice drink here.
 create event_generator 7503 75 0 0 17 0 0 @075/wm_boutique3.txt

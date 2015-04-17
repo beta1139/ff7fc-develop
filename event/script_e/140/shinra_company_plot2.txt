@@ -2,26 +2,26 @@ wait_same_pos
 sleep 32
 chg_speed 14022 normal
 step_npc 14022 1
-msg3 -1 リーブ\n「……いいえ
+msg3 -1 Reeve\n`==No, sir.
 wait_key_push_edge a
 erase_msg3
 sleep 8
 step_npc 14022 4
-msg3 -1 　しかし　わたしは　としかいはつ　せきにんしゃとして\n　ミッドガルの　けんぞう　うんえいの\n　すべてにかかわってきました\n　ですから…
+msg3 -1  But I've always been in\n charge of Midgar, from\n its construction to the\n current operation. So, ==
 wait_key_push_edge a
 erase_msg3
 sleep 16
 jump_npc 14021 same 1
 sleep 16
 step_npc 14021 2
-msg3 -1 ハイデッカー\n「リーブ　そういう　こじんてきなもんだいは\n　あさのうちに　トイレでながしちまうんだな！
+msg3 -1 Heidegger\n`Reeve. Why don't you\n flush such sentiment\n into the toilet?
 wait_key_push_edge a
 erase_msg3
 sleep 16
 chg_npc_dir 14022 down
 sleep 16
 step_npc 14022 2
-msg3 -1 リーブ\n「しちょうも　はんたいしているわけであり……
+msg3 -1 Reeve\n`The mayor is against it,\n too==
 wait_key_push_edge a
 erase_msg3
 sleep 16
@@ -34,12 +34,12 @@ sleep 32
 move_npc 14021 down 1
 sleep 16
 step_npc 14021 2
-msg3 -1 ハイデッカー\n「しちょう！？
+msg3 -1 Heidegger\n`The mayor!?
 wait_key_push_edge a
 erase_msg3
 sleep 8
 jump_npc 14021 same 1
-msg3 -1 　このビルのなかでボソボソと\n　メシをくってるあいつか！？\n　あいつを　まだしちょうとよぶのか？
+msg3 -1  You mean that deadhead\n idling in this building!?\n How can you still call\n him the mayor?
 wait_key_push_edge a
 erase_msg3
 sleep 16
@@ -55,7 +55,7 @@ chg_npc_dir 14021 left
 sleep 4
 chg_npc_dir 14021 up
 sleep 4
-msg ハイデッカー\n「それではしつれいします！
+msg Heidegger\n`Now, may I be excused!
 chg_npc_dir 14021 down
 sleep 8
 move_npc 14021 down 1
@@ -93,7 +93,7 @@ kill 14021
 sleep 24
 chg_speed 14020 normal
 step_npc 14020 2
-msg プレジデントしんら\n「きみは　つかれているんだよ\n　きゅうかをとって　りょこうでもいってなさい
+msg President Shinra\n`You seem to be tired.\n Perhaps some vacation\n would be good for you.
 sleep 16
 chg_npc_dir 14022 down
 sleep 48
@@ -121,11 +121,11 @@ chg_npc_dir 14020 up
 sleep 48
 warp 705 14 23 up
 step_npc 70590 1
-msg プレジデントしんら\n「7ばんがいを　はかいする\n　アバランチのしわざとして　ほうどうする\n　しんらカンパニーによる　きゅうじょかつどう
+msg President Shinra\n`The destruction of\n Slum 7 will be blamed\n on AVALANCHE.\n And Shinra Company will\n be reported to be on\n rescue operations.
 sleep 16
 chg_npc_dir 70590 left
 sleep 24
-msg プレジデントしんら\n「フフフ…かんぺきだ
+msg President Shinra\n`Hmm==Perfect.
 sleep 16
 fadeout
 sleep 32

@@ -1,7 +1,7 @@
 wait_same_pos
 sleep 32
 set_talk_npc 9523
-msg Corneo\n「Here! Here!
+msg Corneo\n`Here! Here!
 reset_talk_npc
 if_flag_lesser 18 10
 step_npc 9522 4
@@ -11,7 +11,7 @@ step_npc 9521 4
 fi
 sleep 16
 set_talk_npc 9523
-msg Corneo\n「Ho-ho!\n I can't hold it no more!\n Here I go!
+msg Corneo\n`Ho-ho!\n I can't hold it no more!\n Here I go!
 reset_talk_npc
 set_flag 19 1
 sleep 8
@@ -39,7 +39,7 @@ move_npc 9520 right 1
 sleep 8
 chg_npc_dir 9520 up
 step_npc 9522 1
-msg Tifa\n「Cloud!
+msg Tifa\n`Cloud!
 kill_through 9500
 chg_speed 9523 normal
 sleep 8
@@ -97,7 +97,7 @@ move_npc 9520 right 1
 sleep 8
 chg_npc_dir 9520 up
 step_npc 9521 1
-msg Aeris\n「Cloud!
+msg Aeris\n`Cloud!
 kill_through 9500
 chg_speed 9523 normal
 sleep 8
@@ -164,13 +164,13 @@ chg_npc_dir 9523 down
 sleep 24
 jump_npc 9523 same 2
 set_talk_npc 9523
-msg Corneo\n「Ho-ho!\n Who? What? Who are you?
+msg Corneo\n`Ho-ho!\n Who? What? Who are you?
 reset_talk_npc
 sleep 16
 if_flag_lesser 18 10
 chg_speed 9522 normal
 step_npc 9522 2
-msg Tifa\n「Don't you see yet?\n Don Corneo
+msg Tifa\n`Don't you see yet?\n Don Corneo
 chg_npc_dir 9523 right
 sleep 8
 play_se syu.ogg
@@ -193,7 +193,7 @@ play_se puy.ogg
 sleep 32
 chg_speed 9523 fast
 step_npc 9523 4
-msg Corneo\n「Ho!?\n Wh-what is what is what?
+msg Corneo\n`Ho!?\n Wh-what is what is what?
 chg_speed 9520 normal
 chg_speed 9521 normal
 chg_speed 9522 slow
@@ -214,7 +214,7 @@ fi
 if_flag_greater 18 9
 chg_speed 9521 normal
 step_npc 9521 2
-msg Aeris\n「I'm sorry,\n Mr.Corneo.
+msg Aeris\n`I'm sorry,\n Mr.Corneo.
 chg_npc_dir 9523 right
 sleep 8
 play_se syu.ogg
@@ -237,7 +237,7 @@ play_se puy.ogg
 sleep 32
 chg_speed 9523 fast
 step_npc 9523 4
-msg Corneo\n「Ho!?\n Wh-what is what is what?
+msg Corneo\n`Ho!?\n Wh-what is what is what?
 chg_speed 9520 normal
 chg_speed 9521 normal
 chg_speed 9522 normal

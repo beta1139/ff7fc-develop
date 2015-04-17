@@ -3,7 +3,7 @@ kill_through 7909
 set_active_msg 7931
 jump_npc 7931 same 1
 set_talk_npc 7931
-msg Aeris\n「Eek!\n Cloud!
+msg Aeris\n`Eek!\n Cloud!
 reset_talk_npc
 chg_speed 7920 normal
 chg_speed 7922 normal
@@ -18,12 +18,12 @@ chg_speed 7920 not_move
 chg_speed 7922 not_move
 chg_type 7920 npc3
 chg_type 7922 npc
-chg_param 7920 「Aeris!\n Thanks for the flower!\n\n\n I promise to tresure it!\n I'll make it into a\n good luck charm.
-chg_param 7922 「When I asked Aeris out\n for a date, she said\n not for a million Gil.\n\n And her flowers sell\n for 300 Gil each……\n That girl pushes a\n hard bargain.
+chg_param 7920 `Aeris!\n Thanks for the flower!\n\n\n I promise to tresure it!\n I'll make it into a\n good luck charm.
+chg_param 7922 `When I asked Aeris out\n for a date, she said\n not for a million Gil.\n\n And her flowers sell\n for 300 Gil each==\n That girl pushes a\n hard bargain.
 set_inactive_msg 7931
 sleep 16
 chg_npc_dir 7924 left
 chg_speed 7924 not_move
 chg_type 7924 npc
-chg_param 7924 「I've bought a pretty\n flower from Aeris.\n\n\n 500Gil is a little steep,\n but she told me her name\n so I guess it's okay.
+chg_param 7924 `I've bought a pretty\n flower from Aeris.\n\n\n 500Gil is a little steep,\n but she told me her name\n so I guess it's okay.
 create event_generator 7909 79 3 12 17 0 0 @079/wall_market17.txt

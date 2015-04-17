@@ -2,7 +2,7 @@ set_eternal_event
 wait_target_talk 3520
 reset_talk_flag 3520
 play_se_loop radio_noise.ogg
-msg ÅwI'm not going to ring\n the doorbell for them.
+msg {I'm not going to ring\n the doorbell for them.
 stop_se
 move_char down 1
 sleep 16

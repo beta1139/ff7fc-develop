@@ -4,7 +4,7 @@ create npc_event 9120 91 9 5 0 0 2 none
 draw_char off
 chg_event_move_char_speed fast
 move_char left 3
-msg3 -1 Aeris\nuEek!\n Help!
+msg3 -1 Aeris\n`Eek!\n Help!
 sleep 24
 wait_key_push_edge a
 erase_msg3

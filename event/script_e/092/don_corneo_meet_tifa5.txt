@@ -22,7 +22,7 @@ chg_char_dir up
 fi
 chg_npc_dir 9222 down
 set_talk_npc 9222
-msg Tifa\n「????
+msg Tifa\n`????
 reset_talk_npc
 sleep 48
 chg_speed 9222 fast
@@ -31,16 +31,16 @@ play_se puy.ogg
 sleep 32
 step_npc 9222 2
 set_talk_npc 9222
-msg Tifa\n「Cloud!?
+msg Tifa\n`Cloud!?
 reset_talk_npc
 step_npc 9222 4
 set_talk_npc 9222
-msg Tifa\n「What's that clothes!?\n What're you doing here!?
+msg Tifa\n`What's that clothes!?\n What're you doing here!?
 reset_talk_npc
 sleep 16
 step_npc 9222 4
 set_talk_npc 9222
-msg Tifa\n「I mean, what happened\n to you after that!?\n Are you all right!?
+msg Tifa\n`I mean, what happened\n to you after that!?\n Are you all right!?
 reset_talk_npc
 sleep 32
 chg_char_dir right
@@ -53,32 +53,32 @@ chg_char_dir left
 sleep 8
 step_char 1
 sleep 16
-msg 『One question at a time.
+msg {One question at a time.
 sleep 16
 chg_char_dir down
 step_char 1
 sleep 16
-msg 『This costume is……\n I needed it to get in.
+msg {This costume is==\n I needed it to get in.
 step_char 1
 sleep 16
-msg 『I'm all right.\n Aeris helped me.
+msg {I'm all right.\n Aeris helped me.
 chg_npc_dir 9222 right
 sleep 16
 chg_speed 9222 normal
 step_npc 9222 2
 set_talk_npc 9222
-msg Tifa\n「I see. Aeris helped……
+msg Tifa\n`I see. Aeris helped==
 reset_talk_npc
 chg_char_dir up
 step_char 1
 sleep 16
-msg 『Tell me, Tifa.\n What are you doing here?
+msg {Tell me, Tifa.\n What are you doing here?
 sleep 32
 chg_npc_dir 9222 down
 sleep 16
 step_npc 9222 1
 set_talk_npc 9222
-msg Tifa\n「Yeah, well……
+msg Tifa\n`Yeah, well==
 reset_talk_npc
 chg_speed 9221 normal
 sleep 40
@@ -88,11 +88,11 @@ chg_speed 9221 normal
 set_active_msg 9221
 jump_npc 9221 same 1
 set_talk_npc 9221
-msg Aeris\n「Ahem!\n I'm covering my ears.
+msg Aeris\n`Ahem!\n I'm covering my ears.
 reset_talk_npc
 move_npc 9221 right 3
 sleep 48
-create npc2 9223 92 4 12 130 1 4 Tifa\n「Giggle……your clothes.\n That's not so bad\n actually.\n What would Baret say\n if he sees that……
+create npc2 9223 92 4 12 130 1 4 Tifa\n`Giggle==your clothes.\n That's not so bad\n actually.\n What would Baret say\n if he sees that==
 kill 9222
 create event_generator 9208 92 10 5 17 0 0 @092/don_corneo_meet_tifa6_1.txt
 create event_generator 9210 92 0 0 17 0 0 @092/don_corneo_meet_tifa7.txt

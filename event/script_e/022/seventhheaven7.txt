@@ -3,7 +3,7 @@ sleep 16
 chg_speed 2202 normal
 step_npc 2202 1
 set_talk_npc 2202
-msg Tifa\n「Now you remember.\n Our promise.
+msg Tifa\n`Now you remember.\n Our promise.
 reset_talk_npc
 sleep 32
 chg_npc_dir 2207 right
@@ -13,11 +13,11 @@ sleep 80
 chg_npc_img 2207 0
 chg_npc_dir 2207 up
 sleep 16
-msg 『I'm no hero nor famous.\n I can't keep the promise.
+msg {I'm no hero nor famous.\n I can't keep the promise.
 sleep 32
 jump_npc 2202 same 1
 set_talk_npc 2202
-msg Tifa\n「But you fulfilled your\n childhood dream.\n\n You became a SOLDIER.
+msg Tifa\n`But you fulfilled your\n childhood dream.\n\n You became a SOLDIER.
 reset_talk_npc
 sleep 64
 set_inactive_msg 2202
@@ -32,7 +32,7 @@ chg_npc_dir 2202 down
 sleep 16
 step_npc 2202 1
 set_talk_npc 2202
-msg Tifa\n「So, please!\n Our promise, at last……
+msg Tifa\n`So, please!\n This time, you\n fulfill our==
 reset_talk_npc
 sleep 64
 play_se door_open_hard.wav
@@ -54,7 +54,7 @@ chg_npc_dir 2206 down
 set_active_msg 2206
 step_npc 2206 1
 set_talk_npc 2206
-msg Baret\n「Hey, wait!\n Mister SOLDIER!
+msg Baret\n`Hey, wait!\n Mister SOLDIER!
 reset_talk_npc
 sleep 16
 move_npc 2202 left 1
@@ -68,7 +68,7 @@ chg_npc_img 2206 98
 sleep 16
 jump_npc 2206 same 1
 set_talk_npc 2206
-msg Baret\n「A deal's a deal.\n Here's your money!
+msg Baret\n`A deal's a deal.\n Here's your money!
 reset_talk_npc
 sleep 16
 chg_npc_dir 2206 down
@@ -78,7 +78,7 @@ sleep 16
 step_npc 2206 2
 sleep 32
 play_se coin.ogg
-msg 「You got Baret's nest\n egg, 1500 Gil.
+msg `You got Baret's nest\n egg, 1500 Gil.
 add_gil 1500
 sleep 16
 move_npc 2206 up 1
@@ -86,37 +86,37 @@ sleep 24
 chg_npc_dir 2206 down
 sleep 48
 chg_npc_dir 2207 right
-msg 『You think you can get\n rid of me this cheap?
+msg {You trying to pay me off\n with this chicken feed?
 sleep 16
 jump_npc 2202 same 1
 set_talk_npc 2202
-msg Tifa\n「Oh, Cloud!
+msg Tifa\n`Oh, Cloud!
 reset_talk_npc
 chg_npc_dir 2207 up
 sleep 16
 step_npc 2207 1
-msg 『You got another mission?\n I'll take the job at the\n double rate, 3000 Gil.
+msg {You got another mission?\n I'll take the job at the\n double rate, 3000 Gil.
 jump_npc 2206 same 2
 sleep 32
 set_talk_npc 2206
-msg Baret\n「Whaaa……!……!
+msg Baret\n`Whaaa==!==!
 reset_talk_npc
 chg_speed 2202 normal
 chg_npc_dir 2202 right
 sleep 16
 step_npc 2202 1
 set_talk_npc 2202
-msg Tifa\n「Baret, it's okay.
+msg Tifa\n`Baret, it's okay.
 reset_talk_npc
 sleep 16
 set_talk_npc 2202
-msg Tifa\n「(Be honest and admit it.\n You are shorthanded.)
+msg Tifa\n`(Be honest and admit it.\n You are shorthanded.)
 reset_talk_npc
 chg_speed 2206 normal
 chg_npc_dir 2206 left
 sleep 16
 set_talk_npc 2206
-msg Baret\n「Um……aww……\n (The rest of money's for\n Marlene's education……)
+msg Baret\n`Um==aww==\n (The rest of money's for\n Marlene's education==)
 reset_talk_npc
 sleep 32
 chg_speed 2206 slow
@@ -130,7 +130,7 @@ sleep 16
 chg_speed 2206 fast
 step_npc 2206 3
 sleep 16
-msg Baret\n「2000!
+msg Baret\n`2000!
 sleep 24
 chg_npc_img 2206 1
 chg_npc_dir 2206 up
@@ -148,7 +148,7 @@ move_char down 1
 move_npc 2202 down 1
 sleep 32
 set_talk_npc 2202
-msg Tifa\n「Thank you, Cloud.
+msg Tifa\n`Thank you, Cloud.
 reset_talk_npc
 chg_npc_dir 2207 up
 sleep 48
@@ -198,16 +198,16 @@ stop_bgm
 kill 2207
 sleep 48
 play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
-create npc 1706 17 17 9 94 1 0 「Good morning.\n Another fine day\n is starting.\n\n Be careful and try not\n to hurt youself.
-create npc3 1707 17 11 11 71 3 0 「I can't stand any more!
-create npc 1906 19 8 26 32 0 0 「You!\n You can't go any further!
+create npc 1706 17 17 9 94 1 0 `Good morning.\n Another fine day\n is starting.\n\n Be careful and try not\n to hurt youself.
+create npc3 1707 17 11 11 71 3 0 `I can't stand any more!
+create npc 1906 19 8 26 32 0 0 `You!\n You can't go any further!
 create npc2 1907 19 7 26 32 0 0 
-create npc 2006 20 33 20 71 2 0 Johnny\n「I'm off to a journey\n to be a real man!\n Adios, amigo!\n Hey, you! You take good\n care of Tifa!
-create npc 2007 20 32 20 88 3 0 「Last night everybody was\n watching you two through\n the window.\n\n So you're Tifa's\n childhood friend?\n (wink wink, nudge nudge)
-create npc 2008 20 33 21 65 0 0 「Oh, dear!\n I won't have anyone\n to tease any more!
-create npc 2009 20 33 19 70 1 0 「I hope Johnny won't get\n snared by some sluts.\n\n\n That's my only worry.
+create npc 2006 20 33 20 71 2 0 Johnny\n`I'm off to a journey\n to be a real man!\n Adios, amigo!\n Hey, you! You take good\n care of Tifa!
+create npc 2007 20 32 20 88 3 0 `Last night everybody was\n watching you two through\n the window.\n\n So you're Tifa's\n childhood friend?\n (wink wink, nudge nudge)
+create npc 2008 20 33 21 65 0 0 `Oh, dear!\n I won't have anyone\n to tease any more!
+create npc 2009 20 33 19 70 1 0 `I hope Johnny won't get\n snared by some sluts.\n\n\n That's my only worry.
 create npc2 2601 26 3 8 90 3 0 
-chg_param 2510 「Heck……I couldn't remember\n it all in one night.\n Hey, newbie. You learn\n from my buddy upstairs.
+chg_param 2510 `Heck==I couldn't remember\n it all in one night.\n Hey, newbie. You learn\n from my buddy upstairs.
 sleep 32
 set_npc_pos 1731 17 17 2
 set_npc_pos 1732 17 16 2

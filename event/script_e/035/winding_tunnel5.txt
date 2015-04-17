@@ -2,7 +2,7 @@ wait_same_pos
 sleep 16
 step_npc 3501 2
 set_talk_npc 3501
-msg Baret\nuI still don't like it.
+msg Baret\n`But I still don't\n like it.
 reset_talk_npc
 chg_npc_img 3501 1
 move_npc 3501 right 1

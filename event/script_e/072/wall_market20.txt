@@ -6,6 +6,6 @@ set_npc_pos 7924 79 10 11
 chg_npc_dir 7923 right
 chg_npc_dir 7924 left
 chg_speed 7921 slow
-chg_param 7921 「Groan!\n I couldn't get in again……
-chg_param 7923 「We are closed for today.\n Yawn……I'm sleepy now.
-chg_param 7924 「Are you sure?\n There, Aeris looks\n a little lonely.
+chg_param 7921 `Groan!\n I couldn't get in again==
+chg_param 7923 `We are closed for today.\n Yawn==I'm sleepy now.
+chg_param 7924 `Are you sure?\n There, Aeris looks\n a little lonely.

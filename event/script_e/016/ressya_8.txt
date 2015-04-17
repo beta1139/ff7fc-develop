@@ -1,8 +1,8 @@
 wait_target_talked 1669
 if_flag 3 0
-chg_param 1669 Jessie\nÅuWe're almost there.\n It was nice talking\n with you this much.
+chg_param 1669 Jessie\n`We're almost there.\n It was nice talking\n with you this much.
 fi
 if_flag 3 1
-chg_param 1669 Jessie\nÅuWe're almost there.\n It was nice talking with\n you this much.\n You may have lit my fuse.
+chg_param 1669 Jessie\n`We're almost there.\n It was nice talking with\n you this much.\n You may have lit my fuse.
 sub_likability 2 250
 fi

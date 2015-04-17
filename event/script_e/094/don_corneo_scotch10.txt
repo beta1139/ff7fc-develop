@@ -3,7 +3,7 @@ chg_char_img_tmp 13
 kill_through_range 9402 9408
 chg_npc_dir 9428 right
 set_talk_npc 9428
-msg Scotch\n「Grin……
+msg Scotch\n`Grin==
 reset_talk_npc
 chg_type 9423 npc_event
 chg_type 9424 npc_event
@@ -20,7 +20,7 @@ chg_speed 9428 normal
 sleep 32
 step_npc 9428 2
 set_talk_npc 9428
-msg Scotch\n「Heh……What is it?\n Maybe you like\n me better?
+msg Scotch\n`Heh==What is it?\n Maybe you like\n me better?
 reset_talk_npc
 create npc_event 9420 94 8 6 13 2 2 none
 draw_char off
@@ -30,20 +30,20 @@ move_npc 9427 up 1
 sleep 64
 chg_npc_dir 9423 up
 step_npc 9420 2
-msg 『No……\n I'm sorry but I'll\n have to decline.\n\n Because……
+msg {No==\n I'm sorry but I'll\n have to decline.\n\n Because==
 sleep 16
 set_active_msg 9428
 jump_npc 9428 same 1
 set_talk_npc 9428
-msg Scotch\n「Because……?
+msg Scotch\n`Because==?
 reset_talk_npc
 sleep 32
 step_npc 9420 2
-msg 『Because……
+msg {Because==
 sleep 32
 chg_speed 9420 fast
 step_npc 9420 3
-msg 『You're not\n my type!
+msg {You're not\n my type!
 chg_npc_dir 9420 down
 sleep 8
 chg_char_dir down
@@ -88,14 +88,14 @@ move_char up 2
 sleep 32
 step_npc 9428 2
 set_talk_npc 9428
-msg Scotch\n「Wha……Man!?
+msg Scotch\n`Wha==Man!?
 reset_talk_npc
 jump_npc 9428 same 2
 sleep 32
 chg_speed 9428 fast
 step_npc 9428 6
 set_talk_npc 9428
-msg Scotch\n「Damn you!\n You tricked us!\n Guys, get him!
+msg Scotch\n`Damn you!\n You tricked us!\n Guys, get him!
 reset_talk_npc
 move_char down 2
 sleep 16
@@ -124,7 +124,7 @@ move_char up 2
 sleep 32
 step_npc 9428 2
 set_talk_npc 9428
-msg Scotch\n「Crap!\n You spineless wuss!\n\n N-now!\n I'll show you an\n underling's pride!
+msg Scotch\n`Crap!\n You spineless wuss!\n\n N-now!\n I'll show you an\n underling's pride!
 reset_talk_npc
 move_char down 2
 chg_speed 9423 normal

@@ -12,7 +12,7 @@ jump_npc 8815 same 1
 sleep 16
 step_npc 8815 6
 set_talk_npc 8815
-msg ÅuHey, what's this?\n It's occupied for ever.\n Can't hold it any longer.
+msg `Hey, what's this?\n It's occupied for ever.\n Can't hold it any longer.
 reset_talk_npc
 if_char_dir down
 draw_char on

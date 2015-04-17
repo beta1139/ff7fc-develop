@@ -12,7 +12,7 @@ sleep 48
 set_active_msg 9523
 jump_npc 9523 same 1
 set_talk_npc 9523
-msg Corneo\nÅuHo-ho!\n\n\n No need to\n be so shy.\n We are aloneÅcÅc
+msg Corneo\n`Ho-ho!\n\n\n No need to\n be so shy.\n We are alone==
 reset_talk_npc
 chg_event_move_char_speed slow
 move_char down 2

@@ -7,11 +7,11 @@ inc_screen_effect_val 1
 sleep 1
 pool
 sleep 8
-set_text 2 　 　   　　　　   ひきかえせ！
+set_text 2 Go back!
 sleep 8
 set_text_alpha 2 90
 sleep 64
-set_text 3 　 　    　　ここは　ただの　あそびばだ！
+set_text 3 This is only a playroom!
 sleep 8
 set_text_alpha 3 90
 sleep 80

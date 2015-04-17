@@ -8,14 +8,14 @@ draw_char off
 move_char up 1
 sleep 16
 set_talk_npc 6424
-msg ÅuOnly you can protect\n yourself in the slums.\n For that you need good\n weapons! Don't you?\n#3\n  Show me weapons.\n  Show me items.\n  Not interested.\n\n[[]][[]][[]]
+msg `Only you can protect\n yourself in the slums.\n Therefore you need good\n weapons! Right?\n#3\n  Show me weapons.\n  Show me items.\n  Not interested.\n\n[[]][[]][[]]
 reset_talk_npc
 if_flag 3 0
 open_armor_shop 3002
 step_npc 6420 1
 sleep 16
 set_talk_npc 6423
-msg ÅwYou don't have a weapon!
+msg {You don't have a weapon!
 reset_talk_npc
 jump_npc 6424 same 1
 chg_npc_dir 6424 up

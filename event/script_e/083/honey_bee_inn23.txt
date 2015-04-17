@@ -24,7 +24,7 @@ chg_speed 8314 not_move
 chg_speed 8313 not_move
 set_active_msg 8317
 jump_npc 8317 same 1
-msg Mukki\n「Hello!\n\n\n (Grin,grin,grin……Smile)
+msg Mukki\n`Hello!\n\n\n (Grin,grin,grin==Smile)
 sleep 16
 chg_speed 8317 not_move
 chg_npc_dir 8330 left
@@ -38,14 +38,14 @@ sleep 6
 set_key_valid up
 set_key_valid down
 chg_npc_dir 8330 up
-msg 『What's this……\n\n\n\n What should I do……?\n\n\n\n#2\n  Let me out.\n  I'm in a danger……\n\n\n[[]][[]]
+msg {What's this==\n\n\n\n What should I do==?\n\n\n\n#2\n  Let me out.\n  I'm in a danger==\n\n\n[[]][[]]
 sleep 8
 if_flag 3 0
 jump_npc 8330 same 1
 sleep 16
 chg_speed 8330 fast
 step_npc 8330 2
-msg 『I have no time\n for you.\n\n\n Get out of my way!
+msg {I have no time\n for you.\n\n\n Get out of my way!
 fi
 if_flag 3 1
 set_screen_effect alpha 0 0 0 0
@@ -53,7 +53,7 @@ loop 10
 inc_screen_effect_val 10
 sleep 4
 pool
-msg 『I suppose I'm in a\n life-threatening danger……
+msg {I suppose I'm in a\n life-threatening danger==
 loop 10
 dec_screen_effect_val 10
 sleep 4
@@ -74,13 +74,13 @@ chg_npc_dir 8317 up
 sleep 2
 pool
 chg_npc_dir 8317 down
-msg Mukki\n「Pant, pant……
+msg Mukki\n`Pant, pant==
 chg_npc_img 8317 111
 jump_npc 8317 same 1
 sleep 16
 chg_speed 8317 fast
 step_npc 8317 4
-msg Mukki\n「Don't get shy!\n Expose yourself, Kid!
+msg Mukki\n`Don't get shy!\n Expose yourself, Kid!
 chg_speed 8317 normal
 chg_npc_img 8317 127
 jump_npc 8316 same 1
@@ -112,7 +112,7 @@ chg_npc_dir 8317 up
 sleep 2
 pool
 chg_npc_dir 8317 down
-msg Mukki\n「Pant, pant……\n\n\n Let's wash off the\n sweat together!
+msg Mukki\n`Pant, pant==\n\n\n Let's wash off the\n sweat together!
 jump_npc 8316 same 1
 jump_npc 8315 same 1
 jump_npc 8314 same 1
@@ -145,7 +145,7 @@ jump_npc 8316 same 1
 jump_npc 8315 same 1
 jump_npc 8314 same 1
 jump_npc 8313 same 1
-msg 「Yessir!
+msg `Yessir!
 sleep 16
 chg_event_move_char_speed slow
 move_char up 7
@@ -183,7 +183,7 @@ jump_npc 8313 same 1
 sleep 16
 pool
 play_se syu.ogg
-msg3 -1 Mukki\n「Kid! You looked thinner\n in clothing.
+msg3 -1 Mukki\n`Kid! You looked thinner\n in clothing.
 loop 4
 step_npc 8330 2
 jump_npc 8317 same 1
@@ -197,7 +197,7 @@ play_se syu.ogg
 sleep 32
 erase_msg3
 sleep 8
-msg3 -1 Mukki\n「Pant, pant……
+msg3 -1 Mukki\n`Pant, pant==
 sleep 16
 chg_npc_img 8330 0
 chg_speed 8330 slow
@@ -225,7 +225,7 @@ sleep 8
 erase_msg3
 play_se syu.ogg
 sleep 8
-msg3 -1 Mukki\n「You look great!
+msg3 -1 Mukki\n`You look great!
 sleep 16
 slide_walk_npc 8316 left 1
 slide_walk_npc 8330 left 2
@@ -282,81 +282,81 @@ chg_npc_dir 8315 right
 chg_npc_dir 8314 down
 chg_npc_dir 8313 left
 sleep 64
-msg Mukki\n「Sigh, hum hum……\n The bath is good.\n\n It's really relaxing.
+msg Mukki\n`Sigh, hum hum==\n The bath is good.\n\n It's really relaxing.
 sleep 16
 jump_npc 8317 same 1
-msg Mukki\n「How do you feel, Kid!\n\n\n Isn't it good?\n\n\n\n#2\n  ……\n  I'm suffocated.\n\n\n[[]][[]]
+msg Mukki\n`How do you feel, Kid!\n\n\n Isn't it good?\n\n\n\n#2\n  ==\n  I'm suffocated.\n\n\n[[]][[]]
 sleep 16
 chg_npc_img 8330 97
 if_flag 3 0
-msg 『I'm sick.\n Let me out……
+msg {I'm sick.\n Let me out==
 fi
 if_flag 3 1
-msg 『I'm suffocated……
+msg {I'm suffocated==
 fi
 jump_npc 8317 same 1
-msg Mukki\n「Patience, patience.\n Count down from 10.
-msg3 -1 『10……
+msg Mukki\n`Patience, patience.\n Count down from 10.
+msg3 -1 {10==
 sleep 56
 erase_msg3
 sleep 8
-msg3 -1 『9……
+msg3 -1 {9==
 sleep 36
 erase_msg3
 sleep 8
 jump_npc 8317 same 1
-msg Mukki\n「How old are you, Kid?
+msg Mukki\n`How old are you, Kid?
 sleep 8
-msg3 -1 『8……
+msg3 -1 {8==
 sleep 36
 erase_msg3
 sleep 8
-msg 『I'm 21……
+msg {I'm 21==
 jump_npc 8317 same 1
-msg Mukki\n「Less than half of me.\n That's nice.\n\n Look, Kid.\n\n\n\n You wanna join Mukki's\n Young Brothers Club?\n\n\n#2\n  Not interested.\n  ……\n\n\n[[]][[]]
-msg3 -1 『7……
+msg Mukki\n`Less than half of me.\n That's nice.\n\n Look, Kid.\n\n\n\n You wanna join Mukki's\n Young Brothers Club?\n\n\n#2\n  Not interested.\n  ==\n\n\n[[]][[]]
+msg3 -1 {7==
 sleep 56
 erase_msg3
 sleep 8
-msg3 -1 『6……
+msg3 -1 {6==
 sleep 36
 erase_msg3
 sleep 8
 if_flag 3 0
-msg 『Not interested.
+msg {Not interested.
 fi
 if_flag 3 1
-msg 『You look for another.
+msg {You look for another.
 fi
 sleep 16
 jump_npc 8317 same 1
-msg Mukki\n「Is that so? Too bad.\n\n\n We're also planning\n a training camp in\n a tropical country.\n How does that sound?
+msg Mukki\n`Is that so? Too bad.\n\n\n We're also planning\n a training camp in\n a tropical country.\n How does that sound?
 fi
 sleep 8
-msg3 -1 『5……
+msg3 -1 {5==
 sleep 56
 erase_msg3
 sleep 8
-msg3 -1 『4……
+msg3 -1 {4==
 sleep 56
 erase_msg3
 sleep 8
-msg3 -1 『3……
+msg3 -1 {3==
 sleep 56
 erase_msg3
 sleep 8
-msg3 -1 『2……
+msg3 -1 {2==
 sleep 56
 erase_msg3
 sleep 8
-msg3 -1 『1……
+msg3 -1 {1==
 sleep 56
 erase_msg3
 sleep 8
-msg 『Now, I'm done.
+msg {Now, I'm done.
 sleep 16
 jump_npc 8317 same 1
-msg Mukki\n「Just like that?\n\n\n ……I feel dejected……
+msg Mukki\n`Just like that?\n\n\n ==I feel dejected==
 move_char up 6
 jump_npc 8313 same 1
 jump_npc 8314 same 1
@@ -443,7 +443,7 @@ chg_speed 8315 not_move
 sleep 176
 chg_speed 8317 normal
 step_npc 8317 2
-msg Mukki\n「Kid!\n This is my treasure.\n\n Not it's yours as\n today's memento!
+msg Mukki\n`Kid!\n This is my treasure.\n\n Not it's yours as\n today's memento!
 chg_npc_dir 8317 left
 sleep 4
 chg_npc_dir 8317 up
@@ -463,7 +463,7 @@ jump_npc 8317 same 1
 sleep 16
 chg_npc_dir 8317 down
 step_npc 8317 1
-msg Mukki\n「I hope to see you again!
+msg Mukki\n`I hope to see you again!
 play_se_loop stomp.ogg
 chg_speed 8317 normal
 chg_speed 8316 normal
@@ -573,7 +573,7 @@ chg_char_dir right
 chg_char_img_tmp 97
 step_char 3
 sleep 80
-msg 『What an underware……\n I'm really gonna wear\n this……?\n\n ……Can't help it.\n I must help Tifa.
+msg {What an underware==\n I'm really gonna wear\n this==?\n\n ==Can't help it.\n I must help Tifa.
 create event_generator 8009 80 5 15 17 0 0 @080/honey_bee_inn20.txt
 kill 8311
 kill_through 8011

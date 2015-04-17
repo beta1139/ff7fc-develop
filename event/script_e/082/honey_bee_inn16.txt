@@ -4,15 +4,15 @@ erase_msg3
 kill_through 8202
 play_se_loop tsun_tsun.ogg
 sleep 16
-msg 「Prick, prick……\n ……Sting▼
+msg `Prick, prick==\n ==Sting@
 sleep 16
-msg 『Uh……\n Ouch!
+msg {Uh==\n Ouch!
 sleep 16
 play_se recover.wav
 recover_active_chara
 msg Restored Cloud's HP, MP!
 play_se_loop attack_tifa.ogg
-set_text 6            「Wake up!
+set_text 6            `Wake up!
 sleep 16
 set_text_alpha 6 33
 sleep 8

@@ -7,7 +7,7 @@ kill_through_range 1413 1415
 kill_through_range 1405 1406
 create npc_event 1550 15 7 4 31 1 2 none
 create npc_event 1551 15 8 4 31 1 2 none
-msg 「Hey! You there!\n\n\n\n『Shinra Guards……\n\n\n\n#2\n  Fight them!\n  I can't be bothered.\n\n\n[[]][[]]
+msg `Hey! You there!\n\n\n\n{Shinra Guards==\n\n\n\n#2\n  Fight them!\n  I can't be bothered.\n\n\n[[]][[]]
 if_flag 3 0
 move_npc 1550 down 2
 move_npc 1551 down 2
@@ -24,7 +24,7 @@ wait_encount_end
 create npc_event 1550 15 7 4 141 1 2 none
 create npc_event 1551 15 8 4 141 1 2 none
 sleep 16
-msg3 -1 「What's up?
+msg3 -1 `What's up?
 play_se gun_shot.ogg
 move_npc 1550 down 4
 move_npc 1551 down 4
@@ -61,7 +61,7 @@ if_flag 3 1
 chg_npc_img 1550 141
 chg_npc_img 1551 141
 sleep 16
-msg3 -1 「Halt!
+msg3 -1 `Halt!
 play_se gun_shot.ogg
 move_npc 1550 down 4
 move_npc 1551 down 4
@@ -114,7 +114,7 @@ kill 1590
 wait_encount_end
 create npc_event 1554 15 2 10 141 3 2 none
 create npc_event 1555 15 2 11 141 3 2 none
-msg3 -1 「That's him!
+msg3 -1 `That's him!
 move_npc 1554 right 4
 move_npc 1555 right 4
 jump_char same 1
@@ -217,7 +217,7 @@ wait_encount_end
 create npc_event 1555 15 3 11 31 2 2 none
 create npc_event 1556 15 19 10 31 2 2 none
 create npc_event 1557 15 19 11 31 2 2 none
-msg3 -1 Guard\n「Over here!
+msg3 -1 Guard\n`Over here!
 move_npc 1551 right 1
 move_npc 1555 right 5
 if_flag 13 1
@@ -262,7 +262,7 @@ sleep 16
 jump_npc 1557 same 1
 sleep 16
 step_npc 1557 2
-msg Guard\n「That's as far as you go.
+msg Guard\n`That's as far as you go.
 chg_char_dir right
 if_flag 13 1
 set_npc_pos 1556 15 13 10
@@ -303,14 +303,14 @@ chg_npc_dir 1580 down
 chg_npc_img 1580 103
 sleep 32
 chg_npc_dir 1580 left
-msg3 -1 『……
+msg3 -1 {==
 sleep 56
 chg_npc_img 1580 0
 chg_npc_dir 1580 right
 erase_msg3
 sleep 24
 step_npc 1580 1
-msg3 -1 『I got no time to play\n around with you guys.
+msg3 -1 {I got no time to play\n around with you guys.
 play_se_loop train_move_quiet.ogg
 play_event_bgm Ex-05-Anxious_Heart_short.ogg
 sleep 128
@@ -331,13 +331,13 @@ chg_speed 1590 fast
 fi
 step_npc 1557 2
 sleep 16
-msg3 -1 Guard\n「Enough babbling……
+msg3 -1 Guard\n`Enough babbling==
 sleep 64
 erase_msg3
 chg_speed 1557 fast
 step_npc 1557 4
 sleep 8
-msg3 -1 Guard\n「Grab him!
+msg3 -1 Guard\n`Grab him!
 sleep 16
 play_se train_whistle_and_move.ogg
 chg_npc_img 1550 31

@@ -8,7 +8,7 @@ jump_npc 9324 same 1
 sleep 16
 step_npc 9324 2
 set_talk_npc 9324
-msg Kotch\nÅuOkay, you girls!\n\n\n You all line up in\n front of Don Corneo!
+msg Kotch\n`Okay, you girls!\n\n\n You all line up in\n front of Don Corneo!
 reset_talk_npc
 chg_event_move_char_speed slow
 move_char down 2

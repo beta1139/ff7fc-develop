@@ -24,10 +24,10 @@ move_npc 531 up 3
 sleep 8
 chg_npc_dir 530 down
 sleep 16
-create npc 533 5 10 6 35 1 0 Biggs\n「To think how many people\n sacrificed their lives\n jsut to get this code……
+create npc 533 5 10 6 35 1 0 Biggs\n`To think how many people\n sacrificed their lives\n jsut to get this code==
 kill 530
 chg_npc_dir 531 right
 sleep 16
-create npc3 534 5 12 6 34 3 0 Jessie\n「Unlock code accepted.
+create npc3 534 5 12 6 34 3 0 Jessie\n`Unlock code accepted.
 create event_generator 537 5 1 2 17 0 0 @005/jesse1.txt
 kill 531

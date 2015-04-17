@@ -1,7 +1,7 @@
 wait_target_talked 1707
 set_talk_npc 1708
-msg uYes!
+msg `Yes!
 reset_talk_npc
-create npc3 1716 17 11 11 71 3 0 uShall we take a room?
+create npc3 1716 17 11 11 71 3 0 `Shall we take a room?
 kill 1707
 create event_generator 1717 17 1 2 17 0 0 @017/nanabangai_station6.txt

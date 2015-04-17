@@ -28,13 +28,13 @@ sleep 16
 create npc_event 601 6 20 2 0 1 2 none
 draw_char off
 step_npc 602 2
-msg Baret\n「Reactors keep sucking the\n planet's life everyday.\n Then somday……it's gone.
+msg Baret\n`Reactors keep sucking the\n planet's life everyday.\n Then somday==it's gone.
 chg_npc_img 601 103
 sleep 32
 chg_npc_dir 601 left
 sleep 48
 chg_npc_dir 601 down
-msg 『That's not my problem.
+msg {That's not my problem.
 chg_npc_dir 602 down
 chg_npc_img 602 95
 step_npc 602 4
@@ -45,12 +45,12 @@ set_active_msg 602
 jump_npc 602 same 1
 sleep 16
 jump_npc 602 same 1
-msg Baret\n「The planet's dyin',\n MISTER Cloud!
+msg Baret\n`The planet's dyin',\n MISTER Cloud!
 sleep 16
 chg_npc_img 601 0
 chg_npc_dir 601 down
 sleep 16
-msg 『My only concern is to\n finish this job before\n running into securities\n and guard robots.
+msg {My only concern is to\n finish this job before\n running into securities\n and guard robots.
 draw_char on
 kill 601
 chg_npc_dir 602 left

@@ -17,7 +17,7 @@ chg_speed 14020 normal
 sleep 16
 step_npc 14020 2
 set_talk_npc 14020
-msg プレジデントしんら\n「じゅんびのほうは？
+msg President Shinra\n`How is the progress?
 reset_talk_npc
 sleep 16
 create npc_event 4990 49 20 11 23 0 2 none
@@ -34,11 +34,11 @@ set_text_alpha 9 0
 set_text_alpha 10 0
 set_text_alpha 11 0
 sleep 8
-set_text 3 　 　   　　　　　　ハイデッカー
-set_text 8 　　　　　しんらカンパニー　ちあんいじぶもん　そうかつ
-set_text 9 　　　　　　タークスや　ソルジャーたちを　したがえ
-set_text 10 　　　プレジデントの　かたうでとして　けんせいを　ふるう
-set_text 11 　　　　　　　　　わらいごえは　『ガハハ！！』
+set_text 3            Heidegger
+set_text 8    Leads the Shinra Security
+set_text 9    Department with TURKS and
+set_text 10    SOLDIERS under his command
+set_text 11     Always laughs roaringly
 warp 49 20 11 down
 loop 4
 sleep 1
@@ -191,7 +191,7 @@ jump_npc 14021 same 1
 sleep 16
 jump_npc 14021 same 1
 set_talk_npc 14021
-msg ハイデッカー\n「ガハハ！！　じゅんちょうじゅんちょう！\n　じっこうぶたいは　タークスです
+msg Heidegger\n`Har-har! Very well, sir!\n TURKS are handling that.
 reset_talk_npc
 sleep 16
 chg_npc_dir 14022 up
@@ -199,7 +199,7 @@ sleep 16
 chg_speed 14022 fast
 step_npc 14022 4
 set_talk_npc 14022
-msg リーブ\n「プレジデント！\n　ほんとうにやるのですか？\n　たかが　すうにんのそしきを　つぶすのに……
+msg Reeve\n`President! Do you really\n mean it? To remove such\n an isignificant group==
 reset_talk_npc
 move_char right 2
 sleep 16
@@ -220,11 +220,11 @@ set_text_alpha 9 0
 set_text_alpha 10 0
 set_text_alpha 11 0
 sleep 8
-set_text 3 　 　   　　　　リーブ.トゥエスティ 
-set_text 8 　　　　しんらカンパニー　とし　かいはつぶもん　そうかつ
-set_text 9 　　　　　すぐれた　エンジニアでもあり　ミッドガルの　
-set_text 10 　　　　　　　　まこうろ　せっけいも　たんとう
-set_text 11 　　　　　ミッドガルへの　あいじょうは　だれよりもふかい
+set_text 3           Reeve Tuesti
+set_text 8      The Shinra Development
+set_text 9        Department Manager
+set_text 10 Mako reactors are of his design
+set_text 11  Holds genuine care for Midgar
 warp 49 20 11 down
 loop 4
 sleep 1
@@ -371,7 +371,7 @@ jump_npc 14020 same 1
 sleep 16
 step_npc 14020 1
 set_talk_npc 14020
-msg プレジデントしんら\n「いまさらナニかね　リーブくん
+msg President Shinra\n`Do you have a problem\n with that, Reeve?
 reset_talk_npc
 create event_generator 14001 140 14 17 17 0 0 @140/shinra_company_plot2.txt
 sleep 16

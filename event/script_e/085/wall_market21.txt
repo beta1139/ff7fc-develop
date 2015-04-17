@@ -32,13 +32,13 @@ jump_npc 8512 same 1
 sleep 16
 step_npc 8512 2
 set_talk_npc 8512
-msg ÅuOoh!\n The friend's also\n such a cutie!\n\n Here, come in, come in!
+msg `Ooh!\n The friend's also\n such a cutie!\n\n Here, come in, come in!
 reset_talk_npc
 chg_npc_dir 8512 up
 sleep 16
 step_npc 8512 2
 set_talk_npc 8512
-msg ÅuShowing a party of 2!
+msg `Showing a party of 2!
 reset_talk_npc
 sleep 32
 play_se door_open_hard.wav

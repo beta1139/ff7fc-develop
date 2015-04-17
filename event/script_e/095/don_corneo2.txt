@@ -8,27 +8,27 @@ jump_npc 9523 same 1
 sleep 16
 step_npc 9523 4
 set_talk_npc 9523
-msg Corneo\n「Ho-ho!\n\n\n There, there.\n Don't be so shy……\n\n\n Come nearer, huh?
+msg Corneo\n`Ho-ho!\n\n\n There, there.\n Don't be so shy==\n\n\n Come nearer, huh?
 reset_talk_npc
 sleep 32
 if_flag_lesser 18 10
 set_active_msg 9522
 chg_speed 9522 normal
 step_npc 9522 1
-msg Tifa\n「I know……\n\n\n But, Don Corneo,\n Tell me one thing\n before that……
+msg Tifa\n`I know==\n\n\n But, Don Corneo,\n Tell me one thing\n before that==
 jump_npc 9523 same 1
 set_talk_npc 9523
-msg Corneo\n「Huh? About what?\n\n\n Well, no need to worry.\n I'm not married yet.\n Are you satisfied? Huh?
+msg Corneo\n`Huh? About what?\n\n\n Well, no need to worry.\n I'm not married yet.\n Are you satisfied? Huh?
 reset_talk_npc
 fi
 if_flag_greater 18 9
 set_active_msg 9521
 chg_speed 9521 normal
 step_npc 9521 1
-msg Aeris\n「Y-yes……\n\n\n But, Mr.Corneo.\n I want to know\n something first……
+msg Aeris\n`Y-yes==\n\n\n But, Mr.Corneo.\n I want to know\n something first==
 jump_npc 9523 same 1
 set_talk_npc 9523
-msg Corneo\n「Yeah, I'll personally\n teach you everything.\n\n Here! Here, here!
+msg Corneo\n`Yeah, I'll personally\n teach you everything.\n\n Here! Here, here!
 reset_talk_npc
 fi
 loop 2
@@ -53,12 +53,12 @@ sleep 16
 chg_speed 9523 not_move
 chg_speed 9522 fast
 step_npc 9522 1
-msg Tifa\n「Th-that's not\n what I mean……
+msg Tifa\n`Th-that's not\n what I mean==
 jump_npc 9523 same 1
 play_se puy.ogg
 sleep 16
 step_npc 9522 3
-msg Tifa\n「Wait, hold it!\n No, I'm not ready yet!
+msg Tifa\n`Wait, hold it!\n No, I'm not ready yet!
 step_npc 9522 3
 fi
 if_flag_greater 18 9
@@ -68,12 +68,12 @@ sleep 16
 chg_speed 9523 not_move
 chg_speed 9521 fast
 step_npc 9521 1
-msg Aeris\n「N-no, please!\n That's not it!
+msg Aeris\n`N-no, please!\n That's not it!
 jump_npc 9523 same 1
 play_se puy.ogg
 sleep 16
 step_npc 9521 3
-msg Aeris\n「No! Holt it!\n W-wait a sec!
+msg Aeris\n`No! Holt it!\n W-wait a sec!
 step_npc 9521 3
 fi
 create event_generator 9501 95 6 7 17 0 0 @095/don_corneo3.txt

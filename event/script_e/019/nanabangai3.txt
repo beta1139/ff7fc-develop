@@ -16,11 +16,11 @@ sleep 24
 warp 19 8 13 up
 draw_char on
 fadein
-msg ÅuSee?\n This place is kinda\n wonderfully mysterious,\n isn't it?
+msg `See?\n This place is kinda\n wonderfully mysterious,\n isn't it?
 chg_npc_dir 1908 right
 sleep 24
 chg_char_dir left
-msg ÅuIt's my place but you may\n come and watch sometimes.\n Bye, brother!
+msg `It's my place but you may\n come and watch sometimes.\n Bye, brother!
 chg_type 1908 npc_event
 active 1908
 chg_speed 1908 fast

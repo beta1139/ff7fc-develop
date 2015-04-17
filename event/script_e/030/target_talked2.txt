@@ -1,4 +1,4 @@
 wait_target_talked 3006
-create npc 3008 30 1 6 70 2 0 uP-perhapscc
+create npc 3008 30 1 6 70 2 0 `P-perhaps==
 kill 3006
 create event_generator 3017 30 1 1 17 0 0 @030/target_talked3.txt

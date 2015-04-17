@@ -11,23 +11,23 @@ move_char up 1
 sleep 16
 step_char 1
 sleep 16
-msg 『What is it, Aeris?
+msg {What is it, Aeris?
 sleep 16
 step_npc 7231 2
 set_talk_npc 7231
-msg 「……What is it?\n You going out like that?\n I don't mind, you know.
+msg `==What is it?\n You going out like that?\n I don't mind, you know.
 reset_talk_npc
 chg_char_dir right
 step_char 1
 sleep 16
-msg 『……I forgot.
+msg {==I forgot.
 jump_npc 7231 same 1
 sleep 16
 chg_npc_dir 7231 up
 chg_npc_img 7231 15
 step_npc 7231 2
 set_talk_npc 7231
-msg 「Take a grip,\n you sweet Cloud girl!
+msg `Take a grip,\n you sweet Cloud girl!
 reset_talk_npc
 chg_char_dir up
 sleep 16

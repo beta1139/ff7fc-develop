@@ -6,7 +6,7 @@ chg_type 9223 npc_event
 chg_speed 9223 normal
 chg_dir_to_char 9223
 set_talk_npc 9223
-msg Tifa\n「……Anyway,\n I'm glad you're alive.
+msg Tifa\n`==Anyway,\n I'm glad you're alive.
 reset_talk_npc
 if_char_dir left
 move_char down 1
@@ -27,53 +27,53 @@ fi
 sleep 16
 step_char 1
 sleep 16
-msg 『Yeah.\n And what happened?
+msg {Yeah.\n And what happened?
 sleep 16
 step_npc 9223 2
 set_talk_npc 9223
-msg Tifa\n「When we got back from\n No.5 reactor, there was\n a guy snooping around.\n Baret caught him and got\n the story out.
+msg Tifa\n`When we got back from\n No.5 reactor, there was\n a guy snooping around.\n Baret caught him and got\n the story out.
 reset_talk_npc
 chg_speed 9221 normal
 step_char 1
 sleep 16
-msg 『And Don's name was\n mentioned in course.
+msg {And Don's name was\n mentioned in course.
 chg_npc_dir 9221 down
 sleep 40
 chg_npc_dir 9221 right
 step_npc 9223 1
 set_talk_npc 9223
-msg Tifa\n「Yes, Don Corneo.\n\n\n Baret says that Corneo is\n only a small time and we\n should leave him alone……
+msg Tifa\n`Yes, Don Corneo.\n\n\n Baret says that Corneo is\n only a small time and we\n should leave him alone==
 reset_talk_npc
 sleep 16
 chg_npc_dir 9223 left
 step_npc 9223 1
 set_talk_npc 9223
-msg Tifa\n「But I couldn't help\n feeling uneasy about it.
+msg Tifa\n`But I couldn't help\n feeling uneasy about it.
 reset_talk_npc
 sleep 16
 step_char 1
 sleep 16
-msg 『I get it.\n So you're going to talk\n with Corneo himself.
+msg {I get it.\n So you're going to talk\n with Corneo himself.
 sleep 16
 chg_npc_dir 9223 down
 sleep 16
 step_npc 9223 2
 set_talk_npc 9223
-msg Tifa\n「And now that I'm here,\n I've found myself in a\n bit of tricky situation.
+msg Tifa\n`And now that I'm here,\n I've found myself in a\n bit of tricky situation.
 reset_talk_npc
 chg_npc_dir 9221 down
 sleep 48
 chg_npc_dir 9221 right
 step_npc 9223 2
 set_talk_npc 9223
-msg Tifa\n「It seems that Corneo is\n looking for his bride.\n\n Choose one from 3 girls\n brought to him every day,\n and, well, you know……
+msg Tifa\n`It seems that Corneo is\n looking for his bride.\n\n Choose one from 3 girls\n brought to him every day,\n and, well, you know==
 reset_talk_npc
 jump_npc 9223 same 1
 sleep 16
 chg_speed 9223 fast
 step_npc 9223 4
 set_talk_npc 9223
-msg Tifa\n「Anyway!\n So if I don't get chosen\n tonight……
+msg Tifa\n`Anyway!\n So if I don't get chosen\n tonight==
 reset_talk_npc
 sleep 32
 chg_npc_dir 9221 down
@@ -83,7 +83,7 @@ sleep 16
 chg_speed 9221 normal
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n「Um……I didn't mean to\n listen in, but
+msg Aeris\n`Um==I didn't mean to\n listen in, but
 reset_talk_npc
 chg_char_dir right
 chg_npc_dir 9223 right
@@ -94,30 +94,30 @@ sleep 96
 chg_speed 9221 normal
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n「There'll be no problem\n if all 3 girls are your\n friends, will there?
+msg Aeris\n`There'll be no problem\n if all 3 girls are your\n friends, will there?
 reset_talk_npc
 sleep 16
 chg_speed 9223 normal
 step_npc 9223 2
 set_talk_npc 9223
-msg Tifa\n「I guess so……
+msg Tifa\n`I guess so==
 reset_talk_npc
 sleep 16
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n「You have 2 girls here.
+msg Aeris\n`You have 2 girls here.
 reset_talk_npc
 jump_char same 1
 sleep 16
 chg_event_move_char_speed fast
 step_char 2
 sleep 16
-msg 『No, Aeris!\n I can't involve\n you in this.
+msg {No, Aeris!\n I can't involve\n you in this.
 chg_npc_dir 9221 down
 set_active_msg 9221
 jump_npc 9221 same 1
 set_talk_npc 9221
-msg Aeris\n「Oh? Are you saying that\n it's okay for Tifa to be\n in danger?
+msg Aeris\n`Oh? Are you saying that\n it's okay for Tifa to be\n in danger?
 reset_talk_npc
 chg_char_dir up
 jump_char same 1
@@ -125,14 +125,14 @@ sleep 16
 chg_npc_dir 9221 left
 step_char 2
 sleep 16
-msg 『Well, Tifa is……
+msg {Well, Tifa is==
 sleep 16
 move_npc 9223 right 1
 sleep 16
 chg_char_dir right
 step_npc 9223 1
 set_talk_npc 9223
-msg Tifa\n「Are you sure?
+msg Tifa\n`Are you sure?
 reset_talk_npc
 draw_fake_countdown off
 start_fake_countdown_sec 1
@@ -143,7 +143,7 @@ move_npc 9221 right 3
 move_npc 9223 right 3
 sleep 16
 set_talk_npc 9221
-msg Aeris\n「I grew up in the slums\n so I'm used to dangers.
+msg Aeris\n`I grew up in the slums\n so I'm used to dangers.
 reset_talk_npc
 sleep 16
 wait_fake_countover
@@ -153,21 +153,21 @@ end_fake_countdown
 chg_speed 9221 normal
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n「More important point is,\n will YOU trust me?
+msg Aeris\n`More important point is,\n will YOU trust me?
 reset_talk_npc
 sleep 16
 chg_speed 9223 normal
 step_npc 9223 2
 set_talk_npc 9223
-msg Tifa\n「Thank you, Aeris.
+msg Tifa\n`Thank you, Aeris.
 reset_talk_npc
 sleep 16
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n「No problem.
+msg Aeris\n`No problem.
 reset_talk_npc
 sleep 16
-msg 「Hello!
+msg `Hello!
 chg_npc_dir 9221 up
 chg_npc_dir 9223 up
 chg_char_dir up
@@ -180,7 +180,7 @@ move_npc 9224 down 4
 sleep 64
 step_npc 9224 2
 set_talk_npc 9224
-msg 「Girls, it's time.\n Mr.Corneo's waiting!
+msg `Girls, it's time.\n Mr.Corneo's waiting!
 reset_talk_npc
 chg_npc_dir 9224 up
 sleep 16
@@ -191,32 +191,32 @@ chg_speed 9224 slow
 move_npc 9224 up 5
 move_char down 3
 sleep 32
-msg3 -1 「I said don't wander……\n This is the problem with\n tootsies these days……
+msg3 -1 `I said don't wander==\n This is the problem with\n tootsies these days==
 sleep 16
 wait_key_push_edge a
 erase_msg3
 wait_fake_countover
 sleep 16
 end_fake_countdown
-msg 「Hurry up!
+msg `Hurry up!
 chg_npc_dir 9220 right
 chg_char_dir right
 sleep 16
 step_npc 9220 2
 chg_npc_dir 9221 left
 chg_npc_dir 9223 left
-msg 『Just to be certain,\n the other girl is,\n you mean……\n\n Me……isn't it?
+msg {Just to be certain,\n the other girl is,\n you mean==\n\n Me==isn't it?
 sleep 16
 chg_npc_dir 9223 right
 sleep 24
 step_npc 9223 1
 set_talk_npc 9223
-msg Tifa\n「Of course.
+msg Tifa\n`Of course.
 reset_talk_npc
 sleep 24
 step_npc 9221 1
 set_talk_npc 9221
-msg Aeris\n「You bet.
+msg Aeris\n`You bet.
 reset_talk_npc
 draw_char on
 kill 9220
@@ -224,7 +224,7 @@ chg_type 9221 npc
 chg_type 9223 npc
 chg_speed 9221 not_move
 chg_speed 9223 not_move
-chg_param 9221 Aeris\n「Let's go up before\n they get suspicious.
+chg_param 9221 Aeris\n`Let's go up before\n they get suspicious.
 set_inactive_msg 9221
 set_inactive_msg 9223
 kill 9224

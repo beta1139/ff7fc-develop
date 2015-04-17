@@ -25,7 +25,7 @@ sleep 32
 chg_speed 5621 normal
 step_npc 5621 3
 set_talk_npc 5621
-msg Aeris\n「I see you're early today.
+msg Aeris\n`I see you're early today.
 reset_talk_npc
 sleep 16
 chg_npc_dir 5620 right
@@ -42,10 +42,10 @@ move_npc 5620 up 3
 sleep 48
 chg_speed 5620 normal
 step_npc 5620 2
-msg 『I couldn't involve you\n knowing that there'll be\n dangers.
+msg {I couldn't involve you\n knowing that there'll be\n dangers.
 step_npc 5621 2
 set_talk_npc 5621
-msg Aeris\n「Are you finished?
+msg Aeris\n`Are you finished?
 reset_talk_npc
 chg_npc_dir 5620 right
 chg_npc_img 5620 97
@@ -59,7 +59,7 @@ sleep 32
 set_active_msg 5621
 jump_npc 5621 same 1
 set_talk_npc 5621
-msg Aeris\n「You must go through\n Slum 6 ahead to get to\n Tifa's Seventh Heaven.\n I'll show you the way.\n Let's go!
+msg Aeris\n`You must go through\n Slum 6 ahead to get to\n Tifa's Seventh Heaven.\n I'll show you the way.\n Let's go!
 reset_talk_npc
 move_npc 5621 up 1
 sleep 16

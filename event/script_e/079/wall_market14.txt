@@ -38,7 +38,7 @@ sleep 32
 chg_speed 7921 not_move
 chg_npc_dir 7922 up
 chg_speed 7922 not_move
-msg3 -1 『There is something I\n need for my disguise.\n I can feel that.
+msg3 -1 {There is something I\n need for my disguise.\n I can feel that.
 wait_key_push_edge a
 erase_msg3
 chg_npc_dir 7931 right
@@ -46,7 +46,7 @@ wait_fake_countover
 sleep 16
 chg_npc_dir 7931 up
 step_npc 7931 2
-msg Aeris\n「……Hello?\n You honestly expect\n me to believe that?
+msg Aeris\n`==Hello?\n You honestly expect\n me to believe that?
 chg_speed 7920 not_move
 end_fake_countdown
 chg_char_dir up
@@ -70,7 +70,7 @@ sleep 16
 chg_event_move_char_speed fast
 step_char 2
 sleep 16
-msg 『I'm coming in!
+msg {I'm coming in!
 move_char up 2
 sleep 16
 chg_event_move_char_speed normal

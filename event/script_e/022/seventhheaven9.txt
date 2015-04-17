@@ -2,7 +2,7 @@ wait_target_talk 2206
 chg_dir_to_char 2206
 chg_type 2206 npc_event
 chg_speed 2206 normal
-msg Baret\n「Today's target's No.5\n reactor. First we gotta\n get to the station.\n We'll discuss the details\n in the train.
+msg Baret\n`Today's target's No.5\n reactor. First we gotta\n get to the station.\n We'll discuss the details\n in the train.
 sleep 16
 chg_npc_dir 2206 right
 sleep 4
@@ -13,15 +13,15 @@ sleep 4
 chg_npc_dir 2206 up
 sleep 4
 chg_dir_to_char 2206
-msg Baret\n「Yo, Cloud!\n\n\n I got something to ask\n you before the mission.\n\n\n It's……\n\n\n\n I don't know how to use\n materias!\n\n\n All materias we're gonna\n get are yours.\n So you gotta tell me!\n\n『Well……\n\n\n\n#2\n  I'll kindly explain.\n  Can't be bothered.\n\n\n[[『Just Google it.]][[]]
+msg Baret\n`Yo, Cloud!\n\n\n I got something to ask\n you before the mission.\n\n\n It's==\n\n\n\n I don't know how to use\n materias!\n\n\n All materias we're gonna\n get are yours.\n So you gotta tell me!\n\n{Well==\n\n\n\n#2\n  I'll kindly explain.\n  Can't be bothered.\n\n\n[[{Just Google it.]][[]]
 if_flag 3 0
 step_npc 2206 3
-msg Baret\n「You asshole!\n\n\n Well, awright.\n I'll ask Jessie later.\n But you're in charge of\n materias!
+msg Baret\n`You asshole!\n\n\n Well, awright.\n I'll ask Jessie later.\n But you're in charge of\n materias!
 fi
 if_flag 3 1
 sleep 16
 step_npc 2206 3
-msg Baret\n「So that's a SOLDIER's\n trade secret?\n\n Well, awright.\n I'll ask Jessie later.\n But you're in charge of\n materias!
+msg Baret\n`So that's a SOLDIER's\n trade secret?\n\n Well, awright.\n I'll ask Jessie later.\n But you're in charge of\n materias!
 fi
 sleep 16
 play_se ready.wav
@@ -31,7 +31,7 @@ chg_type 2202 npc_event
 chg_speed 2202 normal
 move_npc 2202 down 1
 sleep 16
-msg Tifa\n「Cloud!\n A word from a man at the\n weapon shop upstairs.\n Says that you have to go\n to his shop to receive\n something from him.\n Don't forget!
+msg Tifa\n`Cloud!\n A word from a man at the\n weapon shop upstairs.\n Says that you have to go\n to his shop to receive\n something from him.\n Don't forget!
 if_char_dir down
 chg_char_dir up
 create npc_event 2207 22 5 9 0 0 2 none
@@ -40,9 +40,9 @@ move_npc 2202 left 2
 move_char up 2
 sleep 32
 chg_npc_dir 2202 up
-msg Tifa\n「Marlene! You take good\n care of the place!
+msg Tifa\n`Marlene! You take good\n care of the place!
 sleep 16
-msg3 -1 Marlene\n「Yes!\n Have fun at work.
+msg3 -1 Marlene\n`Yes!\n Have fun at work.
 move_npc 2202 down 2
 sleep 16
 move_char down 2
@@ -76,10 +76,10 @@ sleep 32
 chg_npc_dir 2206 up
 chg_npc_dir 2202 up
 set_talk_npc 2202
-msg Tifa\n「Marlene! You take good\n care of the place!
+msg Tifa\n`Marlene! You take good\n care of the place!
 reset_talk_npc
 sleep 16
-msg3 -1 Marlene\n「Yes!\n Have fun at work.
+msg3 -1 Marlene\n`Yes!\n Have fun at work.
 move_npc 2202 down 3
 sleep 16
 move_char down 2
@@ -111,10 +111,10 @@ move_char up 2
 sleep 32
 chg_npc_dir 2202 up
 set_talk_npc 2202
-msg Tifa\n「Marlene! You take good\n care of the place!
+msg Tifa\n`Marlene! You take good\n care of the place!
 reset_talk_npc
 sleep 16
-msg3 -1 Marlene\n「Yes!\n Have fun at work.
+msg3 -1 Marlene\n`Yes!\n Have fun at work.
 move_npc 2202 down 3
 sleep 16
 move_char down 2

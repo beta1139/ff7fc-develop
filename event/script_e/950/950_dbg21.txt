@@ -26,7 +26,7 @@ chg_image_pos_offset 2 -1 1 0 0 0 0
 chg_image_pos_offset 3 -1 -1 0 0 0 0
 sleep 1
 pool
-set_text 2 ‚ ‚¢‚¤‚¦‚¨ ‚©‚«‚­‚¯‚± ‚³‚µ‚·‚¹‚» ‚½‚¿‚Â‚Ä‚Æ ‚È‚É‚Ê‚Ë‚Ì
+set_text 2  ABCDE FGHIJ KLMNO PQRST UVWXY Z
 set_text 4  abcde fghij klmno pqrst uvwxy z
 set_text 6            Created By
 set_text 8        FF7 Wo Famicon Ni

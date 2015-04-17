@@ -11,5 +11,5 @@ sleep 4
 chg_char_dir left
 sleep 4
 pool
-msg ÅwYippee!
+msg {Yippee!
 

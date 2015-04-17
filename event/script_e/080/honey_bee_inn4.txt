@@ -3,13 +3,13 @@ wait_target_talked 8014
 reset_talked_flag 8014
 if_flag 3 0
 play_se_loop barrel_falling.ogg
-msg 『……
+msg {==
 stop_se
 end
 fi
 if_flag 3 1
 sleep 16
-msg 『……Gosh!
+msg {==Gosh!
 fadeout
 sleep 8
 draw_char off
@@ -27,75 +27,75 @@ fadein
 if_flag 16 0
 sleep 80
 step_npc 70610 1
-msg 「Sigh……
+msg `Sigh==
 sleep 80
 step_npc 70610 1
-msg 「Sigh……
+msg `Sigh==
 sleep 80
 step_npc 70611 2
-msg 「What is that, darling,\n you old fart?\n Stop sighing like that……
+msg `What is that, darling,\n you old fart?\n Stop sighing like that==
 sleep 80
 step_npc 70610 2
-msg 「Sigh……\n Though you say so,\n my old biddy……
+msg `Sigh==\n Though you say so,\n my old biddy==
 sleep 80
 step_npc 70611 2
-msg 「About this room, again?
+msg `About this room, again?
 sleep 80
 step_npc 70610 2
-msg 「Sign……\n Though our son rented\n this room for us……\n\n This is too gorgeous\n for the likes of us.\n I can't feel at home with\n such a fluffy bed.
+msg `Sign==\n Though our son rented\n this room for us==\n\n This is too gorgeous\n for the likes of us.\n I can't feel at home with\n such a fluffy bed.
 sleep 80
 step_npc 70611 3
-msg 「You try to relax.\n This is the luxury inn\n beneath the big Plate.\n You shouldn't complain.
+msg `You try to relax.\n This is the luxury inn\n beneath the big Plate.\n You shouldn't complain.
 sleep 80
-msg 「Sigh……
+msg `Sigh==
 sleep 64
 fi
 if_flag 16 1
 sleep 80
 step_npc 70610 1
-msg 「Sigh……
+msg `Sigh==
 sleep 80
 step_npc 70610 1
-msg 「Sigh……
+msg `Sigh==
 sleep 80
 step_npc 70610 2
-msg 「Look, my old biddy,\n What was the name of our\n son's company……?
+msg `Look, my old biddy,\n What was the name of our\n son's company==?
 sleep 32
 step_npc 70611 2
-msg 「Oh, you old fart.\n You forgot it again……
+msg `Oh, you old fart.\n You forgot it again==
 sleep 80
 step_npc 70610 1
-msg 「Sigh……\n I'd forget my name next……
+msg `Sigh==\n I'd forget my name next==
 sleep 64
 step_npc 70611 3
-msg 「It's Shinra Comany.\n The biggest company in\n the biggest city.
+msg `It's Shinra Comany.\n The biggest company in\n the biggest city.
 sleep 80
 step_npc 70610 1
-msg 「Hm. The biggest.\n That's something.
+msg `Hm. The biggest.\n That's something.
 sleep 80
 step_npc 70611 3
-msg 「You are right.\n That's something.\n\n\n He said he was promoted\n to a department manager.
+msg `You are right.\n That's something.\n\n\n He said he was promoted\n to a department manager.
 sleep 80
 step_npc 70610 2
-msg 「Ah……\n It's thanks to our son\n that we can stay in a\n fine room like this.\n We must be thankful.
+msg `Ah==\n It's thanks to our son\n that we can stay in a\n fine room like this.\n We must be thankful.
 sleep 32
 step_npc 70611 2
-msg 「Yes, very thankful.
+msg `Yes, very thankful.
 sleep 64
 fi
 if_flag 16 2
 sleep 80
 step_npc 70610 1
-msg 「Then go to bed, shall we?
+msg `Then go to bed, shall we?
 sleep 80
 step_npc 70611 1
-msg 「Yes, we shall.
+msg `Yes, we shall.
 sleep 80
 step_npc 70610 1
-msg 「Good night.
+msg `Good night.
 sleep 80
 step_npc 70611 1
-msg 「Yes, good night.
+msg `Yes, good night.
 sleep 24
 play_se door_open2.ogg
 set_screen_effect sub 255 255 0 0
@@ -107,9 +107,9 @@ fi
 if_flag 16 3
 sleep 40
 play_se_loop barrel_hitting.ogg
-msg 「Zzz……
+msg `Zzz==
 sleep 80
-msg 「Zzz……
+msg `Zzz==
 play_se barrel_falling.ogg
 sleep 48
 play_se_loop barrel_hitting.ogg
@@ -143,14 +143,14 @@ jump_npc 8011 right 1
 sleep 16
 pool
 chg_npc_dir 8011 up
-msg 「Hi……▼\n Honey▼
+msg `Hi==@\n Honey@
 chg_npc_dir 8010 down
 chg_char_dir down
 set_active_msg 8011
 jump_npc 8011 same 1
 sleep 16
 jump_npc 8011 same 1
-msg 「Come on, now▼
+msg `Come on, now@
 jump_npc 8011 down 1
 sleep 16
 draw_char on

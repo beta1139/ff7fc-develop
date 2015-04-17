@@ -11,7 +11,7 @@ sleep 16
 chg_speed 2802 normal
 chg_npc_dir 2802 left
 sleep 32
-msg Tifa\nuI see you've already\n watched it many times.\n Never mind.\n Come over here.
+msg Tifa\n`I see you've already\n watched it many times.\n Never mind.\n Come over here.
 jump_npc 2802 same 1
 sleep 16
 jump_npc 2802 same 1

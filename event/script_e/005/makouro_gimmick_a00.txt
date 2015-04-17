@@ -8,7 +8,7 @@ create map_obj 550 5 13 7 31 0 0
 create map_obj 551 5 13 8 31 0 0 
 play_se_loop alarm.ogg
 set_screen_effect sub 255 255 0 0
-msg3 144 「EMERGENCY ALARM\n SYSTEM ACTIVATED!\n EMERGENCY ALARM\n SYSTEM ACTIVATED!
+msg3 144 `EMERGENCY ALARM\n SYSTEM ACTIVATED!\n EMERGENCY ALARM\n SYSTEM ACTIVATED!
 move_char left 5
 loop 14
 inc_screen_effect_val 1
@@ -24,11 +24,11 @@ erase_msg3
 sleep 8
 chg_speed 572 fast
 step_npc 572 2
-msg Baret\n「The fuck's goin' on?\n The door's closed up!
+msg Baret\n`The fuck's goin' on?\n The door's closed up!
 chg_npc_dir 572 right
 sleep 8
 step_npc 572 4
-msg Baret\n「Hey, what now?
+msg Baret\n`Hey, what now?
 chg_char_dir down
 chg_char_img_tmp 103
 sleep 32
@@ -45,22 +45,22 @@ play_se machine.wav
 draw_countdown on
 chg_char_state_move
 set_flag 1 1
-msg3 128 「EMERGENCY ALARM\n SYSTEM ACTIVATED!\n EMERGENCY ALARM\n SYSTEM ACTIVATED!
+msg3 128 `EMERGENCY ALARM\n SYSTEM ACTIVATED!\n EMERGENCY ALARM\n SYSTEM ACTIVATED!
 sleep 32
 play_se_loop alarm.ogg
 sleep 96
 erase_msg3
 sleep 8
-msg3 128 「LOCKDOWN COMPLETED
+msg3 128 `LOCKDOWN COMPLETED
 sleep 200
 erase_msg3
 sleep 8
 loop inf
-msg3 128 「EMERGENCY ALARM\n SYSTEM ACTIVATED!\n EMERGENCY ALARM\n SYSTEM ACTIVATED!
+msg3 128 `EMERGENCY ALARM\n SYSTEM ACTIVATED!\n EMERGENCY ALARM\n SYSTEM ACTIVATED!
 sleep 128
 erase_msg3
 sleep 8
-msg3 128 「LOCKDOWN COMPLETED
+msg3 128 `LOCKDOWN COMPLETED
 sleep 200
 erase_msg3
 sleep 8

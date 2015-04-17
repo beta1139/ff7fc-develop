@@ -55,7 +55,7 @@ sleep 16
 step_npc 3501 3
 fi
 set_talk_npc 3501
-msg Baret\nÅuWe gotta go, Cloud.\n\n\n#2\n  Go down.\n  Don't.\n\n\n[[]][[]]
+msg Baret\n`We gotta go, Cloud.\n\n\n#2\n  Go down.\n  Don't.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 create event_generator 3511 35 7 16 17 0 0 @035/winding_tunnel5.txt

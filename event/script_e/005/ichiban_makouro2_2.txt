@@ -6,28 +6,28 @@ chg_char_dir right
 sleep 16
 set_active_msg 501
 jump_npc 501 same 1
-msg Baret \n「Yo!\n This ain't your first\n time in a reactor, is it?
+msg Baret \n`Yo!\n This ain't your first\n time in a reactor, is it?
 sleep 16
 step_char 1
 sleep 16
-msg 『Yeah.\n I did work for Shinra,\n after all.
+msg {Yeah.\n I did work for Shinra,\n after all.
 sleep 16
 step_npc 501 2
-msg Baret\n「This planet's fulla\n Mako energy. People here\n use it everyday.\n But nobody knows what\n Mako's real nature is.
+msg Baret\n`This planet's fulla\n Mako energy. People here\n use it everyday.\n But nobody knows what\n Mako's real nature is.\n Do you?
 chg_char_dir down
 sleep 32
 step_npc 501 1
-msg Baret\n「It's the life blood of\n the planet. And Shinra\n keeps suckin' it\n with this funny piece\n of contraption.
+msg Baret\n`It's the life blood of\n this planet.\n\n And Shinra keeps suckin'\n it with this funny piece\n of contraption.
 chg_char_dir right
 sleep 16
 step_char 1
 sleep 16
-msg 『I'm not here\n for a lecture.\n Let's just do it.
+msg {I'm not here\n for a lecture.\n Let's just do it.
 sleep 16
 chg_npc_dir 501 left
 chg_npc_img 501 98
 step_npc 501 1
-msg Baret\n「Shit!\n\n\n Well, you're comin'\n with me from here.
+msg Baret\n`Fuck!\n\n\n Right, you're comin'\n with me from here.
 chg_npc_img 501 1
 move_npc 501 left 1
 sleep 16

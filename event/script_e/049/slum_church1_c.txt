@@ -1,7 +1,7 @@
 wait_same_pos
-msg3 -1 「Oh! He stirs!
+msg3 -1 `Oh! He stirs!
 sleep 48
-set_text 6            『……Can you?
+set_text 6            {==Can you?
 sleep 8
 set_text_alpha 6 25
 sleep 8
@@ -17,11 +17,11 @@ erase_msg3
 sleep 16
 fadein
 if_flag 11 1
-msg3 -1 「Sigh……\n Thank God.
+msg3 -1 `Sigh==\n Thank God.
 sleep 16
 fi
-set_text 6             『Slowly
-set_text 7       A little at a time……
+set_text 6             {Slowly
+set_text 7       A little at a time==
 sleep 8
 set_text_alpha 6 25
 set_text_alpha 7 25
@@ -42,9 +42,9 @@ erase_msg3
 sleep 16
 fadein
 fi
-msg3 -1 「Hello?
+msg3 -1 `Hello?
 sleep 16
-set_text 6             『……I know
+set_text 6             {==I know
 sleep 8
 set_text_alpha 6 30
 sleep 8
@@ -62,7 +62,7 @@ fadeout
 erase_msg3
 sleep 48
 fadein
-set_text 6         『Hey……Who're you?
+set_text 6         {Hey==Who're you?
 sleep 8
 set_text_alpha 6 30
 sleep 8
@@ -77,7 +77,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 48
-msg3 -1 「Hel-loo!
+msg3 -1 `Hel-loo!
 wait_key_push_edge a
 fadeout
 erase_msg3
@@ -100,7 +100,7 @@ chg_npc_dir 4900 up
 chg_speed 4901 normal
 sleep 16
 step_npc 4901 2
-msg 「Are you all right?
+msg `Are you all right?
 sleep 16
 chg_npc_dir 4900 left
 sleep 16
@@ -109,13 +109,13 @@ sleep 16
 chg_npc_dir 4900 down
 sleep 32
 step_npc 4901 2
-msg 「This is the church.\n In Slum 5.
+msg `This is the church.\n In Slum 5.
 chg_npc_dir 4900 left
 sleep 16
 jump_npc 4901 same 1
 sleep 16
 step_npc 4901 2
-msg 「You suddenly fell\n down from above.\n I was surprised a lot.
+msg `You suddenly fell\n down from above.\n I was very surprised.
 chg_npc_dir 4900 down
 sleep 48
 chg_speed 4901 slow
@@ -127,10 +127,10 @@ chg_npc_dir 4901 up
 chg_speed 4901 normal
 chg_npc_dir 4900 right
 sleep 16
-msg 『……Fell down?
+msg {==Fell down?
 sleep 32
 step_npc 4901 2
-msg 「I think the roof and\n the flowerbed have\n cushioned your fall.
+msg `I think the roof and\n the flowerbed have\n cushioned your fall.
 sleep 16
 chg_npc_dir 4900 left
 sleep 16
@@ -138,7 +138,7 @@ chg_npc_dir 4900 right
 sleep 16
 chg_npc_dir 4900 left
 sleep 64
-msg 『Flowerbed……\n Your flowerbed?
+msg {Flowerbed==\n Your flowerbed?
 chg_npc_dir 4900 up
 sleep 96
 chg_npc_dir 4900 down
@@ -147,19 +147,19 @@ chg_npc_dir 4900 right
 chg_npc_img 4900 97
 step_npc 4900 3
 sleep 80
-msg 『Sorry about that.
+msg {Sorry about that.
 sleep 16
 jump_npc 4901 same 1
 sleep 16
 step_npc 4901 3
-msg 「Don't worry about that.\n They are stronger than\n you think. And this place\n is rather special.
+msg `Don't worry about that.\n They are stronger than\n you think. And this place\n is sort of special.
 sleep 32
 chg_npc_dir 4900 down
 chg_npc_img 4900 0
 chg_speed 4901 slow
 move_npc 4901 left 2
 sleep 32
-msg3 -1 「You know plants don't\n grow very well in Midgar.\n But here they bloom.
+msg3 -1 `Plants don't grow very\n well in Midgar, do they?\n But here they bloom.
 sleep 32
 move_npc 4901 up 1
 chg_npc_dir 4900 left
@@ -169,7 +169,7 @@ sleep 32
 move_npc 4901 down 1
 sleep 48
 step_npc 4901 1
-msg 「It's my favorite place.
+msg `This is my\n favorite place.
 chg_npc_dir 4900 up
 sleep 32
 chg_event_move_char_speed slow

@@ -1,1 +1,1 @@
-msg3 -1 Baret\nÅuStop goofin' around,\n you fuckin' idiot!\n Lemme handle that!
+msg3 -1 Baret\n`Stop goofin' around,\n you fuckin' idiot!\n Lemme handle that!

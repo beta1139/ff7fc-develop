@@ -3,12 +3,12 @@ chg_char_img_tmp 13
 kill_through 8503
 move_char up 6
 sleep 16
-create npc_event 9121 91 10 18 129 0 2 Aeris\n「I wonder……\n Where is Tifa?
+create npc_event 9121 91 10 18 129 0 2 Aeris\n`I wonder==\n Where is Tifa?
 move_npc 9121 up 5
 sleep 80
 chg_speed 9122 normal
 jump_npc 9122 same 1
-msg3 -1 「Hey, girls.
+msg3 -1 `Hey, girls.
 sleep 16
 chg_npc_dir 9121 left
 chg_char_dir left
@@ -20,7 +20,7 @@ sleep 16
 move_npc 9121 left 3
 sleep 32
 step_npc 9122 2
-msg3 -1 「I'll tell Don about you.\n You wait here.\n Don't wander around.
+msg3 -1 `I'll tell Don about you.\n You wait here.\n Don't wander around.
 sleep 16
 wait_key_push_edge a
 erase_msg3
@@ -29,7 +29,7 @@ sleep 48
 chg_char_dir right
 sleep 16
 step_npc 9121 2
-msg Aeris\n「It's a chance!\n Let's look for Tifa.
+msg Aeris\n`It's a chance!\n Let's look for Tifa.
 del_party_mem 3
 chg_type 9121 npc
 set_flag_wall 9121

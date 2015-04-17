@@ -9,7 +9,7 @@ kill_through_range 9601 9602
 sleep 32
 step_npc 9621 2
 set_talk_npc 9621
-msg Aeris\n「Well, I guess we have\n escaped the worst……
+msg Aeris\n`Well, I guess we have\n escaped the worst==
 reset_talk_npc
 chg_char_dir up
 sleep 40
@@ -97,7 +97,7 @@ chg_npc_dir 9622 down
 sleep 16
 step_npc 9621 2
 set_talk_npc 9621
-msg Aeris\n「……Or not.
+msg Aeris\n`==Or not.
 reset_talk_npc
 set_flag 20 1
 sleep 16
@@ -109,7 +109,7 @@ chg_npc_dir 9621 left
 sleep 16
 chg_npc_dir 9622 left
 step_npc 9622 2
-msg Tifa\n「It's all over……\n Marlene……Baret\n ……People in the slums.
+msg Tifa\n`It's all over==\n Marlene==Baret\n ==People in the slums.
 chg_npc_dir 9621 down
 sleep 16
 chg_char_dir right
@@ -117,7 +117,7 @@ jump_npc 9621 same 1
 sleep 16
 step_npc 9621 3
 set_talk_npc 9621
-msg Aeris\n「Don't give up yet.\n I bet even they couldn't\n destroy a post so easily.
+msg Aeris\n`Don't give up yet.\n I bet even they couldn't\n destroy a post so easily.
 reset_talk_npc
 chg_char_dir up
 sleep 24
@@ -128,7 +128,7 @@ step_npc 9622 1
 sleep 32
 chg_speed 9622 normal
 step_npc 9622 2
-msg Tifa\n「……Yeah……You're right!\n We still have time.
+msg Tifa\n`==Yeah==You're right!\n We still have time.
 sleep 24
 move_npc 9621 down 1
 move_npc 9622 left 1

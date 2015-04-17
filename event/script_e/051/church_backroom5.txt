@@ -12,7 +12,7 @@ set_active_msg 5131
 jump_npc 5131 same 2
 sleep 16
 chg_speed 5130 fast
-msg3 -1 ÅwAeris!\n This way!
+msg3 -1 {Aeris!\n Come here!
 sleep 16
 step_npc 5130 3
 sleep 24

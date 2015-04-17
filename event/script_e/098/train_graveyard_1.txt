@@ -32,7 +32,7 @@ sleep 40
 step_char 2
 sleep 32
 chg_npc_dir 9821 left
-msg 『Aeris,\n So you got completely\n mixed up in this……
+msg {Aeris,\n So you got completely\n mixed up in this==
 sleep 16
 chg_npc_img 9821 15
 step_npc 9821 2
@@ -43,7 +43,7 @@ jump_npc 9821 same 1
 sleep 16
 step_npc 9821 2
 set_talk_npc 9821
-msg Aeris\n「Don't tell me to\n go home from here.
+msg Aeris\n`Don't tell me to\n go home from here.
 reset_talk_npc
 sleep 32
 chg_char_dir up
@@ -69,7 +69,7 @@ chg_npc_dir 9822 down
 sleep 16
 step_npc 9822 2
 set_talk_npc 9822
-msg Tifa\n「Let's see……I think we\n can get out by going\n through lighted cars.
+msg Tifa\n`Let's see==I think we\n can get out by going\n through lighted cars.
 reset_talk_npc
 chg_event_move_char_speed normal
 move_char down 4
@@ -100,7 +100,7 @@ set_layer 9902 front
 set_layer 9904 front
 set_layer 9919 front
 kill_through_range 9996 9999
-create npc 1706 17 14 9 94 0 4 「Rumor has it that the\n Plate is going to fall.\n But I find it difficult\n to leave this station……\n Just what is going on……?\n I hope it is not true.
+create npc 1706 17 14 9 94 0 4 `Rumor has it that the\n Plate is going to fall.\n But I find it difficult\n to leave this station==\n Just what is going on==?\n I hope it is not true.
 chg_npc_img 1748 4
 chg_npc_img 1749 4
 chg_npc_img 1750 4

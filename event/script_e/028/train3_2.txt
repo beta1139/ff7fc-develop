@@ -12,7 +12,7 @@ chg_speed 2802 normal
 chg_npc_dir 2802 down
 sleep 32
 set_talk_npc 2802
-msg Tifa\nuI see you've already\n watched it many times.\n Never mind.\n Come over here.
+msg Tifa\n`I see you've already\n watched it many times.\n Never mind.\n Come over here.
 reset_talk_npc
 jump_npc 2802 same 1
 sleep 16

@@ -23,7 +23,7 @@ sleep 8
 chg_npc_img 2316 20
 sleep 8
 stop_se
-msg President Shinra\n「I will repeat the\n previous announcement.\n\n ……bombing of No.1 reactor\n was claimed by a group\n called AVALANCHE.\n\n Their statement makes\n clear of their intentions\n to carry on with similar\n activities.\n However, honest citizens\n of the city of Midgar\n need not worry any more.\n\n We Shinra Company have\n decided to use SOLDIERS\n in order to protect you\n from such violence.\n It will……
+msg President Shinra\n`I will repeat the\n previous announcement.\n\n ==bombing of No.1 reactor\n was claimed by a group\n called AVALANCHE.\n\n Their statement makes\n clear of their intentions\n to carry on with similar\n activities.\n However, honest citizens\n of the city of Midgar\n need not worry any more.\n\n We Shinra Company have\n decided to use SOLDIERS\n in order to protect you\n from such violence.\n It will==
 play_se radio_noise.ogg
 chg_npc_img 2316 17
 sleep 8

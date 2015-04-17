@@ -1,23 +1,23 @@
 wait_target_talked 1707
 sleep 16
 set_talk_npc 1708
-msg 「Yes……\n Me too.
+msg `Yes==\n Me too.
 reset_talk_npc
 sleep 32
 set_talk_npc 1707
-msg 「It's the first time\n that we agree……
+msg `It's the first time\n that we agree==
 reset_talk_npc
 sleep 16
 set_talk_npc 1708
-msg 「Yes……
+msg `Yes==
 reset_talk_npc
 sleep 32
 set_talk_npc 1707
-msg 「Well, then……
+msg `Well, then==
 reset_talk_npc
 sleep 16
 set_talk_npc 1708
-msg 「Yes……
+msg `Yes==
 reset_talk_npc
 sleep 64
 chg_npc_dir 1707 down
@@ -25,12 +25,12 @@ chg_npc_img 1707 106
 chg_npc_dir 1708 left
 chg_npc_img 1708 106
 set_talk_npc 1707
-msg 「Zzz……
+msg `Zzz==
 reset_talk_npc
 set_talk_npc 1708
-msg 「Zzz……
+msg `Zzz==
 reset_talk_npc
 chg_type 1708 npc3
-chg_param 1707 「Zzz……
-chg_param 1708 「Zzz……
+chg_param 1707 `Zzz==
+chg_param 1708 `Zzz==
 kill 1720

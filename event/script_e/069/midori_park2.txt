@@ -7,7 +7,7 @@ chg_npc_dir 6921 up
 sleep 24
 step_npc 6921 2
 set_talk_npc 6921
-msg Aeris\n「So it's still here.
+msg Aeris\n`So it's still here.
 reset_talk_npc
 if_char_dir left
 backup_char_dir
@@ -92,7 +92,7 @@ sleep 32
 jump_npc 6921 same 1
 sleep 16
 step_npc 6921 2
-msg Aeris\n「Come here, Cloud!
+msg Aeris\n`Come here, Cloud!
 sleep 24
 chg_npc_dir 6920 down
 chg_npc_img 6920 103
@@ -170,19 +170,19 @@ chg_npc_dir 6921 down
 sleep 72
 chg_speed 6921 normal
 step_npc 6921 2
-msg Aeris\n「What's your class?
+msg Aeris\n`What's your class?
 sleep 16
 chg_npc_dir 6920 left
-msg 『Class?
+msg {Class?
 chg_npc_dir 6921 right
 sleep 16
 step_npc 6921 2
-msg Aeris\n「The SOLDIER class.
+msg Aeris\n`The SOLDIER class.
 chg_npc_dir 6920 down
 sleep 32
 chg_speed 6920 normal
 step_npc 6920 1
-msg 『Ah. I'm……
+msg {Ah. I'm==
 sleep 24
 set_screen_effect add 255 255 255 100
 play_se white_noise.ogg
@@ -191,37 +191,37 @@ stop_se
 reset_screen_effect
 sleep 24
 step_npc 6920 1
-msg 『I was……\n 1st.
+msg {I was==\n 1st.
 chg_npc_dir 6921 down
 sleep 24
 step_npc 6921 2
-msg Aeris\n「Hm. The same with him.
+msg Aeris\n`Hm. The same with him.
 sleep 16
 chg_npc_dir 6920 left
-msg 『Who's that?
+msg {Him, who?
 sleep 16
 step_npc 6921 1
-msg Aeris\n「My first love.
+msg Aeris\n`My first love.
 sleep 16
 chg_npc_dir 6920 down
 sleep 32
 step_npc 6920 1
-msg 『……Old lover?
+msg {==Old lover?
 sleep 32
 chg_npc_dir 6921 down
 chg_npc_img 6921 3
 step_npc 6921 2
-msg Aeris\n「Not at all.\n It's just I had a\n crush on him.
+msg Aeris\n`Not at all.\n It's just I had a\n crush on him.
 sleep 32
 chg_npc_dir 6920 left
-msg 『I may know him.\n What's his name?
+msg {I may know him.\n What's his name?
 sleep 24
 chg_npc_dir 6921 right
 chg_npc_img 6921 15
 step_npc 6921 2
 sleep 40
 chg_npc_img 6921 3
-msg Aeris\n「Never mind.
+msg Aeris\n`Never mind.
 chg_npc_img 6920 0
 chg_npc_img 6921 3
 chg_npc_dir 6921 down
@@ -289,10 +289,10 @@ chg_npc_dir 6924 right
 chg_npc_img 6924 137
 create npc_event 6927 69 15 13 137 0 1 none
 sleep 24
-msg 『(Hm? That coach……)
+msg {(Hm? That one behind==)
 sleep 24
 jump_npc 6920 same 2
-msg3 -1 『Tifa!?
+msg3 -1 {Tifa!?
 chg_speed 6921 normal
 sleep 16
 chg_npc_dir 6921 up
@@ -343,7 +343,7 @@ kill_through_range 6950 6951
 kill_through_range 6922 6929
 set_active_msg 6921
 jump_npc 6921 same 1
-msg Aeris\n「So that's your Tifa.\n Wonder where's she going?\n She's acting strange……
+msg Aeris\n`So that's your Tifa.\n Wonder where's she going?\n She's acting strange==
 chg_npc_dir 6921 down
 sleep 16
 chg_npc_dir 6920 left
@@ -376,7 +376,7 @@ sleep 16
 chg_speed 6920 normal
 step_npc 6920 1
 chg_npc_dir 6920 left
-msg3 -1 『Hold it!
+msg3 -1 {Hold it!
 sleep 48
 chg_npc_dir 6920 up
 sleep 32
@@ -384,7 +384,7 @@ erase_msg3
 chg_speed 6920 fast
 sleep 16
 jump_npc 6920 same 2
-msg3 -1 『Leave it to me!\n You go back!
+msg3 -1 {Leave it to me!\n You go back!
 move_npc 6921 right 12
 sleep 32
 step_npc 6920 3

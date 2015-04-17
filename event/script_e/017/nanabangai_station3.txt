@@ -1,4 +1,4 @@
 wait_target_talked 1711
-create npc 1713 17 14 9 94 1 0 uNevertheless, sometimes\n some of their pains\n reaches over that wall\n to grab my heart.\n Mostly during the war.\n In those days I had to\n witness many heartrending\n scenescc\n Maybe some other time\n for my story.
+create npc 1713 17 14 9 94 1 0 `Nevertheless, sometimes\n some of their pains\n reached over that wall\n to stab my heart.\n Mostly during the war.\n In those days I had to\n witness many heartrending\n scenes==\n Maybe some other time\n for my story.
 kill 1711
 create event_generator 1714 17 1 1 17 0 0 @017/nanabangai_station4.txt

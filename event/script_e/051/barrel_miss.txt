@@ -8,7 +8,7 @@ add_party_mem 3
 sleep 8
 stop_se
 set_talk_npc 5131
-msg Aeris\nuHey, Cloud,\n What's the matter!
+msg Aeris\n`Hey, Cloud,\n What's the matter!
 reset_talk_npc
 chg_event_move_char_speed fast
 if_flag 10 0

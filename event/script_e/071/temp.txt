@@ -8,7 +8,7 @@ if_party_mem 3
 end
 fi
 chg_dir_to_char 7198
-msg Wall Market Debug Warp\n「Wark!\n You can skip following\n events from here.\n#3\n  Squat event.\n  Drag event.\n  Don't skip.\n\n[[]][[]][[「Uh-huh!]]
+msg Wall Market Debug Warp\n`Wark!\n You can jump to\n following events.\n#3\n  Squat event.\n  Drag event.\n  Don't jump.\n\n[[]][[]][[`Uh-huh!]]
 if_flag 3 0
 add_party_mem 3
 set_flag 9 1
@@ -42,11 +42,11 @@ chg_type 7222 npc
 set_flag_wall 7222
 chg_speed 7222 not_move
 sleep 8
-create npc2 8510 85 10 15 131 1 0 「Another friend……\n That sounds good.\n\n\n That'll make Don happier\n and maybe……he-he.
+create npc2 8510 85 10 15 131 1 0 `Another friend==\n That sounds good.\n\n\n That'll make Don happier\n and maybe==he-he.
 set_flag 18 0
 sleep 8
 kill 7222
-create npc 7240 72 16 43 79 3 0 「I still can't decide.\n Hang it! Here, take this.\n I couldn't get in anyway\n if I didn't have it.
+create npc 7240 72 16 43 79 3 0 `I still can't decide.\n Hang it! Here, take this.\n I couldn't get in anyway\n if I didn't have it.
 kill 7601
 sleep 8
 create npc2 7513 75 6 14 17 0 0 
@@ -77,8 +77,8 @@ kill 7502
 kill 7514
 set_npc_pos 7510 75 4 8
 chg_npc_dir 7510 up
-create npc_event 7515 75 7 14 77 2 0 「So you have them all.\n Now put them on,\n will you?
-create npc2 7516 75 6 14 17 0 0 「How was it?\n Did you see him?
+create npc_event 7515 75 7 14 77 2 0 `So you have them all.\n Now put them on,\n will you?
+create npc2 7516 75 6 14 17 0 0 `How was it?\n Did you see him?
 sleep 8
 create event_generator 7503 75 0 0 17 0 0 @075/wm_boutique3.txt
 kill 8808
@@ -90,7 +90,7 @@ sleep 8
 chg_type 7510 npc
 chg_type 7515 npc
 chg_type 7516 npc
-chg_param 7510 「How was it?\n Dit you get the wig?
+chg_param 7510 `How was it?\n Dit you get the wig?
 set_npc_pos 7516 75 9 13
 set_npc_pos 7515 75 9 14
 chg_npc_dir 7515 up
@@ -143,11 +143,11 @@ chg_type 7222 npc
 set_flag_wall 7222
 chg_speed 7222 not_move
 sleep 8
-create npc2 8510 85 10 15 131 1 0 「Another friend……\n That sounds good.\n\n\n That'll make Don happier\n and maybe……he-he.
+create npc2 8510 85 10 15 131 1 0 `Another friend==\n That sounds good.\n\n\n That'll make Don happier\n and maybe==he-he.
 set_flag 18 0
 sleep 8
 kill 7222
-create npc 7240 72 16 43 79 3 0 「I still can't decide.\n Hang it! Hey, take this.\n I couldn't get in anyway\n if I didn't have it.
+create npc 7240 72 16 43 79 3 0 `I still can't decide.\n Hang it! Hey, take this.\n I couldn't get in anyway\n if I didn't have it.
 kill 7601
 sleep 8
 create npc2 7513 75 6 14 17 0 0 
@@ -178,8 +178,8 @@ kill 7502
 kill 7514
 set_npc_pos 7510 75 4 8
 chg_npc_dir 7510 up
-create npc_event 7515 75 7 14 77 2 0 「So you have them all.\n Now put them on,\n will you?
-create npc2 7516 75 6 14 17 0 0 「How was it?\n Did you see him?
+create npc_event 7515 75 7 14 77 2 0 `So you have them all.\n Now put them on,\n will you?
+create npc2 7516 75 6 14 17 0 0 `How was it?\n Did you see him?
 sleep 8
 create event_generator 7503 75 0 0 17 0 0 @075/wm_boutique3.txt
 kill 8808
@@ -191,7 +191,7 @@ sleep 8
 chg_type 7510 npc
 chg_type 7515 npc
 chg_type 7516 npc
-chg_param 7510 「How was it?\n Dit you get the wig?
+chg_param 7510 `How was it?\n Dit you get the wig?
 set_npc_pos 7516 75 9 13
 set_npc_pos 7515 75 9 14
 chg_npc_dir 7515 up
@@ -227,9 +227,9 @@ set_npc_pos 8710 87 10 6
 set_npc_pos 8711 87 11 8
 set_npc_pos 8712 87 9 7
 set_npc_pos 8715 87 10 7
-chg_param 8715 「Use it with care.
+chg_param 8715 `Use it with care.
 chg_speed 8711 not_move
-chg_param 8719 「Ha-ha\n The electric wiring's\n cranky these days.
+chg_param 8719 `Ha-ha\n The electric wiring's\n cranky these days.
 kill_through 8700
 kill_through 8701
 kill_through 8709
@@ -240,7 +240,7 @@ create event_generator 7504 75 9 7 17 0 0 @075/wm_boutique4.txt
 set_npc_pos 7515 75 4 11
 set_flag_wall 7515
 chg_npc_dir 7515 left
-chg_param 7510 「I see you have them all.\n Put them on, will you?
+chg_param 7510 `I see you have them all.\n Put them on, will you?
 add_item 6005
 add_flag 18 4
 warp_ff3_2 72 6 16 2 up

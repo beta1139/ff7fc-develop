@@ -2,4 +2,4 @@ wait_same_pos
 kill 3311
 kill 3312
 kill 3313
-msg wThere are Shinra Guards.\n ccCan't go any further.
+msg {There are Shinra Guards.\n ==Can't go any further.

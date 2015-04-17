@@ -1,4 +1,4 @@
-msg3 -1 ÅuGraagh!
+msg3 -1 `Graagh!
 add_likability 3 100
 if_flag 10 0
 set_layer 5101 back
@@ -264,7 +264,7 @@ jump_npc 5131 same 2
 del_party_mem 0
 add_party_mem 3
 sleep 16
-msg Aeris\nÅuThanks, Cloud
+msg Aeris\n`Thanks, Cloud.
 if_flag 10 1
 if_flag 11 7
 move_char right 1

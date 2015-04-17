@@ -1,7 +1,7 @@
 wait_same_pos
 step_npc 3501 2
 set_talk_npc 3501
-msg Baret\nÅuDon't we go in?\n There's no other route\n to the reactor.
+msg Baret\n`Don't we go in?\n There's no other route\n to the reactor.
 reset_talk_npc
 chg_npc_img 3501 1
 move_npc 3501 right 1

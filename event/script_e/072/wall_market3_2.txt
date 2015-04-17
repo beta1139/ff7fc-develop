@@ -6,7 +6,7 @@ set_key_unvalid right
 set_key_unvalid start
 chg_npc_dir 7220 right
 step_npc 7220 2
-msg ÅuHi there, you two.\n Would you like to rest\n a while?\n\n We have a beautiful room.\n How about that?
+msg `Hi there, you two.\n Would you like to rest\n a while?\n\n We have a beautiful room.\n How about that?
 chg_npc_dir 7220 down
 set_key_valid up
 set_key_valid left

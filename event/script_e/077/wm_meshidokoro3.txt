@@ -4,26 +4,26 @@ chg_type 7711 npc_event
 chg_speed 7711 normal
 create event_generator 7705 77 4 9 17 0 0 @077/wm_meshidokoro4.txt
 chg_npc_dir 7711 up
-msg 「What'll it be?\n\n\n\n『Well……\n\n\n\n#3\n  Barbecue meal set.\n  Sashimi meal set.\n  Today's special.\n\n[[]][[]][[]]
+msg `What'll it be?\n\n\n\n{Well==\n\n\n\n#3\n  Barbecue meal set.\n  Sashimi meal set.\n  Today's special.\n\n[[]][[]][[]]
 create npc_event 7720 77 4 9 0 3 2 none
 draw_char off
 if_flag 3 0
 jump_npc 7711 same 1
 sleep 16
 step_npc 7711 2
-msg 「Barbecue one.
+msg `Barbecue one.
 fi
 if_flag 3 1
 jump_npc 7711 same 1
 sleep 16
 step_npc 7711 2
-msg 「Sashimi one.
+msg `Sashimi one.
 fi
 if_flag 3 2
 jump_npc 7711 same 1
 sleep 16
 step_npc 7711 2
-msg 「Special one.
+msg `Special one.
 fi
 move_char up 1
 sleep 16
@@ -31,7 +31,7 @@ chg_speed 7710 normal
 set_active_msg 7710
 jump_npc 7710 same 1
 set_talk_npc 7710
-msg 「Gotcha!
+msg `Gotcha!
 reset_talk_npc
 move_char down 1
 set_key_unvalid up
@@ -41,5 +41,5 @@ set_key_unvalid right
 set_key_unvalid start
 sleep 16
 chg_char_dir right
-msg3 -1 「Please pay in advance.\n It'll be 70 Gil.
+msg3 -1 `Please pay in advance.\n It'll be 70 Gil.
 create event_generator 7706 77 4 9 17 0 0 @077/wm_meshidokoro5.txt

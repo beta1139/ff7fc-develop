@@ -2,7 +2,7 @@ wait_same_pos
 open_door 8350
 move_char down 2
 sleep 16
-create npc_event 8312 83 11 4 40 1 2 「Now▼ Let's start it▼\n\n\n\n Look, honey▼\n You chose this\n room because……\n\n You're lonely?\n\n\n\n#2\n  That's my middle name.\n  Stop babbling.\n\n\n[[]][[]]
+create npc_event 8312 83 11 4 40 1 2 `Now@ Let's start it@\n\n\n\n Look, honey@\n You chose this\n room because==\n\n You're lonely?\n\n\n\n#2\n  That's my middle name.\n  Stop babbling.\n\n\n[[]][[]]
 set_flag_wall 8312
 move_npc 8312 down 1
 sleep 16
@@ -18,7 +18,7 @@ chg_npc_dir 8312 down
 sleep 16
 step_npc 8312 2
 set_talk_npc 8312
-msg 「Now, honey▼\n Come over here▼
+msg `Now, honey@\n Come over here@
 reset_talk_npc
 chg_char_dir up
 chg_char_state_move

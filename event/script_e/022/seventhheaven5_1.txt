@@ -2,10 +2,10 @@ wait_same_pos
 chg_type 2202 npc_event
 chg_speed 2202 normal
 chg_npc_dir 2202 right
-msg Tifa\n「Look, Cloud.\n How are you?
+msg Tifa\n`Look, Cloud.\n How are you?
 sleep 16
 chg_char_dir left
-msg 『……As usual.\n Why do you ask?\n\n\nTifa\n「Well. Nothing.\n I just wondered if\n you aren't tired……
+msg {==As usual.\n Why do you ask?\n\n\nTifa\n`Well. Nothing.\n I just wondered if\n you aren't tired==
 chg_npc_dir 2202 up
 chg_type 2202 npc
 chg_speed 2202 not_move

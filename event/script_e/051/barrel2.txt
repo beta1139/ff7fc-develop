@@ -1,7 +1,7 @@
 set_eternal_event
 wait_target_talk 5141
 reset_talk_flag 5141
-msg wHere is a barrel.\n If I push itcc\n\n\nPush the barrel?\n\n\n\n#2\n  Yes.\n  No.\n\n\n[[]][[]]
+msg {Here is a barrel.\n If I push it==\n\n\nPush the barrel?\n\n\n\n#2\n  Yes.\n  No.\n\n\n[[]][[]]
 backup_char_dir
 if_flag 3 0
 if_char_dir right

@@ -6,7 +6,7 @@ move_npc 1909 right 2
 sleep 32
 jump_npc 1909 same 2
 sleep 32
-msg Baret\nuHey, Cloud.\n Over here!
+msg Baret\n`Hey, Cloud.\n Over here!
 sleep 16
 move_npc 1909 left 2
 sub_likability 1 250

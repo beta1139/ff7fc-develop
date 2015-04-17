@@ -10,14 +10,14 @@ chg_type 1667 npc_event
 sleep 16
 set_talk_npc 1667
 set_key_valid a
-msg Jessie\n「I'm into this kind of\n things. Bombs, monitors,\n anything hi-tech.
+msg Jessie\n`I'm into this kind of\n things. Bombs, monitors,\n anything hi-tech.
 reset_talk_npc
 sleep 48
 fadeout
 kill 1600
 kill_through 1676
 kill 1666
-create npc3 1662 16 16 19 35 0 4 Biggs\n「Zzz……mumble, mumble……\n Baret you arrogant fuck……
+create npc3 1662 16 16 19 35 0 4 Biggs\n`Zzz==mumble, mumble==\n Baret you arrogant fuck==
 draw_char off
 warp 703 7 6 up
 create npc_event 70300 703 13 11 34 0 4 none
@@ -26,7 +26,7 @@ sleep 24
 fadein
 sleep 16
 chg_npc_dir 70300 left
-msg Jessie\n「Here we go.
+msg Jessie\n`Here we go.
 chg_npc_dir 70300 up
 chg_speed 70300 not_move
 sleep 16
@@ -41,25 +41,25 @@ set_image_alpha 70302 75
 sleep 8
 set_image_alpha 70302 100
 sleep 64
-msg Jessie\n「This is a full model\n of the Mako city Midgar.\n\n The scale is about 1 to\n 10000 or so.
+msg Jessie\n`This is a full model\n of the Mako city Midgar.\n\n The scale is about 1 to\n 10000 or so.
 sleep 80
 chg_npc_dir 70300 left
-msg Jessie\n「The Plate at the top is\n about 50M off the ground.
+msg Jessie\n`The Plate at the top is\n about 50M off the ground.
 chg_npc_dir 70300 up
-msg  The Plate is held up by\n this big trunc at the\n center and supporting\n posts at each section……\n These posts are also\n called machine towers.
+msg  The Plate is held up by\n this big trunc at the\n center and supporting\n posts at each section==\n These posts are also\n called machine towers.
 sleep 64
 chg_npc_dir 70300 left
 chg_speed 70300 not_step
-msg Jessie\n「-whisper-(No.1 reactor\n we blew up was at the\n northern outskirts.)\n From there, No.2, 3……\n 8 Mako reactors in all\n are responsible for\n Midgar's power supply.
+msg Jessie\n`-whisper-(No.1 reactor\n we blew up was at the\n northern outskirts.)\n From there, No.2, 3==\n 8 Mako reactors in all\n are responsible for\n Midgar's power supply.
 sleep 32
 chg_npc_dir 70300 up
 chg_speed 70300 not_move
 sleep 32
-msg Jessie\n「Though each town had\n name of its own, nobody\n remembers it any more.\n We call our hometown\n by numbers rather\n than names.
+msg Jessie\n`Though each town had\n name of its own, nobody\n remembers it any more.\n We call our hometown\n by numbers rather\n than names.
 sleep 64
 chg_npc_dir 70300 left
 chg_speed 70300 not_step
-msg Jessie\n「Okay……Next.\n Look here.
+msg Jessie\n`Okay==Next.\n Look here.
 chg_npc_dir 70300 up
 sleep 32
 play_se button.ogg
@@ -78,7 +78,7 @@ fadein
 chg_npc_dir 70400 up
 sleep 32
 clear_text 4
-msg Jessie\n「This is the route\n plan of our train.
+msg Jessie\n`This is the route\n plan of our train.
 set_text 8   8iaX Station
 set_text_alpha 8 0
 sleep 4
@@ -125,7 +125,7 @@ set_npc_pos 70404 704 12 13
 set_npc_pos 70405 704 11 13
 sleep 8
 pool
-msg3 -1 Jessie\n「The route spirals\n through the central\n trunk.\n Now we're just about\n the middle of it.
+msg3 -1 Jessie\n`The route spirals\n through the central\n trunk.\n Now we're just about\n the middle of it.
 chg_char_state_move
 loop_inf
 set_text_alpha 8 100

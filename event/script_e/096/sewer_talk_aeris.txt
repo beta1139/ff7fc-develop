@@ -13,7 +13,7 @@ chg_dir_to_char 9621
 chg_speed 9621 normal
 step_char 1
 sleep 16
-msg ÅwAre you all right?
+msg {Are you all right?
 if_char_dir down
 create npc2 9620 96 9 10 0 1 2 none
 draw_char off
@@ -21,7 +21,7 @@ fi
 sleep 16
 step_npc 9621 1
 set_talk_npc 9621
-msg Aeris\nÅuYes.
+msg Aeris\n`Yes.
 reset_talk_npc
 if_flag 19 0
 add_likability 3 300

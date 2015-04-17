@@ -1,6 +1,6 @@
 wait_target_talk 3504
 play_se_loop radio_noise.ogg
-msg ÅwThese beams are Shinra's\n alarm sensor.\n We can't go any farther.
+msg {These beams are Shinra's\n alarm sensor.\n We can't go any farther.
 stop_se
 move_char down 1
 kill 3550

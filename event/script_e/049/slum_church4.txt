@@ -2,7 +2,7 @@ wait_target_talk 4904
 chg_type 4904 npc_event
 step_npc 4904 2
 set_talk_npc 4904
-msg 「Just a little more.
+msg `Just a little more.
 reset_talk_npc
 if_char_dir down
 create npc_event 4900 49 6 11 0 1 2 none
@@ -47,7 +47,7 @@ sleep 40
 chg_npc_img 4904 3
 chg_npc_dir 4904 left
 set_talk_npc 4904
-msg 「Oh!
+msg `Oh!
 reset_talk_npc
 chg_char_dir right
 chg_npc_dir 4900 right
@@ -56,13 +56,13 @@ jump_npc 4904 same 1
 sleep 16
 step_npc 4904 2
 set_talk_npc 4904
-msg 「Come to think of it,
+msg `Come to think of it,
 reset_talk_npc
 create npc_event 4990 49 20 11 3 2 0 none
 sleep 32
 step_npc 4904 2
 set_talk_npc 4904
-msg 「We haven't properly\n met yet, have we?
+msg `We haven't properly\n met yet, have we?
 reset_talk_npc
 move_char right 1
 sleep 32
@@ -79,8 +79,8 @@ set_text_alpha 11 0
 sleep 8
 set_text 3        Aeris Gainsborough
 set_text 8    A flower girl from Midgar
-set_text 9     having a mysterious aura
-set_text 10  as well as the external beauty
+set_text 9    She has a mysterious aura
+set_text 10  as well as her external beauty
 set_text 11     Excel in magical skills
 warp 49 20 11 down
 loop 4
@@ -227,7 +227,7 @@ fadein
 sleep 32
 step_npc 4904 2
 set_talk_npc 4904
-msg 「I'm Aeris, a flower girl.\n Nice to meet you.
+msg `I'm Aeris, a flower girl.\n Nice to meet you.
 reset_talk_npc
 sleep 16
 step_npc 4900 1
@@ -237,13 +237,13 @@ chg_npc_img 4903 30
 set_npc_pos 4903 49 6 19
 chg_speed 4903 normal
 move_npc 4903 up 1
-msg 『I'm Cloud\n\n\n\n I'm……\n I'm a handyman.
+msg {I'm Cloud\n\n\n\n I'm==\n I'm a handyman.
 sleep 16
 chg_speed 4903 not_move
 sleep 16
 step_npc 4904 1
 set_talk_npc 4904
-msg Aeris\n「Huh……a handyman.
+msg Aeris\n`Huh==a handyman.
 reset_talk_npc
 chg_npc_dir 4904 up
 chg_npc_img 4904 15
@@ -251,7 +251,7 @@ step_npc 4904 2
 sleep 16
 step_npc 4900 1
 sleep 16
-msg 『I do anything.
+msg {I do everything.
 jump_npc 4904 same 1
 sleep 16
 jump_npc 4904 same 1
@@ -263,7 +263,7 @@ sleep 16
 chg_speed 4900 fast
 step_npc 4900 2
 sleep 16
-msg 『What's so funny?\n Don't laugh!
+msg {What's so funny?\n Don't laugh!
 chg_npc_dir 4904 left
 chg_npc_img 4904 3
 sleep 16
@@ -271,7 +271,7 @@ chg_npc_img 4904 15
 step_npc 4904 2
 sleep 40
 set_talk_npc 4904
-msg Aeris\n「Sorry……but. Well.
+msg Aeris\n`Sorry==but. Well.
 reset_talk_npc
 chg_speed 4903 normal
 move_npc 4903 up 1
@@ -283,7 +283,7 @@ sleep 16
 chg_speed 4900 normal
 chg_npc_dir 4900 down
 chg_char_dir down
-create npc3 4905 49 6 12 3 1 4 Aeris\n「Oh, not now.
+create npc3 4905 49 6 12 3 1 4 Aeris\n`Oh, not now.
 kill 4904
 chg_type 4903 npc3
 draw_char on

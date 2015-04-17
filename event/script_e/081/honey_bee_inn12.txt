@@ -14,7 +14,7 @@ sleep 8
 pool
 chg_npc_dir 8133 up
 set_talk_npc 8133
-msg 「Hum hum hum……▼\n\n\n\n Hmmmm▼\n It takes ages to\n lose my weight.\n Hum hum hum……
+msg `Hum hum hum==@\n\n\n\n Hmmmm@\n It takes ages to\n lose my weight.\n Hum hum hum==
 reset_talk_npc
 if_char_dir down
 create npc_event 8120 81 9 6 0 1 2 none
@@ -25,7 +25,7 @@ sleep 16
 set_active_msg 8133
 jump_npc 8133 same 1
 set_talk_npc 8133
-msg 「Oh no!\n Sorry, honney,\n this is a private area▼\n\n (Eew……\n A pervert……)
+msg `Oh no!\n Sorry, honney,\n this is a private area@\n\n (Eew==\n A pervert==)
 reset_talk_npc
 sleep 8
 if_char_dir down
@@ -55,13 +55,13 @@ sleep 24
 chg_dir_to_char 8133
 step_npc 8133 2
 set_talk_npc 8133
-msg 「Oh!\n (……He's still here.\n Well, since he's here……)\n\n Look,\n what do you think of me?\n\n\n#2\n  Not interested.\n  ……Nothing.\n\n\n[[]][[]]
+msg `Oh!\n (==He's still here.\n Well, since he's here==)\n\n Look,\n what do you think of me?\n\n\n#2\n  Not interested.\n  ==Nothing.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 set_active_msg 8133
 jump_npc 8133 same 1
 set_talk_npc 8133
-msg 「Ooh! I'm shocked!
+msg `Ooh! I'm shocked!
 reset_talk_npc
 sleep 8
 if_char_dir down
@@ -78,7 +78,7 @@ fi
 if_flag 3 1
 step_npc 8133 1
 set_talk_npc 8133
-msg 「Oh? Are you being shy?\n (Huh! What a glum guy!)
+msg `Oh? Are you being shy?\n (Huh! What a glum guy!)
 reset_talk_npc
 if_char_dir down
 draw_char on
@@ -108,7 +108,7 @@ sleep 8
 pool
 chg_npc_dir 8133 up
 set_talk_npc 8133
-msg 「Hum hum hum……\n Hum hum hum……\n Humhumhumhum……\n\n Gasp……pant……\n ……It's exhausting.
+msg `Hum hum hum==\n Hum hum hum==\n Humhumhumhum==\n\n Gasp==pant==\n ==It's exhausting.
 reset_talk_npc
 if_char_dir down
 create npc_event 8120 81 9 6 0 1 2 none
@@ -120,7 +120,7 @@ sleep 16
 set_active_msg 8133
 jump_npc 8133 same 1
 set_talk_npc 8133
-msg 「Hi!\n\n\n\n What do yo think?\n\n\n\n#2\n  Still fat……\n  ……Nothing.\n\n\n[[]][[]]
+msg `Hi!\n\n\n\n What do yo think?\n\n\n\n#2\n  Still fat==\n  ==Nothing.\n\n\n[[]][[]]
 reset_talk_npc
 if_char_dir down
 draw_char on
@@ -130,7 +130,7 @@ if_flag 3 0
 sleep 16
 chg_npc_dir 8133 up
 set_talk_npc 8133
-msg 「:-(!
+msg `:-(!
 reset_talk_npc
 chg_speed 8133 fast
 step_npc 8133 16
@@ -149,7 +149,7 @@ chg_npc_dir 8133 up
 sleep 40
 step_npc 8133 2
 set_talk_npc 8133
-msg 「Hmph……!\n You have such an aptitude\n to get under my skin.
+msg `Hmph==!\n You have such an aptitude\n to get under my skin.
 reset_talk_npc
 fi
 set_inactive_msg 8133

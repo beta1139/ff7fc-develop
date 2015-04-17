@@ -20,7 +20,7 @@ chg_npc_img 9223 134
 sleep 8
 chg_npc_img 9223 133
 sleep 8
-msg3 -1 Kotch\n「Aaaarrrrgh!
+msg3 -1 Kotch\n`Aaaarrrrgh!
 loop 7
 chg_npc_img 9223 134
 sleep 8
@@ -55,17 +55,17 @@ set_key_valid left
 set_key_valid down
 set_key_valid right
 set_key_valid start
-msg 『Aeris!\n\n\n\n#2\n  Are you all right?\n  We gotta help Tifa!\n\n\n[[]][[]]
+msg {Aeris!\n\n\n\n#2\n  Are you all right?\n  We gotta help Tifa!\n\n\n[[]][[]]
 chg_speed 9221 normal
 if_flag 3 0
 add_likability 3 300
 jump_npc 9221 same 1
 sleep 16
 step_npc 9221 2
-msg Aeris\n「I told you.\n I'm used to dangers.
+msg Aeris\n`I told you.\n I'm used to dangers.
 sleep 16
 step_npc 9221 2
-msg Aeris\n「Well, to be honest\n I was a little scared!
+msg Aeris\n`Well, to be honest\n I was a little scared!
 fi
 if_flag 3 1
 sub_likability 3 200
@@ -75,7 +75,7 @@ chg_npc_dir 9221 up
 jump_npc 9221 same 1
 sleep 16
 step_npc 9221 1
-msg Aeris\n「Y-yeah. Right……\n ……Yes. We gotta go!
+msg Aeris\n`Y-yeah. Right==\n ==Yes. We gotta go!
 fi
 chg_char_dir down
 draw_char on

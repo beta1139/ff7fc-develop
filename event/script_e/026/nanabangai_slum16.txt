@@ -1,2 +1,2 @@
 wait_target_talked 2610
-chg_param 2610 uHar-har-har!\n If they keep making\n rackets up there, It'd\n help us weapon dealers.
+chg_param 2610 `Har-har-har!\n If they keep making\n rackets up there, It'd\n help us weapon dealers.

@@ -9,7 +9,7 @@ jump_npc 7920 same 1
 sleep 16
 step_npc 7920 2
 set_talk_npc 7920
-msg Johnny\n「Hey! I know you!\n\n\n Oops! You, too?\n\n\n\n#2\n  Yeah, me too.\n  No, I'm not like you.\n\n\n[[]][[]]
+msg Johnny\n`Hey! I know you!\n\n\n Oops! You, too?\n\n\n\n#2\n  Yeah, me too.\n  No, I'm not like you.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 jump_npc 7920 same 2
@@ -17,22 +17,22 @@ sleep 32
 chg_speed 7920 fast
 step_npc 7920 4
 set_talk_npc 7920
-msg Johnny\n「You come to place like\n this with a new girl\n other than Tifa!
+msg Johnny\n`You come to place like\n this with a new girl\n other than Tifa!
 reset_talk_npc
 step_npc 7920 6
 set_talk_npc 7920
-msg Johnny\n「I don't see how can\n you behave like that!
+msg Johnny\n`I don't see how can\n you behave like that!
 reset_talk_npc
 fi
 if_flag 3 1
 step_npc 7920 2
 set_talk_npc 7920
-msg Johnny\n「Me?……I just wanted to\n make a memory before\n leaving Midgar……
+msg Johnny\n`Me?==I just wanted to\n make a memory before\n leaving Midgar==
 reset_talk_npc
 chg_npc_dir 7920 right
 sleep 16
 set_talk_npc 7920
-msg Johnny\n「But……\n I'm scared of that man.
+msg Johnny\n`But==\n I'm scared of that man.
 reset_talk_npc
 fi
 chg_npc_dir 7920 right

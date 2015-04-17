@@ -5,7 +5,7 @@ chg_dir_to_char 8510
 sleep 16
 step_npc 8510 2
 if_char_dir left
-msg3 -1 「This is Don Corneo's\n residence. He's the\n big-shot of Wall Market. 
+msg3 -1 `This is Don Corneo's\n residence. He's the\n big-shot of Wall Market. 
 create npc_event 8521 85 11 15 3 1 2 none
 move_npc 8521 down 2
 sleep 32
@@ -16,11 +16,11 @@ wait_key_push_edge a
 erase_msg3
 sleep 16
 step_npc 8510 2
-msg 「Look, Don has nothing\n to do with guys.\n Now get lost and……
+msg `Look, Don has nothing\n to do with guys.\n Now get lost and==
 fi
 if_char_dir up
 set_talk_npc 8510
-msg 「This is Don Corneo's\n residence. He's the\n big-shot of Wall Market. \n\n Look, Don has nothing\n to do with guys.\n Now get lost and……
+msg `This is Don Corneo's\n residence. He's the\n big-shot of Wall Market. \n\n Look, Don has nothing\n to do with guys.\n Now get lost and==
 reset_talk_npc
 create npc_event 8521 85 10 16 3 1 2 none
 move_npc 8521 down 1
@@ -31,7 +31,7 @@ chg_char_dir up
 fi
 if_char_dir right
 set_talk_npc 8510
-msg 「This is Don Corneo's\n residence. He's the\n big-shot of Wall Market. \n\n Look, Don has nothing\n to do with guys.\n Now get lost and……
+msg `This is Don Corneo's\n residence. He's the\n big-shot of Wall Market. \n\n Look, Don has nothing\n to do with guys.\n Now get lost and==
 reset_talk_npc
 create npc_event 8521 85 9 15 3 1 2 none
 move_npc 8521 down 1
@@ -47,12 +47,12 @@ sleep 16
 set_active_msg 8510
 jump_npc 8510 same 1
 set_talk_npc 8510
-msg 「Ooh! Lookie that!\n You got a cutie tootsie\n with you there!
+msg `Ooh! Lookie that!\n You got a cutie tootsie\n with you there!
 reset_talk_npc
 sleep 16
 step_npc 8510 4
 set_talk_npc 8510
-msg 「Look.\n You wanna spend some\n good time with Don?
+msg `Look.\n You wanna spend some\n good time with Don?
 reset_talk_npc
 if_char_dir left
 move_npc 8521 right 2
@@ -83,12 +83,12 @@ sleep 32
 fi
 chg_npc_dir 8521 left
 step_npc 8521 2
-msg Aeris\n「Look, this is Don's\n residence.\n I think I'm going in.\n I'll talk to Tifa\n about you.
+msg Aeris\n`Look, this is Don's\n residence.\n I think I'm going in.\n I'll talk to Tifa\n about you.
 move_npc 8521 up 1
 sleep 8
 chg_char_dir up
 step_char 1
-msg3 -1 『No.
+msg3 -1 {No.
 sleep 8
 move_npc 8521 left 1
 sleep 16
@@ -107,7 +107,7 @@ chg_char_dir right
 sleep 16
 chg_npc_dir 8521 left
 step_npc 8521 1
-msg Aeris\n「Why?
+msg Aeris\n`Why?
 chg_char_dir right
 chg_char_img_tmp 97
 step_char 3
@@ -115,10 +115,10 @@ sleep 80
 reset_char_img_tmp
 step_char 1
 sleep 16
-msg 『This is……well……\n ……don't you know?
+msg {This is==well==\n ==don't you know?
 sleep 16
 step_npc 8521 2
-msg Aeris\n「Then what?\n You come with me?
+msg Aeris\n`Then what?\n You come with me?
 set_key_unvalid up
 set_key_unvalid down
 set_key_unvalid left
@@ -129,5 +129,5 @@ sleep 16
 chg_char_dir down
 step_char 1
 sleep 16
-msg3 -1 『But I'm a man.\n There'll be a trouble\n if I barge in.
+msg3 -1 {But I'm a man.\n There'll be a trouble\n if I barge in.
 create event_generator 8502 85 11 18 17 0 0 @085/wall_market11.txt

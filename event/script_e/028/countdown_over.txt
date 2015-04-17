@@ -41,7 +41,7 @@ sleep 8
 chg_npc_dir 2800 right
 sleep 8
 play_se_loop alarm.ogg
-msg 「CAR NO.1 LOCKED DOWN\n TAKING THE SUSPECT TO\n THE NEAREST STATION
+msg `CAR NO.1 LOCKED DOWN\n TAKING THE SUSPECT TO\n THE NEAREST STATION
 chg_speed 2800 normal
 move_npc 2800 left 2
 sleep 40
@@ -58,7 +58,7 @@ chg_npc_dir 2800 up
 chg_speed 2801 normal
 step_npc 2801 4
 sleep 64
-msg Baret\n「Tsk! You clumsy oaf!\n Only this far……
+msg Baret\n`Tsk! You clumsy oaf!\n Only this far==
 chg_npc_dir 2802 right
 sleep 16
 chg_npc_dir 2800 left
@@ -66,7 +66,7 @@ sleep 32
 chg_npc_dir 2802 up
 chg_speed 2802 normal
 step_npc 2802 2
-msg Tifa\n「Ah, well.
+msg Tifa\n`Ah, well.
 chg_npc_img 2801 1
 move_npc 2801 up 1
 move_char up 1
@@ -85,7 +85,7 @@ play_se_loop alarm.ogg
 sleep 16
 jump_npc 2801 same 1
 set_active_msg 2801
-msg Baret\n「We hop off here!\n Follow me, you fuck!
+msg Baret\n`We hop off here!\n Follow me, you fuck!
 chg_npc_dir 2801 down
 step_npc 2801 4
 sleep 32
@@ -118,7 +118,7 @@ chg_npc_img 2802 98
 chg_npc_dir 2802 right
 step_npc 2802 3
 sleep 16
-msg Tifa\n「Sigh, we'll have to fight\n a lot. Bummer, isn't it?
+msg Tifa\n`Sigh, we'll have to fight\n a lot. Bummer, isn't it?
 chg_npc_img 2802 2
 chg_npc_dir 2802 up
 sleep 16
@@ -183,7 +183,7 @@ sleep 8
 chg_npc_dir 2900 right
 sleep 8
 play_se_loop alarm.ogg
-msg 「CAR NO.2 LOCKED DOWN\n TAKING THE SUSPECTS TO\n THE NEAREST STATION
+msg `CAR NO.2 LOCKED DOWN\n TAKING THE SUSPECTS TO\n THE NEAREST STATION
 chg_speed 2900 normal
 move_npc 2900 left 2
 sleep 40
@@ -200,7 +200,7 @@ chg_npc_dir 2900 up
 chg_speed 2901 normal
 step_npc 2901 4
 sleep 64
-msg Baret\n「Tsk!\n It's the best you can do?
+msg Baret\n`Tsk!\n It's the best you can do?
 chg_npc_dir 2902 right
 sleep 16
 chg_npc_dir 2900 left
@@ -209,7 +209,7 @@ chg_speed 2902 normal
 jump_npc 2902 same 1
 sleep 16
 step_npc 2902 3
-msg Tifa\n「Still not even close!
+msg Tifa\n`Still not even close!
 chg_npc_img 2901 1
 move_npc 2901 up 1
 move_char up 1
@@ -229,7 +229,7 @@ play_se_loop alarm.ogg
 sleep 16
 jump_npc 2901 same 1
 set_active_msg 2901
-msg Baret\n「We hop off here!\n Follow me. Earn your pay!
+msg Baret\n`We hop off here!\n Follow me. Earn your pay!
 chg_speed 2901 normal
 chg_npc_img 2901 1
 chg_npc_dir 2901 up
@@ -259,7 +259,7 @@ chg_npc_img 2902 98
 chg_npc_dir 2902 right
 step_npc 2902 3
 sleep 16
-msg Tifa\n「Phew!\n Get a grip!
+msg Tifa\n`Phew!\n Get a grip!
 chg_npc_img 2902 2
 chg_npc_dir 2902 up
 sleep 16
@@ -327,7 +327,7 @@ sleep 8
 chg_npc_dir 3000 right
 sleep 8
 play_se_loop alarm.ogg
-msg 「CAR NO.3 LOCKED DOWN\n TAKING THE SUSPECTS TO\n THE NEAREST STATION
+msg `CAR NO.3 LOCKED DOWN\n TAKING THE SUSPECTS TO\n THE NEAREST STATION
 chg_speed 3000 normal
 move_npc 3000 left 2
 sleep 40
@@ -344,14 +344,14 @@ chg_npc_dir 3000 up
 chg_speed 3001 normal
 step_npc 3001 4
 sleep 64
-msg Baret\n「Tsk!\n So this is it……
+msg Baret\n`Tsk!\n So this is it==
 chg_npc_dir 3002 right
 sleep 16
 chg_npc_dir 3000 left
 sleep 16
 chg_speed 3002 normal
 step_npc 3002 3
-msg Tifa\n「That was so close.
+msg Tifa\n`That was so close.
 chg_npc_img 3001 1
 move_npc 3001 up 1
 move_char up 1
@@ -370,7 +370,7 @@ jump_npc 3001 same 2
 play_se_loop alarm.ogg
 sleep 16
 set_active_msg 3001
-msg Baret\n「We hop off here!\n Follow me!
+msg Baret\n`We hop off here!\n Follow me!
 chg_speed 3001 normal
 chg_npc_img 3001 1
 chg_npc_dir 3001 up
@@ -403,7 +403,7 @@ sleep 16
 jump_npc 3002 same 1
 set_active_msg 3001
 sleep 16
-msg Tifa\n「It's okay.\n We can do it!
+msg Tifa\n`It's okay.\n We can do it!
 chg_npc_img 3002 2
 chg_npc_dir 3002 up
 sleep 16
@@ -468,7 +468,7 @@ sleep 8
 chg_npc_dir 3100 right
 sleep 8
 play_se_loop alarm.ogg
-msg 「CAR NO.4 LOCKED DOWN\n TAKING THE SUSPECTS TO\n THE NEAREST STATION
+msg `CAR NO.4 LOCKED DOWN\n TAKING THE SUSPECTS TO\n THE NEAREST STATION
 chg_speed 3100 normal
 move_npc 3100 left 2
 sleep 40
@@ -487,14 +487,14 @@ chg_npc_dir 3100 up
 chg_speed 3101 normal
 step_npc 3101 4
 sleep 64
-msg Baret\n「Tsk!\n So this is it……
+msg Baret\n`Tsk!\n So this is it==
 chg_npc_dir 3102 right
 sleep 16
 chg_npc_dir 3100 left
 sleep 16
 chg_speed 3102 normal
 step_npc 3102 3
-msg Tifa\n「That was so close.
+msg Tifa\n`That was so close.
 chg_npc_img 3101 1
 move_npc 3101 up 1
 move_char up 1
@@ -513,7 +513,7 @@ jump_npc 3101 same 2
 play_se_loop alarm.ogg
 sleep 16
 set_active_msg 3101
-msg Baret\n「We hop off here!\n Follow me!
+msg Baret\n`We hop off here!\n Follow me!
 chg_speed 3101 normal
 chg_npc_img 3101 1
 chg_npc_dir 3101 up
@@ -546,7 +546,7 @@ sleep 16
 jump_npc 3102 same 1
 set_active_msg 3102
 sleep 16
-msg Tifa\n「It's okay.\n We can do it!
+msg Tifa\n`It's okay.\n We can do it!
 chg_npc_dir 3102 up
 sleep 16
 slide_walk_npc 3102 down 1

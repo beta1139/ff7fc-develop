@@ -8,7 +8,7 @@ chg_npc_dir 9323 down
 play_se barrel_hitting.ogg
 jump_npc 9323 same 1
 set_talk_npc 9323
-msg Corneo\n「This peppy girl!
+msg Corneo\n`This peppy girl!
 reset_talk_npc
 play_bgm
 chg_npc_dir 9320 right
@@ -16,13 +16,13 @@ chg_npc_dir 9321 right
 sleep 32
 chg_speed 9322 normal
 step_npc 9322 2
-msg Tifa\n「Tee-hee……\n Nice to meet you▼,\n Don Corneo.
+msg Tifa\n`Tee-hee==\n Nice to meet you@,\n Don Corneo.
 sleep 24
 chg_npc_dir 9323 up
 sleep 16
 step_npc 9323 2
 set_talk_npc 9323
-msg Corneo\n「The rest are yours!
+msg Corneo\n`The rest are yours!
 reset_talk_npc
 move_char up 3
 sleep 48
@@ -33,13 +33,13 @@ jump_npc 9325 same 1
 sleep 16
 step_npc 9324 2
 step_npc 9325 2
-msg 「Yes!\n Thank you, sir!
+msg `Yes!\n Thank you, sir!
 move_char down 3
 chg_npc_dir 9323 down
 sleep 48
 jump_npc 9323 same 1
 set_talk_npc 9323
-msg Corneo\n「Now, we shall go!
+msg Corneo\n`Now, we shall go!
 reset_talk_npc
 chg_npc_dir 9323 up
 sleep 16

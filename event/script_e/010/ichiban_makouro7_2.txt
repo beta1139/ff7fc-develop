@@ -3,7 +3,7 @@ play_event_bgm 1-02b-Bombing_Mission.ogg
 play_bgm
 sleep 8
 chg_char_dir down
-msg ÅwWe're getting out!
+msg {We're getting out!
 move_npc 1002 right 1
 sleep 16
 restore_char_img
@@ -21,6 +21,6 @@ kill_through 808
 kill_through 533
 create npc2 840 8 29 21 34 2 0 none
 create event_generator 801 8 29 21 17 0 0 @008/ichiban_makouro5.txt
-create npc 510 5 22 7 35 3 0 Biggs\nÅuJessie's not back yet!
+create npc 510 5 22 7 35 3 0 Biggs\n`Jessie's not back yet!
 set_flag 20 0
 set_flag 1 0

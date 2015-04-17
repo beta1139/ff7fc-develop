@@ -1,7 +1,7 @@
 wait_same_pos
 if_flag 3 0
 step_npc 8715 2
-msg ÅuNow I'll explain again.\n\n\n\n From preparation, press\n SELECT to squat down,\n press CANCEL to stand up,\n then press OK to prepare.\n That's SELECT, CANCEL, OK\n buttons in that order.\n\n\n Do you get it?\n\n\n\n#2\n  No, I don't.\n  Got it.\n\n\n[[]][[]]
+msg `Now I'll explain again.\n\n\n\n From preparation, press\n SELECT to squat down,\n press CANCEL to stand up,\n then press OK to prepare.\n That's SELECT, CANCEL, OK\n buttons in that order.\n\n\n Do you get it?\n\n\n\n#2\n  No, I don't.\n  Got it.\n\n\n[[]][[]]
 if_flag 3 0
 create event_generator 8704 87 9 14 17 0 0 @087/wm_gym5.txt
 fi

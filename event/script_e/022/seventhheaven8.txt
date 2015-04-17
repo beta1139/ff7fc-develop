@@ -4,7 +4,7 @@ sleep 16
 chg_speed 2202 normal
 set_active_msg 2202
 jump_npc 2202 same 1
-msg Tifa\n「Mornin', Cloud!
+msg Tifa\n`Mornin', Cloud!
 chg_char_dir up
 sleep 16
 chg_npc_img 2251 3
@@ -14,7 +14,7 @@ move_char down 1
 sleep 16
 chg_char_dir left
 step_npc 2202 2
-msg Tifa\n「Did you sleep well?\n\n\n#2\n  Baret snored……\n  Since you were near……\n\n\n[[]][[]]
+msg Tifa\n`Did you sleep well?\n\n\n#2\n  Baret snored==\n  Since you were near==\n\n\n[[]][[]]
 if_flag 3 0
 add_likability 1 500
 chg_speed 2202 slow
@@ -22,7 +22,7 @@ move_npc 2202 right 1
 sleep 32
 chg_char_dir down
 step_npc 2202 2
-msg Tifa\n「Shhh……\n\n\n (Careful……He'll hear it.\n Baret gets edgy before\n missions.)
+msg Tifa\n`Shhh==\n\n\n (Careful==He'll hear it.\n Baret gets edgy before\n missions.)
 create npc_event 2207 22 8 6 0 0 0 none
 chg_speed 2207 normal
 draw_char off
@@ -37,7 +37,7 @@ kill 2207
 sleep 16
 chg_speed 2202 normal
 jump_npc 2202 same 1
-msg Tifa\n「I'm coming this time!
+msg Tifa\n`I'm coming this time!
 chg_char_dir left
 sleep 16
 move_npc 2202 left 1
@@ -47,10 +47,10 @@ if_flag 3 1
 add_likability 2 500
 sleep 16
 step_npc 2202 2
-msg Tifa\n「What's that supposed\n to mean?
+msg Tifa\n`What's that supposed\n to mean?
 sleep 16
 jump_npc 2202 same 1
-msg Tifa\n「I'm coming this time!
+msg Tifa\n`I'm coming this time!
 sleep 16
 chg_speed 2202 normal
 chg_npc_dir 2202 left

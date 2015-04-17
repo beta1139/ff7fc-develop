@@ -1,1 +1,1 @@
-msg3 -1 ÅwI'm not trusting\n my life to you.
+msg3 -1 {I'm not trusting\n my life to you.

@@ -11,10 +11,10 @@ chg_npc_dir 5902 up
 sleep 32
 set_active_msg 5902
 jump_npc 5902 same 1
-msg Aeris\n「This is him……\n Can't we help him?
+msg Aeris\n`This is him==\n Can't we help him?
 sleep 32
 set_talk_npc 5900
-msg Ragged Man\n「Uh……Ah……Aah……
+msg Ragged Man\n`Uh==Ah==Aah==
 reset_talk_npc
 sleep 32
 loop 2
@@ -32,7 +32,7 @@ sleep 48
 chg_npc_img 5901 0
 chg_npc_dir 5901 down
 sleep 32
-msg 『I'm afraid I'm\n not a doctor.
+msg {I'm afraid I'm\n not a doctor.
 sleep 16
 chg_npc_dir 5902 left
 sleep 56
@@ -41,12 +41,12 @@ sleep 32
 chg_speed 5902 normal
 step_npc 5902 1
 set_talk_npc 5902
-msg Aeris\n「Yes……you're right……
+msg Aeris\n`Yes==you're right==
 reset_talk_npc
 sleep 48
 jump_npc 5902 same 1
 set_talk_npc 5902
-msg Aeris\n「Oh? He has a tatto.\n Looks like the numeral 2.
+msg Aeris\n`Oh? He has a tatto.\n Looks like the numeral 2.
 reset_talk_npc
 chg_npc_dir 5901 up
 sleep 24

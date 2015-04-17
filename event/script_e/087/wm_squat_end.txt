@@ -33,89 +33,89 @@ jump_npc 8715 same 1
 sleep 16
 step_npc 8715 2
 if_flag_greater 16 24
-msg 「You did 25 times.
+msg `You did 25 times.
 fi
 if_flag 16 24
-msg 「You did 24 times.
+msg `You did 24 times.
 fi
 if_flag 16 23
-msg 「You did 23 times.
+msg `You did 23 times.
 fi
 if_flag 16 22
-msg 「You did 22 times.
+msg `You did 22 times.
 fi
 if_flag 16 21
-msg 「You did 21 times.
+msg `You did 21 times.
 fi
 if_flag 16 20
-msg 「You did 20 times.
+msg `You did 20 times.
 fi
 if_flag 16 19
-msg 「You did 19 times.
+msg `You did 19 times.
 fi
 if_flag 16 18
-msg 「You did 18 times.
+msg `You did 18 times.
 fi
 if_flag 16 17
-msg 「You did 17 times.
+msg `You did 17 times.
 fi
 if_flag 16 16
-msg 「You did 16 times.
+msg `You did 16 times.
 fi
 if_flag 16 15
-msg 「You did 15 times.
+msg `You did 15 times.
 fi
 if_flag 16 14
-msg 「You did 14 times.
+msg `You did 14 times.
 fi
 if_flag 16 13
-msg 「You did 13 times.
+msg `You did 13 times.
 fi
 if_flag 16 12
-msg 「You did 12 times.
+msg `You did 12 times.
 fi
 if_flag 16 11
-msg 「You did 11 times.
+msg `You did 11 times.
 fi
 if_flag 16 10
-msg 「You did 10 times.
+msg `You did 10 times.
 fi
 if_flag 16 9
-msg 「You did 9 times.
+msg `You did 9 times.
 fi
 if_flag 16 8
-msg 「You did 8 times.
+msg `You did 8 times.
 fi
 if_flag 16 7
-msg 「You did 7 times.
+msg `You did 7 times.
 fi
 if_flag 16 6
-msg 「You did 6 times.
+msg `You did 6 times.
 fi
 if_flag 16 5
-msg 「You did 5 times.
+msg `You did 5 times.
 fi
 if_flag 16 4
-msg 「You did 4 times.
+msg `You did 4 times.
 fi
 if_flag 16 3
-msg 「You did 3 times.
+msg `You did 3 times.
 fi
 if_flag 16 2
-msg 「You did twice.
+msg `You did twice.
 fi
 if_flag 16 1
-msg 「You did once.
+msg `You did once.
 fi
 if_flag 16 0
-msg 「You didn't do even once.
+msg `You didn't do even once.
 fi
 sleep 16
 set_flag 16 0
 chg_npc_dir 8710 down
 sleep 16
 step_npc 8715 2
-msg 「Now the real match.\n Start!
+msg `Now the real match.\n Start!
 draw_fake_countdown on
 start_fake_countdown_sec 30
 create event_generator 8761 87 9 14 17 0 0 @087/wm_squat_end2.txt

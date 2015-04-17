@@ -1,13 +1,13 @@
 wait_target_talked 1906
 sleep 24
 chg_npc_dir 1907 right
-msg 「Gee, you did great, Boss!
+msg `Gee, you did great, Boss!
 sleep 16
 chg_npc_dir 1906 left
-msg 「You!\n Stop yammering!
+msg `You!\n Stop yammering!
 chg_npc_dir 1906 up
 sleep 24
-msg 「Uh, y-yes…… 
+msg `Uh, y-yes== 
 sleep 32
 chg_npc_dir 1907 up
-chg_param 1906 「This place is off limit!\n Get lost immediately!
+chg_param 1906 `This place is off limit!\n Get lost immediately!
