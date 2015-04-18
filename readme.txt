@@ -15,12 +15,17 @@ FF7FC
   ・デバッグ情報表示 : a
   ・エンカウントのオンオフ切り替え: a + s
   ・イベント情報出力 : F1
+  ・処理速度を上げる : テンキーのプラス
+  ・処理速度を下げる : テンキーのマイナス
 
 ■設定
-  ・config.exe
+  ・config_CS.exe
     ・XキーとZキーの入れ替え
     ・画面サイズ変更
     ・垂直同期on/off設定
+    ・ゲーム開始時のシーン選択
+    ・ゲームスタート位置
+    ・ウィンドウ非アクティブ時の挙動
   ・keyConfig.exe
     ・キー設定
 
@@ -35,23 +40,28 @@ FF7FC
   FF7FC
   |--documents/            各種ドキュメント置き場
   |  |--イベントスクリプト命令一覧.txt
-  |  `--イベント用汎用フラグ管理表.xls
+  |  `--イベントフラグ管理表.xls
   |
   |--event/                イベントファイル格納フォルダ
   |  |--script/            イベントスクリプトファイル格納フォルダ
-  |  `--event.csv          イベント情報(NPCの追加など)
+  |  |--script_e/          イベントスクリプトファイル格納フォルダ(英語版)
+  |  |--event.csv          イベント情報(NPCの追加など)
+  |  `--event_e.csv        イベント情報(NPCの追加など)(英語版)
   |
   |--image/                画像ファイル格納フォルダ
   |--item/                 アイテムデータ格納フォルダ
+  |--item_e/               アイテムデータ格納フォルダ(英語版)
   |--mapdata/              マップデータ格納フォルダ
   |  |-- mapdata_000       マップエディタで作成したマップデータ
   |  |        |
   |  |-- mapdata_999
   |  `-- setting.txt       マップ毎の以下の設定が定義されているファイル
   |                        BGM/戦闘画面背景画像ファイル名/エンカウントする敵グループID
+  |--mapeditor/            マップエディタ
   |--monsterdata/          モンスターデータ格納フォルダ
   |  |-- monster_data.csv        敵個別のステータス、画像ファイル名などの定義
   |  `-- monster_party_data.txt  敵グループIDの定義ファイル
+  |--monsterdata/          モンスターデータ格納フォルダ(英語版)
   |
   |--save/                 セーブファイル格納フォルダ
   |
@@ -61,7 +71,13 @@ FF7FC
   |  `--setting.txt        戦闘以外のBGMファイル名の定義
   |
   |--text/                 文字列リソースファイル格納フォルダ
-  |--config.exe            各種設定変更用プログラム
+  |--text_e/               文字列リソースファイル格納フォルダ(英語)
+  |--tools/                ツール類
+  |  |--make_map_data/     マップ画像及びマップチップ画像からマップデータを生成するツール
+  |  |--map_chip_edit/     不明
+  |  `--map_chip_id_replacer/ チップＩＤを変換するツール
+  |
+  |--config_CS.exe            各種設定変更用プログラム
   |--EventEditor_CS.exe    イベント作成ツール
   |--FF7FC.exe             ゲーム本体
   |--ini.bin               config.exeで生成した設定ファイル
@@ -69,6 +85,7 @@ FF7FC
   |--keySetting.bin        キー設定情報定義ファイル
   |--readme.txt            このファイル
   |--SaveDataEditor.exe    セーブデータ編集ツール
+  |--マップNO対応表.txt    マップNO対応
   `--新キャラチップ対応表.txt キャラID対応表
 
   ●マップ毎のBGMの設定を変更したい場合
@@ -89,7 +106,7 @@ FF7FC
 
 ■更新履歴
   ・更新履歴は以下を参照
-    https://code.google.com/p/ff7fc-develop/source/list
+    https://github.com/beta1139/ff7fc-develop/commits/master
 
   ・2013/1/8
 	・イベントスクリプトの命令追加
