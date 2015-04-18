@@ -375,6 +375,14 @@ set_inactive_msg (event_id)
 set_layer (event_id) (layer)
   表示順序を変える。layerには、"back"か"front"を指定する
 
+set_ignore_map_layer flag (event_id) (flag)
+  npcを歩かせたときにマップデータの階層情報を自身に更新しないようにする
+  使用例）
+    set_ignore_map_layer_flag 7296 1
+    set_layer 7296 front
+
+    id:7296は歩かせてもフロントのまま
+
 =============== パラメータ操作系 ===============
 add_gil (val)
   ギルを増やす

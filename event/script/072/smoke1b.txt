@@ -9,15 +9,18 @@ create event_generator 7279 72 18 26 17 0 0 @072/kill_smoke1_2b.txt
 chg_char_state_move
 loop_inf
 create npc_event 7296 72 11 27 124 1 1 none
+set_ignore_map_layer_flag 7296 1
 set_layer 7296 front
 slide_npc 7296 up 2
 sleep 8
 create npc_event 7295 72 12 19 124 1 1 none
+set_ignore_map_layer_flag 7295 1
 set_layer 7295 front
 slide_npc 7295 up 2
 sleep 8
 chg_npc_dir 7296 left
 create npc_event 7293 72 12 28 124 1 1 none
+set_ignore_map_layer_flag 7293 1
 set_layer 7293 front
 slide_npc 7293 up 2
 sleep 8
@@ -26,7 +29,9 @@ sleep 8
 chg_npc_dir 7296 up
 chg_npc_dir 7293 left
 create npc_event 7292 72 13 29 124 1 1 none
+set_ignore_map_layer_flag 7292 1
 create npc_event 7294 72 18 17 124 1 1 none
+set_ignore_map_layer_flag 7294 1
 set_layer 7292 front
 set_layer 7294 front
 slide_npc 7292 up 2
