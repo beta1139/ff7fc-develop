@@ -3,16 +3,19 @@ wait_target_talked 166
 reset_talked_flag 166
 if_flag 3 0
 warp 900 158 87 down
+include ./event/common/add_member_item.txt
 set_flag 0 0
 play_bgm
 fi
 if_flag 3 1
 warp 901 237 127 down
+include ./event/common/add_member_item.txt
 set_flag 0 0
 play_bgm
 fi
 if_flag 3 2
 warp 902 316 168 down
+include ./event/common/add_member_item.txt
 set_flag 0 0
 play_bgm
 fi

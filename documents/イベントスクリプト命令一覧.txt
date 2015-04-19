@@ -613,3 +613,6 @@ end_fake_countdown
 draw_fake_countdown (on/off)
   カウントダウンウィンドウ表示／非表示切り替え
 
+include (file_name)
+  file_nameのファイルを読み込む
+
