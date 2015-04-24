@@ -1,60 +1,60 @@
-なし
-ＨＰアップ１
-ＨＰアップ２
-ＨＰアップ３
-ＨＰアップ４
-ＨＰアップ５
-ＭＰアップ１
-ＭＰアップ２
-ＭＰアップ３
-ＭＰアップ４
-ＭＰアップ５
-ＨＰＭＰいれかえ
-すばやさアップ１
-すばやさアップ２
-すばやさアップ３
-すばやさアップ４
-すばやさアップ５
-まりょくアップ１
-まりょくアップ２
-まりょくアップ３
-まりょくアップ４
-まりょくアップ５
-うんアップ１
-うんアップ２
-うんアップ３
-うんアップ４
-うんアップ５
-ギルアップ１
-ギルアップ２
-ＥＸＰアップ１
-ＥＸＰアップ２
-えんきょりこうげき
-せんせいこうげき１
-せんせいこうげき２
-せんせいこうげき３
-せんせいこうげき４
-せんせいこうげき５
-てきよけ１
-てきよけ２
-てきよせ１
-てきよせ２
-チョコボよせ１
-チョコボよせ２
-チョコボよせ３
-チョコボよせ４
-かばう１
-かばう２
-かばう３
-かばう４
-かばう５
-カウンター１
-カウンター２
-カウンター３
-カウンター４
-カウンター５
-すべてぜんたいか１
-すべてぜんたいか２
-すべてぜんたいか３
-すべてぜんたいか４
-すべてぜんたいか５
+None
+HP-Up 1
+HP-Up 2
+HP-Up 3
+HP-Up 4
+HP-Up 5
+MP-Up 1
+MP-Up 2
+MP-Up 3
+MP-Up 4
+MP-Up 5
+Swap HP/MP
+Speed-Up 1
+Speed-Up 2
+Speed-Up 3
+Speed-Up 4
+Speed-Up 5
+Magic-Up 1
+Magic-Up 2
+Magic-Up 3
+Magic-Up 4
+Magic-Up 5
+Luck-Up 1
+Luck-Up 2
+Luck-Up 3
+Luck-Up 4
+Luck-Up 5
+Gil-Up 1
+Gil-Up 2
+Exp-Up 1
+Exp-Up 2
+Far Range Attack
+Preemptive 1
+Preemptive 2
+Preemptive 3
+Preemptive 4
+Preemptive 5
+Enemy Repulse 1
+Enemy Repulse 2
+Enemy Lure 1
+Enemy Lure 2
+Chocobo Lure 1
+Chocobo Lure 2
+Chocobo Lure 3
+Chocobo Lure 4
+Cover 1
+Cover 2
+Cover 3
+Cover 4
+Cover 5
+Counter Attack 1
+Counter Attack 2
+Counter Attack 3
+Counter Attack 4
+Counter Attack 5
+Mega Aim All 1
+Mega Aim All 2
+Mega Aim All 3
+Mega Aim All 4
+Mega Aim All 5

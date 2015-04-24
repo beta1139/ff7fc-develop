@@ -1,19 +1,19 @@
-なし
-ひっさつわざ
-デブチョコボ
-ダイヤモンドダスト
-じごくのかえん
-さばきのかみなり
-だいちのいかり
-ざんてつけん
-グングニルのやり
-だいかいしょう
-メガフレア
-トライディザスター
-せいなるしんぱん
-てんせいのほのお
-ギガフレア
-あんこくのかま
-てんちほうかい
-テラフレア
-アルティメットエンド
+None
+DeathBlow
+Fat Chocobo
+Diamond Dust
+Hellfire
+Doom Thunder
+Earth Wrath
+Iron Ripper
+Gungnir
+Tidal Wave
+Mega Flare
+Tri-Disaster
+Judgement
+Rebirth Fire
+Giga Flare
+Dark Caldron
+Big Crunch
+Tera Flare
+Ultimate End

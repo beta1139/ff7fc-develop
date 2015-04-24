@@ -285,7 +285,7 @@ sleep 64
 msg Mukki\n`Sigh, hum hum==\n The bath is good.\n\n It's really relaxing.
 sleep 16
 jump_npc 8317 same 1
-msg Mukki\n`How do you feel, Kid!\n\n\n Isn't it good?\n\n\n\n#2\n  ==\n  I'm suffocated.\n\n\n[[]][[]]
+msg Mukki\n`How do you feel, Kid!\n\n\n Isn't it good?\n\n\n\n#2\n  ==\n  I'm suffocating.\n\n\n[[]][[]]
 sleep 16
 chg_npc_img 8330 97
 if_flag 3 0
@@ -455,7 +455,7 @@ sleep 4
 step_npc 8317 2
 play_se pick_up.wav
 add_item 6014
-msg You got the key item\n"Bikini"!
+msg You got the key item\n"BikiniBrief"!
 sleep 16
 chg_npc_dir 8317 up
 sleep 48

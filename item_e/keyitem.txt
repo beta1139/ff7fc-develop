@@ -1,45 +1,45 @@
 id,name,text
-6000,Cot.Dress,A dress made of cotton
-6001,Sat.Dress,A dress made of satin
-6002,SilkDress,A dress made of silk
+6000,Cotton Dress,A dress made of cotton
+6001,Satin Dress,A dress made of satin
+6002,Silk Dress,A dress made of silk
 6003,Curly Wig,A wig with curly hair
 6004,Brown Wig,A wig with brown hair
-6005,BlondeWig,A wig with blonde hair
-6006,Gls.Tiara,A glass tiara
-6007,RubyTiara,A ruby tiara
-6008,Dmd.Tiara,A diamond tiara
+6005,Blonde Wig,A wig with blonde hair
+6006,Glass Tiara,A glass tiara
+6007,Ruby Tiara,A ruby tiara
+6008,Diamond Tiara,A diamond tiara
 6009,Cologne,Cheap perfume
-6010,F.Cologne,Floral perfume
-6011,S.Cologne,Sexy perfume
-6012,Mem.Card,Honeybee Inn Member's card
+6010,Floral Scent,Floral perfume
+6011,Sexy Cologne,Sexy perfume
+6012,Members Card,Honeybee Inn Member's card
 6013,Lingerie,Scented underware
-6014,Bikini,Tight-fitting briefs
-6015,Coupon,Redeemable at the pharmacy
-6016,Germicide,A tube of germicide
+6014,BikiniBriefs,Tight-fitting briefs
+6015,Drug Coupon,Redeemable at the drugstore
+6016,Disinfectant,A tube of disinfectant
 6017,Deodorant,A spray of deodorant
 6018,Digestive,A bottle of digestive
-6019,Keycard60,test
-6020,Keycard62,test
-6021,Keycard65,test
-6022,Keycard66,test
-6023,Keycard68,test
-6024,MgarParts,test
-6025,PHS,test
-6026,Gold Pass,test
-6027,Keystone,test
-6028,Lev.Scale,test
-6029,Glac.Map,test
-6030,A Coupon,test
-6031,B Coupon,test
-6032,C Coupon,test
-6033,Black Mtr,test
-6034,Mythril,test
-6035,Snowboard,test
-6036,HugeMtr1,test
-6037,HugeMtr2,test
-6038,HugeMtr3,test
-6039,HugeMtr4,test
-6040,Cetra Key,test
-6041,LunarHarp,test
-6042,CellarKey,test
-6043,Sect5 Key,test
+6019,Keycard 60,You can go up to 60th floor
+6020,Keycard 62,You can go up to 62nd floor
+6021,Keycard 65,You can go up to 65th floor
+6022,Keycard 66,You can go up to 66th floor
+6023,Keycard 68,You can go up to 68th floor
+6024,Midgar Parts,Part of Midgar city model
+6025,PHS,Calls party members
+6026,Gold Pass,Unlimited Gold Saucer pass
+6027,Keystone,Key to the Ancient Temple
+6028,Lev. Scale,Holds the power of water
+6029,Glacier Map,Used at the Great Glacier
+6030,A Coupon,Redeemable for an item
+6031,B Coupon,Redeemable for an item
+6032,C Coupon,Redeemable for an item
+6033,BlackMateria,Black Materia
+6034,Mythril,Might be some help to you==
+6035,Snowboard,You can slide on the snow
+6036,Huge Materia,Obtained at Fort Condor
+6037,Huge Materia,Obtained at Corel
+6038,Huge Materia,Obtained from the rocket
+6039,Huge Materia,Obtained at Underwater
+6040,Ancient Key,A key found at the sea
+6041,Lunar Harp,Wakes up the Slumber Forest
+6042,Basement Key,Key to Shinra Manor basement
+6043,Sector 5 Key,Key to Midgar Sector 5 gate

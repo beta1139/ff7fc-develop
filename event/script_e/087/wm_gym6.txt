@@ -1,6 +1,6 @@
 wait_same_pos
 step_npc 8715 2
-msg `This wig is yours\n if you can manage more\n squats than they do in\n 30 seconds, 
+msg `This wig is yours\n if you can manage more\n squats than they do in\n 30 seconds.
 chg_npc_dir 8710 left
 sleep 16
 step_npc 8710 2

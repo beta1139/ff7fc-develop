@@ -95,7 +95,7 @@ id,name,buy_val,sell_val,text
 1093,Highwind,0,0,Cid's Ultimate Limit Break
 1094,S.Soldier,0,25,1/35 Shinra Soldier Figures
 1095,S.Sweeper,0,25,Super Sweeper Figure
-1096,Masamune,0,25,A fake
+1096,Masamune,0,25,A fake of Sephiroth's weapon
 1097,S.Crystal,0,0,Creates a Save Point
 1098,Diary1,0,0,Dio's diary part 1
 1099,Autograph,0,0,Dio's autograph

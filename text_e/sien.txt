@@ -1,44 +1,44 @@
-なし
-ぜんたいか１
-ぜんたいか２
-ぜんたいか３
-ぜんたいか４
-ぜんたいか５
-ぞくせい１
-ぞくせい２
-ぞくせい３
-ついかこうか
-ＨＰきゅうしゅう
-ＭＰきゅうしゅう
-ＭＰターボ１
-ＭＰターボ２
-ＭＰターボ３
-ＭＰターボ４
-ＭＰターボ５
-ついかぎり
-ついでにぬすむ
-ふいうち１
-ふいうち２
-ふいうち３
-ふいうち４
-ふいうち５
-まほうみだれうち１
-まほうみだれうち２
-まほうみだれうち３
-まほうみだれうち４
-まほうみだれうち５
-まほうカウンター１
-まほうカウンター２
-まほうカウンター３
-まほうカウンター４
-まほうカウンター５
-コマンドカウンター１
-コマンドカウンター２
-コマンドカウンター３
-コマンドカウンター４
-コマンドカウンター５
-ファイナルアタック１
-ファイナルアタック２
-ファイナルアタック３
-ファイナルアタック４
-ファイナルアタック５
+None
+Aim All 1
+Aim All 2
+Aim All 3
+Aim All 4
+Aim All 5
+Elemantal 1
+Elemantal 2
+Elemantal 3
+Add Effect
+HP Absorb
+MP Absorb
+MP Turbo 1
+MP Turbo 2
+MP Turbo 3
+MP Turbo 4
+MP Turbo 5
+Add Slash
+Add Steal
+Sneak Attack 1
+Sneak Attack 2
+Sneak Attack 3
+Sneak Attack 4
+Sneak Attack 5
+Magic Rush 1
+Magic Rush 2
+Magic Rush 3
+Magic Rush 4
+Magic Rush 5
+Magic Counter 1
+Magic Counter 2
+Magic Counter 3
+Magic Counter 4
+Magic Counter 5
+Cmd Counter 1
+Cmd Counter 2
+Cmd Counter 3
+Cmd Counter 4
+Cmd Counter 5
+Final Attack 1
+Final Attack 2
+Final Attack 3
+Final Attack 4
+Final Attack 5

@@ -8,7 +8,7 @@ sleep 70
 chg_npc_dir 60001 right
 chg_char_dir left
 sleep 28
-msg `Hey, you spiky head!\n Fight me once more!\n\n\n#2\n  Agreed.\n  Not interested.\n\n\n[[]][[]]
+msg `Hey, you spiky head!\n Fight me once again!\n\n\n#2\n  Agreed.\n  Not interested.\n\n\n[[]][[]]
 if_flag 3 0
 msg a
 end

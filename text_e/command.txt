@@ -1,17 +1,17 @@
-‚È‚µ
-‚Ê‚·‚Þ
-‚Ô‚ñ‚Ç‚é
-‚Ý‚â‚Ô‚é
-‚È‚°‚é
-‚º‚É‚È‚°
-‚Ö‚ñ‚©
-‚Ð‚Á‚³‚Â
-‚ ‚â‚Â‚é
-‚à‚Ì‚Ü‚Ë
-‚º‚ñ‚½‚¢‚¬‚è
-‚¢‚ ‚¢‚Ê‚«
-‚ê‚ñ‚¼‚­‚¬‚è
-‚Ý‚¾‚ê‚¤‚¿
-‚v‚Ü‚Ù‚¤
-‚v‚µ‚å‚¤‚©‚ñ
-‚vƒAƒCƒeƒ€
+None
+Steal
+Mug
+Sense
+Throw
+Coin
+Morph
+Kill
+Puppet
+Mimic
+AimAll
+Flash
+2xCut
+4xCut
+2xMag
+2xSum
+2xItem

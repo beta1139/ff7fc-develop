@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
-FF7FC (Final Fantasy VII with NES like appearance)
+FF7FC (Final Fantasy VII with NES quality graphic/sound)
 ----------------------------------------------------------------------
 * Programmer
   BETA
@@ -14,7 +14,9 @@ FF7FC (Final Fantasy VII with NES like appearance)
   - Forced encounter    s
   - Show debug info     a
   - Toggle encounter    a + s
-  - Show event info     F1
+  - Output event info   F1
+  - Speed up            Numeric Keypad +
+  - Speed down          Numeric Keypad -
 
 * Configuration
   - config_CS.exe
@@ -23,12 +25,13 @@ FF7FC (Final Fantasy VII with NES like appearance)
     > Select language
         Japanese
         English
-    > Program start
+    > Program start phase
         FF3LikeTextEvent: Text intro like FF3
         TitleScreen:      Main title
         StartOrContinue:  "new game" "continue" menu
-    > StartPos
-        Initial map ID and character coordination
+    > Initial map ID and character coordination
+    > Program behavior on losing window focus
+        Whether to continue background or suspend
 
   - keyConfig.exe
     > Change key assignment
@@ -54,9 +57,8 @@ FF7FC (Final Fantasy VII with NES like appearance)
   |
   |--event/                 Event definition files
   |  |--script/             Event scripts (Japanese)
-  |  |--event.csv           Event description (Japanese)
-  |  |
   |  |--script_e/           Event scripts (English)
+  |  |--event.csv           Event description (Japanese)
   |  `--event_e.csv         Event description (English)
   |
   |--image/                 Image files
@@ -78,7 +80,7 @@ FF7FC (Final Fantasy VII with NES like appearance)
   |  |-- monster_data.csv        Defines monsters' status, image, etc
   |  `-- monster_party_data.txt  Defines possible enemy combinations
   |
-  |--monsterdata/           Monster data files (English)
+  |--monsterdata_e/         Monster data files (English)
   |  |-- monster_data.csv        Defines monsters' status, image, etc
   |  `-- monster_party_data.txt  Defines possible enemy combinations
   |
@@ -87,9 +89,13 @@ FF7FC (Final Fantasy VII with NES like appearance)
   |--sound/                 Sound files
   |  |--bgm/                BGM files
   |  |--se/                 SE files
+  |  `--setting.txt         Defines BGM file names (non-battle)
   |
   |--text/                  Text resources (Japanese)
   |--text_e/                Text resources (English)
+  |  |--make_map_data/      Map data generate tool
+  |  |--map_chip_edit/      Unknown (old program?)
+  |  `--map_chip_id_replacer/   Map chip ID converter
   |
   |--config_CS.exe          Runtime config setup tool
   |--FF7FC.exe              Main game program

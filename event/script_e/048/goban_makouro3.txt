@@ -496,7 +496,7 @@ chg_npc_dir 4802 up
 jump_npc 4802 same 1
 sleep 16
 step_npc 4802 2
-msg Baret\n`Hey, Cloud!\n We gotta get rid of\n this bastard first! 
+msg Baret\n`Hey, Cloud!\n We gotta get rid of\n this bastard first!
 chg_speed 4820 fast
 jump_npc 4820 same 2
 sleep 16

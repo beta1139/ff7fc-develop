@@ -5,7 +5,7 @@ chg_dir_to_char 8510
 sleep 16
 step_npc 8510 2
 if_char_dir left
-msg3 -1 `This is Don Corneo's\n residence. He's the\n big-shot of Wall Market. 
+msg3 -1 `This is Don Corneo's\n residence. He's the\n big-shot of Wall Market.
 create npc_event 8521 85 11 15 3 1 2 none
 move_npc 8521 down 2
 sleep 32

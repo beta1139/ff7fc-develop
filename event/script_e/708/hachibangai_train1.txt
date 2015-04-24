@@ -11,12 +11,12 @@ loop 16
 inc_image_alpha 70811
 sleep 1
 pool
-set_text 3          FINAL FANTASY
-set_text 4             VII NES
-set_text 6        Craftsmen WANTED!
-set_text 7           to port FF7
-set_text 8         into NES quality
-set_text 9           environment
+set_text 3                FINAL FANTASY
+set_text 4                   VII NES
+set_text 6              Craftsmen WANTED!
+set_text 7                 to port FF7
+set_text 8               into NES quality
+set_text 9                 environment
 set_text_col 6 0 29 3
 set_text_col 7 0 27 3
 set_text_col 8 0 27 3
@@ -233,10 +233,10 @@ set_text_alpha 8 0
 set_text_alpha 9 0
 sleep 1
 pool
-set_text 6        We are looking for
-set_text 7           MAP CREATOR
-set_text 8           NSF CREATOR
-set_text 9           GAME TESTER
+set_text 6              We are looking for
+set_text 7                 MAP CREATOR
+set_text 8                 NSF CREATOR
+set_text 9                 GAME TESTER
 set_text_col 6 0 29 0
 set_text_col 7 0 27 2
 set_text_col 8 0 26 2

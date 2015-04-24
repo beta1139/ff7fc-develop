@@ -3,7 +3,7 @@
 翻訳係: ff7fc.translate@gmail.com
 
 
-モンスター名・アイテム名は以下の方針で英訳しました。異論は認めます。
+モンスター名・アイテム名など以下の方針で英訳しました。異論は認めます。
 いいアイディアがあったらどんどん修正してください。
 基本的には公式(?)の英語名をベースにしています。
 
@@ -149,38 +149,30 @@ Drink -> Drug, Powder -> Dust, Curtain -> Veil といった似た意味で
 
 
 
-■ キーアイテム名 (最大9文字)
+■ キーアイテム名 (最大12文字)
 
-公式をほぼそのまま利用しているもの
+大部分は公式をそのまま利用できている（訳もすごく変なものはわずか）
 例) 
-	シルクのドレス   -> SilkDress (公式: Silk Dress)
-	ブロンドのかつら -> BlondeWig (公式: Blonde Wig)
-
-公式からそれだけで意味が通るような一部分を抜き出したもの
-例) 
-	ビキニパンツ     -> Bikini    (公式: Bikini Brief)
-	くすりやクーポン -> Coupon    (公式: Pharmacy coupons)
+	シルクのドレス   -> Silk Dress (公式: Silk Dress)
+	ブロンドのかつら -> Blonde Wig (公式: Blonde Wig)
 
 似た意味で短い単語に置き換えたもの
 例) 
-	しょうどくやく   -> Germicide (公式: Disinfectant)
-	ちかしつのかぎ   -> CellarKey (公式: Basement Key)
+	フラワーコロン   -> Floral Scent (公式: Flower Cologne)
+	くすりやクーポン -> Drug Coupon  (公式: Pharmacy coupons)
 
 アイテム名の一部を省略したもの
 例）
-	コットンのドレス -> Cot.Dress (公式: Cotton Dress)
-	かいいんカード   -> Mem.Card  (公式: Member's Card)
+	みずがみさまのうろこ -> Lev. Scale (公式: Leviathan Scales)
 
 キーアイテムの名称はストーリー上で意味をもつことが多いため、
 一部を省略した場合は入手時のメッセージで "正式アイテム名(省略名)"
-と表示して、どれがどのアイテムなのかが分かるようにしています。
+と表示して、どれがどのアイテムなのかが分かるようにする。
 例）
-	You got the "Cotton Dress(Cot.Dress)"!
-	You got the "Honeybee Inn Member's Card(Mem.Card)"!
+	You got the "Leviathan Scale(Lev. Scale)"!
 
 
-
-■ マテリア（最大9文字）
+■ マテリア（最大8文字）
 
 一単語ですむ単純なものはほぼ公式をそのまま。
 例）
@@ -192,11 +184,17 @@ Drink -> Drug, Powder -> Dust, Curtain -> Veil といった似た意味で
 長いものはせめてマテリアの性質がわかる程度の名称を検討しました。
 そもそもマテリアは日本語でも名前だけでは意味のわかりにくいのが多いので…
 
-独断であえて変えたものもあります。
+以下の２個のみ、現在のところ 9 文字のままです。
+	Alexander
+	Leviathan
+マテリアメニューの選択ペインでは１文字右にはみ出してしまいます。
+情報ペインには 9 文字分の領域があるのできちんと表示されます。
+
+文字数の問題ではなく独断であえて変えたものもあります。
 例）
-	ぜんたいか      -> TargetAll (公式: All)
+	ぜんたいか      -> AimAll (公式: All)
 	初心者の館で拾ったときに "You got All materia!" と表示されて
-	"全てのマテリアを手に入れた!" と読めてしまうのはどうかと思ったので
+	"全てのマテリアを手に入れた" と読めてしまうのはどうかと思ったので
 	誤解の余地のないような名前にした。
 
 	てきのわざ      -> Knack (公式: Enemy Skill)
@@ -224,5 +222,75 @@ Drink -> Drug, Powder -> Dust, Curtain -> Veil といった似た意味で
 
 アクセサリはまだしも、武器・防具はけっこうどうにもならなかった orz
 実際のプレイでは別途リストを用意して見ながらやってもらうのかなあ…
+
+
+
+■ 独立マテリア・支援マテリア機能（16文字）
+マテリアメニューの情報ペインでの表示に使用されるのみ？
+基本的にマテリア名と同じ。
+マテリア名で無理に縮めていたものは本来の内容に戻したりしている。
+例）
+	マテリア名：ChocLure 機能：Chocobo Lure
+
+
+
+■ 召還魔法（最大12文字）
+まほうメニュー画面で12文字。
+バトル中メニュー・バトル中発動画面では最大文字数不明。
+文字数制限より、一部公式の変な訳のほうが気になる。
+
+	ひっさつわざ            DeathBlow
+	デブチョコボ            Fat-Chocobo
+	ダイヤモンドダスト      Diamond Dust
+	じごくのかえん          Hellfire
+	だいかいしょう          Tidal Wave
+	せいなるしんぱん        Judgement
+	メガフレア              Mega Flare
+	ギガフレア              Giga Flare
+	テラフレア              Tera Flare
+	アルティメットエンド    Ultimate End
+このあたりは公式そのままです。
+
+	てんせいのほのお        Rebirth Fire（公式: Phoenix Flame）
+	さばきのかみなり        Doom Thunder (公式: Judgement Bolt)
+	あんこくのかま          Dark Caldron (公式: Black Cauldron)
+長さを縮めるための置き換え
+
+	だいちのいかり          Earth Wrath （公式: Anger of the Land）
+神や大地のようなものによる怒りは wrath のほうがしっくりくるかと。
+
+	ざんてつけん            Iron Ripper（公式: Steel Bladed Sword）
+これはひどい。公式は"鋼の刃の剣"かな？「鉄をも切り裂く剣」をイメージしてみた。
+
+	グングニルのやり        Gungnir（公式: Gunge Lance）
+なんで公式でわざわざ名前を変えてあるのか？意味不明。
+
+	トライディザスター      Tri-Disaster（公式: Tetra Disaster）
+これも公式でトライ(3)からTetra(4)に名前を変えている理由が不明。
+火・氷・雷の3属性攻撃なのに…
+
+	てんちほうかい          Big Crunch（公式: Disintegration）
+公式は何かが違う気がする（素粒子崩壊とかでよく使う言葉、て感じがする）。
+本当はなにか神話的な世界の終わりをあらわす言葉にしたい感じなんだけど、
+Typhon のギリシャ神話には終末の概念がないしなあ。
+
+
+
+■ 敵の技（最大12文字? 多分召還魔法と同じ）
+これも変なのは意外と少なかった。文字数調整のための置き換えが主。
+
+例）
+	てんしのささやき -> Angel Voice (公式: Angel Whisper)
+	しのせんこく     -> Death Order (公式: Death Sentence)
+
+
+
+■ 追加コマンド（最大？文字・バトルメニュー構成が不明）
+とりあえず6文字を想定して検討中。
+
+
+
+■ 魔法（最大4文字・バトルメニュー構成のため）
+4文字でどーせーっちゅうんじゃ！
 
 

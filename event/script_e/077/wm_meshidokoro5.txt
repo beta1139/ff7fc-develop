@@ -85,13 +85,13 @@ fi
 if_flag 3 1
 if_flag 13 0
 step_npc 7711 3
-msg `Thank you.\n Here's your coupon.\n You can redeem it for\n an item at the pharmacy.
+msg `Thank you.\n Here's your coupon.\n You can redeem it for an\n item at the drugstore.
 sleep 16
 step_npc 7711 3
 msg `That was the last coupon.\n Today's coupon service\n is finished.\n Wait for the next chance.
 play_se pick_up.wav
 add_item 6015
-msg You got the key item\n"Pharmacy Coupon"!
+msg You got the key item\n"Drug Coupon"!
 chg_param 7224 `Please, have a seat.
 move_npc 7711 down 2
 draw_char on

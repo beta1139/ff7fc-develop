@@ -30,7 +30,7 @@ play_se pick_up.wav
 add_item 6010
 del_item 6017
 add_flag 18 2
-msg You got the key item\n"Floral Cologne\n (F.Cologne)"!
+msg You got the key item\n"Floral Scent"!
 fi
 if_owned_item 6018
 step_npc 8817 4
@@ -42,7 +42,7 @@ play_se pick_up.wav
 add_item 6011
 del_item 6018
 add_flag 18 4
-msg You got the key item\n"Sexy Cologne\n (S.Cologne)"!
+msg You got the key item\n"Sexy Cologne"!
 fi
 chg_type 8815 npc_event
 chg_speed 8815 fast

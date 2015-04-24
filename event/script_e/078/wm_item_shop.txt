@@ -57,7 +57,7 @@ msg `There you go.
 reset_talk_npc
 play_se pick_up.wav
 add_item 6016
-msg You got the key item\n"Germicide"!
+msg You got the key item\n"Disinfectant"!
 fi
 if_flag 3 1
 step_npc 7810 2
