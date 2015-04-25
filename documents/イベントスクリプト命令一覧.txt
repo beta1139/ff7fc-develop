@@ -509,6 +509,12 @@ chg_image_pos_offset (image_idx) (dst_x) (dst_y) (src_x) (src_y) (src_w) (src_h)
 set_image_trans_col (image_idx) (R) (G) (B)
   draw_imageで生成した画像の透過色を設定する
 
+set_gray_scale
+  画面をグレースケールにする
+
+reset_gray_scale
+  グレースケールをオフにする
+
 =============== サウンド系 ===============
 play_se (path)
   SEを再生させる。pathには./sound/se/の部分は不要
