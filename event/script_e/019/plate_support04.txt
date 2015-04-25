@@ -1,0 +1,191 @@
+wait_same_pos
+reset_talked_flag 1906
+reset_talk_flag 1907
+play_se damage_critical.ogg
+move_char up 1
+sleep 8
+play_se damage_critical.ogg
+chg_speed 1921 fast
+chg_npc_dir 1921 down
+move_char down 1
+sleep 8
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+reset_screen_effect
+sleep 8
+chg_speed 1923 slow
+move_npc 1921 down 1
+chg_speed 1920 fast
+chg_npc_dir 1920 down
+sleep 8
+move_npc 1921 down 1
+sleep 8
+move_npc 1920 down 2
+move_npc 1921 left 1
+sleep 8
+move_npc 1921 down 1
+sleep 8
+chg_npc_dir 1921 right
+chg_npc_dir 1920 up
+move_npc 1922 down 1
+chg_npc_dir 1906 down
+chg_npc_dir 1907 down
+chg_npc_dir 1908 down
+chg_npc_dir 1909 down
+chg_npc_dir 1940 down
+sleep 8
+move_npc 1920 down 2
+sleep 8
+move_npc 1920 right 1
+chg_npc_dir 1920 down
+chg_speed 1906 normal
+chg_speed 1907 normal
+chg_speed 1908 normal
+chg_speed 1909 normal
+chg_speed 1940 normal
+move_npc 1906 down 3
+move_npc 1907 down 2
+move_npc 1909 down 3
+move_npc 1940 down 3
+jump_npc 1908 down 2
+sleep 32
+step_npc 1920 2
+chg_speed 1908 fast
+move_npc 1907 left 1
+move_npc 1908 down 2
+sleep 16
+move_npc 1907 down 1
+move_npc 1908 right 1
+move_npc 1909 right 1
+sleep 8
+chg_npc_dir 1908 down
+sleep 8
+move_npc 1909 down 1
+sleep 16
+step_npc 1921 4
+msg 『だいじょうぶか？\n　……ウェッジ！！
+sleep 64
+step_npc 1923 1
+msg ウェッジ\n「……クラウドさん…\n　おれのなまえ…　おぼえてくれたっすね
+sleep 64
+step_npc 1923 1
+msg ウェッジ\n「バレットさんが…　うえで　たたかってるっす\n　てをかしてやって……
+step_npc 1921 2
+sleep 72
+step_npc 1923 1
+msg ウェッジ\n「クラウドさん……\n　めいわくかけて　すいません…っす
+sleep 64
+chg_npc_dir 1921 up
+sleep 16
+step_npc 1921 1
+msg 『のぼるぞ！
+sleep 16
+jump_npc 1921 same 1
+sleep 16
+msg 『エアリス！\n　ウェッジをたのむ
+jump_npc 1922 same 1
+sleep 32
+chg_npc_dir 1920 left
+sleep 16
+move_npc 1920 left 1
+sleep 8
+step_npc 1920 2
+msg ティファ\n「エアリス　おねがい\n\n\n　このちかくに　わたしたちのみせ\n　『セブンスヘブン』があるの\n\n\n　そこにマリンっていう　なまえの\n　ちいさなおんなのこが　いるから……
+chg_npc_dir 1922 right
+sleep 16
+step_npc 1922 2
+msg エアリス\n「わかった\n　あんぜんな　ばしょへ　ね
+sleep 16
+chg_npc_dir 1920 up
+sleep 16
+set_active_msg 1920
+jump_npc 1920 same 2
+sleep 16
+msg ティファ\n「ここはきけんです！\n　みんなはやく　はしらから　はなれて！\n\n　7ばんがいから　はなれて！
+if_party_mem 2
+del_party_mem 2
+fi
+sleep 16
+move_npc 1922 down 2
+move_npc 1909 up 2
+move_npc 1940 left 2
+sleep 16
+move_npc 1906 up 4
+move_npc 1907 right 1
+move_npc 1908 up 4
+sleep 16
+move_npc 1922 right 2
+chg_npc_dir 1940 up
+chg_npc_dir 1907 up
+chg_npc_dir 1909 down
+chg_speed 1907 not_move
+chg_speed 1909 not_move
+chg_speed 1940 not_move
+sleep 16
+move_npc 1908 left 2
+sleep 16
+chg_npc_dir 1908 up
+chg_speed 1908 not_move
+chg_npc_dir 1922 up
+chg_speed 1922 not_move
+chg_speed 1920 normal
+move_npc 1920 down 1
+sleep 8
+move_char down 1
+sleep 8
+kill 1920
+chg_npc_dir 1906 down
+chg_speed 1906 not_move
+chg_char_dir up
+draw_char on
+kill 1921
+sleep 16
+set_flag_wall 1906
+set_flag_wall 1907
+set_flag_wall 1908
+set_flag_wall 1909
+set_flag_wall 1940
+set_flag_wall 1922
+set_flag_wall 1923
+chg_type 1906 npc
+chg_type 1907 npc2
+chg_type 1908 npc
+chg_type 1909 npc2
+chg_type 1940 npc
+chg_type 1922 npc
+chg_type 1923 npc2
+chg_param 1906 「おう！　これがおれの　さいごのしごとだ！\n　のぼってけ！！
+chg_speed 1923 not_step
+set_layer 1923 back
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_key_valid start
+if_party_mem 3
+del_party_mem 3
+remove_all_materia 3
+fi
+add_party_mem 2
+create event_generator 1951 19 19 11 17 0 0 @save_msg.txt
+create event_generator 1915 19 0 0 17 0 0 @019/plate_support_item_shop.txt
+create event_generator 1916 19 0 0 17 0 0 @019/plate_support_talk1.txt
+create event_generator 1917 19 0 0 17 0 0 @019/plate_support_talk2.txt
+create event_generator 1918 19 0 0 17 0 0 @019/plate_support_talk3.txt
+create event_generator 1930 19 10 21 17 0 0 @019/plate_support_tifa1.txt
+create event_generator 1931 19 10 22 17 0 0 @019/plate_support_tifa2.txt
+create event_generator 1932 19 10 23 17 0 0 @019/plate_support_tifa3.txt
+create event_generator 1933 19 14 28 17 0 0 @019/plate_support_tifa4.txt
+create event_generator 1934 19 15 28 17 0 0 @019/plate_support_tifa5.txt
+create event_generator 1935 19 20 21 17 0 0 @019/plate_support_tifa6.txt
+create event_generator 1936 19 20 22 17 0 0 @019/plate_support_tifa7.txt
+create event_generator 1937 19 20 23 17 0 0 @019/plate_support_tifa8.txt
+chg_event_move_char_speed normal
+kill_through_range 10120 10139
+kill_through_range 10150 10159

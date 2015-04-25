@@ -1,3 +1,9 @@
 set_eternal_event
 wait_same_pos
+if_flag_lesser 9 3
 warp_ff3_2 69 15 27 2 up
+fi
+if_flag 9 3
+warp_ff3_2 70 15 27 2 up
+create event_generator 7000 70 0 0 17 0 0 @070/midori_park_smoke.txt
+fi

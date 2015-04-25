@@ -1,0 +1,6 @@
+loop 4
+dec_screen_effect_val 12
+sleep 2
+dec_screen_effect_val 13
+sleep 2
+pool

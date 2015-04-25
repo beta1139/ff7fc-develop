@@ -1,0 +1,7 @@
+set_screen_effect sub 255 255 255 0
+loop 4
+sleep 2
+inc_screen_effect_val 12
+sleep 2
+inc_screen_effect_val 13
+pool

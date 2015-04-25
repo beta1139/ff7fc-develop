@@ -99,9 +99,9 @@ id,type,bgm,battle_back,monster_party_id
 97,0,1-08-Lurking_in_the_Darkness.ogg,25,245/246/247/248
 98,0,1-04-Anxious_Heart.ogg,4,249/250/251/252/254
 99,0,through,4,250/251/252/253/254
-100,0,1-10-Fighting.ogg,32,188/189/190/191
-101,0,1-10-Fighting.ogg,32,188/189/190/191
-102,0,1-10-Fighting.ogg,32,188/189/190/191
+100,1,through,12,188/189/190/191
+101,0,through,12,255/256/257
+102,1,through,12,255/256/257
 103,0,4-01-Shinra_Army_Wages_a_Full-scale_Attack.ogg,0,188/189/190/191
 104,0,4-01-Shinra_Army_Wages_a_Full-scale_Attack.ogg,0,188/189/190/191
 105,0,1-09-Shinra_Company.ogg,0,188/189/190/191
@@ -708,7 +708,7 @@ id,type,bgm,battle_back,monster_party_id
 706,1,2-20-Cait_Sith's_Theme.ogg,0,188/189/190/191
 707,0,1-04-Anxious_Heart.ogg,4,249/250/251/252/254
 708,1,through,0,188/189/190/191
-709,0,nothing,0,188/189/190/191
+709,1,through,12,255/256/257
 710,0,nothing,0,188/189/190/191
 711,0,nothing,0,188/189/190/191
 712,0,nothing,0,188/189/190/191

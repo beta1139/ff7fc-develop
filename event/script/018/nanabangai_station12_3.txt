@@ -1,6 +1,6 @@
 set_eternal_event
 wait_same_pos
-warp 18 9 11 right
+warp 18 8 11 right
 set_flag 1 0
 if_flag 12 1
 play_map_bgm 98

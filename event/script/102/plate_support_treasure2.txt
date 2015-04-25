@@ -1,0 +1,18 @@
+wait_target_talk 10234
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+play_se pick_up.wav
+msg3 -1 こんなところに ラクロナグが！
+add_item 1096
+sleep 8
+play_se_loop crevice.ogg
+wait_key_push_edge a
+erase_msg3
+chg_npc_img 10234 17
+set_npc_pos 10234 102 0 0
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right

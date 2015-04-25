@@ -1,0 +1,37 @@
+set_eternal_event
+wait_target_talk 1907
+reset_talk_flag 1907
+chg_type 1907 npc_event
+chg_type 1909 npc_event
+chg_speed 1907 normal
+chg_speed 1909 normal
+step_npc 1907 2
+set_talk_npc 1907
+msg 「あ　あの……\n　これが　ぼくのしごとだから…\n　ギリギリまで　ここにいないとならないんだ
+reset_talk_npc
+if_char_dir up
+set_slide_char_flag
+create npc_event 1920 19 16 19 0 0 2 none
+draw_char off
+move_char up 1
+sleep 16
+fi
+sleep 16
+step_npc 1909 2
+set_talk_npc 1909
+msg 「うん…\n　せきにんかんの　つよい　あなた　すきよ\n　わたし　そばについてるわ
+reset_talk_npc
+if_char_dir up
+move_char down 1
+fi
+sleep 16
+if_char_dir up
+chg_char_dir up
+draw_char on
+kill 1920
+reset_slide_char_flag
+fi
+chg_speed 1907 not_move
+chg_speed 1909 not_move
+chg_type 1907 npc2
+chg_type 1909 npc2

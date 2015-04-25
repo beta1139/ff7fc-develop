@@ -1,0 +1,10 @@
+set_eternal_event
+wait_same_pos
+if_flag 14 0
+msg ティファ\n「クラウド！\n　とめかたが　わからないの\n　やってみて！
+fi
+if_flag 14 1
+msg ティファ\n「うえのプレートが　おちてきたら\n　ひとたまりもないわ\n　いそがなくちゃ！
+fi
+move_char up 1
+sleep 16

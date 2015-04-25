@@ -1,0 +1,284 @@
+fadeout
+create map_obj 6950 69 15 11 32 0 0 
+create map_obj 6951 69 16 11 32 0 0 
+create map_obj 6952 69 16 10 32 0 0 
+create map_obj 6953 69 15 10 32 0 0 
+create map_obj 6954 69 15 9 32 0 0 
+create map_obj 6955 69 16 9 32 0 0 
+chg_event_move_char_speed fast
+create npc_event 6920 69 16 6 1 1 3 none
+create npc_event 6921 69 16 6 0 1 3 none
+create npc_event 6922 69 16 6 2 1 3 none
+create npc_event 6980 69 16 9 128 0 3 none
+create npc_event 6981 69 16 8 128 1 3 none
+create npc_event 6982 69 16 7 128 1 3 none
+create npc_event 6983 69 16 6 128 1 3 none
+create npc_event 6984 69 16 5 128 1 3 none
+create npc_event 6985 69 16 4 128 1 3 none
+chg_npc_y_offset 6920 -8
+chg_npc_y_offset 6922 4
+slide_npc 6920 down 2
+slide_npc 6921 down 2
+slide_npc 6922 down 2
+sleep 8
+kill_through_range 1700 1999
+sleep 8
+warp 69 15 13 up
+sleep 8
+erase_image 021
+fadein
+play_se falling.ogg
+slide_npc 6920 down 6
+slide_npc 6921 down 6
+slide_npc 6922 down 6
+slide_walk_npc 6980 down 6
+slide_walk_npc 6981 down 6
+slide_walk_npc 6982 down 6
+slide_walk_npc 6983 down 6
+slide_walk_npc 6984 down 6
+slide_walk_npc 6985 down 6
+move_char down 3
+sleep 8
+create npc_event 6923 69 16 12 121 2 3 none
+slide_walk_npc 6923 down 5
+sleep 8
+chg_npc_dir 6921 left
+sleep 8
+move_char left 1
+create npc_event 6986 69 16 6 128 1 3 none
+slide_walk_npc 6986 down 3
+sleep 8
+move_char right 1
+chg_npc_dir 6921 down
+create npc_event 6987 69 16 6 128 1 3 none
+slide_walk_npc 6987 down 2
+create event_generator 6999 69 0 0 17 0 0 @069/plate_support_end_rock.txt
+sleep 8
+move_char left 1
+create npc_event 6988 69 16 6 128 1 3 none
+slide_walk_npc 6988 down 1
+sleep 8
+move_char right 1
+slide_walk_npc 6980 up 1
+slide_walk_npc 6981 up 1
+slide_walk_npc 6982 up 1
+slide_walk_npc 6983 up 1
+slide_walk_npc 6984 up 1
+slide_walk_npc 6985 up 1
+slide_walk_npc 6986 up 1
+slide_walk_npc 6987 up 1
+slide_walk_npc 6988 up 1
+jump_npc_target_pos 6920 15 24
+jump_npc_target_pos 6921 17 24
+jump_npc_target_pos 6922 13 24
+slide_walk_npc 6923 up 1
+sleep 8
+move_char left 1
+chg_speed 6980 not_move
+chg_speed 6981 not_move
+chg_speed 6982 not_move
+chg_speed 6983 not_move
+chg_speed 6984 not_move
+chg_speed 6985 not_move
+chg_speed 6986 not_move
+chg_speed 6987 not_move
+chg_speed 6988 not_move
+chg_speed 6923 not_move
+sleep 8
+move_char right 1
+sleep 8
+move_char left 1
+sleep 8
+chg_npc_img 6924 154
+chg_npc_img 6925 154
+chg_npc_img 6926 154
+chg_npc_img 6927 154
+chg_npc_img 6928 154
+chg_npc_img 6929 154
+chg_npc_img 6930 154
+chg_npc_img 6931 154
+play_event_bgm Ex-08-nothing.ogg
+loop 2
+play_se_loop shock.ogg
+create explode 6960 69 15 9 0 0 0 none
+set_screen_effect add 255 255 255 0
+move_char right 1
+chg_npc_dir 6920 down
+chg_npc_dir 6921 left
+chg_npc_dir 6922 right
+sleep 4
+inc_screen_effect_val 20
+chg_npc_dir 6920 right
+chg_npc_dir 6921 up
+chg_npc_dir 6922 up
+sleep 4
+create explode 6961 69 16 11 0 0 0 none
+dec_screen_effect_val 20
+move_char left 1
+chg_npc_dir 6920 up
+chg_npc_dir 6921 right
+chg_npc_dir 6922 left
+sleep 4
+set_gray_scale
+chg_npc_dir 6920 left
+chg_npc_dir 6921 down
+chg_npc_dir 6922 down
+sleep 4
+play_se thunder3.ogg
+reset_gray_scale
+create explode 6962 69 15 11 0 0 0 none
+move_char right 1
+chg_npc_dir 6920 down
+chg_npc_dir 6921 left
+chg_npc_dir 6922 right
+sleep 4
+inc_screen_effect_val 20
+chg_npc_dir 6920 right
+chg_npc_dir 6921 up
+chg_npc_dir 6922 up
+sleep 4
+create explode 6963 69 16 10 00 0 0 none
+dec_screen_effect_val 20
+move_char left 1
+chg_npc_dir 6920 up
+chg_npc_dir 6921 right
+chg_npc_dir 6922 left
+sleep 4
+chg_npc_dir 6920 left
+chg_npc_dir 6921 down
+chg_npc_dir 6922 down
+sleep 4
+pool
+set_screen_effect add 255 0 0 0
+loop 2
+create explode 6960 69 15 9 0 0 0 none
+inc_screen_effect_val 10
+move_char right 1
+chg_npc_dir 6920 down
+chg_npc_dir 6921 left
+chg_npc_dir 6922 right
+sleep 4
+inc_screen_effect_val 10
+chg_npc_dir 6920 right
+chg_npc_dir 6921 up
+chg_npc_dir 6922 up
+sleep 4
+move_char left 1
+create explode 6961 69 16 11 0 0 0 none
+inc_screen_effect_val 10
+chg_npc_dir 6920 up
+chg_npc_dir 6921 right
+chg_npc_dir 6922 left
+sleep 4
+inc_screen_effect_val 10
+chg_npc_dir 6920 left
+chg_npc_dir 6921 down
+chg_npc_dir 6922 down
+sleep 4
+move_char right 1
+create explode 6962 69 15 11 0 0 0 none
+play_se thunder3.ogg
+inc_screen_effect_val 10
+chg_npc_dir 6920 down
+chg_npc_dir 6921 left
+chg_npc_dir 6922 right
+sleep 4
+inc_screen_effect_val 10
+chg_npc_dir 6920 right
+chg_npc_dir 6921 up
+chg_npc_dir 6922 up
+sleep 4
+move_char left 1
+create explode 6963 69 16 10 00 0 0 none
+inc_screen_effect_val 10
+chg_npc_dir 6920 up
+chg_npc_dir 6921 right
+chg_npc_dir 6922 left
+sleep 4
+inc_screen_effect_val 10
+chg_npc_dir 6920 left
+chg_npc_dir 6921 down
+chg_npc_dir 6922 down
+sleep 4
+play_se thunder3.ogg
+pool
+set_screen_effect add 255 0 0 90
+loop 2
+move_char right 1
+create explode 6960 69 15 9 0 0 0 none
+sleep 4
+inc_screen_effect_val 20
+sleep 4
+move_char left 1
+dec_screen_effect_val 20
+create explode 6961 69 16 11 0 0 0 none
+sleep 4
+inc_screen_effect_val 20
+sleep 4
+move_char right 1
+dec_screen_effect_val 20
+create explode 6962 69 15 11 0 0 0 none
+sleep 4
+inc_screen_effect_val 20
+sleep 4
+move_char left 1
+dec_screen_effect_val 20
+create explode 6963 69 16 10 00 0 0 none
+sleep 4
+inc_screen_effect_val 20
+sleep 4
+dec_screen_effect_val 20
+pool
+set_screen_effect sub 255 255 255 0
+loop 2
+move_char right 1
+inc_screen_effect_val 25
+sleep 8
+move_char left 1
+inc_screen_effect_val 25
+sleep 8
+pool
+sleep 32
+kill_through 6999
+sleep 16
+kill_through_range 14000 14099
+play_event_bgm Ex-10-Collapse.ogg
+play_se shock.ogg
+sleep 22
+play_se radio_noise.ogg
+sleep 40
+play_se shock.ogg
+kill_through_range 10000 10299
+kill_through_range 70800 70999
+sleep 48
+create event_generator 14000 140 13 15 17 0 0 @140/plate_support_end4.txt
+play_se radio_noise.ogg
+sleep 32
+play_se push_button.ogg
+sleep 16
+play_se shock.ogg
+sleep 48
+play_se radio_noise.ogg
+sleep 32
+play_se push_button.ogg
+sleep 8
+play_se push_button.ogg
+sleep 8
+play_se shock.ogg
+sleep 56
+play_se radio_noise.ogg
+sleep 40
+play_se shock.ogg
+sleep 16
+play_se push_button.ogg
+sleep 40
+play_se shock.ogg
+sleep 62
+play_se shock.ogg
+sleep 48
+play_se shock.ogg
+sleep 254
+stop_se
+play_event_bgm Ex-08-nothing.ogg
+sleep 16
+warp 140 13 15 up

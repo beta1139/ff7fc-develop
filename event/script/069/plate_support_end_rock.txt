@@ -1,0 +1,322 @@
+sleep 16
+create npc_event 6924 69 16 17 17 0 3 none
+create npc_event 6925 69 16 17 17 1 3 none
+create npc_event 6926 69 16 17 17 2 3 none
+create npc_event 6927 69 16 17 17 3 3 none
+create npc_event 6928 69 16 16 17 0 3 none
+create npc_event 6929 69 16 16 17 1 3 none
+create npc_event 6930 69 16 16 17 2 3 none
+create npc_event 6931 69 16 16 17 3 3 none
+jump_npc_target_pos 6924 19 24
+jump_npc_target_pos 6925 14 24
+jump_npc_target_pos 6926 22 24
+jump_npc_target_pos 6927 10 24
+jump_npc_target_pos 6928 17 23
+jump_npc_target_pos 6929 12 23
+jump_npc_target_pos 6930 20 23
+jump_npc_target_pos 6931 9 23
+sleep 32
+chg_npc_img 6924 154
+chg_npc_img 6925 154
+chg_npc_img 6926 154
+chg_npc_img 6927 154
+chg_npc_img 6928 154
+chg_npc_img 6929 154
+chg_npc_img 6930 154
+chg_npc_img 6931 154
+sleep 8
+chg_npc_dir 6924 right
+chg_npc_dir 6925 left
+chg_npc_dir 6926 up
+chg_npc_dir 6927 down
+chg_npc_dir 6928 right
+chg_npc_dir 6929 left
+chg_npc_dir 6930 up
+chg_npc_dir 6931 down
+sleep 8
+create npc_event 6932 69 16 17 17 0 3 none
+create npc_event 6933 69 16 17 17 1 3 none
+create npc_event 6934 69 16 17 17 2 3 none
+create npc_event 6935 69 16 17 17 3 3 none
+create npc_event 6936 69 16 16 17 0 3 none
+create npc_event 6937 69 16 16 17 1 3 none
+create npc_event 6938 69 16 16 17 2 3 none
+create npc_event 6939 69 16 16 17 3 3 none
+jump_npc_target_pos 6932 19 24
+jump_npc_target_pos 6933 14 24
+jump_npc_target_pos 6934 22 24
+jump_npc_target_pos 6935 10 24
+jump_npc_target_pos 6936 17 23
+jump_npc_target_pos 6937 12 23
+jump_npc_target_pos 6938 20 23
+jump_npc_target_pos 6939 9 23
+chg_npc_dir 6924 down
+chg_npc_dir 6925 up
+chg_npc_dir 6926 right
+chg_npc_dir 6927 left
+chg_npc_dir 6928 down
+chg_npc_dir 6929 up
+chg_npc_dir 6930 right
+chg_npc_dir 6931 left
+sleep 8
+create map_obj 6970 69 14 17 58 0 0 
+chg_npc_dir 6924 left
+chg_npc_dir 6925 right
+chg_npc_dir 6926 down
+chg_npc_dir 6927 up
+chg_npc_dir 6928 left
+chg_npc_dir 6929 right
+chg_npc_dir 6930 down
+chg_npc_dir 6931 up
+sleep 8
+create map_obj 6910 69 14 9 32 0 0 
+chg_npc_dir 6924 up
+chg_npc_dir 6925 down
+chg_npc_dir 6926 left
+chg_npc_dir 6927 right
+chg_npc_dir 6928 up
+chg_npc_dir 6929 down
+chg_npc_dir 6930 left
+chg_npc_dir 6931 right
+sleep 8
+create map_obj 6971 69 12 21 58 0 0 
+chg_npc_dir 6924 right
+chg_npc_dir 6925 left
+chg_npc_dir 6926 up
+chg_npc_dir 6927 down
+chg_npc_dir 6928 right
+chg_npc_dir 6929 left
+chg_npc_dir 6930 up
+chg_npc_dir 6931 down
+sleep 8
+create map_obj 6911 69 17 9 32 0 0 
+chg_npc_img 6932 154
+chg_npc_img 6933 154
+chg_npc_img 6934 154
+chg_npc_img 6935 154
+chg_npc_img 6936 154
+chg_npc_img 6937 154
+chg_npc_img 6938 154
+chg_npc_img 6939 154
+create map_obj 6972 69 18 22 58 0 0 
+chg_npc_dir 6924 down
+chg_npc_dir 6925 up
+chg_npc_dir 6926 right
+chg_npc_dir 6927 left
+chg_npc_dir 6928 down
+chg_npc_dir 6929 up
+chg_npc_dir 6930 right
+chg_npc_dir 6931 left
+chg_npc_dir 6932 up
+chg_npc_dir 6933 down
+chg_npc_dir 6934 left
+chg_npc_dir 6935 right
+chg_npc_dir 6936 up
+chg_npc_dir 6937 down
+chg_npc_dir 6938 left
+chg_npc_dir 6939 right
+sleep 8
+create map_obj 6912 69 18 9 32 0 0 
+chg_npc_dir 6924 left
+chg_npc_dir 6925 right
+chg_npc_dir 6926 down
+chg_npc_dir 6927 up
+chg_npc_dir 6928 left
+chg_npc_dir 6929 right
+chg_npc_dir 6930 down
+chg_npc_dir 6931 up
+chg_npc_dir 6932 right
+chg_npc_dir 6933 left
+chg_npc_dir 6934 up
+chg_npc_dir 6935 down
+chg_npc_dir 6936 right
+chg_npc_dir 6937 left
+chg_npc_dir 6938 up
+chg_npc_dir 6939 down
+sleep 8
+create map_obj 6973 69 19 14 58 0 0 
+chg_npc_dir 6924 up
+chg_npc_dir 6925 down
+chg_npc_dir 6926 left
+chg_npc_dir 6927 right
+chg_npc_dir 6928 up
+chg_npc_dir 6929 down
+chg_npc_dir 6930 left
+chg_npc_dir 6931 right
+chg_npc_dir 6932 down
+chg_npc_dir 6933 up
+chg_npc_dir 6934 right
+chg_npc_dir 6935 left
+chg_npc_dir 6936 down
+chg_npc_dir 6937 up
+chg_npc_dir 6938 right
+chg_npc_dir 6939 left
+sleep 8
+chg_npc_dir 6924 right
+chg_npc_dir 6925 left
+chg_npc_dir 6926 up
+chg_npc_dir 6927 down
+chg_npc_dir 6928 right
+chg_npc_dir 6929 left
+chg_npc_dir 6930 up
+chg_npc_dir 6931 down
+chg_npc_dir 6932 left
+chg_npc_dir 6933 right
+chg_npc_dir 6934 down
+chg_npc_dir 6935 up
+chg_npc_dir 6936 left
+chg_npc_dir 6937 right
+chg_npc_dir 6938 down
+chg_npc_dir 6939 up
+sleep 8
+create map_obj 6974 69 15 14 58 0 0 
+chg_npc_dir 6924 down
+chg_npc_dir 6925 up
+chg_npc_dir 6926 right
+chg_npc_dir 6927 left
+chg_npc_dir 6928 down
+chg_npc_dir 6929 up
+chg_npc_dir 6930 right
+chg_npc_dir 6931 left
+chg_npc_dir 6932 up
+chg_npc_dir 6933 down
+chg_npc_dir 6934 left
+chg_npc_dir 6935 right
+chg_npc_dir 6936 up
+chg_npc_dir 6937 down
+chg_npc_dir 6938 left
+chg_npc_dir 6939 right
+sleep 8
+create map_obj 6913 69 11 13 32 0 0 
+chg_npc_dir 6924 left
+chg_npc_dir 6925 right
+chg_npc_dir 6926 down
+chg_npc_dir 6927 up
+chg_npc_dir 6928 left
+chg_npc_dir 6929 right
+chg_npc_dir 6930 down
+chg_npc_dir 6931 up
+chg_npc_dir 6932 right
+chg_npc_dir 6933 left
+chg_npc_dir 6934 up
+chg_npc_dir 6935 down
+chg_npc_dir 6936 right
+chg_npc_dir 6937 left
+chg_npc_dir 6938 up
+chg_npc_dir 6939 down
+create npc_event 6940 69 15 17 17 0 3 none
+create npc_event 6941 69 15 17 17 1 3 none
+create npc_event 6942 69 15 17 17 2 3 none
+create npc_event 6943 69 15 17 17 3 3 none
+create npc_event 6944 69 15 16 17 0 3 none
+create npc_event 6945 69 15 16 17 1 3 none
+create npc_event 6946 69 15 16 17 2 3 none
+create npc_event 6947 69 15 16 17 3 3 none
+jump_npc_target_pos 6940 19 24
+jump_npc_target_pos 6941 14 24
+jump_npc_target_pos 6942 22 24
+jump_npc_target_pos 6943 10 24
+jump_npc_target_pos 6944 17 23
+jump_npc_target_pos 6945 12 23
+jump_npc_target_pos 6946 20 23
+jump_npc_target_pos 6947 9 23
+sleep 8
+chg_npc_dir 6924 up
+chg_npc_dir 6925 down
+chg_npc_dir 6926 left
+chg_npc_dir 6927 right
+chg_npc_dir 6928 up
+chg_npc_dir 6929 down
+chg_npc_dir 6930 left
+chg_npc_dir 6931 right
+chg_npc_dir 6932 down
+chg_npc_dir 6933 up
+chg_npc_dir 6934 right
+chg_npc_dir 6935 left
+chg_npc_dir 6936 down
+chg_npc_dir 6937 up
+chg_npc_dir 6938 right
+chg_npc_dir 6939 left
+sleep 8
+chg_npc_dir 6924 right
+chg_npc_dir 6925 left
+chg_npc_dir 6926 up
+chg_npc_dir 6927 down
+chg_npc_dir 6928 right
+chg_npc_dir 6929 left
+chg_npc_dir 6930 up
+chg_npc_dir 6931 down
+chg_npc_dir 6932 left
+chg_npc_dir 6933 right
+chg_npc_dir 6934 down
+chg_npc_dir 6935 up
+chg_npc_dir 6936 left
+chg_npc_dir 6937 right
+chg_npc_dir 6938 down
+chg_npc_dir 6939 up
+sleep 8
+create map_obj 6976 69 17 15 58 0 0 
+sleep 8
+chg_npc_img 6940 154
+chg_npc_img 6941 154
+chg_npc_img 6942 154
+chg_npc_img 6943 154
+chg_npc_img 6944 154
+chg_npc_img 6945 154
+chg_npc_img 6946 154
+chg_npc_img 6947 154
+create map_obj 6914 69 19 15 32 0 0 
+sleep 8
+chg_npc_dir 6940 right
+chg_npc_dir 6940 left
+chg_npc_dir 6942 up
+chg_npc_dir 6943 down
+chg_npc_dir 6944 right
+chg_npc_dir 6945 left
+chg_npc_dir 6946 up
+chg_npc_dir 6947 down
+sleep 8
+chg_npc_dir 6940 down
+chg_npc_dir 6940 up
+chg_npc_dir 6942 right
+chg_npc_dir 6943 left
+chg_npc_dir 6944 down
+chg_npc_dir 6945 up
+chg_npc_dir 6946 right
+chg_npc_dir 6947 left
+sleep 8
+create map_obj 6975 69 13 19 58 0 0
+kill_through_range 6924 6931
+kill_through_range 6932 6939
+sleep 8
+chg_npc_dir 6940 left
+chg_npc_dir 6940 right
+chg_npc_dir 6942 down
+chg_npc_dir 6943 up
+chg_npc_dir 6944 left
+chg_npc_dir 6945 right
+chg_npc_dir 6946 down
+chg_npc_dir 6947 up
+sleep 8
+create map_obj 6977 69 9 22 58 0 0 
+chg_npc_dir 6940 up
+chg_npc_dir 6940 down
+chg_npc_dir 6942 left
+chg_npc_dir 6943 right
+chg_npc_dir 6944 up
+chg_npc_dir 6945 down
+chg_npc_dir 6946 left
+chg_npc_dir 6947 right
+sleep 8
+create map_obj 6915 69 10 13 32 0 0 
+chg_npc_dir 6940 right
+chg_npc_dir 6940 left
+chg_npc_dir 6942 up
+chg_npc_dir 6943 down
+chg_npc_dir 6944 right
+chg_npc_dir 6945 left
+chg_npc_dir 6946 up
+chg_npc_dir 6947 down
+loop_inf
+sleep 160
+pool

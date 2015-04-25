@@ -1,0 +1,20 @@
+wait_same_pos
+kill_through_range 10211 10217
+end_fake_countdown
+end_countdown
+erase_msg3
+kill_through 10209
+kill_through 10219
+kill_through 10269
+chg_char_dir right
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+set_key_unvalid select
+chg_type 10255 npc_event
+chg_speed 10255 not_move
+chg_npc_dir 10255 right
+sleep 16
+set_flag 14 1

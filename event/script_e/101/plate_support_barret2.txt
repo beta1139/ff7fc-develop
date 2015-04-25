@@ -1,0 +1,81 @@
+chg_char_state_event
+sleep 32
+chg_npc_img 10153 1
+chg_npc_dir 10153 up
+move_char up 1
+sleep 4
+chg_npc_dir 10153 right
+sleep 4
+chg_npc_dir 10153 down
+sleep 4
+chg_npc_dir 10153 left
+sleep 4
+chg_npc_dir 10153 right
+chg_npc_img 10153 145
+step_npc 10153 8
+jump_npc 10155 same 2
+sleep 32
+chg_speed 10155 fast
+step_npc 10155 4
+sleep 32
+chg_speed 10155 normal
+create npc_event 10154 101 15 34 0 0 2 none
+draw_char off
+move_char up 2
+move_npc 10154 up 1
+move_npc 10155 up 1
+chg_npc_img 10153 1
+chg_npc_dir 10153 down
+kill_through 10108
+sleep 16
+jump_npc 10153 same 2
+sleep 16
+reset_screen_effect
+sleep 16
+step_npc 10153 4
+sleep 16
+create event_generator 10115 101 1 1 17 0 0 @101/plate_support_barret3.txt
+set_talk_npc 10153
+msg バレット\n「ティファ！　クラウド！\n　きてくれたのか！\n\n　きをつけろ！　やつら\n　ヘリでおそってきやがる
+reset_talk_npc
+chg_npc_img 10153 1
+chg_npc_dir 10153 left
+move_npc 10154 up 2
+move_npc 10155 left 1
+sleep 16
+chg_npc_dir 10153 down
+move_char up 1
+move_npc 10155 up 2
+sleep 16
+move_npc 10154 left 1
+move_char left 1
+chg_npc_dir 10153 right
+chg_speed 10153 normal
+step_npc 10153 2
+sleep 32
+chg_npc_dir 10155 right
+sleep 12
+chg_npc_dir 10155 left
+sleep 12
+chg_npc_dir 10155 up
+sleep 8
+step_npc 10155 3
+msg ティファ\n「ほんかくてきに　くるまえに\n　そうびを　ととのいておいたほうがいいわ！
+add_party_mem 1
+sleep 16
+chg_npc_dir 10153 left
+chg_npc_dir 10154 down
+chg_npc_dir 10155 right
+chg_char_dir down
+step_npc 10153 1
+step_npc 10154 1
+sleep 16
+msg3 -1 　[スタートボタン]で　メニューをひらく\n　[Aボタン]で　しゅうりょう
+create npc2 10156 101 15 31 17 0 4 
+create npc2 10157 101 14 32 17 0 4 
+create npc2 10158 101 13 31 17 0 4 
+set_slide_char_flag
+set_key_unvalid select
+create event_generator 10114 101 14 31 17 0 0 @101/plate_support_menu.txt
+draw_char on
+kill 10154

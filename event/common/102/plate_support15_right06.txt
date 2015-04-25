@@ -1,0 +1,5 @@
+chg_image_pos_offset 000 -2 0 0 0 0 0
+chg_image_pos_offset 001 -2 0 0 0 0 0
+chg_image_pos_offset 002 -2 0 0 0 0 0
+chg_image_pos_offset 008 -2 0 224 0 0 0
+chg_image_pos_offset 004 -2 0 224 0 0 0

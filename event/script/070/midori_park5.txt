@@ -1,0 +1,291 @@
+wait_same_pos
+reset_screen_effect
+sleep 32
+chg_speed 7020 slow
+step_npc 7020 1
+set_talk_npc 7020
+msg バレット\n「マリン……
+reset_talk_npc
+sleep 64
+chg_speed 7021 slow
+step_npc 7021 1
+msg ティファ\n「………\n　ねぇ　バレット……
+sleep 48
+chg_speed 7021 normal
+chg_npc_dir 7021 up
+step_npc 7021 3
+msg ティファ\n「マリンは　マリンは\n　だいじょうぶだと　おもうの
+sleep 16
+jump_npc 7020 same 1
+set_talk_npc 7020
+msg バレット\n「……えっ？
+reset_talk_npc
+sleep 24
+jump_npc 7021 same 1
+sleep 16
+step_npc 7021 4
+msg ティファ\n「エアリスがいってたわ\n　『あのこ　だいじょうぶだから』\n　って　マリンのことよ　きっと
+jump_npc 7020 same 2
+sleep 32
+chg_speed 7020 fast
+step_npc 7020 4
+set_talk_npc 7020
+msg バレット\n「ほ　ほんとうか！！
+reset_talk_npc
+sleep 32
+chg_speed 7021 slow
+chg_npc_dir 7021 left
+sleep 32
+step_npc 7021 1
+msg ティファ\n「でも……
+sleep 48
+chg_npc_dir 7020 left
+sleep 32
+chg_speed 7020 slow
+step_npc 7020 1
+set_talk_npc 7020
+msg バレット\n「ビッグス……\n　ウェッジ……\n　ジェシー……
+reset_talk_npc
+sleep 32
+chg_speed 7022 slow
+chg_npc_dir 7022 left
+sleep 8
+step_npc 7022 1
+msg 『……あの3にんは　はしらのなかに　いた
+sleep 48
+step_npc 7020 1
+set_talk_npc 7020
+msg バレット\n「わかってる……
+reset_talk_npc
+sleep 48
+chg_npc_dir 7020 down
+jump_npc 7020 same 2
+sleep 8
+msg3 -1 バレット\n「でもよ　でもよ！\n　いっしょに　たたかってきた　なかまだ！
+sleep 24
+chg_speed 7020 fast
+step_npc 7020 4
+wait_key_push_edge a
+erase_msg3
+chg_npc_dir 7022 up
+sleep 32
+chg_npc_dir 7020 up
+sleep 32
+chg_speed 7020 slow
+step_npc 7020 2
+set_talk_npc 7020
+msg バレット\n「しんじまったなんて……\n　おもいたくねえ！
+reset_talk_npc
+sleep 32
+chg_npc_dir 7021 up
+sleep 40
+step_npc 7021 1
+msg ティファ\n「……7ばんがいの　ひとたちも
+sleep 32
+chg_npc_dir 7020 right
+step_npc 7020 1
+set_talk_npc 7020
+msg バレット\n「ああ　ヒドイもんだぜ\n\n\n　オレたちを　たおすために まちひとつ\n　つぶしちまうんだからな\n　いったい　なんにん　しんだんだ……
+reset_talk_npc
+sleep 40
+step_npc 7021 3
+msg ティファ\n「……わたしたちのせい？　アバランチがいたから？\n　かんけいない　ひとたちまで……
+sleep 8
+chg_npc_dir 7020 down
+sleep 32
+chg_npc_dir 7020 left
+sleep 6
+chg_npc_dir 7020 right
+sleep 6
+chg_npc_dir 7020 left
+sleep 6
+chg_npc_dir 7020 right
+sleep 12
+chg_npc_dir 7020 down
+sleep 8
+jump_npc 7020 same 1
+sleep 16
+chg_speed 7020 fast
+step_npc 7020 3
+msg バレット\n「ちがう！　ちがうぜ！　ティファ！！\n\n\n　なにもかも　しんらの　やつらが\n　やったことじゃねえか！
+chg_npc_dir 7022 down
+sleep 16
+chg_npc_dir 7020 up
+move_npc 7022 down 2
+sleep 16
+chg_speed 7020 normal
+step_npc 7020 5
+msg バレット\n「じぶんたちの　かねや　けんりょくのために\n ほしのいのちを　すいとる　あくとうども！\n\n　そのしんらを　つぶさないかぎり\n　このほしは　しんじまうんだ！
+sleep 16
+chg_npc_dir 7022 left
+chg_npc_dir 7020 down
+sleep 16
+jump_npc 7020 same 1
+chg_npc_dir 7020 up
+chg_npc_img 7020 95
+msg3 -1 バレット\n「しんらをたおすまで　オレたちのたたかいは\n　おわらねえ！！
+sleep 16
+jump_npc 7020 same 1
+sleep 16
+jump_npc 7020 same 1
+sleep 16
+chg_npc_dir 7020 up
+wait_key_push_edge a
+erase_msg3
+sleep 32
+chg_npc_dir 7021 right
+sleep 24
+chg_npc_img 7020 1
+chg_npc_dir 7020 down
+sleep 16
+step_npc 7021 1
+msg ティファ\n「……わからない
+sleep 16
+jump_npc 7020 same 1
+msg バレット\n「オレがいってること\n　わからねえのか！？
+sleep 32
+chg_npc_dir 7021 up
+sleep 40
+chg_npc_dir 7021 left
+sleep 8
+chg_npc_dir 7021 right
+sleep 8
+chg_npc_dir 7021 left
+sleep 8
+chg_npc_dir 7021 up
+sleep 16
+step_npc 7021 2
+msg ティファ\n「ちがう……\n　わからないのは\n　じぶんの……きもち
+sleep 16
+chg_event_move_char_speed normal
+chg_speed 7020 normal
+move_char down 1
+move_npc 7020 down 1
+sleep 16
+jump_npc 7020 same 1
+sleep 16
+step_npc 7020 2
+msg バレット\n「おまえはどうなんだ？
+sleep 8
+chg_npc_dir 7021 down
+sleep 40
+chg_npc_dir 7022 down
+msg 『……
+draw_fake_countdown off
+start_fake_countdown_sec 3
+sleep 32
+move_npc 7022 down 5
+sleep 32
+jump_npc 7020 same 1
+msg3 -1 バレット\n「おい！
+sleep 8
+wait_key_push_edge a
+erase_msg3
+sleep 8
+wait_fake_countover
+kill 7022
+sleep 8
+step_npc 7020 2
+msg バレット\n「あいつ　どこへ？
+sleep 16
+chg_speed 7020 normal
+jump_npc 7021 same 1
+msg ティファ\n「あっ！　エアリスのこと！
+sleep 24
+chg_npc_dir 7020 right
+sleep 16
+step_npc 7020 2
+msg バレット\n「ああ　あのねえちゃんか\n　なにものなんだ？
+sleep 16
+chg_npc_dir 7021 left
+sleep 16
+chg_speed 7021 normal
+step_npc 7021 2
+msg ティファ\n「……わたしも　よくしらない\n　でも　マリンのことを\n　エアリスにたのんだの
+start_fake_countdown_sec 1
+jump_npc 7020 same 2
+sleep 32
+chg_speed 7020 fast
+step_npc 7020 4
+msg バレット\n「そうだ！　マリン！！
+wait_fake_countover
+chg_speed 7020 normal
+move_npc 7020 down 4
+sleep 80
+chg_npc_dir 7020 up
+sleep 16
+jump_npc 7020 same 1
+msg バレット\n「ティファ\n　もう　あともどりは　できねえんだ
+chg_npc_dir 7020 down
+sleep 16
+chg_speed 7020 fast
+move_npc 7020 down 4
+sleep 32
+kill 7020
+sleep 32
+chg_speed 7021 slow
+move_npc 7021 left 1
+sleep 32
+move_npc 7021 down 2
+sleep 96
+chg_npc_dir 7021 up
+chg_event_move_char_speed slow
+move_char up 4
+sleep 160
+chg_npc_dir 7021 down
+sleep 16
+chg_speed 7021 normal
+move_npc 7021 down 2
+sleep 32
+kill 7021
+move_char down 3
+sleep 96
+set_flag 0 0
+set_screen_effect sub 255 255 255 0
+sleep 2
+inc_screen_effect_val 12
+sleep 2
+inc_screen_effect_val 13
+sleep 2
+inc_screen_effect_val 12
+sleep 2
+inc_screen_effect_val 13
+sleep 2
+inc_screen_effect_val 12
+sleep 2
+inc_screen_effect_val 13
+sleep 2
+inc_screen_effect_val 12
+sleep 2
+inc_screen_effect_val 13
+kill_through_range 6800 6801
+set_flag 9 3
+sleep 32
+play_se warp_out.ogg
+warp 68 12 9 down
+draw_char on
+sleep 32
+play_bgm
+sleep 32
+loop 4
+dec_screen_effect_val 25
+sleep 8
+pool
+reset_screen_effect
+create event_generator 6801 68 12 8 17 0 0 @068/rokubangai2.txt
+create npc2 6820 68 12 8 17 0 0 
+chg_event_move_char_speed normal
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_key_valid select
+set_key_valid start
+create event_generator 6803 68 8 11 17 0 0 @068/rokubangai4_1.txt
+create event_generator 6804 68 9 11 17 0 0 @068/rokubangai4_2.txt
+if_party_mem 1
+del_party_mem 1
+fi
+if_party_mem 2
+del_party_mem 2
+fi

@@ -12,9 +12,21 @@ warp_ff3_2 97 8 13 2 up
 set_slide_walk_char_flag
 add_party_mem 2
 add_party_mem 3
+add_item 2101
+add_item 2101
+add_item 3002
+add_item 3002
+add_item 3002
 add_item 4000
 add_item 4100
 add_item 4003
+add_item 6000
+add_item 6003
+add_item 6009
+add_item 6012
+add_item 6013
+add_item 6016
+add_gil 2500
 set_flag 0 0
 set_flag 1 0
 set_flag 9 2
@@ -36,6 +48,214 @@ set_power 3 17
 recover_active_chara
 fi
 if_flag 3 1
+kill_through_range 1700 1799
+kill_through_range 1800 1809
+kill_through_range 1900 1905
+kill_through_range 1910 1949
+kill_through_range 1960 1999
+kill_through_range 9996 9999
+add_item 2101
+add_item 2101
+add_item 3002
+add_item 3002
+add_item 3002
+add_item 4000
+add_item 4100
+add_item 4003
+add_item 6000
+add_item 6003
+add_item 6009
+add_item 6012
+add_item 6013
+add_item 6016
+add_gil 2500
+set_max_hp 0 408
+set_max_hp 2 359
+set_max_hp 3 285
+set_max_mp 0 83
+set_max_mp 2 61
+set_max_mp 3 71
+set_power 0 27
+set_power 2 20
+set_power 3 17
+recover_active_chara
+set_flag 1 0
+set_flag 9 2
+sleep 8
+create npc 1706 17 14 9 94 0 4 `Rumor has it that the\n Plate is going to fall.\n But I find it difficult\n to leave this station==\n Just what is going on==?\n I hope it is not true.
+chg_type 1906 npc_event
+chg_type 1907 npc_event
+chg_type 1908 npc_event
+chg_speed 1908 normal
+set_npc_pos 1906 19 15 16
+set_npc_pos 1907 19 16 15
+create npc_event 1909 19 15 15 68 0 0 none
+create npc_event 1940 19 14 15 66 0 0 「オロオロ…\n　はしら　こわれちゃうんですか\n\n\n　こわいんですけど　あんたたちのためにね
+if_flag 4 0
+warp_ff3_2 17 8 12 2 left
+set_flag 0 0
+add_party_mem 2
+add_party_mem 3
+play_event_bgm 1-04-Anxious_Heart.ogg
+create event_generator 1910 19 21 21 17 0 0 @019/plate_support01.txt
+create event_generator 1911 19 21 22 17 0 0 @019/plate_support01.txt
+create event_generator 1912 19 21 23 17 0 0 @019/plate_support01.txt
+create event_generator 10102 101 15 80 17 0 0 @101/plate_support_gunshot1.txt
+create event_generator 10103 101 15 80 17 0 0 @101/plate_support03.txt
+create npc_event 10150 101 16 84 144 0 3 none
+create npc_event 10153 101 16 35 1 0 3 none
+create npc_event 10120 101 18 75 141 1 3 none
+create npc_event 10122 101 13 76 141 1 3 none
+create npc_event 10123 101 17 70 140 2 3 none
+create treasure_box3 10124 101 18 66 2 0 0 1000
+create npc_event 10126 101 20 63 140 2 3 none
+create npc_event 10127 101 13 61 140 3 3 none
+create npc_event 10156 101 10 49 123 1 2 none
+create npc_event 10157 101 11 49 123 0 2 none
+create npc_event 10158 101 25 44 17 1 3 none
+create npc_event 10159 101 26 44 17 0 3 none
+set_layer 10156 front
+set_layer 10157 front
+fi
+if_flag 4 1
+warp_ff3_2 101 18 96 2 up
+play_event_bgm 1-10-Fighting.ogg
+kill_through_range 1951 1953
+sleep 8
+set_npc_pos 1906 19 16 15
+set_npc_pos 1907 19 16 18
+set_npc_pos 1908 19 12 15
+set_npc_pos 1909 19 16 17
+set_npc_pos 1940 19 12 18
+chg_npc_dir 1906 down
+chg_npc_dir 1907 up
+chg_npc_dir 1908 up
+chg_npc_dir 1909 down
+chg_npc_dir 1940 up
+chg_speed 1906 not_move
+chg_speed 1907 not_move
+chg_speed 1908 not_move
+chg_speed 1909 not_move
+chg_speed 1940 not_move
+set_npc_pos 1950 19 19 11
+create event_generator 1951 19 19 11 17 0 0 @save_msg.txt
+add_party_mem 2
+sleep 8
+reset_screen_effect
+set_flag 14 0
+set_flag 15 0
+set_flag 16 0
+set_flag 17 0
+set_flag 22 0
+set_flag 0 4
+kill_through_range 10120 10139
+kill_through_range 10150 10169
+kill_through_range 10104 10105
+create map_obj 1952 19 15 14 56 0 0 0 
+create npc2 1953 19 15 14 17 0 0 
+create npc3 10150 101 19 84 96 1 4 ビッグス\n「クラウド……\n　やっぱり……ほしのいのちなんて……\n　どうなろうと……きょうみないか？\n#2\n　　わるいけど　きょうみない\n　　それよりケガが……\n\n\n[[]][[]]
+set_layer 10150 front
+create npc3 10152 101 1 1 96 0 4 ジェシー\n「あ……クラウド……\n　さいごに……はなせてよかった……\n\n#2\n　　さいごだなんて……\n　　そうか……\n\n\n[[]][[]]
+set_layer 10152 front
+create npc_event 10120 101 18 80 140 1 4 none
+create npc_event 10122 101 20 77 139 0 4 none
+create npc_event 10123 101 17 70 140 1 4 none
+create npc_event 10124 101 18 66 140 1 4 none
+create npc_event 10126 101 20 63 139 0 4 none
+create npc_event 10127 101 13 48 140 1 4 none
+create npc_event 10131 101 12 56 140 1 4 none
+create npc_event 10137 101 19 44 139 0 4 none
+create npc_event 10138 101 14 42 140 1 4 none
+create npc_event 10139 101 12 34 140 1 4 none
+create npc_event 10153 101 12 31 145 3 3 none
+create event_generator 10106 101 0 0 17 0 0 @101/plate_support_biggs.txt
+create event_generator 10107 101 0 0 17 0 0 @101/plate_support_jessie.txt
+create event_generator 10109 101 14 38 17 0 0 @101/plate_support_barret1_1.txt
+create event_generator 10110 101 15 38 17 0 0 @101/plate_support_barret1_2.txt
+create event_generator 10111 101 16 38 17 0 0 @101/plate_support_barret1_3.txt
+create event_generator 10112 101 17 38 17 0 0 @101/plate_support_barret1_4.txt
+create event_generator 10160 101 18 80 17 0 0 @101/plate_support_add.txt
+create event_generator 10164 101 20 77 17 0 0 @101/plate_support_add.txt
+create event_generator 10167 101 17 70 17 0 0 @101/plate_support_add.txt
+create event_generator 10171 101 18 66 17 0 0 @101/plate_support_add.txt
+create event_generator 10175 101 12 56 17 0 0 @101/plate_support_add.txt
+create event_generator 10178 101 20 63 17 0 0 @101/plate_support_add.txt
+create event_generator 10182 101 13 48 17 0 0 @101/plate_support_add.txt
+create event_generator 10186 101 19 44 17 0 0 @101/plate_support_add.txt
+create event_generator 10190 101 14 42 17 0 0 @101/plate_support_add.txt
+set_layer 10120 back
+set_layer 10122 back
+set_layer 10123 back
+set_layer 10124 back
+set_layer 10126 back
+set_layer 10127 back
+set_layer 10131 back
+set_layer 10137 back
+set_layer 10138 back
+set_layer 10139 back
+set_layer 10109 front
+set_layer 10110 front
+set_layer 10111 front
+set_layer 10112 front
+warp 101 15 43 up
+sleep 8
+set_npc_pos 10123 101 1 1
+set_npc_pos 10167 101 1 1
+set_npc_pos 10131 101 12 70
+set_npc_pos 10175 101 12 70
+set_npc_pos 10126 101 20 58
+set_npc_pos 10178 101 20 58
+set_layer 10126 back
+set_layer 10178 back
+set_npc_pos 10150 101 1 1
+set_npc_pos 10152 101 18 55
+set_flag 17 1
+fi
+if_flag 4 2
+play_event_bgm 1-20-Still_more_Fighting.ogg
+set_flag 0 4
+set_npc_pos 10253 102 18 42
+set_npc_pos 10255 102 18 37
+chg_npc_img 10253 1
+chg_npc_dir 10253 up
+chg_npc_dir 10255 down
+kill 10201
+kill 10251
+kill 10254
+set_ignore_map_layer_flag 10253 1
+set_layer 10253 back
+create npc_event 10053 100 18 42 1 0 3 none
+create npc_event 10055 100 19 37 2 1 3 none
+sleep 16
+warp_ff3_2 102 19 41 2 up
+sleep 32
+create event_generator 10202 102 19 41 17 0 0 @102/plate_support_For_DEBUG.txt
+add_party_mem 2
+add_party_mem 1
+fi
+if_flag 4 3
+set_flag 0 4
+warp 70 14 24 up
+draw_char on
+set_screen_effect sub 255 255 255 100
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid select
+set_key_unvalid start
+sleep 16
+play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+create event_generator 7000 70 0 0 17 0 0 @070/midori_park_smoke.txt
+loop 100
+dec_screen_effect_val 1
+sleep 1
+pool
+create event_generator 7001 70 14 24 17 0 0 @070/midori_park3.txt
+reset_screen_effect
+fi
+fi
+if_flag 3 2
 warp 600 11 16 up
 play_bgm
 set_flag 0 0

@@ -1,0 +1,26 @@
+sleep 32
+include ./event/common/effect_flash03.txt
+sleep 12
+inc_screen_effect_val 20
+sleep 4
+loop 3
+include ./event/common/effect_flash03.txt
+sleep 16
+pool
+sleep 16
+set_screen_effect add 255 255 255 0
+sleep 8
+inc_screen_effect_val 20
+sleep 8
+dec_screen_effect_val 20
+sleep 16
+set_screen_effect add 255 255 255 0
+loop 2
+sleep 8
+inc_screen_effect_val 20
+sleep 8
+dec_screen_effect_val 20
+pool
+loop_inf
+sleep 160
+pool

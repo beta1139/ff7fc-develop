@@ -1,0 +1,218 @@
+step_npc 6821 2
+set_talk_npc 6821
+msg バレット\n「マリンのところへ　つれてってくれ！
+reset_talk_npc
+sleep 24
+set_active_msg 6822
+jump_npc 6822 same 1
+set_talk_npc 6822
+msg ティファ\n「エアリスを　たすけにいくのね？
+reset_talk_npc
+sleep 16
+chg_char_dir down
+sleep 16
+step_char 1
+sleep 16
+msg 『ああ……\n　でも　そのまえに\n　たしかめたいことが　あるんだ
+sleep 24
+step_npc 6822 1
+set_talk_npc 6822
+msg ティファ\n「なに？
+reset_talk_npc
+chg_event_move_char_speed slow
+move_char down 1
+sleep 32
+msg 『……こだいしゅ
+flush
+sleep 4
+flush
+sleep 6
+play_se wind_start.ogg
+set_screen_effect add 255 255 255 0
+loop 50
+inc_screen_effect_val 2
+sleep 1
+pool
+sleep 16
+draw_char off
+warp 708 0 0 up
+loop 100
+dec_screen_effect_val 1
+sleep 1
+pool
+clear_text 5
+clear_text 6
+sleep 11
+play_se_loop wind_loop.ogg
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text 5 　 　   「われこそ　こだいしゅの　ちを　ひきしもの
+set_text 6 　 　   　このほしの　せいとうなる　こうけいしゃ！
+loop 8
+sleep 1
+set_text_alpha 5 25
+sleep 1
+set_text_alpha 5 0
+pool
+loop 8
+sleep 1
+set_text_alpha 5 50
+sleep 1
+set_text_alpha 5 25
+pool
+loop 8
+sleep 1
+set_text_alpha 5 75
+sleep 1
+set_text_alpha 5 50
+pool
+loop 8
+sleep 1
+set_text_alpha 5 100
+sleep 1
+set_text_alpha 5 75
+pool
+set_text_alpha 5 100
+loop 8
+sleep 1
+set_text_alpha 6 25
+sleep 1
+set_text_alpha 6 0
+pool
+loop 8
+sleep 1
+set_text_alpha 6 50
+sleep 1
+set_text_alpha 6 25
+pool
+loop 8
+sleep 1
+set_text_alpha 6 75
+sleep 1
+set_text_alpha 6 50
+pool
+loop 8
+sleep 1
+set_text_alpha 6 100
+sleep 1
+set_text_alpha 6 75
+pool
+set_text_alpha 6 100
+wait_key_push_edge a
+loop 8
+sleep 1
+set_text_alpha 5 75
+set_text_alpha 6 75
+sleep 1
+set_text_alpha 5 50
+set_text_alpha 6 50
+pool
+loop 8
+sleep 1
+set_text_alpha 5 50
+set_text_alpha 6 50
+sleep 1
+set_text_alpha 5 25
+set_text_alpha 6 25
+pool
+loop 8
+sleep 1
+set_text_alpha 5 25
+set_text_alpha 6 25
+sleep 1
+set_text_alpha 5 0
+set_text_alpha 6 0
+pool
+clear_text 5
+clear_text 6
+set_screen_effect add 255 255 255 0
+stop_se
+loop 100
+inc_screen_effect_val 1
+sleep 1
+pool
+if_flag 14 0
+warp 68 8 12 down
+fi
+if_flag 14 1
+warp 68 9 12 down
+fi
+draw_char on
+loop 100
+dec_screen_effect_val 1
+sleep 1
+pool
+reset_screen_effect
+sleep 16
+step_char 1
+sleep 16
+msg 『セフィロス……？
+flush
+play_se_loop beeeeep_fast.ogg
+chg_char_img_tmp 120
+chg_event_move_char_speed slow
+step_char 1
+sleep 32
+stop_se
+reset_screen_effect
+chg_event_move_char_speed normal
+step_char 2
+sleep 32
+chg_event_move_char_speed fast
+step_char 2
+sleep 16
+chg_char_img_tmp 143
+sleep 8
+jump_npc 6822 same 1
+sleep 16
+chg_speed 6822 fast
+move_npc 6821 down 1
+move_npc 6822 down 2
+sleep 16
+if_flag 14 0
+chg_npc_dir 6822 left
+fi
+if_flag 14 1
+chg_npc_dir 6822 right
+fi
+jump_npc 6822 same 1
+sleep 16
+step_npc 6822 2
+set_talk_npc 6822
+msg ティファ\n「だいじょうぶ？
+reset_talk_npc
+sleep 16
+jump_npc 6821 same 1
+set_talk_npc 6821
+msg バレット\n「しっかりしてくれよ！
+reset_talk_npc
+sleep 16
+chg_speed 6822 normal
+chg_speed 6821 normal
+loop 2
+jump_npc 6822 same 1
+sleep 16
+pool
+sleep 16
+reset_char_img_tmp
+sleep 16
+move_npc 6821 down 1
+if_flag 14 0
+move_npc 6822 left 1
+fi
+if_flag 14 1
+move_npc 6822 right 1
+fi
+sleep 16
+kill 6821
+kill 6822
+kill 6820
+add_party_mem 1
+add_party_mem 2
+set_flag 14 0
+set_flag 15 0
+set_flag 16 0
+set_flag 19 0
+kill_through_range 7020 7021
+enable_char_chg
+msg ～イベントさくせいここまで\n\n\n\n　しんらビルのマップ　すごくほすぃ……っ！！\n　ぼしゅうちゅうー\n\n\n　あと　このまま　いろいろすすむと　\n　いろいろおちるとおもうけど　きにしない

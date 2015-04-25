@@ -110,9 +110,6 @@ move_char down 2
 chg_speed 5101 fast
 chg_speed 5103 fast
 chg_speed 5102 fast
-chg_npc_dir 5101 down
-chg_npc_dir 5102 down
-chg_npc_dir 5103 down
 chg_npc_img 5101 140
 chg_npc_img 5102 140
 chg_npc_img 5103 140
@@ -269,9 +266,6 @@ chg_speed 5131 fast
 slide_npc 5131 down 1
 sleep 8
 chg_npc_dir 5130 down
-chg_npc_dir 5101 right
-chg_npc_dir 5102 right
-chg_npc_dir 5103 right
 chg_npc_img 5101 31
 chg_npc_img 5102 31
 chg_npc_img 5103 31

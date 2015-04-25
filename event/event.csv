@@ -218,12 +218,11 @@ map_obj,1785,17,45,8,7,0,0,0
 map_obj,1786,17,46,8,8,0,0,0
 map_obj,1787,17,47,8,9,0,0,0
 map_obj,1788,17,48,8,10,0,0,0
-event_generator,1800,99,9,9,17,0,0,"@018/nanabangai_station12_1.txt"
-event_generator,1801,99,9,10,17,0,0,"@018/nanabangai_station12_2.txt"
-event_generator,1802,99,9,11,17,0,0,"@018/nanabangai_station12_3.txt"
-event_generator,1803,99,9,12,17,0,0,"@018/nanabangai_station12_4.txt"
-event_generator,1804,99,9,13,17,0,0,"@018/nanabangai_station12_5.txt"
-event_generator,1805,99,9,14,17,0,0,"@018/nanabangai_station12_6.txt"
+event_generator,1800,99,8,9,17,0,0,"@018/nanabangai_station12_1.txt"
+event_generator,1801,99,8,10,17,0,0,"@018/nanabangai_station12_2.txt"
+event_generator,1802,99,8,11,17,0,0,"@018/nanabangai_station12_3.txt"
+event_generator,1803,99,8,12,17,0,0,"@018/nanabangai_station12_4.txt"
+event_generator,1804,99,8,13,17,0,0,"@018/nanabangai_station12_5.txt"
 npc2,1806,18,2,2,66,1,0,""
 npc2,1807,18,2,3,70,0,0,""
 npc2,1808,18,12,2,72,1,2,""
@@ -231,10 +230,10 @@ npc2,1809,18,6,2,89,1,2,""
 event_generator,1900,19,1,1,17,0,0,"@019/nanabangai1.txt"
 event_generator,1901,19,1,2,17,0,0,"@019/nanabangai2.txt"
 event_generator,1902,19,2,1,17,0,0,"@019/nanabangai3.txt"
-event_generator,1903,19,10,19,17,0,0,"@019/nanabangai4_1.txt"
-event_generator,1904,19,10,20,17,0,0,"@019/nanabangai4_2.txt"
-event_generator,1905,19,10,21,17,0,0,"@019/nanabangai4_3.txt"
-npc,1906,19,8,26,32,0,0,"「きさま　なんのようだ？
+event_generator,1903,19,17,21,17,0,0,"@019/nanabangai4_1.txt"
+event_generator,1904,19,17,22,17,0,0,"@019/nanabangai4_2.txt"
+event_generator,1905,19,17,23,17,0,0,"@019/nanabangai4_3.txt"
+npc,1906,19,15,28,32,0,0,"「きさま　なんのようだ？
 　このおれが　なにものか　しらんわけ　ないだろう？
 
 
@@ -243,39 +242,20 @@ npc,1906,19,8,26,32,0,0,"「きさま　なんのようだ？
 　おっぱらう　ケチなしごとを　してるんだ
 
 　わかったら　さっさとうせろ！！"
-npc,1907,19,7,26,32,0,0,"「あっ　あっ　あの……
+npc,1907,19,14,28,32,0,0,"「あっ　あっ　あの……
 　すいません
 　ここからさきは　たちいりきんし　なんですが"
-npc,1908,19,7,13,70,0,0,"「おっ！！
-　おっおっと！！
-
-
-　ああ　なんてことを！！
-　じゃましないでくれよ……ったく！
-
-
-　ん？
-　あんたも　みにきたのか？
-
-
-　うえで　ばくだんテロが　あったんだってよ
-　このはしらが　ぶっとんだら　このスラムも
-　おわりだからな……
-
-　まぁ　しんぱいするだけ　むだだったな
-
-
-
-　なあ！！　みてみろよ
-　いつみても　どでかい　はしらだなぁ"
-event_generator,1910,19,2,19,17,0,0,"@019/nanabangai_slum1_1.txt"
-event_generator,1911,19,2,20,17,0,0,"@019/nanabangai_slum1_2.txt"
-event_generator,1912,19,2,21,17,0,0,"@019/nanabangai_slum1_3.txt"
-save_point,1950,19,5,15,0,0,0,
-event_generator,1951,19,5,15,17,0,0,"@save_msg.txt"
-event_generator,1960,19,14,19,17,0,0,"@019/nanabangai_station13.txt"
-event_generator,1961,19,14,20,17,0,0,"@019/nanabangai_station13.txt"
-event_generator,1962,19,14,21,17,0,0,"@019/nanabangai_station13.txt"
+npc2,1908,19,13,15,70,0,0,""
+event_generator,1910,19,9,21,17,0,0,"@019/nanabangai_slum1_1.txt"
+event_generator,1911,19,9,22,17,0,0,"@019/nanabangai_slum1_2.txt"
+event_generator,1912,19,9,23,17,0,0,"@019/nanabangai_slum1_3.txt"
+save_point,1950,19,12,17,0,0,0,
+event_generator,1951,19,12,17,17,0,0,"@save_msg.txt"
+map_obj,1952,19,15,14,56,0,0,0
+npc2,1953,19,15,14,17,0,0,""
+event_generator,1960,19,21,21,17,0,0,"@019/nanabangai_station13.txt"
+event_generator,1961,19,21,22,17,0,0,"@019/nanabangai_station13.txt"
+event_generator,1962,19,21,23,17,0,0,"@019/nanabangai_station13.txt"
 event_generator,2016,20,26,22,17,0,0,"@020/nanabangai_slum5.txt"
 npc,2018,20,26,21,17,0,0,"「あけないよ！！
 　かえってちょうだい"
@@ -998,6 +978,17 @@ map_door,6750,67,5,9,14,0,0,0
 map_door,6751,67,11,12,14,0,0,0
 event_generator,6800,68,12,8,17,0,0,"@068/rokubangai1.txt"
 event_generator,6900,69,15,27,17,0,0,"@069/midori_park1.txt"
+npc_event,7020,70,14,22,155,1,1,"none"
+npc_event,7021,70,16,23,155,2,1,"none"
+treasure_materia,7030,70,23,25,2,0,0,4207
+npc_event,7090,70,19,25,80,3,0,"none"
+npc_event,7091,70,21,18,80,3,0,"none"
+npc_event,7092,70,10,15,80,3,0,"none"
+npc_event,7093,70,8,22,80,3,0,"none"
+npc_event,7094,70,18,22,80,3,0,"none"
+npc_event,7095,70,19,16,80,3,0,"none"
+npc_event,7096,70,9,17,80,3,0,"none"
+npc_event,7097,70,10,23,80,3,0,"none"
 npc2,7198,71,9,8,61,2,0,""
 event_generator,7199,71,0,0,17,0,0,"@071/temp.txt"
 event_generator,7100,71,6,3,17,0,0,"@071/wall_market1.txt"
@@ -1503,9 +1494,35 @@ npc2,9996,99,2,2,66,1,0,""
 npc2,9997,99,2,3,70,0,0,""
 npc2,9998,99,12,2,72,1,2,""
 npc2,9999,99,4,3,89,1,0,""
-npc2,70797,707,2,74,49,3,0,""
-event_generator,70798,707,17,77,17,0,0,"@707/omake01.txt"
-event_generator,70799,707,0,0,17,0,0,"@707/omake02.txt"
+event_generator,10100,101,16,61,17,0,0,"@101/plate_support_warp01.txt"
+event_generator,10101,101,17,75,17,0,0,"@101/plate_support_warp02.txt"
+event_generator,10104,101,18,96,17,0,0,"@101/plate_support05.txt"
+event_generator,10105,101,19,96,17,0,0,"@101/plate_support05.txt"
+npc2,10140,101,17,101,32,1,0,""
+npc2,10141,101,17,104,32,0,0,""
+npc2,10142,101,13,101,70,0,0,""
+npc2,10143,101,17,103,68,1,0,""
+npc2,10144,101,13,104,66,0,0,""
+save_point,10145,101,20,97,0,0,0,
+event_generator,10201,102,15,34,17,0,0,"@102/plate_support06.txt"
+npc2,10227,102,13,58,140,1,4,""
+npc2,10237,102,19,54,139,0,4,""
+npc2,10238,102,14,52,140,1,4,""
+npc2,10239,102,12,44,140,1,4,""
+npc_event,10251,102,20,40,143,2,3,"none"
+npc_event,10253,102,11,37,145,3,3,"バレット
+「く！　じげんばくだんか！"
+npc_event,10254,102,20,41,143,0,3,"none"
+npc_event,10255,102,9,38,2,0,3,"ティファ
+「うえのプレートが　おちてきたら
+　ひとたまりもないわ
+　いそがなくちゃ！"
+npc_event,10650,106,31,7,123,1,3,"none"
+npc_event,10651,106,32,7,123,0,3,"none"
+npc_event,10652,106,31,8,123,2,3,"none"
+npc_event,10653,106,32,8,123,3,3,"none"
+npc_event,10654,106,1,3,146,1,3,"none"
+npc_event,10655,106,0,3,146,0,3,"none"
 event_generator,70200,702,11,16,17,0,0,"@702/tifa'smemory1.txt"
 npc_event,70201,702,11,21,17,0,2,"none"
 npc_event,70202,702,11,20,17,1,2,"none"
@@ -1513,6 +1530,29 @@ npc_event,70500,705,8,14,121,0,3,"none"
 npc_event,70501,705,8,19,0,0,2,"none"
 npc_event,70502,705,8,15,14,3,0,"none"
 npc_event,70503,705,9,15,21,2,0,"none"
+npc2,70797,707,2,74,49,3,0,""
+event_generator,70798,707,17,77,17,0,0,"@707/omake01.txt"
+event_generator,70799,707,0,0,17,0,0,"@707/omake02.txt"
+event_generator,70900,709,15,32,17,0,0,"@709/plate_support08_a.txt"
+npc_event,70920,709,11,30,66,2,2,"none"
+npc_event,70921,709,11,24,72,1,2,"none"
+npc_event,70922,709,14,30,73,3,2,"none"
+npc_event,70923,709,19,29,74,2,2,"none"
+npc_event,70924,709,23,22,68,1,2,"none"
+npc_event,70925,709,21,29,69,0,2,"none"
+npc_event,70926,709,19,31,73,3,2,"none"
+map_door,70930,709,14,26,6,0,0,0
+npc_event,71130,711,22,23,80,3,0,"none"
+npc_event,71131,711,34,24,80,3,0,"none"
+npc_event,71132,711,29,25,80,3,0,"none"
+npc_event,71133,711,26,20,80,3,0,"none"
+npc_event,71134,711,31,22,80,3,0,"none"
+npc_event,71135,711,27,26,80,3,0,"none"
+npc_event,71136,711,23,10,80,3,0,"none"
+npc_event,71137,711,24,36,80,3,0,"none"
+npc_event,71138,711,34,35,80,3,0,"none"
+npc_event,71139,711,24,31,80,3,0,"none"
+npc_event,71140,711,30,33,80,3,0,"none"
 npc,23300,233,7,8,26,1,0,"タークス:ツォン「おまえたちのあいてをしに
 ここにきたんじゃない
 はやく　でていくんだな"

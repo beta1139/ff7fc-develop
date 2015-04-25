@@ -1,0 +1,299 @@
+wait_same_pos
+create event_generator 10200 102 1 1 17 0 0 @102/plate_support_gunshot3.txt
+step_npc 10253 18
+move_npc 10255 up 2
+jump_npc 10251 same 1
+jump_npc 10254 same 1
+create npc_event 10256 102 24 30 148 1 3 none
+create npc_event 10257 102 25 30 148 0 3 none
+create npc_event 10258 102 24 31 148 2 3 none
+create npc_event 10259 102 25 31 148 3 3 none
+create npc_event 10260 102 24 35 121 1 3 none
+create npc_event 10261 102 24 30 30 2 3 none
+chg_npc_y_offset 10261 6
+slide_walk_npc 10256 left 18
+slide_walk_npc 10257 left 18
+slide_walk_npc 10258 left 18
+slide_walk_npc 10259 left 18
+slide_npc 10261 left 18
+slide_walk_npc 10260 left 18
+loop 2
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+pool
+step_npc 10251 4
+step_npc 10254 4
+move_npc 10255 right 1
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+move_npc 10255 up 1
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+move_npc 10255 right 2
+loop 3
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+pool
+chg_npc_dir 10253 up
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+chg_npc_dir 10255 up
+jump_npc 10255 same 1
+chg_npc_img 10254 105
+chg_npc_dir 10254 left
+kill_through 10251
+create npc_event 10250 102 19 41 104 2 2 none
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+kill_through 10250
+chg_npc_img 10254 0
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+step_npc 10255 5
+move_npc 10254 left 7
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+chg_npc_dir 10253 left
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+chg_npc_dir 10255 left
+loop 2
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+pool
+create npc_event 10262 102 15 28 30 1 3 none
+jump_npc_target_pos 10262 15 42
+set_layer 10262 front
+loop 3
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+pool
+move_npc 10254 up 2
+sleep 4
+chg_npc_y_offset 10261 7
+sleep 4
+chg_npc_y_offset 10261 6
+chg_npc_img 10256 149
+chg_npc_img 10257 149
+set_npc_pos 10256 102 7 38
+set_npc_pos 10257 102 6 38
+create npc_event 10220 102 7 37 30 3 3 none
+chg_npc_y_offset 10220 6
+kill 10258
+kill 10259
+set_npc_pos 10260 102 7 43
+set_layer 10256 front
+set_layer 10257 front
+set_layer 10220 front
+set_layer 10260 front
+chg_event_move_char_speed fast
+step_npc 10253 13
+sleep 8
+chg_npc_dir 10254 left
+step_npc 10255 2
+sleep 8
+step_npc 10254 2
+sleep 16
+move_char down 7
+sleep 24
+chg_speed 10254 normal
+move_npc 10254 down 1
+sleep 8
+chg_npc_dir 10255 down
+slide_walk_npc 10256 right 5
+slide_walk_npc 10257 right 5
+slide_npc 10220 right 5
+slide_walk_npc 10260 right 5
+chg_npc_dir 10253 down
+sleep 4
+chg_npc_y_offset 10220 7
+sleep 4
+chg_npc_y_offset 10220 6
+step_npc 10254 3
+jump_npc 10255 same 1
+loop 2
+sleep 4
+chg_npc_y_offset 10220 7
+sleep 4
+chg_npc_y_offset 10220 6
+pool
+step_npc 10255 1
+chg_npc_dir 10220 down
+loop 2
+sleep 4
+chg_npc_y_offset 10220 7
+sleep 4
+chg_npc_y_offset 10220 6
+pool
+move_char up 5
+slide_walk_npc 10256 right 13
+slide_walk_npc 10257 right 13
+slide_npc 10220 right 1
+slide_walk_npc 10260 right 13
+sleep 4
+chg_npc_y_offset 10220 7
+sleep 4
+chg_npc_img 10253 1
+jump_npc_target_pos 10220 15 25
+play_se jump.wav
+sleep 4
+chg_npc_dir 10220 right
+sleep 4
+chg_npc_dir 10220 up
+chg_npc_img 10256 146
+chg_npc_img 10257 146
+sleep 4
+chg_npc_dir 10220 left
+sleep 4
+chg_npc_dir 10220 down
+sleep 4
+chg_npc_dir 10220 right
+sleep 4
+chg_npc_dir 10220 up
+sleep 4
+chg_npc_dir 10220 left
+sleep 4
+chg_npc_dir 10220 down
+move_char down 4
+chg_npc_dir 10262 down
+sleep 8
+chg_npc_img 10220 17
+chg_npc_dir 10262 left
+sleep 8
+chg_npc_dir 10262 up
+sleep 8
+chg_npc_dir 10262 right
+sleep 8
+chg_npc_dir 10262 down
+sleep 8
+chg_npc_dir 10262 left
+sleep 8
+play_se landing.wav
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+kill_through 10200
+chg_npc_img 10253 145
+step_npc 10253 1
+chg_speed 10254 fast
+sleep 8
+move_npc 10262 right 4
+kill_through_range 10256 10260
+sleep 4
+chg_npc_dir 10254 up
+chg_npc_img 10254 97
+jump_npc 10254 same 1
+sleep 4
+jump_npc 10255 same 2
+sleep 12
+chg_npc_img 10254 0
+chg_npc_dir 10254 down
+step_npc 10254 1
+sleep 4
+chg_npc_img 10253 1
+sleep 8
+reset_screen_effect
+chg_npc_dir 10262 down
+slide_walk_npc 10262 up 3
+move_npc 10254 down 1
+move_char up 1
+sleep 8
+move_npc 10253 down 5
+move_npc 10254 right 6
+step_npc 10255 3
+sleep 16
+move_char right 4
+chg_npc_dir 10262 left
+sleep 8
+move_npc 10255 right 7
+sleep 8
+msg3 -1 レノ\n「おそかった　と\n　このスイッチをおすと……
+sleep 8
+move_npc 10253 right 7
+chg_npc_dir 10262 down
+sleep 8
+chg_npc_dir 10254 up
+set_active_msg 10262
+jump_npc 10262 same 1
+sleep 8
+step_npc 10254 2
+sleep 8
+chg_speed 10262 normal
+step_npc 10262 4
+sleep 16
+move_npc 10255 down 2
+sleep 16
+chg_npc_dir 10253 up
+step_npc 10253 2
+step_npc 10255 2
+wait_key_push_edge a
+erase_msg3
+chg_event_move_char_speed normal
+move_char up 1
+step_npc 10254 3
+chg_npc_dir 10262 left
+sleep 12
+jump_npc 10262 same 1
+sleep 16
+step_npc 10262 1
+sleep 8
+play_se switch.ogg
+msg レノ\n「はい　おしまい！　さぎょう　カンリョウ
+chg_speed 10253 normal
+step_npc 10253 1
+sleep 8
+chg_speed 10254 normal
+step_npc 10254 1
+sleep 40
+jump_npc 10255 same 1
+sleep 16
+step_npc 10255 4
+set_talk_npc 10255
+msg ティファ\n「かいじょしなくちゃ！\n　クラウド！　バレット！　おねがい！
+reset_talk_npc
+sleep 24
+chg_npc_dir 10262 down
+sleep 16
+chg_npc_dir 10262 left
+sleep 4
+chg_npc_dir 10262 up
+sleep 4
+chg_npc_dir 10262 right
+sleep 4
+chg_npc_dir 10262 down
+chg_npc_img 10262 147
+set_active_msg 10262
+play_se squat.ogg
+msg レノ\n「そういうわけにはいかないぞ　と\n　タークスのレノさまの　じゃまは\n　だれにもさせないぞっ……と
+set_inactive_msg 10262
+chg_event_move_char_speed normal
+create event_generator 10202 102 0 0 17 0 0 @102/plate_support_reno.txt
+kill 10261
+kill 10220

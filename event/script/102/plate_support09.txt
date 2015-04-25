@@ -1,0 +1,237 @@
+create npc2 10222 102 1 1 17 0 4 
+reset_talk_flag 10222
+create npc_event 10223 102 0 1 156 0 0 none
+set_layer 10223 front
+set_ignore_map_layer_flag 10253 1
+set_layer 10253 front
+chg_type 10255 npc_event
+set_flag 15 0
+chg_char_dir up
+dec_screen_effect_val 100
+kill_through_range 10264 10265
+sleep 8
+if_flag 99 0
+create event_generator 10225 102 0 2 17 0 0 @102/plate_support_treasure1.txt
+create event_generator 10226 102 0 3 17 0 0 @102/plate_support_treasure2.txt
+clear_text 4
+clear_text 6
+sleep 8
+set_text_alpha 4 0
+set_text_alpha 6 0
+set_text 4 　 　   　　　　プレートほうかい　まで
+set_text 6 　 　   　　　　　　　40　びょう
+set_text_col 6 0 14 1
+loop 8
+sleep 1
+set_text_alpha 4 25
+sleep 1
+set_text_alpha 4 0
+pool
+loop 8
+sleep 1
+set_text_alpha 4 50
+sleep 1
+set_text_alpha 4 25
+pool
+loop 8
+sleep 1
+set_text_alpha 4 75
+sleep 1
+set_text_alpha 4 50
+pool
+loop 8
+sleep 1
+set_text_alpha 4 100
+sleep 1
+set_text_alpha 4 75
+pool
+set_text_alpha 4 100
+loop 8
+sleep 1
+set_text_alpha 6 25
+sleep 1
+set_text_alpha 6 0
+pool
+loop 8
+sleep 1
+set_text_alpha 6 50
+sleep 1
+set_text_alpha 6 25
+pool
+loop 8
+sleep 1
+set_text_alpha 6 75
+sleep 1
+set_text_alpha 6 50
+pool
+loop 8
+sleep 1
+set_text_alpha 6 100
+sleep 1
+set_text_alpha 6 75
+pool
+set_text_alpha 6 100
+wait_key_push_edge a
+set_text_alpha 4 75
+set_text_alpha 6 75
+sleep 8
+set_text_alpha 4 50
+set_text_alpha 6 50
+sleep 8
+set_text_alpha 4 25
+set_text_alpha 6 25
+sleep 8
+set_text_col 6 0 14 0
+set_text_alpha 4 0
+set_text_alpha 6 0
+clear_text 4
+clear_text 6
+fi
+sleep 24
+set_screen_effect sub 255 255 255 100
+slide_npc 10245 down 6
+sleep 16
+jump_npc_target_pos 10242 12 39
+warp 102 19 39 up
+draw_char on
+sleep 8
+include ./event/common/effect_fadein.txt
+if_flag 99 0
+start_countdown_sec 40
+fi
+draw_countdown on
+start_fake_countdown_sec 20
+draw_fake_countdown off
+chg_char_state_move
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_key_unvalid start
+set_key_unvalid select
+create event_generator 10209 102 0 0 17 0 0 @102/plate_support10.txt
+create event_generator 10219 102 0 0 17 0 0 @102/plate_support_countdown.txt
+set_screen_effect sub 0 255 255 0
+loop_inf
+if_flag 14 0
+inc_screen_effect_val 1
+loop 2
+loop 4
+inc_map_draw_y_offset
+sleep 2
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 2
+pool
+loop 2
+inc_map_draw_y_offset
+sleep 2
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 2
+pool
+sleep 6
+sleep 2
+pool
+fi
+if_flag 14 1
+play_se_loop crevice.ogg
+set_screen_effect add 255 0 0 0
+inc_map_draw_y_offset
+sleep 2
+loop 2
+inc_screen_effect_val 5
+inc_map_draw_y_offset
+sleep 2
+pool
+inc_screen_effect_val 10
+inc_map_draw_y_offset
+sleep 2
+inc_screen_effect_val 10
+dec_map_draw_y_offset
+sleep 2
+loop 3
+dec_screen_effect_val 5
+dec_map_draw_y_offset
+sleep 2
+pool
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+play_se_loop crevice.ogg
+include ./event/common/effect_fadeout.txt
+play_se_loop crevice.ogg
+sleep 16
+play_se_loop crevice.ogg
+kill 10255
+sleep 16
+play_se_loop crevice.ogg
+create npc_event 10252 102 21 37 2 3 3 none
+create npc_event 10266 102 20 38 0 3 3 none
+warp 102 20 38 right
+draw_char off
+sleep 16
+play_se_loop crevice.ogg
+include ./event/common/effect_fadein.txt
+reset_screen_effect
+create event_generator 10210 102 0 0 17 0 0 @102/plate_support12.txt
+set_flag 14 2
+fi
+if_flag 14 2
+play_se_loop crevice.ogg
+include ./event/common/102/plate_support09_common1.txt
+play_se_loop crevice.ogg
+include ./event/common/102/plate_support09_common2.txt
+fi
+if_flag 14 3
+set_screen_effect add 255 0 0 0
+inc_map_draw_y_offset
+sleep 2
+loop 2
+inc_screen_effect_val 50
+inc_map_draw_y_offset
+sleep 2
+dec_screen_effect_val 30
+inc_map_draw_y_offset
+pool
+dec_map_draw_y_offset
+sleep 2
+loop 2
+inc_screen_effect_val 50
+dec_map_draw_y_offset
+sleep 2
+dec_screen_effect_val 30
+dec_map_draw_y_offset
+pool
+loop 2
+inc_map_draw_y_offset
+sleep 2
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 2
+pool
+sleep 6
+reset_screen_effect
+sleep 2
+fi
+if_flag 14 4
+kill_through_range 10268 10270
+include ./event/common/effect_fadeout.txt
+kill_through 10209
+kill_through_range 10227 10248
+sleep 8
+warp 709 15 44 up
+erase_image 020
+draw_image 011 -16 -32 576 0 1152 256 0 event/plate_support/wall.png
+sleep 24
+include ./event/common/effect_fadein.txt
+reset_screen_effect
+create event_generator 70902 709 0 0 17 0 0 @709/plate_support13_a.txt
+create event_generator 70903 709 0 0 17 0 0 @709/plate_support13_b.txt
+end
+fi
+pool

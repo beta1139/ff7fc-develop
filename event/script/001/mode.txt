@@ -4,24 +4,22 @@ reset_talked_flag 165
 chg_dir_to_char 165
 if_flag 3 0
 if_flag 99 0
+set_talk_npc 165
 msg 「すでになっています
+reset_talk_npc
 end
 fi
 if_flag 99 1
 set_slide_char_flag
-chg_npc_dir 165 up
-if_char_dir down
-create npc_event 180 1 7 11 0 1 2 none
+chg_npc_dir 165 right
+create npc_event 180 1 5 11 0 0 2 none
 draw_char off
 move_char up 2
 sleep 32
-fi
-if_char_dir right
-create npc_event 180 1 6 12 0 3 2 none
-draw_char off
-move_char up 3
-sleep 48
-fi
+move_char right 2
+sleep 16
+chg_npc_dir 180 right
+sleep 16
 msg 「『ついかようそアリ』にすると\n　げんさくにはない　みぎの　たからばこや\n　イベントなども　しゅつげんします\n　ごかくにんください
 play_se bump.ogg
 create npc2 122 1 14 10 17 1 0 
@@ -38,19 +36,15 @@ fi
 if_flag 3 1
 if_flag 99 0
 set_slide_char_flag
-chg_npc_dir 165 up
-if_char_dir down
-create npc_event 180 1 7 11 0 1 2 none
+chg_npc_dir 165 right
+create npc_event 180 1 5 11 0 0 2 none
 draw_char off
 move_char up 2
 sleep 32
-fi
-if_char_dir right
-create npc_event 180 1 6 12 0 3 2 none
-draw_char off
-move_char up 3
-sleep 48
-fi
+move_char right 2
+sleep 16
+chg_npc_dir 180 right
+sleep 16
 msg 「『ついかようそナシ』　にすると　げんさくにはない\n　オマケようそを　きょくりょく　しょうきょします\n　たとえば　みぎの　たからばこなども　きえます\n　ごかくにんください
 play_se killed.wav
 kill_through 120
@@ -62,7 +56,9 @@ set_flag 99 3
 msg 「『ついかようそナシ』　にきりかえました
 fi
 if_flag 99 1
+set_talk_npc 165
 msg 「すでになっています
+reset_talk_npc
 end
 fi
 fi
@@ -75,15 +71,13 @@ fi
 if_flag 99 3
 set_flag 99 1
 fi
-chg_npc_dir 165 up
-if_char_dir down
+chg_npc_dir 165 down
+move_char left 2
+chg_npc_dir 180 up
+sleep 32
 move_char down 2
 sleep 32
-fi
-if_char_dir right
-move_char down 3
-sleep 48
-fi
+chg_char_dir up
 draw_char on
 kill 180
 reset_slide_char_flag

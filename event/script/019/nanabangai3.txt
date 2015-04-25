@@ -1,28 +1,56 @@
-wait_target_talked 1908
+wait_target_talk 1908
+chg_type 1908 npc_event
+chg_speed 1908 normal
+jump_npc 1908 same 1
+msg3 -1 「おっ！！\n　おっおっと！！
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 4
+chg_speed 1908 fast
+step_npc 1908 4
+sleep 64
+erase_msg3
+chg_dir_to_char 1908
 sleep 16
+chg_speed 1908 normal
+step_npc 1908 2
+msg 「ああ　なんてことを！！\n　じゃましないでくれよ……ったく！\n\n\n　ん？\n　あんたも　みにきたのか？\n\n\n　うえで　ばくだんテロが　あったんだってよ\n　このはしらが　ぶっとんだら　このスラムも\n　おわりだからな……\n\n　まぁ　しんぱいするだけ　ムダだったな
+set_active_msg 1908
 chg_npc_dir 1908 up
+sleep 16
+jump_npc 1908 same 1
+msg 「なあ！！　みてみろよ\n　いつみても　どでかい　はしらだなぁ
 sleep 8
 chg_char_dir up
+sleep 32
 fadeout
 draw_char off
-warp 701 7 67 up
+warp 101 15 77 up
 sleep 24
 fadein
-move_char up 56
-sleep 734
-sleep 232
+move_char up 16
+sleep 256
+warp 101 15 75 up
+move_char up 36
+sleep 640
 fadeout
 sleep 24
-warp 19 8 13 up
+warp 19 14 15 up
 draw_char on
 fadein
-msg 「ほら……\n　なんだか　すてきで　ふしぎな　ばしょ　だろ
+step_npc 1908 2
+msg 「ほら……\n　なんだか　すてきで　ふしぎな　ばしょだろ
 chg_npc_dir 1908 right
 sleep 24
 chg_char_dir left
-msg 「おれの　ばしょだが　たまには\n　みにきても　いいぞ\n　じゃな！！　きょうだい！
-chg_type 1908 npc_event
-active 1908
+step_npc 1908 2
+msg 「おれの　ばしょだが　たまには\n　みにきてもいいぞ\n　じゃな！！　きょうだい！
 chg_speed 1908 fast
 jump_npc 1908 down 2
 sleep 32
@@ -33,6 +61,6 @@ move_npc 1908 right 1
 sleep 8
 move_npc 1908 down 3
 sleep 24
-move_npc 1908 right 6
-sleep 48
+move_npc 1908 right 10
+sleep 80
 kill 1908

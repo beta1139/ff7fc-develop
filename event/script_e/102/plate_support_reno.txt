@@ -1,0 +1,153 @@
+set_flag 0 0
+sleep 16
+if_flag 99 0
+chg_npc_img 10262 30
+chg_speed 10262 normal
+set_talk_npc 10262
+if_flag 22 0
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　1かいも　ふまなかったぞ　と\n　やさしいなっ……と
+fi
+if_flag 22 1
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　1かいしか　ふまなかっぞ　と\n　やさしいなっ……と
+fi
+if_flag 22 2
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　2かい　ふんづけたぞ　と
+fi
+if_flag 22 3
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　3かい　ふんづけたぞ　と
+fi
+if_flag 22 4
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　4かい　ふんづけたぞ　と
+fi
+if_flag 22 5
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　5かい　ふんづけたぞ　と
+fi
+if_flag 22 6
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　6かいも　ふんづけたぞ　と
+fi
+if_flag 22 7
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　7かいも　ふんづけたぞ　と
+fi
+if_flag 22 8
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　8かいも　ふんづけたぞ　と
+fi
+if_flag 22 9
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　9かいも　ふんづけたぞ　と
+fi
+if_flag 22 10
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　10かいも　ふんづけたぞ　と
+fi
+if_flag_greater 22 10
+msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　10かいいじょうも　ふんづけたぞ　と\n　なかなか　ひどうだぞっ……と
+fi
+reset_talk_npc
+fi
+play_event_bgm 1-20-Still_more_Fighting.ogg
+set_flag 20 1
+set_flag 0 4
+boss_encount 258
+sleep 64
+create npc_event 10039 100 12 34 140 1 4 none
+create npc_event 10053 100 18 32 1 0 3 none
+create npc_event 10054 100 19 31 0 0 3 none
+create npc_event 10055 100 19 27 2 1 3 none
+create npc_event 10062 100 19 29 147 1 3 none
+set_layer 10055 front
+chg_npc_img 10262 147
+wait_encount_end
+set_flag 20 0
+warp 100 19 28 up
+chg_event_move_char_speed fast
+set_npc_pos 10255 102 18 37
+chg_npc_dir 10255 up
+kill_through_range 10261 10263
+kill 10254
+create npc_event 10061 100 19 17 30 0 3 none
+create npc_event 10063 100 19 29 17 2 3 none
+sleep 16
+chg_npc_img 10062 30
+chg_npc_dir 10062 up
+chg_speed 10062 fast
+jump_npc_target_pos 10061 19 27
+sleep 20
+move_npc 10062 up 5
+sleep 12
+play_se bump.ogg
+chg_npc_dir 10055 right
+slide_npc 10055 left 1
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_dir 10055 up
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_dir 10055 left
+sleep 4
+chg_npc_dir 10055 down
+sleep 4
+chg_npc_dir 10055 right
+sleep 4
+chg_npc_dir 10055 up
+sleep 8
+move_char up 3
+jump_npc_target_pos 10062 19 16
+play_se jump.wav
+set_npc_pos 10063 100 19 24
+chg_npc_dir 10055 left
+sleep 4
+chg_npc_dir 10055 down
+sleep 4
+chg_npc_img 10063 121
+chg_npc_dir 10055 right
+chg_speed 10063 normal
+slide_walk_npc 10063 up 2
+sleep 4
+chg_npc_dir 10055 up
+sleep 44
+chg_speed 10063 fast
+slide_walk_npc 10063 down 6
+sleep 8
+move_char down 6
+chg_npc_img 10063 17
+sleep 34
+chg_npc_img 10061 17
+kill 10063
+sleep 48
+chg_char_dir up
+draw_char on
+kill 10054
+kill 10061
+kill 10062
+warp 102 19 41 up
+chg_npc_dir 10255 down
+sleep 16
+create npc2 10220 102 19 39 17 0 0 
+create npc2 10221 102 18 39 17 0 0 
+chg_speed 10253 not_move
+chg_speed 10255 fast
+move_npc 10255 right 1
+sleep 8
+move_npc 10255 down 2
+sleep 16
+chg_npc_dir 10255 left
+sleep 8
+play_se_loop timer2.ogg
+create event_generator 10203 102 0 0 17 0 0 @102/plate_support_tifa.txt
+create event_generator 10204 102 0 0 17 0 0 @102/plate_support_tseng.txt
+create event_generator 10215 102 14 47 17 0 0 @102/plate_support_tifa_msg.txt
+create event_generator 10216 102 15 47 17 0 0 @102/plate_support_tifa_msg.txt
+create event_generator 10217 102 16 47 17 0 0 @102/plate_support_tifa_msg.txt
+create event_generator 10218 102 17 47 17 0 0 @102/plate_support_tifa_msg.txt
+set_flag 14 0
+set_flag_wall 10253
+chg_char_state_move
+chg_type 10253 npc
+loop_inf
+step_npc 10255 6
+sleep 64
+step_npc 10255 3
+sleep 64
+pool

@@ -1,0 +1,55 @@
+wait_same_pos
+reset_screen_effect
+set_flag 14 0
+set_flag 15 0
+set_flag 16 0
+set_flag 17 0
+set_flag 22 0
+set_flag 0 3
+kill_through_range 10104 10105
+create map_obj 1952 19 15 14 56 0 0 0 
+create npc2 1953 19 15 14 17 0 0 
+create npc3 10150 101 19 84 96 1 4 ビッグス\n「クラウド……\n　やっぱり……ほしのいのちなんて……\n　どうなろうと……きょうみないか？\n#2\n　　わるいけど　きょうみない\n　　それよりケガが……\n\n\n[[]][[]]
+set_layer 10150 front
+create npc3 10152 101 1 1 96 0 4 ジェシー\n「あ……クラウド……\n　さいごに……はなせてよかった……\n\n#2\n　　さいごだなんて……\n　　そうか……\n\n\n[[]][[]]
+set_layer 10152 front
+create npc_event 10120 101 18 80 140 1 4 none
+create npc_event 10122 101 20 77 139 0 4 none
+create npc_event 10123 101 17 70 140 1 4 none
+create npc_event 10124 101 18 66 140 1 4 none
+create npc_event 10126 101 20 63 139 0 4 none
+create npc_event 10127 101 13 48 140 1 4 none
+create npc_event 10131 101 12 56 140 1 4 none
+create npc_event 10137 101 19 44 139 0 4 none
+create npc_event 10138 101 14 42 140 1 4 none
+create npc_event 10139 101 12 34 140 1 4 none
+create npc_event 10153 101 12 31 145 3 3 none
+create event_generator 10106 101 0 0 17 0 0 @101/plate_support_biggs.txt
+create event_generator 10107 101 0 0 17 0 0 @101/plate_support_jessie.txt
+create event_generator 10109 101 14 38 17 0 0 @101/plate_support_barret1_1.txt
+create event_generator 10110 101 15 38 17 0 0 @101/plate_support_barret1_2.txt
+create event_generator 10111 101 16 38 17 0 0 @101/plate_support_barret1_3.txt
+create event_generator 10112 101 17 38 17 0 0 @101/plate_support_barret1_4.txt
+create event_generator 10160 101 18 80 17 0 0 @101/plate_support_add.txt
+create event_generator 10164 101 20 77 17 0 0 @101/plate_support_add.txt
+create event_generator 10167 101 17 70 17 0 0 @101/plate_support_add.txt
+create event_generator 10171 101 18 66 17 0 0 @101/plate_support_add.txt
+create event_generator 10175 101 12 56 17 0 0 @101/plate_support_add.txt
+create event_generator 10178 101 20 63 17 0 0 @101/plate_support_add.txt
+create event_generator 10182 101 13 48 17 0 0 @101/plate_support_add.txt
+create event_generator 10186 101 19 44 17 0 0 @101/plate_support_add.txt
+create event_generator 10190 101 14 42 17 0 0 @101/plate_support_add.txt
+set_layer 10120 back
+set_layer 10122 back
+set_layer 10123 back
+set_layer 10124 back
+set_layer 10126 back
+set_layer 10127 back
+set_layer 10131 back
+set_layer 10137 back
+set_layer 10138 back
+set_layer 10139 back
+set_layer 10109 front
+set_layer 10110 front
+set_layer 10111 front
+set_layer 10112 front

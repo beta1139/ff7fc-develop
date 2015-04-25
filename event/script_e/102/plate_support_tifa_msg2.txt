@@ -1,0 +1,28 @@
+set_eternal_event
+wait_target_talk 10255
+reset_talk_flag 10255
+chg_dir_to_char 10255
+set_talk_npc 10255
+msg3 -1 ティファ\n「うえのプレートが　おちてきたら\n　ひとたまりもないわ\n　いそがなくちゃ！
+reset_talk_npc
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+set_key_unvalid select
+wait_key_push_edge a
+erase_msg3
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+if_flag 19 0
+chg_npc_dir 10255 up
+fi
+if_flag 19 1
+chg_npc_dir 10255 right
+fi
+wait_key_release a
+reset_talk_flag 10255
+wait_key_push a

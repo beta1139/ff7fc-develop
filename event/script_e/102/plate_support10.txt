@@ -1,0 +1,218 @@
+chg_npc_dir 10253 right
+sleep 12
+move_npc 10255 right 1
+chg_npc_dir 10253 left
+sleep 8
+chg_npc_dir 10255 up
+chg_type 10255 npc2
+reset_talk_flag 10255
+chg_speed 10255 not_move
+sleep 4
+chg_speed 10245 not_move
+create event_generator 10269 102 2 2 17 0 0 @102/plate_support_tifa_msg2.txt
+chg_npc_dir 10253 up
+sleep 12
+move_npc 10253 down 4
+sleep 16
+jump_npc_target_pos 10247 20 36
+sleep 16
+chg_npc_img 10253 98
+chg_npc_dir 10253 left
+step_npc 10253 6
+set_npc_pos 10222 102 20 41
+sleep 48
+jump_npc_target_pos 10243 13 34
+chg_npc_img 10253 1
+chg_npc_dir 10253 right
+sleep 16
+jump_npc_target_pos 10231 19 45
+chg_npc_dir 10253 left
+sleep 16
+chg_npc_dir 10253 right
+jump_npc 10253 same 1
+sleep 8
+set_npc_pos 10222 102 25 41
+sleep 8
+reset_talk_flag 10222
+move_npc 10253 right 2
+sleep 8
+create event_generator 10268 102 2 2 17 0 0 @102/plate_support_trigger.txt
+sleep 8
+set_npc_pos 10222 102 22 41
+set_npc_pos 10223 102 22 40
+sleep 8
+chg_npc_dir 10253 up
+step_npc 10253 4
+jump_npc_target_pos 10241 16 47
+sleep 24
+set_npc_pos 10222 102 25 41
+set_npc_pos 10223 102 33 40
+sleep 8
+loop_inf
+if_flag 15 0
+chg_npc_img 10253 1
+move_npc 10253 up 4
+sleep 24
+if_flag 15 0
+set_flag 15 1
+fi
+sleep 8
+if_flag 16 0
+jump_npc_target_pos 10230 8 37
+fi
+set_npc_pos 10222 102 22 37
+set_npc_pos 10223 102 22 36
+chg_npc_dir 10253 right
+sleep 16
+chg_npc_dir 10253 left
+sleep 12
+chg_npc_dir 10253 right
+sleep 12
+chg_npc_img 10253 98
+chg_npc_dir 10253 left
+sleep 12
+chg_npc_img 10253 95
+chg_npc_dir 10253 up
+jump_npc 10253 same 1
+sleep 16
+if_flag 16 0
+jump_npc_target_pos 10233 20 53
+fi
+step_npc 10253 3
+sleep 16
+if_flag 16 1
+jump_npc_target_pos 10232 14 46
+fi
+sleep 8
+add_flag 16 1
+set_npc_pos 10222 102 25 37
+set_npc_pos 10223 102 33 35
+sleep 8
+fi
+if_flag 15 1
+chg_npc_img 10253 1
+move_npc 10253 down 4
+sleep 24
+if_flag 15 1
+set_flag 15 0
+fi
+sleep 8
+set_npc_pos 10222 102 22 41
+set_npc_pos 10223 102 22 40
+chg_npc_dir 10253 right
+sleep 12
+chg_npc_dir 10253 left
+sleep 12
+if_flag 16 1
+jump_npc_target_pos 10246 9 42
+jump_npc_target_pos 10232 14 46
+fi
+if_flag 16 2
+jump_npc_target_pos 10248 22 43
+jump_npc_target_pos 10234 13 51
+fi
+chg_npc_dir 10253 right
+sleep 12
+chg_npc_dir 10253 left
+sleep 12
+chg_npc_dir 10253 right
+sleep 12
+chg_npc_dir 10253 up
+sleep 56
+set_npc_pos 10222 102 25 41
+set_npc_pos 10223 102 33 40
+sleep 8
+fi
+if_flag 15 2
+set_npc_pos 10222 102 25 37
+set_npc_pos 10223 102 33 35
+chg_npc_img 10253 1
+chg_npc_dir 10253 down
+sleep 32
+jump_npc 10253 same 2
+sleep 32
+move_npc 10253 down 1
+set_flag 15 4
+sleep 8
+fi
+if_flag 15 3
+set_npc_pos 10222 102 25 41
+set_npc_pos 10223 102 33 40
+sleep 32
+jump_npc 10253 same 2
+sleep 32
+move_npc 10253 up 3
+set_flag 15 4
+sleep 24
+fi
+if_flag 15 4
+jump_npc 10253 same 1
+chg_npc_dir 10253 right
+sleep 16
+end_fake_countdown
+end_countdown
+kill_through 10219
+sleep 8
+play_se jump.wav
+jump_npc 10253 right 2
+sleep 16
+play_se landing.wav
+sleep 8
+play_se_loop crevice.ogg
+sleep 16
+step_npc 10253 3
+sleep 32
+chg_npc_dir 10253 left
+kill_through 10269
+kill_through_range 10225 10226
+erase_msg3
+sleep 8
+jump_npc 10253 same 2
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+set_key_unvalid select
+msg3 -1 バレット\n「おい　このワイヤーをつかって\n　だっしゅつできるぜ！
+sleep 32
+step_npc 10253 2
+set_flag 19 1
+wait_key_push_edge a
+erase_msg3
+if_owned_item 1021
+chg_npc_img 10231 17
+set_npc_pos 10231 102 0 0
+fi
+if_owned_item 1096
+chg_npc_img 10234 17
+set_npc_pos 10234 102 0 0
+fi
+chg_char_dir right
+if_flag 99 2
+create event_generator 10211 102 22 37 17 0 0 @102/plate_support11.txt
+create event_generator 10212 102 22 38 17 0 0 @102/plate_support11.txt
+create event_generator 10213 102 22 39 17 0 0 @102/plate_support11.txt
+create event_generator 10215 102 23 37 17 0 0 @102/plate_support11.txt
+create event_generator 10216 102 23 38 17 0 0 @102/plate_support11.txt
+chg_npc_dir 10255 right
+create event_generator 10217 102 23 39 17 0 0 @102/plate_support11.txt
+sleep 8
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+sleep 16
+create event_generator 10269 102 2 2 17 0 0 @102/plate_support_tifa_msg2.txt
+reset_talk_flag 10255
+fi
+kill_through_range 10211 10217
+kill_through 10269
+chg_type 10255 npc_event
+chg_speed 10255 not_move
+chg_npc_dir 10255 right
+sleep 16
+set_flag 14 1
+end
+fi
+pool

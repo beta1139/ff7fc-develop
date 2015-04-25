@@ -1,0 +1,26 @@
+wait_same_pos
+chg_npc_dir 1920 down
+sleep 8
+set_active_msg 1920
+jump_npc 1920 same 1
+msg ティファ\n「まにあった！\n　はしらがたってる！
+sleep 16
+move_npc 1921 up 1
+sleep 32
+step_npc 1921 1
+msg 『まて！\n　うえから……きこえないか？
+sleep 16
+move_npc 1922 up 2
+sleep 32
+step_npc 1922 2
+msg エアリス\n「……じゅうせい？
+chg_npc_dir 1920 up
+sleep 24
+fadeout
+sleep 32
+set_npc_pos 1950 19 19 11
+warp 101 15 80 up
+kill_through_range 1910 1913
+kill 1908
+sleep 16
+fadein

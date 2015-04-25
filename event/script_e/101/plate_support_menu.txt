@@ -1,0 +1,47 @@
+loop_inf
+wait_key_push_edge a
+play_se cursor_ff3_select_cancel.ogg
+erase_msg3
+sleep 8
+msg しゅうりょうして　よろしいですか？\n\n\n\n#2\n 　はい\n　　ちょっとまってくれ\n\n\n\n[[]][[]]
+if_flag 3 0
+chg_char_state_event
+play_se_loop helicopter.ogg
+chg_npc_dir 10155 right
+sleep 8
+chg_npc_dir 10153 up
+sleep 8
+jump_npc 10155 same 2
+sleep 32
+chg_speed 10155 fast
+step_npc 10155 3
+chg_char_dir right
+sleep 8
+chg_npc_dir 10153 right
+msg ティファ\n「さっそくきたわ！
+reset_slide_char_flag
+chg_speed 10153 normal
+chg_speed 10155 normal
+move_npc 10153 up 2
+create npc_event 10199 101 14 31 0 2 2 none
+draw_char off
+move_npc 10199 right 2
+sleep 16
+move_npc 10155 left 1
+fadeout
+stop_se
+sleep 32
+reset_char_img_tmp
+set_key_valid select
+warp 102 15 34 up
+sleep 32
+fadein
+end
+fi
+if_flag 3 1
+sleep 8
+msg3 -1 　[スタートボタン]で　メニューをひらく\n　[Aボタン]で　しゅうりょう
+chg_char_state_move
+sleep 8
+fi
+pool

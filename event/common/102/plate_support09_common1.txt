@@ -1,0 +1,16 @@
+set_screen_effect sub 0 255 255 0
+inc_map_draw_y_offset
+sleep 2
+loop 3
+inc_screen_effect_val 10
+inc_map_draw_y_offset
+sleep 2
+pool
+inc_screen_effect_val 10
+dec_map_draw_y_offset
+sleep 2
+loop 3
+dec_screen_effect_val 5
+dec_map_draw_y_offset
+sleep 2
+pool

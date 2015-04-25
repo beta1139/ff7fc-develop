@@ -84,7 +84,9 @@ play_se door_open_hard.wav
 create npc_event 2011 20 22 26 1 1 2 none
 chg_npc_img 2011 95
 step_npc 2011 4
+move_npc 2006 down 1
 sleep 16
+chg_npc_dir 2006 right
 close_door 2090
 sleep 16
 move_npc 2009 down 1
@@ -105,7 +107,7 @@ move_npc 2009 left 1
 move_npc 2011 down 2
 sleep 8
 move_npc 2008 up 6
-move_npc 2009 down 3
+move_npc 2009 down 4
 sleep 24
 create npc_event 2012 20 22 26 2 1 2 none
 move_npc 2012 down 2

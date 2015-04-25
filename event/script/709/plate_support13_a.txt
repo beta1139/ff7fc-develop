@@ -1,0 +1,112 @@
+loop 3
+play_se bomb.ogg
+move_char up 1
+create explode 70995 709 12 37 0 0 0 none
+loop 8
+sleep 1
+chg_image_pos_offset 011 0 2 0 0 0 0
+pool
+move_char down 1
+create explode 70996 709 20 40 0 0 0 none
+loop 8
+sleep 1
+chg_image_pos_offset 011 0 -2 0 0 0 0
+pool
+move_char up 1
+create explode 70997 709 11 39 0 0 0 none
+loop 8
+sleep 1
+chg_image_pos_offset 011 0 2 0 0 0 0
+pool
+move_char down 1
+loop 8
+sleep 1
+chg_image_pos_offset 011 0 -2 0 0 0 0
+pool
+pool
+play_se bomb.ogg
+create explode 70990 709 15 39 0 0 0 none
+move_char up 1
+loop 8
+sleep 1
+chg_image_pos_offset 011 0 2 0 0 0 0
+pool
+create explode 70991 709 17 37 0 0 0 none
+move_char down 1
+loop 8
+sleep 1
+chg_image_pos_offset 011 0 -2 0 0 0 0
+pool
+create explode 70992 709 13 41 0 0 0 none
+move_char up 1
+loop 8
+sleep 1
+chg_image_pos_offset 011 0 2 0 0 0 0
+pool
+create explode 70993 709 19 36 0 0 0 none
+move_char down 1
+loop 8
+sleep 1
+chg_image_pos_offset 011 0 -2 0 0 0 0
+pool
+create explode 70994 709 16 40 0 0 0 none
+play_se bomb.ogg
+warp 709 15 43 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+sleep 4
+warp 709 15 42 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+draw_image 012 16 0 0 0 224 32 0 event/plate_support/end1.png
+sleep 4
+create explode 70998 709 21 38 0 0 none
+warp 709 15 41 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+chg_image_pos_offset 012 0 16 0 0 0 0
+sleep 4
+warp 709 15 40 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+chg_image_pos_offset 012 0 16 0 0 0 0
+jump_npc 70920 same 2
+jump_npc 70921 same 2
+jump_npc 70922 same 2
+jump_npc 70923 same 2
+jump_npc 70924 same 2
+jump_npc 70925 same 2
+jump_npc 70926 same 2
+sleep 4
+create explode 70995 709 14 37 0 0 0 none
+warp 709 15 39 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+chg_image_pos_offset 012 0 16 0 0 0 0
+sleep 4
+warp 709 15 38 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+chg_image_pos_offset 012 0 16 0 0 0 0
+sleep 4
+create explode 70996 709 20 36 0 0 0 none
+warp 709 15 37 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+chg_image_pos_offset 012 0 16 0 0 0 0
+sleep 4
+warp 709 15 36 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+chg_image_pos_offset 012 0 16 0 0 0 0
+sleep 4
+warp 709 15 35 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+chg_image_pos_offset 012 0 16 0 0 0 0
+sleep 4
+warp 709 15 34 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+chg_image_pos_offset 012 0 16 0 0 0 0
+sleep 4
+create explode 70997 709 16 35 0 0 0 none
+warp 709 15 33 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+chg_image_pos_offset 012 0 16 0 0 0 0
+sleep 4
+warp 709 15 32 up
+chg_image_pos_offset 011 0 16 0 0 0 0
+chg_image_pos_offset 012 0 16 0 0 0 0
+create event_generator 70904 709 0 0 17 0 0 @709/plate_support14_a.txt
+create event_generator 70905 709 0 0 17 0 0 @709/plate_support14_b.txt

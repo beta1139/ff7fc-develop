@@ -1,0 +1,28 @@
+wait_same_pos
+kill_through_range 6803 6804
+set_flag 14 0
+msg 「クラウド！
+chg_char_dir up
+create npc_event 6821 68 12 7 1 1 2 none
+move_npc 6821 down 3
+sleep 32
+create npc_event 6822 68 12 7 2 1 2 none
+move_npc 6822 down 3
+sleep 16
+move_npc 6821 left 1
+sleep 16
+move_npc 6821 up 1
+sleep 16
+move_npc 6822 left 1
+move_npc 6821 left 3
+sleep 16
+move_npc 6822 up 1
+sleep 16
+move_npc 6822 left 2
+sleep 16
+move_npc 6821 down 1
+sleep 16
+jump_npc 6821 same 1
+move_npc 6822 down 1
+sleep 16
+create event_generator 6805 68 9 11 17 0 0 @068/rokubangai5.txt

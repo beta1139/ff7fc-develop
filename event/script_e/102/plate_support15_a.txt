@@ -1,0 +1,384 @@
+sleep 8
+kill_through_range 70900 70999
+sleep 8
+erase_image 006
+erase_image 007
+move_char right 1
+loop 7
+sleep 1
+include ./event/common/102/plate_support15_right01.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right02.txt
+move_char left 1
+loop 7
+sleep 1
+include ./event/common/102/plate_support15_left01.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left02.txt
+move_char right 1
+loop 7
+sleep 1
+include ./event/common/102/plate_support15_right01.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right02.txt
+move_char left 1
+loop 4
+sleep 1
+include ./event/common/102/plate_support15_left01.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left03.txt
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_left01.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left02.txt
+move_char right 1
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_right01.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right03.txt
+loop 4
+sleep 1
+include ./event/common/102/plate_support15_right01.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right02.txt
+move_char left 1
+sleep 1
+include ./event/common/102/plate_support15_left01.txt
+sleep 1
+include ./event/common/102/plate_support15_left03.txt
+loop 5
+sleep 1
+include ./event/common/102/plate_support15_left01.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left02.txt
+move_char right 1
+sleep 1
+chg_image_pos_offset 000 -2 0 0 0 0 0
+chg_image_pos_offset 001 -2 0 0 0 0 0
+chg_image_pos_offset 002 -2 0 224 0 0 0
+chg_image_pos_offset 008 -2 0 0 0 0 0
+set_image_alpha 008 100
+erase_image 003
+draw_image 004 14 64 0 0 224 32 1 event/plate_support/end2.png
+loop 7
+sleep 1
+include ./event/common/102/plate_support15_right04.txt
+pool
+move_char left 1
+sleep 1
+include ./event/common/102/plate_support15_left05.txt
+loop 7
+sleep 1
+include ./event/common/102/plate_support15_left04.txt
+pool
+move_char right 1
+sleep 1
+include ./event/common/102/plate_support15_right05.txt
+loop 7
+sleep 1
+include ./event/common/102/plate_support15_right04.txt
+pool
+move_char left 1
+sleep 1
+include ./event/common/102/plate_support15_left05.txt
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_left04.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left06.txt
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_left04.txt
+pool
+move_char right 1
+sleep 1
+include ./event/common/102/plate_support15_right05.txt
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_right04.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right06.txt
+loop 4
+sleep 1
+include ./event/common/102/plate_support15_right04.txt
+pool
+move_char left 1
+sleep 1
+include ./event/common/102/plate_support15_left05.txt
+sleep 1
+include ./event/common/102/plate_support15_left04.txt
+sleep 1
+include ./event/common/102/plate_support15_left06.txt
+loop 5
+sleep 1
+include ./event/common/102/plate_support15_left04.txt
+pool
+move_char right 1
+sleep 1
+include ./event/common/102/plate_support15_right05.txt
+chg_image_pos_offset 009 -2 0 0 0 0 0
+sleep 1
+chg_image_pos_offset 000 -2 0 0 0 0 0
+chg_image_pos_offset 001 -2 0 0 0 0 0
+chg_image_pos_offset 002 -2 0 0 0 0 0
+chg_image_pos_offset 008 -2 0 224 0 0 0
+chg_image_pos_offset 009 -2 0 0 0 0 0
+set_image_alpha 009 100
+erase_image 004
+draw_image 005 12 96 0 0 224 32 1 event/plate_support/end2.png
+loop 6
+sleep 1
+include ./event/common/102/plate_support15_right07.txt
+pool
+move_char left 1
+sleep 1
+include ./event/common/102/plate_support15_left07.txt
+sleep 1
+include ./event/common/102/plate_support15_left08.txt
+loop 6
+sleep 1
+include ./event/common/102/plate_support15_left07.txt
+pool
+move_char right 1
+sleep 1
+include ./event/common/102/plate_support15_right07.txt
+sleep 1
+include ./event/common/102/plate_support15_right08.txt
+loop 6
+sleep 1
+include ./event/common/102/plate_support15_right07.txt
+pool
+move_char left 1
+sleep 1
+include ./event/common/102/plate_support15_left07.txt
+sleep 1
+include ./event/common/102/plate_support15_left08.txt
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_left07.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left09.txt
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_left07.txt
+pool
+move_char right 1
+sleep 1
+include ./event/common/102/plate_support15_right07.txt
+sleep 1
+include ./event/common/102/plate_support15_right08.txt
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_right07.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right09.txt
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_right07.txt
+pool
+move_char left 1
+sleep 1
+include ./event/common/102/plate_support15_left07.txt
+sleep 1
+include ./event/common/102/plate_support15_left08.txt
+sleep 1
+include ./event/common/102/plate_support15_left07.txt
+sleep 1
+include ./event/common/102/plate_support15_left09.txt
+loop 4
+sleep 1
+include ./event/common/102/plate_support15_left07.txt
+pool
+move_char right 1
+sleep 1
+include ./event/common/102/plate_support15_right07.txt
+chg_image_pos_offset 010 -2 0 0 0 0 0
+sleep 1
+include ./event/common/102/plate_support15_right08.txt
+chg_image_pos_offset 010 -2 0 0 0 0 0
+sleep 1
+chg_image_pos_offset 000 -2 0 0 0 0 0
+chg_image_pos_offset 001 -2 0 0 0 0 0
+chg_image_pos_offset 002 -2 0 0 0 0 0
+chg_image_pos_offset 008 -2 0 0 0 0 0
+chg_image_pos_offset 009 -2 0 224 0 0 0
+chg_image_pos_offset 010 -2 0 0 0 0 0
+set_image_alpha 010 100
+erase_image 005
+draw_image 006 10 128 0 0 224 32 1 event/plate_support/end2.png
+loop 5
+sleep 1
+include ./event/common/102/plate_support15_right10.txt
+pool
+move_char left 1
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_left10.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left11.txt
+loop 5
+sleep 1
+include ./event/common/102/plate_support15_left10.txt
+pool
+move_char right 1
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_right10.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right11.txt
+loop 5
+sleep 1
+include ./event/common/102/plate_support15_right10.txt
+pool
+move_char left 1
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_left10.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left11.txt
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_left10.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left12.txt
+sleep 1
+include ./event/common/102/plate_support15_left10.txt
+move_char right 1
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_right10.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right11.txt
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_right10.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right12.txt
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_right10.txt
+pool
+move_char left 1
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_left10.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left11.txt
+sleep 1
+include ./event/common/102/plate_support15_left10.txt
+sleep 1
+include ./event/common/102/plate_support15_left12.txt
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_left10.txt
+pool
+move_char right 1
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_right10.txt
+chg_image_pos_offset 011 -2 0 0 0 0 0
+pool
+sleep 1
+include ./event/common/102/plate_support15_right11.txt
+chg_image_pos_offset 011 -2 0 0 0 0 0
+sleep 1
+chg_image_pos_offset 000 -2 0 0 0 0 0
+chg_image_pos_offset 001 -2 0 0 0 0 0
+chg_image_pos_offset 002 -2 0 0 0 0 0
+chg_image_pos_offset 008 -2 0 0 0 0 0
+chg_image_pos_offset 009 -2 0 0 0 0 0
+chg_image_pos_offset 010 -2 0 224 0 0 0
+chg_image_pos_offset 011 -2 0 0 0 0 0
+set_image_alpha 011 100
+erase_image 006
+draw_image 007 8 160 0 0 224 32 1 event/plate_support/end2.png
+loop 4
+sleep 1
+include ./event/common/102/plate_support15_right13.txt
+pool
+move_char left 1
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_left13.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left14.txt
+loop 4
+sleep 1
+include ./event/common/102/plate_support15_left13.txt
+pool
+move_char right 1
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_right13.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right14.txt
+loop 4
+sleep 1
+include ./event/common/102/plate_support15_right13.txt
+pool
+move_char left 1
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_left13.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left14.txt
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_left13.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left15.txt
+sleep 1
+include ./event/common/102/plate_support15_left13.txt
+move_char right 1
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_right13.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_right14.txt
+sleep 1
+include ./event/common/102/plate_support15_right13.txt
+sleep 1
+include ./event/common/102/plate_support15_right15.txt
+loop 2
+sleep 1
+include ./event/common/102/plate_support15_right13.txt
+pool
+move_char left 1
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_left13.txt
+pool
+sleep 1
+include ./event/common/102/plate_support15_left14.txt
+sleep 1
+include ./event/common/102/plate_support15_left15.txt
+loop 3
+sleep 1
+include ./event/common/102/plate_support15_left13.txt
+pool

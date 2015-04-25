@@ -1,0 +1,4 @@
+set_screen_effect add 255 255 255 30
+sleep 4
+dec_screen_effect_val 30
+sleep 4

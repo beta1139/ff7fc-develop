@@ -1,0 +1,332 @@
+msg ツォン\n「そのとおり\n　それを　そうさするのは　むずかしい\n\n　どこかのバカものが　かってに\n　ふれると　こまるからな
+if_flag 99 0
+move_char up 1
+sleep 32
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 3 　 　   　　　　　　　　ツォン
+set_text 8 　　　　　　しんらカンパニー　そうむぶ　ちょうさか
+set_text 9 　　　　　つうしょう　『タークス』　のリーダーにして
+set_text 10 　　　　　　　　ハイデッカー　ちょくぞくの　ぶか　
+set_text 11 　　　　　　　そしきないでの　しんようども　たかい
+warp 49 20 11 down
+loop 4
+sleep 1
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 3 0
+pool
+loop 4
+sleep 1
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 3 25
+pool
+loop 4
+sleep 1
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 3 50
+pool
+chg_speed 4990 normal
+chg_npc_img 4990 147
+chg_npc_dir 4990 right
+step_npc 4990 5
+loop 4
+sleep 1
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 3 75
+pool
+loop 4
+sleep 1
+set_text_alpha 8 25
+sleep 1
+set_text_alpha 8 0
+pool
+loop 4
+sleep 1
+set_text_alpha 8 50
+sleep 1
+set_text_alpha 8 25
+pool
+loop 4
+sleep 1
+set_text_alpha 8 75
+sleep 1
+set_text_alpha 8 50
+pool
+loop 4
+sleep 1
+set_text_alpha 8 100
+sleep 1
+set_text_alpha 8 75
+pool
+loop 4
+sleep 1
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 9 0
+pool
+loop 4
+sleep 1
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 9 25
+pool
+loop 4
+sleep 1
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 9 50
+pool
+loop 4
+sleep 1
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 9 75
+pool
+loop 4
+sleep 1
+set_text_alpha 10 25
+sleep 1
+set_text_alpha 10 0
+pool
+chg_speed 4990 fast
+step_npc 4990 4
+loop 4
+sleep 1
+set_text_alpha 10 50
+sleep 1
+set_text_alpha 10 25
+pool
+loop 4
+sleep 1
+set_text_alpha 10 75
+sleep 1
+set_text_alpha 10 50
+pool
+loop 4
+sleep 1
+set_text_alpha 10 100
+sleep 1
+set_text_alpha 10 75
+pool
+loop 4
+sleep 1
+set_text_alpha 11 25
+sleep 1
+set_text_alpha 11 0
+pool
+chg_npc_img 4990 28
+chg_npc_dir 4990 down
+loop 4
+sleep 1
+set_text_alpha 11 50
+sleep 1
+set_text_alpha 11 25
+pool
+loop 4
+sleep 1
+set_text_alpha 11 75
+sleep 1
+set_text_alpha 11 50
+pool
+loop 4
+sleep 1
+set_text_alpha 11 100
+sleep 1
+set_text_alpha 11 75
+pool
+wait_key_push_edge a
+fadeout
+sleep 16
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+warp 102 19 33 down
+fadein
+fi
+kill_through 4909
+sleep 16
+step_npc 4903 1
+chg_type 10255 npc_event
+chg_type 10253 npc_event
+chg_speed 10255 fast
+chg_speed 10253 fast
+move_npc 10255 left 1
+sleep 8
+move_npc 10255 up 1
+sleep 8
+jump_npc 10255 same 2
+sleep 32
+step_npc 10255 2
+msg ティファ\n「おねがい　とめて！
+sleep 32
+step_npc 10265 3
+msg ツォン\n「クックック……\n\n\n　きんきゅうよう　プレートかいほうシステムの\n　せっていと　かいじょは　『しんら』やくいんかいの\n　けっていなしでは　できないのだ
+chg_npc_img 10253 1
+move_npc 10253 up 2
+sleep 16
+jump_npc 10253 same 2
+sleep 32
+set_active_msg 10253
+chg_npc_img 10253 145
+msg バレット\n「ゴチャゴチャうるせえ！
+sleep 8
+loop 4
+step_npc 10253 2
+play_se gun_shot.ogg
+include ./event/common/effect_flash01.txt
+play_se helicopter.ogg
+include ./event/common/effect_flash01.txt
+play_se gun_shot.ogg
+sleep 4
+play_se helicopter.ogg
+sleep 4
+pool
+jump_npc 10265 same 1
+msg3 -1 ツォン\n「そんなことされると\n　たいせつなゲストが　ケガするじゃないか
+loop 5
+step_npc 10253 2
+play_se gun_shot.ogg
+include ./event/common/effect_flash01.txt
+play_se helicopter.ogg
+include ./event/common/effect_flash01.txt
+play_se gun_shot.ogg
+sleep 4
+play_se_loop helicopter.ogg
+sleep 4
+pool
+wait_key_push_edge a
+erase_msg3
+sleep 16
+chg_npc_dir 10265 right
+sleep 16
+slide_walk_npc 10265 left 1
+chg_npc_img 10264 3
+sleep 6
+chg_speed 10265 not_move
+sleep 10
+chg_npc_dir 10265 down
+chg_npc_img 10253 1
+sleep 8
+jump_npc 10253 same 2
+sleep 16
+chg_speed 10254 fast
+step_npc 10254 3
+sleep 16
+set_active_msg 10255
+jump_npc 10255 same 2
+msg ティファ\n「エアリス！！
+sleep 32
+chg_npc_dir 10265 right
+sleep 24
+msg ツォン\n「おや　しりあいなのか？\n\n\n　さいごにあえて　よかったな\n　わたしに　かんしゃしてくれ
+sleep 32
+chg_speed 10254 normal
+step_npc 10254 1
+msg 『エアリスをどうするきだ
+chg_npc_dir 10265 down
+sleep 24
+chg_speed 10265 normal
+set_active_msg 10265
+jump_npc 10265 same 1
+msg ツォン\n「さあな
+sleep 16
+chg_speed 10265 slow
+step_npc 10265 2
+msg ツォン\n「われわれタークスに　あたえられた\n　めいれいは　『こだいしゅ』の　いきのこりを\n　つかまえろ　ということだけだ
+sleep 48
+step_npc 10265 2
+msg ツォン\n「ずいぶん　ながいじかんが　かかったが\n　やっとプレジデントに　ほうこくできる
+sleep 24
+set_active_msg 10265
+jump_npc 10264 same 1
+msg エアリス\n「ティファ　だいじょうぶだから！\n　あのこ　だいじょうぶだから！
+chg_npc_dir 10265 right
+sleep 16
+chg_speed 10265 fast
+step_npc 10265 2
+play_se attack_tifa.ogg
+chg_npc_dir 10264 right
+inc_screen_effect_val 30
+sleep 1
+dec_screen_effect_val 30
+sleep 3
+chg_npc_dir 10264 up
+sleep 4
+play_se_loop helicopter.ogg
+chg_npc_dir 10264 left
+sleep 4
+chg_npc_dir 10264 down
+sleep 4
+chg_npc_img 10264 15
+sleep 8
+chg_speed 10254 fast
+step_npc 10254 3
+sleep 16
+jump_npc 10255 same 2
+msg3 -1 ティファ\n「エアリス！！
+sleep 32
+step_npc 10255 4
+wait_key_push_edge a
+erase_msg3
+chg_npc_img 10264 3
+sleep 8
+chg_speed 10264 fast
+chg_npc_dir 10264 down
+step_npc 10264 2
+msg エアリス\n「だからはやくにげて！
+chg_npc_dir 10265 down
+sleep 48
+play_event_bgm 1-07-Hurry_!.ogg
+kill_through 10204
+chg_npc_img 10265 147
+chg_npc_dir 10265 right
+chg_speed 10265 normal
+step_npc 10265 2
+msg3 -1 ツォン\n「クックック！\n　そろそろはじまるぞ\n　にげきれるかな？
+loop 2
+step_npc 10256 1
+step_npc 10257 1
+step_npc 10258 1
+step_npc 10259 1
+step_npc 10260 1
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 8
+chg_npc_y_offset 10264 7
+sleep 8
+pool
+reset_screen_effect
+create event_generator 10206 102 0 0 17 0 0 @102/plate_support07_a.txt
+chg_speed 10265 fast
+loop_inf
+step_npc 10256 1
+step_npc 10257 1
+step_npc 10258 1
+step_npc 10259 1
+step_npc 10260 1
+step_npc 10265 2
+chg_npc_y_offset 10264 6
+sleep 8
+chg_npc_y_offset 10264 7
+sleep 8
+pool

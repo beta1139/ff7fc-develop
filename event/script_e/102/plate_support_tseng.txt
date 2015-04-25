@@ -1,0 +1,213 @@
+wait_target_talk 10221
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+set_key_unvalid select
+chg_npc_dir 10255 down
+step_char 2
+kill_through 10039
+sleep 80
+set_npc_pos 10053 100 18 32
+create npc_event 10054 100 19 29 0 2 1 none
+create npc_event 10254 102 19 39 0 2 1 none
+draw_char off
+set_npc_pos 10055 100 20 28
+chg_npc_dir 10053 up
+chg_npc_dir 10054 left
+chg_npc_dir 10055 down
+set_layer 10055 front
+chg_event_move_char_speed slow
+play_event_bgm Ex-08-nothing.ogg
+create map_obj 10098 100 19 26 57 0 0 
+create map_obj 10099 100 20 26 57 0 0 
+create npc2 10039 100 12 34 140 1 4 "
+set_layer 10098 front
+set_layer 10099 front
+sleep 24
+msg ÅwÅcÅcÇΩÇæÇÃ Ç∂Ç∞ÇÒÇŒÇ≠ÇæÇÒÇ∂Ç·Ç»Ç¢
+set_flag 14 0
+kill_through_range 10215 10218
+create npc_event 10060 100 20 31 17 1 2 none
+create npc_event 10064 100 20 26 17 1 2 none
+create npc_event 10065 100 19 26 17 1 2 none
+chg_npc_y_offset 10064 6
+chg_npc_y_offset 10065 6
+warp 100 19 29 up
+chg_event_move_char_speed normal
+sleep 16
+move_npc 10060 left 1
+move_npc 10064 left 1
+move_npc 10065 right 1
+play_event_bgm 1-13-Turk's_Theme.ogg
+sleep 6
+chg_speed 10065 not_move
+sleep 1
+chg_speed 10064 not_move
+sleep 1
+chg_speed 10060 not_move
+sleep 8
+create npc_event 10256 102 19 28 148 1 2 none
+create npc_event 10257 102 20 28 148 0 2 none
+create npc_event 10258 102 19 29 148 2 2 none
+create npc_event 10259 102 20 29 149 2 2 none
+create npc_event 10260 102 20 33 121 1 2 none
+create npc_event 10264 102 20 28 16 1 2 none
+create npc_event 10265 102 19 28 28 1 2 none
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 8
+move_char up 9
+play_se_loop helicopter.ogg
+create npc_event 10056 100 19 26 17 1 2 none
+create npc_event 10057 100 20 26 17 0 2 none
+create npc_event 10058 100 19 27 17 2 2 none
+create npc_event 10059 100 20 27 17 2 2 none
+chg_npc_dir 10060 down
+chg_npc_dir 10064 down
+chg_npc_dir 10065 down
+move_npc 10260 left 1
+move_npc 10264 left 1
+move_npc 10265 right 1
+sleep 6
+chg_speed 10265 not_move
+sleep 1
+chg_speed 10264 not_move
+sleep 1
+chg_speed 10260 not_move
+sleep 16
+slide_walk_npc 10056 up 8
+slide_walk_npc 10057 up 8
+slide_walk_npc 10058 up 8
+slide_walk_npc 10059 up 8
+chg_speed 10060 normal
+chg_speed 10064 normal
+chg_speed 10065 normal
+slide_walk_npc 10060 up 8
+slide_npc 10064 up 8
+slide_npc 10065 up 8
+chg_npc_y_offset 10064 6
+chg_npc_y_offset 10065 6
+sleep 8
+chg_npc_y_offset 10064 7
+chg_npc_y_offset 10065 7
+chg_npc_dir 10054 up
+chg_npc_dir 10055 up
+chg_npc_dir 10254 up
+chg_npc_dir 10255 up
+sleep 8
+chg_npc_y_offset 10064 6
+chg_npc_y_offset 10065 6
+sleep 8
+jump_npc 10053 same 1
+chg_npc_img 10056 148
+chg_npc_img 10057 148
+chg_npc_img 10058 148
+chg_npc_img 10059 149
+chg_npc_img 10064 16
+chg_npc_img 10065 28
+chg_npc_y_offset 10064 7
+chg_npc_y_offset 10065 7
+sleep 8
+chg_npc_y_offset 10064 6
+chg_npc_y_offset 10065 6
+sleep 8
+chg_npc_y_offset 10064 7
+chg_npc_y_offset 10065 7
+chg_speed 10053 fast
+move_npc 10053 right 2
+sleep 8
+set_npc_pos 10253 102 20 40
+chg_npc_y_offset 10064 6
+chg_npc_y_offset 10065 6
+sleep 8
+move_npc 10053 up 2
+loop 4
+chg_npc_y_offset 10064 7
+chg_npc_y_offset 10065 7
+sleep 8
+chg_npc_y_offset 10064 6
+chg_npc_y_offset 10065 6
+sleep 8
+pool
+chg_npc_dir 10260 down
+chg_npc_dir 10264 down
+chg_npc_dir 10265 down
+chg_npc_y_offset 10064 7
+chg_npc_y_offset 10065 7
+sleep 8
+chg_npc_y_offset 10064 6
+chg_npc_y_offset 10065 6
+chg_npc_img 10060 121
+set_layer 10060 front
+loop 2
+step_npc 10056 1
+step_npc 10057 1
+step_npc 10058 1
+step_npc 10059 1
+step_npc 10060 1
+sleep 8
+chg_npc_y_offset 10064 7
+chg_npc_y_offset 10065 7
+sleep 8
+chg_npc_y_offset 10064 6
+chg_npc_y_offset 10065 6
+pool
+warp 102 19 30 down
+chg_speed 10264 normal
+chg_speed 10265 normal
+slide_walk_npc 10256 down 4
+slide_walk_npc 10257 down 4
+slide_walk_npc 10258 down 4
+slide_walk_npc 10259 down 4
+slide_npc 10264 down 4
+slide_npc 10265 down 4
+chg_speed 10260 normal
+slide_walk_npc 10260 down 3
+sleep 8
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 8
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+move_char down 3
+create npc_event 4990 49 20 11 28 1 2 none
+chg_npc_y_offset 4990 6
+slide_npc 4990 right 1
+sleep 6
+chg_speed 4990 not_move
+sleep 2
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 8
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 8
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 8
+step_npc 10260 2
+loop 2
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 8
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 8
+pool
+create event_generator 10205 102 0 0 17 0 0 @102/plate_support_tseng2.txt
+chg_char_state_move
+loop_inf
+step_npc 10256 1
+step_npc 10257 1
+step_npc 10258 1
+step_npc 10259 1
+step_npc 10260 1
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 8
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 8
+pool

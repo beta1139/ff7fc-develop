@@ -1,0 +1,46 @@
+sleep 32
+loop 2
+play_se bomb_little.ogg
+include ./event/common/effect_flash03.txt
+sleep 8
+reset_screen_effect
+sleep 8
+pool
+play_se bomb_little.ogg
+sleep 16
+set_screen_effect add 255 255 255 16
+loop 16
+sleep 1
+dec_screen_effect_val 1
+pool
+loop 2
+play_se bomb_little.ogg
+include ./event/common/effect_flash03.txt
+sleep 8
+reset_screen_effect
+sleep 8
+pool
+play_se bomb_little.ogg
+sleep 16
+set_screen_effect add 255 255 255 16
+loop 16
+sleep 1
+dec_screen_effect_val 1
+pool
+play_se bomb_little.ogg
+include ./event/common/effect_flash03.txt
+sleep 8
+reset_screen_effect
+sleep 8
+play_se bomb_little.ogg
+set_screen_effect add 255 255 255 0
+sleep 4
+inc_screen_effect_val 20
+sleep 4
+dec_screen_effect_val 20
+sleep 8
+create event_generator 1900 19 15 19 17 0 0 @019/plate_support_end1_a.txt
+include ./event/common/effect_fadeout.txt
+erase_image_range 000 011
+play_se bomb_little.ogg
+warp 19 15 19 up

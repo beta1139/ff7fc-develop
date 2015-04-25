@@ -1,0 +1,77 @@
+wait_same_pos
+chg_char_state_move
+loop 16
+include ./event/common/effect_gunshot01.txt
+pool
+sleep 24
+loop 16
+include ./event/common/effect_gunshot01.txt
+pool
+sleep 24
+loop 2
+include ./event/common/effect_gunshot02.txt
+sleep 24
+pool
+sleep 8
+loop 16
+include ./event/common/effect_gunshot01.txt
+pool
+sleep 24
+loop 13
+include ./event/common/effect_gunshot01.txt
+pool
+sleep 24
+loop 2
+include ./event/common/effect_gunshot02.txt
+sleep 8
+play_se helicopter.ogg
+sleep 16
+pool
+sleep 8
+loop 5
+include ./event/common/effect_gunshot02.txt
+sleep 4
+play_se helicopter.ogg
+sleep 4
+pool
+sleep 32
+loop 4
+include ./event/common/effect_gunshot02.txt
+sleep 8
+pool
+loop 3
+include ./event/common/effect_gunshot02.txt
+sleep 8
+pool
+sleep 16
+loop 4
+include ./event/common/effect_gunshot02.txt
+sleep 8
+pool
+loop 5
+include ./event/common/effect_gunshot02.txt
+sleep 8
+pool
+play_se bomb_little.ogg
+sleep 16
+loop 4
+include ./event/common/effect_gunshot03.txt
+sleep 8
+pool
+loop 4
+include ./event/common/effect_gunshot03.txt
+pool
+loop 3
+play_se bomb_little.ogg
+include ./event/common/effect_gunshot02.txt
+sleep 12
+pool
+sleep 16
+play_se gun_shot.ogg
+loop 4
+loop 2
+include ./event/common/effect_gunshot02.txt
+pool
+sleep 16
+play_se helicopter.ogg
+pool

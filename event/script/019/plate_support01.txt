@@ -1,4 +1,62 @@
 wait_same_pos
+draw_char off
+disable_char_chg
 kill_through_range 1910 1912
-play_event_bgm 4-08-Hurry_Faster_!.ogg
-msg ～イベントさくせいここまで\n\n\n\n　プレートしちゅうのマップがほすぃ\n　ぼしゅうちゅうー\n\n\n　あと　このままななばんスラムにすすむと　\n　エラーでおちるので　きをつけて
+kill_through 1951
+play_event_bgm 1-10-Fighting.ogg
+create npc_event 1920 19 27 23 2 2 3 none
+create npc_event 1921 19 28 22 0 2 3 none
+create npc_event 1922 19 27 21 3 2 3 エアリス\n「だいじょうぶ\n　ここはまかせて
+set_npc_pos 1950 19 1 1
+move_npc 1921 left 12
+move_npc 1920 left 12
+move_npc 1922 left 13
+sleep 56
+chg_event_move_char_speed fast
+move_char left 5
+sleep 40
+move_npc 1921 up 1
+move_npc 1920 up 1
+move_char up 7
+sleep 8
+chg_npc_dir 1922 up
+chg_speed 1921 normal
+chg_speed 1922 normal
+move_npc 1921 up 2
+move_npc 1920 up 3
+move_npc 1922 up 1
+chg_speed 1908 fast
+move_npc 1908 left 1
+sleep 8
+chg_npc_dir 1908 up
+sleep 8
+step_npc 1908 3
+sleep 16
+chg_speed 1920 normal
+move_npc 1920 up 2
+sleep 16
+create event_generator 1913 19 16 15 17 0 0 @019/plate_support02.txt
+sleep 24
+move_npc 1908 right 1
+sleep 8
+set_flag 0 4
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+chg_char_state_move
+chg_npc_dir 1908 up
+sleep 8
+loop_inf
+chg_npc_dir 1908 up
+step_npc 1908 4
+sleep 104
+move_npc 1908 left 1
+sleep 8
+chg_npc_dir 1908 up
+step_npc 1908 4
+sleep 104
+move_npc 1908 right 1
+sleep 8
+pool

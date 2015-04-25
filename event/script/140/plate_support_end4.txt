@@ -1,0 +1,185 @@
+wait_same_pos
+kill_through_range 6900 6999
+create npc_event 14020 140 12 14 20 0 1 none
+create npc_event 71020 710 12 14 20 0 1 none
+sleep 32
+play_event_bgm 1-19-Infiltrating_Shinra_Tower.ogg
+sleep 16
+loop 4
+dec_screen_effect_val 25
+sleep 8
+pool
+reset_screen_effect
+loop 2
+warp 710 13 15 up
+sleep 8
+warp 140 13 15 up
+sleep 8
+pool
+move_npc 14020 up 1
+move_npc 71020 up 1
+loop 5
+warp 710 13 15 up
+sleep 8
+warp 140 13 15 up
+sleep 8
+pool
+jump_npc 14020 same 1
+jump_npc 71020 same 1
+warp 710 13 15 up
+sleep 8
+warp 140 13 15 up
+sleep 8
+jump_npc 14020 same 1
+jump_npc 71020 same 1
+warp 710 13 15 up
+sleep 8
+warp 140 13 15 up
+sleep 8
+jump_npc 14020 same 1
+jump_npc 71020 same 1
+loop 2
+warp 710 13 15 up
+sleep 8
+warp 140 13 15 up
+sleep 8
+pool
+chg_speed 14020 not_move
+chg_speed 71020 not_move
+loop 14
+warp 710 13 15 up
+sleep 8
+warp 140 13 15 up
+sleep 8
+pool
+chg_npc_dir 14020 right
+chg_npc_dir 71020 right
+chg_speed 14020 not_step
+chg_speed 71020 not_step
+loop 2
+warp 710 13 15 up
+sleep 8
+warp 140 13 15 up
+sleep 8
+pool
+set_screen_effect sub 255 255 255 0
+loop 4
+inc_screen_effect_val 25
+sleep 8
+pool
+sleep 16
+warp 711 28 11 up
+kill_through_range 2000 2799
+play_se_loop burn.ogg
+set_screen_effect sub 0 255 255 40
+chg_event_move_char_speed normal
+move_char down 16
+loop 2
+sleep 160
+pool
+sleep 80
+sleep 32
+kill_through_range 71100 71199
+stop_se
+warp 708 0 0 up
+sleep 8
+set_screen_effect sub 255 255 0 60
+sleep 8
+warp 106 23 9 up
+sleep 16
+play_se_loop helicopter.ogg
+slide_walk_npc 10650 left 31
+slide_walk_npc 10651 left 31
+slide_walk_npc 10652 left 31
+slide_walk_npc 10653 left 31
+sleep 8
+loop 4
+dec_screen_effect_val 15
+sleep 8
+pool
+loop 40
+inc_screen_effect_val 1
+sleep 1
+pool
+chg_event_move_char_speed fast
+move_char left 14
+loop 40
+dec_screen_effect_val 1
+sleep 1
+pool
+reset_screen_effect
+create effect 10660 106 0 0 0 0 64 6
+sleep 176
+chg_event_move_char_speed normal
+move_char up 3
+sleep 24
+kill_through 10660
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 0 0
+slide_walk_npc 10654 right 15
+slide_walk_npc 10655 right 15
+loop 40
+inc_screen_effect_val 1
+sleep 1
+pool
+loop 24
+dec_screen_effect_val 1
+sleep 1
+pool
+move_char right 6
+loop 16
+dec_screen_effect_val 1
+sleep 1
+pool
+loop 40
+inc_screen_effect_val 1
+sleep 1
+pool
+step_npc 10654 15
+step_npc 10655 15
+loop 40
+dec_screen_effect_val 1
+sleep 1
+pool
+loop 40
+inc_screen_effect_val 1
+sleep 1
+pool
+loop 8
+dec_screen_effect_val 5
+sleep 1
+pool
+reset_screen_effect
+sleep 8
+set_screen_effect sub 255 255 255 0
+loop 4
+inc_screen_effect_val 12
+sleep 4
+inc_screen_effect_val 13
+sleep 4
+pool
+sleep 16
+play_event_bgm Ex-08-nothing.ogg
+sleep 48
+warp 70 14 24 down
+draw_char on
+chg_char_img_tmp 105
+sleep 48
+stop_se
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid select
+set_key_unvalid start
+sleep 48
+play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+create event_generator 7000 70 0 0 17 0 0 @070/midori_park_smoke.txt
+loop 100
+dec_screen_effect_val 1
+sleep 1
+pool
+sleep 80
+create event_generator 7001 70 14 24 17 0 0 @070/midori_park3.txt
+reset_screen_effect

@@ -11,12 +11,11 @@ fi
 set_flag 13 0
 set_flag 14 0
 set_flag 15 0
-kill_through_range 1700 1747
-kill_through_range 1730 1734
+kill_through_range 1700 1799
 kill_through_range 1800 1809
-kill_through_range 1903 1905
-kill_through_range 1910 1912
-kill_through_range 1960 1962
+kill_through_range 1900 1905
+kill_through_range 1910 1949
+kill_through_range 1960 1999
 sleep 16
 create npc_event 9821 98 9 32 3 3 2 none
 create npc_event 9822 98 9 32 2 0 2 none
@@ -100,28 +99,32 @@ set_layer 9902 front
 set_layer 9904 front
 set_layer 9919 front
 kill_through_range 9996 9999
-create npc 1706 17 14 9 94 0 4 「プレートがおちるって　うわさをききましたです\n　ながねんしたしんだ　このえきですから\n　どうしてもはなれられません……\n\n　いったいどうして……？\n　うそであってほしいです
-chg_npc_img 1748 4
-chg_npc_img 1749 4
-chg_npc_img 1750 4
-chg_npc_img 1751 5
-chg_npc_img 1752 11
-chg_npc_img 1753 12
-chg_npc_img 1754 13
-chg_npc_img 1755 12
-chg_npc_img 1756 13
-chg_npc_img 1757 12
-chg_npc_img 1758 13
-chg_npc_img 1759 12
-chg_npc_img 1760 13
-chg_npc_img 1761 12
-chg_npc_img 1762 13
-chg_npc_img 1763 14
-chg_npc_img 1764 10
-chg_npc_img 1765 4
-create event_generator 1910 19 14 19 17 0 0 @019/plate_support01.txt
-create event_generator 1911 19 14 20 17 0 0 @019/plate_support01.txt
-create event_generator 1912 19 14 21 17 0 0 @019/plate_support01.txt
+create npc 1706 17 14 9 94 0 4 「プレートがおちるって　うわさを　ききましたです\n　ながねん　したしんだ　このえきですから\n　どうしても　はなれられません……\n\n　いったい　どうして……？\n　うそであってほしいです
+create event_generator 1911 19 21 22 17 0 0 @019/plate_support01.txt
+create event_generator 10102 101 15 80 17 0 0 @101/plate_support_gunshot1.txt
+create event_generator 10103 101 15 80 17 0 0 @101/plate_support03.txt
+chg_type 1906 npc_event
+chg_type 1907 npc_event
+chg_type 1908 npc_event
+chg_speed 1908 normal
+set_npc_pos 1906 19 15 16
+set_npc_pos 1907 19 16 15
+create npc_event 1909 19 15 15 68 0 0 none
+create npc_event 1940 19 14 15 66 0 0 「オロオロ…\n　はしら　こわれちゃうんですか\n\n\n　こわいんですけど　あんたたちのためにね
+create npc_event 10150 101 16 84 144 0 3 none
+create npc_event 10153 101 16 35 1 0 3 none
+create npc_event 10120 101 18 75 141 1 3 none
+create npc_event 10122 101 13 76 141 1 3 none
+create npc_event 10123 101 17 70 140 2 3 none
+create treasure_box3 10124 101 18 66 2 0 0 1000
+create npc_event 10126 101 20 63 140 2 3 none
+create npc_event 10127 101 13 61 140 3 3 none
+create npc_event 10156 101 10 49 123 1 2 none
+create npc_event 10157 101 11 49 123 0 2 none
+create npc_event 10158 101 25 44 17 1 3 none
+create npc_event 10159 101 26 44 17 0 3 none
+set_layer 10156 front
+set_layer 10157 front
 restore_char_img
 draw_image 9899 16 16 0 0 224 32 1 event/train_graveyard.bmp
 wait_key_push_edge a

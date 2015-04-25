@@ -1,0 +1,36 @@
+wait_target_talk 10220
+step_npc 10255 2
+set_talk_npc 10255
+msg ティファ\n「クラウド！\n　とめかたが　わからないの\n　やってみて！
+reset_talk_npc
+set_flag 14 1
+stop_se
+kill 10202
+chg_dir_to_char 10255
+sleep 24
+chg_speed 10255 normal
+if_char_dir up
+move_npc 10255 up 1
+sleep 16
+move_npc 10255 right 1
+sleep 16
+chg_npc_dir 10255 down
+fi
+if_char_dir down
+move_npc 10255 right 1
+sleep 16
+move_npc 10255 up 1
+sleep 16
+chg_npc_dir 10255 left
+fi
+if_char_dir left
+move_npc 10255 up 1
+sleep 16
+move_npc 10255 right 1
+sleep 16
+chg_npc_dir 10255 down
+fi
+chg_speed 10255 not_move
+chg_type 10255 npc
+set_flag_wall 10255
+kill 10220

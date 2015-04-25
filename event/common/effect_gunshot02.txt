@@ -1,0 +1,8 @@
+play_se gun_shot.ogg
+loop 2
+set_screen_effect add 255 255 255 0
+sleep 2
+inc_screen_effect_val 20
+sleep 2
+dec_screen_effect_val 20
+pool

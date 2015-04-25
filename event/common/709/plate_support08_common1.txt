@@ -1,0 +1,12 @@
+loop 4
+sleep 1
+chg_image_pos_offset 010 0 2 0 0 0 0
+chg_image_pos_offset 050 0 2 0 0 0 0
+pool
+set_image_alpha 010 0
+loop 4
+sleep 1
+chg_image_pos_offset 010 0 2 0 0 0 0
+chg_image_pos_offset 050 0 2 0 0 0 0
+pool
+set_image_alpha 010 100

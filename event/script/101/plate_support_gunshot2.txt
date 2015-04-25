@@ -1,0 +1,11 @@
+loop 16
+include ./event/common/effect_gunshot01.txt
+pool
+sleep 24
+loop 8
+include ./event/common/effect_gunshot01.txt
+pool
+reset_screen_effect
+loop_inf
+sleep 160
+pool

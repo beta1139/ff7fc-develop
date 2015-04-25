@@ -1,0 +1,5 @@
+wait_same_pos
+kill 7000
+kill_through 6802
+kill_through_range 7113 7115
+kill_through_range 7080 7083

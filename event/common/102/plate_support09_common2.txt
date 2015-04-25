@@ -1,0 +1,19 @@
+dec_screen_effect_val 5
+inc_map_draw_y_offset
+sleep 2
+inc_screen_effect_val 10
+inc_map_draw_y_offset
+sleep 2
+loop 2
+inc_screen_effect_val 10
+dec_map_draw_y_offset
+sleep 2
+pool
+inc_screen_effect_val 10
+sleep 2
+loop 2
+dec_screen_effect_val 5
+sleep 2
+pool
+reset_screen_effect
+sleep 2

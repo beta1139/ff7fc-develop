@@ -1,0 +1,40 @@
+set_eternal_event
+wait_target_talked 10152
+reset_talked_flag 10152
+chg_type 10152 npc_event
+chg_speed 10152 slow
+chg_event_move_char_speed fast
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid select
+set_key_unvalid start
+if_flag 3 0
+step_char 1
+sleep 32
+step_npc 10152 2
+sleep 32
+set_talk_npc 10152
+msg ジェシー\n「もう　いい……いいの……\n\n\n　わたしたち……わたしたちの　さくせんで\n　たくさん……ひと　しんじゃったし……\n　きっと……そのむくい……ね
+reset_talk_npc
+fi
+if_flag 3 1
+sleep 16
+set_talk_npc 10152
+msg ジェシー\n「……そうか……ですって……？
+reset_talk_npc
+step_npc 10152 1
+set_talk_npc 10152
+msg 　フフ……あいかわらず……\n　クールな……もとソルジャーさん\n　……そこが……いいんだけどね……
+reset_talk_npc
+fi
+chg_type 10152 npc3
+chg_speed 10152 not_step
+chg_event_move_char_speed normal
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_key_valid select
+set_key_valid start

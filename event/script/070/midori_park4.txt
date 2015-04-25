@@ -1,0 +1,175 @@
+sleep 72
+erase_msg3
+chg_speed 7022 normal
+move_npc 7022 right 1
+sleep 16
+move_npc 7022 up 1
+sleep 16
+set_active_msg 7022
+jump_npc 7022 same 1
+msg 『おい　バレット！
+sleep 8
+set_active_msg 7021
+jump_npc 7021 same 2
+msg ティファ\n「バレット！
+sleep 32
+msg3 -1 バレット\n「うおぉぉーー！！
+loop 10
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+chg_speed 7021 normal
+move_npc 7021 up 1
+move_npc 7022 up 1
+sleep 16
+erase_msg3
+chg_npc_dir 7022 right
+sleep 8
+jump_npc 7022 same 1
+kill_through 7001
+msg 『おい！
+sleep 40
+chg_speed 7021 slow
+step_npc 7021 2
+msg ティファ\n「バレット　もうやめて……\n　おねがい　バレット
+sleep 64
+chg_npc_dir 7020 right
+sleep 64
+chg_npc_dir 7020 up
+sleep 32
+step_npc 7020 10
+msg3 -1 バレット\n「うわぁぁぁーー！！！
+loop 24
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+sleep 8
+play_se jump.wav
+jump_npc 7020 up 1
+sleep 16
+play_se landing.wav
+chg_npc_dir 7022 up
+erase_msg3
+sleep 8
+chg_npc_img 7020 145
+loop 8
+step_npc 7020 2
+play_se gun_shot.ogg
+set_screen_effect add 255 255 255 0
+sleep 2
+inc_screen_effect_val 20
+sleep 2
+play_se gun_shot.ogg
+dec_screen_effect_val 20
+sleep 2
+inc_screen_effect_val 20
+sleep 2
+dec_screen_effect_val 20
+play_se gun_shot.ogg
+sleep 4
+play_se gun_shot.ogg
+sleep 4
+pool
+chg_npc_dir 7020 right
+loop 8
+step_npc 7020 2
+play_se gun_shot.ogg
+set_screen_effect add 255 255 255 0
+sleep 2
+inc_screen_effect_val 20
+sleep 2
+play_se gun_shot.ogg
+dec_screen_effect_val 20
+sleep 2
+inc_screen_effect_val 20
+sleep 2
+dec_screen_effect_val 20
+play_se gun_shot.ogg
+sleep 4
+play_se gun_shot.ogg
+sleep 4
+pool
+chg_npc_dir 7020 left
+loop 8
+step_npc 7020 2
+play_se gun_shot.ogg
+set_screen_effect add 255 255 255 0
+sleep 2
+inc_screen_effect_val 20
+sleep 2
+play_se gun_shot.ogg
+dec_screen_effect_val 20
+sleep 2
+inc_screen_effect_val 20
+sleep 2
+dec_screen_effect_val 20
+play_se gun_shot.ogg
+sleep 4
+play_se gun_shot.ogg
+sleep 4
+pool
+chg_npc_dir 7020 up
+loop 8
+step_npc 7020 2
+play_se gun_shot.ogg
+set_screen_effect add 255 255 255 0
+sleep 2
+inc_screen_effect_val 20
+sleep 2
+play_se gun_shot.ogg
+dec_screen_effect_val 20
+sleep 2
+set_gray_scale
+sleep 2
+reset_gray_scale
+play_se gun_shot.ogg
+sleep 4
+play_se gun_shot.ogg
+sleep 2
+stop_se
+sleep 2
+pool
+reset_screen_effect
+step_npc 7020 3
+sleep 24
+chg_speed 7020 normal
+step_npc 7020 2
+sleep 128
+chg_npc_img 7020 1
+sleep 48
+chg_npc_img 7020 117
+chg_npc_dir 7020 down
+chg_speed 7020 normal
+sleep 8
+chg_npc_dir 7020 up
+play_se attack_tifa.ogg
+msg3 -1 バレット\n「クッ！\n　ちくしょう……
+sleep 8
+chg_npc_img 7020 1
+wait_key_push_edge a
+erase_msg3
+sleep 32
+fadeout
+sleep 48
+warp 70 15 21 up
+set_npc_pos 7020 70 15 21
+set_npc_pos 7021 70 16 22
+set_npc_pos 7022 70 15 23
+chg_npc_dir 7020 down
+chg_npc_dir 7021 left
+chg_npc_dir 7022 up
+sleep 48
+fadein
+create event_generator 7003 70 15 21 17 0 0 @070/midori_park5.txt

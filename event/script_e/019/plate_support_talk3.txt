@@ -1,0 +1,38 @@
+wait_target_talked 1906
+chg_type 1906 npc_event
+chg_speed 1906 normal
+chg_npc_dir 1906 up
+sleep 16
+step_npc 1906 3
+sleep 48
+play_se door_open_hard.wav
+kill_through_range 1952 1953
+sleep 24
+move_npc 1906 right 1
+if_char_dir up
+sleep 8
+chg_dir_to_char 1906
+fi
+if_char_dir right
+sleep 8
+chg_dir_to_char 1906
+fi
+if_char_dir left
+move_char down 1
+sleep 8
+chg_npc_dir 1906 down
+sleep 8
+chg_char_dir up
+fi
+sleep 8
+set_active_msg 1906
+jump_npc 1906 same 1
+set_talk_npc 1906
+msg 「こんなことになるなんてな！\n　いいきぶんじゃねえ！\n　あした　じひょうだ！
+reset_talk_npc
+sleep 16
+set_inactive_msg 1906
+chg_npc_dir 1906 down
+chg_speed 1906 not_move
+chg_type 1906 npc
+chg_param 1906 「おう！　これがおれの　さいごのしごとだ！\n　のぼってけ！！\n\n\n　こんなことになるなんてな！\n　いいきぶんじゃねえ！\n　あした　じひょうだ！
