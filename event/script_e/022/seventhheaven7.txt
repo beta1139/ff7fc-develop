@@ -200,8 +200,8 @@ sleep 48
 play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
 create npc 1706 17 17 9 94 1 0 `Good morning.\n Another fine day\n is starting.\n\n Be careful and try not\n to hurt youself.
 create npc3 1707 17 11 11 71 3 0 `I can't stand any more!
-create npc 1906 19 8 26 32 0 0 `You!\n You can't go any further!
-create npc2 1907 19 7 26 32 0 0 
+create npc 1906 19 15 28 32 0 0 `You!\n You can't go any further!
+create npc2 1907 19 14 28 32 0 0 
 create npc 2006 20 33 20 71 2 0 Johnny\n`I'm off to a journey\n to be a real man!\n Adios, amigo!\n Hey, you! You take good\n care of Tifa!
 create npc 2007 20 32 20 88 3 0 `Last night everybody was\n watching you two through\n the window.\n\n So you're Tifa's\n childhood friend?\n (wink wink, nudge nudge)
 create npc 2008 20 33 21 65 0 0 `Oh, dear!\n I won't have anyone\n to tease any more!
@@ -224,8 +224,8 @@ create event_generator 1719 17 1 2 17 0 0 @017/nanabangai_station8.txt
 create event_generator 1720 17 2 1 17 0 0 @017/nanabangai_station9.txt
 create event_generator 1721 17 14 9 17 0 0 @017/nanabangai_station10.txt
 create event_generator 1913 19 1 1 17 0 0 @019/nanabangai5.txt
-create event_generator 1916 19 1 19 17 0 0 @019/nanabangai7_1.txt
-create event_generator 1917 19 1 20 17 0 0 @019/nanabangai7_2.txt
+create event_generator 1916 19 8 21 17 0 0 @019/nanabangai7_1.txt
+create event_generator 1917 19 8 22 17 0 0 @019/nanabangai7_2.txt
 create event_generator 2023 20 1 1 17 0 0 @020/nanabangai_slum17.txt
 create event_generator 2024 20 1 2 17 0 0 @020/nanabangai_slum18.txt
 create event_generator 2025 20 2 1 17 0 0 @020/nanabangai_slum19.txt

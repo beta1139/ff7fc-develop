@@ -88,16 +88,16 @@ chg_param 2601
 create npc 1706 17 17 9 94 1 0 「おはようございます\n　いちやあけても　あいかわらずですね\n\n\n　けがしないよう　おきをつけて\n　いってらっしゃい
 create npc3 1707 17 10 11 71 3 0 「ぼく　もう　たえられない
 create npc2 1708 17 11 11 72 2 0 
-create npc 1906 19 8 26 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
-create npc2 1907 19 7 26 32 0 0 
+create npc 1906 19 15 28 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
+create npc2 1907 19 14 28 32 0 0 
 sleep 32
 create event_generator 1718 17 1 1 17 0 0 @017/nanabangai_station7.txt
 create event_generator 1719 17 1 2 17 0 0 @017/nanabangai_station8.txt
 create event_generator 1720 17 2 1 17 0 0 @017/nanabangai_station9.txt
 create event_generator 1721 17 14 9 17 0 0 @017/nanabangai_station10.txt
 create event_generator 1913 19 1 1 17 0 0 @019/nanabangai5.txt
-create event_generator 1916 19 1 19 17 0 0 @019/nanabangai7_1.txt
-create event_generator 1917 19 1 20 17 0 0 @019/nanabangai7_2.txt
+create event_generator 1916 19 8 21 17 0 0 @019/nanabangai7_1.txt
+create event_generator 1917 19 8 22 17 0 0 @019/nanabangai7_2.txt
 create event_generator 2023 20 1 1 17 0 0 @020/nanabangai_slum17.txt
 create event_generator 2024 20 1 2 17 0 0 @020/nanabangai_slum18.txt
 create event_generator 2025 20 2 1 17 0 0 @020/nanabangai_slum19.txt

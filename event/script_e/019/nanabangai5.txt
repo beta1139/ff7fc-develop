@@ -28,6 +28,6 @@ sleep 16
 chg_npc_dir 1907 up
 chg_type 1906 npc
 chg_speed 1906 not_move
-create npc2 1914 19 7 26 32 0 0 
+create npc2 1914 19 14 28 32 0 0 
 kill 1907
 create event_generator 1915 19 2 1 17 0 0 @019/nanabangai6.txt

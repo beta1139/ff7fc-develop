@@ -24,6 +24,6 @@ msg 「……しゅん
 sleep 16
 chg_type 1906 npc
 chg_speed 1906 not_move
-create npc3 1907 19 7 26 32 2 0 「アバランチと　せんぱい……\n　どっちが　こわいんだろ？\n\n\n　きっと　せんぱいだな
+create npc3 1907 19 14 28 32 2 0 「アバランチと　せんぱい……\n　どっちが　こわいんだろ？\n\n\n　きっと　せんぱいだな
 kill 1914
 chg_speed 1907 not_step
