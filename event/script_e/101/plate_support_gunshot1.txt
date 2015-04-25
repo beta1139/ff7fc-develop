@@ -72,6 +72,6 @@ loop 4
 loop 2
 include ./event/common/effect_gunshot02.txt
 pool
-sleep 16
 play_se helicopter.ogg
+sleep 16
 pool
