@@ -1,5 +1,5 @@
 loop 29
-include ./event/common/effect_gunshot03.txt
+include ./event/common/effect_gunshot04.txt
 pool
 loop_inf
 sleep 128
