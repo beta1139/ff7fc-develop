@@ -11,14 +11,21 @@ set_npc_pos 1950 19 1 1
 move_npc 1921 left 12
 move_npc 1920 left 12
 move_npc 1922 left 13
-sleep 56
+loop 6
+include ./event/common/gunshot1.txt
+pool
+sleep 8
 chg_event_move_char_speed fast
 move_char left 5
-sleep 40
+sleep 8
+include ./event/common/gunshot1.txt
+loop 3
+include ./event/common/gunshot2.txt
+pool
 move_npc 1921 up 1
 move_npc 1920 up 1
 move_char up 7
-sleep 8
+include ./event/common/gunshot1.txt
 chg_npc_dir 1922 up
 chg_speed 1921 normal
 chg_speed 1922 normal
@@ -27,19 +34,24 @@ move_npc 1920 up 3
 move_npc 1922 up 1
 chg_speed 1908 fast
 move_npc 1908 left 1
-sleep 8
+include ./event/common/gunshot1.txt
 chg_npc_dir 1908 up
-sleep 8
+include ./event/common/gunshot2.txt
 step_npc 1908 3
-sleep 16
+loop 2
+include ./event/common/gunshot2.txt
+pool
 chg_speed 1920 normal
 move_npc 1920 up 2
-sleep 16
+include ./event/common/gunshot2.txt
 create event_generator 1913 19 16 15 17 0 0 @019/plate_support02.txt
-sleep 24
+loop 2
+include ./event/common/gunshot1.txt
+pool
+sleep 8
 move_npc 1908 right 1
 sleep 8
-set_flag 0 3
+set_flag 0 4
 set_key_unvalid up
 set_key_unvalid down
 set_key_unvalid left
@@ -51,12 +63,37 @@ sleep 8
 loop_inf
 chg_npc_dir 1908 up
 step_npc 1908 4
-sleep 104
+loop 3
+include ./event/common/gunshot1.txt
+pool
+loop 3
+include ./event/common/gunshot2.txt
+pool
+sleep 16
+loop 2
+include ./event/common/gunshot1.txt
+pool
+loop 3
+include ./event/common/gunshot2.txt
+pool
 move_npc 1908 left 1
 sleep 8
 chg_npc_dir 1908 up
 step_npc 1908 4
-sleep 104
+loop 3
+include ./event/common/gunshot1.txt
+pool
+loop 3
+include ./event/common/gunshot2.txt
+pool
+sleep 16
+loop 2
+include ./event/common/gunshot1.txt
+pool
+loop 2
+include ./event/common/gunshot2.txt
+pool
+sleep 8
 move_npc 1908 right 1
 sleep 8
 pool

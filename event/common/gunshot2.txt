@@ -1,0 +1,4 @@
+play_se gun_shot.ogg
+sleep 6
+stop_se
+sleep 2
