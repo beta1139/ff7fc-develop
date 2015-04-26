@@ -338,6 +338,7 @@ move_char left 1
 chg_npc_dir 10151 right
 chg_npc_img 10151 17
 sleep 4
+create explode 10199 101 18 65 0 0 0 none
 chg_npc_dir 10151 down
 chg_npc_img 10151 36
 sleep 4
@@ -354,6 +355,7 @@ sleep 4
 chg_npc_dir 10151 down
 chg_npc_img 10151 36
 sleep 4
+create explode 10198 101 18 62 0 0 0 none
 chg_npc_dir 10151 left
 chg_npc_img 10151 17
 sleep 4
@@ -396,10 +398,11 @@ sleep 4
 chg_npc_img 10151 36
 sleep 4
 pool
-kill_through 10102
 kill_through 1908
 fadeout
-sleep 24
+sleep 16
+kill_through 10102
+sleep 8
 create event_generator 1914 19 15 20 17 0 0 @019/plate_support04.txt
 create npc_event 1908 19 13 15 70 0 0 「ウウッ……まもってくれよ\n　おれの　すてきで　ふしぎなばしょ
 set_npc_pos 1922 19 14 19
