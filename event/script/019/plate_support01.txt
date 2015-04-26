@@ -11,15 +11,17 @@ set_npc_pos 1950 19 1 1
 move_npc 1921 left 12
 move_npc 1920 left 12
 move_npc 1922 left 13
+sleep 8
 loop 6
 include ./event/common/gunshot1.txt
 pool
-sleep 8
 chg_event_move_char_speed fast
 move_char left 5
 sleep 8
+loop 2
 include ./event/common/gunshot1.txt
-loop 3
+pool
+loop 2
 include ./event/common/gunshot2.txt
 pool
 move_npc 1921 up 1
@@ -38,9 +40,8 @@ include ./event/common/gunshot1.txt
 chg_npc_dir 1908 up
 include ./event/common/gunshot2.txt
 step_npc 1908 3
-loop 2
 include ./event/common/gunshot2.txt
-pool
+sleep 8
 chg_speed 1920 normal
 move_npc 1920 up 2
 include ./event/common/gunshot2.txt
