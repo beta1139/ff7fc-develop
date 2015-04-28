@@ -1,7 +1,7 @@
 wait_target_talk 10220
 step_npc 10255 2
 set_talk_npc 10255
-msg ティファ\n「クラウド！\n　とめかたが　わからないの\n　やってみて！
+msg Tifa\n`Cloud!\n I can't disarm this.\n You take a look!
 reset_talk_npc
 set_flag 14 1
 stop_se

@@ -1,7 +1,7 @@
 wait_same_pos
 kill_through_range 6803 6804
 set_flag 14 0
-msg 「クラウド！
+msg `Cloud!
 chg_char_dir up
 create npc_event 6821 68 12 7 1 1 2 none
 move_npc 6821 down 3

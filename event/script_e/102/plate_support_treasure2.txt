@@ -4,7 +4,7 @@ set_key_unvalid down
 set_key_unvalid left
 set_key_unvalid right
 play_se pick_up.wav
-msg3 -1 こんなところに ラクロナグが！
+msg3 -1 You got Ragnarok!
 add_item 1096
 sleep 8
 play_se_loop crevice.ogg

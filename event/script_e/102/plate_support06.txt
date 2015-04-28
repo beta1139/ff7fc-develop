@@ -234,7 +234,7 @@ chg_npc_dir 10262 left
 sleep 8
 move_npc 10255 right 7
 sleep 8
-msg3 -1 レノ\n「おそかった　と\n　このスイッチをおすと……
+msg3 -1 Reno\n`Too late, y'know.\n Push this button, and==
 sleep 8
 move_npc 10253 right 7
 chg_npc_dir 10262 down
@@ -265,7 +265,7 @@ sleep 16
 step_npc 10262 1
 sleep 8
 play_se switch.ogg
-msg レノ\n「はい　おしまい！　さぎょう　カンリョウ
+msg Reno\n`Finito! Mission complete.
 chg_speed 10253 normal
 step_npc 10253 1
 sleep 8
@@ -276,7 +276,7 @@ jump_npc 10255 same 1
 sleep 16
 step_npc 10255 4
 set_talk_npc 10255
-msg ティファ\n「かいじょしなくちゃ！\n　クラウド！　バレット！　おねがい！
+msg Tifa\n`We got to abort that!\n Cloud! Baret! Please!
 reset_talk_npc
 sleep 24
 chg_npc_dir 10262 down
@@ -291,7 +291,7 @@ chg_npc_dir 10262 down
 chg_npc_img 10262 147
 set_active_msg 10262
 play_se squat.ogg
-msg レノ\n「そういうわけにはいかないぞ　と\n　タークスのレノさまの　じゃまは\n　だれにもさせないぞっ……と
+msg Reno\n`You can't, y'know.\n Nobody gets in Mister\n Reno's way, y'know.
 set_inactive_msg 10262
 chg_event_move_char_speed normal
 create event_generator 10202 102 0 0 17 0 0 @102/plate_support_reno.txt

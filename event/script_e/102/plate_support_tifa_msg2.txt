@@ -3,7 +3,7 @@ wait_target_talk 10255
 reset_talk_flag 10255
 chg_dir_to_char 10255
 set_talk_npc 10255
-msg3 -1 ティファ\n「うえのプレートが　おちてきたら\n　ひとたまりもないわ\n　いそがなくちゃ！
+msg3 -1 Tifa\n`We're all finished if\n the Plate comes down.\n We have to hurry!
 reset_talk_npc
 set_key_unvalid up
 set_key_unvalid down

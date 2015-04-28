@@ -14,12 +14,12 @@ inc_screen_effect_val 20
 sleep 8
 dec_screen_effect_val 20
 sleep 16
-set_screen_effect add 255 255 255 0
-loop 2
-sleep 8
-inc_screen_effect_val 20
-sleep 8
-dec_screen_effect_val 20
+reset_screen_effect
+loop 8
+sleep 2
+set_gray_scale
+sleep 2
+reset_gray_scale
 pool
 loop_inf
 sleep 160

@@ -28,11 +28,11 @@ sleep 8
 set_active_msg 1906
 jump_npc 1906 same 1
 set_talk_npc 1906
-msg 「こんなことになるなんてな！\n　いいきぶんじゃねえ！\n　あした　じひょうだ！
+msg `Who'd've thought this'd\n happen! I don't like it!\n I'm quitting!
 reset_talk_npc
 sleep 16
 set_inactive_msg 1906
 chg_npc_dir 1906 down
 chg_speed 1906 not_move
 chg_type 1906 npc
-chg_param 1906 「おう！　これがおれの　さいごのしごとだ！\n　のぼってけ！！\n\n\n　こんなことになるなんてな！\n　いいきぶんじゃねえ！\n　あした　じひょうだ！
+chg_param 1906 `Yo! It's my last job\n here. Climb up!\n\n\n Who'd've thought this'd\n happen! I don't like it!\n I'm quitting!

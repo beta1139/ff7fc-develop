@@ -1,4 +1,4 @@
-msg ツォン\n「そのとおり\n　それを　そうさするのは　むずかしい\n\n　どこかのバカものが　かってに\n　ふれると　こまるからな
+msg Tseng\n`That's right.\n It's designed to be\n difficult to operate.\n So that some clowns don't\n monkey around.
 if_flag 99 0
 move_char up 1
 sleep 32
@@ -13,11 +13,11 @@ set_text_alpha 9 0
 set_text_alpha 10 0
 set_text_alpha 11 0
 sleep 8
-set_text 3 　 　   　　　　　　　　ツォン
-set_text 8 　　　　　　しんらカンパニー　そうむぶ　ちょうさか
-set_text 9 　　　　　つうしょう　『タークス』　のリーダーにして
-set_text 10 　　　　　　　　ハイデッカー　ちょくぞくの　ぶか　
-set_text 11 　　　　　　　そしきないでの　しんようども　たかい
+set_text 3              Tseng
+set_text 8   The leader of TURKS, Shinra
+set_text 9      intelligence division
+set_text 10  His placed in the organization
+set_text 11   is second only to Heidegger
 warp 49 20 11 down
 loop 4
 sleep 1
@@ -177,10 +177,10 @@ sleep 8
 jump_npc 10255 same 2
 sleep 32
 step_npc 10255 2
-msg ティファ\n「おねがい　とめて！
+msg Tifa\n`Stop it, Please!
 sleep 32
 step_npc 10265 3
-msg ツォン\n「クックック……\n\n\n　きんきゅうよう　プレートかいほうシステムの\n　せっていと　かいじょは　『しんら』やくいんかいの\n　けっていなしでは　できないのだ
+msg Tseng\n`Ha-ha==\n\n\n This Emergency Plate\n Relasing System can be\n operated only on the\n order of Shinra Board.
 chg_npc_img 10253 1
 move_npc 10253 up 2
 sleep 16
@@ -188,7 +188,7 @@ jump_npc 10253 same 2
 sleep 32
 set_active_msg 10253
 chg_npc_img 10253 145
-msg バレット\n「ゴチャゴチャうるせえ！
+msg Baret\n`Stop babbling!
 sleep 8
 loop 4
 step_npc 10253 2
@@ -202,7 +202,7 @@ play_se helicopter.ogg
 sleep 4
 pool
 jump_npc 10265 same 1
-msg3 -1 ツォン\n「そんなことされると\n　たいせつなゲストが　ケガするじゃないか
+msg3 -1 Tseng\n`Are you trying to hurt\n our honored guest?
 loop 5
 step_npc 10253 2
 play_se gun_shot.ogg
@@ -234,32 +234,32 @@ step_npc 10254 3
 sleep 16
 set_active_msg 10255
 jump_npc 10255 same 2
-msg ティファ\n「エアリス！！
+msg Tifa\n`Aeris!
 sleep 32
 chg_npc_dir 10265 right
 sleep 24
-msg ツォン\n「おや　しりあいなのか？\n\n\n　さいごにあえて　よかったな\n　わたしに　かんしゃしてくれ
+msg Tseng\n`So you know each other?\n\n\n Then this is your last\n chance to say good-bye.\n I should be thanked for\n giving the opportunity.
 sleep 32
 chg_speed 10254 normal
 step_npc 10254 1
-msg 『エアリスをどうするきだ
+msg {What do you need her for?
 chg_npc_dir 10265 down
 sleep 24
 chg_speed 10265 normal
 set_active_msg 10265
 jump_npc 10265 same 1
-msg ツォン\n「さあな
+msg Tseng\n`Who knows.
 sleep 16
 chg_speed 10265 slow
 step_npc 10265 2
-msg ツォン\n「われわれタークスに　あたえられた\n　めいれいは　『こだいしゅ』の　いきのこりを\n　つかまえろ　ということだけだ
+msg Tseng\n`The order given to us is\n to capture a surviving\n specimen of the Ancients.
 sleep 48
 step_npc 10265 2
-msg ツォン\n「ずいぶん　ながいじかんが　かかったが\n　やっとプレジデントに　ほうこくできる
+msg Tseng\n`It's about time we at\n last have something to\n report to the President.
 sleep 24
 set_active_msg 10265
 jump_npc 10264 same 1
-msg エアリス\n「ティファ　だいじょうぶだから！\n　あのこ　だいじょうぶだから！
+msg Aeris\n`Tifa, don't worry!\n She's safe!
 chg_npc_dir 10265 right
 sleep 16
 chg_speed 10265 fast
@@ -283,7 +283,7 @@ chg_speed 10254 fast
 step_npc 10254 3
 sleep 16
 jump_npc 10255 same 2
-msg3 -1 ティファ\n「エアリス！！
+msg3 -1 Tifa\n`Aeris!!
 sleep 32
 step_npc 10255 4
 wait_key_push_edge a
@@ -293,7 +293,7 @@ sleep 8
 chg_speed 10264 fast
 chg_npc_dir 10264 down
 step_npc 10264 2
-msg エアリス\n「だからはやくにげて！
+msg Aeris\n`You run! Quick!
 chg_npc_dir 10265 down
 sleep 48
 play_event_bgm 1-07-Hurry_!.ogg
@@ -302,7 +302,7 @@ chg_npc_img 10265 147
 chg_npc_dir 10265 right
 chg_speed 10265 normal
 step_npc 10265 2
-msg3 -1 ツォン\n「クックック！\n　そろそろはじまるぞ\n　にげきれるかな？
+msg3 -1 Tseng\n`Ha-ha!\n It's beginning. See if\n you can get clear away.
 loop 2
 step_npc 10256 1
 step_npc 10257 1

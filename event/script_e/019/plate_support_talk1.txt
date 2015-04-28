@@ -7,7 +7,7 @@ chg_speed 1907 normal
 chg_speed 1909 normal
 step_npc 1907 2
 set_talk_npc 1907
-msg 「あ　あの……\n　これが　ぼくのしごとだから…\n　ギリギリまで　ここにいないとならないんだ
+msg `Y-you know==\n It's my job so==\n I need to remain here\n as long as I can.
 reset_talk_npc
 if_char_dir up
 set_slide_char_flag
@@ -19,7 +19,7 @@ fi
 sleep 16
 step_npc 1909 2
 set_talk_npc 1909
-msg 「うん…\n　せきにんかんの　つよい　あなた　すきよ\n　わたし　そばについてるわ
+msg `Yes==\n That's why I love you.\n I'm staying with you.
 reset_talk_npc
 if_char_dir up
 move_char down 1

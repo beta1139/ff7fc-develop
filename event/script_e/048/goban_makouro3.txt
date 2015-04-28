@@ -605,7 +605,7 @@ sleep 4
 create npc_event 4820 48 4 26 122 0 0 none
 sleep 4
 kill 4820
-stop_bgm
+play_event_bgm Ex-08-nothing.ogg
 sleep 8
 flush
 create npc_event 4820 48 4 26 122 3 0 none

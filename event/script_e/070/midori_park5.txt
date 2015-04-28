@@ -4,64 +4,64 @@ sleep 32
 chg_speed 7020 slow
 step_npc 7020 1
 set_talk_npc 7020
-msg バレット\n「マリン……
+msg Baret\n`Marlene==
 reset_talk_npc
 sleep 64
 chg_speed 7021 slow
 step_npc 7021 1
-msg ティファ\n「………\n　ねぇ　バレット……
+msg Tifa\n`==\n Look, Baret==
 sleep 48
 chg_speed 7021 normal
 chg_npc_dir 7021 up
 step_npc 7021 3
-msg ティファ\n「マリンは　マリンは\n　だいじょうぶだと　おもうの
+msg Tifa\n`Marlene is==\n I think she's allright.
 sleep 16
 jump_npc 7020 same 1
 set_talk_npc 7020
-msg バレット\n「……えっ？
+msg Baret\n`What?
 reset_talk_npc
 sleep 24
 jump_npc 7021 same 1
 sleep 16
 step_npc 7021 4
-msg ティファ\n「エアリスがいってたわ\n　『あのこ　だいじょうぶだから』\n　って　マリンのことよ　きっと
+msg Tifa\n`Aeris said so.\n `She's allright.'\n She meant Marlene.
 jump_npc 7020 same 2
 sleep 32
 chg_speed 7020 fast
 step_npc 7020 4
 set_talk_npc 7020
-msg バレット\n「ほ　ほんとうか！！
+msg Baret\n`Y-you sure?
 reset_talk_npc
 sleep 32
 chg_speed 7021 slow
 chg_npc_dir 7021 left
 sleep 32
 step_npc 7021 1
-msg ティファ\n「でも……
+msg Tifa\n`But==
 sleep 48
 chg_npc_dir 7020 left
 sleep 32
 chg_speed 7020 slow
 step_npc 7020 1
 set_talk_npc 7020
-msg バレット\n「ビッグス……\n　ウェッジ……\n　ジェシー……
+msg Baret\n`Biggs==\n Wedge==\n Jessie==
 reset_talk_npc
 sleep 32
 chg_speed 7022 slow
 chg_npc_dir 7022 left
 sleep 8
 step_npc 7022 1
-msg 『……あの3にんは　はしらのなかに　いた
+msg {==I saw those three\n in the post.
 sleep 48
 step_npc 7020 1
 set_talk_npc 7020
-msg バレット\n「わかってる……
+msg Baret\n`I know==
 reset_talk_npc
 sleep 48
 chg_npc_dir 7020 down
 jump_npc 7020 same 2
 sleep 8
-msg3 -1 バレット\n「でもよ　でもよ！\n　いっしょに　たたかってきた　なかまだ！
+msg3 -1 Baret\n`But, but!\n We fought together from\n the beginning!
 sleep 24
 chg_speed 7020 fast
 step_npc 7020 4
@@ -74,22 +74,22 @@ sleep 32
 chg_speed 7020 slow
 step_npc 7020 2
 set_talk_npc 7020
-msg バレット\n「しんじまったなんて……\n　おもいたくねえ！
+msg Baret\n`I don't wanna admit==\n they're dead.
 reset_talk_npc
 sleep 32
 chg_npc_dir 7021 up
 sleep 40
 step_npc 7021 1
-msg ティファ\n「……7ばんがいの　ひとたちも
+msg Tifa\n`==And people in Slum 7.
 sleep 32
 chg_npc_dir 7020 right
 step_npc 7020 1
 set_talk_npc 7020
-msg バレット\n「ああ　ヒドイもんだぜ\n\n\n　オレたちを　たおすために まちひとつ\n　つぶしちまうんだからな\n　いったい　なんにん　しんだんだ……
+msg Baret\n`Yeah. That's terrible.\n\n\n Squashing a whole town\n just to get rid of us.\n Wonder how many died==
 reset_talk_npc
 sleep 40
 step_npc 7021 3
-msg ティファ\n「……わたしたちのせい？　アバランチがいたから？\n　かんけいない　ひとたちまで……
+msg Tifa\n`==Our fault? Because\n AVALANCHE was here?\n Those innocent people==
 sleep 8
 chg_npc_dir 7020 down
 sleep 32
@@ -107,7 +107,7 @@ jump_npc 7020 same 1
 sleep 16
 chg_speed 7020 fast
 step_npc 7020 3
-msg バレット\n「ちがう！　ちがうぜ！　ティファ！！\n\n\n　なにもかも　しんらの　やつらが\n　やったことじゃねえか！
+msg Baret\n`No! You're wrong, Tifa!!\n\n\n Shinra did this.\n It's all their fault!
 chg_npc_dir 7022 down
 sleep 16
 chg_npc_dir 7020 up
@@ -115,7 +115,7 @@ move_npc 7022 down 2
 sleep 16
 chg_speed 7020 normal
 step_npc 7020 5
-msg バレット\n「じぶんたちの　かねや　けんりょくのために\n ほしのいのちを　すいとる　あくとうども！\n\n　そのしんらを　つぶさないかぎり\n　このほしは　しんじまうんだ！
+msg Baret\n`Fuckin' freeloadin'\n leeches drainin' up\n the planet's life!\n This planet's gonna\n die if we don't get\n rid of them!
 sleep 16
 chg_npc_dir 7022 left
 chg_npc_dir 7020 down
@@ -123,7 +123,7 @@ sleep 16
 jump_npc 7020 same 1
 chg_npc_dir 7020 up
 chg_npc_img 7020 95
-msg3 -1 バレット\n「しんらをたおすまで　オレたちのたたかいは\n　おわらねえ！！
+msg3 -1 Baret\n`Our war doesn't end till\n we defeat Shinra!
 sleep 16
 jump_npc 7020 same 1
 sleep 16
@@ -139,10 +139,10 @@ chg_npc_img 7020 1
 chg_npc_dir 7020 down
 sleep 16
 step_npc 7021 1
-msg ティファ\n「……わからない
+msg Tifa\n`==I don't know.
 sleep 16
 jump_npc 7020 same 1
-msg バレット\n「オレがいってること\n　わからねえのか！？
+msg Baret\n`Can't you see\n what I'm sayin'!?
 sleep 32
 chg_npc_dir 7021 up
 sleep 40
@@ -155,7 +155,7 @@ sleep 8
 chg_npc_dir 7021 up
 sleep 16
 step_npc 7021 2
-msg ティファ\n「ちがう……\n　わからないのは\n　じぶんの……きもち
+msg Tifa\n`No==\n What I don't know is==\n ==What do I want?
 sleep 16
 chg_event_move_char_speed normal
 chg_speed 7020 normal
@@ -165,19 +165,19 @@ sleep 16
 jump_npc 7020 same 1
 sleep 16
 step_npc 7020 2
-msg バレット\n「おまえはどうなんだ？
+msg Baret\n`How 'bout you?
 sleep 8
 chg_npc_dir 7021 down
 sleep 40
 chg_npc_dir 7022 down
-msg 『……
+msg {==
 draw_fake_countdown off
 start_fake_countdown_sec 3
 sleep 32
 move_npc 7022 down 5
 sleep 32
 jump_npc 7020 same 1
-msg3 -1 バレット\n「おい！
+msg3 -1 Baret\n`Hey!
 sleep 8
 wait_key_push_edge a
 erase_msg3
@@ -186,28 +186,28 @@ wait_fake_countover
 kill 7022
 sleep 8
 step_npc 7020 2
-msg バレット\n「あいつ　どこへ？
+msg Baret\n`Where to?
 sleep 16
 chg_speed 7020 normal
 jump_npc 7021 same 1
-msg ティファ\n「あっ！　エアリスのこと！
+msg Tifa\n`Oh, To Aeris!
 sleep 24
 chg_npc_dir 7020 right
 sleep 16
 step_npc 7020 2
-msg バレット\n「ああ　あのねえちゃんか\n　なにものなんだ？
+msg Baret\n`The chick?\n Who's she?
 sleep 16
 chg_npc_dir 7021 left
 sleep 16
 chg_speed 7021 normal
 step_npc 7021 2
-msg ティファ\n「……わたしも　よくしらない\n　でも　マリンのことを\n　エアリスにたのんだの
+msg Tifa\n`==I'm not sure.\n But I asked her to\n take care of Marlene.
 start_fake_countdown_sec 1
 jump_npc 7020 same 2
 sleep 32
 chg_speed 7020 fast
 step_npc 7020 4
-msg バレット\n「そうだ！　マリン！！
+msg Baret\n`Oh, yeah! Marlene!
 wait_fake_countover
 chg_speed 7020 normal
 move_npc 7020 down 4
@@ -215,7 +215,7 @@ sleep 80
 chg_npc_dir 7020 up
 sleep 16
 jump_npc 7020 same 1
-msg バレット\n「ティファ\n　もう　あともどりは　できねえんだ
+msg Baret\n`Tifa.\n We can't go back now.
 chg_npc_dir 7020 down
 sleep 16
 chg_speed 7020 fast

@@ -193,7 +193,7 @@ create npc_event 1907 19 15 17 32 0 3 none
 create npc_event 1908 19 13 18 70 0 3 none
 create npc_event 1909 19 16 18 68 0 3 none
 create npc_event 1910 19 16 22 66 0 3 none
-create npc_event 1911 19 7 22 90 0 3 none
+create npc_event 1911 19 6 22 90 0 3 none
 create npc_event 1912 19 11 23 78 0 3 none
 create npc_event 1913 19 9 21 77 0 3 none
 create npc_event 1914 19 15 25 72 0 3 none

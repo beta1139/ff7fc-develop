@@ -1,28 +1,28 @@
 step_npc 6821 2
 set_talk_npc 6821
-msg バレット\n「マリンのところへ　つれてってくれ！
+msg Baret\n`Take me to Marlene!
 reset_talk_npc
 sleep 24
 set_active_msg 6822
 jump_npc 6822 same 1
 set_talk_npc 6822
-msg ティファ\n「エアリスを　たすけにいくのね？
+msg Tifa\n`You're gonna take\n Aeris back, aren't you?
 reset_talk_npc
 sleep 16
 chg_char_dir down
 sleep 16
 step_char 1
 sleep 16
-msg 『ああ……\n　でも　そのまえに\n　たしかめたいことが　あるんだ
+msg {Yeah==\n But I need to know\n something first.
 sleep 24
 step_npc 6822 1
 set_talk_npc 6822
-msg ティファ\n「なに？
+msg Tifa\n`What's that?
 reset_talk_npc
 chg_event_move_char_speed slow
 move_char down 1
 sleep 32
-msg 『……こだいしゅ
+msg {……The Ancients
 flush
 sleep 4
 flush
@@ -46,8 +46,8 @@ sleep 11
 play_se_loop wind_loop.ogg
 set_text_alpha 5 0
 set_text_alpha 6 0
-set_text 5 　 　   「われこそ　こだいしゅの　ちを　ひきしもの
-set_text 6 　 　   　このほしの　せいとうなる　こうけいしゃ！
+set_text 5 I'm of the Ancients' lineage
+set_text 6 The only heir to this planet!
 loop 8
 sleep 1
 set_text_alpha 5 25
@@ -146,7 +146,7 @@ reset_screen_effect
 sleep 16
 step_char 1
 sleep 16
-msg 『セフィロス……？
+msg {Sephiroth……?
 flush
 play_se_loop beeeeep_fast.ogg
 chg_char_img_tmp 120
@@ -179,12 +179,12 @@ jump_npc 6822 same 1
 sleep 16
 step_npc 6822 2
 set_talk_npc 6822
-msg ティファ\n「だいじょうぶ？
+msg Tifa\n`Are you okay?
 reset_talk_npc
 sleep 16
 jump_npc 6821 same 1
 set_talk_npc 6821
-msg バレット\n「しっかりしてくれよ！
+msg Baret\n`Get a grip!
 reset_talk_npc
 sleep 16
 chg_speed 6822 normal

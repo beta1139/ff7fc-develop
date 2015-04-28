@@ -1,10 +1,10 @@
 set_eternal_event
 wait_same_pos
 if_flag 14 0
-msg ティファ\n「クラウド！\n　とめかたが　わからないの\n　やってみて！
+msg Tifa\n`Cloud!\n I can't disarm this.\n You take a look!
 fi
 if_flag 14 1
-msg ティファ\n「うえのプレートが　おちてきたら\n　ひとたまりもないわ\n　いそがなくちゃ！
+msg Tifa\n`We're all finished if\n the Plate comes down.\n We have to hurry!
 fi
 move_char up 1
 sleep 16

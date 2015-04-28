@@ -7,13 +7,13 @@ move_npc 7022 up 1
 sleep 16
 set_active_msg 7022
 jump_npc 7022 same 1
-msg 『おい　バレット！
+msg {Hey, Baret
 sleep 8
 set_active_msg 7021
 jump_npc 7021 same 2
-msg ティファ\n「バレット！
+msg Tifa\n`Baret!
 sleep 32
-msg3 -1 バレット\n「うおぉぉーー！！
+msg3 -1 Baret\n`Aaaahhh!
 loop 10
 loop 4
 inc_map_draw_y_offset
@@ -33,18 +33,18 @@ chg_npc_dir 7022 right
 sleep 8
 jump_npc 7022 same 1
 kill_through 7001
-msg 『おい！
+msg {Hey!
 sleep 40
 chg_speed 7021 slow
 step_npc 7021 2
-msg ティファ\n「バレット　もうやめて……\n　おねがい　バレット
+msg Tifa\n`Baret, stop it==\n Please, Baret.
 sleep 64
 chg_npc_dir 7020 right
 sleep 64
 chg_npc_dir 7020 up
 sleep 32
 step_npc 7020 10
-msg3 -1 バレット\n「うわぁぁぁーー！！！
+msg3 -1 Baret\n`Aaaarghh!!!
 loop 24
 loop 2
 inc_map_draw_y_offset
@@ -131,9 +131,9 @@ sleep 2
 play_se gun_shot.ogg
 dec_screen_effect_val 20
 sleep 2
-inc_screen_effect_val 20
+set_gray_scale
 sleep 2
-dec_screen_effect_val 20
+reset_gray_scale
 play_se gun_shot.ogg
 sleep 4
 play_se gun_shot.ogg
@@ -155,7 +155,7 @@ chg_speed 7020 normal
 sleep 8
 chg_npc_dir 7020 up
 play_se attack_tifa.ogg
-msg3 -1 バレット\n「クッ！\n　ちくしょう……
+msg3 -1 Baret\n`Shit!\n Fuck==
 sleep 8
 chg_npc_img 7020 1
 wait_key_push_edge a

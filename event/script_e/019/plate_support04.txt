@@ -69,26 +69,26 @@ sleep 8
 move_npc 1909 down 1
 sleep 16
 step_npc 1921 4
-msg 『だいじょうぶか？\n　……ウェッジ！！
+msg {Are you okay?\n ==Wedge!!
 sleep 64
 step_npc 1923 1
-msg ウェッジ\n「……クラウドさん…\n　おれのなまえ…　おぼえてくれたっすね
+msg Wedge\n`==Cloud==\n You remember==my name.
 sleep 64
 step_npc 1923 1
-msg ウェッジ\n「バレットさんが…　うえで　たたかってるっす\n　てをかしてやって……
+msg Wedge\n`Baret is==fighting above.\n You help him==
 step_npc 1921 2
 sleep 72
 step_npc 1923 1
-msg ウェッジ\n「クラウドさん……\n　めいわくかけて　すいません…っす
+msg Wedge\n`Cloud==\n Sorry to trouble you==
 sleep 64
 chg_npc_dir 1921 up
 sleep 16
 step_npc 1921 1
-msg 『のぼるぞ！
+msg {We're going up!
 sleep 16
 jump_npc 1921 same 1
 sleep 16
-msg 『エアリス！\n　ウェッジをたのむ
+msg {Aeris!\n You take care of Wedge.
 jump_npc 1922 same 1
 sleep 32
 chg_npc_dir 1920 left
@@ -96,18 +96,18 @@ sleep 16
 move_npc 1920 left 1
 sleep 8
 step_npc 1920 2
-msg ティファ\n「エアリス　おねがい\n\n\n　このちかくに　わたしたちのみせ\n　『セブンスヘブン』があるの\n\n\n　そこにマリンっていう　なまえの\n　ちいさなおんなのこが　いるから……
+msg Tifa\n`Aeris, do me a favor.\n\n\n Our bar `Seventh Heaven'\n isn't far from here.\n\n\n There's a little girl\n named Marlene there……
 chg_npc_dir 1922 right
 sleep 16
 step_npc 1922 2
-msg エアリス\n「わかった\n　あんぜんな　ばしょへ　ね
+msg Aeris\n`Right.\n I'll take her to a\n safe place.
 sleep 16
 chg_npc_dir 1920 up
 sleep 16
 set_active_msg 1920
 jump_npc 1920 same 2
 sleep 16
-msg ティファ\n「ここはきけんです！\n　みんなはやく　はしらから　はなれて！\n\n　7ばんがいから　はなれて！
+msg Tifa\n`It's dangerous here!\n Everyone get away from\n the post, quickly!\n\n Get away from Slum 7!
 if_party_mem 2
 del_party_mem 2
 fi
@@ -160,7 +160,7 @@ chg_type 1909 npc2
 chg_type 1940 npc
 chg_type 1922 npc
 chg_type 1923 npc2
-chg_param 1906 「おう！　これがおれの　さいごのしごとだ！\n　のぼってけ！！
+chg_param 1906 `Yo! It's my last job\n here. Climb up!
 chg_speed 1923 not_step
 set_layer 1923 back
 set_key_valid up

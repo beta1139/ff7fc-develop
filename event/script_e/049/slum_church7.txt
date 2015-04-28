@@ -74,7 +74,7 @@ move_npc 4908 right 1
 sleep 16
 chg_npc_dir 4908 up
 step_npc 4903 2
-msg `==Hey, sis.\n You've got some weirdo\n here, ya know.
+msg `==Hey, sis.\n You've got some weirdo\n here, y'know.
 jump_npc 4907 same 1
 jump_npc 4908 same 1
 jump_npc 4909 same 1
@@ -93,7 +93,7 @@ step_npc 4909 2
 msg `Mr.Reno!\n Shall we beat him?
 sleep 24
 step_npc 4903 1
-msg Reno\n`I'm thinking, ya know.
+msg Reno\n`I'm thinking, y'know.
 sleep 32
 chg_speed 4906 fast
 step_npc 4906 4
@@ -334,7 +334,7 @@ warp 49 6 11 down
 fadein
 sleep 16
 step_npc 4903 1
-msg Reno\n`Well, alright.\n A job's a job, ya know.
+msg Reno\n`Well, alright.\n A job's a job, y'know.
 chg_npc_dir 4903 up
 sleep 16
 kill 4990

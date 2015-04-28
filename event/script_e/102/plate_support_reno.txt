@@ -5,45 +5,45 @@ chg_npc_img 10262 30
 chg_speed 10262 normal
 set_talk_npc 10262
 if_flag 22 0
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　1かいも　ふまなかったぞ　と\n　やさしいなっ……と
+msg Reno\n`By the way,\n on your way up here==\n\n You didn't tread on a\n soldier.\n You're sweet, y'know.
 fi
 if_flag 22 1
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　1かいしか　ふまなかっぞ　と\n　やさしいなっ……と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on only one\n soldier.\n You're sweet, y'know.
 fi
 if_flag 22 2
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　2かい　ふんづけたぞ　と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on 2 soldiers,\n y'know.
 fi
 if_flag 22 3
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　3かい　ふんづけたぞ　と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on 3 soldiers,\n y'know.
 fi
 if_flag 22 4
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　4かい　ふんづけたぞ　と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on 4 soldiers,\n y'know.
 fi
 if_flag 22 5
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　5かい　ふんづけたぞ　と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on 5 soldiers,\n y'know.
 fi
 if_flag 22 6
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　6かいも　ふんづけたぞ　と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on 6 soldiers,\n y'know.
 fi
 if_flag 22 7
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　7かいも　ふんづけたぞ　と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on 7 soldiers,\n y'know.
 fi
 if_flag 22 8
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　8かいも　ふんづけたぞ　と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on 8 soldiers,\n y'know.
 fi
 if_flag 22 9
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　9かいも　ふんづけたぞ　と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on 9 soldiers,\n y'know.
 fi
 if_flag 22 10
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　10かいも　ふんづけたぞ　と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on 10 soldiers,\n y'know.
 fi
 if_flag_greater 22 10
-msg レノ\n「ちなみに　おまえは\n　ここへのぼってくる　とちゅう……\n\n　へいしたちを　10かいいじょうも　ふんづけたぞ　と\n　なかなか　ひどうだぞっ……と
+msg Reno\n`By the way,\n on your way up here==\n\n You trod on more than 10\n soldiers, y'know.\n Kinda wicked, aren't you?
 fi
 reset_talk_npc
 create npc_event 10299 102 24 36 61 1 0 none
 set_talk_npc 10299
-msg i7\n「なお　このあとのレノの　とくしゅこうげきといえば\n　たいしょうを　こうどうふのうにさせる\n　『ピラミッド』 がゆうめいですが\n　こんかいは　それにくわえて\n　トンベリの『みんなのうらみ』てきな\n とくしゅこうげき 『へいしのうらみ(かり)』を\n\n　ふんだ　へいしのかずnで\n　つうじょうこうげき X nダメージとして\n　ときどきはなってくるのは　どうかというアイデアです
+msg i7\n「なお　このあとのレノの　とくしゅこうげきといえば\n　たいしょうをマヒさせる『ピラミッド』\n がゆうめいですが\n　こんかいは　それにくわえて\n　トンベリの『みんなのうらみ』てきな\n とくしゅこうげき 『へいしのうらみ(かり)』を\n\n　ふんだ　へいしのかずnで\n　つうじょうこうげき X nダメージとして\n　ときどきはなってくるのは　どうかというアイデアです
 reset_talk_npc
 kill 10299
 sleep 16

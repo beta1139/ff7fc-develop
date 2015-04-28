@@ -7,7 +7,7 @@ jump_npc 9523 same 1
 msg Corneo\n`Ho? Don't you like me?
 chg_speed 9523 fast
 step_npc 9523 3
-msg  You don't have no other\n guy, do you?\n\n\n#2\n  I have no other man.\n  His name is Baret==\n\n\n[[]][[]]
+msg  You don't have no other\n guy, do you?\n\n\n#2\n  I have only you.\n  His name is Baret==\n\n\n[[]][[]]
 if_flag 3 0
 step_char 1
 sleep 32

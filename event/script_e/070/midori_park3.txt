@@ -69,7 +69,7 @@ sleep 144
 chg_speed 7020 normal
 jump_npc 7020 same 2
 sleep 32
-msg3 -1 バレット\n「マリン！\n　マリン！！
+msg3 -1 Baret\n`Marlene!\n Marlene!!
 move_npc 7020 up 3
 sleep 32
 chg_speed 7021 normal
@@ -81,7 +81,7 @@ erase_msg3
 sleep 8
 chg_speed 7020 fast
 jump_npc 7020 same 2
-msg3 -1 バレット\n「マリーーーン！！
+msg3 -1 Baret\n`Marleeene!!
 loop 2
 loop 8
 inc_map_draw_y_offset
@@ -118,7 +118,7 @@ sleep 16
 set_active_msg 7020
 jump_npc 7020 same 2
 chg_npc_dir 7020 up
-msg3 -1 バレット\n「ビッグス！
+msg3 -1 Baret\n`Biggs!
 loop 2
 loop 6
 inc_map_draw_y_offset
@@ -148,7 +148,7 @@ move_npc 7020 left 3
 sleep 24
 chg_npc_dir 7020 up
 jump_npc 7020 same 2
-msg3 -1 バレット\n「ウェッジ！！
+msg3 -1 Baret\n`Wedge!!
 loop 2
 loop 6
 inc_map_draw_y_offset
@@ -178,7 +178,7 @@ move_npc 7020 right 2
 sleep 16
 chg_npc_dir 7020 up
 jump_npc 7020 same 2
-msg3 -1 バレット\n「ジェシー！！
+msg3 -1 Baret\n`Jessie!!
 loop 2
 loop 6
 inc_map_draw_y_offset
@@ -205,7 +205,7 @@ sleep 16
 wait_key_push_edge a
 erase_msg3
 sleep 16
-msg3 -1 バレット\n「こんちくしょう！
+msg3 -1 Baret\n`Goddamn!
 step_npc 7020 2
 play_se damage.wav
 loop 6
@@ -222,7 +222,7 @@ sleep 8
 chg_npc_dir 7020 up
 erase_msg3
 sleep 8
-msg3 -1 バレット\n「こんちくしょう！
+msg3 -1 Baret\n`Goddamn!
 step_npc 7020 2
 play_se damage.wav
 loop 6
@@ -239,7 +239,7 @@ sleep 8
 chg_npc_dir 7020 up
 erase_msg3
 sleep 8
-msg3 -1 バレット\n「こんちくしょうーー!!!！
+msg3 -1 Baret\n`Goddamn it!!
 loop 7
 step_npc 7020 3
 play_se damage.wav
@@ -259,7 +259,7 @@ wait_key_push_edge a
 erase_msg3
 sleep 8
 jump_npc 7020 same 2
-msg3 -1 バレット\n「なんだ　こんなもの！
+msg3 -1 Baret\n`What's this shit!
 sleep 32
 step_npc 7020 5
 sleep 40
@@ -269,7 +269,7 @@ step_npc 7020 4
 sleep 16
 erase_msg3
 sleep 16
-msg3 -1 バレット\n「うおぉぉーー！！
+msg3 -1 Baret\n`Aaaahhh!
 create event_generator 7002 70 14 24 17 0 0 @070/midori_park4.txt
 loop_inf
 step_npc 7020 6

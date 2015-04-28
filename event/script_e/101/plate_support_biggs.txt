@@ -13,7 +13,7 @@ set_key_unvalid start
 if_flag 3 0
 step_npc 10150 2
 sleep 32
-msg ビッグス\n「へっ……かわんねえな\n　まあ……いいや
+msg Biggs\n`Heh==You never change.\n Well==okay.
 fi
 if_flag 3 1
 jump_char same 1
@@ -22,7 +22,7 @@ step_char 2
 sleep 8
 step_npc 10150 4
 sleep 24
-msg ビッグス\n「ありがとよ　クラウド\n\n\n　でも……おれはいいから……\n　バレットが……うえでたたかっている\n　てを……かしてやってくれ……
+msg Biggs\n`Thanks anyway, Cloud.\n\n\n But==you leave me now==\n Baret's==fighting above.\n You lend him a hand==
 fi
 chg_type 10150 npc3
 chg_speed 10150 not_step

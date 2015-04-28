@@ -25,7 +25,7 @@ chg_npc_dir 1920 right
 fi
 fi
 step_npc 1920 2
-msg ティファ\n「クラウド！！\n　はやくしなきゃ　バレットが…
+msg Tifa\n`Cloud!\n We got to hurry,\n or Baret'll==
 if_char_dir right
 move_char right 2
 fi

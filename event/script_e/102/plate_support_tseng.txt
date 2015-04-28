@@ -26,7 +26,7 @@ create npc2 10039 100 12 34 140 1 4 "
 set_layer 10098 front
 set_layer 10099 front
 sleep 24
-msg wcc‚½‚¾‚Ì ‚¶‚°‚ñ‚Î‚­‚¾‚ñ‚¶‚á‚È‚¢
+msg {==This isn't an ordinary\n time bomb.
 set_flag 14 0
 kill_through_range 10215 10218
 create npc_event 10060 100 20 31 17 1 2 none

@@ -174,7 +174,7 @@ set_key_unvalid left
 set_key_unvalid right
 set_key_unvalid start
 set_key_unvalid select
-msg3 -1 バレット\n「おい　このワイヤーをつかって\n　だっしゅつできるぜ！
+msg3 -1 Baret\n`Hey, we can get away\n with this wire!
 sleep 32
 step_npc 10253 2
 set_flag 19 1

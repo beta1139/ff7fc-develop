@@ -16,17 +16,17 @@ sleep 32
 step_npc 10152 2
 sleep 32
 set_talk_npc 10152
-msg ジェシー\n「もう　いい……いいの……\n\n\n　わたしたち……わたしたちの　さくせんで\n　たくさん……ひと　しんじゃったし……\n　きっと……そのむくい……ね
+msg Jessie\n`But it is==now==\n\n\n Many people==died because\n of==our missions==so==\n I guess==I deserve this.
 reset_talk_npc
 fi
 if_flag 3 1
 sleep 16
 set_talk_npc 10152
-msg ジェシー\n「……そうか……ですって……？
+msg Jessie\n`==You==know?
 reset_talk_npc
 step_npc 10152 1
 set_talk_npc 10152
-msg 　フフ……あいかわらず……\n　クールな……もとソルジャーさん\n　……そこが……いいんだけどね……
+msg  Huh==that's like you==\n you cool==ex-SOLDIER.\n ==That's why I like you==
 reset_talk_npc
 fi
 chg_type 10152 npc3

@@ -3,7 +3,10 @@ wait_key_push_edge a
 play_se cursor_ff3_select_cancel.ogg
 erase_msg3
 sleep 8
-msg しゅうりょうして　よろしいですか？\n\n\n\n#2\n 　はい\n　　ちょっとまってくれ\n\n\n\n[[]][[]]
+chg_npc_dir 10155 up
+sleep 8
+step_npc 10155 1
+msg Tifa\n'Are we ready?\n#2\n  Yearh.\n  Wait a sec.\n\n\n\n[[]][[]]
 if_flag 3 0
 chg_char_state_event
 play_se_loop helicopter.ogg
@@ -18,7 +21,7 @@ step_npc 10155 3
 chg_char_dir right
 sleep 8
 chg_npc_dir 10153 right
-msg ティファ\n「さっそくきたわ！
+msg Tifa\n`Here we go!
 reset_slide_char_flag
 chg_speed 10153 normal
 chg_speed 10155 normal
@@ -39,8 +42,9 @@ fadein
 end
 fi
 if_flag 3 1
+chg_npc_dir 10155 right
 sleep 8
-msg3 -1 　[スタートボタン]で　メニューをひらく\n　[Aボタン]で　しゅうりょう
+msg3 -1  [START] to open MENU.\n [OK button] to finish.
 chg_char_state_move
 sleep 8
 fi

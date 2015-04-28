@@ -795,9 +795,9 @@ map_obj,4751,47,13,8,31,0,0,0
 event_generator,4810,48,7,24,17,0,0,"@048/goban_makouro3.txt"
 npc2,4901,49,5,11,15,1,0,""
 npc,4902,49,6,23,17,0,0,"`I'm giving her some
- more time, ya know."
+ more time, y'know."
 npc3,4903,49,7,24,30,0,4,"`She said you leave
- me alone, ya know."
+ me alone, y'know."
 event_generator,4910,49,20,11,17,0,0,"@049/slum_church1.txt"
 event_generator,4911,49,1,1,17,0,0,"@049/slum_church2.txt"
 map_door,4950,49,6,23,16,0,0,0
@@ -1547,19 +1547,26 @@ npc2,10237,102,19,54,139,0,4,""
 npc2,10238,102,14,52,140,1,4,""
 npc2,10239,102,12,44,140,1,4,""
 npc_event,10251,102,20,40,143,2,3,"none"
-npc_event,10253,102,11,37,145,3,3,"バレット
-「く！　じげんばくだんか！"
+npc_event,10253,102,11,37,145,3,3,"Baret
+`Fuck! A time bomb!"
 npc_event,10254,102,20,41,143,0,3,"none"
-npc_event,10255,102,9,38,2,0,3,"ティファ
-「うえのプレートが　おちてきたら
-　ひとたまりもないわ
-　いそがなくちゃ！"
+npc_event,10255,102,9,38,2,0,3,"Tifa
+`We're all finished if
+ the Plate comes down.
+ We have to hurry!"
 npc_event,10650,106,31,7,123,1,3,"none"
 npc_event,10651,106,32,7,123,0,3,"none"
 npc_event,10652,106,31,8,123,2,3,"none"
 npc_event,10653,106,32,8,123,3,3,"none"
 npc_event,10654,106,1,3,146,1,3,"none"
 npc_event,10655,106,0,3,146,0,3,"none"
+event_generator,70200,702,11,16,17,0,0,"@702/tifa'smemory1.txt"
+npc_event,70201,702,11,21,17,0,2,"none"
+npc_event,70202,702,11,20,17,1,2,"none"
+npc_event,70500,705,8,14,121,0,3,"none"
+npc_event,70501,705,8,19,0,0,2,"none"
+npc_event,70502,705,8,15,14,3,0,"none"
+npc_event,70503,705,9,15,21,2,0,"none"
 npc2,70797,707,2,74,49,3,0,""
 event_generator,70798,707,17,77,17,0,0,"@707/omake01.txt"
 event_generator,70799,707,0,0,17,0,0,"@707/omake02.txt"

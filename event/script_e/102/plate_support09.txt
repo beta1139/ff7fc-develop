@@ -18,8 +18,8 @@ clear_text 6
 sleep 8
 set_text_alpha 4 0
 set_text_alpha 6 0
-set_text 4 　 　   　　　　プレートほうかい　まで
-set_text 6 　 　   　　　　　　　40　びょう
+set_text 4          40 seconds to
+set_text 6       the Plate fall down
 set_text_col 6 0 14 1
 loop 8
 sleep 1

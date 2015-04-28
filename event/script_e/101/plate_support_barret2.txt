@@ -36,7 +36,7 @@ step_npc 10153 4
 sleep 16
 create event_generator 10115 101 1 1 17 0 0 @101/plate_support_barret3.txt
 set_talk_npc 10153
-msg バレット\n「ティファ！　クラウド！\n　きてくれたのか！\n\n　きをつけろ！　やつら\n　ヘリでおそってきやがる
+msg Baret\n`Tifa! Clout!\n Here you are!\n\n Careful! They're gonna\n attack from the chopper.
 reset_talk_npc
 chg_npc_img 10153 1
 chg_npc_dir 10153 left
@@ -60,7 +60,7 @@ sleep 12
 chg_npc_dir 10155 up
 sleep 8
 step_npc 10155 3
-msg ティファ\n「ほんかくてきに　くるまえに\n　そうびを　ととのいておいたほうがいいわ！
+msg Tifa\n`We'd better arm ourselves\n up before they arrive!
 add_party_mem 1
 sleep 16
 chg_npc_dir 10153 left
@@ -70,7 +70,7 @@ chg_char_dir down
 step_npc 10153 1
 step_npc 10154 1
 sleep 16
-msg3 -1 　[スタートボタン]で　メニューをひらく\n　[Aボタン]で　しゅうりょう
+msg3 -1  [START] to open MENU.\n [OK button] to finish.
 create npc2 10156 101 15 31 17 0 4 
 create npc2 10157 101 14 32 17 0 4 
 create npc2 10158 101 13 31 17 0 4 

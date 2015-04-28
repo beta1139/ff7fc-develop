@@ -329,7 +329,7 @@ chg_npc_dir 5103 down
 chg_npc_dir 5102 down
 chg_speed 5100 normal
 step_npc 5100 2
-msg3 -1 Reno\n`Wonder if I've done it.\n She shouldn't have fled,\n ya know.
+msg3 -1 Reno\n`Wonder if I've done it.\n She shouldn't have fled,\n y'know.
 chg_npc_dir 5131 up
 sleep 4
 chg_npc_dir 5131 right

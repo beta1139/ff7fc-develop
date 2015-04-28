@@ -4,8 +4,8 @@ kill_through 7279
 if_flag 9 2
 chg_char_img_tmp 13
 fi
-chg_char_state_move
 create event_generator 7278 72 18 26 17 0 0 @072/kill_smoke1_2.txt
+chg_char_state_move
 sleep 8
 create event_generator 7103 71 6 3 17 0 0 @071/kill_smoke1_1.txt
 create event_generator 7104 71 7 3 17 0 0 @071/kill_smoke1_1.txt

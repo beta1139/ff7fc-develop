@@ -3,17 +3,17 @@ chg_npc_dir 1920 down
 sleep 8
 set_active_msg 1920
 jump_npc 1920 same 1
-msg ティファ\n「まにあった！\n　はしらがたってる！
+msg Tifa\n`We're in time!\n The post is standing!
 sleep 16
 move_npc 1921 up 1
 sleep 32
 step_npc 1921 1
-msg 『まて！\n　うえから……きこえないか？
+msg {Hold it!\n From above==\n do you hear that?
 sleep 16
 move_npc 1922 up 2
 sleep 32
 step_npc 1922 2
-msg エアリス\n「……じゅうせい？
+msg Aeris\n`==Gunshot?
 chg_npc_dir 1920 up
 sleep 24
 fadeout
