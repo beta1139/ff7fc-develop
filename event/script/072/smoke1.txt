@@ -1,64 +1,13 @@
 wait_same_pos
-kill_through_range 7271 7273
+kill_through_range 7270 7273
 kill_through 7279
 if_flag 9 2
 chg_char_img_tmp 13
 fi
-chg_char_state_move
 create event_generator 7278 72 18 26 17 0 0 @072/kill_smoke1_2.txt
+chg_char_state_move
 sleep 8
-create event_generator 7103 71 6 2 17 0 0 @071/kill_smoke1_1.txt
-create event_generator 7104 71 7 2 17 0 0 @071/kill_smoke1_1.txt
-loop_inf
-create npc_event 7296 72 11 27 124 1 1 none
-set_ignore_map_layer_flag 7296 1
-set_layer 7296 front
-slide_npc 7296 up 2
-sleep 8
-create npc_event 7295 72 12 19 124 1 1 none
-set_ignore_map_layer_flag 7295 1
-set_layer 7295 front
-slide_npc 7295 up 2
-sleep 8
-chg_npc_dir 7296 left
-create npc_event 7293 72 12 28 124 1 1 none
-set_ignore_map_layer_flag 7293 1
-set_layer 7293 front
-slide_npc 7293 up 2
-sleep 8
-chg_npc_dir 7295 left
-sleep 8
-chg_npc_dir 7296 up
-chg_npc_dir 7293 left
-create npc_event 7292 72 13 29 124 1 1 none
-create npc_event 7294 72 18 17 124 1 1 none
-set_ignore_map_layer_flag 7292 1
-set_layer 7292 front
-set_ignore_map_layer_flag 7294 1
-set_layer 7294 front
-slide_npc 7292 up 2
-slide_npc 7294 up 2
-sleep 8
-chg_npc_dir 7295 up
-sleep 8
-chg_npc_dir 7296 right
-chg_npc_dir 7293 up
-chg_npc_dir 7292 left
-chg_npc_dir 7294 left
-sleep 8
-chg_npc_dir 7295 right
-sleep 8
-chg_npc_dir 7292 up
-chg_npc_dir 7294 up
-kill 7296
-chg_npc_dir 7293 right
-sleep 8
-kill 7295
-sleep 8
-kill 7293
-chg_npc_dir 7292 right
-chg_npc_dir 7294 right
-sleep 16
-kill 7292
-kill 7294
-pool
+create event_generator 7103 71 6 3 17 0 0 @071/kill_smoke1_1.txt
+create event_generator 7104 71 7 3 17 0 0 @071/kill_smoke1_1.txt
+create event_generator 7105 71 8 3 17 0 0 @071/kill_smoke1_1.txt
+include ./event/common/072/wall_market_smoke.txt

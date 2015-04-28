@@ -17,22 +17,28 @@ fi
 end
 fi
 sub_gil 50
-if_flag 9 1
+if_flag_lesser 9 2
 create npc_event 7420 74 6 6 0 0 2 none
 fi
 if_flag 9 2
 create npc_event 7420 74 6 6 13 0 2 none
+fi
+if_flag_greater 9 2
+create npc_event 7420 74 6 6 0 0 2 none
 fi
 draw_char off
 chg_npc_y_offset 7420 -6
 sleep 3
 chg_npc_y_offset 7420 -8
 sleep 3
-if_flag 9 1
+if_flag_lesser 9 2
 chg_npc_img 7420 115
 fi
 if_flag 9 2
 chg_npc_img 7420 13
+fi
+if_flag_greater 9 2
+chg_npc_img 7420 115
 fi
 sleep 8
 play_se coin.ogg
@@ -42,11 +48,14 @@ sleep 44
 chg_npc_y_offset 7420 -6
 sleep 4
 chg_npc_y_offset 7420 -4
-if_flag 9 1
+if_flag_lesser 9 2
 chg_npc_img 7420 0
 fi
 if_flag 9 2
 chg_npc_img 7420 13
+fi
+if_flag_greater 9 2
+chg_npc_img 7420 0
 fi
 play_se elevator_start.wav
 loop 3

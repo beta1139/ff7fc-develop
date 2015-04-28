@@ -1,5 +1,5 @@
 wait_same_pos
-kill_through_range 7264 7266
+kill_through_range 7265 7267
 create npc_event 7931 79 5 12 3 3 2 none
 move_npc 7931 left 3
 sleep 48

@@ -1,5 +1,5 @@
 wait_same_pos
-kill_through_range 7103 7104
+kill_through_range 7103 7105
 kill_through_range 7275 7278
 kill_through_range 7292 7296
 if_flag 9 2

@@ -1,5 +1,5 @@
 wait_same_pos
-kill_through_range 7264 7266
+kill_through_range 7265 7267
 set_npc_pos 7921 79 9 13
 set_npc_pos 7923 79 9 11
 set_npc_pos 7924 79 10 11

@@ -2,7 +2,7 @@ wait_same_pos
 kill_through_range 7270 7279
 kill_through_range 7292 7296
 if_flag 9 2
-kill_through 7263
+kill_through 7264
 chg_char_img_tmp 13
 fi
 chg_char_state_move

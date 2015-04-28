@@ -1,7 +1,7 @@
 set_eternal_event
 wait_target_talk 7320
 reset_talk_flag 7320
-if_flag 9 1
+if_flag_lesser 9 2
 create npc_event 7322 73 15 9 0 0 2 none
 fi
 if_flag 9 2
@@ -9,6 +9,9 @@ kill_through 7300
 kill_through 7306
 chg_char_img_tmp 13
 create npc_event 7322 73 15 9 13 0 2 none
+fi
+if_flag_greater 9 2
+create npc_event 7322 73 15 9 0 0 2 none
 fi
 draw_char off
 move_char up 1

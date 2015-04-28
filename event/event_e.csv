@@ -1056,16 +1056,16 @@ npc_event,7225,72,5,17,70,0,0,"`Let me see.
  Do I want it?"
 npc,7226,72,18,18,77,0,0,"`Not cooked enough yet.
  Please come back later."
-save_point,7227,72,18,26,0,0,0,
-event_generator,7228,72,18,26,17,0,0,"@save_msg.txt"
 map_door,7250,72,5,37,9,0,0,0
 map_door,7251,72,10,31,9,0,0,0
 map_door,7252,72,13,34,9,0,0,0
 map_door,7253,72,11,24,9,0,0,0
 map_door,7254,72,6,15,9,0,0,0
-map_door,7256,72,16,12,9,0,0,0
+map_door,7255,72,16,12,9,0,0,0
 event_generator,7281,72,6,39,17,0,0,"@072/wall_market3_1.txt"
 event_generator,7282,72,7,38,17,0,0,"@072/wall_market3_2.txt"
+save_point,7298,72,18,26,0,0,0,
+event_generator,7299,72,18,26,17,0,0,"@save_msg.txt"
 event_generator,7300,73,19,11,17,0,0,"@073/kill_smoke2.txt"
 event_generator,7301,73,0,0,17,0,0,"@073/wm_inn.txt"
 npc2,7320,73,15,8,17,0,0,""
@@ -1119,7 +1119,7 @@ event_generator,7801,78,0,0,17,0,0,"@078/wm_item_shop.txt"
 npc_event,7810,78,6,6,66,0,0,"none"
 npc2,7811,78,6,7,17,0,0,""
 map_door,7850,78,6,13,9,0,0,0
-event_generator,7900,79,1,12,17,0,0,"@079/kill_smoke8.txt"
+event_generator,7900,79,2,12,17,0,0,"@079/kill_smoke8.txt"
 event_generator,7903,79,0,0,17,0,0,"@079/wall_market4.txt"
 event_generator,7904,79,0,0,17,0,0,"@079/wall_market5.txt"
 event_generator,7905,79,0,0,17,0,0,"@079/wall_market6.txt"
@@ -1307,9 +1307,9 @@ map_door,8250,82,11,4,12,0,0,0
 event_generator,8300,83,11,4,17,0,0,"@083/honey_bee_inn21.txt"
 npc2,8311,83,11,4,17,0,0,""
 map_door,8350,83,11,4,12,0,0,0
-event_generator,8400,84,11,38,17,0,0,"@084/kill_smoke9.txt"
-event_generator,8401,84,12,38,17,0,0,"@084/kill_smoke9.txt"
-event_generator,8402,84,13,38,17,0,0,"@084/kill_smoke9.txt"
+event_generator,8400,84,11,37,17,0,0,"@084/kill_smoke9.txt"
+event_generator,8401,84,12,37,17,0,0,"@084/kill_smoke9.txt"
+event_generator,8402,84,13,37,17,0,0,"@084/kill_smoke9.txt"
 event_generator,8403,84,0,0,17,0,0,"@084/wall_market7.txt"
 event_generator,8404,84,0,0,17,0,0,"@084/wall_market8.txt"
 npc2,8411,84,9,32,68,0,0,""
