@@ -46,8 +46,8 @@ sleep 11
 play_se_loop wind_loop.ogg
 set_text_alpha 5 0
 set_text_alpha 6 0
-set_text 5 I'm of the Ancients' lineage
-set_text 6 The only heir to this planet!
+set_text 5   I'm of the Ancients' lineage
+set_text 6   The only heir to this planet!
 loop 8
 sleep 1
 set_text_alpha 5 25

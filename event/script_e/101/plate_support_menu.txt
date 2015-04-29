@@ -6,7 +6,7 @@ sleep 8
 chg_npc_dir 10155 up
 sleep 8
 step_npc 10155 1
-msg Tifa\n'Are we ready?\n#2\n  Yearh.\n  Wait a sec.\n\n\n\n[[]][[]]
+msg Tifa\n'Are we ready?\n\n\n#2\n  Yeah.\n  Wait a sec.\n\n\n\n[[]][[]]
 if_flag 3 0
 chg_char_state_event
 play_se_loop helicopter.ogg
