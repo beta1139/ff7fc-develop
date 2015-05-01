@@ -88,6 +88,18 @@ create event_generator 950012 950 35 20 17 0 0 @950/950_dbg35.txt
 create npc2 950013 950 20 16 84 1 0 none
 create event_generator 950014 950 0 0 0 0 0 @950/950_dbg36.txt
 create event_generator 9500015 950 0 0 0 0 0 @950/950_dbg37.txt
+create smoke 950116 950 15 25 0 0 0 none
+create smoke 950117 950 32 20 0 0 0 none
+create smoke 950118 950 33 24 0 0 0 none
+create smoke 950119 950 34 25 0 0 0 none
+create smoke 950120 950 37 25 0 0 0 none
+create smoke 950121 950 37 19 0 0 0 none
+create smoke 950122 950 34 18 0 0 0 none
+create smoke 950123 950 36 21 0 0 0 none
+create smoke 950124 950 38 20 0 0 0 none
+create smoke 950125 950 33 21 0 0 0 none
+create smoke 950126 950 35 22 0 0 0 none
+create smoke 950127 950 38 24 0 0 0 none
 warp 950 25 22 up
 play_bgm
 set_flag 0 0
