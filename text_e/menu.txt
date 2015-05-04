@@ -5,9 +5,9 @@ Save cursor pos
 Battle time mode
 Face graphics
 Cursor
-Ini
+Reset
 Save
-Activ
+Active
 Wait
 Face Type
 Orig
