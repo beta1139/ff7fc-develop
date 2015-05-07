@@ -1,6 +1,6 @@
 wait_same_pos
 set_key_valid a
-msg セーブポイント\n「ただいま　ごしょうかいに　あずかりました\n　あっしが　（セーブポイント）でござんす！\n\n　たびさきざきで　おめにかかることと　おもいます\n　こんごとも　よろしゅう　おねがいもうしあげます！\n\n\n　……それと　ちょいと　ウワサにきいたところ\n　あっしのニセモノも　いるそうです\n　どうか　おきをつけて　くんなせえ！
+msg SAVE POINT\n`I'm one of the famed\n SAVE POINTS!\n\n We'll be seeing you\n repeatedly during your\n oncoming journey!\n\n ==The rumor says that\n there are some imposters\n lurking around, too.\n Please be careful!
 create npc_event 2638 26 15 8 80 0 3 none
 jump_npc 2638 up 3
 set_npc_pos 2636 26 15 5

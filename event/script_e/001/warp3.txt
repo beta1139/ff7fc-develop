@@ -85,8 +85,8 @@ set_npc_pos 2602 26 6 8
 sleep 16
 chg_type 2601 npc2
 chg_param 2601 
-create npc 1706 17 17 9 94 1 0 `Good morning.\n Another fine day\n is starting.\n\n Be careful and try not\n to hurt youself.
-create npc3 1707 17 10 11 71 3 0 `I can't stand any more!
+create npc 1706 17 17 9 94 1 0 `Good morning.\n Another fine day\n is starting.\n\n Be careful and try not\n to hurt yourself.
+create npc3 1707 17 10 11 71 3 0 `I can't stand any more.
 create npc2 1708 17 11 11 72 2 0 
 create npc 1906 19 15 28 32 0 0 `You!\n You can't go any further!
 create npc2 1907 19 14 28 32 0 0 

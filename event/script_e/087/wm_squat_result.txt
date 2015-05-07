@@ -7,7 +7,7 @@ sleep 16
 jump_npc 8715 same 1
 sleep 16
 step_npc 8715 2
-msg `I'm impressed.\n It's yours as promissed.
+msg `I'm impressed.\n It's yours as promised.
 move_npc 8715 up 2
 sleep 16
 move_npc 8710 up 1
@@ -168,13 +168,13 @@ if_flag 17 22
 msg `Shut up!\n Stop whining, you\n disgracing loser!
 fi
 if_flag 17 21
-msg `Shut up!\n Don't be proud of making\n a tie with an amature!
+msg `Shut up!\n Don't be proud of making\n a tie with an amateur!
 fi
 if_flag 17 20
 msg `You idiot!\n What a place to hide it!
 fi
 sleep 32
-msg `Aww\n Brother's puch\n rattled my bones\n to the marrow==
+msg `Aww\n Brother's punch\n rattled my bones\n to the marrow==
 if_flag 17 20
 chg_npc_dir 8715 left
 chg_speed 8715 normal

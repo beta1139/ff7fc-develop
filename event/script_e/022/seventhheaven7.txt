@@ -198,8 +198,8 @@ stop_bgm
 kill 2207
 sleep 48
 play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
-create npc 1706 17 17 9 94 1 0 `Good morning.\n Another fine day\n is starting.\n\n Be careful and try not\n to hurt youself.
-create npc3 1707 17 11 11 71 3 0 `I can't stand any more!
+create npc 1706 17 17 9 94 1 0 `Good morning.\n Another fine day\n is starting.\n\n Be careful and try not\n to hurt yourself.
+create npc3 1707 17 11 11 71 3 0 `I can't stand any more.
 create npc 1906 19 15 28 32 0 0 `You!\n You can't go any further!
 create npc2 1907 19 14 28 32 0 0 
 create npc 2006 20 33 20 71 2 0 Johnny\n`I'm off to a journey\n to be a real man!\n Adios, amigo!\n Hey, you! You take good\n care of Tifa!

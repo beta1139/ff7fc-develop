@@ -22,7 +22,7 @@ chg_event_move_char_speed slow
 play_event_bgm Ex-08-nothing.ogg
 create map_obj 10098 100 19 26 57 0 0 
 create map_obj 10099 100 20 26 57 0 0 
-create npc2 10039 100 12 34 140 1 4 "
+create npc2 10039 100 12 34 140 1 4 
 set_layer 10098 front
 set_layer 10099 front
 sleep 24

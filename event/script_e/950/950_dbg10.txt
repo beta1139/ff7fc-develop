@@ -7,13 +7,13 @@ if_active_mem 0
 msg Cloud
 fi
 if_active_mem 1
-msg Barret
+msg Beret
 fi
 if_active_mem 2
 msg Tifa
 fi
 if_active_mem 3
-msg Earis
+msg Aeris
 fi
 if_active_mem 4
 msg Red XIII
@@ -22,7 +22,7 @@ if_active_mem 5
 msg Cait Seth
 fi
 if_active_mem 6
-msg Yuffie
+msg Yufi
 fi
 if_active_mem 7
 msg Cid

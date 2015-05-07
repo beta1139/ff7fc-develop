@@ -46,7 +46,7 @@ sleep 80
 chg_npc_dir 70300 left
 msg Jessie\n`The Plate at the top is\n about 50M off the ground.
 chg_npc_dir 70300 up
-msg  The Plate is held up by\n this big trunc at the\n center and supporting\n posts at each section==\n These posts are also\n called machine towers.
+msg  The Plate is held up by\n this big trunk at the\n center and supporting\n posts at each section==\n These posts are also\n called machine towers.
 sleep 64
 chg_npc_dir 70300 left
 chg_speed 70300 not_step

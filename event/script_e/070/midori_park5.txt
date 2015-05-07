@@ -14,7 +14,7 @@ sleep 48
 chg_speed 7021 normal
 chg_npc_dir 7021 up
 step_npc 7021 3
-msg Tifa\n`Marlene is==\n I think she's allright.
+msg Tifa\n`Marlene is==\n I think she's all right.
 sleep 16
 jump_npc 7020 same 1
 set_talk_npc 7020
@@ -24,7 +24,7 @@ sleep 24
 jump_npc 7021 same 1
 sleep 16
 step_npc 7021 4
-msg Tifa\n`Aeris said so.\n `She's allright.'\n She meant Marlene.
+msg Tifa\n`Aeris said so.\n `She's all right.'\n She meant Marlene.
 jump_npc 7020 same 2
 sleep 32
 chg_speed 7020 fast

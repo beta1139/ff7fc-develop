@@ -42,7 +42,7 @@ move_npc 5620 up 3
 sleep 48
 chg_speed 5620 normal
 step_npc 5620 2
-msg {I couldn't involve you\n knowing that there'll be\n dangers.
+msg {I couldn't involve\n you knowing that\n there'll be dangers.
 step_npc 5621 2
 set_talk_npc 5621
 msg Aeris\n`Are you finished?
@@ -59,7 +59,7 @@ sleep 32
 set_active_msg 5621
 jump_npc 5621 same 1
 set_talk_npc 5621
-msg Aeris\n`You must go through\n Slum 6 ahead to get to\n Tifa's Seventh Heaven.\n I'll show you the way.\n Let's go!
+msg Aeris\n`We must go through\n Slum 6 ahead to get to\n Tifa's Seventh Heaven.\n I'll show you the way.\n Let's go!
 reset_talk_npc
 move_npc 5621 up 1
 sleep 16

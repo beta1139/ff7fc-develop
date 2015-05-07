@@ -4,7 +4,7 @@ set_key_unvalid left
 set_key_unvalid right
 set_key_unvalid start
 chg_dir_to_char 2007
-msg `Hey, did you hear?\n\n\n\n#2\n  Not interested.\n  No, I didn't.\n\n\n[[]]\n[[`We got a news flash.\n A reactor was bombed in\n the Upside! Do you know\n what it means?\n#2\n  Not interested.\n  No, I don't.\n\n\n[[]]\n[[`With Midgar's power\n stopped, computers and\n lights and everything\n also stopped working.\n The net loss must be no\n less than 1 billion Gil!\n And! I bet a good deal of\n common people have died.\n It happened in the middle\n of the night so there\n must be a ton of people\n who won't wake up again.]]]]
+msg `Hey, did you hear?\n\n\n\n#2\n  Not interested.\n  No, I didn't.\n\n\n[[]]\n[[`We got a news flash.\n A reactor was bombed in\n the Upside! Do you know\n what it means?\n#2\n  Not interested.\n  No, I don't.\n\n\n[[]]\n[[`When Midgar's power\n stopped, computers and\n lights and everything\n also stopped working.\n The net loss must be no\n less than 1 billion Gil!\n And! I bet a good deal of\n common people have died.\n It happened in the middle\n of the night so there\n must be a ton of people\n who won't wake up again.]]]]
 if_flag 3 0
 set_key_unvalid up
 set_key_unvalid down

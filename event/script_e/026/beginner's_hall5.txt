@@ -4,7 +4,7 @@ jump_npc 2602 same 1
 sleep 16
 jump_npc 2602 same 1
 sleep 16
-msg 「おっ！！\n　さっそく　てにいれましたね！\n\n\n　いまのは　マテリアですよ\n　こんどは　この（たからばこ）を　どうぞ！
+msg `Oho!\n Now you've got one!\n\n\n It was a materia.\n Now try another\n TREASURE BOX!
 create npc_event 2638 26 5 1 80 1 3 none
 slide_npc 2638 down 6
 loop 3

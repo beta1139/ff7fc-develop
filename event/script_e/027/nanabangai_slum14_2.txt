@@ -112,7 +112,7 @@ pool
 draw_char on
 kill 2703
 step_npc 2704 2
-msg `You're stubborn, man!\n Rest while you can rest.\n\n\n Save while you can save.\n\n\n\n It's the basic of\n survival!\n Remember it, man.
+msg `You're stubborn, man!\n Rest while you can rest.\n\n\n Save while you can save.\n\n\n\n It's the basic fact of\n survival!\n Remember it, man.
 chg_char_dir right
 chg_char_img_tmp 97
 step_char 2

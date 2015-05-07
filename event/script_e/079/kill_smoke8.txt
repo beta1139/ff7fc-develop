@@ -39,7 +39,7 @@ sleep 16
 chg_npc_dir 7920 down
 chg_type 7920 npc
 chg_speed 7920 not_move
-chg_param 7920 `Uh==Erm\n I, I'm==\n\n\n W==Well==\n\n\n\n I'm J-Johnny==\n Nice to meetcha.
+chg_param 7920 `Uh==Erm\n I, I'm==\n\n\n W==Well==\n\n\n\n I'm J-Johnny==\n Nice to meet'cha.
 move_npc 7924 left 1
 sleep 16
 chg_npc_dir 7923 up

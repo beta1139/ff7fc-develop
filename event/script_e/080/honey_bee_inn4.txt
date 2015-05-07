@@ -68,7 +68,7 @@ step_npc 70610 1
 msg `Sigh==\n I'd forget my name next==
 sleep 64
 step_npc 70611 3
-msg `It's Shinra Comany.\n The biggest company in\n the biggest city.
+msg `It's Shinra Company.\n The biggest company in\n the biggest city.
 sleep 80
 step_npc 70610 1
 msg `Hm. The biggest.\n That's something.

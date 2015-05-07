@@ -38,7 +38,7 @@ chg_npc_dir 8512 up
 sleep 16
 step_npc 8512 2
 set_talk_npc 8512
-msg `Showing a party of 2!
+msg `Showing a party of two!
 reset_talk_npc
 sleep 32
 play_se door_open_hard.wav

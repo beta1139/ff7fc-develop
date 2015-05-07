@@ -137,7 +137,7 @@ sleep 8
 chg_speed 4906 normal
 step_npc 4906 1
 set_talk_npc 4906
-msg Aeris\n`Threre's an entrance\n that way.
+msg Aeris\n`There's an entrance\n that way.
 reset_talk_npc
 move_npc 4906 down 1
 sleep 8

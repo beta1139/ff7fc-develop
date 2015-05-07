@@ -155,7 +155,7 @@ jump_npc 2806 same 1
 sleep 16
 jump_npc 2806 same 1
 set_active_msg 2806
-msg Shinra Manager\n`I-I won't give in\n to any vaiolence.\n N-nor give up this seat.
+msg Shinra Manager\n`I-I won't give in\n to any violence.\n N-nor give up this seat.
 slide_walk_npc 2801 down 1
 chg_speed 2802 fast
 move_npc 2802 right 4

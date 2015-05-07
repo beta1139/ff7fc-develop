@@ -21,7 +21,7 @@ dec_map_draw_y_offset
 sleep 1
 pool
 set_talk_npc 7922
-msg `Hey, Asshole!\n What are you lookin at!\n I got no time for you!
+msg `Hey, Asshole!\n What'cha lookin' at!\n I got no time for you!
 step_npc 7922 4
 msg `I'm getting excited to\n the pit of my stomach!
 reset_talk_npc

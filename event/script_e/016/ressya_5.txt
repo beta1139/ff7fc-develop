@@ -26,4 +26,4 @@ fi
 chg_npc_dir 1668 down
 chg_speed 1668 not_step
 chg_type 1668 npc
-chg_param 1668 Wedge\n`Work hard in AVALANCE\n and someday I'm gonna\n make a big name==!
+chg_param 1668 Wedge\n`Work hard in AVALANCHE\n and someday I'm gonna\n make a big name==!

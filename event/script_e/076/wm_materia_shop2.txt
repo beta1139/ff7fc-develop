@@ -45,7 +45,7 @@ chg_npc_dir 7610 right
 sleep 16
 step_npc 7610 1
 set_talk_npc 7610
-msg `Look, young man,\n I have somthing I might\n want to ask you to do.\n Will you at least listen?\n{==\n\n\n\n#2\n  Try me.\n  Not interested.\n\n\n[[]][[]]
+msg `Look, young man,\n I have something I might\n want to ask you to do.\n Will you at least listen?\n{==\n\n\n\n#2\n  Try me.\n  Not interested.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 chg_speed 7610 fast
@@ -80,7 +80,7 @@ sleep 16
 chg_speed 7610 normal
 step_npc 7610 2
 set_talk_npc 7610
-msg `Sorry, young lady.\n\n\n\n Now, to the point.\n Do you know they have\n a vending machine at\n the inn?\n I've always wanted to\n know what it's selling.\n They say it's something\n you couldn't ask women.\n Huh? Buy it yourself?\n Actually I'm not on very\n good terms with the\n inkeeper. So, please?\n{==\n\n\n\n#2\n  I'll do that.\n  Not interested.\n\n\n[[]][[]]
+msg `Sorry, young lady.\n\n\n\n Now, to the point.\n Do you know they have\n a vending machine at\n the inn?\n I've always wanted to\n know what it's selling.\n They say it's something\n you couldn't ask women.\n Huh? Buy it yourself?\n Actually I'm not on very\n good terms with the\n innkeeper. So, please?\n{==\n\n\n\n#2\n  I'll do that.\n  Not interested.\n\n\n[[]][[]]
 reset_talk_npc
 if_flag 3 0
 chg_speed 7610 fast

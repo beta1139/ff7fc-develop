@@ -1,5 +1,5 @@
 wait_same_pos
-msg たからばこ\n「おれさまが　（たかたばこ）だ！！\n　しょしんしゃのキ　ミ　た　ち！\n　おれさまを　しっかりと　さがしてくれよ！！\n　ちなみに　おれさまは　きまぐれだ！\n　ひょっとしたら　げんさくにはないばしょに\n　いるかもしれないぜ！？
+msg TREASURE BOX\n`I'm one TREASURE BOX!!\n You beginners should try\n hard to spot us!!\n We're kinda whimsical.\n Perhaps you'll see us\n where we don't exist in\n the original game.
 sleep 24
 fadeout
 kill 2637
@@ -13,7 +13,7 @@ set_npc_pos 2608 26 6 6
 chg_npc_dir 2608 left
 chg_type 2608 npc
 chg_speed 2608 not_move
-chg_param 2608 「（セーブポイントでは……\n　（テント）をつかって　やすむこと\n　（セーブ）することが　できちゃいます\n\n　ほんとはもうひとつ　あるんだけど\n　いまは　ひ　み　つ\n　たのしみに　まっててね！\n\n　も～し　ぜんめつしても\n　（セーブ）しておけば　そのばしょから\n　ふっかつすることが　できちゃうの\n　これなら　あんしんして　ぜんめつできるわよね\n　ちょ～っと　さきのはなしになるけど\n　ミッドガルを　でることになったら……\n\n\n　ちへいせんまで　ひろがる（ワールドマップ）で\n　すきなだけ　（セーブ）することができるの\n　そのときがきたら　おもいだしてね
+chg_param 2608 `At SAVE POINTS==\n You can rest with TENTS\n and SAVE the game.\n\n Actually there is another\n function but you don't\n need to know that now.\n You'll learn it in time.\n If your party is stamped\n out, you can resume from\n the point of your last\n SAVE. What a relief!\n And sometime in the\n future, when you get out\n of Midgar==\n\n You can SAVE all you\n want anywhere in the\n vast WORLD MAP.\n Remember it then.
 set_key_valid up
 set_key_valid left
 set_key_valid down

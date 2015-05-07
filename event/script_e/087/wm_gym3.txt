@@ -74,7 +74,7 @@ sleep 16
 chg_speed 8710 fast
 step_npc 8710 4
 set_talk_npc 8710
-msg `Brother!\n Only people who work\n real hard to be bretty\n can be pretty!
+msg `Brother!\n Only people who work\n real hard to be pretty\n can be pretty!
 reset_talk_npc
 chg_npc_dir 8711 left
 chg_npc_dir 8712 left
@@ -101,7 +101,7 @@ chg_speed 8712 fast
 step_npc 8711 3
 step_npc 8712 3
 set_talk_npc 8711
-msg `Did you hear him?\n It's you agains us!
+msg `Did you hear him?\n It's you against us!
 reset_talk_npc
 chg_npc_dir 8715 down
 step_npc 8715 2

@@ -63,7 +63,7 @@ chg_npc_dir 2506 up
 sleep 4
 chg_dir_to_char 2506
 set_talk_npc 2506
-msg `Now you can use the room.
+msg `Now you can use my room.
 reset_talk_npc
 sub_gil 10
 chg_npc_dir 2506 left

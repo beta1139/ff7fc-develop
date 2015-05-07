@@ -213,7 +213,7 @@ sleep 8
 play_se magic_attack.wav
 flush
 step_npc 70611 2
-msg3 -1 `(It's every time he comes\n to Midgar. All this long\n way from GoldSaucer==)
+msg3 -1 `(It's every time he comes\n to Midgar. All this long\n way from Gold Saucer==)
 set_text 6     ==The one with blue eyes==
 sleep 8
 flush
@@ -286,7 +286,7 @@ step_npc 70611 2
 msg `(Really? He-he,\n That's news to me.)
 sleep 16
 step_npc 70610 2
-msg `(Oh, He's finished.\n Aah, thank god!)
+msg `(Oh, He's finished.\n Ahh, thank god!)
 sleep 32
 create npc_event 70612 706 10 7 25 2 2 none
 move_npc 70612 left 1

@@ -8,9 +8,9 @@ sleep 32
 jump_npc 2606 same 2
 sleep 32
 set_talk_npc 2606
-msg 「たしゅけて～！
+msg `Heeeelp!
 reset_talk_npc
-msg3 96 「ポカポカ\n　ポカポカ……！！
+msg3 96 `Pock, pock.\n Pock, pock==!!
 jump_npc 2607 same 2
 sleep 32
 jump_npc 2607 same 2
@@ -21,15 +21,15 @@ sleep 32
 chg_npc_dir 2626 left
 erase_msg3
 sleep 32
-msg 『そこでがまんだ\n　おまえの（リミットゲージ）は　たまりはじめている
+msg {Patience, now.\n Your `Limit Gauge' is\n filling up.
 sleep 16
 chg_speed 2606 fast
 step_npc 2606 7
 set_talk_npc 2606
-msg 「びえ～ん！！
+msg `Boo, hoo!!
 reset_talk_npc
 sleep 16
-msg 『よし（リミットゲージ）は　いっぱいだ！\n　えんりょはいらない\n　（リミットわざ）でしょうぶだ！！
+msg {Now your gauge is full!\n Let your LIMIT Break go!!
 sleep 16
 loop 2
 chg_npc_dir 2606 right
@@ -81,7 +81,7 @@ pool
 play_se damage.wav
 chg_npc_img 2607 106
 sleep 32
-msg 『じょうできだ
+msg {Well done.
 chg_speed 2606 normal
 jump_npc 2606 down 1
 sleep 32
@@ -106,7 +106,7 @@ chg_npc_dir 2607 up
 pool
 jump_npc 2607 same 2
 sleep 32
-msg3 96 「まほう！！\n　まほう！！
+msg3 96 `Magic!!\n Magic!!
 jump_npc 2607 same 2
 sleep 32
 chg_npc_dir 2606 up
@@ -120,11 +120,11 @@ sleep 16
 erase_msg3
 sleep 16
 set_talk_npc 2606
-msg3 80 「たしゅけて～！
+msg3 80 `Heeeelp!
 reset_talk_npc
 sleep 80
 erase_msg3
-msg 『おちつけ！\n　あいてが　まほうをつかうときは\n　（マバリア）か（リフレク）で　たいこうするのだ\n\n　（マバリア）は　まほうのダメージを\n　はんぶんにする　まほうだ\n\n\n　（リフレク）は　まほうをはねかえすが\n　はねかえす　かいすうに　せいげんがあるから\n　きをつけろ
+msg {Calm down!\n Counter with [M-Bar] or\n [Refl] if your opponent\n uses Magic.\n [M-Bar] is the magic to\n reduce magical damages\n by half.\n\n [Refl] reflects magic,\n but it works only limited\n number of times.
 set_screen_effect alpha 0 147 59 0
 sleep 16
 chg_npc_dir 2606 down
@@ -159,7 +159,7 @@ play_se damage.wav
 chg_npc_img 2607 106
 sleep 32
 chg_speed 2606 not_move
-msg 『じょうできだ
+msg {Well done.
 jump_npc 2606 down 1
 sleep 48
 chg_speed 2606 normal
@@ -169,7 +169,7 @@ chg_npc_img 2607 65
 sleep 48
 chg_npc_dir 2607 right
 sleep 16
-msg 「さすが　もとソルジャ！\n　どちたら　つよくなるの～！
+msg `That's an ex-SOLDIER!\n How can I be strong so!?
 chg_npc_dir 2606 right
 move_char up 2
 sleep 32
@@ -182,12 +182,12 @@ jump_npc 2604 same 1
 jump_npc 2605 same 1
 sleep 16
 set_talk_npc 2605
-msg 「なるの～！
+msg `How!?
 reset_talk_npc
 sleep 16
 chg_npc_dir 2626 up
 sleep 16
-msg 『おれみたいに　つよくなりたければ\n　マテリアを　こうりつよく　そだて\n　さいてきな　くみあわせを　さがすことだな\n\n　そうびする　ぶきやぼうぐの　しゅるいによって\n　マテリアの　せいちょうする　スピードはちがう\n\n\n　ぶきやぼうぐの　あいているあなの　かたちによって\n　マテリアの　くみあわせは　むげんにひろがる\n\n\n　おれに　アドバイスできるのは\n　そのくらいのことだ\n　もっとも　うまれついたそしつが\n　なければ　おれのようには　なれんがな
+msg {If you wanna be strong,\n try to train materias\n efficiently and find\n optimal combinations.\n Materias develop at\n different rates according\n to the types of weapons\n and armors.\n Materia slots on weapons\n and armors provide\n unlimited number of\n combinations.\n This is as far as I can\n teach you. You also need\n an inherent aptitude to\n be like me.
 sleep 16
 jump_npc 2603 same 1
 jump_npc 2604 same 1
@@ -198,14 +198,14 @@ jump_npc 2604 same 1
 jump_npc 2605 same 1
 sleep 16
 set_talk_npc 2605
-msg 「わかんな～い！
+msg `I don't understand!
 reset_talk_npc
 jump_npc 2607 same 1
 move_char down 2
 sleep 16
 jump_npc 2607 same 1
 sleep 16
-msg 「わかんな～い！
+msg `I don't!
 sleep 16
 chg_npc_dir 2626 left
 sleep 16
@@ -213,7 +213,7 @@ chg_npc_dir 2626 up
 sleep 16
 chg_npc_dir 2626 left
 sleep 16
-msg 『おれをおこらせるな！\n\n\n\n　だいじょうぶだ　まずはやってみろ\n　そのうち　なれてしまう
+msg {You better not annoy me!\n\n\n\n It's okay, try it first.\n You'll get used to it.
 chg_speed 2603 normal
 chg_speed 2605 normal
 jump_npc 2603 down 1
@@ -230,7 +230,7 @@ sleep 16
 chg_speed 2603 not_move
 chg_speed 2605 not_move
 chg_type 2603 npc
-chg_param 2603 「ものしり　もとソルジャーさん！！\n　バトルのこと　オレたちさんにんぐみに\n　おしえてくださいよ！\n　ほうしゅう　はずみますから！
+chg_param 2603 `Please, Mr.Ex-SOLDIER!!\n Would you teach us three\n how to battle?\n We'll pay you!
 chg_char_dir left
 draw_char on
 kill_through 2626

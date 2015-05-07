@@ -1560,7 +1560,7 @@ chg_speed 1706 not_move
 set_flag_wall 1706
 sleep 16
 step_npc 1702 2
-msg Baret\n`We did well this time\n but don't get slack.\n We're just startin'.\n Don't wet youself with\n today's crappy firework.
+msg Baret\n`We did well this time\n but don't get slack.\n We're just startin'.\n Don't wet yourself with\n today's crappy firework.
 sleep 16
 jump_npc 1702 same 2
 loop 2

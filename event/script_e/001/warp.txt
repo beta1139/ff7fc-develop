@@ -21,7 +21,7 @@ chg_npc_y_offset 562 -2
 sleep 16
 create event_generator 660 6 4 1 17 0 0 @006/elevator_switch1.txt
 create event_generator 661 6 20 1 17 0 0 @006/elevator_switch2.txt
-create npc 400 4 1 26 36 3 0 Wedge\n`I'll secure the escape\n route. You take care of\n the reactor.\n Geez, when this huge\n bustard goes up, it'll\n be somethin to see!
+create npc 400 4 1 26 36 3 0 Wedge\n`I'll secure the escape\n route. You take care of\n the reactor.\n Geez, when this huge\n bustard goes up, it'll\n be somethin' to see!
 fi
 if_flag 3 1
 fadeout
@@ -35,7 +35,7 @@ play_se timer.ogg
 sleep 48
 play_se_loop timer2.ogg
 step_npc 1103 4
-msg Biggs\n`That should help the \n planet keep going==\n at least a little longer.
+msg Biggs\n`That should help the\n planet keep going==\n at least a little longer.
 sleep 16
 chg_npc_dir 1104 down
 sleep 16

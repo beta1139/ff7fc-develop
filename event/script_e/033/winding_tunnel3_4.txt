@@ -7,7 +7,7 @@ sleep 16
 move_npc 3301 right 1
 sleep 8
 chg_npc_dir 3301 up
-msg `You're AVALANCE!
+msg `You're AVALANCHE!
 move_npc 3301 right 4
 move_npc 3302 right 5
 sleep 8

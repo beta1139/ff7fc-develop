@@ -1,7 +1,7 @@
 wait_same_pos
-msg 『なにを　おしえてほしいんだ？\n\n\n\n#4\n　　ATBについて\n　　とびだす　すうじについて\n　　チェンジと　ぼうぎょについて\n　　それいがい\n[[]][[]][[]][[]]
+msg {What do you wanna know?\n\n\n\n#4\n  About ATB\n  About popping numbers\n  About CHG and GRD\n  Other\n[[]][[]][[]][[]]
 if_flag 3 0
-msg 『（ATB）　すなわち（アクティブタイムバトル）は\n　せんとうちゅう　つねにじかんが　ながれている\n　システムだ\n\n　メニューのコンフィグで　ATBを（ウエイト）に\n　すると……　せんとうちゅう　まほうやアイテムを\n　えらんでいるあいだ　じかんがとまる\n\n　コマンドをゆっくりえらべる　というわけだ\n　おまえたち　しょしんしゃには　おあつらえむきだな\n\n\n　おれは　いつでも（アクティブ）だが\n　きにするな　すきなものを　えらぶといい\n　いじょうだ
+msg {ATB or Active Time Battle\n is a system in which the\n time keeps flowing during\n the battle.\n If you set ATB option to\n `Wait' in the CFG MENU,\n the time stops while you\n select magic or item.\n So you'll be able to\n take time to select.\n It's just right for you\n beginners, isn't it?\n I always use `Active' but\n you choose for yourself.\n That's all.
 chg_type 2603 npc_event
 jump_npc 2603 same 1
 jump_npc 2604 same 1
@@ -16,7 +16,7 @@ create event_generator 2642 26 4 5 17 0 0 @026/beginner's_hall13.txt
 end
 fi
 if_flag 3 1
-msg 『バトルのときに　（ピロンととびだす　すうじ）は\n　（あか）→ダメージ　（みどり）→かいふく\n　をあらわしている\n\n　ぜんめつしたくなければ\n　ちゅういすることだな
+msg {You see `popping numbers'\n during battles. Red ones\n are damages and Green\n ones are recovery.\n Pay attention to them\n if you don't wanna be\n stamped out.
 chg_type 2603 npc_event
 jump_npc 2603 same 1
 jump_npc 2604 same 1
@@ -31,7 +31,7 @@ create event_generator 2642 26 4 5 17 0 0 @026/beginner's_hall13.txt
 end
 fi
 if_flag 3 2
-msg 『（チェンジ）のコマンドで\n　せんとうたいけいの　ぜんれつ　こうれつを\n　いれかえられる\n\n　こうれつにすると　うけるダメージがへるが\n　こうげきりょくもへる\n\n\n　（チェンジ）は　せんとうコマンドを　えらぶときに\n　（ほうこうキーのひだり）をおすと　かのうだ\n\n\n　おなじく　せんとうコマンドを　えらぶときに\n　（ほうこうキーのみぎ）をおすと\n　（ぼうぎょ）だ\n\n　（ぼうぎょ）のコマンドを　えらぶと\n　つぎのコマンドにゅうりょく　までのあいだ\n　ダメージをはんぶんに　することができる\n\n　てごわいあいてには　むりをせず\n　（ぼうぎょ）することが　ひつようだ\n　むろん　おれには　かんけいのないことだがな
+msg {Use the CHG(Change)\n command to switch between\n the Van and the Rear in\n the battle formation.\n You receive less damage\n when you are in the rear\n but also you inflict less\n damage to enemies.\n You press LEFT arrow at\n the battle menu to use\n the CHG command.\n\n Likewise, press RIGHT\n arrow at the battle menu\n to use the GRD(Guard)\n command.\n If you use the GRD, the\n damages you receive is\n reduced by half until\n your next turn.\n It's important to guard\n against tough enemies.\n Of course that doesn't\n apply to me.
 chg_type 2603 npc_event
 jump_npc 2603 same 1
 jump_npc 2604 same 1
@@ -46,9 +46,9 @@ create event_generator 2642 26 4 5 17 0 0 @026/beginner's_hall13.txt
 end
 fi
 if_flag 3 3
-msg 『なにを　おしえてほしいんだ？\n\n\n\n#4\n　　にげるについて\n　　ゲージについて\n　　ステータスについて\n　　それいがい\n[[]][[]][[]][[]]
+msg {What do you wanna know?\n\n\n\n#4\n  About RUN command\n  About Gauges\n  About Status\n  Other\n[[]][[]][[]][[]]
 if_flag 3 0
-msg 『おれは　せんとうちゅう　（にげる）ことなど\n　めったにないから　くわしくはおぼえていないが…\n　おまえたちには　ひつようだろう\n\n　せんとうちゅうに　（にげる）コマンドをえらべ\n　ただし　いつでもにげられる　わけではない\n　しっぱいしたばあいは　つぎのコマンドにゅうりょく\n　までのあいだ　なにもできない\n　にげるときは　ちゅういすることだ\n　ぜんめつしないよう　よゆうをもって　にげることだな
+msg {I'm not familiar with it\n since I seldom run away\n from battles, but I guess\n you guys need to know.\n Use the RUN command to\n run away from a battle,\n though it doesn't always\n succeed.\n If you failed to run, you\n can't do anything until\n your next turn.\n Be careful about that.
 chg_type 2603 npc_event
 jump_npc 2603 same 1
 jump_npc 2604 same 1
@@ -64,7 +64,7 @@ end
 fi
 fi
 if_flag 3 1
-msg 『いまは　かくにんできないから\n　わかりにくいかもしれんが　とにかくきいておけ\n　せんとうちゅう　いくつか　ひょうじされている\n　（ゲージ）のことだ\n　（TIMEゲージ）は\n　せんとうちゅう　つぎのコマンドにゅうりょくが\n　まわってくるまでの　まちじかんを　あらわしている\n\n　ゲージがいっぱいになると　コマンドのにゅうりょくが\n　かのうだが　もし　にゅうりょく　したくなければ\n　（Bボタン）で　つぎのやつに　じゅんばんを\n　まわすこともできる\n　バレットを　こきつかいたいときなどに　べんりだ\n\n\n\n　（LIMITゲージ）は\n　ダメージを　うけるごとに　のびていくはずだ\n　これがいっぱいになると　（リミットわざ）がつかえる\n\n （LIMITゲージ）は　かくせんとうごとに\n　クリアされず　かずを　こなしただけ\n　たまっていくタイプだ\n\n　たまったからといって　すぐにつかわず\n　（リミットわざ）のつかいどころを　みきわめることが\n　たいせつなのは　いうまでもない
+msg {You can't see it right\n now but listen anyway.\n It's about `gauges' you\n see during battles.\n The TIME gauge shows the\n remaining time until\n your next turn.\n\n You can enter a command\n when the gauge fills up.\n You can skip a member's\n turn with CANCEL button.\n It's useful at times\n like when you wanna\n drive Baret hard.\n\n The LIMIT gauge grows\n as you receive damages.\n You can use your LIMIT\n Break when it fills up.\n This gauge doesn't get\n reset on each battle but\n accumulated from one\n battle to the next.\n Once you got it full,\n try to judge the most\n effective occasion to\n release it.
 chg_type 2603 npc_event
 sleep 16
 jump_npc 2603 same 1
@@ -72,7 +72,7 @@ jump_npc 2604 same 1
 jump_npc 2605 same 1
 sleep 16
 chg_type 2603 npc2
-msg 『おまえたちは　しらないだろうから　おしえといてやる\n　（ステータス）に　（いかり）　と　（かなしい）\n　という　じょうたいがある\n\n　（いかり）は\n　（LIMITゲージ）のあがりかたが　はやくなるが\n　こうげきの　めいちゅうりつは　ていかする\n\n　（かなしい）は\n　（LIMITゲージ）のあがりかたが　おそくなるが\n　てきのこうげきから　うけるダメージは　ていかする\n　ついでに　おぼえておくといいだろう\n　（BARRIER）ゲージは\n　とくていの　まほうの　こうかじかんをあらわす\n\n\n　うえのゲージは\n　ぶつりこうげきを　ふせぐまほう　（バリア）\n　したのゲージは\n　まほうこうげきを　ふせぐまほう　（マバリア）\n　りょうほうとも　ダメージを　はんぶんにしてくれるが\n　じかんがたつと　きえてしまう\n\n\n　（バリア）と（マバリア）のまほうを　つかったときは\n　（BARRIERゲージ）に　ちゅうもくだな\n\n\n　いじょうだ\n　つぎのせんとうで　かくにんしてくれ
+msg {I tell you about FURY\n and SAD status, since\n I'm sure you guys don't\n know about them.\n In FURY state, the LIMIT\n gauge fills fast but\n your accuracy drops.\n\n In SAD state, the LIMIT\n gauge fills slower but\n you receive less damages.\n\n The BARRIER gauges show\n the effective time of\n two specific magic.\n\n The upper is for [Bar]\n against physical attacks\n and the lower is for\n [M-Bar] against magical.\n Both magic reduce\n damages by half, but they\n wane with time.\n\n Pay attention to the\n BARRIER gauges when you\n use [Bar] or [M-Bar].\n\n That's all.\n See it for yourself in\n your next battle.
 chg_type 2603 npc_event
 jump_npc 2603 same 1
 jump_npc 2604 same 1
@@ -88,14 +88,14 @@ end
 fi
 fi
 if_flag 3 2
-msg 『（ステータス）とは\n　キャラクターの　じょうたいのことだ\n\n\n　これまで　せつめいしたことと　かさなるかもしれんが\n　だいひょうてきなものを　まとめといてやる
-msg （すいみん）　おきるまで　こうどうふか\n（どく）　　　せんとうちゅう　HPげんしょう\n\n\n（いかり） 　ダメージばい　めいちゅうていか\n　　　　　　　ちんせいざいで　もどる\n（かなしい）　ダメージていか\n　　　　　　　こうふんざいで　もどる\n（せきか）　　いしになり　うごけなくなる\n　　　　　　　ぜんいん　せきかで　ぜんめつだ\n（こんらん）　あたまがこんらんし　てき　みかたの\n　　　　　　　くべつが　つかなくなる\n（ちんもく）　すべての　まほうが　つかえなくなる\n（マヒ）　　　タイムゲージていし　こうどうふか\n\n\n（くらやみ）　ぶつりこうげきの\n　　　　　　　めいちゅうりつ　ていか\n（カエル）　　カエルになる\n　　　　　　　おれは　だいきらいだ
+msg {STATUS is unusual\n states of characters.\n\n\n Though I may be repeating\n myself, I'll list typical\n ones for you guys.
+msg SLEEP Can't move until\n      you wake up.\nPOISN Gradual HP loss\n      during the battle.\nFURY  Double damages,\n      low accuracy.\nSAD   Low damage.\n      Cured by Stimulant.\nSTONE Can't move until\n      cured somehow.\nCONFU Unable to tell\n      friends and enemies.\nMUTE  Can't use any magic.\n\nTAZE  Time gauge stops.\n      You can't move.\nDARK  Lower physical\n      attack accuracy.\nTOAD  Becomes a toad.\n      I hate them.
 sleep 32
 chg_char_dir right
 sleep 48
 chg_char_dir up
 sleep 32
-msg 『フッ……さすがに　つかれたな\n\n\n\n　（ステータスへんか）は　アイテムやまほうで\n　なおせるから　ものをかうときに\n　かくにんしておくのが　いいだろう
+msg {Whew==\n It was some oration.\n\n\n Abnormal states can be\n cured with items or\n magic. Check it out\n when you do shopping.
 chg_type 2603 npc_event
 jump_npc 2603 same 1
 jump_npc 2604 same 1
@@ -111,13 +111,13 @@ end
 fi
 fi
 if_flag 3 3
-msg 『なにを　おしえてほしいんだ？\n\n\n\n#3\n　　ぞくせいについて\n　　はじめにもどる\n　　もうひまつぶしは　おわりだ\n\n[[]] [[]] [[]]
+msg {What do you wanna know?\n\n\n\n#3\n  About Elementals\n  Go back to the beginning\n  Enough idle talk\n\n[[]][[]][[]]
 if_flag 3 0
-msg 『（そくせい）は　まほうや　ぶきなどに\n　ついてくる　とくべつな　こうかのことだ\n\n\n　ゆうりに　せんとうを　すすめるためには\n　ふかけつだが　（そくせい）をきにして\n　たたかえるようになれば　もう　りっぱな\n　ちゅうきゅうしゃと　よべるな\n　だいひょうてきなものの　いちれいを\n　まとめといてやる\n　あくまでも　いちれいだ　うのみにするな
+msg {[Elementals] are special\n effects associated with\n magic, weapons, etc.\n\n An expert can always pay\n attention to elementals\n in every battle to fight\n advantageously.\n I'll list up typical ones\n as examples.\n Remember, this is not a\n complete list.
 sleep 16
-msg （ほのお）　　けものや　こおりの　モンスターにきく\n（こおり）　　さむがりや　ひの　モンスターにきく\n（かみなり）　きかいで　できたヤツにきく\n（つち）　　　とんでいるヤツにはきかない\n（どく）　　　どくじょうたいにする\n　　　　　　　もともと　どくのヤツにはきかない\n（じゅうりょく） いっていわりあいで　HPをへらす\n　　　　　　　　　あたるといいな\n（みず）　　　ひの　モンスターにきく\n（かぜ）　　　とんでいるヤツにきく\n（せい）　　　ほしのちから\n　　　　　　　あんこくの　モンスターにきく
+msg FIRE  Effective to beasts\n      and ice monsters.\nICE   Effective to fire\n      monsters.\nBOLT  Effective to machine\n      monsters.\nEARTH Ineffective to\n      airborne monsters.\nPOISN Ineffective to\n      poisonous monsters.\nGRAV  Reduce HP by certain\n      ratio. Hit or miss.\nWATER Effective to fire\n      monsters\nWIND  Effective to flying\n      monsters.\nHOLY  Effective to dark\n      monsters.
 sleep 16
-msg 『あいはんする　（そくせい）を\n　こうげきに　しようすることで\n　おおきなこうかを　えられる\n\n　また　おなじぞくせいなら\n　ぼうぎょの　こうりつもあがる\n　だが……ぎゃくもまた　しんなり\n　きをつけることだな\n　てきのもっている　（ぞくせい）を\n　みぬくためには　（みやぶる）ことが　ひつようだ\n　マテリアをてにいれたら　つかってみてくれ
+msg {You can get big effects\n by attacking enemies\n with conflicting\n elementals.\n You can also guard\n effectively if your gears\n elementally agree with\n enemies.\n You need to SENSE to know\n enemies' elementals.\n Try using it when you get\n the materia.
 chg_type 2603 npc_event
 jump_npc 2603 same 1
 jump_npc 2604 same 1

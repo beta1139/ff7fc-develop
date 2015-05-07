@@ -20,7 +20,7 @@ move_char right 2
 sleep 16
 chg_npc_dir 180 right
 sleep 16
-msg `With Extension enabled,\n elements not existed in\n the original are added.\n\n`See that a treasue box\n appears to the right.
+msg `With Extension enabled,\n elements not existed in\n the original are added.\n\n`See that a treasure box\n appears to the right.
 play_se bump.ogg
 create npc2 122 1 14 10 17 1 0 
 create treasure_box 124 1 13 9 0 0 0 1003

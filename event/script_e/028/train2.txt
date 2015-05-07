@@ -8,7 +8,7 @@ step_npc 2801 2
 msg Baret\n`Heck! You become eager\n all of a sudden, Cloud!
 sleep 16
 step_npc 2801 4
-msg Baret\n`Well, okay.\n I'll explain!\n\n As Jessie told you, they\n have checkpoints at the\n boudaries to the Plate.\n\n There they got systems\n that can scan the whole\n train in one go.
+msg Baret\n`Well, okay.\n I'll explain!\n\n As Jessie told you, they\n have checkpoints at the\n boundaries to the Plate.\n\n There they got systems\n that can scan the whole\n train in one go.
 sleep 16
 jump_npc 2802 same 1
 sleep 16

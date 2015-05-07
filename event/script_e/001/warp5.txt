@@ -155,7 +155,7 @@ create map_obj 1952 19 15 14 56 0 0 0
 create npc2 1953 19 15 14 17 0 0 
 create npc3 10150 101 19 84 96 1 4 Biggs\n`Cloud==\n You still==don't care==\n if the Planet==lives?\n#2\n  I'm afraid not.\n  Mind your injury==\n\n\n[[]][[]]
 set_layer 10150 front
-create npc3 10152 101 1 1 96 0 4 Jessie\n`Hi==Cloud==\n Glad==you're the==\n last one==I talk==\n\n#2\n  Don't say `last'==\n  I know==\n\n\n[[]][[]]
+create npc3 10152 101 1 1 96 0 4 Jessie\n`Hi==Cloud==\n Glad==you're the==\n last one==I talk==\n#2\n  Don't say `last'==\n  I know==\n\n\n[[]][[]]
 set_layer 10152 front
 create npc_event 10120 101 18 80 140 1 4 none
 create npc_event 10122 101 20 77 139 0 4 none

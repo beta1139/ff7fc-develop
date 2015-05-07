@@ -7,7 +7,7 @@ chg_event_move_char_speed fast
 move_char down 9
 move_npc 9220 down 1
 create npc_event 9221 92 4 12 3 0 3 none
-create npc_event 9223 92 4 14 133 0 3 Kotch\n`Just once==\n Just once in my life==\n\n I just wanted to be\n sweet lovers with a\n pretty girl==
+create npc_event 9223 92 4 14 133 0 3 Kotch\n`Just once==\n Just once in my life==\n\n I just wanted to play\n sweet lovers with a\n pretty girl==
 move_npc 9221 right 4
 move_npc 9223 up 2
 sleep 16

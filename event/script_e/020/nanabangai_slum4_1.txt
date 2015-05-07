@@ -62,7 +62,7 @@ set_key_valid start
 end
 fi
 if_flag 4 1
-chg_param 2007 `Anyway the explosion\n has put the whole Midgar\n in a total chaos!
+chg_param 2007 `Anyway that explosion\n has put the whole Midgar\n in a total chaos!
 chg_type 2007 npc
 chg_npc_dir 2007 down
 fi

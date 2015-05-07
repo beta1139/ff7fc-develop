@@ -25,7 +25,7 @@ set_active_msg 5321
 jump_npc 5321 same 1
 msg Aeris\n`In such a rough way?\n It's almost kidnapping.
 step_npc 5320 1
-msg {They do a lot of\n dirty jobs behind\n the scene, too.\n\n Espionage, assasination==\n the like.
+msg {They do a lot of\n dirty jobs behind\n the scene, too.\n\n Spying, assassination==\n the like.
 sleep 16
 step_npc 5321 1
 msg Aeris\n`They look like it.

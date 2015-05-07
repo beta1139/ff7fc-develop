@@ -2,7 +2,7 @@ wait_target_talk 70410
 erase_msg3
 sleep 32
 chg_npc_dir 70400 left
-msg Jessie\n`An ID scan area is set\n up at every chekpoint.
+msg Jessie\n`An ID scan area is set\n up at every checkpoint.
 jump_npc 70400 same 2
 sleep 32
 msg  Passengers' identities\n and such are checked\n against host computers\n at Shinra headquarters.

@@ -90,7 +90,7 @@ set_active_msg 6622
 chg_npc_dir 6622 down
 chg_npc_img 6622 99
 jump_npc 6622 same 1
-msg Aeris\n`Only! Did you jsut say\n 'only a girl' now!?
+msg Aeris\n`Only! Did you just say\n 'only a girl' now!?
 sleep 16
 step_npc 6622 3
 msg Aeris\n`I just can't let you\n get away with that.

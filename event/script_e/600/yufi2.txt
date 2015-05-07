@@ -24,7 +24,7 @@ move_char down 1
 sleep 16
 step_npc 60001 3
 sleep 56
-msg `Come on, come on==\n Hey, what't the matter!\n\n\n`You scared of me,\n aren't you?\n\n\n#2\n  ==Yeah.\n  Don't waste my time.\n\n\n[[]][[]]
+msg `Come on, come on==\n Hey, what's the matter!\n\n\n`You scared of me,\n aren't you?\n\n\n#2\n  ==Yeah.\n  Don't waste my time.\n\n\n[[]][[]]
 if_flag 3 0
 create event_generator 60004 600 0 0 17 0 0 @600/yufi3.txt
 end

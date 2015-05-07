@@ -7,7 +7,7 @@ if_char_img 0
 msg Hello, Cloud
 fi
 if_char_img 1
-msg Hello, Barret
+msg Hello, Beret
 fi
 if_char_img 2
 msg Hello, Tifa
@@ -22,7 +22,7 @@ if_char_img 5
 msg Hello, Cait Seth
 fi
 if_char_img 6
-msg Hello, Yuffie
+msg Hello, Yufi
 fi
 if_char_img 7
 msg Hello, Cid

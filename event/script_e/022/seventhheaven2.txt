@@ -179,9 +179,9 @@ chg_npc_dir 2006 up
 set_npc_pos 2006 20 26 22
 chg_type 2006 npc3
 chg_param 2006 `Hey! I say open the door!\n Please!\n\n\n It's me! Johnny!\n Mom-mee!
-create npc 2007 20 28 22 88 1 0 `Do you know?\n\n\n\n#2\n  What?\n  Not interested.\n\n\n[[`It's about Tifa's bar,\n The Seventh Heaven.\n\n\n I'm well informed because\n I'm really nosy.\n You wanna listen?\n\n#2\n  I'm all ears.\n  Not interested.\n\n\n[[`That bar's regulars,\n Baret and his sidekicks,\n they're up to something.\n\n Kicking other customers\n out to do something in\n secret. It sometimes\n smells like gunpoweder.\n It's dangerous.\n They must be doing\n something illegal.]][[]]]][[]]
+create npc 2007 20 28 22 88 1 0 `Do you know?\n\n\n\n#2\n  What?\n  Not interested.\n\n\n[[`It's about Tifa's bar,\n The Seventh Heaven.\n\n\n I'm well informed because\n I'm really nosy.\n You wanna listen?\n\n#2\n  I'm all ears.\n  Not interested.\n\n\n[[`That bar's regulars,\n Baret and his sidekicks,\n they're up to something.\n\n Kicking other customers\n out to do something in\n secret. It sometimes\n smells like gunpowder.\n It's dangerous.\n They must be doing\n something illegal.]][[]]]][[]]
 chg_param 2008 `Everything normal!\n I'm on a scout mission!\n\n\n Oh!\n I've got something!\n Report! Report!
-create npc 2009 20 26 23 70 1 0 `This house has a tv\n but the lady won't let\n us watch that.
+create npc 2009 20 26 23 70 1 0 `This house has a TV\n but the lady won't let\n us watch that.
 create event_generator 2034 20 1 1 17 0 0 @020/nanabangai_slum23.txt
 create event_generator 2035 20 1 1 17 0 0 @020/nanabangai_slum24.txt
 kill_through 2531

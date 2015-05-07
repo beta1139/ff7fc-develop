@@ -3,7 +3,7 @@ wait_key_push a
 erase_msg3
 create npc_event 5430 54 20 13 0 3 2 none
 draw_char off
-create npc_event 5431 54 31 11 3 2 1 Aeris\n`Let's go,\n my dear bodyguard!
+create npc_event 5431 54 31 11 3 2 1 Aeris\n`Well, let's go,\n my dear bodyguard!
 sleep 16
 chg_event_move_char_speed slow
 move_char right 4

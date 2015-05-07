@@ -180,7 +180,7 @@ step_npc 10255 2
 msg Tifa\n`Stop it, Please!
 sleep 32
 step_npc 10265 3
-msg Tseng\n`Ha-ha==\n\n\n This Emergency Plate\n Relasing System can be\n operated only on the\n order of Shinra Board.
+msg Tseng\n`Ha-ha==\n\n\n This Emergency Plate\n Releasing System can be\n operated only on the\n order of Shinra Board.
 chg_npc_img 10253 1
 move_npc 10253 up 2
 sleep 16
@@ -234,7 +234,7 @@ step_npc 10254 3
 sleep 16
 set_active_msg 10255
 jump_npc 10255 same 2
-msg Tifa\n`Aeris!
+msg Tifa\n`Aeris!!
 sleep 32
 chg_npc_dir 10265 right
 sleep 24

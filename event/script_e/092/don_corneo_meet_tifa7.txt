@@ -59,14 +59,14 @@ chg_npc_dir 9223 down
 sleep 16
 step_npc 9223 2
 set_talk_npc 9223
-msg Tifa\n`And now that I'm here,\n I've found myself in a\n bit of tricky situation.
+msg Tifa\n`And now that I'm here,\n I find myself in a bit\n of tricky situation.
 reset_talk_npc
 chg_npc_dir 9221 down
 sleep 48
 chg_npc_dir 9221 right
 step_npc 9223 2
 set_talk_npc 9223
-msg Tifa\n`It seems that Corneo is\n looking for his bride.\n\n Choose one from 3 girls\n brought to him every day,\n and, well, you know==
+msg Tifa\n`It seems that Corneo is\n looking for his bride.\n\n Chooses one from 3 girls\n brought to him every day,\n and, well, you know==
 reset_talk_npc
 jump_npc 9223 same 1
 sleep 16
@@ -83,7 +83,7 @@ sleep 16
 chg_speed 9221 normal
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n`Um==I didn't mean to\n listen in, but
+msg Aeris\n`Ahem==I didn't mean to\n listen in, but
 reset_talk_npc
 chg_char_dir right
 chg_npc_dir 9223 right

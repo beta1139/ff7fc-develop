@@ -19,4 +19,4 @@ move_npc 2007 left 1
 sleep 16
 chg_npc_dir 2007 down
 chg_type 2007 npc
-chg_param 2007 `Heck!\n No point gathering\n information when there's\n nobody to listen to me.\n Hey, there,\n Mr.I'm-Not-Interested!\n\n\n I'll try to find some\n amazing news even you'd\n piss youself.\n See if I don't!
+chg_param 2007 `Heck!\n No point gathering\n information when there's\n nobody to listen to me.\n Hey, there,\n Mr.I'm-Not-Interested!\n\n\n I'll try to find some\n amazing news even you'd\n piss yourself.\n See if I don't!

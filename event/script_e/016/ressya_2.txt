@@ -40,7 +40,7 @@ loop 6
 dec_map_draw_y_offset
 sleep 1
 pool
-create npc_event 1668 16 1 21 36 3 2 Wedge\n`Work hard in AVALANCE\n and someday I'm gonna\n make a big name==!\n You think I can have\n a rosy future?\n\n\n#2\n  What are you expecting?\n  Forget it.\n\n\n[[]][[]]
+create npc_event 1668 16 1 21 36 3 2 Wedge\n`Work hard in AVALANCHE\n and someday I'm gonna\n make a big name==!\n You think I can have\n a rosy future?\n\n\n#2\n  What are you expecting?\n  Forget it.\n\n\n[[]][[]]
 move_npc 1668 right 2
 sleep 16
 create npc_event 1666 16 1 21 35 3 2 Biggs\n`I see they're not\n on red alert yet.\n\n Won't be this easy\n tomorrow, though.

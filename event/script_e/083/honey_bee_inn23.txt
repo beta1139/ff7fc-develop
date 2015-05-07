@@ -573,7 +573,7 @@ chg_char_dir right
 chg_char_img_tmp 97
 step_char 3
 sleep 80
-msg {What an underware==\n I'm really gonna wear\n this==?\n\n ==Can't help it.\n I must help Tifa.
+msg {What an underwear==\n I'm really gonna wear\n this==?\n\n ==Can't help it.\n I must help Tifa.
 create event_generator 8009 80 5 15 17 0 0 @080/honey_bee_inn20.txt
 kill 8311
 kill_through 8011

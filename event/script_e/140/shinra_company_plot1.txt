@@ -199,7 +199,7 @@ sleep 16
 chg_speed 14022 fast
 step_npc 14022 4
 set_talk_npc 14022
-msg Reeve\n`President! Do you really\n mean it? To remove such\n an isignificant group==
+msg Reeve\n`President! Do you really\n mean it? To remove such\n an insignificant group==
 reset_talk_npc
 move_char right 2
 sleep 16

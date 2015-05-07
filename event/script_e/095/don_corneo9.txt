@@ -35,7 +35,7 @@ pool
 wait_key_push_edge a
 erase_msg3
 sleep 16
-msg `I'm afraid all of your\n men are unavairable at\n the moment.
+msg `I'm afraid all of your\n men are unavailable at\n the moment.
 chg_npc_dir 9523 down
 chg_event_move_char_speed fast
 move_char down 2

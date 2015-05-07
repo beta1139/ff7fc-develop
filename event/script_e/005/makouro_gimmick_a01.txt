@@ -240,7 +240,7 @@ fi
 fi
 if_flag 3 1
 step_npc 570 2
-msg Jessie\n`Press these buttons\n simultaniously and the\n door will open.\n We don't have much time.\n Let's do it!
+msg Jessie\n`Press these buttons\n simultaneously and the\n door will open.\n We don't have much time.\n Let's do it!
 chg_npc_dir 570 left
 loop_inf
 chg_char_state_move

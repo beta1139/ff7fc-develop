@@ -36,7 +36,7 @@ event_generator,503,5,1,14,17,0,0,"@005/ichiban_makouro2_3.txt"
 door,514,5,8,11,0,0,0,""
 npc2,515,5,8,12,17,0,0,""
 npc2,516,5,9,12,17,0,0,""
-npc3,530,5,7,13,35,0,0,"Bigs
+npc3,530,5,7,13,35,0,0,"Biggs
 `Unlock code accepted."
 npc,531,5,10,14,34,2,0,"Jessie
 `Biggs and I found out
@@ -340,7 +340,7 @@ npc_event,2205,22,3,10,36,0,0,"Wedge
  great cook.
  Munch, munch==
 
- Let me tell you somethin.
+ Lemme tell you somethin'.
 
 
 
@@ -366,8 +366,8 @@ map_obj,2250,22,5,5,1,0,0,0
 map_obj,2251,22,8,4,3,0,0,0
 npc,2304,23,2,4,1,2,0,"Baret
 `Yo, Cloud.
- I gotta ask you somthin'.
-
+ I gotta ask you
+ somethin'.
  Were there any SOLDIERS
  among today's enemies?"
 npc3,2306,23,6,4,34,0,0,"Jessie
@@ -517,7 +517,7 @@ npc,2601,26,3,8,90,3,0,"`Um==!!
 [[]]
 [[`They say that a
  terrorist group called
- AVALANCH somethin' has
+ AVALANCHE somethin' has
  bombed a Mako reactor.
  Their official statement
  talks about anti-Shinra
@@ -593,7 +593,7 @@ npc_event,2906,29,10,7,65,1,0,"`Beep!
  Beep!"
 npc_event,2907,29,11,7,89,3,0,"`Hey, does this mean
  we're in a big trouble?"
-npc,2908,29,18,8,47,0,4,"`What?
+npc,2908,29,18,8,47,0,4,"`Huh?
  What do you want?"
 event_generator,2910,29,13,6,17,0,0,"@028/countdown_start.txt"
 event_generator,2911,29,19,6,17,0,0,"@028/countdown_end.txt"
@@ -975,7 +975,7 @@ npc,6428,64,12,4,65,1,0,"`Honk!
 
  I heard that in Midgar
  everythin's glitterin'
- an' zoomon' an' clangin'
+ an' zoomin' an' clangin'
  an' such.
  Jeez.
  I wanna go there someday."
@@ -1028,7 +1028,7 @@ npc_event,7220,72,6,38,66,1,0,"`Hi there, you two.
  We have beautiful rooms.
  How about that?"
 npc_event,7221,72,16,17,71,1,1,"`Yo, buddy!
- That's one goodlooking
+ That's one good-looking
  chick you got with you.
 
  You'd make a good money
@@ -1357,7 +1357,7 @@ event_generator,8801,88,0,0,17,0,0,"@088/wm_yoidore2.txt"
 event_generator,8803,88,0,0,17,0,0,"@088/wm_yoidore3.txt"
 event_generator,8804,88,4,7,17,0,0,"@088/wm_yoidore4.txt"
 npc3,8810,88,18,10,77,3,4,"`Sigh,
- Nothig goes well."
+ Nothing goes well."
 npc2,8811,88,13,10,66,0,0,""
 npc2,8812,88,14,9,88,2,0,""
 npc,8813,88,6,13,90,1,0,"`What do you want?
@@ -1371,7 +1371,7 @@ npc,8816,88,3,6,66,3,4,"`Look, do you have some
 map_door,8850,88,4,7,4,0,0,0
 npc2,8910,89,12,37,17,0,0,""
 event_generator,9100,91,9,18,17,0,0,"@091/don_corneo_start.txt"
-npc_event,9122,91,4,12,131,3,0,"`Don's waitng
+npc_event,9122,91,4,12,131,3,0,"`Don's waiting
  in this room.
  Heh-heh=="
 npc2,9123,91,9,18,17,0,0,"none"
@@ -1413,7 +1413,7 @@ npc_event,9424,94,6,7,90,3,0,"`You have some nice
  ==or should I say
  a beefcake==?"
 npc_event,9425,94,7,8,131,0,0,"`Ooh, your eyes!
- Such mystrious gleams==
+ Such mysterious gleams==
  I'm crazy for you!"
 npc_event,9426,94,9,9,66,1,0,"`Shall we dance,
  my girl?

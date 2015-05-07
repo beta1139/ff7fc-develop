@@ -31,7 +31,7 @@ fi
 sleep 8
 chg_npc_dir 9523 right
 step_npc 9523 4
-msg Corneo\n`==I was after a man with\n a gun on his right arm.\n That was the commision.
+msg Corneo\n`==I was after a man with\n a gun on his right arm.\n That was the commission.
 sleep 32
 step_npc 9522 1
 msg Tifa\n`By who?
@@ -97,7 +97,7 @@ sleep 16
 jump_npc 9523 same 1
 sleep 16
 step_npc 9523 3
-msg Corneo\n`See what'll happen?\n That seciton of the Plate\n comes down and BOOM!\n I heard that AVALACHE's\n base is in Slum 7.\n\n\n I'm relieved that it was\n not this Slum 6.
+msg Corneo\n`See what'll happen?\n That section of the Plate\n comes down and BOOM!\n I heard that AVALANCHE's\n base is in Slum 7.\n\n\n I'm relieved that it was\n not this Slum 6.
 sleep 40
 chg_npc_dir 9522 down
 msg Tifa\n`The whole Slum 7'll\n be gone!

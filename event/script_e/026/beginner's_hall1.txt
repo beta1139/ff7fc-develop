@@ -1,5 +1,5 @@
 wait_same_pos
-msg 「まいど　おなじみ\n　しょしんしゃの　やかた　だよ～ん
+msg `Welcome to the proverbial\n     BEGINNER'S HALL!
 chg_char_dir left
 chg_type 2601 npc_event
 chg_speed 2601 normal
@@ -7,7 +7,7 @@ sleep 16
 jump_npc 2601 same 1
 sleep 16
 step_npc 2601 4
-msg 「あんたが　しろうと　だってか\n　そのめは　そうじゃないって　いってるぜ
+msg `You a beginner?\n Your eyes say otherwise.
 jump_char_target_pos 5 8
 sleep 16
 chg_char_img_tmp 105
@@ -42,7 +42,7 @@ kill 2624
 reset_char_img_tmp
 jump_char_target_pos 4 8
 sleep 16
-msg 『もとソルジャーを　なめるな\n　どれだけ　ものしりか　おしえてやる\n　しかも　むりょうでだ！
+msg {Don't underestimate an\n ex-SOLDIER. I'll show you\n how knowledgeable I am.\n For free!
 create event_generator 2621 26 4 8 17 0 0 @026/beginner's_hall2.txt
 chg_speed 2601 not_move
 chg_type 2601 npc2

@@ -8,7 +8,7 @@ chg_dir_to_char 3203
 if_flag 3 0
 step_char 1
 sleep 16
-msg {==You look great.\n A real amazon.
+msg {==You look great.\n A real amazons.
 if_char_dir down
 create npc_event 3200 32 16 6 0 1 2 none
 draw_char off
@@ -30,7 +30,7 @@ add_likability 1 500
 add_likability 2 500
 step_char 1
 sleep 16
-msg {You conentrate on\n the mission now.
+msg {You concentrate on\n the mission now.
 sleep 16
 chg_speed 3203 not_step
 msg Jessie\n`Yeah, sorry.

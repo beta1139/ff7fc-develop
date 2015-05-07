@@ -15,7 +15,7 @@ chg_speed 1906 fast
 jump_npc 1906 same 2
 sleep 32
 step_npc 1906 4
-msg `Can't you jsut shut up\n even for a short while?
+msg `Can't you just shut up\n even for a short while?
 chg_npc_dir 1906 up
 sleep 48
 chg_npc_dir 1914 left

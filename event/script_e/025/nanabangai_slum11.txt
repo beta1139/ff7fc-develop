@@ -3,7 +3,7 @@ kill_through 2500
 chg_dir_to_char 2504
 chg_type 2504 npc_event
 chg_speed 2504 normal
-msg `Tsk!\n Man, you look glum.\n You're tired, aren't you?\n\n You may rest im my room\n at the third floor==\n\n\n With one condition.\n You must gimme some\n pocket money.\n\n#3\n  Give him 1 Gil.\n  Give him 10 Gil.\n  Nope.\n\n[[]][[]][[]]
+msg `Tsk!\n Man, you look glum.\n You're tired, aren't you?\n\n You may rest in my room\n at the third floor==\n\n\n With one condition.\n You must gimme some\n pocket money.\n\n#3\n  Give him 1 Gil.\n  Give him 10 Gil.\n  Nope.\n\n[[]][[]][[]]
 if_flag 3 0
 if_gil_less 1
 step_npc 2504 1

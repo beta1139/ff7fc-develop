@@ -121,7 +121,7 @@ chg_npc_dir 30121 right
 sleep 16
 chg_speed 30121 normal
 step_npc 30121 2
-msg `==I'm worried for you.\n You have many temptations\n in the city, don't you?\n\n I wouldn't worry so\n if only you had a\n steady girlfrend.
+msg `==I'm worried for you.\n You have many temptations\n in the city, don't you?\n\n I wouldn't worry so\n if only you had a\n steady girlfriend.
 sleep 32
 chg_npc_dir 30120 right
 sleep 32

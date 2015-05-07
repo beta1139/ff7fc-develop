@@ -231,7 +231,7 @@ sleep 32
 if_flag 7 1
 set_active_msg 2202
 jump_npc 2202 same 1
-msg Tifa\n`Oh?\n I haven't seen a flower\n for some time.\n They rarely bloom in the\n slums.\n\n\n But==\n\n\n\n I din't know you're\n a flower kind of guy.
+msg Tifa\n`Oh?\n I haven't seen a flower\n for some time.\n They rarely bloom in the\n slums.\n\n\n But==\n\n\n\n I didn't know you're\n a flower kind of guy.
 sleep 8
 chg_speed 2207 fast
 step_npc 2207 1

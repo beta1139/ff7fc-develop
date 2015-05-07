@@ -46,7 +46,7 @@ reset_talk_npc
 sleep 48
 jump_npc 5902 same 1
 set_talk_npc 5902
-msg Aeris\n`Oh? He has a tatto.\n Looks like the numeral 2.
+msg Aeris\n`Oh? He has a tattoo.\n Looks like the numeral 2.
 reset_talk_npc
 chg_npc_dir 5901 up
 sleep 24

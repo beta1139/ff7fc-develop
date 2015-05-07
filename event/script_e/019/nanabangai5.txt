@@ -23,7 +23,7 @@ msg `No way!\n The terrorists are holed\n up in the slums.\n We can't get carele
 chg_npc_dir 1906 up
 sleep 16
 step_npc 1907 1
-msg `You mean AVALANCE?\n\n\n\n It's all right.\n After all, SOLDIERS\n are brought into the\n guard operations.
+msg `You mean AVALANCHE?\n\n\n\n It's all right.\n After all, SOLDIERS\n are brought into the\n guard operations.
 sleep 16
 chg_npc_dir 1907 up
 chg_type 1906 npc

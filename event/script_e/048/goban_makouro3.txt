@@ -307,7 +307,7 @@ sleep 16
 chg_speed 4800 slow
 slide_walk_npc 4800 down 1
 sleep 48
-msg {Dis you say Sephiroth==?
+msg {Did you say Sephiroth==?
 move_npc 4802 left 1
 sleep 8
 move_npc 4802 up 3

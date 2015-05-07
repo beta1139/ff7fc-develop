@@ -25,7 +25,7 @@ sleep 16
 set_active_msg 8133
 jump_npc 8133 same 1
 set_talk_npc 8133
-msg `Oh no!\n Sorry, honney,\n this is a private area@\n\n (Eew==\n A pervert==)
+msg `Oh no!\n Sorry, honey,\n this is a private area@\n\n (Eew==\n A pervert==)
 reset_talk_npc
 sleep 8
 if_char_dir down
@@ -120,7 +120,7 @@ sleep 16
 set_active_msg 8133
 jump_npc 8133 same 1
 set_talk_npc 8133
-msg `Hi!\n\n\n\n What do yo think?\n\n\n\n#2\n  Still fat==\n  ==Nothing.\n\n\n[[]][[]]
+msg `Hi!\n\n\n\n What do you think?\n\n\n\n#2\n  Still fat==\n  ==Nothing.\n\n\n[[]][[]]
 reset_talk_npc
 if_char_dir down
 draw_char on

@@ -8,7 +8,7 @@ move_char right 1
 sleep 72
 msg `What is it?\n You still want something?\n\n\n ==Aha!\n I know it.\n\n\n Since I'm so strong,\n you want me to help you!\n\n\n You want me to come\n along with you!\n Is that it?\n\n#2\n  ==You got it.\n  No way.\n\n\n[[]][[]]
 if_flag 3 0
-msg `Aha! Just as I thought.\n So you really want me to?\n Hmm, what should I do?\n\n Even I couldn't refuse\n such an ernest request==\n\n\n All right!\n I'll come along with you!\n\n\n#2\n  ==Name?\n  ==Let's go.\n\n\n[[]][[]]
+msg `Aha! Just as I thought.\n So you really want me to?\n Hmm, what should I do?\n\n Even I couldn't refuse\n such an earnest request==\n\n\n All right!\n I'll come along with you!\n\n\n#2\n  ==Name?\n  ==Let's go.\n\n\n[[]][[]]
 if_flag 3 0
 msg ggg
 end

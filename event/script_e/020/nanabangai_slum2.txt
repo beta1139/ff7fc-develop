@@ -29,6 +29,6 @@ reset_talk_npc
 fi
 chg_speed 2011 not_move
 chg_npc_dir 2011 down
-chg_param 2011 Baret\n`Okay!\n You wait inside.
+chg_param 2011 Baret\n`Right!\n You wait inside.
 chg_type 2011 npc
 create event_generator 2014 20 1 1 17 0 0 @020/nanabangai_slum3.txt
