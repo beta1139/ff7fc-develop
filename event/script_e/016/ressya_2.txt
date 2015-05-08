@@ -6,7 +6,7 @@ sleep 16
 play_se train_info.ogg
 msg Train PA\n`Today's last train\n leaving Midgar\n Sector 8 Station,\n Bound for Slum 7,\n Train Graveyard Station.\n\n\n Estimated time of\n arrival is 0:23\n Midgar Standard Time==
 play_se door_open_hard.wav
-create npc_event 1665 16 1 21 1 3 2 Baret\n`Stop prowling around\n like a kid.
+create npc_event 1665 16 1 21 1 3 2 Baret\n`Stop prowlin' around\n like a kid.
 move_npc 1665 right 6
 chg_speed 1662 normal
 chg_speed 1663 normal

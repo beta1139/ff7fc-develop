@@ -18,7 +18,7 @@ step_npc 2802 2
 msg Tifa\n`Shinra's very proud\n of them.
 sleep 16
 step_npc 2801 3
-msg Baret\n`We can't use our old\n fake ID any more==
+msg Baret\n`We can't use our old\n fake ID no more==
 sleep 16
 play_se train_info.ogg
 sleep 24

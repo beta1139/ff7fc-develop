@@ -46,7 +46,7 @@ jump_npc 2304 same 2
 sleep 32
 step_npc 2304 3
 set_talk_npc 2304
-msg Baret\n`Stop being so fuckin'\n proud because you were\n a SOLDIER!
+msg Baret\n`Stop bein' so fuckin'\n proud because you were\n a SOLDIER!
 reset_talk_npc
 chg_speed 2304 fast
 chg_npc_dir 2304 left
@@ -171,7 +171,7 @@ chg_npc_dir 2304 left
 chg_npc_img 2304 98
 sleep 32
 set_talk_npc 2304
-msg Baret\n`You certainly are\n fuckin' strong.\n\n I suppose all fuckin'\n SOLDIERS are fuckin'\n strong as well.\n\n But you're working for\n AVALANCHE now.\n Don't you ever fuckin'\n side with fuckin' Shinra!
+msg Baret\n`You certainly are\n fuckin' strong.\n\n I suppose all fuckin'\n SOLDIERS are fuckin'\n strong as well.\n\n But you're workin' for\n AVALANCHE now.\n Don't you ever fuckin'\n side with fuckin' Shinra!
 reset_talk_npc
 sleep 16
 chg_npc_dir 2330 up

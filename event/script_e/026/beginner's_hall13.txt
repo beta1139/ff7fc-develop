@@ -64,7 +64,7 @@ end
 fi
 fi
 if_flag 3 1
-msg {You can't see it right\n now but listen anyway.\n It's about `Gauges' you\n  see during battles.\n The TIME gauge shows the\n remaining time until\n your next turn.\n\n You can enter a command\n when the gauge fills up.\n You can skip a member's\n turn with CANCEL button.\n It's useful at times\n like when you wanna\n drive Baret hard.\n\n The LIMIT gauge grows\n as you receive damages.\n You can use your LIMIT\n Break when it fills up.\n This gauge doesn't get\n reset on each battle but\n accumulated from one\n battle to the next.\n Once you got it full,\n try to judge the most\n effective occasion to\n release it.
+msg {You can't see it right\n now but listen anyway.\n It's about `gauges' you\n see during battles.\n The TIME gauge shows the\n remaining time until\n your next turn.\n\n You can enter a command\n when the gauge fills up.\n You can skip a member's\n turn with CANCEL button.\n It's useful at times\n like when you wanna\n drive Baret hard.\n\n The LIMIT gauge grows\n as you receive damages.\n You can use your LIMIT\n Break when it fills up.\n This gauge doesn't get\n reset on each battle but\n accumulated from one\n battle to the next.\n Once you got it full,\n try to judge the most\n effective occasion to\n release it.
 chg_type 2603 npc_event
 sleep 16
 jump_npc 2603 same 1

@@ -83,7 +83,7 @@ sleep 16
 chg_npc_dir 2206 left
 sleep 16
 jump_npc 2206 same 1
-msg Baret\n`Guys!\n\n\n Meeting time!
+msg Baret\n`Guys!\n\n\n Meetin' time!
 sleep 16
 move_npc 2201 up 1
 move_npc 2206 up 2

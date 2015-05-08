@@ -10,7 +10,7 @@ chg_npc_dir 1665 right
 sleep 16
 set_key_valid a
 set_talk_npc 1665
-msg Baret,\n`Look==we're nearing the\n surface. Our home without\n no day or no night.\n If it weren't for that\n fuckin' Midgar Plate==\n we could see the big sky.
+msg Baret,\n`Look==we're nearin' the\n surface. Our home without\n no day or no night.\n If it weren't for that\n fuckin' Midgar Plate==\n we could see the big sky.
 reset_talk_npc
 if_char_dir right
 sleep 16
@@ -58,7 +58,7 @@ sleep 16
 chg_npc_dir 1665 right
 sleep 16
 set_talk_npc 1665
-msg Baret\n`Upside==\n The Plate city==\n\n How much misery that \n fuckin' pizza's bringing\n to the people below.
+msg Baret\n`Upside==\n The Plate city==\n\n How much misery that \n fuckin' pizza's bringin'\n to the people below.
 reset_talk_npc
 move_npc 1665 left 2
 sleep 96
@@ -76,7 +76,7 @@ sleep 32
 chg_speed 1665 fast
 step_npc 1665 4
 set_talk_npc 1665
-msg Baret\n`And the reactors keep\n sucking Mako energy.\n\n The land became more\n and more barren and\n now it can not purify\n the air any more.
+msg Baret\n`And the reactors keep\n suckin' Mako energy.\n\n The land became more\n and more barren and\n now it can't purify\n the air no more.
 reset_talk_npc
 sleep 32
 chg_char_dir down

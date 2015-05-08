@@ -61,7 +61,7 @@ sleep 48
 chg_npc_dir 7020 down
 jump_npc 7020 same 2
 sleep 8
-msg3 -1 Baret\n`But, but!\n We fought together from\n the beginning!
+msg3 -1 Baret\n`But, but!\n We fought together from\n the beginnin'!
 sleep 24
 chg_speed 7020 fast
 step_npc 7020 4
@@ -85,7 +85,7 @@ sleep 32
 chg_npc_dir 7020 right
 step_npc 7020 1
 set_talk_npc 7020
-msg Baret\n`Yeah. That's terrible.\n\n\n Squashing a whole town\n just to get rid of us.\n Wonder how many died==
+msg Baret\n`Yeah. That's terrible.\n\n\n Squashin' a whole town\n just to get rid of us.\n Wonder how many died==
 reset_talk_npc
 sleep 40
 step_npc 7021 3

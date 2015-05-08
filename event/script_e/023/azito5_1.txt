@@ -30,7 +30,7 @@ chg_speed 2330 fast
 sleep 16
 step_npc 2304 2
 set_talk_npc 2304
-msg Baret\n`Tifa!\n Leave him alone!\n\n He seems to regret\n quitting Shinra!
+msg Baret\n`Tifa!\n Leave him alone!\n\n He seems to regret\n quittin' Shinra!
 reset_talk_npc
 chg_npc_dir 2309 left
 chg_npc_dir 2330 left

@@ -148,13 +148,11 @@ if_flag 3 1
 msg {==\n\n\n\n#2\n  Flowers? That's rare.\n  Sorry, nothing.\n\n\n[[]][[]]
 if_flag 3 0
 step_char 1
-sleep 16
-msg {You don't see many\n of them these days.
-sleep 16
+sleep 32
 jump_npc 1301 same 1
 sleep 16
 step_npc 1301 2
-msg Flower girl\n`Ah, them. Do you like it?\n Only 1 Gil each.\n\n#2\n  I'll have one.\n  Forget it.\n\n\n[[]][[]]
+msg Flower girl\n`Ah, them. You like?\n Only 1 Gil each.\n\n#2\n  I'll have one.\n  Forget it.\n\n\n[[]][[]]
 if_flag 3 0
 chg_npc_dir 1301 up
 chg_npc_img 1301 15

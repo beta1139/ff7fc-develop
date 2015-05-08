@@ -50,7 +50,7 @@ chg_npc_dir 2804 left
 chg_npc_dir 2805 left
 sleep 16
 step_npc 2801 4
-msg Baret\n`This ain't no\n reserved car!\n Stop sticking together!
+msg Baret\n`This ain't no\n reserved car!\n Stop stickin' together!
 move_npc 2803 down 1
 move_npc 2804 right 7
 move_npc 2805 down 1

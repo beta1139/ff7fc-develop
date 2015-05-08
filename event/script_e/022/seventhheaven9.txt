@@ -13,7 +13,7 @@ sleep 4
 chg_npc_dir 2206 up
 sleep 4
 chg_dir_to_char 2206
-msg Baret\n`Yo, Cloud!\n\n\n I got something to ask\n you before the mission.\n\n\n It's==\n\n\n\n I don't know how to use\n materias!\n\n\n All materias we're gonna\n get are yours.\n So you gotta tell me!\n\n{Well==\n\n\n\n#2\n  I'll kindly explain.\n  Can't be bothered.\n\n\n[[{Just Google it.]][[]]
+msg Baret\n`Yo, Cloud!\n\n\n I got somethin' to ask\n you before the mission.\n\n\n It's==\n\n\n\n I don't know how to use\n materias!\n\n\n All materias we're gonna\n get are yours.\n So you gotta tell me!\n\n{Well==\n\n\n\n#2\n  I'll kindly explain.\n  Can't be bothered.\n\n\n[[{Just Google it.]][[]]
 if_flag 3 0
 step_npc 2206 3
 msg Baret\n`You asshole!\n\n\n Well, awright.\n I'll ask Jessie later.\n But you're in charge of\n materias!

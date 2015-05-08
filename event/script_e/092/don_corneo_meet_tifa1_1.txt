@@ -80,7 +80,7 @@ reset_talk_npc
 sleep 32
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n`So he is 'nothing'\n to both of us?\n Oh, poor Cloud!
+msg Aeris\n`So he is `nothing'\n to both of us?\n Oh, poor Cloud!
 reset_talk_npc
 chg_npc_dir 9221 right
 sleep 16

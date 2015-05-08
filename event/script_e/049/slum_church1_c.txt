@@ -152,7 +152,7 @@ sleep 16
 jump_npc 4901 same 1
 sleep 16
 step_npc 4901 3
-msg `Don't worry about that.\n They are stronger than\n you think. And this place\n is sort of special.
+msg `Don't worry.\n They are stronger than\n you think. And this place\n is sort of special.
 sleep 32
 chg_npc_dir 4900 down
 chg_npc_img 4900 0

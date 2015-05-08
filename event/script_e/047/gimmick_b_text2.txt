@@ -2,7 +2,7 @@ if_flag 11 3
 msg3 -1 Baret\n`FF7 PS4 Is\n The Ultimate Troll.
 fi
 if_flag 11 2
-msg3 -1 Baret\n`Stop goofing around!\n You clumsy oaf!
+msg3 -1 Baret\n`Stop goofin' around!\n You clumsy oaf!
 set_flag 11 3
 fi
 if_flag 11 1

@@ -25,7 +25,7 @@ create materia_shop 95023 950 26 8 70 1 0 4000/4003/4004/4005
 create npc 95024 950 22 13 71 3 0 いいものが　たんさん　そろっているよ
 create event_generator 95030 950 16 22 17 1 0 @950/950_dbg1.txt
 create event_generator 95031 950 16 23 17 1 0 @950/950_dbg2.txt
-create npc 95032 950 20 20 73 1 2 フォントひょうじ　テスト\nあいうえおアイウエオ かきくけこカキクケコ\nさしすせそサシスセソ たちつてとタチツテト\nなにぬねのナニヌネノ はひふへほハヒフヘホ\nまみむめもマミムメモ やゆよヤユヨ\nらりるれろラリルレロ わをんワ　ン\nっゃゅょッャュョ ぁぃぅぇぉァィゥェォ\nabcdefghijklmn\nopqrstuvwxyz\nABCDEFGHIJKLMN\nOPQRSTUVWXYZ\n0123456789\n：「『。～－…！？％／→（）\nがぎぐげごガギグゲゴ ざじずぜぞザジズゼゾ\nだぢづでどダヂヅデド ばびぶべぼバビブベボ\nぱぴぷぺぽ
+create npc 95032 950 20 20 73 1 2 フォントひょうじ　テスト\nあいうえおアイウエオ かきくけこカキクケコ\nさしすせそサシスセソ たちつてとタチツテト\nなにぬねのナニヌネノ はひふへほハヒフヘホ\nまみむめもマミムメモ やゆよヤユヨ\nらりるれろラリルレロ わをんワ　ン\nっゃゅょッャュョ ぁぃぅぇぉァィゥェォ\nabcdefghijklmn\nopqrstuvwxyz\nABCDEFGHIJKLMN\nOPQRSTUVWXYZ\n0123456789\n：「『』。～－…！？％／→（）▼\nがぎぐげごガギグゲゴ ざじずぜぞザジズゼゾ\nだぢづでどダヂヅデド ばびぶべぼバビブベボ\nぱぴぷぺぽ
 create event_generator 95060 950 0 0 17 1 0 @950/950_dbg3.txt
 create event_generator 95061 950 0 0 17 1 0 @950/950_dbg4.txt
 create event_generator 95062 950 0 0 17 1 0 @950/950_dbg5.txt

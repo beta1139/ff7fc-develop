@@ -4,4 +4,4 @@ kill_through 1911
 kill_through 1912
 kill_through 2013
 chg_type 2011 npc
-chg_param 2011 Baret\n`Yo, Cloud!\n Stop running around.
+chg_param 2011 Baret\n`Yo, Cloud!\n Stop runnin' around.

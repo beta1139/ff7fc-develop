@@ -88,7 +88,7 @@ sleep 8
 jump_npc 3300 same 2
 sleep 32
 step_npc 3300 2
-msg Baret\n`Hey!\n We're getting nowhere.\n Let's get outta here!
+msg Baret\n`Hey!\n We're gettin' nowhere.\n Let's get outta here!
 sleep 8
 chg_npc_img 3300 1
 move_npc 3300 right 1

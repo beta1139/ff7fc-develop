@@ -72,7 +72,7 @@ sleep 16
 msg Baret\n`But we can't relax till\n we get to the reactor.
 sleep 16
 chg_npc_dir 3401 down
-msg Baret\n`Biggs, Wedge and Jessie\n are heading there first.\n Let's go, guys.
+msg Baret\n`Biggs, Wedge and Jessie\n are headin' there first.\n Let's go, guys.
 fi
 move_npc 3401 down 3
 move_char down 3

@@ -15,4 +15,4 @@ chg_npc_dir 2011 down
 sleep 16
 chg_speed 2011 not_move
 chg_type 2011 npc
-chg_param 2011 Baret\n`Yo, Cloud!\n Stop running around.
+chg_param 2011 Baret\n`Yo, Cloud!\n Stop runnin' around.

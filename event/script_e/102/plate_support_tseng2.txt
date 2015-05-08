@@ -188,7 +188,7 @@ jump_npc 10253 same 2
 sleep 32
 set_active_msg 10253
 chg_npc_img 10253 145
-msg Baret\n`Stop babbling!
+msg Baret\n`Stop babblin'!
 sleep 8
 loop 4
 step_npc 10253 2

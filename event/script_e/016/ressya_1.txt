@@ -194,7 +194,7 @@ msg {Guess I'm late.
 sleep 16
 jump_npc 1651 same 2
 sleep 16
-msg3 -1 Baret\n`Damn right you are!\n Feeling hammy, huh?
+msg3 -1 Baret\n`Damn right you are!\n Feelin' hammy, huh?
 sleep 16
 chg_speed 1651 fast
 step_npc 1651 2
@@ -224,7 +224,7 @@ jump_npc 1650 same 1
 msg {Yeah?\n You worried for me?
 sleep 8
 step_npc 1651 2
-msg Baret\n`What!? Tsk==\n It'll come off your\n pay for being late.
+msg Baret\n`What!? Tsk==\n It'll come off your\n pay for bein' late.
 move_npc 1651 down 1
 sleep 16
 move_npc 1651 right 5

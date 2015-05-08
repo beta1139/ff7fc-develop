@@ -325,7 +325,7 @@ set_talk_npc 4807
 msg President Shinra\n`Indeed. Although this\n place is wasted for the\n likes of you MAGGOTS==
 reset_talk_npc
 step_npc 4802 6
-msg Baret\n`MAGGOTS!?\n You dare call us MAGGOTS!\n\n Then you and your Shinra\n are nothing more than \n PARASITES eating away\n this planet!
+msg Baret\n`MAGGOTS!?\n You dare call us MAGGOTS!\n\n Then you and your Shinra\n are nothin' more than \n PARASITES eatin' away\n this planet!
 chg_npc_dir 4807 up
 sleep 32
 set_talk_npc 4807
@@ -335,7 +335,7 @@ move_npc 4802 up 1
 sleep 8
 chg_npc_dir 4807 down
 jump_npc 4802 same 2
-msg Baret\n`Engagement? You fuck!\n I still got a whole lot\n of things to tell you!
+msg Baret\n`Engagement? You fuck!\n I still got a whole lotta\n things to tell you!
 step_npc 4807 1
 set_talk_npc 4807
 msg President Shinra\n`I have taken the liberty\n of arranging another\n entertainment for you.
@@ -709,7 +709,7 @@ sleep 8
 step_npc 4800 1
 sleep 8
 step_npc 4802 3
-msg Baret\n`The reactor's blowing\n up soon! C'mon, Tifa!
+msg Baret\n`The reactor's blowin'\n up soon! C'mon, Tifa!
 chg_npc_dir 4801 left
 chg_speed 4801 fast
 jump_npc 4801 same 1
@@ -723,7 +723,7 @@ chg_npc_dir 4801 right
 sleep 16
 chg_speed 4802 normal
 step_npc 4802 1
-msg Baret\n`I can't do nothing.
+msg Baret\n`I can't do nothin'.
 jump_npc 4801 same 2
 sleep 16
 chg_npc_y_offset 4800 -3
@@ -789,7 +789,7 @@ sleep 8
 jump_npc 4802 same 1
 sleep 16
 step_npc 4802 4
-msg Baret\n`Stop whimperin'. Sorry\n but I can't do nothing.\n Try to save yourself.
+msg Baret\n`Stop whimperin'. Sorry\n but I can't do nothin'.\n Try to save yourself.
 chg_npc_y_offset 4800 -4
 sleep 8
 chg_speed 4800 normal
