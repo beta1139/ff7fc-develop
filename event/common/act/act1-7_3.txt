@@ -65,6 +65,7 @@ set_layer 9550 front
 add_party_mem 1
 add_party_mem 2
 enable_char_chg
+set_flag 1 0
 set_flag 14 0
 set_flag 15 0
 set_flag 16 0
