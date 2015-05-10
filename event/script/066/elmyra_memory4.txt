@@ -1,0 +1,139 @@
+create npc_event 71222 712 12 9 94 1 2 none
+create npc_event 71226 712 15 10 16 2 4 none
+create npc_event 71224 712 16 10 158 2 0 none
+create npc_event 71225 712 6 13 38 3 1 none
+sleep 32
+loop 50
+dec_screen_effect_val 2
+sleep 1
+pool
+sleep 32
+move_npc 71225 right 2
+sleep 64
+jump_npc 71225 same 2
+sleep 32
+chg_speed 71225 fast
+move_npc 71225 right 4
+sleep 32
+move_npc 71225 up 1
+sleep 8
+move_npc 71225 right 2
+sleep 16
+move_npc 71225 up 2
+sleep 16
+chg_npc_dir 71225 right
+step_npc 71225 4
+sleep 32
+chg_speed 71224 normal
+move_npc 71224 up 1
+sleep 16
+move_npc 71224 left 2
+sleep 32
+chg_npc_dir 71224 down
+chg_speed 71224 fast
+step_npc 71224 5
+sleep 40
+jump_npc 71224 same 1
+sleep 16
+step_npc 71224 6
+sleep 48
+chg_npc_dir 71225 up
+jump_npc 71225 same 1
+sleep 16
+chg_speed 71224 normal
+move_npc 71224 left 1
+chg_speed 71225 normal
+move_npc 71225 up 1
+sleep 16
+move_npc 71224 right 1
+move_npc 71225 right 1
+sleep 16
+chg_npc_dir 71224 down
+chg_npc_dir 71225 down
+sleep 8
+chg_npc_y_offset 71225 -5
+sleep 2
+chg_npc_y_offset 71225 -6
+sleep 2
+chg_npc_y_offset 71225 -7
+sleep 2
+chg_npc_y_offset 71225 -8
+sleep 2
+move_npc 71225 down 1
+sleep 32
+chg_speed 71226 slow
+step_npc 71226 3
+sleep 144
+loop 20
+inc_screen_effect_val 1
+sleep 1
+pool
+set_flag 10 0
+chg_event_move_char_speed normal
+move_char right 2
+sleep 32
+loop 20
+dec_screen_effect_val 1
+sleep 1
+pool
+set_screen_effect sub 255 255 255 0
+loop 20
+inc_screen_effect_val 1
+sleep 1
+pool
+clear_text 2
+loop 3
+set_text_alpha 2 0
+if_flag 10 0
+set_text 2 　　　　　せんそうちゅうは　よくある　こうけいだったね
+fi
+if_flag 10 1
+set_text 2 　　　　　　　　エアリスを　あんぜんなところへ
+fi
+if_flag 10 2
+set_text 2 　　　　　　……そう　いいのこして　かのじょはしんだ
+fi
+include ./event/common/set_text/st02.txt
+wait_key_push_edge a
+set_text_alpha 2 50
+sleep 16
+set_text_alpha 2 25
+sleep 16
+set_text_alpha 2 0
+sleep 16
+clear_text 2
+add_flag 10 1
+pool
+loop 40
+inc_screen_effect_val 2
+sleep 1
+pool
+warp 708 0 0 up
+sleep 32
+clear_text 5
+clear_text 6
+clear_text 7
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+sleep 8
+set_text 5 　　　　　　わたしのおっとは　かえらず　こどももいない
+set_text 6 　　　　　　　　　わたしも　さびしかったんだろうね
+set_text 7 　　　　　エアリスをいえに　つれてかえることに　したんだ
+include ./event/common/set_text/st05.txt
+include ./event/common/set_text/st06.txt
+include ./event/common/set_text/st07.txt
+wait_key_push_edge a
+play_se train_whistle_quiet.ogg
+set_screen_effect add 255 255 255 0
+loop 50
+inc_screen_effect_val 2
+sleep 1
+pool
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 5
+clear_text 6
+clear_text 7
+create event_generator 6609 66 0 0 17 0 0 @066/elmyra_memory5.txt

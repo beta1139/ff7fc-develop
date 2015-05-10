@@ -1,0 +1,89 @@
+wait_same_pos
+chg_type 6721 npc_event
+chg_type 6722 npc_event
+chg_speed 6721 normal
+chg_speed 6722 normal
+chg_npc_y_offset 6721 3
+sleep 2
+chg_npc_y_offset 6721 2
+sleep 2
+chg_npc_y_offset 6721 1
+sleep 2
+chg_npc_y_offset 6721 0
+sleep 2
+chg_npc_y_offset 6721 -1
+sleep 2
+chg_npc_y_offset 6721 -2
+sleep 2
+chg_npc_y_offset 6721 -3
+sleep 2
+chg_npc_y_offset 6721 -4
+sleep 18
+chg_npc_dir 6721 up
+sleep 16
+set_active_msg 6721
+jump_npc 6721 same 1
+msg バレット\n「クラウド！
+chg_char_dir down
+move_npc 6721 right 1
+sleep 16
+move_npc 6721 up 1
+sleep 16
+step_npc 6721 2
+msg バレット\n「エアリスを　たすけにいくんだろ？\n　すっかり　せわになっちまったからな
+chg_speed 6721 fast
+chg_npc_dir 6721 left
+chg_npc_img 6721 95
+step_npc 6721 5
+sleep 40
+chg_npc_img 6721 1
+chg_npc_dir 6721 up
+jump_npc 6721 same 1
+set_layer 6721 front
+set_ignore_map_layer_flag 6721 1
+sleep 16
+set_active_msg 6721
+jump_npc 6721 same 1
+msg バレット\n「それにあいてが　しんらとなれば\n　だまっちゃいられねえ！\n　オレもいくぜ！
+jump_npc 6722 same 1
+sleep 16
+chg_npc_dir 6721 down
+move_npc 6722 right 1
+sleep 16
+move_npc 6722 up 2
+sleep 16
+chg_speed 6721 normal
+move_npc 6721 left 1
+sleep 16
+set_layer 6722 front
+set_ignore_map_layer_flag 6722 1
+jump_npc 6722 same 1
+sleep 16
+chg_npc_dir 6721 left
+step_npc 6722 3
+msg マリン\n「あのね　あのね　エアリスがね\n　いっぱい　きいてたよ\n\n　クラウドってどんなひとって？\n　クラウドのこと　すきなんだよ　きっと\n\n\n#2\n　　おれにはわからないよ\n　　そうだといいな\n\n\n[[]][[]]
+jump_npc 6722 same 1
+sleep 16
+if_flag 3 0
+add_likability 2 300
+sub_likability 3 300
+chg_speed 6721 fast
+step_npc 6722 4
+msg マリン\n「ドンカン！
+chg_param 6722 マリン\n「ドンカン！
+sleep 16
+fi
+if_flag 3 1
+sub_likability 2 300
+add_likability 3 300
+step_npc 6722 2
+msg マリン\n「ティファにはないしょに\n　しといてあげるね
+chg_param 6722 マリン\n「ティファにはないしょに\n　しといてあげるね
+fi
+chg_npc_dir 6721 right
+chg_speed 6721 not_move
+sleep 16
+chg_npc_dir 6722 left
+chg_speed 6722 not_move
+chg_type 6722 npc
+set_layer 6722 back

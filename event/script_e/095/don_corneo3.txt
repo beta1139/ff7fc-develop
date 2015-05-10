@@ -162,6 +162,7 @@ jump_npc 9523 same 1
 sleep 8
 chg_npc_dir 9523 down
 sleep 24
+play_se corneo_jump.ogg
 jump_npc 9523 same 2
 set_talk_npc 9523
 msg Corneo\n`Ho-ho!\n Who? What? Who are you?

@@ -1,0 +1,20 @@
+ウォールマーケット・メシ処
+--------------------------------------------------------
+
+★はevent.csvより最初から読み込まれているファイル
+
+7700: kill_smoke6.txt　★
+7701: kill_smoke6.txt　★
+7702: wm_meshidokoro1.txt　★
+7703: wm_meshidokoro2.txt　★
+7704: wm_meshidokoro3.txt　★
+7705: wm_meshidokoro4.txt　(wm_meshidokoro3.txtにて生成)
+7706: wm_meshidokoro5.txt　(wm_meshidokoro3.txtにて生成)
+7707: wm_meshidokoro6.txt　★
+7710：メシ処男性スタッフ　★
+7711：メシ処女性スタッフ　★
+7712～7715：メシ処客　★
+
+--------------------------------------------------------
+★は7707以外、常に存在。
+7707は、女装イベント後(075/wm_boutique4.txt)に消滅。

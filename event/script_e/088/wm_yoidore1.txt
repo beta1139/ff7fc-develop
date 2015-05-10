@@ -6,29 +6,22 @@ chg_char_img_tmp 13
 kill_through 8830
 kill_through 8809
 fi
-chg_type 8811 npc_event
-chg_type 8812 npc_event
-chg_speed 8811 normal
-chg_speed 8812 normal
-step_npc 8811 2
-set_talk_npc 8811
-msg `==and then==
-reset_talk_npc
+include ./event/script_e/088/yoidore_small_talk1.txt
 if_char_dir up
-if_flag 9 1
+if_flag_lesser 9 2
 create npc_event 8820 88 13 11 0 0 2 none
 fi
 if_flag 9 2
 create npc_event 8820 88 13 11 13 0 2 none
 fi
+if_flag_greater 9 2
+create npc_event 8820 88 13 11 0 0 2 none
+fi
 draw_char off
 move_char up 1
 fi
 sleep 16
-step_npc 8812 2
-set_talk_npc 8812
-msg `Giggle. Is that so?
-reset_talk_npc
+include ./event/script_e/088/yoidore_small_talk2.txt
 if_char_dir up
 move_char down 1
 sleep 16
@@ -36,10 +29,6 @@ chg_char_dir up
 draw_char on
 kill 8820
 fi
-chg_type 8811 npc2
-chg_type 8812 npc2
-chg_speed 8811 not_move
-chg_speed 8812 not_move
 if_flag 9 2
 if_char_dir left
 create event_generator 8830 88 14 10 17 0 0 @drag_cloud.txt

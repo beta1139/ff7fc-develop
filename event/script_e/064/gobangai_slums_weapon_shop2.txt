@@ -6,28 +6,12 @@ chg_speed 6424 normal
 create npc_event 6420 64 8 7 0 0 2 none
 draw_char off
 move_char up 1
+set_flag 10 1
 sleep 16
-set_talk_npc 6424
-msg `Only you can protect\n yourself in the slums.\n Therefore you need good\n weapons! Right?\n#3\n  Show me weapons.\n  Show me items.\n  Not interested.\n\n[[]][[]][[]]
-reset_talk_npc
-if_flag 3 0
-open_armor_shop 3002
-step_npc 6420 1
-sleep 16
-set_talk_npc 6423
-msg {You don't have a weapon!
-reset_talk_npc
-jump_npc 6424 same 1
-chg_npc_dir 6424 up
-sleep 16
-fi
-if_flag 3 1
-open_item_shop 1020
-fi
-if_flag 3 2
-fi
+include ./event/script_e/064/shop_msg1.txt
 move_char down 1
 sleep 16
+set_flag 10 0
 chg_speed 6424 not_move
 chg_char_dir up
 draw_char on

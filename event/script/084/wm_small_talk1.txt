@@ -1,0 +1,17 @@
+step_npc 8412 2
+set_talk_npc 8412
+msg 「ここのゴミ\n　どうにかならないのかしらねえ
+reset_talk_npc
+sleep 16
+step_npc 8411 4
+msg 「これってぜんぶ　あの　ほら……\n　ぶきやの　あそこのごしゅじん\n　ひろってきては　ためこんでるそうよ
+sleep 16
+jump_npc 8412 same 1
+sleep 16
+step_npc 8412 2
+set_talk_npc 8412
+msg 「ああ　あのおみせのなかに　せんしゃまでおいてる\n　あのごしゅじんね
+reset_talk_npc
+sleep 16
+step_npc 8411 2
+msg 「でも　どうみても\n　ゴミですわねえ

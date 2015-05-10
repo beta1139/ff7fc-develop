@@ -3,5 +3,5 @@ wait_target_talk 6426
 reset_talk_flag 6426
 chg_dir_to_char 6427
 chg_speed 6427 normal
-msg `Yeah? You want weapons?\n I'm sorry but==\n\n\n I got no weapon for you!\n Because==\n\n\n The shop is over there.
+include ./event/script_e/064/shop_msg2.txt
 chg_speed 6427 not_move

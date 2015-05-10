@@ -1,0 +1,4 @@
+set_eternal_event
+wait_target_talk 7615
+reset_talk_flag 7615
+open_materia_shop 4003/4004/4005/4000/4313

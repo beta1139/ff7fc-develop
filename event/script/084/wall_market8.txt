@@ -10,23 +10,12 @@ chg_type 8411 npc_event
 chg_type 8412 npc_event
 chg_speed 8411 normal
 chg_speed 8412 normal
-step_npc 8412 2
-set_talk_npc 8412
-msg 「ここのゴミ\n　どうにかならないのかしらねえ
-reset_talk_npc
-sleep 16
-step_npc 8411 4
-msg 「これってぜんぶ　あの　ほら……\n　ぶきやの　あそこのごしゅじん\n　ひとってきては　ためこんでるそうよ
-sleep 16
-jump_npc 8412 same 1
-sleep 16
-step_npc 8412 2
-set_talk_npc 8412
-msg 「ああ　あのおみせのなかに　せんしゃまでおいてる\n　あのごしゅじんね
-reset_talk_npc
-sleep 16
-step_npc 8411 2
-msg 「でも　どうみても\n　ゴミですわねえ
+if_flag_lesser 9 3
+include ./event/script/084/wm_small_talk1.txt
+fi
+if_flag_greater 9 2
+include ./event/script/084/wm_small_talk2.txt
+fi
 chg_type 8411 npc2
 chg_type 8412 npc2
 chg_speed 8411 not_move

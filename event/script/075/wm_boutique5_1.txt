@@ -1,0 +1,9 @@
+set_eternal_event
+wait_target_talk 7517
+reset_talk_flag 7517
+chg_dir_to_char 7515
+chg_speed 7515 not_step
+backup_char_img
+set_flag 10 0
+chg_char_img_tmp 0
+include ./event/script/075/wm_boutique5.txt

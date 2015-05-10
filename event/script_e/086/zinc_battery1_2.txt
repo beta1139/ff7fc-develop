@@ -1,0 +1,4 @@
+set_eternal_event
+wait_target_talk 8614
+reset_talk_flag 8614
+set_flag 10 1

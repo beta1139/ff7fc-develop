@@ -1,0 +1,51 @@
+wait_target_talked 6622
+reset_talked_flag 6622
+chg_type 6623 npc_event
+chg_npc_dir 6623 down
+set_slide_char_flag
+if_char_dir up
+create npc_event 6620 66 12 10 0 0 2 none
+draw_char off
+move_char up 2
+sleep 32
+fi
+if_char_dir left
+create npc_event 6620 66 13 9 0 2 2 none
+draw_char off
+move_char up 1
+sleep 16
+fi
+if_char_dir right
+create npc_event 6620 66 11 9 0 3 2 none
+draw_char off
+move_char up 1
+sleep 16
+fi
+jump_npc 6623 same 1
+sleep 16
+step_npc 6623 2
+set_talk_npc 6623
+msg エルミナ\n「あんた　きにするんじゃないよ\n　エアリスだってそんなふうに\n　おもっちゃいないよ
+reset_talk_npc
+chg_npc_dir 6623 left
+if_char_dir up
+move_char down 2
+sleep 32
+draw_char on
+kill 6620
+fi
+if_char_dir left
+move_char down 1
+sleep 16
+draw_char on
+kill 6620
+fi
+if_char_dir right
+move_char down 1
+sleep 16
+draw_char on
+kill 6620
+fi
+chg_param 6622 ティファ\n「なんか　おちこんじゃう
+chg_type 6623 npc3
+reset_slide_char_flag

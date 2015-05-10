@@ -1,0 +1,100 @@
+if_not_owned_item 1084
+backup_char_img
+create npc_event 8615 86 4 13 156 2 0 none
+chg_speed 8612 normal
+chg_char_img 0
+sleep 24
+chg_dir_to_char 8612
+sleep 16
+kill 8615
+set_active_msg 8612
+jump_npc 8612 same 1
+msg 「あんたも　うえのプレートへいくのか？\n　このジンクバッテリーが　ひつようになるぞ
+sleep 16
+step_char 1
+sleep 16
+msg 『ひろったものを　うりつけるのか？
+sleep 16
+jump_npc 8612 same 1
+msg 「お　よくしってるな\n　しゅうりしてあるから　だいじょうぶさ
+sleep 16
+step_char 1
+sleep 16
+msg 『うえのプレートへ　のぼるのに\n　どうしてバッテリーが　ひつようなんだ？
+sleep 16
+step_npc 8612 2
+msg 「のぼってみりゃわかるよ\n　3つで300ギルだ\n　かうかい？
+sleep 16
+msg 『……\n\n\n\n#2\n　　わかった　かおう\n　　しんじられないな\n\n\n[[]][[]]
+if_flag 3 0
+if_gil_less 300
+step_npc 8612 2
+msg 「ざんねんだな　おかねがたらないよ\n　また　こいや
+sleep 8
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 3
+sleep 32
+chg_speed 8612 not_move
+chg_npc_dir 8612 up
+sleep 48
+chg_char_img_tmp 0
+chg_char_dir down
+restore_char_img
+fi
+if_gil_greater 299
+sleep 16
+play_se jump.wav
+jump_npc 8612 up 1
+sleep 16
+play_se landing.wav
+move_npc 8612 right 2
+sleep 32
+if_flag 10 1
+move_npc 8612 down 1
+sleep 16
+chg_npc_dir 8612 right
+fi
+step_npc 8612 3
+sleep 48
+play_se pick_up.wav
+sub_gil 300
+add_item 1084
+add_item 1084
+add_item 1084
+msg 『ジンクバッテリー』をてにいれた！
+sleep 8
+step_npc 8612 1
+msg 「また　こいや
+sleep 8
+if_flag 10 1
+move_npc 8612 up 1
+sleep 16
+fi
+move_npc 8612 left 2
+sleep 32
+play_se jump.wav
+jump_npc 8612 down 1
+sleep 16
+play_se landing.wav
+chg_npc_dir 8612 up
+set_flag 10 0
+chg_speed 8612 not_move
+restore_char_img
+end
+fi
+fi
+if_flag 3 1
+sleep 8
+step_npc 8612 2
+msg 「そうか　じぶんのめで　たしかめて\n　また　きたらいいだろう
+fi
+fi
+if_owned_item 1084
+chg_dir_to_char 8612
+msg 「また　こいや
+fi
+chg_speed 8612 not_move
+chg_npc_dir 8612 up
+restore_char_img
+set_flag 10 0

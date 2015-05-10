@@ -4,88 +4,32 @@ create event_generator 7114 71 3 9 17 0 0 @068/rokubangai_kill_smoke.txt
 create event_generator 7115 71 3 10 17 0 0 @068/rokubangai_kill_smoke.txt
 chg_char_state_move
 loop_inf
-create npc_event 7080 70 19 24 124 1 1 none
-set_ignore_map_layer_flag 7080 1
-set_layer 7080 front
-slide_npc 7080 up 2
+create smoke 7080 70 19 24 0 0 0 none
 sleep 8
-create npc_event 7081 70 21 17 124 1 1 none
-set_ignore_map_layer_flag 7081 1
-set_layer 7081 front
-slide_npc 7081 up 2
+create smoke 7081 70 21 17 0 0 0 none
 sleep 8
-chg_npc_dir 7080 left
-create npc_event 7082 70 10 14 124 1 1 none
-set_ignore_map_layer_flag 7082 1
-set_layer 7082 front
-slide_npc 7082 up 2
+create smoke 7082 70 10 14 0 0 0 none
 sleep 8
-chg_npc_dir 7081 left
-create npc_event 7083 70 8 21 124 1 1 none
-set_ignore_map_layer_flag 7083 1
-set_layer 7083 front
-slide_npc 7083 up 2
-sleep 8
-chg_npc_dir 7080 up
-chg_npc_dir 7082 left
-sleep 8
-chg_npc_dir 7081 up
-chg_npc_dir 7083 left
-sleep 8
-chg_npc_dir 7080 right
-chg_npc_dir 7082 up
-sleep 8
-chg_npc_dir 7081 right
-chg_npc_dir 7083 up
-sleep 8
+create smoke 7083 70 8 21 0 0 0 none
+sleep 40
 kill 7080
-chg_npc_dir 7082 right
 sleep 8
 kill 7081
-chg_npc_dir 7083 right
 sleep 8
 kill 7082
 sleep 8
 kill 7083
-create npc_event 7080 70 18 21 124 1 1 none
-set_ignore_map_layer_flag 7080 1
-set_layer 7080 front
-slide_npc 7080 up 2
+create smoke 7080 70 18 21 0 0 0 none
 sleep 8
-create npc_event 7081 70 19 15 124 1 1 none
-set_ignore_map_layer_flag 7081 1
-set_layer 7081 front
-slide_npc 7081 up 2
+create smoke 7081 70 19 15 0 0 0 none
 sleep 8
-chg_npc_dir 7080 left
-create npc_event 7082 70 9 16 124 1 1 none
-set_ignore_map_layer_flag 7082 1
-set_layer 7082 front
-slide_npc 7082 up 2
+create smoke 7082 70 9 16 0 0 0 none
 sleep 8
-chg_npc_dir 7081 left
-create npc_event 7083 70 10 22 124 1 1 none
-set_ignore_map_layer_flag 7083 1
-set_layer 7083 front
-slide_npc 7083 up 2
-sleep 8
-chg_npc_dir 7080 up
-chg_npc_dir 7082 left
-sleep 8
-chg_npc_dir 7081 up
-chg_npc_dir 7083 left
-sleep 8
-chg_npc_dir 7080 right
-chg_npc_dir 7082 up
-sleep 8
-chg_npc_dir 7081 right
-chg_npc_dir 7083 up
-sleep 8
+create smoke 7083 70 10 22 0 0 0 none
+sleep 40
 kill 7080
-chg_npc_dir 7082 right
 sleep 8
 kill 7081
-chg_npc_dir 7083 right
 sleep 8
 kill 7082
 sleep 8

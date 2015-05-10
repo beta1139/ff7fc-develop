@@ -1,0 +1,125 @@
+sleep 16
+chg_npc_dir 6620 up
+sleep 16
+step_npc 6620 1
+msg 『よく　なんねんも　しんらから\n　にげつづけることができたな
+sleep 16
+set_active_msg 6623
+jump_npc 6623 same 1
+set_talk_npc 6623
+msg エルミナ\n「しんらは　エアリスのきょうりょくが\n　ひつようだったから　てあらなマネは\n　できなかったんだろうね
+reset_talk_npc
+sleep 32
+step_npc 6622 2
+msg ティファ\n「じゃあ　こんかいはどうして……
+sleep 16
+chg_npc_dir 6623 left
+sleep 24
+step_npc 6623 2
+set_talk_npc 6623
+msg エルミナ\n「ちいさな　おんなのこをつれて\n　ここにかえってきたんだ\n\n　そのとちゅうで　ツォンのやつに\n　みつかってしまったらしくてね\n　にげきれなかったんだろ　きっと\n\n　おんなのこの　ぶじとひきかえに\n　じぶんが　しんらに　いくことに　なったんだ
+reset_talk_npc
+sleep 24
+step_npc 6620 1
+msg 『マリン　だな
+jump_npc 6621 same 2
+sleep 32
+chg_speed 6621 fast
+step_npc 6621 2
+msg3 -1 バレット\n「マリン！！\n　マリンのために　エアリスは　つかまったのか！
+sleep 16
+chg_npc_dir 6620 down
+wait_key_push_edge a
+erase_msg3
+sleep 16
+chg_speed 6621 normal
+move_npc 6621 up 1
+sleep 16
+move_npc 6620 down 1
+move_npc 6621 right 1
+sleep 16
+chg_npc_dir 6620 up
+chg_npc_dir 6621 up
+set_layer 6621 front
+set_ignore_map_layer_flag 6621 1
+jump_npc 6621 same 1
+sleep 16
+chg_speed 6621 slow
+step_npc 6621 1
+msg バレット\n「すまねえ\n　マリンはオレのむすめだ\n　すまねえ……ほんとうに……
+chg_npc_dir 6623 down
+sleep 16
+jump_npc 6623 same 1
+set_talk_npc 6623
+msg エルミナ\n「あんたが　ちちおやかい！？\n　あんた　むすめをほったらかして\n　なにをやってるんだい！？
+reset_talk_npc
+chg_npc_dir 6621 left
+sleep 80
+chg_speed 6621 slow
+step_npc 6621 2
+msg バレット\n「……そのはなしは　やめてくれ\n　オレだって　なんどもかんがえたさ\n　オレがしんじまったら　マリンは…ってな
+chg_npc_dir 6621 up
+sleep 16
+jump_npc 6621 same 1
+sleep 16
+chg_speed 6621 fast
+step_npc 6621 3
+msg バレット\n「でもよ　こたえはでねえんだ\n　マリンといつも　いっしょにいたい\n　でも　それじゃ　たたかえない\n　たたかわなければ　ほしがしぬ
+jump_npc 6621 same 1
+sleep 16
+jump_npc 6621 same 1
+sleep 16
+step_npc 6621 2
+msg バレット\n「おう！　オレはたたかうぜ！
+sleep 16
+chg_npc_dir 6621 left
+sleep 40
+chg_speed 6621 slow
+step_npc 6621 1
+msg バレット\n「でも　マリンがしんぱいだ\n　いつでも　そばにいてやりたい
+sleep 32
+chg_npc_dir 6621 up
+sleep 24
+chg_speed 6621 normal
+step_npc 6621 2
+msg バレット\n「な？　グルグルまわっちまうんだ
+sleep 32
+step_npc 6623 2
+set_talk_npc 6623
+msg エルミナ\n「……わからないでもないけどね\n　ま　とにかく　2かいで　ねむってるから\n　あっておやりよ
+reset_talk_npc
+step_npc 6621 2
+sleep 32
+move_npc 6621 left 1
+sleep 16
+move_npc 6621 up 3
+sleep 16
+chg_event_move_char_speed slow
+move_char down 1
+sleep 32
+kill 6621
+chg_char_dir up
+draw_char on
+kill 6620
+chg_npc_dir 6623 left
+set_inactive_msg 6623
+chg_event_move_char_speed normal
+set_flag_wall 6622
+set_flag_wall 6623
+chg_speed 6622 not_move
+chg_speed 6623 not_step
+chg_type 6622 npc3
+chg_type 6623 npc3
+create event_generator 6611 66 0 0 17 0 0 @066/elmyra3.txt
+create event_generator 6612 66 9 13 17 0 0 @066/leave1.txt
+create event_generator 6613 66 10 13 17 0 0 @066/leave2.txt
+create npc_event 6721 67 10 14 1 1 0 none
+chg_npc_y_offset 6721 0
+create npc_event 6722 67 10 15 37 0 0 none
+create event_generator 6710 67 11 13 17 0 0 @067/marlene1.txt
+if_party_mem 1
+del_party_mem 1
+fi
+if_party_mem 2
+del_party_mem 2
+fi

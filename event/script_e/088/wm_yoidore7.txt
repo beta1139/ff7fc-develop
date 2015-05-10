@@ -5,12 +5,13 @@ chg_char_img_tmp 13
 kill_through 8830
 kill_through 8809
 fi
-chg_speed 8815 fast
 set_active_msg 8815
 jump_npc 8815 same 1
 set_talk_npc 8815
 msg `Hey! Oops.
 reset_talk_npc
+sleep 16
+chg_speed 8815 fast
 step_npc 8815 2
 move_char down 1
 close_door 8850

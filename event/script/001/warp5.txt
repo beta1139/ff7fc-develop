@@ -12,40 +12,14 @@ warp_ff3_2 97 8 13 2 up
 set_slide_walk_char_flag
 add_party_mem 2
 add_party_mem 3
-add_item 2101
-add_item 2101
-add_item 3002
-add_item 3002
-add_item 3002
-add_item 4000
-add_item 4100
-add_item 4003
-add_item 6000
-add_item 6003
-add_item 6009
-add_item 6012
-add_item 6013
-add_item 6016
-add_gil 2500
 set_flag 0 0
 set_flag 1 0
 set_flag 9 2
 set_flag 21 1
-enable_char_chg
-remove_all_materia 0
-remove_all_materia 1
-remove_all_materia 2
 sleep 8
-set_max_hp 0 408
-set_max_hp 2 359
-set_max_hp 3 285
-set_max_mp 0 83
-set_max_mp 2 61
-set_max_mp 3 71
-set_power 0 27
-set_power 2 20
-set_power 3 17
+include ./event/common/debug/set01.txt
 recover_active_chara
+enable_char_chg
 fi
 if_flag 3 1
 kill_through_range 1700 1799
@@ -54,30 +28,7 @@ kill_through_range 1900 1905
 kill_through_range 1910 1949
 kill_through_range 1960 1999
 kill_through_range 9996 9999
-add_item 2101
-add_item 2101
-add_item 3002
-add_item 3002
-add_item 3002
-add_item 4000
-add_item 4100
-add_item 4003
-add_item 6000
-add_item 6003
-add_item 6009
-add_item 6012
-add_item 6013
-add_item 6016
-add_gil 2500
-set_max_hp 0 408
-set_max_hp 2 359
-set_max_hp 3 285
-set_max_mp 0 83
-set_max_mp 2 61
-set_max_mp 3 71
-set_power 0 27
-set_power 2 20
-set_power 3 17
+include ./event/common/debug/set01.txt
 recover_active_chara
 set_flag 1 0
 set_flag 9 2
@@ -256,7 +207,12 @@ reset_screen_effect
 fi
 fi
 if_flag 3 2
-warp 600 11 16 up
-play_bgm
-set_flag 0 0
+include ./event/common/act/act1-7_1.txt
+sleep 8
+include ./event/common/act/act1-7_2j.txt
+include ./event/common/act/act1-7_3.txt
+set_flag 12 1
+warp_ff3_2 65 11 20 2 up
+create npc 164 1 5 12 64 0 0 デバッグよう　ワープそうち
+include ./event/common/debug/set01.txt
 fi

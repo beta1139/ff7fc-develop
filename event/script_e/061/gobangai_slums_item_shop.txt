@@ -7,7 +7,12 @@ move_char up 1
 sleep 16
 chg_speed 6123 normal
 set_talk_npc 6123
+if_flag_lesser 9 3
 msg `==Do you have money?\n ==We take only cash\n for our items.
+fi
+if_flag_greater 9 2
+msg 「……ジロジロ……\n　……フン　かねさえだしゃ\n　アイテムはやるよ\n　なにがあろうとね……
+fi
 reset_talk_npc
 open_item_shop 1000/1007/1008/1070
 move_char down 1

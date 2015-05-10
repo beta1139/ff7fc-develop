@@ -1,0 +1,17 @@
+step_npc 8412 2
+set_talk_npc 8412
+msg `All these garbage!\n Someone should do\n something about this.
+reset_talk_npc
+sleep 16
+step_npc 8411 4
+msg `All of these, you know==\n Bulked up by the keeper\n of that weapon shop.
+sleep 16
+jump_npc 8412 same 1
+sleep 16
+step_npc 8412 2
+set_talk_npc 8412
+msg `Oh, you mean that man\n with a tank in his shop.
+reset_talk_npc
+sleep 16
+step_npc 8411 2
+msg `But garbage is garbage,\n don't you think?

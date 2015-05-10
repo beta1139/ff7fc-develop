@@ -1,25 +1,25 @@
 set_eternal_event
 wait_target_talk 6324
 reset_talk_flag 6324
-if_flag 12 1
-msg `Empty==
+if_flag 12 2
+msg {Empty==
 end
 fi
-msg `==\n\n\n\n ==Hm?\n\n\n\n#3\n  Open the upper drawer.\n  Open the lower drawer.\n  Open the hidden drawer.\n\n[[]][[]][[]]
+msg {==\n\n\n\n ==Hm?\n\n\n\n#3\n  Open the upper drawer.\n  Open the lower drawer.\n  Open the hidden drawer.\n\n[[]][[]][[]]
 if_flag 3 0
 step_char 1
 sleep 48
-msg `Empty==
+msg {Empty==
 fi
 if_flag 3 1
 step_char 1
 sleep 48
-msg `Empty==
+msg {Empty==
 fi
 if_flag 3 2
 step_char 1
 sleep 56
-msg `==?\n\n\n\n 5 Gil==\n\n\n\n#2\n  Steal it.\n  Leave it.\n\n\n[[]][[]]
+msg {==?\n\n\n\n 5 Gil==\n\n\n\n#2\n  Steal it.\n  Leave it.\n\n\n[[]][[]]
 if_flag 3 0
 reset_talked_flag 6322
 step_char 1
@@ -27,12 +27,12 @@ sleep 16
 add_gil 5
 play_se coin.ogg
 msg `You got 5 Gil!
-set_flag 12 1
+set_flag 12 2
 create event_generator 6301 63 0 0 17 0 0 @063/gobangai_slums7b.txt
 end
 fi
 if_flag 3 1
-set_flag 12 2
+set_flag 12 1
 end
 fi
 fi

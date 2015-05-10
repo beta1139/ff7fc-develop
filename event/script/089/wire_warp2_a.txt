@@ -1,0 +1,16 @@
+wait_same_pos
+chg_char_img_tmp 157
+kill_through_range 8930 8931
+kill_through 8932
+kill_through 8934
+kill_through 8937
+if_flag_greater 17 0
+warp 89 12 8 up
+sub_flag 17 1
+create event_generator 8936 89 12 12 17 0 0 @089/wire_warp2_b.txt
+fi
+create event_generator 8933 89 12 7 17 0 0 @089/wire_warp1_b.txt
+chg_char_state_move
+loop_inf
+sleep 160
+pool

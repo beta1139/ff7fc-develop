@@ -3,19 +3,5 @@ wait_target_talk 6422
 reset_talk_flag 6422
 chg_dir_to_char 6424
 chg_speed 6424 normal
-msg `Only you can protect\n yourself in the slums.\n Therefore you need good\n weapons! Right?\n#3\n  Show me weapons.\n  Show me items.\n  Not interested.\n\n[[]][[]][[]]
-if_flag 3 0
-open_armor_shop 3002
-step_char 1
-sleep 16
-msg {You don't have a weapon!
-jump_npc 6424 same 1
-chg_npc_dir 6424 left
-sleep 16
-fi
-if_flag 3 1
-open_item_shop 1020
-fi
-if_flag 3 2
-fi
+include ./event/script_e/064/shop_msg1.txt
 chg_speed 6424 not_move

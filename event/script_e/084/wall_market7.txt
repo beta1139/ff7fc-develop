@@ -11,33 +11,25 @@ chg_type 8412 npc_event
 chg_speed 8411 normal
 chg_speed 8412 normal
 if_char_dir right
-if_flag 9 1
+if_flag_lesser 9 2
 create npc_event 8420 84 8 32 0 3 2 none
 fi
 if_flag 9 2
 create npc_event 8420 84 8 32 13 3 2 none
 fi
+if_flag_greater 9 2
+create npc_event 8420 84 8 32 0 3 2 none
+fi
 draw_char off
 move_char up 1
 sleep 16
 fi
-step_npc 8412 2
-set_talk_npc 8412
-msg `All these garbage!\n Someone should do\n something about this.
-reset_talk_npc
-sleep 16
-step_npc 8411 4
-msg `All of these, you know==\n Bulked up by the keeper\n of that weapon shop.
-sleep 16
-jump_npc 8412 same 1
-sleep 16
-step_npc 8412 2
-set_talk_npc 8412
-msg `Oh, you mean that man\n with a tank in his shop.
-reset_talk_npc
-sleep 16
-step_npc 8411 2
-msg `But garbage is garbage,\n don't you think?
+if_flag_lesser 9 3
+include ./event/script_e/084/wm_small_talk1.txt
+fi
+if_flag_greater 9 2
+include ./event/script_e/084/wm_small_talk2.txt
+fi
 if_char_dir up
 move_char down 1
 sleep 16

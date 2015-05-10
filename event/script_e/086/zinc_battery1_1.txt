@@ -1,0 +1,5 @@
+set_eternal_event
+wait_target_talk 8613
+reset_talk_flag 8613
+set_flag 10 0
+include ./event/script/086/zinc_battery.txt

@@ -1,0 +1,84 @@
+set_flag 10 0
+loop 50
+dec_screen_effect_val 1
+sleep 1
+pool
+clear_text 5
+set_text_alpha 5 0
+loop 18
+dec_screen_effect_val 1
+sleep 1
+pool
+set_text 5 　　　　　　　　　おっとは　かえってこなかった
+loop 4
+sleep 1
+dec_screen_effect_val 1
+set_text_alpha 5 25
+sleep 1
+dec_screen_effect_val 1
+set_text_alpha 5 0
+pool
+loop 4
+sleep 1
+dec_screen_effect_val 1
+set_text_alpha 5 50
+sleep 1
+dec_screen_effect_val 1
+set_text_alpha 5 25
+pool
+loop 4
+sleep 1
+dec_screen_effect_val 1
+set_text_alpha 5 75
+sleep 1
+dec_screen_effect_val 1
+set_text_alpha 5 50
+pool
+loop 4
+set_text_alpha 5 100
+sleep 1
+set_text_alpha 5 75
+pool
+wait_key_push_edge a
+loop 8
+dec_screen_effect_val 1
+sleep 1
+pool
+set_text_alpha 5 50
+sleep 16
+set_text_alpha 5 25
+sleep 16
+set_text_alpha 5 0
+sleep 16
+clear_text 5
+loop 4
+set_text_alpha 5 0
+if_flag 10 0
+set_text 5 　　　　　　おっとの　みに　なにかあったんだろうか？
+fi
+if_flag 10 1
+set_text 5 　　　いや　きゅうかが　とりけしになった　だけかもしれない
+fi
+if_flag 10 2
+set_text 5 　　　　　それから　わたしは　まいにち　えきへいったんだ
+fi
+if_flag 10 3
+set_text 5 　　　　　　　　　　　　　あるひ……
+fi
+include ./event/common/set_text/st05.txt
+wait_key_push_edge a
+set_text_alpha 5 50
+sleep 16
+set_text_alpha 5 25
+sleep 16
+set_text_alpha 5 0
+sleep 16
+clear_text 5
+add_flag 10 1
+pool
+loop 50
+inc_screen_effect_val 2
+sleep 1
+pool
+warp 712 14 9 up
+create event_generator 6608 66 0 0 17 0 0 @066/elmyra_memory4.txt

@@ -1,0 +1,24 @@
+loop 4
+sleep 1
+set_text_alpha 12 25
+sleep 1
+set_text_alpha 12 0
+pool
+loop 4
+sleep 1
+set_text_alpha 12 50
+sleep 1
+set_text_alpha 12 25
+pool
+loop 4
+sleep 1
+set_text_alpha 12 75
+sleep 1
+set_text_alpha 12 50
+pool
+loop 4
+sleep 1
+set_text_alpha 12 100
+sleep 1
+set_text_alpha 12 75
+pool

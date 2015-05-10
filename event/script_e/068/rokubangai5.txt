@@ -203,16 +203,9 @@ fi
 if_flag 14 1
 move_npc 6822 right 1
 fi
+include ./event/common/act/act1-7_2e.txt
+include ./event/common/act/act1-7_3.txt
 sleep 16
 kill 6821
 kill 6822
 kill 6820
-add_party_mem 1
-add_party_mem 2
-set_flag 14 0
-set_flag 15 0
-set_flag 16 0
-set_flag 19 0
-kill_through_range 7020 7021
-enable_char_chg
-msg ～イベントさくせいここまで\n\n\n\n　しんらビルのマップ　すごくほすぃ……っ！！\n　ぼしゅうちゅうー\n\n\n　あと　このまま　いろいろすすむと　\n　いろいろおちるとおもうけど　きにしない

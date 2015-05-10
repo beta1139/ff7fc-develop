@@ -1,5 +1,7 @@
 set_eternal_event
 wait_same_pos
+backup_char_img
+chg_char_img_tmp 0
 msg 『ここでねむれるな……\n\n\n\n#2\n　　ねむる\n　　ねむりたくない\n\n\n[[]][[]]
 if_flag 3 0
 sleep 16
@@ -17,3 +19,4 @@ if_flag 3 1
 move_char up 1
 sleep 16
 fi
+restore_char_img

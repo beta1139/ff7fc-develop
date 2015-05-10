@@ -1,0 +1,139 @@
+set_talk_npc 7922
+msg 「おうっ！！\n　あんたかい！\n\n\n　わるいけど　うわさはきいたぜ\n　じょそうが　しゅみのうえに\n　キュ～とすりつぶすのが　すきだって
+reset_talk_npc
+chg_npc_dir 7927 up
+jump_npc 7927 same 1
+chg_npc_img 7927 97
+sleep 8
+chg_npc_img 7927 0
+sleep 8
+chg_npc_img 7927 97
+sleep 8
+chg_npc_img 7927 0
+chg_npc_dir 7927 right
+if_flag 10 0
+create npc_event 7925 79 9 12 1 1 2 none
+move_npc 7925 left 1
+fi
+if_flag 10 1
+if_char_dir left
+create npc_event 7925 79 11 12 1 1 2 none
+move_npc 7925 right 1
+fi
+if_char_dir up
+create npc_event 7925 79 10 13 1 1 2 none
+move_npc 7925 left 1
+fi
+if_char_dir right
+create npc_event 7925 79 9 12 1 1 2 none
+move_npc 7925 left 1
+fi
+fi
+sleep 8
+chg_event_move_char_speed fast
+chg_speed 7927 fast
+chg_npc_dir 7927 up
+step_npc 7927 2
+sleep 8
+chg_npc_dir 7927 left
+sleep 8
+chg_npc_dir 7927 up
+step_npc 7922 2
+set_talk_npc 7922
+msg 「うちは　じょうひんな　おきゃくさま　いがい\n　お こ と わ り！\n　わかったら　おひきとりねがうぜ！
+reset_talk_npc
+chg_npc_dir 7922 down
+chg_speed 7922 not_move
+if_flag 10 0
+create npc_event 7926 79 8 11 156 0 2 none
+fi
+if_flag 10 1
+if_char_dir left
+create npc_event 7926 79 12 11 156 0 2 none
+fi
+if_char_dir up
+create npc_event 7926 79 9 12 156 0 2 none
+fi
+if_char_dir right
+create npc_event 7926 79 8 11 156 0 2 none
+fi
+fi
+step_npc 7926 3
+sleep 48
+if_flag 10 0
+chg_npc_dir 7925 right
+fi
+if_flag 10 1
+if_char_dir left
+chg_npc_dir 7925 left
+fi
+if_char_dir up
+chg_npc_dir 7925 right
+fi
+if_char_dir right
+chg_npc_dir 7925 right
+fi
+fi
+sleep 16
+chg_npc_img 7927 0
+if_flag 10 0
+chg_npc_dir 7927 left
+fi
+if_flag 10 1
+if_char_dir left
+chg_npc_dir 7927 right
+fi
+if_char_dir up
+chg_npc_dir 7927 left
+fi
+if_char_dir right
+chg_npc_dir 7927 left
+fi
+fi
+sleep 16
+jump_npc 7927 same 1
+loop 2
+chg_npc_dir 7927 up
+sleep 2
+chg_npc_dir 7927 right
+sleep 2
+chg_npc_dir 7927 down
+sleep 2
+chg_npc_dir 7927 left
+sleep 2
+pool
+sleep 6
+kill 7926
+if_flag 10 0
+move_char left 1
+move_npc 7927 left 1
+fi
+if_flag 10 1
+if_char_dir left
+move_char right 1
+move_npc 7927 right 1
+sleep 8
+draw_char on
+kill 7927
+kill 7925
+chg_type 7922 npc2
+chg_event_move_char_speed normal
+set_flag 10 0
+end
+fi
+if_char_dir up
+move_char left 2
+move_npc 7927 left 2
+fi
+if_char_dir right
+move_char left 1
+move_npc 7927 left 1
+fi
+fi
+sleep 8
+draw_char on
+kill 7927
+kill 7925
+chg_type 7922 npc2
+chg_event_move_char_speed normal
+set_flag 10 0

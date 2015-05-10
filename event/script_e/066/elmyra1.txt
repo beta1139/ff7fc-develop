@@ -1,0 +1,103 @@
+wait_same_pos
+play_event_bgm 3-19-Aerith's_Theme.ogg
+draw_char off
+if_flag 80 0
+chg_char_img 0
+play_event_bgm 3-19-Aerith's_Theme.ogg
+create npc_event 6620 66 10 14 0 3 1 none
+draw_char off
+move_npc 6620 up 2
+sleep 32
+create npc_event 6621 66 10 14 1 3 1 none
+create npc_event 6622 66 9 14 2 0 1 ティファ\n「わたしのせい……\n　わたしがエアリスをまきこんだから
+move_npc 6621 up 1
+move_npc 6622 up 1
+sleep 32
+chg_event_move_char_speed slow
+move_char up 6
+sleep 64
+move_npc 6620 up 2
+sleep 32
+move_npc 6621 up 2
+move_npc 6622 up 2
+sleep 112
+step_npc 6623 1
+set_talk_npc 6623
+msg エルミナ\n「クラウド……だったね
+reset_talk_npc
+sleep 32
+chg_npc_dir 6623 down
+sleep 32
+step_npc 6623 1
+set_talk_npc 6623
+msg エルミナ\n「エアリスのこと　だろ？
+reset_talk_npc
+sleep 24
+move_npc 6620 up 1
+sleep 48
+step_npc 6620 1
+msg 『……すまない\n　しんらに　さらわれた
+sleep 32
+set_active_msg 6623
+move_npc 6623 left 1
+sleep 16
+set_talk_npc 6623
+msg エルミナ\n「しってるよ\n　ここから　つれていかれたからね
+reset_talk_npc
+set_active_msg 6620
+jump_npc 6620 same 1
+sleep 16
+msg 『ここで？
+sleep 16
+chg_npc_dir 6623 down
+sleep 16
+step_npc 6623 1
+set_talk_npc 6623
+msg エルミナ\n「エアリスが　のぞんだことだよ……
+reset_talk_npc
+sleep 16
+move_npc 6620 up 1
+sleep 40
+chg_speed 6620 normal
+step_npc 6620 1
+msg 『どうして　エアリスは\n　しんらに　ねらわれるんだ？
+sleep 16
+chg_npc_dir 6623 up
+sleep 48
+step_npc 6623 2
+set_talk_npc 6623
+msg エルミナ\n「エアリスは　こだいしゅ\n　こだいしゅの　いきのこり　なんだとさ
+reset_talk_npc
+sleep 16
+chg_speed 6621 normal
+move_npc 6621 up 1
+sleep 16
+set_active_msg 6620
+jump_npc 6621 same 1
+sleep 16
+step_npc 6621 2
+msg バレット\n「……なんだとさ　だって？\n　あんた　ははおや　だろ？
+sleep 16
+chg_speed 6623 normal
+step_npc 6623 2
+set_talk_npc 6623
+msg エルミナ\n「……ほんとうの　ははおやじゃないんだよ\n　あれは……そう　15ねんまえ…
+reset_talk_npc
+sleep 16
+chg_npc_dir 6623 left
+sleep 24
+step_npc 6623 2
+set_talk_npc 6623
+msg エルミナ\n「……せんそうちゅうでね\n　わたしの　おっとは　せんちにいってた\n　ウータイという　とおいくにさ
+reset_talk_npc
+chg_event_move_char_speed normal
+move_char up 14
+sleep 224
+fi
+if_flag 80 1
+create npc_event 6620 66 11 8 0 0 2 none
+create npc_event 6621 66 10 9 1 0 2 none
+create npc_event 6622 66 12 9 2 0 2 ティファ\n「わたしのせい……\n　わたしがエアリスをまきこんだから
+fi
+warp 708 0 0 up
+create event_generator 6605 66 0 0 17 0 0 @066/elmyra_memory1.txt

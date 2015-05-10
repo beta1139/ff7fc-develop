@@ -1,0 +1,21 @@
+wait_target_talk 8910
+reset_talk_flag 8910
+chg_char_img_tmp 157
+kill_through_range 8930 8937
+kill_through 8910
+chg_char_dir up
+set_slide_char_flag
+play_se jump.wav
+jump_char down 2
+sleep 8
+chg_char_img_tmp 0
+sleep 24
+chg_char_dir down
+play_se landing.wav
+create event_generator 8930 89 0 0 17 0 0 @089/wire_jump1.txt
+set_key_valid b
+set_key_valid start
+enable_char_chg
+sleep 8
+reset_slide_char_flag
+reset_char_img_tmp

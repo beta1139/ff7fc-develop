@@ -23,7 +23,7 @@ sleep 16
 sub_gil 5
 play_se coin.ogg
 msg u5ƒMƒ‹‚ğ‚©‚¦‚µ‚½I
-set_flag 12 2
+set_flag 12 1
 fi
 if_flag 3 1
 chg_char_dir up

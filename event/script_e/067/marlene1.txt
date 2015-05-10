@@ -1,0 +1,34 @@
+wait_same_pos
+msg3 -1 バレット\n「マリン……よかった……\n　ぶじでよかった……
+chg_npc_y_offset 6721 1
+sleep 4
+chg_npc_y_offset 6721 2
+sleep 4
+chg_npc_y_offset 6721 3
+sleep 4
+chg_npc_y_offset 6721 4
+sleep 4
+jump_npc 6721 same 1
+sleep 16
+jump_npc 6721 same 1
+sleep 16
+wait_key_push_edge a
+erase_msg3
+jump_npc 6722 same 1
+sleep 16
+msg3 -1 マリン\n「とうちゃん　ないちゃダメだよ\n　おヒゲ　いたいよ！
+sleep 4
+chg_npc_y_offset 6722 -5
+sleep 4
+chg_npc_y_offset 6722 -6
+sleep 4
+chg_npc_y_offset 6722 -5
+sleep 4
+chg_npc_y_offset 6722 -4
+wait_key_push_edge a
+erase_msg3
+chg_type 6721 npc2
+chg_type 6722 npc2
+set_flag_wall 6721
+set_flag_wall 6722
+create event_generator 6711 67 11 12 17 0 0 @067/marlene2.txt

@@ -7,11 +7,22 @@ move_char up 1
 sleep 16
 chg_speed 6023 normal
 set_talk_npc 6023
+if_flag_lesser 9 3
 msg `All my materias\n are good quality!
+fi
+if_flag_greater 9 2
+msg 「こんなところにすんでたら\n　いのちが　いくつあっても　たりないぜ！
+chg_speed 6023 fast
+jump_npc 6023 same 1
+sleep 16
+step_npc 6023 2
+msg 「さ　マテリアかってくれマテリア！\n　かねをつくって　ここから　にげだすんだ！
+fi
 reset_talk_npc
 open_materia_shop 4003/4004/4005/4000
 move_char down 1
 sleep 16
+chg_speed 6023 not_move
 chg_char_dir up
 draw_char on
 kill 6020

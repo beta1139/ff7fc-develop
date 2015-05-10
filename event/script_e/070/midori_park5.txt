@@ -264,7 +264,9 @@ sleep 32
 play_se warp_out.ogg
 warp 68 12 9 down
 draw_char on
-sleep 32
+sleep 16
+include ./event/common/act/act1-7_1.txt
+sleep 16
 play_bgm
 sleep 32
 loop 4
@@ -272,9 +274,8 @@ dec_screen_effect_val 25
 sleep 8
 pool
 reset_screen_effect
-create event_generator 6801 68 12 8 17 0 0 @068/rokubangai2.txt
-create npc2 6820 68 12 8 17 0 0 
 chg_event_move_char_speed normal
+create npc2 6820 68 12 8 17 0 0 
 set_key_valid up
 set_key_valid down
 set_key_valid left
@@ -283,9 +284,3 @@ set_key_valid select
 set_key_valid start
 create event_generator 6803 68 8 11 17 0 0 @068/rokubangai4_1.txt
 create event_generator 6804 68 9 11 17 0 0 @068/rokubangai4_2.txt
-if_party_mem 1
-del_party_mem 1
-fi
-if_party_mem 2
-del_party_mem 2
-fi

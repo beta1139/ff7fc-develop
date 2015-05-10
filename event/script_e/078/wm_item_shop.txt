@@ -1,7 +1,7 @@
 set_eternal_event
 wait_target_talk 7811
 reset_talk_flag 7811
-if_flag 9 1
+if_flag_lesser 9 2
 create npc_event 7820 78 6 8 0 0 2 none
 fi
 if_flag 9 2
@@ -10,11 +10,15 @@ kill_through 7802
 create npc_event 7820 78 6 8 13 0 2 none
 chg_char_img_tmp 13
 fi
+if_flag_greater 9 2
+create npc_event 7820 78 6 8 0 0 2 none
+fi
 draw_char off
-move_char up 1
+move_char up 2
 sleep 48
 chg_npc_dir 7810 down
 sleep 8
+chg_npc_img 7810 150
 msg3 -1 `Yikes!
 chg_speed 7810 fast
 jump_npc 7810 same 1
@@ -26,15 +30,8 @@ loop 8
 dec_map_draw_y_offset
 sleep 1
 pool
-loop 6
-inc_map_draw_y_offset
-sleep 1
-pool
-loop 6
-dec_map_draw_y_offset
-sleep 1
-pool
 wait_key_push_edge a
+chg_npc_img 7810 66
 erase_msg3
 jump_npc 7810 same 1
 sleep 16
@@ -78,17 +75,17 @@ add_item 6018
 msg You got the key item\n"Digestive"!
 fi
 kill_through 8816
-move_char down 1
+move_char down 2
 if_flag 9 2
 create event_generator 7802 78 6 8 17 0 0 @drag_cloud.txt 
 fi
-sleep 16
+sleep 32
 chg_npc_dir 7810 up
 chg_speed 7810 not_move
 chg_char_dir up
 draw_char on
 kill 7820
-if_flag 9 1
+if_flag_lesser 9 2
 create npc2 8816 88 3 6 66 3 4 
 create event_generator 8805 88 0 0 17 0 0 @088/wm_yoidore5.txt
 fi
@@ -97,11 +94,11 @@ end
 fi
 sleep 8
 open_item_shop 1000/1007/1008/1012/1052/1013/1014/1001/1070
-move_char down 1
+move_char down 2
 if_flag 9 2
 create event_generator 7802 78 6 8 17 0 0 @drag_cloud.txt 
 fi
-sleep 16
+sleep 32
 chg_npc_dir 7810 up
 chg_speed 7810 not_move
 chg_char_dir up

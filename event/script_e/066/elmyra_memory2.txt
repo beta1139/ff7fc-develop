@@ -1,0 +1,473 @@
+create npc_event 71220 712 9 12 65 3 0 none
+create npc_event 71221 712 10 12 66 2 0 none
+create npc_event 71222 712 12 9 94 3 2 none
+create npc_event 71235 712 16 9 68 0 2 none
+create npc_event 71231 712 15 10 72 0 2 none
+create npc_event 71225 712 2 14 38 3 1 none
+create npc_event 71226 712 10 12 17 0 2 none
+create npc_event 71228 712 8 12 17 3 2 none
+create npc_event 71227 712 9 12 17 0 2 none
+chg_npc_y_offset 71226 -8
+chg_npc_y_offset 71227 -10
+chg_npc_y_offset 71228 -8
+move_npc 71226 left 1
+move_npc 71228 right 1
+set_gray_scale
+sleep 8
+chg_speed 71226 not_step
+chg_speed 71228 not_step
+sleep 56
+play_se train_whistle_quiet.ogg
+loop 20
+dec_screen_effect_val 1
+sleep 1
+pool
+jump_npc 71221 same 1
+loop 16
+dec_screen_effect_val 1
+sleep 1
+pool
+loop 2
+jump_npc 71220 same 1
+move_npc 71225 right 1
+loop 16
+dec_screen_effect_val 1
+sleep 1
+pool
+jump_npc 71221 same 1
+step_npc 71235 1
+loop 16
+dec_screen_effect_val 1
+sleep 1
+pool
+pool
+step_npc 71221 normal
+chg_speed 71220 normal
+move_npc 71225 right 5
+step_npc 71221 2
+sleep 16
+jump_npc 71220 same 1
+sleep 16
+chg_speed 71221 slow
+move_npc 71221 left 1
+sleep 24
+jump_npc_target_pos 71220 9 11
+chg_npc_dir 71220 down
+chg_npc_dir 71221 up
+sleep 8
+chg_npc_y_offset 71220 -3
+sleep 4
+chg_npc_y_offset 71220 -2
+sleep 4
+chg_npc_y_offset 71220 -1
+sleep 4
+chg_npc_y_offset 71220 0
+sleep 8
+chg_npc_y_offset 71220 -1
+sleep 2
+chg_npc_y_offset 71220 -2
+sleep 2
+chg_npc_y_offset 71220 -3
+sleep 2
+chg_npc_y_offset 71220 -4
+sleep 2
+chg_npc_y_offset 71220 -3
+sleep 2
+chg_npc_y_offset 71220 -2
+sleep 2
+chg_npc_y_offset 71220 -1
+sleep 2
+chg_npc_y_offset 71220 0
+sleep 6
+loop 2
+jump_npc 71221 same 1
+chg_npc_y_offset 71220 -1
+sleep 2
+chg_npc_y_offset 71220 -2
+sleep 2
+chg_npc_y_offset 71220 -3
+sleep 2
+chg_npc_y_offset 71220 -4
+sleep 2
+chg_npc_y_offset 71220 -3
+sleep 2
+chg_npc_y_offset 71220 -2
+sleep 2
+chg_npc_y_offset 71220 -1
+sleep 2
+chg_npc_y_offset 71220 0
+sleep 2
+pool
+chg_speed 71221 not_move
+sleep 24
+chg_npc_dir 71225 up
+sleep 32
+chg_speed 71221 slow
+slide_walk_npc 71221 right 1
+jump_npc_target_pos 71220 9 12
+sleep 8
+chg_npc_dir 71221 left
+chg_npc_y_offset 71220 -1
+sleep 4
+chg_npc_y_offset 71220 -2
+sleep 4
+chg_npc_y_offset 71220 -3
+sleep 4
+chg_npc_y_offset 71220 -4
+sleep 4
+chg_npc_dir 71220 right
+chg_speed 71220 not_move
+sleep 8
+chg_speed 71221 not_move
+sleep 56
+move_npc 71235 right 3
+chg_npc_dir 71225 right
+sleep 32
+chg_speed 71220 normal
+chg_speed 71221 normal
+move_npc 71225 right 4
+jump_npc 71220 same 1
+sleep 16
+jump_npc 71221 same 1
+chg_npc_dir 71235 up
+sleep 16
+chg_speed 71220 slow
+chg_speed 71221 slow
+move_npc 71220 left 6
+move_npc 71221 left 6
+kill_through_range 71226 71228
+sleep 96
+chg_npc_dir 71225 up
+sleep 16
+play_se door_open3.ogg
+chg_npc_dir 71235 left
+sleep 16
+jump_npc 71235 same 1
+sleep 16
+move_npc 71235 left 3
+step_npc 71231 3
+sleep 16
+loop 50
+inc_screen_effect_val 2
+sleep 1
+pool
+warp 712 13 10 up
+set_npc_pos 71225 712 13 12
+sleep 16
+create npc_event 71232 712 15 9 17 2 2 none
+create npc_event 71227 712 14 8 17 1 2 none
+create npc_event 71233 712 13 9 17 3 2 none
+create npc_event 71236 712 13 9 17 3 2 none
+create npc_event 71237 712 14 9 17 0 2 none
+create npc_event 71238 712 15 9 17 0 2 none
+chg_npc_y_offset 71232 -8
+chg_npc_y_offset 71227 -2
+chg_npc_y_offset 71233 -8
+chg_npc_y_offset 71236 -8
+chg_npc_y_offset 71237 -8
+chg_npc_y_offset 71238 -8
+move_npc 71232 left 1
+move_npc 71233 right 1
+move_npc 71236 right 1
+move_npc 71238 left 1
+sleep 10
+chg_speed 71232 not_step
+chg_speed 71233 not_step
+chg_speed 71236 not_step
+chg_speed 71238 not_step
+sleep 38
+loop 18
+dec_screen_effect_val 2
+sleep 1
+pool
+step_npc 71235 2
+loop 32
+dec_screen_effect_val 2
+sleep 1
+pool
+create npc_event 71230 712 14 8 71 1 2 none
+chg_npc_y_offset 71230 0
+jump_npc 71230 down 1
+sleep 4
+chg_npc_y_offset 71230 -1
+sleep 4
+chg_npc_y_offset 71230 -2
+sleep 4
+chg_npc_y_offset 71230 -3
+sleep 4
+chg_npc_y_offset 71230 -4
+move_npc 71235 right 2
+sleep 16
+step_npc 71230 2
+sleep 16
+chg_npc_dir 71235 left
+sleep 32
+chg_speed 71231 normal
+jump_npc 71231 same 1
+sleep 16
+move_npc 71231 left 1
+sleep 16
+move_npc 71231 up 1
+sleep 24
+chg_npc_y_offset 71231 -5
+sleep 2
+chg_npc_y_offset 71231 -6
+sleep 2
+chg_npc_y_offset 71231 -7
+sleep 2
+chg_npc_y_offset 71231 -8
+sleep 2
+move_npc 71225 right 1
+chg_npc_y_offset 71231 -7
+sleep 2
+chg_npc_y_offset 71231 -6
+sleep 2
+chg_npc_y_offset 71231 -5
+sleep 2
+chg_npc_y_offset 71231 -4
+sleep 2
+chg_npc_y_offset 71231 -5
+sleep 2
+chg_npc_y_offset 71231 -6
+sleep 2
+chg_npc_y_offset 71231 -7
+sleep 2
+chg_npc_y_offset 71231 -8
+sleep 6
+chg_npc_dir 71230 right
+chg_npc_img 71231 17
+chg_npc_img 71232 72
+sleep 12
+chg_npc_dir 71225 up
+chg_npc_dir 71230 up
+chg_npc_img 71232 17
+chg_npc_img 71227 72
+sleep 12
+chg_npc_dir 71230 left
+chg_npc_img 71227 17
+chg_npc_img 71233 72
+sleep 12
+chg_npc_dir 71230 down
+chg_npc_img 71233 17
+chg_npc_img 71231 72
+sleep 12
+chg_npc_y_offset 71231 -7
+sleep 2
+chg_npc_y_offset 71231 -6
+sleep 2
+chg_speed 71230 not_move
+chg_npc_y_offset 71231 -5
+sleep 2
+chg_npc_y_offset 71231 -4
+sleep 2
+jump_npc_target_pos 71231 14 10
+sleep 32
+jump_npc 71230 same 1
+sleep 32
+jump_npc 71231 same 1
+sleep 16
+chg_speed 71225 normal
+chg_speed 71231 not_move
+move_npc 71225 right 1
+move_npc 71235 left 3
+sleep 16
+chg_npc_dir 71225 up
+chg_speed 71230 slow
+chg_speed 71231 slow
+move_npc 71231 down 2
+move_npc 71230 down 2
+sleep 32
+create npc_event 71234 712 14 8 79 1 2 none
+chg_npc_y_offset 71234 0
+jump_npc 71234 down 1
+sleep 4
+chg_npc_y_offset 71234 -1
+sleep 4
+chg_npc_y_offset 71234 -2
+sleep 4
+chg_npc_y_offset 71234 -3
+sleep 4
+chg_npc_y_offset 71234 -4
+sleep 16
+chg_npc_dir 71225 left
+move_npc 71230 left 1
+jump_npc 71235 same 1
+sleep 16
+jump_npc 71225 same 1
+chg_npc_dir 71234 right
+sleep 16
+step_npc 71235 4
+step_npc 71225 3
+chg_npc_dir 71231 right
+move_npc 71230 down 1
+sleep 24
+step_npc 71234 4
+sleep 24
+chg_speed 71231 normal
+chg_npc_dir 71230 right
+step_npc 71231 2
+sleep 48
+chg_npc_dir 71225 up
+chg_speed 71231 slow
+move_npc 71230 left 9
+move_npc 71231 left 9
+sleep 16
+chg_speed 71225 slow
+chg_speed 71235 slow
+move_npc 71225 up 1
+move_npc 71235 left 1
+sleep 24
+jump_npc_target_pos 71234 14 8
+chg_npc_dir 71234 down
+chg_npc_dir 71235 up
+sleep 8
+chg_npc_y_offset 71234 -3
+sleep 4
+chg_npc_y_offset 71234 -2
+sleep 4
+chg_npc_y_offset 71234 -1
+sleep 4
+chg_npc_y_offset 71234 0
+sleep 8
+chg_npc_y_offset 71234 -1
+sleep 2
+chg_npc_y_offset 71234 -2
+sleep 2
+chg_npc_y_offset 71234 -3
+sleep 2
+chg_npc_y_offset 71234 -4
+sleep 2
+chg_npc_y_offset 71234 -3
+sleep 2
+chg_npc_y_offset 71234 -2
+sleep 2
+chg_npc_y_offset 71234 -1
+sleep 2
+chg_npc_y_offset 71234 0
+sleep 6
+chg_npc_dir 71235 left
+chg_npc_img 71234 17
+chg_npc_img 71236 79
+sleep 12
+chg_npc_dir 71235 down
+chg_npc_img 71236 17
+chg_npc_img 71237 79
+sleep 12
+chg_npc_dir 71235 right
+chg_npc_img 71237 17
+chg_npc_img 71238 79
+sleep 12
+chg_npc_dir 71235 up
+chg_npc_img 71238 17
+chg_npc_img 71234 79
+sleep 12
+loop 2
+jump_npc 71235 same 1
+chg_npc_y_offset 71234 -1
+sleep 2
+chg_npc_y_offset 71234 -2
+sleep 2
+chg_npc_y_offset 71234 -3
+sleep 2
+chg_npc_y_offset 71234 -4
+sleep 2
+chg_npc_y_offset 71234 -3
+sleep 2
+chg_npc_y_offset 71234 -2
+sleep 2
+chg_npc_y_offset 71234 -1
+sleep 2
+chg_npc_y_offset 71234 0
+sleep 2
+pool
+chg_speed 71234 not_move
+sleep 32
+chg_speed 71235 slow
+slide_walk_npc 71235 right 1
+jump_npc_target_pos 71234 14 9
+sleep 8
+chg_npc_y_offset 71234 -1
+sleep 4
+chg_npc_y_offset 71234 -2
+sleep 4
+chg_npc_y_offset 71234 -3
+chg_npc_dir 71235 left
+sleep 4
+chg_npc_y_offset 71234 -4
+sleep 4
+chg_npc_dir 71234 right
+chg_speed 71234 not_move
+sleep 8
+chg_speed 71235 not_move
+sleep 32
+chg_speed 71234 slow
+chg_speed 71235 slow
+move_npc 71234 down 3
+move_npc 71235 left 1
+sleep 32
+move_npc 71235 down 2
+sleep 64
+chg_npc_dir 71235 right
+sleep 8
+chg_npc_dir 71225 left
+sleep 8
+step_npc 71235 2
+sleep 16
+chg_npc_dir 71234 up
+sleep 40
+step_npc 71225 1
+sleep 32
+move_npc 71234 left 1
+sleep 32
+chg_npc_dir 71234 up
+chg_speed 71235 normal
+move_npc 71235 down 2
+move_npc 71222 right 2
+sleep 32
+chg_npc_dir 71234 left
+move_npc 71235 left 1
+chg_npc_dir 71222 up
+sleep 16
+chg_speed 71234 slow
+chg_speed 71235 slow
+move_npc 71234 left 8
+move_npc 71235 left 8
+sleep 16
+chg_npc_dir 71222 left
+sleep 32
+chg_npc_dir 71222 right
+sleep 16
+chg_npc_dir 71225 up
+sleep 16
+chg_npc_dir 71222 up
+sleep 8
+chg_speed 71225 normal
+jump_npc 71225 same 1
+sleep 16
+jump_npc 71222 same 1
+move_npc 71225 left 1
+sleep 16
+move_npc 71225 up 1
+sleep 16
+chg_speed 71225 fast
+step_npc 71225 3
+sleep 32
+chg_npc_dir 71222 down
+sleep 32
+chg_speed 71222 slow
+step_npc 71222 1
+sleep 64
+chg_npc_dir 71225 down
+sleep 32
+chg_speed 71225 slow
+move_npc 71225 down 2
+sleep 112
+play_se train_whistle_quiet.ogg
+loop 50
+inc_screen_effect_val 2
+sleep 1
+pool
+sleep 64
+kill_through_range 71220 71235
+warp 712 17 11 up
+create event_generator 6607 66 0 0 17 0 0 @066/elmyra_memory3.txt

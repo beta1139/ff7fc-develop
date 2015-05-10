@@ -10,6 +10,7 @@ set_key_unvalid down
 set_key_unvalid right
 set_key_unvalid start
 chg_char_img_tmp 13
+set_layer 9550 front
 kill_through_range 9300 9303
 create npc_event 9321 93 7 9 129 2 1 none
 create npc_event 9322 93 7 9 130 3 1 none

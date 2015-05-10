@@ -1,0 +1,9 @@
+step_npc 7220 2
+set_talk_npc 7220
+if_flag_lesser 9 3
+msg 「ちょっと　そこのおふたりさん\n　すこし　やすんでいかない？\n\n\n　きれいなへやが　あるんだけど\n　どうだい？
+fi
+if_flag_greater 9 2
+msg 「ちょっと　そこのだんたいさん\n　とまっていってくださいよ
+fi
+reset_talk_npc

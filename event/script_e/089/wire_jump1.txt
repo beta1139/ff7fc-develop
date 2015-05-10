@@ -1,0 +1,27 @@
+set_eternal_event
+wait_target_talk 8914
+reset_talk_flag 8914
+kill_through_range 8930 8933
+set_flag 17 0
+play_se jump.wav
+chg_char_img_tmp 0
+jump_char up 1
+sleep 16
+chg_char_img_tmp 157
+play_se landing.wav
+sleep 8
+move_char up 1
+sleep 16
+set_key_unvalid b
+set_key_unvalid start
+disable_char_chg
+create npc2 8910 89 12 48 17 0 0 none
+if_flag 11 0
+create event_generator 8931 89 12 28 17 0 0 @089/wire_children.txt
+fi
+create event_generator 8932 89 12 7 17 0 0 @089/wire_warp1_a.txt
+create event_generator 8938 89 0 0 17 0 0 @089/wire_jump2.txt
+chg_char_state_move
+loop_inf
+sleep 160
+pool

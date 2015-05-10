@@ -1,0 +1,105 @@
+set_eternal_event
+wait_target_talked 9210
+reset_talked_flag 9210
+if_flag 3 0
+chg_type 9210 npc_event
+play_se syu.ogg
+step_char 3
+sleep 42
+chg_npc_y_offset 9210 -1
+sleep 2
+chg_npc_y_offset 9210 -2
+sleep 2
+chg_npc_y_offset 9210 -3
+sleep 2
+chg_npc_y_offset 9210 -4
+chg_npc_img 9210 133
+chg_speed 9210 fast
+step_npc 9210 3
+msg コッチ\n「たすかった！
+sleep 16
+chg_dir_to_char 9210
+sleep 8
+chg_speed 9210 normal
+step_npc 9210 2
+msg コッチ\n「じつはあのあと　しんらの れんちゅうが\n ドカドカやってきて 『じょうほうをリークした』だの\n　『やくたたず』だの……\n　ドンはむりやりどこかへ\n　つれていかれて　それっきり……\n　オレもこんなザマさ
+if_char_dir down
+create npc_event 9209 92 6 12 0 1 2 none
+draw_char off
+fi
+sleep 24
+jump_npc 9210 same 1
+chg_npc_dir 9210 down
+sleep 4
+chg_npc_dir 9210 left
+sleep 4
+chg_npc_dir 9210 up
+sleep 4
+chg_npc_dir 9210 right
+sleep 4
+chg_npc_dir 9210 down
+chg_speed 9210 fast
+step_npc 9210 2
+msg コッチ\n「おっと　いけねえ！\n またあいつらがきたら……\n　オレはいくぜ　アバヨ！
+if_char_dir left
+chg_npc_dir 9210 up
+sleep 16
+play_se jump.wav
+jump_npc 9210 up 1
+sleep 16
+play_se landing.wav
+sleep 8
+move_npc 9210 right 4
+sleep 16
+chg_char_dir up
+sleep 16
+fi
+if_char_dir right
+chg_npc_dir 9210 right
+sleep 16
+play_se jump.wav
+jump_npc 9210 right 1
+sleep 16
+play_se landing.wav
+sleep 8
+move_npc 9210 right 3
+sleep 24
+move_npc 9210 up 1
+sleep 8
+fi
+if_char_dir down
+chg_npc_dir 9210 right
+sleep 16
+play_se jump.wav
+jump_npc 9210 right 1
+sleep 16
+play_se landing.wav
+sleep 8
+move_npc 9210 right 3
+sleep 16
+chg_char_dir right
+chg_npc_dir 9209 right
+sleep 8
+move_npc 9210 up 1
+sleep 8
+fi
+draw_char on
+kill_through 9209
+move_npc 9210 up 10
+sleep 8
+chg_char_state_move
+sleep 72
+chg_npc_img 9210 17
+set_npc_pos 9210 92 1 1
+fi
+if_flag 3 1
+msg3 -1 コッチ\n「オ　オレはただ　ドンの\n　めいれいに　したがっただけなんだ！\n　たすけてくれよ！
+loop 2
+chg_npc_y_offset 9210 -1
+sleep 3
+chg_npc_y_offset 9210 0
+sleep 3
+pool
+wait_key_push_edge a
+erase_msg3
+fi

@@ -1,0 +1,424 @@
+sleep 64
+loop 50
+dec_screen_effect_val 2
+sleep 1
+pool
+sleep 32
+clear_text 4
+clear_text 5
+clear_text 6
+clear_text 7
+set_text_alpha 4 0
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+sleep 8
+set_text 4 　　　　　　　　　　「エアリスは　すぐに
+set_text 5 　　　　　　　　　　　わたしになついてくれた
+set_text 6 　　　　　　　　　　　よくしゃべるこでねえ
+set_text 7 　　　　　　　　　　　いろいろ　はなしてくれたよ
+include ./event/common/set_text/st04.txt
+include ./event/common/set_text/st05.txt
+include ./event/common/set_text/st06.txt
+include ./event/common/set_text/st07.txt
+wait_key_push_edge a
+set_text_alpha 4 50
+set_text_alpha 5 50
+set_text_alpha 6 50
+set_text_alpha 7 50
+sleep 8
+set_text_alpha 4 25
+set_text_alpha 5 25
+set_text_alpha 6 25
+set_text_alpha 7 25
+sleep 8
+set_text_alpha 4 0
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 4
+clear_text 5
+clear_text 6
+clear_text 7
+warp 66 10 -6 up
+chg_npc_img 6620 17
+chg_npc_img 6621 17
+chg_npc_img 6622 17
+reset_gray_scale
+reset_screen_effect
+move_char down 14
+sleep 16
+set_npc_pos 6623 66 10 8
+chg_npc_dir 6623 down
+chg_speed 6623 not_move
+sleep 208
+create npc_event 6624 66 10 5 158 2 3 none
+jump_npc 6624 left 1
+sleep 16
+move_npc 6624 down 1
+sleep 8
+move_npc 6624 right 3
+sleep 24
+chg_npc_dir 6623 up
+chg_speed 6623 not_step
+move_npc 6624 left 2
+sleep 16
+move_npc 6624 right 2
+sleep 16
+move_npc 6624 down 1
+sleep 8
+jump_npc_target_pos 6624 12 8
+sleep 8
+chg_npc_dir 6624 up
+chg_npc_img 6624 155
+sleep 8
+chg_npc_dir 6623 right
+sleep 16
+msg3 -1 エルミナ\n「どこかの　けんきゅうしつ　みたいな\n　ところから　ははおやと　にげだしたこと
+chg_speed 6623 slow
+move_npc 6623 right 2
+sleep 48
+chg_speed 6623 not_move
+sleep 32
+chg_npc_dir 6624 down
+chg_npc_img 6624 158
+sleep 16
+chg_speed 6623 slow
+slide_walk_npc 6623 left 1
+jump_npc 6624 same 1
+sleep 4
+chg_npc_dir 6624 left
+sleep 4
+chg_npc_dir 6624 up
+sleep 4
+chg_npc_dir 6624 right
+sleep 4
+chg_npc_dir 6624 down
+chg_speed 6624 not_move
+chg_speed 6623 not_move
+wait_key_push_edge a
+erase_msg3
+jump_npc 6624 same 2
+loop 2
+sleep 4
+chg_npc_dir 6624 left
+sleep 4
+chg_npc_dir 6624 up
+sleep 4
+chg_npc_dir 6624 right
+sleep 4
+chg_npc_dir 6624 down
+pool
+chg_speed 6624 fast
+move_npc 6624 right 2
+sleep 16
+move_npc 6624 down 1
+sleep 8
+move_npc 6624 left 1
+sleep 8
+move_npc 6624 up 1
+sleep 8
+msg3 -1 エルミナ\n「おかあさんは　ほしにかえった　だけだから\n　さびしくなんかない……いろいろね
+move_npc 6624 right 1
+sleep 8
+jump_npc 6623 same 1
+move_npc 6624 down 1
+sleep 8
+move_npc 6624 left 1
+sleep 8
+chg_speed 6623 normal
+move_npc 6623 right 1
+move_npc 6624 up 1
+sleep 8
+jump_npc 6624 same 1
+chg_npc_dir 6624 left
+sleep 8
+chg_speed 6623 not_move
+sleep 8
+chg_speed 6624 not_move
+wait_key_push_edge a
+erase_msg3
+jump_npc 6624 same 1
+sleep 16
+jump_npc 6624 same 1
+sleep 16
+chg_speed 6624 fast
+move_npc 6624 down 1
+sleep 8
+chg_npc_dir 6623 down
+move_npc 6624 left 2
+sleep 16
+move_npc 6624 up 2
+sleep 16
+chg_npc_dir 6623 left
+move_npc 6624 right 2
+sleep 16
+chg_npc_dir 6623 up
+move_npc 6624 down 2
+sleep 16
+chg_npc_dir 6623 right
+move_npc 6624 left 3
+sleep 16
+chg_npc_dir 6623 down
+sleep 8
+move_npc 6624 down 5
+sleep 16
+chg_speed 6623 slow
+move_npc 6623 down 1
+sleep 24
+kill 6624
+move_char down 15
+sleep 240
+warp 66 11 -6 up
+move_char down 14
+chg_npc_img 6620 0
+chg_npc_img 6621 1
+chg_npc_img 6622 2
+set_npc_pos 6620 66 11 8
+set_npc_pos 6621 66 10 9
+set_npc_pos 6622 66 12 9
+set_npc_pos 6623 66 11 7
+sleep 208
+jump_npc 6621 same 1
+sleep 16
+jump_npc 6621 same 1
+sleep 16
+step_npc 6621 2
+msg バレット\n「ほしにかえっただって？
+sleep 16
+step_npc 6623 3
+set_talk_npc 6623
+msg エルミナ\n「わたしには　いみが　わからなかったよ\n　よぞらのほしか　ってきいたら\n　ちがう　このほしだって　いわれて……\n　まあ　いろんないみで　ふしぎな\n　こどもだったね
+reset_talk_npc
+sleep 8
+msg エアリス\n「おかあさん
+chg_npc_dir 6623 up
+move_char up 8
+sleep 128
+chg_npc_img 6620 17
+chg_npc_img 6621 17
+chg_npc_img 6622 17
+create npc_event 6624 66 10 5 158 2 1 none
+sleep 16
+move_npc 6624 left 1
+sleep 32
+move_char down 3
+move_npc 6624 down 1
+sleep 32
+move_npc 6624 right 2
+sleep 64
+chg_npc_dir 6624 down
+sleep 16
+step_npc 6624 1
+set_talk_npc 6624
+msg エアリス\n「なかないでね
+reset_talk_npc
+clear_text 2
+clear_text 3
+set_text_alpha 2 0
+set_text_alpha 3 0
+sleep 8
+set_text 2 　　　　　　　「エアリスが　とつぜん　いいだした
+set_text 3 　　　　　　　　なにがあったのかって　きいたら……
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+set_text_alpha 2 0
+set_text_alpha 3 0
+clear_text 2
+clear_text 3
+sleep 32
+step_npc 6624 2
+msg エアリス\n「おかあさんの　たいせつな　ひとが\n　しんじゃったよ\n\n　こころだけになって　おかあさんに\n　あいにきたけど\n　でも　ほしにかえってしまったの
+clear_text 5
+set_text_alpha 2 0
+set_text_alpha 5 0
+sleep 8
+set_text 2 　　　　　　　　　「わたしは　しんじなかった
+set_text 5 　　　　　　　　　　　　　「でも…
+include ./event/common/set_text/st02.txt
+wait_key_push_edge a
+set_text_alpha 2 0
+clear_text 2
+chg_event_move_char_speed fast
+move_char right 17
+sleep 136
+include ./event/common/set_text/st05.txt
+wait_key_push_edge a
+set_text_alpha 5 0
+clear_text 5
+kill 6624
+set_npc_pos 6623 66 9 9
+move_char left 19
+sleep 152
+clear_text 1
+clear_text 2
+clear_text 3
+set_text_alpha 2 0
+set_text_alpha 3 0
+sleep 8
+set_text 1 　　　　　　　「それから　なんにちか　して…
+set_text 2 　　　　　　　　おっとが　せんしした　というしらせが…
+set_text 3 　　　　　　　　とどいたんだ…
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+set_text_alpha 1 0
+set_text_alpha 2 0
+set_text_alpha 3 0
+clear_text 1
+clear_text 2
+clear_text 3
+move_char left 16
+sleep 128
+clear_text 5
+set_text_alpha 5 0
+sleep 8
+set_text 5 　　　　　　　　「……とまあ　こんなぐあいでね
+include ./event/common/set_text/st05.txt
+wait_key_push_edge a
+set_text_alpha 5 0
+clear_text 5
+sleep 8
+set_text_alpha 4 0
+set_text_alpha 5 0
+set_text_alpha 6 0
+sleep 8
+set_text 5 　　　　　　　　　「いろいろあったけど
+set_text 6 　　　　　　　　　　わたしたちは　しあわせだった
+set_text 7 　　　　　　　　　　ところが　あるひ……
+include ./event/common/set_text/st05.txt
+include ./event/common/set_text/st06.txt
+include ./event/common/set_text/st07.txt
+wait_key_push_edge a
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 5
+clear_text 6
+clear_text 7
+warp 66 -7 6 up
+sleep 8
+move_char right 18
+create npc_event 6624 66 11 7 158 1 2 none
+create npc_event 6626 66 11 10 28 0 2 none
+set_npc_pos 6623 66 11 8
+chg_npc_dir 6623 down
+sleep 144
+step_npc 6626 2
+msg ツォン\n「エアリスを　かえしてほしいのです\n　ずいぶん　さがしました
+set_active_msg 6624
+chg_speed 6624 fast
+jump_npc 6624 same 2
+sleep 32
+step_npc 6624 3
+msg エアリス\n「いやっ！\n　ぜったい　いやっ！
+jump_npc 6626 same 1
+sleep 16
+step_npc 6626 2
+msg ツォン\n「エアリス　きみは　たいせつなこどもなんだ\n　きみは　とくべつな　ちをひいている\n\n　きみの　ほんとうの　おかあさんのち\n　『こだいしゅ』のちだ
+chg_event_move_char_speed normal
+move_char up 3
+sleep 48
+set_text 2 　　　　　　　　　「もちろんきいたよ
+set_text 3 　　　　　　　　　　『こだいしゅ』ってなんだってね
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+set_text_alpha 2 0
+set_text_alpha 3 0
+clear_text 2
+clear_text 3
+move_char down 3
+sleep 48
+step_npc 6626 4
+msg ツォン\n「こだいしゅは　しじょうの　こうふくが\n　やくそくされた　とちへ\n　われわれを　みちびいてくれるのです\n　エアリスは　このまずしいスラムの　ひとびとに\n　こうふくを　あたえることができるのです\n\n\n　ですから　われわれ　しんらカンパニーは\n　ぜひとも　エアリスのきょうりょくを……
+move_npc 6624 right 1
+sleep 8
+move_npc 6624 down 2
+sleep 16
+move_npc 6624 left 1
+sleep 8
+set_layer 6624 front
+chg_npc_dir 6624 down
+jump_npc 6624 same 1
+sleep 16
+step_npc 6624 4
+sleep 24
+msg エアリス\n「ちがうもん！\n　エアリス　こだいしゅなんかじゃ　ないもん！
+sleep 16
+set_active_msg 6626
+jump_npc 6626 same 1
+msg ツォン\n「でも　エアリス　きみはときどき\n　だれもいないのに　こえが\n　きこえることがあるだろ？
+sleep 16
+loop 3
+chg_npc_dir 6624 right
+sleep 4
+chg_npc_dir 6624 left
+sleep 4
+pool
+chg_npc_dir 6624 down
+step_npc 6624 3
+msg エアリス\n「そんなことないもん！
+move_npc 6624 left 1
+sleep 8
+chg_npc_dir 6626 left
+move_npc 6624 down 5
+sleep 16
+chg_npc_dir 6626 down
+sleep 24
+kill 6624
+sleep 16
+clear_text 5
+clear_text 6
+chg_event_move_char_speed normal
+move_char down 13
+sleep 208
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text 5 　　　　　　　　「でも　わたしにはわかっていた
+set_text 6 　　　　　　　　　あのこの　ふしぎなちから……
+include ./event/common/set_text/st05.txt
+include ./event/common/set_text/st06.txt
+wait_key_push_edge a
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 5
+clear_text 6
+clear_text 7
+sleep 8
+set_text 5 　　　　　「いっしょうけんめい　かくそうとしていたから
+set_text 6 　　　　　　わたしは　きがつかないふりを
+set_text 7 　　　　　　していたけどね
+include ./event/common/set_text/st05.txt
+include ./event/common/set_text/st06.txt
+include ./event/common/set_text/st07.txt
+wait_key_push_edge a
+set_text_alpha 5 50
+set_text_alpha 6 50
+set_text_alpha 7 50
+sleep 16
+set_text_alpha 5 25
+set_text_alpha 6 25
+set_text_alpha 7 25
+sleep 16
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 5
+clear_text 6
+clear_text 7
+kill 6626
+move_char down 4
+sleep 64
+warp 66 11 -6 up
+move_char down 14
+set_npc_pos 6623 66 11 7
+chg_npc_img 6620 0
+chg_npc_img 6621 1
+chg_npc_img 6622 2
+chg_npc_dir 6620 right
+sleep 224
+create event_generator 6610 66 0 0 17 0 0 @066/elmyra2.txt

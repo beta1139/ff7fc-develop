@@ -1,0 +1,50 @@
+msg 「きょうは　ふつうのかっこうじゃな\n　また　おもしろそうなことがあれば\n　そうだんにのるぞ
+chg_npc_dir 7515 left
+chg_speed 7515 not_move
+jump_char same 1
+chg_char_dir up
+chg_char_img_tmp 97
+sleep 8
+chg_char_img_tmp 0
+sleep 8
+chg_char_img_tmp 97
+chg_event_move_char_speed fast
+step_char 1
+sleep 8
+chg_char_img_tmp 0
+chg_char_dir up
+step_char 2
+if_flag 10 0
+create npc_event 7522 75 5 14 1 3 2 none
+move_npc 7522 left 1
+sleep 24
+create npc_event 7523 75 4 13 156 0 2 none
+fi
+if_flag 10 1
+create npc_event 7522 75 7 12 1 3 2 none
+move_npc 7522 left 1
+sleep 24
+create npc_event 7523 75 6 11 156 0 2 none
+fi
+step_npc 7523 3
+sleep 24
+chg_npc_dir 7522 down
+sleep 48
+move_npc 7522 right 1
+kill 7523
+sleep 16
+kill 7522
+jump_char same 1
+chg_char_dir up
+sleep 2
+chg_char_dir right
+sleep 2
+chg_char_dir down
+sleep 2
+chg_char_dir left
+sleep 2
+chg_char_dir up
+sleep 8
+set_flag 10 0
+chg_event_move_char_speed normal
+restore_char_img

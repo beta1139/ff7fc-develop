@@ -1,0 +1,66 @@
+kill_through_range 100 4949
+kill_through_range 4951 5349
+kill_through_range 5351 5499
+kill_through_range 5600 5699
+kill_through_range 5600 5699
+kill_through_range 5801 5802
+kill_through_range 5820 5823
+kill_through_range 5920 5921
+kill_through 6200
+kill_through_range 6300 6301
+kill 6428
+kill_through_range 6600 6739
+kill_through_range 6741 6749
+kill_through_range 6752 6801
+kill_through_range 7020 7022
+kill_through_range 7100 7102
+kill_through_range 7198 7199
+kill_through 7222
+kill_through 7515
+kill_through 7601
+kill_through_range 7260 7297
+kill_through 7511
+kill_through_range 7611 7614
+kill_through 7707
+kill_through_range 7903 7912
+kill_through_range 7920 7921
+kill_through_range 8500 8599
+kill_through 8601
+kill_through_range 8700 8708
+kill_through_range 8730 8732
+kill_through 8713
+kill_through 8715
+kill_through 8719
+kill_through 8750
+kill_through_range 8802 8810
+kill_through 8816
+kill_through_range 9100 9229
+kill_through_range 9231 9349
+kill_through_range 9351 9399
+kill_through_range 9400 9429
+kill_through_range 9431 9529
+kill_through_range 9531 9549
+kill_through_range 9551 9599
+kill_through_range 9600 10299
+kill_through_range 10650 10655
+kill_through_range 70200 71199
+reset_talk_flag 8709
+reset_talked_flag 6322
+chg_npc_img 7610 71
+chg_speed 7610 not_move
+set_npc_pos 7510 75 5 8
+set_npc_pos 7512 75 9 12
+set_npc_pos 8815 88 3 6
+chg_npc_dir 8815 right
+chg_speed 8815 not_step
+chg_npc_img 8815 70
+chg_type 8709 npc2
+set_flag 0 0
+set_flag 13 0
+set_flag 14 0
+set_flag 15 0
+set_flag 16 0
+set_flag 17 0
+set_flag 18 0
+set_flag 19 0
+set_flag 9 3

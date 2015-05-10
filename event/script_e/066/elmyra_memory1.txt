@@ -1,0 +1,27 @@
+clear_text 5
+clear_text 6
+clear_text 7
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+sleep 8
+set_text 5 　　　　　　「あるひ　きゅうかで　かえってくるって
+set_text 6 　　　　　　　てがみをもらったから
+set_text 7 　　　　　　　わたしは　えきまで　むかえにいったのさ
+include ./event/common/set_text/st05.txt
+include ./event/common/set_text/st06.txt
+include ./event/common/set_text/st07.txt
+wait_key_push_edge a
+set_screen_effect add 255 255 255 0
+loop 50
+inc_screen_effect_val 2
+sleep 1
+pool
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+clear_text 5
+clear_text 6
+clear_text 7
+warp 712 11 10 up
+create event_generator 6606 66 0 0 17 0 0 @066/elmyra_memory2.txt

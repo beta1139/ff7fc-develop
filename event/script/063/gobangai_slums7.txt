@@ -1,7 +1,7 @@
 set_eternal_event
 wait_target_talk 6324
 reset_talk_flag 6324
-if_flag 12 1
+if_flag 12 2
 msg 「からっぽ　か……
 end
 fi
@@ -27,12 +27,12 @@ sleep 16
 add_gil 5
 play_se coin.ogg
 msg 「5ギルてにいれた！
-set_flag 12 1
+set_flag 12 2
 create event_generator 6301 63 0 0 17 0 0 @063/gobangai_slums7b.txt
 end
 fi
 if_flag 3 1
-set_flag 12 2
+set_flag 12 1
 end
 fi
 fi

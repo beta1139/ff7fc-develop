@@ -1,0 +1,54 @@
+wait_target_talked 6322
+if_flag_lesser 12 2
+chg_dir_to_char 6322
+chg_type 6322 npc_event
+if_char_dir down
+create npc_event 6320 63 7 5 0 1 2 none
+draw_char off
+fi
+jump_npc 6322 same 1
+sleep 16
+step_npc 6322 2
+set_talk_npc 6322
+msg 「きょうは　きぶんがいいから\n　とくべつにコレ　やるよ！
+reset_talk_npc
+jump_npc 6322 same 1
+if_char_dir down
+sleep 4
+chg_npc_dir 6322 right
+sleep 4
+chg_npc_dir 6322 down
+sleep 4
+chg_npc_dir 6322 left
+sleep 4
+chg_npc_dir 6322 up
+fi
+if_char_dir left
+sleep 4
+chg_npc_dir 6322 down
+sleep 4
+chg_npc_dir 6322 left
+sleep 4
+chg_npc_dir 6322 up
+sleep 4
+chg_npc_dir 6322 right
+fi
+step_npc 6322 2
+sleep 16
+play_se pick_up.wav
+if_flag 12 0
+add_item 1003
+msg 『エーテル』をてにいれた！
+fi
+if_flag 12 1
+add_item 1004
+msg 『エーテルターボ』をてにいれた！
+fi
+if_char_dir down
+draw_char on
+kill 6320
+fi
+chg_type 6322 npc
+fi
+chg_npc_dir 6322 up
+chg_param 6322 「ウォールマーケットで\n　すげぇディーラーになるのが\n　おれのユメなんだ！

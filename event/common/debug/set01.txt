@@ -1,0 +1,24 @@
+add_item 2101
+add_item 2101
+add_item 3002
+add_item 3002
+add_item 3002
+add_item 4000
+add_item 4100
+add_item 4003
+add_item 6000
+add_item 6003
+add_item 6009
+add_item 6012
+add_item 6013
+add_item 6016
+add_gil 2500
+set_max_hp 0 408
+set_max_hp 2 359
+set_max_hp 3 285
+set_max_mp 0 83
+set_max_mp 2 61
+set_max_mp 3 71
+set_power 0 27
+set_power 2 20
+set_power 3 17

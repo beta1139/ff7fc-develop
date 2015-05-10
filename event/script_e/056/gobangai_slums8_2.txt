@@ -92,7 +92,7 @@ kill 5620
 move_char up 2
 sleep 16
 chg_event_move_char_speed normal
-warp_ff3_2 68 20 30 2 left
+warp_ff3_2 68 19 30 2 left
 add_party_mem 3
 kill 6520
 kill 6625

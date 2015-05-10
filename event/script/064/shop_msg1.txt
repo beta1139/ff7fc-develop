@@ -1,0 +1,28 @@
+set_talk_npc 6424
+if_flag_lesser 9 3
+msg 「じぶんのみは　じぶんでまもる\n　こいつがスラムのじょうしきよ！\n　そのためには　まずつええ　ぶき！だろ？\n\n#3\n　　ぶきをみたい\n　　アイテムをみたい\n　　きょうみないね\n\n[[]][[]][[]]
+fi
+if_flag_greater 9 2
+msg 「なにが　おこるかわからねえ！\n　こんな　よのなか　だからこそ　やっぱり\n　たよりになるのは　つええぶきだろ？\n\n#3\n　　ぶきをみたい\n　　アイテムをみたい\n　　きょうみないね\n\n[[]][[]][[]]
+fi
+reset_talk_npc
+if_flag 3 0
+open_armor_shop 3002
+if_flag 10 1
+step_npc 6420 1
+fi
+if_flag 10 0
+chg_char_img_tmp 0
+step_char 1
+fi
+sleep 16
+msg 『ぶき　ないじゃないか
+jump_npc 6424 same 1
+chg_npc_dir 6424 left
+sleep 16
+fi
+if_flag 3 1
+open_item_shop 1020
+fi
+if_flag 3 2
+fi

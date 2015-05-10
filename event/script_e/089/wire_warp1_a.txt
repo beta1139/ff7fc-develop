@@ -1,0 +1,21 @@
+wait_same_pos
+chg_char_img_tmp 157
+kill_through_range 8930 8931
+kill_through 8934
+kill_through 8935
+kill_through 8937
+if_flag 17 5
+msg ～イベントさくせいここまで\n\n\n\n　ジンクバッテリ……どうしょりするか\n　いまだ　ノープラン
+warp 89 12 11 up
+sub_flag 17 1
+fi
+if_flag_lesser 17 5
+warp 89 12 11 up
+add_flag 17 1
+create event_generator 8933 89 12 7 17 0 0 @089/wire_warp1_b.txt
+create event_generator 8936 89 12 12 17 0 0 @089/wire_warp2_b.txt
+fi
+chg_char_state_move
+loop_inf
+sleep 160
+pool

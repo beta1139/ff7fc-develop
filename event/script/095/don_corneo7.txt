@@ -129,8 +129,10 @@ move_char up 2
 sleep 4
 close_door 9550
 sleep 12
+play_se corneo_jump.ogg
 jump_npc 9523 same 1
 sleep 16
+play_se corneo_jump.ogg
 move_npc 9522 right 1
 jump_npc 9523 same 1
 sleep 8

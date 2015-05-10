@@ -1,3 +1,6 @@
+set_eternal_event
+loop_inf
+wait_not_same_pos
 wait_same_pos
 set_key_unvalid up
 set_key_unvalid left
@@ -5,11 +8,12 @@ set_key_unvalid down
 set_key_unvalid right
 set_key_unvalid start
 chg_npc_dir 7220 right
-step_npc 7220 2
-msg 「ちょっと　そこのおふたりさん\n　すこし　やすんでいかない？\n\n\n　きれいなへやが　あるんだけど\n　どうだい？
+include ./event/script/072/wm_barker.txt
 chg_npc_dir 7220 down
 set_key_valid up
 set_key_valid left
 set_key_valid down
 set_key_valid right
 set_key_valid start
+end
+pool

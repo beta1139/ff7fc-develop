@@ -1,0 +1,14 @@
+step_npc 8812 2
+set_talk_npc 8812
+if_flag_lesser 9 3
+msg 「ふふふ　へー
+fi
+if_flag_greater 9 2
+msg 「そうよね\n　うえのプレートへ　のぼれるなら\n　いってみたいね
+fi
+reset_talk_npc
+set_inactive_msg 8811
+chg_type 8811 npc2
+chg_type 8812 npc2
+chg_speed 8811 not_move
+chg_speed 8812 not_move

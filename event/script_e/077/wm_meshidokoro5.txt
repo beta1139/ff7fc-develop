@@ -83,6 +83,7 @@ step_npc 7711 2
 msg `Thank you.
 fi
 if_flag 3 1
+if_flag_lesser 9 2
 if_flag 13 0
 step_npc 7711 3
 msg `Thank you.\n Here's your coupon.\n You can redeem it for an\n item at the drugstore.
@@ -109,6 +110,7 @@ chg_type 7711 npc
 set_inactive_msg 7710
 set_flag 13 1
 end
+fi
 fi
 step_npc 7711 2
 msg `Thank you.

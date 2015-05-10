@@ -1,0 +1,4 @@
+set_eternal_event
+wait_target_talk 5801
+reset_talk_flag 5801
+include ./event/script/058/goban_slums_small_talk1.txt

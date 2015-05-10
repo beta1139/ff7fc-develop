@@ -1004,7 +1004,7 @@ event_generator,6800,68,12,8,17,0,0,"@068/rokubangai1.txt"
 event_generator,6900,69,15,27,17,0,0,"@069/midori_park1.txt"
 npc_event,7020,70,14,22,155,1,1,"none"
 npc_event,7021,70,16,23,155,2,1,"none"
-treasure_materia,7030,70,23,25,2,0,0,4207
+treasure_materia,7030,70,23,25,2,0,0,4201
 npc_event,7090,70,19,25,80,3,0,"none"
 npc_event,7091,70,21,18,80,3,0,"none"
 npc_event,7092,70,10,15,80,3,0,"none"
@@ -1062,7 +1062,7 @@ map_door,7252,72,13,34,9,0,0,0
 map_door,7253,72,11,24,9,0,0,0
 map_door,7254,72,6,15,9,0,0,0
 map_door,7255,72,16,12,9,0,0,0
-event_generator,7281,72,6,39,17,0,0,"@072/wall_market3_1.txt"
+event_generator,7281,72,7,39,17,0,0,"@072/wall_market3_1.txt"
 event_generator,7282,72,7,38,17,0,0,"@072/wall_market3_2.txt"
 save_point,7298,72,18,26,0,0,0,
 event_generator,7299,72,18,26,17,0,0,"@save_msg.txt"
@@ -1324,6 +1324,7 @@ npc2,8511,85,11,14,17,1,0,""
 map_door,8550,85,10,14,4,0,0,0
 map_door,8551,85,11,14,4,0,0,0
 event_generator,8600,86,0,0,17,0,0,"@086/wm_weapon_shop.txt"
+event_generator,8605,86,0,0,17,0,0,"@086/wm_armor_shop.txt"
 npc_event,8610,86,11,8,66,1,0,"none"
 npc2,8611,86,11,9,17,0,0,""
 npc_event,8612,86,4,14,79,0,0,""
@@ -1333,7 +1334,11 @@ npc,8613,86,7,13,17,0,0,"`What do you want?
 npc,8614,86,7,14,17,0,0,"`What do you want?
  I won't listen a word
  about the storage yard."
-event_generator,8700,87,13,12,17,0,0,"@087/wm_gym1.txt"
+npc_event,8616,86,9,8,68,1,0,"none"
+npc2,8617,86,9,9,17,0,0,""
+event_generator,8700,87,0,0,17,0,0,"@087/wm_gym1.txt"
+npc2,8709,87,14,12,17,1,0,"`Now 1 2 3
+ Rhythm's all in squat."
 npc_event,8710,87,14,12,44,1,0,"none"
 npc_event,8711,87,13,15,110,3,0,"`Our Brother is the
  Brother among brothers!"
@@ -1369,7 +1374,9 @@ npc,8816,88,3,6,66,3,4,"`Look, do you have some
  I guess I've drunk too
  much==eeww=="
 map_door,8850,88,4,7,4,0,0,0
-npc2,8910,89,12,37,17,0,0,""
+npc2,8911,89,12,48,17,0,0,"「みんなこのワイヤーをのぼって
+　うえにいっちゃったよ
+　こわくないのかな……ブルブル"
 event_generator,9100,91,9,18,17,0,0,"@091/don_corneo_start.txt"
 npc_event,9122,91,4,12,131,3,0,"`Don's waiting
  in this room.
@@ -1427,6 +1434,7 @@ npc_event,9427,94,10,11,70,3,0,"`Come on, baby!
  cute and tight and
  it's gonna heat with
  what a good beat!"
+treasure_item,9430,94,10,10,1,1,0,1007
 event_generator,9500,95,6,7,17,0,0,"@095/don_corneo2.txt"
 treasure_item,9530,95,3,7,1,1,0,1013
 map_door,9550,95,6,15,13,0,0,0
