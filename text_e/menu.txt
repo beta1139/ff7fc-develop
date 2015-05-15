@@ -53,7 +53,7 @@ ACCS
 May I help you?
 Buy
 Sell
- Go
+Go
 What do you want?
 CNT?
 Anything else?
