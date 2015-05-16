@@ -159,15 +159,17 @@ sleep 1
 pool
 move_npc 6920 right 1
 sleep 8
-chg_speed 6920 not_move
+chg_speed 6920 not_step
 chg_speed 6921 normal
 move_npc 6921 right 1
 sleep 8
-chg_speed 6921 not_move
+chg_speed 6921 not_step
 chg_npc_dir 6920 down
 sleep 8
+chg_npc_dir 6921 right
+sleep 8
 chg_npc_dir 6921 down
-sleep 72
+sleep 56
 chg_speed 6921 normal
 step_npc 6921 2
 msg Aeris\n`What's your class?
