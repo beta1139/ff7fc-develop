@@ -273,7 +273,8 @@ chg_npc_img 6924 60
 chg_npc_dir 6924 down
 create npc_event 6929 69 15 10 17 1 1 none
 slide_walk_npc 6929 down 1
-move_npc 6925 right 1
+chg_npc_dir 6925 right
+slide_walk_npc 6925 right 1
 chg_npc_img 6925 137
 create npc_event 6926 69 15 13 137 0 1 none
 slide_walk_npc 6926 right 1
@@ -296,9 +297,9 @@ msg3 -1 {Tifa!?
 chg_speed 6921 normal
 sleep 16
 chg_npc_dir 6921 up
-move_npc 6925 right 11
+slide_walk_npc 6925 right 11
 slide_walk_npc 6926 right 11
-move_npc 6924 right 11
+slide_walk_npc 6924 right 11
 slide_walk_npc 6927 right 11
 move_npc 6923 down 1
 slide_walk_npc 6922 down 2
@@ -309,15 +310,17 @@ stop_se
 sleep 16
 chg_npc_img 6922 60
 chg_npc_dir 6922 down
-move_npc 6923 right 10
+slide_walk_npc 6923 right 10
 chg_npc_img 6923 138
+chg_npc_dir 6923 right
 create npc_event 6928 69 15 13 138 0 1 none
 slide_walk_npc 6928 right 10
 play_se stomp.ogg
 sleep 16
 stop_se
 sleep 16
-move_npc 6922 right 9
+chg_npc_dir 6922 right
+slide_walk_npc 6922 right 9
 chg_npc_img 6922 137
 chg_npc_dir 6929 up
 slide_walk_npc 6929 right 9
