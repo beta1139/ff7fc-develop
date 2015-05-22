@@ -9,7 +9,7 @@ draw_char off
 move_npc 6620 up 2
 sleep 32
 create npc_event 6621 66 10 14 1 3 1 none
-create npc_event 6622 66 9 14 2 0 1 ティファ\n「わたしのせい……\n　わたしがエアリスをまきこんだから
+create npc_event 6622 66 9 14 2 0 1 Tifa\n`It's my fault==\n I brought her into this.
 move_npc 6621 up 1
 move_npc 6622 up 1
 sleep 32
@@ -23,50 +23,50 @@ move_npc 6622 up 2
 sleep 112
 step_npc 6623 1
 set_talk_npc 6623
-msg エルミナ\n「クラウド……だったね
+msg Elmyra\n`Cloud==is it?
 reset_talk_npc
 sleep 32
 chg_npc_dir 6623 down
 sleep 32
 step_npc 6623 1
 set_talk_npc 6623
-msg エルミナ\n「エアリスのこと　だろ？
+msg Elmyra\n`It's about Aeris,\n isn't it?
 reset_talk_npc
 sleep 24
 move_npc 6620 up 1
 sleep 48
 step_npc 6620 1
-msg 『……すまない\n　しんらに　さらわれた
+msg {==I'm sorry.\n Shinra got her.
 sleep 32
 set_active_msg 6623
 move_npc 6623 left 1
 sleep 16
 set_talk_npc 6623
-msg エルミナ\n「しってるよ\n　ここから　つれていかれたからね
+msg Elmyra\n`I know.\n They took her from here.
 reset_talk_npc
 set_active_msg 6620
 jump_npc 6620 same 1
 sleep 16
-msg 『ここで？
+msg {From here?
 sleep 16
 chg_npc_dir 6623 down
 sleep 16
 step_npc 6623 1
 set_talk_npc 6623
-msg エルミナ\n「エアリスが　のぞんだことだよ……
+msg Elmyra\n`She wanted it so==
 reset_talk_npc
 sleep 16
 move_npc 6620 up 1
 sleep 40
 chg_speed 6620 normal
 step_npc 6620 1
-msg 『どうして　エアリスは\n　しんらに　ねらわれるんだ？
+msg {Why are they after her?
 sleep 16
 chg_npc_dir 6623 up
 sleep 48
 step_npc 6623 2
 set_talk_npc 6623
-msg エルミナ\n「エアリスは　こだいしゅ\n　こだいしゅの　いきのこり　なんだとさ
+msg Elmyra\n`They say she is a relic\n of a race called\n the Ancients.
 reset_talk_npc
 sleep 16
 chg_speed 6621 normal
@@ -76,19 +76,19 @@ set_active_msg 6620
 jump_npc 6621 same 1
 sleep 16
 step_npc 6621 2
-msg バレット\n「……なんだとさ　だって？\n　あんた　ははおや　だろ？
+msg Baret\n`==They say?\n You're her mom, ain't you?
 sleep 16
 chg_speed 6623 normal
 step_npc 6623 2
 set_talk_npc 6623
-msg エルミナ\n「……ほんとうの　ははおやじゃないんだよ\n　あれは……そう　15ねんまえ…
+msg Elmyra\n`==Not the real mother.\n It's==yes, 15 years ago==
 reset_talk_npc
 sleep 16
 chg_npc_dir 6623 left
 sleep 24
 step_npc 6623 2
 set_talk_npc 6623
-msg エルミナ\n「……せんそうちゅうでね\n　わたしの　おっとは　せんちにいってた\n　ウータイという　とおいくにさ
+msg Elmyra\n`==It was during the war.\n My man was at the front,\n a far place called Utai.
 reset_talk_npc
 chg_event_move_char_speed normal
 move_char up 14
@@ -97,7 +97,7 @@ fi
 if_flag 80 1
 create npc_event 6620 66 11 8 0 0 2 none
 create npc_event 6621 66 10 9 1 0 2 none
-create npc_event 6622 66 12 9 2 0 2 ティファ\n「わたしのせい……\n　わたしがエアリスをまきこんだから
+create npc_event 6622 66 12 9 2 0 2 Tifa\n`It's my fault==\n I brought her into this.
 fi
 warp 708 0 0 up
 create event_generator 6605 66 0 0 17 0 0 @066/elmyra_memory1.txt

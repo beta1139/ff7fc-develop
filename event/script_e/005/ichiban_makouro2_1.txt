@@ -7,7 +7,7 @@ sleep 16
 set_active_msg 501
 jump_npc 501 same 1
 set_talk_npc 501
-msg Baret \n`Yo!\n This ain't your first\n time in a reactor, is it?
+msg Baret\n`Yo!\n This ain't your first\n time in a reactor, is it?
 reset_talk_npc
 sleep 16
 step_char 1

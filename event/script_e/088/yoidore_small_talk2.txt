@@ -4,7 +4,7 @@ if_flag_lesser 9 3
 msg `Giggle. Is that so?
 fi
 if_flag_greater 9 2
-msg 「そうよね\n　うえのプレートへ　のぼれるなら\n　いってみたいね
+msg `Yeah.\n I'd like to go to the\n upside if I can.
 fi
 reset_talk_npc
 set_inactive_msg 8811

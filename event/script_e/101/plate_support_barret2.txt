@@ -36,7 +36,7 @@ step_npc 10153 4
 sleep 16
 create event_generator 10115 101 1 1 17 0 0 @101/plate_support_barret3.txt
 set_talk_npc 10153
-msg Baret\n`Tifa! Clout!\n Here you are!\n\n Careful! They're gonna\n attack from the chopper.
+msg Baret\n`Tifa! Cloud!\n You came!\n\n Careful! They're gonna\n attack with the chopper.
 reset_talk_npc
 chg_npc_img 10153 1
 chg_npc_dir 10153 left

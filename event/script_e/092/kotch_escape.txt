@@ -16,13 +16,13 @@ chg_npc_y_offset 9210 -4
 chg_npc_img 9210 133
 chg_speed 9210 fast
 step_npc 9210 3
-msg コッチ\n「たすかった！
+msg Kotch\n`Thank God!
 sleep 16
 chg_dir_to_char 9210
 sleep 8
 chg_speed 9210 normal
 step_npc 9210 2
-msg コッチ\n「じつはあのあと　しんらの れんちゅうが\n ドカドカやってきて 『じょうほうをリークした』だの\n　『やくたたず』だの……\n　ドンはむりやりどこかへ\n　つれていかれて　それっきり……\n　オレもこんなザマさ
+msg Kotch\n`After you guys left here\n a bunch of Shinra guys\n marched in blaming us.\n They took away Don and we\n haven't seen him since==\n And look at this mess.
 if_char_dir down
 create npc_event 9209 92 6 12 0 1 2 none
 draw_char off
@@ -40,7 +40,7 @@ sleep 4
 chg_npc_dir 9210 down
 chg_speed 9210 fast
 step_npc 9210 2
-msg コッチ\n「おっと　いけねえ！\n またあいつらがきたら……\n　オレはいくぜ　アバヨ！
+msg Kotch\n`Oopsy!\n If they come back==\n I gotta get away. Bye!
 if_char_dir left
 chg_npc_dir 9210 up
 sleep 16
@@ -93,7 +93,7 @@ chg_npc_img 9210 17
 set_npc_pos 9210 92 1 1
 fi
 if_flag 3 1
-msg3 -1 コッチ\n「オ　オレはただ　ドンの\n　めいれいに　したがっただけなんだ！\n　たすけてくれよ！
+msg3 -1 Kotch\n`I-I was just following\n Don's orders!\n Help me, man!
 loop 2
 chg_npc_y_offset 9210 -1
 sleep 3

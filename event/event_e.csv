@@ -1374,9 +1374,9 @@ npc,8816,88,3,6,66,3,4,"`Look, do you have some
  I guess I've drunk too
  much==eeww=="
 map_door,8850,88,4,7,4,0,0,0
-npc2,8911,89,12,48,17,0,0,"「みんなこのワイヤーをのぼって
-　うえにいっちゃったよ
-　こわくないのかな……ブルブル"
+npc2,8911,89,12,48,17,0,0,"`Everyone's gone climbing
+ up this wire.
+ Aren't they scared? Brrr."
 event_generator,9100,91,9,18,17,0,0,"@091/don_corneo_start.txt"
 npc_event,9122,91,4,12,131,3,0,"`Don's waiting
  in this room.

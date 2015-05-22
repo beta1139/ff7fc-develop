@@ -1,7 +1,7 @@
 draw_char off
 move_char up 9
 jump_npc 8430 same 1
-msg3 -1 u‚·‚²‚¢‚Ì@‚İ‚ê‚ñ‚¾‚º@‚Â‚¢‚Ä‚±‚¢‚æ
+msg3 -1 `You should see this!\n It's awesome.
 sleep 16
 jump_npc 8430 same 1
 sleep 16

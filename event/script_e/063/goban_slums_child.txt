@@ -10,7 +10,7 @@ jump_npc 6322 same 1
 sleep 16
 step_npc 6322 2
 set_talk_npc 6322
-msg 「きょうは　きぶんがいいから\n　とくべつにコレ　やるよ！
+msg `I feel good today.\n Here, take this!
 reset_talk_npc
 jump_npc 6322 same 1
 if_char_dir down
@@ -38,11 +38,11 @@ sleep 16
 play_se pick_up.wav
 if_flag 12 0
 add_item 1003
-msg 『エーテル』をてにいれた！
+msg You got Ether!
 fi
 if_flag 12 1
 add_item 1004
-msg 『エーテルターボ』をてにいれた！
+msg You got X-Ether!
 fi
 if_char_dir down
 draw_char on
@@ -51,4 +51,4 @@ fi
 chg_type 6322 npc
 fi
 chg_npc_dir 6322 up
-chg_param 6322 「ウォールマーケットで\n　すげぇディーラーになるのが\n　おれのユメなんだ！
+chg_param 6322 `It's my dream to be a\n hot item dealer in Wall\n Market!

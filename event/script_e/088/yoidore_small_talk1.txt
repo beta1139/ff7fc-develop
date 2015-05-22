@@ -11,6 +11,6 @@ if_flag_lesser 9 3
 msg `==and then==
 fi
 if_flag_greater 9 2
-msg 「こわいよね\n　いつ　このうえのプレートが\n　おちてくるか　わからないね
+msg `Scary, isn't it?\n No one can tell when the\n upper plate'll come down.
 reset_talk_npc
 fi

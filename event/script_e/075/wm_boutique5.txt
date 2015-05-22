@@ -1,4 +1,4 @@
-msg 「きょうは　ふつうのかっこうじゃな\n　また　おもしろそうなことがあれば\n　そうだんにのるぞ
+msg `You dress normal today.\n Let me know when you do\n something interesting\n again.
 chg_npc_dir 7515 left
 chg_speed 7515 not_move
 jump_char same 1

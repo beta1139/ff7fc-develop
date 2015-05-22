@@ -9,27 +9,27 @@ sleep 16
 kill 8615
 set_active_msg 8612
 jump_npc 8612 same 1
-msg 「あんたも　うえのプレートへいくのか？\n　このジンクバッテリーが　ひつようになるぞ
+msg `You're going up, too?\n Then you'll need these\n batteries.
 sleep 16
 step_char 1
 sleep 16
-msg 『ひろったものを　うりつけるのか？
+msg {You sell something you\n picked up on the street?
 sleep 16
 jump_npc 8612 same 1
-msg 「お　よくしってるな\n　しゅうりしてあるから　だいじょうぶさ
+msg `Oh, did you know that?\n Don't worry, I fixed it.
 sleep 16
 step_char 1
 sleep 16
-msg 『うえのプレートへ　のぼるのに\n　どうしてバッテリーが　ひつようなんだ？
+msg {Why do I need batteries\n to climb up?
 sleep 16
 step_npc 8612 2
-msg 「のぼってみりゃわかるよ\n　3つで300ギルだ\n　かうかい？
+msg `You'll see.\n 300 Gil for 3 batteries.\n Well?
 sleep 16
-msg 『……\n\n\n\n#2\n　　わかった　かおう\n　　しんじられないな\n\n\n[[]][[]]
+msg {==\n#2\n  Okay, I take them.\n  I don't believe you.\n\n\n[[]][[]]
 if_flag 3 0
 if_gil_less 300
 step_npc 8612 2
-msg 「ざんねんだな　おかねがたらないよ\n　また　こいや
+msg `Sorry, you can't afford\n it. See ya.
 sleep 8
 chg_char_dir right
 chg_char_img_tmp 97
@@ -62,10 +62,10 @@ sub_gil 300
 add_item 1084
 add_item 1084
 add_item 1084
-msg 『ジンクバッテリー』をてにいれた！
+msg You got {Battery}!
 sleep 8
 step_npc 8612 1
-msg 「また　こいや
+msg `See ya.
 sleep 8
 if_flag 10 1
 move_npc 8612 up 1
@@ -87,12 +87,12 @@ fi
 if_flag 3 1
 sleep 8
 step_npc 8612 2
-msg 「そうか　じぶんのめで　たしかめて\n　また　きたらいいだろう
+msg `Right. See it with your\n own eyes.
 fi
 fi
 if_owned_item 1084
 chg_dir_to_char 8612
-msg 「また　こいや
+msg `See ya.
 fi
 chg_speed 8612 not_move
 chg_npc_dir 8612 up

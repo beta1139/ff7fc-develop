@@ -381,7 +381,7 @@ step_npc 4907 4
 step_npc 4908 4
 step_npc 4909 4
 sleep 8
-msg3 -1 `The flowers're ruined!
+msg3 -1 `The flowers are ruined!
 sleep 64
 erase_msg3
 sleep 8

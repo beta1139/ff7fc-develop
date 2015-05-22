@@ -26,14 +26,14 @@ chg_npc_dir 8922 up
 sleep 16
 set_active_msg 8922
 jump_npc 8922 same 1
-msg ティファ\n「これ　のぼれるの？
+msg Tifa\n`Can we climb this?
 chg_npc_dir 8911 down
 sleep 16
 chg_speed 8911 normal
 set_active_msg 8911
 jump_npc 8911 same 1
 set_talk_npc 8911
-msg 「うん\n　うえのせかいに　つながってるんだよ
+msg `Yep.\n It reaches the upside.
 reset_talk_npc
 chg_speed 8921 fast
 step_npc 8921 4
@@ -42,7 +42,7 @@ jump_npc 8921 same 1
 sleep 16
 set_active_msg 8921
 jump_npc 8921 same 1
-msg3 -1 バレット\n「よし！　このワイヤー　のぼろうぜ！
+msg3 -1 Baret\n`Right! Let's climb it!
 sleep 16
 step_npc 8921 1
 chg_npc_dir 8922 left
@@ -53,7 +53,7 @@ chg_char_dir down
 sleep 24
 step_char 1
 sleep 16
-msg 『それは　むりな　はなしだな\n　なんびゃくメートル　あるとおもってるんだ？
+msg {That's impossible.\n Who knows the distance\n you must climb?
 chg_npc_dir 8922 up
 jump_npc 8921 same 2
 loop 2
@@ -74,7 +74,7 @@ pool
 chg_speed 8921 normal
 chg_npc_img 8921 1
 step_npc 8921 3
-msg3 -1 バレット\n「むりじゃねえ！\n　みろ！　これは　なんにみえる？
+msg3 -1 Baret\n`Not impossible! Look!\n What do you see here?
 sleep 16
 chg_npc_dir 8922 left
 wait_key_push_edge a
@@ -86,13 +86,13 @@ chg_char_dir left
 sleep 48
 chg_char_dir down
 sleep 32
-msg 『なんの　へんてつもないワイヤーだ
+msg {Only an ordinary wire.
 chg_npc_dir 8922 left
 sleep 16
 jump_npc 8921 same 1
 sleep 24
 step_npc 8921 2
-msg3 -1 バレット\n「そうかよ？　オレには\n　こんじきにかがやく　きぼうのいとに　みえるぜ
+msg3 -1 Baret\n`Is that so?\n I see a shining golden\n thread of hope!
 sleep 24
 chg_npc_dir 8922 up
 wait_key_push_edge a
@@ -117,7 +117,7 @@ jump_npc 8922 same 1
 sleep 16
 chg_speed 8922 slow
 step_npc 8922 2
-msg3 -1 ティファ\n「そうね　エアリスをすくうために\n　のこされたみちは　これだけだもんね
+msg3 -1 Tifa\n`Yes. This is our only\n path to save Aeris.
 sleep 32
 wait_key_push_edge a
 erase_msg3
@@ -125,7 +125,7 @@ chg_npc_dir 8920 down
 sleep 40
 step_npc 8920 1
 sleep 16
-msg 『よくわからないたとえだったが\n　バレット　あんたのきもちはわかった
+msg {Your metaphor's beyond me\n but I got your feelings.
 play_event_bgm 4-01-Shinra_Army_Wages_a_Full-scale_Attack.ogg
 chg_npc_dir 8922 up
 sleep 32
@@ -149,7 +149,7 @@ sleep 4
 chg_npc_dir 8920 up
 chg_speed 8920 fast
 step_npc 8920 2
-msg 『いくぞ！
+msg {Here we go!
 chg_char_dir up
 sleep 16
 draw_char on

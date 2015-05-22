@@ -6,14 +6,14 @@ jump_npc 8912 same 1
 sleep 16
 jump_npc 8912 same 1
 sleep 16
-msg 「うわ～！\n　すげ～　ヒサン……
+msg `Gee!\n It's wretched==
 jump_npc 8913 same 1
 sleep 16
 jump_npc 8913 same 1
 sleep 16
 jump_npc 8913 same 1
 sleep 16
-msg 「な　こえ～だろ？\n　とうちゃんは　『しんら』ってやつの\n　しわざだっていってたよ
+msg `Scary, isn't it?\n My dad says that someone\n called {Shinra} did this.
 create event_generator 8930 89 0 0 17 0 0 @089/wire_jump1.txt
 chg_char_state_move
 loop_inf

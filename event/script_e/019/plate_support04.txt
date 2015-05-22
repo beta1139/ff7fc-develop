@@ -96,7 +96,7 @@ sleep 16
 move_npc 1920 left 1
 sleep 8
 step_npc 1920 2
-msg Tifa\n`Aeris, do me a favor.\n\n\n Our bar `Seventh Heaven'\n isn't far from here.\n\n\n There's a little girl\n named Marlene therecc
+msg Tifa\n`Aeris, do me a favor.\n\n\n Our bar `Seventh Heaven'\n isn't far from here.\n\n\n There's a little girl\n named Marlene there==
 chg_npc_dir 1922 right
 sleep 16
 step_npc 1922 2

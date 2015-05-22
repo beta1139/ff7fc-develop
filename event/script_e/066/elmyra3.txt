@@ -25,7 +25,7 @@ jump_npc 6623 same 1
 sleep 16
 step_npc 6623 2
 set_talk_npc 6623
-msg エルミナ\n「あんた　きにするんじゃないよ\n　エアリスだってそんなふうに\n　おもっちゃいないよ
+msg Elmyra\n`You don't worry so.\n Surely Aeris doesn't\n think it that way.
 reset_talk_npc
 chg_npc_dir 6623 left
 if_char_dir up
@@ -46,6 +46,6 @@ sleep 16
 draw_char on
 kill 6620
 fi
-chg_param 6622 ティファ\n「なんか　おちこんじゃう
+chg_param 6622 Tifa\n`I still feel down.
 chg_type 6623 npc3
 reset_slide_char_flag

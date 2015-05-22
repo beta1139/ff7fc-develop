@@ -2,31 +2,31 @@ sleep 16
 chg_npc_dir 6620 up
 sleep 16
 step_npc 6620 1
-msg 『よく　なんねんも　しんらから\n　にげつづけることができたな
+msg {I'm surprised that you\n could evade them all\n these years.
 sleep 16
 set_active_msg 6623
 jump_npc 6623 same 1
 set_talk_npc 6623
-msg エルミナ\n「しんらは　エアリスのきょうりょくが\n　ひつようだったから　てあらなマネは\n　できなかったんだろうね
+msg Elmyra\n`I think they wanted\n her to cooperate on\n her own will.
 reset_talk_npc
 sleep 32
 step_npc 6622 2
-msg ティファ\n「じゃあ　こんかいはどうして……
+msg Tifa\n`Then, why this time==
 sleep 16
 chg_npc_dir 6623 left
 sleep 24
 step_npc 6623 2
 set_talk_npc 6623
-msg エルミナ\n「ちいさな　おんなのこをつれて\n　ここにかえってきたんだ\n\n　そのとちゅうで　ツォンのやつに\n　みつかってしまったらしくてね\n　にげきれなかったんだろ　きっと\n\n　おんなのこの　ぶじとひきかえに\n　じぶんが　しんらに　いくことに　なったんだ
+msg Elmyra\n`She came back here\n with a little girl.\n\n She got spotted by Tseng\n on her way here and\n couldn't lose them this\n time, I suppose.\n She decided to go to\n Shinra in exchange for\n the girl's safety.
 reset_talk_npc
 sleep 24
 step_npc 6620 1
-msg 『マリン　だな
+msg {It's Marlene.
 jump_npc 6621 same 2
 sleep 32
 chg_speed 6621 fast
 step_npc 6621 2
-msg3 -1 バレット\n「マリン！！\n　マリンのために　エアリスは　つかまったのか！
+msg3 -1 Baret\n`Marlene!!\n So she got herself caught\n for Marlene!
 sleep 16
 chg_npc_dir 6620 down
 wait_key_push_edge a
@@ -46,47 +46,47 @@ jump_npc 6621 same 1
 sleep 16
 chg_speed 6621 slow
 step_npc 6621 1
-msg バレット\n「すまねえ\n　マリンはオレのむすめだ\n　すまねえ……ほんとうに……
+msg Baret\n`I'm sorry.\n Marlene's my daughter.\n I'm sorry==really==
 chg_npc_dir 6623 down
 sleep 16
 jump_npc 6623 same 1
 set_talk_npc 6623
-msg エルミナ\n「あんたが　ちちおやかい！？\n　あんた　むすめをほったらかして\n　なにをやってるんだい！？
+msg Elmyra\n`You're her father?\n What are you doing\n leaving your kid alone?
 reset_talk_npc
 chg_npc_dir 6621 left
 sleep 80
 chg_speed 6621 slow
 step_npc 6621 2
-msg バレット\n「……そのはなしは　やめてくれ\n　オレだって　なんどもかんがえたさ\n　オレがしんじまったら　マリンは…ってな
+msg Baret\n`==Don't start it now.\n I thought about it many\n times myself.
 chg_npc_dir 6621 up
 sleep 16
 jump_npc 6621 same 1
 sleep 16
 chg_speed 6621 fast
 step_npc 6621 3
-msg バレット\n「でもよ　こたえはでねえんだ\n　マリンといつも　いっしょにいたい\n　でも　それじゃ　たたかえない\n　たたかわなければ　ほしがしぬ
+msg Baret\n`But I get no answer.\n Wanna always be with her.\n But then I can't fight.\n And the planet dies.
 jump_npc 6621 same 1
 sleep 16
 jump_npc 6621 same 1
 sleep 16
 step_npc 6621 2
-msg バレット\n「おう！　オレはたたかうぜ！
+msg Baret\n`Right, I fight!
 sleep 16
 chg_npc_dir 6621 left
 sleep 40
 chg_speed 6621 slow
 step_npc 6621 1
-msg バレット\n「でも　マリンがしんぱいだ\n　いつでも　そばにいてやりたい
+msg Baret\n`But I'm worried for her.\n Wanna always be with her.
 sleep 32
 chg_npc_dir 6621 up
 sleep 24
 chg_speed 6621 normal
 step_npc 6621 2
-msg バレット\n「な？　グルグルまわっちまうんだ
+msg Baret\n`See? It goes round\n an' round.
 sleep 32
 step_npc 6623 2
 set_talk_npc 6623
-msg エルミナ\n「……わからないでもないけどね\n　ま　とにかく　2かいで　ねむってるから\n　あっておやりよ
+msg Elmyra\n`==Can't say I don't\n understand. Well, she's\n asleep upstairs now.
 reset_talk_npc
 step_npc 6621 2
 sleep 32

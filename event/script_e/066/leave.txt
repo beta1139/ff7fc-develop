@@ -1,6 +1,6 @@
 chg_npc_dir 6622 down
 sleep 16
-msg3 -1 ティファ\n「エアリスのところへ　いくのね
+msg3 -1 Tifa\n`You're going to Aeris,\n aren't you?
 sleep 8
 wait_key_push_edge a
 erase_msg3
@@ -19,19 +19,19 @@ chg_npc_dir 6622 down
 set_active_msg 6622
 sleep 32
 step_npc 6620 1
-msg 『ああ
+msg {Yeah.
 sleep 16
 step_npc 6622 2
 set_talk_npc 6622
-msg ティファ\n「わたしもいくから
+msg Tifa\n`I'm coming along.
 reset_talk_npc
 jump_npc 6620 same 1
 sleep 16
 step_npc 6620 1
-msg 『しんらの　ほんしゃに　のりこむ\n　……カクゴがひつようだぞ
+msg {Into the Shinra\n headquarters.\n ==It's no picnic.
 jump_npc 6622 same 1
 set_talk_npc 6622
-msg ティファ\n「わかってるわ
+msg Tifa\n`I know.
 reset_talk_npc
 sleep 16
 loop 2
@@ -46,14 +46,14 @@ sleep 6
 pool
 step_npc 6622 2
 set_talk_npc 6622
-msg ティファ\n「それに　いまは　おもいきり　からだを\n　うごかしたい　きぶんなの
+msg Tifa\n`I feel like doing\n some heavy exercises.
 reset_talk_npc
 chg_npc_dir 6622 right
 sleep 48
 chg_speed 6622 slow
 step_npc 6622 1
 set_talk_npc 6622
-msg ティファ\n「じっとしてると……なんか　ダメ
+msg Tifa\n`I can't stand staying\n still==right now.
 reset_talk_npc
 move_char up 3
 sleep 48
@@ -105,11 +105,11 @@ chg_npc_dir 6621 up
 sleep 24
 chg_speed 6621 normal
 step_npc 6621 2
-msg バレット\n「すまねえが　もうしばらく\n　マリンをあずかってくれねえか？
+msg Baret\n`Would'ya look after\n Marlene for a while\n longer?
 sleep 16
 step_npc 6623 1
 set_talk_npc 6623
-msg エルミナ\n「ああ　かまわないよ
+msg Elmyra\n`Uh-huh, no problem.
 reset_talk_npc
 step_npc 6621 2
 sleep 32
@@ -117,11 +117,11 @@ move_npc 6621 down 2
 sleep 32
 chg_npc_dir 6621 up
 jump_npc 6621 same 1
-msg バレット\n「それから　ここはきけんだ\n　どこかへ　うつったほうがいい
+msg Baret\n`And it's dangerous here.\n You'd better move.
 sleep 32
 step_npc 6623 2
 set_talk_npc 6623
-msg エルミナ\n「……そうだねえ\n　でも　かならずむかえにくるんだよ\n　しんじゃいけないよ
+msg Elmyra\n`==I suppose so. But you\n promise me that you'll\n come back for her. 
 reset_talk_npc
 sleep 16
 chg_speed 6622 normal
@@ -164,22 +164,22 @@ chg_npc_dir 6521 up
 chg_npc_dir 6522 up
 sleep 16
 step_npc 6522 2
-msg ティファ\n「しんらビルには　どうやって？
+msg Tifa\n`How do we get to the\n Shinra building?
 chg_npc_dir 6521 right
 sleep 16
 chg_speed 6521 slow
 step_npc 6521 1
-msg バレット\n「もう　うえにいく　れっしゃはつかえねえ…
+msg Baret\n`We can't use the\n train no more==
 chg_npc_dir 6522 left
 sleep 32
-msg ティファ\n「………
+msg Tifa\n`==
 sleep 32
 chg_npc_dir 6522 up
 sleep 16
 jump_npc 6522 same 1
 sleep 16
 step_npc 6522 2
-msg ティファ\n「とりあえず　[ウォールマーケット]に\n　いきましょう　あそこなら\n　いいてが　みつかるかもしれないわ
+msg Tifa\n`Let's go to Wall Market\n first. We may find\n something there.
 chg_npc_dir 6521 up
 sleep 16
 jump_char same 1
@@ -199,8 +199,8 @@ chg_speed 6722 normal
 chg_type 6623 npc
 chg_type 6722 npc
 set_flag_wall 6722
-chg_param 6623 エルミナ\n「かならずむかえにくるんだよ\n　しんじゃいけないよ
-chg_param 6722 マリン\n「とうちゃん　ティファ　クラウド！\n　ちゃ～んと　エアリスたすけてきてね
+chg_param 6623 Elmyra\n`You come back for her.\n Try to not get killed.
+chg_param 6722 Marlene\n`Daddee, Tifa, Cloud!\n You all help Aeris!
 create npc_event 8430 84 15 8 89 2 2 none
 create npc_event 8431 84 14 8 65 3 0 none
 create npc_event 8432 84 14 9 67 0 0 none

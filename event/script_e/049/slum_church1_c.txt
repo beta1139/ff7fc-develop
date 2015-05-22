@@ -1,7 +1,7 @@
 wait_same_pos
 msg3 -1 `Oh! He stirs!
 sleep 48
-set_text 6            {==Can you?
+set_text 6           {==Can you?
 sleep 8
 set_text_alpha 6 25
 sleep 8
@@ -44,7 +44,7 @@ fadein
 fi
 msg3 -1 `Hello?
 sleep 16
-set_text 6             {==I know
+set_text 6            {==I know
 sleep 8
 set_text_alpha 6 30
 sleep 8
@@ -62,7 +62,7 @@ fadeout
 erase_msg3
 sleep 48
 fadein
-set_text 6         {Hey==Who're you?
+set_text 6        {Hey==Who're you?
 sleep 8
 set_text_alpha 6 30
 sleep 8

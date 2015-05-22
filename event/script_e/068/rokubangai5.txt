@@ -22,7 +22,7 @@ reset_talk_npc
 chg_event_move_char_speed slow
 move_char down 1
 sleep 32
-msg {……The Ancients
+msg {==The Ancients
 flush
 sleep 4
 flush
@@ -47,7 +47,7 @@ play_se_loop wind_loop.ogg
 set_text_alpha 5 0
 set_text_alpha 6 0
 set_text 5   I'm of the Ancients' lineage
-set_text 6   The only heir to this planet!
+set_text 6  The only heir to this planet!
 loop 8
 sleep 1
 set_text_alpha 5 25
@@ -146,7 +146,7 @@ reset_screen_effect
 sleep 16
 step_char 1
 sleep 16
-msg {Sephiroth……?
+msg {Sephiroth==?
 flush
 play_se_loop beeeeep_fast.ogg
 chg_char_img_tmp 120

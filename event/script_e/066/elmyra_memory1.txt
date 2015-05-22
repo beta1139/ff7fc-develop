@@ -5,9 +5,9 @@ set_text_alpha 5 0
 set_text_alpha 6 0
 set_text_alpha 7 0
 sleep 8
-set_text 5 　　　　　　「あるひ　きゅうかで　かえってくるって
-set_text 6 　　　　　　　てがみをもらったから
-set_text 7 　　　　　　　わたしは　えきまで　むかえにいったのさ
+set_text 5  `One day I got a letter saying
+set_text 6 he'd be back on leave, so I went
+set_text 7    to meet him at the station
 include ./event/common/set_text/st05.txt
 include ./event/common/set_text/st06.txt
 include ./event/common/set_text/st07.txt

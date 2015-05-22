@@ -80,7 +80,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 16
-set_text 6           {What's 'it'?
+set_text 6          {What's `it'?
 sleep 8
 set_text_alpha 6 30
 sleep 8

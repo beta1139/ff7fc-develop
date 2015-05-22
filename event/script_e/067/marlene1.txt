@@ -1,5 +1,5 @@
 wait_same_pos
-msg3 -1 バレット\n「マリン……よかった……\n　ぶじでよかった……
+msg3 -1 Baret\n`Marlene==Thank God==\n How am I relieved==
 chg_npc_y_offset 6721 1
 sleep 4
 chg_npc_y_offset 6721 2
@@ -16,7 +16,7 @@ wait_key_push_edge a
 erase_msg3
 jump_npc 6722 same 1
 sleep 16
-msg3 -1 マリン\n「とうちゃん　ないちゃダメだよ\n　おヒゲ　いたいよ！
+msg3 -1 Marlene\n`Daddee, don't cry!\n Your beard stings!
 sleep 4
 chg_npc_y_offset 6722 -5
 sleep 4

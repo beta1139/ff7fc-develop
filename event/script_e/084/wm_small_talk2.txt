@@ -1,35 +1,35 @@
 step_npc 8412 2
 set_talk_npc 8412
-msg 「ここのゴミ\n　また　ふえてません？
+msg `Don't you think the garbage\n here have increased? 
 reset_talk_npc
 sleep 16
 step_npc 8411 4
-msg 「そうですわね\n\n\n\n　7ばんがいが　おちてきたときに\n　いろいろ　ふってきましたからね
+msg `Indeed it has.\n\n\n\n Many things came along\n when the plate fell down.
 sleep 16
 jump_npc 8412 same 1
 sleep 16
 set_active_msg 8412
 jump_npc 8412 same 1
 set_talk_npc 8412
-msg 「そうそう　それでですね\n　ぶきやの　ごしゅじん\n　ふってきたものを　あつめてたそうですよ
+msg `Yes. And I heard that the\n tank man has collected\n all that came down.
 reset_talk_npc
 sleep 16
 set_active_msg 8411
 jump_npc 8411 same 1
-msg 「まあ　そのせいでしょうね\n　あのごしゅじん　さいきん　あやしいらしいですよ
+msg `Oh. I heard something\n else about him, too.
 sleep 16
 step_npc 8412 2
 set_talk_npc 8412
-msg 「それって\n　コルネオさんの　おやしきの　よこての\n　プレートだんめんへ　よくでかけるって\n　はなしですよね？
+msg `Do you mean that he often\n visits the plate gap at\n the side of Mr.Corneo's\n residence?
 reset_talk_npc
 sleep 16
 set_active_msg 8411
 jump_npc 8411 same 1
-msg 「あら　よくごぞんじで！\n　でも　なにしてるんでしょうねえ？
+msg `So you knew it, too.\n Suspicious, isn't it?
 sleep 16
 step_npc 8412 2
 set_talk_npc 8412
-msg 「そうですよね　きみがわるいですわねえ
+msg `Indeed it is.
 reset_talk_npc
 set_inactive_msg 8411
 set_inactive_msg 8412

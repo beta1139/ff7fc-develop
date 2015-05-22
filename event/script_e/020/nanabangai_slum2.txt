@@ -16,7 +16,7 @@ jump_npc 2011 same 1
 sleep 16
 step_npc 2011 2
 set_talk_npc 2011
-msg Baret\n `Heh!\n You can't fool me.\n\n You know what I mean.
+msg Baret\n`Heh!\n You can't fool me.\n\n You know what I mean.
 reset_talk_npc
 fi
 if_flag 3 1

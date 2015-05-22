@@ -29,7 +29,7 @@ set_talk_npc 2606
 msg `Boo, hoo!!
 reset_talk_npc
 sleep 16
-msg {Now your gauge is full!\n Let your LIMIT Break go!!
+msg {Now your gauge is full!\n Go for it, let your\n LIMIT Break go!!
 sleep 16
 loop 2
 chg_npc_dir 2606 right

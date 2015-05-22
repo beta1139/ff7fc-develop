@@ -22,7 +22,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 56
-set_text 6        {==Can you hear me?
+set_text 6       {==Can you hear me?
 sleep 8
 set_text_alpha 6 25
 sleep 8
@@ -33,7 +33,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 48
-set_text 6              {==Yeah
+set_text 6             {==Yeah
 sleep 8
 set_text_alpha 6 30
 sleep 8
@@ -71,7 +71,7 @@ clear_text 6
 clear_text 7
 clear_text 8
 sleep 8
-set_text 6           {==That time?
+set_text 6          {==That time?
 sleep 8
 set_text_alpha 6 45
 sleep 8
@@ -101,7 +101,7 @@ set_text_alpha 7 0
 clear_text 6
 clear_text 7
 sleep 40
-set_text 6           {==That time?
+set_text 6          {==That time?
 set_text 7           ==This time?
 sleep 8
 set_text_alpha 6 30
@@ -123,7 +123,7 @@ set_text_alpha 6 0
 set_text_alpha 7 0
 clear_text 6
 sleep 8
-set_text 6           {==Never mind
+set_text 6          {==Never mind
 set_text 7         Just concentrate
 set_text 8           on your body
 sleep 4
@@ -146,7 +146,7 @@ clear_text 6
 clear_text 7
 clear_text 8
 sleep 8
-set_text 6        {==Can you move it?
+set_text 6       {==Can you move it?
 sleep 8
 set_text_alpha 6 25
 sleep 8
@@ -157,7 +157,7 @@ sleep 8
 set_text_alpha 6 0
 clear_text 6
 sleep 8
-set_text 6            {==I'll try
+set_text 6           {==I'll try
 sleep 4
 set_text_alpha 6 30
 sleep 4

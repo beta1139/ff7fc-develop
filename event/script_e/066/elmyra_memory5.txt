@@ -13,10 +13,10 @@ set_text_alpha 5 0
 set_text_alpha 6 0
 set_text_alpha 7 0
 sleep 8
-set_text 4 　　　　　　　　　　「エアリスは　すぐに
-set_text 5 　　　　　　　　　　　わたしになついてくれた
-set_text 6 　　　　　　　　　　　よくしゃべるこでねえ
-set_text 7 　　　　　　　　　　　いろいろ　はなしてくれたよ
+set_text 4        `Aeris took to me
+set_text 5            very soon.
+set_text 6        She talked a lot.
+set_text 7  Told me all manner of things.
 include ./event/common/set_text/st04.txt
 include ./event/common/set_text/st05.txt
 include ./event/common/set_text/st06.txt
@@ -74,7 +74,7 @@ chg_npc_img 6624 155
 sleep 8
 chg_npc_dir 6623 right
 sleep 16
-msg3 -1 エルミナ\n「どこかの　けんきゅうしつ　みたいな\n　ところから　ははおやと　にげだしたこと
+msg3 -1 Elmyra\n`That she escaped from\n some kind of laboratory\n with her mother,
 chg_speed 6623 slow
 move_npc 6623 right 2
 sleep 48
@@ -118,7 +118,7 @@ move_npc 6624 left 1
 sleep 8
 move_npc 6624 up 1
 sleep 8
-msg3 -1 エルミナ\n「おかあさんは　ほしにかえった　だけだから\n　さびしくなんかない……いろいろね
+msg3 -1 Elmyra\n`That her mother just went\n back to the planet so she\n wasn't lonely==and so on.
 move_npc 6624 right 1
 sleep 8
 jump_npc 6623 same 1
@@ -184,14 +184,14 @@ sleep 16
 jump_npc 6621 same 1
 sleep 16
 step_npc 6621 2
-msg バレット\n「ほしにかえっただって？
+msg Baret\n`Went back to the planet?
 sleep 16
 step_npc 6623 3
 set_talk_npc 6623
-msg エルミナ\n「わたしには　いみが　わからなかったよ\n　よぞらのほしか　ってきいたら\n　ちがう　このほしだって　いわれて……\n　まあ　いろんないみで　ふしぎな\n　こどもだったね
+msg Elmyra\n`Don't know what it means.\n When I asked if she meant\n some planets in the sky,\n She said no, it's this\n planet==well, she's been\n an odd kid in many ways.
 reset_talk_npc
 sleep 8
-msg エアリス\n「おかあさん
+msg Aeris\n`Mother,
 chg_npc_dir 6623 up
 move_char up 8
 sleep 128
@@ -211,15 +211,15 @@ chg_npc_dir 6624 down
 sleep 16
 step_npc 6624 1
 set_talk_npc 6624
-msg エアリス\n「なかないでね
+msg Aeris\n`Don't cry.
 reset_talk_npc
 clear_text 2
 clear_text 3
 set_text_alpha 2 0
 set_text_alpha 3 0
 sleep 8
-set_text 2 　　　　　　　「エアリスが　とつぜん　いいだした
-set_text 3 　　　　　　　　なにがあったのかって　きいたら……
+set_text 2    `She suddenly said to me.
+set_text 3   I asked what happened, and==
 include ./event/common/set_text/st02.txt
 include ./event/common/set_text/st03.txt
 wait_key_push_edge a
@@ -229,13 +229,13 @@ clear_text 2
 clear_text 3
 sleep 32
 step_npc 6624 2
-msg エアリス\n「おかあさんの　たいせつな　ひとが\n　しんじゃったよ\n\n　こころだけになって　おかあさんに\n　あいにきたけど\n　でも　ほしにかえってしまったの
+msg Aeris\n`Someone very important\n to you has died.\n\n His soul has been here\n to see you, but now he's\n gone back to the planet.
 clear_text 5
 set_text_alpha 2 0
 set_text_alpha 5 0
 sleep 8
-set_text 2 　　　　　　　　　「わたしは　しんじなかった
-set_text 5 　　　　　　　　　　　　　「でも…
+set_text 2    `I didn't believe it then.
+set_text 5              `But==
 include ./event/common/set_text/st02.txt
 wait_key_push_edge a
 set_text_alpha 2 0
@@ -257,9 +257,9 @@ clear_text 3
 set_text_alpha 2 0
 set_text_alpha 3 0
 sleep 8
-set_text 1 　　　　　　　「それから　なんにちか　して…
-set_text 2 　　　　　　　　おっとが　せんしした　というしらせが…
-set_text 3 　　　　　　　　とどいたんだ…
+set_text 1       `A few days later==
+set_text 2    I got a notice saying that
+set_text 3    he was killed in action==
 include ./event/common/set_text/st01.txt
 include ./event/common/set_text/st02.txt
 include ./event/common/set_text/st03.txt
@@ -275,7 +275,7 @@ sleep 128
 clear_text 5
 set_text_alpha 5 0
 sleep 8
-set_text 5 　　　　　　　　「……とまあ　こんなぐあいでね
+set_text 5    `==that's how it was like.
 include ./event/common/set_text/st05.txt
 wait_key_push_edge a
 set_text_alpha 5 0
@@ -285,9 +285,9 @@ set_text_alpha 4 0
 set_text_alpha 5 0
 set_text_alpha 6 0
 sleep 8
-set_text 5 　　　　　　　　　「いろいろあったけど
-set_text 6 　　　　　　　　　　わたしたちは　しあわせだった
-set_text 7 　　　　　　　　　　ところが　あるひ……
+set_text 5   `There were some hard times
+set_text 6     but we were doing okay.
+set_text 7          Then one day==
 include ./event/common/set_text/st05.txt
 include ./event/common/set_text/st06.txt
 include ./event/common/set_text/st07.txt
@@ -307,22 +307,22 @@ set_npc_pos 6623 66 11 8
 chg_npc_dir 6623 down
 sleep 144
 step_npc 6626 2
-msg ツォン\n「エアリスを　かえしてほしいのです\n　ずいぶん　さがしました
+msg Tseng\n`We want Aeris back.\n It wasn't easy to find\n her here.
 set_active_msg 6624
 chg_speed 6624 fast
 jump_npc 6624 same 2
 sleep 32
 step_npc 6624 3
-msg エアリス\n「いやっ！\n　ぜったい　いやっ！
+msg Aeris\n`No!\n Never!
 jump_npc 6626 same 1
 sleep 16
 step_npc 6626 2
-msg ツォン\n「エアリス　きみは　たいせつなこどもなんだ\n　きみは　とくべつな　ちをひいている\n\n　きみの　ほんとうの　おかあさんのち\n　『こだいしゅ』のちだ
+msg Tseng\n`Aeris, you are a precious\n child. You have special\n blood flowing in you.\n Your real mother's blood,\n the Ancients' blood.
 chg_event_move_char_speed normal
 move_char up 3
 sleep 48
-set_text 2 　　　　　　　　　「もちろんきいたよ
-set_text 3 　　　　　　　　　　『こだいしゅ』ってなんだってね
+set_text 2        `Of course I asked
+set_text 3      What is the Ancients?
 include ./event/common/set_text/st02.txt
 include ./event/common/set_text/st03.txt
 wait_key_push_edge a
@@ -333,7 +333,7 @@ clear_text 3
 move_char down 3
 sleep 48
 step_npc 6626 4
-msg ツォン\n「こだいしゅは　しじょうの　こうふくが\n　やくそくされた　とちへ\n　われわれを　みちびいてくれるのです\n　エアリスは　このまずしいスラムの　ひとびとに\n　こうふくを　あたえることができるのです\n\n\n　ですから　われわれ　しんらカンパニーは\n　ぜひとも　エアリスのきょうりょくを……
+msg Tseng\n`The Ancients will lead\n the mankind to the\n promised land,\n Where all the poor people\n in these slums can have\n blissful existence.\n\n With Aeris' cooperation\n to us Shinra Company==
 move_npc 6624 right 1
 sleep 8
 move_npc 6624 down 2
@@ -346,11 +346,11 @@ jump_npc 6624 same 1
 sleep 16
 step_npc 6624 4
 sleep 24
-msg エアリス\n「ちがうもん！\n　エアリス　こだいしゅなんかじゃ　ないもん！
+msg Aeris\n`Am not!\n I'm no Ancien!
 sleep 16
 set_active_msg 6626
 jump_npc 6626 same 1
-msg ツォン\n「でも　エアリス　きみはときどき\n　だれもいないのに　こえが\n　きこえることがあるだろ？
+msg Tseng\n`But, Aeris, you sometimes\n hear voices when there is\n nobody, don't you?
 sleep 16
 loop 3
 chg_npc_dir 6624 right
@@ -360,7 +360,7 @@ sleep 4
 pool
 chg_npc_dir 6624 down
 step_npc 6624 3
-msg エアリス\n「そんなことないもん！
+msg Aeris\n`Not true!
 move_npc 6624 left 1
 sleep 8
 chg_npc_dir 6626 left
@@ -377,8 +377,8 @@ move_char down 13
 sleep 208
 set_text_alpha 5 0
 set_text_alpha 6 0
-set_text 5 　　　　　　　　「でも　わたしにはわかっていた
-set_text 6 　　　　　　　　　あのこの　ふしぎなちから……
+set_text 5        `But I knew about
+set_text 6        her eerie powers==
 include ./event/common/set_text/st05.txt
 include ./event/common/set_text/st06.txt
 wait_key_push_edge a
@@ -389,9 +389,9 @@ clear_text 5
 clear_text 6
 clear_text 7
 sleep 8
-set_text 5 　　　　　「いっしょうけんめい　かくそうとしていたから
-set_text 6 　　　　　　わたしは　きがつかないふりを
-set_text 7 　　　　　　していたけどね
+set_text 5  `Which she was trying so hard
+set_text 6      to hide and so I kept
+set_text 7     pretending to not notice
 include ./event/common/set_text/st05.txt
 include ./event/common/set_text/st06.txt
 include ./event/common/set_text/st07.txt

@@ -11,12 +11,12 @@ if_flag_lesser 9 3
 msg `All my materias\n are good quality!
 fi
 if_flag_greater 9 2
-msg 「こんなところにすんでたら\n　いのちが　いくつあっても　たりないぜ！
+msg `I'd be dead in no time\n if I stayed here!
 chg_speed 6023 fast
 jump_npc 6023 same 1
 sleep 16
 step_npc 6023 2
-msg 「さ　マテリアかってくれマテリア！\n　かねをつくって　ここから　にげだすんだ！
+msg `Now you buy my materias!\n Gotta make some money\n and get away from here.
 fi
 reset_talk_npc
 open_materia_shop 4003/4004/4005/4000

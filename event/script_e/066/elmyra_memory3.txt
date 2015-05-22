@@ -9,7 +9,7 @@ loop 18
 dec_screen_effect_val 1
 sleep 1
 pool
-set_text 5 　　　　　　　　　おっとは　かえってこなかった
+set_text 5       He didn't come back
 loop 4
 sleep 1
 dec_screen_effect_val 1
@@ -50,29 +50,40 @@ set_text_alpha 5 25
 sleep 16
 set_text_alpha 5 0
 sleep 16
+clear_text 4
 clear_text 5
 loop 4
+set_text_alpha 4 0
 set_text_alpha 5 0
 if_flag 10 0
-set_text 5 　　　　　　おっとの　みに　なにかあったんだろうか？
+set_text 4      Did something terrible
+set_text 5          happen to him?
 fi
 if_flag 10 1
-set_text 5 　　　いや　きゅうかが　とりけしになった　だけかもしれない
+set_text 4      No, maybe it was just
+set_text 5    the leave being cancelled
 fi
 if_flag 10 2
-set_text 5 　　　　　それから　わたしは　まいにち　えきへいったんだ
+set_text 4      After that, I went to
+set_text 5      the station every day
 fi
 if_flag 10 3
-set_text 5 　　　　　　　　　　　　　あるひ……
+set_text 4 
+set_text 5            One day==
 fi
+include ./event/common/set_text/st04.txt
 include ./event/common/set_text/st05.txt
 wait_key_push_edge a
+set_text_alpha 4 50
 set_text_alpha 5 50
 sleep 16
+set_text_alpha 4 25
 set_text_alpha 5 25
 sleep 16
+set_text_alpha 4 0
 set_text_alpha 5 0
 sleep 16
+clear_text 4
 clear_text 5
 add_flag 10 1
 pool

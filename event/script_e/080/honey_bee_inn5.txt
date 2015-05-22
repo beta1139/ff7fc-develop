@@ -67,7 +67,7 @@ flush
 set_text_alpha 5 0
 clear_text 5
 sleep 144
-set_text 5        ==The wind ceased==
+set_text 5       ==The wind ceased==
 sleep 8
 set_text_alpha 5 30
 sleep 8
@@ -114,7 +114,7 @@ clear_text 5
 sleep 64
 play_se thunder.wav
 flush
-set_text 5        The time has come==
+set_text 5       The time has come==
 sleep 8
 flush
 set_text_alpha 5 30
@@ -132,7 +132,7 @@ clear_text 5
 sleep 64
 play_se magic_attack.wav
 flush
-set_text 5   "==The legend passed down=="
+set_text 5   `==The legend passed down=='
 sleep 8
 flush
 set_text_alpha 5 30
@@ -173,7 +173,7 @@ set_text_alpha 12 50
 sleep 64
 play_se thunder.wav
 flush
-set_text 5   "==The legend passed down=="
+set_text 5   `==The legend passed down=='
 sleep 8
 flush
 set_text_alpha 5 30
@@ -193,7 +193,7 @@ play_se magic_attack.wav
 flush
 step_npc 70611 2
 msg3 -1 `(It's some misfortune\n to have a foolish boss)
-set_text 6    ==Seeks the Promised Land==
+set_text 6   ==Seeks the Promised Land==
 sleep 8
 flush
 set_text_alpha 6 30
@@ -214,7 +214,7 @@ play_se magic_attack.wav
 flush
 step_npc 70611 2
 msg3 -1 `(It's every time he comes\n to Midgar. All this long\n way from Gold Saucer==)
-set_text 6     ==The one with blue eyes==
+set_text 6    ==The one with blue eyes==
 sleep 8
 flush
 set_text_alpha 6 30
@@ -236,7 +236,7 @@ flush
 chg_speed 70610 fast
 step_npc 70610 3
 msg3 -1 `(You got the better deal\n being a light man.\n You look at this armor!\n It's heavy as anything.)
-set_text 6     ==Broadsword on his back==
+set_text 6    ==Broadsword on his back==
 sleep 8
 flush
 set_text_alpha 6 30
@@ -257,7 +257,7 @@ play_se thunder.wav
 flush
 step_npc 70611 2
 msg3 -1 `(Yeah, yeah==\n A job is a job)
-set_text 6      ==to the Promised Land==
+set_text 6     ==to the Promised Land==
 sleep 8
 flush
 set_text_alpha 6 30

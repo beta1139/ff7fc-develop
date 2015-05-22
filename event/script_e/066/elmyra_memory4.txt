@@ -81,26 +81,36 @@ loop 20
 inc_screen_effect_val 1
 sleep 1
 pool
+clear_text 1
 clear_text 2
 loop 3
+set_text_alpha 1 0
 set_text_alpha 2 0
 if_flag 10 0
-set_text 2 　　　　　せんそうちゅうは　よくある　こうけいだったね
+set_text 1       Such things happened
+set_text 2     everyday during the war
 fi
 if_flag 10 1
-set_text 2 　　　　　　　　エアリスを　あんぜんなところへ
+set_text 1 
+set_text 2   `Take Aeris to a safe place'
 fi
 if_flag 10 2
-set_text 2 　　　　　　……そう　いいのこして　かのじょはしんだ
+set_text 1 
+set_text 2    ==That was her last words
 fi
+include ./event/common/set_text/st01.txt
 include ./event/common/set_text/st02.txt
 wait_key_push_edge a
+set_text_alpha 1 50
 set_text_alpha 2 50
 sleep 16
+set_text_alpha 1 25
 set_text_alpha 2 25
 sleep 16
+set_text_alpha 1 0
 set_text_alpha 2 0
 sleep 16
+clear_text 1
 clear_text 2
 add_flag 10 1
 pool
@@ -117,9 +127,9 @@ set_text_alpha 5 0
 set_text_alpha 6 0
 set_text_alpha 7 0
 sleep 8
-set_text 5 　　　　　　わたしのおっとは　かえらず　こどももいない
-set_text 6 　　　　　　　　　わたしも　さびしかったんだろうね
-set_text 7 　　　　　エアリスをいえに　つれてかえることに　したんだ
+set_text 5      Without my husband and
+set_text 6    having no kids of my own,
+set_text 7     I took her home with me
 include ./event/common/set_text/st05.txt
 include ./event/common/set_text/st06.txt
 include ./event/common/set_text/st07.txt
