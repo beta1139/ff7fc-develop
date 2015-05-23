@@ -1,5 +1,0 @@
-wait_same_pos
-kill_through_range 8460 8462
-create npc_event 8420 84 10 16 0 0 2 none
-set_flag 10 0
-create event_generator 8463 84 12 16 17 0 0 @084/wire1_common.txt

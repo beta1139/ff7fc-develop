@@ -85,13 +85,13 @@ warp 708 0 0 up
 sleep 8
 set_screen_effect sub 255 255 0 60
 sleep 8
-warp 106 23 9 up
+warp 105 23 9 up
 sleep 16
 play_se_loop helicopter.ogg
-slide_walk_npc 10650 left 31
-slide_walk_npc 10651 left 31
-slide_walk_npc 10652 left 31
-slide_walk_npc 10653 left 31
+slide_walk_npc 10550 left 31
+slide_walk_npc 10551 left 31
+slide_walk_npc 10552 left 31
+slide_walk_npc 10553 left 31
 sleep 8
 loop 4
 dec_screen_effect_val 15
@@ -108,17 +108,17 @@ dec_screen_effect_val 1
 sleep 1
 pool
 reset_screen_effect
-create effect 10660 106 0 0 0 0 64 6
+create effect 10560 105 0 0 0 0 64 6
 sleep 176
 chg_event_move_char_speed normal
 move_char up 3
 sleep 24
-kill_through 10660
+kill_through 10560
 reset_screen_effect
 sleep 8
 set_screen_effect sub 255 255 0 0
-slide_walk_npc 10654 right 15
-slide_walk_npc 10655 right 15
+slide_walk_npc 10554 right 15
+slide_walk_npc 10555 right 15
 loop 40
 inc_screen_effect_val 1
 sleep 1
@@ -136,8 +136,8 @@ loop 40
 inc_screen_effect_val 1
 sleep 1
 pool
-step_npc 10654 15
-step_npc 10655 15
+step_npc 10554 15
+step_npc 10555 15
 loop 40
 dec_screen_effect_val 1
 sleep 1

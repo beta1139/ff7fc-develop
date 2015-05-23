@@ -1,0 +1,12 @@
+wait_same_pos
+kill_through_range 8460 8462
+if_flag 80 1
+chg_char_img_tmp 157
+chg_char_state_move
+loop_inf
+sleep 160
+pool
+fi
+create npc_event 8420 84 10 16 0 0 2 none
+set_flag 10 0
+create event_generator 8463 84 12 16 17 0 0 @084/plate_section1_common.txt

@@ -1,0 +1,12 @@
+wait_same_pos
+chg_char_img_tmp 157
+kill_through_range 8932 8937
+kill_through 10301
+warp_ff3_2 89 12 8 3 up
+sleep 8
+create event_generator 8935 89 12 12 17 0 0 @089/plate_section_warp2_a.txt
+create event_generator 8932 89 12 7 17 0 0 @089/plate_section_warp1_a.txt
+chg_char_state_move
+loop_inf
+sleep 160
+pool

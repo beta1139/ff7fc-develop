@@ -27,7 +27,7 @@ flush
 sleep 4
 flush
 sleep 6
-play_se wind_start.ogg
+play_se_loop wind.ogg
 set_screen_effect add 255 255 255 0
 loop 50
 inc_screen_effect_val 2
@@ -43,7 +43,6 @@ pool
 clear_text 5
 clear_text 6
 sleep 11
-play_se_loop wind_loop.ogg
 set_text_alpha 5 0
 set_text_alpha 6 0
 set_text 5   I'm of the Ancients' lineage

@@ -1,0 +1,79 @@
+set_eternal_event
+wait_talk
+if_flag_greater 23 0
+end
+fi
+include ./event/script/103/battery_msg.txt
+if_flag 23 0
+if_owned_item 1084
+step_char 2
+sleep 32
+kill 10340
+play_se door_open2.ogg
+sleep 16
+play_se button.ogg
+create npc_event 10390 103 22 33 0 1 2 none
+draw_char off
+loop 4
+set_gray_scale
+sleep 2
+reset_gray_scale
+sleep 2
+pool
+sleep 8
+chg_npc_dir 10390 up
+move_char up 2
+sleep 32
+move_char left 2
+sleep 32
+play_se machine.wav
+kill_through_range 10356 10358
+loop 2
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+sleep 16
+play_se machine.wav
+kill_through_range 10353 10355
+loop 2
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+sleep 16
+play_se machine.wav
+kill_through_range 10350 10352
+loop 2
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+sleep 16
+move_char right 2
+sleep 32
+move_char down 2
+sleep 32
+chg_char_dir up
+draw_char on
+kill 10390
+set_flag 23 1
+del_item 1084
+create event_generator 10374 103 13 25 17 0 0 @103/plate_section_jump5.txt
+fi
+fi

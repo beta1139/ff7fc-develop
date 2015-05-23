@@ -1,0 +1,116 @@
+wait_target_talk 10332
+reset_talk_flag 10332
+kill_through 10342
+erase_msg3
+play_se jump.wav
+set_flag 14 1
+set_flag 15 1
+jump_char right 2
+jump_npc 10390 right 2
+sleep 16
+chg_npc_dir 10390 left
+chg_npc_img 10390 115
+sleep 12
+play_se squat.ogg
+sleep 4
+chg_npc_dir 10390 up
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+set_flag 14 0
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+if_flag 19 0
+loop_inf
+sleep 1
+if_flag 19 1
+move_char right 6
+slide_npc 10390 right 6
+sleep 96
+jump_char right 1
+jump_npc 10390 right 1
+play_se jump.wav
+sleep 8
+chg_char_dir right
+chg_npc_dir 10390 right
+sleep 8
+chg_npc_img 10390 0
+play_se landing.wav
+move_char down 4
+sleep 8
+jump_npc 10390 same 1
+sleep 4
+chg_npc_dir 10390 down
+sleep 4
+chg_npc_dir 10390 left
+sleep 4
+chg_npc_dir 10390 up
+sleep 12
+kill_through_range 10343 10345
+kill_through_range 10332 10333
+sleep 32
+chg_char_dir up
+draw_char on
+kill 10390
+create event_generator 10342 103 17 18 17 0 0 @103/gimmick_start.txt
+set_key_valid b
+set_key_valid start
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_flag 15 0
+set_flag 16 0
+set_flag 18 0
+pool
+end
+fi
+fi
+if_flag 19 1
+move_char right 6
+slide_npc 10390 right 6
+sleep 96
+jump_char right 1
+jump_npc 10390 right 1
+play_se jump.wav
+sleep 8
+chg_char_dir right
+chg_npc_dir 10390 right
+sleep 8
+chg_npc_img 10390 0
+play_se landing.wav
+move_char down 4
+sleep 8
+jump_npc 10390 same 1
+sleep 4
+chg_npc_dir 10390 down
+sleep 4
+chg_npc_dir 10390 left
+sleep 4
+chg_npc_dir 10390 up
+sleep 12
+kill_through_range 10343 10345
+kill_through_range 10332 10333
+sleep 32
+chg_char_dir up
+draw_char on
+kill 10390
+create event_generator 10342 103 17 18 17 0 0 @103/gimmick_start.txt
+set_key_valid b
+set_key_valid start
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_flag 15 0
+set_flag 16 0
+set_flag 18 0
+set_flag 19 0
+fi

@@ -1,0 +1,26 @@
+set_eternal_event
+wait_talk
+kill_through_range 8930 8933
+kill_through 8980
+set_flag 0 4
+set_flag 17 0
+play_se jump.wav
+chg_char_img_tmp 0
+jump_char up 1
+sleep 8
+chg_char_img_tmp 157
+sleep 8
+play_se landing.wav
+move_char up 1
+sleep 16
+include ./event/common/key_climb.txt
+disable_char_chg
+if_flag 11 0
+create event_generator 8931 89 12 28 17 0 0 @089/plate_section_children.txt
+fi
+create event_generator 8932 89 12 7 17 0 0 @089/plate_section_warp1_a.txt
+create event_generator 8938 89 12 48 17 0 0 @089/plate_section_jump2.txt
+chg_char_state_move
+loop_inf
+sleep 160
+pool

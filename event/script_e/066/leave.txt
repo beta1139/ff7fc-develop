@@ -189,23 +189,4 @@ sleep 16
 chg_speed 6521 normal
 move_npc 6521 right 1
 move_npc 6522 left 1
-sleep 16
-kill 6521
-kill 6522
-kill_through 6710
-kill_through 6721
-set_npc_pos 6722 67 9 15
-chg_speed 6722 normal
-chg_type 6623 npc
-chg_type 6722 npc
-set_flag_wall 6722
-chg_param 6623 Elmyra\n`You come back for her.\n Try to not get killed.
-chg_param 6722 Marlene\n`Daddee, Tifa, Cloud!\n You all help Aeris!
-create npc_event 8430 84 15 8 89 2 2 none
-create npc_event 8431 84 14 8 65 3 0 none
-create npc_event 8432 84 14 9 67 0 0 none
-create event_generator 8460 84 10 16 17 0 0 @084/wire1_1.txt
-create event_generator 8461 84 11 16 17 0 0 @084/wire1_2.txt
-create event_generator 8462 84 12 16 17 0 0 @084/wire1_3.txt
-add_party_mem 2
-add_party_mem 1
+include ./event/common/act/act1-7_4e.txt

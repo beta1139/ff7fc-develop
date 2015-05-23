@@ -1,0 +1,15 @@
+if_flag 23 0
+msg 『……バッテリーをはめれば
+if_not_owned_item 1084
+chg_char_dir left
+sleep 32
+msg3 -1 『どこかが　うごきそうだな
+chg_char_dir up
+sleep 8
+wait_key_push_edge a
+erase_msg3
+fi
+fi
+if_flag_greater 23 0
+msg 『ここにもバッテリーが　ひつようだな
+fi

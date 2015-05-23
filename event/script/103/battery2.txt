@@ -1,0 +1,28 @@
+set_eternal_event
+wait_talk
+if_flag 23 3
+end
+fi
+include ./event/script/103/battery_msg.txt
+if_not_owned_item 1084
+fi
+if_owned_item 1084
+if_flag_greater 23 1
+fi
+if_flag_lesser 23 2
+set_key_unvalid b
+set_key_unvalid start
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+step_char 2
+sleep 32
+kill 10341
+play_se door_open2.ogg
+set_flag 23 2
+del_item 1084
+sleep 16
+create event_generator 10342 103 17 18 17 0 0 @103/gimmick_start.txt
+fi
+fi

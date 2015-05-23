@@ -1,0 +1,42 @@
+wait_talk
+play_se jump.wav
+if_char_dir left
+jump_char left 1
+fi
+if_char_dir right
+jump_char right 1
+fi
+if_char_dir up
+jump_char up 1
+fi
+if_char_dir down
+jump_char down 1
+fi
+sleep 8
+chg_char_img_tmp 157
+sleep 8
+kill_through_range 10320 10326
+kill_through_range 10420 10426
+play_se landing.wav
+if_char_dir up
+move_char up 1
+fi
+if_char_dir down
+move_char down 1
+fi
+if_char_dir left
+move_char up 1
+fi
+if_char_dir right
+move_char up 1
+fi
+include ./event/common/key_climb.txt
+if_flag 23 3
+set_npc_pos 10476 104 11 30
+set_npc_pos 10477 104 13 30
+fi
+sleep 16
+chg_char_state_move
+loop_inf
+sleep 160
+pool

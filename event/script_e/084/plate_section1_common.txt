@@ -1,0 +1,80 @@
+draw_char off
+move_char up 9
+jump_npc 8430 same 1
+msg3 -1 `You should see this!\n It's awesome.
+sleep 16
+jump_npc 8430 same 1
+sleep 16
+step_npc 8430 3
+sleep 48
+jump_npc 8431 same 1
+jump_npc 8432 same 1
+sleep 16
+jump_npc 8431 same 1
+jump_npc 8432 same 1
+sleep 16
+jump_npc 8430 same 2
+loop 2
+chg_npc_dir 8430 up
+sleep 4
+chg_npc_dir 8430 right
+sleep 4
+chg_npc_dir 8430 down
+sleep 4
+chg_npc_dir 8430 left
+sleep 4
+pool
+chg_speed 8430 fast
+move_npc 8430 right 10
+jump_npc 8431 same 1
+sleep 16
+chg_speed 8431 fast
+move_npc 8431 right 11
+jump_npc 8432 same 1
+sleep 16
+chg_speed 8432 fast
+move_npc 8432 up 1
+sleep 8
+move_npc 8432 right 11
+sleep 40
+move_char down 9
+kill 8430
+sleep 24
+kill 8431
+sleep 24
+kill 8432
+chg_npc_dir 8420 down
+sleep 32
+if_flag 10 0
+create npc_event 8423 84 10 15 156 0 2 none
+fi
+if_flag 10 1
+create npc_event 8423 84 11 15 156 0 2 none
+fi
+if_flag 10 2
+create npc_event 8423 84 12 15 156 0 2 none
+fi
+step_npc 8423 4
+sleep 64
+wait_key_push_edge a
+kill 8423
+erase_msg3
+reset_talked_flag 8911
+sleep 16
+draw_char on
+kill 8420
+chg_char_dir up
+set_flag 10 0
+chg_type 8911 npc
+chg_npc_img 8911 67
+set_npc_pos 8911 89 12 49
+create map_obj 8950 89 12 48 59 0 0 
+create map_obj 8951 89 12 47 59 0 0 
+create map_obj 8952 89 12 46 59 0 0 
+create map_obj 8953 89 12 45 59 0 0 
+create map_obj 8954 89 12 44 59 0 0 
+create map_obj 8955 89 12 43 59 0 0 
+create map_obj 8956 89 12 42 59 0 0 
+create map_obj 8957 89 12 41 59 0 0 
+create map_obj 8958 89 12 40 59 0 0 
+create event_generator 8900 89 0 0 17 0 0 @089/plate_section2.txt

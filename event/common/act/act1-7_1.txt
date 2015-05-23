@@ -42,7 +42,7 @@ kill_through_range 9431 9529
 kill_through_range 9531 9549
 kill_through_range 9551 9599
 kill_through_range 9600 10299
-kill_through_range 10650 10655
+kill_through_range 10550 10555
 kill_through_range 70200 71199
 reset_talk_flag 8709
 reset_talked_flag 6322

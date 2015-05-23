@@ -1,0 +1,20 @@
+wait_same_pos
+chg_char_img_tmp 157
+kill_through 8930
+set_flag 11 1
+jump_npc 8912 same 1
+sleep 16
+jump_npc 8912 same 1
+sleep 16
+msg 「うわ～！\n　すげ～　ヒサン……
+jump_npc 8913 same 1
+sleep 16
+jump_npc 8913 same 1
+sleep 16
+jump_npc 8913 same 1
+sleep 16
+msg 「な　こえ～だろ？\n　とうちゃんは　『しんら』ってやつの\n　しわざだっていってたよ
+chg_char_state_move
+loop_inf
+sleep 160
+pool

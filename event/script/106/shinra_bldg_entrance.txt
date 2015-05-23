@@ -1,0 +1,176 @@
+wait_same_pos
+stop_se
+chg_event_move_char_speed normal
+create npc_event 10600 106 16 29 0 0 2 none
+sleep 32
+include ./event/common/effect_fadein.txt
+reset_screen_effect
+move_npc 10600 up 8
+sleep 96
+create npc_event 10601 106 17 29 1 0 2 none
+create npc_event 10602 106 15 29 2 0 2 none
+move_npc 10601 up 6
+move_npc 10602 up 6
+sleep 32
+chg_npc_dir 10600 down
+sleep 64
+step_npc 10600 2
+sleep 64
+step_npc 10601 2
+step_npc 10602 2
+sleep 64
+chg_npc_dir 10600 up
+sleep 32
+set_active_msg 10601
+move_npc 10600 up 7
+move_npc 10601 up 6
+move_npc 10602 up 8
+move_char up 7
+sleep 96
+jump_npc 10601 same 1
+msg3 -1 バレット\n「おい　このビルには\n　くわしいんだろ？
+sleep 32
+wait_key_push_edge a
+erase_msg3
+include ./event/common/key_unvaild.txt
+set_flag 14 0
+set_flag 15 0
+set_flag 16 0
+set_flag 18 0
+set_flag 19 0
+sleep 16
+chg_npc_dir 10600 down
+sleep 16
+step_npc 10600 1
+msg 『……しらない\n　そういえば　ほんしゃに　くるのは\n　はじめてだ
+move_npc 10601 up 2
+sleep 32
+chg_npc_dir 10602 right
+jump_npc 10601 same 1
+sleep 16
+jump_npc 10601 same 1
+sleep 16
+create event_generator 10621 106 0 0 17 0 0 @106/shinra_bldg_entrance_exp.txt
+chg_char_state_move
+step_npc 10601 3
+msg バレット\n「まえに　きいたことがあるぜ\n\n\n　このビルの　60かいから　うえは\n　とくべつブロックとかで\n　しゃいんでも　かんたんには　はいれないってな\n\n　エアリスがつれて\n　いかれたのも　そこにちがいねえ\n\n\n　いまなら　けいびにもスキがある\n　おおし　いくぜっ！！
+wait_event_invalid 10621
+jump_npc 10601 same 1
+loop 2
+sleep 2
+chg_npc_dir 10601 right
+sleep 2
+chg_npc_dir 10601 down
+sleep 2
+chg_npc_dir 10601 left
+sleep 2
+pool
+chg_npc_dir 10601 up
+move_char up 3
+move_npc 10601 up 3
+sleep 8
+chg_npc_dir 10602 up
+sleep 8
+chg_npc_dir 10600 up
+set_active_msg 10602
+msg3 -1 ティファ\n「ちょっとまってよ！\n　まさか　しょうめんから　のりこむつもり？
+chg_speed 10602 fast
+move_npc 10602 up 2
+sleep 16
+jump_npc 10602 same 1
+sleep 16
+step_npc 10602 2
+wait_key_push_edge a
+erase_msg3
+chg_npc_img 10601 95
+jump_npc 10601 same 1
+sleep 16
+jump_npc 10601 same 1
+sleep 16
+chg_npc_dir 10601 down
+chg_speed 10601 fast
+step_npc 10601 4
+msg3 -1 バレット\n「きまってるだろ！\n　しんらのやつらを　けちらして……
+sleep 32
+chg_npc_dir 10601 up
+wait_key_push_edge a
+erase_msg3
+jump_npc 10602 same 1
+sleep 16
+step_npc 10602 3
+msg ティファ\n「そんなのムチャよ！\n　もっとみつかりにくい　ほうほうを……
+chg_npc_dir 10601 down
+step_npc 10601 4
+sleep 32
+chg_npc_dir 10601 up
+jump_npc 10601 same 2
+sleep 32
+step_npc 10601 4
+msg バレット\n「そんなコトやってられねえ！\n　グズグズしてたら\n　エアリスだって……
+jump_npc 10601 same 1
+sleep 16
+jump_npc 10601 same 1
+jump_npc 10602 same 1
+sleep 16
+chg_speed 10602 normal
+step_npc 10602 2
+msg ティファ\n「それはわかるけど！\n　ここでわたしたちまで　つかまったら……
+sleep 8
+chg_npc_dir 10601 left
+chg_npc_img 10601 116
+sleep 6
+chg_npc_dir 10601 right
+sleep 8
+chg_npc_dir 10601 up
+chg_npc_img 10601 1
+sleep 16
+chg_npc_dir 10602 down
+sleep 8
+jump_npc 10602 same 1
+chg_char_state_event
+sleep 16
+include ./event/common/key_vaild.txt
+step_npc 10602 2
+msg ティファ\n「ね　クラウド！\n　……どうしたらいいの？\n\n#2\n　　つっこむぞ！\n　　コッソリいこう\n\n\n[[]][[]]
+sleep 16
+if_flag 3 0
+set_flag 14 1
+chg_npc_dir 10601 left
+chg_npc_img 10601 98
+include ./event/common/key_unvaild.txt
+sleep 16
+chg_char_state_move
+chg_speed 10601 slow
+step_npc 10601 2
+create event_generator 10621 106 0 0 17 0 0 @106/shinra_bldg_entrance_exp.txt
+msg バレット\n「そうこなくっちゃな！\n\n\n　おおし　いくぜっ！！
+fi
+if_flag 3 1
+set_flag 14 2
+jump_npc 10602 same 1
+include ./event/common/key_unvaild.txt
+sleep 16
+chg_char_state_move
+chg_npc_dir 10601 left
+chg_npc_img 10601 98
+step_npc 10602 2
+create event_generator 10621 106 0 0 17 0 0 @106/shinra_bldg_entrance_exp.txt
+msg ティファ\n「でしょ？\n\n\n　こんなときこそ　しんちょうに\n　ほかのルートをさがしましょ！
+fi
+wait_event_invalid 10621
+chg_char_state_event
+set_ignore_map_layer_flag 10600 1
+set_layer 10600 front
+move_npc 10600 up 1
+sleep 8
+chg_npc_dir 10602 right
+sleep 8
+move_char down 2
+chg_speed 10601 normal
+chg_npc_img 10601 1
+move_npc 10601 down 1
+move_npc 10602 right 1
+sleep 16
+move_npc 10601 left 1
+include ./event/common/act/act1-8_1.txt
+include ./event/common/key_vaild.txt

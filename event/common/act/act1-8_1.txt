@@ -1,0 +1,71 @@
+kill_through_range 8460 8465
+kill_through_range 8430 8432
+kill_through_range 8603 8604
+kill_through_range 8912 8913
+kill_through 8938
+kill_through_range 8950 8958
+kill_through 10300
+kill_through_range 10340 10342
+kill_through 10374
+kill_through_range 10350 10358
+if_flag 23 3
+kill_through 10440
+kill_through_range 10450 10451
+fi
+if_flag_lesser 23 3
+set_flag 23 2
+add_item 1084
+fi
+sleep 16
+chg_char_dir up
+draw_char on
+kill_through_range 10600 10602
+create event_generator 8464 84 24 8 17 0 0 @084/plate_section_create_bgm.txt
+create event_generator 8465 84 24 9 17 0 0 @084/plate_section_create_bgm.txt
+chg_npc_img 8911 67
+set_npc_pos 8911 89 13 49
+chg_npc_dir 8911 left
+chg_type 8911 npc
+create npc_event 8912 89 10 23 65 0 0 none
+create npc_event 8913 89 14 23 89 0 0 none
+create event_generator 8938 89 12 48 17 0 0 @089/plate_section_jump2.txt
+create map_obj 8950 89 12 48 59 0 0 
+create map_obj 8951 89 12 47 59 0 0 
+create map_obj 8952 89 12 46 59 0 0 
+create map_obj 8953 89 12 45 59 0 0 
+create map_obj 8954 89 12 44 59 0 0 
+create map_obj 8955 89 12 43 59 0 0 
+create map_obj 8956 89 12 42 59 0 0 
+create map_obj 8957 89 12 41 59 0 0 
+create map_obj 8958 89 12 40 59 0 0 
+create event_generator 10300 103 14 50 17 0 0 @103/plate_section_warp3.txt
+create event_generator 10342 103 17 18 17 0 0 @103/gimmick_start.txt
+create event_generator 10374 103 13 25 17 0 0 @103/plate_section_jump5.txt
+create event_generator 10630 106 8 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10631 106 9 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10632 106 10 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10633 106 11 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10634 106 12 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10635 106 13 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10636 106 14 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10637 106 15 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10638 106 16 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10639 106 17 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10640 106 18 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10641 106 19 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10642 106 20 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10643 106 21 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10644 106 22 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10645 106 23 24 17 0 0 @106/shinra_bldg_warp_out.txt
+create event_generator 10646 106 24 24 17 0 0 @106/shinra_bldg_warp_out.txt
+chg_npc_y_offset 10360 0
+chg_npc_y_offset 10361 0
+chg_npc_y_offset 10362 0
+chg_npc_y_offset 10363 0
+set_layer 10309 front
+set_layer 10310 front
+set_flag 11 1
+set_flag 14 0
+set_flag 9 4
+set_flag 17 2
+set_flag 0 0

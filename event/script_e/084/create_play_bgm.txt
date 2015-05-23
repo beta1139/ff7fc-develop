@@ -1,4 +1,0 @@
-wait_same_pos
-kill_through_range 8464 8465
-create event_generator 8901 89 3 54 17 0 0 @089/play_bgm.txt
-create event_generator 8902 89 3 55 17 0 0 @089/play_bgm.txt

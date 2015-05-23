@@ -1,0 +1,37 @@
+wait_same_pos
+play_se button.ogg
+loop 4
+set_gray_scale
+sleep 2
+reset_gray_scale
+sleep 2
+pool
+set_key_unvalid b
+set_key_unvalid start
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+create npc_event 10390 103 17 18 0 2 2 none
+draw_char off
+chg_npc_dir 10390 right
+create npc2 10332 103 22 14 17 0 0 
+create npc2 10333 103 18 14 17 0 0 
+set_flag 14 0
+set_flag 15 0
+set_flag 16 0
+set_flag 18 0
+set_flag 19 0
+create event_generator 10343 103 0 0 17 0 0 @103/gimmick_move.txt
+create event_generator 10344 103 0 0 17 0 0 @103/gimmick_false.txt
+create event_generator 10345 103 0 0 17 0 0 @103/gimmick_true.txt
+chg_npc_dir 10390 right
+sleep 8
+move_char up 4
+sleep 64
+chg_char_dir right
+msg3 -1 『どうやら　あれに　とびうつるしか　ないようだな\n（Aボタンでジャンプ）
+chg_char_state_move
+loop_inf
+sleep 160
+pool

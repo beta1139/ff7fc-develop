@@ -1,0 +1,63 @@
+wait_target_talk 10333
+reset_talk_flag 10333
+if_flag 16 1
+set_flag 18 1
+fi
+if_flag 16 2
+set_flag 18 2
+fi
+kill_through 10342
+erase_msg3
+play_se jump.wav
+jump_char right 2
+jump_npc 10390 right 2
+set_flag 15 1
+sleep 16
+chg_npc_dir 10390 left
+chg_npc_img 10390 115
+sleep 16
+chg_event_move_char_speed fast
+move_char down 13
+chg_speed 10390 fast
+chg_npc_img 10390 97
+chg_npc_dir 10390 up
+slide_walk_npc 10390 down 4
+play_se barrel_falling.ogg
+sleep 32
+chg_npc_img 10390 0
+slide_npc 10390 down 5
+sleep 6
+chg_npc_dir 10390 left
+sleep 6
+chg_npc_dir 10390 down
+sleep 6
+chg_npc_dir 10390 right
+sleep 6
+chg_npc_dir 10390 up
+sleep 6
+chg_npc_dir 10390 left
+sleep 6
+chg_npc_dir 10390 down
+sleep 4
+chg_npc_dir 10390 up
+play_se landing.wav
+sleep 32
+chg_char_dir up
+draw_char on
+kill 10390
+chg_event_move_char_speed normal
+kill_through_range 10343 10345
+kill_through_range 10332 10333
+create event_generator 10342 103 17 18 17 0 0 @103/gimmick_start.txt
+set_key_valid b
+set_key_valid start
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+if_flag 18 1
+msg 『タイミングがはやかったようだ……
+fi
+if_flag 18 2
+msg 『タイミングがおそかったようだ……
+fi

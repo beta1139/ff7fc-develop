@@ -1,0 +1,41 @@
+wait_same_pos
+create npc_event 10500 105 24 8 123 1 3 none
+create npc_event 10501 105 25 8 123 0 3 none
+create npc_event 10502 105 7 16 146 1 3 none
+create npc_event 10503 105 6 16 146 0 3 none
+play_bgm
+sleep 24
+include ./event/common/effect_fadein.txt
+chg_event_move_char_speed slow
+set_screen_effect sub 255 255 0 0
+play_se_loop helicopter.ogg
+move_char down 12
+slide_walk_npc 10500 left 18
+slide_walk_npc 10501 left 18
+loop 2
+loop 48
+inc_screen_effect_val 1
+sleep 1
+pool
+loop 48
+dec_screen_effect_val 1
+sleep 1
+pool
+pool
+slide_walk_npc 10502 right 18
+slide_walk_npc 10503 right 18
+set_screen_effect sub 0 255 255 0
+loop 2
+loop 48
+inc_screen_effect_val 1
+sleep 1
+pool
+loop 48
+dec_screen_effect_val 1
+sleep 1
+pool
+pool
+kill_through_range 10500 10503
+include ./event/common/effect_fadeout.txt
+create event_generator 10620 106 16 21 17 0 0 @106/shinra_bldg_entrance.txt
+warp 106 16 21 up

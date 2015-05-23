@@ -1,0 +1,6 @@
+set_key_unvalid b
+set_key_unvalid start
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right

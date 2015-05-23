@@ -1,0 +1,22 @@
+wait_same_pos
+if_flag_lesser 9 6
+warp_ff3_2 104 22 7 3 down
+create npc_event 10490 104 22 1 157 0 2 none
+kill_through 10410
+draw_char off
+chg_char_img_tmp 157
+play_event_bgm 4-01-Shinra_Army_Wages_a_Full-scale_Attack.ogg
+move_npc 10490 down 7
+move_char down 1
+sleep 32
+create event_generator 10410 104 22 7 17 0 0 @104/plate_section_warp6.txt
+sleep 80
+draw_char on
+kill 10490
+set_flag 0 4
+include ./event/common/key_climb.txt
+chg_char_state_move
+loop_inf
+sleep 160
+pool
+fi

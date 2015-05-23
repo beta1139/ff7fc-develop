@@ -1,0 +1,89 @@
+set_eternal_event
+wait_talk
+if_flag_greater 23 2
+fi
+if_flag_lesser 23 3
+include ./event/script/103/battery_msg.txt
+if_not_owned_item 1084
+fi
+if_owned_item 1084
+kill_through_range 8603 8604
+step_char 2
+sleep 32
+del_item 1084
+kill 10440
+play_se door_open2.ogg
+sleep 16
+play_se button.ogg
+loop 4
+set_gray_scale
+sleep 2
+reset_gray_scale
+sleep 2
+pool
+sleep 24
+play_se door_open_hard.wav
+kill_through_range 10450 10451
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+if_char_dir down
+set_npc_pos 10425 104 11 30
+set_npc_pos 10426 104 13 30
+set_npc_pos 10408 104 11 30
+set_npc_pos 10409 104 13 30
+set_flag 23 3
+end
+fi
+chg_char_dir up
+chg_char_img_tmp 97
+sleep 4
+chg_event_move_char_speed fast
+step_char 1
+sleep 8
+play_se barrel_falling.ogg
+set_slide_walk_char_flag
+move_char down 5
+sleep 16
+reset_slide_walk_char_flag
+set_slide_char_flag
+sleep 6
+chg_char_dir left
+sleep 6
+chg_char_dir up
+sleep 6
+chg_char_dir right
+sleep 6
+chg_event_move_char_speed normal
+chg_char_dir down
+chg_char_img_tmp 157
+play_se landing.wav
+reset_slide_char_flag
+set_key_unvalid b
+set_key_unvalid start
+set_key_unvalid left
+set_key_unvalid right
+kill_through_range 10320 10326
+kill_through_range 10420 10426
+set_npc_pos 10476 104 11 30
+set_npc_pos 10477 104 13 30
+set_flag 23 3
+chg_char_state_move
+loop_inf
+sleep 160
+pool
+fi
+fi

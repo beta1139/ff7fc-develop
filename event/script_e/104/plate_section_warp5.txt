@@ -1,0 +1,20 @@
+wait_same_pos
+create npc_event 10490 104 27 34 157 0 2 none
+draw_char off
+chg_char_img_tmp 157
+kill_through 10308
+kill_through 10401
+move_npc 10490 down 8
+sleep 128
+warp_ff3_2 103 26 8 2 down
+create npc_event 10390 103 26 7 157 1 2 none
+move_npc 10390 down 1
+sleep 16
+draw_char on
+kill 10390
+kill 10490
+create event_generator 10308 103 26 7 17 0 0 @103/plate_section_warp4.txt
+chg_char_state_move
+loop_inf
+sleep 160
+pool

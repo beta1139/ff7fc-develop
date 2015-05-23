@@ -1,0 +1,42 @@
+if_flag 14 0
+wait_key_push_edge a
+sleep 16
+wait_key_push_edge a
+jump_npc 10601 same 1
+sleep 16
+step_npc 10601 1
+wait_key_push_edge a
+chg_speed 10601 fast
+chg_npc_img 10601 95
+chg_npc_dir 10601 right
+step_npc 10601 3
+sleep 24
+chg_speed 10601 normal
+chg_npc_img 10601 1
+chg_npc_dir 10601 up
+fi
+if_flag 14 1
+wait_key_push_edge a
+chg_npc_img 10601 1
+chg_npc_dir 10601 up
+jump_npc 10601 same 1
+loop 2
+sleep 2
+chg_npc_dir 10601 right
+sleep 2
+chg_npc_dir 10601 down
+sleep 2
+chg_npc_dir 10601 left
+sleep 2
+chg_npc_dir 10601 up
+pool
+chg_npc_dir 10602 up
+chg_speed 10601 fast
+step_npc 10601 2
+sleep 16
+fi
+if_flag 14 2
+wait_key_push_edge a
+step_npc 10602 2
+sleep 16
+fi
