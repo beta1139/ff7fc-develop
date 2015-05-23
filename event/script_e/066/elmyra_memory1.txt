@@ -1,16 +1,20 @@
 clear_text 5
 clear_text 6
 clear_text 7
+clear_text 8
 set_text_alpha 5 0
 set_text_alpha 6 0
 set_text_alpha 7 0
+set_text_alpha 8 0
 sleep 8
-set_text 5  `One day I got a letter saying
-set_text 6 he'd be back on leave, so I went
-set_text 7    to meet him at the station
+set_text 5     `One day I got a letter
+set_text 6   saying he'd be back on leave
+set_text 7      so I went to meet him
+set_text 8          at the station
 include ./event/common/set_text/st05.txt
 include ./event/common/set_text/st06.txt
 include ./event/common/set_text/st07.txt
+include ./event/common/set_text/st08.txt
 wait_key_push_edge a
 set_screen_effect add 255 255 255 0
 loop 50
@@ -20,8 +24,10 @@ pool
 set_text_alpha 5 0
 set_text_alpha 6 0
 set_text_alpha 7 0
+set_text_alpha 8 0
 clear_text 5
 clear_text 6
 clear_text 7
+clear_text 8
 warp 712 11 10 up
 create event_generator 6606 66 0 0 17 0 0 @066/elmyra_memory2.txt

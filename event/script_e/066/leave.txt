@@ -121,7 +121,7 @@ msg Baret\n`And it's dangerous here.\n You'd better move.
 sleep 32
 step_npc 6623 2
 set_talk_npc 6623
-msg Elmyra\n`==I suppose so. But you\n promise me that you'll\n come back for her. 
+msg Elmyra\n`==I suppose so. But you\n promise me that you'll\n come back for her.
 reset_talk_npc
 sleep 16
 chg_speed 6622 normal

@@ -28,7 +28,7 @@ move_npc 10602 up 8
 move_char up 7
 sleep 96
 jump_npc 10601 same 1
-msg3 -1 バレット\n「おい　このビルには\n　くわしいんだろ？
+msg3 -1 Baret\n`Yo! You're familiar with\n this building, ain't ya?
 sleep 32
 wait_key_push_edge a
 erase_msg3
@@ -42,7 +42,7 @@ sleep 16
 chg_npc_dir 10600 down
 sleep 16
 step_npc 10600 1
-msg 『……しらない\n　そういえば　ほんしゃに　くるのは\n　はじめてだ
+msg {==I'm not.\n Actually I've never been\n to the headquarters.
 move_npc 10601 up 2
 sleep 32
 chg_npc_dir 10602 right
@@ -53,7 +53,7 @@ sleep 16
 create event_generator 10621 106 0 0 17 0 0 @106/shinra_bldg_entrance_exp.txt
 chg_char_state_move
 step_npc 10601 3
-msg バレット\n「まえに　きいたことがあるぜ\n\n\n　このビルの　60かいから　うえは\n　とくべつブロックとかで\n　しゃいんでも　かんたんには　はいれないってな\n\n　エアリスがつれて\n　いかれたのも　そこにちがいねえ\n\n\n　いまなら　けいびにもスキがある\n　おおし　いくぜっ！！
+msg Baret\n`I've heard somethin'\n before==\n\n Above the 60th floor of\n this building's off limit\n even to Shinra employees.\n\n I bet that where they\n took Aeris.\n\n\n The security is kinda\n slack right now.\n Let's go!
 wait_event_invalid 10621
 jump_npc 10601 same 1
 loop 2
@@ -73,7 +73,7 @@ chg_npc_dir 10602 up
 sleep 8
 chg_npc_dir 10600 up
 set_active_msg 10602
-msg3 -1 ティファ\n「ちょっとまってよ！\n　まさか　しょうめんから　のりこむつもり？
+msg3 -1 Tifa\n`Wait a minute!\n You rush in like that?
 chg_speed 10602 fast
 move_npc 10602 up 2
 sleep 16
@@ -90,7 +90,7 @@ sleep 16
 chg_npc_dir 10601 down
 chg_speed 10601 fast
 step_npc 10601 4
-msg3 -1 バレット\n「きまってるだろ！\n　しんらのやつらを　けちらして……
+msg3 -1 Baret\n`Why not?\n We gonna rout them and==
 sleep 32
 chg_npc_dir 10601 up
 wait_key_push_edge a
@@ -98,7 +98,7 @@ erase_msg3
 jump_npc 10602 same 1
 sleep 16
 step_npc 10602 3
-msg ティファ\n「そんなのムチャよ！\n　もっとみつかりにくい　ほうほうを……
+msg Tifa\n`That's suicide!\n We gotta be more subtle==
 chg_npc_dir 10601 down
 step_npc 10601 4
 sleep 32
@@ -106,7 +106,7 @@ chg_npc_dir 10601 up
 jump_npc 10601 same 2
 sleep 32
 step_npc 10601 4
-msg バレット\n「そんなコトやってられねえ！\n　グズグズしてたら\n　エアリスだって……
+msg Baret\n`We ain't have no time!\n We dilly-dally here and\n what'll happen to Aeris?
 jump_npc 10601 same 1
 sleep 16
 jump_npc 10601 same 1
@@ -114,7 +114,7 @@ jump_npc 10602 same 1
 sleep 16
 chg_speed 10602 normal
 step_npc 10602 2
-msg ティファ\n「それはわかるけど！\n　ここでわたしたちまで　つかまったら……
+msg Tifa\n`Tell me about that!\n But if we get caught,\n too==
 sleep 8
 chg_npc_dir 10601 left
 chg_npc_img 10601 116
@@ -131,7 +131,7 @@ chg_char_state_event
 sleep 16
 include ./event/common/key_vaild.txt
 step_npc 10602 2
-msg ティファ\n「ね　クラウド！\n　……どうしたらいいの？\n\n#2\n　　つっこむぞ！\n　　コッソリいこう\n\n\n[[]][[]]
+msg Tifa\n`Cloud!\n ==What should we do?\n\n#2\n  We charge on.\n  We sneak in.\n\n\n[[]][[]]
 sleep 16
 if_flag 3 0
 set_flag 14 1
@@ -143,7 +143,7 @@ chg_char_state_move
 chg_speed 10601 slow
 step_npc 10601 2
 create event_generator 10621 106 0 0 17 0 0 @106/shinra_bldg_entrance_exp.txt
-msg バレット\n「そうこなくっちゃな！\n\n\n　おおし　いくぜっ！！
+msg Baret\n`Now you're talkin'!\n\n\n Let's go!!
 fi
 if_flag 3 1
 set_flag 14 2
@@ -155,7 +155,7 @@ chg_npc_dir 10601 left
 chg_npc_img 10601 98
 step_npc 10602 2
 create event_generator 10621 106 0 0 17 0 0 @106/shinra_bldg_entrance_exp.txt
-msg ティファ\n「でしょ？\n\n\n　こんなときこそ　しんちょうに\n　ほかのルートをさがしましょ！
+msg Tifa\n`See? We should be\n especially discreet\n at times like this.\n Let's look for another\n way in!
 fi
 wait_event_invalid 10621
 chg_char_state_event

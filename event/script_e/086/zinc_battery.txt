@@ -25,7 +25,7 @@ sleep 16
 step_npc 8612 2
 msg `You'll see.\n 300 Gil for 3 batteries.\n Well?
 sleep 16
-msg {==\n#2\n  Okay, I take them.\n  I don't believe you.\n\n\n[[]][[]]
+msg {==\n\n\n\n#2\n  Okay, I take them.\n  I don't believe you.\n\n\n[[]][[]]
 if_flag 3 0
 if_gil_less 300
 step_npc 8612 2

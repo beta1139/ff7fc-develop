@@ -4,7 +4,7 @@ chg_speed 5801 normal
 chg_speed 5802 normal
 step_npc 5801 3
 set_talk_npc 5801
-msg `I thought I could live\n okay under Midgar.\n Who'd expect that big\n shit to come down== 
+msg `I thought I could live\n okay under Midgar.\n Who'd expect that big\n shit to come down==
 reset_talk_npc
 jump_npc 5802 same 1
 sleep 16

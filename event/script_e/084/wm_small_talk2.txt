@@ -1,6 +1,6 @@
 step_npc 8412 2
 set_talk_npc 8412
-msg `Don't you think the garbage\n here have increased? 
+msg `Don't you think the garbage\n here have increased?
 reset_talk_npc
 sleep 16
 step_npc 8411 4

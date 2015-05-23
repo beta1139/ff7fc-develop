@@ -12,6 +12,7 @@ if_flag 10 1
 step_npc 6420 1
 fi
 if_flag 10 0
+chg_char_img_tmp 0
 step_char 1
 fi
 sleep 16
