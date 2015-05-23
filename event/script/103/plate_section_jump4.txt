@@ -54,6 +54,5 @@ create npc2 10426 104 13 30 17 0 0
 create event_generator 10408 104 11 30 17 0 0 @104/plate_section_jump10.txt
 create event_generator 10409 104 13 30 17 0 0 @104/plate_section_jump10.txt
 fi
-fi
 play_se landing.wav
 include ./event/common/key_climb_reset.txt
