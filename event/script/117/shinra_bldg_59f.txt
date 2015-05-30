@@ -1,0 +1,5 @@
+set_eternal_event
+wait_same_pos
+msg 　イベントさくせい ここまで\n　しんらビルのマップ\n　せつじつに　ぼしゅうちゅう……
+warp_ff3_2 116 8 8 3 down
+open_door 11650

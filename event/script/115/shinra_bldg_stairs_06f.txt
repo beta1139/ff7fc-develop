@@ -1,0 +1,22 @@
+sleep 224
+msg3 -1 バレット\n「なんで……\n　わざわざ……\n　こんな……くろうを……
+sleep 72
+set_flag 25 2
+sleep 72
+erase_msg3
+sleep 24
+msg3 -1 『……エアリスをたすけだすまで\n　さわぎは　おこしたくないんだ
+sleep 144
+erase_msg3
+sleep 8
+msg3 -1 『でも　むりだろうな……
+sleep 232
+erase_msg3
+sleep 16
+msg3 -1 バレット\n「……へへへ
+sleep 152
+erase_msg3
+sleep 16
+msg3 -1 『なんだよ　きもちわるいな
+sleep 144
+erase_msg3

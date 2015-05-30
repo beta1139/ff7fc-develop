@@ -1,0 +1,32 @@
+chg_char_state_move
+loop 2
+move_npc 11602 left 5
+sleep 40
+move_npc 11602 down 2
+sleep 16
+move_npc 11602 right 5
+sleep 40
+move_npc 11602 up 9
+sleep 72
+move_npc 11602 left 5
+sleep 40
+move_npc 11602 down 2
+sleep 16
+move_npc 11602 right 5
+sleep 40
+move_npc 11602 up 9
+sleep 72
+pool
+move_npc 11602 left 2
+sleep 16
+chg_speed 11602 normal
+move_npc 11602 left 3
+sleep 48
+move_npc 11602 down 2
+sleep 32
+move_npc 11602 right 6
+sleep 96
+move_npc 11602 up 3
+sleep 48
+chg_npc_dir 11602 down
+chg_speed 11602 not_move

@@ -1,0 +1,77 @@
+wait_same_pos
+create npc_event 11400 114 8 55 0 3 3 none
+create npc_event 11401 114 9 54 1 0 1 none
+create npc_event 11402 114 8 54 2 0 3 none
+sleep 16
+chg_event_move_char_speed normal
+move_char down 48
+msg3 -1 バレット\n「おい……\n　ホンキでこれ　うえまで\n　のぼるつもりか……？
+sleep 128
+erase_msg3
+sleep 8
+msg3 -1 ティファ\n「しょうがないでしょ\n　エアリスを\n　ぶじに　たすけるためよ
+sleep 172
+erase_msg3
+sleep 8
+msg3 -1 バレット\n「しかし　いくら\n　みつかりにくいって\n　こいつは……
+sleep 156
+erase_msg3
+sleep 8
+msg3 -1 ティファ\n「もう　ゴチャゴチャいわない！\n　いくわよ！
+chg_npc_dir 11401 down
+step_npc 11401 2
+move_npc 11402 up 7
+sleep 56
+move_npc 11402 left 5
+sleep 16
+chg_npc_dir 11400 up
+sleep 8
+chg_npc_dir 11401 left
+step_npc 11401 1
+jump_npc 11400 same 1
+sleep 16
+move_npc 11402 down 2
+step_npc 11400 1
+sleep 8
+chg_npc_dir 11401 up
+sleep 8
+chg_speed 11401 fast
+jump_npc 11401 same 2
+move_npc 11402 right 5
+sleep 8
+erase_msg3
+sleep 8
+msg3 -1 バレット\n「お　おいティファ！\n　ひとりでいくな！
+sleep 16
+move_npc 11401 up 7
+sleep 8
+move_npc 11402 up 9
+sleep 48
+move_npc 11401 left 6
+sleep 24
+move_npc 11402 left 5
+sleep 24
+move_npc 11401 down 2
+sleep 16
+move_npc 11401 right 5
+move_npc 11402 down 2
+sleep 16
+erase_msg3
+move_npc 11402 right 5
+sleep 8
+chg_event_move_char_speed normal
+move_char right 3
+sleep 16
+move_npc 11401 up 48
+sleep 16
+move_npc 11402 up 2
+sleep 16
+chg_char_dir up
+draw_char on
+kill_through 11400
+set_flag 25 1
+set_flag 13 0
+create event_generator 11430 114 0 0 17 0 0 @114/shinra_bldg_stairs_baret01.txt
+create event_generator 11431 114 0 0 17 0 0 @114/shinra_bldg_stairs_tifa01.txt
+create event_generator 11434 114 8 21 17 0 0 @114/shinra_bldg_stairs_reach.txt
+set_layer 11434 front

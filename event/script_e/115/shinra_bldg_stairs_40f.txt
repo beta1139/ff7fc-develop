@@ -1,0 +1,120 @@
+wait_same_pos
+kill_through 11544
+erase_msg3
+create npc 11500 115 8 14 0 3 2 none
+set_layer 11500 front
+draw_char off
+chg_npc_dir 11500 up
+move_char up 2
+sleep 32
+chg_speed 11502 fast
+chg_speed 11501 slow
+jump_npc 11502 same 1
+set_active_msg 11502
+sleep 16
+jump_npc 11502 same 1
+set_talk_npc 11502
+msg ティファ\n「ホラ　バレット\n　しっかりしなさい！
+reset_talk_npc
+chg_npc_dir 11501 up
+sleep 32
+chg_npc_dir 11501 right
+sleep 32
+step_npc 11501 2
+msg バレット\n「ん　なコトいったって\n　オレは　み　みぎうで　いがいは\n\n　ふつうの　からだなんだぜ……\n\n\n\n　もとソルジャーみたいな\n　と　とくべつせいと……\n　いっしょにしないでくれ……
+sleep 16
+jump_npc 11502 same 1
+chg_npc_dir 11502 right
+chg_npc_img 11502 98
+sleep 16
+chg_speed 11502 normal
+step_npc 11502 2
+set_talk_npc 11502
+msg ティファ\n「わたしだって　ふつうだってば！\n　さきにいっちゃうわよ！
+reset_talk_npc
+step_npc 11502 1
+sleep 32
+chg_npc_img 11502 2
+chg_event_move_char_speed slow
+chg_speed 11502 slow
+move_npc 11502 up 3
+sleep 1
+move_char up 3
+sleep 32
+chg_npc_dir 11501 up
+sleep 64
+msg ティファ\n「……？
+chg_npc_dir 11502 down
+sleep 32
+chg_speed 11502 fast
+move_npc 11502 down 1
+sleep 8
+jump_npc 11502 same 1
+set_talk_npc 11502
+msg ティファ\n「キャッ！！\n　ヤダ　バレット！\n　やっぱりさきにいって！
+reset_talk_npc
+chg_speed 11501 fast
+step_npc 11501 4
+sleep 32
+set_active_msg 11501
+jump_npc 11501 same 1
+msg バレット\n「バ　バカ！\n　オレはそんな\n　つもりじゃ……
+sleep 16
+chg_event_move_char_speed fast
+move_char down 3
+move_npc 11502 down 3
+sleep 24
+chg_npc_dir 11502 right
+chg_npc_img 11502 98
+jump_npc 11502 same 1
+sleep 16
+step_npc 11502 1
+msg ティファ\n「いいから！
+sleep 16
+chg_npc_dir 11501 right
+sleep 32
+chg_npc_img 11502 2
+chg_npc_dir 11502 down
+sleep 8
+start_fake_countdown_sec 4
+draw_fake_countdown off
+chg_speed 11501 slow
+move_npc 11501 right 1
+sleep 32
+move_npc 11501 up 8
+sleep 32
+step_npc 11502 3
+msg3 -1 ティファ\n「クラウドも！\n　さきにいって！！
+wait_key_push_edge a
+erase_msg3
+chg_event_move_char_speed normal
+move_char down 2
+chg_npc_img 11502 2
+chg_npc_dir 11502 down
+sleep 32
+chg_char_dir up
+draw_char on
+kill 11500
+set_flag_wall 11502
+chg_type 11502 npc
+chg_speed 11502 not_move
+set_inactive_msg 11502
+chg_param 11502 ティファ\n「クラウドも！\n　さきにいって！！
+set_flag 25 7
+chg_char_state_move
+wait_fake_countover
+chg_speed 11501 normal
+move_npc 11501 left 6
+sleep 96
+move_npc 11501 down 2
+sleep 32
+move_npc 11501 right 5
+sleep 80
+chg_npc_dir 11501 up
+sleep 32
+jump_npc 11501 same 1
+sleep 16
+chg_speed 11501 fast
+move_npc 11501 up 6
+sleep 96
+kill_through 11501

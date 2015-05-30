@@ -1,0 +1,79 @@
+wait_same_pos
+create npc2 11605 116 7 14 17 0 4 
+set_layer 11605 front
+include ./event/common/key_unvaild.txt
+if_flag 16 0
+chg_char_dir left
+fi
+loop_inf
+if_flag 16 1
+chg_char_dir up
+fi
+if_flag_lesser 16 2
+sleep 1
+fi
+if_flag_greater 16 1
+create npc_event 11600 116 8 14 0 3 2 none
+set_layer 11600 front
+draw_char off
+move_npc 11600 up 2
+move_char up 3
+sleep 16
+chg_type 11601 npc_event
+chg_type 11602 npc_event
+chg_speed 11601 slow
+chg_speed 11602 slow
+chg_npc_dir 11601 up
+chg_npc_dir 11602 up
+sleep 32
+create event_generator 11643 116 0 0 17 0 0 @116/shinra_bldg_stairs_exp.txt
+chg_char_state_move
+step_npc 11601 2
+set_talk_npc 11601
+msg バレット\n「や……やっと……\n　つい……た……\n\n　か……かいだんなんて……\n　もうみるのも　ゴメンだ……
+reset_talk_npc
+wait_event_invalid 11643
+sleep 32
+move_npc 11601 up 2
+sleep 48
+open_door 11650
+play_se door_open.ogg
+sleep 16
+kill 11601
+chg_npc_dir 11602 left
+sleep 32
+step_npc 11602 2
+msg ティファ\n「ハア……ハア……\n　さすがにこれは……\n　こたえたわ……ね……\n　……でも　これからが　ほんばんよね\n　げんきだしていかなきゃ……！
+sleep 16
+chg_char_state_event
+move_npc 11602 left 1
+sleep 32
+chg_npc_dir 11602 up
+sleep 40
+chg_speed 11602 fast
+step_npc 11602 1
+sleep 8
+jump_npc 11602 same 1
+sleep 16
+chg_speed 11602 normal
+move_npc 11602 up 3
+sleep 32
+move_npc 11600 up 1
+sleep 16
+kill 11602
+draw_char on
+kill 11600
+move_char up 3
+sleep 48
+warp_ff3_2 117 0 0 2 right
+close_door 11650
+chg_event_move_char_speed normal
+kill_through_range 11603 11605
+set_flag 13 0
+set_flag 14 0
+set_flag 19 0
+set_flag 25 10
+include ./event/common/key_vaild.txt
+end
+fi
+pool

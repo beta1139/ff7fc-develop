@@ -1,0 +1,18 @@
+set_eternal_event
+wait_same_pos
+set_layer 11420 front
+set_layer 11421 front
+set_layer 11520 front
+set_layer 11521 front
+set_layer 11522 front
+set_layer 11523 front
+set_layer 11622 front
+set_layer 11623 front
+if_flag 9 4
+if_flag 25 0
+warp_ff3_2 114 5 7 2 up
+draw_char off
+end
+fi
+fi
+warp_ff3_2 114 8 55 2 up

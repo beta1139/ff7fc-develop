@@ -1,0 +1,8 @@
+set_eternal_event
+wait_same_pos
+if_flag_lesser 25 9
+include ./event/script_e/114/shinra_bldg_stairs_out_msg.txt
+create npc_event 11401 114 8 47 1 0 3 none
+create npc_event 11402 114 8 48 2 0 3 none
+fi
+include ./event/common/114/shinra_bldg_stairs_out_common.txt

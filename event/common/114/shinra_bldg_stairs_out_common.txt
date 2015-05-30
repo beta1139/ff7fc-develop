@@ -1,0 +1,25 @@
+if_flag_lesser 25 9
+move_npc 11401 down 9
+move_npc 11402 down 8
+sleep 8
+chg_char_dir up
+sleep 48
+chg_char_dir down
+sleep 8
+kill 11402
+sleep 8
+kill 11401
+move_char down 1
+sleep 16
+fi
+warp_ff3_2 107 11 8 3 left
+if_flag_lesser 25 9
+create event_generator 11432 114 8 55 17 0 0 @114/shinra_bldg_stairs_baret02.txt
+create event_generator 11434 114 8 21 17 0 0 @114/shinra_bldg_stairs_reach.txt
+set_layer 11434 front
+create npc_event 11401 114 9 51 1 0 3 none
+create npc_event 11402 114 7 47 2 2 3 none
+include ./event/common/key_vaild.txt
+fi
+set_flag 13 0
+set_flag 24 0

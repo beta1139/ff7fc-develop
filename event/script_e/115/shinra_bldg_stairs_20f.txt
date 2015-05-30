@@ -1,0 +1,22 @@
+sleep 216
+msg3 -1 バレット\n「……しかし　このかいだん\n　どこまでつづくんだ？
+sleep 64
+set_flag 25 4
+sleep 88
+erase_msg3
+sleep 16
+msg3 -1 ティファ\n「さあ……かいだんにきいて
+sleep 152
+erase_msg3
+sleep 16
+msg3 -1 バレット\n「このままずっと　つづくなんてことは\n　ないよなあ？
+sleep 152
+erase_msg3
+sleep 16
+msg3 -1 ティファ\n「まさか！！
+sleep 128
+erase_msg3
+sleep 16
+msg3 -1 バレット\n「だよな……\n　そんなはずないよな……
+sleep 152
+erase_msg3

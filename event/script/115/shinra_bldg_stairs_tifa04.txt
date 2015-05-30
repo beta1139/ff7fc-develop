@@ -1,0 +1,136 @@
+chg_char_state_move
+set_flag 19 0
+loop 2
+move_npc 11504 left 5
+sleep 40
+move_npc 11504 down 2
+sleep 16
+move_npc 11504 right 5
+sleep 40
+move_npc 11504 up 9
+sleep 72
+move_npc 11504 left 5
+sleep 40
+move_npc 11504 down 2
+sleep 16
+if_flag_lesser 24 6
+move_npc 11504 right 5
+sleep 40
+fi
+if_flag 24 6
+if_flag 19 0
+chg_speed 11504 normal
+move_npc 11504 right 5
+sleep 80
+chg_speed 11504 not_move
+sleep 40
+chg_npc_dir 11504 up
+sleep 112
+chg_speed 11504 fast
+jump_npc 11504 same 1
+sleep 16
+step_npc 11504 4
+sleep 32
+fi
+if_flag 19 1
+move_npc 11504 right 5
+sleep 40
+fi
+fi
+move_npc 11504 up 9
+sleep 72
+set_flag 19 1
+pool
+move_npc 11504 left 5
+sleep 40
+move_npc 11504 down 2
+sleep 16
+move_npc 11504 right 5
+sleep 40
+if_flag 24 4
+chg_speed 11504 normal
+move_npc 11504 up 2
+sleep 32
+chg_speed 11504 not_move
+sleep 96
+chg_speed 11504 fast
+jump_npc 11504 same 2
+loop 2
+sleep 4
+chg_npc_dir 11504 right
+sleep 4
+chg_npc_dir 11504 down
+sleep 4
+chg_npc_dir 11504 left
+sleep 4
+chg_npc_dir 11504 up
+pool
+move_npc 11504 up 7
+sleep 56
+fi
+if_flag 24 2
+move_npc 11504 up 9
+sleep 72
+fi
+if_flag 24 6
+move_npc 11504 up 9
+sleep 72
+fi
+move_npc 11504 left 5
+sleep 40
+move_npc 11504 down 2
+sleep 16
+if_flag 24 2
+chg_speed 11504 normal
+move_npc 11504 right 2
+sleep 32
+chg_speed 11504 not_move
+sleep 32
+chg_npc_dir 11504 up
+sleep 96
+jump_npc 11504 same 1
+sleep 8
+chg_npc_dir 11504 right
+sleep 8
+chg_speed 11504 fast
+move_npc 11504 right 3
+sleep 24
+fi
+if_flag_greater 24 3
+move_npc 11504 right 5
+sleep 40
+fi
+move_npc 11504 up 9
+sleep 72
+move_npc 11504 left 5
+sleep 40
+move_npc 11504 down 2
+sleep 16
+move_npc 11504 right 5
+sleep 40
+move_npc 11504 up 4
+sleep 32
+if_flag 13 0
+chg_npc_dir 11504 down
+chg_speed 11504 not_move
+fi
+loop_inf
+if_flag 13 0
+sleep 1
+fi
+if_flag 13 1
+chg_speed 11504 fast
+move_npc 11504 up 5
+sleep 40
+move_npc 11504 left 5
+sleep 40
+move_npc 11504 down 2
+sleep 16
+move_npc 11504 right 6
+sleep 48
+move_npc 11504 up 5
+sleep 40
+kill_through 11504
+end
+fi
+pool

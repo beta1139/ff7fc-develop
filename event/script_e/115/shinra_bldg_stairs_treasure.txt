@@ -1,0 +1,11 @@
+wait_talk
+erase_msg3
+sleep 4
+play_se pick_up.wav
+msg3 -1  こんなところに エリクサーが！
+add_item 1005
+sleep 8
+wait_key_push_edge a
+erase_msg3
+kill 11591
+set_flag 26 1

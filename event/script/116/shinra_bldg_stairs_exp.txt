@@ -1,0 +1,7 @@
+sleep 16
+wait_key_push_edge a
+chg_npc_dir 11601 right
+sleep 16
+wait_key_push_edge a
+sleep 16
+chg_npc_dir 11601 up

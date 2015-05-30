@@ -1,0 +1,22 @@
+sleep 80
+msg3 -1 バレット\n「なぁ……\n　いま　なんかいだ？
+sleep 64
+set_flag 25 8
+sleep 88
+erase_msg3
+sleep 16
+msg3 -1 ティファ\n「……もう　かぞえる\n　きにもならない
+sleep 152
+erase_msg3
+sleep 16
+msg3 -1 バレット\n「こ……こんなバカたかい\n　ビルつくりやがって……
+sleep 144
+erase_msg3
+sleep 16
+msg3 -1 バレット\n「やっぱり　シ　シンラなんて\n　ロクなやつじゃねえぜ……！
+sleep 144
+erase_msg3
+sleep 16
+msg3 -1 ティファ\n「…………
+sleep 144
+erase_msg3

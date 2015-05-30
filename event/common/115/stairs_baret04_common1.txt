@@ -1,0 +1,90 @@
+if_flag 24 6
+move_npc 11503 down 2
+sleep 16
+fi
+if_flag 24 4
+if_flag 14 0
+move_npc 11503 down 2
+sleep 16
+fi
+if_flag 14 1
+chg_speed 11503 normal
+move_npc 11503 down 2
+sleep 32
+chg_speed 11503 fast
+fi
+fi
+if_flag 24 2
+move_npc 11503 down 2
+sleep 16
+fi
+move_npc 11503 right 5
+sleep 40
+if_flag 24 6
+if_flag 14 0
+move_npc 11503 up 1
+sleep 8
+chg_speed 11503 normal
+move_npc 11503 up 3
+sleep 48
+chg_speed 11503 not_move
+sleep 16
+chg_npc_dir 11503 left
+sleep 32
+chg_npc_dir 11503 up
+sleep 156
+chg_speed 11503 fast
+jump_npc 11503 same 1
+sleep 16
+move_npc 11503 up 5
+sleep 40
+fi
+if_flag_greater 14 0
+move_npc 11503 up 9
+sleep 72
+fi
+fi
+if_flag_lesser 24 6
+move_npc 11503 up 9
+sleep 72
+fi
+move_npc 11503 left 5
+sleep 40
+move_npc 11503 down 2
+sleep 16
+move_npc 11503 right 6
+sleep 48
+if_flag 24 6
+if_flag 14 0
+move_npc 11503 up 9
+sleep 72
+fi
+if_flag 14 1
+chg_speed 11503 normal
+move_npc 11503 up 2
+sleep 32
+chg_speed 11503 not_move
+sleep 32
+chg_npc_dir 11503 down
+sleep 72
+chg_npc_dir 11503 up
+chg_speed 11503 not_step
+sleep 24
+chg_speed 11503 normal
+step_npc 11503 3
+sleep 48
+move_npc 11503 up 2
+sleep 32
+chg_speed 11503 fast
+move_npc 11503 up 5
+sleep 40
+fi
+if_flag 14 2
+move_npc 11503 up 9
+sleep 72
+fi
+fi
+if_flag_lesser 24 6
+move_npc 11503 up 9
+sleep 72
+fi

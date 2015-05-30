@@ -1,0 +1,22 @@
+sleep 88
+msg3 -1 バレット\n「ああ……\n　オレはもうダメだ……
+sleep 64
+set_flag 25 9
+sleep 88
+erase_msg3
+sleep 16
+msg3 -1 バレット\n「マリン　とうちゃんは\n　もういちど　おまえに\n　あいたかった……
+sleep 152
+erase_msg3
+sleep 16
+msg3 -1 ティファ\n「ちょっと！\n　エンギでもないこと\n　いわないの！
+sleep 160
+erase_msg3
+sleep 8
+msg3 -1 ティファ\n「もうすこし！\n　もうすこしだから！
+sleep 152
+erase_msg3
+sleep 16
+msg3 -1 ティファ\n「たぶん……
+sleep 160
+erase_msg3

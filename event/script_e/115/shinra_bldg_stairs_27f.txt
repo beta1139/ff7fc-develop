@@ -1,0 +1,26 @@
+sleep 88
+msg3 -1 バレット\n「まだつかないのか？
+sleep 72
+set_flag 25 5
+sleep 80
+erase_msg3
+sleep 16
+msg3 -1 ティファ\n「まだみたいね
+sleep 152
+erase_msg3
+sleep 16
+msg3 -1 バレット\n「……まだか？
+sleep 120
+erase_msg3
+sleep 16
+msg3 -1 ティファ\n「まだよ
+sleep 208
+erase_msg3
+sleep 16
+msg3 -1 バレット\n「なあ……
+sleep 88
+erase_msg3
+sleep 8
+msg3 -1 ティファ\n「まだだってば！\n　まだまだまだまだ\n　まだまだまだーっ！！
+sleep 152
+erase_msg3

@@ -1,0 +1,91 @@
+wait_same_pos
+create event_generator 11433 114 0 0 17 0 0 @114/shinra_bldg_stairs_tifa02.txt
+chg_char_state_move
+move_npc 11401 up 4
+sleep 32
+move_npc 11401 left 6
+sleep 48
+move_npc 11401 down 2
+sleep 16
+move_npc 11401 right 5
+sleep 40
+move_npc 11401 up 9
+sleep 72
+move_npc 11401 left 5
+sleep 40
+move_npc 11401 down 2
+sleep 16
+move_npc 11401 right 6
+sleep 48
+chg_npc_dir 11401 up
+chg_speed 11401 not_move
+sleep 64
+chg_speed 11401 fast
+move_npc 11401 up 9
+sleep 72
+move_npc 11401 left 6
+sleep 48
+move_npc 11401 down 2
+sleep 16
+move_npc 11401 right 5
+sleep 40
+move_npc 11401 up 9
+sleep 72
+move_npc 11401 left 5
+sleep 40
+chg_npc_dir 11401 up
+chg_speed 11401 not_move
+sleep 64
+jump_npc 11401 same 2
+loop 2
+chg_npc_dir 11401 right
+sleep 4
+chg_npc_dir 11401 down
+sleep 4
+chg_npc_dir 11401 left
+sleep 4
+chg_npc_dir 11401 up
+sleep 4
+pool
+chg_speed 11401 fast
+move_npc 11401 down 2
+sleep 16
+move_npc 11401 right 6
+sleep 48
+move_npc 11401 up 9
+sleep 72
+move_npc 11401 left 6
+sleep 48
+move_npc 11401 down 2
+sleep 16
+move_npc 11401 right 3
+sleep 24
+chg_speed 11401 normal
+move_npc 11401 right 3
+sleep 48
+move_npc 11401 up 3
+sleep 48
+if_flag 13 0
+chg_npc_dir 11401 down
+chg_speed 11401 not_move
+fi
+loop_inf
+if_flag 13 0
+sleep 1
+fi
+if_flag 13 1
+chg_speed 11401 fast
+move_npc 11401 up 6
+sleep 48
+move_npc 11401 left 6
+sleep 48
+move_npc 11401 down 2
+sleep 16
+move_npc 11401 right 5
+sleep 40
+move_npc 11401 up 5
+sleep 40
+kill_through 11401
+end
+fi
+pool
