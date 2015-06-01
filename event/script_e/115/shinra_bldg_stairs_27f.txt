@@ -1,26 +1,26 @@
 sleep 88
-msg3 -1 バレット\n「まだつかないのか？
+msg3 -1 Baret\n`Are we there yet?
 sleep 72
 set_flag 25 5
 sleep 80
 erase_msg3
 sleep 16
-msg3 -1 ティファ\n「まだみたいね
+msg3 -1 Tifa\n`I guess not.
 sleep 152
 erase_msg3
 sleep 16
-msg3 -1 バレット\n「……まだか？
+msg3 -1 Baret\n`==Not yet?
 sleep 120
 erase_msg3
 sleep 16
-msg3 -1 ティファ\n「まだよ
+msg3 -1 Tifa\n`No.
 sleep 208
 erase_msg3
 sleep 16
-msg3 -1 バレット\n「なあ……
+msg3 -1 Baret\n`Yo==
 sleep 88
 erase_msg3
 sleep 8
-msg3 -1 ティファ\n「まだだってば！\n　まだまだまだまだ\n　まだまだまだーっ！！
+msg3 -1 Tifa\n`I said not yet!\n Not not not not\n not not not yet!
 sleep 152
 erase_msg3

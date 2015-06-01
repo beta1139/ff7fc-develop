@@ -71,7 +71,7 @@ MP Cost
 You got
 !
  materia
-‚½‚©‚ç‚Î‚±‚Ì‚È‚©‚É‚Í
-‚ª‚Í‚¢‚Á‚Ä‚¢‚½I
+You found
+in the chest!
 Your party was blown upcc
 

@@ -2,7 +2,7 @@ wait_talk
 erase_msg3
 sleep 4
 play_se pick_up.wav
-msg3 -1  こんなところに エリクサーが！
+msg3 -1  You got Elixir!
 add_item 1005
 sleep 8
 wait_key_push_edge a

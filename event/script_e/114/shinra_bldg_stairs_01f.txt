@@ -5,19 +5,19 @@ create npc_event 11402 114 8 54 2 0 3 none
 sleep 16
 chg_event_move_char_speed normal
 move_char down 48
-msg3 -1 バレット\n「おい……\n　ホンキでこれ　うえまで\n　のぼるつもりか……？
+msg3 -1 Baret\n`Yo==Are we really\n climbin' up these\n fuckers to the top==?
 sleep 128
 erase_msg3
 sleep 8
-msg3 -1 ティファ\n「しょうがないでしょ\n　エアリスを\n　ぶじに　たすけるためよ
+msg3 -1 Tifa\n`We have no choice.\n We have to get Aeris\n back safely.
 sleep 172
 erase_msg3
 sleep 8
-msg3 -1 バレット\n「しかし　いくら\n　みつかりにくいって\n　こいつは……
+msg3 -1 Baret\n`I suppose it's\n safer this way,\n but still==
 sleep 156
 erase_msg3
 sleep 8
-msg3 -1 ティファ\n「もう　ゴチャゴチャいわない！\n　いくわよ！
+msg3 -1 Tifa\n`Stop whining!\n Let's go!
 chg_npc_dir 11401 down
 step_npc 11401 2
 move_npc 11402 up 7
@@ -41,7 +41,7 @@ move_npc 11402 right 5
 sleep 8
 erase_msg3
 sleep 8
-msg3 -1 バレット\n「お　おいティファ！\n　ひとりでいくな！
+msg3 -1 Baret\n`Hey, Tifa!\n Wait for us!
 sleep 16
 move_npc 11401 up 7
 sleep 8

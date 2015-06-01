@@ -140,712 +140,640 @@ more may exist.
 
 
 -----------------------------------------------------------------------------
-CONTENTS
+目次
 --------
 
-1.  定義
-1.1   キャラクターパラメータ
-1.2   用語の定義
-1.2.1   基本用語
-1.2.2   攻撃の種類
-1.2.3   計算式の種類
-1.2.4   標的の種類
-1.2.5   装備の機能
-1.2.6   数学用語
-2.  時間
-2.1   バトルスピード
-2.2   グローバルタイマー
-2.3   Vタイマー
-2.4   Cタイマー
-2.5   ターンタイマー
-2.6   タイマー間の関連
-2.7   バトルから逃げる
-3.  ダメージ
-3.1   初期設定
-3.2   ステータス耐性および属性耐性
-3.3   ヒット確率
-3.3.1   物理攻撃
-3.3.2   魔法攻撃
-3.3.3   クリティカル攻撃
-3.3.4   ステータス攻撃
-3.4   計算式の種類
-3.4.1   物理攻撃
-3.4.2   魔法攻撃
-3.4.3   治療
-3.4.4   アイテム
-3.4.5   その他の計算式
-3.4.6   計算式モディファイア
-3.5   ラッキー７
-3.6   最終チェック
-4.  ステータス
-4.1   ステータスの性質
-4.2   ステータス特記事項
-5.  ゲームオーバー
-6.  謝辞
+<a href="#1_Definitions"                      >1.  定義</a>
+<a href="#1_1_Character_Stats"                >1.1   キャラクターパラメータ</a>
+<a href="#1_2_Special_Term_Definitions"       >1.2   用語の定義</a>
+<a href="#1_2_1_Basic_Terms"                  >1.2.1   基本用語</a>
+<a href="#1_2_2_Types_of_Attack"              >1.2.2   攻撃の種類</a>
+<a href="#1_2_3_Formula_Types"                >1.2.3   計算式の種類</a>
+<a href="#1_2_4_Target_Types"                 >1.2.4   ターゲットの種類</a>
+<a href="#1_2_5_Equipment_Modifiers"          >1.2.5   装備の機能</a>
+<a href="#1_2_6_Mathematical_Terminology"     >1.2.6   数学表現</a>
+<a href="#2_Time"                             >2.  時間</a>
+<a href="#2_1_Battle_Speed"                   >2.1   バトルスピード</a>
+<a href="#2_2_The_Global_Timer"               >2.2   グローバルタイマー</a>
+<a href="#2_3_The_V-Timer"                    >2.3   Vタイマー</a>
+<a href="#2_4_The_C-Timer"                    >2.4   Cタイマー</a>
+<a href="#2_5_The_Turn_Timer"                 >2.5   行動タイマー</a>
+<a href="#2_6_Timer_Interaction"              >2.6   タイマー間の関連</a>
+<a href="#2_7_Escaping_Battles"               >2.7   バトルから逃げる</a>
+<a href="#3_Battle_Damage"                    >3.  ダメージ</a>
+<a href="#3_1_Setup"                          >3.1   初期計算</a>
+<a href="#3_2_Status_and_Elemental_Resistance">3.2   ステータス耐性および属性耐性</a>
+<a href="#3_3_Hit_Chance"                     >3.3   ヒット確率</a>
+<a href="#3_3_1_Physical"                     >3.3.1   物理攻撃</a>
+<a href="#3_3_2_Magical"                      >3.3.2   魔法攻撃</a>
+<a href="#3_3_3_Critical"                     >3.3.3   クリティカル攻撃</a>
+<a href="#3_3_4_Status"                       >3.3.4   ステータス攻撃</a>
+<a href="#3_4_Formula_Types"                  >3.4   計算式の種類</a>
+<a href="#3_4_1_Physical"                     >3.4.1   物理攻撃</a>
+<a href="#3_4_2_Magical"                      >3.4.2   魔法攻撃</a>
+<a href="#3_4_3_Cure"                         >3.4.3   回復</a>
+<a href="#3_4_4_Item"                         >3.4.4   アイテム</a>
+<a href="#3_4_5_Other_Formulas"               >3.4.5   その他の計算式</a>
+<a href="#3_4_6_Formula_Modifiers"            >3.4.6   計算式モディファイア</a>
+<a href="#3_5_Lucky_7s"                       >3.5   ラッキー７</a>
+<a href="#3_6_Final_Checks"                   >3.6   最終チェック</a>
+<a href="#4_Statuses"                         >4.  ステータス</a>
+<a href="#4_1_Status_Attributes"              >4.1   ステータスの性質</a>
+<a href="#4_2_Special_Notes_On_Statuses"      >4.2   ステータス特記事項</a>
+<a href="#5_Game_Over"                        >5.  ゲームオーバー</a>
+<a href="#6_Credits"                          >6.  謝辞</a>
 
 
 -----------------------------------------------------------------------------
-1. DEFINITIONS
+<a name="1_Definitions">1. 定義</a>
 --------------
 
 ---  ---------------
-1.1  Character Stats
+<a name="1_1_Character_Stats">1.1  キャラクターパラメータ</a>
 ---  ---------------
-There are seven Primary Stats and seven Derived Stats that make up your
-basic character.  The Primary Stats are:
-  Str: Strength           Dex: Dexterity
-  Vit: Vitality           Mag: Magic
-  Spr: Spirit             Lck: Luck
-  Lvl: Level
+各キャラクターには７個の基本パラメータと７個の派生パラメータがある。
+基本パラメータは以下のとおり：
+  Str: 力                 Dex: 素早さ
+  Vit: 体力               Mag: 魔力
+  Spr: 精神               Lck: 運
+  Lvl: レベル
 
-The Derived Stats are:
-  Att: Attack             At%: Attack%
-  Def: Defense            Df%: Defense%
-  MAt: Magic atk          MDf: Magic def
-  MD%: Magic def%
-
-
-The Primary Stats dictate the overall strengths of your character.  Level
-dictates exactly how powerful the character is, while the last six stats
-round off the character.  Each character has a starting value for their
-Primary Stats, and every level, there is a chance that these stats will
-be raised by a random number of points.  In addition, it's possible to
-further raise these stats permenantly using Sources.
+派生パラメータは以下のとおり：
+  Att: 攻撃力             At%: 命中率
+  Def: 防御力             Df%: 回比率
+  MAt: 魔法攻撃           MDf: 魔法防御
+  MD%: 魔法回避率
 
 
-The Derived Stats are based from your Primary Stats and your currently worn
-equipment.  They are derived as such:
-  Att =  Str      + Weapon Attack Bonus
-  At% =             Weapon Attack% Bonus
-  Def =  Vit      + Armour Defense Bonus
-  Df% = [Dex / 4] + Armour Defense% Bonus
+基本パラメータはキャラクターの総合的な強さを表す。レベルはそのキャラクター
+の強さがどれくらいかを表し、残りの６個のパラメータで細かな状態を表す。
+各キャラクターには決まった基本パラメータの初期値があり、レベルアップごとに
+これらのパラメータがランダムな増分で増加してゆく。また、「～アップ」アイテム
+を使用して、これらのパラメータをさらに上昇させることも可能である。
+
+
+派生パラメータは基本パラメータと現在身につけている装備から算出される。
+算出方法は以下のとおり：
+  Att =  Str      + 武器の攻撃力加算分
+  At% =             武器の命中率加算分
+  Def =  Vit      + 防具の防御力加算分
+  Df% = [Dex / 4] + 防具の回比率加算分
   MAt =  Mag
-  MDf =  Spr      + Armour MDefense Bonus
-  MD% =             Armour MDefense% Bonus
+  MDf =  Spr      + 防具の魔法防御加算分
+  MD% =             防具の魔法回避率加算分
 
 
-Your Derived Stats, along with a few of the Primary Stats (mostly Level,
-Dexterity and Luck), are what's used in every battle to determine battle
-damage, spell strength, and so on.
+これら派生パラメータといくつかの基本パラメータ（特にレベル、素早さ、運）
+から、バトルで与えるダメージや魔法の強さなどが算出される。
 
-NOTE: There is a bug in FF7 such that Armour MDefense Bonus is *not* added
-to Magic Def.  This is reflected in many places, including the Status screen
-(but the bonus you are supposed to get is visible in the Equip screen).  To
-my knowledge, it is definitely evident in both the PC version and the PSX
-version.  You will take the same amount of magic damage regardless of your
-Armour's MDefense rating.
+注：FF7には防具の魔法防御加算分が魔法防御力に加算されないというバグがある。
+これはステータス画面などいろいろな箇所で確認できる（得られるはずのボーナス
+は装備メニューで確認できる）。
+これは PC 版でも PSX 版でも確認されている。
+防具の魔法防御にかかわらず、同じだけの魔法ダメージを受けてしまう。
 
 
-In addition to the above, many pieces of armour, weaponry and accessories
-will give you special bonuses to your Primary Stats which, in turn, affect
-your Derived Stats.  You can only see these bonuses in effect on the Status
-screen though, not on the Equip screen.  These bonuses are factored into
-battle, however.
-
-The stats have the following main effects:
-
-  Att: Calculated from your Str and equipment.  Dictates the strength of
-       Physical attacks using either the Physical, Magical or Cure Formulas.
-       The higher this is, the more damage you will do with those type of
-       attacks.
-
-  MAt: Calculated from your Mag and equipment.  Dictates the strength of
-       Magical attacks using either the Physical, Magical or Cure Formulas.
-       The higher this is, the more damage you will do with those type of
-       attacks.
-
-  Def: Calculated from your Vit and equipment.  Reduces the damage you take
-       from Physical attacks that use either the Physical, Magic or Item
-       Formulas.  The higher it is, the less damage you take.  At 255 Def,
-       you will take about half damage from Physical attacks as compared to
-       0 Def.
-
-  MDf: Calculated from your Spr and equipment.  Reduces the damage you take
-       from Magical attacks that use either the Physical, Magic or Item
-       Formulas.  The higher it is, the less damage you take.  At 255 MDf,
-       you will take about half damage from Magical attacks as compared to 0
-       MDf.  Note that a bug exists that causes the MDf of all armor to not
-       be counted.
-
-  At%: Based on your equipment only.  This is the chance you have of hitting
-       with your current weapon.  Non-weapon abilities have their own unique
-       At%.  The higher it is, the higher the chance you have of hitting.
-       Certain abilities and statuses may raise or lower this value.
-
-  Df%: Calculated from your Dex and equipment.  This is the chance you have
-       of evading a Physical attack.  The higher it is, the less chance you
-       have of being hit with evadable Physical attacks.  It is also used as
-       a factor to improve your chance to hit with Physical attacks.
-
-  MD%: Based on your equipment only.  This is the chance you have of evading
-       a Magical attack.  The higher it is, the less chance you have of being
-       hit with evadable Magical attacks.
-
-  Dex: Primary Stat Value.  Affects the rate your Turn Timer increases.
-       Higher Dex also affects both your accuracy and chance to evade with
-       Physical attacks.
-
-  Lck: Primary Stat Value.  Affects the chances of earning Lucky Hits (100%
-       chance to hit a target with a standard Physical attack), Lucky Evades
-       (100% chance to evade an evadable Physical attack - doesn't work
-       against Lucky Hits) and Critical Hits (double damage used with most
-       Physical attacks).
-
-  Lvl: Primary Stat Value.  Increases the effect of almost everything you do.
-       Helps improve your physical damage, magical damage, chance to hit with
-       magical attacks, chance to land critical hits, chance to steal, chance
-       to manipulate, etc.  Also affects your current stat growth and the
-       effect of certain attacks.
+上記の派生パラメータ計算時の加算分に加え、多くの武器・防具・アクセサリは基本
+パラメータにも影響を与える特殊加算分がある（それがさらに派生パラメータに影響
+を及ぼす）。
+この基本パラメータに対する影響は装備画面には表示されず、ステータス画面
+から確認するしかない。バトル時の計算ではこの特殊加算分も考慮される。
 
 
-From now on, the three letter abbreviations next to each Stat will be used
-instead of their full names.
+主なパラメータの概略を以下に示す:
+
+  Att: 攻撃力。Str（力）と装備から算出される。
+       物理ダメージ計算式・魔法ダメージ計算式・回復計算式いずれかによる
+       物理的な攻撃の強さを表す。
+       この値が高いほど多くのダメージを与えられる。
+
+  MAt: 魔法攻撃力。Mag（魔力）と装備から算出される。
+       物理ダメージ計算式・魔法ダメージ計算式・回復計算式いずれかによる
+       魔法攻撃の強さを表す。
+       この値が高いほど多くのダメージを与えられる。
+
+  Def: 防御力。Vit（体力）と装備から算出される。
+       物理ダメージ計算式・魔法ダメージ計算式・回復計算式いずれかによる
+       物理的攻撃から受けるダメージを減少させる。
+       この値が高いほど受けるダメージは少なくなる。
+       Defが255の場合、0の場合に比べておおよそ半分の物理ダメージを受ける。
+
+  MDf: 魔法防御。Spr（精神）と装備から算出される。
+       物理ダメージ計算式・魔法ダメージ計算式・回復計算式いずれかによる
+       魔法攻撃から受けるダメージを減少させる。
+       この値が高いほど受けるダメージは少なくなる。
+       MDfが255の場合、0の場合に比べておおよそ半分の魔法ダメージを受ける。
+       ただし防具のMDf値が加算されないというバグがある。
+
+  At%: 命中率。装備のみから算出される。
+       現在の武器による攻撃が当たる確率をあらわす。武器攻撃以外のアビリティは
+       それぞれ独自の命中率を使用する。この値が高いほど攻撃が目標にあたる可能
+       性が高い。特定のアビリティやステータスはこの値を上下させる。
+
+  Df%: 回避率。Dex（素早さ）と装備から算出される。
+       これは物理攻撃を回避する確率である。この値が高いほど、回避可能な物理攻
+       撃が自分に当たる可能性が低くなる。
+       また自分の物理攻撃が敵に当たる確率を算出する際にも使用される。
+
+  MD%: 魔法回避。装備のみから算出される。
+       これは魔法攻撃を回避する確率である。この値が高いほど、回避可能な魔法攻
+       撃が自分に当たる可能性が低くなる。
+
+  Dex: 素早さ。基本パラメータ。ターンタイマーの増加レートに影響を与える。
+       また物理攻撃の命中率と回比率にも影響を及ぼす。
+
+  Lck: 運。基本パラメータ。ラッキーヒット（通常の物理攻撃が100%当たる）、
+       ラッキー回避（回避可能な物理攻撃を100%回避できる：ラッキーヒットに対し
+       ては無効）、クリティカルヒット（物理攻撃ダメージ倍）が出る確率に影響を
+       及ぼす。
+
+  Lvl: レベル。基本パラメータ。ほぼ全てのことに影響を及ぼす。
+       物理ダメージ量、魔法ダメージ量、魔法攻撃が当たる確率、クリティカルヒッ
+       トが出る確率、盗む確率、操る確率、等々。
+       またパラメータの増加量、特定の攻撃の効果などにも関連する。
+
+
+以降、このドキュメントでは各パラメータを上記の3文字の略語で表す。
 
 
 
 ---  ------------------------
-1.2  Special Term Definitions
+<a name="1_2_Special_Term_Definitions">1.2  用語の定義</a>
 ---  ------------------------
-The following terms will be used throughout the Game Mechanics guides.
+このドキュメント全体を通じて、以下の用語を使用する。
 
-1.2.1 Basic Terms
+<a name="1_2_1_Basic_Terms">1.2.1 基本用語</a>
+
 ----- -----------
-Base Damage:
-  This is a special term which means the basic power of most basic types of
-attack.  For physical attacks, Base Damage is dependent on Att and Lvl.  For
-magical attacks, it is dependent on MAt and Lvl.  Most attacks will use Base
-Damage to determine the damage they do.  In ability formulas, this will be
-listed as Base.
+基底ダメージ:
+  一番基本的な攻撃の基本的な強さを表す用語である。物理攻撃の基底ダメージは
+Att と Lvl に依存する。魔法攻撃のそれは MAt と Lvl に依存する。ほとんどの
+攻撃では基底ダメージがその攻撃が与えるダメージを決定する。アビリティ計算式
+ではこの値を Base と記述する。
 
 
 
-Power:
-  The next most important stat, this determines how strong an ability is.
-Power is an integer given to almost all standard abilities that can affect HP
-or MP in some way, and the higher it is, the stronger the effect.  In the
-Party and Enemy Mechanics Guides, Power will be expressed in its fully
-calculated form depending on the Formula used (see below): for example, a
-Power of 16 for the Physical Formula would be a 1x Base damage attack.  In
-all cases where a formula is being stated, however, the integer version of
-Power will be used for greater accuracy.
+パワー:
+  アビリティの強さを表す。HP や MP になんらかの影響を及ぼすほとんど全ての
+アビリティに割り当てられた整数値で、数値が高いほど効果が強いことを意味する。
+PARTY GUIDE と ENEMY GUIDE の中では、使用される計算式によって計算済みの値
+を記述している。たとえば、物理ダメージ計算式でのパワー16 は 1 * Base に
+等しい。
+正確性のため、このドキュメントの計算式では常に整数のパワー値を記述する。
 
-  Please see Section 3.4 for details on how Power is converted under the
-various formulas.
- 
+各々の数式でパワー値がどのように変換されるかについては <a href="#3_4_Formula_Types">3.4 章</a>を参照のこと。
+
 
 
 NRV:
-  Short for No Random Variation, this means that the attack will not vary in
-power according to a random factor.  Note that Random Variation is only used
-with the Physical, Magical, Cure and Item Formulas - all others are
-automatically considered to have no Random Variation.
+  非ランダム変動（No Random Variation）の略。攻撃の強さの変動が乱数に基づく
+ものではないということをあらわす。ランダム変動は物理ダメージ計算式、
+魔法ダメージ計算式、回復計算式、およびアイテム計算式のみで使用される。
+それ以外の計算式では常に非乱数変動が使用される。
 
 
 
-Caster/Attacker:
-  The character that used the ability.  Also known as the source of the
-attack's effect.
+使用者／攻撃者:
+  アビリティを使用するキャラクタ。効果の発生源とも言う。
 
 
 
-Target:
-  The character that is affected by the ability.
+ターゲット:
+  アビリティの効果が及ぶ対象のキャラクタ。
 
 
 
-Before Damage Effect:
-  This term is applied to certain effects that take place immediately before
-the standard damage procedure for a target is looked at.  These sort of
-effects usually adjust the Power of the ability, which can cause a change in
-damage.  You will notice that all the Ultimate Weapons use a Before Damage
-Effect in precisely this manner, which allows them to adjust the strength of
-your attack before damage is calculated.
+ダメージ前効果:
+  ターゲットに対する通常のダメージ処理が行われる直前に発生する効果のこと。
+これらの効果は主にアビリティのパワーに影響を与えてダメージの量を変える。
+各キャラクタの最強武器ではこのダメージ前効果を使用して、ダメージ計算の前に
+攻撃のパワーが調整される。
 
 
 
-After Damage Effect:
-  This term is applied to certain effects that take place immediately *after*
-the standard damage formulas.  In virtually all cases, it ends up adjusting
-the final damage total, usually by multiplying it by some amount depending
-on certain factors.
+ダメージ後効果:
+  通常のダメージ計算の直後に発生する効果のこと。
+この効果は特定の条件にしたがってダメージの最終調整を行うのに使用されるのが
+ほとんどである。
 
 
 
-Element:
-  Some abilities will use a special Element that will determine certain
-factors about the attack.  Most enemies will have certain elemental
-weaknesses and strengths; this factor will determine whether the attack will
-do extra damage or be defended against.  For example, an attack described as
-a 'Elm: Fire' attack will do Fire Elemental damage.
+属性:
+  アビリティによっては攻撃に影響を及ぼす属性を使用するものがある。
+多くの敵には特定の属性に対する強さ・弱さがある。この要素によって、攻撃にって
+追加ダメージを与えることができるか、ダメージが減らされるかが決定される。
+たとえば 属性:火 と記述されている攻撃は火属性のダメージを与える。
 
-  Note that FF7 uses the following common Elements:
-    Fire, Ice, Lightning, Earth, Poison, Gravity, Water, Wind, Holy,
-    Restorative.
+  FF7では以下の属性を使用する：
+    火 氷 雷 大地 毒 重力 水 風 聖 回復属性
 
-  The absence of any Element is termed Non-Element, which, while not
-technically an element in itself, will be used to denote this state.
+  固有の属性のないものは無属性と呼ばれる。
 
-  Also note that there are five more Elements that tend to apply only to
-Physical Attacks.  While FF7 is aware of them, they are not normally utilised
-in Elemental calculations because almost nothing is weak or defends against
-them:
-    Cut, Hit, Punch, Shoot, Shout.
+  またこの他に主に物理攻撃にのみ適用される五種類の属性がある。ただしこれらは
+通常の属性にかかわる計算では使われない。これらの属性について特に強い・弱い
+ターゲットが存在しないためである：
+    切る 打つ 刺す 撃つ 叫ぶ
 
-  And finally, there is a 16th Hidden Element that was obviously supposed to
-have been dummied out, but due to sloppy coding, has ended up having
-unexpected effects with the Elemental Materia and certain attacks.
+  最後に、16個目の隠れた属性が存在する。これは削除されるはずのものが中途半端
+なコーディングのせいで削除しきれず、属性マテリアや特定の種類の攻撃で予想外の
+効果を持つようになってしまったものである。
 
-  Of the above Elements, Restorative, Cut, Hit, Punch, Shoot, Shout and
-Hidden are not made known to the player.  They can be described as follows:
+  上記のうちプレイヤーには知らされない、回復属性、切る、打つ、刺す、撃つ、
+叫ぶ、および隠し属性は、以下ようなものである：
 
-  Restorative :- See below for the definition of Restore.  Restorative is the
-    difference between the Cure and Life series of spells which give back HP,
-    and the Holy Elemental attack spells like Alexander, which cause Holy
-    Element damage.  While Undead are often said to be Weak to Holy, they
-    *Absorb* Restorative instead.
-  Cut :- Used to describe an attack that uses an edged weapon.
-  Hit :- Used to describe an attack that uses a blunt weapon.
-  Punch :- Used to describe an attack that uses a piercing weapon.
-  Shoot :- Used to describe attacks that use projectile weapons.
-  Shout :- Used to describe attacks that are sonic or energy-based in nature.
-  Hidden :- Unknown.  Unlike the others, Hidden is the name I've given it.
-            Very few attacks have this element.  Any that do can be protected
-            against by linking any non-Element Materia with the Elemental
-            Materia in a character's armour.
+  回復属性：「回復」の定義は後述。回復属性はケアル・レイズ系の HP を回復する
+    魔法にかかわる属性である。これはアレクサンダーなどの聖属性攻撃とは区別し
+    なければならない。アンデッド系の敵は通常聖属性に弱いとされるが、回復属性
+    の攻撃は実際には「吸収」しているのである。
+  切る：刃のある武器による攻撃に関連する属性。
+  打つ：鈍器による攻撃に関連する属性。
+  刺す：とがった武器による攻撃に関連する属性。
+  撃つ：弾丸など投射体による攻撃に関連する属性。
+  叫ぶ：音による攻撃に関する属性。
+  隠し：「隠し属性」というのはこのドキュメントでの便宜的な名称。
+    この属性をもつ攻撃は非常に少ない。キャラクターの防具で、属性マテリアと
+    それ以外のマテリア（なんでも）を組み合わせることで防御できるようになる。
 
 
 
-Berserk Attack:
-  This term will show up often in the Enemy Mechanics Guide.  If an enemy is
-under the status effect Berserk, it will ignore its AI script and will
-instead use its designated Berserk Attack.  This will be listed under the
-Attributes section of one of the attacks listed in its Attack List.  Note
-that there are a number of enemies who are not immune to Berserk but do *NOT*
-have a designated Berserk Attack.  This causes a bug where the monster will
-try to use an attack that does not exist.  This attack costs a phenomenal
-amount of MP, and the monster will fail to use it and give an &quot;Out of Skill
-Power&quot; message instead.  This is fortunate, since a successful use of this
-particular ability would crash the game.
+バーサク攻撃:
+  この用語はENEMY GUIDEで頻出する。敵がバーサク状態になった場合、その敵はAI
+スクリプトで定義された行動パターンを無視してその敵に定義されたバーサク攻撃
+のみを行うようになる。
+これは各敵情報の「攻撃リスト」内の「属性」の下に記述される。
+バーサク耐性がないのにバーサク攻撃の定義されていない敵もいくつか存在する。
+これらの敵がバーサクにかかると、ある未定義の攻撃を行うというバグが発生する。
+この攻撃には多大なMPが必要なため敵はこの実行に失敗し「MPが足りない」という
+メッセージが表示される。もしこの攻撃が成功していたらゲーム自体がクラッシュ
+していただろう。
 
 
 
-1.2.2  Types of Attack
+<a name="1_2_2_Types_of_Attack">1.2.2  攻撃の種類</a>
 -----  ---------------
-When an attack type is given, the following terms will be used to describe
-them.  These are the most common terms; unique terms will be described
-within the notes for the appropriate ability itself.
+攻撃の種類については、以下の用語が使用される。ここにあげる用語のほかに、
+特定の攻撃に特有の用語が使われる場合は、そのつど説明する。
 
 
-Physical:
-  Any attack termed as Physical will use Att and Def as the primary damage
-calculating stats, and is affected by Barrier.  It will also normally use the
-Physical Formula for Base Damage, unless noted otherwise.
-
-
-
-Magical:
-  Any attack termed as Magical will use MAt and MDf as the primary damage
-calculating stats, and is affected by MBarrier.  It will also normally use
-the Magical Formula for Base Damage, unless noted otherwise.
+物理:
+  物理攻撃に分類される攻撃はダメージ算出に Att と Def を主に使用し、バリア
+の影響を受ける。また、特別なケースを除いて、通常は基底ダメージ算出には物理
+数式を使用する。
 
 
 
-Piercing:
-  This means that the attack will ignore the target's Def and MDf stats when
-determining how much damage it will do to them.  Def and MDf are only
-factored into the Physical, Magical and Item Formulas normally, so only
-attacks that use these formulas will actually be marked Piercing.  All other
-formulas will not be marked since they're already considered Piercing.
+魔法:
+  魔法攻撃に分類される攻撃はダメージ算出に MAt と MDf を主に使用し、マバリア
+の影響を受ける。また、特別なケースを除いて、通常は基底ダメージ算出には魔法
+数式を使用する。
 
 
 
-Attack:
-  Any attack with this modifier will cause damage to some stat.  By default,
-this is HP, but this can be modified.  For example, MP Attack would mean an
-ability that reduces the target's MP.
+突刺し:
+  この攻撃は、ダメージ計算時にターゲットの Def と MDf を無視する。
+Def と MDf が考慮されるのは物理数式、魔法数式、およびアイテム数式のみである。
+そのためこれらの数式を使用する攻撃のみが実際に「突刺し」に分類され得る。
+それ以外のものは常に「突刺し」と同等に扱われる。
 
 
 
-Absorb:
-  The same as Attack, except that the attacker benefits in some way from the
-damage given to the target.  Unless otherwise noted, the benefit is equal and
-opposite to the damage dealt to the target.
+攻撃性:
+  この性質を持つ攻撃は何らかのパラメータにダメージを与えるものである。
+通常はそのパラメータは HP であるが、それ以外もありうる。たとえばMP攻撃は
+ターゲットの MP を減らす攻撃である。
 
 
 
-LR:
-  Short for Long Range, this means that the ability will not factor Back Row
-modifiers into the formula.  Thus, the ability will do full damage no matter
-what the distance.  This also means that the ability can target enemies that
-are 'Can't reach'.  Magical attacks are automatically considered to be Long
-Range.
+吸収性:
+  攻撃と同様だが、ターゲットに与えたダメージが攻撃者に何らかの利益を与える
+点が異なる。特に記す場合を除いて、攻撃者の利益とターゲットのダメージの量は
+等しくなる。
 
 
 
-Restore:
-  Restorative is a special Element that has the damage rules for Elements
-reversed.  Specifically, with no Restorative affinity, targets will gain
-HP or MP from this Element.  However, targets that are listed as Absorbing
-Restorative will instead take damage from this element.
-
-  If an attack is listed as Restorative, it will replace the Attack modifier.
-Restore is used just to remind that this is a healing ability;
-'Elm: Restorative' will still be listed within the attack, and in all other
-ways, it is classed as an Attack.
+遠距離性:
+  この性質を持つ攻撃では「後列」要素が考慮されない。つまり攻撃者とターゲット
+との距離にかかわらず同じだけのダメージが与えられる。これは、この種の攻撃は
+「届かない」タイプの敵も標的にできるということである。
+魔法攻撃は常に遠距離性であるとみなされる。
 
 
 
-Recovery:
-  A special type of attack, this ability will completely refill the target's
-HP and MP.  It can function without an Element, but if it does have one, then
-against any target that Absorbs the ability's Element, it will inflict Death
-status instead of restoring their HP and MP.  The words 'Recovery' or 'Death'
-will flash up over the target to demonstrate which is being used.
+回復性:
+  回復属性とは、通常とは逆のダメージ規則を持つ特別な属性である。
+つまり回復属性を持たない敵は回復性の攻撃を受けると HP/MP が増えることになる。
+しかし、回復属性を吸収する敵は、逆にこの攻撃によってダメージを受ける。
+（訳注：分かりにくいなあ…。回復性は攻撃の性質、回復属性は敵の属性）
 
-  All Recovery abilities are considered to have a non-zero Power stat, which
-can lead to certain interesting effects - for example, Cloud defending Barret
-from Yuffie's use of an Elixir on him....
-
-
-
-Change Status:
-  This attack type attempts to change the statuses on a target.  Changes in
-Status are divided into three types: Cure, Inflict or Toggle.  Cure will
-remove an instance of that Status.  Inflict will attempt to give the target
-that Status.  Toggle will either Inflict the Status on the target, or Cure
-it if the target already has that Status.  If at any time a spell or ability
-is described as Curing, Inflicting or Toggling a Status, it will also have
-either a number in square brackets or the term '100%'.  When a number in
-brackets appears, this is the relative chance of success.
-
-  For example: [ 60] Inflict 'Death' is a Rating 60 chance of inflicting the
-Death Status.  Without other factors modifying this chance, this would give a
-59% chance of inflicting the status.  [100] Inflict 'Slow' would, without
-other factors, equal a 99% chance of inflicting Slow.
-
-  A Change Status ability, like any other attack, will be either Physical or
-Magical; however, if Change Status is used, then this means that the attack
-itself does no damage.  The only reason Physical or Magical is listed is for
-certain enemies that may react to one or the other.  This also means that the
-ability has a Power of 0, which is an important attribute that changes the
-way the game treats the ability.
-
-  If the chance reads 100%, then the Status Chance cannot fail by random
-chance.  The few methods of avoiding it in that case require either immunity
-to the status, or for the Ability itself to miss.
+  回復性を持つ攻撃が、同時に攻撃性を持つことはない。この性質がターゲットの
+パラメータを回復させることから「回復」という名称を使用しているが、それ以外の
+部分では他の攻撃となんら変わることがなく、攻撃として分類される。
 
 
 
-Misc Ability:
-  Any ability that is not adequately described by the above categories falls
-under this category by default.  Whatever effect the ability has will be
-depicted under Notes.
+復活性：
+  ターゲットのHP/MP を完全復活させる特別な種類の攻撃である。無属性のものと
+属性のあるものが存在する。属性のあるものの場合、その属性を吸収する敵に対して
+は HP/MP 復活ではなく即死攻撃となる。この攻撃が使用された場合、ターゲットの
+上に「復活」または「即死」が表示される。
+
+回復性のあびりてぃは全て非ゼロのパワー値を持つことになっている。この結果、
+時には面白いことが起きる：たとえば、ユフィがバレットにエリクサーを使おうと
+しているのをクラウドがかばうと…
 
 
 
-1.2.3  Formula Types
+ステータス変化:
+  この種類の攻撃はターゲットのステータスを変化させようとする。ステータスの変
+化は治癒・発症・反転の三種類がある。治癒とはそのステータスを除去することであ
+る。発症はターゲットにそのステータスを与えようとすることである。反転はター
+ゲットのステータスを現在と逆の状態にすることである。魔法またはアビリティに
+ステータス変化性がある場合、同時に[数字]または 100% と記載されている。
+この数値はステータス変化が成功する可能性を表す。
+
+たとえば [ 60] 発症 即死 と記載されていた場合、ターゲットを即死状態にする可
+能性が 60 ポイントある、ということである。他に確率に影響を与える要素がない
+場合、これは 59% の成功率ということになる。[100] 発症 スロウ の場合、同様に
+たの要素が無ければ 99% の成功率でターゲットをスロウ状態にする。
+
+他の攻撃と同様、ステータス変化攻撃も物理攻撃・魔法攻撃のどちらかとなる。
+ただし、ステータス変化が使用された場合には攻撃自体のダメージはなくなる。
+ステータス変化攻撃が物理または魔法に分類されているのは、そのどちらかにしか
+反応しない敵がいるためである。この種別の攻撃はパワー値が 0 となっており、
+ゲーム中で特殊な扱いを受けることになる。
+
+成功率が 100% と記載されている場合（[100] とは違う）、ステータス変化がラン
+ダムな要因で失敗することはない。この場合のステータス変化が防げるのは、
+ターゲットにそのステータスへの耐性がある場合、またはアビリティ自体の発動に
+失敗した場合のみである。
+
+
+
+その他：
+  上記のカテゴリに当てはまらないもの。個々の効果についてはそのつど解説する。
+
+
+
+<a name="1_2_3_Formula_Types">1.2.3  計算式の種類</a>
 -----  -------------
-An attack that causes damage also has a Damage Formula.  While the specifics
-of this will be listed on the Str stat for each ability in the guides, the
-basic properties of the attack can be described as the formula.  The complete
-list of Formula Types are as follows.
+ターゲットにダメージを与える攻撃にはそれぞれのダメージ計算式がある。
+各々のアビリティの Str の項で具体的な値については説明するが、基本的な攻撃の
+性質はいくつかの計算式で表すことができる。
+計算式の種類は以下のとおり：
 
 
-Physical:
-  Uses the standard Physical Damage formula.  This type of ability will take
-the most things into account, and has the most bonuses and penalties
-attributed to it.  The ability will usually be defended against with the
-Def stat and will be further reduced by the Barrier status.  All area attacks
-using this formula will Split their damage, and the final result is subject
-to Random Variation.
-
-
-
-Magical:
-  Uses the standard Magical Damage formula.  Generally less powerful and
-more stable than the Physical Damage formula, but has higher damage abilities
-to go with it in order to compensate.  MDf will defend against almost all of
-these attacks, and MBarrier will also help.  The end result is also subject
-to Random Variation.
+物理：
+  物理ダメージ計算式を使用する。この種類のアビリティは、最も多くの事柄を考慮
+にいれ、またそれによる結果の増減も大きい。この種のアビリティは通常は Def
+パラメータおよびバリア状態で防御される。複数のターゲットに対して使用された
+場合そのダメージはターゲット間で分配され、最終的なダメージ量はランダムに変動
+する。
 
 
 
-Cure:
-  Uses the standard Cure formula.  Similar to the Magical formula, except
-that your stats act as a base for the strength of the spell instead of the
-usual multiplier: improving your stats increases the strength of *all* Cure
-abilities by the same amount.  On top of this, the Cure formula is not
-affected by Def or MDf.  Apart from these main differences, almost all other
-factors that adjust Magical damage will also affect the Cure formula.
+魔法：
+  魔法ダメージ計算式を使用する。通常、物理ダメージ計算式よりも弱いが、より
+安定している。また、計算式の弱さを補うだけの強力なアビリティが存在する。
+MDf およびマバリアがこのアビリティに対する防御となる。
+これも最終的なダメージ量はランダムに変動する。
 
 
 
-Item:
-  The final formula subject to Random Variation.  Abilities that use the
-Item formula have a fixed strength that your stats can't touch.  However,
-the damage can be defended against with either Def or MDf, and the final
-result is subject to Random Variation.  On the other hand, none of the other
-factors specific to Physical, Magical or Cure will affect the Item formula -
-in particular, it will ignore the presence of Barrier and MBarrier status.
+回復:
+  回復計算式を使用する。魔法ダメージ計算式に似ている。違いは、効果を計算
+する再のベース値が、キャラクターの全パラメータ値であるという点である。
+キャラクターのパラメータが上昇すると、「全ての」回復アビリティの強さが
+同じぶんだけ上昇する。また、回復計算式は Def や MDf の影響を受けない。
+これ以外の点で魔法ダメージ計算式の要素は全て回復計算式にも適用される。
+
+
+
+アイテム：
+  アイテム計算式を使うアビリティの強さは、ユーザが変えることのできない固定値
+となっている。しかしそのダメージは Def または MDf で防御することができ、その
+最終的なダメージ量はランダムに変動する。それいがいの物理ダメージ・魔法
+ダメージ・回復計算式に影響を与える要素は、アイテム計算式には影響を与えない。
+特に、アイテム計算式はバリアとマバリアの状態を無視する。
 
 
 
 HP%, Max HP%:
-  These two are very similar - one is based on a fraction of the HP you have,
-the other is based on a fraction of your *Max* HP.  Abilities that target MP
-use these same formulas - the formula is smart enough to know which stat to
-check, so don't be surprised if you see a MP Attack using the HP% Formula: it
-will correctly take a percentage of your MP instead.  Almost nothing affects
-the final damage done by this formula - it ignores Barrier and MBarrier and
-either Defense stat, and there is no Random Variation.
+  この二つは非常に似通っている。片方はキャラクターの現在のHPに対する割合に
+基づき、もう片方はキャラクターの最大HPに対する割合に基づく。MPをターゲット
+とするアビリティでも同じ計算式を使用する。この計算式に基づくダメージ量は、
+他の要素からの影響をほとんど受けない。バリア、マバリア、Def、MDf のいずれも
+無視され、またその結果のランダム変動もない。
 
 
 
-Fixed:
-  An ability using the Fixed Formula does a specified amount of damage, and
-none of the usual factors may modify this.  Elements and other factors that
-take place outside the formulas can still change this, but Fixed itself is
-immune to Def/MDf, Barrier/MBarrier, Random Variation and Split Damage.
+固定:
+  固定計算式を用いるアビリティは決まった量のダメージを与え、他の要素によって
+結果が変化することはない。属性など、この計算式以外の要素によって実際の
+ダメージ量が変動することはありうるが、固定計算式自体の結果はDef/MDf、バリア
+マバリア、ランダム変動、ダメージ分配のいずれの影響も受けない。
 
 
 
-Recovery:
-  A special formula set aside for the Recovery-type abilities.  Please see
-the previous section for details - it's listed here merely for completeness.
-Note that all abilities that use the Recovery formula have a non-zero Power
-stat - this can be important for particular things in battle.
+復活:
+  復活性アビリティ専用の特別な計算式。詳しくは前の項目を参照。復活計算式を
+使用するアビリティは全て非ゼロのパワー値を持っていることに注意。
 
 
 
-Custom:
-  Finally, there are the Custom formulas.  Like the Fixed formula, none of
-the standard effects modify their damage, so their base damage is as listed
-next to the relevant abilities in the guide.  The full list of abilities
-using a Custom formula are as follows: White Wind, ????, Chocobuckle, Coin,
-Dice, Heartless Angel, Time Damage, Everyone's Grudge, Aire Tam Storm.
+特殊:
+  固定計算式と同様、通常の要素によってダメージが変化することはない。
+それらのアビリティは説明の横に基底ダメージを記載する。
+特殊計算式を用いるのは以下のアビリティである：
+  ホワイトウィンド、なんとか？？？？、チョコボックル、ぜになげ、
+  ダイス、心無い天使、Time Damage（日本語わからん。トンベリが使うらしい）、
+  みんなのうらみ、エメラルドビッグバン
 
 
 
-1.2.4  Target Types
+<a name="1_2_4_Target_Types">1.2.4  ターゲットの種類</a>
 -----  ------------
-Any ability used will often require a target to be given.  The following
-shorthand will be used:
+何かアビリティを使うには、多くの場合そのターゲットが必要となる。
+以下の表記を使用する：
 
-Op:  Opponent
-Al:  Ally
-Tar: Target (Opponent or Ally)
-
-
-
-1 Tar:
-  This means that the ability can only hit one selected target.  Normally,
-this target will be selected by the player or enemy.  Multi-hit attacks that
-only hit one selected target also fall under this category.
+敵：敵（アビリティを使うキャラクターの敵。モンスターから見たらプレイヤー側）
+味：味方（上記の逆）
+タ：ターゲット（敵または見方どちらでも）
 
 
 
-&lt;n&gt; Tar:
-  This special variation of the above means that the ability will hit &lt;n&gt;
-randomly selected targets in the chosen target group.  For example,
-Omnislash will be listed as '15 Op', which means it will hit 15 randomly
-selected targets in a selected opponent target group.
+敵1：
+  アビリティは１体の敵にのみ効果があることを表す。通常はこの場合のターゲット
+はプレイヤーまたは相手が選択する。１体の敵に対して複数回の攻撃を行うアビリ
+ティもこれに含まれる。
 
 
 
-All Tar:
-  This means that the ability will hit all targets within the selected
-target group once each.  If this Target Type is used, the strength of the
-ability must be multiplied by 2/3; that strength is then used to determine
-the damage for each single target in the group.  Note that if there is only
-one Target in the group, then the ability is used at full strength instead;
-it's counted as a 1 Tar attack.
+敵<n>：
+  上記の特殊バージョン。選択したグループからランダムに選択された<n>体の敵
+に対して効果がある。たとえば超究武神覇斬は「敵15」となり、選択したターゲット
+グループ内のランダムな敵15体に攻撃を加えることになる。
 
 
 
-All Tar (NS):
-  NS stands for No Split.  This means that the strength of the ability is
-NOT multiplied by 2/3 when used against All Targets.  It will thus do full
-damage to each and every single target in the group.
+敵全：
+  選択したグループ内の敵全員に１回ずつ攻撃が加えられる。この種類のターゲット
+が使われる場合、該当アビリティの強さがまず2/3倍され、それからターゲット
+グループ内の敵1体ずつに対するダメージが計算される。ただしターゲットグループ
+に敵が1体しかいない場合は本来の強さが使用される。この場合のターゲットは敵1と
+みなされるからである。
 
 
 
-Area:
-  This means that the entire battlefield is a valid target for the ability.
-Both the party and the enemies will be affected.
+敵全（完）:
+  敵全と同じだが、アビリティの強さが2/3倍されない。つまり、グループ内の全て
+の敵1体ずつに対してフルで計算したダメージが与えられる。
 
 
 
-Random:
-  This means that the target will actually be a randomly selected single
-target out of a valid group.  Similar to &lt;n&gt; Tar, except that the valid group
-is what's being specified.  Random [All] specifies a single random target out
-of a single target group.  Random [Area] specifies a single random target out
-of all valid target groups in battle.  (Example: Random [All Tar] would allow
-you to decide which target group to attack, and then a single target would be
-picked randomly from that group.  Random [Area] would have no such choice,
-and the single target would be picked from all targetable characters in the
-battle.)
+全体：
+  バトル全体がアビリティのターゲットとなる。つまりプレイヤー側とモンスター側
+の全員がアビリティーの効果を受ける。
 
 
 
-1.2.5  Equipment Modifiers
+ランダム：
+  対象グループの中からランダムに選択された1体がターゲットとなる。敵<n>と似て
+いるが、選択する対象の範囲が決まっているところが異なる。
+ランダム[全]は選択した対象グループから1体のターゲットをランダムに選択する。
+ランダム[全体]はバトル全体の中から1体のターゲットをランダムに選択する。
+ランダム[タ全]は敵･味方全体のなかから対象グループをユーザが選択し、その中から
+ランダムな1体がターゲットとして選択される。ランダム[全体]の場合はそのような
+選択肢は最初から与えられず、バトル全体のキャラクタからランダムな1体が選択され
+る。
+
+
+
+<a name="1_2_5_Equipment_Modifiers">1.2.5   装備の機能</a>
 -----  -------------------
-The following terms will be used as shorthand to describe various modifiers
-equipment and accessories may give.
+装備やアクセサリの機能を表すために、以下の記述方法を使用する：
 
-+?? &lt;Stat&gt;:
-  This indicates that wearing the given equipment will give the indicated
-bonus to the described Basic Stat.  In the Weapon List found in the FF7
-Player Mechanics, there are columns already for Mag, Spr, Vit and Dex
-bonuses, so bonuses for those stats given by Weapons will be found in those
-columns instead.
++?? &lt;パラメータ&gt;:
+  その装備を身につけたときに得られる基本パラメータの加算値を表す。
+ただし武器に関しては FF7 PARTY MECHANICS の武器一覧の中に Mag, Spr, Vit, Dex
+の加算値がすでに記載されているので、そちらを参照のこと。
 
 
 
-Half/Void/Absorb &lt;Elemental&gt;:
-  The equipment will automatically allow you to either Halve, Void or Absorb
-damage from the relevant Elements.  If you have a better Elemental Defense
-than the one given, it will not be affected; the better Defense automatically
-takes priority.
+半減/無効/吸収 &lt;属性&gt;:
+  その装備を身につけていると、該当する属性によるダメージが半減／無効／吸収
+されることをあらわす。より強い属性防御をすでに身につけているときはその装備
+の機能は適用されず、強いほうの防御が優先される。たとえば同じ属性に対する半減
+と無効を同時に身につけた場合、常に無効のほうが優先される。
 
 
 
-Immune &lt;Status&gt;:
-  Wearing this equipment will automatically make you immune to the given
-Status.  Note that Immunity affects any interaction with the named status:
-if you are Immune to that Status, then it is also impossible to Cure or
-Toggle the Status should you have it on you.  This is best shown by wearing a
-Ribbon and using a Hyper outside of battle; you will gain the 'Fury' Status,
-but nothing will be able to remove that Status while you are inside battle.
+耐性 &lt;ステータス&gt;:
+  その装備を身につけると、該当するステータスへの耐性が身につくことを表す。
+この耐性は、そのステータスに対する全ての働きかけにかかわることに注意。
+あるステータスに対して耐性がある場合、そのステータスを治療／反転することも
+不可能である。たとえばリボンを装備して、バトルの外で興奮剤を使った場合、
+バトルが始まると「怒り」状態になるが、バトル中にそれを治すことはできない。
 
 
 
-Start with &lt;Status&gt;:
-  This means that wearing the piece of equipment will make sure you begin
-each battle with the named Status(es).  You cannot protect yourself from this
-initial infliction, even if you are immune to the status under normal
-circumstances.
+開始 &lt;ステータス&gt;:
+  その装備を身につけていると、バトル開始時に常にそのステータス状態になること
+をあらわす。通常ならば耐性があるようなステータスに対しても、このバトル開始時
+のステータス変更を防ぐことはできない。
 
 
 
-1.2.6  Mathematical Terminology
+<a name="1_2_6_Mathematical_Terminology">1.2.6   数学表現</a>
 -----  ------------------------
-Finally, before we begin, it is important that you are familiar with the
-following conventions.
+本ドキュメントでは以下の表記方法を使用する。
 
 
 [x]
-  The use of square brackets around a number - [3.5] for example - means that
-the result must be truncated.  That is, everything to the right of the
-decimal point must be removed.  For positive numbers, we call this rounding
-down.  Basically, [3.0], [3.5] and [3.8] would all equal 3, while [4.0] would
-be 4.  But [-3.8] would actually be -3, since we are truncating rather than
-rounding down.
+  角括弧でくくった数値（例：[3.5]など）は、その数値の小数部を切り捨てることを
+表す。[3.0]、[3.5]、[3.8]は全て3となり、[4.0]は4となる。[-3.8]は-3となる。
 
 
 x MOD y
-  This means to take the modulus of x with respect to y.  That is, you divide
-x by y and instead of the dividend, the remainder is what we use as the
-answer.  For example, 10 MOD 3 would be 1, because 10/3 gives a remainder of
-1.  Likewise, 5 MOD 3 would be 2, 6 MOD 9 would be 6, and 88 MOD 37 would
-be 14.
+  x/y の剰余を表す。10 MOD 3 = 1　(10/3=9 あまり 1なので)。
+同様に 5 MOD 3 = 2、6 MOD 9 = 6, 88 MOD 37 = 14 となる。
 
 
 Rnd(x..y)
-  This term means we require a random integer between x and y inclusive.
-For example, Rnd(3..8) would be a random number out of 3, 4, 5, 6, 7 and 8,
-with an equal chance of each.
+  x～y までの整数の乱数を表す（xおよびyを含む）。
+例えばRnd(3..8)は3,4,5,6,7,8のうちいずれかのランダムな数値を表す。
 
 
 RU(x)
-  This simple function just means to round the number x *up* instead of down
-or towards the nearest number.  So RU(2.1), RU(2.5), RU(2.9) and RU(3) are
-all equal to 3, but RU(3.01) would be 4.
+  この関数は数値の小数部を切り上げることを表す。
+RU(2.1), RU(2.5), RU(2.9)、RU(3)は全て3となり、RU(3.01)は4となる。
 
 
-With these terms out of the way, we can get started with how damage works in
-the game.
+これらの表記方法を利用して、ダメージ計算の説明を行う。
 
 
 
 -----------------------------------------------------------------------------
-2. TIME
+<a name="2_Time">2.  時間</a>
 -------
 
-There are no less than four different methods FF7 uses to measure how long
-things take in battle.  First, let's define the five major timer units used
-in the game.
+FF7ではバトル中の時間経過をはかるのにいくつもの異なる方法を使用する。
+まずゲーム中で使用される5個の主要な時間単位を定義する：
 
 
-Tick
-  The absolute smallest sub-unit of time used by FF7.  The other timers are
-updated every tick, and it is this unit of time that dictates how fast or
-slow they move with help from the Battle Speed option.  It is used mainly for
-updating and maintaining various effects, but it is never used to time how
-long something will last.
+TICK
+  FF7で使用される時間の最小単位。他のタイマーは全てこのTICKごとに更新される。
+バトルスピード設定によるスピードの調整はこのタイマーに対しての速度となる。
+主に画面上のエフェクトなどをアップデートするのに使用される。
+
+グローバルタイマー
+  バトル全体の進行をつかさどるタイマー。コンフィグメニューのバトルスピード
+オプションで、このタイマーの進む速度を調整する。
 
 
-Global Timer
-  The timer for the entire battle.  Only the Battle Speed option in the
-Config menu adjusts how quickly this increases.
+Vタイマー
+  このVは&quot;Variable（可変）&quot;を意味する。このタイマーの進行がバトル
+スピードや他の条件によって変化するからである。プレイヤーキャラクタおよび
+敵キャラクタの1体1体が各々のVタイマーを持っている。これはそのキャラクタの
+個人的な時間経過だと言える。ヘイストやスロウはその経過を早く・あるいは遅く
+するし、ストップや戦闘不能ではVタイマーの進行が止まる。
 
 
-V-Timer
-  Here, V stands for &quot;Variable&quot;, due to how this timer varies based on Battle
-Speed and other conditions.  Each player character and enemy have their own
-V-Timer.  This is the character's sense of personal time.  Haste and Slow can
-speed it up or slow it down, and if you're Stopped or Dead then the V-Timer
-stands still as well.  Other than this, the Battle Speed option also adjusts
-this.
+行動タイマー
+  Vタイマーと似ているが、このタイマーの進行には素早さも加算される。
+ただし、Dex が高いからと言って必ずしも早く行動できるわけではない。
+行動タイマーの進行速度はパーティ全体の素早さの平均（本来の素早さの平均）
+に基づいて決定される。これについて詳しくは後述する。
+素早いキャラクターには遅いキャラクターよりも早く行動順が回ってくるが、他の
+タイマーの進行状態は大きくは変わらないので、通常ゲームを進めてゆく限りでは
+それほど大きな違いは目に付かない。
+ゲームが進んで自分たちのレベルが上がるにつれて、同じ敵がよりゆっくり動く
+用に見えてくるかもしれない。マヒ、石化、睡眠状態では行動タイマーが停止する
+が、それ以外のタイマーには影響がない。
 
 
-Turn Timer
-  Similar to the V-Timer, except that it takes your Dexterity into account
-as well.  Note, however, that more Dex doesn't necessarily mean you move
-faster.  The increase to your Turn Timer is instead normalised by a factor
-which is derived from your party's average Dexterity - to be exact, their
-*Base* Dexterity.  We'll cover this in more detail later.  Faster characters
-still take their turn more quickly than slower ones, but since the other
-Timers are unaffected, you may not see a huge amount of difference in speed
-as you progress through the game.  The effect you'll mainly notice is that
-the same enemies will seem to be moving slower as you progress through the
-game.
-  Paralysed, Petrify and Sleep will all halt the Turn Timer, but will not
-affect the other timers.
-
-
-C-Timer
-  This final one is a tricky one.  Where V meant &quot;Variable&quot;, the C stands for
-&quot;Constant&quot;.  Like the V-Timer, it's affected by Haste and Slow, and it stops
-if *you're* Stopped (or Dead).  However, the Battle Speed option in the
-Config menu does *NOT* adjust the speed of the C-Timer.  It's more accurate
-to say it's somewhat similar to the game's clock.  It doesn't matter what
-Battle Speed you're playing on: it'll still progress at the same rate.
-
-
-
-Now that we've covered the four timers, let's go over the details more
-carefully.  First, we'll cover Battle Speed.
+Cタイマー
+  Cは&quot;Constant（定常）&quot;を意味する。これはVタイマーと同様ヘイストや
+スロウ、ストップなどの影響を受ける。ただし、このタイマーはバトルスピード設定
+の影響を受けない。バトルスピードの設定にかかわらず、このタイマーは一定の速さ
+で進行する。
 
 
 
 ---  ------------
-2.1  Battle Speed
+<a name="2_1_Battle_Speed">2.1  バトルスピード</a>
 ---  ------------
-The Battle Speed option, located in the Config menu, gives us a value between
-0 and 255, where 0 is on the far left (and is the fastest), while 255 is on
-the far right (and is the slowest).  The default Battle Speed is 128.
+コンフィグメニュー内のバトルスピードオプションでは、0から255までの設定値を
+選択することができる。一番左の0が一番速く、一番右の255が一番遅い。デフォルト
+のバトルスピードは128である。
 
-As soon as you enter battle, the Battle Speed is converted into our Speed
-Value via the following equation:
+バトルが始まると、このバトルスピードは以下の式でスピード値に変換される：
 
-       Speed Value = [32768 / (120 + [Battle Speed * 15 / 8])]
+       スピード値 = [32768 / (120 + [バトルスピード * 15 / 8])]
 
 
-This formula gives the following Speed Values for key values for Battle
-Speed:
+いくつかのバトルスピードに対するスピード値を以下に示す：
 
-    Battle Speed     Speed Value           Battle Speed     Speed Value
+  バトルスピード      スピード値         バトルスピード      スピード値
         0 (  0%)      273 (300%)             144 ( 56%)       84 ( 92%)
        16 (  6%)      218 (240%)             160 ( 63%)       78 ( 86%)
        32 ( 13%)      182 (200%)             176 ( 69%)       72 ( 79%)
@@ -856,595 +784,551 @@ Speed:
       112 ( 44%)       99 (109%)             255 (100%)       54 ( 59%)
       128 ( 50%)       91 (100%)             ----------       ---------
 
+バトルスピードの横のパーセンテージは0～255の範囲内でのパーセンテージ（128が
+全体の50%）を表す。スピード値の横のパーセンテージは、デフォルト値に対する
+パーセンテージを表す。つまりバトルスピード0の場合のスピード値は273なので、
+これはデフォルト時のスピード値の3倍、すなわち300%となる。
 
-The percentage values next to Battle Speed are simply how far along the scale
-the number is (128 is at the 50% mark on the scale).  The percentage values
-next to the Speed Value are what percentage of the default speed the value
-is.  So at Battle Speed 0, you have a Speed Value of 273, which is three
-times the default speed (or 300%).
-
-The Speed Value is the base amount any of the timers (except the C-Timer) are
-incremented.  Now let's look at each of the timers in more detail.
+このスピード値が、Cタイマー以外のタイマーが更新される際の基準増分値となる。
 
 
 
 ---  ----------------
-2.2  The Global Timer
+<a name="2_2_The_Global_Timer">2.2  グローバルタイマー</a>
 ---  ----------------
-The Global Timer isn't used for much, but its main use is to give us a
-reference of overall time.  Primarily, this is used to work out when the
-Stop Status should wear off.
+グローバルタイマーが使われる場面はあまりない。これはゲームの全体的な時間経過
+を計るのに使用される。ストップ状態が終了する時期を計るのに使われたりする。
 
-Every tick, the Global Timer is incremented by the Speed Value.  A Global
-Timer Unit is earned for every mark of 8192 the Global Timer passes.  So on
-the fastest Battle Speed, it would take just over 30 ticks for a single
-Unit of Global Time to pass.  On the slowest, this would increase to 152
-ticks.
+TICK経過ごとにグローバルタイマーにはスピード値が加算される。
+グローバルタイマーが8192進むごとに1グローバルタイマー単位の経過となる。
+バトルスピードが最速の場合、約30TICKで1グローバルタイマー単位となる。
+もっとも遅い場合は約152TICKで1グローバルタイマー単位となる。
 
 
 
 ---  -----------
-2.3  The V-Timer
+<a name="2_3_The_V-Timer">2.3  Vタイマー</a>
 ---  -----------
-The V-Timer, Turn Timer and C-Timer are character-specific.  This means that
-the state your character is in helps dictate how fast they are.  The main
-tests are as follows:
+Vタイマー、行動タイマーおよびCタイマーは各キャラクタ固有である。
+つまり、そのキャラクタの状態からタイマーの進行状況を推測することができる。
 
 
-Target is under Death or Stop Status:
-    V- and C-Timer progression is halted.
+キャラクターが戦闘不能またはストップ状態：
+    VタイマーとCタイマーは停止している
 
-Target is under Slow Status:
-    V- and C-Timer progression is halved.
+キャラクターがスロウ状態：
+    VタイマーとCタイマーは半分の速度で進行している
 
-Target is under Haste Status:
-    V- and C-Timer progression is doubled.
+キャラクターがヘイスト状態：
+    VタイマーとCタイマーは２倍の速度で進行している
 
-Target is not under any of the above Statuses:
-    V- and C-Timer progression is at normal.
-
-
-The base increase for V-Timer is equal to twice your Speed Value.
-Essentially, every tick:
-
-                   V-Timer Increase = 2 * Speed Value
+キャラクターの状態が上記以外：
+    VタイマーとCタイマーは通常の速度で進行している
 
 
-Again, V-Timer Units are required to measure the duration of things.  Like
-the other timers, a unit is earned for every 8192 points the Timer
-accumulates.
+
+Vタイマーの基準増分値はスピード値の2倍である。
+つまり1TICKごとに
+
+                   Vタイマー増分 = 2 * スピード値
+
+
+ここでも物事の長さを測るのにはVタイマー単位が使用される。
+他のタイマーと同様、タイマーが8192進むごとに1タイマー単位経過となる。
 
 
 
 ---  -----------
-2.4  The C-Timer
+<a name="2_4_The_C-Timer">2.3  Cタイマー</a>
 ---  -----------
-The C-Timer is a lot simpler to describe than the V-Timer, since it doesn't
-use Speed Value at all.  The base increase for the C-Timer per tick is
-instead:
+Cタイマーは、Vタイマーと違ってスピード値を使わない。
+CタイマーのTICKごとの基準増分値は以下のようになる：
 
-                        C-Timer Increase = 136
+                    Cタイマー増分 = 136
 
 
-Like the other timers, a C-Timer Unit is earned for every 8192 points.
-Finally, do note that the statuses listed in the previous section that affect
-V-Timer progression will also affect the C-Timer.
+他のタイマーと同様、Cタイマーが8192進ごとに1Cタイマー単位の経過となる。
+また前章で述べたVタイマー進行にかかわるステータスは、Cタイマーにもの同様の
+影響を与える。
 
-NOTE: The base C-Timer Increase is actually 68 and a Unit is earned every
-4096 points, but it is easier to understand how the timers interact if we
-adjust all the timers to work on the same scale.
+注：Cタイマーの基準増分は実際には68で、4096ポイントで1タイマー単位となる。
+しかし、全てのタイマーが同じスケールで動作するものとして考えたほうが、
+各タイマー間の相互作用が理解しやすくなる。
 
 
 
 ---  --------------
-2.5  The Turn Timer
+<a name="2_5_The_Turn_Timer">2.5  行動タイマー</a>
 ---  --------------
-Finally, the Turn Timer.  This is the most complicated of the four timers,
-since it is based around the relative Dex stats of the combatants.
+行動タイマーは4種類の中で一番複雑である。このタイマーはバトル中のキャラクター
+たちの Dex パラメータの相対的な値に基づいて進行するためである。
 
-First, we must find the normal value: the base Dex to be used for this
-battle.  This is calculated by taking the average *BASE* Dexterity of all
-three combatants in your Battle Party, making sure to round up any fractions.
-Finally, we add 50 to this average.  We call this the Normal Speed.
+まず行動タイマーの基準値を求める：そのバトルで使用するの基準 Dex 値である。
+これはバトルに参加するプレーヤー側キャラクタ全員の「基本の」素早さの平均
+（少数部切り上げ）を求め、それに50を加えたものである。
+これをノーマルスピードと呼ぶ。
 
-For example, if you enter battle with Cloud at 31 Agi and Barret at 24 Agi,
-then the Normal Speed would be:
+たとえば、Dex 31 のクラウドと Dex 24 のバレットでバトルを開始した場合の
+ノーマルスピードは以下のようになる：
 
-                Normal Speed = RU((31 + 24) / 2) + 50
+            ノーマルスピード = RU((31 + 24) / 2) + 50
                              = RU(55 / 2) + 50
                              = RU(27.5) + 50
                              = 28 + 50
                              = 78
 
 
-Keep in mind that only *BASE* Dexterity counts for Normal Speed.  The use of
-Speed Sources, Materia and Dex-altering abilities or equipment do *NOT* count
-towards this value.
+ノーマルスピードの計算に使用するのは「基本の」素早さであることに注意。
+スピードアップ（アイテム）やマテリア、その他素早さを変える装備やアビリティ
+の効果はこの値に影響を及ぼさない。
+
+行動タイマーはVタイマーを基準にして進行する。このためVタイマーが停止すれば
+行動タイマーも止まり、Vタイマーの速度が変われば行動タイマーの速度も変わる。
+
+また、行動タイマーの増分値はパーティメンバーとモンスターとで異なる。
+パーティメンバーのTICKごとの増分値は以下のようになる：
+
+  行動タイマー増分値 = [(実効Dex + 50) * Vタイマー増分値 / ノーマルスピード]
 
 
-Now, the amount your Turn Timer increases by revolves around the V-Timer.  As
-such, the Turn Timer will also pause when the V-Timer pauses, and change
-speed when the V-Timer does so.
+モンスターの行動タイマーのTICKごとの増分値は以下のようになる：
 
-Furthermore, the amount of increase you get is different from party members
-to monsters.  Your party members get the following increase:
-
-  Turn Timer Increase = [(Total Dex + 50) * V-Timer Increase / Normal Speed]
+  行動タイマー増分値 = [Dex * Vタイマー増分値 / ノーマルスピード]
 
 
-While monsters get this per tick instead:
+モンスターのほうが全体的に高い Dex を持っているということに気づいた人もいる
+かも知れないが、 これがその理由である。
+また、スピードアップ、マテリア、装備によるDex上昇はノーマルスピード算出には
+使用されないが、実効Dexには含まれる。このためスピードアップなどを使用すると
+通常よりも大幅に早くなるのである。
 
-        Turn Timer Increase = [Dex * V-Timer Increase / Normal Speed]
-
-
-If you've noticed that enemies seem to have rather high Dex values, this is
-why.  Also, while Sources, Materia and Equipment are not used for Normal
-Speed, they *are* used to calculate your Total Dex - so the use of Sources
-will make you much much faster than normal.
-
-Finally, the Turn Timer itself (but not the V- or C-Timers) will be halted
-under the following statuses: Paralysed, Petrify and Sleep.
-
-
-
-You'll find that unless you use a lot of Sources or Dex-increasing items,
-your Turn Timer Increase will tend to be very close to your V-Timer Increase;
-after all, we're dividing your character's 'Dex + 50' by the party's average
-'Dex + 50'.  This also means that no matter what your level, you will seem
-to get your turns just as quickly as you used to.
-
-However, as you achieve higher Dex ratings, it will begin to appear to you
-that the monsters are moving *SLOWER* than they used to.  A L6 Cloud only has
-a Dex of 6, while a L99 Cloud has an average Dex of 59.  Going by what we
-know about the Turn Timer now, this means that the L99 Cloud is almost twice
-as fast as the L6 Cloud.  However, to you, it'll likely look like the exact
-same speed as before.  Instead, the *monsters* will be moving twice as slow
-to you.
-
-One final thing we'll look at in detail is the use of Sources or Dex-
-modifying equipment here.  As stated, our L99 Cloud has an average Dex of 59.
-Using Sources, we can increase his total Dex up to a nice total of 255.
-Cloud with 255 Dex is 2.8x faster than when he was at 59 Dex.  However,
-unlike the natural growth, we will *see* his Turn Timer increasing that much
-faster, since the Normal Speed hasn't changed.  Understanding this is one of
-the keys to understanding how the four different timers interact.
+行動タイマーは以下のステータスで停止する（V/Cタイマーは停止しない）：
+  マヒ、石化、睡眠
 
 
 
-Having looked at how the Turn Timer increases, let's now look at what it
-starts at and how it's used.
+スピードアップやDexを上昇させるアイテムを使用していない場合、行動タイマーの
+進行はVタイマーの進行とあまり変わらない(キャラクタのDex+50をパーティの平均
+Dex+50で割っていることになるため）。つまりいくらレベルアップしても、行動
+ターンが回ってくるまでの時間は体感的にはあまり変わらない。
 
-Every time you take a turn, your Turn Timer is reduced to 0, and then
-increases using the formulas given above every tick.  When this reaches
-65535, you will be able to take your next turn.  This is equal to just under
-8 Units of 8192, so at average Dex, about 8 V-Timer Units will pass between
-turns.
+しかしキャラクターのDexが上がるにつれて、モンスターの動きは遅く見えてくる。
+レベル6クラウドのDexは6だが、レベル99クラウドの平均Dexは59である。上記の行動
+タイマーの計算から、レベル99クラウドはレベル6クラウドのほぼ2倍の速さで行動
+できることがわかる。それでも見かけ上クラウド同じようなスピードで行動している
+ように見える。その代わりに、モンスターの行動スピードが半分に落ちたように見え
+るのである。
+
+スピードアップおよびDexを変化させる装備についてもう少し解説する。
+上に述べたとおりレベル99クラウドの平均Dexは59である。スピードアップを使用する
+と、実効Dexを255まで上昇させることができる。Dex 255のクラウドはDex 59に比べて
+2.8倍の速さで行動できる。「基本の」Dex上昇と違ってこれは行動タイマーの進行の
+速さに現れる（行動タイマーがそれだけ早く進む）。「基本の」Dexのみから計算する
+ノーマルスピードは変わらないためである。４種類のタイマー相互の関係を理解する
+ためには、この点をしっかり押さえておく必要がある。
 
 
-The Turn Timer of every party member and enemy is set to certain random
-values when battle starts.  These values are not dependent on your Dex, but
-can be altered based on which battle formation you get.
 
-First, when battle begins, everyone's Turn Timer is each set to a random
-value between 0 and 32767 (50% full).  There are four different ways these
-values can then be further adjusted:
+行動タイマーの進み方がわかったところで、今度はそれがどのように使われるかを
+説明する。
+
+キャラクターのターンが終了するたびに、行動タイマーは0にリセットされ、TICK
+経過ごとに上述の計算式にしたがって値が加算されてゆく。これが65535に達した時が
+そのキャラクターの次のターンである。
+これはほぼ 8192 * 8 なので、Dex が平均値の場合はほぼ 8 Vタイマー単位ごとに
+ターンが回ってくることになる。
 
 
-  Normal Battles
+パーティメンバーと敵の行動タイマーは、バトル開始時に特定のランダム値に設定さ
+れる。この値はDexとは関係なく、バトルの形態によって変わる。
+
+バトル開始時に、まず全員の行動タイマーが0から32767（50%）までの間のランダムな
+値に設定される。その後、4種類のバトル形態でさらに調整が行われる：
+
+
+  通常のバトル
   ==============
-The character with the highest Turn Timer has it increased until it reaches
-57344 (87.5% full).  All other characters have their Turn Timer increased at
-the same rate.  For example, if the highest Turn Timer had been 30000, all
-characters would have their Turn Timer increased by 57344 - 30000 = 27344.
-As such, in Normal Battles all characters will start with a Turn Timer
-between 37.5% and 87.5% full, with the luckiest guaranteed to have a 87.5%
-full Turn Timer.
+ランダムに割り当てられた行動タイマー値が一番高いキャラクターの行動タイマーが
+57344（87.5%）まで引き上げられる。その他のキャラクターの行動タイマーもそれと
+同じ差分で引き上げられる。たとえば最大の行動タイマー値が30000だった場合、
+全てのキャラクターの行動タイマーに57344-30000=27344ポイントが加算される。
+結果的に、通常バトルでは全てのキャラクターの行動タイマーが37.5%～87.5%の間
+に設定され、そのうち一人は必ず87.5%に設定されることになる。
 
 
-  Pre-emptives / Side Attacks
+  先制攻撃、サイドアタック
   ===========================
-During these formations, your party members have a distinct advantage.  The
-Turn Timer for all enemies is divided by 8 (reducing them to between 0% and
-6.25% of a Turn Timer bar), while the Turn Timer of each of your party
-members is increased to 65534, meaning that they'll all get their first turn
-immediately.
+この形態ではプレイヤー側が優位に立つ。敵の行動タイマーは初期値の1/8（0%～
+6.25%）に設定される。味方パーティの行動タイマーは全員65534に設定され、バトル
+開始直後に最初のターンがまわってくる。
 
 
-  Back Attacks / Ambushes
+  バックアタック、はさみうち
   =======================
-These formations have your party at a disadvantage.  First, like normal
-battles, everyone has their Turn Timer increased such that the character with
-the highest Turn Timer is set to a certain value - but in this case, this
-value is 61440 (93.75% full).  That means that all characters now have a
-Turn Timer between 43.75% and 93.75% full.
+この形態ではプレイヤーが不利になる。まず通常バトルと同じように、一番高い
+タイマー値を基準にして全員のタイマー値が調整される。ただしここで使用される
+基準値は61440（93.75%）である。これで、全てのキャラクターの行動タイマーが
+43.75%～93.75%の間に設定される。
 
-Immediately following this, all party members have their Turn Timer reduced
-to 0, forcing them to build up their bar from scratch.  This almost
-guarantees that the enemy will get the first attack.
-
-
-
-There is a final special case where the Turn Timer of all party members is
-set to 65534, while the Turn Timer of all enemies is set to 0.  This only
-occurs during the final 1v1 plot battle in the game.
+続いて見方パーティ全員の行動タイマーが0に設定される。これで、ほぼ間違いなく
+敵に最初の行動ターンがまわることになる。
+will get the first attack.
 
 
 
-We can use the above values to make a few quick observations.  In the best
-case scenario, your party will begin a normal battle with a 87.5% full Turn
-Timer, while your enemies will only have it at 37.5% full.  In the worst case
-scenario, these are clearly reversed.
-
-What we can calculate from this is the amount of Dex you need to guarantee
-getting the first turn.  This would be as follows:
-
-    PDex = Party Member's Dex
-    EDex = Enemy's Dex
-    PBar = Fraction of Party Member's Time Bar filled
-    EBar = Fraction of Party Member's Time Bar filled
-    Haste Factor = 1 if Party Member is not Hasted
-                 = 2 if Party Member is Hasted
-
-    Time = (1 - EBar) / EDex
-         = (1 - PBar) / ((PDex + 50) * Haste Factor)
-
-    (1 - PBar) / ((PDex + 50) * Haste Factor) = (1 - EBar) / EDex
-    (PDex + 50) * Haste Factor = EDex * (1 - PBar) / (1 - EBar)
-
-    PDex = (EDex * (1 - PBar) / ((1 - EBar) * Haste Factor)) - 50
-
-
-PDex must thus be higher than the above calculated value to beat an enemy of
-a certain Dex when the Time Bars start filled at particular values.  If we
-use the values for the worst case scenario, we get:
-
-    PDex = (EDex * (1 - 0.375) / ((1 - 0.875) * 1)) - 50
-         = (EDex * 0.625 / 0.125) - 50
-         = 5*EDex - 50
+最後に、特殊ケースとして味方パーティの行動タイマーが65534、敵の行動タイマーが
+0に設定されるケースがある。これはゲーム最後の１対１バトルでのみ使用される。
+（訳注：セフィロス戦のことか？）
 
 
 
-We can reverse this formula to work out how much Dex the enemy needs to beat
-a party member with a certain amount of Dex:
+上記の計算方法に基づいて、いくつかの分析を試みる。通常バトルの最善のシナリオ
+では味方パーティの行動タイマーが87.5%、敵の行動タイマーが37.5%の状態でバトル
+が始まる。最悪のシナリオでは当然この数値が逆になる。
 
-    EDex = (PDex + 50) / 5
+ここから、必ず味方が先に行動できるためにどれだけのDexが必要かを計算する：
+
+    味Dex = 味方のDex
+    敵Dex = 敵のDex
+    味％  = 味方の行動タイマーパーセンテージ
+    敵％  = 敵の行動タイマー進行パーセンテージ
+    ヘイスト係数 = 1 味方にヘイストがかかっていない
+                 = 2 味方にヘイストがかかっている
+
+    所要時間 = (1 - 敵％) / 敵Dex
+             = (1 - 味％) / ((味Dex + 50) * ヘイスト係数)
+
+    (1 - 味％) / ((味Dex + 50) * ヘイスト係数) = (1 - 敵％) / 敵Dex
+    (味Dex + 50) * ヘイスト係数 = 敵Dex * (1 - 味％) / (1 - 敵％)
+
+    味Dex = (敵Dex * (1 - 味％) / ((1 - 敵％) * ヘイスト係数)) - 50
 
 
-This means, for example, that at 255 Dex, the enemy would need at least 61
-Dex in order to beat the player even in the worst case Normal Battle scenario
-for the player.
+特定の行動タイマー状態で特定のDexを持つ敵よりも早く行動するためには、味Dexが
+上の式で算出される値より高くなければならない。
+最悪のシナリオの行動タイマー状態で計算を行うと：
 
-If the party member is hasted, it's a little better:
+    味Dex = (敵Dex * (1 - 0.375) / ((1 - 0.875) * 1)) - 50
+         = (敵Dex * 0.625 / 0.125) - 50
+         = 5*敵Dex - 50
 
-    PDex = (EDex * (1 - 0.375) / ((1 - 0.875) * 2)) - 50
-         = (EDex * 0.625 / 0.25) - 50
-         = 2.5*EDex - 50
 
-We can reverse this and find that at 255 Dex, the enemy now needs at least
-122 Dex in order to beat the player in the worst case Normal Battle scenario.
 
-Obviously, since we've only been looking at worst case only, we can see that
-the enemy will usually need much more Dex in order to beat your party members
-most of the time - on average, you and the enemy will have roughly equal
-Time Bars, so all you'd need most of the time is to make sure that your Time
-Bar fills faster than the enemy: this happens when EDex &lt; PDex + 50.
+この式を反転すると敵が味方より先に行動するのに必要な敵Dexが求められる：
 
-However, do note that your enemies choose their actions instantly when their
-Time Bar fills, so it is not always enough to *just* beat them to getting the
-next turn.  Keep this in mind when it seems that enemies are just a little
-faster than expected.
+    敵Dex = (味Dex + 50) / 5
+
+
+つまり、たとえば味方のDexが255の場合でも、通常バトルの最悪シナリオでは敵の
+Dexが61以上であれば敵のほうが先に行動できるということである。
+
+味方にヘイストがかかっている場合は少し状況がよくなる：
+
+    味Dex = (敵Dex * (1 - 0.375) / ((1 - 0.875) * 2)) - 50
+         = (敵Dex * 0.625 / 0.25) - 50
+         = 2.5*敵Dex - 50
+
+この式を反転すると、味方のDexが255の場合の通常バトルの最悪シナリオでは、敵の
+Dexが122以上であれば敵のほうが先に行動できることが分かる。
+
+もちろんここでは最悪のシナリオのみを見ているので、通常は敵のほうが先に行動す
+るために必要な敵のDexはもっと高い。平均すると敵と味方の行動タイマーはほぼ同じ
+ぐらいの状態で始まるので、見方の行動タイマーが敵の行動タイマーより早く進む
+ようにすればよい：つまり 敵Dex &lt; 味Dex + 50
+
+ただし、敵はATBゲージがたまると瞬時に行動を選択するので、ターンが先にまわって
+来たからといって必ずしも先に行動できるとは限らない。もし敵の行動が予想よりも
+早いと感じたら、このことを思い出してほしい。
 
 
 
 ---  -----------------
-2.6  Timer Interaction
+<a name="2_6_Timer_Interaction">2.6   タイマー間の関連</a>
 ---  -----------------
-Now that we've covered each of the timers in detail, we can see how they
-compare with each other.
+各々のタイマーについて理解できたところで、それぞれのタイマー間の関連について
+見てゆく。
 
 
-For a player with average Dex and no statuses, the timers will increase at
-the following different rates:
+パーティ平均と同じDexを持ち、特殊なステータス状態にないキャラクターのタイマー
+は以下のような異なる速さで進んでゆく。
 
 
                   +=======================================================+
-                  |                     Speed Value                       |
-                  |      Min (54)         Avg (91)         Max (273)      |
+                  |                     スピード値                        |
+                  |      最小(54)         平均(91)         最大(273)      |
  +================+=======================================================+
- | Global Timer   |         54               91              273          |
- | V-Timer        |        108              182              546          |
- | Turn Timer     |        108              182              546          |
- | C-Timer        |        136              136              136          |
+ | グローバルタイマー       54               91              273          |
+ | Vタイマー      |        108              182              546          |
+ | 行動タイマー   |        108              182              546          |
+ | Cタイマー      |        136              136              136          |
  +================+=======================================================+
 
 
-Now, we consider the following ways to change these values.  Global Timer
-is purely tied to the Speed Value, so we can use that as the baseline.
-C-Timer, however, is constant, and can only be changed by the standard Haste,
-Slow or Stop statuses.  Death-sentence and Slow-numb both use the C-Timer
-to count down to 0, so it makes sense that both statuses are far more
-dangerous at slower Battle Speeds.
+これらの値が状況によってどのように変わっていくかを見ていく。
+グローバルタイマーはスピード値と直結しているので、これを全体の基準とする。
+ただしCタイマーの進行速度はスピード値からは独立しており、ヘイスト・スロウ・
+ストップのステータスのみに影響を受ける。
+死の宣告と徐々に石化のカウントダウンはCタイマーが用いられるため、バトル
+スピード設定が遅いほどこれらのステータス異常は危険度が高い。
 
-V-Timer and Turn Timer are linked, as usual.  But as we saw in the last
-section, we can use Dex modifications to make the Turn Timer move faster,
-whilst leaving all the other timers alone.  Since the rest of the statuses
-rely on V-Timer, this can be especially advantageous to us.
+Vタイマーと行動タイマーは連動している。ただし前の章で説明したとおりDexを
+変えると行動タイマーの速さは変わるが、他のタイマーの早さは変わらない。
+他のステータス異常はVタイマーに依存するため、このことはわれわれに有利に働く。
 
-It also allows us to make comparisons between the timers, especially for
-Status durations.  The main outliers are Stop (lasts 30 Units of Global
-Time), Death-sentence (lasts 60 Units of C-Time) and Slow-numb (lasts 30
-Units of C-Time).
+またこれを利用してステータス異常の持続時間を比較することなどができる。
+例外としてストップ（30グローバルタイマー単位の間持続）、死の宣告
+（60 Cタイマー単位の間持続）、徐々に石化（30 Cタイマー単位の間持続）などが
+ある。
 
-At max Battle Speed, we get 1 C-Timer Unit for every 4 Units of V-Time.  By
-comparison, at minimum Battle Speed, we get 1 C-Timer Unit for every 80% of a
-single V-Timer Unit accumulated.  Quite the difference.  At the default
-Battle Speed, it's about 1 C-Timer Unit per 133% of a V-Timer Unit, which is
-a little better.  This is something to keep in mind for the aforementioned
-Slow-numb and Death-sentence Statuses.  Essentially, Death-sentence (60
-C-Timer units) would last 30 turns on max Battle Speed, 10 turns on default
-and 6 turns on minimum, with Slow-numb lasting half the time.
+バトルスピード設定が最速の場合は 1 Cタイマー単位 = 4 Vタイマー単位となる。
+バトルスピード設定が最低の場合は 1 Cタイマー単位 = 0.8 Vタイマー単位となる。
+デフォルトのバトルスピード設定では 1 Cタイマー単位 = 約1.33 Vタイマー単位と
+なる。前述の死の宣告や徐々に石化のことを考えると、このこともよく考えたほうが
+よい。単純に計算すると、死の宣告（60 Cタイマー単位）はバトルスピード最速で
+30 ターン分、バトルスピードデフォルトで 10 ターン分、バトルスピード最低で
+6 ターン分の持続時間となる。徐々に石化はその半分である。
 
-Since the Global Timer usually progresses half as fast as the average player
-character, we can suggest that Stop lasts the equivalent of 60 V-Timer Units,
-during which a total of 7 turns could be taken.
+グローバルタイマーは、通常は平均的なキャラクタのVタイマーの半分の速さで進行
+する。ここからストップの持続時間はほぼ60Vタイマー単位、おおよそ7ターン分であ
+るということがわかる。
 
-Of course, with the time it takes to make decisions about what to do each
-turn, and with how time carries on during ability use if you set the Battle
-Mode to Active rather than Wait, these statuses will often seem to wear off
-faster than this.
+もちろんATB設定をウェイトではなくアクティブに設定した場合には、ターンごとに
+行動を選択するための時間やアビリティのエフェクトの時間などにより、これらの
+ステータスの持続時間はもっと短く感じられるかもしれない。
 
-By comparison, the Sleep Status lasts 100 V-Timer Units (12 turns), while
-Paralysed lasts 20 V-Timer Units (a mere 2 turns).  Of course, if we were
-to use equipment or other such options to increase our Dex, we might even
-get *more* turns in that same amount of time.  Such is the way the timers
-interact.
+対照的に、スリープ状態は100 Vタイマー単位（12ターン）、麻痺状態は20
+Vタイマー（わずか2ターン）の間持続する。もちろん装備やその他の方法でDexを
+上げた場合には同じ時間内に回ってくるターン数はもっと増える。
 
 
 
 ---  ----------------
-2.7  Escaping Battles
+<a name="2_7_Escaping_Battles">2.7  バトルから逃げる</a>
 ---  ----------------
-For this last section, we'll quickly go over how fleeing the battle works,
-since the main method for doing so is tied in with the timing system.
+ここではバトルからの逃走がどのように処理されるかを説明する。
+このこともタイマーの進行とかかわっているからである。
 
-The normal method of running - where you hold two buttons down until you
-escape - uses the Global Timer to help determine when to check the chance of
-fleeing.  While no record of how *long* you've been running is kept, every
-time a Global Timer Unit is finished, the game checks if you've spent more
-than 50% of that Unit running.  If you haven't, then no further check is
-made, and it won't check again until the end of the next unit.
+通常の方法（逃げられるまでL/Rボタンを押し続ける）で逃げる場合、逃げられたか
+どうかを判定するタイミングを計るのにグローバルタイマーが使用される。
+グローバルタイマー単位が経過するごとに、そのタイマー単位中の50%を越える時間を
+逃げようとすることに費やしたかどうかがまずチェックされる。逃げようとしていた
+時間がそのタイマー単位の50%以下の場合、それ以上のチェックは行われない。
+次のタイマー単位が経過した時点で、改めてチェックが行われる。
 
-If you *have* spent more than half of the unit running, then you have a
-chance to escape: we shall call this a Run Check.
+タイマー単位の半分を超える時間逃げようとしていた場合は、逃げられる可能性が
+ある。その場合に行われる逃げられるかどうかのチェックを逃走チェックと呼ぶ。
 
-Escaping battle uses a variable called Run Difficulty to help determine how
-easy it is to run away.  This variable is set by which encounter you're in:
-some encounters are easier to escape than others.  Most encounters have a Run
-Difficulty of 1, but Back Attack encounters tend to increase this value by 1,
-and encounters with certain enemies also have higher Run Difficulty.
+バトルから逃げるにはそのバトルからの逃げやすさを表す逃走難度と呼ばれる変数
+が使用される。この変数はエンカウントごとに設定される。通常のエンカウントでは
+逃走難度が1となるが、バックアタックの場合逃走難度が2になることが多い。敵に
+よっては逃走難度がもっと高くなることもある。
 
-You will flee the battle if the Run Difficulty of the encounter falls to
-zero.  This is done during the Run Check noted above, and is dealt with in
-the following manner:
+この逃走難度が0になると逃げるのに成功ということになる。この変数の操作は上述
+の逃走チェック内で、以下のように実施される：
 
-  * If you had a Pre-emptive attack in this encounter or the formation
-    is Side Attack (you surround the enemy), then Run Difficulty is
-    automatically reduced by 1 each time a Run Check is made.
+  * 先制攻撃またはサイドアタックの場合、逃走難度は逃走チェックごとに１ずつ
+    減らされる。
 
-  * For all other formations, there is only a 25% chance per Run Check that
-    the Run Difficulty will be reduced by 1.
+  * 上記以外の場合、逃走チェックごとに25%の確率で逃走難度が１減らされる。
 
 
-This can basically be simplified to a 25% chance per Global Timer Unit that
-you will flee most battles.  If you remember the comparisons in the last
-section, you'll note that you usually get about 4 Global Timer Units during
-the average character turn, so on average, Run Difficulty drops by 1 per
-turn.
+ごく単純化して言えば、通常のバトルではグローバルタイム単位ごとに25%の確率で
+逃げられるチャンスがあるということである。前の章の説明に従えば、平均的な
+キャラクターの1ターンはおよそ4グローバルタイマー単位となる。つまり、平均で、
+1ターンごとに逃走難度は1下がるということになる。
 
-Note that you cannot escape from Ambushes until all the enemies on one side
-are removed.  Both the Ambush restriction and Run Difficulty itself only
-apply to normal running however; you are able to use the Escape spell or the
-Smoke Bomb item at any time to instantly escape battles without having to
-deal with the hassle that higher Run Difficulty values can cause.
+はさみうちの場合、片側の敵を全員倒すまで逃げることはできない。
+ただし、このはさみうちの制限と逃走難度は通常の逃げる行為にのみ関連する。
+魔法やアイテムによる逃走は逃走難度の影響を受けない。
 
 
 
 -----------------------------------------------------------------------------
-3. BATTLE DAMAGE
+<a name="3_Battle_Damage">3.  ダメージ</a>
 ----------------
 
 ---  -----
-3.1  Setup
+<a name="3_1_Setup">3.1  初期計算</a>
 ---  -----
-Before we can even start calculating damage, certain things need to be setup
-by the system, usually due to certain aspects of the ability being used, or
-perhaps what Materia it's linked to, or the like.  Also, we can use this
-section to explain certain things that need to be known before we can put the
-basic formulas to use.
+実際のダメージ計算の前に、使われたアビリティや組み合わされたマテリアなどに
+よっていくつかの初期計算を実施しておく必要がある。
+またこの章ではダメージ計算式を見る前に知っておくべきことなども解説する。
 
 
-One of the important things we need are the final values for both the
-Attacker and Target's stats.  We already know that the basic stats used in
-battle are Att, At%, Def, Df%, MAt, MDf, MD%, Dex and Lck.  However, under
-circumstances in battle, these values can *change*:
+まず必要なのが、攻撃者とターゲット両方の最終的なパラメータの値である。
+バトルでは Att, At%, Def, Df%, MAt, MDf, MD%, Dex, Lck が使用されることは先に
+述べた。しかしバトルの状況によってこれらの値が変わることがある：
 
-  * Certain items and abilities (Dragon Force and Hero Drinks in particular)
-    can increase or decrease your stats.  The stats that can be affected are
-    Att, Def, MAt, MDf, Df% and Dex.  This is called a Stat Modifier.  The
-    Stat Modifier is an integer percentage between -100% to 100%, and starts
-    the battle at 0%.  The use of certain abilities will increase or decrease
-    this value for certain stats up to the maximum or minimum after repeated
-    use.  Unless noted, *any* formula that uses any of the six stats
-    mentioned must apply this Stat Modifier like so:
+  * 特定のアイテムやアビリティ（ドラゴンフォースや英雄のクスリなど）はキャラ
+    クターのパラメータを上下させることがある。
+    影響を受ける可能性があるのはAtt, Def, MAt, MDf, Df%, Dexである。
+    これらのパラメータは -100%から100% までの整数パーセンテージをあらわす
+    パラメータ調整率にしたがって変更される。このパラメータ調整率の初期値は
+    0% である。
+    特定のアビリティを使うとこのパラメータ調整率を上下させることができる。
+    アビリティを繰り返し使うことで調整率は定められた最大値または最小値まで
+    変動させることができる。
+    以降に説明する数式内でこの6個のパラメータのいずれかが使われている場合、
+    それぞれこの調整率を適用した値を用いる必要がある：
 
-                    Stat = Stat + [Stat Modifier * Stat]
+               実効パラメータ = パラメータ値 + [調整率 * パラメータ値]
 
-    So an Att Modifier of 100% would double your Att whenever it was used in
-    any formula.
+    パラメータ調整率が100%の場合、そのパラメータは全ての数式内で2倍にして
+    扱われる。
 
-    Hero Drinks increase the Stat Modifier for Att, Def, MAt and MDf by 30%
-    each when they're used, while Dragon Force increases only Def and MDf by
-    50% each.  Other abilities exist that also adjust these stats, and this
-    will be mentioned when we cover those abilities.
-
-
-  * Also, if the ability being used is Piercing, then the Target's Def and
-    MDf is considered to be 0.  As such, they're ignored.  Note that only the
-    Physical, Magical and Item Formulas utilise Def and MDf; all others
-    naturally ignore both stats.
+    英雄のクスリはAtt, Def, MAt, MDf各々の調整率を30%増加させる。
+    ドラゴンフォースはDefとMDfの調整率を50%ずつ増加させる。
+    パラメータ調整率を変更するアビリティは他にもあるが、それらについては
+    その都度解説してゆく。
 
 
-Once we've ascertained the values of the various stats that may be used, we
-can move on.
+  * また使われるアビリティが「刺す」属性の場合、ターゲットのDefとMDfは0と
+    みなされる（つまり、無視される）。DefとMDfが使われるのは物理ダメージ
+    計算式、魔法ダメージ計算式、アイテム計算式の3つである。これ以外の計算式
+    ではDefとMDfはもともと考慮されていない。
+
+
+各パラメータの実効値が計算できた時点で、計算を先に進めることができる。
 
 
 
 ---  -------------------------------
-3.2  Status and Elemental Resistance
+<a name="3_2_Status_and_Elemental_Resistance">3.2  ステータス耐性および属性耐性</a>
 ---  -------------------------------
-Among the first things checked is the resistance or weakness to any Elements
-or Statuses the ability has.  This is done early because it can affect so
-many different parts of accuracy and damage.
+アビリティの属性またはステータスに対する耐性あるいは弱点は、計算の早い段階で
+チェックされる。命中率やダメージ計算の広い範囲に影響を及ぼすためである。
 
-To start with, if the Ability has any statuses to Inflict, Toggle or Cure,
-then the chance of these hitting is calculated first, as detailed in Section
-3.3.4.  If this chance fails, then the Ability will no longer be considered
-to have any statuses attached to it for this particular hit.  Furthermore,
-if the Ability has a Power of 0, then failing to cause a change in status
-will cause the entire ability to miss.
+まず、そのアビリティが何らかのステータスを発症・治癒・反転するものだった場合
+それがターゲットに当たる確率が計算される（3.3.4章参照）。
+計算結果が外れだった場合には今回のヒットに関して、そのアビリティはステータス
+を持たないものとみなされる。アビリティのパワー値が0の場合、ステータス変更の
+失敗はそのアビリティそのものの失敗となる。
 
 
-Now we can look at resistances to the ability.
+次にアビリティへの耐性について説明する。
 
-There are eight levels of Elemental Resistance, listed as follows:
-  Death     :- The Target is instantly killed by this Element.
-  Auto-Hit  :- The Target cannot evade this Element.
-  Weak      :- The Target takes double damage from this Element.
-  Normal    :- The Target takes normal damage from this Element.
-  Resist    :- The Target takes half damage from this Element.
-  Immune    :- The Target takes no damage from this Element.
-  Absorb    :- The Target is healed by this Element.
-  Recovery  :- The Target is completely recovered by this Element.
-
-
-First, the Target's current resistances to all Elements and Statuses are
-collected.  For the most part, this is simply based off of the inherent
-qualities of the enemy or equipment/materia your party has equipped, and is
-thus self explanatory.  However, there are certain extra resistances that are
-added depending on various factors.
+属性への耐性には以下の8段階がある：
+  即死 :- その属性によって即死する
+  必中 :- その属性をよけることができない
+  弱い :- その属性によって2倍のダメージを受ける
+  普通 :- その属性によって通常のダメージを受ける
+  強い :- その属性によって半分のダメージを受ける
+  免疫 :- その属性によってダメージを受けない
+  吸収 :- その属性によって回復する
+  復活 :- その属性によって完全に回復する
 
 
+まずターゲットの全属性・全ステータスに対する耐性の情報が集められる。
+基本的にはこれは敵の本来持っている性質やパーティメンバーの装備・マテリアなど
+の情報を集めればよい。
+ただしさまざまな条件によって耐性が追加されることがある。
 
-                          Extra Status Resistances
+
+                          追加のステータス耐性
                           ------------------------
 
-  * A party member under AI control (Vincent under Limit Break or Sephiroth
-    during the Kalm Flashback) gains immunity to Berserk, Frog and Confusion.
+  * AI制御下のパーティメンバー（リミットブレイク中のヴィンセントやカーム
+    回想中のセフィロスなど）はバーサク・カエル・混乱に免疫。
 
-  * Targets under the Resist Status are immune to all Statuses except Resist
-    and Imprisoned.  Targets under the Death Force Status are immune to
-    Death.  Both of these immunities are not applied against the *damage*
-    portion of any Item command.  This exception is only for the Item command
-    however; the W-Item command works as normal.  As an example of this,
-    using W-Item M-Tentacles on a target with the Resist status but no Poison
-    immunity would cause zero damage, but using it via the Item command would
-    cause damage but no Poison status.
+  * レジスト状態のターゲットはレジストとImprisoned（封印？多分ピラミッドとか
+    水球に閉じ込められることだと思う）以外のステータス異常には免疫。
+    デスフォースがかかっているターゲットは即死に免疫。これらの免疫状態は
+    「アイテム」コマンドで使われたアイテムによるダメージには効果がない。
+    ただしこの例外は「アイテム」コマンドの場合のみで「Wアイテム」は別。
+    レジストがかかっているが本来は毒に対する免疫を持たないターゲットに対し、
+    「Wアイテム」でモルボルの触手を使った場合のダメージは0となる。
+    「アイテム」でモルボルの触手を使った場合、毒にはかからないがダメージは
+    受ける。（訳注：よくわからんけど、要するにこれもバグじゃね？）
 
-  * Targets under the Peerless Status are immune to all Statuses except
-    Imprisoned.
+  * 無敵状態のターゲットはImprisoned以外のステータスに免疫。
 
-  * Targets immune to either Haste or Slow Status are immune to *both*
-    Statuses.
+  * ヘイスト・スロウのいずれかに免疫があるターゲットは両方に免疫。
 
-  * Party members have Death immunity temporarily removed if the ability
-    being used is trying to remove Death Status.
+  * 即死に免疫にのあるパーティメンバーに対して、生き返らせるアビリティが使用
+    された場合、その免疫は一時的に取り除かれる。
+    (訳注：即死攻撃というのはつまり「戦闘不能」状態を発症させる攻撃という
+    こと。即死に免疫があるということは、本来であれば戦闘不能の発症・治癒・
+    反転のいずれもできないということになる。それでは困るので、戦闘不能を
+    治癒（＝生き返らす）ことはできますよ、ということだと思う）
 
-  * Targets that have had their Death Handling turned off (disables death
-    animation so that the AI script can handle it itself) gain Death
-    immunity.  Note that any enemy that does this is invariably immune to
-    Death anyways.
+  * 死亡処理が無効にされたターゲット（死んだときの処理をAIスクリプトで行う
+    ために、死んだときのアニメーションが無効にされている）は、即死に免疫。
+    ただしこのように設定されている敵は全て、もともと即死に免疫がある。
 
-  * Targets that are immune to Death gain an additional immunity to
-    Death-sentence.
+  * 即死に免疫のターゲットは死の宣告に対しても免疫。
 
-  * Finally, if the ability ignores Status immunities, all Status immunities
-    set up to this point are cleared for this attack.
+  * 免疫を無視するようなアビリティの場合、それまでに設定された免疫設定は
+    この攻撃に限り全てクリアーされる。
 
 
 
-                         Extra Elemental Resistances
+                         追加の属性耐性
                          ---------------------------
 
-  * Targets under the Shield Status can absorb the following Elements: Fire,
-    Ice, Lightning, Earth, Poison, Gravity, Water, Wind, Holy.  They are also
-    immune to Cut, Hit, Punch, Shoot, Shout and Restorative Elements.
-    However, these resistances are not added if the ability being used is
-    from the Item command.  W-Item command allows Shield to work as normal.
+  * シールド状態のターゲットは以下の属性を吸収できる：
+    火、氷、雷、大地、毒、重力、水、風、聖。
+    また切る、打つ、刺す、撃つ、叫ぶ、回復属性に対しては免疫となる。
+    ただしアビリティがアイテムコマンド経由で使われた場合、これらの耐性は発生
+    しない。Wアイテムの場合は上記のとおりの耐性が発生する。
 
-  * Targets that are immune to the Poison Status gain immunity to both Status
-    and Element - though Absorbing Poison Element still takes priority.
-
-
-
-Element and Status Resistances are treated slightly differently depending on
-whether we are looking at either the statuses the ability is changing, or the
-entire ability itself.  We shall focus on the latter first, since it has
-more rules to consider.  We will, however, keep a copy of the collected
-Status Immunities safe, since it is used later to determine which of the
-successful status effects the ability has will actually make it through if
-the ability itself hits.
-
-First, it should be noted that immunities - whether Element or Status - can
-cause abilities to fail or miss.  Before an ability can properly take effect,
-we must work out what level of resistance the Target has to it.  As such,
-there are some extra rules to take into account:
-
-  * For the purposes of an ability landing, if the Target is not immune to
-    *all* the Statuses the ability is inflicting, then it is considered to be
-    immune to none of the Statuses.  This only affects whether the ability
-    hits the target - it has no bearing on whether the statuses will take
-    hold.
-
-  * Likewise, if the ability has a non-zero Power stat, then any Status
-    Immunity is ignored - this allows the damage/healing part of the ability
-    to still land if it is able to.  Other levels of resistance to Statuses
-    that certain enemies have are kept intact however, in both cases.
-
-  * At this point, Element and Status resistances are now factored together
-    and compared with the exact Elements and Statuses of the ability being
-    used.  Instead of knowing individual Element/Statuses, we now only care
-    whether the Target has various levels of resistance to the ability.  Note
-    that multiple levels can be in effect at once: we could both Resist and
-    be Immune to an ability if we had a Resist to one Element but was Immune
-    to another.
-
-  * However, if the ability ignores Element and Status resistances, then the
-    Target loses *all* resistances to the ability itself that it had
-    accumulated at this juncture.  This includes detrimental effects such as
-    being Weak to the ability or similar.
+  * 毒状態に対して免疫のターゲットは、毒属性・毒状態両方に対して免疫。
+    ただし毒属性の耐性が「吸収」であった場合、そちらが優先される。
 
 
 
-Now we can apply how the resistances interact with the ability's statuses.
-The following checks are made at this point, in a particular order:
+属性耐性・ステータス耐性の扱いは、アビリティによって変更されるステータスに
+着目するか、そのアビリティ自体に着目するかによって、若干異なってくる。
+まず、後者が先に処理される。
 
-  * If the Target Absorbs an Element of the ability:
+まず、属性や状態に対する免疫は、そのアビリティ自体を失敗または外れさせること
+がある。アビリティの効果を計算する前に、ターゲットがそのアビリティにどれだけ
+の耐性を持つかを判定しなければならない。
+それにはいくつか追加の条件を合わせて考慮する必要がある：
 
-      -- Status Infliction and Removal are swapped.  That is, all statuses
-         that the ability inflicts are removed instead, and vice versa.
+  * アビリティが当たるかどうかを判定する際、ターゲットがそのアビリティが変更
+    しようとするステータスの「全て」に対する免疫をもっていない場合、
+    ターゲットはステータスに対する免疫を持っていないものとする。
+    これはアビリティが当たるか外れるかの判定にのみかかわるもので、ステータス
+    変更が発動するかどうかとは関係がない。
 
-      -- If the Ability now inflicts Death after swapping Status Inflict/
-         Removal, then the Target is now considered to have Death Weakness
-         to the ability, and the Death status is removed from the ability
-         itself.
+  * 同様に、アビリティのパワー値が0以外の場合もステータス免疫は無視される。
+    これはアビリティによるダメージ／回復は免疫性とは無関係に成功しうるため
+    である。この２つの場合のいずれでも、免疫以外のレベルのステータス耐性は
+    そのまま保持される。
 
-      -- Likewise, if the Ability now cures Death, then the Target is
-         considered to gain a Recovery from the ability, and the Death
-         status is again removed.
+  * この時点で属性耐性とステータス耐性が取りまとめられ、使用されたアビリティ
+    の属性・ステータスと比較される。ここでは個々の属性・ステータスに関する
+    チェックではなく、ターゲットがアビリティに対して複数レベルの耐性を持つ
+    かどうかがチェックされる。複数レベルの耐性が同時に効果を持つことはあり
+    うる。たとえばアビリティが複数の属性を持つ場合、ある属性に対しては強く、
+    別の属性に対しては免疫、と言うようなケースである。
+ 
+  * そのアビリティが属性・ステータス耐性を無視するものであった場合、
+    ターゲットはここまでに判定されたそのアビリティ自体に対する[全ての」耐性を
+    失う。これは「弱い」「必中」などターゲットに不利な耐性も含む。
+
+
+
+この時点で、耐性とアビリティの関係を判定することができる。
+以下のチェックが順に実行される：
+
+  * ターゲットがアビリティの属性を「吸収」する場合：
+
+      -- ステータスの発症と治癒が入れ替えられる。つまり、そのアビリティが
+         発症させるステータスは反対に治癒するようになり、治癒させるものは
+         発症するようになる。
+
+      -- ステータスの発症／治癒入れ替え後、アビリティが戦闘不能を発症させる
+         ようになっていたばあい、ターゲットはそのアビリティに対して「即死」
+         の耐性を持つとみなされ、アビリティが持つ「即死」ステータスは削除さ
+         れる。
+
+      -- 同様にアビリティが戦闘不能を治癒させるようになっていた場合、
+         ターゲットはそのアビリティに対して「復活」耐性を持つとされ、
+         やはりアビリティの持つ「即死」ステータスは削除される。
   
-      -- Note that if a Target both Absorbs the ability *and* has Death
-         Weakness to it, then the Death Weakness will not be negated, and
-         may kill the Target.
+      -- ターゲットが「吸収」と「即死」の両方の耐性を持つ場合、「即死」耐性
+         は相殺されず、ターゲットが即死する可能性はある。
     
 
   * If the Target has a Death Weakness to the ability:

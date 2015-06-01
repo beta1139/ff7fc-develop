@@ -1,22 +1,22 @@
 sleep 224
-msg3 -1 バレット\n「なんで……\n　わざわざ……\n　こんな……くろうを……
+msg3 -1 Baret\n`Why==\n we gotta==work==\n this hard==
 sleep 72
 set_flag 25 2
 sleep 72
 erase_msg3
 sleep 24
-msg3 -1 『……エアリスをたすけだすまで\n　さわぎは　おこしたくないんだ
+msg3 -1 {==I don't want to make\n a ruckus before we get\n Aeris back.
 sleep 144
 erase_msg3
 sleep 8
-msg3 -1 『でも　むりだろうな……
+msg3 -1 {Though I doubt we can\n avoid it.
 sleep 232
 erase_msg3
 sleep 16
-msg3 -1 バレット\n「……へへへ
+msg3 -1 Baret\n`He-he.
 sleep 152
 erase_msg3
 sleep 16
-msg3 -1 『なんだよ　きもちわるいな
+msg3 -1 {What are you laughing?
 sleep 144
 erase_msg3

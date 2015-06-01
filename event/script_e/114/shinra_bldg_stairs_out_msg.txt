@@ -1,5 +1,5 @@
 kill_through_range 11430 11434
 include ./event/common/key_unvaild.txt
-msg ティファ\n「ちょっとまってよ\n　クラウド！
+msg Tifa\n`Wait a sec,\n Cloud!
 kill_through_range 11401 11402
 sleep 8

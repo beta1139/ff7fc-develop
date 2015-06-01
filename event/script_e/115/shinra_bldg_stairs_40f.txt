@@ -14,14 +14,14 @@ set_active_msg 11502
 sleep 16
 jump_npc 11502 same 1
 set_talk_npc 11502
-msg ティファ\n「ホラ　バレット\n　しっかりしなさい！
+msg Tifa\n`Hey, Baret,\n Get a grip!
 reset_talk_npc
 chg_npc_dir 11501 up
 sleep 32
 chg_npc_dir 11501 right
 sleep 32
 step_npc 11501 2
-msg バレット\n「ん　なコトいったって\n　オレは　み　みぎうで　いがいは\n\n　ふつうの　からだなんだぜ……\n\n\n\n　もとソルジャーみたいな\n　と　とくべつせいと……\n　いっしょにしないでくれ……
+msg Baret\n`But you know, other than\n my right arm,\n\n I'm just flesh and blood.\n\n\n\n Don't expect me to run\n like a custom made\n ex-SOLDIER==
 sleep 16
 jump_npc 11502 same 1
 chg_npc_dir 11502 right
@@ -30,7 +30,7 @@ sleep 16
 chg_speed 11502 normal
 step_npc 11502 2
 set_talk_npc 11502
-msg ティファ\n「わたしだって　ふつうだってば！\n　さきにいっちゃうわよ！
+msg Tifa\n`I'm flesh and blood, too!
 reset_talk_npc
 step_npc 11502 1
 sleep 32
@@ -43,7 +43,7 @@ move_char up 3
 sleep 32
 chg_npc_dir 11501 up
 sleep 64
-msg ティファ\n「……？
+msg Tifa\n`==?
 chg_npc_dir 11502 down
 sleep 32
 chg_speed 11502 fast
@@ -51,14 +51,14 @@ move_npc 11502 down 1
 sleep 8
 jump_npc 11502 same 1
 set_talk_npc 11502
-msg ティファ\n「キャッ！！\n　ヤダ　バレット！\n　やっぱりさきにいって！
+msg Tifa\n`Oops!!\n Hey, Baret!\n You go first!
 reset_talk_npc
 chg_speed 11501 fast
 step_npc 11501 4
 sleep 32
 set_active_msg 11501
 jump_npc 11501 same 1
-msg バレット\n「バ　バカ！\n　オレはそんな\n　つもりじゃ……
+msg Baret\n`W-what?\n I didn't mean to==
 sleep 16
 chg_event_move_char_speed fast
 move_char down 3
@@ -69,7 +69,7 @@ chg_npc_img 11502 98
 jump_npc 11502 same 1
 sleep 16
 step_npc 11502 1
-msg ティファ\n「いいから！
+msg Tifa\n`Anyway!
 sleep 16
 chg_npc_dir 11501 right
 sleep 32
@@ -84,7 +84,7 @@ sleep 32
 move_npc 11501 up 8
 sleep 32
 step_npc 11502 3
-msg3 -1 ティファ\n「クラウドも！\n　さきにいって！！
+msg3 -1 Tifa\n`Cloud,\n you too!
 wait_key_push_edge a
 erase_msg3
 chg_event_move_char_speed normal
@@ -99,7 +99,7 @@ set_flag_wall 11502
 chg_type 11502 npc
 chg_speed 11502 not_move
 set_inactive_msg 11502
-chg_param 11502 ティファ\n「クラウドも！\n　さきにいって！！
+chg_param 11502 Tifa\n`Cloud,\n you too!
 set_flag 25 7
 chg_char_state_move
 wait_fake_countover

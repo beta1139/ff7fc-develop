@@ -30,7 +30,7 @@ create event_generator 11643 116 0 0 17 0 0 @116/shinra_bldg_stairs_exp.txt
 chg_char_state_move
 step_npc 11601 2
 set_talk_npc 11601
-msg バレット\n「や……やっと……\n　つい……た……\n\n　か……かいだんなんて……\n　もうみるのも　ゴメンだ……
+msg Baret\n`W==we==\n made==it==\n\n I==I don't wanna see==\n no stairs==never again==
 reset_talk_npc
 wait_event_invalid 11643
 sleep 32
@@ -43,7 +43,7 @@ kill 11601
 chg_npc_dir 11602 left
 sleep 32
 step_npc 11602 2
-msg ティファ\n「ハア……ハア……\n　さすがにこれは……\n　こたえたわ……ね……\n　……でも　これからが　ほんばんよね\n　げんきだしていかなきゃ……！
+msg Tifa\n`Gasp==\n I admit==I'm==\n a bit==tired==\n ==But the show is just\n beginning.\n Let's go for it!
 sleep 16
 chg_char_state_event
 move_npc 11602 left 1

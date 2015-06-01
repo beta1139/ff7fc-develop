@@ -56,8 +56,8 @@ set_key_valid down
 set_key_valid left
 set_key_valid right
 if_flag 18 1
-msg 『タイミングがはやかったようだ……
+msg {Guess I was too early==
 fi
 if_flag 18 2
-msg 『タイミングがおそかったようだ……
+msg {Guess I was too late==
 fi

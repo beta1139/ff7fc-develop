@@ -30,7 +30,7 @@ sleep 8
 move_char up 4
 sleep 64
 chg_char_dir right
-msg3 -1 『どうやら　あれに　とびうつるしか　ないようだな\n（Aボタンでジャンプ）
+msg3 -1 {I suppose we gotta\n jump to that.\n(Press OK to jump)
 chg_char_state_move
 loop_inf
 sleep 160
