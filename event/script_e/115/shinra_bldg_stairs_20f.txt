@@ -1,5 +1,5 @@
 sleep 216
-msg3 -1 Baret\n`==How far are these\n steirs goin' up?
+msg3 -1 Baret\n`==How far are these\n stairs goin' up?
 sleep 64
 set_flag 25 4
 sleep 88

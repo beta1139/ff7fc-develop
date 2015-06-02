@@ -1,5 +1,5 @@
 sleep 64
-msg3 -1 Baret\n`So even you somethimes\n fight for other people.\n I approve that.
+msg3 -1 Baret\n`So even you sometimes\n fight for other people.\n I approve that.
 sleep 72
 set_flag 25 3
 sleep 232
