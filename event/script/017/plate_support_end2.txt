@@ -7,7 +7,7 @@ create npc_event 1704 17 10 4 89 3 3 none
 create npc_event 1705 17 15 7 71 3 3 none
 create npc_event 1706 17 14 9 94 0 1 none
 create npc_event 1707 17 18 10 72 3 3 none
-create npc_event 1708 17 7 12 65 3 3 none
+create npc_event 1708 17 8 12 65 3 3 none
 create npc_event 1709 17 6 13 88 3 3 none
 sleep 16
 move_npc 1702 right 9
@@ -32,7 +32,7 @@ pool
 play_se bomb_little.ogg
 move_char down 1
 move_npc 1701 right 17
-move_npc 1708 right 17
+move_npc 1708 right 16
 move_npc 1709 right 14
 sleep 8
 move_char up 1

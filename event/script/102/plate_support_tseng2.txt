@@ -164,6 +164,8 @@ warp 102 19 33 down
 fadein
 fi
 kill_through 4909
+draw_image 010 -16 0 0 0 1152 256 0 event/plate_support/wall.png
+set_image_alpha 010 0
 sleep 16
 step_npc 4903 1
 chg_type 10255 npc_event
@@ -178,9 +180,13 @@ jump_npc 10255 same 2
 sleep 32
 step_npc 10255 2
 msg ティファ\n「おねがい　とめて！
+draw_image 051 16 16 0 0 224 32 0 event/plate_support/end1.png
+set_image_alpha 051 0
 sleep 32
 step_npc 10265 3
 msg ツォン\n「クックック……\n\n\n　きんきゅうよう　プレートかいほうシステムの\n　せっていと　かいじょは　『しんら』やくいんかいの\n　けっていなしでは　できないのだ
+draw_image 050 -64 -416 0 0 320 400 0 event/plate_support/sector7.png
+set_image_alpha 050 0
 chg_npc_img 10253 1
 move_npc 10253 up 2
 sleep 16

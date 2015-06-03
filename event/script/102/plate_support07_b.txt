@@ -94,7 +94,7 @@ chg_image_pos_offset 074 -52 0 0 0 0 0
 pool
 erase_image_range 061 074
 reset_screen_effect
-draw_image 050 -64 -416 0 0 320 400 0 event/plate_support/sector7.png
+set_image_alpha 050 100
 play_se_loop flashback.ogg
 loop 16
 sleep 1
@@ -138,9 +138,6 @@ set_screen_effect add 255 255 255 30
 include ./event/common/102/plate_support07_common2.txt
 dec_screen_effect_val 30
 include ./event/common/102/plate_support07_common2.txt
-draw_image 010 -16 0 0 0 1152 256 0 event/plate_support/wall.png
-draw_image 051 16 16 0 0 224 32 0 event/plate_support/end1.png
-set_image_alpha 051 0
 include ./event/common/102/plate_support07_common3.txt
 set_image_alpha 010 0
 include ./event/common/102/plate_support07_common3.txt

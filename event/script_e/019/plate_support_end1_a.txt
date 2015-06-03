@@ -118,11 +118,11 @@ chg_npc_dir 1906 left
 jump_npc 1906 same 1
 move_npc 1907 right 1
 move_npc 1908 left 1
-move_npc 1913 down 1
 move_npc 1914 left 1
-slide_walk_npc 1915 up 1
+move_npc 1915 up 1
 chg_npc_dir 1916 left
 sleep 8
+move_npc 1913 down 1
 chg_npc_dir 1910 down
 chg_npc_img 1910 150
 step_npc 1910 3
@@ -130,9 +130,7 @@ move_char right 1
 chg_npc_dir 1907 up
 move_npc 1908 right 1
 chg_npc_dir 1912 left
-move_npc 1913 up 1
 move_npc 1914 up 1
-move_npc 1915 down 1
 move_npc 1916 up 1
 sleep 8
 move_char left 1
@@ -142,10 +140,9 @@ move_npc 1908 up 1
 move_npc 1909 left 1
 move_npc 1911 right 5
 move_npc 1912 right 1
-move_npc 1913 down 1
+move_npc 1913 up 1
+move_npc 1915 down 1
 move_npc 1914 right 1
-move_npc 1915 left 1
-move_npc 1916 down 1
 play_se bomb_little.ogg
 sleep 8
 move_char right 1
@@ -155,7 +152,8 @@ move_npc 1909 down 1
 move_npc 1912 left 3
 move_npc 1913 right 1
 move_npc 1914 down 1
-move_npc 1915 right 1
+move_npc 1915 left 1
+move_npc 1916 down 1
 sleep 8
 move_char left 1
 chg_npc_dir 1906 down
@@ -165,7 +163,7 @@ chg_npc_img 1910 66
 move_npc 1910 down 1
 move_npc 1913 left 1
 move_npc 1914 left 1
-move_npc 1915 down 1
+move_npc 1915 right 1
 chg_npc_dir 1916 up
 sleep 8
 move_char right 1
@@ -174,9 +172,9 @@ move_npc 1907 down 1
 move_npc 1908 right 1
 move_npc 1909 down 1
 move_npc 1910 right 1
-move_npc 1913 up 1
+chg_npc_dir 1913 down
 move_npc 1914 up 1
-move_npc 1915 right 1
+move_npc 1915 down 1
 move_npc 1916 right 1
 sleep 8
 move_char left 1
@@ -188,7 +186,7 @@ chg_npc_dir 1910 up
 chg_npc_dir 1912 up
 move_npc 1913 left 1
 move_npc 1914 left 1
-chg_npc_dir 1915 up
+move_npc 1915 right 1
 move_npc 1916 right 1
 play_se bomb_little.ogg
 sleep 8
@@ -203,6 +201,7 @@ chg_npc_dir 1913 up
 step_npc 1907 5
 step_npc 1912 8
 move_npc 1914 up 1
+chg_npc_dir 1915 up
 step_npc 1915 2
 jump_npc 1916 same 2
 sleep 8
