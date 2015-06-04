@@ -1,7 +1,7 @@
 wait_same_pos
 create npc2 11605 116 7 14 17 0 4 
 set_layer 11605 front
-include ./event/common/key_unvaild.txt
+include ./event/common/key_unvalid.txt
 if_flag 16 0
 chg_char_dir left
 fi
@@ -73,7 +73,7 @@ set_flag 13 0
 set_flag 14 0
 set_flag 19 0
 set_flag 25 10
-include ./event/common/key_vaild.txt
+include ./event/common/key_valid.txt
 end
 fi
 pool

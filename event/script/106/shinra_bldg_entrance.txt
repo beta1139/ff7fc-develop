@@ -32,7 +32,7 @@ msg3 -1 バレット\n「おい　このビルには\n　くわしいんだろ？
 sleep 32
 wait_key_push_edge a
 erase_msg3
-include ./event/common/key_unvaild.txt
+include ./event/common/key_unvalid.txt
 set_flag 14 0
 set_flag 15 0
 set_flag 16 0
@@ -129,7 +129,7 @@ sleep 8
 jump_npc 10602 same 1
 chg_char_state_event
 sleep 16
-include ./event/common/key_vaild.txt
+include ./event/common/key_valid.txt
 step_npc 10602 2
 msg ティファ\n「ね　クラウド！\n　……どうしたらいいの？\n\n#2\n　　つっこむぞ！\n　　コッソリいこう\n\n\n[[]][[]]
 sleep 16
@@ -137,7 +137,7 @@ if_flag 3 0
 set_flag 14 1
 chg_npc_dir 10601 left
 chg_npc_img 10601 98
-include ./event/common/key_unvaild.txt
+include ./event/common/key_unvalid.txt
 sleep 16
 chg_char_state_move
 chg_speed 10601 slow
@@ -148,7 +148,7 @@ fi
 if_flag 3 1
 set_flag 14 2
 jump_npc 10602 same 1
-include ./event/common/key_unvaild.txt
+include ./event/common/key_unvalid.txt
 sleep 16
 chg_char_state_move
 chg_npc_dir 10601 left
@@ -173,4 +173,4 @@ move_npc 10602 right 1
 sleep 16
 move_npc 10601 left 1
 include ./event/common/act/act1-8_1.txt
-include ./event/common/key_vaild.txt
+include ./event/common/key_valid.txt
