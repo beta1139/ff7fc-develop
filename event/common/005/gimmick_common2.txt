@@ -1,0 +1,10 @@
+kill_through 1003
+kill_through_range 1050 1051
+sleep 16
+erase_msg3
+kill_through_range 586 588
+create event_generator 581 5 13 18 17 0 0 @../common/005/makouro_gimmick_a03.txt
+create event_generator 583 5 1 4 17 0 0 @../common/005/makouro_gimmick_a04.txt
+create event_generator 584 5 1 5 17 0 0 @../common/005/makouro_gimmick_a05.txt
+create event_generator 585 5 1 6 17 0 0 @../common/005/makouro_gimmick_a06.txt
+set_npc_pos 563 5 12 18

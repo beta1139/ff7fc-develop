@@ -1,0 +1,6 @@
+set_eternal_event
+wait_same_pos
+reset_slide_walk_char_flag
+set_key_valid b
+set_key_valid start
+set_key_valid dbg2

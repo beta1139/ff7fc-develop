@@ -81,7 +81,7 @@ play_se timer.ogg
 step_char 6
 sleep 180
 play_se_loop alarm.ogg
-create event_generator 1003 10 0 0 17 0 0 @010/ichiban_makouro_alarm.txt
+create event_generator 1003 10 0 0 17 0 0 @../common/010/ichiban_makouro_alarm.txt
 sleep 8
 chg_char_dir right
 sleep 15

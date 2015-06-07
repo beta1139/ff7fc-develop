@@ -1,4 +1,0 @@
-wait_same_pos
-move_char up 1
-sleep 16
-chg_char_dir left

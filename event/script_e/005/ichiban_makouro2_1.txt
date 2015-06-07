@@ -1,44 +1,13 @@
 wait_same_pos
-chg_type 501 npc_event
-chg_speed 501 normal
-chg_npc_dir 501 down
+kill_through_range 500 501
+chg_type 503 npc_event
+chg_speed 503 normal
+chg_npc_dir 503 down
 chg_char_dir up
+set_flag 10 0
+include ./event/script_e/005/ichiban_makouro2_msg.txt
+chg_npc_img 503 1
+move_npc 503 down 1
 sleep 16
-set_active_msg 501
-jump_npc 501 same 1
-set_talk_npc 501
-msg Baret\n`Yo!\n This ain't your first\n time in a reactor, is it?
-reset_talk_npc
-sleep 16
-step_char 1
-sleep 16
-msg {Yeah.\n I did work for Shinra,\n after all.
-sleep 16
-step_npc 501 2
-set_talk_npc 501
-msg Baret\n`This planet's fulla\n Mako energy. People here\n use it everyday.\n But nobody knows what\n Mako's real nature is.\n Do you?
-reset_talk_npc
-chg_char_dir right
-sleep 32
-step_npc 501 1
-set_talk_npc 501
-msg Baret\n`It's the life blood of\n this planet.\n\n And Shinra keeps suckin'\n it with this funny piece\n of contraption.
-reset_talk_npc
-chg_char_dir up
-sleep 16
-step_char 1
-sleep 16
-msg {I'm not here\n for a lecture.\n Let's just do it.
-sleep 16
-chg_npc_dir 501 left
-chg_npc_img 501 98
-step_npc 501 1
-set_talk_npc 501
-msg Baret\n`Fuck!\n\n\n Right, you're comin'\n with me from here.
-reset_talk_npc
-chg_npc_img 501 1
-move_npc 501 down 1
-sleep 16
-kill 501
+kill 503
 add_party_mem 1
-kill 502

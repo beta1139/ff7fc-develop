@@ -1,0 +1,36 @@
+sleep 16
+set_active_msg 503
+jump_npc 503 same 1
+set_talk_npc 503
+msg バレット\n「……おい\n　おまえ　まこうろは\n　はじめてじゃないんだろ？
+reset_talk_npc
+sleep 16
+step_char 1
+sleep 16
+msg 『まあな\n　ソルジャー……\n　しんらカンパニーの　にんげんだったからな
+sleep 16
+step_npc 503 2
+set_talk_npc 503
+msg バレット\n「このほしは　まこうエネルギーに　みちている\n　じゅうみんは　そのまこうエネルギーをつかって\n　ひびせいかつしている\n　でも　だれも　まこうのほんしつを　しらねえんだ\n　おまえ　しってるか?
+reset_talk_npc
+chg_char_dir right
+sleep 32
+step_npc 503 1
+set_talk_npc 503
+msg バレット\n「まこうは　このほしをながれる　『ち』だ\n　それを　しんらってかいしゃは\n　ガンガン　すいだしていやがる\n　このへんちくりんな\n　スクラップでな……
+reset_talk_npc
+if_flag 10 0
+chg_char_dir up
+fi
+sleep 16
+step_char 1
+sleep 16
+msg 『のうがきはいい　さきをいそごう
+sleep 16
+chg_npc_dir 503 left
+chg_npc_img 503 98
+step_npc 503 1
+set_talk_npc 503
+msg バレット\n「クッ……\n\n\n　よし　ここからは　オレといっしょに\n　こうどう　してもらうぜ
+reset_talk_npc
+set_flag 10 0

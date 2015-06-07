@@ -1,0 +1,10 @@
+wait_same_pos
+create event_generator 405 4 17 27 17 0 0 @004/ichiban_makouro4_1.txt
+create event_generator 406 4 17 27 17 0 0 @../common/004/ichiban_makouro4_2.txt
+create event_generator 407 4 17 27 17 0 0 @../common/004/ichiban_makouro4_3.txt
+create npc_event 560 5 14 19 116 1 4 none
+create npc_event 561 5 14 18 116 1 4 none
+create npc_event 562 5 14 17 116 1 4 none
+chg_npc_y_offset 560 -2
+chg_npc_y_offset 561 -2
+chg_npc_y_offset 562 -2

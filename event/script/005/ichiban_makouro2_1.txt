@@ -1,44 +1,13 @@
 wait_same_pos
-chg_type 501 npc_event
-chg_speed 501 normal
-chg_npc_dir 501 down
+kill_through_range 500 501
+chg_type 503 npc_event
+chg_speed 503 normal
+chg_npc_dir 503 down
 chg_char_dir up
+set_flag 10 0
+include ./event/script/005/ichiban_makouro2_msg.txt
+chg_npc_img 503 1
+move_npc 503 down 1
 sleep 16
-set_active_msg 501
-jump_npc 501 same 1
-set_talk_npc 501
-msg バレット\n「……おい\n　おまえ　まこうろは\n　はじめてじゃないんだろ？
-reset_talk_npc
-sleep 16
-step_char 1
-sleep 16
-msg 『まあな\n　ソルジャー……\n　しんらカンパニーの　にんげんだったからな
-sleep 16
-step_npc 501 2
-set_talk_npc 501
-msg バレット\n「このほしは　まこうエネルギーに　みちている\n　じゅうみんは　そのまこうエネルギーをつかって\n　ひびせいかつしている\n　でも　だれも　まこうのほんしつを　しらねえんだ\n　おまえ　しってるか?
-reset_talk_npc
-chg_char_dir right
-sleep 32
-step_npc 501 1
-set_talk_npc 501
-msg バレット\n「まこうは　このほしをながれる　『ち』だ\n　それを　しんらってかいしゃは\n　ガンガン　すいだしていやがる\n　このへんちくりんな\n　スクラップでな……
-reset_talk_npc
-chg_char_dir up
-sleep 16
-step_char 1
-sleep 16
-msg 『のうがきはいい　さきをいそごう
-sleep 16
-chg_npc_dir 501 left
-chg_npc_img 501 98
-step_npc 501 1
-set_talk_npc 501
-msg バレット\n「クッ……\n\n\n　よし　ここからは　オレといっしょに\n　こうどう　してもらうぜ
-reset_talk_npc
-chg_npc_img 501 1
-move_npc 501 down 1
-sleep 16
-kill 501
+kill 503
 add_party_mem 1
-kill 502

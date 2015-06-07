@@ -1,5 +1,0 @@
-wait_same_pos
-move_char up 1
-sleep 16
-move_char left 2
-sleep 32

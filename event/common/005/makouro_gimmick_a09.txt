@@ -1,0 +1,177 @@
+wait_target_talk 566
+reset_talk_flag 566
+chg_char_state_event
+sleep 32
+if_char_img 0
+chg_npc_dir 573 left
+chg_npc_img 573 115
+fi
+if_char_img 1
+chg_npc_dir 572 left
+chg_npc_img 572 116
+fi
+kill_through 582
+set_npc_pos 566 5 12 30
+chg_npc_dir 570 right
+chg_npc_img 570 114
+chg_npc_dir 571 up
+chg_npc_img 571 114
+chg_npc_dir 561 down
+chg_npc_dir 562 down
+chg_speed 561 not_step
+chg_speed 562 not_step
+sleep 56
+chg_npc_img 570 34
+chg_npc_dir 570 left
+chg_npc_img 571 35
+chg_npc_dir 571 left
+chg_npc_dir 561 up
+chg_npc_dir 562 up
+chg_speed 561 not_move
+chg_speed 562 not_move
+sleep 8
+if_char_img 0
+chg_npc_dir 573 right
+fi
+if_char_img 1
+chg_npc_dir 572 right
+fi
+chg_npc_dir 560 down
+chg_speed 560 not_step
+play_se switch.ogg
+sleep 4
+play_se_loop alarm.ogg
+sleep 36
+erase_msg3
+sleep 16
+if_char_img 0
+chg_npc_img 573 0
+fi
+if_char_img 1
+chg_npc_img 572 1
+fi
+chg_npc_dir 560 up
+chg_speed 560 not_move
+create event_generator 511 5 0 0 17 0 0 @005/gimmick_a_text1.txt
+if_flag 10 0
+sleep 80
+include ./event/common/005/gimmick_common2.txt
+set_flag 10 1
+end
+fi
+if_flag 10 1
+sleep 32
+chg_npc_dir 572 left
+chg_npc_img 572 98
+sleep 48
+include ./event/common/005/gimmick_common2.txt
+set_flag 10 2
+end
+fi
+if_flag 10 2
+sleep 16
+chg_npc_dir 571 down
+chg_speed 572 normal
+step_npc 572 5
+sleep 64
+include ./event/common/005/gimmick_common2.txt
+chg_npc_dir 571 left
+set_flag 10 3
+end
+fi
+if_flag 10 3
+set_key_unvalid a
+chg_npc_dir 571 down
+sleep 64
+erase_msg3
+sleep 8
+create event_generator 512 5 0 0 17 0 0 @005/gimmick_a_text2.txt
+chg_speed 572 fast
+chg_npc_img 572 95
+chg_npc_dir 572 up
+jump_npc 572 same 1
+sleep 16
+chg_char_img 1
+jump_npc 572 same 1
+sleep 16
+chg_npc_dir 572 down
+step_npc 572 6
+chg_char_state_event
+chg_npc_dir 573 up
+sleep 48
+chg_npc_img 572 1
+move_npc 572 down 1
+chg_speed 573 fast
+slide_walk_npc 573 down 1
+chg_npc_dir 571 left
+sleep 8
+chg_speed 573 normal
+move_npc 573 left 1
+chg_speed 572 normal
+move_npc 572 right 1
+sleep 5
+chg_speed 572 not_step
+chg_speed 573 not_step
+chg_npc_dir 573 up
+sleep 3
+include ./event/common/005/gimmick_common2.txt
+set_key_valid a
+set_flag 10 4
+end
+fi
+if_flag 10 4
+sleep 80
+include ./event/common/005/gimmick_common2.txt
+set_flag 10 5
+end
+fi
+if_flag 10 5
+sleep 32
+chg_npc_dir 571 left
+sleep 16
+chg_npc_dir 573 left
+sleep 32
+include ./event/common/005/gimmick_common2.txt
+chg_npc_dir 571 left
+set_flag 10 6
+end
+fi
+if_flag 10 6
+set_key_unvalid a
+sleep 16
+chg_npc_dir 571 down
+chg_npc_dir 573 down
+chg_npc_img 573 103
+sleep 16
+chg_npc_dir 573 left
+sleep 32
+erase_msg3
+sleep 32
+chg_npc_img 573 0
+chg_npc_dir 573 up
+chg_char_state_event
+create event_generator 513 5 0 0 17 0 0 @005/gimmick_a_text3.txt
+sleep 16
+chg_char_img 0
+chg_npc_dir 572 down
+sleep 48
+chg_speed 572 fast
+slide_walk_npc 572 up 1
+chg_speed 573 fast
+move_npc 573 up 1
+chg_npc_dir 571 left
+sleep 8
+chg_speed 573 normal
+move_npc 573 right 1
+chg_speed 572 normal
+move_npc 572 left 1
+sleep 5
+chg_speed 572 not_step
+chg_speed 573 not_step
+chg_npc_dir 572 down
+sleep 3
+include ./event/common/005/gimmick_common2.txt
+set_key_valid a
+set_flag 10 1
+end
+fi

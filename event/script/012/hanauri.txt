@@ -124,7 +124,7 @@ move_npc 1301 up 1
 sleep 16
 move_npc 1301 right 1
 sleep 16
-create event_generator 1340 13 1 1 17 0 0 @013/cat.txt
+create event_generator 1340 13 1 1 17 0 0 @../common/013/cat.txt
 msg はなうり\n「ねえ　なにがあったの？\n\n\n#2\n　　にげたほうがいい\n　　きにするな……　それより\n\n\n[[]][[]]
 if_flag 3 0
 set_active_msg 1301

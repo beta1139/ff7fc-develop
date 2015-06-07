@@ -618,7 +618,7 @@ chg_npc_y_offset 70833 0
 sleep 32
 play_se_loop train_move_quiet.ogg
 create event_generator 70800 708 7 14 17 0 0 @708/hachibangai_train1.txt
-create event_generator 70801 708 7 14 17 0 0 @708/hachibangai_train2.txt
+create event_generator 70801 708 7 14 17 0 0 @../common/708/hachibangai_train2.txt
 set_flag 13 0
 set_flag 20 0
 fadein

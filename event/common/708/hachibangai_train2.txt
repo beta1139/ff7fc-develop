@@ -1,0 +1,58 @@
+wait_same_pos
+step_npc 70820 4
+step_npc 70834 4
+loop 31
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 70810 0 62 0 0 0 0
+sleep 1
+step_npc 70820 20
+step_npc 70834 20
+loop 5
+loop 15
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 70810 -1 -2 0 0 0 0
+sleep 1
+chg_image_pos_offset 70810 0 62 0 0 0 0
+sleep 1
+pool
+loop_inf
+if_flag 13 0
+step_npc 70820 4
+step_npc 70834 4
+loop 31
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 70810 0 62 0 0 0 0
+sleep 1
+fi
+if_flag 13 1
+loop 3
+chg_image_pos_offset 70812 0 32 0 0 0 0
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+loop 7
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+chg_image_pos_offset 70812 0 -2 0 0 0 0
+sleep 1
+pool
+pool
+chg_image_pos_offset 70812 0 32 0 0 0 0
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+sleep 1
+loop 6
+chg_image_pos_offset 70810 0 -2 0 0 0 0
+chg_image_pos_offset 70812 0 -2 0 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 70810 0 62 0 0 0 0
+chg_image_pos_offset 70812 0 -2 0 0 0 0
+sleep 1
+fi
+pool

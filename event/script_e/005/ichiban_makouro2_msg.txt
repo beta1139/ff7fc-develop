@@ -1,0 +1,36 @@
+sleep 16
+set_active_msg 503
+jump_npc 503 same 1
+set_talk_npc 503
+msg Baret\n`Yo!\n This ain't your first\n time in a reactor, is it?
+reset_talk_npc
+sleep 16
+step_char 1
+sleep 16
+msg {Yeah.\n I did work for Shinra,\n after all.
+sleep 16
+step_npc 503 2
+set_talk_npc 503
+msg Baret\n`This planet's fulla\n Mako energy. People here\n use it everyday.\n But nobody knows what\n Mako's real nature is.\n Do you?
+reset_talk_npc
+chg_char_dir right
+sleep 32
+step_npc 503 1
+set_talk_npc 503
+msg Baret\n`It's the life blood of\n this planet.\n\n And Shinra keeps suckin'\n it with this funny piece\n of contraption.
+reset_talk_npc
+if_flag 10 0
+chg_char_dir up
+fi
+sleep 16
+step_char 1
+sleep 16
+msg {I'm not here\n for a lecture.\n Let's just do it.
+sleep 16
+chg_npc_dir 503 left
+chg_npc_img 503 98
+step_npc 503 1
+set_talk_npc 503
+msg Baret\n`Fuck!\n\n\n Right, you're comin'\n with me from here.
+reset_talk_npc
+set_flag 10 0

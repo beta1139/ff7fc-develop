@@ -1,4 +1,0 @@
-wait_same_pos
-kill_through 720
-kill_through 721
-close_door 700

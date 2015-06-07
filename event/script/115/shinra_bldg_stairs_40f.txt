@@ -38,7 +38,6 @@ chg_npc_img 11502 2
 chg_event_move_char_speed slow
 chg_speed 11502 slow
 move_npc 11502 up 3
-sleep 1
 move_char up 3
 sleep 32
 chg_npc_dir 11501 up

@@ -1,7 +1,0 @@
-chg_char_state_move
-move_npc 402 left 4
-sleep 32
-move_npc 402 up 19
-sleep 152
-kill 402
-
