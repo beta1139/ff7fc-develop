@@ -1,3 +1,2 @@
 wait_target_talked 6323
-msg add flag 27 1
 add_flag 27 1
