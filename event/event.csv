@@ -961,7 +961,8 @@ event_generator,6400,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop1.txt"
 event_generator,6401,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop2.txt"
 event_generator,6402,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop3.txt"
 event_generator,6403,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop4.txt"
-event_generator,6500,65,15,20,17,0,0,"@065/waterfall.txt"
+waterfall,6520,65,10,2,1,9,0,0,"none"
+waterfall,6521,65,13,2,3,9,0,0,"none"
 treasure_item,6530,65,29,20,0,0,0,1003
 treasure_materia,6531,65,22,20,4,0,0,4313
 save_point,6540,65,15,21,0,0,0,
