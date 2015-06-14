@@ -1,0 +1,2 @@
+wait_target_talked 11000
+add_flag 27 1

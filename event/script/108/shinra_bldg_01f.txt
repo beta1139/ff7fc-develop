@@ -1,0 +1,278 @@
+wait_same_pos
+draw_char off
+create npc_event 10810 108 14 32 0 0 2 none
+create npc_event 10811 108 15 33 1 0 2 none
+create npc_event 10812 108 13 33 2 0 2 none
+move_char up 5
+move_npc 10810 up 5
+move_npc 10805 up 2
+move_npc 10808 down 3
+move_npc 10811 up 5
+move_npc 10812 up 5
+sleep 64
+move_npc 10805 right 1
+jump_npc 10800 same 1
+sleep 16
+chg_speed 10800 fast
+step_npc 10800 3
+chg_npc_dir 10803 down
+msg3 -1 うけつけ\n「ちょっと　こまります！\n　アポイントメントのないかたは\n　こちらで……
+sleep 16
+chg_npc_dir 10805 up
+chg_speed 10805 not_move
+wait_key_push_edge a
+erase_msg3
+chg_npc_dir 10811 right
+set_active_msg 10808
+move_npc 10808 down 1
+sleep 16
+step_npc 10811 2
+msg バレット\n「わりいな　ちっとばかし\n　きゅうな　ようけんでよ\n\n　ケガしたくなかったら\n　ひっこんでな！！
+play_se fingersnap.ogg
+chg_npc_img 10811 145
+move_npc 10808 down 1
+sleep 16
+jump_npc 10800 same 2
+sleep 16
+msg3 -1 「キャー
+chg_npc_dir 10801 right
+chg_npc_dir 10802 down
+chg_speed 10808 not_move
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+jump_npc 10803 same 1
+jump_npc 10804 same 1
+chg_npc_img 10800 151
+chg_npc_img 10810 143
+create npc_event 10813 108 14 26 143 2 2 none
+chg_event_move_char_speed fast
+move_char up 4
+sleep 16
+jump_npc 10812 same 1
+chg_npc_dir 10801 down
+sleep 4
+chg_npc_dir 10812 right
+sleep 4
+chg_npc_dir 10812 down
+sleep 4
+chg_npc_dir 10812 left
+sleep 4
+chg_npc_dir 10812 up
+sleep 16
+chg_npc_dir 10807 down
+sleep 16
+chg_npc_dir 10808 down
+sleep 8
+erase_msg3
+chg_npc_dir 10805 down
+chg_npc_dir 10806 down
+sleep 16
+set_active_msg 10806
+jump_npc 10806 same 1
+chg_npc_dir 10806 left
+chg_npc_img 10806 150
+chg_npc_dir 10807 left
+chg_npc_img 10807 151
+sleep 16
+jump_npc 10806 same 1
+set_talk_npc 10806
+msg 「なんなんだ\n　あいつら！？
+reset_talk_npc
+set_active_msg 10805
+jump_npc 10805 same 1
+chg_npc_dir 10805 left
+chg_npc_img 10805 150
+sleep 16
+chg_npc_dir 10808 left
+chg_npc_img 10808 150
+jump_npc 10805 same 1
+set_talk_npc 10805
+msg 「ま　まさかやつらが\n　アバランチ！？
+reset_talk_npc
+create npc_event 10816 108 7 23 156 2 0 none
+create npc_event 10817 108 10 20 156 2 0 none
+create npc_event 10818 108 18 20 156 2 0 none
+create npc_event 10819 108 20 18 156 2 0 none
+sleep 24
+kill_through_range 10816 10819
+jump_npc 10801 same 2
+jump_npc 10802 same 2
+jump_npc 10803 same 2
+jump_npc 10804 same 2
+loop 2
+sleep 4
+chg_npc_dir 10801 left
+chg_npc_dir 10802 left
+chg_npc_dir 10803 left
+chg_npc_dir 10804 left
+sleep 4
+chg_npc_dir 10801 up
+chg_npc_dir 10802 up
+chg_npc_dir 10803 up
+chg_npc_dir 10804 up
+sleep 4
+chg_npc_dir 10801 right
+chg_npc_dir 10802 right
+chg_npc_dir 10803 right
+chg_npc_dir 10804 right
+sleep 4
+chg_npc_dir 10801 down
+chg_npc_dir 10802 down
+chg_npc_dir 10803 down
+chg_npc_dir 10804 down
+pool
+chg_speed 10801 fast
+chg_speed 10802 fast
+chg_speed 10803 fast
+chg_speed 10804 fast
+step_npc 10801 4
+step_npc 10802 4
+step_npc 10803 4
+step_npc 10804 4
+msg3 -1 「しんにゅうしゃだ！\n　つかまえろ！！
+sleep 32
+chg_speed 10805 fast
+chg_speed 10806 fast
+chg_speed 10807 fast
+chg_speed 10808 fast
+jump_npc 10805 same 1
+jump_npc 10806 same 1
+jump_npc 10807 same 1
+jump_npc 10808 same 1
+sleep 16
+chg_npc_img 10800 74
+chg_npc_img 10805 73
+chg_npc_img 10806 73
+chg_npc_img 10807 74
+chg_npc_img 10808 73
+chg_npc_dir 10811 up
+move_npc 10800 up 5
+move_npc 10801 right 6
+move_npc 10802 right 4
+move_npc 10803 left 3
+move_npc 10804 down 2
+move_npc 10805 right 3
+move_npc 10806 left 6
+move_npc 10807 up 2
+move_npc 10808 up 6
+sleep 16
+erase_msg3
+move_npc 10804 left 6
+move_npc 10807 right 5
+sleep 8
+move_npc 10803 down 6
+move_npc 10805 up 9
+sleep 8
+move_npc 10802 down 4
+sleep 8
+move_npc 10800 right 1
+sleep 8
+move_npc 10801 down 3
+move_npc 10806 up 6
+move_npc 10800 up 6
+move_char down 4
+sleep 8
+move_npc 10807 up 5
+sleep 8
+chg_npc_img 10802 141
+move_npc 10804 down 3
+sleep 8
+chg_npc_img 10801 141
+chg_npc_img 10803 141
+sleep 8
+encount 558
+sleep 64
+kill_through_range 10800 10808
+chg_npc_img 10813 105
+chg_npc_dir 10813 up
+set_npc_pos 10813 108 13 26
+create npc_event 10814 108 13 27 104 0 2 none
+chg_npc_img 10810 105
+chg_npc_dir 10810 left
+chg_npc_img 10811 1
+wait_encount_end
+step_npc 10812 3
+loop 2
+chg_npc_dir 10814 right
+chg_npc_img 10813 17
+sleep 2
+chg_npc_dir 10814 down
+sleep 2
+chg_npc_dir 10814 left
+sleep 2
+chg_npc_dir 10814 up
+chg_npc_img 10813 105
+sleep 2
+pool
+jump_npc 10811 same 2
+loop 2
+chg_npc_dir 10811 right
+chg_npc_dir 10814 right
+chg_npc_img 10813 17
+sleep 4
+chg_npc_dir 10811 down
+chg_npc_dir 10814 down
+sleep 4
+chg_npc_dir 10811 left
+chg_npc_dir 10814 left
+sleep 4
+chg_npc_dir 10811 up
+chg_npc_dir 10814 up
+chg_npc_img 10813 105
+sleep 4
+pool
+kill_through_range 10813 10814
+step_npc 10811 4
+sleep 16
+chg_npc_img 10810 0
+chg_npc_dir 10810 up
+chg_speed 10811 fast
+msg バレット\n「いっきに　うえまで　いくぞ！
+sleep 16
+set_layer 10810 front
+chg_speed 10811 normal
+move_npc 10811 up 1
+move_npc 10812 up 1
+sleep 16
+move_npc 10811 left 1
+move_npc 10812 right 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill_through_range 10810 10812
+chg_event_move_char_speed normal
+create npc_event 10800 108 12 4 32 0 0 none
+create npc_event 10801 108 13 4 32 3 0 none
+create npc_event 10802 108 14 4 32 1 0 none
+create npc_event 10803 108 12 5 74 3 0 none
+create npc_event 10804 108 13 5 74 0 0 none
+create npc_event 10805 108 14 5 73 0 0 none
+create event_generator 10821 108 10 6 17 0 0 @../common/108/shinra_bldg_01f_escape1.txt
+create event_generator 10822 108 12 8 17 0 0 @../common/108/shinra_bldg_01f_escape1.txt
+create event_generator 10823 108 16 8 17 0 0 @../common/108/shinra_bldg_01f_escape2.txt
+create event_generator 10824 108 17 8 17 0 0 @../common/108/shinra_bldg_01f_escape2.txt
+create event_generator 10825 108 18 6 17 0 0 @../common/108/shinra_bldg_01f_escape2.txt
+create event_generator 10826 108 18 7 17 0 0 @../common/108/shinra_bldg_01f_escape2.txt
+create event_generator 10827 108 18 8 17 0 0 @../common/108/shinra_bldg_01f_escape2.txt
+create event_generator 10828 108 19 4 17 0 0 @../common/108/shinra_bldg_01f_escape2.txt
+set_layer 10890 front
+set_layer 10892 front
+set_layer 10894 front
+chg_npc_y_offset 10890 0
+chg_npc_y_offset 10891 0
+chg_npc_y_offset 10892 0
+chg_npc_y_offset 10893 0
+chg_npc_y_offset 10894 0
+chg_npc_y_offset 10895 0
+chg_npc_y_offset 11152 0
+chg_npc_y_offset 11153 0
+chg_npc_y_offset 11154 0
+chg_npc_y_offset 11155 0
+chg_npc_y_offset 11156 0
+chg_npc_y_offset 11157 0

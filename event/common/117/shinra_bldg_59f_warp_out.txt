@@ -1,0 +1,9 @@
+set_eternal_event
+wait_same_pos
+set_flag 0 0
+open_door 11650
+warp_ff3_2 116 8 8 3 down
+move_char down 1
+close_door 11650
+close_door 11752
+sleep 16

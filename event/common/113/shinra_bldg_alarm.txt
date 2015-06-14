@@ -1,0 +1,42 @@
+chg_char_state_move
+loop_inf
+if_flag 10 0
+create effect 1050 10 0 0 0 0 48 2
+loop 8
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+create effect 1051 10 0 0 0 0 48 2
+sleep 96
+fi
+if_flag 10 1
+create effect 1050 10 0 0 0 0 48 2
+step_npc 11300 24
+set_image_alpha 000 0
+loop 4
+chg_npc_img 11300 159
+chg_npc_dir 11300 down
+sleep 8
+chg_npc_dir 11300 left
+sleep 8
+chg_npc_img 11300 17
+sleep 8
+pool
+create effect 1051 10 0 0 0 0 48 2
+loop 4
+chg_npc_img 11300 159
+chg_npc_dir 11300 down
+sleep 8
+chg_npc_dir 11300 left
+sleep 8
+chg_npc_img 11300 17
+sleep 8
+pool
+fi
+pool

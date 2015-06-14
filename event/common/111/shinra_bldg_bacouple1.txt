@@ -1,0 +1,15 @@
+wait_target_talk 11103
+reset_talk_flag 11103
+kill_through_range 11124 11125
+chg_type 11103 npc_event
+chg_type 11104 npc_event
+chg_speed 11103 normal
+chg_speed 11104 normal
+create event_generator 11130 111 0 0 17 0 0 @111/shinra_bldg_bacouple_msg1.txt
+wait_event_invalid 11130
+create event_generator 11126 111 0 0 17 0 0 @../common/111/shinra_bldg_bacouple3.txt
+create event_generator 11127 111 0 0 17 0 0 @../common/111/shinra_bldg_bacouple4.txt
+chg_type 11103 npc2
+chg_type 11104 npc2
+chg_speed 11103 not_move
+chg_speed 11104 not_move

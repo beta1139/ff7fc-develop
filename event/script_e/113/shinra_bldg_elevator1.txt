@@ -1,0 +1,261 @@
+wait_same_pos
+kill_through_range 10821 10828
+kill_through_range 10800 10808
+if_flag_lesser 28 3
+draw_image 000 113 99 0 0 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag_greater 28 2
+draw_image 000 113 99 14 0 14 10 0 event/shinra_bldg/number.png
+fi
+move_char down 1
+loop 16
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+pool
+move_char left 1
+loop 16
+sleep 1
+chg_image_pos_offset 000 1 0 0 0 0 0
+pool
+close_door 11350
+close_door 11350
+close_door 10850
+close_door 10851
+close_door 11050
+close_door 11051
+chg_char_dir up
+play_event_bgm Ex-08-nothing.ogg
+sleep 32
+set_flag 10 0
+set_flag 24 6
+create npc_event 11310 113 2 3 0 0 2 none
+draw_char off
+chg_npc_y_offset 11310 -6
+sleep 3
+chg_npc_y_offset 11310 -8
+sleep 3
+chg_npc_img 11310 115
+sleep 32
+play_se button.ogg
+loop 4
+set_gray_scale
+sleep 2
+reset_gray_scale
+sleep 2
+pool
+sleep 16
+chg_npc_y_offset 11310 -6
+sleep 4
+chg_npc_y_offset 11310 -4
+chg_npc_img 11310 0
+draw_char on
+kill 11310
+sleep 8
+move_char down 1
+loop 16
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+pool
+move_char right 1
+loop 16
+sleep 1
+chg_image_pos_offset 000 -1 0 0 0 0 0
+pool
+chg_char_dir up
+create npc_event 11311 113 3 4 1 0 2 バレット\n「かまわねえクラウド！\n　どこでもいいから　とめちまえ！
+create npc_event 11312 113 3 4 2 0 2 ティファ\n「どうなってるの！？
+move_npc 11311 down 1
+move_npc 11312 down 1
+sleep 16
+move_npc 11311 right 1
+move_npc 11312 left 1
+sleep 16
+chg_npc_dir 11311 up
+chg_npc_dir 11312 up
+play_se elevator_start.wav
+loop 100
+dec_map_draw_y_offset
+sleep 1
+pool
+play_se_loop elevator_loop.wav
+loop 70
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 30
+set_map_draw_y_offset 170
+if_flag_lesser 28 3
+chg_image_pos_offset 000 0 0 28 0 0 0
+fi
+if_flag_greater 28 2
+chg_image_pos_offset 000 0 0 14 0 0 0
+fi
+warp 113 19 4 up
+chg_char_dir right
+set_npc_pos 11311 113 20 5
+set_npc_pos 11312 113 18 5
+create npc_event 11300 113 19 1 17 1 3 none
+chg_npc_y_offset 11300 0
+create event_generator 11330 113 18 2 17 1 3 @../common/113/elevator_trap1.txt
+create event_generator 11331 113 18 1 17 1 3 @../common/113/elevator_trap2.txt
+create event_generator 11332 113 18 1 17 1 3 @../common/113/elevator_trap3.txt
+create event_generator 11333 113 18 1 17 1 3 @../common/113/elevator_trap4.txt
+create event_generator 11334 113 18 1 17 1 3 @../common/113/elevator_trap5.txt
+create event_generator 11335 113 18 1 17 1 3 @../common/113/elevator_trap6.txt
+create event_generator 11336 113 18 1 17 1 3 @../common/113/elevator_trap7.txt
+create event_generator 11337 113 18 1 17 1 3 @../common/113/elevator_trap8.txt
+create event_generator 11338 113 18 1 17 1 3 @../common/113/elevator_trap9.txt
+if_flag_greater 25 1
+chg_image_pos_offset 000 0 0 14 0 0 0
+fi
+loop 170
+dec_map_draw_y_offset
+sleep 1
+pool
+set_map_draw_y_offset 0
+if_flag_lesser 25 2
+sleep 16
+chg_char_dir up
+chg_char_img_tmp 103
+sleep 8
+chg_char_dir right
+sleep 40
+chg_char_img_tmp 0
+chg_char_dir up
+sleep 40
+step_npc 11312 2
+msg ティファ\n「……どうしたの？
+sleep 16
+step_char 1
+sleep 16
+msg 『エアリスをたすけだすまで\n　さわぎは　おこしたくなかった\n\n\n　まあ　むりだろうとは\n　おもっていたが……
+sleep 16
+step_npc 11311 1
+msg バレット\n「へへへ
+chg_char_dir down
+sleep 16
+step_char 1
+sleep 16
+msg 『なんだよ　きもちわるいな
+sleep 16
+jump_npc 11311 same 1
+sleep 16
+step_npc 11311 2
+msg バレット\n「あんたでも　たにんのために\n　たたかうことが　あるんだな\n　みなおしたぜ
+chg_char_dir up
+chg_image_pos_offset 000 0 0 14 0 0 0
+sleep 16
+step_char 1
+sleep 16
+msg 『あんたに　みなおされても　うれしくない
+sleep 16
+chg_npc_dir 11311 right
+sleep 48
+chg_image_pos_offset 000 0 0 14 0 0 0
+sleep 16
+chg_npc_dir 11311 up
+chg_speed 11311 slow
+step_npc 11311 1
+msg バレット\n「いや　なんていうか……\n　いろいろわるかったな
+chg_npc_dir 11311 up
+fi
+if_flag_greater 25 1
+chg_image_pos_offset 000 0 0 14 0 0 0
+fi
+include ./event/common/key_unvalid.txt
+sleep 40
+play_se shock.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+play_bgm
+play_se_loop alarm.ogg
+create event_generator 11321 113 0 0 17 0 0 @../common/113/shinra_bldg_alarm.txt
+sleep 8
+chg_char_dir right
+chg_npc_dir 11312 down
+sleep 15
+chg_npc_dir 11311 left
+sleep 15
+chg_char_dir left
+chg_npc_dir 11312 left
+sleep 15
+chg_char_dir right
+chg_npc_dir 11311 down
+chg_npc_dir 11312 right
+sleep 15
+chg_char_dir down
+chg_npc_dir 11311 up
+chg_npc_dir 11312 up
+sleep 15
+chg_npc_dir 11311 right
+chg_npc_dir 11312 right
+sleep 15
+chg_char_dir up
+chg_npc_dir 11311 left
+jump_npc 11311 same 1
+set_flag 10 1
+start_fake_countdown_sec 1
+draw_fake_countdown off
+sleep 16
+msg3 -1 バレット\n「な　なんだ！？
+chg_speed 11311 fast
+step_npc 11311 2
+chg_npc_dir 11312 down
+sleep 16
+chg_char_dir down
+sleep 16
+chg_npc_dir 11312 up
+wait_key_push_edge a
+erase_msg3
+chg_image_pos_offset 000 0 0 14 0 0 0
+wait_fake_countover
+sleep 16
+jump_npc 11312 same 2
+sleep 16
+msg3 -1 ティファ\n「みて　あれ！
+create event_generator 11339 113 18 2 17 1 3 @../common/113/elevator_trap_select.txt
+sleep 16
+chg_event_move_char_speed fast
+chg_speed 11312 fast
+step_npc 11312 2
+create npc_event 11310 113 19 4 0 0 2 none
+draw_char off
+chg_npc_dir 11311 up
+move_char up 2
+loop 16
+sleep 1
+chg_image_pos_offset 000 0 2 0 0 0 0
+pool
+wait_key_push_edge a
+erase_msg3
+sleep 32
+chg_speed 11311 normal
+step_npc 11311 2
+msg バレット\n「チ……！
+jump_npc 11311 same 2
+sleep 32
+chg_speed 11311 fast
+step_npc 11311 2
+msg バレット\n「かまわねえクラウド！\n　どこでもいいから　とめちまえ！
+chg_event_move_char_speed normal
+move_char down 2
+loop 32
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+pool
+chg_char_dir up
+draw_char on
+kill 11310
+chg_speed 11311 not_move
+chg_speed 11312 not_move
+set_flag_wall 11311
+set_flag_wall 11312
+chg_type 11311 npc
+chg_type 11312 npc
+include ./event/common/key_valid.txt

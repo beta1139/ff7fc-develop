@@ -1,0 +1,16 @@
+set_eternal_event
+wait_same_pos
+set_flag 28 7
+create npc_event 11711 117 6 17 1 0 2 none
+create npc_event 11712 117 6 17 2 0 2 none
+move_npc 11711 right 1
+move_npc 11712 right 2
+sleep 16
+jump_npc 11711 same 1
+chg_npc_dir 11711 left
+chg_char_dir right
+sleep 16
+chg_npc_dir 11712 left
+chg_speed 11711 fast
+step_npc 11711 1
+include ./event/script_e/117/elvator_and_59f_baret.txt

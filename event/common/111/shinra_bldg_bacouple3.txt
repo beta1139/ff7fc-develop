@@ -1,0 +1,27 @@
+wait_target_talk 11103
+reset_talk_flag 11103
+kill_through_range 11126 11127
+chg_type 11103 npc_event
+chg_type 11104 npc_event
+chg_speed 11103 normal
+chg_speed 11104 normal
+set_slide_char_flag
+if_char_dir down
+create npc_event 11110 111 4 14 0 1 2 none
+draw_char off
+move_char right 1
+move_npc 11110 right 1
+sleep 16
+move_npc 11110 down 2
+sleep 16
+fi
+if_char_dir left
+create npc_event 11110 111 5 15 0 2 2 none
+draw_char off
+move_char up 1
+sleep 16
+move_npc 11110 down 1
+sleep 16
+fi
+create event_generator 11131 111 0 0 17 0 0 @111/shinra_bldg_bacouple_msg2.txt
+wait_event_invalid 11131

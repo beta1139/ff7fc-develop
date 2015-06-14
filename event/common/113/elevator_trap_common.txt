@@ -1,0 +1,526 @@
+create npc_event 11310 113 18 3 0 0 2 none
+draw_char off
+step_char 2
+kill 11339
+chg_npc_y_offset 11310 -6
+sleep 3
+chg_npc_y_offset 11310 -8
+sleep 3
+chg_npc_img 11310 115
+sleep 26
+chg_char_state_event
+chg_type 11311 npc_event
+chg_type 11312 npc_event
+chg_speed 11311 normal
+chg_speed 11312 normal
+sleep 6
+play_se button.ogg
+loop 4
+set_gray_scale
+sleep 2
+reset_gray_scale
+sleep 2
+pool
+sleep 8
+chg_npc_y_offset 11310 -6
+sleep 4
+chg_npc_y_offset 11310 -4
+chg_npc_img 11310 0
+draw_char on
+kill 11310
+kill_through 11321
+kill_through 11300
+erase_image 000
+play_se elevator_end.wav
+sleep 8
+if_flag 24 13
+draw_image 000 129 83 28 10 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 14
+draw_image 000 129 83 42 10 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 15
+draw_image 000 129 83 56 10 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 16
+draw_image 000 129 83 70 10 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 17
+draw_image 000 129 83 84 10 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 18
+draw_image 000 129 83 98 10 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 19
+draw_image 000 129 83 112 10 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 20
+draw_image 000 129 83 126 10 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 21
+draw_image 000 129 83 0 20 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 22
+draw_image 000 129 83 14 20 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 23
+draw_image 000 129 83 28 20 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 24
+draw_image 000 129 83 42 20 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 25
+draw_image 000 129 83 56 20 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 26
+draw_image 000 129 83 70 20 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 27
+draw_image 000 129 83 84 20 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 28
+draw_image 000 129 83 98 20 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 29
+draw_image 000 129 83 112 20 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 30
+draw_image 000 129 83 126 20 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 31
+draw_image 000 129 83 0 30 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 32
+draw_image 000 129 83 14 30 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 33
+draw_image 000 129 83 28 30 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 34
+draw_image 000 129 83 42 30 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 35
+draw_image 000 129 83 56 30 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 36
+draw_image 000 129 83 70 30 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 37
+draw_image 000 129 83 84 30 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 38
+draw_image 000 129 83 98 30 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 39
+draw_image 000 129 83 112 30 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 40
+draw_image 000 129 83 126 30 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 41
+draw_image 000 129 83 0 40 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 42
+draw_image 000 129 83 14 40 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 43
+draw_image 000 129 83 28 40 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 44
+draw_image 000 129 83 42 40 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 45
+draw_image 000 129 83 56 40 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 46
+draw_image 000 129 83 70 40 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 47
+draw_image 000 129 83 84 40 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 48
+draw_image 000 129 83 98 40 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 49
+draw_image 000 129 83 112 40 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 50
+draw_image 000 129 83 126 40 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 51
+draw_image 000 129 83 0 50 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 52
+draw_image 000 129 83 14 50 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 53
+draw_image 000 129 83 28 50 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 54
+draw_image 000 129 83 42 50 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 55
+draw_image 000 129 83 56 50 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 56
+draw_image 000 129 83 70 50 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 57
+draw_image 000 129 83 84 50 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag 24 58
+draw_image 000 129 83 98 50 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag_greater 24 58
+draw_image 000 129 83 112 50 14 10 0 event/shinra_bldg/number.png
+fi
+sleep 8
+loop 2
+sleep 8
+set_image_alpha 000 0
+sleep 8
+set_image_alpha 000 100
+pool
+move_char down 1
+loop 8
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+pool
+set_image_alpha 000 0
+loop 8
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+pool
+set_image_alpha 000 100
+move_char right 1
+loop 8
+sleep 1
+chg_image_pos_offset 000 -1 0 0 0 0 0
+pool
+set_image_alpha 000 0
+loop 8
+sleep 1
+chg_image_pos_offset 000 -1 0 0 0 0 0
+pool
+set_image_alpha 000 100
+chg_char_dir up
+sleep 8
+loop 2
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+sleep 12
+play_se squat.ogg
+create npc_event 11313 113 19 3 143 2 2 none
+chg_char_img_tmp 143
+chg_npc_img 11311 145
+jump_npc 11312 same 1
+loop 2
+sleep 2
+chg_npc_dir 11312 right
+sleep 2
+chg_npc_dir 11312 down
+sleep 2
+chg_npc_dir 11312 left
+sleep 2
+chg_npc_dir 11312 up
+pool
+sleep 32
+play_se door_open.ogg
+open_door 11351
+sleep 40
+if_flag 24 13
+encount 259
+fi
+if_flag 24 14
+encount 260
+fi
+if_flag 24 15
+encount 17
+fi
+if_flag 24 16
+encount 18
+fi
+if_flag 24 17
+encount 259
+fi
+if_flag 24 18
+encount 260
+fi
+if_flag 24 19
+encount 17
+fi
+if_flag 24 20
+encount 18
+fi
+if_flag 24 21
+encount 260
+fi
+if_flag 24 22
+encount 18
+fi
+if_flag 24 23
+encount 259
+fi
+if_flag 24 24
+encount 18
+fi
+if_flag 24 25
+encount 17
+fi
+if_flag 24 26
+encount 259
+fi
+if_flag 24 27
+encount 260
+fi
+if_flag 24 28
+encount 17
+fi
+if_flag 24 29
+include ./event/common/key_unvalid.txt
+create event_generator 11360 113 0 0 17 0 0 @113/elevator_trap_employee.txt
+end
+fi
+if_flag 24 30
+encount 261
+fi
+if_flag 24 31
+encount 263
+fi
+if_flag 24 32
+encount 264
+fi
+if_flag 24 33
+encount 268
+fi
+if_flag 24 34
+encount 261
+fi
+if_flag 24 35
+encount 263
+fi
+if_flag 24 36
+encount 264
+fi
+if_flag 24 37
+encount 268
+fi
+if_flag 24 38
+include ./event/common/key_unvalid.txt
+create event_generator 11360 113 0 0 17 0 0 @113/elevator_trap_employee.txt
+end
+fi
+if_flag 24 39
+encount 261
+fi
+if_flag 24 40
+encount 264
+fi
+if_flag 24 41
+encount 268
+fi
+if_flag 24 42
+encount 263
+fi
+if_flag 24 43
+encount 263
+fi
+if_flag 24 44
+encount 261
+fi
+if_flag 24 45
+encount 268
+fi
+if_flag 24 46
+encount 264
+fi
+if_flag 24 47
+include ./event/common/key_unvalid.txt
+create event_generator 11360 113 0 0 17 0 0 @113/elevator_trap_employee.txt
+end
+fi
+if_flag 24 48
+encount 268
+fi
+if_flag 24 49
+encount 263
+fi
+if_flag 24 50
+encount 261
+fi
+if_flag 24 51
+encount 263
+fi
+if_flag 24 52
+encount 268
+fi
+if_flag 24 53
+encount 261
+fi
+if_flag 24 54
+encount 264
+fi
+if_flag 24 55
+encount 264
+fi
+if_flag 24 56
+include ./event/common/key_unvalid.txt
+create event_generator 11360 113 0 0 17 0 0 @113/elevator_trap_employee.txt
+end
+fi
+if_flag 24 57
+encount 261
+fi
+if_flag 24 58
+encount 268
+fi
+if_flag_lesser 24 59
+sleep 64
+set_npc_pos 11330 113 18 2
+set_npc_pos 11331 113 18 1
+set_npc_pos 11332 113 18 1
+set_npc_pos 11333 113 18 1
+set_npc_pos 11334 113 18 1
+set_npc_pos 11335 113 18 1
+set_npc_pos 11336 113 18 1
+set_npc_pos 11337 113 18 1
+set_npc_pos 11338 113 18 1
+chg_npc_dir 11313 up
+set_npc_pos 11313 113 18 3
+chg_npc_img 11313 17
+create npc_event 11314 113 18 4 104 0 2 none
+chg_char_dir left
+chg_char_img_tmp 105
+wait_encount_end
+include ./event/common/key_unvalid.txt
+create npc_event 11300 113 19 1 17 1 3 none
+chg_npc_y_offset 11300 0
+close_door 11351
+jump_npc 11311 same 1
+step_npc 11312 3
+loop 2
+chg_npc_dir 11314 right
+chg_npc_img 11313 17
+sleep 2
+chg_npc_dir 11314 down
+sleep 2
+chg_npc_dir 11314 left
+sleep 2
+chg_npc_dir 11314 up
+chg_npc_img 11313 105
+sleep 2
+pool
+play_se_loop alarm.ogg
+create event_generator 11321 113 0 0 17 0 0 @../common/113/shinra_bldg_alarm.txt
+create event_generator 11339 113 18 2 17 1 3 @../common/113/elevator_trap_select.txt
+loop 2
+chg_npc_dir 11311 right
+chg_npc_dir 11314 right
+chg_npc_img 11313 17
+sleep 4
+chg_npc_dir 11311 down
+chg_npc_dir 11314 down
+sleep 4
+chg_npc_dir 11311 left
+chg_npc_dir 11314 left
+sleep 4
+chg_npc_dir 11311 up
+chg_npc_dir 11314 up
+chg_npc_img 11313 105
+sleep 4
+step_npc 11311 1
+pool
+chg_npc_img 11311 1
+kill_through_range 11313 11314
+sleep 12
+reset_char_img_tmp
+sleep 16
+chg_char_dir up
+chg_speed 11311 not_move
+chg_speed 11312 not_move
+chg_type 11311 npc
+chg_type 11312 npc
+sleep 8
+include ./event/common/key_valid.txt
+fi
+if_flag_greater 24 58
+kill_through_range 11330 11338
+sleep 32
+reset_char_img_tmp
+kill 11313
+chg_char_dir down
+sleep 16
+chg_npc_img 11311 1
+sleep 16
+step_char 1
+sleep 32
+step_npc 11311 2
+step_npc 11312 2
+sleep 48
+move_char up 2
+loop 16
+sleep 1
+chg_image_pos_offset 000 0 1 0 0 0 0
+pool
+move_npc 11312 right 1
+loop 16
+sleep 1
+chg_image_pos_offset 000 0 1 0 0 0 0
+pool
+draw_char off
+move_npc 11311 left 1
+move_npc 11312 up 3
+sleep 16
+move_npc 11311 up 3
+sleep 32
+kill 11312
+sleep 16
+kill 11311
+sleep 16
+close_door 11351
+sleep 16
+erase_image 000
+if_flag 28 1
+open_door 11750
+warp_ff3_2 117 5 3 2 down
+fi
+if_flag 28 2
+open_door 11751
+warp_ff3_2 117 9 3 2 down
+fi
+if_flag 28 3
+open_door 11750
+warp_ff3_2 117 5 3 2 down
+fi
+if_flag 28 4
+open_door 11751
+warp_ff3_2 117 9 3 2 down
+fi
+draw_char on
+sleep 8
+move_char down 2
+sleep 16
+close_door 11750
+close_door 11751
+sleep 16
+kill_through_range 11330 11338
+set_flag 10 0
+set_flag 24 8
+set_flag 25 10
+set_layer 11420 front
+set_layer 11421 front
+set_layer 11520 front
+set_layer 11521 front
+set_layer 11522 front
+set_layer 11523 front
+set_layer 11622 front
+set_layer 11623 front
+msg 　イベントさくせい ここまで\n　しんらビルのマップ\n　せつじつに　ぼしゅうちゅう……
+fi

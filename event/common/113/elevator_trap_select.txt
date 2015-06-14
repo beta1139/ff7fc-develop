@@ -1,0 +1,29 @@
+loop_inf
+set_npc_pos 11338 113 18 1
+set_npc_pos 11330 113 18 2
+sleep 12
+set_npc_pos 11330 113 18 1
+set_npc_pos 11331 113 18 2
+sleep 13
+set_npc_pos 11331 113 18 1
+set_npc_pos 11332 113 18 2
+sleep 12
+set_npc_pos 11332 113 18 1
+set_npc_pos 11333 113 18 2
+sleep 13
+set_npc_pos 11333 113 18 1
+set_npc_pos 11334 113 18 2
+sleep 12
+set_npc_pos 11334 113 18 1
+set_npc_pos 11335 113 18 2
+sleep 13
+set_npc_pos 11335 113 18 1
+set_npc_pos 11336 113 18 2
+sleep 12
+set_npc_pos 11336 113 18 1
+set_npc_pos 11337 113 18 2
+sleep 7
+set_npc_pos 11337 113 18 1
+set_npc_pos 11338 113 18 2
+sleep 6
+pool

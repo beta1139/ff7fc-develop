@@ -1,0 +1,13 @@
+wait_same_pos
+set_flag 10 5
+kill_through_range 11701 11707
+chg_speed 11720 fast
+chg_speed 11721 fast
+chg_speed 11722 fast
+chg_char_dir right
+create event_generator 11708 117 0 0 17 0 0 @117/59f_enemy_common.txt
+sleep 8
+chg_npc_dir 11720 left
+chg_npc_dir 11721 left
+chg_npc_dir 11722 left
+sleep 8

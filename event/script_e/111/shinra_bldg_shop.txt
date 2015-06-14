@@ -1,0 +1,122 @@
+wait_target_talk 11101
+reset_talk_flag 11101
+create npc_event 11110 111 7 12 0 0 2 none
+create npc_event 11111 111 7 12 1 0 2 none
+create npc_event 11112 111 7 12 2 0 2 none
+draw_char off
+move_char up 1
+move_npc 11111 down 1
+move_npc 11112 down 1
+chg_speed 11100 normal
+sleep 16
+move_npc 11111 right 1
+move_npc 11112 left 1
+sleep 16
+chg_npc_dir 11111 up
+chg_npc_dir 11112 up
+step_npc 11100 2
+set_talk_npc 11100
+msg 「いらっしゃいませ\n　ほんじつは　なにを……
+reset_talk_npc
+chg_npc_dir 11100 down
+sleep 16
+create npc_event 11102 111 7 9 156 2 0 none
+sleep 16
+set_active_msg 11100
+jump_npc 11100 same 1
+chg_npc_dir 11100 left
+chg_npc_img 11100 151
+kill 11102
+set_talk_npc 11100
+msg 「キャッ！！
+reset_talk_npc
+sleep 16
+if_flag_lesser 11 2
+chg_type 11103 npc_event
+chg_type 11104 npc_event
+chg_speed 11103 fast
+chg_speed 11104 fast
+chg_npc_dir 11103 up
+chg_npc_dir 11104 up
+fi
+chg_npc_img 11100 74
+chg_npc_dir 11100 up
+sleep 8
+chg_npc_dir 11100 left
+sleep 8
+chg_npc_dir 11100 right
+sleep 8
+chg_npc_dir 11100 left
+chg_npc_img 11100 151
+sleep 8
+chg_speed 11100 slow
+step_npc 11100 2
+sleep 32
+set_talk_npc 11100
+msg 「お　おかねなら\n　さしあげますから……
+reset_talk_npc
+sleep 16
+jump_npc 11111 same 1
+sleep 16
+set_active_msg 11111
+jump_npc 11111 same 1
+msg バレット\n「カンチガイするな\n　アバランチは　ごうとうじゃねえ\n\n　……アンタんとこのボスに\n　とられたものを\n　とりかえしにきただけだ
+jump_npc 11100 same 1
+sleep 16
+step_npc 11100 1
+if_flag_lesser 11 2
+include ./event/common/key_unvalid.txt
+kill_through_range 11124 11127
+chg_npc_dir 11103 left
+chg_npc_dir 11104 left
+chg_npc_img 11103 151
+chg_npc_img 11104 150
+set_active_msg 11103
+set_active_msg 11104
+jump_npc 11103 same 1
+jump_npc 11104 same 1
+fi
+set_talk_npc 11100
+msg 「ア　アバランチ！？
+reset_talk_npc
+sleep 16
+if_flag_lesser 11 2
+create event_generator 11128 111 0 0 17 0 0 @../common/111/shinra_bldg_bacouple_escape.txt
+fi
+step_npc 11111 2
+msg3 -1 バレット\n「アンタをどーこーする　きはねえ\n　かねだって　ちゃんとはらうぜ！
+sleep 16
+wait_key_push_edge a
+erase_msg3
+sleep 32
+if_flag_lesser 11 2
+wait_event_invalid 11128
+fi
+step_npc 11100 2
+set_talk_npc 11100
+msg 「は　はい　それでは……
+reset_talk_npc
+include ./event/common/key_valid.txt
+open_item_shop 1000/1007/1008/1052/1070
+chg_npc_img 11100 74
+chg_npc_dir 11100 up
+sleep 16
+chg_speed 11100 slow
+step_npc 11100 2
+set_talk_npc 11100
+msg 「またのごらいてん　おまち……\n　したくはないです　ホントは……
+reset_talk_npc
+set_inactive_msg 11100
+move_char down 1
+move_npc 11111 up 1
+move_npc 11112 up 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 11110
+move_npc 11111 left 1
+move_npc 11112 right 1
+sleep 16
+kill_through_range 11111 11112
+chg_speed 11100 not_move
+create event_generator 11121 111 0 0 17 0 0 @111/shinra_bldg_shop2.txt

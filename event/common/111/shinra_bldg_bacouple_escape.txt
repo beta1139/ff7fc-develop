@@ -1,0 +1,18 @@
+jump_npc 11103 same 2
+jump_npc 11104 same 2
+sleep 32
+chg_npc_img 11103 74
+chg_npc_img 11104 73
+move_npc 11103 right 3
+move_npc 11104 right 3
+sleep 24
+move_npc 11103 down 4
+move_npc 11104 down 3
+sleep 16
+open_door 11150
+sleep 8
+kill 11103
+sleep 8
+kill 11104
+sleep 16
+close_door 11150

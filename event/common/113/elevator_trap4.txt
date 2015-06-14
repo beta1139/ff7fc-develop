@@ -1,0 +1,4 @@
+set_eternal_event
+wait_talk
+add_flag 24 10
+include ./event/common/113/elevator_trap_common.txt

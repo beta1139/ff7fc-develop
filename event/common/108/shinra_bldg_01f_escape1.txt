@@ -1,0 +1,49 @@
+wait_same_pos
+include ./event/common/108/shinra_bldg_01f_escape.txt
+move_npc 10802 up 1
+move_npc 10803 up 1
+move_npc 10804 right 4
+move_npc 10805 right 3
+kill 10801
+close_door 10850
+sleep 8
+play_se door_open.ogg
+open_door 10851
+jump_npc 10803 same 2
+move_npc 10802 down 2
+kill 10802
+kill_through_range 10821 10828
+sleep 8
+close_door 10851
+sleep 8
+move_npc 10805 down 18
+sleep 8
+move_npc 10804 down 18
+sleep 8
+step_npc 10803 2
+sleep 16
+move_npc 10803 right 4
+sleep 32
+move_npc 10803 down 1
+sleep 8
+chg_char_state_move
+move_npc 10803 right 1
+sleep 8
+move_npc 10803 down 18
+sleep 64
+move_npc 10805 left 2
+sleep 8
+move_npc 10804 left 3
+sleep 8
+move_npc 10805 down 10
+sleep 16
+move_npc 10804 down 10
+sleep 48
+move_npc 10803 left 2
+sleep 16
+kill 10805
+move_npc 10803 down 10
+sleep 16
+kill 10804
+sleep 64
+kill 10803

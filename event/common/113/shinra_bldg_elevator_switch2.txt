@@ -1,0 +1,158 @@
+set_eternal_event
+wait_same_pos
+draw_image 000 113 99 112 50 14 10 0 event/shinra_bldg/number.png
+move_char down 1
+loop 16
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+pool
+move_char left 1
+loop 16
+sleep 1
+chg_image_pos_offset 000 1 0 0 0 0 0
+pool
+close_door 11351
+close_door 11750
+close_door 11751
+chg_char_dir up
+sleep 16
+create npc_event 11310 113 18 3 0 0 2 none
+draw_char off
+chg_npc_y_offset 11310 -6
+sleep 3
+chg_npc_y_offset 11310 -8
+sleep 3
+chg_npc_img 11310 115
+sleep 32
+play_se button.ogg
+loop 4
+set_gray_scale
+sleep 2
+reset_gray_scale
+sleep 2
+pool
+sleep 16
+chg_npc_y_offset 11310 -6
+sleep 4
+chg_npc_y_offset 11310 -4
+chg_npc_img 11310 0
+draw_char on
+kill 11310
+sleep 8
+move_char down 1
+loop 16
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+pool
+move_char right 1
+loop 16
+sleep 1
+chg_image_pos_offset 000 -1 0 0 0 0 0
+pool
+chg_char_dir up
+sleep 16
+play_se elevator_start.wav
+loop 100
+inc_map_draw_y_offset
+sleep 1
+pool
+play_se_loop elevator_loop.wav
+loop 3
+chg_image_pos_offset 000 0 0 -14 0 0 0
+loop 20
+inc_map_draw_y_offset
+sleep 1
+pool
+pool
+chg_image_pos_offset 000 0 0 -14 0 0 0
+loop 10
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_image_pos_offset 000 0 0 70 -20 0 0
+set_map_draw_y_offset -170
+warp 113 3 4 up
+loop 9
+loop 20
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_image_pos_offset 000 0 0 -14 0 0 0
+pool
+loop 20
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_image_pos_offset 000 0 0 126 -10 0 0
+loop 6
+loop 20
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_image_pos_offset 000 0 0 -14 0 0 0
+pool
+loop 20
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_image_pos_offset 000 0 0 84 -20 0 0
+set_map_draw_y_offset -170
+loop 5
+loop 16
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_image_pos_offset 000 0 0 -14 0 0 0
+pool
+play_se elevator_end.wav
+loop 4
+loop 16
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_image_pos_offset 000 0 0 -14 0 0 0
+pool
+loop 26
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+set_map_draw_y_offset 0
+loop 2
+set_image_alpha 000 0
+sleep 8
+set_image_alpha 000 100
+sleep 8
+pool
+play_se door_open.ogg
+open_door 11350
+sleep 16
+move_char up 2
+loop 32
+sleep 1
+chg_image_pos_offset 000 0 1 0 0 0 0
+pool
+if_flag 28 5
+open_door 10850
+warp_ff3_2 108 12 3 3 down
+fi
+if_flag 28 6
+open_door 10851
+warp_ff3_2 108 16 3 3 down
+fi
+erase_image 000
+close_door 11350
+move_char down 1
+sleep 16
+close_door 10850
+close_door 10851
+set_flag 24 0

@@ -1,0 +1,181 @@
+if_flag_greater 28 4
+if_flag_lesser 28 7
+if_flag 28 5
+create npc_event 11711 117 5 4 1 0 2 none
+create npc_event 11712 117 5 4 2 0 2 none
+fi
+if_flag 28 6
+create npc_event 11711 117 9 4 1 0 2 none
+create npc_event 11712 117 9 4 2 0 2 none
+fi
+move_npc 11711 right 1
+move_npc 11712 down 1
+sleep 16
+jump_npc 11711 same 1
+chg_npc_dir 11711 left
+chg_npc_dir 11712 up
+sleep 16
+chg_speed 11711 fast
+step_npc 11711 1
+fi
+msg バレット\n「おい　クラウド！\n\n\n　ここまできといて\n　また1かいまで　もどるのか？\n\n\n#2\n　　ああ\n　　いや……\n\n\n[[]][[]]
+fi
+if_flag 3 0
+if_flag_greater 28 4
+chg_speed 11711 normal
+chg_speed 11712 normal
+step_npc 11711 2
+msg バレット\n「そんなヒマは　ねえんじゃねえのか？\n　ま　おまえのかってだがな
+if_flag_lesser 28 7
+move_npc 11711 left 1
+move_npc 11712 up 1
+sleep 16
+kill_through_range 11711 11712
+fi
+if_flag_greater 28 6
+move_npc 11711 left 1
+move_npc 11712 left 2
+sleep 16
+kill 11711
+sleep 16
+kill 11712
+chg_char_dir up
+sleep 16
+move_char up 1
+play_se door_open.ogg
+open_door 11752
+sleep 16
+fi
+fi
+if_flag_lesser 28 5
+if_flag 28 1
+create npc_event 10810 108 12 4 0 0 2 none
+fi
+if_flag 28 2
+create npc_event 10810 108 16 4 0 0 2 none
+fi
+if_flag 28 3
+create npc_event 11010 110 12 4 0 0 2 none
+fi
+if_flag 28 4
+create npc_event 11010 110 16 4 0 0 2 none
+fi
+draw_char off
+if_flag_lesser 28 3
+chg_npc_y_offset 10810 -6
+sleep 3
+chg_npc_y_offset 10810 -8
+sleep 3
+chg_npc_img 10810 115
+sleep 32
+play_se button.ogg
+sleep 32
+chg_npc_y_offset 10810 -6
+sleep 4
+chg_npc_y_offset 10810 -4
+chg_npc_img 10810 0
+draw_char on
+kill 10810
+fi
+if_flag_greater 28 2
+chg_npc_y_offset 11010 -6
+sleep 3
+chg_npc_y_offset 11010 -8
+sleep 3
+chg_npc_img 11010 115
+sleep 32
+play_se button.ogg
+sleep 32
+chg_npc_y_offset 11010 -6
+sleep 4
+chg_npc_y_offset 11010 -4
+chg_npc_img 11010 0
+draw_char on
+kill 11010
+fi
+fi
+if_flag_greater 28 4
+if_flag_lesser 28 7
+if_flag 28 5
+create npc_event 11710 117 5 4 0 0 2 none
+fi
+if_flag 28 6
+create npc_event 11710 117 9 4 0 0 2 none
+fi
+draw_char off
+chg_npc_y_offset 11710 -6
+sleep 3
+chg_npc_y_offset 11710 -8
+sleep 3
+chg_npc_img 11710 115
+sleep 32
+play_se button.ogg
+sleep 32
+chg_npc_y_offset 11710 -6
+sleep 4
+chg_npc_y_offset 11710 -4
+chg_npc_img 11710 0
+draw_char on
+kill 11710
+fi
+fi
+if_flag_lesser 28 7
+play_se door_open.ogg
+if_flag 28 1
+open_door 10850
+fi
+if_flag 28 2
+open_door 10851
+fi
+if_flag 28 3
+open_door 11050
+fi
+if_flag 28 4
+open_door 11051
+fi
+if_flag 28 5
+open_door 11750
+fi
+if_flag 28 6
+open_door 11751
+fi
+sleep 32
+move_char up 1
+sleep 16
+if_flag_lesser 28 5
+open_door 11350
+warp_ff3_2 113 3 2 2 down
+fi
+if_flag_greater 28 4
+open_door 11351
+warp_ff3_2 113 19 2 3 down
+fi
+fi
+fi
+if_flag 3 1
+if_flag_greater 28 4
+jump_npc 11711 same 1
+sleep 16
+set_active_msg 11711
+jump_npc 11711 same 1
+msg バレット\n「おう　だよな！\n　とっとと　さきをいそごうぜ！
+chg_speed 11711 normal
+if_flag_lesser 28 7
+move_npc 11711 left 1
+move_npc 11712 up 1
+sleep 16
+kill_through_range 11711 11712
+fi
+if_flag_greater 28 6
+move_char right 2
+move_npc 11711 right 1
+chg_npc_dir 11712 right
+sleep 16
+kill 11711
+sleep 16
+kill 11712
+end
+fi
+fi
+chg_char_dir down
+fi

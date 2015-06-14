@@ -1,0 +1,80 @@
+create npc_event 11310 113 19 4 143 0 2 none
+draw_char off
+move_char up 2
+loop 16
+sleep 1
+chg_image_pos_offset 000 0 1 0 0 0 0
+pool
+create npc_event 11301 113 19 2 73 1 3 none
+loop 16
+sleep 1
+chg_image_pos_offset 000 0 1 0 0 0 0
+pool
+chg_npc_y_offset 11301 -3
+sleep 1
+chg_npc_y_offset 11301 -2
+sleep 1
+chg_npc_y_offset 11301 -1
+sleep 1
+chg_npc_y_offset 11301 0
+sleep 9
+set_active_msg 11301
+jump_npc 11301 same 1
+chg_npc_dir 11301 left
+chg_npc_img 11301 150
+msg 「ヒャッ！！
+sleep 32
+chg_speed 11301 slow
+step_npc 11301 2
+msg 「あ　あの　いいんです\n　まちがいでした\n　わたし　のりませんから
+sleep 16
+chg_speed 11301 fast
+chg_npc_img 11301 73
+chg_npc_dir 11301 up
+chg_npc_y_offset 11301 -1
+sleep 1
+chg_npc_y_offset 11301 -2
+sleep 1
+chg_npc_y_offset 11301 -3
+sleep 1
+chg_npc_y_offset 11301 -4
+step_npc 11301 2
+msg3 -1 「ヒエ～ッ！！
+sleep 16
+kill 11301
+sleep 16
+move_char down 2
+loop 32
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+pool
+erase_msg3
+chg_char_dir up
+chg_char_img_tmp 143
+draw_char on
+kill 11310
+sleep 8
+create npc_event 11300 113 19 1 17 1 3 none
+chg_npc_y_offset 11300 0
+close_door 11351
+chg_npc_dir 11313 left
+chg_npc_img 11313 104
+set_npc_pos 11313 113 18 4
+chg_char_dir left
+chg_char_img_tmp 105
+sleep 8
+play_se_loop alarm.ogg
+create event_generator 11321 113 0 0 17 0 0 @../common/113/shinra_bldg_alarm.txt
+create event_generator 11339 113 18 2 17 1 3 @../common/113/elevator_trap_select.txt
+kill_through_range 11313 11314
+sleep 12
+reset_char_img_tmp
+sleep 16
+chg_char_dir up
+chg_npc_img 11311 1
+chg_speed 11311 not_move
+chg_speed 11312 not_move
+chg_type 11311 npc
+chg_type 11312 npc
+include ./event/common/key_valid.txt
+sleep 8

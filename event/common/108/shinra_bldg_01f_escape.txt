@@ -1,0 +1,71 @@
+kill_through_range 10821 10828
+if_char_dir left
+chg_npc_dir 10800 right
+chg_npc_dir 10801 right
+chg_npc_dir 10802 right
+chg_npc_dir 10803 right
+chg_npc_dir 10804 right
+chg_npc_dir 10805 right
+fi
+if_char_dir up
+chg_npc_dir 10800 down
+chg_npc_dir 10801 down
+chg_npc_dir 10802 down
+chg_npc_dir 10803 down
+chg_npc_dir 10804 down
+chg_npc_dir 10805 down
+fi
+if_char_dir right
+chg_npc_dir 10800 down
+chg_npc_dir 10801 down
+chg_npc_dir 10802 down
+chg_npc_dir 10803 down
+chg_npc_dir 10804 down
+chg_npc_dir 10805 down
+fi
+create npc_event 10810 108 12 3 156 2 0 none
+create npc_event 10811 108 13 3 156 2 0 none
+create npc_event 10812 108 14 3 156 2 0 none
+sleep 16
+chg_npc_dir 10803 left
+chg_npc_dir 10804 left
+chg_npc_dir 10805 left
+chg_npc_img 10803 151
+chg_npc_img 10804 151
+chg_npc_img 10805 150
+sleep 16
+jump_npc 10800 same 1
+jump_npc 10801 same 1
+jump_npc 10802 same 1
+jump_npc 10803 same 1
+jump_npc 10804 same 1
+jump_npc 10805 same 1
+jump_npc 10810 same 1
+jump_npc 10811 same 1
+jump_npc 10812 same 1
+sleep 16
+kill_through_range 10810 10812
+chg_speed 10800 fast
+chg_speed 10801 fast
+chg_speed 10802 fast
+chg_speed 10803 fast
+chg_speed 10804 fast
+chg_speed 10805 fast
+move_npc 10800 up 1
+move_npc 10801 left 1
+chg_npc_img 10803 74
+chg_npc_img 10804 74
+chg_npc_img 10805 73
+chg_npc_dir 10803 right
+chg_npc_dir 10804 left
+chg_npc_dir 10805 up
+move_npc 10802 right 2
+sleep 8
+chg_npc_dir 10803 up
+chg_npc_dir 10804 right
+chg_npc_dir 10805 left
+play_se door_open.ogg
+open_door 10850
+kill 10800
+move_npc 10801 up 1
+sleep 8

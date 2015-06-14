@@ -1,0 +1,31 @@
+set_layer 11103 front
+chg_npc_dir 11103 down
+sleep 16
+jump_npc 11103 same 1
+sleep 16
+step_npc 11103 2
+set_talk_npc 11103
+msg 「ネェ～\n　あたらしいクルマかってェ～
+reset_talk_npc
+sleep 16
+chg_npc_dir 11104 up
+sleep 16
+step_npc 11104 2
+msg 「そんなこといったって\n　しんしゃは　たかいしなあ……
+set_layer 11103 front
+jump_npc 11103 same 1
+chg_npc_dir 11104 left
+sleep 16
+set_layer 11103 front
+jump_npc 11103 same 1
+if_char_dir up
+move_char down 1
+fi
+sleep 16
+if_char_dir up
+chg_char_dir up
+draw_char on
+kill 11110
+fi
+set_layer 11103 back
+reset_slide_char_flag
