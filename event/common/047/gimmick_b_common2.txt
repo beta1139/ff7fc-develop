@@ -1,0 +1,7 @@
+erase_msg3
+kill_through_range 4786 4788
+create event_generator 4781 47 13 17 17 0 0 @../common/047/makouro_gimmick_b03.txt
+create event_generator 4783 47 1 4 17 0 0 @../common/047/makouro_gimmick_b04.txt
+create event_generator 4784 47 1 5 17 0 0 @../common/047/makouro_gimmick_b05.txt
+create event_generator 4785 47 1 6 17 0 0 @../common/047/makouro_gimmick_b06.txt
+set_npc_pos 4763 47 12 17

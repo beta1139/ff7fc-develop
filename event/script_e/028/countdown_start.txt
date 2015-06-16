@@ -148,7 +148,7 @@ chg_npc_dir 3001 left
 set_key_valid a
 msg `CAR NO.2 LOCKED DOWN\n ACTIVATING ALERT LEVEL 3
 kill 2815
-create event_generator 3020 30 8 6 17 0 0 @030/train_move.txt
+create event_generator 3020 30 8 6 17 0 0 @../common/030/train_move.txt
 end
 fi
 if_flag 11 2

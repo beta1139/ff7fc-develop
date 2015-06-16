@@ -133,7 +133,7 @@ npc_event,1514,15,7,28,74,0,3,""
 npc_event,1515,15,8,28,73,0,3,""
 npc_event,1516,15,6,19,72,0,2,""
 npc_event,1517,15,13,25,30,0,2,""
-event_generator,1600,16,9,5,17,0,0,"@016/ressya_move1.txt"
+event_generator,1600,16,9,5,17,0,0,"@../common/016/ressya_move1.txt"
 event_generator,1602,16,9,5,17,0,0,"@016/ressya_1.txt"
 map_door,1601,16,17,3,0,0,0,0
 npc_event,1651,16,11,5,1,1,2,""
@@ -218,11 +218,11 @@ map_obj,1785,17,45,8,7,0,0,0
 map_obj,1786,17,46,8,8,0,0,0
 map_obj,1787,17,47,8,9,0,0,0
 map_obj,1788,17,48,8,10,0,0,0
-event_generator,1800,99,8,9,17,0,0,"@018/nanabangai_station12_1.txt"
-event_generator,1801,99,8,10,17,0,0,"@018/nanabangai_station12_2.txt"
-event_generator,1802,99,8,11,17,0,0,"@018/nanabangai_station12_3.txt"
-event_generator,1803,99,8,12,17,0,0,"@018/nanabangai_station12_4.txt"
-event_generator,1804,99,8,13,17,0,0,"@018/nanabangai_station12_5.txt"
+event_generator,1800,99,8,9,17,0,0,"@../common/018/nanabangai_station12_1.txt"
+event_generator,1801,99,8,10,17,0,0,"@../common/018/nanabangai_station12_2.txt"
+event_generator,1802,99,8,11,17,0,0,"@../common/018/nanabangai_station12_3.txt"
+event_generator,1803,99,8,12,17,0,0,"@../common/018/nanabangai_station12_4.txt"
+event_generator,1804,99,8,13,17,0,0,"@../common/018/nanabangai_station12_5.txt"
 npc2,1806,18,2,2,66,1,0,""
 npc2,1807,18,2,3,70,0,0,""
 npc2,1808,18,12,2,72,1,2,""
@@ -253,9 +253,9 @@ save_point,1950,19,12,17,0,0,0,
 event_generator,1951,19,12,17,17,0,0,"@save_msg.txt"
 map_obj,1952,19,15,14,56,0,0,0
 npc2,1953,19,15,14,17,0,0,""
-event_generator,1960,19,21,21,17,0,0,"@019/nanabangai_station13.txt"
-event_generator,1961,19,21,22,17,0,0,"@019/nanabangai_station13.txt"
-event_generator,1962,19,21,23,17,0,0,"@019/nanabangai_station13.txt"
+event_generator,1960,19,21,21,17,0,0,"@../common/019/nanabangai_station13.txt"
+event_generator,1961,19,21,22,17,0,0,"@../common/019/nanabangai_station13.txt"
+event_generator,1962,19,21,23,17,0,0,"@../common/019/nanabangai_station13.txt"
 event_generator,2016,20,26,22,17,0,0,"@020/nanabangai_slum5.txt"
 npc,2018,20,26,21,17,0,0,"「あけないよ！！
 　かえってちょうだい"
@@ -281,7 +281,7 @@ npc_event,2106,21,4,5,77,0,0,"マテリアや"
 npc2,2107,21,4,6,17,0,0,""
 npc2,2108,21,5,5,17,0,0,""
 event_generator,2200,22,5,13,17,0,0,"@022/seventhheaven1.txt"
-event_generator,2260,22,5,12,17,0,0,"@022/seventhheaven_out1_before.txt"
+event_generator,2260,22,5,12,17,0,0,"@../common/022/seventhheaven_out1_before.txt"
 npc_event,2201,22,5,7,37,0,0,"マリン
 「…………"
 npc_event,2202,22,4,7,2,3,0,"ティファ
@@ -405,8 +405,8 @@ npc,2309,23,3,4,37,2,0,"マリン
 「とうちゃーん
 　かっこいい！"
 npc2,2320,23,1,4,17,0,0,""
-event_generator,2301,23,0,0,17,0,0,"@023/azito2.txt"
-event_generator,2360,23,4,4,17,0,0,"@023/azito_out_before.txt"
+event_generator,2301,23,0,0,17,0,0,"@../common/023/azito2.txt"
+event_generator,2360,23,4,4,17,0,0,"@../common/023/azito_out_before.txt"
 npc,2400,24,2,6,78,3,0,"「あんなこでも　いなくなってみるとね
 　なんだか　おちつかなくて
 　……ふしぎなものね"
@@ -558,7 +558,7 @@ event_generator,2812,28,18,6,17,0,0,"@028/train3_1.txt"
 event_generator,2813,28,17,5,17,0,0,"@028/train3_2.txt"
 event_generator,2814,28,16,4,17,0,0,"@028/train3_3.txt"
 event_generator,2817,28,1,1,17,0,0,"@028/target_talk.txt"
-event_generator,2823,28,19,6,17,0,0,"@028/countdown_end.txt"
+event_generator,2823,28,19,6,17,0,0,"@../common/028/countdown_end.txt"
 map_door,2850,28,3,10,0,0,0,0
 map_door,2851,28,17,3,0,0,0,0
 npc_event,2900,29,1,6,0,3,3,"none"
@@ -583,7 +583,7 @@ npc_event,2907,29,11,7,89,3,0,"「ひょっとしてこれ
 npc,2908,29,18,8,47,0,4,"「あ～ん？
 　なっん～だっ！"
 event_generator,2910,29,13,6,17,0,0,"@028/countdown_start.txt"
-event_generator,2911,29,19,6,17,0,0,"@028/countdown_end.txt"
+event_generator,2911,29,19,6,17,0,0,"@../common/028/countdown_end.txt"
 event_generator,2912,29,1,1,17,0,0,"@029/target_talked1.txt"
 map_door,2951,29,17,3,0,0,0,0
 npc_event,3003,30,6,6,34,2,0,"none"
@@ -594,7 +594,7 @@ npc_event,3005,30,10,4,71,0,0,"ジョニー
 npc_event,3006,30,16,4,70,1,0,"「に　にげばがない……"
 npc_event,3007,30,16,5,72,0,0,"none"
 event_generator,3010,30,8,6,17,0,0,"@028/countdown_start.txt"
-event_generator,3011,30,19,6,17,0,0,"@028/countdown_end.txt"
+event_generator,3011,30,19,6,17,0,0,"@../common/028/countdown_end.txt"
 event_generator,3014,30,14,6,17,0,0,"@030/train6.txt"
 event_generator,3015,30,1,1,17,0,0,"@030/target_talked1.txt"
 event_generator,3016,30,1,1,17,0,0,"@030/target_talked2.txt"
@@ -622,8 +622,8 @@ npc,3105,31,15,4,110,3,0,"「こわい　としうえのじょせいが
 　ことわれませんでした　ハイ"
 npc,3106,31,11,5,72,2,3,"「ほら　とっときな！"
 event_generator,3110,31,1,6,17,0,0,"@028/countdown_start.txt"
-event_generator,3111,31,19,6,17,0,0,"@028/countdown_end.txt"
-event_generator,3112,31,1,1,17,0,0,"@031/target_talked.txt"
+event_generator,3111,31,19,6,17,0,0,"@../common/028/countdown_end.txt"
+event_generator,3112,31,1,1,17,0,0,"@../common/031/target_talked.txt"
 map_door,3151,31,17,3,0,0,0,0
 npc_event,3203,32,16,4,107,1,0,"ジェシー
 「わたし　ジェシーよ
@@ -669,16 +669,16 @@ npc_event,3400,34,7,19,0,0,2,"none"
 npc_event,3401,34,7,17,1,1,2,"none"
 npc_event,3402,34,6,17,2,1,2,"none"
 event_generator,3410,34,7,16,17,0,0,"@034/winding_tunnel1.txt"
-event_generator,3420,34,6,3,17,0,0,"@034/winding_tunnel_exit1_1.txt"
-event_generator,3421,34,7,3,17,0,0,"@034/winding_tunnel_exit1_2.txt"
-event_generator,3422,34,8,3,17,0,0,"@034/winding_tunnel_exit1_3.txt"
-event_generator,3423,34,9,3,17,0,0,"@034/winding_tunnel_exit1_4.txt"
-event_generator,3424,34,10,3,17,0,0,"@034/winding_tunnel_exit1_5.txt"
-event_generator,3425,34,6,26,17,0,0,"@034/winding_tunnel_exit2_1.txt"
-event_generator,3426,34,7,26,17,0,0,"@034/winding_tunnel_exit2_2.txt"
-event_generator,3427,34,8,26,17,0,0,"@034/winding_tunnel_exit2_3.txt"
-event_generator,3428,34,9,26,17,0,0,"@034/winding_tunnel_exit2_4.txt"
-event_generator,3429,34,10,26,17,0,0,"@034/winding_tunnel_exit2_5.txt"
+event_generator,3420,34,6,3,17,0,0,"@../common/034/winding_tunnel_exit1_1.txt"
+event_generator,3421,34,7,3,17,0,0,"@../common/034/winding_tunnel_exit1_2.txt"
+event_generator,3422,34,8,3,17,0,0,"@../common/034/winding_tunnel_exit1_3.txt"
+event_generator,3423,34,9,3,17,0,0,"@../common/034/winding_tunnel_exit1_4.txt"
+event_generator,3424,34,10,3,17,0,0,"@../common/034/winding_tunnel_exit1_5.txt"
+event_generator,3425,34,6,26,17,0,0,"@../common/034/winding_tunnel_exit2_1.txt"
+event_generator,3426,34,7,26,17,0,0,"@../common/034/winding_tunnel_exit2_2.txt"
+event_generator,3427,34,8,26,17,0,0,"@../common/034/winding_tunnel_exit2_3.txt"
+event_generator,3428,34,9,26,17,0,0,"@../common/034/winding_tunnel_exit2_4.txt"
+event_generator,3429,34,10,26,17,0,0,"@../common/034/winding_tunnel_exit2_5.txt"
 npc2,3503,35,7,14,17,0,0,""
 npc2,3504,35,8,14,17,0,0,""
 npc2,3505,35,9,14,17,0,0,""
@@ -736,14 +736,14 @@ npc,4110,41,2,4,35,1,0,"ビッグス
 
 　クラウド　5ばんまこうろの　ばくは
 　よろしくたのむぜ！"
-event_generator,4120,41,0,0,17,0,0,"@041/target_talked.txt"
+event_generator,4120,41,0,0,17,0,0,"@../common/041/target_talked.txt"
 treasure_item,4130,41,7,4,0,1,0,1070
 save_point,4131,41,7,7,0,0,0,
 event_generator,4132,41,7,7,17,0,0,"@save_msg.txt"
-event_generator,4133,41,3,6,17,0,0,"@041/door_open.txt"
+event_generator,4133,41,3,6,17,0,0,"@../common/041/door_open.txt"
 event_generator,4200,42,20,3,17,0,0,"@../common/reset_slide_walk.txt"
-event_generator,4201,42,25,5,17,0,0,"@042/slide1.txt"
-event_generator,4202,42,25,22,17,0,0,"@042/slide2.txt"
+event_generator,4201,42,25,5,17,0,0,"@../common/042/slide1.txt"
+event_generator,4202,42,25,22,17,0,0,"@../common/042/slide2.txt"
 map_door,4250,42,20,3,8,0,0,0
 map_door,4251,42,10,25,8,0,0,0
 event_generator,4300,43,18,8,17,0,0,"@../common/008/makouro_jump1.txt"
@@ -766,7 +766,7 @@ save_point,4406,44,6,10,0,0,0,
 event_generator,4407,44,6,10,17,0,0,"@save_msg.txt"
 npc2,4503,45,8,12,17,0,0,""
 event_generator,4510,45,8,18,17,0,0,"@045/goban_makouro1.txt"
-event_generator,4512,45,1,1,17,0,0,"@045/goban_makouro2.txt"
+event_generator,4512,45,1,1,17,0,0,"@../common/045/goban_makouro2.txt"
 event_generator,4600,46,4,1,17,0,0,"@006/elevator_switch1.txt"
 event_generator,4601,46,20,1,17,0,0,"@006/elevator_switch2.txt"
 treasure_box,4700,47,19,12,1,0,0,1003

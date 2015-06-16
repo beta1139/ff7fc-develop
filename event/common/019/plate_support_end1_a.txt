@@ -1,0 +1,306 @@
+wait_same_pos
+kill_through_range 10200 10299
+sleep 16
+chg_event_move_char_speed fast
+move_char down 1
+include ./event/common/effect_fadein.txt
+reset_screen_effect
+create event_generator 1901 19 15 19 17 0 0 @../common/019/plate_support_end1_b.txt
+move_char left 1
+play_se bomb_little.ogg
+step_npc 1907 2
+jump_npc 1908 same 1
+step_npc 1909 4
+step_npc 1910 4
+jump_npc 1911 same 2
+step_npc 1912 4
+step_npc 1913 4
+jump_npc 1914 same 1
+jump_npc 1915 same 1
+step_npc 1916 4
+sleep 8
+move_char right 1
+sleep 8
+move_char left 1
+jump_npc 1907 same 1
+jump_npc 1914 same 1
+jump_npc 1915 same 1
+sleep 8
+move_char right 1
+step_npc 1908 2
+sleep 8
+move_char left 1
+play_se bomb_little.ogg
+step_npc 1906 4
+chg_npc_dir 1910 right
+step_npc 1913 4
+chg_npc_dir 1914 left
+step_npc 1915 4
+chg_npc_dir 1916 right
+sleep 8
+move_char right 1
+chg_npc_dir 1907 right
+chg_npc_dir 1910 down
+chg_npc_dir 1914 right
+chg_npc_dir 1916 left
+sleep 8
+move_char left 1
+jump_npc 1909 same 1
+step_npc 1910 1
+jump_npc 1909 same 1
+chg_npc_dir 1913 right
+chg_npc_dir 1914 left
+chg_npc_dir 1915 right
+jump_npc 1916 same 1
+sleep 8
+move_char right 1
+chg_npc_dir 1907 up
+chg_npc_dir 1912 right
+chg_npc_dir 1913 left
+chg_npc_dir 1915 down
+chg_npc_dir 1910 left
+sleep 8
+play_se bomb_little.ogg
+chg_event_move_char_speed fast
+move_char left 1
+step_npc 1906 4
+step_npc 1907 4
+chg_npc_dir 1909 left
+chg_npc_dir 1912 down
+chg_npc_dir 1913 right
+chg_npc_dir 1914 up
+step_npc 1914 4
+chg_npc_dir 1915 right
+step_npc 1916 1
+sleep 8
+move_char right 1
+chg_npc_dir 1908 down
+chg_npc_dir 1909 right
+chg_npc_dir 1910 down
+chg_npc_dir 1912 up
+jump_npc 1913 same 1
+chg_npc_dir 1915 left
+chg_npc_dir 1916 left
+sleep 8
+move_char left 1
+chg_npc_dir 1908 left
+chg_npc_dir 1909 up
+chg_npc_dir 1915 right
+chg_npc_dir 1916 down
+sleep 8
+move_char right 1
+move_npc 1911 right 5
+chg_npc_dir 1910 up
+sleep 8
+chg_event_move_char_speed fast
+play_se bomb_little.ogg
+move_char left 1
+chg_npc_dir 1906 right
+move_npc 1907 left 1
+step_npc 1908 2
+jump_npc 1909 same 2
+move_npc 1910 right 1
+jump_npc 1912 same 1
+move_npc 1913 right 1
+move_npc 1914 right 1
+chg_npc_dir 1915 left
+move_npc 1916 down 1
+sleep 8
+move_char right 1
+chg_npc_dir 1910 up
+move_npc 1913 left 1
+move_npc 1914 down 1
+chg_npc_dir 1915 right
+chg_npc_dir 1916 up
+sleep 8
+move_char left 1
+chg_npc_dir 1906 left
+jump_npc 1906 same 1
+move_npc 1907 right 1
+move_npc 1908 left 1
+move_npc 1914 left 1
+move_npc 1915 up 1
+chg_npc_dir 1916 left
+sleep 8
+move_npc 1913 down 1
+chg_npc_dir 1910 down
+chg_npc_img 1910 150
+step_npc 1910 3
+move_char right 1
+chg_npc_dir 1907 up
+move_npc 1908 right 1
+chg_npc_dir 1912 left
+move_npc 1914 up 1
+move_npc 1916 up 1
+sleep 8
+move_char left 1
+chg_npc_dir 1906 up
+move_npc 1907 right 1
+move_npc 1908 up 1
+move_npc 1909 left 1
+move_npc 1911 right 5
+move_npc 1912 right 1
+move_npc 1913 up 1
+move_npc 1915 down 1
+move_npc 1914 right 1
+play_se bomb_little.ogg
+sleep 8
+move_char right 1
+chg_npc_dir 1907 up
+move_npc 1908 right 1
+move_npc 1909 down 1
+move_npc 1912 left 3
+move_npc 1913 right 1
+move_npc 1914 down 1
+move_npc 1915 left 1
+move_npc 1916 down 1
+sleep 8
+move_char left 1
+chg_npc_dir 1906 down
+move_npc 1908 down 1
+move_npc 1909 right 1
+chg_npc_img 1910 66
+move_npc 1910 down 1
+move_npc 1913 left 1
+move_npc 1914 left 1
+move_npc 1915 right 1
+chg_npc_dir 1916 up
+sleep 8
+move_char right 1
+move_npc 1906 left 1
+move_npc 1907 down 1
+move_npc 1908 right 1
+move_npc 1909 down 1
+move_npc 1910 right 1
+chg_npc_dir 1913 down
+move_npc 1914 up 1
+move_npc 1915 down 1
+move_npc 1916 right 1
+sleep 8
+move_char left 1
+chg_npc_dir 1906 up
+chg_npc_dir 1907 up
+move_npc 1908 down 3
+chg_npc_dir 1909 down
+chg_npc_dir 1910 up
+chg_npc_dir 1912 up
+move_npc 1913 left 1
+move_npc 1914 left 1
+move_npc 1915 right 1
+move_npc 1916 right 1
+play_se bomb_little.ogg
+sleep 8
+move_char right 1
+chg_speed 1906 normal
+slide_walk_npc 1906 down 1
+chg_npc_img 1909 68
+move_npc 1909 up 1
+chg_npc_dir 1911 up
+chg_npc_dir 1916 up
+chg_npc_dir 1913 up
+step_npc 1907 5
+step_npc 1912 8
+move_npc 1914 up 1
+chg_npc_dir 1915 up
+step_npc 1915 2
+jump_npc 1916 same 2
+sleep 8
+move_char left 1
+move_npc 1909 up 1
+chg_npc_dir 1913 right
+chg_npc_img 1913 150
+step_npc 1909 4
+chg_npc_dir 1914 up
+sleep 8
+move_char right 1
+chg_npc_dir 1908 up
+jump_npc 1908 same 2
+chg_npc_dir 1914 right
+chg_npc_img 1914 151
+step_npc 1914 2
+jump_npc 1915 same 2
+sleep 8
+move_char left 1
+chg_speed 1906 fast
+step_npc 1906 4
+move_npc 1910 right 1
+play_se bomb_little.ogg
+sleep 8
+move_char right 1
+chg_npc_dir 1910 up
+step_npc 1910 6
+chg_npc_img 1914 72
+move_npc 1914 up 1
+step_npc 1916 2
+sleep 8
+move_char left 1
+move_npc 1914 right 4
+chg_npc_img 1913 77
+move_npc 1913 left 2
+sleep 8
+move_char right 1
+slide_walk_npc 1907 down 1
+slide_walk_npc 1909 down 1
+move_npc 1915 up 1
+step_npc 1908 6
+sleep 8
+move_char left 1
+chg_speed 1906 normal
+slide_walk_npc 1906 down 1
+move_npc 1915 right 3
+kill 1913
+kill 1916
+play_se bomb_little.ogg
+sleep 8
+move_char right 1
+slide_walk_npc 1907 down 1
+slide_walk_npc 1909 down 1
+move_npc 1912 left 2
+sleep 8
+move_char left 1
+jump_npc 1907 same 1
+chg_npc_dir 1907 down
+step_npc 1909 2
+move_npc 1914 up 1
+sleep 8
+kill 1912
+move_char right 1
+move_npc 1914 right 5
+move_npc 1910 right 5
+kill 1915
+sleep 8
+move_char left 1
+chg_npc_img 1909 68
+move_npc 1907 down 1
+move_npc 1909 right 6
+play_se bomb_little.ogg
+sleep 8
+move_char right 1
+move_npc 1907 right 6
+move_npc 1908 right 6
+sleep 8
+move_char left 1
+slide_walk_npc 1906 down 1
+sleep 8
+move_char right 1
+sleep 8
+move_char left 1
+kill 1914
+play_se bomb_little.ogg
+sleep 8
+move_char right 1
+sleep 8
+move_char left 1
+sleep 8
+move_char right 1
+sleep 8
+move_char left 1
+play_se bomb_little.ogg
+sleep 8
+set_screen_effect sub 255 255 255 100
+kill 1901
+erase_image 000
+create event_generator 1700 17 15 8 17 0 0 @../common/017/plate_support_end2.txt
+sleep 24
+play_se bomb_little.ogg
+warp 17 15 8 up

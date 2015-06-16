@@ -24,7 +24,7 @@ play_se train_info.ogg
 sleep 24
 play_se_loop train_noise_close.ogg
 chg_npc_dir 2802 right
-msg しゃないアナウンス\n「ほんじつも　ごじょうしゃ　ありがとうございます～\n　よんばんがいステーション　とうちゃくよていじこくは\n　ミッドガルじ　11じ45ふん～
+msg しゃないアナウンス\n「ほんじつも　ごじょうしゃ　ありがとうございます～\n　4ばんがいステーション　とうちゃくよていじこくは\n　ミッドガルじ　11じ45ふん～
 sleep 16
 chg_npc_dir 2802 left
 sleep 16

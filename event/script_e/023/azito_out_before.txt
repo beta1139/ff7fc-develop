@@ -1,2 +1,0 @@
-wait_same_pos
-create event_generator 2361 23 4 3 17 0 0 @023/azito_out.txt

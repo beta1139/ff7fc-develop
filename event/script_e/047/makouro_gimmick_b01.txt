@@ -137,9 +137,9 @@ fi
 sleep 24
 chg_char_dir left
 set_flag 10 0
-create event_generator 4783 47 1 4 17 0 0 @047/makouro_gimmick_b04.txt
-create event_generator 4784 47 1 5 17 0 0 @047/makouro_gimmick_b05.txt
-create event_generator 4785 47 1 6 17 0 0 @047/makouro_gimmick_b06.txt
+create event_generator 4783 47 1 4 17 0 0 @../common/047/makouro_gimmick_b04.txt
+create event_generator 4784 47 1 5 17 0 0 @../common/047/makouro_gimmick_b05.txt
+create event_generator 4785 47 1 6 17 0 0 @../common/047/makouro_gimmick_b06.txt
 create event_generator 4789 47 1 10 17 0 0 @047/makouro_gimmick_b10.txt
 step_npc 4770 2
 msg Tifa\n`Here we go!

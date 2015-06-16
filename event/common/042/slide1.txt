@@ -1,0 +1,48 @@
+wait_same_pos
+kill_through 4120
+kill_through 4110
+kill_through 3920
+kill_through 3910
+kill_through 3810
+set_slide_char_flag
+chg_event_move_char_speed fast
+play_se slide.ogg
+move_char down 16
+sleep 128
+reset_slide_char_flag
+chg_event_move_char_speed normal
+jump_char down 3
+play_se jump.wav
+loop 3
+sleep 3
+chg_char_dir down
+chg_char_img_tmp 105
+sleep 3
+reset_char_img_tmp
+chg_char_dir left
+sleep 3
+chg_char_dir down
+sleep 3
+chg_char_dir right
+pool
+loop 2
+sleep 3
+chg_char_dir down
+chg_char_img_tmp 105
+sleep 3
+reset_char_img_tmp
+pool
+chg_char_img_tmp 143
+play_se landing.wav
+create npc_event 4760 47 14 19 116 0 0 none
+create npc_event 4761 47 14 18 116 0 0 none
+create npc_event 4762 47 14 17 116 0 0 none
+chg_npc_y_offset 4760 -2
+chg_npc_y_offset 4761 -2
+chg_npc_y_offset 4762 -2
+create npc2 4763 47 12 17 17 0 0 
+create npc2 4764 47 12 30 17 0 0 
+create npc2 4765 47 12 31 17 0 0 
+create npc2 4766 47 12 32 17 0 0 
+sleep 24
+reset_char_img_tmp

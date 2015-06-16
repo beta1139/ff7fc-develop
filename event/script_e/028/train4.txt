@@ -24,23 +24,24 @@ chg_npc_dir 2801 right
 chg_npc_dir 2802 up
 msg `REPEAT\n CLASS A EMERGENCY ALERT
 chg_char_dir left
-sleep 64
+sleep 32
 chg_npc_dir 2802 down
 chg_npc_dir 2801 left
-sleep 64
+sleep 32
 chg_npc_dir 2802 left
 chg_char_dir down
 msg3 -1 `UNIDENTIFIED PASSENGER\n DETECTED\n EMERGENCY INVESTIGATION\n PROCESS ACTIVATED
-sleep 32
+sleep 12
 chg_npc_dir 2801 right
-sleep 32
+wait_key_push_edge a
+erase_msg3
+sleep 12
 chg_npc_dir 2801 left
 chg_char_dir up
-sleep 32
+sleep 16
 chg_npc_dir 2801 down
-sleep 32
+sleep 16
 chg_npc_dir 2802 down
-erase_msg3
 chg_npc_dir 2801 left
 chg_npc_img 2801 98
 sleep 8

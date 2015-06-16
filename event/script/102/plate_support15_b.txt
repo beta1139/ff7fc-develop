@@ -39,7 +39,7 @@ inc_screen_effect_val 20
 sleep 4
 dec_screen_effect_val 20
 sleep 8
-create event_generator 1900 19 15 19 17 0 0 @019/plate_support_end1_a.txt
+create event_generator 1900 19 15 19 17 0 0 @../common/019/plate_support_end1_a.txt
 include ./event/common/effect_fadeout.txt
 erase_image_range 000 011
 play_se bomb_little.ogg

@@ -1,6 +1,0 @@
-set_eternal_event
-wait_same_pos
-create npc_event 1920 19 14 28 2 1 3 none
-create npc_event 1921 19 14 28 0 1 3 none
-draw_char off
-create event_generator 1938 19 0 0 17 0 0 @019/plate_support_tifa_msg.txt

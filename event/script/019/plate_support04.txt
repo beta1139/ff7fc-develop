@@ -178,14 +178,14 @@ create event_generator 1915 19 0 0 17 0 0 @019/plate_support_item_shop.txt
 create event_generator 1916 19 0 0 17 0 0 @019/plate_support_talk1.txt
 create event_generator 1917 19 0 0 17 0 0 @019/plate_support_talk2.txt
 create event_generator 1918 19 0 0 17 0 0 @019/plate_support_talk3.txt
-create event_generator 1930 19 10 21 17 0 0 @019/plate_support_tifa1.txt
-create event_generator 1931 19 10 22 17 0 0 @019/plate_support_tifa2.txt
-create event_generator 1932 19 10 23 17 0 0 @019/plate_support_tifa3.txt
-create event_generator 1933 19 14 28 17 0 0 @019/plate_support_tifa4.txt
-create event_generator 1934 19 15 28 17 0 0 @019/plate_support_tifa5.txt
-create event_generator 1935 19 20 21 17 0 0 @019/plate_support_tifa6.txt
-create event_generator 1936 19 20 22 17 0 0 @019/plate_support_tifa7.txt
-create event_generator 1937 19 20 23 17 0 0 @019/plate_support_tifa8.txt
+create event_generator 1930 19 10 21 17 0 0 @../common/019/plate_support_tifa1.txt
+create event_generator 1931 19 10 22 17 0 0 @../common/019/plate_support_tifa2.txt
+create event_generator 1932 19 10 23 17 0 0 @../common/019/plate_support_tifa3.txt
+create event_generator 1933 19 14 28 17 0 0 @../common/019/plate_support_tifa4.txt
+create event_generator 1934 19 15 28 17 0 0 @../common/019/plate_support_tifa5.txt
+create event_generator 1935 19 20 21 17 0 0 @../common/019/plate_support_tifa6.txt
+create event_generator 1936 19 20 22 17 0 0 @../common/019/plate_support_tifa7.txt
+create event_generator 1937 19 20 23 17 0 0 @../common/019/plate_support_tifa8.txt
 chg_event_move_char_speed normal
 kill_through_range 10120 10139
 kill_through_range 10150 10159

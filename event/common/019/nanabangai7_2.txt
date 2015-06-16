@@ -1,0 +1,18 @@
+wait_same_pos
+kill 1916
+kill_through 2032
+kill_through 2033
+kill_through 2020
+kill_through 2021
+kill_through 2022
+create npc_event 1722 17 13 10 34 3 0 none
+create npc_event 1723 17 15 10 35 2 0 none
+create npc_event 1724 17 14 9 36 1 0 none
+set_flag_wall 1722
+set_flag_wall 1723
+set_flag_wall 1724
+create event_generator 1725 17 13 11 17 0 0 @../common/017/nanabangai_station11_1.txt
+create event_generator 1726 17 13 12 17 0 0 @../common/017/nanabangai_station11_2.txt
+create event_generator 1727 17 14 12 17 0 0 @../common/017/nanabangai_station11_3.txt
+create event_generator 1728 17 15 12 17 0 0 @../common/017/nanabangai_station11_4.txt
+create event_generator 1729 17 15 11 17 0 0 @../common/017/nanabangai_station11_5.txt
