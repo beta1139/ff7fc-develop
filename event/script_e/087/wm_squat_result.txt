@@ -21,7 +21,7 @@ sleep 32
 play_se pick_up.wav
 add_item 6005
 add_flag 18 4
-msg You got the key item\n"Blonde Wig"!
+msg You got the key item\n[Blonde Wig]!
 sleep 16
 step_npc 8710 2
 set_talk_npc 8710
@@ -50,7 +50,7 @@ sleep 32
 play_se pick_up.wav
 add_item 6004
 add_flag 18 2
-msg You got the key item\n"Brown Wig"!
+msg You got the key item\n[Brown Wig]!
 sleep 16
 step_npc 8710 2
 set_talk_npc 8710
@@ -188,7 +188,7 @@ step_npc 8721 3
 play_se pick_up.wav
 add_item 6003
 add_flag 18 1
-msg You go the key item\n"Curly Wig"!
+msg You go the key item\n[Curly Wig]!
 sleep 16
 chg_npc_img 8721 3
 chg_npc_dir 8721 up

@@ -107,7 +107,7 @@ sleep 16
 set_active_msg 1920
 jump_npc 1920 same 2
 sleep 16
-msg Tifa\n`It's dangerous here!\n Everyone get away from\n the post, quickly!\n\n Get away from Slum 7!
+msg Tifa\n`It's dangerous here!\n Everyone get away from\n the post, quickly!\n Get away from Slum 7!
 if_party_mem 2
 del_party_mem 2
 fi

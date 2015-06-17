@@ -63,7 +63,7 @@ jump_npc 9221 same 1
 sleep 16
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n`Don't worry.\n We met just a while ago.\n Nothing between us.
+msg Aeris\n`Don't worry.\n We just met a while ago.\n Nothing between us.
 reset_talk_npc
 sleep 16
 chg_npc_dir 9222 right
@@ -75,12 +75,12 @@ sleep 16
 chg_speed 9222 fast
 step_npc 9222 2
 set_talk_npc 9222
-msg Tifa\n`Oh, don't misunderstand.\n\n\n I and Cloud are only\n childhood friends.\n Nothing between us.
+msg Tifa\n`Oh, you got me wrong.\n\n\n I and Cloud are only\n childhood friends.\n Nothing between us.
 reset_talk_npc
 sleep 32
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n`So he is `nothing'\n to both of us?\n Oh, poor Cloud!
+msg Aeris\n`So he got `nothing'\n with both of us?\n Oh, poor Cloud!
 reset_talk_npc
 chg_npc_dir 9221 right
 sleep 16

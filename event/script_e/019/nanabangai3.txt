@@ -25,7 +25,7 @@ set_active_msg 1908
 chg_npc_dir 1908 up
 sleep 16
 jump_npc 1908 same 1
-msg `Hey, look at that!\n Gigantic as usual,\n isn't it?"
+msg `Hey, look at that!\n Gigantic as usual,\n isn't it?
 sleep 8
 chg_char_dir up
 sleep 32

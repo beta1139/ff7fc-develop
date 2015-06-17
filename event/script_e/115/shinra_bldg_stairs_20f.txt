@@ -17,6 +17,6 @@ msg3 -1 Tifa\n`No way!!
 sleep 128
 erase_msg3
 sleep 16
-msg3 -1 Baret\n`I guess not==\n It can't be==\n 
+msg3 -1 Baret\n`I guess not==\n It can't be==\n
 sleep 152
 erase_msg3

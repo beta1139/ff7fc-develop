@@ -321,7 +321,7 @@ msg Tseng\n`Aeris, you are a precious\n child. You have special\n blood flowing 
 chg_event_move_char_speed normal
 move_char up 3
 sleep 48
-set_text 2        `Of course I asked
+set_text 2       `Of course I asked
 set_text 3      What is the Ancients?
 include ./event/common/set_text/st02.txt
 include ./event/common/set_text/st03.txt

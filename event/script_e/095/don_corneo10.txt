@@ -38,7 +38,7 @@ msg Tifa\n`By who?
 jump_npc 9523 same 1
 msg Corneo\n`Ho-ho!\n He's gonna kill me\n if I tell!
 step_npc 9522 2
-msg Tifa\n`Tell us! Of==
+msg Tifa\n`Tell us! Or==
 sleep 32
 step_npc 9521 1
 msg Aeris\n`==We'll wrench it off!
@@ -97,16 +97,16 @@ sleep 16
 jump_npc 9523 same 1
 sleep 16
 step_npc 9523 3
-msg Corneo\n`See what'll happen?\n That section of the Plate\n comes down and BOOM!\n I heard that AVALANCHE's\n base is in Slum 7.\n\n\n I'm relieved that it was\n not this Slum 6.
+msg Corneo\n`See what'll happen?\n That section of the Plate\n comes down and BOOM!\n I heard that AVALANCHE's\n based at Slum 7.\n\n\n I'm relieved that it was\n not this Slum 6.
 sleep 40
 chg_npc_dir 9522 down
-msg Tifa\n`The whole Slum 7'll\n be gone!
+msg Tifa\n`The whole Slum 7 will\n be gone!
 sleep 32
 chg_npc_dir 9522 up
 sleep 16
 chg_speed 9522 fast
 step_npc 9522 2
-msg Tifa\n`Cloud, will to come\n to Slum 7 with me?
+msg Tifa\n`Cloud, will you come\n to Slum 7 with me?
 chg_npc_dir 9520 down
 sleep 16
 msg {Of course,\n Tifa

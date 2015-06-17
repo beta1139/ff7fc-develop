@@ -54,7 +54,7 @@ msg `There you go.
 reset_talk_npc
 play_se pick_up.wav
 add_item 6016
-msg You got the key item\n"Disinfectant"!
+msg You got the key item\n[Disinfectant]!
 fi
 if_flag 3 1
 step_npc 7810 2
@@ -63,7 +63,7 @@ msg `There you go.
 reset_talk_npc
 play_se pick_up.wav
 add_item 6017
-msg You got the key item\n"Deodorant"!
+msg You got the key item\n[Deodorant]!
 fi
 if_flag 3 2
 step_npc 7810 2
@@ -72,7 +72,7 @@ msg `There you go.
 reset_talk_npc
 play_se pick_up.wav
 add_item 6018
-msg You got the key item\n"Digestive"!
+msg You got the key item\n[Digestive]!
 fi
 kill_through 8816
 move_char down 2

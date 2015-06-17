@@ -36,7 +36,7 @@ reset_talk_npc
 chg_speed 9221 normal
 step_char 1
 sleep 16
-msg {And Don's name was\n mentioned in course.
+msg {And Don's name was\n mentioned in course?
 chg_npc_dir 9221 down
 sleep 40
 chg_npc_dir 9221 right
@@ -53,7 +53,7 @@ reset_talk_npc
 sleep 16
 step_char 1
 sleep 16
-msg {I get it.\n So you're going to talk\n with Corneo himself.
+msg {I see.\n So you're going to talk\n with Corneo himself.
 sleep 16
 chg_npc_dir 9223 down
 sleep 16
@@ -66,7 +66,7 @@ sleep 48
 chg_npc_dir 9221 right
 step_npc 9223 2
 set_talk_npc 9223
-msg Tifa\n`It seems that Corneo is\n looking for his bride.\n\n Chooses one from 3 girls\n brought to him every day,\n and, well, you know==
+msg Tifa\n`It seems that Corneo is\n looking for his bride.\n\n Chooses one of three\n girls brought to him\n every day, and, well,\n you know==
 reset_talk_npc
 jump_npc 9223 same 1
 sleep 16
@@ -94,7 +94,7 @@ sleep 96
 chg_speed 9221 normal
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n`There'll be no problem\n if all 3 girls are your\n friends, will there?
+msg Aeris\n`There'll be no problem\n if all three girls are\n your friends, right?
 reset_talk_npc
 sleep 16
 chg_speed 9223 normal
@@ -105,14 +105,14 @@ reset_talk_npc
 sleep 16
 step_npc 9221 2
 set_talk_npc 9221
-msg Aeris\n`You have 2 girls here.
+msg Aeris\n`You have two more\n girls here.
 reset_talk_npc
 jump_char same 1
 sleep 16
 chg_event_move_char_speed fast
 step_char 2
 sleep 16
-msg {No, Aeris!\n I can't involve\n you in this.
+msg {Aeris, no!\n I can't involve\n you in this.
 chg_npc_dir 9221 down
 set_active_msg 9221
 jump_npc 9221 same 1

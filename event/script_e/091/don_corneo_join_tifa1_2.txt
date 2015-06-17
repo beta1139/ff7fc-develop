@@ -37,7 +37,7 @@ sleep 4
 chg_npc_dir 9121 right
 sleep 16
 step_npc 9121 2
-msg Tifa\n`Sure I am!\n Make little of me and you\n learn it the hard way!
+msg Tifa\n`Sure I am!\n Disrespect me and you\n learn it the hard way!
 fi
 if_flag 3 1
 sub_likability 2 200
