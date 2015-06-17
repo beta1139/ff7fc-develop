@@ -1331,222 +1331,207 @@ Vタイマー（わずか2ターン）の間持続する。もちろん装備やその他の方法でDexを
          は相殺されず、ターゲットが即死する可能性はある。
     
 
-  * If the Target has a Death Weakness to the ability:
+  * ターゲットがアビリティに対して「即死」の弱さを持つ場合：
 
-      -- If the ability uses the HP% or Max HP% formulas, then the Power
-         of the ability is converted to a success rate.  An ability that
-         recovers 25% of a target's HP now has a 25% chance of killing
-         the Target, as an example.
+      -- アビリティのダメージ計算に HP% または MaxHP% 計算式が使用される場合、
+         そのアビリティーのパワーが成功率に換算される。
+         例えばターゲットの HP を 25% 回復させるようなアビリティは、25%の確率で
+         ターゲットを即死させるようになる。
 
-         If this rate then fails, then the Death Weakness is removed, and
-         the Target is now considered to be Immune to the ability.  All
-         other resistances remain untouched.
-
-
-  * If the Power of the Ability is zero:
-
-      -- As the ability has no damage for the Target to resist or be weak
-         to, then the Base PAt% or MAt% of the ability is instead altered.
-         If the Target is Weak to the ability, then the At% is doubled.
-         On the other hand, if the Target Resists the ability, then the At%
-         is halved, rounded down.
-
-      -- Note that Immunity and Absorb does not play a part at this point.
-         In general, these will instead cause the Ability to automatically
-         hit so that the game can deal with how the Target resists the
-         actual effect properly.
-
-      -- Remember that if the Statuses that the Ability inflicts have
-         already missed due to Status Accuracy, then the attack will have
-         missed already.
+         もしこの確率が外れた場合、ターゲットのそのアビリティに対する「即死」の
+         弱さは削除され、そのアビリティに対する「免疫」があるものとされる。
+         その他の耐性は変化しない。
 
 
-At this point, the basic preparations of dealing with Elements and Statuses
-are complete.  Any further effect they have is based on which attack formulas
-will be used later on in the damage formula.  The only remaining thing to
-note at this point is that if the Ability uses the Restorative Element, then
-the Ability is flagged as Restorative.
+  * アビリティのパワーが 0 の場合：
+
+      -- この場合、ターゲットの耐性によって調整されるべきダメージが 0 であるため、
+         かわりにアビリティの基本 PAt% または MAt% が修正される。
+         ターゲットがそのアビリティに対して「弱い」場合、At% は二倍になる。
+         逆にターゲットが「強い」場合、At% は半分（小数部切捨て）として計算される。
+
+      -- 「免疫」および「吸収」はこの時点では考慮されない。
+         一般に、これらの耐性があるとアビリティは自動的に当たったものとみなされ、
+         ターゲットがそのアビリティの効果そのものに対してどう反応するかという観点
+         での判定が行われる。
+
+      -- 先に述べたように、アビリティーによるステータス変化が当たり判定で外れ
+         となっていた場合、この攻撃が外れることはすでに決定済みである。
+
+
+ここまでが属性およびステータスを扱う準備作業である。これより先の処理は、ダメージ
+計算式で使われる攻撃計算式の種類によって変わってくる。
+１点覚えておくべきことは、アビリティが回復属性を使う場合、以降そのアビリティには
+「回復性」のフラグがつけられる。
 
 
 
 ---  ----------
-3.3  Hit Chance
+3.3  命中率
 ---  ----------
-Eventually, we're going to need to see if our attack isn't going to end up
-being evaded by the Target.  Of course, even if the attack connects, previous
-element checks and other conditions yet to be looked at can cause the ability
-to fail... but we'll cover one thing at a time.
+攻撃がターゲットに避けられてしまうかどうかを判定する必要がある。
+もちろん攻撃が当たったとしても前述の属性チェックやその他の条件によってその攻撃が
+失敗することはあるが、それについてはまた後で述べる。
 
-There are four main variations of hit calculation: Physical, Magical,
-Critical and Status.  On top of that, there are a bunch of miscellaneous
-formulas that affect certain unique attacks - in general, these have been
-explained next to the ability in question.
+命中判定式には次の４種類がある：物理・魔法・クリティカル・ステータス。
+これに加え、そのアビリティに固有の計算式を持つものもいくつかあるが、それについては
+それぞれのアビリティの解説に記述されている。
 
-As such, let's go over the four main hit routines.
-
-
-3.3.1  Physical
+3.3.1  物理攻撃
 -----  --------
-Otherwise known as a PAt%-based attack.  This is also the most involved and
-complex formula, so we'll go over it slowly.
+PAt%ベース攻撃とも呼ばれる。この計算式は一番複雑で解りにくいため、ゆっくり説明する。
 
-First, we check for any condition that allows for a maximum accuracy hit.
-This will set your Hit% to 255, regardless of what ability you're using.  Any
-of the following will give an automatic 255 Hit%:
+まず、最大命中率となるような条件を満たしているかどうかをチェックする。
+この場合アビリティの種類にかかわらず命中確定として Hit% は 255 となる。
+以下のいずれかの場合、Hit%は自動的に 255 となる。
 
-   * Back Attacking an enemy
-   * Using an Element that the target has Death Weakness to
-   * Using an Element that the target has Auto Hit Weakness to
-   * Using an Element that the target is Immune to
-   * Using an Element that the target Absorbs
-   * If the target has any of the following statuses:
-        Death, Sleep, Confusion, Stop, Petrify, Manipulate, Paralysed
-   * If the target is Covering someone
-
-
-Note that if the target has Sleep, Confusion and/or Manipulate Status, then
-these will be cured by the PAt%-based ability, assuming it hits.
+   * 敵にバックアタックをかけている場合
+   * ターゲットが「即死」の弱さを持つ属性を使っている場合
+   * ターゲットが「必中」の弱さを持つ属性を使っている場合
+   * ターゲットが「免疫」を持つ属性を使っている場合
+   * ターゲットが「吸収」する属性を使っている場合
+   * ターゲットが以下のいずれかのステータスの場合：
+        戦闘不能、睡眠、混乱、ストップ、石化、あやつる、麻痺
+   * ターゲットが誰かをかばっている場合
 
 
-
-If we don't get an automatic 255 Hit%, then we must calculate the correct
-Hit% manually.  Do note that attacking with a 255 At% weapon does not count
-as an automatic hit - we still have to work out Hit%.  We use the following
-formula to do this:
-
-   Hit% = ([Attacker's Dex / 4] + At%) + Attacker's Df% - Target's Df%
-
-For party members, these values are exactly as you see on the status screen,
-taking Stat Bonuses from things like Hero Drinks into account.  For example,
-this means that half your Dexterity will be factored into this formula, since
-25% is used in the formula itself, and another 25% is calculated into your
-total Df%.
-
-For enemies, their Dex and Df% are as shown in the Enemy Mechanics Guide, and
-the At% is the PAt% shown by the ability they are using.  Enemies do not
-carry weapons, so their abilities are the only things that will be used.
-Also, do recall that the PAt% of the ability may have been altered by
-previous Elemental considerations if the attack is not meant to do damage.
-
-And yes, this is no mistake - your Df% contributes to how well you can hit a
-target.  Just another reason why Mystile is such an incredible armor.
-
-Finally, if the Attacker is under the Fury Status, this calculated Hit% must
-be further modified:
-
-    If Attacker is under Fury Status: Hit% = Hit% - [Hit% * 3 / 10]
-
-This results in a 30% loss of Hit%, which can be rather critical in deciding
-whether you hit the target or not.
+注：ターゲットが睡眠、混乱、あやつるのいずれかのステータスだった場合、
+PAt%ベース攻撃が当たった場合にはこれらのステータスは解除される。
 
 
 
-At this point, we will have calculated a Hit%.  If the total is less than 1,
-then it is increased to a minimum of 1.  (In a few moments, we will see that
-a Hit% of 1 will never connect, but bear with us for now)
+上記以外の場合の Hit% は以下の計算式で算出する。 At% が 255 の武器で攻撃した
+場合でも、必ずしも命中確定とはならず Hit% を個別に計算する必要がある。
 
-Next up, we must calculate the chances of a Lucky Hit or Lucky Evade.  These
-are handled at the same time.  We roll a single random number - Rnd(0..99) -
-which we will use to determine which of the two events occur.
+   Hit% = ([攻撃者Dex / 4] + At%) + 攻撃者Df% - ターゲットDf%
 
-
-Lucky Hit:
-   The Attacker has a [Lck / 4]% chance of landing a Lucky Hit.  If this is
-   successful, then Hit% is immediately increased to 255%.
+パーティメンバーについては、英雄の薬などによるパラメータ調整も含めて計算された
+値をステータス画面で確認することができる。
+上記の式から、例えばキャラクターの素早さの半分がこの計算に影響を与えることが
+わかる。25% は上記の計算式内に直接使用され、Df% を算出するためにさらに Dex の
+25% が使用されているからである。
 
 
-Lucky Evade:
-   The Target has a [Lck / 4]% chance of pulling off a Lucky Evade, but
-   *ONLY* if a Lucky Hit was not pulled off.  Furthermore, it uses the same
-   random number that was checked for Lucky Hit, so the Target's Lck must be
-   *greater* than the Attacker's Lck to even have a chance at this.  The
-   adjusted chance should therefore be expressed as:
+敵に関しては、DexとDf% はEnemy Mechanics Guide に掲載、At% はその敵の使用する
+アビリティの PAt% として掲載されている。敵は武器を持たないため、そのアビリティ
+のみが計算に使用される。また先に述べたように、攻撃がダメージを与えるようなもの
+ではない場合にはアビリティの PAt% が調整されていることがある。
 
-        Evade Chance = ([Target's Lck / 4] - [Attacker's Lck / 4])%.
+また、上記の式中の「攻撃者Df%」は間違いではなく、キャラクターの防御率は実際に
+攻撃の命中率に影響を与えるのである。ミスティールが防具としてどれだけ優れている
+か、これでお分かりだろう。
 
-   Note that only party members may obtain a Lucky Evade and only if a
-   non-party member is attacking them - enemies will never get a Lucky Evade.
-   If a Lucky Evade is pulled off, then the Hit% is immediately decreased
-   to 0%.
+最後に、もし攻撃者が「怒り」ステータスの場合、上記の式で算出された Hit% には
+以下の式にしたがってさらに調整が加えられる：
 
+    Hit% = Hit% - [Hit% * 3 / 10]
 
-
-Finally, having got this far, we need to use the Hit% value to determine
-whether we hit or miss the target.  The formula used for this is as follows:
-
-        Random = [Rnd(0..65535) * 99 / 65535] + 1
-        If (Random &lt; Hit%) Then Attack Hits
-
-Random gives us a number between 1 and 100 most of the time, but it has a
-*VERY* tiny chance (probability of 1/65536) of returning 101.  As such, it's
-not a true percentage check - a Hit% of 101 has a very rare but present
-chance of missing, and a Hit% of 1 will never connect.  Since the various
-Auto and Lucky Hits use a Hit% of 255 though, they're pretty much guaranteed
-to hit (providing the target doesn't earn a Lucky Evade).
+つまり Hit% が 30% 減となり、攻撃が実際に当たるかどうかの判定にかなり大きな影響
+を及ぼす。
 
 
 
-In summary, the procedure for calculating a PAt%-based hit is as follows:
+これで Hit% が計算できた。もし計算結果が1に満たない場合は1に切り上げられる。
+（Hit% 1 の攻撃は、実は絶対に当たらない。これについては後述する）。
 
-   Check for Auto Hit Conditions
-     If Auto Hit, Hit% = 255
-     If not Auto Hit, Calculate Hit% and check for Fury
-   Check for Lucky Hit and Lucky Evade
-     If not a Lucky Hit or Evade, use Hit% to decide success of attack
+次にラッキーヒットあるいはラッキー回避の確率を計算する。
+そのために、まず 0～99 の乱数を一つ生成する。
+
+ラッキーヒット：
+   攻撃がラッキーヒットとなる確率は [攻撃者のLck / 4]% である。この確率と前述の
+   乱数から、その攻撃がラッキーヒットであるかどうかが判定される。
+   ラッキーヒットである場合、 Hit% が 255 に引き上げられる。
+
+
+ラッキー回避：
+   ラッキー回避の確率は [ターゲットのLck / 4]% である。ただしその攻撃がラッキー
+   ヒットではない場合に限る。またラッキー回避の判定には、ラッキーヒット判定に
+   用いたものと同じ乱数を使用するため、ターゲットのLckが攻撃者のLck より大きい
+   場合にのみ、ラッキー回避の可能性がある。
+   これを算入したラッキー回避率の算定式は以下のとおり：
+
+        ラッキー回避率 = ([ターゲットLck / 4] - [攻撃者Lck / 4])%
+
+   またラッキー回避が発生しうるのは、パーティメンバーがパーティメンバー以外から
+   攻撃された場合のみである。敵には絶対にラッキー回避は発生しない。
+   ラッキー回避が発生した場合、Hit% は 0 に引き下げられる。
 
 
 
-3.3.2  Magical
+最後に、ここまでで計算した Hit% に基づいて攻撃がターゲットに当たるかどうかを
+判定する。ここで使われる数式は以下のとおりである：
+
+        乱数 = [Rnd(0..65535) * 99 / 65535] + 1
+        If (乱数 &lt; Hit%) Then 当たり
+
+上記の乱数はほとんどの場合1～100の数値となるが、ごくまれに（1/65536の確率で）
+101 となることがある。つまり、この Hit% の計算は厳密な意味でのパーセンテージ
+チェックではない。Hit% 101 でも非常にわずかな確率で外れることもあるし、Hit% 1
+は絶対に当たらない。最初に判定した命中確定のケースや、ラッキーヒットでは
+Hit% が 255 に設定されるため（ターゲットにラッキー回避が発生しない限り）必ず
+当たることが保証される。
+
+
+
+PAt%ベース命中率の算出手順の概要を以下に示す：
+
+   命中確定条件をチェック
+     If 命中確定 Then Hit% = 255
+     If not 命中確定 Then Hit%算出、怒りチェック
+   ラッキーヒット、ラッキー回避チェック
+     If not (ラッキーヒット or ラッキー回避) Then Hit%によって命中判定
+
+
+
+3.3.2  魔法
 -----  -------
-Otherwise known as a MAt%-based attack.  Far simpler to calculate, especially
-since we don't have Lucky Hits/Evades to worry about.
+MAt%ベース攻撃とも呼ぶ。特にラッキーヒット・回避の要素がないため、
+計算ははるかに単純である。
 
-Once more, we start off working out the conditions for an automatic hit.
-These are as follows:
+ここでもまず命中確定条件の判定を行う：
 
-   * If the MAt% of the ability is 255
-   * Using an Element that the target has Death Weakness to
-   * Using an Element that the target has Auto Hit Weakness to
-   * Using an Element that the target is Immune to
-   * Using an Element that the target Absorbs
-   * Using a reflectable ability while the target has Reflect status
-   * If the Ability is not inflicting a status and the target has any of the
-     following statuses:
-        Death, Sleep, Confusion, Stop, Petrify, Paralysed
+   * アビリティのMAt%が255の場合
+   * ターゲットが「即死」の弱さを持つ属性を使っている場合
+   * ターゲットが「必中」の弱さを持つ属性を使っている場合
+   * ターゲットが「免疫」を持つ属性を使っている場合
+   * ターゲットが「吸収」する属性を使っている場合
+   * ターゲットが「リフレク」ステータスで、反射可能なアビリティを使用
+     している場合
+   * アビリティが何らかのステータス異常を発生させるものではなく、
+     かつターゲットが以下のいずれかのステータスである場合：L
+        戦闘不能、睡眠、混乱、ストップ、石化、麻痺
 
 
-Unlike PAt%-based abilities, an Automatic Hit does not need to check anything
-else - we *will* hit the target.  If this is not the case, then we continue.
+PAt%ベース攻撃と異なり、命中確定の場合はこれ以上チェックする条件はない。
+これで攻撃が当たることは確定である。
 
-If we get this far without an Automatic Hit, then we must first calculate the
-chance to hit manually.
+命中確定ではない場合、命中率を計算する必要がある。
 
-To start, we take the MAt% of the ability and apply the modifier for Fury.
-If the Attacker has the Fury Status, then:
+まずアビリティの MAt% に対して「怒り」条件を加算する。
+攻撃者が「怒り」ステータスの場合：
  
-    If Attacker is under Fury Status: MAt% = MAt% - [MAt% * 3 / 10]
+    MAt% = MAt% - [MAt% * 3 / 10]
 
 
-Next, we check the Target's MD%.  This is a straight percentage chance to
-either hit or miss - 99 MD% equates to a 99% chance to miss.  If this check
-succeeds, then the attack misses, without question.
+次にターゲットのMD%をチェックする。これは純粋な当たり外れの確率である。
+99 MD% は 99% の確率で外れるということである。
+もしこの確率に当てはまった場合、その時点でこの攻撃は外れとなる。
 
 
-Only if the MD% fails do we calculate the final chance to hit.  The following
-formula is used:
+MD% チェックにも当てはまらなかった場合、最終的な命中率を算出する。
+計算には以下の式を用いる：
 
-          Hit% = MAt% + Attacker's Lvl - [Target's Lvl / 2] - 1
-        Random = Rnd(0..99)
-        If (Random &lt; Hit%) Then Attack Hits
+          Hit% = MAt% + 攻撃者Lvl - [ターゲットLvl / 2] - 1
+        乱数 = Rnd(0..99)
+        If (乱数 &lt; Hit%) Then 命中
 
-As you can see, this is another percentage check once we've calculated the
-Hit%; 100 Hit% will always connect.  Also note that it's Level that's used to
-make the attack more or less likely to hit - the higher your Level, the more
-likely you are to land a magical attack.
-
+Hit% の計算以降は単純なパーセンテージチェックである。100 Hit% は必ず当たる。
+また、レベルによって攻撃の当たり外れが左右されることに注目してほしい。
+レベルが上がるほど魔法攻撃は当たりやすくなる。
 
 
-In summary, the procedure for calculating a MAt%-based hit is as follows:
+
+MAt%ベース攻撃の命中率-based hit is as follows:
 
    Check for Auto Hit Conditions
      If Auto Hit, attack hits
