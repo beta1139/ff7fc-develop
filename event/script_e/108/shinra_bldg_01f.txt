@@ -16,7 +16,7 @@ sleep 16
 chg_speed 10800 fast
 step_npc 10800 3
 chg_npc_dir 10803 down
-msg3 -1 うけつけ\n「ちょっと　こまります！\n　アポイントメントのないかたは\n　こちらで……
+msg3 -1 Receptionist\n`Excuse me, sir!\n If you don't have an\n appointment, please==
 sleep 16
 chg_npc_dir 10805 up
 chg_speed 10805 not_move
@@ -27,14 +27,14 @@ set_active_msg 10808
 move_npc 10808 down 1
 sleep 16
 step_npc 10811 2
-msg バレット\n「わりいな　ちっとばかし\n　きゅうな　ようけんでよ\n\n　ケガしたくなかったら\n　ひっこんでな！！
+msg Baret\n`Sorry, but we're\n kinda in a hurry.\n\n Leave us alone and\n you won't get hurt!
 play_se fingersnap.ogg
 chg_npc_img 10811 145
 move_npc 10808 down 1
 sleep 16
 jump_npc 10800 same 2
 sleep 16
-msg3 -1 「キャー
+msg3 -1 `Eeek!
 chg_npc_dir 10801 right
 chg_npc_dir 10802 down
 chg_speed 10808 not_move
@@ -82,7 +82,7 @@ chg_npc_img 10807 151
 sleep 16
 jump_npc 10806 same 1
 set_talk_npc 10806
-msg 「なんなんだ\n　あいつら！？
+msg `What's that?\n Who are they?
 reset_talk_npc
 set_active_msg 10805
 jump_npc 10805 same 1
@@ -93,7 +93,7 @@ chg_npc_dir 10808 left
 chg_npc_img 10808 150
 jump_npc 10805 same 1
 set_talk_npc 10805
-msg 「ま　まさかやつらが\n　アバランチ！？
+msg `Hey! They're\n AVALANCHE!
 reset_talk_npc
 create npc_event 10816 108 7 23 156 2 0 none
 create npc_event 10817 108 10 20 156 2 0 none
@@ -135,7 +135,7 @@ step_npc 10801 4
 step_npc 10802 4
 step_npc 10803 4
 step_npc 10804 4
-msg3 -1 「しんにゅうしゃだ！\n　つかまえろ！！
+msg3 -1 `Intruders!\n Grab them!
 sleep 32
 chg_speed 10805 fast
 chg_speed 10806 fast
@@ -233,7 +233,7 @@ sleep 16
 chg_npc_img 10810 0
 chg_npc_dir 10810 up
 chg_speed 10811 fast
-msg バレット\n「いっきに　うえまで　いくぞ！
+msg Baret\n`Gotta get to the top!
 sleep 16
 set_layer 10810 front
 chg_speed 10811 normal

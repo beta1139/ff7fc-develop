@@ -22,11 +22,11 @@ set_active_msg 11301
 jump_npc 11301 same 1
 chg_npc_dir 11301 left
 chg_npc_img 11301 150
-msg 「ヒャッ！！
+msg `Hic!
 sleep 32
 chg_speed 11301 slow
 step_npc 11301 2
-msg 「あ　あの　いいんです\n　まちがいでした\n　わたし　のりませんから
+msg `Erm, you go ahead.\n My mistake.\n I don't ride.
 sleep 16
 chg_speed 11301 fast
 chg_npc_img 11301 73
@@ -39,7 +39,7 @@ chg_npc_y_offset 11301 -3
 sleep 1
 chg_npc_y_offset 11301 -4
 step_npc 11301 2
-msg3 -1 「ヒエ～ッ！！
+msg3 -1 `Eeek!
 sleep 16
 kill 11301
 sleep 16

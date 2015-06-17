@@ -10,7 +10,7 @@ sleep 16
 chg_speed 11100 normal
 step_npc 11100 2
 set_talk_npc 11100
-msg 「ま　まだなにか……？
+msg `A-anything else?
 reset_talk_npc
 open_item_shop 1000/1007/1008/1052/1070
 chg_npc_img 11100 74
@@ -18,7 +18,7 @@ chg_npc_dir 11100 up
 sleep 16
 step_npc 11100 2
 set_talk_npc 11100
-msg 「またのごらいてん　おまち……\n　したくはないです　ホントは……
+msg `I hope you enjoyed==\n well, actually not.
 reset_talk_npc
 move_char down 1
 sleep 16

@@ -16,7 +16,7 @@ chg_npc_dir 11111 up
 chg_npc_dir 11112 up
 step_npc 11100 2
 set_talk_npc 11100
-msg 「いらっしゃいませ\n　ほんじつは　なにを……
+msg `Hello,\n May I help==
 reset_talk_npc
 chg_npc_dir 11100 down
 sleep 16
@@ -28,7 +28,7 @@ chg_npc_dir 11100 left
 chg_npc_img 11100 151
 kill 11102
 set_talk_npc 11100
-msg 「キャッ！！
+msg `Eeek!
 reset_talk_npc
 sleep 16
 if_flag_lesser 11 2
@@ -53,14 +53,14 @@ chg_speed 11100 slow
 step_npc 11100 2
 sleep 32
 set_talk_npc 11100
-msg 「お　おかねなら\n　さしあげますから……
+msg `If, if it's money\n you want==
 reset_talk_npc
 sleep 16
 jump_npc 11111 same 1
 sleep 16
 set_active_msg 11111
 jump_npc 11111 same 1
-msg バレット\n「カンチガイするな\n　アバランチは　ごうとうじゃねえ\n\n　……アンタんとこのボスに\n　とられたものを\n　とりかえしにきただけだ
+msg Baret\n`Forget it.\n AVALANCHE isn't a robber.\n\n ==We came here just to\n get back what your boss\n took away from us.
 jump_npc 11100 same 1
 sleep 16
 step_npc 11100 1
@@ -77,14 +77,14 @@ jump_npc 11103 same 1
 jump_npc 11104 same 1
 fi
 set_talk_npc 11100
-msg 「ア　アバランチ！？
+msg `A-AVALANCHE!?
 reset_talk_npc
 sleep 16
 if_flag_lesser 11 2
 create event_generator 11128 111 0 0 17 0 0 @../common/111/shinra_bldg_bacouple_escape.txt
 fi
 step_npc 11111 2
-msg3 -1 バレット\n「アンタをどーこーする　きはねえ\n　かねだって　ちゃんとはらうぜ！
+msg3 -1 Baret\n`We got nothing against\n you. We even pay you.
 sleep 16
 wait_key_push_edge a
 erase_msg3
@@ -94,7 +94,7 @@ wait_event_invalid 11128
 fi
 step_npc 11100 2
 set_talk_npc 11100
-msg 「は　はい　それでは……
+msg `Yes, well, then==
 reset_talk_npc
 include ./event/common/key_valid.txt
 open_item_shop 1000/1007/1008/1052/1070
@@ -104,7 +104,7 @@ sleep 16
 chg_speed 11100 slow
 step_npc 11100 2
 set_talk_npc 11100
-msg 「またのごらいてん　おまち……\n　したくはないです　ホントは……
+msg `I hope you enjoyed==\n well, actually not.
 reset_talk_npc
 set_inactive_msg 11100
 move_char down 1

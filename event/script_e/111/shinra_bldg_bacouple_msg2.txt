@@ -25,13 +25,13 @@ sleep 16
 set_active_msg 11103
 jump_npc 11103 same 1
 set_talk_npc 11103
-msg 「はい？
+msg `Yes?
 reset_talk_npc
 sleep 16
 chg_npc_dir 11103 down
 chg_npc_dir 11104 up
 sleep 40
-msg 「……　……
+msg `==, ==
 chg_npc_dir 11103 left
 chg_npc_img 11103 151
 chg_npc_dir 11104 left
@@ -40,7 +40,7 @@ sleep 8
 jump_npc 11103 same 2
 jump_npc 11104 same 2
 sleep 16
-msg3 -1 「ヒ　ヒエ～！
+msg3 -1 `E-eeek!
 loop 2
 loop 6
 inc_map_draw_y_offset
@@ -77,7 +77,7 @@ open_door 11150
 kill 11103
 set_layer 11110 front
 move_npc 11104 right 3
-msg3 -1 「お　おいてかないでくれぇ～！
+msg3 -1 `Wait for me!
 sleep 16
 close_door 11150
 sleep 8

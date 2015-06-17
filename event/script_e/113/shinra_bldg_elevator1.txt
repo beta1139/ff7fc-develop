@@ -62,8 +62,8 @@ sleep 1
 chg_image_pos_offset 000 -1 0 0 0 0 0
 pool
 chg_char_dir up
-create npc_event 11311 113 3 4 1 0 2 バレット\n「かまわねえクラウド！\n　どこでもいいから　とめちまえ！
-create npc_event 11312 113 3 4 2 0 2 ティファ\n「どうなってるの！？
+create npc_event 11311 113 3 4 1 0 2 Baret\n`It's okay, Cloud.\n Park it whereever\n you can!
+create npc_event 11312 113 3 4 2 0 2 Tifa\n`What's going on?
 move_npc 11311 down 1
 move_npc 11312 down 1
 sleep 16
@@ -124,30 +124,30 @@ chg_char_img_tmp 0
 chg_char_dir up
 sleep 40
 step_npc 11312 2
-msg ティファ\n「……どうしたの？
+msg Tifa\n`What's the matter?
 sleep 16
 step_char 1
 sleep 16
-msg 『エアリスをたすけだすまで\n　さわぎは　おこしたくなかった\n\n\n　まあ　むりだろうとは\n　おもっていたが……
+msg {I didn't want to make\n a racket before we get\n Aeris back.\n\n Well, I didn't really\n think it's possible==
 sleep 16
 step_npc 11311 1
-msg バレット\n「へへへ
+msg Baret\n`Heh-heh.
 chg_char_dir down
 sleep 16
 step_char 1
 sleep 16
-msg 『なんだよ　きもちわるいな
+msg {What are you grinning at?
 sleep 16
 jump_npc 11311 same 1
 sleep 16
 step_npc 11311 2
-msg バレット\n「あんたでも　たにんのために\n　たたかうことが　あるんだな\n　みなおしたぜ
+msg Baret\n`So even you sometimes\n fight for other people.\n I approve that.
 chg_char_dir up
 chg_image_pos_offset 000 0 0 14 0 0 0
 sleep 16
 step_char 1
 sleep 16
-msg 『あんたに　みなおされても　うれしくない
+msg {I don't need your\n approval at all.
 sleep 16
 chg_npc_dir 11311 right
 sleep 48
@@ -156,7 +156,7 @@ sleep 16
 chg_npc_dir 11311 up
 chg_speed 11311 slow
 step_npc 11311 1
-msg バレット\n「いや　なんていうか……\n　いろいろわるかったな
+msg Baret\n`Well, I mean==\n Sorry for everythin'.
 chg_npc_dir 11311 up
 fi
 if_flag_greater 25 1
@@ -203,7 +203,7 @@ set_flag 10 1
 start_fake_countdown_sec 1
 draw_fake_countdown off
 sleep 16
-msg3 -1 バレット\n「な　なんだ！？
+msg3 -1 Baret\n`W-what!?
 chg_speed 11311 fast
 step_npc 11311 2
 chg_npc_dir 11312 down
@@ -218,7 +218,7 @@ wait_fake_countover
 sleep 16
 jump_npc 11312 same 2
 sleep 16
-msg3 -1 ティファ\n「みて　あれ！
+msg3 -1 Tifa\n`Look at that!
 create event_generator 11339 113 18 2 17 1 3 @../common/113/elevator_trap_select.txt
 sleep 16
 chg_event_move_char_speed fast
@@ -237,12 +237,12 @@ erase_msg3
 sleep 32
 chg_speed 11311 normal
 step_npc 11311 2
-msg バレット\n「チ……！
+msg Baret\n`Tsk==
 jump_npc 11311 same 2
 sleep 32
 chg_speed 11311 fast
 step_npc 11311 2
-msg バレット\n「かまわねえクラウド！\n　どこでもいいから　とめちまえ！
+msg Baret\n`It's okay, Cloud.\n Park it whereever\n you can!
 chg_event_move_char_speed normal
 move_char down 2
 loop 32

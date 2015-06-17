@@ -9,7 +9,7 @@ jump_npc 11720 same 2
 jump_npc 11721 same 2
 jump_npc 11722 same 2
 sleep 16
-msg3 -1 「しんにゅうしゃを　はいじょしろ！
+msg3 -1 `Get rid of the intruders!
 sleep 16
 if_flag_lesser 10 4
 move_npc 11720 left 4
@@ -99,14 +99,14 @@ create npc_event 11715 117 14 20 156 0 0 none
 fi
 sleep 24
 set_talk_npc 11715
-msg 『これは……
+msg {This is==
 reset_talk_npc
 kill 11715
 sleep 16
 step_char 2
 sleep 48
 play_se pick_up.wav
-msg 　こんなところに\n　　キーアイテム　『カードキー60』が！
+msg You got the key item\n[Keycard 60]!
 add_item 6019
 kill 11714
 set_flag 10 0

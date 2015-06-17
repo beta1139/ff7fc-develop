@@ -4,6 +4,6 @@ chg_speed 11100 normal
 jump_npc 11100 same 1
 sleep 16
 step_npc 11100 2
-msg 「あの　しょうひんをかってに\n　あけるとか　そういったことは\n　その　ちょっと……
+msg `Well, if you kindly\n stop unpacking our\n goods on the shelf==
 sleep 16
 chg_speed 11100 not_move

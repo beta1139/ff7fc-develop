@@ -939,6 +939,7 @@ npc,6222,62,7,7,91,0,0,"`Heck==!
 map_door,6250,62,8,12,0,0,0,0
 map_door,6251,62,10,4,0,0,0,0
 event_generator,6300,63,0,0,17,0,0,"@063/gobangai_slums7.txt"
+event_generator,6304,63,0,0,17,0,0,"@../common/063/goban_slums_kame.txt"
 npc,6322,63,7,7,106,0,0,"`Zzz==
 
 
@@ -983,7 +984,8 @@ event_generator,6400,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop1.txt"
 event_generator,6401,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop2.txt"
 event_generator,6402,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop3.txt"
 event_generator,6403,64,0,0,17,0,0,"@064/gobangai_slums_weapon_shop4.txt"
-event_generator,6500,65,15,20,17,0,0,"@065/waterfall.txt"
+waterfall,6520,65,10,2,1,9,0,0,"none"
+waterfall,6521,65,13,2,3,9,0,0,"none"
 treasure_item,6530,65,29,20,0,0,0,1003
 treasure_materia,6531,65,22,20,4,0,0,4313
 save_point,6540,65,15,21,0,0,0,
@@ -1625,14 +1627,15 @@ npc_event,10805,108,17,24,73,0,1,"none"
 npc_event,10806,108,14,22,73,2,0,"none"
 npc_event,10807,108,13,22,74,3,0,"none"
 npc_event,10808,108,11,15,73,2,1,"none"
-npc3,10815,108,19,5,17,0,4,"　　　　　　[こんしゅうの　ひょうご]
-　　シンラの　ミライは　せかいの　ミライ！！
-　　まこうの　ひかりで　あかるい　よのなか！"
+npc3,10815,108,19,5,17,0,4,"     [WEEKLY SLOGAN]
+  SHINRA MAKES THE WORLD
+  RIGHT! MAKO MAKES THE
+       WORLD LIGHT!"
 event_generator,10820,108,14,32,17,0,0,"@108/shinra_bldg_01f.txt"
-npc,10830,108,24,20,17,0,0,"『はんのうがない……
-　ほかのルートを　さがさなければ……"
-npc,10831,108,26,20,17,0,0,"『はんのうがない……
-　ほかのルートを　さがさなければ……"
+npc,10830,108,24,20,17,0,0,"{Doesn't work==
+ We need another way up."
+npc,10831,108,26,20,17,0,0,"{Doesn't work==
+ We need another way up."
 event_generator,10840,108,12,4,17,0,0,"@../common/108/elevator01f_l.txt"
 event_generator,10841,108,16,4,17,0,0,"@../common/108/elevator01f_r.txt"
 event_generator,10842,108,12,3,17,0,0,"@108/elevator_msg.txt"
@@ -1642,6 +1645,7 @@ event_generator,10845,108,26,21,17,0,0,"@../common/108/outside_elevator01f_r.txt
 map_door,10850,108,12,3,17,0,0,0
 map_door,10851,108,16,3,17,0,0,0
 map_door,10852,108,24,20,17,0,0,0
+map_door,10853,108,26,20,17,0,0,0
 event_generator,10860,108,13,33,17,0,0,"@../common/108/shinra_bldg_01f_warp_out.txt"
 event_generator,10861,108,14,33,17,0,0,"@../common/108/shinra_bldg_01f_warp_out.txt"
 event_generator,10862,108,15,33,17,0,0,"@../common/108/shinra_bldg_01f_warp_out.txt"
@@ -1651,20 +1655,20 @@ npc_event,10892,108,14,8,160,0,4,"none"
 npc2,10893,108,14,9,160,3,4,""
 npc_event,10894,108,13,8,161,1,4,"none"
 npc2,10895,108,13,9,161,2,4,""
-npc,11000,110,19,5,17,2,4," 　　　　　　[かめどうらく　つうしん]
-　　　　　　　　　　ナンバー2
+npc,11000,110,19,5,17,2,4,"   TURTLE PARADISE NEWS
+         Issue 2
 
 
-　　　　　　　　きびしいしごとで
-　　　　　　　　おつかれのアナタ……
+     Are you tired of
+    daily hard work==?
 
 
-　　　　　　　　　　ぜひいちど
-　　　　　いざかや　『かめどうらく』へ！！
+      Visit the bar
+    [Turtle Paradise]
 
 
-　　　　　　　　　しごとのあとの
-　　　　　　いっぱいは　さいこうですよ！"
+  We promise you a good
+    drink after work!"
 event_generator,11030,108,0,0,17,0,0,"@../common/110/shinra_bldg_kame.txt"
 event_generator,11040,110,12,4,17,0,0,"@../common/110/elevator02f_l.txt"
 event_generator,11041,110,16,4,17,0,0,"@../common/110/elevator02f_r.txt"
@@ -1683,11 +1687,11 @@ event_generator,11123,111,11,5,17,0,0,"@111/shinra_bldg_treasure.txt"
 event_generator,11124,111,0,0,17,0,0,"@../common/111/shinra_bldg_bacouple1.txt"
 event_generator,11125,111,0,0,17,0,0,"@../common/111/shinra_bldg_bacouple2.txt"
 map_door,11150,111,7,20,17,0,0,0
-npc3,11151,111,3,15,59,1,4,"　こんなところに
-　　　　　さばくや　あさせも
-　　　　　　わたれる　ばんのうバギー！！
+npc3,11151,111,3,15,59,1,4,"There is
+     a multi-purpose
+    Amphibious Buggy!
 
-　　　　　　　　……のもけいが！"
+         =='s scale model."
 treasure_materia,11152,111,12,7,3,0,0,4000
 treasure_materia,11153,111,12,8,0,0,0,4000
 treasure_materia,11154,111,12,9,4,0,0,4000

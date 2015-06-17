@@ -18,14 +18,14 @@ sleep 16
 chg_speed 11711 fast
 step_npc 11711 1
 fi
-msg バレット\n「おい　クラウド！\n\n\n　ここまできといて\n　また1かいまで　もどるのか？\n\n\n#2\n　　ああ\n　　いや……\n\n\n[[]][[]]
+msg Baret\n`Yo, Cloud!\n\n\n Ya goin' back to the\n ground after all these\n troubles?\n\n#2\n  Yeah.\n  Nope==\n\n\n[[]][[]]
 fi
 if_flag 3 0
 if_flag_greater 28 4
 chg_speed 11711 normal
 chg_speed 11712 normal
 step_npc 11711 2
-msg バレット\n「そんなヒマは　ねえんじゃねえのか？\n　ま　おまえのかってだがな
+msg Baret\n`Can we afford the time?\n Well, it's your call.
 if_flag_lesser 28 7
 move_npc 11711 left 1
 move_npc 11712 up 1
@@ -158,7 +158,7 @@ jump_npc 11711 same 1
 sleep 16
 set_active_msg 11711
 jump_npc 11711 same 1
-msg バレット\n「おう　だよな！\n　とっとと　さきをいそごうぜ！
+msg Baret\n`I thought so!\n Gotta go ahead!
 chg_speed 11711 normal
 if_flag_lesser 28 7
 move_npc 11711 left 1

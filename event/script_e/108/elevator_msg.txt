@@ -1,6 +1,6 @@
 set_eternal_event
 wait_talk
 if_flag_lesser 28 5
-msg 　エレベーターにのりますか？\n\n\n\n#2\n　　のる\n　　のらない\n\n\n[[]][[]]
+msg  Ride the elevator?\n\n\n\n#2\n  Get in.\n  Don't.\n\n\n[[]][[]]
 fi
 include ./event/script_e/117/elvator_and_59f_baret.txt

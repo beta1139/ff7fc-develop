@@ -5,13 +5,13 @@ jump_npc 11103 same 1
 sleep 16
 step_npc 11103 2
 set_talk_npc 11103
-msg 「ネェ～\n　あたらしいクルマかってェ～
+msg `Darling,\n I want a new car, please?
 reset_talk_npc
 sleep 16
 chg_npc_dir 11104 up
 sleep 16
 step_npc 11104 2
-msg 「そんなこといったって\n　しんしゃは　たかいしなあ……
+msg `Easy to say.\n New models don't come\n cheap, you know.
 set_layer 11103 front
 jump_npc 11103 same 1
 chg_npc_dir 11104 left
