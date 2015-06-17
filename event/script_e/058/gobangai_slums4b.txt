@@ -1,3 +1,0 @@
-wait_same_pos
-kill_through_range 5821 5823
-create event_generator 5820 58 13 20 17 0 0 @058/gobangai_slums4.txt

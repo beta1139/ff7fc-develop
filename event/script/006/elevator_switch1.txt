@@ -36,6 +36,16 @@ loop 90
 inc_map_draw_y_offset
 sleep 1
 pool
+loop 2
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
 if_flag 9 0
 draw_countdown on
 if_flag 0 5

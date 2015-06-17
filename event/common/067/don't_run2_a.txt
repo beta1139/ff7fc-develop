@@ -1,0 +1,31 @@
+wait_same_pos
+kill_through_range 6702 6704
+kill_through_range 6708 6710
+kill_through_range 6717 6719
+kill_through 6732
+create event_generator 6705 67 9 7 17 0 0 @../common/067/don't_run1_b.txt
+create event_generator 6706 67 9 8 17 0 0 @../common/067/don't_run1_b.txt
+create event_generator 6707 67 9 9 17 0 0 @../common/067/don't_run1_b.txt
+create event_generator 6714 67 13 12 17 0 0 @../common/067/don't_run3_a.txt
+create event_generator 6715 67 14 12 17 0 0 @../common/067/don't_run3_a.txt
+create event_generator 6716 67 15 12 17 0 0 @../common/067/don't_run3_a.txt
+chg_char_state_move
+wait_key_push b
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid select
+set_key_unvalid start
+sleep 12
+play_se creak.ogg
+sleep 16
+chg_speed 6731 fast
+move_npc 6731 right 3
+sleep 24
+move_npc 6731 up 3
+sleep 20
+open_door 6751
+play_se door_open.ogg
+sleep 20
+create event_generator 6721 67 0 0 17 0 0 @067/don't_run_msg.txt

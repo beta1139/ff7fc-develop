@@ -2,7 +2,7 @@ set_flag 20 1
 if_flag 13 1
 chg_speed 5101 fast
 step_npc 5101 3
-msg 「こだいしゅ！\n　つかまえたぞ！
+include ./event/script/051/enemy_msg.txt
 fi
 if_flag 10 1
 set_flag 12 0
@@ -26,7 +26,7 @@ set_flag 12 0
 fi
 if_flag 10 1
 create event_generator 5167 51 13 37 17 0 0 @051/church_backroom4.txt
-create event_generator 5181 51 17 31 17 0 0 @051/create_encount2.txt
+create event_generator 5181 51 17 31 17 0 0 @0../common/51/create_encount2.txt
 set_layer 5167 front
 fi
 wait_encount_end
@@ -47,12 +47,7 @@ chg_char_dir right
 fi
 step_char 2
 sleep 32
-if_flag 13 0
-msg エアリス\n「ふぅ
-fi
-if_flag 13 1
-msg エアリス\n「ふぅ おどろいた
-fi
+include ./event/script/051/aeris_msg3.txt
 chg_speed 5102 not_move
 set_flag 14 1
 set_flag 20 0

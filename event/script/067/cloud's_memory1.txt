@@ -174,8 +174,8 @@ sleep 16
 move_char up 3
 sleep 48
 msg 『6ばんがいをこえて7ばんがいへ　か\n　ひとりでなんとかなりそうだな
-create event_generator 6702 67 5 8 17 0 0 @067/don't_run1_a.txt
-create event_generator 6720 67 11 12 17 0 0 @067/don't_run4.txt
+create event_generator 6702 67 5 8 17 0 0 @../common/067/don't_run1_a.txt
+create event_generator 6720 67 11 12 17 0 0 @../common/067/don't_run4.txt
 create event_generator 6603 66 10 5 17 0 0 @066/don't_run_kill.txt
 kill_through_range 6623 6624
 create npc 6625 66 10 5 17 0 0 『ひとりでなんとかなるだろう

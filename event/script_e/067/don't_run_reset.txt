@@ -3,6 +3,6 @@ kill_through_range 6702 6721
 close_door 6751
 msg {Quieter this time==
 sleep 16
-create event_generator 6702 67 5 8 17 0 0 @067/don't_run1_a.txt
-create event_generator 6720 67 11 12 17 0 0 @067/don't_run4.txt
+create event_generator 6702 67 5 8 17 0 0 @../common/067/don't_run1_a.txt
+create event_generator 6720 67 11 12 17 0 0 @../common/067/don't_run4.txt
 kill_through 6732

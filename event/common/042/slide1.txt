@@ -7,13 +7,13 @@ kill_through 3810
 set_slide_char_flag
 chg_event_move_char_speed fast
 play_se slide.ogg
-move_char down 16
-sleep 128
+move_char down 15
+sleep 120
 reset_slide_char_flag
 chg_event_move_char_speed normal
-jump_char down 3
+jump_char down 4
 play_se jump.wav
-loop 3
+loop 4
 sleep 3
 chg_char_dir down
 chg_char_img_tmp 105
@@ -32,6 +32,7 @@ chg_char_img_tmp 105
 sleep 3
 reset_char_img_tmp
 pool
+sleep 4
 chg_char_img_tmp 143
 play_se landing.wav
 create npc_event 4760 47 14 19 116 0 0 none

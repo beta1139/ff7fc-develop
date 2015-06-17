@@ -63,49 +63,60 @@ sleep 32
 kill 2803
 sleep 32
 move_npc 2804 up 1
+move_char right 3
 sleep 16
 move_npc 2804 right 2
-chg_npc_dir 2806 right
 sleep 16
 kill 2805
 sleep 16
 kill 2804
 set_talk_npc 2806
 msg `Those hooligans again.\n How unlucky of me.
+reset_talk_npc
+move_char left 3
 move_npc 2801 right 12
 set_active_msg 2801
-reset_talk_npc
 chg_npc_dir 2806 down
 sleep 16
-move_char down 1
 move_npc 2806 down 1
 sleep 16
 move_npc 2802 right 2
-move_npc 2806 left 4
+move_npc 2806 left 6
 sleep 32
 move_npc 2802 down 2
 sleep 32
 chg_speed 2802 not_move
-move_npc 2806 down 2
-sleep 32
-chg_npc_dir 2806 up
 sleep 16
 move_npc 2800 up 1
+sleep 16
+move_npc 2806 down 2
+chg_npc_dir 2800 left
+sleep 32
+chg_npc_dir 2806 up
+move_char right 4
+sleep 16
 jump_npc_target_pos 2806 12 8
-sleep 112
+sleep 64
 step_npc 2801 2
 msg Baret\n`Huh?
-sleep 32
+sleep 16
+loop 2
+jump_npc 2801 same 1
+sleep 16
+pool
 step_npc 2801 4
 msg Baret\n`Well?
 sleep 32
+move_char left 4
 move_npc 2801 left 7
 sleep 80
 chg_npc_dir 2802 right
 sleep 32
+move_char down 1
 move_npc 2801 down 1
 sleep 16
 chg_speed 2802 normal
+chg_npc_dir 2800 up
 sleep 16
 jump_npc 2801 same 1
 sleep 16
@@ -113,13 +124,24 @@ set_inactive_msg 2801
 msg Baret\n`Hey!\n This car's deserted.\n\n What's the matter?
 jump_npc 2806 same 1
 set_active_msg 2806
-msg `Yikes!
+msg3 -1 `Yikes!
+loop 3
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+wait_key_push_edge a
+erase_msg3
 chg_npc_dir 2800 right
 sleep 16
 msg `Th-that's because of\n the likes of you==
 chg_npc_dir 2801 left
 chg_npc_img 2801 98
-sleep 8
 jump_npc 2801 same 2
 sleep 32
 set_inactive_msg 2806
@@ -142,26 +164,55 @@ sleep 1
 pool
 jump_npc 2806 same 2
 set_active_msg 2806
-msg `Eeeeek!
-sleep 32
-step_npc 2806 4
+msg3 -1 `Eeeeek!
+loop 8
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+wait_key_push_edge a
+erase_msg3
+sleep 24
+jump_npc 2806 same 1
+sleep 16
 msg `D-don't you watch the\n news? Another bombing\n was warned by AVALANCHE.\n\n Only very loyal Shinra\n employees like me would\n go to Midgar on a day\n like this.
 jump_npc_target_pos 2801 12 6
 sleep 32
 step_npc 2801 4
 msg Baret\n`You Shinra?
+sleep 16
 set_inactive_msg 2806
 jump_npc 2806 same 1
 sleep 16
 jump_npc 2806 same 1
 set_active_msg 2806
-msg Shinra Manager\n`I-I won't give in\n to any violence.\n N-nor give up this seat.
-slide_walk_npc 2801 down 1
+msg3 -1 Shinra Manager\n`I-I won't give in\n to any violence.\n N-nor give up this seat.
+loop 8
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+wait_key_push_edge a
+erase_msg3
+chg_npc_img 2801 1
+move_npc 2801 down 1
 chg_speed 2802 fast
 move_npc 2802 right 4
 set_inactive_msg 2806
 set_active_msg 2802
 sleep 16
+chg_npc_dir 2801 left
+chg_npc_img 2801 98
 msg Tifa\n`Baret!
 step_npc 2801 5
 sleep 80

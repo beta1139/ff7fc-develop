@@ -1,0 +1,37 @@
+create event_generator 6802 68 12 9 17 0 0 @../common/068/rokubangai_kill_smoke.txt
+create event_generator 7113 71 3 8 17 0 0 @../common/068/rokubangai_kill_smoke.txt
+create event_generator 7114 71 3 9 17 0 0 @../common/068/rokubangai_kill_smoke.txt
+create event_generator 7115 71 3 10 17 0 0 @../common/068/rokubangai_kill_smoke.txt
+chg_char_state_move
+loop_inf
+create smoke 7080 70 19 24 0 0 0 none
+sleep 8
+create smoke 7081 70 21 17 0 0 0 none
+sleep 8
+create smoke 7082 70 10 14 0 0 0 none
+sleep 8
+create smoke 7083 70 8 21 0 0 0 none
+sleep 40
+kill 7080
+sleep 8
+kill 7081
+sleep 8
+kill 7082
+sleep 8
+kill 7083
+create smoke 7080 70 18 21 0 0 0 none
+sleep 8
+create smoke 7081 70 19 15 0 0 0 none
+sleep 8
+create smoke 7082 70 9 16 0 0 0 none
+sleep 8
+create smoke 7083 70 10 22 0 0 0 none
+sleep 40
+kill 7080
+sleep 8
+kill 7081
+sleep 8
+kill 7082
+sleep 8
+kill 7083
+pool

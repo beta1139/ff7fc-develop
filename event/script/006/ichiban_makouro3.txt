@@ -78,6 +78,16 @@ loop 90
 inc_map_draw_y_offset
 sleep 1
 pool
+loop 2
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
 move_npc 650 down 1
 sleep 16
 move_npc 650 left 2

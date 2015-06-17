@@ -175,7 +175,7 @@ set_key_unvalid select
 set_key_unvalid start
 sleep 48
 play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
-create event_generator 7000 70 0 0 17 0 0 @070/midori_park_smoke.txt
+create event_generator 7000 70 0 0 17 0 0 @../common/070/midori_park_smoke.txt
 loop 100
 dec_screen_effect_val 1
 sleep 1

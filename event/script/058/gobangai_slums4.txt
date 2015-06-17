@@ -23,6 +23,6 @@ warp_ff3_2 59 3 11 2 up
 create event_generator 5920 59 0 0 17 0 0 @059/gobangai_slums5.txt
 end
 fi
-create event_generator 5821 58 13 19 17 0 0 @058/gobangai_slums4b.txt
-create event_generator 5822 58 13 21 17 0 0 @058/gobangai_slums4b.txt
-create event_generator 5823 58 14 20 17 0 0 @058/gobangai_slums4b.txt
+create event_generator 5821 58 13 19 17 0 0 @../common/058/gobangai_slums4b.txt
+create event_generator 5822 58 13 21 17 0 0 @../common/058/gobangai_slums4b.txt
+create event_generator 5823 58 14 20 17 0 0 @../common/058/gobangai_slums4b.txt

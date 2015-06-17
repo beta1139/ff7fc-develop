@@ -261,18 +261,3 @@ create event_generator 10825 108 18 6 17 0 0 @../common/108/shinra_bldg_01f_esca
 create event_generator 10826 108 18 7 17 0 0 @../common/108/shinra_bldg_01f_escape2.txt
 create event_generator 10827 108 18 8 17 0 0 @../common/108/shinra_bldg_01f_escape2.txt
 create event_generator 10828 108 19 4 17 0 0 @../common/108/shinra_bldg_01f_escape2.txt
-set_layer 10890 front
-set_layer 10892 front
-set_layer 10894 front
-chg_npc_y_offset 10890 0
-chg_npc_y_offset 10891 0
-chg_npc_y_offset 10892 0
-chg_npc_y_offset 10893 0
-chg_npc_y_offset 10894 0
-chg_npc_y_offset 10895 0
-chg_npc_y_offset 11152 0
-chg_npc_y_offset 11153 0
-chg_npc_y_offset 11154 0
-chg_npc_y_offset 11155 0
-chg_npc_y_offset 11156 0
-chg_npc_y_offset 11157 0

@@ -1,0 +1,6 @@
+if_flag 13 0
+msg エアリス\n「ふぅ
+fi
+if_flag 13 1
+msg エアリス\n「ふぅ おどろいた
+fi

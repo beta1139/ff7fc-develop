@@ -1,7 +1,0 @@
-wait_same_pos
-warp_ff3_2 69 15 27 2 up
-create npc2 6960 69 15 27 17 0 0 
-create npc2 6961 69 16 27 17 0 0 
-create npc2 6962 69 24 13 17 0 0 
-create npc2 6963 69 24 14 17 0 0 
-draw_char off

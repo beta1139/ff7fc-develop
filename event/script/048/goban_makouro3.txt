@@ -555,9 +555,9 @@ sleep 16
 chg_speed 4802 normal
 chg_npc_dir 4802 down
 chg_npc_img 4802 95
-step_npc 4802 3
-sleep 48
 chg_speed 4802 fast
+step_npc 4802 4
+sleep 32
 chg_npc_dir 4802 right
 step_npc 4802 4
 msg バレット\n「なんでもいい！！\n　ぶっこわしてやるぜ！

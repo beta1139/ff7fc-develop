@@ -170,6 +170,6 @@ set_key_unvalid down
 set_key_unvalid right
 set_key_unvalid b
 set_key_unvalid start
-create event_generator 4990 49 20 11 17 0 0 @049/slum_church1_b.txt
+create event_generator 4990 49 20 11 17 0 0 @../common/049/slum_church1_b.txt
 create event_generator 4991 49 20 11 17 0 0 @049/slum_church1_c.txt
 wait_key_push_edge a

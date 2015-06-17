@@ -291,4 +291,4 @@ set_image_alpha 021 100
 sleep 60
 reset_screen_effect
 sleep 8
-create event_generator 6998 69 0 0 17 0 0 @069/plate_support_end3.txt
+create event_generator 6998 69 0 0 17 0 0 @../common/069/plate_support_end3.txt

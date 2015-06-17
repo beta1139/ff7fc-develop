@@ -19,10 +19,10 @@ move_npc 5102 down 1
 sleep 16
 chg_speed 5131 fast
 step_npc 5131 4
-msg Aeris\n`Cloud, Help!
+include ./event/script_e/051/aeris_msg1.txt
 move_char up 2
 sleep 16
-msg {Aeris!\n\n\n\n#3\n  Hold it!\n  Beat him!\n  Run for it!\n\n[[]][[]][[]]
+include ./event/script_e/051/directions_msg.txt
 if_flag 3 0
 chg_event_move_char_speed fast
 set_flag 12 1
@@ -91,8 +91,7 @@ sleep 32
 chg_speed 5131 fast
 step_npc 5131 1
 sleep 32
-step_npc 5131 2
-msg Aeris\n`I, I try.
+include ./event/script_e/051/aeris_msg2.txt
 jump_char same 1
 jump_npc 5131 same 1
 chg_speed 5102 fast
@@ -116,8 +115,7 @@ sleep 32
 chg_speed 5131 fast
 step_npc 5131 1
 sleep 32
-step_npc 5131 2
-msg Aeris\n`I, I try.
+include ./event/script_e/051/aeris_msg2.txt
 chg_npc_dir 5131 down
 if_flag 14 0
 sleep 8
@@ -128,7 +126,7 @@ sleep 24
 move_npc 5131 left 3
 move_char left 3
 sleep 24
-create event_generator 5181 51 17 45 17 0 0 @051/create_encount2.txt
+create event_generator 5181 51 17 45 17 0 0 @../common/051/create_encount2.txt
 draw_char on
 kill 5131
 fi
@@ -158,7 +156,7 @@ set_layer 5120 front
 fi
 chg_char_state_move
 create event_generator 5167 51 13 37 17 0 0 @051/church_backroom4.txt
-create event_generator 5181 51 17 31 17 0 0 @051/create_encount2.txt
+create event_generator 5181 51 17 31 17 0 0 @../common/051/create_encount2.txt
 sleep 56
 chg_speed 5102 not_move
 fi

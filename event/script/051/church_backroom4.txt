@@ -16,14 +16,14 @@ set_layer 5131 front
 draw_char off
 set_active_msg 5131
 step_npc 5131 4
-msg エアリス\n「クラウド　たすけて！
+include ./event/script/051/aeris_msg1.txt
 chg_npc_dir 5102 down
 chg_speed 5102 normal
 chg_speed 5103 normal
 move_npc 5103 down 1
 move_char up 2
 sleep 16
-msg 『エアリス！\n\n\n\n#3\n　　しばらくまっていろ！\n　　たたかえ！\n　　にげるんだ！\n\n[[]][[]][[]]
+include ./event/script/051/directions_msg.txt
 if_flag 3 0
 chg_event_move_char_speed fast
 set_flag 12 1
@@ -96,8 +96,7 @@ sleep 16
 chg_speed 5131 fast
 step_npc 5131 1
 sleep 32
-step_npc 5131 2
-msg エアリス\n「わ　わかったわ
+include ./event/script/051/aeris_msg2.txt
 play_se jump.wav
 chg_speed 5103 normal
 jump_npc 5103 down 2
@@ -117,8 +116,7 @@ chg_speed 5131 fast
 step_npc 5131 1
 sleep 32
 create npc_event 5130 51 12 20 0 1 0 none
-step_npc 5131 2
-msg エアリス\n「わ　わかったわ
+include ./event/script/051/aeris_msg2.txt
 chg_npc_dir 5131 right
 sleep 16
 draw_char on
@@ -132,7 +130,7 @@ play_se landing.wav
 chg_speed 5103 not_move
 sleep 16
 chg_char_dir up
-create event_generator 5182 51 15 37 17 0 0 @051/create_encount3.txt
+create event_generator 5182 51 15 37 17 0 0 @../common/051/create_encount3.txt
 set_layer 5182 front
 fi
 chg_speed 5102 not_move

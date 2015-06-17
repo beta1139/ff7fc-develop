@@ -1,5 +1,0 @@
-wait_same_pos
-kill_through_range 6611 6613
-create npc_event 6620 66 10 13 0 1 2 none
-draw_char off
-create event_generator 6615 66 10 13 17 0 0 @066/leave.txt

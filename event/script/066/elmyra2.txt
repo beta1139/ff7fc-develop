@@ -111,8 +111,8 @@ chg_speed 6623 not_step
 chg_type 6622 npc3
 chg_type 6623 npc3
 create event_generator 6611 66 0 0 17 0 0 @066/elmyra3.txt
-create event_generator 6612 66 9 13 17 0 0 @066/leave1.txt
-create event_generator 6613 66 10 13 17 0 0 @066/leave2.txt
+create event_generator 6612 66 9 13 17 0 0 @../common/066/leave1.txt
+create event_generator 6613 66 10 13 17 0 0 @../common/066/leave2.txt
 create npc_event 6721 67 10 14 1 1 0 none
 chg_npc_y_offset 6721 0
 create event_generator 6710 67 11 13 17 0 0 @067/marlene1.txt

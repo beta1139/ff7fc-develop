@@ -207,7 +207,7 @@ chg_npc_dir 3203 down
 sleep 16
 chg_npc_dir 3205 down
 sleep 64
-chg_npc_dir 3204 up
+chg_npc_dir 3204 down
 sleep 16
 kill_through 2815
 kill_through 3013

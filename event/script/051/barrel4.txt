@@ -1,7 +1,7 @@
 set_eternal_event
 wait_target_talk 5143
 reset_talk_flag 5143
-msg 『タル』がある\n　これをおしてやれば……\n\n\n『タル』をおしますか？\n\n\n\n#2\n　　はい\n　　いいえ\n\n\n[[]][[]]
+include ./event/script/051/barrel_msg.txt
 backup_char_dir
 if_flag 3 0
 if_char_dir right

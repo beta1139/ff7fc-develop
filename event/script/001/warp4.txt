@@ -78,7 +78,7 @@ kill_through_range 5622 5623
 kill_through_range 6600 6701
 kill 6800
 kill 6900
-create event_generator 6801 68 12 8 17 0 0 @068/rokubangai2.txt
+create event_generator 6801 68 12 8 17 0 0 @../common/068/rokubangai2.txt
 warp_ff3_2 71 6 8 2 up
 sleep 16
 create event_generator 4900 49 5 16 17 0 0 @049/slum_church8_1.txt

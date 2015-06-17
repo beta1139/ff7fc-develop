@@ -1,7 +1,0 @@
-set_eternal_event
-wait_same_pos
-jump_char_target_pos 36 14
-play_se jump.wav
-sleep 32
-play_se landing.wav
-sleep 16

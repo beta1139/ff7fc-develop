@@ -427,7 +427,7 @@ msg {What's that==?
 move_char down 4
 sleep 32
 step_npc 5130 2
-msg {Aeris!\n\n\n\n#3\n  Hold it!\n  Beat him!\n  Run for it!\n\n[[]][[]][[]]
+include ./event/script_e/051/directions_msg.txt
 set_flag 10 0
 set_flag 0 2
 del_party_mem 3
@@ -456,8 +456,7 @@ fadein
 chg_speed 5131 fast
 step_npc 5131 1
 sleep 32
-step_npc 5131 2
-msg Aeris\n`I, I try.
+include ./event/script_e/051/aeris_msg2.txt
 chg_npc_dir 5131 left
 jump_char same 1
 jump_npc 5131 same 1
@@ -488,9 +487,7 @@ fadein
 chg_event_move_char_speed fast
 step_npc 5131 1
 sleep 32
-step_npc 5131 2
-sleep 8
-msg Aeris\n`I, I try.
+include ./event/script_e/051/aeris_msg2.txt
 chg_npc_dir 5131 down
 sleep 8
 draw_char on
@@ -502,6 +499,6 @@ sleep 16
 move_char up 3
 chg_speed 5101 not_move
 sleep 24
-create event_generator 5180 51 14 48 17 0 0 @051/create_encount1.txt
+create event_generator 5180 51 14 48 17 0 0 @../common/051/create_encount1.txt
 fi
 chg_event_move_char_speed normal
