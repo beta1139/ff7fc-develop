@@ -21,7 +21,7 @@ fi
 if_char_dir left
 move_npc 4110 down 1
 sleep 16
-move_npc 4110 right 2
+move_npc 4110 right 1
 sleep 16
 chg_char_state_move
 move_npc 4110 down 7
