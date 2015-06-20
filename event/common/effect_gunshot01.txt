@@ -5,7 +5,9 @@ inc_screen_effect_val 10
 sleep 2
 dec_screen_effect_val 10
 sleep 2
+inc_screen_effect_val 10
 set_gray_scale
 stop_se
 sleep 2
+dec_screen_effect_val 10
 reset_gray_scale

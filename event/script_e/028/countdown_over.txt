@@ -597,7 +597,7 @@ reset_slide_walk_char_flag
 chg_event_move_char_speed normal
 fadeout
 stop_se
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 sleep 48
 warp 34 7 16 up
 sleep 48

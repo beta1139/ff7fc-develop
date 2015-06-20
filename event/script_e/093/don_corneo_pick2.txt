@@ -151,7 +151,7 @@ fi
 kill 9122
 chg_speed 9321 normal
 chg_speed 9322 normal
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 play_se_loop barrel_rolling.ogg
 sleep 196
 chg_event_move_char_speed normal

@@ -106,7 +106,7 @@ chg_event_move_char_speed slow
 move_char up 4
 sleep 64
 chg_npc_dir 8911 up
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 sleep 128
 move_char down 4
 chg_npc_dir 8911 down

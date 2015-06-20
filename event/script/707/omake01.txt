@@ -1,5 +1,5 @@
 wait_same_pos
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 play_se beeeeep.wav
 set_screen_effect sub 125 125 125 0
 loop 90

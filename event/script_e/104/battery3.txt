@@ -16,8 +16,10 @@ play_se door_open2.ogg
 sleep 16
 play_se button.ogg
 loop 4
+set_screen_effect add 255 255 255 10
 set_gray_scale
 sleep 2
+reset_screen_effect
 reset_gray_scale
 sleep 2
 pool

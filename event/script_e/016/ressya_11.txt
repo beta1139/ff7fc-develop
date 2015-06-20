@@ -19,7 +19,7 @@ kill_through 1621
 kill_through 1622
 stop_se
 sleep 16
-create event_generator 1600 16 18 21 17 0 0 @016/ressya_move1.txt
+create event_generator 1600 16 18 21 17 0 0 @../common/016/ressya_move1.txt
 chg_npc_dir 1667 right
 sleep 16
 create npc 1669 16 18 22 34 3 0 Jessie\n`Say, Cloud! May I give\n you something, one of my\n handmade gadgets?\n#2\n  No, thank you.\n  That seems nice.\n\n\n[[`Yeah? See if you don't\n regret it. I'm a one to\n hold a GRUDGE, you know.]]\n[[`Okay. You can expect\n something WONDERFUL.]]

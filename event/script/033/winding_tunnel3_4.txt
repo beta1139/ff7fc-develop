@@ -61,7 +61,7 @@ move_npc 3301 up 2
 sleep 8
 move_npc 3303 up 1
 sleep 8
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 encount 218
 sleep 64
 kill 3301

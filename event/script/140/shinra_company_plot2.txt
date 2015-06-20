@@ -129,7 +129,7 @@ msg プレジデントしんら\n「フフフ…かんぺきだ
 sleep 16
 fadeout
 sleep 32
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 kill 14020
 kill 70590
 warp 96 40 15 down

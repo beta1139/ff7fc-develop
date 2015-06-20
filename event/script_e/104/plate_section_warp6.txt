@@ -11,7 +11,7 @@ if_flag_lesser 9 4
 warp_ff3_2 708 0 0 2 up
 kill 10490
 include ./event/common/effect_fadeout.txt
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 sleep 16
 warp 105 15 7 up
 reset_char_img_tmp

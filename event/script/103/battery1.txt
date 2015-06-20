@@ -15,8 +15,10 @@ play_se button.ogg
 create npc_event 10390 103 22 33 0 1 2 none
 draw_char off
 loop 4
+set_screen_effect add 255 255 255 10
 set_gray_scale
 sleep 2
+reset_screen_effect
 reset_gray_scale
 sleep 2
 pool

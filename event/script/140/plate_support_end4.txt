@@ -160,7 +160,7 @@ inc_screen_effect_val 13
 sleep 4
 pool
 sleep 16
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 sleep 48
 warp 70 14 24 down
 draw_char on

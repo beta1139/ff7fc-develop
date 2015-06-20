@@ -34,7 +34,7 @@ sleep 1
 pool
 reset_screen_effect
 create npc_event 7321 73 15 7 68 1 0 none
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 sleep 16
 play_bgm
 chg_npc_y_offset 7322 -4

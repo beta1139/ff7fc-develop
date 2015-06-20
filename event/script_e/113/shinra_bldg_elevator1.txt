@@ -24,7 +24,7 @@ close_door 10851
 close_door 11050
 close_door 11051
 chg_char_dir up
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 sleep 32
 set_flag 10 0
 set_flag 24 6
@@ -38,8 +38,10 @@ chg_npc_img 11310 115
 sleep 32
 play_se button.ogg
 loop 4
+set_screen_effect add 255 255 255 7
 set_gray_scale
 sleep 2
+reset_screen_effect
 reset_gray_scale
 sleep 2
 pool

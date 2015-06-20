@@ -340,7 +340,7 @@ set_key_valid down
 set_key_valid right
 set_key_valid start
 stop_se
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 warp 16 9 5 down
 sleep 48
 set_flag 13 0

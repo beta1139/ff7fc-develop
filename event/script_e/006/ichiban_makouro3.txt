@@ -1,6 +1,27 @@
 wait_talk
-play_se button.ogg
 msg Switch On.
+create npc_event 601 6 4 2 0 0 2 none
+draw_char off
+chg_npc_y_offset 601 -6
+sleep 3
+chg_npc_y_offset 601 -8
+sleep 3
+chg_npc_img 601 115
+sleep 32
+play_se button.ogg
+loop 4
+set_screen_effect add 255 255 255 7
+set_gray_scale
+sleep 2
+reset_screen_effect
+reset_gray_scale
+sleep 2
+pool
+sleep 16
+chg_npc_y_offset 601 -6
+sleep 4
+chg_npc_y_offset 601 -4
+chg_npc_img 601 0
 play_se elevator_start.wav
 loop 100
 inc_map_draw_y_offset
@@ -12,6 +33,7 @@ inc_map_draw_y_offset
 sleep 1
 pool
 set_map_draw_y_offset -170
+set_npc_pos 601 6 20 2
 warp 6 20 2 up
 chg_char_dir up
 loop 170
@@ -23,10 +45,9 @@ create npc_event 602 6 20 2 1 1 2 none
 move_npc 602 down 1
 sleep 16
 chg_char_dir down
+chg_npc_dir 601 down
 chg_npc_dir 602 up
 sleep 16
-create npc_event 601 6 20 2 0 1 2 none
-draw_char off
 step_npc 602 2
 msg Baret\n`Reactors keep suckin' the\n planet's life everyday.\n Then someday==it's gone.
 chg_npc_img 601 103

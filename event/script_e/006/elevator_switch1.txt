@@ -1,7 +1,51 @@
 set_eternal_event
 wait_talk
-play_se button.ogg
 msg Switch On.
+if_flag 9 0
+create npc_event 601 6 4 2 0 0 2 none
+draw_char off
+chg_npc_y_offset 601 -6
+sleep 3
+chg_npc_y_offset 601 -8
+sleep 3
+chg_npc_img 601 115
+fi
+if_flag 9 1
+create npc_event 4611 46 4 2 0 0 2 none
+draw_char off
+chg_npc_y_offset 4611 -6
+sleep 3
+chg_npc_y_offset 4611 -8
+sleep 3
+chg_npc_img 4611 115
+fi
+sleep 32
+play_se button.ogg
+loop 4
+set_screen_effect add 255 255 255 7
+set_gray_scale
+sleep 2
+reset_screen_effect
+reset_gray_scale
+sleep 2
+pool
+sleep 16
+if_flag 9 0
+chg_npc_y_offset 601 -6
+sleep 4
+chg_npc_y_offset 601 -4
+chg_npc_img 601 0
+draw_char on
+kill 601
+fi
+if_flag 9 1
+chg_npc_y_offset 4611 -6
+sleep 4
+chg_npc_y_offset 4611 -4
+chg_npc_img 4611 0
+draw_char on
+kill 4611
+fi
 if_flag 9 0
 if_flag 0 5
 draw_countdown off
@@ -49,7 +93,7 @@ pool
 if_flag 9 0
 draw_countdown on
 if_flag 0 5
-create event_generator 1003 10 0 0 17 0 0 @010/ichiban_makouro_alarm.txt
+create event_generator 1003 10 0 0 17 0 0 @../common/010/ichiban_makouro_alarm.txt
 fi
 fi
 set_map_draw_y_offset 0

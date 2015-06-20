@@ -126,7 +126,7 @@ sleep 32
 pool
 fadeout
 sleep 16
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 sleep 32
 warp 140 7 28 up
 sleep 32

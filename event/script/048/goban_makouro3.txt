@@ -50,7 +50,7 @@ step_npc 4802 4
 msg バレット\n「くそっ！\n　どうなってんだ？
 chg_char_dir down
 sleep 16
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 msg3 -1 『……ワナ　か
 sleep 64
 play_se_loop footstep.ogg
@@ -343,7 +343,7 @@ reset_talk_npc
 sleep 16
 chg_npc_dir 4807 left
 sleep 32
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 sleep 24
 play_se fingersnap.ogg
 chg_npc_dir 4803 left
@@ -568,13 +568,13 @@ move_npc 4801 right 1
 sleep 8
 chg_event_move_char_speed normal
 sleep 4
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 set_flag 20 1
 sleep 4
 boss_encount 234
 sleep 64
 wait_encount_end
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 create npc_event 4800 48 5 26 0 2 2 none
 draw_char off
 play_se thunder3.ogg
@@ -605,7 +605,7 @@ sleep 4
 create npc_event 4820 48 4 26 122 0 0 none
 sleep 4
 kill 4820
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 sleep 8
 flush
 create npc_event 4820 48 4 26 122 3 0 none
@@ -814,7 +814,7 @@ sleep 16
 chg_speed 4800 fast
 step_npc 4800 4
 sleep 72
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 flush
 chg_event_move_char_speed fast
 move_char up 1
