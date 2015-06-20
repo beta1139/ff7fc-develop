@@ -12,7 +12,7 @@ move_npc 6622 up 1
 sleep 32
 chg_event_move_char_speed slow
 move_char up 6
-sleep 64
+sleep 65
 move_npc 6620 up 2
 sleep 32
 move_npc 6621 up 2

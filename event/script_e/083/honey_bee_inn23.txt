@@ -152,6 +152,7 @@ move_char up 7
 chg_speed 8315 slow
 chg_speed 8314 slow
 chg_speed 8313 slow
+sleep 1
 move_npc 8315 down 1
 move_npc 8314 down 1
 move_npc 8313 down 1
@@ -250,6 +251,7 @@ erase_msg3
 chg_npc_y_offset 8330 -8
 sleep 16
 move_char down 6
+sleep 1
 move_npc 8317 down 2
 slide_walk_npc 8330 left 1
 move_npc 8314 left 2
@@ -433,6 +435,7 @@ move_npc 8315 right 1
 move_npc 8316 down 1
 sleep 16
 move_char down 6
+sleep 1
 move_npc 8315 up 1
 chg_speed 8317 not_move
 chg_speed 8316 not_move
@@ -528,6 +531,7 @@ sleep 1
 pool
 reset_slide_walk_char_flag
 move_char down 5
+sleep 1
 move_npc 8316 up 2
 kill 8313
 move_npc 8317 up 4

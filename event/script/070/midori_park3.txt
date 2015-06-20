@@ -270,7 +270,7 @@ sleep 16
 erase_msg3
 sleep 16
 msg3 -1 バレット\n「うおぉぉーー！！
-create event_generator 7002 70 14 24 17 0 0 @070/midori_park4.txt
+create event_generator 7072 70 14 24 17 0 0 @070/midori_park4.txt
 loop_inf
 step_npc 7020 6
 sleep 56

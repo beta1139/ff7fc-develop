@@ -93,10 +93,10 @@ sleep 32
 move_npc 6621 left 1
 sleep 16
 move_npc 6621 up 3
-sleep 16
+sleep 15
 chg_event_move_char_speed slow
 move_char down 1
-sleep 32
+sleep 33
 kill 6621
 chg_char_dir up
 draw_char on

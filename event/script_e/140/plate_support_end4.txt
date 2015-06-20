@@ -181,5 +181,5 @@ dec_screen_effect_val 1
 sleep 1
 pool
 sleep 80
-create event_generator 7001 70 14 24 17 0 0 @070/midori_park3.txt
+create event_generator 7071 70 14 24 17 0 0 @070/midori_park3.txt
 reset_screen_effect

@@ -23,6 +23,7 @@ msg3 -1 「へ～い！！\n　ドン　コルネオ\n　バンザ～イ！！
 wait_key_push_edge a
 erase_msg3
 wait_event_invalid 9400
+jump_npc 9428 same 1
 chg_npc_dir 9428 down
 sleep 16
 step_npc 9428 2
@@ -40,6 +41,7 @@ chg_speed 9424 slow
 chg_speed 9425 slow
 chg_speed 9426 slow
 chg_speed 9427 slow
+sleep 1
 move_npc 9424 down 1
 move_npc 9426 left 1
 sleep 64

@@ -32,7 +32,7 @@ erase_msg3
 chg_npc_dir 7022 right
 sleep 8
 jump_npc 7022 same 1
-kill_through 7001
+kill_through 7071
 msg ÅwÇ®Ç¢ÅI
 sleep 40
 chg_speed 7021 slow
@@ -172,4 +172,4 @@ chg_npc_dir 7021 left
 chg_npc_dir 7022 up
 sleep 48
 fadein
-create event_generator 7003 70 15 21 17 0 0 @070/midori_park5.txt
+create event_generator 7073 70 15 21 17 0 0 @070/midori_park5.txt
