@@ -16,7 +16,7 @@ sleep 16
 msg {You sell something you\n picked up on the street?
 sleep 16
 jump_npc 8612 same 1
-msg `Oh, did you know that?\n Don't worry, I fixed it.
+msg `Oh, did you know that?\n Don't worry, they are\n all fixed right.
 sleep 16
 step_char 1
 sleep 16
@@ -62,7 +62,7 @@ sub_gil 300
 add_item 1084
 add_item 1084
 add_item 1084
-msg You got {Battery}!
+msg You got [Batteries]!
 sleep 8
 step_npc 8612 1
 msg `See ya.

@@ -1,5 +1,5 @@
 sleep 224
-msg3 -1 Baret\n`Why==\n we gotta==work==\n this hard==
+msg3 -1 Baret\n`Why==\n all these==\n troubles==
 sleep 72
 set_flag 25 2
 sleep 72

@@ -44,7 +44,7 @@ if_flag 13 1
 sleep 16
 step_npc 7810 2
 set_talk_npc 7810
-msg `Oh, I see you have\n our coupon.\n Please choose one of\n our goods.\n#3\n  Germicide.\n  Deodorant.\n  Digestive.\n\n[[]][[]][[]]
+msg `Oh, I see you have\n our coupon.\n Please choose one of\n our goods.\n#3\n  Disinfectant.\n  Deodorant.\n  Digestive.\n\n[[]][[]][[]]
 reset_talk_npc
 del_item 6015
 if_flag 3 0

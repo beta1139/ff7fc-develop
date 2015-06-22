@@ -119,7 +119,7 @@ msg Aeris\n`==Your eyes.\n That unusual gleam==
 reset_talk_npc
 sleep 16
 step_npc 5430 1
-msg {Yeah, this is the sign\n of a SOLDIER, the one\n who immersed in Mako.\n\n But how did you know it?
+msg {Yeah, this is the sign\n of SOLDIERS, the ones\n who're exposed to Mako.\n\n But how did you know it?
 sleep 32
 step_npc 5431 1
 set_talk_npc 5431

@@ -93,7 +93,7 @@ chg_npc_img 9210 17
 set_npc_pos 9210 92 1 1
 fi
 if_flag 3 1
-msg3 -1 Kotch\n`I-I was just following\n Don's orders!\n Help me, man!
+msg3 -1 Kotch\n`I-I was just following\n Don's orders!\n You gotta help me, man!
 loop 2
 chg_npc_y_offset 9210 -1
 sleep 3

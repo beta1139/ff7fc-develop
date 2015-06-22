@@ -106,7 +106,7 @@ sleep 16
 step_char 2
 sleep 48
 play_se pick_up.wav
-msg You got the key item\n[Keycard 60]!
+msg  You got the key item\n [Keycard 60]!
 add_item 6019
 kill 11714
 set_flag 10 0

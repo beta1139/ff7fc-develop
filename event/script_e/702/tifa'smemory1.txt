@@ -47,7 +47,7 @@ step_npc 70203 1
 msg {I'm==In spring,\n I'm gonna leave this\n village to Midgar.
 sleep 96
 step_npc 70204 1
-msg Tifa\n`==All boys're gonna leave\n the village, aren't they?
+msg Tifa\n`==All boys're leaving\n the village, aren't they?
 sleep 32
 step_npc 70203 1
 msg {I'm different from them.\n I'm not only after a job.

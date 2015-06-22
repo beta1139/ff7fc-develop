@@ -162,7 +162,7 @@ sleep 16
 jump_npc 4770 same 1
 sleep 16
 step_npc 4770 2
-msg3 -1 Tifa\n`Wow, you ROCK! Amazing!
+msg3 -1 Tifa\n`Perfect!
 sleep 64
 add_likability 1 300
 add_likability 2 500
@@ -184,7 +184,7 @@ sleep 32
 jump_npc 4770 same 1
 sleep 16
 jump_npc 4770 same 1
-msg3 -1 Tifa\n`No problem. Let's go!
+msg3 -1 Tifa\n`Never mind.\n Let's go on!
 sleep 32
 chg_npc_dir 4772 right
 chg_npc_img 4772 97
@@ -221,7 +221,7 @@ chg_npc_dir 4772 up
 sleep 8
 chg_npc_dir 4772 up
 chg_npc_img 4772 0
-msg {I'm disappointed.
+msg {You guys don't know\n a thing about working\n in a team.
 chg_npc_dir 4770 right
 chg_npc_img 4770 98
 chg_npc_dir 4771 up

@@ -43,7 +43,7 @@ kill 11601
 chg_npc_dir 11602 left
 sleep 32
 step_npc 11602 2
-msg Tifa\n`Gasp==\n I admit==I'm==\n a bit==tired==\n ==But the show is just\n beginning.\n Let's go for it!
+msg Tifa\n`Gasp==\n I admit==it was==\n something==\n ==But the show is just\n beginning.\n Gotta go for it!
 sleep 16
 chg_char_state_event
 move_npc 11602 left 1

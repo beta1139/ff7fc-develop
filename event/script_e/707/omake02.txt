@@ -6,21 +6,21 @@ chg_speed 70797 normal
 step_npc 70797 2
 sleep 48
 play_se recover.wav
-msg You got {Ragnarok}!
+msg You got [Ragnarok]!
 step_npc 70797 2
 sleep 48
 play_se recover.wav
-msg You got {LastElixir}!
+msg You got [LastElixir]!
 add_item 1006
 step_npc 70797 2
 sleep 48
 play_se recover.wav
-msg You got {Ribbon}!
+msg You got [Ribbon]!
 add_item 5018
 step_npc 70797 2
 sleep 48
 play_se recover.wav
-msg You got {Bahamut}!
+msg You got [Bahamut]!
 add_item 4407
 sleep 16
 step_npc 70797 2

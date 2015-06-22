@@ -123,7 +123,7 @@ sleep 16
 jump_npc 7020 same 1
 chg_npc_dir 7020 up
 chg_npc_img 7020 95
-msg3 -1 Baret\n`Our war doesn't end till\n we defeat Shinra!
+msg3 -1 Baret\n`Our war doesn't end till\n we beat Shinra!
 sleep 16
 jump_npc 7020 same 1
 sleep 16
@@ -190,7 +190,7 @@ msg Baret\n`Where to?
 sleep 16
 chg_speed 7020 normal
 jump_npc 7021 same 1
-msg Tifa\n`Oh, To Aeris!
+msg Tifa\n`Oh, to Aeris!
 sleep 24
 chg_npc_dir 7020 right
 sleep 16
@@ -201,7 +201,7 @@ chg_npc_dir 7021 left
 sleep 16
 chg_speed 7021 normal
 step_npc 7021 2
-msg Tifa\n`==I'm not sure.\n But I asked her to\n take care of Marlene.
+msg Tifa\n`==I'm not sure.\n But I left Marlene\n in her care.
 start_fake_countdown_sec 1
 jump_npc 7020 same 2
 sleep 32

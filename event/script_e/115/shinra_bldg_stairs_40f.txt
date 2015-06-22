@@ -14,7 +14,7 @@ set_active_msg 11502
 sleep 16
 jump_npc 11502 same 1
 set_talk_npc 11502
-msg Tifa\n`Hey, Baret,\n Get a grip!
+msg Tifa\n`Hey, Baret,\n Chin up!
 reset_talk_npc
 chg_npc_dir 11501 up
 sleep 32
@@ -30,7 +30,7 @@ sleep 16
 chg_speed 11502 normal
 step_npc 11502 2
 set_talk_npc 11502
-msg Tifa\n`I'm flesh and blood, too!
+msg Tifa\n`I'm flesh and blood, too!\n I'm going on!
 reset_talk_npc
 step_npc 11502 1
 sleep 32

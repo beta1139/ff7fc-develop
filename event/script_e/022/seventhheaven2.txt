@@ -68,14 +68,14 @@ set_talk_npc 2201
 msg Marlene\n`Cloud gave it to me.
 reset_talk_npc
 add_likability 1 500
-msg Baret\n`Is that so?\n Did you say thank you?
+msg Baret\n`Is that so?\n Didja say thank you?
 sleep 16
 chg_npc_dir 2201 right
 sleep 16
 chg_npc_dir 2206 right
 step_npc 2201 2
 set_talk_npc 2201
-msg Marlene\n`Cloud, thank you\n for the  flower.
+msg Marlene\n`Cloud, thank you\n for the flower.
 reset_talk_npc
 fi
 set_inactive_msg 2206

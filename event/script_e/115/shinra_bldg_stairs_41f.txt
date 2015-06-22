@@ -13,7 +13,7 @@ msg3 -1 Baret\n`B==building a such\n fuckin' high building==
 sleep 144
 erase_msg3
 sleep 16
-msg3 -1 Baret\n`Now I'm sure Shinra's\n such fuckin' bastards==!
+msg3 -1 Baret\n`Now I'm sure all Shinra\n bastards are fuckin'\n insane==!
 sleep 144
 erase_msg3
 sleep 16

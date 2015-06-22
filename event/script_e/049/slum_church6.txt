@@ -62,7 +62,7 @@ jump_npc 4906 same 1
 sleep 16
 step_npc 4906 1
 set_talk_npc 4906
-msg Aeris\n`I let you take\n me out on a date!
+msg Aeris\n`I'll let you take\n me out on a date!
 reset_talk_npc
 sleep 64
 chg_npc_dir 4900 down

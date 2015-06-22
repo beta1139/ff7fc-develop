@@ -13,7 +13,7 @@ jump_npc 8913 same 1
 sleep 16
 jump_npc 8913 same 1
 sleep 16
-msg `Scary, isn't it?\n My dad says that someone\n called {Shinra} did this.
+msg `Scary, isn't it?\n My dad says that someone\n called `Shinra' did this.
 chg_char_state_move
 loop_inf
 sleep 160

@@ -53,7 +53,7 @@ sleep 16
 create event_generator 10621 106 0 0 17 0 0 @106/shinra_bldg_entrance_exp.txt
 chg_char_state_move
 step_npc 10601 3
-msg Baret\n`I've heard somethin'\n before==\n\n Above the 60th floor of\n this building's off limit\n even to Shinra employees.\n\n I bet that where they\n took Aeris.\n\n\n The security is kinda\n slack right now.\n Let's go!
+msg Baret\n`I've heard somethin'\n before==\n\n Above the 60th floor of\n this building's off limit\n even to Shinra employees.\n\n I bet that where they\n took Aeris.\n\n\n The security could be\n a little slack right now.\n Let's go!
 wait_event_invalid 10621
 jump_npc 10601 same 1
 loop 2
@@ -90,7 +90,7 @@ sleep 16
 chg_npc_dir 10601 down
 chg_speed 10601 fast
 step_npc 10601 4
-msg3 -1 Baret\n`Why not?\n We gonna rout them and==
+msg3 -1 Baret\n`Why not?\n Gonna rout them and==
 sleep 32
 chg_npc_dir 10601 up
 wait_key_push_edge a
@@ -106,7 +106,7 @@ chg_npc_dir 10601 up
 jump_npc 10601 same 2
 sleep 32
 step_npc 10601 4
-msg Baret\n`We ain't have no time!\n We dilly-dally here and\n what'll happen to Aeris?
+msg Baret\n`We ain't have no time!\n We dillydally here and\n what'll happen to Aeris?
 jump_npc 10601 same 1
 sleep 16
 jump_npc 10601 same 1

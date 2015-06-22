@@ -900,7 +900,7 @@ npc,5803,58,28,20,68,0,2,"`What I'm doing?
  You find many things
  dropped on the street,
  but nothing comes down
- from above. See?"
+ from above. Right?"
 npc,5804,58,28,14,85,1,2,"`Bow, wow!"
 event_generator,5820,58,13,20,17,0,0,"@058/gobangai_slums4.txt"
 map_door,5850,58,20,24,0,0,0,0
@@ -1032,7 +1032,7 @@ npc_event,7221,72,16,17,71,1,1,"`Yo, buddy!
 
  You'd make a good money
  if you take her to Don!"
-npc_event,7222,72,16,41,79,1,1,"`I make up my mind.
+npc_event,7222,72,16,41,79,1,1,"`I can't make up my mind.
  Hmmmmm.
 
 
@@ -1626,8 +1626,8 @@ npc_event,10807,108,13,22,74,3,0,"none"
 npc_event,10808,108,11,15,73,2,1,"none"
 npc3,10815,108,19,5,17,0,4,"     [WEEKLY SLOGAN]
   SHINRA MAKES THE WORLD
-  RIGHT! MAKO MAKES THE
-       WORLD LIGHT!"
+  BRIGHT! MAKO MAKES THE
+       WORLD'S LIGHT!"
 event_generator,10820,108,14,32,17,0,0,"@108/shinra_bldg_01f.txt"
 npc,10830,108,24,20,17,0,0,"{Doesn't work==
  We need another way up."

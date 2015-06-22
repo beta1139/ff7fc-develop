@@ -79,7 +79,7 @@ sleep 16
 chg_speed 9222 fast
 step_npc 9222 2
 set_talk_npc 9222
-msg Tifa\n`Oh, you got me wrong.\n\n\n I and Cloud are only\n childhood friends.\n Nothing between us.
+msg Tifa\n`Oh, you got it wrong.\n\n\n I and Cloud are only\n childhood friends.\n Nothing between us.
 reset_talk_npc
 sleep 32
 step_npc 9221 2

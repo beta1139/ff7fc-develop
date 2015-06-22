@@ -137,7 +137,7 @@ sleep 8
 chg_speed 4906 normal
 step_npc 4906 1
 set_talk_npc 4906
-msg Aeris\n`There's an entrance\n that way.
+msg Aeris\n`The doorway is\n over there.
 reset_talk_npc
 move_npc 4906 down 1
 sleep 8
@@ -172,7 +172,7 @@ set_active_msg 4907
 set_active_msg 4908
 set_active_msg 4909
 sleep 16
-msg Reno\n`That was==Mako eyes.
+msg Reno\n`Those are==Mako eyes.
 sleep 16
 chg_npc_dir 4903 down
 sleep 16
