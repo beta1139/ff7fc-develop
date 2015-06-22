@@ -2,3 +2,4 @@ wait_same_pos
 set_talk_npc 641
 msg ジェシー\n「さ　そこのボタンを\n　おして！
 reset_talk_npc
+set_flag 9 0

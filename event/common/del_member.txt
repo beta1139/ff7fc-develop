@@ -1,0 +1,24 @@
+if_party_mem 1
+del_party_mem 1
+fi
+if_party_mem 2
+del_party_mem 2
+fi
+if_party_mem 3
+del_party_mem 3
+fi
+if_party_mem 4
+del_party_mem 4
+fi
+if_party_mem 5
+del_party_mem 5
+fi
+if_party_mem 6
+del_party_mem 6
+fi
+if_party_mem 7
+del_party_mem 7
+fi
+if_party_mem 8
+del_party_mem 8
+fi

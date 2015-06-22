@@ -2,11 +2,13 @@ set_eternal_event
 wait_target_talked 160
 reset_talked_flag 160
 if_flag 3 0
+include ./event/common/del_member.txt
 stop_bgm
 sleep 8
 add_party_mem 1
 warp 10 8 18 up
 set_flag 0 0
+set_flag 9 0
 play_bgm
 kill_through_range 0 159
 kill_through_range 180 801
@@ -24,6 +26,7 @@ create event_generator 661 6 20 1 17 0 0 @006/elevator_switch2.txt
 create npc 400 4 1 26 36 3 0 Wedge\n`I'll secure the escape\n route. You take care of\n the reactor.\n Geez, when this huge\n bustard goes up, it'll\n be somethin' to see!
 fi
 if_flag 3 1
+include ./event/common/del_member.txt
 fadeout
 draw_char off
 sleep 30
@@ -285,6 +288,7 @@ create event_generator 1212 12 0 0 17 0 0 @012/fire2.txt
 create event_generator 1213 12 0 0 17 0 0 @012/fire3.txt
 fi
 if_flag 3 2
+include ./event/common/del_member.txt
 warp 16 9 5 down
 set_flag 0 0
 fi

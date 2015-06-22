@@ -1,0 +1,35 @@
+if_not_owned_item 2101
+add_item 2101
+add_item 2101
+fi
+if_not_owned_item 3002
+add_item 3002
+add_item 3002
+add_item 3002
+fi
+if_not_owned_item 4000
+add_item 4000
+fi
+if_not_owned_item 4100
+add_item 4100
+fi
+if_not_owned_item 4003
+add_item 4003
+fi
+if_not_owned_item 6000
+if_not_owned_item 6001
+if_not_owned_item 6002
+add_item 6000
+fi
+fi
+fi
+if_not_owned_item 6003
+if_not_owned_item 6004
+if_not_owned_item 6005
+add_item 6003
+fi
+fi
+fi
+if_gil_less 1000
+add_gil 2500
+fi

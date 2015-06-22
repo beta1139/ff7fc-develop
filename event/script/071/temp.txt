@@ -10,6 +10,7 @@ fi
 chg_dir_to_char 7198
 msg ウォールマーケット　デバッグよう\n「クエッ！\n　イベントの　とちゅうまでとべます\n\n#3\n　　スクワットイベントちょくぜん\n　　じょそうイベントちょくぜん\n　　とばない\n\n[[]][[]][[「あ　そ！]]
 if_flag 3 0
+include ./event/common/071/del_item.txt
 add_party_mem 3
 set_flag 9 1
 set_flag 0 0
@@ -96,9 +97,25 @@ set_npc_pos 7515 75 9 14
 chg_npc_dir 7515 up
 create event_generator 8701 87 0 0 17 0 0 @087/wm_gym2.txt
 warp_ff3_2 84 17 30 2 up
-set_flag 15 5
+if_not_owned_item 6000
+if_not_owned_item 6001
+if_not_owned_item 6002
 add_item 6002
-add_flag 18 4
+fi
+fi
+fi
+if_owned_item 6000
+set_flag 15 3
+set_flag 18 1
+fi
+if_owned_item 6001
+set_flag 15 4
+set_flag 18 2
+fi
+if_owned_item 6002
+set_flag 15 5
+set_flag 18 4
+fi
 enable_char_chg
 sleep 8
 kill 7503
@@ -197,9 +214,25 @@ set_npc_pos 7515 75 9 14
 chg_npc_dir 7515 up
 create event_generator 8701 87 0 0 17 0 0 @087/wm_gym2.txt
 warp 84 17 30 up
-set_flag 15 5
+if_not_owned_item 6000
+if_not_owned_item 6001
+if_not_owned_item 6002
 add_item 6002
-add_flag 18 4
+fi
+fi
+fi
+if_owned_item 6000
+set_flag 15 3
+set_flag 18 1
+fi
+if_owned_item 6001
+set_flag 15 4
+set_flag 18 2
+fi
+if_owned_item 6002
+set_flag 15 5
+set_flag 18 4
+fi
 enable_char_chg
 sleep 8
 kill 7503
@@ -241,8 +274,22 @@ set_npc_pos 7515 75 4 11
 set_flag_wall 7515
 chg_npc_dir 7515 left
 chg_param 7510 「てにはいったようですね\n　さっそく　きがえてみてくださいよ
+if_not_owned_item 6003
+if_not_owned_item 6004
+if_not_owned_item 6005
 add_item 6005
+fi
+fi
+fi
+if_owned_item 6003
+add_flag 18 1
+fi
+if_owned_item 6004
+add_flag 18 2
+fi
+if_owned_item 6005
 add_flag 18 4
+fi
 warp_ff3_2 72 6 16 2 up
 fadein
 fi

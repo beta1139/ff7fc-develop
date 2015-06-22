@@ -34,4 +34,24 @@ set_flag 15 0
 set_flag 16 0
 set_flag 17 0
 set_flag 18 0
+set_flag 19 0
 kill_through_range 7198 7199
+if_owned_item 6000
+del_item 6000
+fi
+if_owned_item 6001
+del_item 6001
+fi
+if_owned_item 6002
+del_item 6002
+fi
+if_owned_item 6003
+del_item 6003
+fi
+if_owned_item 6004
+del_item 6004
+fi
+if_owned_item 6005
+del_item 6005
+fi
+include ./event/common/071/del_item.txt

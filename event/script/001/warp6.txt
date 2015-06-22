@@ -2,6 +2,7 @@ set_eternal_event
 wait_target_talked 167
 reset_talked_flag 167
 if_flag 3 0
+include ./event/common/del_member.txt
 include ./event/common/act/act1-7_1.txt
 sleep 8
 include ./event/common/act/act1-7_2j.txt
@@ -9,10 +10,11 @@ include ./event/common/act/act1-7_3.txt
 include ./event/common/act/act1-7_4j.txt
 warp_ff3_2 84 11 24 2 up
 create npc2 167 1 6 12 64 0 0 
-include ./event/common/debug/set01.txt
+include ./event/common/debug/supplement2.txt
 set_flag 0 0
 fi
 if_flag 3 1
+include ./event/common/del_member.txt
 include ./event/common/act/act1-7_1.txt
 sleep 8
 include ./event/common/act/act1-7_2j.txt
@@ -20,10 +22,11 @@ include ./event/common/act/act1-7_3.txt
 include ./event/common/act/act1-7_4j.txt
 include ./event/common/act/act1-8_1.txt
 create npc2 167 1 6 12 64 0 0 
-include ./event/common/debug/set01.txt
+include ./event/common/debug/supplement2.txt
 warp_ff3_2 106 16 13 2 up
 fi
 if_flag 3 2
+include ./event/common/del_member.txt
 warp 600 11 16 up
 play_bgm
 set_flag 0 0

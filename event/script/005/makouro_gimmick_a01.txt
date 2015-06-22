@@ -67,6 +67,7 @@ msg ジェシー\n「じゅんびは　いい？\n\n\n#2\n　　まかせろ\n　　もういちど　たのむ
 set_key_unvalid up
 set_key_unvalid down
 chg_npc_dir 571 left
+set_flag 10 0
 if_flag 3 0
 chg_npc_dir 570 left
 loop_inf

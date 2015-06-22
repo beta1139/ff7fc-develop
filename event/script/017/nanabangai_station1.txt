@@ -1626,4 +1626,6 @@ kill 1701
 draw_char on
 create event_generator 1715 17 0 0 17 0 0 @017/nanabangai_station5.txt
 set_flag 1 1
+set_flag 9 0
+set_flag 12 0
 fadein

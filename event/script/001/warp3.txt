@@ -2,17 +2,18 @@ set_eternal_event
 wait_target_talked 162
 reset_talked_flag 162
 if_flag 3 0
+include ./event/common/del_member.txt
 fadeout
 stop_bgm
 warp 17 37 8 down
 draw_char off
 set_flag 0 0
-set_flag 7 1
 sleep 16
 play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
 fadein
 fi
 if_flag 3 1
+include ./event/common/del_member.txt
 fadeout
 stop_bgm
 draw_char off
@@ -150,6 +151,7 @@ kill 2260
 create event_generator 2261 22 5 13 17 0 0 @../common/022/seventhheaven_out1.txt
 fi
 if_flag 3 2
+include ./event/common/del_member.txt
 fadeout
 kill_through_range 1800 1809
 kill_through_range 2000 2799
@@ -193,7 +195,11 @@ add_party_mem 2
 set_flag 0 0
 set_flag 1 1
 set_flag 9 1
+if_not_owned_item 4000
 add_item 4000
+fi
+if_not_owned_item 4100
 add_item 4100
+fi
 fadein
 fi

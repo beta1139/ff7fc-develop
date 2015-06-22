@@ -2,6 +2,8 @@ set_eternal_event
 wait_target_talked 164
 reset_talked_flag 164
 if_flag 3 0
+include ./event/common/del_member.txt
+sleep 16
 if_flag 99 1
 kill_through 7351
 kill_through 7751
@@ -17,18 +19,20 @@ set_flag 1 0
 set_flag 9 2
 set_flag 21 1
 sleep 8
-include ./event/common/debug/set01.txt
+include ./event/common/debug/supplement2.txt
 recover_active_chara
 enable_char_chg
 fi
 if_flag 3 1
+include ./event/common/del_member.txt
+sleep 8
 kill_through_range 1700 1799
 kill_through_range 1800 1809
 kill_through_range 1900 1905
 kill_through_range 1910 1949
 kill_through_range 1960 1999
 kill_through_range 9996 9999
-include ./event/common/debug/set01.txt
+include ./event/common/debug/supplement2.txt
 recover_active_chara
 set_flag 1 0
 set_flag 9 2
@@ -207,6 +211,7 @@ reset_screen_effect
 fi
 fi
 if_flag 3 2
+include ./event/common/del_member.txt
 include ./event/common/act/act1-7_1.txt
 sleep 8
 include ./event/common/act/act1-7_2e.txt
@@ -214,5 +219,5 @@ include ./event/common/act/act1-7_3.txt
 set_flag 12 1
 warp_ff3_2 65 11 20 2 up
 create npc 164 1 5 12 64 0 0 Debug Warp
-include ./event/common/debug/set01.txt
+include ./event/common/debug/supplement2.txt
 fi

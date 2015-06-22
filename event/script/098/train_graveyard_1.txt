@@ -1,13 +1,6 @@
 wait_same_pos
 backup_char_img
 chg_char_img 0
-if_flag 9 0
-add_party_mem 2
-add_party_mem 3
-add_item 4000
-add_item 4100
-add_item 4003
-fi
 set_flag 13 0
 set_flag 14 0
 set_flag 15 0

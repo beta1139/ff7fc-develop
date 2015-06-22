@@ -1,4 +1,7 @@
 wait_same_pos
+if_flag_greater 10 6
+set_flag 10 0
+fi
 set_key_unvalid up
 set_key_unvalid left
 set_key_unvalid down

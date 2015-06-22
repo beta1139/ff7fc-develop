@@ -67,6 +67,7 @@ msg Jessie\n`Ready?\n\n\n#2\n  Sure.\n  Explain it again.\n\n\n[[]][[]]
 set_key_unvalid up
 set_key_unvalid down
 chg_npc_dir 571 left
+set_flag 10 0
 if_flag 3 0
 chg_npc_dir 570 left
 loop_inf

@@ -2,15 +2,15 @@ set_eternal_event
 wait_target_talked 163
 reset_talked_flag 163
 if_flag 3 0
+include ./event/common/del_member.txt
+sleep 16
 kill_through_range 1000 1747
 kill_through_range 1789 3299
 draw_char off
 warp_ff3_2 34 7 16 2 up
 add_party_mem 1
 add_party_mem 2
-add_item 4000
-add_item 4100
-add_item 4003
+include ./event/common/debug/supplement1.txt
 set_flag 0 0
 set_flag 1 0
 set_flag 9 1
@@ -20,31 +20,26 @@ end
 fi
 if_flag 3 1
 if_flag 4 0
+include ./event/common/del_member.txt
 draw_char off
 set_flag 0 0
 set_flag 1 0
 set_flag 9 1
-add_gil 1500
-add_item 4000
-add_item 4100
 warp_ff3_2 49 20 11 2 down
 fi
 if_flag 4 1
+include ./event/common/del_member.txt
 warp_ff3_2 49 6 11 2 down
 set_flag 0 0
 set_flag 1 0
 set_flag 9 1
-add_gil 1500
-add_item 4000
-add_item 4100
 fi
 if_flag 4 2
+include ./event/common/del_member.txt
+sleep 16
 set_flag 0 0
 set_flag 1 0
 set_flag 9 1
-add_gil 1500
-add_item 4000
-add_item 4100
 add_party_mem 3
 kill_through_range 4900 4911
 warp_ff3_2 51 8 31 2 right
@@ -57,6 +52,8 @@ chg_npc_y_offset 5145 0
 draw_char on
 fi
 if_flag 4 3
+include ./event/common/del_member.txt
+sleep 16
 draw_char off
 create npc_event 5320 53 17 14 0 1 2 none
 create npc_event 5321 53 18 15 3 2 2 none
@@ -65,13 +62,12 @@ play_event_bgm 1-12-Flowers_Blooming_in_the_Church.ogg
 set_flag 0 0
 set_flag 1 0
 set_flag 9 1
-add_gil 1500
-add_item 4000
-add_item 4100
 add_party_mem 3
 fi
+include ./event/common/debug/supplement1.txt
 fi
 if_flag 3 2
+include ./event/common/del_member.txt
 kill_through_range 4900 4949
 kill_through_range 4951 4999
 kill_through_range 5622 5623
@@ -89,9 +85,7 @@ create event_generator 6760 67 5 11 17 0 0 @067/good_night.txt
 set_flag 0 0
 set_flag 1 0
 set_flag 9 1
-add_gil 1500
-add_item 4000
-add_item 4100
+include ./event/common/debug/supplement1.txt
 fi
 if_flag 3 3
 fi

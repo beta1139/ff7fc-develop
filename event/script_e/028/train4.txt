@@ -139,6 +139,7 @@ start_fake_countdown_sec 15
 create event_generator 2822 28 1 1 17 0 0 @028/countdown_over.txt
 create npc 2807 28 3 4 77 1 4 `Huh==\n So you greet me even in\n an emergency like this?\n\n Good for you.\n I'll give you something.
 create event_generator 2818 28 1 1 17 0 0 @028/target_talked.txt
+set_flag 11 0
 set_key_valid up
 set_key_valid left
 set_key_valid down

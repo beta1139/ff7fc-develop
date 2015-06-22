@@ -84,3 +84,4 @@ create event_generator 4901 49 6 16 17 0 0 @049/slum_church8_2.txt
 create npc_event 4922 49 5 12 65 3 0 `How pretty!
 create npc_event 4923 49 7 11 67 2 0 `Water is coming later.
 set_flag 1 0
+set_flag 12 0

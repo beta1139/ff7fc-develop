@@ -1,4 +1,6 @@
 wait_same_pos
+set_flag 7 0
+set_flag 9 0
 play_se warp_in.ogg
 fadeout
 draw_char off

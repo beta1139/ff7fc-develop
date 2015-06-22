@@ -1,4 +1,5 @@
 wait_same_pos
+include ./event/common/del_member.txt
 create npc_event 150 1 17 10 31 1 2 none
 move_npc 150 down 2
 sleep 16
