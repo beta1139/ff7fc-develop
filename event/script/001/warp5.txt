@@ -213,6 +213,7 @@ fi
 if_flag 3 2
 include ./event/common/del_member.txt
 include ./event/common/act/act1-7_1.txt
+set_flag 23 0
 sleep 8
 include ./event/common/act/act1-7_2j.txt
 include ./event/common/act/act1-7_3.txt

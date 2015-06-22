@@ -79,10 +79,12 @@ chg_npc_y_offset 11156 0
 chg_npc_y_offset 11157 0
 set_layer 10309 front
 set_layer 10310 front
+set_flag 0 0
+set_flag 1 0
+set_flag 9 4
 set_flag 11 1
 set_flag 14 0
-set_flag 9 4
 set_flag 17 2
-set_flag 1 0
-set_flag 0 0
+set_flag 24 0
+set_flag 25 0
 disable_char_chg

@@ -208,3 +208,4 @@ sleep 16
 kill 6821
 kill 6822
 kill 6820
+set_flag 23 0
