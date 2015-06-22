@@ -15,7 +15,7 @@ chg_npc_dir 2802 down
 sleep 32
 chg_char_dir up
 msg Tifa\n`This is odd.\n We're not there yet.
-sleep 32
+sleep 16
 chg_npc_dir 2802 left
 msg `CLASS A EMERGENCY ALERT\n UNIDENTIFIED PASSENGER\n DETECTED
 chg_char_dir down

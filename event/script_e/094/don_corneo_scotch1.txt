@@ -40,8 +40,8 @@ sleep 32
 chg_npc_dir 9423 right
 chg_speed 9423 not_move
 sleep 64
-chg_npc_dir 9424 right
 move_char up 3
+chg_npc_dir 9424 right
 chg_npc_dir 9427 up
 sleep 1
 move_npc 9428 up 3

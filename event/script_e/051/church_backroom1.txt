@@ -401,7 +401,7 @@ chg_speed 5131 normal
 jump_npc 5131 same 2
 sleep 16
 chg_speed 5101 not_move
-msg Aeris\n`Cloud, Help!
+include ./event/script_e/051/aeris_msg1.txt
 chg_npc_img 5130 0
 chg_npc_dir 5130 down
 sleep 16

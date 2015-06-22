@@ -152,7 +152,6 @@ move_char up 7
 chg_speed 8315 slow
 chg_speed 8314 slow
 chg_speed 8313 slow
-sleep 1
 move_npc 8315 down 1
 move_npc 8314 down 1
 move_npc 8313 down 1
