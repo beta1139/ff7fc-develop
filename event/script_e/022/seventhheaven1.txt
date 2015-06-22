@@ -273,6 +273,7 @@ sleep 16
 fi
 fi
 set_inactive_msg 2202
+set_layer 2202 back
 move_char down 1
 sleep 16
 chg_char_dir up
