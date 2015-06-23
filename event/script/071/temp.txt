@@ -10,7 +10,24 @@ fi
 chg_dir_to_char 7198
 msg ウォールマーケット　デバッグよう\n「クエッ！\n　イベントの　とちゅうまでとべます\n\n#3\n　　スクワットイベントちょくぜん\n　　じょそうイベントちょくぜん\n　　とばない\n\n[[]][[]][[「あ　そ！]]
 if_flag 3 0
+if_owned_item 6003
+del_item 6003
+fi
+if_owned_item 6004
+del_item 6004
+fi
+if_owned_item 6005
+del_item 6005
+fi
 include ./event/common/071/del_item.txt
+if_owned_item 6000
+if_owned_item 6001
+if_owned_item 6002
+del_item 6000
+del_item 6001
+fi
+fi
+fi
 add_party_mem 3
 set_flag 9 1
 set_flag 0 0
@@ -128,6 +145,23 @@ fi
 fadein
 fi
 if_flag 3 1
+include ./event/common/071/del_item.txt
+if_owned_item 6000
+if_owned_item 6001
+if_owned_item 6002
+del_item 6000
+del_item 6001
+fi
+fi
+fi
+if_owned_item 6003
+if_owned_item 6004
+if_owned_item 6005
+del_item 6003
+del_item 6004
+fi
+fi
+fi
 add_party_mem 3
 set_flag 9 1
 set_flag 0 0
