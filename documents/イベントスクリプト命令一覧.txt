@@ -506,8 +506,9 @@ chg_image_pos (image_idx) (dst_x) (dst_y) (src_x) (src_y) (src_w) (src_h)
 chg_image_pos_offset (image_idx) (dst_x) (dst_y) (src_x) (src_y) (src_w) (src_h)
   draw_imageで生成した画像の位置情報を差分で再設定する
 
-set_image_trans_col (image_idx) (R) (G) (B)
-  draw_imageで生成した画像の透過色を設定する
+set_image_trans_col (R) (G) (B)
+  画像の透過色を設定する
+  draw_image実行前に設定すること
 
 set_gray_scale
   画面をグレースケールにする
