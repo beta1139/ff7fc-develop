@@ -107,7 +107,7 @@ id,type,bgm,battle_back,monster_party_id
 105,1,1-09-Shinra_Company.ogg,0,188/189/190/191
 106,1,1-09-Shinra_Company.ogg,0,188/189/190/191
 107,1,1-09-Shinra_Company.ogg,0,188/189/190/191
-108,0,through,15,259/260
+108,0,1-19-Infiltrating_Shinra_Tower.ogg,15,259/260
 109,1,through,15,259/260
 110,0,through,15,17/259/260
 111,1,through,15,17/259/260
@@ -116,10 +116,10 @@ id,type,bgm,battle_back,monster_party_id
 114,1,1-19-Infiltrating_Shinra_Tower.ogg,0,188/189/190/191
 115,1,1-19-Infiltrating_Shinra_Tower.ogg,0,188/189/190/191
 116,1,1-19-Infiltrating_Shinra_Tower.ogg,0,188/189/190/191
-117,0,through,15,17/18/19
+117,0,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 118,0,1-09-Shinra_Company.ogg,0,188/189/190/191
-119,0,1-09-Shinra_Company.ogg,0,188/189/190/191
-120,0,1-09-Shinra_Company.ogg,0,188/189/190/191
+119,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
+120,0,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 121,0,1-09-Shinra_Company.ogg,0,188/189/190/191
 122,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
 123,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
@@ -707,7 +707,7 @@ id,type,bgm,battle_back,monster_party_id
 705,1,nothing,0,188/189/190/191
 706,1,2-20-Cait_Sith's_Theme.ogg,0,188/189/190/191
 707,0,1-04-Anxious_Heart.ogg,4,249/250/251/252/254
-708,1,through,0,188/189/190/191
+708,1,through,15,188/189/190/191
 709,1,through,12,255/256/257
 710,0,nothing,0,188/189/190/191
 711,0,nothing,0,188/189/190/191

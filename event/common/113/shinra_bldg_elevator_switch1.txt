@@ -153,7 +153,7 @@ sleep 8
 set_image_alpha 000 100
 sleep 8
 pool
-play_se door_open.ogg
+play_se train_info.ogg
 open_door 11351
 sleep 16
 move_char up 2
@@ -163,19 +163,19 @@ chg_image_pos_offset 000 0 1 0 0 0 0
 pool
 if_flag 28 1
 open_door 11750
-warp_ff3_2 117 5 3 2 down
+warp_ff3_2 117 10 8 2 down
 fi
 if_flag 28 2
 open_door 11751
-warp_ff3_2 117 9 3 2 down
+warp_ff3_2 117 14 8 2 down
 fi
 if_flag 28 3
 open_door 11750
-warp_ff3_2 117 5 3 2 down
+warp_ff3_2 117 10 8 2 down
 fi
 if_flag 28 4
 open_door 11751
-warp_ff3_2 117 9 3 2 down
+warp_ff3_2 117 14 8 2 down
 fi
 erase_image 000
 close_door 11351

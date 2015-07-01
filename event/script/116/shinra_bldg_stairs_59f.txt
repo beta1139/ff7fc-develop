@@ -66,7 +66,7 @@ kill 11600
 move_char up 3
 set_flag 0 5
 sleep 48
-warp_ff3_2 117 6 16 2 down
+warp_ff3_2 117 11 21 2 down
 close_door 11650
 open_door 11752
 chg_event_move_char_speed normal
@@ -76,7 +76,7 @@ set_flag 14 0
 set_flag 19 0
 set_flag 25 10
 include ./event/common/key_valid.txt
-kill_through_range 10821 10828
+kill_through_range 10820 10828
 kill_through_range 10800 10808
 kill_through 11320
 move_char down 1

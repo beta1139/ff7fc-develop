@@ -174,3 +174,6 @@ sleep 16
 move_npc 10601 left 1
 include ./event/common/act/act1-8_1.txt
 include ./event/common/key_valid.txt
+chg_char_dir up
+draw_char on
+kill_through_range 10600 10602

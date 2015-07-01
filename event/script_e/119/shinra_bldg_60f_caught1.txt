@@ -1,0 +1,56 @@
+wait_same_pos
+kill_through 11931
+kill_through_range 11933 11936
+kill_through_range 11920 11927
+kill_through_range 11960 11983
+kill_through_range 11953 11958
+kill_through_range 11990 11995
+kill_through_range 11941 11942
+kill_through 12020
+chg_npc_dir 11903 down
+chg_npc_dir 11904 down
+chg_npc_dir 11905 down
+chg_npc_dir 11906 down
+erase_msg3
+include ./event/script_e/119/shinra_bldg_60f_msg.txt
+chg_npc_dir 11903 down
+chg_npc_dir 11904 down
+chg_npc_dir 11905 down
+chg_npc_dir 11906 down
+encount 559
+include ./event/common/key_valid.txt
+sleep 64
+sub_flag 29 1
+kill_through_range 11903 11906
+kill_through_range 11910 11912
+draw_char off
+warp 708 0 0 down
+wait_encount_end
+set_screen_effect sub 255 255 255 100
+sleep 16
+if_flag_greater 29 0
+create npc_event 11903 119 20 9 32 1 2 none
+create npc_event 11904 119 22 9 32 1 2 none
+create npc_event 11905 119 26 9 32 1 2 none
+create npc_event 11906 119 28 9 32 1 2 none
+create npc_event 11910 119 13 14 97 3 2 none
+include ./event/script_e/119/shinra_bldg_60f_baret_tifa.txt
+sleep 8
+set_npc_pos 11911 119 13 15
+set_npc_pos 11912 119 12 15
+warp 119 13 14 down
+include ./event/common/effect_fadein.txt
+create event_generator 11937 119 0 0 17 0 0 @119/shinra_bldg_60f_retry.txt
+fi
+if_flag 29 0
+create npc_event 11903 119 22 13 33 1 2 none
+create npc_event 11904 119 22 15 33 1 2 none
+create npc_event 11905 119 26 15 33 1 2 none
+create npc_event 11906 119 26 13 33 1 2 none
+create npc_event 11910 119 24 13 0 2 2 none
+create npc_event 11911 119 23 14 98 2 2 none
+create npc_event 11912 119 25 14 2 3 2 none
+warp 119 24 13 down
+include ./event/common/effect_fadein.txt
+include ./event/script_e/119/shinra_bldg_60f_fail.txt
+fi

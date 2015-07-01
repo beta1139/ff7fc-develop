@@ -1,0 +1,29 @@
+wait_same_pos
+chg_char_dir left
+draw_char off
+create npc_event 11910 119 33 13 0 2 2 none
+include ./event/common/key_unvalid.txt
+step_char 2
+chg_type 11911 npc_event
+chg_type 11912 npc_event
+chg_speed 11911 normal
+chg_speed 11912 normal
+sleep 16
+step_npc 11910 2
+chg_char_dir up
+sleep 16
+set_slide_char_flag
+sleep 16
+move_char left 4
+sleep 32
+jump_npc 11911 same 1
+sleep 16
+move_npc 11911 right 1
+set_layer 11924 back
+set_layer 11925 back
+set_layer 11926 back
+set_layer 11927 back
+sleep 16
+chg_speed 11910 fast
+chg_speed 11911 fast
+set_flag 10 7

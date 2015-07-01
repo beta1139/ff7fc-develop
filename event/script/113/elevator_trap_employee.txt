@@ -24,8 +24,7 @@ chg_npc_dir 11301 left
 chg_npc_img 11301 150
 msg 「ヒャッ！！
 sleep 32
-chg_speed 11301 slow
-step_npc 11301 2
+chg_speed 11301 not_move
 msg 「あ　あの　いいんです\n　まちがいでした\n　わたし　のりませんから
 sleep 16
 chg_speed 11301 fast

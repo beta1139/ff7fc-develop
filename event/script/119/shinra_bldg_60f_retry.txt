@@ -1,0 +1,33 @@
+include ./event/common/key_unvalid.txt
+set_flag 10 0
+step_npc 11910 3
+kill_through 11940
+sleep 32
+reset_slide_char_flag
+create event_generator 11933 119 0 0 17 0 0 @../common/119/shinra_bldg_60f_loop_normal.txt
+create event_generator 11931 119 11 20 17 0 0 @../common/119/shinra_bldg_60f_out.txt
+create event_generator 11940 119 11 21 17 0 0 @../common/119/shinra_bldg_60f_kill_loop.txt
+set_ignore_map_layer_flag 11911 1
+set_layer 11911 front
+jump_npc 11911 same 1
+sleep 16
+set_active_msg 11911
+jump_npc 11911 same 1
+msg バレット\n「なにやってんだ！\n　つぎは　ちゃんとたのむぜ！
+sleep 16
+chg_npc_img 11910 0
+chg_npc_dir 11910 down
+draw_char on
+kill 11910
+chg_type 11911 npc
+chg_type 11912 npc
+chg_speed 11911 not_move
+chg_speed 11912 not_move
+set_flag_wall 11911
+set_flag_wall 11912
+set_inactive_msg 11911
+set_ignore_map_layer_flag 11911 0
+set_layer 11911 back
+create event_generator 11935 119 24 13 17 0 0 @119/shinra_bldg_60f_2.txt
+create event_generator 11936 119 33 13 17 0 0 @../common/119/shinra_bldg_60f_3.txt
+include ./event/common/key_valid.txt

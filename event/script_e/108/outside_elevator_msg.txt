@@ -1,0 +1,102 @@
+set_eternal_event
+wait_talk
+msg  Ride the elevator?\n\n\n\n#2\n  Get in.\n  Don't.\n\n\n[[]][[]]
+if_flag 3 0
+if_flag 24 0
+if_flag 28 8
+create npc_event 10810 108 24 21 0 0 2 none
+fi
+if_flag 28 9
+create npc_event 10810 108 26 21 0 0 2 none
+fi
+draw_char off
+chg_npc_y_offset 10810 -6
+sleep 3
+chg_npc_y_offset 10810 -8
+sleep 3
+chg_npc_img 10810 115
+sleep 32
+play_se button.ogg
+sleep 32
+chg_npc_y_offset 10810 -6
+sleep 4
+chg_npc_y_offset 10810 -4
+chg_npc_img 10810 0
+draw_char on
+kill 10810
+play_se train_info.ogg
+if_flag 28 8
+open_door 10852
+fi
+if_flag 28 9
+open_door 10853
+fi
+sleep 32
+move_char up 1
+sleep 16
+open_door 10950
+warp_ff3_2 109 8 26 2 up
+move_char up 2
+close_door 10852
+close_door 10853
+close_door 10950
+close_door 10951
+sleep 32
+end
+fi
+if_flag 24 8
+if_flag 28 8
+create npc_event 11710 117 22 26 0 0 2 none
+fi
+if_flag 28 9
+create npc_event 11710 117 24 26 0 0 2 none
+fi
+draw_char off
+chg_npc_y_offset 11710 -6
+sleep 3
+chg_npc_y_offset 11710 -8
+sleep 3
+chg_npc_img 11710 115
+sleep 32
+play_se button.ogg
+sleep 32
+chg_npc_y_offset 11710 -6
+sleep 4
+chg_npc_y_offset 11710 -4
+chg_npc_img 11710 0
+draw_char on
+kill 11710
+fi
+if_flag 24 9
+step_char 2
+sleep 32
+play_se button.ogg
+sleep 32
+fi
+play_se train_info.ogg
+if_flag 28 8
+open_door 11753
+fi
+if_flag 28 9
+open_door 11754
+fi
+sleep 32
+if_flag 24 8
+move_char up 1
+fi
+if_flag 24 9
+move_char down 1
+fi
+sleep 16
+open_door 10951
+warp_ff3_2 109 28 26 2 up
+move_char up 2
+close_door 10950
+close_door 10951
+close_door 11753
+close_door 11754
+sleep 32
+fi
+if_flag 3 1
+chg_char_dir up
+fi

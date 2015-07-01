@@ -1,0 +1,34 @@
+wait_same_pos
+kill_through_range 11933 11936
+kill_through_range 11920 11927
+kill_through_range 11903 11906
+kill_through_range 11953 11958
+kill_through_range 11960 11995
+kill 11940
+create event_generator 11930 119 11 18 17 0 0 @../common/119/shinra_bldg_60f_create_loop.txt
+create npc_event 11910 119 11 20 0 1 2 none
+draw_char off
+step_char 2
+chg_type 11911 npc_event
+chg_type 11912 npc_event
+chg_npc_dir 11911 down
+chg_npc_dir 11912 down
+chg_speed 11911 normal
+chg_speed 11912 normal
+sleep 16
+move_npc 11911 left 2
+move_npc 11912 left 1
+sleep 16
+move_npc 11912 down 5
+sleep 16
+draw_char on
+kill 11910
+move_npc 11911 down 5
+sleep 64
+kill 11912
+sleep 16
+kill 11911
+move_char down 1
+close_door 11950
+sleep 16
+create event_generator 11939 119 11 17 17 0 0 @119/shinra_bldg_60f_1b.txt

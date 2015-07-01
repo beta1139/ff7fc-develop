@@ -1,0 +1,59 @@
+move_char right 1
+jump_npc 11911 same 2
+sleep 4
+chg_npc_dir 11911 right
+sleep 4
+chg_npc_dir 11911 down
+sleep 4
+chg_npc_dir 11911 left
+sleep 4
+chg_npc_dir 11911 up
+msg3 -1 バレット\n「よし\n　ガンガンいくぞ！
+sleep 4
+chg_npc_dir 11911 right
+sleep 4
+chg_npc_dir 11911 down
+sleep 4
+chg_npc_dir 11911 left
+sleep 4
+chg_npc_dir 11911 up
+step_npc 11911 3
+wait_key_push_edge a
+erase_msg3
+chg_npc_img 11911 1
+chg_npc_dir 11912 right
+sleep 16
+jump_npc 11912 same 1
+sleep 16
+step_npc 11912 2
+msg ティファ\n「わすれないで！\n　わたしたちの　もくてきは　あくまでも\n　エアリスをたすけだすこと
+chg_speed 11911 normal
+chg_npc_dir 11911 left
+sleep 16
+jump_npc 11911 same 1
+sleep 16
+set_active_msg 11911
+jump_npc 11911 same 1
+msg バレット\n「わかってるって！
+chg_npc_dir 11911 up
+chg_npc_dir 11912 up
+sleep 16
+step_npc 11910 1
+sleep 32
+set_layer 11910 front
+move_npc 11911 up 1
+move_npc 11912 up 1
+sleep 16
+move_npc 11911 left 1
+move_npc 11912 right 1
+chg_char_dir down
+sleep 16
+draw_char on
+kill_through_range 11910 11912
+create event_generator 11941 119 16 13 17 0 0 @119/shinra_bldg_60f_tifa1.txt
+create event_generator 11942 119 11 21 17 0 0 @119/shinra_bldg_60f_tifa2.txt
+create event_generator 12020 120 0 0 17 0 0 @../common/120/shinra_bldg_61f_1.txt
+reset_slide_char_flag
+kill_through 11931
+kill_through 11940
+include ./event/common/key_valid.txt

@@ -1,0 +1,22 @@
+create npc_event 71310 713 8 21 0 0 2 none
+draw_image 001 80 48 0 0 80 160 0 event/shinra_bldg/outside_elevator.png
+warp 713 8 21 up
+move_char up 12
+sleep 1
+slide_npc 71310 up 12
+sleep 99
+play_se_loop elevator_loop.wav
+set_npc_pos 10910 109 28 21
+sleep 92
+warp 713 28 21 up
+set_npc_pos 71310 713 28 21
+move_char up 12
+sleep 1
+slide_npc 71310 up 12
+sleep 191
+warp 713 28 34 up
+set_npc_pos 71310 713 28 34
+move_char up 13
+sleep 1
+slide_npc 71310 up 13
+sleep 117

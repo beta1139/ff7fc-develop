@@ -1,0 +1,117 @@
+wait_talk
+play_se recover.wav
+if_flag_lesser 25 12
+kill_through 11931
+kill_through_range 11933 11936
+kill_through_range 11920 11927
+kill_through_range 11960 11983
+kill_through_range 11953 11958
+kill_through_range 11990 11995
+kill_through 11941
+kill_through 12020
+chg_npc_dir 11903 right
+chg_npc_dir 11904 right
+chg_npc_dir 11905 right
+chg_npc_dir 11906 right
+fi
+if_flag_greater 29 4
+msg3 -1 　たからばこのなかには\n　　しんらあんしきぼうぐがはいっていた！
+wait_key_push_edge a
+erase_msg3
+add_item 3019
+sleep 8
+play_se recover.wav
+msg3 -1 　たからばこのなかには\n　　ハードブレイカーがはいっていた！
+add_item 2002
+fi
+if_flag 29 4
+msg3 -1 　たからばこのなかには\n　　エクスポーションがはいっていた！
+wait_key_push_edge a
+erase_msg3
+add_item 1002
+sleep 8
+play_se recover.wav
+msg3 -1 　たからばこのなかには\n　　エーテルがはいっていた！
+add_item 1003
+fi
+if_flag 29 3
+msg3 -1 　たからばこのなかには\n　　エーテルがはいっていた！
+wait_key_push_edge a
+erase_msg3
+add_item 1003
+sleep 8
+play_se recover.wav
+msg3 -1 　たからばこのなかには\n　　フェニックスのおがはいっていた！
+add_item 1007
+fi
+if_flag 29 2
+msg3 -1 　たからばこのなかには\n　　フェニックスのおがはいっていた！
+wait_key_push_edge a
+erase_msg3
+add_item 1007
+sleep 8
+play_se recover.wav
+msg3 -1 　たからばこのなかには\n　　ハイポーションがはいっていた！
+add_item 1001
+fi
+if_flag 29 1
+msg3 -1 　たからばこのなかには\n　　ハイポーションがはいっていた！
+wait_key_push_edge a
+erase_msg3
+add_item 1001
+sleep 8
+play_se recover.wav
+msg3 -1 　たからばこのなかには\n　　ポーションがはいっていた！
+add_item 1000
+fi
+if_flag_lesser 29 1
+msg3 -1 　たからばこのなかには\n　　くうきがはいっていた！
+fi
+wait_key_push_edge a
+erase_msg3
+kill 11997
+erase_msg3
+if_flag_lesser 25 12
+include ./event/script/119/shinra_bldg_60f_msg.txt
+chg_npc_dir 11903 right
+chg_npc_dir 11904 right
+chg_npc_dir 11905 right
+chg_npc_dir 11906 right
+encount 559
+include ./event/common/key_valid.txt
+sleep 64
+sub_flag 29 1
+kill_through_range 11903 11906
+kill_through_range 11910 11912
+draw_char off
+warp 708 0 0 down
+wait_encount_end
+set_screen_effect sub 255 255 255 100
+sleep 16
+if_flag_greater 29 0
+create npc_event 11903 119 20 9 32 1 2 none
+create npc_event 11904 119 22 9 32 1 2 none
+create npc_event 11905 119 26 9 32 1 2 none
+create npc_event 11906 119 28 9 32 1 2 none
+create npc_event 11910 119 13 14 97 3 2 none
+include ./event/script/119/shinra_bldg_60f_baret_tifa.txt
+sleep 8
+set_npc_pos 11911 119 13 15
+set_npc_pos 11912 119 12 15
+warp 119 13 14 down
+include ./event/common/effect_fadein.txt
+create event_generator 11937 119 0 0 17 0 0 @119/shinra_bldg_60f_retry.txt
+fi
+if_flag 29 0
+create npc_event 11903 119 22 13 33 1 2 none
+create npc_event 11904 119 22 15 33 1 2 none
+create npc_event 11905 119 26 15 33 1 2 none
+create npc_event 11906 119 26 13 33 1 2 none
+create npc_event 11910 119 24 13 0 2 2 none
+create npc_event 11911 119 23 14 98 2 2 none
+create npc_event 11912 119 25 14 2 3 2 none
+warp 119 24 13 down
+include ./event/common/effect_fadein.txt
+include ./event/script/119/shinra_bldg_60f_fail.txt
+fi
+fi

@@ -1,0 +1,12 @@
+wait_same_pos
+set_flag 10 0
+create npc_event 11903 119 20 9 32 1 2 none
+create npc_event 11904 119 22 9 32 1 2 none
+create npc_event 11905 119 26 9 32 1 2 none
+create npc_event 11906 119 28 9 32 1 2 none
+create event_generator 11933 119 0 0 17 0 0 @../common/119/shinra_bldg_60f_loop_normal.txt
+create event_generator 11940 119 11 21 17 0 0 @../common/119/shinra_bldg_60f_kill_loop.txt
+create event_generator 11984 119 16 14 17 0 0 @../common/119/shinra_bldg_60f_move_up.txt
+create event_generator 11985 119 23 14 17 0 0 @../common/119/shinra_bldg_60f_move_up.txt
+create event_generator 11986 119 25 14 17 0 0 @../common/119/shinra_bldg_60f_move_up.txt
+create event_generator 11987 119 32 14 17 0 0 @../common/119/shinra_bldg_60f_move_up.txt

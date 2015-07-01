@@ -1,7 +1,7 @@
 sleep 16
-create npc_event 11723 117 16 20 156 2 2 none
-create npc_event 11724 117 17 21 156 2 2 none
-create npc_event 11725 117 18 20 156 2 2 none
+create npc_event 11723 117 21 25 156 2 2 none
+create npc_event 11724 117 22 26 156 2 2 none
+create npc_event 11725 117 23 25 156 2 2 none
 sleep 24
 kill_through_range 11723 11725
 sleep 8
@@ -53,16 +53,16 @@ draw_char on
 kill_through 11710
 chg_event_move_char_speed normal
 if_flag_lesser 10 4
-create npc_event 11713 117 12 21 33 0 0 none
+create npc_event 11713 117 17 26 33 0 0 none
 fi
 if_flag 10 4
-create npc_event 11713 117 13 21 33 0 0 none
+create npc_event 11713 117 18 26 33 0 0 none
 fi
 if_flag 10 5
-create npc_event 11713 117 14 21 33 0 0 none
+create npc_event 11713 117 19 26 33 0 0 none
 fi
 if_flag 10 6
-create npc_event 11713 117 15 21 33 0 0 none
+create npc_event 11713 117 20 26 33 0 0 none
 fi
 wait_encount_end
 loop 2
@@ -72,30 +72,30 @@ chg_npc_img 11713 33
 sleep 8
 pool
 if_flag_lesser 10 4
-create treasure_item 11714 117 12 21 0 0 0 1000
+create treasure_item 11714 117 17 26 0 0 0 1000
 fi
 if_flag 10 4
-create treasure_item 11714 117 13 21 0 0 0 1000
+create treasure_item 11714 117 18 26 0 0 0 1000
 fi
 if_flag 10 5
-create treasure_item 11714 117 14 21 0 0 0 1000
+create treasure_item 11714 117 19 26 0 0 0 1000
 fi
 if_flag 10 6
-create treasure_item 11714 117 15 21 0 0 0 1000
+create treasure_item 11714 117 20 26 0 0 0 1000
 fi
 kill 11713
 sleep 32
 if_flag_lesser 10 4
-create npc_event 11715 117 11 20 156 0 0 none
+create npc_event 11715 117 16 25 156 0 0 none
 fi
 if_flag 10 4
-create npc_event 11715 117 12 20 156 0 0 none
+create npc_event 11715 117 17 25 156 0 0 none
 fi
 if_flag 10 5
-create npc_event 11715 117 13 20 156 0 0 none
+create npc_event 11715 117 18 25 156 0 0 none
 fi
 if_flag 10 6
-create npc_event 11715 117 14 20 156 0 0 none
+create npc_event 11715 117 19 25 156 0 0 none
 fi
 sleep 24
 set_talk_npc 11715
@@ -107,6 +107,5 @@ step_char 2
 sleep 48
 play_se pick_up.wav
 msg  You got the key item\n [Keycard 60]!
-add_item 6019
 kill 11714
-set_flag 10 0
+include ./event/common/act/act1-8_2.txt

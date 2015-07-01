@@ -1,12 +1,12 @@
 if_flag_greater 28 4
 if_flag_lesser 28 7
 if_flag 28 5
-create npc_event 11711 117 5 4 1 0 2 none
-create npc_event 11712 117 5 4 2 0 2 none
+create npc_event 11711 117 10 9 1 0 2 none
+create npc_event 11712 117 10 9 2 0 2 none
 fi
 if_flag 28 6
-create npc_event 11711 117 9 4 1 0 2 none
-create npc_event 11712 117 9 4 2 0 2 none
+create npc_event 11711 117 14 9 1 0 2 none
+create npc_event 11712 117 14 9 2 0 2 none
 fi
 move_npc 11711 right 1
 move_npc 11712 down 1
@@ -97,10 +97,10 @@ fi
 if_flag_greater 28 4
 if_flag_lesser 28 7
 if_flag 28 5
-create npc_event 11710 117 5 4 0 0 2 none
+create npc_event 11710 117 10 9 0 0 2 none
 fi
 if_flag 28 6
-create npc_event 11710 117 9 4 0 0 2 none
+create npc_event 11710 117 14 9 0 0 2 none
 fi
 draw_char off
 chg_npc_y_offset 11710 -6

@@ -232,7 +232,7 @@ sleep 2
 chg_npc_dir 11312 up
 pool
 sleep 32
-play_se door_open.ogg
+play_se train_info.ogg
 open_door 11351
 sleep 40
 if_flag 24 13
@@ -394,7 +394,7 @@ set_npc_pos 11337 113 18 1
 set_npc_pos 11338 113 18 1
 chg_npc_dir 11313 up
 set_npc_pos 11313 113 18 3
-chg_npc_img 11313 17
+chg_npc_img 11313 105
 create npc_event 11314 113 18 4 104 0 2 none
 chg_char_dir left
 chg_char_img_tmp 105
@@ -489,19 +489,19 @@ sleep 16
 erase_image 000
 if_flag 28 1
 open_door 11750
-warp_ff3_2 117 5 3 2 down
+warp_ff3_2 117 10 8 2 down
 fi
 if_flag 28 2
 open_door 11751
-warp_ff3_2 117 9 3 2 down
+warp_ff3_2 117 14 8 2 down
 fi
 if_flag 28 3
 open_door 11750
-warp_ff3_2 117 5 3 2 down
+warp_ff3_2 117 10 8 2 down
 fi
 if_flag 28 4
 open_door 11751
-warp_ff3_2 117 9 3 2 down
+warp_ff3_2 117 14 8 2 down
 fi
 draw_char on
 sleep 8
@@ -522,5 +522,7 @@ set_layer 11522 front
 set_layer 11523 front
 set_layer 11622 front
 set_layer 11623 front
-msg 　イベントさくせい ここまで\n　しんらビルのマップ\n　せつじつに　ぼしゅうちゅう……
+if_flag 26 0
+set_flag 26 2
+fi
 fi

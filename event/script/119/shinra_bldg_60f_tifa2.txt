@@ -1,0 +1,15 @@
+set_eternal_event
+wait_same_pos
+create npc_event 11912 119 11 21 2 0 3 none
+move_npc 11912 down 1
+sleep 8
+set_ignore_map_layer_flag 11912 1
+set_layer 11912 front
+chg_char_dir down
+jump_npc 11912 same 1
+chg_npc_dir 11912 up
+include ./event/script/119/shinra_bldg_60f_tifa_msg.txt
+move_char down 1
+set_layer 11912 back
+sleep 16
+kill 11912

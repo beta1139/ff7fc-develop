@@ -1,0 +1,73 @@
+loop 4
+chg_npc_img 11903 33
+chg_npc_img 11904 33
+chg_npc_img 11905 33
+chg_npc_img 11906 33
+sleep 8
+chg_npc_img 11903 17
+chg_npc_img 11904 17
+chg_npc_img 11905 17
+chg_npc_img 11906 17
+sleep 8
+pool
+kill_through_range 11903 11903
+kill_through_range 11984 11987
+sleep 16
+step_npc 11911 4
+sleep 16
+msg バレット\n「やーっぱり\n　こうなっちまうんだよな……\n\n　こんなことなら\n　はじめっから……
+set_active_msg 11912
+chg_npc_dir 11912 left
+jump_npc 11912 same 1
+msg3 -1 ティファ\n「シッ！\n　とにかくさきを　いそぎましょ
+sleep 16
+chg_speed 11912 fast
+step_npc 11912 1
+wait_key_push_edge a
+erase_msg3
+sleep 1
+chg_npc_img 11911 1
+chg_npc_dir 11911 up
+chg_npc_dir 11912 up
+sleep 32
+chg_npc_dir 11910 down
+sleep 16
+chg_speed 11910 normal
+chg_npc_dir 11910 right
+chg_npc_img 11910 97
+step_npc 11910 3
+sleep 64
+reset_slide_char_flag
+set_layer 11910 front
+chg_speed 11912 normal
+move_npc 11911 up 1
+move_npc 11912 up 1
+sleep 16
+chg_npc_img 11910 0
+chg_npc_dir 11910 down
+move_npc 11911 right 1
+move_npc 11912 left 1
+sleep 16
+draw_char on
+kill_through_range 11910 11912
+sleep 8
+chg_char_dir right
+jump_char same 1
+sleep 4
+chg_char_dir down
+sleep 4
+chg_char_dir left
+sleep 4
+chg_char_dir up
+sleep 4
+chg_char_dir right
+chg_event_move_char_speed fast
+step_char 1
+sleep 8
+kill_through 11940
+chg_event_move_char_speed normal
+set_flag 25 12
+create event_generator 11941 119 16 13 17 0 0 @119/shinra_bldg_60f_tifa1.txt
+create event_generator 11942 119 11 21 17 0 0 @119/shinra_bldg_60f_tifa2.txt
+create event_generator 12020 120 0 0 17 0 0 @../common/120/shinra_bldg_61f_1.txt
+include ./event/common/key_valid.txt

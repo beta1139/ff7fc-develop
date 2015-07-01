@@ -32,7 +32,7 @@ fi
 fi
 if_flag 24 5
 warp_ff3_2 115 9 59 2 up
-if_flag 26 0
+if_flag 26 2
 set_npc_pos 11590 115 1 1
 set_npc_pos 11591 115 1 1
 fi
@@ -50,7 +50,7 @@ fi
 fi
 if_flag 24 4
 warp_ff3_2 115 9 59 2 up
-if_flag 26 0
+if_flag 26 2
 set_npc_pos 11590 115 2 63
 set_npc_pos 11591 115 2 63
 fi
@@ -86,7 +86,7 @@ fi
 if_flag 25 4
 create event_generator 11543 115 0 0 17 0 0 @115/shinra_bldg_stairs_27f.txt
 fi
-if_flag 26 0
+if_flag 26 2
 set_npc_pos 11590 115 2 14
 set_npc_pos 11591 115 2 14
 set_layer 11590 front

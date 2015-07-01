@@ -1,0 +1,40 @@
+set_eternal_event
+wait_same_pos
+if_flag 24 0
+if_flag 28 8
+open_door 10852
+warp_ff3_2 108 24 20 3 down
+fi
+if_flag 28 9
+open_door 10853
+warp_ff3_2 108 26 20 3 down
+fi
+move_char down 1
+close_door 10852
+close_door 10853
+sleep 16
+fi
+if_flag 24 8
+if_flag 28 8
+open_door 11753
+warp_ff3_2 117 22 25 3 down
+fi
+if_flag 28 9
+open_door 11754
+warp_ff3_2 117 24 25 3 down
+fi
+move_char down 1
+close_door 11753
+close_door 11754
+sleep 16
+fi
+if_flag 24 9
+if_flag 28 8
+warp_ff3_2 119 23 33 2 up
+fi
+if_flag 28 9
+warp_ff3_2 119 25 33 2 up
+fi
+move_char up 1
+sleep 16
+fi

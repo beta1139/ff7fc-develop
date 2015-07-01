@@ -1637,8 +1637,8 @@ event_generator,10840,108,12,4,17,0,0,"@../common/108/elevator01f_l.txt"
 event_generator,10841,108,16,4,17,0,0,"@../common/108/elevator01f_r.txt"
 event_generator,10842,108,12,3,17,0,0,"@108/elevator_msg.txt"
 event_generator,10843,108,16,3,17,0,0,"@108/elevator_msg.txt"
-event_generator,10844,108,24,21,17,0,0,"@../common/108/outside_elevator01f_l.txt"
-event_generator,10845,108,26,21,17,0,0,"@../common/108/outside_elevator01f_r.txt"
+event_generator,10844,108,24,21,17,0,0,"@../common/108/outside_elevator_l.txt"
+event_generator,10845,108,26,21,17,0,0,"@../common/108/outside_elevator_r.txt"
 map_door,10850,108,12,3,17,0,0,0
 map_door,10851,108,16,3,17,0,0,0
 map_door,10852,108,24,20,17,0,0,0
@@ -1652,6 +1652,12 @@ npc_event,10892,108,14,8,160,0,4,"none"
 npc2,10893,108,14,9,160,3,4,""
 npc_event,10894,108,13,8,161,1,4,"none"
 npc2,10895,108,13,9,161,2,4,""
+event_generator,10920,109,8,26,17,0,0,"@../common/109/outside_elevator_warpout.txt"
+event_generator,10921,109,28,26,17,0,0,"@../common/109/outside_elevator_warpout.txt"
+event_generator,10922,109,7,20,17,0,0,"@109/outside_elevator_switch.txt"
+event_generator,10923,109,27,20,17,0,0,"@109/outside_elevator_switch.txt"
+map_door,10950,109,8,26,17,0,0,0
+map_door,10951,109,28,26,17,0,0,0
 npc,11000,110,19,5,17,2,4,"   TURTLE PARADISE NEWS
          Issue 2
 
@@ -1718,29 +1724,48 @@ event_generator,11620,116,8,8,17,0,0,"@../common/116/shinra_bldg_59f_warp_in.txt
 event_generator,11622,116,8,46,17,0,0,"@115/shinra_bldg_stairs_warp_out1.txt"
 event_generator,11623,116,9,46,17,0,0,"@115/shinra_bldg_stairs_warp_out2.txt"
 map_door,11650,116,8,8,0,0,0,0
-event_generator,11700,117,6,16,17,0,0,"@../common/117/shinra_bldg_59f_warp_out.txt"
-event_generator,11701,117,8,21,17,0,0,"@../common/117/shinra_bldg_59f_enemy1.txt"
-event_generator,11702,117,9,21,17,0,0,"@../common/117/shinra_bldg_59f_enemy2.txt"
-event_generator,11703,117,10,21,17,0,0,"@../common/117/shinra_bldg_59f_enemy3.txt"
-event_generator,11704,117,11,21,17,0,0,"@../common/117/shinra_bldg_59f_enemy4.txt"
-event_generator,11705,117,12,21,17,0,0,"@../common/117/shinra_bldg_59f_enemy5.txt"
-event_generator,11706,117,13,21,17,0,0,"@../common/117/shinra_bldg_59f_enemy6.txt"
-event_generator,11707,117,14,21,17,0,0,"@../common/117/shinra_bldg_59f_enemy7.txt"
-npc_event,11720,117,16,21,32,1,0,"none"
-npc_event,11721,117,17,22,32,0,0,"none"
-npc_event,11722,117,18,21,32,1,0,"none"
-event_generator,11740,117,5,4,17,0,0,"@../common/117/elevator59f_l.txt"
-event_generator,11741,117,9,4,17,0,0,"@../common/117/elevator59f_r.txt"
-event_generator,11742,117,5,3,17,0,0,"@108/elevator_msg.txt"
-event_generator,11743,117,9,3,17,0,0,"@108/elevator_msg.txt"
-event_generator,11744,117,6,17,17,0,0,"@117/shinra_bldg_59f_baret.txt"
-event_generator,11745,117,17,21,17,0,0,"@../common/117/outside_elevator59f_l.txt"
-event_generator,11746,117,19,21,17,0,0,"@../common/117/outside_elevator59f_r.txt"
-map_door,11750,117,5,3,17,0,0,0
-map_door,11751,117,9,3,17,0,0,0
-map_door,11752,117,6,16,0,0,0,0
-map_door,11753,117,17,20,17,0,0,0
-map_door,11754,117,19,20,17,0,0,0
+event_generator,11700,117,11,21,17,0,0,"@../common/117/shinra_bldg_59f_warp_out.txt"
+event_generator,11701,117,13,26,17,0,0,"@../common/117/shinra_bldg_59f_enemy1.txt"
+event_generator,11702,117,14,26,17,0,0,"@../common/117/shinra_bldg_59f_enemy2.txt"
+event_generator,11703,117,15,26,17,0,0,"@../common/117/shinra_bldg_59f_enemy3.txt"
+event_generator,11704,117,16,26,17,0,0,"@../common/117/shinra_bldg_59f_enemy4.txt"
+event_generator,11705,117,17,26,17,0,0,"@../common/117/shinra_bldg_59f_enemy5.txt"
+event_generator,11706,117,18,26,17,0,0,"@../common/117/shinra_bldg_59f_enemy6.txt"
+event_generator,11707,117,19,26,17,0,0,"@../common/117/shinra_bldg_59f_enemy7.txt"
+npc_event,11720,117,21,26,32,1,0,"none"
+npc_event,11721,117,22,27,32,0,0,"none"
+npc_event,11722,117,23,26,32,1,0,"none"
+event_generator,11740,117,10,9,17,0,0,"@../common/117/elevator59f_l.txt"
+event_generator,11741,117,14,9,17,0,0,"@../common/117/elevator59f_r.txt"
+event_generator,11742,117,10,8,17,0,0,"@108/elevator_msg.txt"
+event_generator,11743,117,14,8,17,0,0,"@108/elevator_msg.txt"
+event_generator,11744,117,11,22,17,0,0,"@117/shinra_bldg_59f_baret.txt"
+event_generator,11745,117,22,26,17,0,0,"@../common/108/outside_elevator_l.txt"
+event_generator,11746,117,24,26,17,0,0,"@../common/108/outside_elevator_r.txt"
+event_generator,11747,117,22,25,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,11748,117,24,25,17,0,0,"@108/outside_elevator_msg.txt"
+map_door,11750,117,10,8,17,0,0,0
+map_door,11751,117,14,8,17,0,0,0
+map_door,11752,117,11,21,0,0,0,0
+map_door,11753,117,22,25,17,0,0,0
+map_door,11754,117,24,25,17,0,0,0
+npc3,11900,119,23,21,33,2,4,"「グー…グー…
+　(だいじょうぶ…おれがみはらなくても
+　となりのあいつが……）"
+npc3,11901,119,25,21,33,2,4,"「グー…グー…
+　(だいじょうぶ…おれがみはらなくても
+　となりのあいつが……）"
+npc2,11907,119,23,20,156,3,0,"none"
+npc2,11908,119,25,20,156,3,0,"none"
+event_generator,11930,119,11,18,17,0,0,"@../common/119/shinra_bldg_60f_create_loop.txt"
+event_generator,11932,119,15,13,17,0,0,"@119/shinra_bldg_60f_1.txt"
+event_generator,11946,119,23,32,17,0,0,"@../common/108/outside_elevator_l.txt"
+event_generator,11947,119,25,32,17,0,0,"@../common/108/outside_elevator_r.txt"
+event_generator,11948,119,23,33,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,11949,119,25,33,17,0,0,"@108/outside_elevator_msg.txt"
+map_door,11950,119,11,20,17,0,0,0
+event_generator,11996,119,31,8,17,0,0,"@119/shinra_bldg_60f_treasure.txt"
+map_obj,11997,119,31,8,62,0,0,0
 event_generator,70200,702,11,16,17,0,0,"@702/tifa'smemory1.txt"
 npc_event,70201,702,11,21,17,0,2,"none"
 npc_event,70202,702,11,20,17,1,2,"none"

@@ -1,0 +1,6 @@
+wait_same_pos
+kill_through_range 11933 11936
+kill_through_range 11920 11927
+kill_through_range 11903 11906
+kill_through_range 11960 11987
+create event_generator 11930 119 11 18 17 0 0 @../common/119/shinra_bldg_60f_create_loop.txt

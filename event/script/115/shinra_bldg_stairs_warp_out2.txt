@@ -20,7 +20,7 @@ fi
 fi
 if_flag 24 6
 warp_ff3_2 115 9 11 3 down
-if_flag 26 0
+if_flag 26 2
 set_npc_pos 11590 115 2 63
 set_npc_pos 11591 115 2 63
 fi
@@ -32,7 +32,7 @@ fi
 fi
 if_flag 24 5
 warp_ff3_2 115 9 11 3 down
-if_flag 26 0
+if_flag 26 2
 set_npc_pos 11590 115 2 14
 set_npc_pos 11591 115 2 14
 set_layer 11590 front
@@ -54,7 +54,7 @@ fi
 fi
 if_flag 24 3
 warp_ff3_2 115 9 11 3 down
-if_flag 26 0
+if_flag 26 2
 set_npc_pos 11590 115 1 1
 set_npc_pos 11591 115 1 1
 fi

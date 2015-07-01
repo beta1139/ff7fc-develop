@@ -1,5 +1,12 @@
 set_eternal_event
 wait_same_pos
+if_flag_lesser 25 11
 set_flag 0 5
+fi
+if_flag_greater 25 10
+set_flag 0 0
+fi
 set_flag 20 1
-warp_ff3_2 108 14 32 2 up
+warp_ff3_2 108 14 33 2 up
+move_char up 1
+sleep 16

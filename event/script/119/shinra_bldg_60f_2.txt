@@ -1,0 +1,37 @@
+wait_same_pos
+chg_char_dir left
+draw_char off
+create npc_event 11910 119 24 13 0 2 2 none
+include ./event/common/key_unvalid.txt
+step_char 2
+chg_type 11911 npc_event
+chg_type 11912 npc_event
+sleep 16
+set_npc_pos 11911 119 14 13
+set_npc_pos 11912 119 14 14
+chg_npc_dir 11911 right
+chg_speed 11911 normal
+chg_speed 11912 normal
+step_npc 11910 2
+sleep 32
+move_char left 3
+move_npc 11911 right 1
+sleep 16
+step_npc 11910 1
+sleep 16
+jump_npc 11911 same 1
+sleep 16
+chg_char_dir up
+chg_speed 11910 fast
+chg_speed 11911 fast
+move_npc 11911 right 2
+sleep 16
+set_flag 10 0
+msg 　けいびへいのスキをついて\n　Aボタンで　バレットたちに　あいずをおくれ！
+set_layer 11924 back
+set_layer 11925 back
+set_layer 11926 back
+set_layer 11927 back
+move_npc 11912 up 1
+sleep 16
+chg_npc_dir 11912 right

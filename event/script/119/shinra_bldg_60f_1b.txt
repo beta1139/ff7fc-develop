@@ -1,0 +1,35 @@
+wait_same_pos
+move_char up 2
+include ./event/common/key_unvalid.txt
+sleep 32
+move_char right 2
+sleep 32
+move_char up 1
+sleep 16
+chg_char_dir down
+include ./event/script/119/shinra_bldg_60f_baret_tifa.txt
+move_npc 11912 down 1
+sleep 16
+move_npc 11911 down 1
+move_npc 11912 left 1
+sleep 16
+chg_npc_dir 11911 up
+chg_npc_dir 11912 up
+sleep 8
+chg_char_dir right
+set_layer 11911 front
+jump_npc 11911 same 1
+sleep 16
+set_layer 11911 back
+step_npc 11911 2
+msg バレット\n「クラウド　まずおまえが\n　さきにいって　あいずしてくれ\n　オレたちが　あとにつづく
+create event_generator 11931 119 11 20 17 0 0 @../common/119/shinra_bldg_60f_out.txt
+create event_generator 11935 119 24 13 17 0 0 @119/shinra_bldg_60f_2.txt
+create event_generator 11936 119 33 13 17 0 0 @../common/119/shinra_bldg_60f_3.txt
+chg_speed 11911 not_move
+chg_speed 11912 not_move
+chg_type 11911 npc
+chg_type 11912 npc
+set_flag_wall 11911
+set_flag_wall 11912
+include ./event/common/key_valid.txt

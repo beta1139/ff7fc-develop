@@ -1,0 +1,45 @@
+if_flag 24 0
+create npc_event 71310 713 8 20 0 0 2 none
+draw_image 001 80 64 0 0 80 160 0 event/shinra_bldg/outside_elevator.png
+warp 713 8 20 up
+move_char up 12
+sleep 1
+slide_npc 71310 up 12
+sleep 99
+play_se_loop elevator_loop.wav
+include ./event/common/key_unvalid.txt
+sleep 92
+draw_image 000 0 -192 0 0 256 640 0 event/shinra_bldg/sky.png
+fi
+if_flag 24 8
+create npc_event 71310 713 28 20 0 0 2 none
+draw_image 001 80 64 0 0 80 160 0 event/shinra_bldg/outside_elevator.png
+warp 713 28 20 up
+move_char up 11
+sleep 1
+slide_npc 71310 up 11
+sleep 99
+play_se_loop elevator_loop.wav
+sleep 76
+draw_image 000 0 -16 0 0 256 640 0 event/shinra_bldg/sky.png
+fi
+set_layer 71310 front
+warp 713 8 37 up
+set_npc_pos 71310 713 8 37
+set_ignore_map_layer_flag 71310 1
+set_layer 71310 front
+create event_generator 10924 109 0 0 17 0 0 @109/outside_elevator_baret_tifa.txt
+chg_char_state_move
+if_flag 24 0
+loop 224
+sleep 1
+chg_image_pos_offset 000 0 1 0 0 0 0
+pool
+fi
+loop_inf
+chg_image_pos_offset 000 0 -400 0 0 0 0
+loop 400
+sleep 1
+chg_image_pos_offset 000 0 1 0 0 0 0
+pool
+pool

@@ -1,0 +1,12 @@
+set_eternal_event
+wait_same_pos
+create npc_event 11912 119 16 13 2 3 3 none
+move_npc 11912 right 1
+sleep 8
+chg_char_dir right
+jump_npc 11912 same 1
+chg_npc_dir 11912 left
+include ./event/script_e/119/shinra_bldg_60f_tifa_msg.txt
+move_char right 1
+sleep 16
+kill 11912

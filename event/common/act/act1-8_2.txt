@@ -1,0 +1,35 @@
+kill_through_range 10800 10808
+kill_through 10820
+kill_through 11320
+kill_through 11425
+if_flag 26 1
+kill_through_range 11590 11591
+fi
+if_flag 26 0
+kill_through_range 11590 11591
+add_item 1005
+set_flag 26 1
+fi
+set_flag 0 5
+set_flag 10 0
+set_flag 13 0
+set_flag 14 0
+set_flag 19 0
+set_flag 20 1
+set_flag 24 8
+set_flag 25 10
+set_layer 11420 front
+set_layer 11421 front
+set_layer 11520 front
+set_layer 11521 front
+set_layer 11522 front
+set_layer 11523 front
+set_layer 11622 front
+set_layer 11623 front
+kill_through_range 11701 11722
+if_not_owned_item 6019
+add_item 6019
+fi
+create event_generator 10846 108 24 20 17 0 0 @108/outside_elevator_msg.txt
+create event_generator 10847 108 26 20 17 0 0 @108/outside_elevator_msg.txt
+kill_through_range 10830 10831

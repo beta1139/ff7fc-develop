@@ -1,0 +1,32 @@
+11900 11916 npc(event)
+----------------------------
+11920 caught1
+11921 caught1
+11922 caught1
+11923 caught1
+11924 false1
+11925 true1
+11926 false2
+11927 true2
+----------------------------
+11930 create_loop
+11931 out
+11932 60f_1
+11933 loop_normal
+11934 loop_fast
+11935 60f_2
+11936 60f_3
+11937 retry
+11938 succeed
+11939 60f_1b
+11940 kill_loop
+11941 tifa_msg
+----------------------------
+11946-11949 outside_elevator
+11950 map_door
+----------------------------
+11953-11958 caught1&2
+11960-11983 caught1
+11964-11987 move_up
+11990-11995 caught1&2
+11996-11997 treasure

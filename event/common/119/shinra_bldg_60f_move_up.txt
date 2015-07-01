@@ -1,3 +1,4 @@
 set_eternal_event
 wait_same_pos
-set_flag 28 11
+move_char up 1
+sleep 16

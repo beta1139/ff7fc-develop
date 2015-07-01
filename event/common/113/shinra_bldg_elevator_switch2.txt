@@ -135,7 +135,7 @@ sleep 8
 set_image_alpha 000 100
 sleep 8
 pool
-play_se door_open.ogg
+play_se train_info.ogg
 open_door 11350
 sleep 16
 move_char up 2

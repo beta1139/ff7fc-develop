@@ -96,6 +96,7 @@ open_door 11150
 kill 11104
 move_char down 2
 sleep 16
+close_door 11150
 move_npc 11111 down 1
 move_npc 11112 up 1
 sleep 16

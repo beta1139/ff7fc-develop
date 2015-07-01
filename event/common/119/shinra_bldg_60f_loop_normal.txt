@@ -1,0 +1,146 @@
+create event_generator 11920 119 0 0 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11921 119 0 0 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11924 119 21 11 17 0 0 @119/shinra_bldg_60f_false1.txt
+create event_generator 11925 119 21 12 17 0 0 @../common/119/shinra_bldg_60f_true1.txt
+create event_generator 11926 119 29 11 17 0 0 @119/shinra_bldg_60f_false2.txt
+create event_generator 11927 119 29 12 17 0 0 @../common/119/shinra_bldg_60f_true2.txt
+create event_generator 11934 119 0 0 17 0 0 @../common/119/shinra_bldg_60f_loop_fast.txt
+create event_generator 11960 119 17 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11961 119 18 14 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11962 119 19 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11963 119 20 14 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11964 119 21 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11965 119 22 14 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11966 119 26 14 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11967 119 27 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11968 119 28 14 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11969 119 29 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11970 119 30 14 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11971 119 31 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11972 119 18 12 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11973 119 20 12 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11974 119 22 12 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11975 119 26 12 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11976 119 28 12 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11977 119 30 12 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11978 119 17 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11979 119 19 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11980 119 21 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11981 119 27 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11982 119 29 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+create event_generator 11983 119 31 15 17 0 0 @119/shinra_bldg_60f_caught1.txt
+set_ignore_map_layer_flag 11924 1
+set_layer 11924 front
+set_ignore_map_layer_flag 11925 1
+set_layer 11925 front
+set_ignore_map_layer_flag 11926 1
+set_layer 11926 front
+set_ignore_map_layer_flag 11927 1
+set_layer 11927 front
+set_active_msg 11903
+set_active_msg 11904
+chg_speed 11903 normal
+chg_speed 11904 normal
+chg_char_state_move
+loop_inf
+chg_npc_dir 11903 right
+chg_npc_dir 11904 left
+sleep 2
+move_npc 11903 right 2
+move_npc 11904 left 2
+sleep 30
+set_npc_pos 11920 119 20 13
+set_npc_pos 11921 119 22 13
+set_npc_pos 11962 119 19 14
+set_npc_pos 11964 119 21 14
+if_flag_greater 10 1
+set_npc_pos 11924 119 21 12
+set_npc_pos 11925 119 21 11
+fi
+sleep 15
+chg_npc_dir 11903 down
+chg_npc_dir 11904 down
+sleep 65
+chg_npc_dir 11903 left
+chg_npc_dir 11904 left
+set_npc_pos 11920 119 20 12
+set_npc_pos 11921 119 22 12
+set_npc_pos 11924 119 21 11
+set_npc_pos 11925 119 21 12
+set_npc_pos 11962 119 19 15
+set_npc_pos 11964 119 21 15
+sleep 2
+move_npc 11903 left 2
+move_npc 11904 left 2
+sleep 30
+set_npc_pos 11920 119 18 13
+set_npc_pos 11921 119 20 13
+set_npc_pos 11960 119 17 14
+set_npc_pos 11962 119 19 14
+set_npc_pos 11964 119 21 14
+if_flag_lesser 10 4
+set_npc_pos 11924 119 21 12
+set_npc_pos 11925 119 21 11
+fi
+sleep 15
+chg_npc_dir 11903 down
+chg_npc_dir 11904 down
+sleep 65
+chg_npc_dir 11903 left
+chg_npc_dir 11904 right
+set_npc_pos 11920 119 18 12
+set_npc_pos 11921 119 20 12
+set_npc_pos 11924 119 21 11
+set_npc_pos 11925 119 21 12
+set_npc_pos 11960 119 17 15
+set_npc_pos 11962 119 19 15
+set_npc_pos 11964 119 21 15
+sleep 2
+move_npc 11903 left 2
+move_npc 11904 right 2
+sleep 30
+set_npc_pos 11920 119 18 13
+set_npc_pos 11921 119 20 13
+set_npc_pos 11960 119 17 14
+set_npc_pos 11962 119 19 14
+set_npc_pos 11964 119 21 14
+if_flag_lesser 10 4
+set_npc_pos 11924 119 21 12
+set_npc_pos 11925 119 21 11
+fi
+sleep 15
+chg_npc_dir 11903 down
+chg_npc_dir 11904 down
+sleep 65
+chg_npc_dir 11903 right
+chg_npc_dir 11904 right
+set_npc_pos 11920 119 18 12
+set_npc_pos 11921 119 20 12
+set_npc_pos 11924 119 21 11
+set_npc_pos 11925 119 21 12
+set_npc_pos 11960 119 17 15
+set_npc_pos 11962 119 19 15
+set_npc_pos 11964 119 21 15
+sleep 2
+move_npc 11903 right 2
+move_npc 11904 right 2
+sleep 30
+set_npc_pos 11920 119 20 13
+set_npc_pos 11921 119 22 13
+set_npc_pos 11962 119 19 14
+set_npc_pos 11964 119 21 14
+if_flag_greater 10 1
+set_npc_pos 11924 119 21 12
+set_npc_pos 11925 119 21 11
+fi
+sleep 15
+chg_npc_dir 11903 down
+chg_npc_dir 11904 down
+sleep 65
+set_npc_pos 11920 119 20 12
+set_npc_pos 11921 119 22 12
+set_npc_pos 11924 119 21 11
+set_npc_pos 11925 119 21 12
+set_npc_pos 11962 119 19 15
+set_npc_pos 11964 119 21 15
+pool

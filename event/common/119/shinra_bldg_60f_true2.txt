@@ -1,0 +1,75 @@
+set_eternal_event
+wait_talk
+chg_char_dir left
+step_npc 11910 2
+if_flag 10 7
+move_npc 11911 right 2
+fi
+if_flag 10 8
+move_npc 11912 right 2
+fi
+if_flag 10 9
+move_npc 11911 right 2
+fi
+if_flag 10 10
+move_npc 11912 right 2
+fi
+if_flag 10 11
+move_npc 11911 right 7
+fi
+if_flag 10 12
+move_char right 8
+move_npc 11912 right 4
+fi
+add_flag 10 2
+set_npc_pos 11926 119 29 11
+set_npc_pos 11927 119 29 12
+sleep 16
+if_flag_lesser 10 11
+set_npc_pos 11926 119 29 12
+set_npc_pos 11927 119 29 11
+fi
+if_flag 10 13
+set_flag 10 8
+sleep 40
+jump_npc 11911 same 1
+chg_npc_dir 11911 left
+sleep 16
+chg_speed 11911 normal
+chg_speed 11912 normal
+move_npc 11912 right 2
+sleep 32
+chg_speed 11912 fast
+fi
+if_flag 10 14
+erase_msg3
+chg_speed 11910 normal
+move_npc 11910 right 5
+sleep 16
+chg_speed 11911 normal
+chg_speed 11912 normal
+move_npc 11911 down 1
+move_npc 11912 right 3
+sleep 16
+move_npc 11911 right 3
+sleep 32
+move_npc 11912 down 1
+sleep 16
+chg_npc_img 11911 95
+chg_speed 11911 fast
+step_npc 11911 4
+chg_npc_dir 11910 down
+move_npc 11912 right 1
+sleep 16
+chg_npc_dir 11912 up
+sleep 16
+chg_npc_img 11911 1
+chg_npc_dir 11911 up
+set_layer 11924 front
+set_layer 11925 front
+set_layer 11926 front
+set_layer 11927 front
+create event_generator 11938 119 0 0 17 0 0 @119/shinra_bldg_60f_succeed.txt
+end
+fi
+chg_char_dir up

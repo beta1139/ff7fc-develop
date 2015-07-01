@@ -1,0 +1,77 @@
+set_eternal_event
+wait_talk
+chg_char_dir left
+step_npc 11910 2
+if_flag 10 0
+move_npc 11911 right 2
+fi
+if_flag 10 1
+move_npc 11912 right 2
+fi
+if_flag 10 2
+move_npc 11911 right 2
+fi
+if_flag 10 3
+move_npc 11912 right 2
+fi
+if_flag 10 4
+move_npc 11911 right 2
+fi
+if_flag 10 5
+move_npc 11912 right 2
+fi
+add_flag 10 2
+set_npc_pos 11924 119 21 11
+set_npc_pos 11925 119 21 12
+sleep 16
+if_flag_lesser 10 4
+set_npc_pos 11924 119 21 12
+set_npc_pos 11925 119 21 11
+fi
+if_flag 10 6
+set_flag 10 1
+chg_type 11912 npc_event
+chg_speed 11911 normal
+move_npc 11911 right 2
+move_npc 11912 right 1
+sleep 32
+chg_npc_dir 11911 left
+jump_npc 11912 same 1
+sleep 16
+chg_speed 11912 fast
+move_npc 11912 right 2
+sleep 16
+fi
+if_flag 10 7
+erase_msg3
+chg_speed 11910 normal
+chg_speed 11911 normal
+chg_speed 11912 normal
+jump_npc 11910 same 1
+sleep 16
+step_npc 11912 2
+move_char right 3
+chg_npc_dir 11910 right
+sleep 16
+step_npc 11910 1
+sleep 32
+draw_char on
+kill 11910
+move_char right 1
+move_npc 11911 left 1
+sleep 16
+chg_npc_dir 11911 right
+chg_speed 11911 not_move
+chg_speed 11912 not_move
+chg_type 11911 npc
+chg_type 11912 npc
+set_flag_wall 11911
+set_flag_wall 11912
+set_layer 11924 front
+set_layer 11925 front
+set_layer 11926 front
+set_layer 11927 front
+include ./event/common/key_valid.txt
+end
+fi
+chg_char_dir up
