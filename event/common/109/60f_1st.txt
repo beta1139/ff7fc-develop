@@ -1,3 +1,4 @@
+include ./event/common/key_unvalid.txt
 if_flag 24 0
 create npc_event 71310 713 8 20 0 0 2 none
 draw_image 001 80 64 0 0 80 160 0 event/shinra_bldg/outside_elevator.png
@@ -7,7 +8,6 @@ sleep 1
 slide_npc 71310 up 12
 sleep 99
 play_se_loop elevator_loop.wav
-include ./event/common/key_unvalid.txt
 sleep 92
 draw_image 000 0 -192 0 0 256 640 0 event/shinra_bldg/sky.png
 fi
