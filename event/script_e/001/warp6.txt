@@ -38,5 +38,8 @@ warp 600 11 16 up
 play_bgm
 set_flag 0 0
 fi
+if_flag 3 3
+end
+fi
 create npc2 167 1 6 12 64 0 0 
 draw_char on
