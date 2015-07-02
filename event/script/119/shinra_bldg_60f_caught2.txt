@@ -4,7 +4,7 @@ kill_through_range 11933 11936
 kill_through_range 11920 11927
 kill_through_range 11960 11983
 kill_through_range 11953 11958
-kill_through_range 11990 11996
+kill_through_range 11990 11995
 kill_through_range 11941 11942
 kill_through 12020
 chg_npc_dir 11903 right
