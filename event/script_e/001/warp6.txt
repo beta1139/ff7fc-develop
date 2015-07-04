@@ -5,6 +5,15 @@ if_flag 3 0
 include ./event/common/del_member.txt
 include ./event/common/act/act1-7_1.txt
 set_flag 23 0
+if_owned_item 1084
+del_item 1084
+fi
+if_owned_item 1084
+del_item 1084
+fi
+if_owned_item 1084
+del_item 1084
+fi
 sleep 8
 include ./event/common/act/act1-7_2e.txt
 include ./event/common/act/act1-7_3.txt

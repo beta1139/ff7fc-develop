@@ -15,11 +15,11 @@ kill_through_range 11984 11987
 sleep 16
 step_npc 11911 4
 sleep 16
-msg バレット\n「やーっぱり\n　こうなっちまうんだよな……\n\n　こんなことなら\n　はじめっから……
+msg Baret\n`I knew it was gonna be\n like this==\n\n So I'm tellin' we\n should have==
 set_active_msg 11912
 chg_npc_dir 11912 left
 jump_npc 11912 same 1
-msg3 -1 ティファ\n「シッ！\n　とにかくさきを　いそぎましょ
+msg3 -1 Tifa\n`Shhh!\n Let's go ahead anyway.
 sleep 16
 chg_speed 11912 fast
 step_npc 11912 1

@@ -27,7 +27,7 @@ chg_speed 11911 fast
 move_npc 11911 right 2
 sleep 16
 set_flag 10 0
-msg 　けいびへいのスキをついて\n　Aボタンで　バレットたちに　あいずをおくれ！
+msg  Send a cue with the OK\n button while the gueards\n are not watching!
 set_layer 11924 back
 set_layer 11925 back
 set_layer 11926 back

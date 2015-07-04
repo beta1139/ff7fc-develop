@@ -8,7 +8,7 @@ sleep 4
 chg_npc_dir 11911 left
 sleep 4
 chg_npc_dir 11911 up
-msg3 -1 バレット\n「よし\n　ガンガンいくぞ！
+msg3 -1 Baret\n`Right,\n We're chargin' on!
 sleep 4
 chg_npc_dir 11911 right
 sleep 4
@@ -26,7 +26,7 @@ sleep 16
 jump_npc 11912 same 1
 sleep 16
 step_npc 11912 2
-msg ティファ\n「わすれないで！\n　わたしたちの　もくてきは　あくまでも\n　エアリスをたすけだすこと
+msg Tifa\n`Don't forget!\n Our goal is just to\n get Aeris back.
 chg_speed 11911 normal
 chg_npc_dir 11911 left
 sleep 16
@@ -34,7 +34,7 @@ jump_npc 11911 same 1
 sleep 16
 set_active_msg 11911
 jump_npc 11911 same 1
-msg バレット\n「わかってるって！
+msg Baret\n`You're tellin' me!
 chg_npc_dir 11911 up
 chg_npc_dir 11912 up
 sleep 16

@@ -12,13 +12,13 @@ chg_npc_dir 71311 up
 chg_npc_dir 71312 up
 sleep 16
 step_npc 71311 2
-msg バレット\n「ここからが　ほんばんだ\n　ゆだんするな
+msg Baret\n`We're just startin'.\n On your guard.
 chg_npc_dir 71310 down
 sleep 16
 chg_npc_dir 71312 left
 sleep 16
 step_npc 71312 2
-msg ティファ\n「エアリス　ぶじだといいね
+msg Tifa\n`I bet Aeris's okay.
 chg_npc_dir 71310 up
 sleep 32
 chg_npc_dir 71312 up

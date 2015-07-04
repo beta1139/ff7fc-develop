@@ -22,7 +22,7 @@ chg_npc_dir 11912 up
 jump_npc 11911 same 1
 sleep 16
 step_npc 11911 2
-msg バレット\n「みろよ\n　けいびのやつらが　ウロウロしてやがるぜ\n\n　クラウド　まずおまえが\n　さきにいって　あいずしてくれ\n　オレたちが　あとにつづく
+msg Baret\n`Look, the guards are\n pacin' around.\n\n Cloud, you go first and\n give us a cue.\n We'll follow you.
 chg_char_dir down
 sleep 16
 step_char 1

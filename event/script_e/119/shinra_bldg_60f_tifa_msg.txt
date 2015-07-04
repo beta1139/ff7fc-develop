@@ -1,1 +1,3 @@
-msg ティファ\n「クラウド！！\n　はやくエアリスをたすけなくちゃ…
+sleep 16
+step_npc 11912 2
+msg Tifa\n`Cloud!\n We have to get Aeris==

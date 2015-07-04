@@ -1,1 +1,1 @@
-msg 「おいキサマ！\n そこでなにをしている！
+msg `Hey, you there!\n What are you doing?

@@ -13,7 +13,7 @@ jump_npc 11911 same 1
 sleep 16
 set_active_msg 11911
 jump_npc 11911 same 1
-msg バレット\n「なにやってんだ！\n　つぎは　ちゃんとたのむぜ！
+msg Baret\n`What's the matter?\n Do it right this time.
 sleep 16
 chg_npc_img 11910 0
 chg_npc_dir 11910 down

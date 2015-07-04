@@ -15,57 +15,57 @@ chg_npc_dir 11905 right
 chg_npc_dir 11906 right
 fi
 if_flag_greater 29 4
-msg3 -1 　たからばこのなかには\n　　しんらあんしきぼうぐがはいっていた！
+msg3 -1  You found a Shinra-A\n armor in the chest.
 wait_key_push_edge a
 erase_msg3
 add_item 3019
 sleep 8
 play_se recover.wav
-msg3 -1 　たからばこのなかには\n　　ハードブレイカーがはいっていた！
+msg3 -1  You found a Breaker\n in the chest.
 add_item 2002
 fi
 if_flag 29 4
-msg3 -1 　たからばこのなかには\n　　エクスポーションがはいっていた！
+msg3 -1  You found an X-Potion\n in the chest.
 wait_key_push_edge a
 erase_msg3
 add_item 1002
 sleep 8
 play_se recover.wav
-msg3 -1 　たからばこのなかには\n　　エーテルがはいっていた！
+msg3 -1  You found an Ether\n in the chest.
 add_item 1003
 fi
 if_flag 29 3
-msg3 -1 　たからばこのなかには\n　　エーテルがはいっていた！
+msg3 -1  You found an Ether\n in the chest.
 wait_key_push_edge a
 erase_msg3
 add_item 1003
 sleep 8
 play_se recover.wav
-msg3 -1 　たからばこのなかには\n　　フェニックスのおがはいっていた！
+msg3 -1  You found a FenixTail\n in the chest.
 add_item 1007
 fi
 if_flag 29 2
-msg3 -1 　たからばこのなかには\n　　フェニックスのおがはいっていた！
+msg3 -1  You found a FenixTail\n in the chest.
 wait_key_push_edge a
 erase_msg3
 add_item 1007
 sleep 8
 play_se recover.wav
-msg3 -1 　たからばこのなかには\n　　ハイポーションがはいっていた！
+msg3 -1  You found a Hi-Potion\n in the chest.
 add_item 1001
 fi
 if_flag 29 1
-msg3 -1 　たからばこのなかには\n　　ハイポーションがはいっていた！
+msg3 -1  You found a Hi-Potion\n in the chest.
 wait_key_push_edge a
 erase_msg3
 add_item 1001
 sleep 8
 play_se recover.wav
-msg3 -1 　たからばこのなかには\n　　ポーションがはいっていた！
+msg3 -1  You found a Potion\n in the chest.
 add_item 1000
 fi
 if_flag_lesser 29 1
-msg3 -1 　たからばこのなかには\n　　くうきがはいっていた！
+msg3 -1  You found nothing\n in the chest.
 fi
 wait_key_push_edge a
 erase_msg3

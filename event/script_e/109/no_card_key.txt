@@ -1,1 +1,1 @@
-msg 　カードキーがありません
+msg  You don't have the key.

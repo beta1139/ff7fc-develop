@@ -22,7 +22,7 @@ jump_npc 11911 same 1
 sleep 16
 set_layer 11911 back
 step_npc 11911 2
-msg バレット\n「クラウド　まずおまえが\n　さきにいって　あいずしてくれ\n　オレたちが　あとにつづく
+msg Baret\n`Cloud, you go first and\n give us a cue.\n We'll follow you.
 create event_generator 11931 119 11 20 17 0 0 @../common/119/shinra_bldg_60f_out.txt
 create event_generator 11935 119 24 13 17 0 0 @119/shinra_bldg_60f_2.txt
 create event_generator 11936 119 33 13 17 0 0 @../common/119/shinra_bldg_60f_3.txt

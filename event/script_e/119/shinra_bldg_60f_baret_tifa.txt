@@ -1,2 +1,2 @@
-create npc_event 11911 119 13 14 1 0 2 バレット\n「けいびのやつらが\n　めをそらしたときが　チャンスだぜ
-create npc_event 11912 119 13 14 2 0 2 ティファ\n「ものかげに\n　かくれながら　すすむのよ！
+create npc_event 11911 119 13 14 1 0 2 Baret\n`Signal us when the\n gurards aren't watchin'.
+create npc_event 11912 119 13 14 2 0 2 Tifa\n`We got to proceed\n without being spotted!
