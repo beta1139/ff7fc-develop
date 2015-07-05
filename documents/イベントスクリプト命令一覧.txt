@@ -88,6 +88,26 @@ if_not_owned_item (idx)
 fi
   idxのアイテムを所有していなければ処理を実行する
 
+if_equipped_item (idx)
+(処理)
+fi
+  idxのアイテムを装備していれば処理を実行する
+
+if_not_equipped_item (idx)
+(処理)
+fi
+  idxのアイテムを装備していなければ処理を実行する
+
+if_owned_or_equipped_item (idx)
+(処理)
+fi
+  idxのアイテムを所有もしくは装備していれば処理を実行する
+
+if_not_owned_or_equipped_item (idx)
+(処理)
+fi
+  idxのアイテムを所有もしくは装備していなければ処理を実行する
+
 if_char_dir (direction)
 (処理)
 fi
