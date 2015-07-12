@@ -1,4 +1,5 @@
 if_owned_item 1084
+set_flag 10 1
 del_item 1084
 fi
 if_owned_item 1084
@@ -8,8 +9,6 @@ if_owned_item 1084
 del_item 1084
 fi
 sleep 8
-create event_generator 4900 49 5 16 17 0 0 @049/slum_church8_1.txt
-create event_generator 4901 49 6 16 17 0 0 @049/slum_church8_2.txt
 create npc2 5801 58 17 13 90 2 0 
 create npc2 5802 58 16 13 72 3 0 
 create event_generator 5824 58 0 0 17 0 0 @058/goban_slums_small_talk1_1.txt
@@ -18,9 +17,9 @@ create event_generator 6303 63 0 0 17 0 0 @063/goban_slums_child.txt
 create event_generator 6604 66 9 14 17 0 0 @066/elmyra1.txt
 create event_generator 6760 67 5 11 17 0 0 @067/good_night.txt
 create event_generator 6801 68 12 8 17 0 0 @../common/068/rokubangai2.txt
-create event_generator 7270 72 8 51 17 0 0 @072/smoke1.txt
-create event_generator 7271 72 9 51 17 0 0 @072/smoke1.txt
-create event_generator 7272 72 10 51 17 0 0 @072/smoke1.txt
+create event_generator 7270 72 8 51 17 0 0 @../common/072/smoke1.txt
+create event_generator 7271 72 9 51 17 0 0 @../common/072/smoke1.txt
+create event_generator 7272 72 10 51 17 0 0 @../common/072/smoke1.txt
 create event_generator 7281 72 7 39 17 0 0 @072/wall_market3_1.txt
 create event_generator 7282 72 7 38 17 0 0 @072/wall_market3_2.txt
 create event_generator 7505 75 0 0 17 0 0 @075/wm_boutique5_1.txt
@@ -28,10 +27,10 @@ create event_generator 7506 75 0 0 17 0 0 @075/wm_boutique5_2.txt
 create npc_event 7515 75 7 14 77 2 0 none
 create npc2 7517 75 6 14 17 0 0 
 create npc2 7518 75 7 13 17 0 0 
-create event_generator 7605 76 0 0 17 0 0 @076/wm_materia_shop5.txt
+create event_generator 7605 76 0 0 17 0 0 @../common/076/wm_materia_shop5.txt
 create npc2 7615 76 5 6 17 0 0 
-create event_generator 7913 79 0 0 17 0 0 @079/porch_honey_bee_inn1.txt
-create event_generator 7914 79 0 0 17 0 0 @079/porch_honey_bee_inn2.txt
+create event_generator 7913 79 0 0 17 0 0 @../common/079/porch_honey_bee_inn1.txt
+create event_generator 7914 79 0 0 17 0 0 @../common/079/porch_honey_bee_inn2.txt
 create event_generator 8603 86 0 0 17 0 0 @086/zinc_battery1_1.txt
 create event_generator 8604 86 0 0 17 0 0 @086/zinc_battery1_2.txt
 create event_generator 8700 87 0 0 17 0 0 @087/wm_gym1.txt
@@ -80,3 +79,12 @@ set_flag 14 0
 set_flag 15 0
 set_flag 16 0
 set_flag 19 0
+if_owned_or_equipped_item 4201
+kill_through 7030
+fi
+if_flag 10 1
+add_item 1084
+add_item 1084
+add_item 1084
+fi
+set_flag 10 0

@@ -76,12 +76,10 @@ chg_char_dir up
 draw_char on
 kill 5520
 move_npc 5521 left 1
-sleep 16
+sleep 8
+include ./event/common/act/act1-4_3e.txt
 kill 5521
 set_key_valid start
-create event_generator 4900 49 5 16 17 0 0 @049/slum_church8_1.txt
-create event_generator 4901 49 6 16 17 0 0 @049/slum_church8_2.txt
-create npc_event 4922 49 5 12 65 3 0 `How pretty!
-create npc_event 4923 49 7 11 67 2 0 `Water is coming later.
-set_flag 1 0
 set_flag 12 0
+set_flag 30 11
+create event_generator 5590 10 0 0 17 0 0 @../common/point.txt

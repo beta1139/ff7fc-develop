@@ -1,0 +1,21 @@
+kill_through_range 200 1729
+kill_through_range 1765 1799
+kill_through_range 1900 1949
+kill_through_range 1963 2089
+kill_through_range 2200 2249
+kill_through_range 2251 2260
+kill_through_range 2300 2359
+kill_through_range 2530 2531
+kill_through_range 2600 2601
+kill_through_range 2609 2611
+sleep 8
+create npc 1706 17 17 9 94 1 0 「おはようございます\n　いちやあけても　あいかわらずですね\n\n\n　けがしないよう　おきをつけて\n　いってらっしゃい
+create npc3 1707 17 11 11 71 3 0 「ぼく　もう　たえられない
+create npc2 1708 17 12 11 72 2 0 
+create npc 1906 19 15 28 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
+create npc2 1907 19 14 28 32 0 0 
+create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこをみがく　たびにでっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
+create npc 2007 20 32 20 88 3 0 「きのう　おみせのそとから　あなたたちのこと\n　まちのみんなで　のぞきみしてたのよ\n\n\n　ティファちゃんの　おさななじみなんて\n　にくいにくい！
+create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめるあいてが\n　いなくなっちゃうよ！
+create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃいいけど\n\n\n　それだけが　きがかりだなあ
+chg_param 2510 「てへへ…ひとばんじゃ　おぼえきれんぜ\n　おう！しろうと！！\n　わるいが　にかいのあいぼうから　おそわってくれ

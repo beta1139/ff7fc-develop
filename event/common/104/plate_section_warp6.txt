@@ -1,0 +1,49 @@
+wait_same_pos
+create npc_event 10490 104 22 7 157 0 2 none
+draw_char off
+chg_char_img_tmp 157
+kill_through 10404
+kill_through_range 10630 10646
+move_npc 10490 up 7
+sleep 112
+include ./event/common/key_climb.txt
+if_flag_lesser 9 4
+warp_ff3_2 708 0 0 2 up
+kill 10490
+include ./event/common/effect_fadeout.txt
+stop_bgm
+sleep 16
+warp 105 15 7 up
+reset_char_img_tmp
+create event_generator 10520 105 15 7 17 0 0 @../common/105/zerobangai.txt
+fi
+if_flag_greater 9 3
+set_flag 0 0
+warp_ff3_2 106 16 21 2 up
+kill 10490
+play_bgm
+create npc_event 10600 106 16 29 0 0 2 none
+move_npc 10600 up 8
+sleep 48
+create event_generator 10630 106 8 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10631 106 9 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10632 106 10 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10633 106 11 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10634 106 12 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10635 106 13 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10636 106 14 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10637 106 15 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10638 106 16 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10639 106 17 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10640 106 18 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10641 106 19 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10642 106 20 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10643 106 21 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10644 106 22 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10645 106 23 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+create event_generator 10646 106 24 24 17 0 0 @../common/106/shinra_bldg_warp_out.txt
+sleep 80
+draw_char on
+kill 10600
+include ./event/common/key_climb_reset.txt
+fi

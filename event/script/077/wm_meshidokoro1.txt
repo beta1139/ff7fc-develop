@@ -14,5 +14,5 @@ fi
 sleep 16
 chg_npc_dir 7711 left
 if_flag 9 2
-create event_generator 7708 77 3 15 17 0 0 @drag_cloud.txt 
+create event_generator 7708 77 3 15 17 0 0 @../common/drag_cloud.txt 
 fi

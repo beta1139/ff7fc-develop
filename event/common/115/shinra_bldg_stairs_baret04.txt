@@ -1,0 +1,79 @@
+chg_char_state_move
+create event_generator 11534 115 0 0 17 0 0 @../common/115/shinra_bldg_stairs_tifa04.txt
+create event_generator 11532 115 8 14 17 0 0 @../common/114/shinra_bldg_stairs_reach.txt
+set_layer 11532 front
+move_npc 11503 up 1
+set_flag 14 0
+sleep 8
+move_npc 11503 left 6
+sleep 48
+include ./event/common/115/stairs_baret04_common1.txt
+move_npc 11503 left 3
+sleep 24
+if_flag_lesser 24 6
+chg_speed 11503 normal
+move_npc 11503 left 3
+sleep 48
+fi
+if_flag 24 2
+chg_speed 11503 not_move
+sleep 40
+chg_npc_dir 11503 down
+sleep 120
+fi
+if_flag 24 4
+chg_speed 11503 not_move
+sleep 48
+chg_npc_dir 11503 up
+set_flag 14 1
+sleep 264
+fi
+if_flag 24 6
+move_npc 11503 left 3
+sleep 24
+set_flag 14 1
+fi
+chg_speed 11503 fast
+include ./event/common/115/stairs_baret04_common1.txt
+set_flag 14 0
+move_npc 11503 left 6
+sleep 48
+if_flag 24 6
+set_flag 14 2
+fi
+include ./event/common/115/stairs_baret04_common1.txt
+move_npc 11503 left 6
+sleep 48
+move_npc 11503 down 2
+sleep 16
+move_npc 11503 right 3
+sleep 24
+chg_speed 11503 normal
+move_npc 11503 right 3
+sleep 48
+move_npc 11503 up 3
+sleep 48
+if_flag 13 0
+chg_npc_dir 11503 down
+chg_speed 11503 not_move
+fi
+loop_inf
+if_flag 13 0
+sleep 1
+fi
+if_flag 13 1
+chg_speed 11503 fast
+move_npc 11503 up 6
+sleep 48
+move_npc 11503 left 6
+sleep 48
+move_npc 11503 down 2
+sleep 16
+move_npc 11503 right 5
+sleep 40
+move_npc 11503 up 5
+sleep 40
+kill_through 11503
+end
+fi
+pool

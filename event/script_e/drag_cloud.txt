@@ -1,6 +1,0 @@
-wait_same_pos
-chg_char_img_tmp 13
-chg_char_state_move
-loop_inf
-sleep 400
-pool

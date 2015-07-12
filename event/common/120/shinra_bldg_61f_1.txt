@@ -1,16 +1,8 @@
-set_eternal_event
 wait_same_pos
-kill_through_range 11903 11906
-kill_through_range 11920 11940
-kill_through_range 11951 11995
-kill_through_range 11913 11916
-msg ƒCƒxƒ“ƒg‚³‚­‚¹‚¢‚±‚±‚Ü‚Å
-create npc_event 11913 119 13 17 32 0 0 none
-create npc_event 11914 119 7 15 32 0 0 none
-create npc_event 11915 119 10 16 32 2 0 none
-create npc_event 11916 119 12 15 32 1 0 none
-warp_ff3_2 119 41 10 3 down
+include ./event/common/120/finished_60f.txt
 if_flag_greater 29 0
 sub_flag 29 1
 fi
 set_flag 25 12
+set_flag 30 27
+create event_generator 12090 120 0 0 17 0 0 @../common/point.txt

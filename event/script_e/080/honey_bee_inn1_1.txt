@@ -17,8 +17,8 @@ chg_type 7921 npc_event
 chg_type 7922 npc_event
 chg_type 7923 npc
 chg_type 7924 npc_event
-create event_generator 7911 79 9 10 17 0 0 @079/wall_market19.txt
-create event_generator 7912 79 10 10 17 0 0 @079/wall_market19.txt
+create event_generator 7911 79 9 10 17 0 0 @../common/079/wall_market19.txt
+create event_generator 7912 79 10 10 17 0 0 @../common/079/wall_market19.txt
 chg_param 7923 `Excuse me!\n We are closing soon==\n\n\n Please see that you\n leave nothing behind.
 if_flag 17 0
 set_npc_pos 8011 80 8 11

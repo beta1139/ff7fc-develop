@@ -600,12 +600,8 @@ stop_se
 stop_bgm
 sleep 48
 warp 34 7 16 up
-sleep 48
+include ./event/common/act/act1-3_2.txt
+sleep 32
 chg_char_dir up
 play_bgm
-set_key_valid up
-set_key_valid left
-set_key_valid down
-set_key_valid right
-set_key_valid start
 fadein

@@ -1,0 +1,12 @@
+kill_through_range 200 399
+kill_through_range 401 559
+kill_through_range 563 659
+kill_through_range 662 801
+set_npc_pos 806 8 29 21
+chg_npc_dir 806 up
+kill_through 807
+kill_through 890
+kill_through 1000
+if_not_owned_item 4000
+add_item 4000
+fi

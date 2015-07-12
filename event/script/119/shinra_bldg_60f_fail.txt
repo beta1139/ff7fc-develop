@@ -69,5 +69,5 @@ chg_event_move_char_speed normal
 set_flag 25 12
 create event_generator 11941 119 16 13 17 0 0 @119/shinra_bldg_60f_tifa1.txt
 create event_generator 11942 119 11 21 17 0 0 @119/shinra_bldg_60f_tifa2.txt
-create event_generator 12020 120 0 0 17 0 0 @../common/120/shinra_bldg_61f_1.txt
+create event_generator 12020 120 34 17 17 0 0 @../common/120/shinra_bldg_61f_1.txt
 include ./event/common/key_valid.txt

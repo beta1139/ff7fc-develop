@@ -24,9 +24,9 @@ set_flag 15 0
 set_flag 16 0
 set_flag 18 0
 set_flag 19 0
-create event_generator 10343 103 0 0 17 0 0 @103/gimmick_move.txt
+create event_generator 10343 103 0 0 17 0 0 @../common/103/gimmick_move.txt
 create event_generator 10344 103 0 0 17 0 0 @103/gimmick_false.txt
-create event_generator 10345 103 0 0 17 0 0 @103/gimmick_true.txt
+create event_generator 10345 103 0 0 17 0 0 @../common/103/gimmick_true.txt
 chg_npc_dir 10390 right
 sleep 8
 move_char up 4

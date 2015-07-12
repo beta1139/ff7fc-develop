@@ -1,0 +1,64 @@
+if_owned_item 6006
+if_owned_item 6007
+if_owned_item 6008
+del_item 6006
+del_item 6007
+fi
+fi
+fi
+if_owned_item 6009
+if_owned_item 6010
+if_owned_item 6011
+del_item 6009
+del_item 6010
+del_item 6013
+del_item 6015
+del_item 6016
+del_item 6017
+del_item 6018
+fi
+fi
+fi
+sleep 8
+if_owned_item 6000
+set_flag 15 3
+set_flag 18 1
+fi
+if_owned_item 6001
+set_flag 15 4
+set_flag 18 2
+fi
+if_owned_item 6002
+set_flag 15 5
+set_flag 18 4
+fi
+if_owned_item 6003
+add_flag 18 1
+fi
+if_owned_item 6004
+add_flag 18 2
+fi
+if_owned_item 6005
+add_flag 18 4
+fi
+if_owned_item 6006
+add_flag 18 1
+fi
+if_owned_item 6007
+add_flag 18 2
+fi
+if_owned_item 6008
+add_flag 18 4
+fi
+if_owned_item 6009
+add_flag 18 1
+fi
+if_owned_item 6010
+add_flag 18 2
+fi
+if_owned_item 6011
+add_flag 18 4
+fi
+if_flag 22 1
+add_flag 18 2
+fi

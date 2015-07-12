@@ -12,7 +12,6 @@ set_flag 26 1
 fi
 set_flag 0 5
 set_flag 10 0
-set_flag 13 0
 set_flag 14 0
 set_flag 19 0
 set_flag 20 1
@@ -29,6 +28,18 @@ set_layer 11623 front
 kill_through_range 11701 11722
 if_not_owned_item 6019
 add_item 6019
+fi
+if_owned_item 6020
+del_item 6020
+fi
+if_owned_item 6021
+del_item 6021
+fi
+if_owned_item 6022
+del_item 6022
+fi
+if_owned_item 6023
+del_item 6023
 fi
 create event_generator 10846 108 24 20 17 0 0 @108/outside_elevator_msg.txt
 create event_generator 10847 108 26 20 17 0 0 @108/outside_elevator_msg.txt

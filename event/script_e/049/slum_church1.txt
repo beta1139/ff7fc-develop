@@ -1,14 +1,16 @@
 wait_same_pos
-kill_through_range 2800 4899
 set_flag 11 0
+include ./event/common/key_unvalid.txt
 chg_event_move_char_speed normal
 draw_char off
 stop_bgm
-sleep 16
+set_flag 30 9
+include ./event/common/act/act1-4_1.txt
+chg_char_state_move
+create event_generator 4990 10 0 0 17 0 0 @../common/point.txt
 clear_text 6
 clear_text 7
 clear_text 8
-sleep 16
 set_text_alpha 6 0
 sleep 128
 set_text 6           {==You okay?
@@ -164,12 +166,6 @@ sleep 4
 set_text_alpha 6 60
 sleep 4
 set_text_alpha 6 90
-set_key_unvalid up
-set_key_unvalid left
-set_key_unvalid down
-set_key_unvalid right
-set_key_unvalid b
-set_key_unvalid start
 create event_generator 4990 49 20 11 17 0 0 @../common/049/slum_church1_b.txt
 create event_generator 4991 49 20 11 17 0 0 @049/slum_church1_c.txt
 wait_key_push_edge a

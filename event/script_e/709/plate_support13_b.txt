@@ -1,7 +1,0 @@
-loop 2
-include ./event/common/effect_flash03.txt
-pool
-sleep 16
-loop 5
-include ./event/common/effect_flash03.txt
-pool

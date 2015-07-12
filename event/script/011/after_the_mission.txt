@@ -1,0 +1,241 @@
+wait_same_pos
+set_flag 30 2
+chg_char_state_move
+create event_generator 1180 10 0 0 17 0 0 @../common/point.txt
+play_se timer.ogg
+sleep 48
+play_se_loop timer2.ogg
+step_npc 1103 4
+msg ビッグス\n「ほしのいのち……　ちょっとは　のびたかな
+sleep 16
+chg_npc_dir 1104 down
+sleep 16
+step_npc 1104 2
+msg ウェッジ\n「そうっすね
+sleep 48
+chg_npc_dir 1101 left
+sleep 64
+msg バレット\n「…………
+sleep 48
+chg_npc_dir 1104 up
+sleep 16
+stop_se
+sleep 16
+chg_speed 1102 fast
+chg_npc_dir 1102 down
+sleep 32
+chg_npc_dir 1100 up
+chg_npc_dir 1101 up
+jump_npc 1102 same 1
+sleep 16
+step_npc 1102 3
+msg ジェシー\n「できた！\n　さがって
+sleep 16
+chg_speed 1100 fast
+chg_speed 1101 fast
+chg_speed 1103 fast
+chg_speed 1104 fast
+move_npc 1100 down 8
+move_npc 1101 down 8
+move_npc 1102 down 8
+move_npc 1103 down 8
+move_npc 1104 down 8
+sleep 72
+create explode 1140 11 4 0 0 0 0 none
+create explode 1141 11 4 1 0 0 0 none
+create explode 1142 11 4 2 0 0 0 none
+create explode 1143 11 4 3 0 0 0 none
+create explode 1144 11 4 4 0 0 0 none
+sleep 8
+create map_obj 1150 11 4 0 32 0 0 
+create map_obj 1151 11 4 1 32 0 0 
+create map_obj 1152 11 4 2 32 0 0 
+create map_obj 1153 11 4 3 32 0 0 
+create map_obj 1154 11 4 4 32 0 0 
+create explode 1145 11 3 0 0 0 0 none
+create explode 1146 11 3 1 0 0 0 none
+create explode 1147 11 3 2 0 0 0 none
+create explode 1148 11 3 3 0 0 0 none
+create explode 1149 11 3 4 0 0 0 none
+play_se bomb_little.ogg
+fadeout
+sleep 160
+chg_char_img_tmp 17
+warp 12 6 23 up
+draw_char on
+set_flag 0 0
+play_bgm
+sleep 32
+fadein
+sleep 48
+set_slide_walk_char_flag
+reset_char_img_tmp
+move_char up 3
+play_se jump.wav
+sleep 2
+reset_char_img_tmp
+chg_char_dir up
+sleep 6
+chg_char_dir right
+chg_char_img_tmp 105
+sleep 4
+reset_char_img_tmp
+chg_char_dir up
+reset_slide_walk_char_flag
+chg_event_move_char_speed normal
+sleep 12
+play_se landing.wav
+sleep 16
+chg_char_dir down
+sleep 16
+create npc_event 1200 12 5 23 1 0 3 none
+jump_npc 1200 up 2
+play_se jump.wav
+sleep 32
+play_se landing.wav
+move_npc 1200 up 2
+sleep 16
+chg_npc_dir 1200 down
+chg_speed 1200 not_move
+create npc_event 1202 12 6 23 35 0 3 none
+jump_npc 1202 up 1
+play_se jump.wav
+sleep 16
+play_se landing.wav
+sleep 8
+move_npc 1202 up 1
+sleep 8
+move_npc 1202 right 1
+sleep 8
+move_npc 1202 up 3
+create npc_event 1201 12 6 23 34 0 3 none
+jump_npc 1201 up 1
+play_se jump.wav
+sleep 16
+play_se landing.wav
+sleep 8
+chg_npc_dir 1202 down
+chg_speed 1202 not_move
+move_npc 1201 up 1
+sleep 8
+move_npc 1201 right 1
+sleep 8
+chg_npc_dir 1202 up
+move_npc 1201 up 2
+sleep 16
+chg_npc_dir 1201 down
+chg_speed 1201 not_move
+create npc_event 1203 12 5 23 36 0 3 none
+play_se jump.wav
+jump_npc 1203 up 1
+sleep 8
+create npc_event 1252 12 5 22 80 3 0 none
+chg_npc_y_offset 1252 2
+sleep 8
+play_se landing.wav
+jump_npc 1203 same 1
+jump_npc 1252 same 1
+sleep 16
+move_npc 1203 up 1
+chg_speed 1252 fast
+slide_walk_npc 1252 up 1
+sleep 8
+move_npc 1203 left 1
+slide_walk_npc 1252 left 1
+sleep 8
+chg_npc_dir 1203 up
+chg_speed 1252 not_move
+jump_npc 1203 same 1
+jump_npc 1252 same 1
+sleep 16
+jump_npc 1203 same 1
+jump_npc 1252 same 1
+sleep 16
+move_npc 1203 right 3
+chg_speed 1252 fast
+slide_walk_npc 1252 right 3
+sleep 24
+move_npc 1203 left 3
+slide_walk_npc 1252 left 3
+sleep 24
+move_npc 1203 up 2
+slide_walk_npc 1252 up 2
+sleep 16
+slide_walk_npc 1203 down 2
+slide_walk_npc 1252 down 2
+sleep 16
+loop 2
+jump_npc 1203 same 1
+jump_npc 1252 same 1
+sleep 16
+pool
+step_npc 1203 6
+play_se syu.ogg
+kill 1252
+sleep 8
+create npc_event 1252 12 4 21 80 3 0 none
+chg_npc_y_offset 1252 2
+play_se syu.ogg
+sleep 8
+kill 1252
+sleep 8
+create npc_event 1252 12 4 21 80 3 0 none
+chg_npc_y_offset 1252 2
+sleep 8
+kill 1252
+sleep 8
+create npc_event 1252 12 4 21 80 3 0 none
+chg_npc_y_offset 1252 2
+sleep 8
+kill 1252
+sleep 8
+chg_npc_dir 1203 down
+sleep 32
+chg_speed 1200 normal
+jump_npc 1200 same 1
+sleep 16
+chg_speed 1200 not_move
+chg_npc_dir 1203 up
+sleep 16
+chg_char_dir up
+move_npc 1203 up 3
+sleep 8
+chg_npc_dir 1200 right
+sleep 8
+chg_npc_dir 1201 left
+chg_npc_dir 1202 left
+sleep 8
+move_npc 1203 right 2
+sleep 16
+chg_npc_dir 1203 left
+chg_speed 1203 not_move
+sleep 16
+step_npc 1200 2
+set_talk_npc 1200
+msg バレット\n「さあ　ひきあげるぞ\n　ランデブーちてんは　8ばんがいステーション！\n　かくじ　たんどくこうどう\n　れっしゃに　のりこむんだ！
+reset_talk_npc
+chg_speed 1200 normal
+chg_speed 1201 normal
+chg_speed 1202 normal
+chg_speed 1203 normal
+move_npc 1201 up 8
+move_npc 1202 up 8
+move_npc 1203 up 8
+move_npc 1200 right 1
+sleep 16
+jump_char same 1
+msg3 -1 『お　おい！
+wait_key_push_edge a
+erase_msg3
+sleep 16
+chg_npc_dir 1200 down
+set_talk_npc 1200
+msg バレット\n「かねの　はなしなら\n　ぶじに　アジトに　かえってからだ
+reset_talk_npc
+move_npc 1200 up 8
+sleep 128
+kill_through_range 1200 1203
+chg_type 1261 npc2
+chg_type 1262 npc2
+chg_type 1263 npc2
+include ./event/common/key_valid.txt

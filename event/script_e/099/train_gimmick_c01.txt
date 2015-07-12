@@ -3,7 +3,7 @@ play_se door_open.ogg
 draw_char off
 chg_npc_img 9990 52
 sleep 16
-msg {We can move this car.
+include ./event/script_e/099/tg_cloud_msg.txt
 chg_npc_img 9990 50
 sleep 24
 play_se train_move_and_stop.ogg
@@ -44,5 +44,5 @@ chg_event_move_char_speed normal
 move_char right 1
 sleep 16
 kill 9992
-create event_generator 9907 99 17 30 17 0 0 @099/train_gimmick_c02.txt
+create event_generator 9907 99 17 30 17 0 0 @../common/099/train_gimmick_c02.txt
 add_item 2014

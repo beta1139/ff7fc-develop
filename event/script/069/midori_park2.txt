@@ -88,16 +88,25 @@ sleep 72
 set_npc_pos 6921 69 15 18
 set_layer 6921 front
 jump_npc 6921 same 1
-sleep 32
+play_se landing.wav
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 24
 jump_npc 6921 same 1
 sleep 16
 step_npc 6921 2
 msg エアリス\n「クラウド　こっち！
 sleep 24
-chg_npc_dir 6920 down
+chg_npc_dir 6920 up
 chg_npc_img 6920 103
-sleep 24
-chg_npc_dir 6920 left
+sleep 8
+chg_npc_dir 6920 right
 sleep 40
 chg_speed 6921 not_move
 chg_npc_img 6920 0
@@ -149,14 +158,15 @@ set_layer 6920 front
 set_npc_pos 6920 69 15 18
 jump_npc 6920 same 1
 play_se landing.wav
-loop 8
+loop 6
 inc_map_draw_y_offset
 sleep 1
 pool
-loop 8
+loop 6
 dec_map_draw_y_offset
 sleep 1
 pool
+sleep 4
 move_npc 6920 right 1
 sleep 8
 chg_speed 6920 not_step
@@ -195,18 +205,20 @@ sleep 24
 step_npc 6920 1
 msg 『クラス……\n　1ST（ファースト）だ
 chg_npc_dir 6921 down
-sleep 24
+sleep 32
 step_npc 6921 2
 msg エアリス\n「ふ～ん　おんなじだ
-sleep 16
+sleep 24
 chg_npc_dir 6920 left
+sleep 16
+step_npc 6920 1
 msg 『だれとおなじだって？
 sleep 16
 step_npc 6921 1
 msg エアリス\n「はじめてすきになったひと
 sleep 16
 chg_npc_dir 6920 down
-sleep 32
+sleep 40
 step_npc 6920 1
 msg 『……つきあってた？
 sleep 32
@@ -215,7 +227,7 @@ chg_npc_img 6921 3
 step_npc 6921 2
 msg エアリス\n「そんなんじゃないの\n　ちょっと　いいなって\n　おもってた
 sleep 32
-chg_npc_dir 6920 left
+step_npc 6920 2
 msg 『もしかしたら　しってるかもしれないな\n　そいつのなまえは？
 sleep 24
 chg_npc_dir 6921 right
@@ -224,10 +236,11 @@ step_npc 6921 2
 sleep 40
 chg_npc_img 6921 3
 msg エアリス\n「もういいの
-chg_npc_img 6920 0
 chg_npc_img 6921 3
 chg_npc_dir 6921 down
-sleep 32
+sleep 16
+chg_npc_dir 6920 left
+sleep 16
 chg_event_move_char_speed slow
 move_char up 4
 sleep 64
@@ -419,12 +432,13 @@ pool
 play_se landing.wav
 move_char down 2
 chg_event_move_char_speed normal
-kill_through 7199
-sleep 32
+sleep 16
+include ./event/common/act/act1-4_5.txt
 chg_char_dir up
 draw_char on
 kill 6920
-create event_generator 6801 68 12 8 17 0 0 @../common/068/rokubangai2.txt
-kill_through_range 6960 6963
+if_party_mem 3
 del_party_mem 3
-create event_generator 7199 71 0 0 17 0 0 @071/temp.txt
+fi
+set_flag 30 13
+create event_generator 7190 10 0 0 17 0 0 @../common/point.txt

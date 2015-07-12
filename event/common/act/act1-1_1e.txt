@@ -1,0 +1,8 @@
+kill_through_range 0 159
+create npc 400 4 1 26 17 3 0 Wedge\n`I'll secure the escape\n route. You take care of\n the reactor.\n Geez, when this huge\n bustard goes up, it'll\n be somethin' to see!
+create npc_event 560 5 14 19 116 1 4 none
+create npc_event 561 5 14 18 116 1 4 none
+create npc_event 562 5 14 17 116 1 4 none
+chg_npc_y_offset 560 -2
+chg_npc_y_offset 561 -2
+chg_npc_y_offset 562 -2

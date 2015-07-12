@@ -1,0 +1,19 @@
+wait_same_pos
+chg_char_state_move
+wait_key_push_edge select
+kill_through_range 8763 8768
+set_key_unvalid a
+set_key_unvalid b
+set_key_unvalid select
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 3
+sleep 80
+reset_char_img_tmp
+chg_char_dir down
+create event_generator 8763 87 9 14 17 0 0 @../common/087/wm_squat_start.txt
+create event_generator 8764 87 9 14 17 0 0 @../common/087/wm_squat_a.txt
+create event_generator 8765 87 9 14 17 0 0 @../common/087/wm_squat_b.txt
+set_key_valid a
+set_key_valid b
+set_key_valid select

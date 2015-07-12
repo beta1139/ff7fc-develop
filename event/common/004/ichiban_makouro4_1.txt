@@ -1,0 +1,8 @@
+wait_same_pos
+create event_generator 406 4 0 0 17 0 0 @../common/004/ichiban_makouro4_2.txt
+create event_generator 407 4 0 0 17 0 0 @../common/004/ichiban_makouro4_3.txt
+chg_char_state_move
+move_npc 401 left 12
+sleep 96
+kill 401
+chg_npc_img 400 36

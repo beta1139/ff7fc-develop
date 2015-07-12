@@ -1,5 +1,5 @@
 wait_same_pos
-create event_generator 10200 102 1 1 17 0 0 @102/plate_support_gunshot3.txt
+create event_generator 10200 102 1 1 17 0 0 @../common/102/plate_support_gunshot3.txt
 step_npc 10253 18
 move_npc 10255 up 2
 jump_npc 10251 same 1

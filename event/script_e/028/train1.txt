@@ -1,20 +1,5 @@
 wait_same_pos
-set_key_unvalid up
-set_key_unvalid left
-set_key_unvalid down
-set_key_unvalid right
-set_key_unvalid start
-set_flag 0 0
-chg_type 1730 npc_event
-chg_type 1731 npc_event
-chg_type 1732 npc_event
-chg_type 1733 npc_event
-chg_type 1734 npc_event
-chg_speed 1730 not_move
-chg_speed 1731 not_move
-chg_speed 1732 not_move
-chg_speed 1733 not_move
-chg_speed 1734 not_move
+set_flag 30 6
 move_char left 3
 sleep 16
 create npc_event 2800 28 3 10 0 3 2 none
@@ -35,7 +20,10 @@ move_npc 2801 right 2
 move_npc 2802 right 2
 sleep 32
 jump_npc 2801 same 2
-sleep 32
+sleep 16
+chg_char_state_move
+create event_generator 2890 10 0 0 17 0 0 @../common/point.txt
+sleep 16
 step_npc 2801 2
 msg Baret\n`Yo!
 chg_speed 2803 normal

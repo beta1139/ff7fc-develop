@@ -11,7 +11,7 @@ sleep 32
 reset_char_img_tmp
 restore_char_dir
 msg `So you've heard enough==\n It's the first big news\n in some while.\n We'll see how it'll go.
-create npc 2610 26 3 8 90 3 0 `So you don't know yet?\n\n\n\n They say that a\n terrorist group called\n AVALANCHE somethin' has\n bombed a Mako reactor.\n Their official statement\n talks about anti-Shinra\n or some such shit,\n but in reality==\n They're only tryin' to\n pull an indiscriminate\n mass murder!\n\n Har-har-har!\n\n\n\n Fuckin' funny, isn't it?\n If they keep making\n rackets up there, It'd\n help us weapon dealers.\n Maybe I can get rid of\n this heap of stock.
+create npc 2610 26 2 8 90 3 0 `So you don't know yet?\n\n\n\n They say that a\n terrorist group called\n AVALANCHE somethin' has\n bombed a Mako reactor.\n Their official statement\n talks about anti-Shinra\n or some such shit,\n but in reality==\n They're only tryin' to\n pull an indiscriminate\n mass murder!\n\n Har-har-har!\n\n\n\n Fuckin' funny, isn't it?\n If they keep making\n rackets up there, It'd\n help us weapon dealers.\n Maybe I can get rid of\n this heap of stock.
 kill 2601
 create event_generator 2611 26 1 2 17 0 0 @026/nanabangai_slum16.txt
 fi

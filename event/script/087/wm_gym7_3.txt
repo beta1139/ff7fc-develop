@@ -37,4 +37,4 @@ msg 「ははは　きにしないでくれ\n　さいきん　でんきけいとうの\n　ちょうしがわるく
 chg_type 8719 npc
 chg_speed 8719 not_move
 set_inactive_msg 8719
-create event_generator 8733 87 11 19 17 0 0 @087/wm_squat.txt
+create event_generator 8733 87 11 19 17 0 0 @../common/087/wm_squat.txt

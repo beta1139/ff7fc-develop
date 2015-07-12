@@ -50,7 +50,7 @@ jump_npc 10601 same 1
 sleep 16
 jump_npc 10601 same 1
 sleep 16
-create event_generator 10621 106 0 0 17 0 0 @106/shinra_bldg_entrance_exp.txt
+create event_generator 10621 106 0 0 17 0 0 @../common/106/shinra_bldg_entrance_exp.txt
 chg_char_state_move
 step_npc 10601 3
 msg バレット\n「まえに　きいたことがあるぜ\n\n\n　このビルの　60かいから　うえは\n　とくべつブロックとかで\n　しゃいんでも　かんたんには　はいれないってな\n\n　エアリスがつれて\n　いかれたのも　そこにちがいねえ\n\n\n　いまなら　けいびにもスキがある\n　おおし　いくぜっ！！
@@ -142,7 +142,7 @@ sleep 16
 chg_char_state_move
 chg_speed 10601 slow
 step_npc 10601 2
-create event_generator 10621 106 0 0 17 0 0 @106/shinra_bldg_entrance_exp.txt
+create event_generator 10621 106 0 0 17 0 0 @../common/106/shinra_bldg_entrance_exp.txt
 msg バレット\n「そうこなくっちゃな！\n\n\n　おおし　いくぜっ！！
 fi
 if_flag 3 1
@@ -154,7 +154,7 @@ chg_char_state_move
 chg_npc_dir 10601 left
 chg_npc_img 10601 98
 step_npc 10602 2
-create event_generator 10621 106 0 0 17 0 0 @106/shinra_bldg_entrance_exp.txt
+create event_generator 10621 106 0 0 17 0 0 @../common/106/shinra_bldg_entrance_exp.txt
 msg ティファ\n「でしょ？\n\n\n　こんなときこそ　しんちょうに\n　ほかのルートをさがしましょ！
 fi
 wait_event_invalid 10621
@@ -177,3 +177,5 @@ include ./event/common/key_valid.txt
 chg_char_dir up
 draw_char on
 kill_through_range 10600 10602
+set_flag 30 24
+create event_generator 10690 106 0 0 17 0 0 @../common/point.txt

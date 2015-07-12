@@ -64,17 +64,4 @@ sleep 16
 draw_char on
 kill 8420
 chg_char_dir up
-set_flag 10 0
-chg_type 8911 npc
-chg_npc_img 8911 67
-set_npc_pos 8911 89 12 49
-create map_obj 8950 89 12 48 59 0 0 
-create map_obj 8951 89 12 47 59 0 0 
-create map_obj 8952 89 12 46 59 0 0 
-create map_obj 8953 89 12 45 59 0 0 
-create map_obj 8954 89 12 44 59 0 0 
-create map_obj 8955 89 12 43 59 0 0 
-create map_obj 8956 89 12 42 59 0 0 
-create map_obj 8957 89 12 41 59 0 0 
-create map_obj 8958 89 12 40 59 0 0 
-create event_generator 8900 89 0 0 17 0 0 @089/plate_section2.txt
+include ./event/common/084/plate_section1_ready.txt

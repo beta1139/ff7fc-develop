@@ -1,0 +1,65 @@
+create event_generator 1718 17 1 1 17 0 0 @017/nanabangai_station7.txt
+create event_generator 1719 17 1 2 17 0 0 @017/nanabangai_station8.txt
+create event_generator 1720 17 2 1 17 0 0 @017/nanabangai_station9.txt
+create event_generator 1721 17 14 9 17 0 0 @017/nanabangai_station10.txt
+set_npc_pos 1731 17 16 2
+set_npc_pos 1732 17 17 2
+chg_npc_dir 1731 right
+chg_npc_dir 1732 down
+set_npc_pos 1734 17 20 3
+chg_speed 1734 not_move
+set_npc_pos 1809 18 4 3
+chg_npc_dir 1809 down
+chg_speed 1809 not_move
+create event_generator 1913 19 1 1 17 0 0 @019/nanabangai5.txt
+create event_generator 1916 19 8 21 17 0 0 @../common/019/nanabangai7_1.txt
+create event_generator 1917 19 8 22 17 0 0 @../common/019/nanabangai7_2.txt
+create npc_event 2020 20 36 19 34 0 0 none
+create npc_event 2021 20 37 18 35 2 0 none
+create npc_event 2022 20 36 18 36 1 0 none
+create npc_event 2010 20 26 22 78 1 0 none
+set_flag_wall 2020
+set_flag_wall 2021
+set_flag_wall 2022
+create event_generator 2023 20 1 1 17 0 0 @../common/020/nanabangai_slum17.txt
+create event_generator 2024 20 1 2 17 0 0 @020/nanabangai_slum18.txt
+create event_generator 2025 20 2 1 17 0 0 @020/nanabangai_slum19.txt
+create event_generator 2026 20 2 2 17 0 0 @020/nanabangai_slum20.txt
+create event_generator 2027 20 25 24 17 0 0 @../common/020/nanabangai_slum21_1.txt
+create event_generator 2028 20 26 24 17 0 0 @../common/020/nanabangai_slum21_2.txt
+create event_generator 2029 20 27 24 17 0 0 @../common/020/nanabangai_slum21_3.txt
+create event_generator 2030 20 28 23 17 0 0 @../common/020/nanabangai_slum21_4.txt
+create event_generator 2031 20 28 22 17 0 0 @../common/020/nanabangai_slum21_5.txt
+create event_generator 2032 20 33 22 17 0 0 @../common/020/nanabangai_slum22.txt
+create event_generator 2033 20 34 23 17 0 0 @../common/020/nanabangai_slum22.txt
+create event_generator 2240 22 8 5 17 0 0 @022/seventhheaven8.txt
+create map_obj 2251 22 8 4 2 0 0 
+create event_generator 2261 22 5 13 17 0 0 @../common/022/seventhheaven_out1.txt
+create npc2 2320 23 1 4 17 0 0 
+create event_generator 2301 23 0 0 17 0 0 @../common/023/azito2.txt
+chg_speed 2400 not_step
+create npc2 2601 26 2 8 90 3 0 
+set_npc_pos 2602 26 6 8
+chg_npc_dir 2607 up
+create event_generator 2620 26 0 0 17 0 0 @026/beginner's_hall1.txt
+create treasure_materia 2628 26 5 8 3 0 0 4100
+create event_generator 2629 26 1 1 17 0 0 @026/beginner's_hall5.txt
+chg_npc_img 1751 5
+chg_npc_img 1752 6
+chg_npc_img 1753 7
+chg_npc_img 1754 8
+chg_npc_img 1755 7
+chg_npc_img 1756 8
+chg_npc_img 1757 7
+chg_npc_img 1758 8
+chg_npc_img 1759 7
+chg_npc_img 1760 8
+chg_npc_img 1761 7
+chg_npc_img 1762 8
+chg_npc_img 1763 9
+chg_npc_img 1764 10
+chg_npc_img 2691 29
+set_flag 0 0
+set_flag 1 0
+set_flag 9 1
+set_flag 20 0

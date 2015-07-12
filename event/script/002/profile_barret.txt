@@ -182,3 +182,5 @@ move_npc 252 up 3
 sleep 48
 kill 252
 kill_through_range 211 213
+create event_generator 405 4 14 26 17 0 0 @../common/004/ichiban_makouro4_1.txt
+include ./event/common/act/act1-1_1j.txt

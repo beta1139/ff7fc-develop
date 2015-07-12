@@ -15,11 +15,11 @@ set_talk_npc 8715
 msg `Are you an amateur?\n It's a good manner to\n talk to me from behind.
 reset_talk_npc
 if_char_dir down
-create event_generator 8733 87 10 13 17 0 0 @087/wm_squat.txt
+create event_generator 8733 87 10 13 17 0 0 @../common/087/wm_squat.txt
 fi
 if_char_dir left
-create event_generator 8733 87 11 14 17 0 0 @087/wm_squat.txt
+create event_generator 8733 87 11 14 17 0 0 @../common/087/wm_squat.txt
 fi
 if_char_dir up
-create event_generator 8733 87 10 15 17 0 0 @087/wm_squat.txt
+create event_generator 8733 87 10 15 17 0 0 @../common/087/wm_squat.txt
 fi

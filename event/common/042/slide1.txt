@@ -1,9 +1,4 @@
 wait_same_pos
-kill_through 4120
-kill_through 4110
-kill_through 3920
-kill_through 3910
-kill_through 3810
 set_slide_char_flag
 chg_event_move_char_speed fast
 play_se slide.ogg
@@ -35,15 +30,8 @@ pool
 sleep 4
 chg_char_img_tmp 143
 play_se landing.wav
-create npc_event 4760 47 14 19 116 0 0 none
-create npc_event 4761 47 14 18 116 0 0 none
-create npc_event 4762 47 14 17 116 0 0 none
-chg_npc_y_offset 4760 -2
-chg_npc_y_offset 4761 -2
-chg_npc_y_offset 4762 -2
-create npc2 4763 47 12 17 17 0 0 
-create npc2 4764 47 12 30 17 0 0 
-create npc2 4765 47 12 31 17 0 0 
-create npc2 4766 47 12 32 17 0 0 
-sleep 24
+include ./event/common/act/act1-3_3.txt
+sleep 8
 reset_char_img_tmp
+set_flag 30 8
+create event_generator 4290 10 0 0 17 0 0 @../common/point.txt

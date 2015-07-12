@@ -14,8 +14,8 @@ sleep 16
 fi
 warp_ff3_2 107 11 8 3 left
 if_flag_lesser 25 9
-create event_generator 11432 114 8 55 17 0 0 @114/shinra_bldg_stairs_baret02.txt
-create event_generator 11434 114 8 21 17 0 0 @114/shinra_bldg_stairs_reach.txt
+create event_generator 11432 114 8 55 17 0 0 @../common/114/shinra_bldg_stairs_baret02.txt
+create event_generator 11434 114 8 21 17 0 0 @../common/114/shinra_bldg_stairs_reach.txt
 set_layer 11434 front
 create npc_event 11401 114 9 51 1 0 3 none
 create npc_event 11402 114 7 47 2 2 3 none

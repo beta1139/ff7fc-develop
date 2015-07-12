@@ -26,4 +26,4 @@ chg_npc_dir 7924 left
 chg_speed 7924 not_move
 chg_type 7924 npc
 chg_param 7924 `I've bought a pretty\n flower from Aeris.\n\n\n 500Gil is a little steep,\n but she told me her name\n so I guess it's okay.
-create event_generator 7909 79 3 12 17 0 0 @079/wall_market17.txt
+create event_generator 7909 79 3 12 17 0 0 @../common/079/wall_market17.txt

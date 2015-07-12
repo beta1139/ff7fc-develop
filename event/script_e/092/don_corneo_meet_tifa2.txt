@@ -19,13 +19,13 @@ sleep 16
 chg_type 9221 npc2
 chg_speed 9221 not_move
 if_char_dir left
-create event_generator 9203 92 7 12 17 0 0 @drag_cloud.txt
+create event_generator 9203 92 7 12 17 0 0 @../common/drag_cloud.txt
 fi
 if_char_dir right
-create event_generator 9203 92 5 12 17 0 0 @drag_cloud.txt
+create event_generator 9203 92 5 12 17 0 0 @../common/drag_cloud.txt
 fi
 create event_generator 9204 92 10 5 17 0 0 @092/don_corneo_meet_tifa3_1.txt
-create event_generator 9206 92 6 15 17 0 0 @092/don_corneo_meet_tifa4.txt
+create event_generator 9206 92 6 15 17 0 0 @../common/092/don_corneo_meet_tifa4.txt
 set_key_valid up
 set_key_valid down
 set_key_valid left

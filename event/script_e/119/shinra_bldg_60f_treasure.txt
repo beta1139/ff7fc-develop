@@ -69,6 +69,7 @@ msg3 -1  You found nothing\n in the chest.
 fi
 wait_key_push_edge a
 erase_msg3
+set_flag 13 1
 kill 11997
 erase_msg3
 if_flag_lesser 25 12

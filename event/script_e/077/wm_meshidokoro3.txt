@@ -2,7 +2,7 @@ wait_same_pos
 chg_type 7710 npc_event
 chg_type 7711 npc_event
 chg_speed 7711 normal
-create event_generator 7705 77 4 9 17 0 0 @077/wm_meshidokoro4.txt
+create event_generator 7705 77 4 9 17 0 0 @../common/077/wm_meshidokoro4.txt
 chg_npc_dir 7711 up
 msg `What'll it be?\n\n\n\n{Well==\n\n\n\n#3\n  Barbecue meal set.\n  Sashimi meal set.\n  Today's special.\n\n[[]][[]][[]]
 create npc_event 7720 77 4 9 0 3 2 none

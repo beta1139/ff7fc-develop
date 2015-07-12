@@ -1,0 +1,60 @@
+if_owned_item 6006
+del_item 6006
+set_flag 10 1
+fi
+if_owned_item 6007
+del_item 6007
+set_flag 10 1
+fi
+if_owned_item 6008
+del_item 6008
+set_flag 10 1
+fi
+if_owned_item 6009
+del_item 6009
+set_flag 10 1
+fi
+if_owned_item 6010
+del_item 6010
+set_flag 10 1
+fi
+if_owned_item 6011
+del_item 6011
+set_flag 10 1
+fi
+if_owned_item 6012
+del_item 6012
+set_flag 10 1
+fi
+if_owned_item 6013
+del_item 6013
+set_flag 10 1
+fi
+if_owned_item 6014
+del_item 6014
+set_flag 10 1
+fi
+if_owned_item 6015
+del_item 6015
+set_flag 10 1
+fi
+if_owned_item 6016
+del_item 6016
+set_flag 10 1
+fi
+if_owned_item 6017
+del_item 6017
+set_flag 10 1
+fi
+if_owned_item 6018
+del_item 6018
+set_flag 10 1
+fi
+if_flag 10 1
+if_flag 11 1
+include ./event/script/del_item_msg.txt
+fi
+fi
+set_flag 10 0
+set_flag 11 0
+set_flag 22 0

@@ -1,29 +1,31 @@
 set_eternal_event
 wait_target_talked 167
 reset_talked_flag 167
+if_flag_lesser 3 3
+if_flag 4 3
+end
+fi
+include ./event/common/now_loading.txt
+fi
 if_flag 3 0
 include ./event/common/del_member.txt
+include ./event/common/act/act1-4_3e.txt
+include ./event/common/act/act1-6_1.txt
 include ./event/common/act/act1-7_1.txt
 set_flag 23 0
-if_owned_item 1084
-del_item 1084
-fi
-if_owned_item 1084
-del_item 1084
-fi
-if_owned_item 1084
-del_item 1084
-fi
 sleep 8
 include ./event/common/act/act1-7_2e.txt
 include ./event/common/act/act1-7_3.txt
 include ./event/common/act/act1-7_4e.txt
 warp_ff3_2 84 11 24 2 up
+set_flag 30 22
 include ./event/common/debug/supplement2.txt
 set_flag 0 0
 fi
 if_flag 3 1
 include ./event/common/del_member.txt
+include ./event/common/act/act1-4_3e.txt
+include ./event/common/act/act1-6_1.txt
 include ./event/common/act/act1-7_1.txt
 sleep 8
 include ./event/common/act/act1-7_2e.txt
@@ -33,16 +35,35 @@ include ./event/common/act/act1-8_1.txt
 include ./event/common/debug/supplement2.txt
 if_flag 4 0
 warp_ff3_2 106 16 13 2 up
+set_flag 30 24
 fi
-if_flag 4 1
+if_flag_greater 4 0
 sleep 8
 include ./event/common/act/act1-8_2.txt
+include ./event/common/act/act1-8_3e.txt
+fi
+if_flag 4 1
 warp_ff3_2 117 16 26 2 right
+set_flag 30 25
+fi
+if_flag_greater 4 1
+set_flag 0 0
+create event_generator 11941 119 16 13 17 0 0 @119/shinra_bldg_60f_tifa1.txt
+create event_generator 11942 119 11 21 17 0 0 @119/shinra_bldg_60f_tifa2.txt
+sleep 8
+include ./event/common/120/finished_60f.txt
+fi
+if_flag 4 2
+set_flag 25 12
+set_flag 24 9
+set_flag 30 27
+sleep 8
+erase_msg3
+warp_ff3_2 120 34 16 2 up
 fi
 fi
 if_flag 3 2
 include ./event/common/del_member.txt
-include ./event/common/act/act1-7_1.txt
 warp 600 11 16 up
 play_bgm
 set_flag 0 0
@@ -50,5 +71,5 @@ fi
 if_flag 3 3
 end
 fi
-create npc2 167 1 6 12 64 0 0 
+erase_msg3
 draw_char on

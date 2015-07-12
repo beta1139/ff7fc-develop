@@ -63,9 +63,9 @@ draw_fake_countdown on
 start_fake_countdown_sec 30
 chg_npc_dir 8710 right
 create event_generator 8760 87 9 14 17 0 0 @087/wm_squat_end.txt
-create event_generator 8763 87 9 14 17 0 0 @087/wm_squat_start.txt
-create event_generator 8764 87 9 14 17 0 0 @087/wm_squat_a.txt
-create event_generator 8765 87 9 14 17 0 0 @087/wm_squat_b.txt
+create event_generator 8763 87 9 14 17 0 0 @../common/087/wm_squat_start.txt
+create event_generator 8764 87 9 14 17 0 0 @../common/087/wm_squat_a.txt
+create event_generator 8765 87 9 14 17 0 0 @../common/087/wm_squat_b.txt
 fi
 if_flag 3 1
 step_npc 8715 2
@@ -75,7 +75,7 @@ start_fake_countdown_sec 30
 chg_speed 8710 normal
 create event_generator 8761 87 9 14 17 0 0 @087/wm_squat_end2.txt
 create event_generator 8762 87 9 14 17 0 0 @087/wm_squat_opponent.txt
-create event_generator 8763 87 9 14 17 0 0 @087/wm_squat_start.txt
-create event_generator 8764 87 9 14 17 0 0 @087/wm_squat_a.txt
-create event_generator 8765 87 9 14 17 0 0 @087/wm_squat_b.txt
+create event_generator 8763 87 9 14 17 0 0 @../common/087/wm_squat_start.txt
+create event_generator 8764 87 9 14 17 0 0 @../common/087/wm_squat_a.txt
+create event_generator 8765 87 9 14 17 0 0 @../common/087/wm_squat_b.txt
 fi

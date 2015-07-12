@@ -38,16 +38,8 @@ chg_event_move_char_speed normal
 play_se syu.ogg
 chg_npc_dir 7515 up
 sleep 64
-chg_param 8715 `Hmm, you can do\n better than that.
 play_se syu.ogg
-sleep 32
-if_flag_greater 18 9
-chg_param 8715 `Well, not half bad.
-fi
-sleep 32
-if_flag_greater 18 15
-chg_param 8715 `Hey, you look great.
-fi
+sleep 64
 chg_char_img_tmp 13
 chg_speed 7521 normal
 msg {==
@@ -245,65 +237,12 @@ sleep 16
 chg_char_dir up
 draw_char on
 kill 7520
+set_flag 30 16
+create event_generator 1060 10 0 0 17 0 0 @../common/point.txt
 sleep 16
 move_npc 7521 left 1
-sleep 16
+include ./event/common/act/act1-5_4j.txt
 kill 7521
-sleep 8
-chg_speed 7510 not_move
-chg_speed 7515 not_move
-chg_type 7510 npc
-chg_type 7512 npc
-chg_type 7515 npc
-chg_param 7510 `==She's kind of\n ==extraordinary.
-chg_param 7512 `You are==\n\n\n\n ==queer.
-chg_param 7515 `Yes, yes. You look fine.
-chg_param 7221 `Hey, you cutie!\n I got a perfect\n job for you!\n\n You gotta see Don.\n You'll be making\n really good money.
-chg_param 7224 `Please, have a seat.
-chg_param 7226 `What is it?\n You ladies have a bite?
-set_npc_pos 7223 72 9 33
-chg_npc_dir 7223 up
-chg_npc_dir 7225 right
-kill_through_range 7281 7282
-create npc2 7614 76 5 6 17 0 0 
-create event_generator 7604 76 0 0 17 0 0 @076/wm_materia_shop4.txt
-create npc3 7718 77 4 9 79 3 0 `Munch, munch==
-create npc_event 7922 79 4 13 70 1 0 `Let me see.\n That desperately spiky\n hair style!\n I'm sure I have seen it.
-set_npc_pos 7923 79 6 13
-set_npc_pos 7924 79 6 12
-chg_type 7920 npc_event
-chg_type 7923 npc_event
-chg_type 7924 npc_event
-chg_type 8710 npc_event
-chg_type 8711 npc_event
-chg_type 8712 npc_event
-chg_npc_dir 8710 down
-chg_npc_dir 8711 right
-chg_npc_dir 8712 left
-chg_npc_dir 8715 right
-set_npc_pos 8710 87 14 12
-set_npc_pos 8711 87 13 15
-set_npc_pos 8712 87 15 15
-set_npc_pos 8715 87 10 14
-chg_npc_img 8710 111
-set_npc_pos 8815 88 3 6
-chg_type 8815 npc_event
-chg_npc_dir 8815 right
-chg_speed 8815 not_step
-create npc 8709 87 14 12 17 0 0 `Now 1 2 3\n Rhythm's all in squat.
-create event_generator 8733 87 10 23 17 0 0 @087/wm_squat.txt
-create event_generator 8601 86 11 15 17 0 0 @086/keep_drag1_in.txt
-create event_generator 8809 88 20 13 17 0 0 @088/keep_drag2_in.txt
-create event_generator 8807 88 4 7 17 0 0 @088/wm_yoidore7.txt
-create event_generator 7261 72 8 47 17 0 0 @072/wall_market13_1.txt
-create event_generator 7262 72 9 47 17 0 0 @072/wall_market13_2.txt
-create event_generator 7263 72 10 47 17 0 0 @072/wall_market13_3.txt
-kill 8510
-create npc2 8512 85 10 15 131 1 0 
-create event_generator 8503 85 0 0 17 0 0 @085/wall_market21.txt
-set_flag 14 7
-set_flag 9 2
-sleep 8
 chg_char_state_move
 loop_inf
 sleep 400

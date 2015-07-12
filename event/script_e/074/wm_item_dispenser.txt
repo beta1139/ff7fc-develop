@@ -12,7 +12,7 @@ msg {Not enough money.
 move_char down 1
 sleep 16
 if_flag 9 2
-create event_generator 7402 74 6 7 17 0 0 @drag_cloud.txt
+create event_generator 7402 74 6 7 17 0 0 @../common/drag_cloud.txt
 fi
 end
 fi
@@ -119,7 +119,7 @@ step_npc 7420 1
 msg {It's broken.
 move_char down 5
 if_flag 9 2
-create event_generator 7402 74 6 8 17 0 0 @drag_cloud.txt 
+create event_generator 7402 74 6 8 17 0 0 @../common/drag_cloud.txt 
 fi
 sleep 80
 chg_char_dir up
@@ -129,7 +129,7 @@ fi
 if_flag 3 1
 move_char down 1
 if_flag 9 2
-create event_generator 7402 74 6 7 17 0 0 @drag_cloud.txt 
+create event_generator 7402 74 6 7 17 0 0 @../common/drag_cloud.txt 
 fi
 sleep 16
 fi

@@ -4,9 +4,6 @@ disable_char_chg
 kill_through_range 1910 1912
 kill_through 1951
 play_event_bgm 1-10-Fighting.ogg
-create npc_event 1920 19 27 23 2 2 3 none
-create npc_event 1921 19 28 22 0 2 3 none
-create npc_event 1922 19 27 21 3 2 3 Aeris\n`It's okay.\n Leave it to me.
 set_npc_pos 1950 19 1 1
 move_npc 1921 left 12
 move_npc 1920 left 12

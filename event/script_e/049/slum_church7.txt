@@ -407,15 +407,7 @@ sleep 40
 erase_msg3
 chg_event_move_char_speed normal
 warp_ff3_2 51 8 31 2 right
-chg_npc_y_offset 5140 0
-chg_npc_y_offset 5141 0
-chg_npc_y_offset 5142 0
-chg_npc_y_offset 5143 0
-chg_npc_y_offset 5144 0
-chg_npc_y_offset 5145 0
-add_party_mem 3
+include ./event/common/act/act1-4_2.txt
 draw_char on
-kill 4903
-kill 4907
-kill 4908
-kill 4909
+set_flag 30 10
+create event_generator 5169 10 0 0 17 0 0 @../common/point.txt

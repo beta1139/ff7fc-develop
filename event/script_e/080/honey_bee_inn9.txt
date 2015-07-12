@@ -1,7 +1,7 @@
 wait_same_pos
 chg_type 8011 npc_event
 chg_speed 8011 normal
-create event_generator 8100 81 11 8 17 0 0 @081/honey_bee_inn8.txt
+create event_generator 8100 81 11 8 17 0 0 @../common/081/honey_bee_inn8.txt
 create npc_event 8010 80 8 4 0 1 2 none
 draw_char off
 loop 4

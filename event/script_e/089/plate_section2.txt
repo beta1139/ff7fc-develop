@@ -164,21 +164,6 @@ move_npc 8911 right 1
 sleep 16
 move_npc 8921 up 1
 move_npc 8922 up 1
-create npc_event 8912 89 10 23 65 0 0 none
-create npc_event 8913 89 14 23 89 0 0 none
-create npc2 8980 89 12 48 17 0 0 none
-sleep 16
-kill_through_range 8921 8922
-chg_npc_dir 8911 left
-chg_speed 8911 not_move
-set_inactive_msg 8911
-chg_type 8911 npc
-create event_generator 8464 84 24 8 17 0 0 @084/plate_section_create_bgm.txt
-create event_generator 8465 84 24 9 17 0 0 @084/plate_section_create_bgm.txt
-create event_generator 8930 89 12 48 17 0 0 @089/plate_section_jump1.txt
-chg_npc_y_offset 10360 0
-chg_npc_y_offset 10361 0
-chg_npc_y_offset 10362 0
-chg_npc_y_offset 10363 0
-set_layer 10309 front
-set_layer 10310 front
+include ./event/common/089/plate_section1_start.txt
+set_flag 30 23
+create event_generator 8990 89 0 0 17 0 0 @../common/point.txt

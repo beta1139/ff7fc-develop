@@ -1,13 +1,10 @@
 wait_same_pos
-kill_through_range 6702 6722
-set_key_valid up
-set_key_valid down
-set_key_valid left
-set_key_valid right
+move_char left 1
+sleep 16
+move_char down 2
+sleep 32
+include ./event/common/act/act1-4_4j.txt
+include ./event/common/key_valid.txt
 set_key_valid select
-set_key_valid start
-create npc 6520 65 11 19 17 0 0 w6‚Î‚ñ‚ª‚¢‚ğ‚±‚¦‚Ä7‚Î‚ñ‚ª‚¢‚Ö@‚©\n@‚Ğ‚Æ‚è‚Å‚È‚ñ‚Æ‚©‚È‚è‚»‚¤‚¾‚È
-kill_through_range 5622 5623
-create npc_event 5621 56 9 9 3 1 4 none
-create event_generator 5600 56 11 12 17 0 0 @056/gobangai_slums8_1.txt
-create event_generator 5601 56 12 13 17 0 0 @056/gobangai_slums8_2.txt
+set_flag 30 12
+create event_generator 5590 10 0 0 17 0 0 @../common/point.txt

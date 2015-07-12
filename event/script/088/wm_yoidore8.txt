@@ -160,8 +160,9 @@ kill 8820
 move_npc 8821 left 1
 set_npc_pos 7510 75 4 8
 chg_npc_dir 7510 up
-create npc_event 7515 75 7 14 77 2 0 「そろったようじゃの\n　はやくきてみせてくれ
-create npc2 7516 75 6 14 17 0 0 「どうじゃ？\n　あえたかな？
+set_npc_pos 7515 75 7 14
+chg_npc_img 7515 77
+set_npc_pos 7516 75 6 14
 kill 7514
 sleep 16
 kill 8821

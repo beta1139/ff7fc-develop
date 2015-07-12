@@ -3,36 +3,5 @@ wait_same_pos
 chg_char_img_tmp 13
 kill_through 7264
 create npc_event 7231 72 8 47 129 0 2 none
-move_npc 7231 up 2
-sleep 32
-chg_npc_dir 7231 down
-sleep 32
-move_char up 1
-sleep 16
-step_char 1
-sleep 16
-msg {What is it, Aeris?
-sleep 16
-step_npc 7231 2
-set_talk_npc 7231
-msg Aeris\n`==What is it?\n You going out like that?\n I don't mind, you know.
-reset_talk_npc
-chg_char_dir right
-step_char 1
-sleep 16
-msg {==I forgot.
-jump_npc 7231 same 1
-sleep 16
-chg_npc_dir 7231 up
-chg_npc_img 7231 15
-step_npc 7231 2
-set_talk_npc 7231
-msg Aeris\n`Take a grip,\n you sweet Cloud girl!
-reset_talk_npc
-chg_char_dir up
-sleep 16
-chg_npc_img 7231 3
-move_npc 7231 down 1
-sleep 16
-kill 7231
-create event_generator 7264 72 8 46 17 0 0 @drag_cloud.txt
+include ./event/script_e/072/wall_market13_common.txt
+create event_generator 7264 72 8 46 17 0 0 @../common/drag_cloud.txt

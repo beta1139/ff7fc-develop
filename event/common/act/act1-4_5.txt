@@ -1,0 +1,12 @@
+kill_through_range 4900 4949
+kill_through_range 4951 5699
+kill_through 6542
+kill_through 6760
+kill_through 6800
+kill_through 6900
+kill_through_range 6960 6963
+sleep 16
+create event_generator 6760 67 5 11 17 0 0 @067/good_night.txt
+create event_generator 6801 68 12 8 17 0 0 @../common/068/rokubangai2.txt
+chg_char_img 0
+disable_char_chg

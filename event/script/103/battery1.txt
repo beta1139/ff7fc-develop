@@ -76,6 +76,6 @@ draw_char on
 kill 10390
 set_flag 23 1
 del_item 1084
-create event_generator 10374 103 13 25 17 0 0 @103/plate_section_jump5.txt
+create event_generator 10374 103 13 25 17 0 0 @../common/103/plate_section_jump5.txt
 fi
 fi

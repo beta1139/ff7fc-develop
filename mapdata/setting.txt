@@ -95,7 +95,7 @@ id,type,bgm,battle_back,monster_party_id
 93,1,1-18-Don_of_the_Slums.ogg,4,188/189/190/191
 94,1,1-18-Don_of_the_Slums.ogg,4,188/189/190/191
 95,1,1-18-Don_of_the_Slums.ogg,4,188/189/190/191
-96,1,1-08-Lurking_in_the_Darkness.ogg,25,245/246/247/248
+96,0,1-08-Lurking_in_the_Darkness.ogg,25,245/246/247/248
 97,0,1-08-Lurking_in_the_Darkness.ogg,25,245/246/247/248
 98,0,1-04-Anxious_Heart.ogg,4,249/250/251/252/254
 99,0,through,4,250/251/252/253/254
@@ -119,7 +119,7 @@ id,type,bgm,battle_back,monster_party_id
 117,0,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 118,0,1-09-Shinra_Company.ogg,0,188/189/190/191
 119,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
-120,0,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
+120,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 121,0,1-09-Shinra_Company.ogg,0,188/189/190/191
 122,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
 123,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191

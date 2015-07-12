@@ -1,0 +1,3 @@
+wait_same_pos
+reset_screen_effect
+include ./event/common/act/act1-6_4.txt

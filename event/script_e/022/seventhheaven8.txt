@@ -7,7 +7,7 @@ jump_npc 2202 same 1
 msg Tifa\n`Mornin', Cloud!
 chg_char_dir up
 sleep 16
-chg_npc_img 2251 3
+kill 2251
 sleep 16
 chg_npc_dir 2202 right
 move_char down 1

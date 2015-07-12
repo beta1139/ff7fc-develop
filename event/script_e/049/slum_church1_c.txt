@@ -218,9 +218,4 @@ chg_char_dir up
 draw_char on
 kill 4900
 chg_event_move_char_speed normal
-set_key_valid up
-set_key_valid left
-set_key_valid down
-set_key_valid right
-set_key_valid start
-set_key_valid b
+include ./event/common/key_valid.txt

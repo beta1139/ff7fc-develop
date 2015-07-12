@@ -2,90 +2,134 @@ set_eternal_event
 wait_target_talked 163
 reset_talked_flag 163
 if_flag 3 0
-include ./event/common/del_member.txt
-sleep 16
-kill_through_range 1000 1747
-kill_through_range 1789 3299
+include ./event/common/act/act1-3_2.txt
 draw_char off
 warp_ff3_2 34 7 16 2 up
-add_party_mem 1
-add_party_mem 2
 include ./event/common/debug/supplement1.txt
-set_flag 0 0
-set_flag 1 0
-set_flag 9 1
-set_flag 10 0
-set_flag 11 2
+set_flag 30 7
 end
 fi
 if_flag 3 1
 if_flag 4 0
-include ./event/common/del_member.txt
 draw_char off
-set_flag 0 0
-set_flag 1 0
-set_flag 9 1
-warp_ff3_2 49 20 11 2 down
+remove_all_materia 1
+remove_all_materia 2
+fadeout
+warp 49 20 11 down
+sleep 16
+fadein
+set_flag 30 9
 fi
 if_flag 4 1
-include ./event/common/del_member.txt
+include ./event/common/act/act1-4_1.txt
 warp_ff3_2 49 6 11 2 down
-set_flag 0 0
-set_flag 1 0
-set_flag 9 1
+set_flag 30 9
 fi
 if_flag 4 2
-include ./event/common/del_member.txt
-sleep 16
-set_flag 0 0
-set_flag 1 0
-set_flag 9 1
-add_party_mem 3
-kill_through_range 4900 4911
+include ./event/common/act/act1-4_1.txt
+include ./event/common/act/act1-4_2.txt
 warp_ff3_2 51 8 31 2 right
-chg_npc_y_offset 5140 0
-chg_npc_y_offset 5141 0
-chg_npc_y_offset 5142 0
-chg_npc_y_offset 5143 0
-chg_npc_y_offset 5144 0
-chg_npc_y_offset 5145 0
-draw_char on
+set_flag 30 10
 fi
 if_flag 4 3
-include ./event/common/del_member.txt
-sleep 16
+include ./event/common/act/act1-4_1.txt
+include ./event/common/act/act1-4_2.txt
 draw_char off
 create npc_event 5320 53 17 14 0 1 2 none
 create npc_event 5321 53 18 15 3 2 2 none
 warp_ff3_2 53 17 14 2 down
 play_event_bgm 1-12-Flowers_Blooming_in_the_Church.ogg
-set_flag 0 0
-set_flag 1 0
-set_flag 9 1
-add_party_mem 3
+set_flag 30 10
 fi
 include ./event/common/debug/supplement1.txt
 fi
 if_flag 3 2
-include ./event/common/del_member.txt
-kill_through_range 4900 4949
-kill_through_range 4951 4999
-kill_through_range 5622 5623
-kill_through_range 6600 6701
-kill 6800
-kill 6900
-create event_generator 6801 68 12 8 17 0 0 @../common/068/rokubangai2.txt
-warp_ff3_2 71 6 8 2 up
+set_flag 11 1
+include ./event/common/now_loading.txt
+if_flag 4 0
+include ./event/common/act/act1-4_1.txt
+include ./event/common/act/act1-4_2.txt
 sleep 16
-create event_generator 4900 49 5 16 17 0 0 @049/slum_church8_1.txt
-create event_generator 4901 49 6 16 17 0 0 @049/slum_church8_2.txt
-create npc_event 4922 49 5 12 65 3 0 「きれいだねえ！
-create npc_event 4923 49 7 11 67 2 0 「あとで　おみずあげますからね～
-create event_generator 6760 67 5 11 17 0 0 @067/good_night.txt
-set_flag 0 0
-set_flag 1 0
-set_flag 9 1
+include ./event/common/act/act1-4_3j.txt
+include ./event/common/act/act1-4_4j.txt
+include ./event/common/act/act1-4_5.txt
+erase_msg3
+warp_ff3_2 71 6 8 2 up
 include ./event/common/debug/supplement1.txt
+include ./event/common/071/del_item1.txt
+include ./event/common/071/del_item2.txt
+include ./event/script/071/del_item3.txt
+set_flag 30 13
+create event_generator 7190 10 0 0 17 0 0 @../common/point.txt
+fi
+if_flag 4 1
+include ./event/common/act/act1-4_1.txt
+include ./event/common/act/act1-4_2.txt
+sleep 16
+include ./event/common/act/act1-4_3j.txt
+include ./event/common/act/act1-4_4j.txt
+include ./event/common/act/act1-4_5.txt
+warp_ff3_2 71 6 8 2 up
+sleep 8
+include ./event/common/act/act1-5_1j.txt
+sleep 8
+include ./event/common/act/act1-5_2j.txt
+erase_msg3
+warp_ff3_2 84 17 30 2 up
+include ./event/common/071/del_item2.txt
+include ./event/script/071/del_item3.txt
+include ./event/common/075/corneo_likeability.txt
+set_flag 30 14
+fi
+if_flag 4 2
+include ./event/common/act/act1-4_1.txt
+include ./event/common/act/act1-4_2.txt
+sleep 16
+include ./event/common/act/act1-4_3j.txt
+include ./event/common/act/act1-4_4j.txt
+include ./event/common/act/act1-4_5.txt
+warp_ff3_2 71 6 8 2 up
+sleep 8
+include ./event/common/act/act1-5_1j.txt
+sleep 8
+include ./event/common/act/act1-5_2j.txt
+sleep 8
+include ./event/common/act/act1-5_3j.txt
+erase_msg3
+warp_ff3_2 72 6 16 2 up
+include ./event/script/071/del_item3.txt
+include ./event/common/075/corneo_likeability.txt
+set_flag 30 15
+fi
+if_flag 4 3
+include ./event/common/act/act1-4_1.txt
+include ./event/common/act/act1-4_2.txt
+sleep 16
+include ./event/common/act/act1-4_3j.txt
+include ./event/common/act/act1-4_4j.txt
+include ./event/common/act/act1-4_5.txt
+warp_ff3_2 71 6 8 2 up
+sleep 8
+include ./event/common/act/act1-5_1j.txt
+sleep 8
+include ./event/common/act/act1-5_2j.txt
+sleep 8
+include ./event/common/act/act1-5_3j.txt
+sleep 8
+include ./event/common/075/corneo_likeability.txt
+sleep 8
+include ./event/common/act/act1-5_4j.txt
+erase_msg3
+warp_ff3_2 75 8 10 2 up
+chg_char_img_tmp 13
+set_npc_pos 7500 75 4 16
+set_flag 30 16
+chg_char_state_move
+loop_inf
+sleep 400
+pool
+fi
+erase_msg3
 fi
 if_flag 3 3
 fi

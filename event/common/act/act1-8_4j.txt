@@ -1,0 +1,14 @@
+if_not_owned_item 6019
+add_item 6019
+fi
+if_not_owned_item 6020
+add_item 6020
+fi
+if_owned_item 6021
+del_item 6021
+fi
+if_owned_item 6023
+del_item 6023
+fi
+chg_param 12000 「このかいのドア\n　ひらきっぱなしなんだ\n　はやく　なおしてくれよな
+kill_through 12021

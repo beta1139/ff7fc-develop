@@ -1,0 +1,60 @@
+set_npc_pos 1906 19 15 15
+set_npc_pos 1907 19 16 18
+set_npc_pos 1908 19 12 15
+set_npc_pos 1909 19 16 17
+set_npc_pos 1940 19 12 18
+set_npc_pos 1950 19 19 11
+chg_npc_dir 1906 down
+chg_npc_dir 1907 up
+chg_npc_dir 1908 up
+chg_npc_dir 1909 down
+chg_npc_dir 1922 up
+chg_npc_dir 1940 up
+chg_speed 1906 not_move
+chg_speed 1907 not_move
+chg_speed 1908 not_move
+chg_speed 1909 not_move
+chg_speed 1940 not_move
+chg_speed 1922 not_move
+set_flag_wall 1906
+set_flag_wall 1907
+set_flag_wall 1908
+set_flag_wall 1909
+set_flag_wall 1940
+set_flag_wall 1922
+set_flag_wall 1923
+chg_type 1906 npc
+chg_type 1907 npc2
+chg_type 1908 npc
+chg_type 1909 npc2
+chg_type 1940 npc
+chg_type 1922 npc
+chg_type 1923 npc2
+chg_param 1906 「おう！　これがおれの　さいごのしごとだ！\n　のぼってけ！！
+chg_param 1908 「ウウッ……まもってくれよ\n　おれの　すてきで　ふしぎなばしょ
+chg_speed 1923 not_step
+set_layer 1923 back
+create npc3 10150 101 19 84 96 1 4 ビッグス\n「クラウド……\n　やっぱり……ほしのいのちなんて……\n　どうなろうと……きょうみないか？\n#2\n　　わるいけど　きょうみない\n　　それよりケガが……\n\n\n[[]][[]]
+set_layer 10150 front
+create npc3 10152 101 1 1 96 0 4 ジェシー\n「あ……クラウド……\n　さいごに……はなせてよかった……\n\n#2\n　　さいごだなんて……\n　　そうか……\n\n\n[[]][[]]
+set_layer 10152 front
+create event_generator 1951 19 19 11 17 0 0 @save_msg.txt
+create event_generator 1915 19 0 0 17 0 0 @019/plate_support_item_shop.txt
+create event_generator 1916 19 0 0 17 0 0 @019/plate_support_talk1.txt
+create event_generator 1917 19 0 0 17 0 0 @019/plate_support_talk2.txt
+create event_generator 1918 19 0 0 17 0 0 @019/plate_support_talk3.txt
+create event_generator 1930 19 10 21 17 0 0 @../common/019/plate_support_tifa1.txt
+create event_generator 1931 19 10 22 17 0 0 @../common/019/plate_support_tifa2.txt
+create event_generator 1932 19 10 23 17 0 0 @../common/019/plate_support_tifa3.txt
+create event_generator 1933 19 14 28 17 0 0 @../common/019/plate_support_tifa4.txt
+create event_generator 1934 19 15 28 17 0 0 @../common/019/plate_support_tifa5.txt
+create event_generator 1935 19 20 21 17 0 0 @../common/019/plate_support_tifa6.txt
+create event_generator 1936 19 20 22 17 0 0 @../common/019/plate_support_tifa7.txt
+create event_generator 1937 19 20 23 17 0 0 @../common/019/plate_support_tifa8.txt
+kill_through 1911
+kill_through_range 1920 1921
+kill_through_range 10102 10103
+if_party_mem 3
+del_party_mem 3
+remove_all_materia 3
+fi

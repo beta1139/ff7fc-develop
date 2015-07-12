@@ -36,7 +36,7 @@ sleep 8
 reset_talk_flag 10222
 move_npc 10253 right 2
 sleep 8
-create event_generator 10268 102 2 2 17 0 0 @102/plate_support_trigger.txt
+create event_generator 10268 102 2 2 17 0 0 @../common/102/plate_support_trigger.txt
 sleep 8
 set_npc_pos 10222 102 22 41
 set_npc_pos 10223 102 22 40
@@ -190,13 +190,13 @@ set_npc_pos 10234 102 0 0
 fi
 chg_char_dir right
 if_flag 99 2
-create event_generator 10211 102 22 37 17 0 0 @102/plate_support11.txt
-create event_generator 10212 102 22 38 17 0 0 @102/plate_support11.txt
-create event_generator 10213 102 22 39 17 0 0 @102/plate_support11.txt
-create event_generator 10215 102 23 37 17 0 0 @102/plate_support11.txt
-create event_generator 10216 102 23 38 17 0 0 @102/plate_support11.txt
+create event_generator 10211 102 22 37 17 0 0 @../common/102/plate_support11.txt
+create event_generator 10212 102 22 38 17 0 0 @../common/102/plate_support11.txt
+create event_generator 10213 102 22 39 17 0 0 @../common/102/plate_support11.txt
+create event_generator 10215 102 23 37 17 0 0 @../common/102/plate_support11.txt
+create event_generator 10216 102 23 38 17 0 0 @../common/102/plate_support11.txt
 chg_npc_dir 10255 right
-create event_generator 10217 102 23 39 17 0 0 @102/plate_support11.txt
+create event_generator 10217 102 23 39 17 0 0 @../common/102/plate_support11.txt
 sleep 8
 set_key_valid up
 set_key_valid down

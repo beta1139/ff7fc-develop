@@ -28,7 +28,6 @@ event_generator,309,3,11,16,17,0,0,"@../common/003/jesse4.txt"
 npc_event,401,4,13,26,36,2,3,""
 npc_event,402,4,11,26,34,2,3,""
 npc_event,403,4,9,26,35,2,3,""
-event_generator,404,4,14,26,17,0,0,"@../common/004/ichiban_makouro4.txt"
 event_generator,500,5,5,14,17,0,0,"@005/ichiban_makouro2_1.txt"
 event_generator,501,5,4,13,17,0,0,"@005/ichiban_makouro2_2.txt"
 event_generator,502,5,1,14,17,0,0,"@../common/005/ichiban_makouro2_3.txt"
@@ -73,7 +72,7 @@ npc,806,8,26,8,34,3,0,"Jessie
  a ladder to grab it.
  Then you can move up or
  down with arrow buttons."
-event_generator,807,8,26,8,17,1,0,"@008/ichiban_makouro_jesse_jump.txt"
+event_generator,807,8,26,8,17,1,0,"@../common/008/ichiban_makouro_jesse_jump.txt"
 treasure_item,890,8,29,19,0,0,0,1000
 event_generator,920,9,3,3,17,0,0,"@../common/set_slide_walk.txt"
 event_generator,921,9,3,4,17,0,0,"@../common/reset_slide_walk_bottom.txt"
@@ -276,21 +275,14 @@ map_door,2092,20,22,26,2,0,0,0
 map_door,2093,20,35,24,1,0,0,0
 map_door,2094,20,34,32,7,0,0,0
 map_door,2095,20,34,29,7,0,0,0
-map_door,2190,21,5,11,4,0,0,0
-map_door,2290,22,5,13,3,0,0,0
-map_door,2490,24,7,10,4,0,0,0
-map_door,2590,25,2,10,4,0,0,0
-map_door,2591,25,7,4,4,0,0,0
-map_door,2690,26,4,11,5,0,0,0
-map_door,2790,27,5,9,4,0,0,0
 event_generator,2100,21,5,9,17,0,0,"@021/nanabangai_slum7.txt"
 event_generator,2101,21,1,1,17,0,0,"@021/nanabangai_slum8_1.txt"
 event_generator,2102,21,1,2,17,0,0,"@021/nanabangai_slum8_2.txt"
 npc_event,2106,21,4,5,77,0,0,"Materia Shop"
 npc2,2107,21,4,6,17,0,0,""
 npc2,2108,21,5,5,17,0,0,""
+map_door,2190,21,5,11,4,0,0,0
 event_generator,2200,22,5,13,17,0,0,"@022/seventhheaven1.txt"
-event_generator,2260,22,5,12,17,0,0,"@../common/022/seventhheaven_out1_before.txt"
 npc_event,2201,22,5,7,37,0,0,"Marlene
 `=="
 npc_event,2202,22,4,7,2,3,0,"Tifa
@@ -363,7 +355,9 @@ npc_event,2205,22,3,10,36,0,0,"Wedge
 [[`Gee, Cloud==
  ==No, never mind.]]"
 map_obj,2250,22,5,5,1,0,0,0
-map_obj,2251,22,8,4,3,0,0,0
+event_generator,2260,22,5,12,17,0,0,"@../common/022/seventhheaven_out1_before.txt"
+map_door,2290,22,5,13,3,0,0,0
+event_generator,2301,23,0,0,17,0,0,"@../common/023/azito2.txt"
 npc,2304,23,2,4,1,2,0,"Baret
 `Yo, Cloud.
  I gotta ask you
@@ -415,7 +409,6 @@ npc,2309,23,3,4,37,2,0,"Marlene
 `Daddee!
  You're cool!"
 npc2,2320,23,1,4,17,0,0,""
-event_generator,2301,23,0,0,17,0,0,"@../common/023/azito2.txt"
 event_generator,2360,23,4,4,17,0,0,"@../common/023/azito_out_before.txt"
 npc,2400,24,2,6,78,3,0,"`He is a troublesome son,
  yet I miss him already.
@@ -472,6 +465,7 @@ npc,2401,24,4,6,77,2,1,"`Ha-ha==
  Ha-ha==
  Yes, indeed it will.]]"
 event_generator,2402,24,1,1,17,0,0,"@024/nanabangai_slum23.txt"
+map_door,2490,24,7,10,4,0,0,0
 event_generator,2500,25,4,7,17,0,0,"@025/nanabangai_slum9.txt"
 npc_event,2501,25,4,5,79,3,0,
 npc2,2502,25,4,6,17,0,0,""
@@ -496,8 +490,10 @@ npc,2510,25,4,9,17,0,0,"`Hi!
 npc_event,2511,25,4,10,51,0,0,"none"
 event_generator,2530,25,1,1,17,0,0,"@025/nanabangai_slum25.txt"
 event_generator,2531,25,2,10,17,0,0,"@025/nanabangai_slum26.txt"
+map_door,2590,25,2,10,4,0,0,0
+map_door,2591,25,7,4,4,0,0,0
 npc2,2600,26,4,7,17,0,0,""
-npc,2601,26,3,8,90,3,0,"`Um==!!
+npc,2601,26,2,8,90,3,0,"`Um==!!
  Who the hell are you?
  This is a private area.
 
@@ -550,12 +546,12 @@ event_generator,2609,26,1,1,17,0,0,"@026/nanabangai_slum15.txt"
 event_generator,2632,26,4,6,17,0,0,"@026/beginner's_hall7.txt"
 event_generator,2633,26,4,6,17,0,0,"@026/beginner's_hall8.txt"
 event_generator,2635,26,6,4,17,0,0,"@save_msg.txt"
-event_generator,2640,26,1,1,17,0,0,"@026/beginner's_hall11.txt"
-event_generator,2643,26,1,1,17,0,0,"@026/beginner's_hall14.txt"
+map_door,2690,26,4,11,5,0,0,0
 map_obj,2691,26,4,7,30,0,0,0
 event_generator,2701,27,4,6,17,0,0,"@027/nanabangai_slum14_1.txt"
 event_generator,2702,27,5,5,17,0,0,"@027/nanabangai_slum14_2.txt"
 event_generator,2703,27,6,6,17,0,0,"@027/nanabangai_slum14_3.txt"
+map_door,2790,27,5,9,4,0,0,0
 npc_event,2803,28,15,4,34,1,0,"none"
 npc_event,2804,28,10,8,35,0,2,"none"
 npc_event,2805,28,11,4,36,1,0,"none"
@@ -1012,8 +1008,6 @@ npc_event,7094,70,18,22,80,3,0,"none"
 npc_event,7095,70,19,16,80,3,0,"none"
 npc_event,7096,70,9,17,80,3,0,"none"
 npc_event,7097,70,10,23,80,3,0,"none"
-npc2,7198,71,9,8,61,2,0,""
-event_generator,7199,71,0,0,17,0,0,"@071/temp.txt"
 event_generator,7100,71,6,3,17,0,0,"@../common/071/wall_market1.txt"
 event_generator,7101,71,7,3,17,0,0,"@../common/071/wall_market1.txt"
 event_generator,7102,71,8,3,17,0,0,"@../common/071/wall_market1.txt"
@@ -1065,16 +1059,16 @@ event_generator,7281,72,7,39,17,0,0,"@072/wall_market3_1.txt"
 event_generator,7282,72,7,38,17,0,0,"@072/wall_market3_2.txt"
 save_point,7298,72,18,26,0,0,0,
 event_generator,7299,72,18,26,17,0,0,"@save_msg.txt"
-event_generator,7300,73,19,11,17,0,0,"@073/kill_smoke2.txt"
+event_generator,7300,73,19,11,17,0,0,"@../common/073/kill_smoke2.txt"
 event_generator,7301,73,0,0,17,0,0,"@073/wm_inn.txt"
 npc2,7320,73,15,8,17,0,0,""
 npc_event,7321,73,15,7,68,1,0,"none"
 map_door,7350,73,13,14,4,0,0,0
 treasure_box,7351,73,17,15,0,0,0,1023
-event_generator,7400,74,6,13,17,0,0,"@074/kill_smoke3.txt"
+event_generator,7400,74,6,13,17,0,0,"@../common/074/kill_smoke3.txt"
 event_generator,7401,74,0,0,17,0,0,"@074/wm_item_dispenser.txt"
 npc2,7410,74,6,5,17,2,0,""
-event_generator,7500,75,4,17,17,0,0,"@075/kill_smoke4.txt"
+event_generator,7500,75,4,17,17,0,0,"@../common/075/kill_smoke4.txt"
 npc,7510,75,7,14,66,2,0,"`I see you did it.
  He's been sewing your
  dress since he got back."
@@ -1084,15 +1078,15 @@ npc,7512,75,7,12,69,0,4,"`Hey, don't push!
  Where's your manners?"
 map_door,7550,75,4,17,9,0,0,0
 map_door,7551,75,9,6,4,0,0,0
-event_generator,7600,76,3,12,17,0,0,"@076/kill_smoke5.txt"
+event_generator,7600,76,3,12,17,0,0,"@../common/076/kill_smoke5.txt"
 event_generator,7601,76,0,0,17,0,0,"@076/wm_materia_shop1.txt"
 npc_event,7610,76,5,5,106,1,4,"none"
 npc2,7611,76,5,6,17,0,0,""
 map_door,7650,76,3,12,10,0,0,0
 map_door,7750,77,3,17,9,0,0,0
 treasure_box,7751,77,7,13,0,0,0,1016
-event_generator,7700,77,3,17,17,0,0,"@077/kill_smoke6.txt"
-event_generator,7701,77,8,6,17,0,0,"@077/kill_smoke6.txt"
+event_generator,7700,77,3,17,17,0,0,"@../common/077/kill_smoke6.txt"
+event_generator,7701,77,8,6,17,0,0,"@../common/077/kill_smoke6.txt"
 event_generator,7702,77,3,15,17,0,0,"@077/wm_meshidokoro1.txt"
 event_generator,7703,77,5,12,17,0,0,"@077/wm_meshidokoro2.txt"
 event_generator,7704,77,4,9,17,0,0,"@077/wm_meshidokoro3.txt"
@@ -1113,7 +1107,7 @@ npc3,7715,77,4,8,70,3,0,"`I owe it to Don that
 npc3,7716,77,4,10,94,3,0,"`Munch, munch=="
 npc3,7717,77,4,11,91,3,0,"`Now I'm entitled to
  today's coupon."
-event_generator,7800,78,6,13,17,0,0,"@078/kill_smoke7.txt"
+event_generator,7800,78,6,13,17,0,0,"@../common/078/kill_smoke7.txt"
 event_generator,7801,78,0,0,17,0,0,"@078/wm_item_shop.txt"
 npc_event,7810,78,6,6,66,0,0,"none"
 npc2,7811,78,6,7,17,0,0,""
@@ -1279,7 +1273,7 @@ map_door,8051,80,5,6,11,0,0,0
 map_door,8052,80,5,15,11,0,0,0
 map_door,8053,80,12,6,11,0,0,0
 map_door,8054,80,12,15,11,0,0,0
-event_generator,8100,81,11,8,17,0,0,"@081/honey_bee_inn8.txt"
+event_generator,8100,81,11,8,17,0,0,"@../common/081/honey_bee_inn8.txt"
 event_generator,8101,81,0,0,17,0,0,"@081/honey_bee_inn10.txt"
 event_generator,8102,81,0,0,17,0,0,"@081/honey_bee_inn11_1.txt"
 event_generator,8104,81,0,0,17,0,0,"@081/honey_bee_inn12.txt"
@@ -1297,7 +1291,7 @@ npc3,8131,81,7,6,40,0,0,"`Eeeek@
 
  Nooo!"
 npc2,8133,81,9,7,40,0,0,""
-event_generator,8200,82,11,4,17,0,0,"@082/honey_bee_inn13.txt"
+event_generator,8200,82,11,4,17,0,0,"@../common/082/honey_bee_inn13.txt"
 event_generator,8201,82,11,4,17,0,0,"@082/honey_bee_inn14.txt"
 npc2,8211,82,11,4,17,0,0,""
 npc2,8212,82,7,11,17,0,0,""
@@ -1306,9 +1300,9 @@ map_door,8250,82,11,4,12,0,0,0
 event_generator,8300,83,11,4,17,0,0,"@083/honey_bee_inn21.txt"
 npc2,8311,83,11,4,17,0,0,""
 map_door,8350,83,11,4,12,0,0,0
-event_generator,8400,84,11,37,17,0,0,"@084/kill_smoke9.txt"
-event_generator,8401,84,12,37,17,0,0,"@084/kill_smoke9.txt"
-event_generator,8402,84,13,37,17,0,0,"@084/kill_smoke9.txt"
+event_generator,8400,84,11,37,17,0,0,"@../common/084/kill_smoke9.txt"
+event_generator,8401,84,12,37,17,0,0,"@../common/084/kill_smoke9.txt"
+event_generator,8402,84,13,37,17,0,0,"@../common/084/kill_smoke9.txt"
 event_generator,8403,84,0,0,17,0,0,"@084/wall_market7.txt"
 event_generator,8404,84,0,0,17,0,0,"@084/wall_market8.txt"
 npc2,8411,84,9,32,68,0,0,""
@@ -1322,8 +1316,8 @@ npc,8510,85,10,15,131,1,0,"`Listen, Don has nothing
 npc2,8511,85,11,14,17,1,0,""
 map_door,8550,85,10,14,4,0,0,0
 map_door,8551,85,11,14,4,0,0,0
-event_generator,8600,86,0,0,17,0,0,"@086/wm_weapon_shop.txt"
-event_generator,8605,86,0,0,17,0,0,"@086/wm_armor_shop.txt"
+event_generator,8600,86,0,0,17,0,0,"@../common/086/wm_weapon_shop.txt"
+event_generator,8605,86,0,0,17,0,0,"@../common/086/wm_armor_shop.txt"
 npc_event,8610,86,11,8,66,1,0,"none"
 npc2,8611,86,11,9,17,0,0,""
 npc_event,8612,86,4,14,79,0,0,""
@@ -1355,7 +1349,7 @@ npc,8719,87,12,19,111,2,0,"`Don't worry about that.
 event_generator,8730,87,9,19,17,0,0,"@087/wm_gym7_1.txt"
 event_generator,8731,87,10,19,17,0,0,"@087/wm_gym7_2.txt"
 event_generator,8732,87,11,19,17,0,0,"@087/wm_gym7_3.txt"
-event_generator,8733,87,10,23,17,0,0,"@087/wm_squat.txt"
+event_generator,8733,87,10,23,17,0,0,"@../common/087/wm_squat.txt"
 event_generator,8800,88,0,0,17,0,0,"@088/wm_yoidore1.txt"
 event_generator,8801,88,0,0,17,0,0,"@088/wm_yoidore2.txt"
 event_generator,8803,88,0,0,17,0,0,"@088/wm_yoidore3.txt"
@@ -1398,13 +1392,13 @@ event_generator,9300,93,4,7,17,0,0,"@093/don_corneo_pick1_1.txt"
 event_generator,9301,93,5,7,17,0,0,"@093/don_corneo_pick1_2.txt"
 event_generator,9302,93,9,7,17,0,0,"@093/don_corneo_pick1_3.txt"
 event_generator,9303,93,10,7,17,0,0,"@093/don_corneo_pick1_4.txt"
-event_generator,9310,93,7,2,17,0,0,"@093/don_corneo1.txt"
+event_generator,9310,93,7,2,17,0,0,"@../common/093/don_corneo1.txt"
 npc_event,9323,93,7,6,39,1,0,"none"
 npc_event,9324,93,4,6,133,1,0,"none"
 npc_event,9325,93,10,6,132,1,0,"none"
 map_door,9350,93,7,1,13,0,0,0
 event_generator,9400,94,7,9,17,0,0,"@094/don_corneo_scotch1.txt"
-event_generator,9402,94,7,12,17,0,0,"@094/don_corneo_scotch3.txt"
+event_generator,9402,94,7,12,17,0,0,"@../common/094/don_corneo_scotch3.txt"
 npc_event,9423,94,4,9,131,1,0,"`Oops!
 
 
@@ -1437,8 +1431,8 @@ treasure_item,9430,94,10,10,1,1,0,1007
 event_generator,9500,95,6,7,17,0,0,"@095/don_corneo2.txt"
 treasure_item,9530,95,3,7,1,1,0,1013
 map_door,9550,95,6,15,13,0,0,0
-event_generator,9600,96,40,15,17,0,0,"@096/sewer1.txt"
-event_generator,9604,96,21,30,17,0,0,"@096/sewer3.txt"
+event_generator,9600,96,40,15,17,0,0,"@../common/096/sewer1.txt"
+event_generator,9604,96,21,30,17,0,0,"@../common/096/sewer3.txt"
 event_generator,9606,96,21,9,17,0,0,"@096/sewer5_1.txt"
 event_generator,9607,96,22,10,17,0,0,"@096/sewer5_2.txt"
 npc2,9623,96,21,29,17,2,0,""
@@ -1470,16 +1464,15 @@ treasure_item,9830,98,10,24,2,1,0,1001
 treasure_item,9831,98,13,26,2,1,0,1001
 treasure_item,9832,98,10,9,2,1,0,1012
 treasure_item,70730,707,8,22,2,1,0,1000
-event_generator,9860,98,5,28,17,0,0,"@../common/reset_slide_walk.txt"
-event_generator,9861,98,13,30,17,0,0,"@098/on_train_1.txt"
-event_generator,9862,98,13,31,17,0,0,"@098/off_train_1.txt"
-event_generator,9863,98,12,15,17,0,0,"@098/on_train_1.txt"
-event_generator,9864,98,12,16,17,0,0,"@098/off_train_1.txt"
-event_generator,9865,98,13,29,17,0,0,"@098/train_warp_1.txt"
-event_generator,9866,98,13,22,17,0,0,"@098/train_warp_2.txt"
-event_generator,9867,98,18,16,17,0,0,"@098/train_warp_3.txt"
-event_generator,9868,98,18,23,17,0,0,"@098/train_warp_4.txt"
-event_generator,9904,99,28,28,17,0,0,"@099/on_train_2.txt"
+event_generator,9861,98,13,30,17,0,0,"@../common/098/on_train_1.txt"
+event_generator,9862,98,13,31,17,0,0,"@../common/098/off_train_1.txt"
+event_generator,9863,98,12,15,17,0,0,"@../common/098/on_train_1.txt"
+event_generator,9864,98,12,16,17,0,0,"@../common/098/off_train_1.txt"
+event_generator,9865,98,13,29,17,0,0,"@../common/098/train_warp_1.txt"
+event_generator,9866,98,13,22,17,0,0,"@../common/098/train_warp_2.txt"
+event_generator,9867,98,18,16,17,0,0,"@../common/098/train_warp_3.txt"
+event_generator,9868,98,18,23,17,0,0,"@../common/098/train_warp_4.txt"
+event_generator,9904,99,28,28,17,0,0,"@../common/099/on_train_2.txt"
 event_generator,9906,99,17,27,17,0,0,"@099/train_gimmick_c01.txt"
 event_generator,9908,99,29,22,17,0,0,"@099/train_graveyard_2a.txt"
 npc2,9910,99,23,15,17,0,0,""
@@ -1502,8 +1495,8 @@ treasure_item,9931,99,20,36,2,1,0,1000
 treasure_item,9932,99,13,34,2,1,0,1003
 treasure_item,9933,99,31,19,2,1,0,1001
 event_generator,9934,99,23,16,17,0,0,"@099/train_graveyard_2b.txt"
-event_generator,9938,99,23,15,17,0,0,"@099/train_graveyard_3.txt"
-event_generator,9939,99,24,15,17,0,0,"@099/train_graveyard_4.txt"
+event_generator,9938,99,23,15,17,0,0,"@../common/099/train_graveyard_3.txt"
+event_generator,9939,99,24,15,17,0,0,"@../common/099/train_graveyard_4.txt"
 map_obj,9940,99,23,25,46,0,0,0
 map_obj,9941,99,23,24,47,0,0,0
 map_obj,9942,99,23,23,47,0,0,0
@@ -1538,10 +1531,10 @@ npc2,9996,99,2,2,66,1,0,""
 npc2,9997,99,2,3,70,0,0,""
 npc2,9998,99,12,2,72,1,2,""
 npc2,9999,99,4,3,89,1,0,""
-event_generator,10100,101,16,61,17,0,0,"@101/plate_support_warp01.txt"
-event_generator,10101,101,17,75,17,0,0,"@101/plate_support_warp02.txt"
-event_generator,10104,101,18,96,17,0,0,"@101/plate_support05.txt"
-event_generator,10105,101,19,96,17,0,0,"@101/plate_support05.txt"
+event_generator,10100,101,16,61,17,0,0,"@../common/101/plate_support_warp01.txt"
+event_generator,10101,101,17,75,17,0,0,"@../common/101/plate_support_warp02.txt"
+event_generator,10104,101,18,96,17,0,0,"@../common/101/plate_support05.txt"
+event_generator,10105,101,19,96,17,0,0,"@../common/101/plate_support05.txt"
 npc2,10140,101,17,101,32,1,0,""
 npc2,10141,101,17,104,32,0,0,""
 npc2,10142,101,13,101,70,0,0,""
@@ -1561,8 +1554,8 @@ npc_event,10255,102,9,38,2,0,3,"Tifa
 `We're all finished if
  the Plate comes down.
  We have to hurry!"
-event_generator,10309,103,10,21,17,0,0,"@103/plate_section_jump9.txt"
-event_generator,10310,103,11,21,17,0,0,"@103/plate_section_jump9.txt"
+event_generator,10309,103,10,21,17,0,0,"@../common/103/plate_section_jump9.txt"
+event_generator,10310,103,11,21,17,0,0,"@../common/103/plate_section_jump9.txt"
 event_generator,10330,103,22,34,17,0,0,"@103/battery1.txt"
 event_generator,10331,103,16,18,17,0,0,"@103/battery2.txt"
 map_obj,10340,103,22,34,61,0,0,0
@@ -1581,26 +1574,26 @@ npc_event,10360,103,25,14,159,0,2,"none"
 npc_event,10361,103,25,15,159,0,2,"none"
 npc_event,10362,103,25,16,159,0,2,"none"
 npc_event,10363,103,25,17,159,3,2,"none"
-event_generator,10370,103,14,34,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10371,103,11,31,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10372,103,11,26,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10373,103,22,24,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10375,103,22,27,17,0,0,"@103/plate_section_jump6.txt"
-event_generator,10376,103,17,26,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10377,103,17,19,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10378,103,26,15,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10410,104,22,7,17,0,0,"@104/plate_section_warp6.txt"
+event_generator,10370,103,14,34,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10371,103,11,31,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10372,103,11,26,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10373,103,22,24,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10375,103,22,27,17,0,0,"@../common/103/plate_section_jump6.txt"
+event_generator,10376,103,17,26,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10377,103,17,19,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10378,103,26,15,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10410,104,22,7,17,0,0,"@../common/104/plate_section_warp6.txt"
 event_generator,10430,104,12,30,17,0,0,"@104/battery3.txt"
 map_obj,10440,104,12,30,61,0,0,0
 map_obj,10450,104,11,30,60,0,0,0
 map_obj,10451,104,13,30,60,0,0,0
-event_generator,10471,104,27,31,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10472,104,17,31,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10473,104,12,27,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10474,104,12,24,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10475,104,22,24,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10476,104,11,32,17,0,0,"@103/plate_section_jump4.txt"
-event_generator,10477,104,13,32,17,0,0,"@103/plate_section_jump4.txt"
+event_generator,10471,104,27,31,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10472,104,17,31,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10473,104,12,27,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10474,104,12,24,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10475,104,22,24,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10476,104,11,32,17,0,0,"@../common/103/plate_section_jump4.txt"
+event_generator,10477,104,13,32,17,0,0,"@../common/103/plate_section_jump4.txt"
 npc_event,10550,105,31,7,123,1,3,"none"
 npc_event,10551,105,32,7,123,0,3,"none"
 npc_event,10552,105,31,8,123,2,3,"none"
@@ -1612,9 +1605,9 @@ event_generator,10623,106,16,10,17,0,0,"@../common/106/shinra_bldg_01f_warp_in.t
 event_generator,10624,106,17,10,17,0,0,"@../common/106/shinra_bldg_01f_warp_in.txt"
 save_point,10698,106,20,11,0,0,0,
 event_generator,10699,106,20,11,17,0,0,"@save_msg.txt"
-event_generator,10700,107,12,7,17,0,0,"@107/shinra_bldg_stairs_in.txt"
-event_generator,10701,107,12,8,17,0,0,"@107/shinra_bldg_stairs_in.txt"
-event_generator,10702,107,12,9,17,0,0,"@107/shinra_bldg_stairs_in.txt"
+event_generator,10700,107,12,7,17,0,0,"@../common/107/shinra_bldg_stairs_in.txt"
+event_generator,10701,107,12,8,17,0,0,"@../common/107/shinra_bldg_stairs_in.txt"
+event_generator,10702,107,12,9,17,0,0,"@../common/107/shinra_bldg_stairs_in.txt"
 npc_event,10800,108,17,28,74,2,0,"none"
 npc_event,10801,108,7,24,31,0,0,"none"
 npc_event,10802,108,10,21,31,3,0,"none"
@@ -1709,20 +1702,20 @@ event_generator,11322,113,3,2,17,0,0,"@../common/113/shinra_bldg_elevator_switch
 event_generator,11323,113,19,2,17,0,0,"@../common/113/shinra_bldg_elevator_switch2.txt"
 map_door,11350,113,3,2,17,0,0,0
 map_door,11351,113,19,2,17,0,0,0
-event_generator,11420,114,8,17,17,0,0,"@115/shinra_bldg_stairs_warp_in1.txt"
-event_generator,11421,114,9,17,17,0,0,"@115/shinra_bldg_stairs_warp_in2.txt"
+event_generator,11420,114,8,17,17,0,0,"@../common/115/shinra_bldg_stairs_warp_in1.txt"
+event_generator,11421,114,9,17,17,0,0,"@../common/115/shinra_bldg_stairs_warp_in2.txt"
 event_generator,11423,114,8,56,17,0,0,"@114/shinra_bldg_stairs_out1.txt"
 event_generator,11424,114,9,56,17,0,0,"@114/shinra_bldg_stairs_out2.txt"
 event_generator,11425,114,5,7,17,0,0,"@114/shinra_bldg_stairs_01f.txt"
-event_generator,11520,115,8,10,17,0,0,"@115/shinra_bldg_stairs_warp_in1.txt"
-event_generator,11521,115,9,10,17,0,0,"@115/shinra_bldg_stairs_warp_in2.txt"
-event_generator,11522,115,8,60,17,0,0,"@115/shinra_bldg_stairs_warp_out1.txt"
-event_generator,11523,115,9,60,17,0,0,"@115/shinra_bldg_stairs_warp_out2.txt"
+event_generator,11520,115,8,10,17,0,0,"@../common/115/shinra_bldg_stairs_warp_in1.txt"
+event_generator,11521,115,9,10,17,0,0,"@../common/115/shinra_bldg_stairs_warp_in2.txt"
+event_generator,11522,115,8,60,17,0,0,"@../common/115/shinra_bldg_stairs_warp_out1.txt"
+event_generator,11523,115,9,60,17,0,0,"@../common/115/shinra_bldg_stairs_warp_out2.txt"
 event_generator,11590,115,1,1,17,0,0,"@115/shinra_bldg_stairs_treasure.txt"
 npc2,11591,115,1,1,80,0,0,""
 event_generator,11620,116,8,8,17,0,0,"@../common/116/shinra_bldg_59f_warp_in.txt"
-event_generator,11622,116,8,46,17,0,0,"@115/shinra_bldg_stairs_warp_out1.txt"
-event_generator,11623,116,9,46,17,0,0,"@115/shinra_bldg_stairs_warp_out2.txt"
+event_generator,11622,116,8,46,17,0,0,"@../common/115/shinra_bldg_stairs_warp_out1.txt"
+event_generator,11623,116,9,46,17,0,0,"@../common/115/shinra_bldg_stairs_warp_out2.txt"
 map_door,11650,116,8,8,0,0,0,0
 event_generator,11700,117,11,21,17,0,0,"@../common/117/shinra_bldg_59f_warp_out.txt"
 event_generator,11701,117,13,26,17,0,0,"@../common/117/shinra_bldg_59f_enemy1.txt"
@@ -1749,18 +1742,10 @@ map_door,11751,117,14,8,17,0,0,0
 map_door,11752,117,11,21,0,0,0,0
 map_door,11753,117,22,25,17,0,0,0
 map_door,11754,117,24,25,17,0,0,0
-npc3,11900,119,23,21,33,2,4,"`Zzz==
- (It's okay==my buddy'd
- keep watching if I doze
- off==)"
-npc3,11901,119,25,21,33,2,4,"`Zzz==
- (It's okay==my buddy'd
- keep watching if I doze
- off==)"
-npc2,11907,119,23,20,156,3,0,"none"
-npc2,11908,119,25,20,156,3,0,"none"
 event_generator,11930,119,11,18,17,0,0,"@../common/119/shinra_bldg_60f_create_loop.txt"
 event_generator,11932,119,15,13,17,0,0,"@119/shinra_bldg_60f_1.txt"
+event_generator,11944,119,23,31,17,0,0,"@../common/119/60f.txt"
+event_generator,11945,119,25,31,17,0,0,"@../common/119/60f.txt"
 event_generator,11946,119,23,32,17,0,0,"@../common/108/outside_elevator_l.txt"
 event_generator,11947,119,25,32,17,0,0,"@../common/108/outside_elevator_r.txt"
 event_generator,11948,119,23,33,17,0,0,"@108/outside_elevator_msg.txt"
@@ -1768,6 +1753,13 @@ event_generator,11949,119,25,33,17,0,0,"@108/outside_elevator_msg.txt"
 map_door,11950,119,11,20,17,0,0,0
 event_generator,11996,119,31,8,17,0,0,"@119/shinra_bldg_60f_treasure.txt"
 map_obj,11997,119,31,8,62,0,0,0
+event_generator,12044,120,23,31,17,0,0,"@../common/120/61f.txt"
+event_generator,12045,120,25,31,17,0,0,"@../common/120/61f.txt"
+event_generator,12046,120,23,32,17,0,0,"@../common/108/outside_elevator_l.txt"
+event_generator,12047,120,25,32,17,0,0,"@../common/108/outside_elevator_r.txt"
+event_generator,12048,120,23,33,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,12049,120,25,33,17,0,0,"@108/outside_elevator_msg.txt"
+waterfall,12040,120,22,7,5,5,0,0,"none"
 event_generator,70200,702,11,16,17,0,0,"@702/tifa'smemory1.txt"
 npc_event,70201,702,11,21,17,0,2,"none"
 npc_event,70202,702,11,20,17,1,2,"none"
@@ -1778,7 +1770,7 @@ npc_event,70503,705,9,15,21,2,0,"none"
 npc2,70797,707,2,74,49,3,0,""
 event_generator,70798,707,17,77,17,0,0,"@707/omake01.txt"
 event_generator,70799,707,0,0,17,0,0,"@707/omake02.txt"
-event_generator,70900,709,15,32,17,0,0,"@709/plate_support08_a.txt"
+event_generator,70900,709,15,32,17,0,0,"@../common/709/plate_support08_a.txt"
 npc_event,70920,709,11,30,66,2,2,"none"
 npc_event,70921,709,11,24,72,1,2,"none"
 npc_event,70922,709,14,30,73,3,2,"none"

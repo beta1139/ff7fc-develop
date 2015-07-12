@@ -1,0 +1,110 @@
+chg_npc_img 5621 99
+jump_npc 5621 same 1
+sleep 8
+if_flag 10 0
+create npc_event 5620 56 10 12 0 2 2 none
+fi
+if_flag 10 1
+create npc_event 5620 56 11 13 0 2 2 none
+fi
+draw_char off
+chg_npc_dir 5620 up
+sleep 16
+chg_event_move_char_speed slow
+chg_npc_img 5620 97
+move_char up 3
+jump_npc 5620 same 1
+loop 2
+chg_npc_img 5620 97
+sleep 8
+chg_npc_img 5620 0
+sleep 8
+pool
+sleep 32
+step_npc 5621 1
+sleep 32
+chg_speed 5621 normal
+step_npc 5621 3
+set_talk_npc 5621
+msg Aeris\n`I see you're early today.
+reset_talk_npc
+sleep 16
+chg_npc_dir 5620 right
+chg_npc_img 5620 97
+step_npc 5620 3
+sleep 80
+chg_event_move_char_speed normal
+chg_npc_img 5620 0
+chg_speed 5620 normal
+if_flag 10 0
+move_npc 5620 left 1
+move_char left 1
+sleep 16
+move_npc 5620 up 2
+sleep 32
+fi
+if_flag 10 1
+move_npc 5620 left 2
+move_char left 2
+sleep 32
+move_npc 5620 up 3
+sleep 48
+fi
+chg_speed 5620 normal
+step_npc 5620 2
+msg {I couldn't involve\n you knowing that\n there'll be dangers.
+step_npc 5621 2
+set_talk_npc 5621
+msg Aeris\n`Are you finished?
+reset_talk_npc
+chg_npc_dir 5620 right
+chg_npc_img 5620 97
+step_npc 5620 1
+sleep 64
+chg_npc_img 5620 0
+chg_npc_dir 5620 up
+sleep 8
+chg_npc_img 5621 3
+sleep 32
+set_active_msg 5621
+jump_npc 5621 same 1
+set_talk_npc 5621
+msg Aeris\n`We must go through\n Slum 6 ahead to get to\n Tifa's Seventh Heaven.\n I'll show you the way.\n Let's go!
+reset_talk_npc
+move_npc 5621 up 1
+sleep 16
+kill 5621
+sleep 8
+jump_npc 5620 same 1
+sleep 16
+chg_speed 5620 fast
+step_npc 5620 2
+sleep 40
+chg_event_move_char_speed fast
+chg_speed 5620 normal
+chg_npc_dir 5620 down
+chg_npc_img 5620 103
+sleep 32
+chg_npc_dir 5620 left
+sleep 48
+chg_npc_img 5620 0
+sleep 4
+chg_npc_dir 5620 right
+sleep 4
+chg_npc_dir 5620 down
+sleep 4
+chg_npc_dir 5620 left
+sleep 4
+chg_npc_dir 5620 up
+sleep 16
+draw_char on
+kill 5620
+move_char up 2
+sleep 16
+chg_event_move_char_speed normal
+warp_ff3_2 68 19 30 2 left
+add_party_mem 3
+kill 6542
+kill_through 6625
+create event_generator 6760 67 5 11 17 0 0 @067/good_night.txt
+set_flag 10 0

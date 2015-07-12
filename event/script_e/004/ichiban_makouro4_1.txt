@@ -1,7 +1,0 @@
-chg_char_state_move
-move_npc 401 left 12
-sleep 96
-kill 401
-create npc 400 4 1 26 36 3 0 Wedge\n`I'll secure the escape\n route. You take care of\n the reactor.\n Geez, when this huge\n bustard goes up, it'll\n be somethin' to see!
-
-

@@ -71,9 +71,9 @@ draw_char on
 kill_through 11400
 set_flag 25 1
 set_flag 13 0
-create event_generator 11430 114 0 0 17 0 0 @114/shinra_bldg_stairs_baret01.txt
-create event_generator 11431 114 0 0 17 0 0 @114/shinra_bldg_stairs_tifa01.txt
-create event_generator 11434 114 8 21 17 0 0 @114/shinra_bldg_stairs_reach.txt
+create event_generator 11430 114 0 0 17 0 0 @../common/114/shinra_bldg_stairs_baret01.txt
+create event_generator 11431 114 0 0 17 0 0 @../common/114/shinra_bldg_stairs_tifa01.txt
+create event_generator 11434 114 8 21 17 0 0 @../common/114/shinra_bldg_stairs_reach.txt
 set_layer 11434 front
 if_flag 26 0
 set_flag 26 2

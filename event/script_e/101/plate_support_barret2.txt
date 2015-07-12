@@ -34,7 +34,7 @@ reset_screen_effect
 sleep 16
 step_npc 10153 4
 sleep 16
-create event_generator 10115 101 1 1 17 0 0 @101/plate_support_barret3.txt
+create event_generator 10115 101 1 1 17 0 0 @../common/101/plate_support_barret3.txt
 set_talk_npc 10153
 msg Baret\n`Tifa! Cloud!\n You came!\n\n Careful! They're gonna\n attack with the chopper.
 reset_talk_npc

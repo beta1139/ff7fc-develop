@@ -1,0 +1,214 @@
+wait_key_push_edge a
+kill_through 10205
+erase_msg3
+step_npc 10265 6
+chg_event_move_char_speed normal
+move_char up 8
+loop 3
+step_npc 10256 1
+step_npc 10257 1
+step_npc 10258 1
+step_npc 10259 1
+step_npc 10260 1
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 8
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 8
+pool
+chg_npc_img 10265 28
+chg_npc_dir 10265 down
+chg_speed 10264 normal
+chg_speed 10265 normal
+slide_walk_npc 10256 up 5
+slide_walk_npc 10257 up 5
+slide_walk_npc 10258 up 5
+slide_walk_npc 10259 up 5
+slide_npc 10264 up 5
+slide_npc 10265 up 5
+step_npc 10260 2
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 8
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 8
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 8
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 8
+slide_walk_npc 10260 up 2
+loop 3
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 8
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 8
+pool
+create event_generator 10207 102 0 0 17 0 0 @../common/102/plate_support07_b.txt
+chg_event_move_char_speed fast
+chg_speed 10256 fast
+chg_speed 10257 fast
+chg_speed 10258 fast
+chg_speed 10259 fast
+chg_speed 10264 fast
+chg_speed 10265 fast
+kill_through 10260
+chg_npc_dir 10265 right
+chg_npc_img 10265 147
+move_char up 10
+slide_walk_npc 10256 up 10
+slide_walk_npc 10257 up 10
+slide_walk_npc 10258 up 10
+slide_walk_npc 10259 up 10
+slide_npc 10264 up 10
+slide_npc 10265 up 10
+loop 10
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+pool
+warp 102 19 15 up
+set_npc_pos 10256 102 19 17
+set_npc_pos 10257 102 20 17
+set_npc_pos 10258 102 19 18
+set_npc_pos 10259 102 20 18
+set_npc_pos 10264 102 19 17
+set_npc_pos 10265 102 19 17
+move_char up 7
+slide_walk_npc 10256 up 7
+slide_walk_npc 10257 up 7
+slide_walk_npc 10258 up 7
+slide_walk_npc 10259 up 7
+slide_npc 10264 up 7
+slide_npc 10265 up 7
+loop 7
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+pool
+move_char left 4
+jump_npc 10264 same 1
+chg_npc_img 10265 28
+chg_npc_dir 10265 up
+loop 2
+loop 2
+step_npc 10256 2
+step_npc 10257 2
+step_npc 10258 2
+step_npc 10259 2
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+pool
+chg_npc_dir 10265 right
+pool
+chg_npc_dir 10264 down
+chg_npc_img 10265 28
+chg_npc_dir 10265 left
+slide_walk_npc 10256 left 13
+slide_walk_npc 10257 left 13
+slide_walk_npc 10258 left 13
+slide_walk_npc 10259 left 13
+slide_npc 10264 left 13
+slide_npc 10265 left 13
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+loop 3
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+create explode 10290 102 15 3 0 0 0 none
+move_char up 1
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+create explode 10291 102 17 4 0 0 0 none
+move_char down 1
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+create explode 10292 102 12 4 0 0 0 none
+move_char up 1
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+create explode 10293 102 19 3 0 0 0 none
+move_char down 1
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+pool
+play_se bomb.ogg
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+create explode 10290 102 11 3 0 0 0 none
+move_char up 1
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+create explode 10291 102 21 4 0 0 0 none
+move_char down 1
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+create explode 10292 102 16 4 0 0 0 none
+move_char up 1
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+chg_npc_y_offset 10264 6
+chg_npc_y_offset 10265 6
+create explode 10293 102 15 3 0 0 0 none
+move_char down 1
+sleep 4
+chg_npc_y_offset 10264 7
+chg_npc_y_offset 10265 7
+sleep 4
+kill_through_range 10260 10265
+create explode 10290 102 11 3 0 0 0 none
+move_char up 1
+sleep 8
+create explode 10291 102 21 4 0 0 0 none
+move_char down 1
+sleep 8
+create explode 10292 102 16 4 0 0 0 none
+fadeout
+sleep 4
+erase_image_range 010 051
+sleep 12
+warp 709 15 32 up
+fadein

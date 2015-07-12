@@ -93,6 +93,6 @@ sleep 6
 chg_npc_dir 8710 up
 sleep 2
 chg_type 8709 npc
-create event_generator 8733 87 13 12 17 0 0 @087/wm_squat.txt
+create event_generator 8733 87 13 12 17 0 0 @../common/087/wm_squat.txt
 set_inactive_msg 8710
 sleep 8

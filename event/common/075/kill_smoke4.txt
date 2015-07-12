@@ -1,0 +1,18 @@
+wait_same_pos
+kill_through_range 7270 7279
+kill_through_range 7292 7296
+if_flag 9 2
+kill_through 173
+kill_through 178
+kill_through 7264
+kill_through 7507
+chg_char_img_tmp 13
+fi
+chg_char_state_move
+sleep 8
+create event_generator 7271 72 6 15 17 0 0 @../common/072/smoke4.txt
+if_flag 9 2
+loop_inf
+sleep 400
+pool
+fi

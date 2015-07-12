@@ -1,4 +1,6 @@
 wait_same_pos
+set_flag 30 3
+create event_generator 1690 16 0 0 17 0 0 @../common/point.txt
 draw_char off
 set_active_msg 1651
 set_active_msg 1652

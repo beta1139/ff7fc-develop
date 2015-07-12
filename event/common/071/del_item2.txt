@@ -1,0 +1,9 @@
+if_owned_item 6003
+del_item 6003
+fi
+if_owned_item 6004
+del_item 6004
+fi
+if_owned_item 6005
+del_item 6005
+fi

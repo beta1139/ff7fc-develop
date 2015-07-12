@@ -15,8 +15,6 @@ chg_param 7713 `Munch, munch==
 chg_param 7715 `Munch, munch==
 chg_param 7717 `Munch, munch==
 chg_param 8714 `We need more stamina.\n\n\n\n They say that you could\n reach the upper plate if\n you climb that pipe all\n the way.\n Oh, you didn't know?\n You should ask the tank\n guy at the weapon shop.
-create npc_event 4922 49 5 12 65 3 0 `How pretty!
-create npc_event 4923 49 7 11 67 2 0 `Water is coming later.
 create npc 5805 58 14 15 65 1 0 `Snuffle, snuffle==\n\n\n\n It went rumblin' and\n then it went snappin'\n and then Ka-Boom!!\n\n It was scary==snuffle.
 create npc_event 6623 66 10 7 38 0 1 Elmyra\n`Sigh==
 create npc_event 6722 67 10 15 37 0 0 none

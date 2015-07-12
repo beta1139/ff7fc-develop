@@ -6,7 +6,7 @@ sleep 16
 play_se warp_in.ogg
 fadeout
 draw_char off
-create event_generator 7270 72 9 21 17 0 0 @072/smoke1.txt
+create event_generator 7270 72 9 21 17 0 0 @../common/072/smoke1.txt
 sleep 16
 warp 72 9 21 up
 play_bgm
@@ -27,6 +27,9 @@ set_key_unvalid right
 set_key_unvalid a
 set_key_unvalid b
 set_key_unvalid start
+include ./event/common/071/del_item1.txt
+include ./event/common/071/del_item2.txt
+include ./event/script/071/del_item3.txt
 set_flag 9 1
 set_flag 13 0
 set_flag 14 0
@@ -35,23 +38,3 @@ set_flag 16 0
 set_flag 17 0
 set_flag 18 0
 set_flag 19 0
-kill_through_range 7198 7199
-if_owned_item 6000
-del_item 6000
-fi
-if_owned_item 6001
-del_item 6001
-fi
-if_owned_item 6002
-del_item 6002
-fi
-if_owned_item 6003
-del_item 6003
-fi
-if_owned_item 6004
-del_item 6004
-fi
-if_owned_item 6005
-del_item 6005
-fi
-include ./event/common/071/del_item.txt

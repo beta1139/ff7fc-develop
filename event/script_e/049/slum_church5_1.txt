@@ -3,13 +3,15 @@ kill 4915
 kill 4916
 chg_type 4905 npc_event
 chg_speed 4905 fast
-step_npc 4905 2
+step_npc 4905 1
 msg Aeris\n`Cloud!\n Leave him alone!
 chg_char_dir up
 move_npc 4905 left 1
 sleep 8
 chg_npc_dir 4905 down
 jump_npc 4905 same 1
+sleep 16
+step_npc 4905 2
 sleep 16
 create npc 4906 49 5 12 3 1 4 Aeris\n`Look, Cloud.\n Do you take bodyguarding?
 kill 4905

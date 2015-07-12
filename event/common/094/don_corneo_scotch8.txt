@@ -1,0 +1,32 @@
+wait_same_pos
+chg_char_img_tmp 13
+kill_through_range 9402 9408
+play_se whistle.ogg
+chg_type 9423 npc_event
+chg_type 9424 npc_event
+chg_type 9425 npc_event
+chg_type 9426 npc_event
+chg_type 9427 npc_event
+jump_npc 9424 same 1
+jump_npc 9427 same 1
+chg_npc_dir 9423 right
+chg_npc_dir 9424 right
+chg_npc_dir 9425 right
+chg_npc_dir 9426 up
+chg_npc_dir 9427 up
+sleep 16
+play_se whistle.ogg
+jump_npc 9424 same 1
+jump_npc 9427 same 1
+sleep 16
+chg_type 9423 npc
+chg_type 9424 npc
+chg_type 9425 npc
+chg_type 9426 npc
+chg_type 9427 npc
+create event_generator 9406 94 9 9 17 0 0 @../common/094/don_corneo_scotch7.txt
+create event_generator 9408 94 8 7 17 0 0 @../common/094/don_corneo_scotch9.txt
+chg_char_state_move
+loop_inf
+sleep 400
+pool

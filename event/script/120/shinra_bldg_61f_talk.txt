@@ -1,0 +1,24 @@
+chg_type 12003 npc_event
+chg_type 12004 npc_event
+chg_speed 12003 normal
+chg_speed 12004 normal
+set_active_msg 12003
+set_active_msg 12004
+step_npc 12004 2
+sleep 16
+jump_npc 12004 same 1
+set_talk_npc 12004
+msg 「さっきしたのほうが\n　さわがしかったけど\n　なにかあったのかしら？
+reset_talk_npc
+sleep 24
+jump_npc 12003 same 1
+sleep 16
+jump_npc 12003 same 1
+set_talk_npc 12003
+msg 「さあな\n　ま　60かいからうえは\n　なにがあっても　あんぜんだ\n　きにすることもないって
+chg_speed 12003 not_move
+chg_speed 12004 not_move
+chg_type 12003 npc2
+chg_type 12004 npc2
+set_inactive_msg 12003
+set_inactive_msg 12004

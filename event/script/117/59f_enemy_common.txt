@@ -109,3 +109,6 @@ play_se pick_up.wav
 msg 　こんなところに\n　　キーアイテム　『カードキー60』が！
 kill 11714
 include ./event/common/act/act1-8_2.txt
+include ./event/common/act/act1-8_3j.txt
+set_flag 30 25
+create event_generator 11790 117 0 0 17 0 0 @../common/point.txt

@@ -1,4 +1,5 @@
 wait_same_pos
+include ./event/common/key_unvalid.txt
 if_flag 11 0
 chg_npc_dir 3401 left
 chg_npc_img 3401 98
@@ -8,10 +9,12 @@ chg_npc_img 3401 1
 move_npc 3401 up 1
 sleep 16
 chg_npc_dir 3402 up
+step_npc 3401 2
 sleep 16
 msg Baret\n`But we can't go home\n empty handed from here.\n We gotta go on.
 sleep 16
 chg_npc_dir 3401 down
+step_npc 3401 1
 msg Baret\n`Biggs, Wedge and Jessie\n did their work.\n Let's catch up with them!
 fi
 if_flag 11 1
@@ -23,10 +26,12 @@ chg_npc_img 3401 1
 move_npc 3401 up 1
 sleep 16
 chg_npc_dir 3402 up
+step_npc 3401 2
 sleep 16
 msg Baret\n`But we can't go home\n empty handed from here.\n We gotta go on.
 sleep 16
 chg_npc_dir 3401 down
+step_npc 3401 1
 msg Baret\n`Biggs, Wedge and Jessie\n did their work.\n Let's catch up with them!
 fi
 if_flag 11 2
@@ -38,10 +43,12 @@ chg_npc_img 3401 1
 move_npc 3401 up 1
 sleep 16
 chg_npc_dir 3402 up
+step_npc 3401 2
 sleep 16
 msg Baret\n`They still don't know\n that we're here.\n\n We can get to the reactor\n straight away.
 sleep 16
 chg_npc_dir 3401 down
+step_npc 3401 1
 msg Baret\n`Biggs, Wedge and Jessie\n did their work.\n Let's catch up with them!
 fi
 if_flag 11 3
@@ -53,10 +60,12 @@ chg_npc_img 3401 1
 move_npc 3401 up 1
 sleep 16
 chg_npc_dir 3402 up
+step_npc 3401 2
 sleep 16
 msg Baret\n`They still don't know\n that we're here.\n\n We can get to the reactor\n straight away.
 sleep 16
 chg_npc_dir 3401 down
+step_npc 3401 1
 msg Baret\n`Biggs, Wedge and Jessie\n did their work.\n Let's catch up with them!
 fi
 if_flag 11 4
@@ -68,10 +77,12 @@ chg_npc_img 3401 1
 move_npc 3401 up 1
 sleep 16
 chg_npc_dir 3402 up
+step_npc 3401 2
 sleep 16
 msg Baret\n`But we can't relax till\n we get to the reactor.
 sleep 16
 chg_npc_dir 3401 down
+step_npc 3401 1
 msg Baret\n`Biggs, Wedge and Jessie\n are headin' there first.\n Let's go, guys.
 fi
 move_npc 3401 down 3
@@ -90,12 +101,17 @@ chg_npc_dir 3401 down
 sleep 4
 chg_npc_dir 3401 left
 sleep 4
+set_flag 30 7
+set_active_msg 3401
+jump_npc 3401 same 1
 chg_npc_dir 3401 up
 chg_char_dir up
 chg_char_img 1
 msg Baret\n`Now, the reactor is at\n the end of this tunnel!
+sleep 16
 kill 3401
 draw_char on
 chg_char_img 0
 enable_char_chg
-set_flag 1 0
+include ./event/common/key_valid.txt
+create event_generator 3440 10 0 0 17 0 0 @../common/point.txt

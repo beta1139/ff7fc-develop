@@ -1,18 +1,20 @@
-wait_same_pos
+wait_target_talk 2601
+reset_talk_flag 2601
 msg `Welcome to the proverbial\n     BEGINNER'S HALL!
 chg_char_dir left
 chg_type 2601 npc_event
 chg_speed 2601 normal
+chg_speed 2602 normal
 sleep 16
 jump_npc 2601 same 1
 sleep 16
 step_npc 2601 4
 msg `You a beginner?\n Your eyes say otherwise.
-jump_char_target_pos 5 8
+jump_char_target_pos 4 8
 sleep 16
 chg_char_img_tmp 105
-create npc_event 2623 26 4 8 104 0 3 none
-create npc_event 2624 26 4 7 105 0 3 none
+create npc_event 2623 26 3 8 104 0 3 none
+create npc_event 2624 26 3 7 105 0 3 none
 loop 4
 sleep 2
 chg_npc_dir 2623 right
@@ -40,10 +42,10 @@ pool
 kill 2623
 kill 2624
 reset_char_img_tmp
-jump_char_target_pos 4 8
+jump_char_target_pos 3 8
+sleep 16
+step_char 1
 sleep 16
 msg {Don't underestimate an\n ex-SOLDIER. I'll show you\n how knowledgeable I am.\n For free!
-create event_generator 2621 26 4 8 17 0 0 @026/beginner's_hall2.txt
-chg_speed 2601 not_move
-chg_type 2601 npc2
-sleep 16
+create event_generator 2621 26 0 0 17 0 0 @026/beginner's_hall2.txt
+include ./event/script_e/026/beginner's_hall_common.txt

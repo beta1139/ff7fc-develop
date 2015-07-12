@@ -1,0 +1,240 @@
+wait_same_pos
+create event_generator 70901 709 0 0 17 0 0 @../common/709/plate_support08_b.txt
+chg_event_move_char_speed fast
+move_char up 3
+move_npc 70920 left 1
+move_npc 70921 down 1
+move_npc 70922 right 1
+move_npc 70923 left 1
+move_npc 70924 down 1
+move_npc 70925 up 1
+move_npc 70926 right 1
+sleep 32
+play_se bomb.ogg
+create explode 70990 709 9 36 0 0 0 none
+move_char up 1
+jump_npc 70920 same 2
+jump_npc 70921 same 2
+jump_npc 70922 same 2
+jump_npc 70923 same 2
+jump_npc 70924 same 2
+jump_npc 70925 same 2
+jump_npc 70926 same 2
+sleep 8
+create explode 70991 709 22 36 0 0 0 none
+move_char down 1
+sleep 4
+chg_npc_dir 70920 down
+chg_npc_dir 70921 right
+chg_npc_dir 70922 down
+chg_npc_dir 70923 up
+chg_npc_dir 70924 right
+chg_npc_dir 70925 left
+chg_npc_dir 70926 up
+sleep 4
+create explode 70992 709 14 36 0 0 0 none
+draw_image 010 -16 208 0 0 288 256 0 event/plate_support/wall.png
+draw_image 050 16 208 0 0 224 32 0 event/plate_support/end1.png
+set_image_alpha 010 100
+set_image_alpha 050 0
+move_char up 1
+loop 8
+include ./event/common/709/plate_support08_common3.txt
+pool
+create explode 70993 709 19 36 0 0 0 none
+chg_npc_dir 70920 left
+chg_npc_dir 70921 up
+chg_npc_dir 70922 left
+chg_npc_dir 70923 right
+chg_npc_dir 70924 up
+chg_npc_dir 70925 down
+chg_npc_dir 70926 left
+move_char down 1
+loop 7
+include ./event/common/709/plate_support08_common4.txt
+pool
+sleep 1
+chg_image_pos_offset 010 0 -2 576 0 0 0
+chg_image_pos_offset 050 0 -2 0 0 0 0
+loop 3
+play_se bomb.ogg
+create explode 70990 709 9 36 0 0 0 none
+move_char up 1
+include ./event/common/709/plate_support08_common1.txt
+create explode 70991 709 22 36 0 0 0 none
+move_char down 1
+loop 4
+include ./event/common/709/plate_support08_common4.txt
+pool
+set_image_alpha 010 0
+chg_npc_dir 70920 down
+chg_npc_dir 70921 right
+chg_npc_dir 70922 down
+chg_npc_dir 70923 up
+chg_npc_dir 70924 right
+chg_npc_dir 70925 left
+chg_npc_dir 70926 down
+loop 4
+include ./event/common/709/plate_support08_common4.txt
+pool
+set_image_alpha 010 100
+create explode 70992 709 14 36 0 0 0 none
+move_char up 1
+include ./event/common/709/plate_support08_common1.txt
+create explode 70993 709 19 36 0 0 0 none
+chg_npc_dir 70920 left
+chg_npc_dir 70921 up
+chg_npc_dir 70922 right
+chg_npc_dir 70923 left
+chg_npc_dir 70924 up
+chg_npc_dir 70925 down
+chg_npc_dir 70926 right
+move_char down 1
+include ./event/common/709/plate_support08_common2.txt
+pool
+loop 3
+play_se thunder3.ogg
+move_char up 1
+include ./event/common/709/plate_support08_common1.txt
+move_char down 1
+loop 4
+include ./event/common/709/plate_support08_common4.txt
+pool
+set_image_alpha 010 0
+set_image_alpha 050 0
+loop 4
+include ./event/common/709/plate_support08_common4.txt
+pool
+set_image_alpha 010 100
+set_image_alpha 050 100
+chg_npc_dir 70920 down
+chg_npc_dir 70921 down
+chg_npc_dir 70922 down
+chg_npc_dir 70923 down
+chg_npc_dir 70924 down
+chg_npc_dir 70925 down
+chg_npc_dir 70926 down
+pool
+set_image_alpha 050 100
+stop_se
+sleep 16
+play_se_loop crevice.ogg
+move_char up 1
+include ./event/common/709/plate_support08_common1.txt
+move_char down 1
+include ./event/common/709/plate_support08_common2.txt
+move_char up 1
+chg_npc_dir 70920 down
+chg_npc_img 70920 150
+chg_npc_dir 70921 right
+chg_npc_img 70921 151
+chg_npc_dir 70922 left
+chg_npc_img 70922 150
+chg_npc_dir 70923 left
+chg_npc_img 70923 151
+chg_npc_dir 70924 down
+chg_npc_img 70924 151
+chg_npc_dir 70925 up
+chg_npc_img 70925 151
+chg_npc_dir 70926 left
+chg_npc_img 70926 150
+include ./event/common/709/plate_support08_common1.txt
+move_char down 1
+include ./event/common/709/plate_support08_common2.txt
+loop 2
+move_char up 1
+include ./event/common/709/plate_support08_common1.txt
+move_char down 1
+include ./event/common/709/plate_support08_common2.txt
+pool
+sleep 8
+kill 70901
+sleep 16
+include ./event/common/effect_fadeout.txt
+kill_through_range 1700 1999
+sleep 8
+if_flag 99 0
+create npc_event 10231 102 19 25 80 0 2 none
+create npc_event 10234 102 13 21 80 0 2 none
+set_flag_wall 10234
+fi
+create npc_event 10230 102 8 17 80 3 0 none
+create npc_event 10232 102 14 16 80 3 0 none
+create npc_event 10233 102 20 23 80 3 0 none
+create npc_event 10240 102 13 50 80 3 0 none
+create npc_event 10241 102 16 17 80 3 0 none
+create npc_event 10242 102 12 29 80 3 0 none
+create npc_event 10243 102 13 19 80 3 0 none
+create npc_event 10244 102 14 43 80 3 0 none
+create npc_event 10245 102 18 35 80 3 3 none
+create npc_event 10246 102 9 7 80 3 2 none
+create npc_event 10247 102 20 26 80 3 0 none
+create npc_event 10248 102 22 5 80 3 0 none
+if_flag 99 1
+create npc_event 10234 102 13 21 17 0 0 none
+create npc_event 10246 102 9 22 80 3 0 none
+fi
+set_flag_wall 10230
+set_flag_wall 10231
+set_flag_wall 10232
+set_flag_wall 10233
+set_flag_wall 10240
+set_flag_wall 10241
+set_flag_wall 10242
+set_flag_wall 10243
+set_flag_wall 10244
+set_flag_wall 10245
+set_flag_wall 10246
+set_flag_wall 10247
+set_flag_wall 10248
+sleep 8
+create npc_event 1906 19 16 15 32 0 3 none
+create npc_event 1907 19 15 17 32 0 3 none
+create npc_event 1908 19 13 18 70 0 3 none
+create npc_event 1909 19 16 18 68 0 3 none
+create npc_event 1910 19 16 22 66 0 3 none
+create npc_event 1911 19 6 22 90 0 3 none
+create npc_event 1912 19 11 23 78 0 3 none
+create npc_event 1913 19 9 21 77 0 3 none
+create npc_event 1914 19 15 25 72 0 3 none
+create npc_event 1915 19 19 22 88 0 3 none
+create npc_event 1916 19 21 21 65 0 3 none
+sleep 8
+set_npc_pos 70920 709 10 30
+set_npc_pos 70921 709 11 25
+set_npc_pos 70922 709 15 30
+set_npc_pos 70923 709 18 29
+set_npc_pos 70924 709 23 23
+set_npc_pos 70925 709 21 28
+set_npc_pos 70926 709 20 31
+chg_npc_img 70920 66
+chg_npc_img 70921 72
+chg_npc_img 70922 73
+chg_npc_img 70923 74
+chg_npc_img 70924 68
+chg_npc_img 70925 69
+chg_npc_img 70926 73
+chg_speed 70920 fast
+chg_speed 70921 fast
+chg_speed 70922 fast
+chg_speed 70923 fast
+chg_speed 70924 fast
+chg_speed 70925 fast
+chg_speed 70926 fast
+sleep 16
+warp 708 0 0 up
+set_npc_pos 10253 102 20 37
+set_npc_pos 10255 102 18 36
+chg_npc_img 10253 1
+chg_npc_img 10255 2
+chg_npc_dir 10253 up
+chg_npc_dir 10255 up
+chg_speed 10253 fast
+chg_speed 10255 fast
+kill_through_range 10250 10252
+kill_through 10254
+reset_talk_flag 10239
+sleep 8
+erase_image 010
+erase_image 050
+create event_generator 10208 102 0 0 17 0 0 @102/plate_support09.txt

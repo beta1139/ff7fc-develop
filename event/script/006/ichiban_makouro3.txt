@@ -116,8 +116,8 @@ sleep 16
 kill 650
 kill 641
 sleep 16
-create event_generator 660 6 4 1 17 0 0 @006/elevator_switch1.txt
 create event_generator 720 7 9 11 17 0 0 @../common/007/jessie_move.txt
 create npc_event 721 7 9 11 34 3 3 none
 create event_generator 880 8 13 8 17 0 0 @../common/008/jessie_move2.txt
 create npc_event 881 8 13 8 34 3 3 none
+include ./event/common/act/act1-1_2.txt

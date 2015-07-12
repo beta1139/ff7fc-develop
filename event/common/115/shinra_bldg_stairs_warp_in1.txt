@@ -1,0 +1,140 @@
+set_eternal_event
+wait_same_pos
+if_flag 24 7
+warp_ff3_2 116 8 45 2 up
+if_flag_lesser 25 10
+kill_through 11547
+kill_through_range 11530 11531
+kill_through_range 11501 11502
+erase_msg3
+create npc_event 11601 116 9 41 1 0 3 none
+create npc_event 11602 116 8 40 2 0 3 none
+set_layer 11602 front
+create event_generator 11640 116 0 0 17 0 0 @../common/116/shinra_bldg_stairs_baret05.txt
+create event_generator 11642 116 8 14 17 0 0 @116/shinra_bldg_stairs_59f.txt
+set_layer 11642 front
+fi
+fi
+if_flag 24 6
+warp_ff3_2 115 8 59 2 up
+if_flag_lesser 25 10
+kill_through 11546
+kill_through_range 11533 11534
+kill_through_range 11503 11504
+erase_msg3
+create npc_event 11501 115 9 55 1 0 3 none
+create npc_event 11502 115 8 54 2 0 3 none
+create event_generator 11530 115 0 0 17 0 0 @../common/115/shinra_bldg_stairs_baret03.txt
+fi
+if_flag 25 8
+create event_generator 11547 115 0 0 17 0 0 @115/shinra_bldg_stairs_48f.txt
+fi
+fi
+if_flag 24 5
+warp_ff3_2 115 8 59 2 up
+if_flag 26 2
+set_npc_pos 11590 115 1 1
+set_npc_pos 11591 115 1 1
+fi
+if_flag_lesser 25 10
+kill_through_range 11544 11545
+kill_through_range 11501 11502
+erase_msg3
+create npc_event 11503 115 9 55 1 0 3 none
+create npc_event 11504 115 8 54 2 0 3 none
+create event_generator 11533 115 0 0 17 0 0 @../common/115/shinra_bldg_stairs_baret04.txt
+fi
+if_flag 25 7
+create event_generator 11546 115 0 0 17 0 0 @115/shinra_bldg_stairs_41f.txt
+fi
+fi
+if_flag 24 4
+warp_ff3_2 115 8 59 2 up
+if_flag 26 2
+set_npc_pos 11590 115 2 63
+set_npc_pos 11591 115 2 63
+fi
+if_flag_lesser 25 10
+kill_through 11543
+kill_through_range 11533 11534
+kill_through_range 11503 11504
+erase_msg3
+fi
+if_flag_lesser 25 7
+create npc_event 11501 115 8 13 1 0 0 none
+create npc_event 11502 115 8 11 2 1 0 none
+set_layer 11501 front
+set_layer 11502 front
+create event_generator 11545 115 8 14 17 0 0 @115/shinra_bldg_stairs_40f.txt
+set_layer 11545 front
+fi
+if_flag 25 5
+create event_generator 11544 115 0 0 17 0 0 @115/shinra_bldg_stairs_34f.txt
+fi
+fi
+if_flag 24 3
+warp_ff3_2 115 8 59 2 up
+if_flag_lesser 25 10
+kill_through 11542
+kill_through_range 11530 11531
+kill_through_range 11501 11502
+erase_msg3
+create npc_event 11503 115 9 55 1 0 3 none
+create npc_event 11504 115 8 54 2 0 3 none
+create event_generator 11533 115 0 0 17 0 0 @../common/115/shinra_bldg_stairs_baret04.txt
+fi
+if_flag 25 4
+create event_generator 11543 115 0 0 17 0 0 @115/shinra_bldg_stairs_27f.txt
+fi
+if_flag 26 2
+set_npc_pos 11590 115 2 14
+set_npc_pos 11591 115 2 14
+set_layer 11590 front
+set_layer 11591 front
+fi
+fi
+if_flag 24 2
+warp_ff3_2 115 8 59 2 up
+if_flag_lesser 25 10
+kill_through 11541
+kill_through_range 11533 11534
+kill_through_range 11503 11504
+erase_msg3
+create npc_event 11501 115 9 55 1 0 3 none
+create npc_event 11502 115 8 54 2 0 3 none
+create event_generator 11530 115 0 0 17 0 0 @../common/115/shinra_bldg_stairs_baret03.txt
+fi
+if_flag 25 3
+create event_generator 11542 115 0 0 17 0 0 @115/shinra_bldg_stairs_20f.txt
+fi
+fi
+if_flag 24 1
+warp_ff3_2 115 8 59 3 up
+if_flag_lesser 25 10
+kill_through 11540
+kill_through_range 11530 11531
+kill_through_range 11501 11502
+erase_msg3
+create npc_event 11503 115 9 55 1 0 3 none
+create npc_event 11504 115 8 54 2 0 3 none
+create event_generator 11533 115 0 0 17 0 0 @../common/115/shinra_bldg_stairs_baret04.txt
+fi
+if_flag 25 2
+create event_generator 11541 115 0 0 17 0 0 @115/shinra_bldg_stairs_13f.txt
+fi
+fi
+if_flag 24 0
+warp_ff3_2 115 8 59 2 up
+if_flag_lesser 25 10
+kill_through_range 11430 11433
+kill_through_range 11401 11402
+create npc_event 11501 115 9 55 1 0 3 none
+create npc_event 11502 115 8 54 2 0 3 none
+create event_generator 11530 115 0 0 17 0 0 @../common/115/shinra_bldg_stairs_baret03.txt
+fi
+if_flag 25 1
+create event_generator 11540 115 0 0 17 0 0 @115/shinra_bldg_stairs_06f.txt
+fi
+fi
+add_flag 24 1
+set_flag 13 0

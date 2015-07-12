@@ -37,4 +37,4 @@ fi
 sub_gil 50
 set_flag 14 5
 fi
-create event_generator 7304 73 9 10 17 0 0 @073/wm_inn4.txt
+create event_generator 7304 73 9 10 17 0 0 @../common/073/wm_inn4.txt

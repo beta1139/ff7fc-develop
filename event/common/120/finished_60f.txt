@@ -1,0 +1,12 @@
+kill_through_range 11903 11906
+kill_through_range 11920 11940
+kill_through_range 11951 11995
+create npc_event 11913 119 13 17 32 0 0 none
+create npc_event 11914 119 7 15 32 0 0 none
+create npc_event 11915 119 10 16 32 2 0 none
+create npc_event 11916 119 12 15 32 1 0 none
+create event_generator 12021 120 0 0 17 0 0 @120/shinra_bldg_61f_card_key.txt
+create event_generator 12022 120 0 0 17 0 0 @120/shinra_bldg_61f_ol.txt
+create event_generator 12023 120 0 0 17 0 0 @120/shinra_bldg_61f_talk1.txt
+create event_generator 12024 120 0 0 17 0 0 @120/shinra_bldg_61f_talk2.txt
+set_flag 10 0

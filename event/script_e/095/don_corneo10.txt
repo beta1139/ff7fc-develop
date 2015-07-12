@@ -17,7 +17,7 @@ set_talk_npc 9520
 msg {==We'll cut it off!
 reset_talk_npc
 jump_npc 9523 same 2
-play_se play_se puy.ogg
+play_se puy.ogg
 sleep 32
 step_npc 9523 4
 msg Corneo\n`Don't! Please!\n I'll tell you!\n Tell you everything!
@@ -109,6 +109,7 @@ step_npc 9522 2
 msg Tifa\n`Cloud, will you come\n to Slum 7 with me?
 chg_npc_dir 9520 down
 sleep 16
+step_npc 9520 1
 msg {Of course,\n Tifa
 chg_event_move_char_speed normal
 chg_speed 9522 normal
@@ -122,16 +123,12 @@ move_npc 9521 left 2
 sleep 32
 chg_npc_dir 9521 up
 chg_npc_dir 9522 up
+chg_type 9521 npc2
+chg_type 9522 npc2
 chg_speed 9521 not_move
 chg_speed 9522 not_move
-set_flag_wall 9521
-set_flag_wall 9522
+create event_generator 9506 95 7 10 17 0 0 @095/don_corneo_end.txt
 chg_char_dir down
 draw_char on
 kill 9520
-create event_generator 9506 95 7 10 17 0 0 @095/don_corneo_end.txt
-set_key_valid up
-set_key_valid left
-set_key_valid down
-set_key_valid right
-set_key_valid start
+include ./event/common/key_valid.txt

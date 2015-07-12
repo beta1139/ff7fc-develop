@@ -1,0 +1,6 @@
+stop_bgm
+sleep 16
+play_event_bgm 1-11-Fanfare.ogg
+msg  おきのどくですが\n　いくつかのキーアイテムは\n　おとなのじじょうで\n　きえてしまいました
+sleep 16
+play_bgm

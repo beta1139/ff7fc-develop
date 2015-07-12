@@ -10,7 +10,7 @@ msg 「おきゃくさま　キッチンへは\n　はいらないでください
 reset_talk_npc
 move_char left 1
 if_flag 9 2
-create event_generator 7709 77 4 12 17 0 0 @drag_cloud.txt 
+create event_generator 7709 77 4 12 17 0 0 @../common/drag_cloud.txt 
 fi
 sleep 16
 chg_npc_dir 7711 left

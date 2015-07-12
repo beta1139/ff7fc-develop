@@ -6,6 +6,8 @@ if_char_dir down
 create npc_event 9520 95 7 10 0 0 3 none
 fi
 msg3 -1 コルネオ\n「ちょっとまった！
+chg_type 9521 npc_event
+chg_type 9522 npc_event
 chg_speed 9521 normal
 chg_speed 9522 normal
 sleep 16

@@ -1,0 +1,10 @@
+wait_same_pos
+move_npc 7931 right 1
+sleep 16
+chg_type 7920 npc
+kill 7931
+add_party_mem 3
+create event_generator 7910 79 5 12 17 0 0 @../common/079/wall_market18.txt
+create event_generator 7265 72 21 43 17 0 0 @072/wall_market20.txt
+create event_generator 7266 72 21 44 17 0 0 @072/wall_market20.txt
+create event_generator 7267 72 21 45 17 0 0 @072/wall_market20.txt

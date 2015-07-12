@@ -1,2 +1,0 @@
-wait_same_pos
-set_flag 13 1

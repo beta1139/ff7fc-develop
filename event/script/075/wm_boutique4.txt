@@ -8,20 +8,9 @@ sleep 16
 step_npc 7521 2
 msg エアリス\n「きがえるの？\n\n\n#2\n　　かくごをきめた\n　　いまはきがえない\n\n\n[[]][[]]
 if_flag 3 0
-kill_through 7260
-kill_through_range 7602 7604
-kill_through_range 7612 7614
-kill_through_range 7903 7905
-kill_through_range 7921 7922
-kill 7707
-kill 7704
-kill_through 8405
-kill_through_range 8803 8807
-kill_through_range 8816 8817
 chg_event_move_char_speed fast
 step_char 2
 sleep 16
-kill 7240
 move_char up 3
 sleep 4
 open_door 7551
@@ -38,16 +27,8 @@ chg_event_move_char_speed normal
 play_se syu.ogg
 chg_npc_dir 7515 up
 sleep 64
-chg_param 8715 「う～ん　もうちょっとね
 play_se syu.ogg
-sleep 32
-if_flag_greater 18 9
-chg_param 8715 「へぇ　まあまあね
-fi
-sleep 32
-if_flag_greater 18 15
-chg_param 8715 「あら　けっこういけてるじゃないの
-fi
+sleep 64
 chg_char_img_tmp 13
 chg_speed 7521 normal
 msg 『……
@@ -245,65 +226,12 @@ sleep 16
 chg_char_dir up
 draw_char on
 kill 7520
+set_flag 30 16
+create event_generator 1060 10 0 0 17 0 0 @../common/point.txt
 sleep 16
 move_npc 7521 left 1
-sleep 16
+include ./event/common/act/act1-5_4j.txt
 kill 7521
-sleep 8
-chg_speed 7510 not_move
-chg_speed 7515 not_move
-chg_type 7510 npc
-chg_type 7512 npc
-chg_type 7515 npc
-chg_param 7510 「……なんだか\n　すごいもんですね
-chg_param 7512 「あなたって\n\n\n\n　ヘン
-chg_param 7515 「うんうん　にあっとる　にあっとる
-chg_param 7221 「おっ！そこのべっぴんさん\n　いいしごとしょうかいするぜ！\n\n\n　ドンのとこへいってみな\n　たんまりかせげるぜ
-chg_param 7224 「どうぞ　よっていってください
-chg_param 7226 「なんじゃ？\n　おじょうさんがたも　たべるか？
-set_npc_pos 7223 72 9 33
-chg_npc_dir 7223 up
-chg_npc_dir 7225 right
-kill_through_range 7281 7282
-create npc2 7614 76 5 6 17 0 0 
-create event_generator 7604 76 0 0 17 0 0 @076/wm_materia_shop4.txt
-create npc3 7718 77 4 9 79 3 0 「モグモグ………
-create npc_event 7922 79 4 13 70 1 0 「おっかしいなあ\n　バリバリにツンツンのヘアスタイル！\n　みおぼえがあるんだけどなあ
-set_npc_pos 7923 79 6 13
-set_npc_pos 7924 79 6 12
-chg_type 7920 npc_event
-chg_type 7923 npc_event
-chg_type 7924 npc_event
-chg_type 8710 npc_event
-chg_type 8711 npc_event
-chg_type 8712 npc_event
-chg_npc_dir 8710 down
-chg_npc_dir 8711 right
-chg_npc_dir 8712 left
-chg_npc_dir 8715 right
-set_npc_pos 8710 87 14 12
-set_npc_pos 8711 87 13 15
-set_npc_pos 8712 87 15 15
-set_npc_pos 8715 87 10 14
-chg_npc_img 8710 111
-set_npc_pos 8815 88 3 6
-chg_type 8815 npc_event
-chg_npc_dir 8815 right
-chg_speed 8815 not_step
-create npc 8709 87 14 12 17 0 0 「はい 1 2 3\n　スクワットはリズムですよ
-create event_generator 8733 87 10 23 17 0 0 @087/wm_squat.txt
-create event_generator 8601 86 11 15 17 0 0 @086/keep_drag1_in.txt
-create event_generator 8809 88 20 13 17 0 0 @088/keep_drag2_in.txt
-create event_generator 8807 88 4 7 17 0 0 @088/wm_yoidore7.txt
-create event_generator 7261 72 8 47 17 0 0 @072/wall_market13_1.txt
-create event_generator 7262 72 9 47 17 0 0 @072/wall_market13_2.txt
-create event_generator 7263 72 10 47 17 0 0 @072/wall_market13_3.txt
-kill 8510
-create npc2 8512 85 10 15 131 1 0 
-create event_generator 8503 85 0 0 17 0 0 @085/wall_market21.txt
-set_flag 14 7
-set_flag 9 2
-sleep 8
 chg_char_state_move
 loop_inf
 sleep 400

@@ -1,0 +1,13 @@
+kill_through_range 5622 5623
+kill_through_range 6600 6624
+kill_through_range 6626 6739
+create npc_event 5621 56 9 8 17 1 2 none
+create event_generator 5600 56 11 12 17 0 0 @056/gobangai_slums8_1.txt
+create event_generator 5601 56 12 13 17 0 0 @056/gobangai_slums8_2.txt
+create npc 6542 65 11 19 17 0 0 w6‚Î‚ñ‚ª‚¢‚ğ‚±‚¦‚Ä7‚Î‚ñ‚ª‚¢‚Ö@‚©\n@‚Ğ‚Æ‚è‚Å‚È‚ñ‚Æ‚©‚È‚è‚»‚¤‚¾‚È
+if_party_mem 3
+del_party_mem 3
+fi
+if_owned_or_equipped_item 4313
+kill_through 6531
+fi

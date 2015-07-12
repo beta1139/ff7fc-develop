@@ -38,4 +38,5 @@ set_layer 11911 back
 create event_generator 11931 119 11 20 17 0 0 @../common/119/shinra_bldg_60f_out.txt
 create event_generator 11935 119 24 13 17 0 0 @119/shinra_bldg_60f_2.txt
 create event_generator 11936 119 33 13 17 0 0 @../common/119/shinra_bldg_60f_3.txt
+set_flag 13 0
 set_flag 29 5

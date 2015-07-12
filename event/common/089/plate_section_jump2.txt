@@ -1,0 +1,19 @@
+wait_same_pos
+chg_char_img_tmp 157
+kill_through_range 8930 8937
+chg_char_dir up
+set_slide_char_flag
+play_se jump.wav
+jump_char down 1
+sleep 8
+chg_char_img_tmp 0
+sleep 8
+chg_char_dir down
+play_se landing.wav
+create event_generator 8930 89 12 48 17 0 0 @../common/089/plate_section_jump1.txt
+create npc2 8980 89 12 48 17 0 0 none
+include ./event/common/key_climb_reset.txt
+enable_char_chg
+reset_slide_char_flag
+reset_char_img_tmp
+set_flag 0 0

@@ -1,0 +1,21 @@
+include ./event/common/del_member.txt
+kill_through_range 200 1809
+kill_through_range 1900 1949
+kill_through_range 1960 4199
+create npc_event 4760 47 14 19 116 0 0 none
+create npc_event 4761 47 14 18 116 0 0 none
+create npc_event 4762 47 14 17 116 0 0 none
+chg_npc_y_offset 4760 -2
+chg_npc_y_offset 4761 -2
+chg_npc_y_offset 4762 -2
+create npc2 4763 47 12 17 17 0 0 
+create npc2 4764 47 12 30 17 0 0 
+create npc2 4765 47 12 31 17 0 0 
+create npc2 4766 47 12 32 17 0 0 
+sleep 16
+set_flag 0 0
+set_flag 1 0
+set_flag 9 1
+set_flag 20 0
+add_party_mem 1
+add_party_mem 2

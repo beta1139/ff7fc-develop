@@ -36,7 +36,7 @@ msg ティファ\n「だから　ねっ！\n　こんどこそ　やくそくを……
 reset_talk_npc
 sleep 64
 play_se door_open_hard.wav
-chg_npc_img 2251 2
+create map_obj 2251 22 8 4 2 0 0 
 sleep 16
 create npc_event 2206 22 8 4 1 1 0 none
 chg_speed 2206 normal
@@ -154,108 +154,23 @@ chg_npc_dir 2207 up
 sleep 48
 fadeout
 sleep 8
-kill_through 1710
-kill_through 1712
-kill_through 1714
-kill_through 1715
-kill_through 1717
-kill_through 1706
-kill_through 1707
-kill_through 1711
-kill_through 1713
-kill_through 1716
-kill_through 1900
-kill_through 1901
-kill_through 1902
-kill 1906
-kill 1907
-kill_through 1908
-kill 2206
-kill_through 2202
-create npc_event 2020 20 36 19 34 0 0 none
-create npc_event 2021 20 37 18 35 2 0 none
-create npc_event 2022 20 36 18 36 1 0 none
-create npc_event 2010 20 26 22 78 1 0 none
-set_flag_wall 2020
-set_flag_wall 2021
-set_flag_wall 2022
-kill_through 2016
-kill_through 2034
-kill_through 2035
-kill 2018
-kill 2019
-kill 2600
-kill 2006
-kill 2007
-kill 2008
-kill 2009
-kill_through 2609
-kill_through 2601
-kill_through 2611
-kill_through 2610
-kill_through 2530
 stop_bgm
-kill 2207
-sleep 48
+include ./event/common/act/act1-2_1j.txt
+sleep 16
+include ./event/common/act/act1-2_2.txt
+sleep 24
 play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
-create npc 1706 17 17 9 94 1 0 「おはようございます\n　いちやあけても　あいかわらずですね\n\n\n　けがしないよう　おきをつけて\n　いってらっしゃい
-create npc3 1707 17 11 11 71 3 0 「ぼく　もう　たえられない
-create npc 1906 19 15 28 32 0 0 「おう！！\n　ここからさきは　たちいりきんしだ！！
-create npc2 1907 19 14 28 32 0 0 
-create npc 2006 20 33 20 71 2 0 ジョニー\n「おれ　おとこをみがく　たびにでっからよ！\n　これで　さよならだぜ！\n\n　やい！　おさななじみ！！\n　ティファちゃんを　たいせつにな！
-create npc 2007 20 32 20 88 3 0 「きのう　おみせのそとから　あなたたちのこと\n　まちのみんなで　のぞきみしてたのよ\n\n\n　ティファちゃんの　おさななじみなんて\n　にくいにくい！
-create npc 2008 20 33 21 65 0 0 「あ～あ！\n　いじめるあいてが\n　いなくなっちゃうよ！
-create npc 2009 20 33 19 70 1 0 「ジョニー　わるいおんなに　だまされたり\n　しなけりゃいいけど\n\n\n　それだけが　きがかりだなあ
-create npc2 2601 26 3 8 90 3 0 
-chg_param 2510 「てへへ…ひとばんじゃ　おぼえきれんぜ\n　おう！しろうと！！\n　わるいが　にかいのあいぼうから　おそわってくれ
-sleep 32
-set_npc_pos 1731 17 17 2
-set_npc_pos 1732 17 16 2
-chg_npc_dir 1731 right
-chg_npc_dir 1732 down
-set_npc_pos 1734 17 20 3
-chg_speed 1734 not_move
-set_npc_pos 2602 26 6 8
-set_npc_pos 1809 18 4 3
-chg_npc_dir 1809 down
-chg_speed 1809 not_move
-create event_generator 1718 17 1 1 17 0 0 @017/nanabangai_station7.txt
-create event_generator 1719 17 1 2 17 0 0 @017/nanabangai_station8.txt
-create event_generator 1720 17 2 1 17 0 0 @017/nanabangai_station9.txt
-create event_generator 1721 17 14 9 17 0 0 @017/nanabangai_station10.txt
-create event_generator 1913 19 1 1 17 0 0 @019/nanabangai5.txt
-create event_generator 1916 19 8 21 17 0 0 @../common/019/nanabangai7_1.txt
-create event_generator 1917 19 8 22 17 0 0 @../common/019/nanabangai7_2.txt
-create event_generator 2023 20 1 1 17 0 0 @../common/020/nanabangai_slum17.txt
-create event_generator 2024 20 1 2 17 0 0 @020/nanabangai_slum18.txt
-create event_generator 2025 20 2 1 17 0 0 @020/nanabangai_slum19.txt
-create event_generator 2026 20 2 2 17 0 0 @020/nanabangai_slum20.txt
-create event_generator 2027 20 25 24 17 0 0 @../common/020/nanabangai_slum21_1.txt
-create event_generator 2028 20 26 24 17 0 0 @../common/020/nanabangai_slum21_2.txt
-create event_generator 2029 20 27 24 17 0 0 @../common/020/nanabangai_slum21_3.txt
-create event_generator 2030 20 28 23 17 0 0 @../common/020/nanabangai_slum21_4.txt
-create event_generator 2031 20 28 22 17 0 0 @../common/020/nanabangai_slum21_5.txt
-create event_generator 2032 20 33 22 17 0 0 @../common/020/nanabangai_slum22_1.txt
-create event_generator 2033 20 32 18 17 0 0 @../common/020/nanabangai_slum22_2.txt
-chg_npc_dir 2607 up
-create event_generator 2620 26 4 8 17 0 0 @026/beginner's_hall1.txt
-create event_generator 2625 26 1 1 17 0 0 @026/beginner's_hall4.txt
-create treasure_materia 2628 26 5 8 3 0 0 4100
-create event_generator 2629 26 1 1 17 0 0 @026/beginner's_hall5.txt
-chg_npc_img 2691 29
-chg_speed 2400 not_step
-sleep 400
+set_flag 30 5
+sleep 432
 recover_active_chara
 warp 23 2 8 right
-create event_generator 2240 22 8 5 17 0 0 @022/seventhheaven8.txt
 draw_char on
 play_map_bgm 28
 fadein
+create event_generator 2390 10 0 0 17 0 0 @../common/point.txt
 sleep 32
 chg_char_dir right
 sleep 8
 chg_char_dir left
 sleep 8
 chg_char_dir right
-set_flag 0 0
-set_flag 9 1

@@ -1,0 +1,11 @@
+set_eternal_event
+wait_target_talk 8611
+reset_talk_flag 8611
+if_flag 9 2
+kill_through_range 8601 8602
+chg_char_img_tmp 13
+fi
+open_weapon_shop 2301/2201/2101
+if_flag 9 2
+create event_generator 8602 86 11 10 17 0 0 @../common/drag_cloud.txt 
+fi

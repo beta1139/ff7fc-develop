@@ -169,16 +169,7 @@ msg Aeris\n`Don't worry about that.\n Isn't that dress pretty?
 move_npc 7521 up 1
 draw_char on
 kill 7520
-create npc2 8715 87 10 14 88 3 4 
-kill 8713
-sleep 16
+include ./event/common/act/act1-5_2e.txt
 kill 7521
-chg_type 7510 npc
-chg_type 7515 npc
-chg_type 7516 npc
-chg_param 7510 `How was it?\n Did you get the wig?
-set_npc_pos 7516 75 9 13
-create event_generator 8701 87 0 0 17 0 0 @087/wm_gym2.txt
-create event_generator 8730 87 9 19 17 0 0 @087/wm_gym7_1.txt
-create event_generator 8731 87 10 19 17 0 0 @087/wm_gym7_2.txt
-create event_generator 8732 87 11 19 17 0 0 @087/wm_gym7_3.txt
+set_flag 30 14
+create event_generator 7590 75 0 0 17 0 0 @../common/point.txt

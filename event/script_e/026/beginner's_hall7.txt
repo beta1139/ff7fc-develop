@@ -2,6 +2,7 @@ wait_same_pos
 create npc_event 2626 26 4 6 0 0 2 none
 draw_char off
 move_char up 1
+chg_type 2601 npc_event
 sleep 16
 jump_npc 2606 same 2
 sleep 32
@@ -17,10 +18,14 @@ jump_npc 2607 same 2
 sleep 32
 move_npc 2626 up 1
 jump_npc 2607 same 2
-sleep 32
+sleep 16
 chg_npc_dir 2626 left
+sleep 16
 erase_msg3
-sleep 32
+jump_npc 2626 same 1
+sleep 16
+step_npc 2626 2
+sleep 16
 msg {Patience, now.\n Your `Limit Gauge' is\n filling up.
 sleep 16
 chg_speed 2606 fast
@@ -29,6 +34,7 @@ set_talk_npc 2606
 msg `Boo, hoo!!
 reset_talk_npc
 sleep 16
+step_npc 2626 2
 msg {Now your gauge is full!\n Go for it, let your\n LIMIT Break go!!
 sleep 16
 loop 2
@@ -81,6 +87,7 @@ pool
 play_se damage.wav
 chg_npc_img 2607 106
 sleep 32
+step_npc 2626 1
 msg {Well done.
 chg_speed 2606 normal
 jump_npc 2606 down 1
@@ -124,6 +131,7 @@ msg3 80 `Heeeelp!
 reset_talk_npc
 sleep 80
 erase_msg3
+step_npc 2626 2
 msg {Calm down!\n Counter with [M-Bar] or\n [Refl] if your opponent\n uses Magic.\n [M-Bar] is the magic to\n reduce magical damages\n by half.\n\n [Refl] reflects magic,\n but it works only limited\n number of times.
 set_screen_effect alpha 0 147 59 0
 sleep 16
@@ -159,6 +167,7 @@ play_se damage.wav
 chg_npc_img 2607 106
 sleep 32
 chg_speed 2606 not_move
+step_npc 2626 1
 msg {Well done.
 jump_npc 2606 down 1
 sleep 48
@@ -187,6 +196,7 @@ reset_talk_npc
 sleep 16
 chg_npc_dir 2626 up
 sleep 16
+step_npc 2626 2
 msg {If you wanna be strong,\n try to train materias\n efficiently and find\n optimal combinations.\n Materias develop at\n different rates according\n to the types of weapons\n and armors.\n Materia slots on weapons\n and armors provide\n unlimited number of\n combinations.\n This is as far as I can\n teach you. You also need\n an inherent aptitude to\n be like me.
 sleep 16
 jump_npc 2603 same 1
@@ -213,6 +223,8 @@ chg_npc_dir 2626 up
 sleep 16
 chg_npc_dir 2626 left
 sleep 16
+chg_speed 2626 fast
+step_npc 2626 2
 msg {You better not annoy me!\n\n\n\n It's okay, try it first.\n You'll get used to it.
 chg_speed 2603 normal
 chg_speed 2605 normal
@@ -231,6 +243,8 @@ chg_speed 2603 not_move
 chg_speed 2605 not_move
 chg_type 2603 npc
 chg_param 2603 `Please, Mr.Ex-SOLDIER!!\n Would you teach us three\n how to battle?\n We'll pay you!
+create event_generator 2640 26 0 0 17 0 0 @026/beginner's_hall3.txt
 chg_char_dir left
 draw_char on
 kill_through 2626
+chg_type 2601 npc2

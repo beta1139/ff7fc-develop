@@ -1,4 +1,6 @@
 wait_same_pos
+set_flag 30 1
+create event_generator 1060 10 0 0 17 0 0 @../common/point.txt
 backup_char_img
 chg_char_img 0
 create npc_event 1002 10 8 14 1 0 2 none
@@ -79,6 +81,7 @@ chg_npc_dir 1002 right
 sleep 32
 play_se timer.ogg
 step_char 6
+include ./event/common/act/act1-1_3.txt
 sleep 180
 play_se_loop alarm.ogg
 create event_generator 1003 10 0 0 17 0 0 @../common/010/ichiban_makouro_alarm.txt

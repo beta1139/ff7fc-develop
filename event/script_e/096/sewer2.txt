@@ -129,16 +129,15 @@ sleep 32
 chg_speed 9622 normal
 step_npc 9622 2
 msg Tifa\n`==Yeah==You're right!\n We still have time.
+include ./event/common/del_member.txt
 sleep 24
 move_npc 9621 down 1
 move_npc 9622 left 1
+include ./event/common/act/act1-6_1.txt
 sleep 16
 kill 9621
 kill 9622
-if_flag 9 0
-set_flag 9 2
-fi
+include ./event/common/act/act1-6_2e.txt
+set_flag 30 17
+create event_generator 9690 96 0 0 17 0 0 @../common/point.txt
 enable_char_chg
-set_flag 1 0
-set_flag 20 0
-set_flag 21 1

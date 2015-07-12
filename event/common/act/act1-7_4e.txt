@@ -5,8 +5,8 @@ if_party_mem 2
 del_party_mem 2
 fi
 sleep 16
-kill_through 6521
-kill_through 6522
+kill_through 6561
+kill_through 6562
 kill_through 6710
 kill_through 6721
 set_npc_pos 6722 67 9 15
@@ -20,9 +20,9 @@ chg_param 6722 Marlene\n`Daddee, Tifa, Cloud!\n You get Aeris back!
 create npc_event 8430 84 15 8 89 2 2 none
 create npc_event 8431 84 14 8 65 3 0 none
 create npc_event 8432 84 14 9 67 0 0 none
-create event_generator 8460 84 10 16 17 0 0 @084/plate_section1_1.txt
-create event_generator 8461 84 11 16 17 0 0 @084/plate_section1_2.txt
-create event_generator 8462 84 12 16 17 0 0 @084/plate_section1_3.txt
+create event_generator 8460 84 10 16 17 0 0 @../common/084/plate_section1_1.txt
+create event_generator 8461 84 11 16 17 0 0 @../common/084/plate_section1_2.txt
+create event_generator 8462 84 12 16 17 0 0 @../common/084/plate_section1_3.txt
 add_party_mem 2
 add_party_mem 1
 kill_through 6604

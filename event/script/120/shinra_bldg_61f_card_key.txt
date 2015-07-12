@@ -1,0 +1,92 @@
+set_eternal_event
+wait_target_talked 12000
+reset_talked_flag 12000
+chg_type 12000 npc_event
+chg_dir_to_char 12000
+set_active_msg 12000
+set_talk_npc 12000
+if_flag 3 0
+sleep 16
+jump_npc 12000 same 1
+msg 「エアリス？\n　そのなをしっているとは\n　おまえまさか！？\n\n　エアリスってあのコだろ\n　うけつけの\n　じつはオレも　あのコ\n　きになってるんだよね\n　ウーン　はやくも\n　ライバルしゅつげん……\n\n\n　え　そうじゃない？\n　なんだ　ひとちがいか
+reset_talk_npc
+fi
+if_flag 3 1
+sleep 32
+set_ignore_map_layer_flag 12000 1
+set_layer 12000 front
+jump_npc 12000 same 1
+sleep 16
+jump_npc 12000 same 1
+msg 「ハハーン……わかったぞ\n　さてはおまえ　アレだな？\n　いまウワサの……
+sleep 24
+jump_npc 12000 same 2
+loop 2
+if_char_dir up
+sleep 4
+chg_npc_dir 12000 left
+sleep 4
+chg_npc_dir 12000 up
+sleep 4
+chg_npc_dir 12000 right
+sleep 4
+fi
+if_char_dir down
+sleep 4
+chg_npc_dir 12000 right
+sleep 4
+chg_npc_dir 12000 down
+sleep 4
+chg_npc_dir 12000 left
+sleep 4
+fi
+if_char_dir left
+sleep 4
+chg_npc_dir 12000 down
+sleep 4
+chg_npc_dir 12000 left
+sleep 4
+chg_npc_dir 12000 up
+sleep 4
+fi
+if_char_dir right
+sleep 4
+chg_npc_dir 12000 up
+sleep 4
+chg_npc_dir 12000 right
+sleep 4
+chg_npc_dir 12000 down
+sleep 4
+fi
+chg_dir_to_char 12000
+pool
+play_se limit_break_start.wav
+loop 8
+set_screen_effect add 255 255 255 30
+set_gray_scale
+sleep 1
+reset_screen_effect
+reset_gray_scale
+sleep 1
+pool
+step_npc 12000 1
+msg 「しんらカンパニー　しゅうりか！！
+sleep 16
+step_npc 12000 2
+msg 「いや～　このビルも\n　そろそろあちこちに\n　ガタがきててなあ\n\n　このかいのドア\n　ひらきっぱなしなんだ\n　はやく　なおしてくれよな\n\n　あ　そうそう\n　いちおう　ほかのかいも　みまわってくれよ\n　これ　やるから
+reset_talk_npc
+step_npc 12000 2
+sleep 32
+set_ignore_map_layer_flag 12000 0
+set_layer 12000 back
+chg_type 12000 npc
+set_inactive_msg 12000
+sleep 16
+play_se pick_up.wav
+msg 　キーアイテム\n　　『カードキー62』をてにいれた！
+create event_generator 12026 120 0 0 17 0 0 @../common/act/act1-8_4j.txt
+fi
+set_ignore_map_layer_flag 12000 0
+set_layer 12000 back
+chg_type 12000 npc
+set_inactive_msg 12000

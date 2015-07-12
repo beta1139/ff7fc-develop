@@ -1,3 +1,0 @@
-wait_same_pos
-set_npc_pos 9623 96 21 29
-create event_generator 9604 96 21 30 17 0 0 @096/sewer3.txt

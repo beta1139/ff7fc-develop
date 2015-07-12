@@ -1,6 +1,7 @@
 wait_same_pos
 create npc_event 2626 26 4 6 0 0 2 none
 draw_char off
+chg_type 2601 npc_event
 move_char up 1
 sleep 16
 jump_npc 2606 same 2
@@ -17,10 +18,14 @@ jump_npc 2607 same 2
 sleep 32
 move_npc 2626 up 1
 jump_npc 2607 same 2
-sleep 32
+sleep 16
 chg_npc_dir 2626 left
+sleep 16
 erase_msg3
-sleep 32
+jump_npc 2626 same 1
+sleep 16
+step_npc 2626 2
+sleep 16
 msg 『そこでがまんだ\n　おまえの（リミットゲージ）は　たまりはじめている
 sleep 16
 chg_speed 2606 fast
@@ -29,6 +34,7 @@ set_talk_npc 2606
 msg 「びえ～ん！！
 reset_talk_npc
 sleep 16
+step_npc 2626 2
 msg 『よし（リミットゲージ）は　いっぱいだ！\n　えんりょはいらない\n　（リミットわざ）でしょうぶだ！！
 sleep 16
 loop 2
@@ -81,6 +87,7 @@ pool
 play_se damage.wav
 chg_npc_img 2607 106
 sleep 32
+step_npc 2626 1
 msg 『じょうできだ
 chg_speed 2606 normal
 jump_npc 2606 down 1
@@ -124,6 +131,7 @@ msg3 80 「たしゅけて～！
 reset_talk_npc
 sleep 80
 erase_msg3
+step_npc 2626 2
 msg 『おちつけ！\n　あいてが　まほうをつかうときは\n　（マバリア）か（リフレク）で　たいこうするのだ\n\n　（マバリア）は　まほうのダメージを\n　はんぶんにする　まほうだ\n\n\n　（リフレク）は　まほうをはねかえすが\n　はねかえす　かいすうに　せいげんがあるから\n　きをつけろ
 set_screen_effect alpha 0 147 59 0
 sleep 16
@@ -159,6 +167,7 @@ play_se damage.wav
 chg_npc_img 2607 106
 sleep 32
 chg_speed 2606 not_move
+step_npc 2626 1
 msg 『じょうできだ
 jump_npc 2606 down 1
 sleep 48
@@ -187,6 +196,7 @@ reset_talk_npc
 sleep 16
 chg_npc_dir 2626 up
 sleep 16
+step_npc 2626 2
 msg 『おれみたいに　つよくなりたければ\n　マテリアを　こうりつよく　そだて\n　さいてきな　くみあわせを　さがすことだな\n\n　そうびする　ぶきやぼうぐの　しゅるいによって\n　マテリアの　せいちょうする　スピードはちがう\n\n\n　ぶきやぼうぐの　あいているあなの　かたちによって\n　マテリアの　くみあわせは　むげんにひろがる\n\n\n　おれに　アドバイスできるのは\n　そのくらいのことだ\n　もっとも　うまれついたそしつが\n　なければ　おれのようには　なれんがな
 sleep 16
 jump_npc 2603 same 1
@@ -213,6 +223,8 @@ chg_npc_dir 2626 up
 sleep 16
 chg_npc_dir 2626 left
 sleep 16
+chg_speed 2626 fast
+step_npc 2626 2
 msg 『おれをおこらせるな！\n\n\n\n　だいじょうぶだ　まずはやってみろ\n　そのうち　なれてしまう
 chg_speed 2603 normal
 chg_speed 2605 normal
@@ -231,6 +243,8 @@ chg_speed 2603 not_move
 chg_speed 2605 not_move
 chg_type 2603 npc
 chg_param 2603 「ものしり　もとソルジャーさん！！\n　バトルのこと　オレたちさんにんぐみに\n　おしえてくださいよ！\n　ほうしゅう　はずみますから！
+create event_generator 2640 26 0 0 17 0 0 @026/beginner's_hall3.txt
 chg_char_dir left
 draw_char on
 kill_through 2626
+chg_type 2601 npc2

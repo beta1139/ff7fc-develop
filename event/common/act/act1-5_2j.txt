@@ -1,0 +1,47 @@
+kill_through 7501
+kill_through 7513
+kill_through_range 8730 8732
+kill_through 8810
+sleep 8
+create npc2 8715 87 10 14 88 3 4 
+kill_through 8713
+sleep 8
+chg_type 7510 npc
+chg_type 7515 npc
+chg_type 7516 npc
+chg_param 7510 「どうです？\n　かつらは　てにはいりましたか？
+set_npc_pos 7510 75 4 8
+chg_npc_dir 7510 up
+set_npc_pos 7516 75 9 13
+set_npc_pos 7515 75 9 14
+chg_npc_dir 7515 up
+chg_npc_img 7515 77
+create event_generator 8701 87 0 0 17 0 0 @087/wm_gym2.txt
+if_flag 99 0
+create event_generator 8730 87 9 19 17 0 0 @087/wm_gym7_1.txt
+create event_generator 8731 87 10 19 17 0 0 @087/wm_gym7_2.txt
+create event_generator 8732 87 11 19 17 0 0 @087/wm_gym7_3.txt
+fi
+if_flag 99 1
+kill_through 7351
+kill_through 7751
+kill_through 8719
+kill_through_range 8730 8732
+fi
+if_not_owned_item 6000
+if_not_owned_item 6001
+if_not_owned_item 6002
+add_item 6000
+set_flag 18 1
+fi
+fi
+fi
+if_owned_item 6000
+if_owned_item 6001
+if_owned_item 6002
+del_item 6000
+del_item 6001
+set_flag 18 4
+fi
+fi
+fi

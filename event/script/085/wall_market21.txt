@@ -5,7 +5,6 @@ set_key_unvalid left
 set_key_unvalid right
 set_key_unvalid start
 chg_char_img_tmp 13
-kill_through 7199
 kill_through_range 8400 8402
 kill_through_range 8406 8409
 chg_type 8512 npc_event
@@ -52,6 +51,7 @@ sleep 16
 chg_event_move_char_speed slow
 chg_speed 8521 slow
 move_char up 5
+sleep 1
 move_npc 8521 up 5
 sleep 64
 chg_speed 8512 slow

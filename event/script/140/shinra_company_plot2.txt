@@ -111,20 +111,22 @@ move_npc 14020 right 1
 sleep 64
 set_active_msg 14022
 kill_through_range 70500 70589
-create npc_event 70590 705 14 23 20 0 2 none
+create npc_event 70590 705 14 23 20 1 1 none
 sleep 16
 kill 14022
+chg_event_move_char_speed slow
+move_char up 1
 move_npc 14020 down 1
-move_char down 1
-sleep 64
-chg_npc_dir 14020 up
 sleep 48
-warp 705 14 23 up
+step_npc 14020 1
+sleep 32
+warp 705 14 21 up
 step_npc 70590 1
 msg プレジデントしんら\n「7ばんがいを　はかいする\n　アバランチのしわざとして　ほうどうする\n　しんらカンパニーによる　きゅうじょかつどう
-sleep 16
-chg_npc_dir 70590 left
 sleep 24
+chg_npc_dir 70590 left
+sleep 32
+step_npc 70590 1
 msg プレジデントしんら\n「フフフ…かんぺきだ
 sleep 16
 fadeout
@@ -135,3 +137,4 @@ kill 70590
 warp 96 40 15 down
 sleep 48
 fadein
+chg_event_move_char_speed normal

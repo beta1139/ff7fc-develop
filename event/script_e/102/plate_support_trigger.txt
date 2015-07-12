@@ -1,8 +1,0 @@
-wait_target_talk 10222
-chg_npc_dir 10223 left
-if_flag 15 1
-set_flag 15 2
-fi
-if_flag 15 0
-set_flag 15 3
-fi

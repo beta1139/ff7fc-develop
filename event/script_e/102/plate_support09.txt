@@ -110,7 +110,7 @@ set_key_valid right
 set_key_unvalid start
 set_key_unvalid select
 create event_generator 10209 102 0 0 17 0 0 @102/plate_support10.txt
-create event_generator 10219 102 0 0 17 0 0 @102/plate_support_countdown.txt
+create event_generator 10219 102 0 0 17 0 0 @../common/102/plate_support_countdown.txt
 set_screen_effect sub 0 255 255 0
 loop_inf
 if_flag 14 0
@@ -177,7 +177,7 @@ sleep 16
 play_se_loop crevice.ogg
 include ./event/common/effect_fadein.txt
 reset_screen_effect
-create event_generator 10210 102 0 0 17 0 0 @102/plate_support12.txt
+create event_generator 10210 102 0 0 17 0 0 @../common/102/plate_support12.txt
 set_flag 14 2
 fi
 if_flag 14 2
@@ -230,8 +230,8 @@ draw_image 011 -16 -32 576 0 1152 256 0 event/plate_support/wall.png
 sleep 24
 include ./event/common/effect_fadein.txt
 reset_screen_effect
-create event_generator 70902 709 0 0 17 0 0 @709/plate_support13_a.txt
-create event_generator 70903 709 0 0 17 0 0 @709/plate_support13_b.txt
+create event_generator 70902 709 0 0 17 0 0 @../common/709/plate_support13_a.txt
+create event_generator 70903 709 0 0 17 0 0 @../common/709/plate_support13_b.txt
 end
 fi
 pool

@@ -1,0 +1,13 @@
+kill_through_range 0 124
+kill_through_range 200 1099
+create npc_event 1260 12 4 23 80 3 0 
+create npc_event 1261 12 5 23 80 3 0 
+create npc_event 1262 12 6 23 80 3 0 
+create npc_event 1263 12 7 23 80 3 0 
+chg_npc_y_offset 1260 2
+chg_npc_y_offset 1261 2
+chg_npc_y_offset 1262 2
+chg_npc_y_offset 1263 2
+create event_generator 1211 12 0 0 17 0 0 @012/fire1.txt
+create event_generator 1212 12 0 0 17 0 0 @012/fire2.txt
+create event_generator 1213 12 0 0 17 0 0 @012/fire3.txt

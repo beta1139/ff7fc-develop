@@ -67,7 +67,14 @@ chg_npc_img 11710 0
 draw_char on
 kill 11710
 fi
-if_flag 24 9
+if_flag_greater 24 8
+if_flag 24 10
+if_not_owned_item 6020
+play_se beep_ff3.ogg
+include ./event/script/109/no_card_key.txt
+end
+fi
+fi
 step_char 2
 sleep 32
 play_se button.ogg
@@ -84,7 +91,7 @@ sleep 32
 if_flag 24 8
 move_char up 1
 fi
-if_flag 24 9
+if_flag_greater 24 8
 move_char down 1
 fi
 sleep 16

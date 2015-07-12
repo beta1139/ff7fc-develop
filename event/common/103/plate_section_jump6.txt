@@ -1,0 +1,29 @@
+set_eternal_event
+wait_same_pos
+play_se jump.wav
+chg_char_img_tmp 157
+chg_char_dir down
+kill_through_range 10301 10308
+jump_char down 3
+sleep 16
+reset_char_img_tmp
+chg_char_dir up
+create npc2 10320 103 14 34 17 0 0 
+create npc2 10321 103 11 31 17 0 0 
+create npc2 10322 103 11 26 17 0 0 
+create npc2 10323 103 22 24 17 0 0 
+create npc2 10324 103 17 26 17 0 0 
+create npc2 10325 103 17 19 17 0 0 
+create npc2 10326 103 23 15 17 0 0 
+sleep 16
+create event_generator 10301 103 14 34 17 0 0 @../common/103/plate_section_jump3.txt
+create event_generator 10302 103 11 31 17 0 0 @../common/103/plate_section_jump3.txt
+create event_generator 10303 103 11 26 17 0 0 @../common/103/plate_section_jump3.txt
+create event_generator 10304 103 22 24 17 0 0 @../common/103/plate_section_jump3.txt
+create event_generator 10305 103 17 26 17 0 0 @../common/103/plate_section_jump3.txt
+create event_generator 10306 103 17 19 17 0 0 @../common/103/plate_section_jump3.txt
+create event_generator 10307 103 23 15 17 0 0 @../common/103/plate_section_jump3.txt
+create event_generator 10308 103 23 7 17 0 0 @../common/103/plate_section_warp4.txt
+sleep 16
+play_se landing.wav
+include ./event/common/key_climb_reset.txt

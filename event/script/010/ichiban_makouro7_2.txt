@@ -17,7 +17,7 @@ if_flag 99 1
 msg ‚Î‚­‚Í‚Â 5‚Ó‚ñ‚Ü‚¦
 start_countdown 5
 fi
-kill_through 808
+kill_through 806
 kill_through 533
 create npc2 840 8 29 21 34 2 0 none
 create event_generator 801 8 29 21 17 0 0 @008/ichiban_makouro5.txt

@@ -1,0 +1,5 @@
+wait_same_pos
+kill_through_range 8901 8902
+play_event_bgm 4-01-Shinra_Army_Wages_a_Full-scale_Attack.ogg
+create event_generator 8464 84 24 8 17 0 0 @../common/084/plate_section_create_bgm.txt
+create event_generator 8465 84 24 9 17 0 0 @../common/084/plate_section_create_bgm.txt

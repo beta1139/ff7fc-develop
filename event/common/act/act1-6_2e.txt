@@ -1,0 +1,55 @@
+create npc 1706 17 14 9 94 0 4 `Rumor has it that the\n Plate is going to fall.\n But I find it difficult\n to leave this station==\n Just what is going on==?\n I hope it is not true.
+create event_generator 1911 19 21 22 17 0 0 @019/plate_support01.txt
+create event_generator 10102 101 15 80 17 0 0 @../common/101/plate_support_gunshot1.txt
+create event_generator 10103 101 15 80 17 0 0 @../common/101/plate_support03.txt
+create npc_event 1906 19 15 16 32 0 2 none
+create npc_event 1907 19 16 15 32 0 2 none
+create npc_event 1908 19 13 15 70 0 2 none
+create npc_event 1909 19 15 15 68 0 0 none
+create npc_event 1920 19 27 23 2 2 3 none
+create npc_event 1921 19 28 22 0 2 3 none
+create npc_event 1922 19 27 21 3 2 3 Aeris\n`It's okay.\n Leave it to me.
+create npc_event 1923 19 1 1 96 2 3 none
+create npc_event 1940 19 14 15 66 0 0 `Brrr==\n Is this post really\n coming down?\n\n I'm scared, but if I\n can be of any help==
+create npc_event 10150 101 16 84 144 0 3 none
+create npc_event 10153 101 16 35 1 0 3 none
+create npc_event 10120 101 18 75 141 1 3 none
+create npc_event 10122 101 13 76 141 1 3 none
+create npc_event 10123 101 17 70 140 2 3 none
+create treasure_box3 10124 101 18 66 2 0 0 1000
+create npc_event 10126 101 20 63 140 2 3 none
+create npc_event 10127 101 13 61 140 3 3 none
+create npc_event 10156 101 10 49 123 1 2 none
+create npc_event 10157 101 11 49 123 0 2 none
+create npc_event 10158 101 25 44 17 1 3 none
+create npc_event 10159 101 26 44 17 0 3 none
+set_npc_pos 9911 99 22 16
+set_npc_pos 9912 99 22 17
+set_npc_pos 9913 99 22 18
+set_npc_pos 9914 99 22 19
+set_layer 9941 front
+set_layer 9942 front
+set_layer 9965 front
+set_layer 9966 front
+set_layer 9981 front
+set_layer 9982 front
+set_layer 10156 front
+set_layer 10157 front
+create event_generator 9900 99 23 24 17 0 0 @099/train_gimmick_a01.txt
+create event_generator 9902 99 29 23 17 0 0 @099/train_gimmick_b01.txt
+set_layer 9902 front
+set_layer 9904 front
+set_layer 9919 front
+if_owned_or_equipped_item 4200
+kill_through 9631
+fi
+add_party_mem 2
+add_party_mem 3
+set_flag 0 0
+set_flag 1 0
+set_flag 9 2
+set_flag 13 0
+set_flag 14 0
+set_flag 15 0
+set_flag 20 0
+set_flag 21 1

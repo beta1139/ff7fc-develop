@@ -251,7 +251,7 @@ play_se shock.ogg
 kill_through_range 10000 10299
 kill_through_range 70800 70999
 sleep 48
-create event_generator 14000 140 13 15 17 0 0 @140/plate_support_end4.txt
+create event_generator 14000 140 13 15 17 0 0 @../common/140/plate_support_end4.txt
 play_se radio_noise.ogg
 sleep 32
 play_se push_button.ogg

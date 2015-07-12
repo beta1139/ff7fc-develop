@@ -1,0 +1,8 @@
+kill_through_range 4900 4911
+add_party_mem 3
+chg_npc_y_offset 5140 0
+chg_npc_y_offset 5141 0
+chg_npc_y_offset 5142 0
+chg_npc_y_offset 5143 0
+chg_npc_y_offset 5144 0
+chg_npc_y_offset 5145 0

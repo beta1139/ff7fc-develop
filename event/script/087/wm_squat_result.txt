@@ -146,7 +146,6 @@ sleep 4
 chg_npc_dir 8715 up
 pool
 play_se damage.wav
-create map_obj 8750 87 10 6 40 0 0 
 loop 8
 inc_map_draw_y_offset
 sleep 1
@@ -193,6 +192,7 @@ sleep 16
 chg_npc_img 8721 3
 chg_npc_dir 8721 up
 fi
+set_flag 30 15
 chg_npc_img 8710 17
 chg_npc_dir 8711 up
 chg_speed 8712 fast
@@ -203,6 +203,7 @@ sleep 16
 chg_speed 8715 normal
 move_npc 8715 up 7
 sleep 48
+chg_char_dir up
 chg_npc_dir 8721 down
 chg_speed 8712 normal
 jump_npc 8712 up 2
@@ -213,6 +214,11 @@ kill 8721
 chg_speed 8711 fast
 move_npc 8711 up 4
 sleep 16
+chg_speed 8712 fast
+move_npc 8712 right 1
+sleep 8
+chg_npc_dir 8712 up
+sleep 8
 set_key_valid b
 set_key_valid select
 set_key_valid up
@@ -220,32 +226,8 @@ set_key_valid left
 set_key_valid down
 set_key_valid right
 set_key_valid start
-chg_char_state_move
-chg_speed 8712 fast
-move_npc 8712 right 1
-sleep 8
-chg_npc_dir 8712 up
-sleep 8
 jump_npc 8711 same 1
 jump_npc 8712 same 1
 sleep 16
-chg_speed 8715 not_move
-chg_speed 8712 not_move
-chg_type 8715 npc
-chg_type 8711 npc
-chg_type 8712 npc3
-set_flag_wall 8711
-set_flag_wall 8712
-chg_param 8715 「だいじにつかってね
-chg_speed 8711 not_move
-kill_through 8709
-kill_through 8406
-kill 7516
-create event_generator 7504 75 9 7 17 0 0 @075/wm_boutique4.txt
-set_npc_pos 7515 75 4 11
-set_flag_wall 7515
-chg_npc_dir 7515 left
-chg_param 7510 「てにはいったようですね\n　さっそく　きがえてみてくださいよ
-if_flag 99 0
-chg_param 8719 「ははは\n　さいきん　でんきけいとうの\n　ちょうしがわるくてね
-fi
+include ./event/common/act/act1-5_3j.txt
+create event_generator 1060 10 0 0 17 0 0 @../common/point.txt

@@ -97,6 +97,7 @@ if_flag 3 0
 step_char 2
 sleep 32
 msg {I wanna ask you a favor.\n Will you do my face, too?
+set_flag 22 0
 chg_type 8130 npc_event
 chg_speed 8130 normal
 sleep 32
@@ -120,6 +121,7 @@ chg_type 8130 npc2
 play_se cloud_makeup.ogg
 end_fake_countdown
 add_flag 18 2
+set_flag 22 1
 sleep 32
 kill_through_range 8102 8104
 create npc 8134 81 7 6 40 0 0 `==chuckle@

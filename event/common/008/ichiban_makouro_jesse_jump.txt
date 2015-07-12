@@ -1,0 +1,15 @@
+wait_target_talked 806
+chg_type 806 npc_event
+chg_speed 806 normal
+jump_npc 806 right 3
+play_se jump.wav
+sleep 48
+play_se landing.wav
+sleep 8
+chg_npc_dir 806 up
+sleep 8
+slide_walk_npc 806 down 8
+sleep 128
+set_npc_pos 806 8 29 21
+chg_speed 806 not_move
+chg_type 806 npc

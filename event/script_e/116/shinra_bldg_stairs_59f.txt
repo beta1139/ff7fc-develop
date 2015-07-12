@@ -26,7 +26,7 @@ chg_speed 11602 slow
 chg_npc_dir 11601 up
 chg_npc_dir 11602 up
 sleep 32
-create event_generator 11643 116 0 0 17 0 0 @116/shinra_bldg_stairs_exp.txt
+create event_generator 11643 116 0 0 17 0 0 @../common/116/shinra_bldg_stairs_exp.txt
 chg_char_state_move
 step_npc 11601 2
 set_talk_npc 11601

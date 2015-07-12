@@ -1,0 +1,49 @@
+create map_obj 8750 87 10 6 40 0 0 
+chg_npc_dir 7515 left
+set_flag_wall 7515
+chg_npc_img 8710 17
+chg_npc_dir 8711 up
+chg_speed 8711 not_move
+chg_type 8711 npc
+set_flag_wall 8711
+chg_npc_dir 8712 up
+chg_speed 8712 not_move
+chg_type 8712 npc3
+set_flag_wall 8712
+chg_npc_dir 8715 up
+chg_speed 8715 not_move
+chg_type 8715 npc
+set_npc_pos 7515 75 4 11
+set_npc_pos 8710 87 10 6
+set_npc_pos 8711 87 11 8
+set_npc_pos 8712 87 9 7
+set_npc_pos 8715 87 10 7
+chg_param 7510 `I see you have them all.\n Put them on, will you?
+chg_param 8715 `Take good care of that.
+if_flag 99 0
+chg_param 8719 `Ha-ha\n The electric wiring's\n cranky these days.
+fi
+kill_through 8700
+kill_through 8701
+kill_through 8709
+kill_through_range 8730 8733
+kill_through 8406
+kill 7516
+create event_generator 7504 75 9 7 17 0 0 @075/wm_boutique4.txt
+if_not_owned_item 6003
+if_not_owned_item 6004
+if_not_owned_item 6005
+add_item 6003
+add_flag 18 1
+fi
+fi
+fi
+if_owned_item 6003
+if_owned_item 6004
+if_owned_item 6005
+del_item 6003
+del_item 6004
+add_flag 18 4
+fi
+fi
+fi

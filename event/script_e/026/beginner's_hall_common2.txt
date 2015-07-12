@@ -1,0 +1,63 @@
+chg_type 2603 npc_event
+chg_speed 2603 normal
+loop 2
+jump_npc 2603 same 1
+jump_npc 2604 same 1
+jump_npc 2605 same 1
+sleep 16
+pool
+step_char 1
+sleep 16
+msg {What do you wanna know?\n\n\n\n#8\n  About ATB\n  About popping numbers\n  About CHG and GRD\n  About RUN command\n  About Gauges\n  About Status\n  About Elementals\n  Enough idle talk\n[[]][[]][[]][[]][[]][[]][[]][[]]
+if_flag_lesser 3 7
+create npc_event 2626 26 4 5 0 0 0 none
+draw_char off
+fi
+if_flag 3 0
+msg {ATB or Active Time Battle\n is a system in which the\n time keeps flowing during\n the battle.\n If you set ATB option to\n `Wait' in the CFG MENU,\n the time stops while you\n select magic or item.\n So you'll be able to\n take time to select.\n It's just right for you\n beginners, isn't it?\n I always use `Active' but\n you choose for yourself.\n That's all.
+fi
+if_flag 3 1
+msg {You see `popping numbers'\n during battles. Red ones\n are damages and Green\n ones are recovery.\n Pay attention to them\n if you don't wanna be\n stamped out.
+fi
+if_flag 3 2
+msg {Use the CHG(Change)\n command to switch between\n the Van and the Rear in\n the battle formation.\n You receive less damage\n when you are in the rear\n but also you inflict less\n damage to enemies.\n You press LEFT arrow at\n the battle menu to use\n the CHG command.\n\n Likewise, press RIGHT\n arrow at the battle menu\n to use the GRD(Guard)\n command.\n If you use the GRD, the\n damages you receive is\n reduced by half until\n your next turn.\n It's important to guard\n against tough enemies.\n Of course that doesn't\n apply to me.
+fi
+if_flag 3 3
+msg {I'm not familiar with it\n since I seldom run away\n from battles, but I guess\n you guys need to know.\n Use the RUN command to\n run away from a battle,\n though it doesn't always\n succeed.\n If you failed to run, you\n can't do anything until\n your next turn.\n Be careful about that.
+fi
+if_flag 3 4
+msg {You can't see it right\n now but listen anyway.\n It's about `gauges' you\n see during battles.\n The TIME gauge shows the\n remaining time until\n your next turn.\n\n You can enter a command\n when the gauge fills up.\n You can skip a member's\n turn with CANCEL button.\n It's useful at times\n like when you wanna\n drive Baret hard.\n\n The LIMIT gauge grows\n as you receive damages.\n You can use your LIMIT\n Break when it fills up.\n This gauge doesn't get\n reset on each battle but\n accumulated from one\n battle to the next.\n Once you got it full,\n try to judge the most\n effective occasion to\n release it.
+sleep 16
+jump_npc 2603 same 1
+jump_npc 2604 same 1
+jump_npc 2605 same 1
+sleep 16
+msg {I tell you about FURY\n and SAD status, since\n I'm sure you guys don't\n know about them.\n In FURY state, the LIMIT\n gauge fills fast but\n your accuracy drops.\n\n In SAD state, the LIMIT\n gauge fills slower but\n you receive less damages.\n\n The BARRIER gauges show\n the effective time of\n two specific magic.\n\n The upper is for [Bar]\n against physical attacks\n and the lower is for\n [M-Bar] against magical.\n Both magic reduce\n damages by half, but they\n wane with time.\n\n Pay attention to the\n BARRIER gauges when you\n use [Bar] or [M-Bar].\n\n That's all.\n See it for yourself in\n your next battle.
+fi
+if_flag 3 5
+msg {STATUS is unusual\n states of characters.\n\n\n Though I may be repeating\n myself, I'll list typical\n ones for you guys.
+msg SLEEP Can't move until\n      you wake up.\nPOISN Gradual HP loss\n      during the battle.\nFURY  Double damages,\n      low accuracy.\nSAD   Low damage.\n      Cured by Stimulant.\nSTONE Can't move until\n      cured somehow.\nCONFU Unable to tell\n      friends and enemies.\nMUTE  Can't use any magic.\n\nTAZE  Time gauge stops.\n      You can't move.\nDARK  Lower physical\n      attack accuracy.\nTOAD  Becomes a toad.\n      I hate them.
+chg_speed 2626 normal
+sleep 32
+chg_npc_dir 2626 left
+sleep 48
+chg_npc_dir 2626 up
+sleep 32
+chg_speed 2626 not_move
+msg {Whew==\n It was some oration.\n\n\n Abnormal states can be\n cured with items or\n magic. Check it out\n when you do shopping.
+fi
+if_flag 3 6
+msg {[Elementals] are special\n effects associated with\n magic, weapons, etc.\n\n An expert can always pay\n attention to elementals\n in every battle to fight\n advantageously.\n I'll list up typical ones\n as examples.\n Remember, this is not a\n complete list.
+sleep 16
+msg FIRE  Effective to beasts\n      and ice monsters.\nICE   Effective to fire\n      monsters.\nBOLT  Effective to machine\n      monsters.\nEARTH Ineffective to\n      airborne monsters.\nPOISN Ineffective to\n      poisonous monsters.\nGRAV  Reduce HP by certain\n      ratio. Hit or miss.\nWATER Effective to fire\n      monsters\nWIND  Effective to flying\n      monsters.\nHOLY  Effective to dark\n      monsters.
+sleep 16
+msg {You can get big effects\n by attacking enemies\n with conflicting\n elementals.\n You can also guard\n effectively if your gears\n elementally agree with\n enemies.\n You need to SENSE to know\n enemies' elementals.\n Try using it when you get\n the materia.
+fi
+if_flag 3 7
+chg_speed 2603 not_move
+chg_type 2603 npc2
+end
+fi
+draw_char on
+kill 2626
+include ./event/script_e/026/beginner's_hall_common2.txt

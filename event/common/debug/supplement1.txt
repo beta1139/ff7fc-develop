@@ -1,12 +1,9 @@
 if_gil_less 1500
 add_gil 1500
 fi
-if_not_owned_item 4000
+if_not_owned_or_equipped_item 4000
 add_item 4000
 fi
-if_not_owned_item 4100
+if_not_owned_or_equipped_item 4100
 add_item 4100
-fi
-if_not_owned_item 4003
-add_item 4003
 fi

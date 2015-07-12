@@ -1,0 +1,27 @@
+wait_key_push_edge a
+sleep 8
+chg_speed 12001 not_move
+sleep 8
+wait_key_push_edge a
+sleep 16
+wait_key_push_edge a
+chg_npc_dir 12001 left
+loop_inf
+sleep 16
+create map_obj 12061 120 23 32 32 0 0 
+create map_obj 12062 120 25 32 32 0 0 
+set_layer 12061 front
+set_layer 12062 front
+sleep 16
+kill_through_range 12061 12062
+if_flag 10 1
+chg_dir_to_char 12001
+chg_speed 12001 normal
+step_npc 12001 1
+sleep 16
+kill_through_range 12061 12062
+wait_key_push_edge a
+chg_speed 12001 not_move
+end
+fi
+pool

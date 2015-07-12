@@ -1,0 +1,4 @@
+set_eternal_event
+wait_target_talk 12003
+reset_talk_flag 12003
+include ./event/script/120/shinra_bldg_61f_talk.txt

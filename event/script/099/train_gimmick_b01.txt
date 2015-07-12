@@ -3,7 +3,7 @@ play_se door_open.ogg
 draw_char off
 create map_obj 9980 99 28 23 53 0 0 
 sleep 16
-msg ÅwÇ±ÇÃÇÍÇ¡ÇµÇ·Å@Ç§Ç≤Ç≠Çº
+include ./event/script/099/tg_cloud_msg.txt
 kill 9980
 sleep 32
 play_se train_move_and_stop.ogg
@@ -54,7 +54,7 @@ set_npc_pos 9919 99 29 21
 set_npc_pos 9920 99 29 22
 set_npc_pos 9921 99 29 23
 set_layer 9921 front
-create event_generator 9903 99 29 20 17 0 0 @099/train_gimmick_b02.txt
+create event_generator 9903 99 29 20 17 0 0 @../common/099/train_gimmick_b02.txt
 set_layer 9903 front
 kill_through 9908
 set_flag 15 1

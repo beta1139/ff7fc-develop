@@ -1,2 +1,0 @@
-wait_fake_countover
-set_flag 14 2

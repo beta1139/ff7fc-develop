@@ -1,0 +1,13 @@
+wait_same_pos
+kill_through_range 7265 7267
+create npc_event 7931 79 5 12 3 3 2 none
+move_npc 7931 left 3
+sleep 48
+chg_npc_img 7931 15
+step_npc 7931 2
+sleep 40
+chg_npc_img 7931 3
+sleep 16
+del_party_mem 3
+chg_type 7920 npc3
+create event_generator 7909 79 3 12 17 0 0 @../common/079/wall_market17.txt

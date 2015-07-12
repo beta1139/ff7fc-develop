@@ -276,11 +276,6 @@ pool
 reset_screen_effect
 chg_event_move_char_speed normal
 create npc2 6820 68 12 8 17 0 0 
-set_key_valid up
-set_key_valid down
-set_key_valid left
-set_key_valid right
-set_key_valid select
-set_key_valid start
+include ./event/common/key_valid.txt
 create event_generator 6803 68 8 11 17 0 0 @068/rokubangai4_1.txt
 create event_generator 6804 68 9 11 17 0 0 @068/rokubangai4_2.txt

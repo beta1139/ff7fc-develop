@@ -1,3 +1,0 @@
-set_eternal_event
-wait_same_pos
-set_flag 1 0

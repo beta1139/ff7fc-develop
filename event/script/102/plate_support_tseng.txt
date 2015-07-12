@@ -9,14 +9,11 @@ chg_npc_dir 10255 down
 step_char 2
 kill_through 10039
 sleep 80
-set_npc_pos 10053 100 18 32
+create npc_event 10053 100 18 32 1 0 1 none
 create npc_event 10054 100 19 29 0 2 1 none
+create npc_event 10055 100 20 28 2 1 1 none
 create npc_event 10254 102 19 39 0 2 1 none
 draw_char off
-set_npc_pos 10055 100 20 28
-chg_npc_dir 10053 up
-chg_npc_dir 10054 left
-chg_npc_dir 10055 down
 set_layer 10055 front
 chg_event_move_char_speed slow
 stop_bgm

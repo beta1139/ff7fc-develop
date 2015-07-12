@@ -12,7 +12,7 @@ if_flag 9 2
 draw_char on
 kill 7322
 warp 73 9 6 right
-create event_generator 7306 73 10 6 17 0 0 @drag_cloud.txt
+create event_generator 7306 73 10 6 17 0 0 @../common/drag_cloud.txt
 set_key_valid up
 set_key_valid left
 set_key_valid down

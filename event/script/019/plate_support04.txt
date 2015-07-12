@@ -108,9 +108,8 @@ set_active_msg 1920
 jump_npc 1920 same 2
 sleep 16
 msg ティファ\n「ここはきけんです！\n　みんなはやく　はしらから　はなれて！\n\n　7ばんがいから　はなれて！
-if_party_mem 2
-del_party_mem 2
-fi
+kill_through_range 10120 10139
+kill_through_range 10150 10159
 sleep 16
 move_npc 1922 down 2
 move_npc 1909 up 2
@@ -140,52 +139,23 @@ sleep 8
 move_char down 1
 sleep 8
 kill 1920
-chg_npc_dir 1906 down
 chg_speed 1906 not_move
 chg_char_dir up
 draw_char on
 kill 1921
+if_party_mem 2
+del_party_mem 2
+fi
 sleep 16
-set_flag_wall 1906
-set_flag_wall 1907
-set_flag_wall 1908
-set_flag_wall 1909
-set_flag_wall 1940
-set_flag_wall 1922
-set_flag_wall 1923
-chg_type 1906 npc
-chg_type 1907 npc2
-chg_type 1908 npc
-chg_type 1909 npc2
-chg_type 1940 npc
+add_party_mem 2
 chg_type 1922 npc
 chg_type 1923 npc2
-chg_param 1906 「おう！　これがおれの　さいごのしごとだ！\n　のぼってけ！！
+set_flag_wall 1922
+set_flag_wall 1923
 chg_speed 1923 not_step
 set_layer 1923 back
-set_key_valid up
-set_key_valid down
-set_key_valid left
-set_key_valid right
-set_key_valid start
-if_party_mem 3
-del_party_mem 3
-remove_all_materia 3
-fi
-add_party_mem 2
-create event_generator 1951 19 19 11 17 0 0 @save_msg.txt
-create event_generator 1915 19 0 0 17 0 0 @019/plate_support_item_shop.txt
-create event_generator 1916 19 0 0 17 0 0 @019/plate_support_talk1.txt
-create event_generator 1917 19 0 0 17 0 0 @019/plate_support_talk2.txt
-create event_generator 1918 19 0 0 17 0 0 @019/plate_support_talk3.txt
-create event_generator 1930 19 10 21 17 0 0 @../common/019/plate_support_tifa1.txt
-create event_generator 1931 19 10 22 17 0 0 @../common/019/plate_support_tifa2.txt
-create event_generator 1932 19 10 23 17 0 0 @../common/019/plate_support_tifa3.txt
-create event_generator 1933 19 14 28 17 0 0 @../common/019/plate_support_tifa4.txt
-create event_generator 1934 19 15 28 17 0 0 @../common/019/plate_support_tifa5.txt
-create event_generator 1935 19 20 21 17 0 0 @../common/019/plate_support_tifa6.txt
-create event_generator 1936 19 20 22 17 0 0 @../common/019/plate_support_tifa7.txt
-create event_generator 1937 19 20 23 17 0 0 @../common/019/plate_support_tifa8.txt
+include ./event/common/act/act1-6_3j.txt
 chg_event_move_char_speed normal
-kill_through_range 10120 10139
-kill_through_range 10150 10159
+include ./event/common/key_valid.txt
+set_flag 30 19
+create event_generator 1990 19 0 0 17 0 0 @../common/point.txt

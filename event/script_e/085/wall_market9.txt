@@ -124,7 +124,7 @@ set_key_unvalid down
 set_key_unvalid left
 set_key_unvalid right
 set_key_unvalid start
-create event_generator 8501 85 11 18 17 0 0 @085/wall_market10.txt
+create event_generator 8501 85 11 18 17 0 0 @../common/085/wall_market10.txt
 sleep 16
 chg_char_dir down
 step_char 1

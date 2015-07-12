@@ -167,7 +167,6 @@ kill_through 4909
 draw_image 010 -16 0 0 0 1152 256 0 event/plate_support/wall.png
 set_image_alpha 010 0
 sleep 16
-step_npc 4903 1
 chg_type 10255 npc_event
 chg_type 10253 npc_event
 chg_speed 10255 fast
@@ -322,7 +321,7 @@ chg_npc_y_offset 10264 7
 sleep 8
 pool
 reset_screen_effect
-create event_generator 10206 102 0 0 17 0 0 @102/plate_support07_a.txt
+create event_generator 10206 102 0 0 17 0 0 @../common/102/plate_support07_a.txt
 chg_speed 10265 fast
 loop_inf
 step_npc 10256 1

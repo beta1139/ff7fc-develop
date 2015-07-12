@@ -1,0 +1,35 @@
+wait_same_pos
+chg_char_img_tmp 126
+chg_char_state_move
+loop_inf
+wait_key_push_edge select
+sleep 12
+chg_char_dir up
+play_se squat.ogg
+kill_through 8765
+kill_through 8768
+create event_generator 8766 87 9 14 17 0 0 @../common/087/wm_squat_select.txt
+sleep 4
+chg_char_dir left
+sleep 12
+wait_key_push_edge b
+sleep 12
+chg_char_dir up
+play_se squat.ogg
+kill_through 8764
+kill_through 8767
+create event_generator 8765 87 9 14 17 0 0 @../common/087/wm_squat_b.txt
+sleep 4
+chg_char_dir right
+sleep 12
+wait_key_push_edge a
+sleep 12
+chg_char_dir up
+play_se squat.ogg
+kill_through 8766
+create event_generator 8764 87 9 14 17 0 0 @../common/087/wm_squat_a.txt
+sleep 4
+chg_char_dir down
+sleep 12
+add_flag 16 1
+pool

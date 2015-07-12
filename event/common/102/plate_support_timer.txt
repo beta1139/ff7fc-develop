@@ -1,0 +1,33 @@
+chg_npc_dir 10253 up
+chg_npc_dir 10255 down
+sleep 16
+kill_through_range 10053 10055
+create npc2 10220 102 19 39 17 0 0 
+create npc2 10221 102 18 39 17 0 0 
+chg_speed 10253 not_move
+chg_speed 10255 fast
+move_npc 10255 right 1
+sleep 8
+move_npc 10255 down 2
+sleep 16
+chg_npc_dir 10255 left
+sleep 8
+play_se_loop timer2.ogg
+create event_generator 10203 102 0 0 17 0 0 @102/plate_support_tifa.txt
+create event_generator 10204 102 0 0 17 0 0 @102/plate_support_tseng.txt
+create event_generator 10215 102 14 47 17 0 0 @102/plate_support_tifa_msg.txt
+create event_generator 10216 102 15 47 17 0 0 @102/plate_support_tifa_msg.txt
+create event_generator 10217 102 16 47 17 0 0 @102/plate_support_tifa_msg.txt
+create event_generator 10218 102 17 47 17 0 0 @102/plate_support_tifa_msg.txt
+set_flag 14 0
+set_flag_wall 10253
+chg_char_state_move
+set_flag 30 20
+create event_generator 10246 101 0 0 17 0 0 @../common/point.txt
+chg_type 10253 npc
+loop_inf
+step_npc 10255 6
+sleep 64
+step_npc 10255 3
+sleep 64
+pool

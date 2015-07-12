@@ -1,0 +1,50 @@
+kill_through_range 200 1729
+kill_through_range 1765 1809
+kill_through_range 1900 1949
+kill_through_range 1960 2799
+sleep 16
+create npc_event 1706 17 13 9 94 3 2 none
+create npc_event 1707 17 11 11 106 1 0 none
+create npc_event 1708 17 12 11 106 2 0 none
+chg_type 1730 npc_event
+chg_type 1731 npc_event
+chg_type 1732 npc_event
+chg_type 1733 npc_event
+chg_type 1734 npc_event
+chg_speed 1730 not_move
+chg_speed 1731 not_move
+chg_speed 1732 not_move
+chg_speed 1733 not_move
+chg_speed 1734 not_move
+chg_npc_dir 1731 right
+chg_npc_dir 1732 down
+set_npc_pos 1731 17 16 2
+set_npc_pos 1732 17 17 2
+set_npc_pos 1734 17 20 3
+chg_npc_img 1751 5
+chg_npc_img 1752 6
+chg_npc_img 1753 7
+chg_npc_img 1754 8
+chg_npc_img 1755 7
+chg_npc_img 1756 8
+chg_npc_img 1757 7
+chg_npc_img 1758 8
+chg_npc_img 1759 7
+chg_npc_img 1760 8
+chg_npc_img 1761 7
+chg_npc_img 1762 8
+chg_npc_img 1763 9
+chg_npc_img 1764 10
+open_door 2850
+include ./event/common/del_member.txt
+sleep 16
+add_party_mem 1
+add_party_mem 2
+set_flag 0 0
+set_flag 1 1
+set_flag 9 1
+set_flag 20 0
+if_not_owned_item 4000
+add_item 4000
+fi
+include ./event/common/key_unvalid.txt

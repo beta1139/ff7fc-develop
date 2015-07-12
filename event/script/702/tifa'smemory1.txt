@@ -133,7 +133,7 @@ move_char up 8
 sleep 288
 chg_event_move_char_speed normal
 fadeout
-chg_npc_img 2251 3
+kill_through 2251
 create event_generator 2236 22 5 10 17 1 0 @022/seventhheaven7.txt
 chg_npc_dir 2207 up
 sleep 65

@@ -26,7 +26,7 @@ set_talk_npc 7321
 msg `You don't have\n enough money.
 reset_talk_npc
 if_flag 9 2
-create event_generator 7306 73 15 9 17 0 0 @drag_cloud.txt 
+create event_generator 7306 73 15 9 17 0 0 @../common/drag_cloud.txt 
 fi
 move_char down 1
 sleep 16
@@ -88,7 +88,7 @@ msg `Please come again.
 reset_talk_npc
 move_char down 1
 if_flag 9 2
-create event_generator 7306 73 15 9 17 0 0 @drag_cloud.txt 
+create event_generator 7306 73 15 9 17 0 0 @../common/drag_cloud.txt 
 fi
 sleep 16
 chg_char_dir up
@@ -146,5 +146,5 @@ fi
 sub_gil 50
 set_flag 14 5
 fi
-create event_generator 7304 73 9 10 17 0 0 @073/wm_inn4.txt
+create event_generator 7304 73 9 10 17 0 0 @../common/073/wm_inn4.txt
 fi

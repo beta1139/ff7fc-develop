@@ -53,3 +53,5 @@ set_flag 24 9
 create event_generator 10922 109 7 20 17 0 0 @109/outside_elevator_switch.txt
 create event_generator 10923 109 27 20 17 0 0 @109/outside_elevator_switch.txt
 include ./event/common/key_valid.txt
+set_flag 30 26
+create event_generator 11999 119 0 0 17 0 0 @../common/point.txt

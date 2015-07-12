@@ -1,7 +1,0 @@
-loop 29
-include ./event/common/effect_gunshot04.txt
-pool
-loop_inf
-sleep 128
-pool
-reset_screen_effect

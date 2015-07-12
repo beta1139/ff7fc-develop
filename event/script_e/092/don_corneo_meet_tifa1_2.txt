@@ -116,7 +116,7 @@ kill 9220
 chg_event_move_char_speed normal
 create event_generator 9202 92 0 0 17 0 0 @092/don_corneo_meet_tifa2.txt
 create event_generator 9204 92 10 5 17 0 0 @092/don_corneo_meet_tifa3_1.txt
-create event_generator 9206 92 6 15 17 0 0 @092/don_corneo_meet_tifa4.txt
+create event_generator 9206 92 6 15 17 0 0 @../common/092/don_corneo_meet_tifa4.txt
 chg_char_state_move
 loop_inf
 sleep 400
