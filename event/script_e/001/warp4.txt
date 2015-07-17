@@ -58,7 +58,7 @@ warp_ff3_2 71 6 8 2 up
 include ./event/common/debug/supplement1.txt
 include ./event/common/071/del_item1.txt
 include ./event/common/071/del_item2.txt
-include ./event/script/071/del_item3.txt
+include ./event/script_e/071/del_item3.txt
 set_flag 30 13
 create event_generator 7190 10 0 0 17 0 0 @../common/point.txt
 fi
@@ -77,7 +77,7 @@ include ./event/common/act/act1-5_2e.txt
 erase_msg3
 warp_ff3_2 84 17 30 2 up
 include ./event/common/071/del_item2.txt
-include ./event/script/071/del_item3.txt
+include ./event/script_e/071/del_item3.txt
 include ./event/common/075/corneo_likeability.txt
 set_flag 30 14
 fi
@@ -97,7 +97,7 @@ sleep 8
 include ./event/common/act/act1-5_3e.txt
 erase_msg3
 warp_ff3_2 72 6 16 2 up
-include ./event/script/071/del_item3.txt
+include ./event/script_e/071/del_item3.txt
 include ./event/common/075/corneo_likeability.txt
 set_flag 30 15
 fi

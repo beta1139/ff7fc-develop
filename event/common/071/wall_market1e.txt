@@ -1,0 +1,40 @@
+wait_same_pos
+add_party_mem 3
+move_char up 1
+kill_through_range 7100 7102
+sleep 16
+play_se warp_in.ogg
+fadeout
+draw_char off
+create event_generator 7270 72 9 21 17 0 0 @../common/072/smoke1.txt
+sleep 16
+warp 72 9 21 up
+play_bgm
+chg_char_img 0
+disable_char_chg
+fadein
+create event_generator 7280 72 9 21 17 0 0 @072/wall_market2.txt
+if_flag 99 1
+kill_through 7351
+kill_through 7751
+kill_through 8719
+kill_through_range 8730 8732
+fi
+set_key_unvalid up
+set_key_unvalid left
+set_key_unvalid down
+set_key_unvalid right
+set_key_unvalid a
+set_key_unvalid b
+set_key_unvalid start
+include ./event/common/071/del_item1.txt
+include ./event/common/071/del_item2.txt
+include ./event/script_e/071/del_item3.txt
+set_flag 9 1
+set_flag 13 0
+set_flag 14 0
+set_flag 15 0
+set_flag 16 0
+set_flag 17 0
+set_flag 18 0
+set_flag 19 0

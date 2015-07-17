@@ -230,7 +230,7 @@ set_flag 30 16
 create event_generator 1060 10 0 0 17 0 0 @../common/point.txt
 sleep 16
 move_npc 7521 left 1
-include ./event/common/act/act1-5_4j.txt
+include ./event/common/act/act1-5_4e.txt
 kill 7521
 chg_char_state_move
 loop_inf

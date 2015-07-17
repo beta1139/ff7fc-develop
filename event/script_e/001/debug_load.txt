@@ -163,7 +163,7 @@ fi
 if_flag 30 14
 warp_ff3_2 75 9 10 2 down
 include ./event/common/071/del_item2.txt
-include ./event/script/071/del_item3.txt
+include ./event/script_e/071/del_item3.txt
 set_npc_pos 7500 75 4 16
 fi
 if_flag_greater 30 14
@@ -172,7 +172,7 @@ include ./event/common/act/act1-5_3e.txt
 fi
 if_flag 30 15
 warp_ff3_2 87 9 14 2 up
-include ./event/script/071/del_item3.txt
+include ./event/script_e/071/del_item3.txt
 fi
 if_flag_greater 30 15
 sleep 8
