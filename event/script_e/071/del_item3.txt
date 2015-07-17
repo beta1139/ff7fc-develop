@@ -55,26 +55,6 @@ if_flag 11 1
 include ./event/script_e/del_item_msg.txt
 fi
 fi
-if_owned_item 6000
-set_flag 15 3
-set_flag 18 1
-fi
-if_owned_item 6001
-set_flag 15 4
-set_flag 18 2
-fi
-if_owned_item 6002
-set_flag 15 5
-set_flag 18 4
-fi
-if_owned_item 6003
-add_flag 18 1
-fi
-if_owned_item 6004
-add_flag 18 2
-fi
-if_owned_item 6005
-add_flag 18 4
-fi
 set_flag 10 0
 set_flag 11 0
+set_flag 22 0

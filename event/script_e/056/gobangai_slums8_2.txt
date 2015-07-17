@@ -2,5 +2,7 @@ wait_same_pos
 set_flag 10 1
 kill_through_range 5600 5601
 move_char left 1
+chg_npc_img 5621 3
+move_npc 5621 down 1
 sleep 16
 include ./event/script_e/056/gobangai_slums8_common.txt

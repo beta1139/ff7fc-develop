@@ -87,12 +87,7 @@ set_flag 0 4
 warp 70 14 24 up
 draw_char on
 set_screen_effect sub 255 255 255 100
-set_key_unvalid up
-set_key_unvalid down
-set_key_unvalid left
-set_key_unvalid right
-set_key_unvalid select
-set_key_unvalid start
+include ./event/common/key_unvalid.txt
 sleep 16
 play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
 create event_generator 7000 70 0 0 17 0 0 @../common/070/midori_park_smoke.txt
@@ -109,7 +104,7 @@ if_flag 3 2
 include ./event/common/act/act1-7_1.txt
 set_flag 23 0
 sleep 8
-include ./event/common/act/act1-7_2j.txt
+include ./event/common/act/act1-7_2e.txt
 include ./event/common/act/act1-7_3.txt
 erase_msg3
 warp_ff3_2 65 11 20 2 up

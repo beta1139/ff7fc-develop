@@ -6,6 +6,7 @@ include ./event/common/act/act1-3_2.txt
 draw_char off
 warp_ff3_2 34 7 16 2 up
 include ./event/common/debug/supplement1.txt
+set_flag 30 7
 end
 fi
 if_flag 3 1

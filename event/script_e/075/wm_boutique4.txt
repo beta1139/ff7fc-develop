@@ -8,20 +8,9 @@ sleep 16
 step_npc 7521 2
 msg Aeris\n`You gonna change?\n\n\n#2\n  No use dillydallying.\n  Not yet.\n\n\n[[]][[]]
 if_flag 3 0
-kill_through 7260
-kill_through_range 7602 7604
-kill_through_range 7612 7614
-kill_through_range 7903 7905
-kill_through_range 7921 7922
-kill 7707
-kill 7704
-kill_through 8405
-kill_through_range 8803 8807
-kill_through_range 8816 8817
 chg_event_move_char_speed fast
 step_char 2
 sleep 16
-kill 7240
 move_char up 3
 sleep 4
 open_door 7551

@@ -74,3 +74,4 @@ draw_image 9899 16 16 0 0 224 32 1 event/train_graveyard_e.bmp
 wait_key_push_edge a
 erase_image 9899
 create event_generator 9890 98 0 0 17 0 0 @../common/point.txt
+set_flag 21 0

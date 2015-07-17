@@ -12,7 +12,12 @@ chg_npc_dir 5620 up
 sleep 16
 chg_event_move_char_speed slow
 chg_npc_img 5620 97
+if_flag 10 0
+move_char up 2
+fi
+if_flag 10 1
 move_char up 3
+fi
 jump_npc 5620 same 1
 loop 2
 chg_npc_img 5620 97

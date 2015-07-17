@@ -1,8 +1,8 @@
 wait_same_pos
 create npc_event 2626 26 4 6 0 0 2 none
 draw_char off
-move_char up 1
 chg_type 2601 npc_event
+move_char up 1
 sleep 16
 jump_npc 2606 same 2
 sleep 32

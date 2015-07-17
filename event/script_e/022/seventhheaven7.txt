@@ -36,7 +36,7 @@ msg Tifa\n`So, please!\n This time, you\n fulfill our==
 reset_talk_npc
 sleep 64
 play_se door_open_hard.wav
-chg_npc_img 2251 2
+create map_obj 2251 22 8 4 2 0 0 
 sleep 16
 create npc_event 2206 22 8 4 1 1 0 none
 chg_speed 2206 normal

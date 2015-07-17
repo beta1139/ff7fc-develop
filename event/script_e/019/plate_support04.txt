@@ -146,10 +146,6 @@ kill 1921
 if_party_mem 2
 del_party_mem 2
 fi
-if_party_mem 3
-del_party_mem 3
-remove_all_materia 3
-fi
 sleep 16
 add_party_mem 2
 chg_type 1922 npc
