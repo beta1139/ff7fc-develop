@@ -1,0 +1,7 @@
+draw_image 100 0 192 0 0 96 24 1 event/beginner's_hall/tutorial_msg_j.png
+loop_inf
+set_image_alpha 100 100
+sleep 16
+set_image_alpha 100 0
+sleep 16
+pool

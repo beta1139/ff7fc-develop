@@ -1,0 +1,23 @@
+set_eternal_event
+wait_target_talked 181
+reset_talked_flag 181
+if_flag 3 0
+fadeout
+stop_bgm
+create event_generator 95150 951 7 5 17 0 0 @../common/951/guard_scorpion.txt
+sleep 16
+warp 951 7 5 down
+play_event_bgm 1-02b-Bombing_Mission.ogg
+draw_char off
+fadein
+fi
+if_flag 3 1
+set_flag 0 0
+include ./event/common/act/act1-2_1e.txt
+sleep 16
+include ./event/common/act/act1-2_2.txt
+play_map_bgm 28
+add_party_mem 1
+add_party_mem 2
+warp_ff3_2 26 3 8 2 left
+fi

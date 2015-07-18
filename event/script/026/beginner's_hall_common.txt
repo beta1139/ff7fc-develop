@@ -6,6 +6,7 @@ sleep 16
 pool
 step_char 1
 sleep 16
+include ./event/common/key_valid.txt
 msg 『なにが　しりたいんだ？\n\n\n\n#11\n　　きろくを　のこすには？\n　　みかたを　かいふくするには？\n　　まほうをつかった　かいふく\n　　ぶき　ぼうぐの　つかいかた\n　　マテリアの　そうちゃく\n　　マテリアの　こうどなつかいかた\n　　せんとうじの　たいけいについて\n　　じぶんのじょうたいを　チェック\n　　リミットわざの　つかいかた\n　　そのほかの　だいじな　ちゅういじこう\n　　もうおしえることはない\n[[]][[]][[]][[]][[]][[]][[]][[]][[]][[]][[]]
 if_flag_lesser 3 10
 create npc_event 2626 26 3 8 0 2 0 none
@@ -32,11 +33,119 @@ chg_npc_dir 2601 right
 msg 『セーブできる　ばしょを　みつけたら\n　まず　セーブだな\n\n\n　いちおう　いっておくが\n　てきに　やられて　ファミコンに\n　やつあたり　するのは　やめろ\n\n　ぼうけんのしょが　きえて\n　あにきに　ぶんなぐられても　しらんぞ\n\n\n　そういうときは　いちど\n　ファミコンと　あたまを　ひやすことを　すすめる\n\n\n　いじょう\n　セーブをわすれて　なくことに　ならないように
 fi
 if_flag 3 1
-msg 『HPは　せいめいりょく\n　MPは　まほうの　もととなる　ちからだ\n\n\n　せんとうで　HPが　なくなれば\n　せんとうふのう　になり\n　MPが　なくなれば　まほうは　つかえなくなる\n\n　では　きずついた　みかたを\n　かいふく　するのは　どうする？\n\n\n　ほうほうは　3つある
+include ./event/common/effect_fadeout.txt
+warp 708 0 0 down
+include ./event/common/key_unvalid.txt
+create event_generator 2660 26 0 0 17 0 0 @026/beginner's_hall_tutorial.txt
+set_image_trans_col 0 234 218
+draw_image 000 0 0 0 0 256 224 1 event/beginner's_hall/tutorial_menu_j.png
+draw_image 001 16 40 0 0 24 32 1 face_menu.bmp
+draw_image 002 16 96 24 0 24 32 1 face_menu.bmp
+draw_image 003 16 152 48 0 24 32 1 face_menu.bmp
+draw_image 099 192 24 160 24 16 16 1 text.bmp
+include ./event/common/effect_fadein.txt
+chg_char_state_move
 sleep 16
-msg 『ひとつめは　まちにある\n　やどや　などの　かいふくポイント\n　ひとばん　ねれば　HP　MP　ぜんかいふくだ\n\n　ふたつめは　アイテムを　つかう　かいふく\n\n\n\n　みっつめは　まほうを　つかう　かいふくだが\n　まほうに　ついては　ほかで　せつめいする\n\n\n　ここでは　アイテムの　つかいかたを　おしえよう\n\n\n\n　メニューで　(アイテム)を　えらんでくれ\n　HPを　かいふくするには　ポーションだ\n\n\n　ポーションの　いちが　わからない　ばあいは\n　（せいとん）で　アイテムを　ならべかえられる\n\n\n　ついでに　いっておくと…（キーアイテム）は\n　もじどおり　つかうことは　できないが\n　もんだいを　とく　カギとなる\n\n　たいせつな　アイテムだ\n　さんこうに　してくれ
+msg 『しっているとはおもうが……\n　HPは　せいめいりょく\n　MPは　まほうの　もととなる　ちからだ\n\n　せんとうで\n　HPがなくなれば　せんとうふのうになり\n　MPがなくなれば　まほうはつかえなくなる
 sleep 16
-msg 『さて　（つかう）を　えらんで…\n　ポーションをえらび…\n　つかいたい　みかたを　えらぶ\n\n　すでに　まんたんの　ばあいは　つかえないぞ\n\n\n\n　MPのかいふくは　エーテルを　つかう\n　つかいかたは　ポーションの　ばあいと　おなじ\n　みかたを　えらんで　つかえばいい\n\n　アイテムめいの　よこの　すうじは\n　こすうを　あらわす\n　とうぜん　つかったものは　なくなってしまう\n\n　ポーションや　エーテルは\n　てきが　おとす　ばあいもあるが\n　みせで　うっているので　おおめに　かっておくといい\n\n　それと　わすれちゃいけないのが\n　せんとうふのうに　なったとき\n\n\n　やどやで　やすむか\n　（フェニックスのお）を　つかえば　ふっかつするぞ\n\n\n　いじょう\n　（まほうをつかった　かいふく）も\n　さんしょう　するように
+msg 『では　きずついた　みかたを\n　かいふくするのは　どうする？\n\n\n　ほうほうは　3つある\n\n\n\n　ひとつめは　まちにある\n　やどや　などの　かいふくポイント\n　ひとばん　ねれば　HP　MP　ぜんかいふくだ\n\n　ふたつめは　アイテムをつかう　かいふく\n\n\n\n　みっつめは　まほうをつかう　かいふくだが\n　まほうについては　ほかで　せつめいする
+sleep 16
+msg 『ここでは　アイテムの　つかいかたを　おしえよう\n　メニューで　(アイテム)をえらんでくれ
+sleep 16
+loop 2
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 0 16 0 0 0 0
+sleep 48
+pool
+loop 2
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 0 -16 0 0 0 0
+sleep 48
+pool
+sleep 16
+play_se cursor_ff3_select_cancel.ogg
+draw_image 004 0 0 0 0 256 224 1 event/beginner's_hall/tutorial_item_j.png
+chg_image_pos_offset 099 -184 0 0 0 0 0
+sleep 48
+msg 『HPを　かいふくするには　ポーションだ\n　ポーションの　いちが　わからない　ばあいは\n　（せいとん）で　アイテムを　ならべかえられる
+sleep 32
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 48 0 0 0 0 0
+sleep 48
+play_se cursor_ff3_select_cancel.ogg
+draw_image 005 24 80 0 0 224 32 1 event/beginner's_hall/tutorial_item_tidy_j.png
+sleep 64
+msg 『ついでに　いっておくと…（キーアイテム）は…
+sleep 24
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 56 0 0 0 0 0
+draw_image 006 24 80 0 0 224 32 1 event/beginner's_hall/tutorial_item_blank.png
+sleep 48
+msg 『（キーアイテム）は\n　もじどおり　つかうことは　できないが\n　もんだいを　とくカギとなる　たいせつな　アイテムだ\n　さんこうに　してくれ
+sleep 24
+msg 『さて　（つかう）を　えらんで…\n　ポーションをえらび…
+sleep 32
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 -56 0 0 0 0 0
+erase_image 006
+sleep 24
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 -48 0 0 0 0 0
+sleep 48
+play_se cursor_ff3_select_cancel.ogg
+chg_image_pos_offset 099 0 64 0 0 0 0
+draw_image 007 24 56 0 0 80 8 1 event/beginner's_hall/tutorial_item_description_j.png
+sleep 48
+play_se cursor_ff3_select_cancel.ogg
+chg_image_pos_offset 099 -8 0 0 0 0 0
+create event_generator 2661 26 0 0 17 0 0 @../common/026/beginner's_hall_cursor.txt
+sleep 48
+play_se cursor_ff3_select_cancel.ogg
+draw_image 008 128 72 0 0 128 144 1 event/beginner's_hall/tutorial_item2_j.png
+chg_image_pos_offset 099 128 4 0 0 0 0
+sleep 48
+msg 『つかいたい　みかたを　えらぶ
+sleep 16
+loop 2
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 0 48 0 0 0 0
+sleep 48
+pool
+loop 2
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 0 -48 0 0 0 0
+sleep 40
+pool
+sleep 16
+play_se beep_ff3.ogg
+msg 『すでに　まんたんの　ばあいは　つかえないぞ
+play_se cursor_ff3_select_cancel.ogg
+erase_image 008
+kill_through 2661
+chg_image_pos_offset 099 -120 -4 0 0 0 0
+set_image_alpha 98 0
+sleep 16
+erase_image 98
+sleep 16
+play_se cursor_ff3_select_cancel.ogg
+chg_image_pos_offset 099 0 -64 0 0 0 0
+erase_image 007
+sleep 32
+msg 『MPのかいふくは　エーテルを　つかう\n　つかいかたは　ポーションの　ばあいと　おなじ\n　みかたを　えらんで　つかえばいい\n\n　アイテムめいの　よこの　すうじは\n　こすうを　あらわす\n　とうぜん　つかったものは　なくなってしまう\n\n　ポーションや　エーテルは　てきがおとす\n　ばあいもあるが　みせでうっているので\n　おおめに　かっておくといい\n\n　それと　わすれちゃいけないのが\n　せんとうふのうに　なったとき\n\n\n　やどやで　やすむか\n　（フェニックスのお）を　つかえば\n　ふっかつするぞ
+sleep 16
+play_se cursor_ff3_select_cancel.ogg
+erase_image 004
+erase_image 005
+chg_image_pos_offset 099 184 0 0 0 0 0
+sleep 48
+msg 『いじょう\n　（まほうをつかった　かいふく）も\n　さんしょう　するように
+sleep 16
+play_se cursor_ff3_select_cancel.ogg
+kill_through 2660
+include ./event/common/effect_fadeout.txt
+erase_image_range 000 100
+warp 26 3 8 left
+include ./event/common/effect_fadein.txt
 fi
 if_flag 3 2
 msg 『（まほうをつかった　かいふく）\n　Not Found

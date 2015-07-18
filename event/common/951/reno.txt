@@ -1,0 +1,53 @@
+wait_same_pos
+draw_char off
+draw_image 000 0 0 0 0 256 224 1 event/battle.png
+sleep 16
+draw_image 001 40 40 0 0 48 96 1 monster/reno/start.png
+sleep 1
+loop 5
+loop 7
+chg_image_pos_offset 001 0 0 48 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 001 0 0 -336 96 0 0
+sleep 1
+pool
+loop 7
+chg_image_pos_offset 001 0 0 48 0 0 0
+sleep 1
+pool
+draw_image 002 40 40 0 0 48 96 1 monster/reno/end.png
+sleep 1
+erase_image 001
+sleep 16
+wait_key_push_edge a
+play_se attack.ogg
+sleep 8
+play_se attack.ogg
+sleep 32
+play_se_loop boss_dead_loop.ogg
+loop 5
+loop 7
+chg_image_pos_offset 002 0 0 48 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 002 0 0 -336 96 0 0
+sleep 1
+pool
+loop 7
+chg_image_pos_offset 002 0 0 48 0 0 0
+sleep 1
+pool
+erase_image 002
+sleep 48
+play_se boss_dead_end.ogg
+sleep 64
+play_event_bgm 1-11-Fanfare.ogg
+wait_key_push_edge a
+stop_bgm
+sleep 32
+erase_image 000
+sleep 16
+play_event_bgm 1-20-Still_more_Fighting.ogg
+sleep 16
+create event_generator 95154 951 7 5 17 0 0 @../common/951/H0512.txt

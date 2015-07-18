@@ -1,0 +1,58 @@
+wait_same_pos
+draw_char off
+draw_image 000 0 0 0 0 256 224 1 event/battle.png
+sleep 16
+draw_image 001 16 40 0 0 48 48 1 monster/H0512/start.png
+draw_image 003 64 40 0 0 32 48 1 monster/H0512_opt.bmp
+draw_image 004 16 88 0 0 32 48 1 monster/H0512_opt.bmp
+draw_image 005 48 88 0 0 32 48 1 monster/H0512_opt.bmp
+sleep 1
+loop 8
+loop 7
+chg_image_pos_offset 001 0 0 48 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 001 0 0 -336 48 0 0
+sleep 1
+pool
+loop 7
+chg_image_pos_offset 001 0 0 48 0 0 0
+sleep 1
+pool
+draw_image 002 16 40 0 0 48 48 1 monster/H0512/end.png
+sleep 1
+erase_image 001
+sleep 16
+wait_key_push_edge a
+play_se attack.ogg
+sleep 8
+play_se attack.ogg
+sleep 32
+play_se_loop boss_dead_loop.ogg
+loop 8
+loop 7
+chg_image_pos_offset 002 0 0 48 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 002 0 0 -336 48 0 0
+sleep 1
+pool
+loop 7
+chg_image_pos_offset 002 0 0 48 0 0 0
+sleep 1
+pool
+erase_image 002
+play_se boss_dead_end.ogg
+sleep 64
+play_se killed.wav
+erase_image_range 003 005
+sleep 72
+play_event_bgm 1-11-Fanfare.ogg
+wait_key_push_edge a
+play_event_bgm Ex-08-nothing.ogg
+sleep 32
+erase_image 000
+sleep 16
+play_event_bgm 1-02b-Bombing_Mission.ogg
+sleep 16
+create event_generator 95150 951 7 5 17 0 0 @../common/951/guard_scorpion.txt

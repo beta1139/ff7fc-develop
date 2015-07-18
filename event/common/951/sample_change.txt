@@ -1,0 +1,16 @@
+loop_inf
+wait_key_push_edge select
+play_se cursor_ff3_select_cancel.ogg
+set_flag 10 1
+draw_image 003 16 40 0 0 96 96 1 monster/guard_scorpion/end2.png
+sleep 1
+erase_image 002
+sleep 16
+wait_key_push_edge select
+play_se cursor_ff3_select_cancel.ogg
+set_flag 10 0
+draw_image 002 16 40 0 0 96 96 1 monster/guard_scorpion/end.png
+sleep 1
+erase_image 003
+sleep 16
+pool

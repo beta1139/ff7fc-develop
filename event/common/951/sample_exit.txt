@@ -1,0 +1,24 @@
+wait_key_push_edge b
+play_se cursor_ff3_select_cancel.ogg
+kill_through_range 95150 95154
+sleep 16
+fadeout
+stop_bgm
+erase_image_range 000 005
+sleep 16
+set_text_alpha 12 0
+set_text_alpha 13 0
+clear_text 12
+clear_text 13
+erase_msg3
+warp 1 4 11 up
+play_bgm
+draw_char on
+sleep 32
+fadein
+set_key_valid up
+set_key_valid down
+set_key_valid left
+set_key_valid right
+set_key_valid start
+set_flag 10 0

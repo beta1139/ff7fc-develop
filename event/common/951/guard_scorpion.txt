@@ -1,0 +1,89 @@
+wait_same_pos
+set_flag 10 0
+kill_through_range 95198 95199
+set_key_unvalid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid start
+clear_text 13
+clear_text 12
+sleep 8
+chg_char_state_move
+sleep 16
+create event_generator 95198 951 0 0 17 0 0 @../common/951/sample_exit.txt
+set_text 12 　 　[B] EXIT　　　　　　　　　　[A]　NEXT
+set_text_alpha 12 50
+draw_image 000 0 0 0 0 256 224 1 event/battle.png
+sleep 16
+draw_image 001 16 40 0 0 96 96 1 monster/guard_scorpion/start.png
+sleep 1
+loop 22
+loop 7
+chg_image_pos_offset 001 0 0 96 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 001 0 0 -672 96 0 0
+sleep 1
+pool
+loop 7
+chg_image_pos_offset 001 0 0 96 0 0 0
+sleep 1
+pool
+draw_image 002 16 40 0 0 96 96 1 monster/guard_scorpion/end.png
+sleep 1
+erase_image 001
+create event_generator 95199 951 0 0 17 0 0 @../common/951/sample_change.txt
+set_text 13 　 　[SELECT] TRANSFORM
+set_text_alpha 13 50
+wait_key_push_edge a
+sleep 16
+set_text_alpha 13 50
+clear_text 13
+kill 95199
+play_se attack.ogg
+sleep 8
+play_se attack.ogg
+sleep 32
+play_se_loop boss_dead_loop.ogg
+if_flag 10 0
+loop 22
+loop 7
+chg_image_pos_offset 002 0 0 96 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 002 0 0 -672 96 0 0
+sleep 1
+pool
+loop 7
+chg_image_pos_offset 002 0 0 96 0 0 0
+sleep 1
+pool
+erase_image 002
+fi
+if_flag 10 1
+loop 21
+loop 7
+chg_image_pos_offset 003 0 0 96 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 003 0 0 -672 96 0 0
+sleep 1
+pool
+loop 7
+chg_image_pos_offset 003 0 0 96 0 0 0
+sleep 1
+pool
+erase_image 003
+fi
+play_se boss_dead_end.ogg
+sleep 64
+play_event_bgm 1-11-Fanfare.ogg
+wait_key_push_edge a
+stop_bgm
+sleep 32
+erase_image 000
+sleep 16
+play_event_bgm 1-20-Still_more_Fighting.ogg
+sleep 16
+create event_generator 95151 951 7 5 17 0 0 @../common/951/air_baster.txt

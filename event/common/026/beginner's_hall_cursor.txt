@@ -1,0 +1,7 @@
+draw_image 098 8 88 160 24 16 16 1 text.bmp
+loop_inf
+set_image_alpha 98 100
+sleep 2
+set_image_alpha 98 0
+sleep 2
+pool

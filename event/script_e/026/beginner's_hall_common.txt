@@ -6,6 +6,7 @@ sleep 16
 pool
 step_char 1
 sleep 16
+include ./event/common/key_valid.txt
 msg {What do you wanna know?\n\n\n\n#11\n  How to save?\n  How to revive a member?\n  Magical restoration\n  Using weapons and armors\n  Attaching materias\n  Advanced use of materias\n  About battle formation\n  Check your own status\n  How to use LIMIT Break\n  Other important points\n  Go back to the beginning\n[[]][[]][[]][[]][[]][[]][[]][[]][[]][[]][[]]
 if_flag_lesser 3 10
 create npc_event 2626 26 3 8 0 2 0 none
@@ -32,11 +33,119 @@ chg_npc_dir 2601 right
 msg {Whenever you come to\n a place where you can,\n you SAVE.\n\n Just in case, you'd\n better not take it out\n on your NES if you get\n beaten by the enemy.\n Your SAVE data could\n vanish and you might get\n beaten by your big\n brother as well.\n I advise that you cool\n down your head and your\n NES is such occasions.\n\n That's all.\n Forget to SAVE and you'll\n be sorry afterward.
 fi
 if_flag 3 1
-msg {HP is your vital power,\n MP is your magical power.\n\n\n You'll be Knocked Out if\n you lose all your HP in a\n battle, and you can't use\n any magic without MP.\n Now, how you can restore\n an injured party member?\n\n\n There are three ways.
+include ./event/common/effect_fadeout.txt
+warp 708 0 0 down
+include ./event/common/key_unvalid.txt
+create event_generator 2660 26 0 0 17 0 0 @026/beginner's_hall_tutorial.txt
+set_image_trans_col 0 234 218
+draw_image 000 0 0 0 0 256 224 1 event/beginner's_hall/tutorial_menu_e.png
+draw_image 001 16 40 0 0 24 32 1 face_menu.bmp
+draw_image 002 16 96 24 0 24 32 1 face_menu.bmp
+draw_image 003 16 152 48 0 24 32 1 face_menu.bmp
+draw_image 099 192 24 160 24 16 16 1 text.bmp
+include ./event/common/effect_fadein.txt
+chg_char_state_move
 sleep 16
-msg {The first is restoration\n points like inns. Stay\n overnight and your HP and\n MP are fully restored.\n The second is to use\n restoring items.\n\n\n The third way is to use\n magic. I'll explain\n it another time.\n \n Here I tell you how to\n use items.\n\n\n Select ITEM from the\n main MENU.\n You use a Potion to\n restore your HP.\n If you can't find Potions\n in your inventory, use\n TIDY to reorder items.\n\n Now, about `Key Items'.\n Though you can't use them\n they are literally keys\n to solve your problems.\n They are important.\n You mark my words.
+msg {You know==\n HP is your vital power,\n MP is your magical power.\n\n You'll be Knocked Out if\n you lose all your HP in a\n battle, and you can't use\n any magic without MP.
 sleep 16
-msg {Now select USE==\n Select a Potion==\n Select an ally you wanna\n apply it to.\n You can't use it if that\n one's HP is already full.\n\n\n Use an Ether for MP,\n in exactly the same way\n as a Potion.\n\n Numbers beside each item\n indicate the number in\n stock. Naturally they go\n down if you use them.\n You can buy Potions and\n Ethers at shops. It's a\n good idea to have an\n adequate number of them.\n And you mustn't forget\n what to do when party\n members got knocked out.\n\n Rest at an inn or use a\n [FenixTail] to revive\n knocked out members.\n\n That's all.\n Also refer to\n [Magical Restoration].
+msg {Now, how you can restore\n an injured party member?\n\n\n There are three ways.\n\n\n\n The first is restoration\n points like inns. Stay\n overnight and your HP and\n MP are fully restored.\n The second is to use\n restoring items.\n\n\n The third way is to use\n magic. I'll explain\n it another time.
+sleep 16
+msg {Here I tell you how to\n use items.\n Select ITEM from the\n main MENU.
+sleep 16
+loop 2
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 0 16 0 0 0 0
+sleep 48
+pool
+loop 2
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 0 -16 0 0 0 0
+sleep 48
+pool
+sleep 16
+play_se cursor_ff3_select_cancel.ogg
+draw_image 004 0 0 0 0 256 224 1 event/beginner's_hall/tutorial_item_e.png
+chg_image_pos_offset 099 -184 0 0 0 0 0
+sleep 48
+msg {You use a Potion to\n restore your HP.\n\n\n If you can't find Potions\n in your inventory, use\n TIDY to reorder items.
+sleep 32
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 48 0 0 0 0 0
+sleep 48
+play_se cursor_ff3_select_cancel.ogg
+draw_image 005 24 80 0 0 224 32 1 event/beginner's_hall/tutorial_item_tidy_e.png
+sleep 64
+msg {Now, about `Key Items'==
+sleep 24
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 56 0 0 0 0 0
+draw_image 006 24 80 0 0 224 32 1 event/beginner's_hall/tutorial_item_blank.png
+sleep 48
+msg {Though you can't use them\n they are literally keys\n to solve your problems.\n\n They are important.\n You mark my words.
+sleep 24
+msg {Now select USE==\n Select a Potion==
+sleep 32
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 -56 0 0 0 0 0
+erase_image 006
+sleep 24
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 -48 0 0 0 0 0
+sleep 48
+play_se cursor_ff3_select_cancel.ogg
+chg_image_pos_offset 099 0 64 0 0 0 0
+draw_image 007 24 56 0 0 120 8 1 event/beginner's_hall/tutorial_item_description_e.png
+sleep 48
+play_se cursor_ff3_select_cancel.ogg
+chg_image_pos_offset 099 -8 0 0 0 0 0
+create event_generator 2661 26 0 0 17 0 0 @../common/026/beginner's_hall_cursor.txt
+sleep 48
+play_se cursor_ff3_select_cancel.ogg
+draw_image 008 128 72 0 0 128 144 1 event/beginner's_hall/tutorial_item2_e.png
+chg_image_pos_offset 099 128 4 0 0 0 0
+sleep 48
+msg {Select an ally you wanna\n apply it to.
+sleep 16
+loop 2
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 0 48 0 0 0 0
+sleep 48
+pool
+loop 2
+play_se cursor_ff3_move.wav
+chg_image_pos_offset 099 0 -48 0 0 0 0
+sleep 40
+pool
+sleep 16
+play_se beep_ff3.ogg
+msg {You can't use it if that\n one's HP is already full.
+play_se cursor_ff3_select_cancel.ogg
+erase_image 008
+kill_through 2661
+chg_image_pos_offset 099 -120 -4 0 0 0 0
+set_image_alpha 98 0
+sleep 16
+erase_image 98
+sleep 16
+play_se cursor_ff3_select_cancel.ogg
+chg_image_pos_offset 099 0 -64 0 0 0 0
+erase_image 007
+sleep 32
+msg {Use an Ether for MP,\n in exactly the same way\n as a Potion.\n\n Numbers beside each item\n indicate the number in\n stock. Naturally they go\n down if you use them.\n You can buy Potions and\n Ethers at shops. It's a\n good idea to have an\n adequate number of them.\n And you mustn't forget\n what to do when party\n members got knocked out.\n\n Rest at an inn or use a\n [FenixTail] to revive\n knocked out members.
+sleep 16
+play_se cursor_ff3_select_cancel.ogg
+erase_image 004
+erase_image 005
+chg_image_pos_offset 099 184 0 0 0 0 0
+sleep 48
+msg {That's all.\n Also refer to\n [Magical Restoration].
+sleep 16
+play_se cursor_ff3_select_cancel.ogg
+kill_through 2660
+include ./event/common/effect_fadeout.txt
+erase_image_range 000 100
+warp 26 3 8 left
+include ./event/common/effect_fadein.txt
 fi
 if_flag 3 2
 msg {[Magical Restoration]\n Not Found
