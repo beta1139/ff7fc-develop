@@ -44,6 +44,14 @@ if_flag 28 9
 warp_ff3_2 120 25 33 2 up
 fi
 fi
+if_flag 24 11
+if_flag 28 8
+warp_ff3_2 121 23 38 2 up
+fi
+if_flag 28 9
+warp_ff3_2 121 25 38 2 up
+fi
+fi
 if_flag_greater 24 8
 move_char up 1
 sleep 16

@@ -1,0 +1,8 @@
+step_npc 12101 2
+msg ハット\n「いいですか\n　どのしりょうしつにも　1つだけ\n　ほかのぶの　しりょうが　まぎれこんでいるはずです\n　そのしりょうの　すうじと\n　ファイルめいを　よくみると……
+reset_talk_npc
+set_flag 32 2
+sleep 16
+chg_type 12101 npc2
+chg_speed 12101 not_move
+set_inactive_msg 12101

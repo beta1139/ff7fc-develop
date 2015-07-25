@@ -1,0 +1,105 @@
+set_talk_npc 12101
+if_flag 32 3
+include ./event/script_e/121/hart_hint3.txt
+end
+fi
+if_flag 32 0
+msg ハット\n「なんでも　おこたえしますよ\n\n\n#2\n　　たすけてくれ\n　　たすけなど　いらない\n\n\n[[]][[]]
+fi
+if_flag_greater 32 0
+msg ハット\n「ハイハイ　なにが　おのぞみで？\n\n\n#3\n　　さっきのヒントをもう1ど\n　　つぎのヒントを\n　　なんでもない\n\n[[]][[]][[]]
+fi
+reset_talk_npc
+set_active_msg 12101
+set_talk_npc 12101
+if_flag 32 0
+if_flag 3 1
+include ./event/script_e/121/hart_msg2.txt
+end
+fi
+fi
+if_flag_greater 32 0
+if_flag 3 2
+include ./event/script_e/121/hart_msg2.txt
+end
+fi
+fi
+if_flag 32 1
+if_flag 3 0
+include ./event/script_e/121/hart_hint1.txt
+end
+fi
+fi
+if_flag 32 2
+if_flag 3 0
+include ./event/script_e/121/hart_hint2.txt
+end
+fi
+fi
+if_flag 32 0
+if_flag 3 0
+include ./event/script_e/121/hart_msg1.txt
+fi
+fi
+if_flag_greater 32 0
+if_flag 3 1
+include ./event/script_e/121/hart_msg1.txt
+fi
+fi
+jump_npc 12101 same 1
+if_flag 32 0
+msg ハット\n「……500ギルで\n\n\n#2\n　　かねをだそう\n　　ふざけるな！\n\n\n[[]][[]]
+fi
+if_flag 32 1
+msg ハット\n「……1000ギルで\n\n\n#2\n　　かねをだそう\n　　ふざけるな！\n\n\n[[]][[]]
+fi
+if_flag 32 2
+msg ハット\n「……2000ギルで\n\n\n#2\n　　かねをだそう\n　　ふざけるな！\n\n\n[[]][[]]
+fi
+if_flag 3 0
+if_flag 32 0
+if_gil_less 500
+include ./event/script_e/121/hart_msg3.txt
+end
+fi
+if_gil_greater 499
+sub_gil 500
+fi
+fi
+if_flag 32 1
+if_gil_less 1000
+include ./event/script_e/121/hart_msg3.txt
+end
+fi
+if_gil_greater 999
+sub_gil 1000
+fi
+fi
+if_flag 32 2
+if_gil_less 2000
+include ./event/script_e/121/hart_msg3.txt
+end
+fi
+if_gil_greater 1999
+sub_gil 2000
+fi
+fi
+step_char 2
+sleep 16
+play_se coin.ogg
+sleep 32
+step_npc 12101 1
+msg ハット\n「これはこれは……\n　ありがとうございます
+if_flag 32 2
+include ./event/script_e/121/hart_hint3.txt
+fi
+if_flag 32 1
+include ./event/script_e/121/hart_hint2.txt
+fi
+if_flag 32 0
+include ./event/script_e/121/hart_hint1.txt
+fi
+fi
+if_flag 3 1
+include ./event/script_e/121/hart_msg2.txt
+fi

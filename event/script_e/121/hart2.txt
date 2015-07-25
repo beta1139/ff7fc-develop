@@ -1,0 +1,8 @@
+set_eternal_event
+wait_target_talk 12101
+reset_talk_flag 12101
+chg_type 12101 npc_event
+chg_dir_to_char 12101
+chg_speed 12101 normal
+set_active_msg 12101
+include ./event/script_e/121/hart_common.txt

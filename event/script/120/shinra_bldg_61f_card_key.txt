@@ -12,6 +12,7 @@ msg 「エアリス？\n　そのなをしっているとは\n　おまえまさか！？\n\n　エアリスって
 reset_talk_npc
 fi
 if_flag 3 1
+set_flag 31 0
 sleep 32
 set_ignore_map_layer_flag 12000 1
 set_layer 12000 front
@@ -19,7 +20,13 @@ jump_npc 12000 same 1
 sleep 16
 jump_npc 12000 same 1
 msg 「ハハーン……わかったぞ\n　さてはおまえ　アレだな？\n　いまウワサの……
-sleep 24
+include ./event/common/key_unvalid.txt
+sleep 8
+chg_char_state_move
+create event_generator 12030 120 0 0 17 0 0 @120/shinra_bldg_62f_ready1.txt
+sleep 8
+create event_generator 12031 120 0 0 17 0 0 @../common/120/shinra_bldg_62f_ready2.txt
+sleep 8
 jump_npc 12000 same 2
 loop 2
 if_char_dir up
@@ -90,3 +97,4 @@ set_ignore_map_layer_flag 12000 0
 set_layer 12000 back
 chg_type 12000 npc
 set_inactive_msg 12000
+include ./event/common/key_valid.txt

@@ -1,0 +1,17 @@
+if_not_owned_item 6019
+add_item 6019
+fi
+if_not_owned_item 6020
+add_item 6020
+fi
+if_not_owned_item 6021
+add_item 6021
+fi
+if_owned_item 6023
+del_item 6023
+fi
+chg_type 12100 npc
+chg_param 12100 ドミノ\n「いっておくが　わたしのカードでは\n　65かいまでしか　のぼれんよ\n\n　しんらめ　このわたしを……このわたしを\n　いっぱんしゃいんと　おなじあつかいに……
+chg_param 12101 ハット\n「もし　プレジデントしんらに　あっても\n　わたくしのことは　いわないでくださいよ\n\n　これいじょう　しんらに　いじめられるのは\n　ゴメンですからね……
+kill_through_range 12120 12123
+chg_speed 12100 slow

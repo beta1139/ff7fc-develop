@@ -1,0 +1,39 @@
+wait_target_talk 12101
+reset_talk_flag 12101
+chg_type 12101 npc_event
+chg_dir_to_char 12101
+chg_speed 12101 normal
+set_active_msg 12101
+set_talk_npc 12101
+msg ハット\n「しちょうのはなしは\n　おききになりました？
+if_char_dir right
+move_char down 1
+sleep 16
+move_char right 1
+sleep 16
+fi
+if_char_dir left
+move_char down 1
+sleep 16
+move_char left 1
+sleep 16
+fi
+chg_npc_dir 12101 down
+chg_char_dir up
+sleep 16
+chg_char_dir up
+chg_char_img_tmp 103
+sleep 8
+chg_char_dir right
+sleep 40
+chg_char_img_tmp 0
+chg_char_dir up
+sleep 32
+jump_npc 12101 same 1
+msg ハット\n「は？\n　あいことば？\n　ははあ　なるほど……\n　あのひとも　ヒマなんですよ\n　なんせ　ミッドガルのぜんけんは\n　ほとんどプレジデントしんらの　ものですからね\n\n　そういうことなら\n　わたくしが　おてつだいしましょう
+reset_talk_npc
+sleep 16
+chg_type 12100 npc2
+create event_generator 12122 121 0 0 17 0 0 @121/hart2.txt
+step_npc 12101 2
+include ./event/script_e/121/hart_common.txt

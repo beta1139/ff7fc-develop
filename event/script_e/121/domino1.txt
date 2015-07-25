@@ -1,0 +1,48 @@
+wait_target_talk 12100
+reset_talk_flag 12100
+chg_type 12100 npc_event
+chg_dir_to_char 12100
+set_active_msg 12100
+chg_speed 12100 normal
+set_talk_npc 12100
+msg ドミノ\n「あ～？\n　なんだねキミたちは？\n\n　ああ　キミらが　れいの……\n　わたし？　わたしは　この　まこうとし\n　ミッドガルのしちょう　ドミノだ
+sleep 16
+if_char_dir up
+chg_npc_dir 12100 up
+fi
+if_char_dir down
+chg_npc_dir 12100 down
+fi
+if_char_dir left
+chg_npc_dir 12100 left
+fi
+if_char_dir right
+chg_npc_dir 12100 right
+fi
+sleep 24
+step_npc 12100 1
+msg ドミノ\n「といっても　なまえだけ\n　ホントのところ　ミッドガルの\n　すべては　しんらのものだ\n　いまのわたしの　しごとといったら\n　しんらカンパニーの　しりょうかんり……
+chg_dir_to_char 12100
+chg_speed 12100 fast
+set_ignore_map_layer_flag 12100 1
+set_layer 12100 front
+sleep 16
+loop 2
+jump_npc 12100 same 1
+sleep 16
+pool
+step_npc 12100 3
+msg ドミノ\n「ミッドガルのしちょうが！\n　しんらのしりょうを！\n　ハア……
+sleep 32
+jump_npc 12100 same 1
+msg ドミノ\n「キミら　うえへいきたいんだろ？\n　いいとも　わたしのカードキーをやろう\n　あいことばを　いえたらな\n　そう　あいことばだ\n　それをいえたら　カードをやろう\n\n\n　おまけに　1かいであてたら\n　ナイスなおみやげも　つけてやるぞ？
+reset_talk_npc
+chg_type 12100 npc2
+set_inactive_msg 12100
+chg_speed 12100 not_move
+chg_npc_dir 12100 left
+set_ignore_map_layer_flag 12100 0
+set_layer 12100 back
+chg_type 12101 npc2
+create event_generator 12121 121 0 0 17 0 0 @121/hart1.txt
+create event_generator 12123 121 0 0 17 0 0 @121/domino2.txt

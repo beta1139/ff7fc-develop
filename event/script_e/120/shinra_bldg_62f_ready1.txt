@@ -1,0 +1,8 @@
+loop_inf
+sleep 1
+add_flag 31 1
+if_flag_greater 31 3
+sleep 1
+set_flag 31 1
+fi
+pool

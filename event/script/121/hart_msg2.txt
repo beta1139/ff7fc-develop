@@ -1,0 +1,7 @@
+step_npc 12101 2
+msg ハット\n「ハァ　そうですか　ではしかたありませんね\n\n\n　がんばって　ごじぶんで\n　みつけてください\n\n\n　どうしてもわからなかったら　またどうぞ\n　いつでも　おおしえしますよ……
+reset_talk_npc
+sleep 16
+chg_type 12101 npc2
+chg_speed 12101 not_move
+set_inactive_msg 12101

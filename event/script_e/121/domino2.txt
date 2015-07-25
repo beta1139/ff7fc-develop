@@ -1,0 +1,52 @@
+set_eternal_event
+wait_target_talk 12100
+reset_talk_flag 12100
+chg_type 12100 npc_event
+chg_dir_to_char 12100
+set_active_msg 12100
+chg_speed 12100 normal
+set_talk_npc 12100
+msg ドミノ\n「あいことばが　わかったのか？\n　では　いってみたまえ\n\n#7\n  Wait a second\n  BEST\n  KING\n  ORBS\n  BOMB\n  MAKO\n  HOJO\n[[]][[]][[]][[]][[]][[]][[]]
+set_ignore_map_layer_flag 12100 1
+set_layer 12100 front
+if_flag 3 1
+if_flag 31 1
+include ./event/script_e/121/password_true.txt
+end
+fi
+include ./event/script_e/121/password_false.txt
+fi
+if_flag 3 2
+if_flag 31 2
+include ./event/script_e/121/password_true.txt
+end
+fi
+include ./event/script_e/121/password_false.txt
+fi
+if_flag 3 3
+include ./event/script_e/121/password_false.txt
+fi
+if_flag 3 4
+if_flag 31 3
+include ./event/script_e/121/password_true.txt
+end
+fi
+include ./event/script_e/121/password_false.txt
+fi
+if_flag 3 5
+if_flag 31 4
+include ./event/script_e/121/password_true.txt
+end
+fi
+include ./event/script_e/121/password_false.txt
+fi
+if_flag 3 6
+include ./event/script_e/121/password_false.txt
+fi
+reset_talk_npc
+chg_type 12100 npc2
+set_inactive_msg 12100
+chg_speed 12100 not_move
+chg_npc_dir 12100 left
+set_ignore_map_layer_flag 12100 0
+set_layer 12100 back

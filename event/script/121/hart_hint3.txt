@@ -1,0 +1,8 @@
+step_npc 12101 2
+msg ハット\n「いいですか\n　すべてのしりょうには\n　すうじが　ついています\n　かくへやに　まぎれこんでいる\n　しりょうの　なまえを　そのすうじと\n　みくらべてください\n\n　『4-2』とかいてある　しりょうなら\n　なまえの4もじめから　2もじめまでを……\n　もう　おわかりでしょ？
+reset_talk_npc
+set_flag 32 3
+sleep 16
+chg_type 12101 npc2
+chg_speed 12101 not_move
+set_inactive_msg 12101

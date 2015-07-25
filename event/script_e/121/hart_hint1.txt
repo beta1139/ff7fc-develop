@@ -1,0 +1,8 @@
+step_npc 12101 2
+msg ハット\n「いいですか\n　このフロアには　しんらカンパニーの\n　4つのぶもんの　しりょうしつがあります\n　あいことばは　その4つの　しりょうしつに\n　かくされています\n\n\n　かくへやの　しりょうを\n　よ～く　しらべてみてください\n\n\n　しりょしつの　なまえは\n　ドアのよこの　プレートに　かいてあります
+reset_talk_npc
+set_flag 32 1
+sleep 16
+chg_type 12101 npc2
+chg_speed 12101 not_move
+set_inactive_msg 12101

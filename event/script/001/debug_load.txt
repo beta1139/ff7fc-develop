@@ -300,18 +300,27 @@ fi
 if_flag_greater 30 26
 create event_generator 11941 119 16 13 17 0 0 @119/shinra_bldg_60f_tifa1.txt
 create event_generator 11942 119 11 21 17 0 0 @119/shinra_bldg_60f_tifa2.txt
-fi
-if_flag_greater 30 26
 if_flag 13 1
 kill_through_range 11996 11997
 fi
+sleep 8
+include ./event/common/120/finished_60f.txt
+fi
+if_flag 30 27
 set_flag 25 12
 set_flag 24 9
-sleep 8
-erase_msg3
-include ./event/common/120/finished_60f.txt
 warp_ff3_2 120 34 16 2 up
 fi
+if_flag_greater 30 27
+sleep 8
+include ./event/common/act/act1-8_4j.txt
+sleep 8
+include ./event/common/act/act1-8_5j.txt
+fi
+if_flag 30 28
+set_flag 25 13
+set_flag 30 28
+warp_ff3_2 121 12 22 2 left
 fi
 reset_talk_npc
 erase_msg3

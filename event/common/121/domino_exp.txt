@@ -1,0 +1,5 @@
+wait_key_push_edge a
+jump_npc 12100 same 1
+sleep 16
+jump_npc 12100 same 1
+sleep 16

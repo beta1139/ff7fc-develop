@@ -120,7 +120,7 @@ id,type,bgm,battle_back,monster_party_id
 118,0,1-09-Shinra_Company.ogg,0,188/189/190/191
 119,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 120,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
-121,0,1-09-Shinra_Company.ogg,0,188/189/190/191
+121,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 122,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
 123,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
 124,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
