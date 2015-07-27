@@ -322,5 +322,6 @@ set_flag 25 13
 set_flag 30 28
 warp_ff3_2 121 12 22 2 left
 fi
+fi
 reset_talk_npc
 erase_msg3
