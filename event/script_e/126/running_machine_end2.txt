@@ -1,0 +1,59 @@
+wait_fake_countover
+kill_through_range 12680 12683
+chg_speed 12607 not_move
+chg_speed 12608 not_move
+chg_speed 12660 not_move
+sleep 16
+end_fake_countdown
+msg 『フゥ……\n\n\n\n#2\n　　そろそろやめよう\n　　もうすこしつづけよう\n\n\n[[]][[]]
+if_flag 3 0
+stop_se
+draw_char on
+kill 12660
+chg_speed 12607 not_step
+chg_speed 12608 not_step
+chg_speed 12660 not_step
+sleep 16
+play_se jump.wav
+jump_char_target_pos 21 28
+sleep 16
+play_se landing.wav
+sleep 16
+if_flag_greater 19 90
+if_flag 36 0
+if_flag_lesser 19 100
+play_se pick_up.wav
+msg たいりょくが　1ふえた！
+fi
+if_flag_greater 19 99
+play_event_bgm 1-11-Fanfare.ogg
+msg たいりょくが　2ふえた！
+play_bgm
+fi
+create npc_event 12699 126 24 23 61 1 0 none
+set_talk_npc 12699
+msg i7\n「げんざい　たいりょくをふやすスクリプトは\n　みじっそうなので　データには　はんえいされません\n　プログラマーさん　おねがいします～
+reset_talk_npc
+kill 12699
+set_flag 36 1
+fi
+fi
+create event_generator 12680 126 0 0 17 0 0 @126/running_machine.txt
+include ./event/common/key_valid.txt
+set_flag 19 0
+end
+fi
+if_flag 3 1
+add_flag 19 1
+draw_fake_countdown off
+start_fake_countdown_sec 14
+if_flag_lesser 19 40
+create event_generator 12681 126 0 0 17 0 0 @../common/126/running_machine_n.txt
+fi
+if_flag_greater 19 39
+create event_generator 12681 126 0 0 17 0 0 @../common/126/running_machine_f.txt
+fi
+create event_generator 12682 126 0 0 17 0 0 @../common/126/running_machine_release_b.txt
+create event_generator 12683 126 0 0 17 0 0 @../common/126/running_machine_release_l.txt
+create event_generator 12684 126 0 0 17 0 0 @126/running_machine_end1.txt
+fi

@@ -30,26 +30,42 @@ sleep 16
 fi
 if_flag 24 9
 if_flag 28 8
-warp_ff3_2 119 23 33 2 up
+warp_ff3_2 119 23 32 2 up
 fi
 if_flag 28 9
-warp_ff3_2 119 25 33 2 up
+warp_ff3_2 119 25 32 2 up
 fi
 fi
 if_flag 24 10
 if_flag 28 8
-warp_ff3_2 120 23 33 2 up
+warp_ff3_2 120 23 32 2 up
 fi
 if_flag 28 9
-warp_ff3_2 120 25 33 2 up
+warp_ff3_2 120 25 32 2 up
 fi
 fi
 if_flag 24 11
 if_flag 28 8
-warp_ff3_2 121 23 38 2 up
+warp_ff3_2 121 23 37 2 up
 fi
 if_flag 28 9
-warp_ff3_2 121 25 38 2 up
+warp_ff3_2 121 25 37 2 up
+fi
+fi
+if_flag 24 12
+if_flag 28 8
+warp_ff3_2 124 23 37 2 up
+fi
+if_flag 28 9
+warp_ff3_2 124 25 37 2 up
+fi
+fi
+if_flag_greater 24 12
+if_flag 28 8
+warp_ff3_2 126 23 37 2 up
+fi
+if_flag 28 9
+warp_ff3_2 126 25 37 2 up
 fi
 fi
 if_flag_greater 24 8

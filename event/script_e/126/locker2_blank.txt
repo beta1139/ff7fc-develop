@@ -1,0 +1,6 @@
+set_eternal_event
+wait_target_talk 12621
+reset_talk_flag 12621
+create map_obj 12670 126 25 11 67 0 0 
+create map_obj 12671 126 25 12 68 0 0 
+include ./event/script_e/126/locker_blank_msg.txt

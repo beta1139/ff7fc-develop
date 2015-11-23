@@ -1,0 +1,8 @@
+set_eternal_event
+wait_target_talk 12601
+reset_talk_flag 12601
+if_char_dir left
+chg_dir_to_char 12610
+msg 「フーフー……\n　つかれたら　となりのへやで\n　やすむといいわよ
+chg_npc_dir 12610 left
+fi

@@ -1,0 +1,133 @@
+set_eternal_event
+wait_target_talk 12611
+reset_talk_flag 12611
+if_char_dir up
+msg 　　　　たいりょく　かいふくに　この1ぽん！！\n　　　　　『しんらジム　とくせいドリンク』\n\n\n　　　　　250ギルにて　はつばいちゅう！！\n\n\n\n#2\n　　かってみるか\n　　やめておこう\n\n\n[[]][[]]
+if_flag 3 0
+if_gil_less 250
+msg 『おかねがたらないな
+end
+fi
+set_flag 35 1
+sub_gil 250
+create npc_event 12660 126 21 25 0 0 2 none
+draw_char off
+chg_npc_y_offset 12660 -6
+sleep 3
+chg_npc_y_offset 12660 -8
+sleep 3
+chg_npc_img 12660 115
+sleep 8
+play_se coin.ogg
+sleep 32
+play_se push_button.ogg
+sleep 44
+chg_npc_y_offset 12660 -6
+sleep 4
+chg_npc_y_offset 12660 -4
+chg_npc_img 12660 0
+sleep 8
+draw_char on
+kill 12660
+sleep 80
+msg 『……なにもでてこないな
+sleep 80
+msg 『…………\n\n\n\n　……こわれているのか？\n\n\n\n#2\n　　ガンガンたたく\n　　あきらめよう\n\n\n[[]][[]]
+if_flag 3 0
+move_char right 1
+sleep 16
+move_char up 1
+sleep 16
+chg_char_dir left
+sleep 16
+chg_char_dir down
+chg_char_img_tmp 115
+step_char 1
+sleep 10
+play_se damage.wav
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_type 12615 npc_event
+chg_npc_img 12615 151
+jump_npc 12615 same 1
+sleep 8
+step_char 1
+sleep 10
+play_se damage.wav
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+chg_npc_dir 12612 up
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 6
+reset_char_img_tmp
+chg_char_dir left
+chg_npc_img 12615 74
+chg_npc_dir 12615 down
+sleep 8
+chg_speed 12615 fast
+step_npc 12615 2
+create map_obj 12658 126 29 26 63 0 0 
+sleep 16
+move_npc 12615 down 2
+sleep 16
+move_npc 12615 left 2
+sleep 16
+move_npc 12615 up 2
+sleep 16
+move_npc 12615 left 2
+sleep 16
+move_npc 12615 up 1
+sleep 8
+chg_char_dir right
+move_npc 12615 left 1
+sleep 8
+jump_npc 12615 same 2
+sleep 16
+msg3 -1 「ちょっと　なにするんですか！\n　らんぼうは　やめてください！
+sleep 16
+step_npc 12615 2
+wait_key_push_edge a
+erase_msg3
+sleep 16
+chg_npc_dir 12612 down
+chg_char_dir down
+move_npc 12615 right 3
+sleep 16
+chg_char_img_tmp 103
+sleep 8
+move_npc 12615 down 3
+sleep 24
+chg_char_dir left
+move_npc 12615 right 2
+sleep 16
+move_npc 12615 up 2
+sleep 16
+chg_npc_dir 12615 down
+sleep 8
+step_npc 12615 2
+sleep 8
+kill 12658
+chg_char_dir down
+chg_npc_dir 12615 left
+chg_speed 12615 not_move
+chg_type 12615 npc2
+sleep 24
+reset_char_img_tmp
+fi
+if_flag 3 1
+fi
+fi
+if_flag 3 1
+fi
+fi

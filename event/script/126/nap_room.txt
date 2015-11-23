@@ -1,0 +1,16 @@
+wait_same_pos
+msg 『かみんしつか……\n\n\n\n#2\n　　やすんでいこう\n　　さきをいそごう\n\n\n[[]][[]]
+if_flag 3 0
+fadeout
+sleep 40
+stop_bgm
+play_se care.wav
+recover_active_chara
+warp 126 13 26 down
+sleep 64
+fadein
+play_bgm
+fi
+set_flag 30 30
+create event_generator 12628 126 12 33 17 0 0 @../common/126/create_nap_room.txt
+create event_generator 12697 126 0 0 17 0 0 @../common/point.txt

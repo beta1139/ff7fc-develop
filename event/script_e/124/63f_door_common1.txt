@@ -1,0 +1,14 @@
+if_flag_greater 32 2
+include ./event/script_e/124/63f_door_msg2.txt
+end
+fi
+if_flag_lesser 32 3
+include ./event/script_e/124/63f_door_msg1.txt
+if_flag 3 1
+end
+fi
+if_flag 3 0
+sleep 8
+play_se door_open_hard.wav
+fi
+fi

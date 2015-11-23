@@ -4,22 +4,20 @@ reset_talked_flag 12000
 chg_type 12000 npc_event
 chg_dir_to_char 12000
 set_active_msg 12000
-set_talk_npc 12000
 if_flag 3 0
 sleep 16
 jump_npc 12000 same 1
-msg 「エアリス？\n　そのなをしっているとは\n　おまえまさか！？\n\n　エアリスってあのコだろ\n　うけつけの\n　じつはオレも　あのコ\n　きになってるんだよね\n　ウーン　はやくも\n　ライバルしゅつげん……\n\n\n　え　そうじゃない？\n　なんだ　ひとちがいか
-reset_talk_npc
+msg しんらしゃいん\n「エアリス？\n　そのなをしっているとは\n　おまえまさか！？
+sleep 16
+msg しんらしゃいん\n「エアリスってあのコだろ\n　うけつけの\n　じつはオレも　あのコ　きになってるんだよね\n　ウーン　はやくも\n　ライバルしゅつげん……\n\n\n　え　そうじゃない？\n　なんだ　ひとちがいか
 fi
 if_flag 3 1
 set_flag 31 0
 sleep 32
-set_ignore_map_layer_flag 12000 1
-set_layer 12000 front
 jump_npc 12000 same 1
 sleep 16
 jump_npc 12000 same 1
-msg 「ハハーン……わかったぞ\n　さてはおまえ　アレだな？\n　いまウワサの……
+msg しんらしゃいん\n「ハハーン……わかったぞ\n　さてはおまえ　アレだな？\n　いまウワサの……
 include ./event/common/key_unvalid.txt
 sleep 8
 chg_char_state_move
@@ -27,7 +25,6 @@ create event_generator 12030 120 0 0 17 0 0 @120/shinra_bldg_62f_ready1.txt
 sleep 8
 create event_generator 12031 120 0 0 17 0 0 @../common/120/shinra_bldg_62f_ready2.txt
 sleep 8
-jump_npc 12000 same 2
 jump_npc 12000 same 2
 loop 2
 if_char_dir up
@@ -78,15 +75,12 @@ reset_gray_scale
 sleep 1
 pool
 step_npc 12000 1
-msg 「しんらカンパニー　しゅうりか！！
+msg しんらしゃいん\n「しんらカンパニー　しゅうりか！！
 sleep 16
 step_npc 12000 2
-msg 「いや～　このビルも\n　そろそろあちこちに\n　ガタがきててなあ\n\n　このかいのドア\n　ひらきっぱなしなんだ\n　はやく　なおしてくれよな\n\n　あ　そうそう\n　いちおう　ほかのかいも　みまわってくれよ\n　これ　やるから
-reset_talk_npc
+msg しんらしゃいん\n「いや～　このビルも\n　そろそろあちこちに　ガタがきててなあ\n\n　このかいのドア　ひらきっぱなしなんだ\n　はやく　なおしてくれよな\n\n\n　あ　そうそう\n　いちおう　ほかのかいも　みまわってくれよ\n　これ　やるから
 step_npc 12000 2
 sleep 32
-set_ignore_map_layer_flag 12000 0
-set_layer 12000 back
 chg_type 12000 npc
 set_inactive_msg 12000
 sleep 16
@@ -94,8 +88,6 @@ play_se pick_up.wav
 msg 　キーアイテム\n　　『カードキー62』をてにいれた！
 create event_generator 12026 120 0 0 17 0 0 @../common/act/act1-8_4e.txt
 fi
-set_ignore_map_layer_flag 12000 0
-set_layer 12000 back
 chg_type 12000 npc
 set_inactive_msg 12000
 include ./event/common/key_valid.txt

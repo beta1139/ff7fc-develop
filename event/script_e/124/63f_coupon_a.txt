@@ -1,0 +1,8 @@
+wait_target_talk 12405
+reset_talk_flag 12405
+play_se pick_up.wav
+if_not_owned_item 6030
+add_item 6030
+fi
+msg 　こんなところに\n　　キーアイテム　『A　クーポン』が！
+kill 12405

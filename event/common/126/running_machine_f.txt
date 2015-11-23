@@ -1,0 +1,14 @@
+wait_key_push b
+wait_key_push left
+chg_speed 12607 fast
+chg_speed 12608 fast
+chg_speed 12660 fast
+loop_inf
+step_npc 12607 2
+step_npc 12608 2
+step_npc 12660 2
+sleep 16
+if_flag_lesser 19 110
+add_flag 19 1
+fi
+pool

@@ -2,7 +2,7 @@ set_eternal_event
 wait_target_talked 167
 reset_talked_flag 167
 if_flag_lesser 3 3
-if_flag 4 3
+if_flag 4 5
 end
 fi
 include ./event/common/now_loading.txt
@@ -39,6 +39,9 @@ set_flag 30 24
 fi
 if_flag_greater 4 0
 sleep 8
+include ./event/common/act/act1-8_6.txt
+include ./event/common/act/act1-8_7j.txt
+sleep 8
 include ./event/common/act/act1-8_2.txt
 include ./event/common/act/act1-8_3j.txt
 fi
@@ -60,6 +63,22 @@ set_flag 30 27
 sleep 8
 erase_msg3
 warp_ff3_2 120 34 16 2 up
+fi
+if_flag_greater 4 2
+sleep 8
+include ./event/common/act/act1-8_4j.txt
+sleep 8
+include ./event/common/act/act1-8_5j.txt
+fi
+if_flag 4 3
+set_flag 25 13
+set_flag 30 28
+warp_ff3_2 124 37 20 2 down
+fi
+if_flag 4 4
+set_flag 25 13
+set_flag 30 28
+warp_ff3_2 126 37 20 2 down
 fi
 fi
 if_flag 3 2

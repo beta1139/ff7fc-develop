@@ -1,0 +1,13 @@
+wait_target_talk 12620
+reset_talk_flag 12620
+create map_obj 12670 126 27 14 67 0 0 
+create map_obj 12671 126 27 15 68 0 0 
+play_se door_open.ogg
+sleep 4
+create treasure_item 12672 126 27 15 0 0 0 1007
+sleep 4
+play_se pick_up.wav
+add_item 1007
+msg 　こんなところに　　フェニックスのおが！
+kill_through_range 12670 12672
+create event_generator 12632 126 0 0 17 0 0 @126/locker1_blank.txt

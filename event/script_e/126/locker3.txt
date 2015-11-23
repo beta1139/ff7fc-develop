@@ -1,0 +1,13 @@
+set_eternal_event
+wait_target_talk 12622
+reset_talk_flag 12622
+set_image_trans_col 0 0 0
+create map_obj 12670 126 29 11 67 0 0 
+create map_obj 12671 126 29 12 68 0 0 
+draw_image 000 116 96 80 120 8 16 1 battle_effect1.bmp
+play_se door_open.ogg
+sleep 8
+msg 『なんだこれ……メガホン？\n\n\n\n　こんなもの　もっていても\n　しょうがないな
+erase_image 000
+kill_through_range 12670 12671
+set_image_trans_col 0 110 0

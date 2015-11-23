@@ -1,0 +1,21 @@
+set_eternal_event
+wait_target_talk 12614
+reset_talk_flag 12614
+chg_type 12615 npc_event
+chg_npc_dir 12615 down
+create npc_event 12660 126 29 27 0 0 2 none
+draw_char off
+move_char up 1
+sleep 16
+chg_type 12615 npc2
+set_talk_npc 12615
+msg 「ビジターのかたで　ございますね\n　あいているマシンは　ごじゆうに\n　ごりようください
+reset_talk_npc
+chg_type 12615 npc_event
+move_char down 1
+sleep 16
+chg_npc_dir 12615 left
+chg_type 12615 npc2
+chg_char_dir up
+draw_char on
+kill 12660

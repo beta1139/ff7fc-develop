@@ -1,0 +1,30 @@
+set_eternal_event
+wait_target_talk 12600
+reset_talk_flag 12600
+if_char_dir left
+chg_speed 12603 normal
+chg_speed 12604 normal
+chg_speed 12609 normal
+step_npc 12603 3
+step_npc 12604 3
+step_npc 12609 3
+sleep 48
+chg_speed 12603 fast
+chg_speed 12604 fast
+chg_speed 12609 fast
+step_npc 12603 4
+step_npc 12604 4
+step_npc 12609 4
+sleep 32
+chg_speed 12603 normal
+chg_speed 12604 normal
+chg_speed 12609 normal
+step_npc 12603 2
+step_npc 12604 2
+step_npc 12609 2
+sleep 32
+chg_speed 12603 not_move
+chg_speed 12604 not_move
+chg_speed 12609 not_move
+msg 「ハーハー……\n　さいきん　おなかのあたりが\n　きになりだして……
+fi

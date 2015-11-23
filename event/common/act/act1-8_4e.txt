@@ -23,7 +23,7 @@ create npc 12106 121 23 11 17 0 0 　ここは\n　ちあんいじ　ぶもん　および\n　へい
 create npc 12107 121 23 24 17 0 0 　もちだし　きんし！\n\n\n\n　このフロアの　しりょうは　すべて\n　がいぶに　もちだすことを　きんじられています
 create npc 12108 121 25 11 17 0 0 　ここは\n　うちゅうかいはつ　ぶもん　しりょうしつです\n\n\n　かく　しりょうしつの　ばしょについては\n　へやのまえにある　プレートを　ごらんください
 create npc 12109 121 25 24 17 0 0 　ここは\n　かがく　ぶもんの　しりょうしつです\n　ほかの3つの　しりょうしつには　それぞれ……\n\n　『としかいはつ　ぶもん』\n　『ちあんいじ　/へいきかいはつ　ぶもん』\n　『うちゅうかいはつ　ぶもん』\n　……のしりょうが　ほかんされています
-create npc 12113 121 9 21 164 0 4 　　　　　　　　　　96-99\n　　　　スクリプターにしか　きょうかんできない\n　　　　　　きじゅつてきな　あるあるじこう\n\n　　　sleepを　sleeepと　うってしまう\n\n\n\n　　createと　npc eventのあいだに\n　　　　　　　アンダーバーをいれてしまう\n\n\n　　createが　よくみると　cretaeだ\n\n\n\n　　　　　　　　　　　いまだに\n　chg event move char speed\n　　　　　　　　　が　おぼえられない\n　　　　　　　（もちろん　これもコピペだ）\n　　　　　　　pick up.wav?\n　　　　　　　pick up.ogg?\n　　　　　　　　　　　　……\n　　　　　pick up.oggだったとおもう！\n　　　　　　　　　　そして　おちる
+create npc 12113 121 9 21 164 0 4 　　　　　　　　　　96-99\n　　　　スクリプターにしか　きょうかんできない\n　　　　　　きじゅつてきな　あるあるじこう\n\n　　　sleepを　sleeepと　うってしまう\n\n\n\n　　createと　npc eventのあいだに\n　　　　　　　アンダーバーをいれてしまう\n\n\n　　createが　よくみると　cretaeだ\n\n\n\n　　　　　　　　　　　いまだに\n　chg event move char speed\n　　　　　　　　　が　おぼえられない\n　　　　　　　（もちろん　これもコピペだ）\n　　　　　　　pick up.wav?\n　　　　　　　pick up.ogg?\n　　　　　　　　　　　　……\n　　まよったすえに　pick up.ogg　とうつ\n　　　　　　　　　　そして　おちる
 create event_generator 12120 121 0 0 17 0 0 @121/domino1.txt
 // 
 // 

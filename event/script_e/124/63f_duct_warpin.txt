@@ -1,0 +1,52 @@
+set_eternal_event
+wait_same_pos
+if_flag 28 12
+create npc_event 12520 124 34 29 0 0 2 none
+draw_char off
+move_char up 1
+sleep 16
+step_npc 12520 1
+sleep 16
+msg 『つうきダクトか……\n　このへやからは　もぐりこめそうにないな
+move_char down 1
+sleep 16
+draw_char on
+kill 12520
+move_char right 1
+sleep 16
+end
+fi
+chg_char_dir down
+sleep 16
+step_char 1
+sleep 16
+msg 『つうきダクトか……\n\n\n\n#2\n　　もぐりこんでみるか\n　　ほうっておこう\n\n\n[[]][[]]
+if_flag 3 0
+sleep 16
+play_se jump.wav
+if_flag 28 10
+create npc_event 12520 124 14 18 0 1 2 none
+fi
+if_flag 28 11
+create npc_event 12520 124 29 18 0 1 2 none
+fi
+draw_char off
+chg_npc_y_offset 12520 -6
+sleep 3
+chg_npc_y_offset 12520 -8
+sleep 13
+if_flag 28 10
+warp_ff3_2 125 3 3 2 down
+fi
+if_flag 28 11
+warp_ff3_2 125 18 3 2 down
+fi
+draw_char on
+kill 12520
+move_char down 1
+sleep 16
+fi
+if_flag 3 1
+move_char down 1
+sleep 16
+fi

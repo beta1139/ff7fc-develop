@@ -1,37 +1,42 @@
 set_eternal_event
 wait_target_talked 12001
 reset_talked_flag 12001
+if_flag 3 0
 chg_type 12001 npc_event
 chg_dir_to_char 12001
 set_active_msg 12001
 chg_speed 12001 normal
-set_talk_npc 12001
-if_flag 3 0
 kill_through 12025
 set_ignore_map_layer_flag 12001 1
-set_layer 12000 front
-include ./event/common/key_unvalid.txt
+set_layer 12001 front
 set_flag 10 0
 jump_npc 12001 same 1
 sleep 8
-create event_generator 12025 120 0 0 17 0 0 @../common/120/shinra_bldg_61f_ol_exp.txt
+msg 「なーに　ヘンなかおして\n　おしえてあげるのは　ここから\n　うえのフロアのことよ
+chg_speed 12001 not_move
+sleep 16
+include ./event/common/key_unvalid.txt
+msg 「60かいから　うえは　やくいんクラスの\n　しゃいんのおおい　とくべつフロア\n　カードキーがないと　はいることも\n　きょかされないの\n　カードキーがあれば\n　かいだんも　エレベーターも　じゆうに\n　つかえるわ
+chg_npc_dir 12001 left
 chg_char_state_move
-msg 「なーに　ヘンなかおして\n　おしえてあげるのは　ここから\n　うえのフロアのことよ\n\n　60かいから　うえは　やくいんクラスの\n　しゃいんのおおい　とくべつフロア\n　カードキーがないと　はいることも\n　きょかされないの\n　カードキーがあれば\n　かいだんも　エレベーターも　じゆうに\n　つかえるわ\n\n　エレベーターはホラ　わたしの\n　よこにある　あのドアのまえで\n　[Aボタン]　をおすの\n　そうすると……
+create event_generator 12025 120 0 0 17 0 0 @../common/120/shinra_bldg_61f_ol_exp.txt
+sleep 16
+msg 「エレベーターはホラ　わたしの\n　よこにある　あのドアのまえで\n　[Aボタン]　をおすの\n　そうすると……
 play_se train_info.ogg
+sleep 16
 set_flag 10 1
-sleep 48
+sleep 32
 msg 「……っていうおとがして\n　ドアがひらくから\n\n\n　でもね　カードキーにも　なんしゅるいか\n　あって　1まいでどこでも　って\n　わけにはいかないのよ\n\n　そうね　たとえば\n　『カードキー60』なら60かいまで\n　『カードキー65』なら65かいまで\n　そういうことよ\n　まあミッドガル　いえ　いまや\n　せかいのエネルギー　りゅうつうを\n　いってに　ひきうける　しんらカンパニーの\n　ほんしゃとしては　とうぜんのセキュリティよね
 chg_speed 12001 normal
 sleep 16
 jump_npc 12001 same 1
 msg 「あらやだ　ながくなっちゃったわ\n　それじゃおたがい　おしごと\n　がんばりましょうね▼
-reset_talk_npc
-fi
 chg_npc_dir 12001 up
-set_ignore_map_layer_flag 12001 0
-set_layer 12001 back
 chg_speed 12001 not_move
 sleep 16
 chg_type 12001 npc
 set_inactive_msg 12001
+set_ignore_map_layer_flag 12001 0
+set_layer 12001 back
 include ./event/common/key_valid.txt
+fi

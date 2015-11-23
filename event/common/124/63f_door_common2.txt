@@ -1,0 +1,11 @@
+loop 2
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+add_flag 32 1

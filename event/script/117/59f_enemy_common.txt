@@ -104,6 +104,8 @@ reset_talk_npc
 kill 11715
 sleep 16
 step_char 2
+include ./event/common/act/act1-8_6.txt
+include ./event/common/act/act1-8_7j.txt
 sleep 48
 play_se pick_up.wav
 msg 　こんなところに\n　　キーアイテム　『カードキー60』が！

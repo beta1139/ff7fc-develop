@@ -1,0 +1,119 @@
+wait_target_talk 12408
+reset_talk_flag 12408
+create npc_event 12520 124 36 29 0 0 2 none
+draw_char off
+chg_npc_y_offset 12520 -6
+sleep 3
+chg_npc_y_offset 12520 -8
+sleep 3
+chg_npc_img 12520 115
+if_owned_item 6030
+del_item 6030
+fi
+if_owned_item 6031
+del_item 6031
+fi
+if_owned_item 6032
+del_item 6032
+fi
+sleep 32
+play_se switch.ogg
+loop 4
+set_screen_effect add 255 255 255 7
+set_gray_scale
+sleep 2
+reset_screen_effect
+reset_gray_scale
+sleep 2
+pool
+sleep 16
+move_char up 1
+chg_npc_y_offset 12520 -6
+sleep 4
+chg_npc_y_offset 12520 -4
+chg_npc_img 12520 0
+sleep 12
+play_se_loop timer2.ogg
+msg 「ピピッ……\n　カードキーしょうごう……\n　……\n\n　……\n\n\n\n　……\n\n\n\n　Bランクしゃいん　ト　かくにん\n　アナタは　このフロアのロックを\n　3かいまで　かいじょすルことが　きょかされましタ\n\n　チュウイ\n　アイテムクーポンを　もラったら\n　わすれズに　アイテムと　こうかんしまショう\n\n　ケイコク　キケンですから\n　むやみに　つうきダクトを\n　のぞくのは　やめまショウ
+stop_se
+reset_talk_flag 12460
+reset_talk_flag 12461
+reset_talk_flag 12462
+reset_talk_flag 12463
+reset_talk_flag 12464
+reset_talk_flag 12465
+reset_talk_flag 12466
+reset_talk_flag 12467
+reset_talk_flag 12468
+reset_talk_flag 12469
+reset_talk_flag 12470
+reset_talk_flag 12471
+reset_talk_flag 12472
+reset_talk_flag 12473
+reset_talk_flag 12474
+reset_talk_flag 12475
+reset_talk_flag 12476
+reset_talk_flag 12477
+reset_talk_flag 12478
+reset_talk_flag 12479
+reset_talk_flag 12480
+reset_talk_flag 12481
+reset_talk_flag 12482
+reset_talk_flag 12483
+reset_talk_flag 12484
+reset_talk_flag 12485
+reset_talk_flag 12486
+reset_talk_flag 12487
+reset_talk_flag 12488
+reset_talk_flag 12489
+reset_talk_flag 12490
+reset_talk_flag 12491
+reset_talk_flag 12492
+reset_talk_flag 12493
+reset_talk_flag 12494
+reset_talk_flag 12495
+reset_talk_flag 12496
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 12520
+create event_generator 12401 124 0 0 17 0 0 @124/63f_machine2.txt
+create event_generator 12410 124 0 0 17 0 0 @124/63f_door01.txt
+create event_generator 12411 124 0 0 17 0 0 @124/63f_door02.txt
+create event_generator 12412 124 0 0 17 0 0 @124/63f_door03.txt
+create event_generator 12413 124 0 0 17 0 0 @124/63f_door04.txt
+create event_generator 12414 124 0 0 17 0 0 @124/63f_door05.txt
+create event_generator 12415 124 0 0 17 0 0 @124/63f_door06.txt
+create event_generator 12416 124 0 0 17 0 0 @124/63f_door07.txt
+create event_generator 12417 124 0 0 17 0 0 @124/63f_door08.txt
+create event_generator 12418 124 0 0 17 0 0 @124/63f_door09.txt
+create event_generator 12419 124 0 0 17 0 0 @124/63f_door10.txt
+create event_generator 12420 124 0 0 17 0 0 @124/63f_door11.txt
+create event_generator 12421 124 0 0 17 0 0 @124/63f_door12.txt
+create event_generator 12422 124 0 0 17 0 0 @124/63f_door13.txt
+create event_generator 12423 124 0 0 17 0 0 @124/63f_door14.txt
+create event_generator 12424 124 0 0 17 0 0 @124/63f_door15.txt
+create event_generator 12425 124 0 0 17 0 0 @124/63f_door16.txt
+create event_generator 12426 124 0 0 17 0 0 @124/63f_door17.txt
+create event_generator 12427 124 0 0 17 0 0 @124/63f_door18.txt
+create event_generator 12428 124 0 0 17 0 0 @124/63f_door19.txt
+create event_generator 12429 124 0 0 17 0 0 @124/63f_door20.txt
+create event_generator 12430 124 0 0 17 0 0 @124/63f_door21.txt
+create event_generator 12431 124 0 0 17 0 0 @124/63f_door22.txt
+create event_generator 12432 124 0 0 17 0 0 @124/63f_door23.txt
+create event_generator 12433 124 0 0 17 0 0 @124/63f_door24.txt
+create event_generator 12434 124 0 0 17 0 0 @124/63f_door25.txt
+create event_generator 12435 124 0 0 17 0 0 @124/63f_door26.txt
+create event_generator 12436 124 0 0 17 0 0 @124/63f_door27.txt
+create event_generator 12437 124 0 0 17 0 0 @124/63f_door28.txt
+create event_generator 12438 124 0 0 17 0 0 @124/63f_door29.txt
+create event_generator 12439 124 0 0 17 0 0 @124/63f_door30.txt
+create event_generator 12440 124 0 0 17 0 0 @124/63f_door31.txt
+create event_generator 12441 124 0 0 17 0 0 @124/63f_door32.txt
+create event_generator 12442 124 0 0 17 0 0 @124/63f_door33.txt
+create event_generator 12443 124 0 0 17 0 0 @124/63f_door34.txt
+create event_generator 12444 124 0 0 17 0 0 @124/63f_door35.txt
+create event_generator 12445 124 0 0 17 0 0 @124/63f_door36.txt
+create event_generator 12446 124 0 0 17 0 0 @124/63f_door37.txt
+set_flag 32 0

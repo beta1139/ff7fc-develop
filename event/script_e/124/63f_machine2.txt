@@ -1,0 +1,200 @@
+set_eternal_event
+wait_target_talk 12408
+reset_talk_flag 12408
+create npc_event 12520 124 36 29 0 0 2 none
+draw_char off
+chg_npc_y_offset 12520 -6
+sleep 3
+chg_npc_y_offset 12520 -8
+sleep 3
+chg_npc_img 12520 115
+sleep 32
+play_se switch.ogg
+loop 4
+set_screen_effect add 255 255 255 7
+set_gray_scale
+sleep 2
+reset_screen_effect
+reset_gray_scale
+sleep 2
+pool
+sleep 16
+move_char up 1
+chg_npc_y_offset 12520 -6
+sleep 4
+chg_npc_y_offset 12520 -4
+chg_npc_img 12520 0
+sleep 12
+play_se_loop timer2.ogg
+msg 「ピピッ……\n　コマンドを　にゅうりょくしてくだサい\n\n\n#2\n　　オールクリア\n　　クーポンチェンジ\n\n\n[[]][[]]
+if_flag 3 0
+msg 「ピピッ……\n　もう1ど　ハジメから\n　やりなおしますか？\n\n ただし　このフロアで\n　てにいれタきろく　しりょうなども\n　すべてクリアされまス\n\n　クリアしますか？\n\n\n\n#2\n　　ああ……\n　　やめておく\n\n\n[[]][[]]
+if_flag 3 0
+play_se door_open3.ogg
+sleep 16
+fadeout
+if_owned_item 6030
+del_item 6030
+fi
+if_owned_item 6031
+del_item 6031
+fi
+if_owned_item 6032
+del_item 6032
+fi
+sleep 16
+kill_through_range 12402 12407
+set_npc_pos 12460 124 12 8
+set_npc_pos 12461 124 28 8
+set_npc_pos 12462 124 7 12
+set_npc_pos 12463 124 8 12
+set_npc_pos 12464 124 16 12
+set_npc_pos 12465 124 17 12
+set_npc_pos 12466 124 24 12
+set_npc_pos 12467 124 25 12
+set_npc_pos 12468 124 31 12
+set_npc_pos 12469 124 32 12
+set_npc_pos 12470 124 21 14
+set_npc_pos 12471 124 28 14
+set_npc_pos 12472 124 38 14
+set_npc_pos 12473 124 7 20
+set_npc_pos 12474 124 8 20
+set_npc_pos 12475 124 16 20
+set_npc_pos 12476 124 17 20
+set_npc_pos 12477 124 24 20
+set_npc_pos 12478 124 25 20
+set_npc_pos 12479 124 31 20
+set_npc_pos 12480 124 32 20
+set_npc_pos 12481 124 12 25
+set_npc_pos 12482 124 18 25
+set_npc_pos 12483 124 23 25
+set_npc_pos 12484 124 30 25
+set_npc_pos 12485 124 33 25
+set_npc_pos 12486 124 37 25
+set_npc_pos 12487 124 16 28
+set_npc_pos 12488 124 17 28
+set_npc_pos 12489 124 31 28
+set_npc_pos 12490 124 32 28
+set_npc_pos 12491 124 16 32
+set_npc_pos 12492 124 17 32
+set_npc_pos 12493 124 31 32
+set_npc_pos 12494 124 32 32
+set_npc_pos 12495 124 12 34
+set_npc_pos 12496 124 21 34
+sleep 48
+create event_generator 12402 124 0 0 17 0 0 @124/63f_coupon_a.txt
+create event_generator 12403 124 0 0 17 0 0 @124/63f_coupon_b.txt
+create event_generator 12404 124 0 0 17 0 0 @124/63f_coupon_c.txt
+create npc2 12405 124 12 19 80 0 4 
+create npc2 12406 124 20 19 80 0 4 
+create npc2 12407 124 28 19 80 0 4 
+fadein
+msg 「………………\n　クリアかんりょう\n\n\n　アナタは　このフロアのロックを\n　3かいまで　かいじょすルことが　きょかされましタ
+set_flag 32 0
+fi
+stop_se
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 12520
+end
+fi
+if_flag 3 1
+if_not_owned_item 6030
+if_not_owned_item 6031
+if_not_owned_item 6032
+play_se beep_ff3.ogg
+msg 「ピピッ……\n　あなたはクーポンをもっていまセん
+stop_se
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 12520
+end
+fi
+fi
+fi
+msg 「クーポンをアイテムに\n　かえることができまス\n　もラえるアイテムは……\n\n　Aクーポン……『ほしのペンダント』\n　Bクーポン……『フォウスロット』\n　Cクーポン……『ぜんたいか』\n\n　ただし　クーポンチェンジごの\n　オールクリアはでキません\n　ゴちゅういくださイ\n\n　クーポンチェンジしまスか？\n\n\n\n#2\n　　ああ……\n　　やめておく\n\n\n[[]][[]]
+if_flag 3 0
+play_se elevator_start.wav
+msg3 64 「……
+loop 5
+create map_obj 12550 124 35 28 38 0 0 
+create map_obj 12551 124 37 28 39 0 0 
+sleep 8
+kill 12550
+kill 12551
+sleep 8
+pool
+msg3 144 「…………
+play_se_loop elevator_loop.wav
+loop 7
+create map_obj 12550 124 35 28 38 0 0 
+create map_obj 12551 124 37 28 39 0 0 
+sleep 4
+kill 12550
+kill 12551
+sleep 4
+pool
+play_se elevator_end.wav
+loop 6
+create map_obj 12550 124 35 28 38 0 0 
+create map_obj 12551 124 37 28 39 0 0 
+sleep 8
+kill 12550
+kill 12551
+sleep 8
+pool
+loop 2
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+sleep 16
+msg 「クーポンチェンジかんりょう
+if_owned_item 6030
+step_npc 12520 2
+sleep 32
+play_se pick_up.wav
+msg 『ほしのペンダント』をてにいれた！
+del_item 6030
+add_item 5010
+fi
+if_owned_item 6031
+step_npc 12520 2
+sleep 32
+play_se pick_up.wav
+msg 『フォウスロット』をてにいれた！
+del_item 6031
+add_item 3021
+fi
+if_owned_item 6032
+step_npc 12520 2
+sleep 32
+play_se materia.wav
+msg 『ぜんたいか』のマテリアをてにいれた！
+del_item 6032
+add_item 4100
+fi
+set_npc_pos 12408 124 0 0
+kill_through_range 12410 12446
+fi
+fi
+stop_se
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 12520
+if_flag 3 0
+set_flag 34 1
+set_flag 30 29
+create event_generator 12497 124 0 0 17 0 0 @../common/point.txt
+fi

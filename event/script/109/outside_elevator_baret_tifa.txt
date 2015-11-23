@@ -39,10 +39,10 @@ warp 708 0 0 up
 fadein
 sleep 24
 if_flag 28 8
-warp_ff3_2 119 23 33 2 up
+warp_ff3_2 119 23 32 2 up
 fi
 if_flag 28 9
-warp_ff3_2 119 25 33 2 up
+warp_ff3_2 119 25 32 2 up
 fi
 draw_char on
 sleep 8

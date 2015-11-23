@@ -10,7 +10,7 @@ fi
 if_owned_item 6023
 del_item 6023
 fi
-chg_param 12000 u‚±‚Ì‚©‚¢‚ÌƒhƒA\n@‚Ð‚ç‚«‚Á‚Ï‚È‚µ‚È‚ñ‚¾\n@‚Í‚â‚­@‚È‚¨‚µ‚Ä‚­‚ê‚æ‚È
+chg_param 12000 ‚µ‚ñ‚ç‚µ‚á‚¢‚ñ\nu‚±‚Ì‚©‚¢‚ÌƒhƒA\n@‚Ð‚ç‚«‚Á‚Ï‚È‚µ‚È‚ñ‚¾\n@‚Í‚â‚­@‚È‚¨‚µ‚Ä‚­‚ê‚æ‚È
 kill_through 12021
 kill_through 12156
 create npc2 12100 121 10 21 162 2 0 ƒhƒ~ƒm\nu‚»‚¤@‚ ‚¢‚±‚Æ‚Î‚¾\n@‚»‚ê‚ð‚¢‚¦‚½‚ç@ƒJ[ƒh‚ð‚â‚ë‚¤\n\n@‚¨‚Ü‚¯‚É@1‚©‚¢‚Å‚ ‚Ä‚½‚ç\n@ƒiƒCƒX‚È‚¨‚Ý‚â‚°‚à@‚Â‚¯‚Ä‚â‚é‚¼H
@@ -23,7 +23,7 @@ create npc 12106 121 23 11 17 0 0 @‚±‚±‚Í\n@‚¿‚ ‚ñ‚¢‚¶@‚Ô‚à‚ñ@‚¨‚æ‚Ñ\n@‚Ö‚¢
 create npc 12107 121 23 24 17 0 0 @‚à‚¿‚¾‚µ@‚«‚ñ‚µI\n\n\n\n@‚±‚ÌƒtƒƒA‚Ì@‚µ‚è‚å‚¤‚Í@‚·‚×‚Ä\n@‚ª‚¢‚Ô‚É@‚à‚¿‚¾‚·‚±‚Æ‚ð@‚«‚ñ‚¶‚ç‚ê‚Ä‚¢‚Ü‚·
 create npc 12108 121 25 11 17 0 0 @‚±‚±‚Í\n@‚¤‚¿‚ã‚¤‚©‚¢‚Í‚Â@‚Ô‚à‚ñ@‚µ‚è‚å‚¤‚µ‚Â‚Å‚·\n\n\n@‚©‚­@‚µ‚è‚å‚¤‚µ‚Â‚Ì@‚Î‚µ‚å‚É‚Â‚¢‚Ä‚Í\n@‚Ö‚â‚Ì‚Ü‚¦‚É‚ ‚é@ƒvƒŒ[ƒg‚ð@‚²‚ç‚ñ‚­‚¾‚³‚¢
 create npc 12109 121 25 24 17 0 0 @‚±‚±‚Í\n@‚©‚ª‚­@‚Ô‚à‚ñ‚Ì@‚µ‚è‚å‚¤‚µ‚Â‚Å‚·\n@‚Ù‚©‚Ì3‚Â‚Ì@‚µ‚è‚å‚¤‚µ‚Â‚É‚Í@‚»‚ê‚¼‚êcc\n\n@w‚Æ‚µ‚©‚¢‚Í‚Â@‚Ô‚à‚ñx\n@w‚¿‚ ‚ñ‚¢‚¶@/‚Ö‚¢‚«‚©‚¢‚Í‚Â@‚Ô‚à‚ñx\n@w‚¤‚¿‚ã‚¤‚©‚¢‚Í‚Â@‚Ô‚à‚ñx\n@cc‚Ì‚µ‚è‚å‚¤‚ª@‚Ù‚©‚ñ‚³‚ê‚Ä‚¢‚Ü‚·
-create npc 12113 121 9 21 164 0 4 @@@@@@@@@@96-99\n@@@@ƒXƒNƒŠƒvƒ^[‚É‚µ‚©@‚«‚å‚¤‚©‚ñ‚Å‚«‚È‚¢\n@@@@@@‚«‚¶‚ã‚Â‚Ä‚«‚È@‚ ‚é‚ ‚é‚¶‚±‚¤\n\n@@@sleep‚ð@sleeep‚Æ@‚¤‚Á‚Ä‚µ‚Ü‚¤\n\n\n\n@@create‚Æ@npc event‚Ì‚ ‚¢‚¾‚É\n@@@@@@@ƒAƒ“ƒ_[ƒo[‚ð‚¢‚ê‚Ä‚µ‚Ü‚¤\n\n\n@@create‚ª@‚æ‚­‚Ý‚é‚Æ@cretae‚¾\n\n\n\n@@@@@@@@@@@‚¢‚Ü‚¾‚É\n@chg event move char speed\n@@@@@@@@@‚ª@‚¨‚Ú‚¦‚ç‚ê‚È‚¢\n@@@@@@@i‚à‚¿‚ë‚ñ@‚±‚ê‚àƒRƒsƒy‚¾j\n@@@@@@@pick up.wav?\n@@@@@@@pick up.ogg?\n@@@@@@@@@@@@cc\n@@@@@pick up.ogg‚¾‚Á‚½‚Æ‚¨‚à‚¤I\n@@@@@@@@@@‚»‚µ‚Ä@‚¨‚¿‚é\n\n\n\n@@@@@‚Â‚¢@ƒeƒLƒXƒg‚É@‚©‚ñ‚¶‚ð‚Â‚©‚Á‚Ä\n@@@@@@@@@ƒGƒ‰[‚Å‚¨‚¿‚éc\n\n\n @@@@cc‚Æ‚¢‚¤‚Ì‚Í@‚µ‚å‚µ‚ñ‚µ‚á‚Å‚ ‚è\n\n\n\n@‚Ó‚¾‚ñ‚Ìƒ[ƒ‹‚à@‚º‚ñ‚Ô@‚Ð‚ç‚ª‚È‚Å‚¤‚Á‚Ä‚µ‚Ü‚¢\n@@@‚¿‚Ì‚¤‚µ‚·‚¤‚ð@‚¤‚½‚ª‚í‚ê‚é‚æ‚¤‚É‚È‚Á‚Ä\n@@@@@‚Í‚¶‚ß‚Ä@‚¿‚ã‚¤‚«‚ã‚¤‚µ‚á‚Æ‚È‚é
+create npc 12113 121 9 21 164 0 4 @@@@@@@@@@96-99\n@@@@ƒXƒNƒŠƒvƒ^[‚É‚µ‚©@‚«‚å‚¤‚©‚ñ‚Å‚«‚È‚¢\n@@@@@@‚«‚¶‚ã‚Â‚Ä‚«‚È@‚ ‚é‚ ‚é‚¶‚±‚¤\n\n@@@sleep‚ð@sleeep‚Æ@‚¤‚Á‚Ä‚µ‚Ü‚¤\n\n\n\n@@create‚Æ@npc event‚Ì‚ ‚¢‚¾‚É\n@@@@@@@ƒAƒ“ƒ_[ƒo[‚ð‚¢‚ê‚Ä‚µ‚Ü‚¤\n\n\n@@create‚ª@‚æ‚­‚Ý‚é‚Æ@cretae‚¾\n\n\n\n@@@@@@@@@@@‚¢‚Ü‚¾‚É\n@chg event move char speed\n@@@@@@@@@‚ª@‚¨‚Ú‚¦‚ç‚ê‚È‚¢\n@@@@@@@i‚à‚¿‚ë‚ñ@‚±‚ê‚àƒRƒsƒy‚¾j\n@@@@@@@pick up.wav?\n@@@@@@@pick up.ogg?\n@@@@@@@@@@@@cc\n@@‚Ü‚æ‚Á‚½‚·‚¦‚É@pick up.ogg@‚Æ‚¤‚Â\n@@@@@@@@@@‚»‚µ‚Ä@‚¨‚¿‚é\n\n\n\n@@@@@‚Â‚¢@ƒeƒLƒXƒg‚É@‚©‚ñ‚¶‚ð‚Â‚©‚Á‚Ä\n@@@@@@@@@ƒGƒ‰[‚Å‚¨‚¿‚éc\n\n\n @@@@cc‚Æ‚¢‚¤‚Ì‚Í@‚µ‚å‚µ‚ñ‚µ‚á‚Å‚ ‚è\n\n\n\n@‚Ó‚¾‚ñ‚Ìƒ[ƒ‹‚à@‚º‚ñ‚Ô@‚Ð‚ç‚ª‚È‚Å‚¤‚Á‚Ä‚µ‚Ü‚¢\n@@@‚¿‚Ì‚¤‚µ‚·‚¤‚ð@‚¤‚½‚ª‚í‚ê‚é‚æ‚¤‚É‚È‚Á‚Ä\n@@@@@‚Í‚¶‚ß‚Ä@‚¿‚ã‚¤‚«‚ã‚¤‚µ‚á‚Æ‚È‚é
 create event_generator 12120 121 0 0 17 0 0 @121/domino1.txt
 create npc 12160 121 20 15 17 0 0 @@@@@@@@@@@2-1\n@@@ƒNƒ‰ƒX‚×‚Â@ƒ\ƒ‹ƒWƒƒ[@‚Í‚¢‚¿ƒf[ƒ^
 create npc 12161 121 21 15 17 0 0 @@@@@@@@@@@5-1\n@@@@@ƒ}ƒeƒŠƒA‚Ì@‚¹‚¢‚¼‚¤@‚¨‚æ‚Ñ\n@@@‚»‚Ì@‚®‚ñ‚¶‚Ä‚«‚è‚æ‚¤‚É@‚©‚ñ‚·‚é@‚¯‚ñ‚è
@@ -31,7 +31,7 @@ create npc 12162 121 22 15 17 0 0 @@@@@@@@@@@1-2\n@@@@‚µ‚ñ‚ç@‚Æ‚
 create npc 12163 121 20 12 17 0 0 @@@@@@@@@@@8-3\n@@@@‚Ü‚±‚¤‚Ö‚¢‚«‚Ì@‚¿‚å‚¤‚«@‚µ‚æ‚¤‚É\n@@@@@@‚©‚ñ‚·‚é@‚Æ‚­‚×‚Â‚«‚Ä‚¢
 create npc 12164 121 21 12 17 0 0 @@@@@@@@@@@6-3\n@@@‚µ‚ñ‚µ‚«@‚¿‚¶‚å‚¤‚Ö‚¢‚«@‚©‚¢‚Í‚Âƒvƒ‰ƒ“
 create npc 12165 121 22 12 17 0 0 @@@@@@@@@@@7-2\n@@@@@ƒ~ƒbƒhƒKƒ‹@‚¿‚ ‚ñ‚Í‚­‚µ‚å\n@@@@‚Í‚ñ@‚µ‚ñ‚ç‚¹‚¢‚è‚å‚­‚Ì@‚°‚ñ‚¶‚å‚¤
-create npc 12166 121 20 28 17 0 0 @@@@@@@@@@@3-2\n@@@@@@@‚µ‚ñ‚çƒvƒŒ[ƒg‚Æ‚µ‚Ì\n@@@@@@‚¹‚Á‚¯‚¢‚Æ@‚»‚Ì‚à‚ñ‚¾‚¢‚Ä‚ñ
+create npc 12166 121 20 28 17 0 0 @@@@@@@@@@@3-1\n@@@@@@@‚µ‚ñ‚çƒvƒŒ[ƒg‚Æ‚µ‚Ì\n@@@@@@‚¹‚Á‚¯‚¢‚Æ@‚»‚Ì‚à‚ñ‚¾‚¢‚Ä‚ñ
 create npc 12167 121 21 28 17 0 0 @@@@@@@@@@@1-1\n@@@@@@‚Ü‚±‚¤‚ë@‚¯‚ñ‚¼‚¤@‚±‚¤‚¶‚Ì\n@@@@@‚Æ‚µ‚Ô@‚¿‚á‚Á‚±‚¤@‚æ‚Ä‚¢‚Ð‚å‚¤
 create npc 12168 121 22 28 17 0 0 @@@@@@@@@@@7-1\n@@@‚µ‚ñ@‚Ü‚±‚¤‚Æ‚µ@‚¯‚ñ‚¹‚Â@‚¯‚¢‚©‚­‚µ‚å
 create npc 12169 121 20 25 17 0 0 @@@@@@@@@@@2-1\n@@@@@@ƒ~ƒbƒhƒKƒ‹@‚­‚Ô‚ñ@‚¿‚¸\n@@@@@@0‚Î‚ñ‚ª‚¢@`@4‚Î‚ñ‚ª‚¢
@@ -60,6 +60,7 @@ fi
 fi
 if_flag 31 1
 set_npc_pos 12163 121 22 28
+set_npc_pos 12168 121 27 25
 set_npc_pos 12176 121 20 12
 set_npc_pos 12182 121 27 12
 fi
@@ -101,7 +102,7 @@ set_npc_pos 12181 121 27 25
 fi
 if_flag 31 5
 set_npc_pos 12166 121 26 25
-chg_param 12168 @@@@@@@@@@@3-1\n@@@‚µ‚ñ@‚Ü‚±‚¤‚Æ‚µ@‚¯‚ñ‚¹‚Â@‚¯‚¢‚©‚­‚µ‚å
+chg_param 12168 @@@@@@@@@@@3-3\n@@@‚µ‚ñ@‚Ü‚±‚¤‚Æ‚µ@‚¯‚ñ‚¹‚Â@‚¯‚¢‚©‚­‚µ‚å
 set_npc_pos 12168 121 20 28
 set_npc_pos 12185 121 22 28
 chg_param 12185 @@@@@@@@@@@15-2\n@@@@@@@@‚¿‚¶‚å‚¤@‚¹‚¢‚Ô‚Â‚Ì\n@@@@@@@@‚³‚¢‚µ‚ã‚¤@‚µ‚ñ‚©‚ë‚ñ

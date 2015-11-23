@@ -1,0 +1,94 @@
+create event_generator 12400 124 0 0 17 0 0 @124/63f_machine1.txt
+create event_generator 12500 124 34 29 17 0 0 @124/63f_duct_warpin.txt
+create event_generator 12501 124 14 18 17 0 0 @124/63f_duct_warpin.txt
+create event_generator 12502 124 29 18 17 0 0 @124/63f_duct_warpin.txt
+create event_generator 12503 125 3 3 17 0 0 @../common/125/63f_duct_warpout.txt
+create event_generator 12504 125 18 3 17 0 0 @../common/125/63f_duct_warpout.txt
+create event_generator 12505 125 23 14 17 0 0 @../common/125/63f_duct_warpout.txt
+create event_generator 12506 124 14 19 17 0 0 @../common/125/63f_duct_flag1.txt
+create event_generator 12507 124 29 19 17 0 0 @../common/125/63f_duct_flag2.txt
+create event_generator 12508 124 35 31 17 0 0 @../common/125/63f_duct_flag3.txt
+create event_generator 12509 125 3 4 17 0 0 @../common/125/63f_duct_flag1.txt
+create event_generator 12510 125 18 4 17 0 0 @../common/125/63f_duct_flag2.txt
+create event_generator 12511 125 22 14 17 0 0 @../common/125/63f_duct_flag3.txt
+create event_generator 12402 124 0 0 17 0 0 @124/63f_coupon_a.txt
+create event_generator 12403 124 0 0 17 0 0 @124/63f_coupon_b.txt
+create event_generator 12404 124 0 0 17 0 0 @124/63f_coupon_c.txt
+create npc2 12405 124 12 19 80 0 4 
+create npc2 12406 124 20 19 80 0 4 
+create npc2 12407 124 28 19 80 0 4 
+create npc2 12408 124 36 28 17 1 4 
+create npc2 12460 124 12 8 165 1 4 
+create npc2 12461 124 28 8 165 1 4 
+create npc2 12462 124 7 12 165 1 4 
+create npc2 12463 124 8 12 165 1 4 
+create npc2 12464 124 16 12 165 1 4 
+create npc2 12465 124 17 12 165 1 4 
+create npc2 12466 124 24 12 165 1 4 
+create npc2 12467 124 25 12 165 1 4 
+create npc2 12468 124 31 12 165 1 4 
+create npc2 12469 124 32 12 165 1 4 
+create npc2 12470 124 21 14 165 1 4 
+create npc2 12471 124 28 14 165 1 4 
+create npc2 12472 124 38 14 165 1 4 
+create npc2 12473 124 7 20 165 1 4 
+create npc2 12474 124 8 20 165 1 4 
+create npc2 12475 124 16 20 165 1 4 
+create npc2 12476 124 17 20 165 1 4 
+create npc2 12477 124 24 20 165 1 4 
+create npc2 12478 124 25 20 165 1 4 
+create npc2 12479 124 31 20 165 1 4 
+create npc2 12480 124 32 20 165 1 4 
+create npc2 12481 124 12 25 165 1 4 
+create npc2 12482 124 18 25 165 1 4 
+create npc2 12483 124 23 25 165 1 4 
+create npc2 12484 124 30 25 165 1 4 
+create npc2 12485 124 33 25 165 1 4 
+create npc2 12486 124 37 25 165 1 4 
+create npc2 12487 124 16 28 165 1 4 
+create npc2 12488 124 17 28 165 1 4 
+create npc2 12489 124 31 28 165 1 4 
+create npc2 12490 124 32 28 165 1 4 
+create npc2 12491 124 16 32 165 1 4 
+create npc2 12492 124 17 32 165 1 4 
+create npc2 12493 124 31 32 165 1 4 
+create npc2 12494 124 32 32 165 1 4 
+create npc2 12495 124 12 34 165 1 4 
+create npc2 12496 124 21 34 165 1 4 
+chg_npc_y_offset 12460 0
+chg_npc_y_offset 12461 0
+chg_npc_y_offset 12462 0
+chg_npc_y_offset 12463 0
+chg_npc_y_offset 12464 0
+chg_npc_y_offset 12465 0
+chg_npc_y_offset 12466 0
+chg_npc_y_offset 12467 0
+chg_npc_y_offset 12468 0
+chg_npc_y_offset 12469 0
+chg_npc_y_offset 12470 0
+chg_npc_y_offset 12471 0
+chg_npc_y_offset 12472 0
+chg_npc_y_offset 12473 0
+chg_npc_y_offset 12474 0
+chg_npc_y_offset 12475 0
+chg_npc_y_offset 12476 0
+chg_npc_y_offset 12477 0
+chg_npc_y_offset 12478 0
+chg_npc_y_offset 12479 0
+chg_npc_y_offset 12480 0
+chg_npc_y_offset 12481 0
+chg_npc_y_offset 12482 0
+chg_npc_y_offset 12483 0
+chg_npc_y_offset 12484 0
+chg_npc_y_offset 12485 0
+chg_npc_y_offset 12486 0
+chg_npc_y_offset 12487 0
+chg_npc_y_offset 12488 0
+chg_npc_y_offset 12489 0
+chg_npc_y_offset 12490 0
+chg_npc_y_offset 12491 0
+chg_npc_y_offset 12492 0
+chg_npc_y_offset 12493 0
+chg_npc_y_offset 12494 0
+chg_npc_y_offset 12495 0
+chg_npc_y_offset 12496 0

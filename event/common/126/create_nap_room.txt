@@ -1,0 +1,2 @@
+wait_same_pos
+create event_generator 12627 126 12 29 17 0 0 @126/nap_room.txt

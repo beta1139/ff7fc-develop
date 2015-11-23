@@ -139,14 +139,14 @@ npc_event,1651,16,11,5,1,1,2,""
 npc_event,1652,16,8,7,35,0,2,""
 npc_event,1653,16,7,5,34,1,2,""
 npc_event,1654,16,12,7,36,0,2,""
-event_generator,1660,16,1,21,17,1,2,"@016/ressya_2.txt"
-npc_event,1661,16,9,19,73,1,2,""
+event_generator,1660,16,9,20,17,1,2,"@016/ressya_2.txt"
+npc_event,1661,16,9,19,166,1,2,""
 npc_event,1662,16,8,22,71,2,2,""
 npc_event,1663,16,7,22,72,3,2,""
 npc_event,1664,16,4,19,74,1,2,""
 npc,1670,16,13,19,77,1,4,"「ん……？　ここは　おれんちだから
 　まあ　ゆっくりしてけ"
-npc,1671,16,11,22,70,1,0,"「しんらしんぶんの　ごうがい　みたかい？
+npc,1671,16,11,19,70,1,0,"「しんらしんぶんの　ごうがい　みたかい？
 
 
 
@@ -542,7 +542,7 @@ map_door,2790,27,5,9,4,0,0,0
 npc_event,2803,28,15,4,34,1,0,"none"
 npc_event,2804,28,10,8,35,0,2,"none"
 npc_event,2805,28,11,4,36,1,0,"none"
-npc_event,2806,28,18,4,73,0,2,"none"
+npc_event,2806,28,18,4,166,0,2,"none"
 npc,2807,28,3,4,77,1,4,"「ん……？
 　おれんちきて　あいさつするのは
 　あんただけ
@@ -1706,34 +1706,59 @@ map_door,11753,117,22,25,17,0,0,0
 map_door,11754,117,24,25,17,0,0,0
 event_generator,11930,119,11,18,17,0,0,"@../common/119/shinra_bldg_60f_create_loop.txt"
 event_generator,11932,119,15,13,17,0,0,"@119/shinra_bldg_60f_1.txt"
-event_generator,11944,119,23,31,17,0,0,"@../common/119/60f.txt"
-event_generator,11945,119,25,31,17,0,0,"@../common/119/60f.txt"
-event_generator,11946,119,23,32,17,0,0,"@../common/108/outside_elevator_l.txt"
-event_generator,11947,119,25,32,17,0,0,"@../common/108/outside_elevator_r.txt"
-event_generator,11948,119,23,33,17,0,0,"@108/outside_elevator_msg.txt"
-event_generator,11949,119,25,33,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,11944,119,23,30,17,0,0,"@../common/119/60f.txt"
+event_generator,11945,119,25,30,17,0,0,"@../common/119/60f.txt"
+event_generator,11946,119,23,31,17,0,0,"@../common/108/outside_elevator_l.txt"
+event_generator,11947,119,25,31,17,0,0,"@../common/108/outside_elevator_r.txt"
+event_generator,11948,119,23,32,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,11949,119,25,32,17,0,0,"@108/outside_elevator_msg.txt"
 map_door,11950,119,11,20,17,0,0,0
 event_generator,11996,119,31,8,17,0,0,"@119/shinra_bldg_60f_treasure.txt"
 map_obj,11997,119,31,8,62,0,0,0
-event_generator,12044,120,23,31,17,0,0,"@../common/120/61f.txt"
-event_generator,12045,120,25,31,17,0,0,"@../common/120/61f.txt"
-event_generator,12046,120,23,32,17,0,0,"@../common/108/outside_elevator_l.txt"
-event_generator,12047,120,25,32,17,0,0,"@../common/108/outside_elevator_r.txt"
-event_generator,12048,120,23,33,17,0,0,"@108/outside_elevator_msg.txt"
-event_generator,12049,120,25,33,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,12044,120,23,30,17,0,0,"@../common/120/61f.txt"
+event_generator,12045,120,25,30,17,0,0,"@../common/120/61f.txt"
+event_generator,12046,120,23,31,17,0,0,"@../common/108/outside_elevator_l.txt"
+event_generator,12047,120,25,31,17,0,0,"@../common/108/outside_elevator_r.txt"
+event_generator,12048,120,23,32,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,12049,120,25,32,17,0,0,"@108/outside_elevator_msg.txt"
 waterfall,12040,120,22,7,5,5,0,0,"none"
-event_generator,12144,121,23,36,17,0,0,"@../common/121/62f.txt"
-event_generator,12145,121,25,36,17,0,0,"@../common/121/62f.txt"
-event_generator,12146,121,23,37,17,0,0,"@../common/108/outside_elevator_l.txt"
-event_generator,12147,121,25,37,17,0,0,"@../common/108/outside_elevator_r.txt"
-event_generator,12148,121,23,38,17,0,0,"@108/outside_elevator_msg.txt"
-event_generator,12149,121,25,38,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,12144,121,23,35,17,0,0,"@../common/121/62f.txt"
+event_generator,12145,121,25,35,17,0,0,"@../common/121/62f.txt"
+event_generator,12146,121,23,36,17,0,0,"@../common/108/outside_elevator_l.txt"
+event_generator,12147,121,25,36,17,0,0,"@../common/108/outside_elevator_r.txt"
+event_generator,12148,121,23,37,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,12149,121,25,37,17,0,0,"@108/outside_elevator_msg.txt"
 map_door,12150,121,13,25,18,0,0,0
 map_door,12151,121,22,19,18,0,0,0
 map_door,12152,121,22,32,18,0,0,0
 map_door,12153,121,26,19,18,0,0,0
 map_door,12154,121,26,32,18,0,0,0
 map_door,12155,121,38,25,18,0,0,0
+map_door,12450,124,10,17,18,0,0,0
+map_door,12451,124,20,24,18,0,0,0
+map_door,12452,124,28,24,18,0,0,0
+map_door,12453,124,35,33,18,0,0,0
+map_door,12454,124,39,24,18,0,0,0
+event_generator,12544,124,23,35,17,0,0,"@../common/124/63f.txt"
+event_generator,12545,124,25,35,17,0,0,"@../common/124/63f.txt"
+event_generator,12546,124,23,36,17,0,0,"@../common/108/outside_elevator_l.txt"
+event_generator,12547,124,25,36,17,0,0,"@../common/108/outside_elevator_r.txt"
+event_generator,12548,124,23,37,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,12549,124,25,37,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,12644,126,23,35,17,0,0,"@../common/126/64f.txt"
+event_generator,12645,126,25,35,17,0,0,"@../common/126/64f.txt"
+event_generator,12646,126,23,36,17,0,0,"@../common/108/outside_elevator_l.txt"
+event_generator,12647,126,25,36,17,0,0,"@../common/108/outside_elevator_r.txt"
+event_generator,12648,126,23,37,17,0,0,"@108/outside_elevator_msg.txt"
+event_generator,12649,126,25,37,17,0,0,"@108/outside_elevator_msg.txt"
+map_door,12650,126,38,25,18,0,0,0
+map_door,12651,126,21,32,18,0,0,0
+map_door,12652,126,26,19,18,0,0,0
+map_door,12653,126,20,19,18,0,0,0
+map_door,12654,126,12,32,18,0,0,0
+map_door,12655,126,12,17,18,0,0,0
+save_point,12656,126,10,27,0,0,0,
+event_generator,12657,126,10,27,17,0,0,"@save_msg.txt"
 event_generator,70200,702,11,16,17,0,0,"@702/tifa'smemory1.txt"
 npc_event,70201,702,11,21,17,0,2,"none"
 npc_event,70202,702,11,20,17,1,2,"none"

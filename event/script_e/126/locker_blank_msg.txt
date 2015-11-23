@@ -1,0 +1,4 @@
+play_se door_open.ogg
+sleep 8
+msg 　なかには　なにもない……
+kill_through_range 12670 12671

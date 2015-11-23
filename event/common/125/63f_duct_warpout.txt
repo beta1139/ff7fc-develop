@@ -1,0 +1,28 @@
+set_eternal_event
+wait_same_pos
+if_flag 28 10
+warp_ff3_2 124 14 18 2 up
+fi
+if_flag 28 11
+warp_ff3_2 124 29 18 2 up
+fi
+if_flag 28 12
+warp_ff3_2 124 34 28 2 up
+fi
+chg_event_move_char_speed fast
+set_slide_char_flag
+move_char down 1
+sleep 8
+play_se landing.wav
+reset_slide_char_flag
+chg_event_move_char_speed normal
+if_flag 28 10
+move_char left 1
+fi
+if_flag 28 11
+move_char down 1
+fi
+if_flag 28 12
+move_char right 1
+fi
+sleep 16

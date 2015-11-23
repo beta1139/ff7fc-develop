@@ -75,6 +75,10 @@ include ./event/script_e/109/no_card_key.txt
 end
 fi
 fi
+if_flag_greater 24 8
+move_char down 1
+sleep 16
+fi
 step_char 2
 sleep 32
 play_se button.ogg
@@ -90,11 +94,8 @@ fi
 sleep 32
 if_flag 24 8
 move_char up 1
-fi
-if_flag_greater 24 8
-move_char down 1
-fi
 sleep 16
+fi
 open_door 10951
 warp_ff3_2 109 28 26 2 up
 move_char up 2
@@ -105,5 +106,9 @@ close_door 11754
 sleep 32
 fi
 if_flag 3 1
+if_flag_greater 24 8
+move_char up 1
+sleep 16
+fi
 chg_char_dir up
 fi

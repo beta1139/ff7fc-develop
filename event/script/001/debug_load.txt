@@ -283,6 +283,9 @@ set_flag 20 0
 fi
 if_flag_greater 30 24
 sleep 8
+include ./event/common/act/act1-8_6.txt
+include ./event/common/act/act1-8_7j.txt
+sleep 8
 include ./event/common/act/act1-8_2.txt
 include ./event/common/act/act1-8_3j.txt
 fi
@@ -316,11 +319,22 @@ sleep 8
 include ./event/common/act/act1-8_4j.txt
 sleep 8
 include ./event/common/act/act1-8_5j.txt
+set_flag 25 13
 fi
 if_flag 30 28
-set_flag 25 13
-set_flag 30 28
 warp_ff3_2 121 12 22 2 left
+fi
+if_flag 30 29
+warp_ff3_2 124 35 30 2 down
+fi
+if_flag 30 29
+warp_ff3_2 124 35 30 2 down
+fi
+if_flag 30 30
+sleep 8
+kill_through 12627
+create event_generator 12628 126 12 33 17 0 0 @../common/126/create_nap_room.txt
+warp_ff3_2 126 13 26 2 down
 fi
 fi
 reset_talk_npc

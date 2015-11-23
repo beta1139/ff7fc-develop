@@ -1,0 +1,6 @@
+set_eternal_event
+wait_target_talk 12461
+reset_talk_flag 12461
+include ./event/script_e/124/63f_door_common1.txt
+set_npc_pos 12461 124 0 0
+include ./event/common/124/63f_door_common2.txt

@@ -1,0 +1,8 @@
+wait_target_talk 12406
+reset_talk_flag 12406
+play_se pick_up.wav
+if_not_owned_item 6032
+add_item 6032
+fi
+msg 　こんなところに\n　　キーアイテム　『C　クーポン』が！
+kill 12406

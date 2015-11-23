@@ -1,0 +1,15 @@
+set_eternal_event
+wait_key_release_edge left
+kill_through 12681
+kill_through 12682
+sleep 8
+chg_speed 12607 not_move
+chg_speed 12608 not_move
+chg_speed 12660 not_move
+if_flag_lesser 19 40
+create event_generator 12681 126 0 0 17 0 0 @../common/126/running_machine_n.txt
+fi
+if_flag_greater 19 39
+create event_generator 12681 126 0 0 17 0 0 @../common/126/running_machine_f.txt
+fi
+create event_generator 12682 126 0 0 17 0 0 @../common/126/running_machine_release_b.txt

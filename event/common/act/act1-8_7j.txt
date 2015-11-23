@@ -1,0 +1,39 @@
+create npc2 12600 126 20 26 17 0 0 
+create npc2 12601 126 20 27 17 2 0 
+create npc2 12602 126 20 28 17 1 0 
+create npc_event 12603 126 19 26 165 0 0 none
+create npc_event 12604 126 20 26 165 2 0 none
+create npc_event 12605 126 19 27 165 0 0 none
+create npc_event 12606 126 20 27 165 2 0 none
+create npc_event 12607 126 19 28 165 0 4 none
+create npc_event 12608 126 20 28 165 2 4 none
+chg_npc_y_offset 12603 0
+chg_npc_y_offset 12604 0
+chg_npc_y_offset 12605 0
+chg_npc_y_offset 12606 0
+chg_npc_y_offset 12607 0
+chg_npc_y_offset 12608 0
+create npc_event 12609 126 20 26 91 2 0 none
+create npc_event 12610 126 19 27 88 2 0 none
+create npc2 12611 126 21 24 17 1 0 
+create npc3 12612 126 25 27 111 1 0 「フンッ　フンッ……\n　このビルのけいびを　あずかるものとして\n　たいりょくには　きをつかっているのだ
+create npc 12613 126 28 25 17 1 0 「ビジターのかたで　ございますね\n　あいているマシンは　ごじゆうに\n　ごりようください
+create npc_event 12614 126 29 26 17 1 0 
+create npc2 12615 126 29 25 74 2 0 
+create npc 12616 126 13 22 106 1 0 「グーゴー……\n　たのむ……から\n　ゆっくりねかせてくれ……
+create npc 12617 126 10 13 17 1 0     　　　　こしょうちゅうです\n　　　　　ほかのフロアを　ごりようください\n\n　　　　　　しんらカンパニー　しゅうりか
+create npc 12618 126 12 13 17 1 0     　　　　こしょうちゅうです\n　　　　　ほかのフロアを　ごりようください\n\n　　　　　　しんらカンパニー　しゅうりか
+create npc 12619 126 14 13 17 1 0     　　　　こしょうちゅうです\n　　　　　ほかのフロアを　ごりようください\n\n　　　　　　しんらカンパニー　しゅうりか
+create npc2 12620 126 27 15 17 1 0 
+create npc2 12621 126 25 12 17 1 0 
+create npc2 12622 126 29 12 17 1 0 
+sleep 8
+create event_generator 12623 126 0 0 17 0 0 @126/running1.txt
+create event_generator 12624 126 0 0 17 0 0 @126/running2.txt
+create event_generator 12625 126 0 0 17 0 0 @126/information.txt
+create event_generator 12626 126 0 0 17 0 0 @126/vending_machine.txt
+create event_generator 12627 126 12 29 17 0 0 @126/nap_room.txt
+create event_generator 12629 126 0 0 17 0 0 @126/locker1.txt
+create event_generator 12630 126 0 0 17 0 0 @126/locker2.txt
+create event_generator 12631 126 0 0 17 0 0 @126/locker3.txt
+create event_generator 12680 126 0 0 17 0 0 @126/running_machine.txt
