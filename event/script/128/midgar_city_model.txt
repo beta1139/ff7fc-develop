@@ -1,0 +1,37 @@
+wait_same_pos
+create npc_event 12860 128 9 14 0 0 2 none
+draw_char off
+move_char up 5
+play_se button.ogg
+set_flag 39 0
+loop 4
+include ./event/common/effect_flash01.txt
+pool
+reset_screen_effect
+if_owned_item 6022
+del_item 6022
+fi
+if_owned_item 6024
+del_item 6024
+fi
+sleep 64
+play_se push_button.ogg
+create npc_event 12837 128 5 9 167 1 0 none
+chg_npc_y_offset 12837 0
+sleep 32
+play_se door_open2.ogg
+move_char down 5
+sleep 48
+chg_npc_dir 12860 left
+sleep 24
+chg_npc_dir 12860 right
+sleep 24
+chg_npc_dir 12860 up
+sleep 16
+chg_npc_dir 12860 down
+sleep 16
+draw_char on
+kill 12860
+include ./event/script/128/midgar_city_model_msg1.txt
+kill 12707
+create event_generator 12727 127 10 23 17 0 0 @127/treasure_box_msg2.txt

@@ -11,3 +11,4 @@ add_item 1003
 msg 　こんなところに　　エーテルが！
 kill_through_range 12670 12672
 create event_generator 12633 126 0 0 17 0 0 @126/locker2_blank.txt
+set_flag 38 1

@@ -1,0 +1,6 @@
+set_eternal_event
+wait_talk
+set_flag 19 1
+include ./event/script/128/midgar_city_model_msg2.txt
+sleep 16
+msg 『この　けんせつちゅうの　6ばんがいが\n　かんせいしたとき　シンラの　やぼうも\n　かんぜんなものとなる\n\n　そのやぼうのために\n　エアリスを……？

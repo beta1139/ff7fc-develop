@@ -44,3 +44,29 @@ fi
 create event_generator 10846 108 24 20 17 0 0 @108/outside_elevator_msg.txt
 create event_generator 10847 108 26 20 17 0 0 @108/outside_elevator_msg.txt
 kill_through_range 10830 10831
+// カードキー入手前に各フロアへの進路を阻むnpc.上から順に62,63,64,65F用.
+create npc2 12156 121 37 25 17 0 0 
+create npc2 12447 124 37 24 17 0 0 
+create npc2 12640 126 37 25 17 0 0 
+create npc2 12740 127 37 26 17 0 0 
+// 
+create event_generator 12702 127 34 12 17 0 0 @127/treasure_box_msg1.txt
+create event_generator 12703 127 38 23 17 0 0 @127/treasure_box_msg1.txt
+create event_generator 12705 127 24 32 17 0 0 @127/treasure_box_msg1.txt
+create event_generator 12706 127 12 32 17 0 0 @127/treasure_box_msg1.txt
+create event_generator 12707 127 10 23 17 0 0 @127/treasure_box_msg1.txt
+create event_generator 12708 127 14 12 17 0 0 @127/treasure_box_msg1.txt
+create npc2 12709 127 12 32 17 0 0 
+create map_obj 12712 127 34 12 62 0 0 
+create map_obj 12713 127 38 23 62 0 0 
+create map_obj 12715 127 24 32 62 0 0 
+create map_obj 12716 127 14 29 62 0 0 
+create map_obj 12717 127 10 23 62 0 0 
+create map_obj 12718 127 14 12 62 0 0 
+create event_generator 12800 128 9 14 17 0 0 @128/midgar_city_model.txt
+create event_generator 12802 128 11 7 17 0 0 @128/midgar_city_model_2ban.txt
+create event_generator 12803 128 12 9 17 0 0 @128/midgar_city_model_3ban.txt
+create event_generator 12805 128 9 12 17 0 0 @128/midgar_city_model_5ban.txt
+create event_generator 12806 128 7 11 17 0 0 @128/midgar_city_model_6ban.txt
+create event_generator 12807 128 6 9 17 0 0 @128/midgar_city_model_7ban.txt
+create event_generator 12808 128 7 7 17 0 0 @128/midgar_city_model_8ban.txt

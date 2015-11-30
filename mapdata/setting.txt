@@ -126,8 +126,8 @@ id,type,bgm,battle_back,monster_party_id
 124,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 125,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 126,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
-127,0,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
-128,0,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
+127,0,1-19-Infiltrating_Shinra_Tower.ogg,15,261/262/263/264/265
+128,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 129,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 130,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19
 131,1,1-19-Infiltrating_Shinra_Tower.ogg,15,17/18/19

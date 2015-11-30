@@ -56,7 +56,7 @@ set_npc_pos 12468 124 31 12
 set_npc_pos 12469 124 32 12
 set_npc_pos 12470 124 21 14
 set_npc_pos 12471 124 28 14
-set_npc_pos 12472 124 38 14
+set_npc_pos 12472 124 35 14
 set_npc_pos 12473 124 7 20
 set_npc_pos 12474 124 8 20
 set_npc_pos 12475 124 16 20
@@ -70,7 +70,7 @@ set_npc_pos 12482 124 18 25
 set_npc_pos 12483 124 23 25
 set_npc_pos 12484 124 30 25
 set_npc_pos 12485 124 33 25
-set_npc_pos 12486 124 37 25
+set_npc_pos 12486 124 36 25
 set_npc_pos 12487 124 16 28
 set_npc_pos 12488 124 17 28
 set_npc_pos 12489 124 31 28
@@ -195,6 +195,8 @@ draw_char on
 kill 12520
 if_flag 3 0
 set_flag 34 1
+if_flag_lesser 25 14
 set_flag 30 29
+fi
 create event_generator 12497 124 0 0 17 0 0 @../common/point.txt
 fi

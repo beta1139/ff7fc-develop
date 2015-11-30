@@ -1,0 +1,208 @@
+if_flag 39 7
+if_char_dir up
+move_char left 1
+sleep 16
+move_char up 1
+sleep 16
+fi
+chg_char_dir right
+sleep 16
+chg_char_dir left
+chg_char_img_tmp 115
+jump_char same 1
+sleep 16
+reset_char_img_tmp
+chg_char_dir right
+play_se machine.wav
+create npc_event 12827 128 6 8 167 3 2 none
+chg_npc_y_offset 12827 2
+sleep 6
+play_se machine.wav
+chg_npc_y_offset 12827 1
+sleep 6
+play_se machine.wav
+chg_npc_y_offset 12827 0
+sleep 6
+step_npc 12827 2
+kill 12807
+kill 12837
+sleep 48
+play_se push_button.ogg
+create npc_event 12832 128 12 7 167 0 0 none
+chg_npc_y_offset 12832 0
+sleep 32
+play_se door_open2.ogg
+fi
+if_flag 39 2
+sleep 16
+chg_char_img_tmp 105
+jump_char same 1
+sleep 16
+reset_char_img_tmp
+play_se machine.wav
+create npc_event 12822 128 11 6 167 3 2 none
+chg_npc_y_offset 12822 2
+sleep 6
+play_se machine.wav
+chg_npc_y_offset 12822 1
+sleep 6
+play_se machine.wav
+chg_npc_y_offset 12822 0
+sleep 6
+step_npc 12822 2
+kill 12802
+kill 12832
+sleep 48
+play_se push_button.ogg
+create npc_event 12833 128 13 9 167 1 0 none
+chg_npc_y_offset 12833 0
+sleep 32
+play_se door_open2.ogg
+fi
+if_flag 39 3
+if_char_dir up
+move_char right 1
+sleep 16
+move_char up 1
+sleep 16
+chg_char_dir left
+fi
+sleep 16
+chg_char_img_tmp 105
+jump_char same 1
+sleep 16
+reset_char_img_tmp
+play_se machine.wav
+create npc_event 12823 128 12 8 167 3 2 none
+chg_npc_y_offset 12823 2
+sleep 6
+play_se machine.wav
+chg_npc_y_offset 12823 1
+sleep 6
+play_se machine.wav
+chg_npc_y_offset 12823 0
+sleep 6
+step_npc 12823 2
+kill 12803
+kill 12833
+sleep 48
+play_se push_button.ogg
+create npc_event 12838 128 6 7 167 2 0 none
+chg_npc_y_offset 12838 0
+sleep 32
+play_se door_open2.ogg
+fi
+if_flag 39 8
+sleep 16
+chg_char_dir left
+chg_char_img_tmp 115
+jump_char same 1
+sleep 16
+reset_char_img_tmp
+chg_char_dir right
+play_se machine.wav
+create npc_event 12828 128 7 6 167 3 2 none
+chg_npc_y_offset 12828 2
+sleep 6
+play_se machine.wav
+chg_npc_y_offset 12828 1
+sleep 6
+play_se machine.wav
+chg_npc_y_offset 12828 0
+sleep 6
+step_npc 12828 2
+kill 12808
+kill 12838
+sleep 48
+play_se push_button.ogg
+create npc_event 12835 128 9 13 167 1 0 none
+chg_npc_y_offset 12835 0
+sleep 32
+play_se door_open2.ogg
+fi
+if_flag 39 5
+if_char_dir left
+move_char down 1
+sleep 16
+move_char left 1
+sleep 16
+fi
+if_char_dir right
+move_char down 1
+sleep 16
+move_char right 1
+sleep 16
+fi
+chg_char_dir up
+sleep 16
+create npc_event 12860 128 9 13 0 0 2 none
+draw_char off
+chg_npc_y_offset 12860 -6
+sleep 3
+chg_npc_y_offset 12860 -8
+sleep 3
+chg_npc_img 12860 115
+sleep 32
+chg_npc_y_offset 12860 -6
+sleep 4
+chg_npc_y_offset 12860 -4
+chg_npc_img 12860 0
+sleep 8
+draw_char on
+kill 12860
+play_se machine.wav
+create npc_event 12825 128 9 11 167 3 2 none
+chg_npc_y_offset 12825 2
+sleep 6
+play_se machine.wav
+chg_npc_y_offset 12825 1
+sleep 6
+play_se machine.wav
+chg_npc_y_offset 12825 0
+sleep 6
+step_npc 12825 2
+kill 12805
+kill 12835
+set_slide_char_flag
+sleep 48
+if_char_dir up
+create npc_event 12860 128 9 13 0 0 2 none
+fi
+if_char_dir left
+create npc_event 12860 128 10 12 0 0 2 none
+fi
+if_char_dir right
+create npc_event 12860 128 8 12 0 0 2 none
+fi
+draw_char off
+move_char up 3
+sleep 48
+if_char_dir up
+move_char up 1
+sleep 16
+fi
+play_se_loop beeeeep_fast.ogg
+loop 4
+include ./event/common/effect_flash02.txt
+pool
+reset_screen_effect
+stop_se
+sleep 32
+play_se door_open3.ogg
+sleep 24
+fi
+sleep 40
+if_flag 39 5
+move_char down 3
+sleep 48
+if_char_dir up
+move_char down 1
+sleep 16
+fi
+kill 12860
+draw_char on
+reset_slide_char_flag
+fi
+del_item 6024
+chg_char_dir down
+sleep 24

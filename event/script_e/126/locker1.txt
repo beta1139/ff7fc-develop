@@ -11,3 +11,4 @@ add_item 1007
 msg 　こんなところに　　フェニックスのおが！
 kill_through_range 12670 12672
 create event_generator 12632 126 0 0 17 0 0 @126/locker1_blank.txt
+set_flag 37 1

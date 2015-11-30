@@ -1,0 +1,29 @@
+wait_talk
+play_se recover.wav
+add_item 6024
+msg 　たからばこのなかには\n　キーアイテム『ミッドガルパーツ』が\n　はいっていた！
+if_flag 39 0
+kill 12717
+set_flag 39 7
+end
+fi
+if_flag 39 7
+kill 12712
+set_flag 39 2
+end
+fi
+if_flag 39 2
+kill 12713
+set_flag 39 3
+end
+fi
+if_flag 39 3
+kill 12718
+set_flag 39 8
+end
+fi
+if_flag 39 8
+kill 12715
+set_flag 39 5
+end
+fi

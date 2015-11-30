@@ -33,7 +33,17 @@ create event_generator 12624 126 0 0 17 0 0 @126/running2.txt
 create event_generator 12625 126 0 0 17 0 0 @126/information.txt
 create event_generator 12626 126 0 0 17 0 0 @126/vending_machine.txt
 create event_generator 12627 126 12 29 17 0 0 @126/nap_room.txt
+if_flag 37 0
 create event_generator 12629 126 0 0 17 0 0 @126/locker1.txt
+fi
+if_flag 37 1
+create event_generator 12632 126 0 0 17 0 0 @126/locker1_blank.txt
+fi
+if_flag 38 0
 create event_generator 12630 126 0 0 17 0 0 @126/locker2.txt
+fi
+if_flag 38 1
+create event_generator 12633 126 0 0 17 0 0 @126/locker2_blank.txt
+fi
 create event_generator 12631 126 0 0 17 0 0 @126/locker3.txt
 create event_generator 12680 126 0 0 17 0 0 @126/running_machine.txt

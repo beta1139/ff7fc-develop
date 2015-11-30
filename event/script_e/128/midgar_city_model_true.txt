@@ -1,0 +1,23 @@
+include ./event/common/128/midgar_city_model_true_common.txt
+include ./event/script_e/128/midgar_city_model_msg1.txt
+if_flag 39 7
+kill 12702
+create event_generator 12722 127 34 12 17 0 0 @127/treasure_box_msg2.txt
+fi
+if_flag 39 2
+kill 12703
+create event_generator 12723 127 38 23 17 0 0 @127/treasure_box_msg2.txt
+fi
+if_flag 39 3
+kill 12708
+create event_generator 12728 127 14 12 17 0 0 @127/treasure_box_msg2.txt
+fi
+if_flag 39 8
+kill 12705
+create event_generator 12725 127 24 32 17 0 0 @127/treasure_box_msg2.txt
+fi
+if_flag 39 5
+kill 12706
+kill 12709
+create event_generator 12726 127 14 29 17 0 0 @127/treasure_box_msg3.txt
+fi

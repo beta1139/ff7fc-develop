@@ -1,0 +1,33 @@
+kill_through_range 12700 12718
+kill_through_range 12800 12805
+kill_through_range 12807 12808
+kill_through_range 12820 12828
+sleep 8
+if_not_owned_item 6019
+add_item 6019
+fi
+if_not_owned_item 6020
+add_item 6020
+fi
+if_not_owned_item 6021
+add_item 6021
+fi
+if_not_owned_item 6022
+add_item 6022
+fi
+if_owned_item 6023
+del_item 6023
+fi
+if_owned_item 6024
+del_item 6024
+fi
+create npc_event 12822 128 11 6 167 3 2 none
+create npc_event 12823 128 12 8 167 3 2 none
+create npc_event 12825 128 9 11 167 3 2 none
+create npc_event 12827 128 6 8 167 3 2 none
+create npc_event 12828 128 7 6 167 3 2 none
+chg_npc_y_offset 12822 0
+chg_npc_y_offset 12823 0
+chg_npc_y_offset 12825 0
+chg_npc_y_offset 12827 0
+chg_npc_y_offset 12828 0

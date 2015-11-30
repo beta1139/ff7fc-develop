@@ -7,6 +7,9 @@ fi
 if_not_owned_item 6021
 add_item 6021
 fi
+if_owned_item 6022
+del_item 6022
+fi
 if_owned_item 6023
 del_item 6023
 fi
@@ -16,6 +19,7 @@ chg_param 12101 ハット\n「もし　プレジデントしんらに　あっても\n　わたくしのこと
 kill_through_range 12120 12123
 kill_through 12447
 kill_through 12640
+kill_through 12740
 chg_speed 12100 slow
 set_flag 32 0
 if_flag 34 1

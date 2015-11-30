@@ -1,0 +1,15 @@
+set_eternal_event
+wait_talk
+set_flag 19 0
+include ./event/script/128/midgar_city_model_msg2.txt
+if_owned_item 6024
+if_flag 3 0
+if_flag 39 7
+create event_generator 12840 128 0 0 17 0 0 @128/midgar_city_model_true.txt
+end
+fi
+include ./event/script/128/midgar_city_model_false.txt
+fi
+if_flag 3 1
+fi
+fi
