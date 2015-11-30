@@ -23,6 +23,7 @@ erase_image 000
 set_image_trans_col 1 1 1
 fi
 if_flag 3 0
+sleep 16
 include ./event/common/now_loading.txt
 load_status_data status_data
 sleep 16
@@ -33,7 +34,7 @@ kill_through 1000
 fi
 erase_msg3
 sleep 8
-msg 　データを　ふくげんしました\n　コンティニューにさいてきな　ポイントは\n　みつかりませんでした　いまのデータには\n　まだポイントが　さくせいされていないようです\n　データに　ポイントじょうほうを　ついかするには\n　さいていでも　いちどは『LP』のアイコンが\n　でたあとに　Debug Saveするひつようが\n　あります
+msg 　データを　ふくげんしました\n　コンティニューにさいてきな　ポイントは\n　みつかりませんでした　いまのデータには\n　まだポイントが　さくせいされていないようです\n　データに　ポイントじょうほうを　ついかするには\n　さいていでも　いちどは　『Debug Save』\n　のアイコンが　でたあとに　F5キーをおす\n　ひつようが　あります
 fi
 if_flag 30 1
 stop_bgm
