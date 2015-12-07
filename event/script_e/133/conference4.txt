@@ -1,0 +1,84 @@
+wait_key_push_edge a
+erase_msg3
+wait_event_invalid 13301
+sleep 32
+jump_npc 13325 same 1
+sleep 16
+msg ホウジョウ\n「サンプルとしては　ははおやに　おとる\n　ははおや『イファルナ』との　ひかくちゅうだが\n　しょきだんかいで　そういが　18％
+chg_speed 13320 not_move
+sleep 40
+msg プレジデントしんら\n「そのけんさには　どれくらいかかる？
+chg_speed 13320 normal
+sleep 32
+chg_npc_dir 13325 right
+sleep 40
+msg ホウジョウ\n「ざっと　120ねん\n　われわれが　いきているあいだは　むりだろう\n　もちろん　あのサンプルもな
+chg_speed 13325 normal
+sleep 48
+chg_npc_dir 13325 left
+sleep 48
+move_npc 13325 left 1
+sleep 48
+move_npc 13325 left 1
+sleep 48
+chg_npc_dir 13325 down
+sleep 48
+msg ホウジョウ\n「だから　こだいしゅを\n　はんしょくさせようと　おもうのだ\n\n　しかも　ちょうめいで　じっけんにたえうる\n　つよさも　もたせることができる
+jump_npc 13320 same 1
+sleep 16
+step_npc 13320 2
+sleep 24
+set_flag 19 0
+msg プレジデントしんら\n「やくそくのちは　どうなる？\n　けいかくに　ししょうは　でないのか？
+sleep 32
+chg_npc_dir 13325 right
+msg ホウジョウ\n「……そのつもりだ\n　『はは』はつよく……　そして　よわみをもつ
+chg_npc_dir 13325 down
+sleep 40
+create event_generator 13303 133 0 0 17 0 0 @133/conference5.txt
+msg3 -1 ホウジョウ\n「ククククククク……
+loop 8
+chg_npc_y_offset 13325 -3
+sleep 2
+chg_npc_y_offset 13325 -4
+sleep 2
+pool
+set_image_trans_col 0 110 0
+draw_image 000 -16 0 0 0 288 256 1 event/black.png
+set_image_alpha 000 0
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 12
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 25
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 37
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 50
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 63
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 75
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 88
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 100
+warp 49 20 11 down
+sleep 64
+erase_msg3
+sleep 64
+warp 132 20 14 right
+set_image_alpha 000 88
+sleep 8
+set_image_alpha 000 75
+sleep 8
+set_image_alpha 000 63
+sleep 8
+set_image_alpha 000 50
+sleep 8
+set_image_alpha 000 37
+sleep 8
+set_image_alpha 000 25
+sleep 8
+set_image_alpha 000 12
+sleep 8
+set_image_alpha 000 0

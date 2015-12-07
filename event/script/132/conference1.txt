@@ -1,0 +1,146 @@
+wait_same_pos
+sleep 16
+chg_char_dir down
+chg_char_img_tmp 170
+sleep 8
+create npc_event 13223 132 20 13 156 2 0 none
+sleep 32
+kill 13223
+fadeout
+sleep 32
+kill_through_range 13241 13246
+kill_through_range 12910 12914
+draw_char off
+warp 133 9 14 down
+create npc_event 13320 133 9 11 20 1 0 none
+create npc_event 13321 133 6 14 25 3 0 none
+create npc_event 13322 133 6 16 23 3 0 none
+create npc_event 13323 133 12 14 24 2 0 none
+create npc_event 13324 133 12 16 26 2 0 none
+create map_obj 13330 133 6 12 32 0 0 
+create map_obj 13331 133 12 12 32 0 0 
+create map_obj 13332 133 6 15 32 0 0 
+create map_obj 13333 133 12 15 32 0 0 
+create map_obj 13334 133 7 24 32 0 0 
+create map_obj 13335 133 8 24 32 0 0 
+create map_obj 13336 133 9 24 32 0 0 
+create map_obj 13337 133 10 24 32 0 0 
+create map_obj 13338 133 11 24 32 0 0 
+create map_obj 13339 133 5 12 32 0 0 
+create map_obj 13340 133 6 12 32 0 0 
+create map_obj 13341 133 5 15 32 0 0 
+create map_obj 13342 133 5 18 32 0 0 
+create map_obj 13343 133 13 15 32 0 0 
+create map_obj 13344 133 13 18 32 0 0 
+create map_obj 13345 133 12 12 32 0 0 
+create map_obj 13346 133 13 12 32 0 0 
+set_layer 13330 front
+set_layer 13331 front
+set_layer 13332 front
+set_layer 13333 front
+set_layer 13334 front
+set_layer 13335 front
+set_layer 13336 front
+set_layer 13337 front
+set_layer 13338 front
+set_layer 13339 front
+set_layer 13340 front
+set_layer 13341 front
+set_layer 13342 front
+set_layer 13343 front
+set_layer 13344 front
+set_layer 13345 front
+set_layer 13346 front
+include ./event/common/key_unvalid.txt
+draw_fake_countdown off
+sleep 32
+start_fake_countdown_sec 2
+fadein
+chg_event_move_char_speed slow
+move_char up 3
+msg3 -1 バレット\n「ヒュ～！\n　そうそうたる　かおぶれだぜ
+wait_key_push_edge a
+erase_msg3
+wait_fake_countover
+chg_speed 13320 normal
+chg_speed 13321 normal
+chg_speed 13322 normal
+chg_speed 13323 normal
+chg_speed 13324 normal
+chg_event_move_char_speed normal
+move_char down 3
+end_fake_countdown
+sleep 48
+chg_speed 13324 not_move
+sleep 16
+msg リーブ\n「7ばんがいの　ひがいほうこくが　でました\n\n\n　すでに　かどうしていた　こうじょうぶぶんと\n　げんざいまでの　とうしがくを　かんがえると\n　わがしゃの　そんがいは\n　100おくギルは　くだらないかと……
+chg_speed 13324 normal
+sleep 16
+chg_speed 13324 not_move
+sleep 16
+msg リーブ\n「また7ばんがいプレートの　さいけんにかかる\n　ひようは……
+chg_speed 13324 normal
+step_npc 13320 1
+msg プレジデントしんら\n「さいけんは　しない
+move_char up 2
+sleep 16
+chg_npc_dir 13324 up
+step_npc 13324 1
+msg3 -1 リーブ\n「は？
+sleep 16
+chg_npc_dir 13321 up
+chg_npc_dir 13322 up
+chg_npc_dir 13323 up
+wait_key_push_edge a
+erase_msg3
+chg_speed 13320 not_move
+sleep 40
+set_talk_npc 13320
+msg プレジデントしんら\n「7ばんがいプレートは　このまま　ほうっておく\n　そのかわりに\n　ネオ　ミッドガルけいかくを　さいかいする
+reset_talk_npc
+chg_speed 13320 normal
+jump_npc 13324 same 1
+sleep 16
+chg_speed 13324 fast
+step_npc 13324 3
+msg3 -1 リーブ\n「……では　こだいしゅが？
+sleep 16
+chg_npc_dir 13322 right
+wait_key_push_edge a
+erase_msg3
+chg_event_move_char_speed slow
+chg_npc_dir 13322 up
+chg_speed 13320 slow
+step_npc 13320 2
+sleep 48
+set_talk_npc 13320
+msg プレジデントしんら\n「やくそくのちは　まもなく\n　われわれのものに　なるだろう
+reset_talk_npc
+sleep 40
+jump_npc 13320 same 1
+sleep 16
+chg_speed 13320 normal
+step_npc 13320 1
+create npc_event 4990 49 20 11 25 3 2 none
+set_flag 19 0
+set_talk_npc 13320
+msg プレジデントしんら\n「それから　かくちの　まこうりょうきんを\n　15%　ねあげしたまえ
+reset_talk_npc
+sleep 8
+play_se_loop puy.ogg
+chg_event_move_char_speed normal
+chg_npc_dir 13321 right
+move_char down 1
+jump_npc 13321 same 2
+sleep 8
+chg_npc_dir 13321 down
+sleep 8
+chg_npc_dir 13321 left
+msg3 -1 パルマー\n「ねあげ！　ねあげ！\n　うひょひょひょひょ！\n　ぜひ　わが　『うちゅうかいはつぶ』にも　よさんを！
+sleep 8
+chg_npc_dir 13321 up
+sleep 8
+chg_npc_dir 13321 right
+chg_char_state_move
+create event_generator 13300 133 0 0 17 0 0 @133/conference2.txt
+include ./event/common/133/palmer_loop.txt

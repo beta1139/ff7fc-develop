@@ -1,0 +1,12 @@
+set_eternal_event
+wait_same_pos
+sleep 16
+msg 『…………\n　ウータイしきか……
+sleep 16
+step_char 1
+sleep 16
+msg 『ようを　たしながら　あしこしを　きたえられる\n　ハイセンスなモノだ\n　おれは　きがすすまないけどな
+sleep 16
+move_char down 1
+close_door 12959
+sleep 16

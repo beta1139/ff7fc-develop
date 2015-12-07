@@ -1,0 +1,14 @@
+wait_same_pos
+chg_char_img_tmp 169
+kill_through_range 13243 13244
+kill_through 13003
+set_key_valid up
+set_key_unvalid down
+set_key_unvalid left
+set_key_valid right
+create event_generator 13241 132 5 13 17 0 0 @../common/132/crawl_ud1.txt
+create event_generator 13246 132 6 14 17 0 0 @../common/132/crawl_lr2.txt
+chg_char_state_move
+loop_inf
+sleep 160
+pool

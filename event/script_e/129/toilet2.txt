@@ -1,0 +1,18 @@
+wait_same_pos
+create npc_event 12908 129 10 11 156 2 0 none
+set_layer 12908 front
+wait_key_push_edge a
+kill 12908
+set_slide_walk_char_flag
+move_char down 1
+close_door 12957
+sleep 16
+reset_slide_walk_char_flag
+chg_char_dir down
+sleep 16
+msg 『…………
+sleep 16
+chg_char_dir left
+sleep 32
+msg 『みてはいけないモノを　みてしまった…
+create npc 12909 129 10 12 17 0 0 『このひかりのおびは\n　じんるいの　けいほうセンサー\n　これいじょう　おくには　すすめないな

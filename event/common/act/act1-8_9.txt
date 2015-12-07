@@ -1,0 +1,10 @@
+// 神羅ビル65Fクリア～66F会議イベントを見る間だけ存在
+create event_generator 13200 132 20 14 17 0 0 @132/conference1.txt
+create npc_event 12910 129 24 13 20 1 0 none
+create npc_event 12911 129 21 16 25 3 0 none
+create npc_event 12912 129 21 18 23 3 0 none
+create npc_event 12913 129 27 16 24 2 0 none
+create npc_event 12914 129 27 18 26 2 0 none
+create npc2 12941 129 24 31 17 0 0 
+fi
+// 

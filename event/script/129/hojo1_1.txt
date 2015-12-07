@@ -1,0 +1,15 @@
+wait_same_pos
+chg_event_move_char_speed normal
+kill_through_range 12922 12925
+set_flag 19 0
+chg_char_dir up
+create npc_event 12960 129 31 32 0 0 3 none
+draw_char off
+move_char up 4
+sleep 8
+create npc_event 12912 129 31 31 156 2 0 none
+sleep 56
+kill 12912
+move_npc 12960 left 1
+sleep 8
+include ./event/script/129/hojo1_common.txt

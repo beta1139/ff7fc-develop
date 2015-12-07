@@ -1,0 +1,46 @@
+sleep 24
+chg_speed 4990 not_move
+if_char_dir right
+chg_npc_dir 4990 right
+sleep 16
+fi
+loop_inf
+chg_npc_dir 4990 down
+sleep 16
+chg_npc_dir 4990 left
+sleep 16
+chg_npc_dir 4990 up
+sleep 16
+chg_npc_dir 4990 right
+sleep 16
+chg_npc_dir 4990 down
+if_flag 19 0
+sleep 16
+chg_speed 4990 normal
+jump_npc 4990 same 2
+loop 2
+chg_npc_dir 4990 down
+sleep 4
+chg_npc_dir 4990 left
+sleep 4
+chg_npc_dir 4990 up
+sleep 4
+chg_npc_dir 4990 right
+sleep 4
+pool
+chg_npc_dir 4990 down
+sleep 16
+chg_npc_img 4990 135
+chg_npc_dir 4990 left
+sleep 16
+chg_speed 4990 fast
+loop 6
+step_npc 4990 2
+sleep 16
+pool
+chg_npc_img 4990 24
+chg_npc_dir 4990 down
+chg_speed 4990 not_move
+sleep 352
+pool
+fi

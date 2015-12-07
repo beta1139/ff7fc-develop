@@ -336,11 +336,18 @@ kill_through 12627
 create event_generator 12628 126 12 33 17 0 0 @../common/126/create_nap_room.txt
 warp_ff3_2 126 13 26 2 down
 fi
-if_flag 30 31
+if_flag_greater 30 30
 sleep 8
 include ./event/common/act/act1-8_8.txt
+fi
+if_flag 30 31
+include ./event/common/act/act1-8_9.txt
 set_flag 25 14
 warp_ff3_2 126 12 33 1 down
+fi
+if_flag 30 32
+set_flag 25 15
+warp_ff3_2 129 30 32 1 down
 fi
 fi
 reset_talk_npc

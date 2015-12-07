@@ -1,0 +1,81 @@
+set_eternal_event
+wait_talk
+msg #3\n　　キタナイから　ながそうか？\n　　のぼってみようか？\n　　やっぱりでよう\n\n[[]][[]][[]]
+if_flag 3 0
+step_char 2
+sleep 32
+play_se_loop white_noise.ogg
+sleep 80
+stop_se
+fi
+if_flag 3 1
+play_se jump.wav
+if_char_dir left
+jump_char left 1
+sleep 16
+fi
+if_char_dir down
+jump_char down 1
+sleep 16
+fi
+play_se landing.wav
+sleep 16
+create npc_event 13260 132 5 4 126 1 2 none
+chg_npc_y_offset 13260 -8
+create npc_event 13264 132 5 4 168 1 2 none
+create map_obj 13263 132 5 3 32 0 0 
+chg_npc_y_offset 13264 0
+chg_npc_y_offset 13263 0
+set_ignore_map_layer_flag 13264 1
+set_layer 13264 front
+set_layer 13263 front
+create npc_event 13160 131 2 4 0 1 2 none
+draw_char off
+sleep 24
+chg_npc_dir 13160 down
+chg_npc_img 13160 126
+sleep 32
+fadeout
+warp 132 5 4 down
+sleep 16
+stop_bgm
+sleep 16
+play_bgm
+fadein
+sleep 24
+kill_through 13160
+play_se attack_earis.ogg
+slide_npc 13264 up 1
+sleep 2
+chg_npc_y_offset 13260 -7
+sleep 2
+chg_npc_y_offset 13260 -6
+sleep 2
+chg_npc_y_offset 13260 -5
+sleep 2
+chg_npc_y_offset 13260 -4
+sleep 16
+stop_se
+draw_char on
+kill 13260
+sleep 16
+chg_char_img_tmp 126
+play_se jump.wav
+jump_char down 1
+set_key_unvalid b
+set_key_unvalid start
+set_key_unvalid left
+set_key_unvalid right
+sleep 8
+chg_char_img_tmp 169
+sleep 8
+play_se landing.wav
+create event_generator 13121 131 2 4 17 0 0 @../common/131/toilet4.txt
+chg_char_state_move
+loop_inf
+sleep 160
+pool
+fi
+if_flag 3 2
+chg_char_dir up
+fi

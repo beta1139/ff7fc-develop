@@ -31,3 +31,8 @@ chg_npc_y_offset 12823 0
 chg_npc_y_offset 12825 0
 chg_npc_y_offset 12827 0
 chg_npc_y_offset 12828 0
+kill 12940
+create event_generator 12920 129 14 12 17 0 0 @129/toilet1.txt
+create event_generator 12921 129 10 12 17 0 0 @129/toilet2.txt
+create event_generator 13120 131 2 4 17 0 0 @131/toilet3.txt
+create event_generator 13241 132 5 13 17 0 0 @../common/132/crawl_ud1.txt

@@ -1,0 +1,79 @@
+chg_npc_dir 12960 down
+chg_event_move_char_speed normal
+chg_speed 12960 normal
+sleep 8
+if_flag 19 0
+sleep 8
+step_npc 12960 1
+fi
+sleep 16
+msg 『ホージョー……ってやつか……？
+chg_speed 12910 slow
+chg_speed 12911 normal
+sleep 16
+if_flag 19 0
+sleep 16
+chg_npc_dir 12960 up
+move_npc 12911 right 4
+move_npc 12910 up 1
+sleep 32
+move_npc 12910 right 4
+move_char up 4
+sleep 32
+move_npc 12911 up 5
+play_se door_open.ogg
+open_door 12951
+sleep 24
+close_door 12951
+sleep 8
+move_char right 5
+sleep 48
+move_npc 12911 right 3
+sleep 16
+move_npc 12910 up 5
+play_se door_open.ogg
+open_door 12951
+sleep 32
+move_npc 12911 up 4
+sleep 16
+close_door 12951
+sleep 48
+kill 12911
+sleep 64
+move_npc 12910 right 3
+sleep 96
+move_npc 12910 up 4
+sleep 96
+move_char left 6
+chg_npc_dir 12960 down
+sleep 32
+kill 12910
+sleep 64
+move_char down 8
+sleep 128
+draw_char on
+kill 12960
+fi
+if_flag 19 1
+move_npc 12911 up 3
+sleep 32
+move_npc 12910 right 1
+sleep 16
+kill 12911
+chg_npc_img 12960 0
+chg_npc_dir 12960 up
+sleep 16
+move_npc 12910 up 3
+sleep 96
+kill 12910
+chg_speed 12960 slow
+move_npc 12960 up 1
+sleep 32
+chg_char_dir up
+draw_char on
+kill 12960
+fi
+set_flag 19 0
+set_flag 25 15
+set_flag 30 32
+create event_generator 12799 127 0 0 17 0 0 @../common/point.txt

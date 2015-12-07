@@ -1,0 +1,6 @@
+loop 2
+chg_npc_y_offset 13325 -3
+sleep 2
+chg_npc_y_offset 13325 -4
+sleep 2
+pool

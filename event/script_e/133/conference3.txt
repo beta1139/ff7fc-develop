@@ -1,0 +1,56 @@
+wait_key_push_edge a
+erase_msg3
+wait_event_invalid 13300
+sleep 32
+erase_image 000
+msg プレジデントしんら\n「だいじょうぶだ\n\n\n　おろかな　じゅうみんたちは　ふまんどころか\n　ますます　しんらカンパニーに\n　しんらいを　よせることになる
+sleep 24
+msg3 -1 ハイデッカー\n「ガハハハハ！
+loop 6
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+wait_key_push_edge a
+erase_msg3
+sleep 16
+msg ハイデッカー\n「テロリストどもから\n　7ばんがいの　しみんを　すくったのは\n　しんらカンパニーですからな！
+step_npc 13222 1
+sleep 24
+step_npc 13221 2
+sleep 16
+msg バレット\n「きたねえ……
+fadeout
+sleep 32
+warp 133 9 12 down
+chg_speed 13320 normal
+sleep 32
+fadein
+sleep 24
+jump_npc 13320 same 1
+sleep 16
+step_npc 13320 2
+msg3 -1 プレジデントしんら\n「おお　ホウジョウくん\n　あのむすめは　どうかね
+create event_generator 13302 133 0 0 17 0 0 @133/conference4.txt
+sleep 24
+move_char down 5
+create npc_event 13325 133 7 24 22 3 2 none
+sleep 16
+chg_npc_dir 13321 down
+chg_npc_dir 13322 down
+chg_npc_dir 13323 down
+chg_npc_dir 13324 down
+move_npc 13325 right 1
+sleep 48
+move_npc 13325 right 1
+sleep 48
+move_npc 13325 right 1
+sleep 48
+move_npc 13325 right 1
+sleep 40
+chg_npc_dir 13325 up

@@ -44,11 +44,12 @@ fi
 create event_generator 10846 108 24 20 17 0 0 @108/outside_elevator_msg.txt
 create event_generator 10847 108 26 20 17 0 0 @108/outside_elevator_msg.txt
 kill_through_range 10830 10831
-// カードキー入手前に各フロアへの進路を阻むnpc.上から順に62,63,64,65F用.
+// カードキー入手前に各フロアへの進路を阻むnpc.上から順に62,63,64,65,66F用
 create npc2 12156 121 37 25 17 0 0 
 create npc2 12447 124 37 24 17 0 0 
 create npc2 12640 126 37 25 17 0 0 
 create npc2 12740 127 37 26 17 0 0 
+create npc2 12940 129 36 25 17 0 0 
 // 
 create event_generator 12702 127 34 12 17 0 0 @127/treasure_box_msg1.txt
 create event_generator 12703 127 38 23 17 0 0 @127/treasure_box_msg1.txt

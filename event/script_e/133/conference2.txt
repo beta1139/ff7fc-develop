@@ -1,0 +1,112 @@
+wait_key_push_edge a
+erase_msg3
+move_char left 3
+sleep 48
+move_char down 1
+sleep 16
+stop_se
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 3 　 　   　　　　　　　パルマー
+set_text 8 　　　しんらカンパニー　うちゅうかいはつぶもん　とうかつ
+set_text 9 　　やくいん　さいねんちょうだが　げんざいは　しゃようぶもんの
+set_text 10 　　　　せきにんしゃであるため　　はつげんけんは　ひくい
+set_text 11 　　　　　　　　　　くちぐせは　『うひょ』
+warp 49 20 11 down
+include ./event/common/set_text/st03.txt
+set_flag 19 1
+include ./event/common/set_text/st08.txt
+include ./event/common/set_text/st09.txt
+include ./event/common/set_text/st10.txt
+include ./event/common/set_text/st11.txt
+sleep 16
+wait_key_push_edge a
+set_flag 19 0
+sleep 64
+fadeout
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+warp 133 9 12 down
+fadein
+sleep 16
+chg_speed 13320 not_move
+set_talk_npc 13320
+msg プレジデントしんら\n「まこうりょうきん　ねあげによる　さえきは\n　リーブくんと　スカーレットくんで\n　ぶんぱいしたまえ
+reset_talk_npc
+chg_speed 13320 normal
+jump_npc 13323 same 1
+set_flag 19 3
+sleep 16
+chg_npc_dir 13322 down
+sleep 24
+msg パルマー\n「いいないいな！
+kill 13200
+kill 4990
+chg_speed 13324 fast
+jump_npc 13324 same 1
+sleep 16
+step_npc 13324 4
+msg3 -1 リーブ\n「プレジデント\n　これいじょうの　まこうりょうきんの　ねあげは\n　じゅうみんの　ふまんを　まねき……
+chg_char_state_move
+create event_generator 13301 133 0 0 17 0 0 @133/conference3.txt
+sleep 32
+set_image_trans_col 0 110 0
+draw_image 000 -16 0 0 0 288 256 1 event/black.png
+set_image_alpha 000 0
+sleep 8
+set_image_alpha 000 12
+sleep 8
+chg_npc_dir 13322 right
+set_image_alpha 000 25
+sleep 8
+set_image_alpha 000 37
+sleep 8
+set_image_alpha 000 50
+sleep 8
+set_image_alpha 000 63
+sleep 8
+set_image_alpha 000 75
+sleep 8
+set_image_alpha 000 88
+sleep 8
+set_image_alpha 000 100
+sleep 8
+chg_char_img_tmp 169
+create npc_event 13220 132 21 13 169 0 1 none
+create npc_event 13221 132 22 14 170 2 1 none
+create npc_event 13222 132 20 14 170 3 3 none
+chg_npc_y_offset 13220 0
+warp 132 20 14 right
+sleep 8
+set_image_alpha 000 88
+sleep 8
+set_image_alpha 000 75
+sleep 8
+set_image_alpha 000 63
+sleep 8
+set_image_alpha 000 50
+sleep 8
+set_image_alpha 000 37
+sleep 8
+set_image_alpha 000 25
+sleep 8
+set_image_alpha 000 12
+sleep 8
+set_image_alpha 000 0
