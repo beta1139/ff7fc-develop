@@ -73,6 +73,11 @@ if_active_mem (idx)
 fi
   idxのキャラが戦闘参加メンバーであれば処理を実行する
 
+if_not_active_mem (idx)
+(処理)
+fi
+  idxのキャラが戦闘参加メンバーでなければ処理を実行する
+
 if_char_img (idx)
 (処理)
 fi
