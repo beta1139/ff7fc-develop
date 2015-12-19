@@ -19,8 +19,12 @@ FF7FC
   ・処理速度を下げる : テンキーのマイナス
   ・処理速度を通常に戻す : テンキーのアスタリスク
   ・当たり判定有効／無効切り替え: 左シフトキー
-  ・簡易セーブ       : F5 (./save/status_dataに記録する)
-  ・簡易ロード       : F7 (./save/status_dataを復元する)
+  ・簡易セーブデータ切替: F2
+    F2押下で記録先を以下のように切り替える
+       ./save/status_data => ./save/status_data1 => ./save/status_data2 => ./save/status_data3 => ./save/status_data4
+    => ./save/status_data => (繰り返し)
+  ・簡易セーブ       : F5 (./save/status_data(なし,1,2,3,4)に記録する)
+  ・簡易ロード       : F7 (./save/status_data(なし,1,2,3,4)を復元する)
     ※簡易セーブ＆ロード機能で記録＆復元されるデータは以下のみ
     ・全メンバーのステータス
     ・パーティ構成
