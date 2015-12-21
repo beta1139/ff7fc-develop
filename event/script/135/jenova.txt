@@ -1,0 +1,64 @@
+include ./event/common/135/jenova_common.txt
+msg 『ジェノバ……\n　セフィロスの……\n　そうか……ここに　はこんだのか
+jump_npc 13512 same 1
+sleep 16
+step_npc 13512 4
+msg ティファ\n「クラウド！　しっかりして！
+sleep 32
+chg_npc_img 13513 0
+sleep 32
+chg_npc_dir 13513 left
+sleep 32
+chg_npc_dir 13513 up
+sleep 32
+chg_speed 13513 normal
+step_npc 13513 1
+sleep 16
+msg 『みたか？
+sleep 24
+chg_npc_dir 13511 right
+sleep 12
+chg_npc_dir 13511 left
+sleep 16
+chg_npc_dir 13511 down
+sleep 16
+step_npc 13511 1
+msg バレット\n「なにを？
+jump_npc 13513 same 1
+sleep 16
+step_npc 13513 1
+msg 『うごいてる……いきてる？
+sleep 24
+chg_npc_dir 13511 up
+sleep 16
+chg_npc_dir 13512 up
+sleep 144
+chg_speed 13511 normal
+chg_speed 13512 normal
+chg_npc_dir 13511 down
+sleep 16
+jump_npc 13511 same 1
+sleep 16
+step_npc 13511 1
+msg バレット\n「なんだい　このクビなしは？\n　け　バカバカしい\n　さっさといこうぜ
+kill_through 13440
+kill_through 13450
+chg_event_move_char_speed normal
+move_char down 2
+sleep 16
+move_npc 13511 down 1
+move_npc 13512 right 1
+sleep 8
+kill_through 13500
+sleep 8
+chg_char_dir up
+draw_char on
+kill_through_range 13511 13513
+create npc2 13440 134 37 25 17 0 0 
+create map_door 13450 134 37 25 18 0 0 0
+include ./event/common/key_valid.txt
+set_flag 19 0
+set_flag 25 16
+set_flag 30 33
+include ./event/common/act/act1-8_11.txt
+create event_generator 12799 127 0 0 17 0 0 @../common/point.txt

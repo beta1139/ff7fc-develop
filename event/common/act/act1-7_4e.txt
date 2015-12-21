@@ -1,8 +1,10 @@
+if_flag_lesser 30 34
 if_party_mem 1
 del_party_mem 1
 fi
 if_party_mem 2
 del_party_mem 2
+fi
 fi
 sleep 16
 kill_through 6561
@@ -23,6 +25,8 @@ create npc_event 8432 84 14 9 67 0 0 none
 create event_generator 8460 84 10 16 17 0 0 @../common/084/plate_section1_1.txt
 create event_generator 8461 84 11 16 17 0 0 @../common/084/plate_section1_2.txt
 create event_generator 8462 84 12 16 17 0 0 @../common/084/plate_section1_3.txt
+if_flag_lesser 30 34
 add_party_mem 2
 add_party_mem 1
+fi
 kill_through 6604

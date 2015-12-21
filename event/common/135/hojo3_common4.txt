@@ -1,0 +1,95 @@
+fadeout
+sleep 8
+chg_event_move_char_speed normal
+include ./event/common/effect_fadeout.txt
+fadein
+sleep 16
+set_flag 19 0
+set_image_trans_col 32 0 176
+draw_image 000 0 8 0 0 256 560 1 event/shinra_bldg/bubble_blue.png
+draw_image 001 -64 28 0 0 384 336 0 event/shinra_bldg/jenova1_blue.png
+warp 715 7 7 down
+include ./event/common/key_unvalid.txt
+sleep 16
+chg_char_state_move
+create event_generator 13522 135 0 0 17 0 0 @../common/135/bubble.txt
+loop 4
+dec_screen_effect_val 12
+chg_image_pos_offset 001 0 -2 0 0 0 0
+sleep 2
+dec_screen_effect_val 13
+chg_image_pos_offset 001 0 1 0 0 0 0
+sleep 2
+pool
+create event_generator 13521 135 0 0 17 0 0 @../common/effect_flicker.txt
+loop 96
+chg_image_pos_offset 001 0 -2 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 1 0 0 0 0
+sleep 2
+pool
+loop 16
+chg_image_pos_offset 001 0 -2 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 1 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 2 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 -1 0 0 0 0
+sleep 2
+pool
+set_flag 19 1
+loop 16
+chg_image_pos_offset 001 0 -4 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 2 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 4 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 -2 0 0 0 0
+sleep 2
+pool
+wait_event_invalid 13521
+warp 135 20 18 up
+set_npc_pos 13511 135 15 20
+set_npc_pos 13512 135 14 21
+chg_speed 13511 not_move
+kill 71413
+sleep 16
+kill 13522
+sleep 48
+erase_image_range 000 001
+loop 50
+dec_screen_effect_val 2
+sleep 1
+pool
+reset_screen_effect
+reset_gray_scale
+slide_walk_npc 13513 down 1
+sleep 32
+play_se_loop beeeeep.wav
+sleep 16
+chg_npc_dir 13513 down
+chg_npc_img 13513 120
+chg_speed 13513 slow
+chg_event_move_char_speed slow
+move_char down 3
+loop 3
+step_npc 13513 1
+sleep 32
+pool
+chg_speed 13513 normal
+loop 4
+step_npc 13513 1
+sleep 16
+pool
+chg_speed 13513 fast
+create event_generator 13523 135 0 0 17 0 0 @135/jenova.txt
+loop 4
+step_npc 13513 1
+sleep 16
+pool
+loop_inf
+step_npc 13513 1
+sleep 8
+pool

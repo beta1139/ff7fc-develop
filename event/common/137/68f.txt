@@ -1,0 +1,3 @@
+set_eternal_event
+wait_same_pos
+set_flag 24 17

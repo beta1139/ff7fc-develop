@@ -1,0 +1,58 @@
+chg_speed 13701 normal
+step_npc 13701 2
+sleep 64
+play_se door_open3.ogg
+chg_npc_dir 13700 down
+chg_npc_img 13700 15
+chg_npc_img 13715 4
+create map_obj 13762 137 12 19 71 0 0 
+sleep 64
+kill 13723
+sleep 4
+erase_image 000
+sleep 24
+play_se dog.ogg
+chg_speed 13701 fast
+chg_speed 13715 normal
+jump_npc_target_pos 13715 12 19
+set_ignore_map_layer_flag 13701 1
+sleep 32
+chg_npc_y_offset 13701 0
+slide_walk_npc 13701 right 4
+chg_speed 13715 fast
+move_npc 13715 right 3
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 3
+inc_map_draw_y_offset
+sleep 1
+pool
+dec_map_draw_y_offset
+sleep 1
+chg_npc_dir 13711 right
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 6
+chg_speed 13715 not_move
+chg_npc_dir 13701 right
+chg_npc_img 13701 155
+sleep 4
+chg_speed 13701 not_step
+sleep 4
+chg_npc_dir 13712 up
+sleep 16
+chg_npc_dir 13713 right
+sleep 24
+chg_speed 13713 fast
+chg_npc_dir 13713 up
+jump_npc 13713 same 1
+sleep 16
+step_npc 13713 2

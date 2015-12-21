@@ -1,0 +1,29 @@
+chg_npc_dir 13711 down
+sleep 16
+chg_speed 13713 fast
+move_npc 13713 up 3
+chg_npc_dir 13712 left
+sleep 16
+chg_npc_dir 13711 left
+sleep 8
+chg_npc_dir 13713 left
+sleep 8
+chg_speed 13713 normal
+move_npc 13713 left 2
+sleep 16
+chg_npc_dir 13712 up
+sleep 16
+chg_npc_dir 13713 up
+sleep 16
+chg_speed 13713 normal
+step_npc 13713 2
+sleep 16
+chg_npc_dir 13711 right
+sleep 16
+chg_npc_dir 13700 up
+chg_npc_img 13700 3
+sleep 16
+chg_npc_dir 13700 down
+sleep 16
+chg_speed 13700 normal
+step_npc 13700 2

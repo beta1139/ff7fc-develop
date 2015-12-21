@@ -1,0 +1,44 @@
+sleep 16
+move_npc 13700 down 1
+move_npc 13713 down 1
+sleep 16
+chg_npc_dir 13713 up
+move_npc 13700 right 3
+sleep 16
+move_npc 13713 up 1
+sleep 16
+move_npc 13713 right 1
+sleep 16
+chg_speed 13700 not_move
+chg_npc_dir 13711 up
+sleep 16
+chg_npc_dir 13712 left
+chg_speed 13711 not_move
+sleep 16
+chg_speed 13712 not_move
+play_se elevator_start.wav
+loop 2
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+sleep 16
+chg_npc_dir 13713 left
+sleep 68
+play_se_loop elevator_loop.wav
+sleep 32
+chg_speed 13713 slow
+slide_walk_npc 13713 right 1
+sleep 16
+set_ignore_map_layer_flag 13712 1
+set_layer 13712 front
+sleep 16
+chg_speed 13712 normal
+jump_npc 13712 same 1
+sleep 16
+step_npc 13712 2

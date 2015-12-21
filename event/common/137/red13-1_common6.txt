@@ -1,0 +1,48 @@
+stop_se
+sleep 16
+boss_encount 285
+sleep 64
+kill 13701
+warp 137 13 18 left
+set_npc_pos 13713 137 13 19
+set_npc_pos 13700 137 13 26
+set_npc_pos 13715 137 14 20
+set_ignore_map_layer_flag 13712 0
+set_layer 13712 back
+if_flag 17 0
+set_npc_pos 13711 137 15 19
+set_npc_pos 13712 137 13 10
+fi
+if_flag 17 1
+set_npc_pos 13711 137 13 10
+set_npc_pos 13712 137 15 19
+fi
+wait_encount_end
+play_event_bgm 3-01-Cosmo_Canyon.ogg
+if_not_owned_or_equipped_item 4207
+create treasure_materia 13740 137 10 20 2 0 0 4207
+play_se coin.ogg
+loop 2
+play_se coin.ogg
+set_npc_pos 13740 137 10 20
+sleep 4
+play_se coin.ogg
+set_npc_pos 13740 137 0 0
+sleep 4
+pool
+set_npc_pos 13740 137 10 20
+fi
+move_npc 13700 up 3
+if_flag 17 0
+set_active_msg 13712
+move_npc 13712 down 7
+fi
+if_flag 17 1
+set_active_msg 13711
+move_npc 13711 down 7
+fi
+sleep 48
+chg_npc_dir 13713 down
+sleep 32
+step_npc 13713 1
+sleep 16

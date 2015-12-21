@@ -36,3 +36,11 @@ create event_generator 12920 129 14 12 17 0 0 @129/toilet1.txt
 create event_generator 12921 129 10 12 17 0 0 @129/toilet2.txt
 create event_generator 13120 131 2 4 17 0 0 @131/toilet3.txt
 create event_generator 13241 132 5 13 17 0 0 @../common/132/crawl_ud1.txt
+if_owned_or_equipped_item 4007
+kill_through 13540
+fi
+// 新羅社員と68Fカードキー入手イベント
+create npc2 13702 137 22 18 73 2 0 none
+create event_generator 13726 137 0 0 17 0 0 @137/cardkey_68f.txt
+create treasure_item 13743 137 27 11 3 0 0 1001
+// 

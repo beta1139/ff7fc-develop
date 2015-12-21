@@ -1,0 +1,15 @@
+set_flag 19 0
+// レッド13 エアリス 宝条 新羅研究員
+create npc2 13500 135 10 20 4 2 1 
+create npc_event 13700 137 10 19 3 1 0 none
+create npc_event 13701 137 15 19 22 2 0 none
+chg_type 13702 npc_event
+chg_speed 13702 normal
+chg_npc_dir 13702 left
+set_npc_pos 13702 137 23 22
+// 
+create event_generator 13720 137 19 10 17 0 0 @137/hojo4.txt
+create event_generator 13721 137 20 11 17 0 0 @137/hojo4.txt
+kill_through_range 13470 13473
+kill_through_range 13570 13573
+set_flag 1 0

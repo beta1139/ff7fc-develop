@@ -1,0 +1,49 @@
+sleep 16
+if_flag 3 0
+set_flag 17 0
+del_party_mem 2
+chg_npc_dir 13712 left
+sleep 8
+jump_npc 13712 same 1
+sleep 16
+chg_speed 13712 normal
+step_npc 13712 2
+sleep 16
+move_npc 13700 right 1
+sleep 16
+move_npc 13700 down 1
+sleep 16
+chg_npc_dir 13700 right
+chg_speed 13700 normal
+jump_npc 13700 same 1
+sleep 48
+move_npc 13700 right 5
+move_npc 13712 right 5
+sleep 48
+move_npc 13713 right 1
+sleep 32
+fi
+if_flag 3 1
+set_flag 17 1
+del_party_mem 1
+chg_npc_dir 13711 up
+sleep 16
+chg_speed 13711 normal
+step_npc 13711 3
+sleep 16
+chg_npc_dir 13700 down
+sleep 24
+chg_speed 13700 normal
+jump_npc 13700 same 1
+sleep 48
+set_active_msg 13700
+set_active_msg 13711
+move_npc 13700 up 9
+move_npc 13711 up 10
+sleep 64
+move_npc 13713 right 1
+sleep 40
+fi
+jump_npc 13713 same 1
+sleep 16
+step_npc 13713 1

@@ -1,0 +1,6 @@
+loop_inf
+set_image_alpha 000 100
+sleep 4
+set_image_alpha 000 0
+sleep 4
+pool

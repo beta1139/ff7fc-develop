@@ -1,0 +1,46 @@
+chg_npc_dir 13325 down
+sleep 32
+create event_generator 13303 133 0 0 17 0 0 @133/conference5.txt
+loop 8
+chg_npc_y_offset 13325 -3
+sleep 2
+chg_npc_y_offset 13325 -4
+sleep 2
+pool
+set_image_trans_col 0 110 0
+draw_image 000 -16 0 0 0 288 256 1 event/black.png
+set_image_alpha 000 0
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 12
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 25
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 37
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 50
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 63
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 75
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 88
+include ./event/common/133/hojo_loop.txt
+set_image_alpha 000 100
+warp 49 20 11 down
+sleep 80
+warp 132 20 14 right
+set_image_alpha 000 88
+sleep 8
+set_image_alpha 000 75
+sleep 8
+set_image_alpha 000 63
+sleep 8
+set_image_alpha 000 50
+sleep 8
+set_image_alpha 000 37
+sleep 8
+set_image_alpha 000 25
+sleep 8
+set_image_alpha 000 12
+sleep 8
+set_image_alpha 000 0

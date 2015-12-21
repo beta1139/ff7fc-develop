@@ -76,4 +76,4 @@ fi
 set_flag 19 0
 set_flag 25 15
 set_flag 30 32
-create event_generator 12799 127 0 0 17 0 0 @../common/point.txt
+include ./event/common/act/act1-8_10.txt

@@ -1,0 +1,4 @@
+set_eternal_event
+wait_same_pos
+msg 　リフトにのりますか？\n\n\n\n#2\n　　のる\n　　のらない\n\n\n[[]][[]]
+include ./event/common/135/lift_common.txt

@@ -1,6 +1,6 @@
 include ./event/common/key_unvalid.txt
-set_image_trans_col 0 110 0
-draw_image 000 16 192 0 0 32 32 1 point.png
+set_image_trans_col 1 0 0
+draw_image 000 16 192 0 0 48 16 1 point.png
 set_image_alpha 000 75
 loop 2
 sleep 16

@@ -1,0 +1,128 @@
+chg_speed 13711 fast
+sleep 16
+loop 2
+loop 2
+jump_npc 13701 same 1
+step_npc 13711 6
+play_se gun_shot.ogg
+create explode 13780 137 11 17 0 0 0 none
+set_screen_effect add 255 255 255 0
+sleep 2
+inc_screen_effect_val 30
+set_gray_scale
+sleep 2
+play_se gun_shot.ogg
+dec_screen_effect_val 30
+reset_gray_scale
+sleep 2
+inc_screen_effect_val 30
+set_gray_scale
+sleep 2
+create explode 13781 137 9 19 0 0 0 none
+dec_screen_effect_val 30
+reset_gray_scale
+play_se gun_shot.ogg
+sleep 4
+play_se gun_shot.ogg
+sleep 4
+create explode 13782 137 11 20 0 0 0 none
+loop 2
+step_npc 13701 1
+play_se gun_shot.ogg
+set_screen_effect add 255 255 255 0
+sleep 2
+inc_screen_effect_val 30
+set_gray_scale
+sleep 2
+play_se gun_shot.ogg
+dec_screen_effect_val 30
+reset_gray_scale
+sleep 2
+inc_screen_effect_val 30
+set_gray_scale
+sleep 2
+dec_screen_effect_val 30
+reset_gray_scale
+play_se gun_shot.ogg
+sleep 4
+play_se gun_shot.ogg
+sleep 4
+pool
+pool
+sleep 24
+pool
+set_screen_effect add 255 255 255 0
+loop 2
+step_npc 13711 5
+play_se_loop shock.ogg
+create explode 13780 137 11 17 0 0 0 none
+loop 8
+inc_screen_effect_val 1
+sleep 1
+pool
+create explode 13781 137 9 19 0 0 0 none
+loop 8
+inc_screen_effect_val 1
+sleep 1
+pool
+play_se thunder3.ogg
+create explode 13782 137 11 20 0 0 0 none
+loop 34
+inc_screen_effect_val 1
+sleep 1
+pool
+pool
+kill_through_range 13720 13721
+sleep 64
+set_npc_pos 13715 137 10 19
+chg_npc_dir 13700 right
+chg_npc_dir 13715 right
+chg_npc_img 13700 17
+chg_npc_img 13715 17
+set_image_trans_col 0 0 0
+draw_image 000 112 112 0 0 16 48 1 event/shinra_bldg/white.png
+sleep 80
+chg_char_state_move
+create event_generator 13723 137 0 0 17 0 0 @../common/137/white.txt
+sleep 16
+play_se_loop radio_noise.ogg
+loop 84
+dec_screen_effect_val 1
+sleep 1
+pool
+chg_npc_img 13711 1
+jump_npc 13701 same 1
+loop 16
+dec_screen_effect_val 1
+sleep 1
+pool
+reset_gray_scale
+reset_screen_effect
+chg_speed 13701 fast
+move_npc 13701 left 3
+sleep 8
+slide_npc 13711 down 1
+loop 2
+chg_npc_dir 13711 left
+sleep 2
+chg_npc_dir 13711 down
+sleep 2
+chg_npc_dir 13711 right
+sleep 2
+chg_npc_dir 13711 up
+sleep 2
+pool
+jump_npc 13701 same 1
+loop 2
+chg_npc_dir 13711 left
+sleep 2
+chg_npc_dir 13711 down
+sleep 2
+chg_npc_dir 13711 right
+sleep 2
+chg_npc_dir 13711 up
+sleep 2
+pool
+chg_npc_dir 13711 left
+chg_speed 13701 fast
+step_npc 13701 3

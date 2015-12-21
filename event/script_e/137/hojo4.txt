@@ -1,0 +1,145 @@
+wait_same_pos
+kill_through_range 13720 13721
+chg_event_move_char_speed fast
+if_char_dir down
+jump_char same 1
+sleep 16
+move_char down 1
+sleep 8
+move_char left 1
+sleep 8
+move_char down 2
+sleep 16
+fi
+if_char_dir left
+chg_char_dir down
+jump_char same 1
+sleep 16
+move_char down 4
+sleep 32
+fi
+chg_event_move_char_speed fast
+create npc_event 13713 137 19 14 0 1 3 none
+draw_char off
+move_char left 4
+move_npc 13713 left 2
+sleep 16
+move_npc 13713 down 1
+sleep 8
+create npc_event 13711 137 17 15 1 1 2 none
+create npc_event 13712 137 17 15 2 1 2 none
+move_npc 13711 left 1
+move_npc 13712 right 1
+jump_npc 13713 same 1
+msg3 -1 『エアリス！
+sleep 16
+create npc_event 13714 137 10 18 156 2 3 none
+set_layer 13714 front
+chg_npc_dir 13711 left
+chg_npc_img 13711 98
+chg_npc_dir 13712 down
+step_npc 13713 2
+wait_key_push_edge a
+erase_msg3
+chg_npc_dir 13700 up
+kill 13714
+chg_speed 13700 normal
+sleep 48
+chg_npc_dir 13701 up
+sleep 16
+chg_speed 13701 normal
+sleep 16
+chg_speed 13700 not_move
+sleep 32
+chg_npc_dir 13701 left
+sleep 16
+chg_speed 13701 not_move
+sleep 48
+chg_speed 13701 not_move
+msg ホウジョウ\n「エアリス？\n　ああ　このむすめの　なまえだったな\n　なにかようか？
+chg_speed 13701 slow
+sleep 32
+chg_speed 13713 normal
+step_npc 13713 2
+msg 『エアリスをかえしてもらおう
+sleep 64
+step_npc 13701 2
+sleep 16
+msg ホウジョウ\n「…………ぶかいしゃ　だな
+chg_npc_dir 13711 up
+chg_npc_img 13711 95
+jump_npc 13711 same 1
+sleep 16
+msg3 -1 バレット\n「さいしょに　きづけよ
+jump_npc 13711 same 1
+sleep 16
+step_npc 13711 2
+wait_key_push_edge a
+erase_msg3
+chg_npc_img 13711 98
+chg_npc_dir 13711 left
+sleep 24
+set_active_msg 13701
+chg_speed 13701 slow
+move_npc 13701 left 1
+sleep 16
+msg ホウジョウ\n「よのなかには　どうでもいいことが\n　おおいのでな
+sleep 16
+chg_event_move_char_speed normal
+move_char down 2
+sleep 16
+chg_npc_img 13711 1
+move_npc 13711 left 3
+move_npc 13712 down 3
+move_npc 13713 down 3
+sleep 48
+play_se jump.wav
+move_npc 13711 down 1
+jump_npc 13712 down 1
+jump_npc 13713 down 2
+chg_npc_dir 13700 right
+sleep 16
+chg_npc_img 13713 105
+chg_npc_img 13711 145
+play_se fingersnap.ogg
+sleep 8
+chg_npc_dir 13712 left
+sleep 4
+chg_npc_img 13713 0
+sleep 4
+chg_npc_dir 13713 left
+chg_speed 13701 not_move
+sleep 16
+msg ホウジョウ\n「わたしを　ころそうというのか？\n　それは　やめたほうがいいな\n\n　ここのそうちは　デリケートだ\n　わたしがいなくなったら\n　そうさできまい？　ん？
+chg_speed 13701 normal
+sleep 8
+chg_npc_dir 13713 up
+chg_npc_dir 13711 left
+chg_npc_img 13711 116
+chg_npc_dir 13712 down
+sleep 6
+chg_npc_dir 13711 right
+sleep 8
+chg_npc_dir 13711 left
+chg_npc_img 13711 98
+sleep 16
+chg_npc_dir 13712 left
+sleep 24
+chg_npc_dir 13713 left
+chg_speed 13713 slow
+step_npc 13713 1
+sleep 32
+msg 『くっ
+sleep 16
+chg_speed 13701 normal
+jump_npc 13701 same 1
+sleep 16
+chg_speed 13701 not_move
+msg ホウジョウ\n「そうそう\n　こういうときこそ　ろんりてきしこう　によって\n　こうどうすることを　おすすめするよ
+chg_speed 13701 normal
+chg_npc_dir 13701 right
+sleep 16
+step_npc 13701 fast
+step_npc 13701 2
+msg ホウジョウ\n「さあ　サンプルをとうにゅうしろ！
+include ./event/common/137/hojo4_common.txt

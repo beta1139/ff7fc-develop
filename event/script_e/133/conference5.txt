@@ -5,127 +5,17 @@ sleep 40
 erase_image 000
 set_talk_npc 13320
 msg プレジデントしんら\n「では　かいぎをおわる
-kill 13325
 reset_talk_npc
-chg_speed 13221 normal
-step_npc 13221 1
-sleep 48
-fadeout
-sleep 16
-warp 133 9 12 down
-chg_npc_dir 13321 right
-chg_npc_dir 13322 right
-chg_npc_dir 13323 left
-chg_npc_dir 13324 left
-sleep 16
-fadein
-chg_npc_dir 13322 up
-sleep 16
-chg_npc_dir 13320 left
-erase_image 000
-sleep 16
-jump_npc 13320 left 1
-chg_npc_dir 13321 up
-sleep 16
-jump_npc 13321 up 1
-sleep 16
-chg_speed 13320 slow
-move_npc 13320 left 2
-move_npc 13321 left 1
-sleep 16
-chg_npc_dir 13322 right
-move_npc 13321 down 7
-sleep 16
-sleep 32
-move_npc 13320 down 1
-sleep 32
-move_npc 13320 left 1
-chg_npc_dir 13324 right
-sleep 32
-chg_npc_dir 13322 left
-move_npc 13320 down 8
-chg_speed 13324 slow
-move_npc 13324 right 1
-chg_npc_dir 13323 up
-kill 13321
-sleep 16
-chg_speed 13322 slow
-move_npc 13322 left 1
-sleep 16
-move_npc 13324 down 4
-jump_npc 13323 up 1
-sleep 16
-move_npc 13322 down 4
-chg_npc_dir 13323 right
-sleep 16
-chg_speed 13323 slow
-move_npc 13323 right 1
-sleep 32
-move_npc 13323 down 1
-create npc_event 4990 49 20 11 24 0 2 none
-sleep 88
-chg_npc_dir 13323 up
-sleep 32
-move_char right 4
-sleep 48
-kill 13320
-kill 13322
-kill 13324
-sleep 16
-move_char down 2
 set_flag 19 0
-sleep 32
-chg_char_dir right
-chg_char_state_move
-create event_generator 4989 49 0 0 17 0 0 @../common/049/profile.txt
-sleep 8
-clear_text 3
-clear_text 8
-clear_text 9
-clear_text 10
-clear_text 11
-set_text_alpha 3 0
-set_text_alpha 8 0
-set_text_alpha 9 0
-set_text_alpha 10 0
-set_text_alpha 11 0
-sleep 8
-set_text 3 　 　   　　　　　　スカーレット
-set_text 8 　　　　しんらカンパニー　へいきかいはつぶもん　とうかつ
-set_text 9 　　　　　ざんこくな　せいかくで　のうりょくも　たかく
-set_text 10 　　　　　ハイデッカーと　タッグを　くむことも　おおい
-set_text 11 　　　　　　　　　わらいごえは　『キャハハ』
-warp 49 20 11 down
-include ./event/common/set_text/st03.txt
-include ./event/common/set_text/st08.txt
-include ./event/common/set_text/st09.txt
-include ./event/common/set_text/st10.txt
-include ./event/common/set_text/st11.txt
-sleep 16
-wait_key_push_edge a
-sleep 16
-chg_npc_dir 4990 up
-fadeout
-set_text_alpha 3 0
-set_text_alpha 8 0
-set_text_alpha 9 0
-set_text_alpha 10 0
-set_text_alpha 11 0
-clear_text 3
-clear_text 8
-clear_text 9
-clear_text 10
-clear_text 11
-warp 133 9 12 down
-kill_through_range 4989 4990
-fadein
-sleep 16
-step_npc 13323 1
-sleep 16
+include ./event/common/133/conference5_common.txt
 msg スカーレット\n「におうわね……
 sleep 16
 chg_npc_dir 13323 down
-sleep 48
+sleep 4
+chg_npc_img 13323 171
+sleep 112
+chg_npc_img 13323 24
+sleep 32
 chg_speed 13323 normal
 move_npc 13323 down 6
 sleep 96
@@ -137,7 +27,7 @@ fadein
 sleep 16
 step_npc 13220 2
 sleep 16
-msg 『こだいしゅを……？\n\n\n\n　いまのは　エアリスのはなし……だよな
+msg 『いまのは　エアリスのはなし……だよな
 sleep 32
 chg_speed 13221 normal
 step_npc 13221 2
@@ -169,8 +59,10 @@ set_key_valid right
 fadein
 set_flag 19 0
 kill 12941
-// 神羅ビル～66F会議イベント後～宝条を通路で見る間だけ存在
+// 神羅ビル～66F会議イベント後～ダクトを降りる間だけ存在
 create event_generator 13245 132 5 14 17 0 0 @../common/132/crawl_turn2.txt
+// 
+// ダクトを降りた後～宝条を通路で見る間だけ存在
 create npc_event 12910 129 32 27 22 0 0 none
 create npc_event 12911 129 32 26 73 1 0 none
 create event_generator 12922 129 31 32 17 0 0 @129/hojo1_1.txt

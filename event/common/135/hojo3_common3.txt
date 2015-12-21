@@ -1,0 +1,78 @@
+create npc_event 71413 714 -1 9 0 1 2 none
+sleep 8
+chg_npc_dir 13513 down
+chg_npc_img 13513 103
+sleep 24
+chg_npc_dir 13513 left
+sleep 40
+chg_npc_img 13513 0
+sleep 24
+chg_npc_dir 13512 left
+chg_speed 13512 not_move
+sleep 16
+chg_npc_dir 13500 down
+sleep 48
+chg_npc_dir 13513 down
+sleep 40
+chg_speed 13513 slow
+move_npc 13513 down 1
+sleep 72
+set_screen_effect sub 0 255 255 100
+warp 714 -3 6 down
+sleep 5
+reset_screen_effect
+warp 135 13 20 down
+sleep 5
+set_screen_effect sub 255 255 0 100
+warp 714 -3 6 down
+sleep 5
+reset_screen_effect
+warp 135 13 20 down
+sleep 5
+kill 71413
+sleep 32
+stop_bgm
+create npc_event 13510 135 15 22 156 2 0 none
+chg_npc_dir 13513 down
+set_screen_effect sub 0 255 255 0
+chg_event_move_char_speed fast
+move_char right 4
+loop 16
+inc_screen_effect_val 0
+sleep 1
+pool
+chg_npc_dir 13513 right
+loop 16
+inc_screen_effect_val 0
+sleep 1
+pool
+sleep 64
+kill 13510
+sleep 64
+chg_event_move_char_speed slow
+move_char right 3
+sleep 16
+move_npc 13513 right 5
+sleep 16
+play_se_loop heart_beat.ogg
+sleep 32
+move_npc 13511 left 2
+sleep 112
+move_npc 13513 up 1
+sleep 32
+chg_npc_dir 13513 up
+chg_speed 13500 slow
+create npc_event 71413 714 4 8 0 0 1 none
+sleep 32
+chg_event_move_char_speed slow
+move_char up 2
+set_screen_effect sub 0 255 255 0
+loop 64
+inc_screen_effect_val 1
+sleep 1
+pool
+step_npc 13513 1
+step_npc 71413 1
+sleep 48
+warp 714 4 4 up
+play_event_bgm 1-17-Who_are_You.ogg

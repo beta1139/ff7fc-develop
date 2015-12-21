@@ -7,26 +7,58 @@ msg デバッグセーブ　ふくげんマシン\n「プレイちゅうに　Debug Saveすると\n　こちら
 if_flag 3 1
 set_talk_npc 169
 msg 　Debug Saveとは\n　[かいはつばんFF7FC]における\n　つうじょうのセーブの　かわりみたいなモノです\n\n　つうじょう　メニューからセーブしたデータは\n　イベントのアップデートなどが　おこなわれると\n　じっしつ　エラーでつかえなくなりますが\n\n　Debug Saveは　つうじょうの\n　セーブとちがい　ステータスじょうほうと　ふくすうの\n　フラグのみを　ほぞんするので　イベントやバグなどが\n　アップデートされたあとも　つかえます\n　ノーマルセーブとちがい　かんぜんなさいげんとは\n　なりませんが　ひかくてき　ちかい　じょうたいから\n　プレイを　さいかいすることができます\n\n　このかいはつばんで　コンティニューするときは\n　つうじょうのセーブとあわせて\n　[Debug Save]を　ぜひ　ごりようください\n　くわしくは　save.txtをごらんください\n　ごせいちょう　アリガトウゴザイマシタ
+reset_talk_npc
+erase_msg3
+end
 fi
 if_flag 3 2
-msg 　Debug Saveをするには\n　F5キーをおしてください\n　プレイちゅう　いつでも　じっこうできますが…\n\n　そのデータを　このふくげんマシンで\n　ロードするときは　バグをかいひするために\n　さいてきなポイントまで　もどされます\n\n　なお　もどされても　ステータスや　ギル\n　アイテムなどは　いちぶをのぞき　キープされます\n　ただ　セーブのタイミングによっては　シーンが\n　じゃっかん　もどるでしょう\n　どのポイントまで　もどるかの　めやすは……
+msg 　Debug Saveをするには\n　まずF2キーでスロット(0～4)をえらんだあと\n　F5キーをおしてセーブしてください\n　プレイちゅう　いつでも　じっこうできますが…\n　そのデータを　このふくげんマシンで\n　ロードするときは　バグをかいひするために\n　さいてきなポイントまで　もどされます\n\n　なお　もどされても　ステータスや　ギル\n　アイテムなどは　いちぶをのぞき　キープされます\n　ただ　セーブのタイミングによっては　シーンが\n　じゃっかん　もどるでしょう\n　どのポイントまで　もどるかの　めやすは……
 set_image_trans_col 0 0 0
-draw_image 000 16 192 0 0 32 32 1 point.png
+draw_image 000 16 192 0 0 48 16 1 point.png
 loop 2
 sleep 16
 set_image_alpha 000 0
 sleep 16
-set_image_alpha 000 100
+set_image_alpha 000 75
 pool
 msg 　このアイコンを　さんこうにしてください\n　これは　ちゅうけいポイントで　ゲームを\n　すすめていくたびに　そのつど　ひょうじされます\n\n　このポイントで　F5キーをおして　ちゅうだんすると\n　じかい　ふくげんマシンで　ロードしたときに\n　このポイントから　さいかいできるので\n　ロスのないプレイができます\n　また　ふだんは　メニューのセーブをつかい\n　データがアップデートされたときに\n　Debug Saveをつかう　といった\n　ほうほうでも　いいかもしれません\n　ごせいちょう　アリガトウゴザイマシタ
 erase_image 000
 set_image_trans_col 1 1 1
+reset_talk_npc
+erase_msg3
+end
 fi
 if_flag 3 0
+msg #6\n　　スロット0\n　　スロット1\n　　スロット2\n　　スロット3\n　　スロット4\n　　やめる\n[[#2\n　　そのままコンティニュー\n　　ひとつまえのポイントからコンティニュー\n\n\n[[]][[]]]][[#2\n　　そのままコンティニュー\n　　ひとつまえのポイントからコンティニュー\n\n\n[[]][[]]]][[#2\n　　そのままコンティニュー\n　　ひとつまえのポイントからコンティニュー\n\n\n[[]][[]]]][[#2\n　　そのままコンティニュー\n　　ひとつまえのポイントからコンティニュー\n\n\n[[]][[]]]][[#2\n　　そのままコンティニュー\n　　ひとつまえのポイントからコンティニュー\n\n\n[[]][[]]]][[「ア　ソ！]]
 sleep 16
+if_flag 3 5
+end
+fi
 include ./event/common/now_loading.txt
+if_flag 3 0
 load_status_data status_data
-sleep 16
+fi
+if_flag 3 1
+load_status_data status_data1
+fi
+if_flag 3 2
+load_status_data status_data2
+fi
+if_flag 3 3
+load_status_data status_data3
+fi
+if_flag 3 4
+load_status_data status_data4
+fi
+sleep 8
+if_flag 4 0
+fi
+if_flag 4 1
+if_flag_greater 30 0
+sub_flag 30 1
+fi
+fi
+sleep 8
 include ./event/common/del_member.txt
 if_flag 30 0
 if_owned_item 4000
@@ -344,11 +376,28 @@ fi
 if_flag 30 31
 include ./event/common/act/act1-8_9.txt
 set_flag 25 14
-warp_ff3_2 126 12 33 1 down
+warp_ff3_2 126 12 33 2 down
 fi
 if_flag 30 32
 set_flag 25 15
-warp_ff3_2 129 30 32 1 down
+include ./event/common/act/act1-8_10.txt
+warp_ff3_2 129 30 32 2 down
+fi
+if_flag 30 33
+include ./event/common/act/act1-8_11.txt
+set_flag 25 16
+warp_ff3_2 135 23 10 2 down
+fi
+if_flag 30 34
+set_flag 25 17
+warp_ff3_2 137 13 19 2 down
+fi
+if_flag_greater 30 34
+include ./event/common/act/act1-8_12.txt
+fi
+if_flag 30 35
+set_flag 25 17
+warp_ff3_2 137 23 20 2 down
 fi
 fi
 reset_talk_npc

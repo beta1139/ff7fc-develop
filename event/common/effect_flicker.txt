@@ -1,0 +1,88 @@
+loop_inf
+if_flag 19 0
+set_screen_effect sub 255 255 255 0
+loop 2
+set_gray_scale
+loop 10
+inc_screen_effect_val 10
+sleep 1
+pool
+reset_gray_scale
+loop 10
+dec_screen_effect_val 10
+sleep 1
+pool
+pool
+reset_screen_effect
+sleep 45
+fi
+if_flag 19 1
+set_screen_effect add 255 255 255 0
+loop 5
+loop 10
+set_gray_scale
+inc_screen_effect_val 2
+sleep 1
+pool
+loop 10
+reset_gray_scale
+inc_screen_effect_val 2
+sleep 1
+pool
+pool
+end
+fi
+if_flag 19 2
+set_screen_effect add 255 255 255 0
+loop 2
+loop 20
+inc_screen_effect_val 5
+sleep 1
+pool
+loop 20
+dec_screen_effect_val 5
+sleep 1
+pool
+pool
+reset_screen_effect
+sleep 45
+fi
+if_flag 19 3
+set_screen_effect add 255 0 0 0
+loop 2
+loop 10
+inc_screen_effect_val 10
+sleep 1
+pool
+loop 10
+dec_screen_effect_val 10
+sleep 1
+pool
+pool
+reset_screen_effect
+sleep 45
+fi
+if_flag 19 4
+set_screen_effect add 255 255 255 0
+loop 2
+loop 10
+inc_screen_effect_val 10
+sleep 1
+pool
+loop 10
+dec_screen_effect_val 10
+sleep 1
+pool
+pool
+reset_screen_effect
+fi
+if_flag 19 5
+loop 2
+set_gray_scale
+sleep 10
+reset_gray_scale
+sleep 10
+pool
+sleep 45
+fi
+pool

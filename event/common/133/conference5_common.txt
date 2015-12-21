@@ -1,0 +1,65 @@
+kill 13325
+chg_speed 13221 normal
+step_npc 13221 1
+sleep 48
+fadeout
+sleep 16
+warp 133 9 12 down
+chg_npc_dir 13321 right
+chg_npc_dir 13322 right
+chg_npc_dir 13323 left
+chg_npc_dir 13324 left
+sleep 16
+fadein
+chg_npc_dir 13322 up
+sleep 16
+chg_npc_dir 13320 left
+erase_image 000
+sleep 16
+jump_npc 13320 left 1
+chg_npc_dir 13321 up
+sleep 16
+jump_npc 13321 up 1
+sleep 16
+chg_speed 13320 slow
+move_npc 13320 left 2
+move_npc 13321 left 1
+sleep 16
+chg_npc_dir 13322 right
+move_npc 13321 down 7
+sleep 16
+sleep 32
+move_npc 13320 down 1
+sleep 32
+move_npc 13320 left 1
+chg_npc_dir 13324 right
+sleep 32
+chg_npc_dir 13322 left
+move_npc 13320 down 8
+chg_speed 13324 slow
+move_npc 13324 right 1
+chg_npc_dir 13323 up
+kill 13321
+sleep 16
+chg_speed 13322 slow
+move_npc 13322 left 1
+sleep 16
+move_npc 13324 down 4
+jump_npc 13323 up 1
+sleep 16
+move_npc 13322 down 4
+chg_npc_dir 13323 right
+sleep 16
+chg_speed 13323 slow
+move_npc 13323 right 1
+sleep 32
+move_npc 13323 down 1
+sleep 88
+chg_npc_dir 13323 up
+sleep 64
+step_npc 13323 2
+sleep 8
+kill 13320
+kill 13322
+kill 13324
+sleep 16

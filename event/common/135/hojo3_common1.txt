@@ -1,0 +1,45 @@
+chg_char_dir up
+chg_type 13500 npc_event
+create npc_event 13510 135 14 23 156 2 0 none
+sleep 32
+chg_speed 13500 not_move
+chg_npc_dir 13500 left
+sleep 8
+kill 13510
+chg_event_move_char_speed fast
+chg_char_dir down
+sleep 12
+chg_char_dir left
+sleep 8
+chg_char_dir right
+sleep 8
+chg_char_dir down
+sleep 12
+chg_char_dir right
+sleep 8
+chg_npc_dir 13500 up
+sleep 8
+move_char right 1
+sleep 8
+move_char up 1
+sleep 8
+move_char right 2
+sleep 16
+move_char up 1
+sleep 8
+chg_event_move_char_speed normal
+chg_char_dir up
+create npc_event 13513 135 17 22 0 0 1 none
+draw_char off
+create npc_event 13502 135 14 32 73 0 2 none
+move_npc 13502 up 10
+chg_npc_dir 13513 down
+chg_npc_img 13513 143
+sleep 48
+chg_npc_dir 13500 down
+sleep 16
+move_char left 3
+sleep 48
+move_char up 2
+sleep 48
+step_npc 13502 2

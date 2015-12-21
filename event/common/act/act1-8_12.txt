@@ -1,0 +1,19 @@
+if_not_owned_item 6019
+add_item 6019
+fi
+if_not_owned_item 6020
+add_item 6020
+fi
+if_not_owned_item 6021
+add_item 6021
+fi
+if_not_owned_item 6022
+add_item 6022
+fi
+if_not_owned_item 6023
+add_item 6023
+fi
+// 67F,68F‚Ì“§–¾–å”Ô‚ðkill
+kill 13440
+kill_through_range 13840 13841
+// 

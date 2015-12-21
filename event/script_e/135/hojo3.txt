@@ -1,0 +1,38 @@
+wait_same_pos
+include ./event/common/135/hojo3_common1.txt
+msg 「きょうの　じっけんサンプルは\n　そいつですか？
+chg_speed 13501 normal
+sleep 16
+chg_npc_dir 13501 down
+sleep 16
+step_npc 13501 2
+set_talk_npc 13501
+msg ホウジョウ\n「そうだ\n　すぐ　じっけんに　とりかかる\n　うえのかいに　あげてくれ
+reset_talk_npc
+sleep 16
+chg_npc_dir 13501 left
+chg_npc_dir 13502 down
+sleep 16
+chg_speed 13501 slow
+chg_speed 13502 normal
+move_npc 13502 down 7
+sleep 48
+move_npc 13501 left 1
+sleep 24
+chg_npc_dir 13500 right
+sleep 8
+chg_speed 13501 not_move
+sleep 32
+msg ホウジョウ\n「かわいいサンプルよ……
+include ./event/common/135/hojo3_common2.txt
+msg ティファ\n「かわいいサンプルよ……か
+chg_speed 13512 slow
+sleep 16
+chg_npc_dir 13512 right
+sleep 16
+step_npc 13512 2
+sleep 16
+msg ティファ\n「せいぶつじっけんに\n　つかわれるのかな？
+include ./event/common/135/hojo3_common3.txt
+msg 『ジェノバ……
+include ./event/common/135/hojo3_common4.txt

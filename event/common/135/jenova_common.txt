@@ -1,0 +1,59 @@
+chg_npc_dir 13512 right
+chg_speed 13512 fast
+sleep 16
+create npc_event 13510 135 14 20 156 2 0 none
+sleep 24
+chg_speed 13511 fast
+chg_npc_dir 13511 down
+sleep 16
+chg_npc_dir 13511 left
+chg_npc_img 13511 98
+kill 13510
+jump_npc 13512 same 1
+sleep 16
+move_npc 13512 down 1
+sleep 8
+move_npc 13512 right 1
+sleep 8
+move_npc 13512 down 1
+chg_npc_img 13511 1
+move_npc 13511 down 3
+sleep 8
+move_npc 13512 right 4
+sleep 16
+move_npc 13511 right 3
+sleep 16
+step_npc 13512 4
+sleep 8
+move_npc 13511 up 1
+sleep 8
+move_npc 13511 right 2
+sleep 8
+kill 13520
+stop_se
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_dir 13513 down
+chg_npc_img 13513 105
+sleep 8
+chg_npc_dir 13511 down
+jump_npc 13511 same 1
+jump_npc 13512 same 1
+sleep 16
+step_npc 13512 6
+sleep 16
+step_npc 13511 2
+sleep 72
+step_npc 13512 4
+sleep 24
+chg_npc_img 13513 143
+sleep 8
+chg_speed 13513 slow
+step_npc 13513 1
+sleep 80

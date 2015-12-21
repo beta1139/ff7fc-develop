@@ -1,0 +1,154 @@
+wait_same_pos
+draw_char off
+create npc_event 13405 134 39 22 22 0 1 none
+move_npc 13405 up 2
+sleep 64
+chg_type 13400 npc_event
+chg_type 13401 npc_event
+chg_type 13402 npc_event
+move_npc 13405 left 2
+sleep 64
+move_npc 13405 down 6
+sleep 128
+play_se door_open.ogg
+open_door 13450
+sleep 32
+move_char down 5
+sleep 24
+kill 13450
+sleep 8
+move_npc 13405 left 5
+sleep 48
+create npc_event 4990 49 20 11 22 2 2 none
+move_char left 7
+include ./event/common/key_unvalid.txt
+sleep 112
+set_flag 19 1
+set_flag 40 1
+chg_char_state_move
+create event_generator 4989 49 0 0 17 0 0 @../common/049/profile.txt
+sleep 8
+clear_text 2
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+set_text_alpha 2 0
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 2 　　　　　　しんらカンパニー　かがくぶもん　そうかつ
+set_text 3 　 　   　　　　　　　ホウジョウ
+set_text 8 　　　　　　　　　　ちしき……　けんきゅう
+set_text 9 　　　　　　　それいがいのことには　きょうみがない
+set_text 10 　　　　　　はくいに　ひめるは　あくなき　ねつじょう
+set_text 11 　　　　　　　　……それとも　むおんなる　マッド
+warp 49 20 11 left
+include ./event/common/set_text/st02.txt
+sleep 32
+include ./event/common/set_text/st03.txt
+sleep 40
+include ./event/common/set_text/st08.txt
+sleep 16
+include ./event/common/set_text/st09.txt
+sleep 32
+include ./event/common/set_text/st10.txt
+sleep 32
+include ./event/common/set_text/st11.txt
+sleep 16
+wait_key_push_edge a
+sleep 16
+fadeout
+set_text_alpha 2 0
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 2
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+sleep 32
+warp 134 32 26 down
+kill_through_range 4989 4990
+fadein
+chg_npc_dir 13405 down
+sleep 16
+move_npc 13405 down 5
+move_char right 5
+sleep 80
+move_char up 5
+sleep 48
+create npc_event 13406 134 39 22 0 0 1 none
+move_npc 13406 up 1
+sleep 32
+chg_npc_dir 13406 left
+sleep 32
+move_char up 1
+chg_speed 13406 normal
+move_npc 13406 up 1
+sleep 16
+move_npc 13406 left 2
+sleep 32
+chg_npc_dir 13406 down
+set_layer 13406 front
+sleep 16
+create npc_event 13407 134 37 20 1 1 2 none
+create npc_event 13408 134 37 20 2 1 2 none
+move_npc 13407 down 1
+move_npc 13408 right 1
+sleep 16
+chg_npc_dir 13407 up
+move_npc 13408 down 1
+sleep 16
+set_layer 13406 back
+chg_npc_dir 13408 up
+loop 2
+jump_npc 13407 same 1
+sleep 16
+pool
+step_npc 13407 2
+msg バレット\n「おもいだしたぜ
+chg_npc_dir 13407 left
+chg_npc_img 13407 98
+sleep 32
+chg_npc_dir 13408 down
+step_npc 13407 2
+sleep 16
+msg バレット\n「あのホウジョウってやつ\n　しんらの　かがくぶもんの　せきにんしゃだ\n　クラウド　しらねえのか？
+chg_npc_img 13407 1
+chg_npc_dir 13407 up
+chg_npc_dir 13408 down
+sleep 32
+chg_npc_dir 13408 up
+loop 2
+chg_npc_dir 13406 right
+sleep 8
+chg_npc_dir 13406 left
+sleep 8
+pool
+chg_npc_dir 13406 down
+sleep 32
+step_npc 13406 1
+set_layer 13406 front
+msg 『じっさいにみるのは　はじめてた\n　そうか……あいつが……
+sleep 16
+move_npc 13408 up 1
+sleep 16
+chg_npc_img 13407 1
+move_npc 13407 up 1
+move_npc 13408 left 1
+sleep 16
+chg_char_dir down
+draw_char on
+kill_through_range 13405 13408
+chg_type 13400 npc2
+chg_type 13401 npc2
+chg_type 13402 npc2
+kill_through 13440
+include ./event/common/key_valid.txt

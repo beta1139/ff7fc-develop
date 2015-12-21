@@ -1,0 +1,28 @@
+set_eternal_event
+wait_target_talk 13702
+reset_talk_flag 13702
+chg_type 13702 npc_event
+chg_dir_to_char 13702
+chg_speed 13702 normal
+jump_npc 13702 same 1
+sleep 16
+step_npc 13702 2
+msg 「ひゃっ！　ころさないで\n　ホウジョウはかせに　いわれてやっただけなんだ
+if_not_owned_item 6023
+jump_npc 13702 same 1
+sleep 16
+jump_npc 13702 same 1
+sleep 16
+step_npc 13702 2
+msg 「そのしょうこに……ほら\n　68かいまでのドアロックキーを\n　きみたちにあげるよ\n　てきだったら　こんなこと　するはずないだろ？\n　……ねっ？
+sleep 16
+step_npc 13702 2
+sleep 48
+play_se pick_up.wav
+msg 　キーアイテム\n　　『カードキー68』をてにいれた！
+include ./event/common/act/act1-8_12.txt
+set_flag 30 35
+create event_generator 12799 127 0 0 17 0 0 @../common/point.txt
+fi
+chg_speed 13702 not_move
+chg_type 13702 npc2

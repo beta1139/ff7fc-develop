@@ -1,0 +1,16 @@
+loop_inf
+wait_key_push_edge a
+play_se cursor_ff3_select_cancel.ogg
+erase_msg3
+sleep 16
+msg 　しゅうりょうしても　よろしいですか？\n\n\n\n#2\n 　はい\n　　いいえ\n\n\n\n[[]][[]]
+if_flag 3 0
+end
+fi
+if_flag 3 1
+sleep 8
+include ./event/script/party_mem.txt
+chg_char_state_move
+sleep 8
+fi
+pool

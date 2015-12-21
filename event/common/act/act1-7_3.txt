@@ -71,8 +71,10 @@ set_npc_pos 6322 63 7 6
 chg_npc_dir 6322 up
 chg_npc_dir 6424 right
 set_layer 9550 front
+if_flag_lesser 30 34
 add_party_mem 1
 add_party_mem 2
+fi
 enable_char_chg
 set_flag 1 0
 set_flag 14 0

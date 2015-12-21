@@ -1,0 +1,7 @@
+loop_inf
+loop 80
+sleep 1
+chg_image_pos_offset 000 0 -4 0 0 0 0
+pool
+chg_image_pos_offset 000 0 320 0 0 0 0
+pool
