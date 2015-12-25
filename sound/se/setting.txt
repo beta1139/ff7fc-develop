@@ -1,10 +1,10 @@
 warp_out.ogg
 warp_in.ogg
 recover.wav
-ready.wav
+ready.ogg
 cursor_ff3_move.wav
 beep_ff3.ogg
-start.wav
+start.ogg
 cursor_ff3_select_cancel.ogg
 encount.ogg
 attack_enemy.ogg
