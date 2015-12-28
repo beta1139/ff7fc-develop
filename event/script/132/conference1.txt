@@ -116,6 +116,7 @@ sleep 48
 set_talk_npc 13320
 msg プレジデントしんら\n「やくそくのちは　まもなく\n　われわれのものに　なるだろう
 reset_talk_npc
+kill_through 4990
 sleep 40
 jump_npc 13320 same 1
 sleep 16

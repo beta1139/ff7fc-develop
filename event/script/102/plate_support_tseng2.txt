@@ -161,6 +161,7 @@ clear_text 9
 clear_text 10
 clear_text 11
 warp 102 19 33 down
+kill_through 4990
 fadein
 fi
 kill_through 4909
