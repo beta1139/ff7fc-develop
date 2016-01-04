@@ -457,6 +457,24 @@ set_power (idx) (val)
 set_vit(idx) (val)
   体力を設定
 
+add_power (idx) (val)
+  力を増やす
+
+add_speed (idx) (val)
+  速さを増やす
+
+add_vit (idx) (val)
+  体力を増やす
+
+add_magic (idx) (val)
+  魔力を増やす
+
+add_mind (idx) (val)
+  精神を増やす
+
+add_luck (idx) (val)
+  運を増やす
+
 =============== 画面エフェクト系 ===============
 screen_effect (color)
   画面全体にエフェクトをかける。colorにはred blue green offが指定可
