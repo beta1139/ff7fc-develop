@@ -427,6 +427,9 @@ sub_likability (idx) (val)
 recover_active_chara
   active memberのHP MPを全回復させる
 
+recover_all_chara
+  パーティメンバー全員のHP MPを全回復させる
+
 add_item (item_idx)
   item_idxのアイテムを追加
 
