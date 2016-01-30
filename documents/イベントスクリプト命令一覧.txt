@@ -429,7 +429,7 @@ recover_active_chara
 
 recover_all_chara
   パーティメンバー全員のHP MPを全回復させる
-  (仲間に入っているメンバーのみ)
+  (仲間に入っていないメンバーも含めて全員）
 
 add_item (item_idx)
   item_idxのアイテムを追加
