@@ -21,7 +21,7 @@ msg 　エレベーターにのりますか？\n\n\n\n#2\n　　はい\n　　いいえ\n\n\n[[]][[]]
 if_flag 3 0
 if_flag_lesser 25 10
 msg 『はんのうがない……\n　ほかのルートを　さがさなければ……
-move_char up 1
+move_char down 1
 sleep 16
 end
 fi

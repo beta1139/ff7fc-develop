@@ -1626,6 +1626,8 @@ event_generator,10840,108,12,4,17,0,0,"@../common/108/elevator01f_l.txt"
 event_generator,10841,108,16,4,17,0,0,"@../common/108/elevator01f_r.txt"
 event_generator,10842,108,12,3,17,0,0,"@108/elevator_msg.txt"
 event_generator,10843,108,16,3,17,0,0,"@108/elevator_msg.txt"
+map_door,10850,108,12,3,17,0,0,0
+map_door,10851,108,16,3,17,0,0,0
 event_generator,10860,108,13,33,17,0,0,"@../common/108/shinra_bldg_01f_warp_out.txt"
 event_generator,10861,108,14,33,17,0,0,"@../common/108/shinra_bldg_01f_warp_out.txt"
 event_generator,10862,108,15,33,17,0,0,"@../common/108/shinra_bldg_01f_warp_out.txt"
