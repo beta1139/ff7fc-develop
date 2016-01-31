@@ -1,0 +1,13 @@
+wait_key_push_edge select
+play_se cursor_ff3_select_cancel.ogg
+erase_msg3
+kill_through_range 14127 14128
+sleep 8
+play_se materia.wav
+sleep 8
+remove_all_materia 1
+remove_all_materia 2
+remove_all_materia 3
+remove_all_materia 4
+sleep 16
+create event_generator 14127 141 21 12 17 0 0 @141/rufus_shinra9.txt

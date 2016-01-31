@@ -1,0 +1,42 @@
+msg ルーファウス\n「きょうふは　ほんのすこしで　ヒトのこころを\n　しはいする　おろかな　みんしゅうのために\n　カネをつかうひつようはない\n　わたしは　オヤジとはちがうのだ
+wait_event_invalid 14125
+chg_speed 14110 slow
+sleep 16
+jump_npc 14102 same 1
+sleep 16
+step_npc 14102 2
+set_talk_npc 14102
+msg ティファ\n「えんぜつずきなところは　そっくりね
+reset_talk_npc
+sleep 8
+chg_npc_dir 14110 up
+sleep 32
+chg_speed 14100 normal
+move_npc 14100 up 1
+sleep 16
+chg_speed 14100 fast
+chg_npc_dir 14100 right
+step_npc 14100 2
+msg 『エアリスをつれて　ビルからでてくれ！
+chg_npc_img 14101 1
+sleep 16
+jump_npc 14101 same 1
+msg バレット\n「なに？
+chg_npc_dir 14102 right
+jump_npc 14100 same 1
+sleep 16
+step_npc 14100 3
+msg 『せつめいはあとだ！\n　バレット！　ほんとうの　ほしのききだ！
+sleep 16
+jump_npc 14101 same 1
+sleep 16
+step_npc 14101 1
+msg バレット\n「なんだそりゃ？
+sleep 16
+step_npc 14100 4
+msg 『あとではなす！\n　いまは　おれをしんじてくれ！\n　おれは　こいつを　たおしてからいく！
+sleep 32
+chg_speed 14101 slow
+step_npc 14101 2
+msg バレット\n「わかったぜ　クラウド！
+include ./event/common/141/rufus_shinra8_common.txt

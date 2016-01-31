@@ -1,0 +1,40 @@
+chg_event_move_char_speed slow
+move_char left 1
+sleep 32
+move_char down 2
+sleep 64
+chg_char_dir right
+sleep 48
+fadeout
+sleep 64
+stop_bgm
+sleep 40
+play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
+sleep 200
+set_npc_pos 13621 136 22 18
+set_npc_pos 13622 136 18 19
+set_npc_pos 13623 136 14 19
+set_npc_pos 13624 136 21 20
+set_npc_pos 13625 136 10 14
+chg_npc_img 13621 176
+chg_npc_img 13622 175
+chg_npc_img 13623 175
+chg_npc_img 13624 176
+chg_npc_img 13625 33
+chg_npc_dir 13621 down
+chg_npc_dir 13622 down
+chg_npc_dir 13623 up
+chg_npc_dir 13624 up
+chg_type 13622 npc3
+chg_param 13622 ティファ\n「……
+kill_through_range 13600 13608
+kill 13634
+kill 13654
+sleep 232
+recover_all_chara
+chg_event_move_char_speed normal
+stop_bgm
+fadein
+create event_generator 13609 136 0 0 17 0 0 @136/shinra_bldg_68f_1.txt
+set_flag 17 0
+set_flag 19 0

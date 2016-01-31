@@ -1,0 +1,24 @@
+wait_key_push_edge a
+erase_msg3
+wait_event_invalid 14120
+chg_speed 14111 fast
+chg_npc_dir 14111 left
+sleep 4
+chg_npc_dir 14111 up
+sleep 4
+chg_npc_dir 14111 right
+sleep 4
+chg_npc_dir 14111 down
+sleep 4
+move_npc 14111 left 5
+sleep 32
+chg_npc_dir 14110 up
+sleep 8
+kill 14111
+sleep 16
+jump_npc 14110 same 1
+msg3 -1 ルーファウス\n「おまえたちはなんだ？
+sleep 16
+chg_char_state_move
+create event_generator 14122 141 0 0 17 0 0 @141/rufus_shinra4.txt
+include ./event/common/141/rufus_shinra3_common.txt

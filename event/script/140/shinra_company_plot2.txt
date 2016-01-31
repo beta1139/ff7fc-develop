@@ -78,7 +78,6 @@ sleep 16
 move_npc 14022 left 1
 sleep 8
 move_npc 14022 left 2
-sleep 16
 step_npc 14022 4
 sleep 8
 move_npc 14021 down 7
@@ -106,7 +105,9 @@ chg_npc_dir 14020 right
 sleep 24
 move_npc 14022 down 7
 sleep 32
+chg_event_move_char_speed slow
 chg_speed 14020 slow
+move_char right 1
 move_npc 14020 right 1
 sleep 64
 set_active_msg 14022
@@ -114,7 +115,6 @@ kill_through_range 70500 70589
 create npc_event 70590 705 14 23 20 1 1 none
 sleep 16
 kill 14022
-chg_event_move_char_speed slow
 move_char up 1
 move_npc 14020 down 1
 sleep 48

@@ -1,7 +1,7 @@
 wait_same_pos
 kill_through_range 6900 6999
-create npc_event 14020 140 12 14 20 0 1 none
-create npc_event 71020 710 12 14 20 0 1 none
+create npc_event 14020 140 14 14 20 0 1 none
+create npc_event 71020 710 14 14 20 0 1 none
 sleep 32
 play_event_bgm 1-19-Infiltrating_Shinra_Tower.ogg
 sleep 16
@@ -11,45 +11,45 @@ sleep 8
 pool
 reset_screen_effect
 loop 2
-warp 710 13 15 up
+warp 710 14 14 up
 sleep 8
-warp 140 13 15 up
+warp 140 14 14 up
 sleep 8
 pool
 move_npc 14020 up 1
 move_npc 71020 up 1
 loop 5
-warp 710 13 15 up
+warp 710 14 14 up
 sleep 8
-warp 140 13 15 up
+warp 140 14 14 up
 sleep 8
 pool
 jump_npc 14020 same 1
 jump_npc 71020 same 1
-warp 710 13 15 up
+warp 710 14 14 up
 sleep 8
-warp 140 13 15 up
+warp 140 14 14 up
 sleep 8
 jump_npc 14020 same 1
 jump_npc 71020 same 1
-warp 710 13 15 up
+warp 710 14 14 up
 sleep 8
-warp 140 13 15 up
+warp 140 14 14 up
 sleep 8
 jump_npc 14020 same 1
 jump_npc 71020 same 1
 loop 2
-warp 710 13 15 up
+warp 710 14 14 up
 sleep 8
-warp 140 13 15 up
+warp 140 14 14 up
 sleep 8
 pool
 chg_speed 14020 not_move
 chg_speed 71020 not_move
 loop 14
-warp 710 13 15 up
+warp 710 14 14 up
 sleep 8
-warp 140 13 15 up
+warp 140 14 14 up
 sleep 8
 pool
 chg_npc_dir 14020 right
@@ -57,9 +57,9 @@ chg_npc_dir 71020 right
 chg_speed 14020 not_step
 chg_speed 71020 not_step
 loop 2
-warp 710 13 15 up
+warp 710 14 14 up
 sleep 8
-warp 140 13 15 up
+warp 140 14 14 up
 sleep 8
 pool
 set_screen_effect sub 255 255 255 0
@@ -85,7 +85,7 @@ warp 708 0 0 up
 sleep 8
 set_screen_effect sub 255 255 0 60
 sleep 8
-warp 105 23 9 up
+warp 105 23 11 up
 sleep 16
 play_se_loop helicopter.ogg
 slide_walk_npc 10550 left 31

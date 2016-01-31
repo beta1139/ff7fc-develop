@@ -1,0 +1,71 @@
+wait_target_talk 13622
+reset_talk_flag 13622
+chg_type 13622 npc_event
+chg_speed 13622 normal
+set_talk_npc 13622
+msg ティファ\n「いったいなにが　あったのかしら……
+reset_talk_npc
+chg_npc_dir 13622 right
+sleep 32
+move_char left 1
+move_npc 13622 right 1
+sleep 16
+chg_npc_dir 13622 left
+sleep 16
+step_char 1
+sleep 16
+msg 『きっと　ここのカギをもっているはずだ……
+step_char 2
+sleep 32
+play_se recover.wav
+sleep 32
+chg_char_dir right
+sleep 16
+jump_char same 1
+sleep 16
+msg 『ほら　ティファはエアリスを\n　おれはバレットたちを　たすける
+jump_npc 13622 same 1
+sleep 16
+chg_speed 13622 fast
+move_npc 13622 right 1
+sleep 8
+move_npc 13622 down 2
+chg_char_dir left
+sleep 16
+kill 13653
+kill_through_range 13630 13635
+play_se door_open.ogg
+chg_speed 13622 normal
+move_npc 13622 down 3
+sleep 48
+chg_npc_dir 13622 right
+sleep 8
+jump_npc 13622 same 1
+sleep 16
+chg_speed 13622 fast
+step_npc 13622 3
+sleep 16
+chg_char_state_move
+sleep 16
+chg_speed 13622 slow
+chg_speed 13623 slow
+move_npc 13622 left 1
+move_npc 13623 left 1
+chg_npc_img 13623 3
+sleep 32
+chg_npc_dir 13622 right
+chg_speed 13621 not_move
+chg_speed 13622 not_move
+chg_speed 13623 not_move
+chg_speed 13624 not_move
+chg_type 13621 npc2
+chg_type 13622 npc
+chg_type 13623 npc
+chg_type 13624 npc2
+set_flag_wall 13621
+set_flag_wall 13623
+set_flag_wall 13624
+chg_param 13622 ティファ\n「なんだかこわいわ……
+chg_param 13623 エアリス\n「なにかにおそわれた……？
+create event_generator 13612 136 21 17 17 0 0 @../common/136/shinra_bldg_68f_kill_door.txt
+create event_generator 13613 136 21 18 17 0 0 @136/shinra_bldg_68f_4.txt

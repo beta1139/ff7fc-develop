@@ -1,3 +1,4 @@
+// 68Fレッド13イベント後～67F独房イベントの間だけ存在
 if_not_owned_item 6019
 add_item 6019
 fi
@@ -16,4 +17,6 @@ fi
 // 67F,68Fの透明門番をkill
 kill 13440
 kill_through_range 13840 13841
+// 
+create event_generator 13920 139 37 24 17 0 0 @139/remind.txt
 // 

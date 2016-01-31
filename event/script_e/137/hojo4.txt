@@ -112,7 +112,7 @@ chg_speed 13701 not_move
 sleep 16
 msg ホウジョウ\n「わたしを　ころそうというのか？\n　それは　やめたほうがいいな\n\n　ここのそうちは　デリケートだ\n　わたしがいなくなったら\n　そうさできまい？　ん？
 chg_speed 13701 normal
-sleep 8
+sleep 64
 chg_npc_dir 13713 up
 chg_npc_dir 13711 left
 chg_npc_img 13711 116

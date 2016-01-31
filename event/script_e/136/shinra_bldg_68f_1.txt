@@ -1,0 +1,19 @@
+set_eternal_event
+wait_target_talk 13625
+reset_talk_flag 13625
+if_flag 19 0
+create npc_event 13620 136 11 13 156 2 0 none
+set_layer 13620 front
+wait_key_push_edge a
+sleep 8
+kill 13620
+chg_event_move_char_speed slow
+step_char 1
+sleep 48
+chg_event_move_char_speed normal
+play_map_bgm 142
+chg_type 13622 npc2
+create event_generator 13610 136 0 0 17 0 0 @136/shinra_bldg_68f_2.txt
+fi
+msg w‚Ç‚¤‚µ‚½‚ñ‚¾H
+set_flag 19 1

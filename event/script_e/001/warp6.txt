@@ -6,7 +6,7 @@ set_flag 4 0
 sleep 8
 fi
 if_flag_lesser 3 3
-if_flag 4 5
+if_flag 4 8
 end
 fi
 include ./event/common/now_loading.txt
@@ -88,6 +88,37 @@ include ./event/common/act/act1-8_9.txt
 set_flag 25 14
 set_flag 30 31
 warp_ff3_2 129 36 21 2 down
+fi
+if_flag 4 5
+include ./event/common/act/act1-8_12.txt
+include ./event/common/del_member.txt
+sleep 8
+add_party_mem 3
+add_party_mem 4
+set_flag 25 17
+set_flag 30 35
+warp_ff3_2 137 23 20 2 down
+fi
+if_flag_greater 4 5
+include ./event/common/act/act1-8_14.txt
+fi
+if_flag 4 6
+include ./event/common/act/act1-8_13.txt
+set_flag 25 17
+set_flag 30 36
+warp_ff3_2 136 17 19 2 up
+fi
+if_flag_greater 4 6
+include ./event/common/act/act1-9_1e.txt
+sleep 16
+include ./event/common/act/act1-9_2.txt
+include ./event/common/act/act1-9_3e.txt
+fi
+if_flag 4 7
+remove_all_materia 0
+remove_all_materia 2
+set_flag 30 38
+warp_ff3_2 145 27 21 2 right
 fi
 fi
 if_flag 3 2

@@ -1,57 +1,27 @@
-sleep 64
-create npc_event 71311 713 8 37 1 0 2 none
-create npc_event 71312 713 8 37 2 0 2 none
-move_npc 71311 down 1
-move_npc 71312 down 1
 sleep 16
-move_npc 71311 left 1
-move_npc 71312 right 1
-sleep 16
-jump_npc 71311 same 1
-chg_npc_dir 71311 up
-chg_npc_dir 71312 up
-sleep 16
-step_npc 71311 2
-msg バレット\n「ここからが　ほんばんだ\n　ゆだんするな
-chg_npc_dir 71310 down
-sleep 16
-chg_npc_dir 71312 left
-sleep 16
-step_npc 71312 2
-msg ティファ\n「エアリス　ぶじだといいね
-chg_npc_dir 71310 up
-sleep 32
-chg_npc_dir 71312 up
-sleep 64
-fadeout
-set_flag 0 0
-sleep 16
-play_se machine.wav
-kill_through_range 10922 10923
-sleep 32
-play_se train_info.ogg
-erase_image_range 000 001
-kill_through_range 71310 71312
-kill_through 10910
-sleep 32
-draw_char off
-warp 708 0 0 up
-fadein
-sleep 24
 if_flag 28 8
-warp_ff3_2 119 23 32 2 up
+create npc_event 10911 109 32 19 1 0 2 none
+create npc_event 10912 109 32 19 2 0 2 none
 fi
 if_flag 28 9
-warp_ff3_2 119 25 32 2 up
+create npc_event 10911 109 37 19 1 0 2 none
+create npc_event 10912 109 37 19 2 0 2 none
 fi
-draw_char on
-sleep 8
-move_char up 1
+move_npc 10911 up 1
+move_npc 10912 up 1
 sleep 16
-set_flag 25 11
-set_flag 24 9
-create event_generator 10922 109 7 20 17 0 0 @109/outside_elevator_switch.txt
-create event_generator 10923 109 27 20 17 0 0 @109/outside_elevator_switch.txt
-include ./event/common/key_valid.txt
-set_flag 30 26
-create event_generator 11999 119 0 0 17 0 0 @../common/point.txt
+move_npc 10911 left 1
+move_npc 10912 right 1
+sleep 16
+jump_npc 10911 same 1
+chg_npc_dir 10911 down
+chg_npc_dir 10912 down
+sleep 16
+chg_npc_dir 10910 up
+sleep 16
+step_npc 10911 2
+msg バレット\n「ここからが　ほんばんだ\n　ゆだんするな
+sleep 32
+step_npc 10912 2
+msg ティファ\n「エアリス　ぶじだといいね
+include ./event/common/109/outside_elevator_baret_tifa_common.txt

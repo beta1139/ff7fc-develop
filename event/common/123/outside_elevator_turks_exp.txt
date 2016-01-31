@@ -1,0 +1,2 @@
+move_npc 12314 right 1
+sleep 32

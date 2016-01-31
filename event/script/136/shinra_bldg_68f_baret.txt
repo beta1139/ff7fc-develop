@@ -1,0 +1,84 @@
+include ./event/common/136/shinra_bldg_68f_common1.txt
+chg_npc_img 13621 1
+chg_npc_dir 13621 down
+sleep 40
+set_active_msg 13621
+jump_npc 13621 same 1
+msg バレット\n「おい
+sleep 32
+chg_speed 13621 slow
+step_npc 13621 2
+msg バレット\n「エアリスはこだいしゅで\n　こだいしゅの　ほんとうのよびなは　セトラ\n\n　それで　こだいしゅは\n　やくそくのちって　ばしょを　しっていて\n　しんらは　そのやくそくのちが　ほしい　と
+sleep 32
+chg_npc_dir 13621 left
+sleep 32
+step_npc 13621 1
+msg バレット\n「でも　やくそくのちってのは\n　いいつたえに　でてくるだけで\n　ほんとうにあるのかどうかは　わからねえ
+chg_npc_dir 13621 down
+sleep 16
+jump_npc 13621 same 1
+sleep 16
+chg_speed 13621 normal
+step_npc 13621 2
+msg バレット\n「これでいいのか？
+sleep 16
+chg_npc_img 13624 4
+chg_npc_dir 13624 left
+sleep 48
+chg_speed 13621 not_move
+sleep 16
+msg バレット\n「やくそくのちには　ほうふな\n　まこうエネルギーがあると\n　しんらのれんちゅうは　かんがえてる\n　ってえことは　しんらは　そこにいったら\n　また　まこうエネルギーをガンガン\n　すいあげちまうってことだ
+chg_speed 13621 slow
+sleep 40
+chg_npc_dir 13621 right
+sleep 16
+step_npc 13621 2
+msg バレット\n「……そこも　とちが　かれちまうな\n　ほしが……やんでいくわけだ
+sleep 16
+chg_npc_dir 13621 down
+sleep 32
+chg_speed 13621 normal
+jump_npc 13621 same 1
+chg_npc_dir 13621 down
+sleep 4
+chg_npc_dir 13621 right
+sleep 4
+chg_npc_dir 13621 up
+sleep 4
+chg_npc_dir 13621 left
+sleep 4
+chg_npc_img 13621 95
+chg_npc_dir 13621 up
+jump_npc 13621 same 1
+sleep 16
+jump_npc 13621 same 1
+msg バレット\n「ほうっちゃおけねえ！\n　アバランチ　メンバーぼしゅうだ\n\n　オレ　ティファ　クラウド……\n　それにエアリスもだな
+chg_npc_img 13621 1
+chg_npc_dir 13621 down
+sleep 16
+jump_npc 13621 same 1
+sleep 16
+step_npc 13621 2
+msg バレット\n「おめえ　どうだ？
+sleep 16
+chg_npc_dir 13624 down
+sleep 48
+move_npc 13624 down 1
+sleep 64
+move_npc 13624 right 1
+sleep 64
+move_npc 13624 down 1
+sleep 64
+chg_npc_dir 13624 left
+sleep 32
+chg_npc_img 13624 176
+chg_npc_dir 13624 up
+sleep 32
+chg_speed 13624 not_move
+sleep 48
+chg_npc_img 13621 98
+chg_npc_dir 13621 left
+sleep 16
+step_npc 13621 2
+msg バレット\n「つまんねえやろうだぜ
+include ./event/common/136/shinra_bldg_68f_common2.txt

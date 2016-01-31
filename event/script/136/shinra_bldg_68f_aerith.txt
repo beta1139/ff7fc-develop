@@ -1,0 +1,151 @@
+include ./event/common/136/shinra_bldg_68f_common1.txt
+chg_npc_dir 13623 right
+sleep 20
+step_npc 13623 2
+sleep 16
+msg エアリス\n「クラウド　そこにいるの？
+chg_npc_dir 13620 left
+sleep 40
+jump_npc 13620 same 1
+sleep 16
+step_npc 13620 1
+msg 『エアリス！？　ぶじか？
+sleep 32
+step_npc 13623 1
+msg エアリス\n「うん　だいじょぶ
+sleep 32
+chg_npc_img 13623 3
+move_npc 13623 left 1
+sleep 32
+step_npc 13623 2
+msg エアリス\n「きっと　クラウドが\n　きてくれるとおもってた
+sleep 32
+set_active_msg 13620
+jump_npc 13620 same 1
+msg 『ボディーガード　いらいしただろ？
+sleep 16
+move_npc 13623 up 1
+sleep 48
+chg_npc_dir 13623 right
+sleep 16
+jump_npc 13623 same 1
+msg エアリス\n「ほうしゅうはデート1かい　だったよね？
+chg_npc_dir 13620 up
+jump_npc 13620 same 1
+chg_npc_img 13620 97
+sleep 8
+chg_npc_img 13620 0
+sleep 8
+chg_npc_dir 13623 up
+chg_npc_img 13623 15
+chg_speed 13623 normal
+step_npc 13623 4
+chg_speed 13620 fast
+step_npc 13620 1
+sleep 16
+chg_npc_dir 13622 left
+sleep 48
+chg_speed 13622 slow
+chg_npc_img 13622 2
+move_npc 13622 left 1
+sleep 48
+step_npc 13622 1
+sleep 16
+msg ティファ\n「………………なるほど
+chg_npc_img 13623 3
+chg_npc_dir 13623 right
+jump_npc 13623 same 2
+sleep 32
+chg_speed 13623 fast
+step_npc 13623 4
+msg エアリス\n「……！？　ティファ！\n　ティファもそこにいるの！
+sleep 24
+chg_npc_dir 13622 left
+sleep 16
+step_npc 13622 1
+sleep 16
+msg ティファ\n「すいませんねえ
+chg_npc_dir 13620 down
+chg_npc_img 13620 103
+sleep 24
+chg_npc_dir 13620 left
+sleep 40
+chg_npc_dir 13620 down
+sleep 32
+move_npc 13622 left 1
+sleep 16
+chg_npc_img 13620 0
+chg_npc_dir 13620 left
+sleep 16
+chg_speed 13622 normal
+step_npc 13622 2
+msg ティファ\n「あのね　エアリス\n　しつもんがあるんだけど
+sleep 16
+chg_speed 13623 slow
+jump_npc 13623 same 1
+msg エアリス\n「な～に？
+sleep 32
+step_npc 13622 2
+msg ティファ\n「やくそくのちって　ほんとうにあるの？
+sleep 32
+chg_npc_dir 13623 left
+sleep 32
+chg_npc_img 13623 15
+step_npc 13623 2
+sleep 32
+step_npc 13623 1
+msg エアリス\n「……わからない
+chg_npc_img 13623 3
+sleep 16
+chg_npc_dir 13623 down
+sleep 32
+move_npc 13623 down 1
+sleep 64
+step_npc 13623 2
+msg エアリス\n「わたし　しってるのは……\n\n\n　『セトラのたみ　ほしよりうまれ\n　ほしとかたり　ほしをひらく』\n\n\n　えっと……それから……\n\n\n\n　『セトラのたみ　やくそくのちへ　かえる\n　しじょうのこうふく　ほしがあたえし　さだめのち』
+sleep 16
+chg_npc_dir 13623 left
+sleep 64
+jump_npc 13622 same 1
+sleep 16
+step_npc 13622 2
+msg ティファ\n「……どういういみ？
+sleep 16
+chg_npc_dir 13623 right
+sleep 32
+chg_npc_img 13623 15
+step_npc 13623 2
+sleep 32
+msg エアリス\n「ことばいじょうの　いみ　しらないの
+sleep 32
+chg_speed 13620 normal
+step_npc 13620 1
+msg 『……ほしとかたり？
+sleep 16
+chg_speed 13622 slow
+move_npc 13622 right 1
+sleep 32
+chg_npc_dir 13622 left
+sleep 16
+chg_speed 13622 normal
+jump_npc 13622 same 1
+msg ティファ\n「ほしが　なにかいうの？
+sleep 16
+chg_npc_img 13623 3
+chg_npc_dir 13623 down
+step_npc 13623 2
+msg エアリス\n「ひとが　おおぜいいて　ざわざわしてるかんじ\n　だからなにをいってるのか\n　よくわからない
+sleep 32
+jump_npc 13620 same 1
+msg 『いまもきこえるのか？
+sleep 16
+chg_npc_dir 13623 left
+sleep 32
+step_npc 13623 2
+msg エアリス\n「わたし　きこえたのは　スラムのきょうかいだけ\n　ミッドガルは　もうダメだって\n　かあさん……ほんとうの　かあさんがいってた
+sleep 16
+chg_npc_dir 13623 down
+sleep 32
+step_npc 13623 2
+msg エアリス\n「いつかミッドガルから　にげなさい\n　ほしとはなして　エアリスのやくそくのち\n　みつけなさい\n　……かあさんがいってた\n\n\n\n　おとなになったら　きこえなくなるんだと\n　おもってたけど……
+include ./event/common/136/shinra_bldg_68f_common2.txt

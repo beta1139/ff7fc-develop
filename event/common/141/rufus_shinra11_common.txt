@@ -1,0 +1,58 @@
+slide_walk_npc 14112 down 6
+slide_walk_npc 14113 down 6
+slide_walk_npc 14114 down 6
+slide_walk_npc 14115 down 6
+chg_speed 14110 fast
+move_npc 14110 left 3
+sleep 8
+jump_npc 14100 same 2
+sleep 16
+play_se jump.wav
+jump_npc_target_pos 14110 15 10
+sleep 8
+play_se_loop helicopter.ogg
+sleep 8
+chg_event_move_char_speed fast
+move_char left 4
+chg_speed 14100 fast
+move_npc 14100 left 4
+sleep 8
+step_npc 14112 3
+step_npc 14113 3
+step_npc 14114 3
+step_npc 14115 3
+sleep 8
+chg_npc_dir 14110 right
+loop 2
+sleep 4
+chg_npc_y_offset 14110 -5
+sleep 4
+chg_npc_y_offset 14110 -6
+pool
+slide_walk_npc 14112 up 6
+slide_walk_npc 14113 up 6
+slide_walk_npc 14114 up 6
+slide_walk_npc 14115 up 6
+slide_npc 14110 up 6
+jump_npc 14100 same 2
+loop 4
+sleep 4
+chg_npc_y_offset 14110 -7
+sleep 4
+chg_npc_y_offset 14110 -8
+pool
+chg_npc_dir 14100 up
+step_npc 14100 6
+set_flag 19 1
+loop 2
+sleep 4
+chg_npc_y_offset 14110 -7
+sleep 4
+chg_npc_y_offset 14110 -8
+pool
+sleep 48
+chg_char_dir up
+draw_char on
+kill_through_range 14100 14130
+kill_through_range 14160 14163
+stop_se

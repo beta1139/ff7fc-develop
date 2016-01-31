@@ -1,0 +1,36 @@
+play_se fingersnap.ogg
+sleep 16
+chg_npc_dir 10910 up
+kill_through_range 10922 10923
+sleep 16
+play_se killed.wav
+set_screen_effect add 0 255 0 0
+loop 32
+inc_screen_effect_val 1
+sleep 1
+pool
+loop 2
+chg_npc_dir 10910 right
+loop 12
+inc_screen_effect_val 1
+sleep 1
+pool
+chg_npc_dir 10910 left
+loop 12
+inc_screen_effect_val 1
+sleep 1
+pool
+chg_npc_dir 10910 right
+pool
+chg_npc_dir 10910 down
+jump_npc 10910 same 1
+loop 16
+inc_screen_effect_val 1
+sleep 1
+pool
+chg_speed 10910 fast
+step_npc 10910 2
+loop 4
+inc_screen_effect_val 1
+sleep 1
+pool

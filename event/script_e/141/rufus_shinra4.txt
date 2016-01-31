@@ -1,0 +1,144 @@
+wait_key_push_edge a
+erase_msg3
+sleep 32
+step_npc 14100 2
+sleep 16
+msg 『もとソルジャークラス1ST\n　クラウドだ！
+sleep 16
+chg_event_move_char_speed fast
+move_char right 3
+sleep 24
+chg_npc_img 14101 95
+chg_npc_dir 14101 up
+jump_npc 14101 same 1
+sleep 16
+set_active_msg 14100
+jump_npc 14101 same 1
+msg バレット\n「アバランチだ！
+move_char left 6
+sleep 32
+jump_npc 14102 same 1
+sleep 4
+chg_npc_dir 14102 left
+sleep 4
+chg_npc_dir 14102 up
+sleep 4
+chg_npc_dir 14102 right
+sleep 4
+chg_npc_img 14102 98
+chg_npc_dir 14102 right
+step_npc 14102 1
+set_talk_npc 14102
+msg ティファ\n「おなじく！
+reset_talk_npc
+sleep 8
+move_char right 4
+sleep 32
+jump_npc 14103 same 1
+sleep 16
+step_npc 14103 1
+set_talk_npc 14103
+msg エアリス\n「……スラムのはなうり
+reset_talk_npc
+sleep 16
+move_char left 2
+sleep 32
+step_npc 14104 1
+msg レッド13\n「……じっけんサンプル
+sleep 32
+kill_through_range 4989 4990
+set_active_msg 14110
+jump_npc 14110 same 1
+msg ルーファウス\n「おかしな　くみあわせだ
+chg_event_move_char_speed normal
+kill 14121
+move_char down 4
+create npc_event 4990 49 20 11 19 0 2 none
+set_flag 19 3
+set_flag 40 3
+sleep 64
+chg_char_dir right
+chg_char_state_move
+create event_generator 4989 49 0 0 17 0 0 @../common/049/profile.txt
+sleep 8
+clear_text 2
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+set_text_alpha 2 0
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+sleep 8
+set_text 2 　 　   　　しんらカンパニー　ふくしゃちょう
+set_text 3 　 　   　　　　　ルーファウス　しんら
+set_text 8 　 　   　　　　プレジデントしんらのむすこ
+set_text 9 　 　   　ちちゆずりの　れいこくさは　そのままに
+set_text 10 　 　   　　それいじょうの　じつりょくしゅぎしゃ
+set_text 11 　 　 　　しゅっちょうさきの　ジュノンより　もどる
+warp 49 20 11 down
+sleep 8
+include ./event/common/set_text/st02.txt
+sleep 32
+include ./event/common/set_text/st03.txt
+sleep 40
+include ./event/common/set_text/st08.txt
+sleep 16
+include ./event/common/set_text/st09.txt
+sleep 32
+include ./event/common/set_text/st10.txt
+sleep 16
+include ./event/common/set_text/st11.txt
+sleep 16
+wait_key_push_edge a
+sleep 16
+fadeout
+set_text_alpha 2 0
+set_text_alpha 3 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+clear_text 2
+clear_text 3
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+warp 141 20 12 down
+kill_through_range 4989 4990
+chg_npc_img 14102 2
+chg_npc_dir 14102 down
+fadein
+sleep 32
+set_flag 19 0
+chg_event_move_char_speed normal
+move_char right 1
+move_npc 14110 right 1
+sleep 32
+step_npc 14110 1
+msg ルーファウス\n「さて　わたしはルーファウス\n　このしんらカンパニーの　しゃちょうだ
+sleep 8
+chg_npc_dir 14101 left
+chg_npc_img 14101 98
+sleep 16
+step_npc 14101 2
+msg バレット\n「オヤジがしんだら　さっそく　しゃちょうか！
+sleep 8
+chg_npc_dir 14110 down
+sleep 16
+chg_npc_img 14110 178
+chg_npc_dir 14110 down
+sleep 16
+chg_npc_dir 14110 left
+sleep 24
+chg_npc_img 14110 19
+chg_npc_dir 14110 down
+chg_speed 14110 slow
+step_npc 14110 1
+msg ルーファウス\n「そうだ\n　しゃちょう　しゅうにんの　あいさつでも\n　きかせてやろうか
+include ./event/common/141/rufus_shinra4_common.txt

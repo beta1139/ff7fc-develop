@@ -1,0 +1,17 @@
+create npc_event 13621 136 22 18 176 1 0 none
+create npc_event 13622 136 18 19 175 1 0 none
+create npc_event 13623 136 14 19 175 0 0 none
+create npc_event 13624 136 21 19 176 0 0 none
+create npc2 13625 136 13 14 32 1 0 none
+reset_talk_flag 13634
+sleep 16
+play_event_bgm 1-04-Anxious_Heart.ogg
+create event_generator 13600 136 0 0 17 0 0 @136/shinra_bldg_68f_tifa.txt
+create event_generator 13601 136 0 0 17 0 0 @136/shinra_bldg_68f_care_all.txt
+kill_through 13920
+include ./event/common/del_member_all.txt
+sleep 16
+add_party_mem 0
+sleep 16
+set_flag 17 0
+set_flag 19 0

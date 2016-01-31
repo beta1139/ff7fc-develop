@@ -7,7 +7,7 @@ if_flag 3 0
 sleep 16
 fadeout
 play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
-recover_active_chara
+recover_all_chara
 sleep 400
 fadein
 play_bgm

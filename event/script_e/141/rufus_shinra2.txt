@@ -1,0 +1,8 @@
+wait_same_pos
+play_se_loop helicopter.ogg
+create npc_event 14100 141 21 9 0 1 2 none
+draw_char off
+move_npc 14100 down 4
+include ./event/common/key_unvalid.txt
+msg3 -1 ルーファウス\n「そうか……\n　やはりセフィロスは　いきていたか\n　……ところで
+include ./event/common/141/rufus_shinra2_common.txt

@@ -1,0 +1,29 @@
+kill_through_range 71700 71709
+kill_through_range 71711 71715
+sleep 16
+create event_generator 14121 141 0 0 17 0 0 @141/rufus_shinra3.txt
+move_char down 3
+create npc_event 14101 141 21 9 1 1 2 none
+move_npc 14101 down 3
+sleep 16
+create npc_event 14102 141 21 9 2 1 2 none
+move_npc 14102 down 2
+sleep 16
+create npc_event 14104 141 21 9 4 1 2 none
+move_npc 14104 down 2
+sleep 16
+create npc_event 14103 141 21 9 3 1 2 none
+move_npc 14103 down 2
+move_npc 14101 right 3
+move_npc 14102 left 3
+sleep 16
+close_door 14150
+move_npc 14104 left 1
+sleep 16
+move_npc 14103 right 1
+move_npc 14104 down 1
+sleep 16
+chg_npc_dir 14101 left
+chg_npc_img 14101 98
+chg_npc_dir 14102 down
+chg_npc_dir 14103 down

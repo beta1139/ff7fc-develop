@@ -1,0 +1,24 @@
+if_flag 17 0
+move_char left 5
+sleep 80
+chg_char_dir up
+fi
+if_flag 17 1
+move_char right 3
+sleep 48
+chg_char_dir left
+set_flag 19 1
+fi
+chg_npc_img 13621 176
+chg_npc_dir 13621 down
+set_inactive_msg 13621
+chg_npc_img 13624 176
+chg_npc_dir 13624 up
+draw_char on
+kill 13620
+chg_type 13622 npc2
+chg_speed 13621 not_move
+chg_speed 13622 not_move
+chg_speed 13623 not_move
+chg_speed 13624 not_move
+set_flag_wall 13622

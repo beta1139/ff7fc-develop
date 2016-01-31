@@ -81,7 +81,7 @@ chg_npc_y_offset 10261 7
 sleep 4
 chg_npc_y_offset 10261 6
 pool
-create npc_event 10262 102 15 28 30 1 3 none
+create npc_event 10262 102 15 28 17 1 3 none
 jump_npc_target_pos 10262 15 42
 set_layer 10262 front
 loop 3
@@ -90,6 +90,7 @@ chg_npc_y_offset 10261 7
 sleep 4
 chg_npc_y_offset 10261 6
 pool
+chg_npc_img 10262 30
 move_npc 10254 up 2
 sleep 4
 chg_npc_y_offset 10261 7
@@ -104,6 +105,10 @@ chg_npc_y_offset 10220 6
 kill 10258
 kill 10259
 set_npc_pos 10260 102 7 43
+set_ignore_map_layer_flag 10256 1
+set_ignore_map_layer_flag 10257 1
+set_ignore_map_layer_flag 10220 1
+set_ignore_map_layer_flag 10260 1
 set_layer 10256 front
 set_layer 10257 front
 set_layer 10220 front

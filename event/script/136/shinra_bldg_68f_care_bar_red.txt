@@ -1,0 +1,16 @@
+wait_target_talk 13634
+reset_talk_flag 13634
+set_flag 17 0
+msg #3\n　　バレットはどうしてるかな\n　　レッド13はどうしてるかな\n　　とりあえずねむっておこう\n\n[[]][[]][[]]
+if_flag 3 0
+add_likability 1 100
+create event_generator 13607 136 0 0 17 0 0 @136/shinra_bldg_68f_care_red.txt
+include ./event/script/136/shinra_bldg_68f_baret.txt
+fi
+if_flag 3 1
+create event_generator 13605 136 0 0 17 0 0 @136/shinra_bldg_68f_care_bar.txt
+include ./event/script/136/shinra_bldg_68f_red.txt
+fi
+if_flag 3 2
+include ./event/common/136/shinra_bldg_68f_goodnight.txt
+fi

@@ -1,0 +1,50 @@
+if_char_dir right
+move_char right 5
+fi
+if_char_dir left
+move_char left 5
+fi
+sleep 80
+chg_char_dir up
+create npc_event 71702 717 15 25 2 1 2 none
+create npc_event 71703 717 15 25 3 1 2 none
+move_npc 71702 left 1
+move_npc 71703 right 1
+sleep 16
+chg_npc_dir 71702 up
+chg_npc_dir 71703 up
+create npc_event 71700 717 15 25 0 0 2 none
+draw_char off
+stop_bgm
+sleep 32
+chg_event_move_char_speed slow
+move_char up 8
+sleep 128
+chg_speed 71700 slow
+chg_speed 71702 slow
+chg_speed 71703 slow
+move_npc 71700 up 5
+create npc_event 71701 717 20 30 1 0 2 none
+create npc_event 71704 717 10 30 4 0 2 none
+move_npc 71701 up 6
+move_npc 71704 up 6
+sleep 32
+move_npc 71702 up 4
+move_npc 71703 up 4
+sleep 64
+move_npc 71701 left 3
+move_npc 71704 right 3
+sleep 48
+move_npc 71701 up 2
+move_npc 71704 up 2
+sleep 32
+chg_npc_img 71701 145
+step_npc 71701 2
+sleep 32
+jump_npc 71701 same 1
+sleep 40
+chg_npc_img 71701 1
+chg_speed 71701 slow
+sleep 16
+play_map_bgm 717
+create event_generator 71724 717 0 0 17 0 0 @717/president_shinra4.txt

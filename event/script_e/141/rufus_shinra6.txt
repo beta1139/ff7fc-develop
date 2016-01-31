@@ -1,0 +1,16 @@
+set_talk_npc 14110
+msg ルーファウス\n「みんしゅうは　しんらに　ほごされていると\n　おもっているからな
+reset_talk_npc
+wait_event_invalid 14123
+chg_speed 14110 slow
+sleep 32
+move_npc 14110 down 1
+sleep 16
+chg_npc_dir 14103 down
+chg_npc_dir 14104 right
+sleep 16
+move_npc 14110 right 2
+chg_char_state_move
+create event_generator 14125 141 0 0 17 0 0 @141/rufus_shinra7.txt
+sleep 64
+chg_speed 14110 not_move

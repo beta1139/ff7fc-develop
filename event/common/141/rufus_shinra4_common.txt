@@ -1,0 +1,20 @@
+chg_npc_dir 14110 left
+sleep 32
+chg_speed 14110 slow
+move_npc 14110 left 2
+sleep 32
+chg_char_state_move
+create event_generator 14123 141 0 0 17 0 0 @141/rufus_shinra5.txt
+sleep 32
+move_npc 14110 up 5
+sleep 112
+chg_npc_dir 14101 left
+chg_npc_img 14101 1
+chg_npc_dir 14104 left
+sleep 16
+chg_npc_dir 14103 left
+sleep 16
+chg_npc_dir 14102 right
+sleep 16
+chg_npc_dir 14110 left
+chg_speed 14110 not_move

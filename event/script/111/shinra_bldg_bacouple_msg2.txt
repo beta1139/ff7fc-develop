@@ -64,22 +64,23 @@ sleep 8
 jump_npc 11104 same 1
 sleep 16
 step_npc 11104 2
-move_npc 11103 down 6
+move_npc 11103 down 8
 sleep 16
 move_npc 11104 right 1
 sleep 8
 move_npc 11104 up 3
 sleep 16
 erase_msg3
-sleep 8
 play_se door_open.ogg
 open_door 11150
-kill 11103
+sleep 8
 set_layer 11110 front
 move_npc 11104 right 3
 msg3 -1 ÅuÇ®Å@Ç®Ç¢ÇƒÇ©Ç»Ç¢Ç≈Ç≠ÇÍÇ•Å`ÅI
-sleep 16
+sleep 8
 close_door 11150
+sleep 8
+kill 11103
 sleep 8
 chg_npc_dir 11104 left
 chg_npc_img 11104 150
@@ -88,17 +89,20 @@ sleep 8
 jump_npc 11104 same 1
 sleep 16
 chg_npc_img 11104 73
-move_npc 11104 down 6
-sleep 48
-erase_msg3
+move_npc 11104 down 9
+sleep 40
 play_se door_open.ogg
 open_door 11150
-kill 11104
+sleep 8
+erase_msg3
+sleep 8
 move_char down 2
-sleep 16
 close_door 11150
+sleep 8
 move_npc 11111 down 1
 move_npc 11112 up 1
+sleep 8
+kill 11104
 sleep 16
 chg_char_dir left
 draw_char on

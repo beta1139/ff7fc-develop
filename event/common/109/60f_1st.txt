@@ -1,45 +1,55 @@
 include ./event/common/key_unvalid.txt
+set_image_trans_col 0 0 0
 if_flag 24 0
-create npc_event 71310 713 8 20 0 0 2 none
-draw_image 001 80 64 0 0 80 160 0 event/shinra_bldg/outside_elevator.png
-warp 713 8 20 up
-move_char up 12
-sleep 1
-slide_npc 71310 up 12
-sleep 99
+move_char up 14
+slide_npc 10910 up 14
+sleep 100
 play_se_loop elevator_loop.wav
-sleep 92
-draw_image 000 0 -192 0 0 256 640 0 event/shinra_bldg/sky.png
+sleep 124
 fi
 if_flag 24 8
-create npc_event 71310 713 28 20 0 0 2 none
-draw_image 001 80 64 0 0 80 160 0 event/shinra_bldg/outside_elevator.png
-warp 713 28 20 up
-move_char up 11
-sleep 1
-slide_npc 71310 up 11
-sleep 99
-play_se_loop elevator_loop.wav
-sleep 76
-draw_image 000 0 -16 0 0 256 640 0 event/shinra_bldg/sky.png
+move_char up 5
+slide_npc 10910 up 5
+sleep 80
 fi
-set_layer 71310 front
-warp 713 8 37 up
-set_npc_pos 71310 713 8 37
-set_ignore_map_layer_flag 71310 1
-set_layer 71310 front
+warp 109 34 18 down
+if_flag 28 8
+set_npc_pos 10910 109 32 19
+fi
+if_flag 28 9
+set_npc_pos 10910 109 37 19
+fi
+draw_image 000 48 0 0 0 80 240 1 event/shinra_bldg/column.png
+draw_image 001 128 0 0 0 80 240 1 event/shinra_bldg/column.png
+draw_image 002 48 -240 0 0 80 240 1 event/shinra_bldg/column.png
+draw_image 003 128 -240 0 0 80 240 1 event/shinra_bldg/column.png
+loop 20
+sleep 1
+chg_image_pos_offset 000 0 1 0 0 0 0
+chg_image_pos_offset 001 0 1 0 0 0 0
+chg_image_pos_offset 002 0 1 0 0 0 0
+chg_image_pos_offset 003 0 1 0 0 0 0
+pool
+play_se_loop elevator_loop.wav
+loop 60
+sleep 1
+chg_image_pos_offset 000 0 1 0 0 0 0
+chg_image_pos_offset 001 0 1 0 0 0 0
+chg_image_pos_offset 002 0 1 0 0 0 0
+chg_image_pos_offset 003 0 1 0 0 0 0
+pool
 create event_generator 10924 109 0 0 17 0 0 @109/outside_elevator_baret_tifa.txt
 chg_char_state_move
-if_flag 24 0
-loop 224
-sleep 1
-chg_image_pos_offset 000 0 1 0 0 0 0
-pool
-fi
 loop_inf
-chg_image_pos_offset 000 0 -400 0 0 0 0
-loop 400
+chg_image_pos_offset 000 0 -80 0 0 0 0
+chg_image_pos_offset 001 0 -80 0 0 0 0
+chg_image_pos_offset 002 0 -80 0 0 0 0
+chg_image_pos_offset 003 0 -80 0 0 0 0
+loop 80
 sleep 1
 chg_image_pos_offset 000 0 1 0 0 0 0
+chg_image_pos_offset 001 0 1 0 0 0 0
+chg_image_pos_offset 002 0 1 0 0 0 0
+chg_image_pos_offset 003 0 1 0 0 0 0
 pool
 pool

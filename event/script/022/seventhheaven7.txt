@@ -162,7 +162,7 @@ sleep 24
 play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
 set_flag 30 5
 sleep 432
-recover_active_chara
+recover_all_chara
 warp 23 2 8 right
 draw_char on
 play_map_bgm 28

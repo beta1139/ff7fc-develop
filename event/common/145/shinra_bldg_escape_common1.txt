@@ -1,0 +1,51 @@
+chg_event_move_char_speed normal
+create npc_event 14502 145 17 11 2 2 2 none
+move_npc 14502 left 7
+sleep 16
+create npc_event 14501 145 17 12 1 2 2 none
+move_npc 14501 left 6
+create npc_event 14503 145 17 11 3 2 2 none
+move_npc 14503 left 7
+sleep 16
+create npc_event 14504 145 17 12 4 2 2 none
+move_npc 14504 left 6
+sleep 16
+move_char left 5
+sleep 64
+move_npc 14502 down 10
+move_npc 14501 down 9
+sleep 16
+move_char down 9
+move_npc 14503 down 10
+move_npc 14504 down 9
+sleep 16
+sleep 112
+move_npc 14501 right 15
+sleep 16
+move_char right 7
+move_npc 14502 right 12
+move_npc 14504 right 13
+sleep 16
+move_npc 14503 right 7
+sleep 112
+chg_event_move_char_speed slow
+chg_speed 14503 slow
+move_npc 14503 right 2
+move_char right 2
+sleep 64
+jump_npc 14502 same 1
+chg_npc_dir 14502 left
+sleep 16
+chg_npc_dir 14504 left
+sleep 16
+jump_npc 14501 same 1
+chg_npc_dir 14501 left
+sleep 16
+chg_speed 14504 slow
+move_npc 14504 left 1
+sleep 16
+chg_speed 14501 slow
+move_npc 14501 left 2
+sleep 64
+step_npc 14503 2
+sleep 32

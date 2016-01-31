@@ -77,6 +77,15 @@ set_npc_pos 13702 137 22 18
 warp 137 13 19 down
 sleep 16
 play_bgm
+if_active_mem 1
+add_likability 1 200
+fi
+if_active_mem 2
+add_likability 2 200
+fi
+if_active_mem 3
+add_likability 3 200
+fi
 sleep 32
 fadein
 kill_through_range 13716 13718

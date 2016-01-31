@@ -1,0 +1,14 @@
+wait_target_talked 14301
+chg_type 14301 npc_event
+chg_speed 14301 fast
+sleep 16
+jump_npc 14301 same 1
+chg_npc_dir 14301 up
+sleep 24
+move_npc 14301 up 2
+sleep 16
+move_npc 14301 right 2
+sleep 16
+move_npc 14301 up 5
+sleep 40
+kill 14301

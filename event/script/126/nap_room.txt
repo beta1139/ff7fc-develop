@@ -5,7 +5,7 @@ fadeout
 sleep 40
 stop_bgm
 play_se care.wav
-recover_active_chara
+recover_all_chara
 warp 126 13 26 down
 sleep 64
 fadein

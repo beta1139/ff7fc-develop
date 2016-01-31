@@ -1,96 +1,105 @@
 set_eternal_event
-wait_talk
+wait_same_pos
+if_flag 16 0
+set_active_msg 10910
+move_npc 10910 down 1
+fi
+if_flag 25 19
+include ./event/common/109/outside_elevator_enemy.txt
+end
+fi
 msg #10\n　　1かい\n　　59かい\n　　60かい\n　　61かい\n　　62かい\n　　63かい\n　　64かい\n　　65かい\n　　66かい\n　　69かい\n[[]][[]][[]][[]][[]][[]][[]][[]][[]][[]]
 if_flag 3 0
 if_flag 24 0
-msg 　げんざい　1かいです
+include ./event/common/109/outside_elevator_warpout.txt
 end
 fi
 fi
 if_flag 3 1
 if_flag 24 8
-msg 　げんざい　59かいです
+include ./event/common/109/outside_elevator_warpout.txt
 end
 fi
 fi
 if_flag 3 2
 if_flag 24 9
-msg 　げんざい　60かいです
+include ./event/common/109/outside_elevator_warpout.txt
 end
 fi
 fi
 if_flag 3 3
+if_flag 24 10
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6020
 play_se beep_ff3.ogg
 include ./event/script/109/no_card_key.txt
-end
-fi
-if_flag 24 10
-msg 　げんざい　61かいです
 end
 fi
 fi
 if_flag 3 4
+if_flag 24 11
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6020
 play_se beep_ff3.ogg
 include ./event/script/109/no_card_key.txt
 end
 fi
-if_flag 24 11
-msg 　げんざい　62かいです
-end
-fi
 fi
 if_flag 3 5
+if_flag 24 12
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6021
 play_se beep_ff3.ogg
 include ./event/script/109/no_card_key.txt
-end
-fi
-if_flag 24 12
-msg 　げんざい　63かいです
 end
 fi
 fi
 if_flag 3 6
+if_flag 24 13
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6021
 play_se beep_ff3.ogg
 include ./event/script/109/no_card_key.txt
-end
-fi
-if_flag 24 13
-msg 　げんざい　64かいです
 end
 fi
 fi
 if_flag 3 7
+if_flag 24 14
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6021
 play_se beep_ff3.ogg
 include ./event/script/109/no_card_key.txt
 end
 fi
-if_flag 24 14
-msg 　げんざい　65かいです
-end
-fi
 fi
 if_flag 3 8
+if_flag 24 15
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6022
 play_se beep_ff3.ogg
 include ./event/script/109/no_card_key.txt
 end
 fi
-if_flag 24 15
-msg 　げんざい　66かいです
-end
-fi
 fi
 if_flag 3 9
+if_flag 24 18
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 play_se beep_ff3.ogg
 include ./event/script/109/no_card_key.txt
-if_flag 24 16
-msg 　げんざい　69かいです
-fi
 end
 fi
 include ./event/common/109/switch_common.txt

@@ -1,0 +1,44 @@
+move_npc 13900 up 3
+sleep 16
+move_char up 2
+sleep 32
+if_flag 19 0
+if_active_mem 2
+create npc_event 13901 139 37 22 2 1 2 none
+fi
+if_active_mem 3
+create npc_event 13901 139 37 22 3 1 2 none
+fi
+if_active_mem 4
+create npc_event 13901 139 37 22 4 1 2 none
+fi
+fi
+if_flag 19 1
+if_active_mem 1
+create npc_event 13901 139 37 22 1 1 2 none
+fi
+if_active_mem 3
+create npc_event 13901 139 37 22 3 1 2 none
+fi
+if_active_mem 4
+create npc_event 13901 139 37 22 4 1 2 none
+fi
+fi
+if_flag 19 2
+if_active_mem 1
+create npc_event 13901 139 37 22 1 1 2 none
+fi
+if_active_mem 2
+create npc_event 13901 139 37 22 2 1 2 none
+fi
+if_active_mem 4
+create npc_event 13901 139 37 22 4 1 2 none
+fi
+fi
+move_npc 13901 left 1
+chg_npc_dir 13900 down
+sleep 16
+chg_npc_dir 13901 right
+set_active_msg 13900
+jump_npc 13900 same 1
+set_talk_npc 13900

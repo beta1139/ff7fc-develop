@@ -1,0 +1,11 @@
+wait_target_talk 13634
+reset_talk_flag 13634
+set_flag 17 0
+msg #2\n　　バレットはどうしてるかな\n　　とりあえずねむっておこう\n\n\n[[]][[]]
+if_flag 3 0
+create event_generator 13608 136 0 0 17 0 0 @136/shinra_bldg_68f_care_end.txt
+include ./event/script/136/shinra_bldg_68f_baret.txt
+fi
+if_flag 3 1
+include ./event/common/136/shinra_bldg_68f_goodnight.txt
+fi

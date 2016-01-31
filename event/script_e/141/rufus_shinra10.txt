@@ -1,0 +1,41 @@
+msg ルーファウス\n「ん？　おまえ　セフィロスがこだいしゅだと\n　しっているのか？
+sleep 16
+wait_event_invalid 14127
+sleep 32
+step_npc 14100 2
+msg 『……いろいろあってな\n　とにかく　おまえにもセフィロスにも\n　やくそくのちは　わたせない！
+sleep 16
+set_active_msg 14110
+jump_npc 14110 same 1
+msg ルーファウス\n「なるほど\n　ともだちには　なれないようだな
+set_key_valid dbg2
+sleep 16
+play_event_bgm 1-20-Still_more_Fighting.ogg
+set_flag 20 1
+set_flag 0 4
+boss_encount 289
+sleep 64
+set_flag 19 0
+wait_encount_end
+set_flag 20 0
+play_se_loop helicopter.ogg
+create npc_event 14112 141 15 3 146 1 3 none
+create npc_event 14113 141 14 3 146 0 3 none
+create npc_event 14114 141 15 4 146 2 3 none
+create npc_event 14115 141 14 4 146 3 3 none
+create npc_event 14116 141 15 12 121 1 3 none
+chg_char_state_move
+create event_generator 14131 141 0 0 17 0 0 @141/rufus_shinra11.txt
+loop_inf
+if_flag 19 0
+step_npc 14116 2
+sleep 16
+fi
+if_flag 19 1
+slide_walk_npc 14116 up 8
+sleep 64
+loop_inf
+sleep 160
+pool
+fi
+pool

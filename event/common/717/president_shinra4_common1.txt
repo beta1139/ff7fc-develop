@@ -1,0 +1,39 @@
+chg_npc_dir 71700 up
+chg_npc_dir 71702 up
+jump_npc 71703 same 1
+chg_speed 71706 fast
+step_npc 71706 4
+chg_event_move_char_speed normal
+sleep 32
+move_char down 2
+jump_npc 71706 same 1
+sleep 16
+move_npc 71706 down 6
+chg_speed 71700 normal
+jump_npc 71700 same 1
+sleep 8
+chg_npc_dir 71700 right
+sleep 8
+move_char right 3
+chg_speed 71700 fast
+move_npc 71700 right 4
+move_npc 71701 right 3
+chg_npc_dir 71703 right
+chg_npc_dir 71704 right
+chg_npc_dir 71702 down
+include ./event/common/key_unvalid.txt
+sleep 16
+jump_npc 71702 same 1
+sleep 8
+move_npc 71701 up 1
+sleep 8
+chg_speed 71702 fast
+move_npc 71702 up 1
+step_npc 71700 4
+step_npc 71701 4
+jump_npc 71706 same 1
+sleep 8
+move_npc 71702 left 3
+sleep 8
+step_npc 71706 6
+set_flag 19 0

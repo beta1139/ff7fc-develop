@@ -19,22 +19,19 @@ jump_char_target_pos 21 28
 sleep 16
 play_se landing.wav
 sleep 16
-if_flag_greater 19 90
+if_flag_greater 19 50
 if_flag 36 0
 if_flag_lesser 19 100
 play_se pick_up.wav
+add_vit 0 1
 msg たいりょくが　1ふえた！
 fi
 if_flag_greater 19 99
 play_event_bgm 1-11-Fanfare.ogg
+add_vit 0 2
 msg たいりょくが　2ふえた！
 play_bgm
 fi
-create npc_event 12699 126 24 23 61 1 0 none
-set_talk_npc 12699
-msg i7\n「げんざい　たいりょくをふやすスクリプトは\n　みじっそうなので　データには　はんえいされません\n　プログラマーさん　おねがいします～
-reset_talk_npc
-kill 12699
 set_flag 36 1
 fi
 fi

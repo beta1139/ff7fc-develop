@@ -1,0 +1,32 @@
+wait_same_pos
+sleep 16
+chg_char_state_move
+include ./event/script/menu_remove_materia.txt
+create event_generator 14128 141 0 0 17 0 0 @confirm.txt
+create event_generator 14129 141 0 0 17 0 0 @../common/remove_materia.txt
+sleep 32
+wait_event_invalid 14128
+sleep 32
+chg_npc_dir 14110 up
+sleep 16
+step_npc 14110 1
+msg ルーファウス\n「なぜ　わたしとたたかうのだ？
+sleep 24
+step_npc 14100 1
+msg 『おまえは　やくそくのちをもとめて\n　セフィロスをおう
+sleep 8
+step_npc 14110 1
+msg ルーファウス\n「ふむ　そのとおり
+chg_npc_dir 14110 left
+sleep 16
+chg_speed 14110 slow
+move_npc 14110 left 2
+sleep 48
+chg_char_state_move
+create event_generator 14130 141 0 0 17 0 0 @141/rufus_shinra10.txt
+sleep 16
+move_npc 14110 up 2
+sleep 32
+chg_npc_dir 14100 left
+sleep 32
+chg_npc_dir 14110 right

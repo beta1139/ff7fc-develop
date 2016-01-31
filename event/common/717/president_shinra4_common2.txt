@@ -1,0 +1,42 @@
+loop 8
+inc_map_draw_y_offset
+sleep 2
+dec_map_draw_y_offset
+sleep 2
+pool
+chg_char_state_move
+create event_generator 71725 717 0 0 17 0 0 @717/president_shinra5.txt
+move_npc 71702 down 4
+sleep 32
+move_npc 71702 right 1
+sleep 8
+chg_speed 71702 normal
+move_npc 71702 right 2
+loop_inf
+if_flag 19 0
+jump_npc 71706 same 1
+sleep 16
+step_npc 71706 4
+sleep 16
+step_npc 71701 4
+sleep 32
+fi
+if_flag 19 1
+jump_npc 71706 same 1
+sleep 16
+step_npc 71706 4
+sleep 48
+fi
+if_flag 19 2
+chg_npc_dir 71706 left
+jump_npc 71706 same 1
+sleep 16
+chg_npc_dir 71706 down
+step_npc 71706 4
+sleep 16
+chg_npc_dir 71706 left
+sleep 16
+chg_npc_dir 71706 down
+sleep 16
+fi
+pool

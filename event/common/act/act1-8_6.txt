@@ -14,9 +14,9 @@ create event_generator 12511 125 22 14 17 0 0 @../common/125/63f_duct_flag3.txt
 create event_generator 12402 124 0 0 17 0 0 @124/63f_coupon_a.txt
 create event_generator 12403 124 0 0 17 0 0 @124/63f_coupon_b.txt
 create event_generator 12404 124 0 0 17 0 0 @124/63f_coupon_c.txt
-create npc2 12405 124 12 19 80 0 4 
-create npc2 12406 124 20 19 80 0 4 
-create npc2 12407 124 28 19 80 0 4 
+create npc2 12405 124 12 19 168 2 4 
+create npc2 12406 124 20 19 168 2 4 
+create npc2 12407 124 28 19 168 2 4 
 create npc2 12408 124 36 28 17 1 4 
 create npc2 12460 124 12 8 165 1 4 
 create npc2 12461 124 28 8 165 1 4 

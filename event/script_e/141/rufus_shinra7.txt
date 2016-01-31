@@ -1,0 +1,40 @@
+set_talk_npc 14110
+msg ルーファウス\n「しんらではたらき　きゅうりょうをもらい\n　テロリストがあらわれれば\n　しんらのぐんたいが　たすけてくれる\n　いっけん　かんぺきだ
+reset_talk_npc
+wait_event_invalid 14124
+chg_speed 14110 slow
+sleep 40
+loop 2
+chg_npc_dir 14110 down
+sleep 4
+chg_npc_dir 14110 left
+sleep 4
+chg_npc_dir 14110 up
+sleep 4
+chg_npc_dir 14110 right
+sleep 4
+pool
+chg_speed 14110 normal
+jump_npc 14110 same 1
+sleep 16
+chg_speed 14110 not_move
+msg ルーファウス\n「だが　わたしのやりかたは　ちがう\n　わたしは　せかいを　きょうふで　しはいする\n　オヤジのやりかたでは　カネがかかりすぎるからな
+sleep 8
+chg_speed 14110 slow
+chg_npc_dir 14110 down
+sleep 32
+move_npc 14110 down 3
+sleep 32
+chg_npc_dir 14101 left
+chg_npc_img 14101 98
+chg_npc_dir 14102 down
+sleep 16
+chg_npc_dir 14104 down
+sleep 16
+chg_char_state_move
+create event_generator 14126 141 0 0 17 0 0 @141/rufus_shinra8.txt
+sleep 32
+move_npc 14110 left 2
+sleep 64
+chg_npc_dir 14110 down
+chg_speed 14110 not_move

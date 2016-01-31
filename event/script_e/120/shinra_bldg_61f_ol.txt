@@ -21,7 +21,7 @@ chg_npc_dir 12001 left
 chg_char_state_move
 create event_generator 12025 120 0 0 17 0 0 @../common/120/shinra_bldg_61f_ol_exp.txt
 sleep 16
-msg 「エレベーターはホラ　わたしの\n　よこにある　あのドアのまえで\n　[Aボタン]　をおすの\n　そうすると……
+msg 「エレベーターはホラ　わたしの\n　よこにある　あのつうろのさきで\n　[はい]をえらぶの\n　そうすると……
 play_se train_info.ogg
 sleep 16
 set_flag 10 1

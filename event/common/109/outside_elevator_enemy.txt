@@ -1,0 +1,62 @@
+sleep 16
+draw_char off
+sleep 16
+play_se button.ogg
+loop 4
+set_screen_effect add 255 255 255 7
+set_gray_scale
+sleep 2
+reset_screen_effect
+reset_gray_scale
+sleep 2
+pool
+sleep 32
+play_se elevator_start.wav
+set_flag 24 0
+set_image_trans_col 0 0 0
+move_char down 5
+slide_npc 10910 down 5
+sleep 80
+warp 109 34 18 down
+if_flag 28 8
+set_npc_pos 10910 109 32 19
+fi
+if_flag 28 9
+set_npc_pos 10910 109 37 19
+fi
+draw_image 000 48 0 0 0 80 240 1 event/shinra_bldg/column.png
+draw_image 001 128 0 0 0 80 240 1 event/shinra_bldg/column.png
+draw_image 002 48 240 0 0 80 240 1 event/shinra_bldg/column.png
+draw_image 003 128 240 0 0 80 240 1 event/shinra_bldg/column.png
+loop 20
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+chg_image_pos_offset 001 0 -1 0 0 0 0
+chg_image_pos_offset 002 0 -1 0 0 0 0
+chg_image_pos_offset 003 0 -1 0 0 0 0
+pool
+play_se_loop elevator_loop.wav
+set_screen_effect add 255 255 255 0
+include ./event/common/key_unvalid.txt
+loop 60
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+chg_image_pos_offset 001 0 -1 0 0 0 0
+chg_image_pos_offset 002 0 -1 0 0 0 0
+chg_image_pos_offset 003 0 -1 0 0 0 0
+pool
+chg_char_state_move
+create event_generator 10925 109 0 0 17 0 0 @../common/109/outside_elevator_enemy2.txt
+loop_inf
+chg_image_pos_offset 000 0 80 0 0 0 0
+chg_image_pos_offset 001 0 80 0 0 0 0
+chg_image_pos_offset 002 0 80 0 0 0 0
+chg_image_pos_offset 003 0 80 0 0 0 0
+loop 80
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+chg_image_pos_offset 001 0 -1 0 0 0 0
+chg_image_pos_offset 002 0 -1 0 0 0 0
+chg_image_pos_offset 003 0 -1 0 0 0 0
+pool
+pool

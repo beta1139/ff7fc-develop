@@ -6,7 +6,7 @@ create event_generator 12722 127 34 12 17 0 0 @127/treasure_box_msg2.txt
 fi
 if_flag 39 2
 kill 12703
-create event_generator 12723 127 38 23 17 0 0 @127/treasure_box_msg2.txt
+create event_generator 12723 127 35 23 17 0 0 @127/treasure_box_msg2.txt
 fi
 if_flag 39 3
 kill 12708

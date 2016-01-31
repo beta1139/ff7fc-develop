@@ -1,0 +1,55 @@
+create npc_event 14020 140 15 17 20 1 1 none
+create npc_event 14021 140 10 31 29 0 1 none
+move_npc 14021 up 9
+sleep 32
+create npc_event 14025 140 10 31 174 1 1 none
+move_npc 14025 up 9
+sleep 32
+chg_event_move_char_speed slow
+move_char up 9
+create npc_event 14023 140 10 31 172 1 1 none
+move_npc 14023 up 9
+sleep 32
+create npc_event 14024 140 10 31 173 0 1 none
+move_npc 14024 up 9
+sleep 32
+create npc_event 14026 140 10 31 4 0 1 none
+move_npc 14026 up 9
+sleep 32
+create npc_event 14022 140 10 31 28 0 1 none
+move_npc 14022 up 9
+sleep 128
+move_npc 14021 right 8
+sleep 32
+move_npc 14025 right 7
+sleep 32
+move_char right 5
+move_npc 14023 right 6
+sleep 32
+move_npc 14024 right 4
+sleep 32
+move_npc 14026 right 3
+sleep 32
+move_npc 14022 right 2
+sleep 64
+move_char up 3
+chg_npc_dir 14024 up
+chg_npc_dir 14026 up
+move_npc 14022 down 1
+sleep 32
+chg_npc_dir 14025 up
+chg_npc_dir 14023 up
+move_npc 14021 down 1
+chg_npc_dir 14022 up
+sleep 32
+chg_npc_dir 14021 up
+include ./event/common/key_unvalid.txt
+sleep 40
+chg_npc_dir 14023 right
+sleep 40
+chg_npc_dir 14023 left
+sleep 24
+step_npc 14023 2
+sleep 16
+create event_generator 14041 140 0 0 17 0 0 @../common/140/president_shinra_exp.txt
+chg_char_state_move

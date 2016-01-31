@@ -59,6 +59,7 @@ sub_flag 30 1
 fi
 fi
 sleep 8
+include ./event/common/del_member2.txt
 if_flag 30 0
 if_owned_item 4000
 kill_through 1000
@@ -114,7 +115,7 @@ fadein
 fi
 if_flag 30 5
 fadeout
-include ./event/common/del_member.txt
+include ./event/common/del_member2.txt
 sleep 8
 include ./event/common/act/act1-2_1e.txt
 sleep 16
@@ -391,12 +392,47 @@ if_flag 30 34
 set_flag 25 17
 warp_ff3_2 137 13 19 2 down
 fi
-if_flag_greater 30 34
-include ./event/common/act/act1-8_12.txt
-fi
 if_flag 30 35
+include ./event/common/act/act1-8_12.txt
 set_flag 25 17
 warp_ff3_2 137 23 20 2 down
+fi
+if_flag_greater 30 35
+include ./event/common/act/act1-8_14.txt
+fi
+if_flag 30 36
+fadeout
+stop_bgm
+erase_msg3
+warp 136 17 19 up
+sleep 32
+include ./event/common/act/act1-8_13.txt
+set_flag 25 17
+fadein
+fi
+if_flag_greater 30 36
+include ./event/common/act/act1-9_1e.txt
+fi
+if_flag 30 37
+set_flag 25 18
+play_map_bgm 142
+warp_ff3_2 142 32 17 2 down
+fi
+if_flag_greater 30 37
+sleep 16
+include ./event/common/act/act1-9_2.txt
+include ./event/common/act/act1-9_3e.txt
+fi
+if_flag 30 38
+set_flag 25 19
+warp_ff3_2 145 27 21 2 right
+fi
+if_flag 30 39
+sleep 16
+include ./event/common/act/act1-9_4e.txt
+play_event_bgm 1-20-Still_more_Fighting.ogg
+set_flag 25 20
+warp_ff3_2 141 17 12 2 up
 fi
 fi
 reset_talk_npc

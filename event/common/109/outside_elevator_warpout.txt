@@ -1,32 +1,26 @@
-set_eternal_event
-wait_same_pos
+move_npc 10910 up 1
+sleep 16
+kill 10910
+set_flag 16 0
 if_flag 24 0
 if_flag 28 8
-open_door 10852
-warp_ff3_2 108 24 20 3 down
+open_door 12251
+warp_ff3_2 122 13 28 3 down
 fi
 if_flag 28 9
-open_door 10853
-warp_ff3_2 108 26 20 3 down
+open_door 12250
+warp_ff3_2 122 8 28 3 down
 fi
-move_char down 1
-close_door 10852
-close_door 10853
-sleep 16
 fi
 if_flag 24 8
 if_flag 28 8
-open_door 11753
-warp_ff3_2 117 22 25 3 down
+open_door 12351
+warp_ff3_2 123 13 28 3 down
 fi
 if_flag 28 9
-open_door 11754
-warp_ff3_2 117 24 25 3 down
+open_door 12350
+warp_ff3_2 123 8 28 3 down
 fi
-move_char down 1
-close_door 11753
-close_door 11754
-sleep 16
 fi
 if_flag 24 9
 if_flag 28 8
@@ -76,7 +70,7 @@ if_flag 28 9
 warp_ff3_2 127 25 37 2 up
 fi
 fi
-if_flag_greater 24 14
+if_flag 24 15
 if_flag 28 8
 warp_ff3_2 129 23 37 2 up
 fi
@@ -84,7 +78,25 @@ if_flag 28 9
 warp_ff3_2 129 25 37 2 up
 fi
 fi
-if_flag_greater 24 8
-move_char up 1
+if_flag_greater 24 15
+if_flag 28 8
+warp_ff3_2 139 23 37 2 up
+fi
+if_flag 28 9
+warp_ff3_2 139 25 37 2 up
+fi
+fi
+draw_char on
+if_flag_lesser 24 9
+move_char down 2
 sleep 16
+close_door 12250
+close_door 12251
+close_door 12350
+close_door 12351
+sleep 16
+fi
+if_flag_greater 24 8
+move_char up 2
+sleep 32
 fi

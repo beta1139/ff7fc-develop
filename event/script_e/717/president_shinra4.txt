@@ -1,0 +1,86 @@
+step_npc 71701 2
+sleep 16
+msg バレット\n「しんでる……\n　しんらカンパニーのボスがしんだ……
+chg_npc_dir 71701 left
+chg_npc_dir 71703 down
+chg_npc_dir 71704 right
+sleep 32
+chg_speed 71702 fast
+jump_npc 71702 same 1
+sleep 16
+move_npc 71702 left 3
+sleep 16
+chg_npc_dir 71701 up
+chg_npc_dir 71703 up
+chg_npc_dir 71704 up
+sleep 8
+move_npc 71702 up 5
+sleep 40
+move_npc 71702 right 3
+sleep 24
+move_npc 71702 down 1
+sleep 8
+chg_npc_dir 71702 right
+sleep 8
+step_npc 71702 1
+msg ティファ\n「このカタナは？！
+jump_npc 71700 same 1
+sleep 16
+chg_npc_img 71700 0
+chg_speed 71700 fast
+step_npc 71700 1
+msg 『セフィロスのものだ！！
+sleep 24
+chg_npc_dir 71702 down
+sleep 32
+chg_speed 71702 slow
+step_npc 71702 2
+msg ティファ\n「……セフィロスは　いきているのね？
+sleep 16
+chg_npc_img 71700 103
+sleep 24
+chg_npc_dir 71700 right
+sleep 40
+chg_npc_img 71700 0
+chg_npc_dir 71700 up
+sleep 16
+chg_speed 71700 slow
+step_npc 71700 1
+sleep 8
+msg 『……そうみたいだな\n　このカタナをつかえるのは\n　セフィロスしか　いないはずだ
+chg_speed 71701 fast
+chg_npc_img 71701 95
+chg_npc_dir 71701 down
+step_npc 71701 4
+sleep 32
+chg_npc_dir 71701 up
+jump_npc 71701 same 2
+sleep 32
+chg_npc_dir 71701 left
+step_npc 71701 4
+msg バレット\n「だれがやったっていいじゃねえか！\n　これでしんらも　おわりだぜ！
+chg_npc_img 71701 1
+chg_npc_dir 71701 up
+chg_npc_dir 71703 down
+jump_npc 71701 same 1
+sleep 16
+chg_npc_dir 71700 right
+jump_npc 71701 same 1
+sleep 16
+chg_event_move_char_speed slow
+sleep 32
+move_char up 2
+sleep 64
+chg_npc_dir 71703 up
+create npc_event 71706 717 21 14 25 3 2 none
+move_npc 71706 left 1
+sleep 16
+chg_npc_dir 71706 down
+set_active_msg 71706
+jump_npc 71706 same 1
+set_talk_npc 71706
+msg パルマー\n「うひょ！
+reset_talk_npc
+include ./event/common/717/president_shinra4_common1.txt
+msg3 -1 パルマー\n「こここここころさないでくれ！
+include ./event/common/717/president_shinra4_common2.txt

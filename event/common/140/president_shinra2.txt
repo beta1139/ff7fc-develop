@@ -1,0 +1,67 @@
+chg_speed 14023 slow
+move_npc 14023 down 1
+move_npc 14025 down 1
+move_npc 14026 down 1
+sleep 32
+move_npc 14023 left 6
+move_npc 14025 left 7
+move_npc 14026 left 3
+sleep 48
+chg_npc_dir 14021 left
+sleep 16
+chg_speed 14024 slow
+move_npc 14024 up 1
+sleep 16
+chg_speed 14021 fast
+move_npc 14021 left 8
+sleep 16
+chg_npc_dir 14024 right
+move_npc 14026 down 6
+sleep 12
+chg_speed 14024 fast
+slide_walk_npc 14024 left 4
+sleep 32
+jump_npc 14024 down 1
+chg_npc_dir 14024 up
+loop 2
+sleep 2
+chg_npc_dir 14024 left
+sleep 2
+chg_npc_dir 14021 down
+chg_npc_y_offset 14021 0
+chg_npc_dir 14024 down
+sleep 2
+chg_npc_dir 14024 right
+sleep 2
+chg_npc_dir 14024 up
+pool
+step_npc 14024 4
+step_npc 14021 4
+sleep 4
+chg_speed 14027 slow
+chg_speed 14028 slow
+move_npc 14027 down 3
+move_npc 14028 down 3
+sleep 12
+chg_npc_dir 14024 right
+sleep 16
+move_npc 14023 down 6
+jump_npc 14024 same 1
+sleep 16
+step_npc 14024 2
+step_npc 14021 2
+sleep 16
+move_npc 14025 down 6
+sleep 16
+step_npc 14024 2
+step_npc 14021 2
+sleep 16
+move_npc 14022 down 6
+loop_inf
+jump_npc 14024 same 1
+sleep 16
+step_npc 14024 3
+sleep 16
+step_npc 14021 2
+sleep 16
+pool

@@ -1,0 +1,20 @@
+wait_target_talked 13622
+reset_talked_flag 13622
+chg_type 13622 npc_event
+chg_speed 13622 normal
+chg_npc_dir 13622 up
+sleep 16
+fadeout
+sleep 16
+kill 13609
+sleep 16
+include ./event/common/act/act1-9_1j.txt
+sleep 16
+warp 142 32 17 down
+sleep 32
+set_flag 19 0
+set_flag 0 4
+set_flag 25 18
+set_flag 30 37
+fadein
+create event_generator 13699 136 0 0 17 0 0 @../common/point.txt

@@ -1,0 +1,12 @@
+set_ignore_map_layer_flag 14110 1
+set_layer 14110 front
+step_npc 14110 1
+sleep 16
+msg ルーファウス\n「ク……　きょうのあいてはここまで…だ…
+include ./event/common/141/rufus_shinra11_common.txt
+include ./event/common/act/act1-9_4j.txt
+chg_event_move_char_speed normal
+set_flag 19 0
+set_flag 25 20
+set_flag 30 39
+create event_generator 12799 127 0 0 17 0 0 @../common/point.txt

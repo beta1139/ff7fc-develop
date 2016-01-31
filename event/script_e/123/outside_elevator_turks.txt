@@ -1,0 +1,98 @@
+include ./event/common/123/outside_elevator_turks_common1.txt
+msg 『ガスだ！！
+include ./event/common/123/outside_elevator_turks_common2.txt
+msg 『お……おい……なん……
+include ./event/common/key_unvalid.txt
+sleep 32
+chg_speed 12314 slow
+step_npc 12314 1
+sleep 16
+msg ルード\n「うえを　おしてもらおうか
+sleep 16
+chg_npc_dir 12314 right
+sleep 32
+create event_generator 12326 123 0 0 17 0 0 @../common/123/outside_elevator_turks_exp.txt
+sleep 16
+msg3 -1 ルード\n「うごければ……だが
+wait_key_push_edge a
+erase_msg3
+wait_event_invalid 12326
+sleep 32
+step_npc 12310 2
+sleep 16
+msg 『ター……クス？\n　……ワナ……か
+move_npc 12314 up 1
+if_flag 28 8
+create npc_event 12315 123 13 28 28 0 1 none
+fi
+if_flag 28 9
+create npc_event 12315 123 8 28 28 0 1 none
+fi
+move_npc 12315 up 6
+sleep 32
+chg_npc_dir 12314 down
+sleep 16
+if_flag 28 8
+create npc_event 12316 123 13 28 32 0 1 none
+fi
+if_flag 28 9
+create npc_event 12316 123 8 28 32 0 1 none
+fi
+move_npc 12316 up 5
+sleep 32
+if_flag 28 8
+create npc_event 12317 123 13 28 32 0 1 none
+fi
+if_flag 28 9
+create npc_event 12317 123 8 28 32 0 1 none
+fi
+move_npc 12317 up 5
+sleep 32
+if_flag 28 8
+create npc_event 12318 123 13 28 32 0 1 none
+fi
+if_flag 28 9
+create npc_event 12318 123 8 28 32 0 1 none
+fi
+set_active_msg 12318
+move_npc 12318 up 5
+chg_npc_dir 12314 left
+sleep 32
+if_flag 28 8
+create npc_event 12319 123 13 28 32 0 1 none
+fi
+if_flag 28 9
+create npc_event 12319 123 8 28 32 0 1 none
+fi
+set_active_msg 12319
+move_npc 12319 up 4
+sleep 64
+move_npc 12316 right 1
+sleep 32
+move_npc 12317 left 1
+chg_npc_dir 12316 up
+sleep 16
+jump_npc 12315 same 1
+sleep 16
+chg_npc_dir 12317 up
+step_npc 12315 2
+msg ツォン\n「スリリングな　きぶんを　あじわえたとおもうが……\n　たのしんでもらえたかな？
+sleep 16
+step_npc 12310 2
+sleep 16
+msg 『くっ……
+sleep 32
+fadeout
+sleep 16
+create event_generator 10922 109 10 24 17 0 0 @109/outside_elevator_switch.txt
+create event_generator 10923 109 10 12 17 0 0 @109/outside_elevator_switch.txt
+create event_generator 14040 140 10 30 17 0 0 @140/president_shinra1.txt
+sleep 16
+stop_bgm
+kill_through 10910
+kill_through_range 12310 12319
+warp 140 10 30 down
+sleep 48
+play_map_bgm 106
+sleep 32
+fadein

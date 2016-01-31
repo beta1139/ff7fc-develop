@@ -14,7 +14,7 @@ set_flag 0 5
 set_flag 10 0
 set_flag 14 0
 set_flag 19 0
-set_flag 20 1
+set_flag 20 0
 set_flag 24 8
 set_flag 25 10
 set_layer 11420 front
@@ -41,28 +41,32 @@ fi
 if_owned_item 6023
 del_item 6023
 fi
-create event_generator 10846 108 24 20 17 0 0 @108/outside_elevator_msg.txt
-create event_generator 10847 108 26 20 17 0 0 @108/outside_elevator_msg.txt
-kill_through_range 10830 10831
-// カードキー入手前に各フロアへの進路を阻むnpc.上から順に62,63,64,65,66,67,68F(x2)用
+// カードキー入手前に各フロアへの進路を阻むnpc.上から順に62,63,64,65,66,67,67(牢屋x6),68(x2),69F用
 create npc2 12156 121 37 25 17 0 0 
 create npc2 12447 124 37 24 17 0 0 
 create npc2 12640 126 37 25 17 0 0 
 create npc2 12740 127 37 26 17 0 0 
 create npc2 12940 129 36 25 17 0 0 
 create npc2 13440 134 37 25 17 0 0 
+create npc2 13630 136 11 13 17 0 0 
+create npc2 13631 136 15 13 17 0 0 
+create npc2 13632 136 19 13 17 0 0 
+create npc2 13633 136 13 17 17 0 0 
+create npc2 13634 136 17 17 17 0 0 
+create npc2 13635 136 21 17 17 0 0 
 create npc2 13840 138 19 23 17 0 0 
 create npc2 13841 138 18 33 17 0 0 
+create npc2 13940 139 37 25 17 0 0 
 // 
 create event_generator 12702 127 34 12 17 0 0 @127/treasure_box_msg1.txt
-create event_generator 12703 127 38 23 17 0 0 @127/treasure_box_msg1.txt
+create event_generator 12703 127 35 23 17 0 0 @127/treasure_box_msg1.txt
 create event_generator 12705 127 24 32 17 0 0 @127/treasure_box_msg1.txt
 create event_generator 12706 127 12 32 17 0 0 @127/treasure_box_msg1.txt
 create event_generator 12707 127 10 23 17 0 0 @127/treasure_box_msg1.txt
 create event_generator 12708 127 14 12 17 0 0 @127/treasure_box_msg1.txt
 create npc2 12709 127 12 32 17 0 0 
 create map_obj 12712 127 34 12 62 0 0 
-create map_obj 12713 127 38 23 62 0 0 
+create map_obj 12713 127 35 23 62 0 0 
 create map_obj 12715 127 24 32 62 0 0 
 create map_obj 12716 127 14 29 62 0 0 
 create map_obj 12717 127 10 23 62 0 0 

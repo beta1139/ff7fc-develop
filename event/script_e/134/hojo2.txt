@@ -101,7 +101,7 @@ sleep 16
 create npc_event 13407 134 37 20 1 1 2 none
 create npc_event 13408 134 37 20 2 1 2 none
 move_npc 13407 down 1
-move_npc 13408 right 1
+move_npc 13408 left 1
 sleep 16
 chg_npc_dir 13407 up
 move_npc 13408 down 1
@@ -142,7 +142,7 @@ move_npc 13408 up 1
 sleep 16
 chg_npc_img 13407 1
 move_npc 13407 up 1
-move_npc 13408 left 1
+move_npc 13408 right 1
 sleep 16
 chg_char_dir down
 draw_char on

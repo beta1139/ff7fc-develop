@@ -1,0 +1,62 @@
+wait_same_pos
+jump_char same 1
+sleep 8
+chg_char_dir down
+sleep 8
+chg_char_dir right
+chg_event_move_char_speed fast
+chg_type 13621 npc_event
+chg_type 13624 npc_event
+step_char 2
+sleep 16
+msg 『バレット　レッド13……きてくれ\n　ようすが　へんなんだ
+sleep 16
+chg_npc_img 13621 1
+chg_npc_dir 13621 left
+chg_npc_img 13624 4
+chg_npc_dir 13624 up
+sleep 16
+jump_npc 13621 same 2
+sleep 32
+chg_speed 13621 fast
+chg_speed 13624 fast
+step_npc 13621 2
+msg バレット\n「どうやってはいってきた？\n　どうしてとびらが　あいているんだ！？
+sleep 16
+chg_event_move_char_speed normal
+move_char left 1
+sleep 16
+chg_speed 13621 normal
+chg_speed 13624 normal
+chg_char_dir right
+move_npc 13621 left 1
+sleep 16
+move_npc 13621 up 4
+move_npc 13624 up 5
+sleep 16
+move_char right 1
+sleep 16
+move_char up 3
+sleep 32
+move_npc 13621 left 1
+sleep 16
+chg_npc_dir 13624 left
+sleep 16
+jump_npc 13621 same 1
+sleep 16
+chg_speed 13621 fast
+chg_speed 13624 fast
+move_npc 13621 left 9
+move_npc 13624 left 8
+sleep 64
+chg_speed 13624 normal
+set_npc_pos 13624 136 10 15
+chg_npc_dir 13624 up
+chg_type 13624 npc3
+chg_speed 13624 not_move
+chg_char_state_move
+sleep 8
+chg_type 13621 npc3
+chg_speed 13621 not_move
+create event_generator 13614 136 0 0 17 0 0 @136/shinra_bldg_68f_5.txt
+chg_param 13621 バレット\n「どうしちまったんだよ？

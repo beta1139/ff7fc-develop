@@ -1,0 +1,27 @@
+include ./event/common/136/shinra_bldg_68f_common1.txt
+sleep 64
+chg_speed 13624 normal
+step_npc 13624 2
+msg レッド13\n「……………………じっちゃん
+sleep 16
+chg_npc_img 13621 98
+chg_npc_dir 13621 left
+sleep 32
+set_active_msg 13621
+jump_npc 13621 same 1
+msg バレット\n「じっちゃん！？　へへへへ\n　じっちゃん　ねえ……へへへへ
+sleep 16
+chg_npc_img 13624 4
+chg_npc_dir 13624 up
+sleep 32
+step_npc 13624 2
+msg レッド13\n「なにがおかしい
+sleep 32
+step_npc 13621 2
+msg バレット\n「いや　べつに……へへへ
+sleep 16
+chg_npc_dir 13621 down
+chg_npc_img 13621 176
+chg_speed 13621 not_move
+sleep 48
+include ./event/common/136/shinra_bldg_68f_common2.txt

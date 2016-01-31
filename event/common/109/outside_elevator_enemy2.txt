@@ -1,0 +1,158 @@
+if_flag 28 8
+create npc_event 10911 109 37 27 122 2 3 none
+create npc_event 10912 109 8 13 3 3 2 none
+create npc_event 10913 109 13 13 122 2 3 none
+fi
+if_flag 28 9
+create npc_event 10911 109 32 27 122 3 3 none
+create npc_event 10912 109 13 13 3 2 2 none
+create npc_event 10913 109 8 13 122 3 3 none
+fi
+slide_npc 10911 up 8
+sleep 64
+if_flag 28 8
+chg_npc_dir 10910 right
+create npc_event 10914 109 32 18 156 2 2 none
+fi
+if_flag 28 9
+chg_npc_dir 10910 left
+create npc_event 10914 109 37 18 156 2 2 none
+fi
+sleep 24
+kill 10914
+play_se shock.ogg
+stop_bgm
+jump_npc 10911 same 2
+create explode 10980 109 34 17 0 0 0 none
+loop 2
+inc_screen_effect_val 10
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+inc_map_draw_y_offset
+loop 2
+dec_screen_effect_val 10
+sleep 1
+pool
+pool
+jump_npc 10910 same 2
+sleep 8
+create explode 10981 109 35 19 0 0 0 none
+loop 2
+inc_screen_effect_val 10
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+dec_map_draw_y_offset
+loop 2
+dec_screen_effect_val 10
+sleep 1
+pool
+pool
+sleep 8
+create explode 10982 109 34 18 0 0 0 none
+loop 3
+inc_map_draw_y_offset
+inc_screen_effect_val 10
+sleep 1
+inc_map_draw_y_offset
+dec_screen_effect_val 10
+sleep 1
+pool
+sleep 8
+create explode 10983 109 35 17 0 0 0 none
+loop 3
+dec_map_draw_y_offset
+inc_screen_effect_val 10
+sleep 1
+dec_map_draw_y_offset
+dec_screen_effect_val 10
+sleep 1
+pool
+play_se shock.ogg
+create explode 10984 109 34 19 0 0 0 none
+jump_npc 10911 same 2
+loop 2
+inc_screen_effect_val 10
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+inc_map_draw_y_offset
+loop 2
+dec_screen_effect_val 10
+sleep 1
+pool
+pool
+sleep 8
+create explode 10985 109 35 18 0 0 0 none
+loop 2
+inc_screen_effect_val 10
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+dec_map_draw_y_offset
+loop 2
+dec_screen_effect_val 10
+sleep 1
+pool
+pool
+sleep 8
+create explode 10980 109 34 17 0 0 0 none
+loop 3
+inc_map_draw_y_offset
+inc_screen_effect_val 10
+sleep 1
+inc_map_draw_y_offset
+dec_screen_effect_val 10
+sleep 1
+pool
+sleep 8
+create explode 10981 109 35 19 0 0 0 none
+loop 3
+dec_map_draw_y_offset
+inc_screen_effect_val 10
+sleep 1
+dec_map_draw_y_offset
+dec_screen_effect_val 10
+sleep 1
+pool
+set_flag 20 1
+warp 109 10 12 down
+kill_through_range 10922 10923
+erase_image_range 000 003
+sleep 8
+reset_screen_effect
+stop_se
+include ./event/common/key_valid.txt
+encount 560
+play_event_bgm 1-10-Fighting.ogg
+sleep 64
+set_flag 0 4
+wait_encount_end
+set_screen_effect add 255 255 255 0
+include ./event/common/key_unvalid.txt
+set_image_trans_col 0 0 0
+draw_image 000 48 0 0 0 80 240 1 event/shinra_bldg/column.png
+draw_image 001 128 0 0 0 80 240 1 event/shinra_bldg/column.png
+draw_image 002 48 240 0 0 80 240 1 event/shinra_bldg/column.png
+draw_image 003 128 240 0 0 80 240 1 event/shinra_bldg/column.png
+warp 109 34 18 down
+chg_char_state_move
+create event_generator 10926 109 0 0 17 0 0 @../common/109/outside_elevator_enemy3.txt
+loop_inf
+loop 80
+sleep 1
+chg_image_pos_offset 000 0 -1 0 0 0 0
+chg_image_pos_offset 001 0 -1 0 0 0 0
+chg_image_pos_offset 002 0 -1 0 0 0 0
+chg_image_pos_offset 003 0 -1 0 0 0 0
+pool
+chg_image_pos_offset 000 0 80 0 0 0 0
+chg_image_pos_offset 001 0 80 0 0 0 0
+chg_image_pos_offset 002 0 80 0 0 0 0
+chg_image_pos_offset 003 0 80 0 0 0 0
+pool

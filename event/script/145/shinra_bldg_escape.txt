@@ -1,0 +1,33 @@
+wait_same_pos
+include ./event/common/145/shinra_bldg_escape_common1.txt
+msg エアリス\n「クラウド　なんか　おもいつめてた
+sleep 16
+chg_speed 14502 slow
+move_npc 14502 left 2
+sleep 80
+set_active_msg 14502
+jump_npc 14502 same 1
+msg ティファ\n「……わたし　クラウドをまつわ！\n　みんなは　エレベーターでさきに！
+include ./event/common/145/shinra_bldg_escape_common2.txt
+msg エアリス\n「さあ　このさき　きっと\n　ガードがきびしくなるわ\n　そうびを　ととのえておいたほうがいいわね
+sleep 16
+draw_char on
+kill 14503
+add_party_mem 1
+add_party_mem 4
+include ./event/common/key_valid.txt
+msg 　クラウド　ティファのマテリアを……\n\n\n\n#2\n　　はずす\n　　そのまま\n\n\n[[]][[]]
+if_flag 3 0
+remove_all_materia 0
+remove_all_materia 2
+fi
+sleep 16
+move_char right 1
+sleep 16
+move_npc 14501 down 1
+move_npc 14504 up 1
+include ./event/common/act/act1-9_3j.txt
+kill 14501
+kill 14504
+set_flag 30 38
+create event_generator 12799 127 0 0 17 0 0 @../common/point.txt

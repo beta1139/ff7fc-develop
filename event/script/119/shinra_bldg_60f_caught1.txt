@@ -17,6 +17,7 @@ chg_npc_dir 11903 down
 chg_npc_dir 11904 down
 chg_npc_dir 11905 down
 chg_npc_dir 11906 down
+set_flag 20 1
 encount 559
 include ./event/common/key_valid.txt
 sleep 64
@@ -26,6 +27,7 @@ kill_through_range 11910 11912
 draw_char off
 warp 708 0 0 down
 wait_encount_end
+set_flag 20 0
 set_screen_effect sub 255 255 255 100
 sleep 16
 if_flag_greater 29 0

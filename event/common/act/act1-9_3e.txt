@@ -1,0 +1,27 @@
+if_active_mem 0
+del_party_mem 0
+fi
+if_active_mem 1
+del_party_mem 1
+fi
+if_active_mem 2
+del_party_mem 2
+fi
+if_active_mem 3
+del_party_mem 3
+fi
+if_active_mem 4
+del_party_mem 4
+fi
+sleep 16
+create npc 14505 145 24 21 2 2 0 ティファ\n「みんなは　エレベーターでさきに！
+create npc2 14540 145 37 25 17 0 0 
+kill_through 14502
+kill_through_range 14100 14129
+kill_through_range 71720 71723
+add_party_mem 3
+add_party_mem 1
+add_party_mem 4
+set_flag 17 0
+set_flag 19 0
+set_flag 25 19

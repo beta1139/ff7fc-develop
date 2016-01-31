@@ -1,0 +1,17 @@
+set_eternal_event
+wait_target_talked 14506
+reset_talked_flag 14506
+chg_type 14506 npc_event
+chg_speed 14506 normal
+chg_dir_to_char 14506
+jump_char same 1
+sleep 16
+chg_event_move_char_speed fast
+step_char 1
+sleep 8
+msg ÅwÇ∆Ç«ÇﬂÇÕÇ≥ÇπÇ»Ç©Ç¡ÇΩ\nÅ@ÇﬂÇÒÇ«Ç§Ç»Ç±Ç∆Ç…Å@Ç»ÇËÇªÇ§Çæ
+chg_event_move_char_speed normal
+chg_npc_dir 14506 left
+chg_type 14506 npc
+chg_speed 14506 not_move
+set_flag_wall 14506

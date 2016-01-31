@@ -1,0 +1,8 @@
+wait_key_push_edge a
+erase_msg3
+loop_inf
+sleep 16
+if_flag 19 1
+end
+fi
+pool

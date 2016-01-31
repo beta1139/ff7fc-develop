@@ -1,0 +1,93 @@
+if_flag 24 0
+if_flag 28 8
+create npc_event 12210 122 13 29 0 0 2 none
+fi
+if_flag 28 9
+create npc_event 12210 122 8 29 0 0 2 none
+fi
+fi
+if_flag 24 8
+if_flag 28 8
+create npc_event 12210 123 13 29 0 0 2 none
+fi
+if_flag 28 9
+create npc_event 12210 123 8 29 0 0 2 none
+fi
+fi
+if_flag_lesser 24 9
+draw_char off
+chg_npc_y_offset 12210 -6
+sleep 3
+chg_npc_y_offset 12210 -8
+sleep 3
+chg_npc_img 12210 115
+sleep 32
+play_se button.ogg
+sleep 32
+chg_npc_y_offset 12210 -6
+sleep 4
+chg_npc_y_offset 12210 -4
+chg_npc_img 12210 0
+draw_char on
+kill 12210
+play_se train_info.ogg
+if_flag 24 0
+if_flag 28 8
+create npc_event 10910 109 8 24 0 1 2 none
+open_door 12251
+fi
+if_flag 28 9
+create npc_event 10910 109 13 24 0 1 2 none
+open_door 12250
+fi
+fi
+if_flag 24 8
+if_flag 28 8
+create npc_event 10910 109 8 12 0 1 2 none
+open_door 12351
+fi
+if_flag 28 9
+create npc_event 10910 109 13 12 0 1 2 none
+open_door 12350
+fi
+fi
+sleep 32
+move_char up 1
+sleep 16
+draw_char off
+if_flag 24 0
+warp_ff3_2 109 10 24 2 down
+fi
+if_flag 24 8
+warp_ff3_2 109 10 12 2 down
+fi
+end
+fi
+move_char down 1
+sleep 16
+step_char 2
+sleep 32
+play_se button.ogg
+sleep 32
+play_se train_info.ogg
+if_flag 25 19
+if_flag 28 8
+create npc_event 10910 109 8 12 3 1 2 none
+fi
+if_flag 28 9
+create npc_event 10910 109 13 12 3 1 2 none
+fi
+sleep 32
+draw_char off
+warp_ff3_2 109 10 12 2 down
+end
+fi
+if_flag 28 8
+create npc_event 10910 109 8 12 0 1 2 none
+fi
+if_flag 28 9
+create npc_event 10910 109 13 12 0 1 2 none
+fi
+sleep 32
+draw_char off
+warp_ff3_2 109 10 12 2 down

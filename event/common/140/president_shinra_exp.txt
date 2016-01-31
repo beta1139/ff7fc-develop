@@ -1,0 +1,7 @@
+wait_key_push_edge a
+chg_npc_dir 14023 up
+sleep 40
+chg_npc_dir 14023 right
+sleep 16
+chg_npc_dir 14023 left
+sleep 16

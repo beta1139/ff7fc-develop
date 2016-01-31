@@ -1,16 +1,16 @@
 wait_same_pos
-create npc_event 14020 140 14 17 20 1 2 none
-create npc_event 14021 140 8 30 23 0 1 none
+create npc_event 14020 140 15 17 20 1 2 none
+create npc_event 14021 140 10 30 23 0 1 none
 create npc_event 14022 140 16 20 26 0 2 none
 chg_event_move_char_speed normal
 move_npc 14021 up 6
 sleep 192
 chg_event_move_char_speed normal
-move_npc 14021 right 6
-move_char right 7
-sleep 112
+move_npc 14021 right 5
+move_char right 6
+sleep 96
 move_char up 11
-sleep 80
+sleep 64
 move_npc 14021 up 3
 sleep 96
 chg_speed 14020 normal
@@ -387,13 +387,13 @@ chg_char_state_move
 sleep 16
 move_npc 14020 up 1
 sleep 32
-move_npc 14020 left 4
-sleep 96
+move_npc 14020 left 3
+sleep 64
 chg_npc_dir 14022 left
 sleep 32
 move_npc 14020 down 4
 sleep 80
 move_char down 2
 sleep 48
-move_npc 14020 right 4
-sleep 144
+move_npc 14020 right 3
+sleep 112

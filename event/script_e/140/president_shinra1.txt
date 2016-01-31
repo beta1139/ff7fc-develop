@@ -1,0 +1,219 @@
+wait_same_pos
+include ./event/common/140/president_shinra1_common.txt
+msg 『みんなも　つかまったのか……\n\n\n\n　…………？
+sleep 16
+wait_event_invalid 14041
+jump_npc 14023 same 1
+chg_npc_dir 14023 up
+sleep 16
+chg_speed 14023 fast
+step_npc 14023 2
+msg 『エアリスは　どこだ！
+sleep 24
+step_npc 14020 1
+sleep 16
+set_talk_npc 14020
+msg プレジデントしんら\n「あんぜんな　ばしょにいる
+reset_talk_npc
+sleep 16
+chg_npc_dir 14020 left
+sleep 16
+move_npc 14020 left 1
+sleep 32
+set_talk_npc 14020
+msg プレジデントしんら\n「あれは　きちょうな\n　こだいしゅの　いきのこりだからな
+reset_talk_npc
+sleep 32
+set_active_msg 14020
+move_npc 14020 up 1
+sleep 32
+move_char left 4
+move_npc 14020 left 3
+sleep 96
+move_npc 14020 down 1
+sleep 48
+jump_npc 14020 same 1
+sleep 16
+step_npc 14020 2
+set_talk_npc 14020
+msg プレジデントしんら\n「しらんのか？\n　みずからをセトラとよび\n　すう1000ねんの　むかしにいき\n　いまは　れきしのなかに\n　うもれてしまった　しゅぞく
+reset_talk_npc
+create npc_event 14027 140 13 21 156 2 1 none
+sleep 16
+move_npc 14020 down 3
+move_char down 3
+sleep 48
+kill 14027
+msg3 -1 レッド13\n「セトラ……あのむすめが\n　セトラのいきのこり？
+chg_npc_dir 14026 left
+step_npc 14026 1
+set_flag 19 0
+sleep 8
+create event_generator 14042 140 0 0 17 0 0 @../common/erase_msg3.txt
+sleep 40
+move_npc 14020 right 3
+move_char right 3
+sleep 16
+chg_npc_dir 14026 up
+sleep 16
+step_npc 14026 2
+sleep 64
+set_flag 19 1
+wait_event_invalid 14042
+chg_npc_dir 14020 down
+sleep 32
+step_npc 14020 3
+sleep 16
+set_talk_npc 14020
+msg プレジデントしんら\n「セトラ　すなわち　こだいしゅは\n　われらに　『やくそくのち』を　おしえてくれる\n　かのじょには　きたいしているのだ
+reset_talk_npc
+chg_npc_dir 14020 right
+sleep 16
+draw_fake_countdown off
+start_fake_countdown_sec 1
+jump_npc 14026 same 1
+sleep 16
+msg3 -1 レッド13\n「やくそくのち？\n　それは　いいつたえ　ではないのか？
+move_npc 14020 right 1
+move_char right 1
+wait_key_push_edge a
+erase_msg3
+wait_fake_countover
+sleep 16
+chg_npc_dir 14020 down
+sleep 32
+jump_npc 14020 same 1
+end_fake_countdown
+sleep 16
+step_npc 14020 4
+set_talk_npc 14020
+msg プレジデントしんら\n「だからといって　ほうっておくには\n　あまりに　みりょくてきだ\n\n　やくそくのちは　とほうもなく　ゆたかなとちと\n　いわれているからな\n\n\n　……とちが　ゆたかだ　ということは
+reset_talk_npc
+chg_speed 14020 slow
+chg_speed 14024 normal
+set_active_msg 14024l
+jump_npc 14024 same 1
+sleep 16
+jump_npc 14024 same 1
+msg バレット\n「まこうエネルギーだな！
+sleep 16
+chg_npc_dir 14020 up
+sleep 32
+step_npc 14020 2
+set_talk_npc 14020
+msg プレジデントしんら\n「そのとおり\n　そこでは　かねくいムシの　まこうろなど\n　ひつようないのだ\n　ほうふな　まこうエネルギーが\n　かってに　ふきだしてくる
+reset_talk_npc
+sleep 16
+chg_npc_dir 14020 down
+sleep 32
+chg_npc_dir 14020 right
+sleep 8
+chg_npc_dir 14020 up
+sleep 8
+chg_npc_dir 14020 left
+sleep 8
+chg_npc_dir 14020 down
+sleep 8
+jump_npc 14020 same 1
+sleep 16
+step_npc 14020 2
+set_talk_npc 14020
+msg プレジデントしんら\n「そこに　けんせつされる　『ネオ　ミッドガル』\n　わが　しんらカンパニーの　さらなるえいこう……
+reset_talk_npc
+chg_speed 14024 fast
+step_npc 14024 3
+sleep 24
+jump_npc 14024 same 1
+sleep 16
+jump_npc 14024 same 1
+msg バレット\n「ケッ！\n　ゆめみてんじゃねえよ！
+jump_npc 14020 same 1
+sleep 16
+jump_npc 14020 same 1
+set_talk_npc 14020
+msg プレジデントしんら\n「おやおや　しらないのか？\n　さいきんでは　カネとチカラさえあれば\n　ゆめはかなうのだ
+reset_talk_npc
+sleep 32
+chg_npc_dir 14020 left
+sleep 32
+step_npc 14020 1
+set_talk_npc 14020
+msg プレジデントしんら\n「さて　かいけんはおわりだ
+reset_talk_npc
+sleep 16
+chg_speed 14021 normal
+move_npc 14021 up 2
+sleep 32
+chg_npc_dir 14021 down
+set_active_msg 14021
+jump_npc 14021 same 1
+msg ルード\n「さあ！　さがれ！
+create npc_event 14027 140 10 29 32 0 2 none
+create npc_event 14028 140 10 30 32 0 2 none
+move_npc 14027 up 3
+move_npc 14028 up 3
+sleep 32
+move_npc 14022 left 3
+sleep 16
+chg_npc_dir 14020 up
+sleep 16
+create event_generator 14043 140 0 0 17 0 0 @../common/140/president_shinra2.txt
+sleep 16
+draw_fake_countdown off
+start_fake_countdown_sec 6
+sleep 16
+loop 8
+chg_npc_y_offset 14024 -3
+sleep 2
+chg_npc_y_offset 14024 -4
+sleep 2
+pool
+chg_npc_dir 14022 right
+jump_npc 14024 same 2
+sleep 32
+step_npc 14024 4
+msg3 -1 バレット\n「まちやがれ！\n　テメエには　いいたいことが\n　やまほど　あるんだ！
+wait_key_push_edge a
+erase_msg3
+wait_fake_countover
+kill 14043
+sleep 8
+move_npc 14021 down 8
+slide_walk_npc 14024 down 8
+sleep 48
+chg_npc_dir 14020 down
+sleep 40
+kill_through_range 14021 14028
+loop 2
+move_char down 1
+move_npc 14020 down 1
+sleep 64
+pool
+chg_npc_dir 14020 left
+sleep 48
+step_npc 14020 1
+sleep 16
+set_talk_npc 14020
+msg プレジデントしんら\n「なにかあるなら……\n　ひしょを　とおしてくれたまえ
+reset_talk_npc
+sleep 32
+chg_npc_dir 14020 down
+sleep 32
+step_npc 14020 2
+sleep 32
+fadeout
+sleep 32
+stop_bgm
+warp 136 17 19 up
+sleep 16
+kill 14020
+sleep 16
+end_fake_countdown
+draw_char on
+set_flag 30 36
+include ./event/common/act/act1-8_13.txt
+include ./event/common/act/act1-8_14.txt
+sleep 16
+fadein
+include ./event/common/key_valid.txt
+create event_generator 13699 136 0 0 17 0 0 @../common/point.txt

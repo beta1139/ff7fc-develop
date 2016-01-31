@@ -1,0 +1,17 @@
+chg_speed 14112 fast
+chg_speed 14113 fast
+chg_speed 14114 fast
+chg_speed 14115 fast
+slide_walk_npc 14112 up 13
+slide_walk_npc 14113 up 13
+slide_walk_npc 14114 up 13
+slide_walk_npc 14115 up 13
+sleep 8
+create npc_event 14116 141 15 16 121 1 3 none
+step_npc 14116 11
+sleep 88
+slide_walk_npc 14116 up 12
+sleep 96
+loop_inf
+sleep 160
+pool

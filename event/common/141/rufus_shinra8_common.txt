@@ -1,0 +1,40 @@
+sleep 32
+move_npc 14103 left 1
+move_npc 14102 right 3
+sleep 16
+move_npc 14103 up 2
+sleep 16
+chg_speed 14101 normal
+move_npc 14101 up 1
+move_npc 14104 up 1
+open_door 14150
+sleep 16
+move_npc 14101 left 3
+move_npc 14102 up 2
+move_npc 14104 right 1
+kill 14103
+sleep 16
+move_npc 14104 up 2
+sleep 16
+kill 14102
+sleep 16
+move_npc 14101 up 2
+kill 14104
+sleep 32
+kill 14101
+sleep 16
+chg_npc_dir 14100 down
+sleep 32
+chg_char_state_event
+fadeout
+sleep 96
+close_door 14150
+stop_se
+stop_bgm
+warp 145 16 12 up
+sleep 16
+play_map_bgm 145
+create event_generator 14520 145 16 12 17 0 0 @145/shinra_bldg_escape.txt
+sleep 32
+kill_through_range 14100 14116
+fadein

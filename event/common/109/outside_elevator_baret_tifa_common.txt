@@ -1,0 +1,35 @@
+sleep 32
+chg_npc_dir 10910 right
+sleep 64
+include ./event/common/effect_fadeout.txt
+sleep 16
+kill_through_range 10922 10923
+kill_through_range 10910 10912
+erase_image_range 000 003
+set_flag 0 0
+sleep 16
+play_se machine.wav
+sleep 32
+play_se train_info.ogg
+sleep 32
+draw_char off
+warp 708 0 0 up
+include ./event/common/effect_fadein.txt
+sleep 8
+if_flag 28 8
+warp_ff3_2 119 23 32 2 up
+fi
+if_flag 28 9
+warp_ff3_2 119 25 32 2 up
+fi
+draw_char on
+move_char up 2
+sleep 32
+set_flag 25 11
+set_flag 24 9
+set_flag 16 0
+create event_generator 10922 109 10 24 17 0 0 @109/outside_elevator_switch.txt
+create event_generator 10923 109 10 12 17 0 0 @109/outside_elevator_switch.txt
+include ./event/common/key_valid.txt
+set_flag 30 26
+create event_generator 11999 119 0 0 17 0 0 @../common/point.txt

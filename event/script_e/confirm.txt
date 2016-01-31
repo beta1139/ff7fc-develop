@@ -1,16 +1,35 @@
 loop_inf
 wait_key_push_edge a
+set_key_unvalid select
 play_se cursor_ff3_select_cancel.ogg
 erase_msg3
 sleep 16
+if_not_active_mem 0
+play_se beep_ff3.ogg
+msg 　クラウドをはずすことはできません
+set_flag 3 1
+sleep 8
+fi
+if_active_mem 0
 msg 　しゅうりょうしても　よろしいですか？\n\n\n\n#2\n 　はい\n　　いいえ\n\n\n\n[[]][[]]
+fi
 if_flag 3 0
+if_flag 25 19
+kill_through 14129
+fi
+set_key_valid select
 end
 fi
 if_flag 3 1
 sleep 8
-include ./event/script/party_mem.txt
+if_flag_lesser 25 19
+include ./event/script_e/party_mem.txt
+fi
+if_flag 25 19
+include ./event/script_e/menu_remove_materia.txt
+fi
 chg_char_state_move
 sleep 8
+set_key_valid select
 fi
 pool

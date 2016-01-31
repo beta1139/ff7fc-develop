@@ -1,0 +1,183 @@
+play_se burn.ogg
+if_flag 28 8
+create explode 10980 109 37 19 0 0 0 none
+create npc_event 10915 109 37 10 122 2 3 none
+create npc_event 10916 109 13 13 122 2 3 none
+fi
+if_flag 28 9
+create explode 10980 109 32 19 0 0 0 none
+create npc_event 10915 109 32 10 122 3 3 none
+create npc_event 10916 109 8 13 122 3 3 none
+fi
+loop 2
+chg_npc_img 10911 17
+loop 2
+inc_screen_effect_val 10
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+inc_map_draw_y_offset
+sleep 2
+pool
+chg_npc_img 10911 122
+loop 2
+dec_screen_effect_val 10
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+dec_map_draw_y_offset
+sleep 2
+pool
+pool
+kill 10913
+loop 2
+chg_npc_img 10911 17
+loop 2
+inc_screen_effect_val 10
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+inc_map_draw_y_offset
+sleep 2
+pool
+chg_npc_img 10911 122
+loop 2
+dec_screen_effect_val 10
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+dec_map_draw_y_offset
+sleep 2
+pool
+pool
+kill 10911
+play_se_loop helicopter.ogg
+slide_npc 10915 down 9
+sleep 72
+warp 109 10 12 down
+kill 10925
+erase_image_range 000 003
+sleep 8
+stop_se
+include ./event/common/key_valid.txt
+stop_se
+reset_screen_effect
+encount 561
+wait_encount_end
+set_screen_effect add 255 255 255 0
+play_se bomb_little.ogg
+if_flag 28 8
+create explode 10980 109 13 13 0 0 0 none
+fi
+if_flag 28 9
+create explode 10980 109 8 13 0 0 0 none
+fi
+set_flag 20 0
+chg_speed 10915 normal
+move_char down 6
+slide_npc 10912 down 6
+slide_npc 10916 down 2
+loop 2
+chg_npc_img 10916 17
+loop 2
+inc_screen_effect_val 10
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+inc_map_draw_y_offset
+sleep 2
+pool
+chg_npc_img 10916 122
+loop 2
+dec_screen_effect_val 10
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+dec_map_draw_y_offset
+sleep 2
+pool
+pool
+play_se bomb_little.ogg
+if_flag 28 8
+create explode 10981 109 13 14 0 0 0 none
+fi
+if_flag 28 9
+create explode 10981 109 8 14 0 0 0 none
+fi
+loop 2
+chg_npc_img 10916 17
+loop 2
+inc_screen_effect_val 10
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+inc_map_draw_y_offset
+sleep 2
+pool
+chg_npc_img 10916 122
+loop 2
+dec_screen_effect_val 10
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+dec_map_draw_y_offset
+sleep 2
+pool
+pool
+kill 10916
+reset_screen_effect
+sleep 32
+warp 109 10 7 down
+if_flag 28 8
+set_npc_pos 10912 109 8 8
+fi
+if_flag 28 9
+set_npc_pos 10912 109 13 8
+fi
+move_char down 8
+slide_npc 10912 down 8
+sleep 32
+chg_npc_dir 10912 down
+sleep 96
+set_flag 0 0
+fadeout
+sleep 32
+kill_through_range 10910 10915
+kill_through_range 10980 10981
+if_party_mem 0
+del_party_mem 0
+fi
+sleep 32
+warp 141 21 12 down
+stop_bgm
+if_party_mem 3
+del_party_mem 3
+fi
+if_party_mem 1
+del_party_mem 1
+fi
+if_party_mem 4
+del_party_mem 4
+fi
+add_party_mem 0
+sleep 32
+chg_char_img 0
+play_map_bgm 141
+draw_char off
+create npc_event 14100 141 21 12 0 1 2 none
+create npc_event 14110 141 21 14 19 3 2 none
+create npc2 14160 141 21 11 17 0 4 
+create npc2 14161 141 22 12 17 0 4 
+create npc2 14162 141 21 13 17 0 4 
+create npc2 14163 141 20 12 17 0 4 
+sleep 32
+fadein
+create event_generator 14127 141 21 12 17 0 0 @141/rufus_shinra9.txt

@@ -1,0 +1,14 @@
+set_talk_npc 14110
+msg ルーファウス\n「……オヤジは　かねのチカラで　せかいを\n　しはいしようとした\n　なるほど　うまくいっていたようだ
+reset_talk_npc
+wait_event_invalid 14122
+chg_speed 14110 slow
+sleep 32
+move_npc 14110 right 2
+sleep 16
+chg_npc_dir 14104 up
+sleep 16
+chg_char_state_move
+create event_generator 14124 141 0 0 17 0 0 @141/rufus_shinra6.txt
+sleep 32
+chg_speed 14110 not_move

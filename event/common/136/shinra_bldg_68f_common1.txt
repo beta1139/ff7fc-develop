@@ -1,0 +1,19 @@
+create npc_event 13620 136 17 18 0 0 2 none
+draw_char off
+chg_event_move_char_speed normal
+chg_type 13621 npc_event
+chg_type 13622 npc_event
+chg_type 13623 npc_event
+chg_type 13624 npc_event
+chg_speed 13621 normal
+chg_speed 13622 normal
+chg_speed 13623 slow
+chg_speed 13624 slow
+if_flag 17 0
+move_char right 5
+sleep 80
+fi
+if_flag 17 1
+move_char left 3
+sleep 48
+fi

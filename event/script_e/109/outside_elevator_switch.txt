@@ -1,96 +1,105 @@
 set_eternal_event
-wait_talk
+wait_same_pos
+if_flag 16 0
+set_active_msg 10910
+move_npc 10910 down 1
+fi
+if_flag 25 19
+include ./event/common/109/outside_elevator_enemy.txt
+end
+fi
 msg #10\n   1st floor\n  59th floor\n  60th floor\n  61st floor\n  62nd floor\n  63rd floor\n  64th floor\n  65th floor\n  66th floor\n  69th floor\n[[]][[]][[]][[]][[]][[]][[]][[]][[]][[]]
 if_flag 3 0
 if_flag 24 0
-msg  This is the 1st floor.
+include ./event/common/109/outside_elevator_warpout.txt
 end
 fi
 fi
 if_flag 3 1
 if_flag 24 8
-msg  This is the 59th floor.
+include ./event/common/109/outside_elevator_warpout.txt
 end
 fi
 fi
 if_flag 3 2
 if_flag 24 9
-msg  This is the 60th floor.
+include ./event/common/109/outside_elevator_warpout.txt
 end
 fi
 fi
 if_flag 3 3
+if_flag 24 10
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6020
 play_se beep_ff3.ogg
 include ./event/script_e/109/no_card_key.txt
-end
-fi
-if_flag 24 10
-msg  This is the 61st floor.
 end
 fi
 fi
 if_flag 3 4
+if_flag 24 11
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6020
 play_se beep_ff3.ogg
 include ./event/script_e/109/no_card_key.txt
 end
 fi
-if_flag 24 11
-msg  This is the 62nd floor.
-end
-fi
 fi
 if_flag 3 5
+if_flag 24 12
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6021
 play_se beep_ff3.ogg
 include ./event/script_e/109/no_card_key.txt
-end
-fi
-if_flag 24 12
-msg  This is the 63rd floor.
 end
 fi
 fi
 if_flag 3 6
+if_flag 24 13
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6021
 play_se beep_ff3.ogg
 include ./event/script_e/109/no_card_key.txt
-end
-fi
-if_flag 24 13
-msg  This is the 64th floor.
 end
 fi
 fi
 if_flag 3 7
+if_flag 24 14
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6021
 play_se beep_ff3.ogg
 include ./event/script_e/109/no_card_key.txt
 end
 fi
-if_flag 24 14
-msg  This is the 65th floor.
-end
-fi
 fi
 if_flag 3 8
+if_flag 24 15
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 if_not_owned_item 6022
 play_se beep_ff3.ogg
 include ./event/script_e/109/no_card_key.txt
 end
 fi
-if_flag 24 15
-msg  This is the 66th floor.
-end
-fi
 fi
 if_flag 3 9
+if_flag 24 18
+include ./event/common/109/outside_elevator_warpout.txt
+end
+fi
 play_se beep_ff3.ogg
 include ./event/script_e/109/no_card_key.txt
-if_flag 24 16
-msg  This is the 69th floor.
-fi
 end
 fi
 include ./event/common/109/switch_common.txt

@@ -1,0 +1,217 @@
+chg_npc_y_offset 4800 -4
+sleep 8
+step_npc 4800 1
+sleep 8
+move_npc 4802 left 1
+move_npc 4801 right 1
+sleep 8
+jump_npc 4801 same 1
+sleep 8
+chg_npc_dir 4802 right
+sleep 8
+step_npc 4801 6
+sleep 16
+chg_speed 4800 fast
+step_npc 4800 4
+sleep 72
+stop_bgm
+flush
+chg_event_move_char_speed fast
+move_char up 1
+sleep 8
+move_char down 1
+sleep 8
+play_se bomb.ogg
+create explode 4824 48 10 21 0 0 0 none
+jump_npc 4800 same 1
+jump_npc 4801 same 2
+set_screen_effect alpha 255 0 0 0
+loop 16
+inc_screen_effect_val 3
+sleep 1
+pool
+create explode 4825 48 4 22 0 0 0 none
+slide_npc 4800 down 7
+move_char up 2
+sleep 16
+step_npc 4801 6
+create explode 4826 48 11 20 0 0 0 none
+move_char down 2
+sleep 16
+create explode 4827 48 2 21 0 0 0 none
+move_char up 2
+step_npc 4801 4
+sleep 16
+create explode 4828 48 8 23 0 0 0 none
+move_char down 2
+sleep 16
+chg_speed 4802 fast
+move_npc 4802 right 1
+create explode 4829 48 6 20 0 0 0 none
+move_char up 2
+sleep 4
+chg_speed 4802 not_move
+sleep 12
+create explode 4830 48 9 21 0 0 0 none
+move_char down 2
+sleep 16
+move_npc 4802 right 1
+create explode 4831 48 10 22 0 0 0 none
+move_char up 2
+sleep 16
+chg_speed 4802 fast
+slide_npc 4802 left 1
+slide_npc 4801 left 1
+create explode 4832 48 3 21 0 0 0 none
+move_char down 2
+kill 4800
+sleep 4
+chg_speed 4801 not_move
+chg_speed 4802 not_move
+sleep 12
+create explode 4833 48 7 20 0 0 0 none
+move_char up 2
+sleep 16
+chg_speed 4801 fast
+chg_speed 4802 fast
+slide_npc 4802 left 1
+slide_npc 4801 left 1
+create explode 4834 48 2 20 0 0 0 none
+move_char down 2
+sleep 10
+kill 4802
+sleep 6
+create explode 4835 48 10 24 0 0 0 none
+move_char down 2
+sleep 16
+slide_npc 4801 left 1
+create explode 4836 48 4 20 0 0 0 none
+move_char up 2
+sleep 4
+kill 4801
+sleep 12
+create explode 4837 48 12 22 0 0 0 none
+move_char down 2
+sleep 16
+create explode 4838 48 2 22 0 0 0 none
+move_char up 2
+sleep 16
+fadeout
+sleep 48
+create npc_event 4800 48 7 32 0 0 3 none
+slide_npc 4800 down 4
+warp 48 7 36 up
+sleep 24
+play_se blast_fall.ogg
+sleep 5
+chg_npc_dir 4800 left
+sleep 3
+fadein
+loop 4
+chg_npc_img 4800 0
+chg_npc_dir 4800 up
+slide_npc 4800 down 6
+move_char down 6
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+warp 48 7 36 up
+set_npc_pos 4800 48 7 36
+pool
+chg_npc_img 4800 0
+chg_npc_dir 4800 up
+slide_npc 4800 down 9
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+dec_screen_effect_val 1
+sleep 3
+chg_npc_dir 4800 left
+sleep 3
+chg_npc_dir 4800 up
+sleep 3
+chg_npc_dir 4800 right
+sleep 3
+chg_npc_dir 4800 down
+sleep 3
+chg_npc_dir 4800 left
+sleep 48
+fadeout
+recover_all_chara
+sleep 40
+reset_screen_effect
+del_party_mem 1
+del_party_mem 2
+warp 49 20 11 right
+remove_all_materia 1
+remove_all_materia 2
+set_flag 20 0
+fadein

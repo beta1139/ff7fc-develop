@@ -1,0 +1,6 @@
+wait_target_talk 13634
+reset_talk_flag 13634
+msg #1\n@@‚Æ‚è‚ ‚¦‚¸‚Ë‚Ş‚Á‚Ä‚¨‚±‚¤\n\n\n\n[[]]
+if_flag 3 0
+include ./event/common/136/shinra_bldg_68f_goodnight.txt
+fi

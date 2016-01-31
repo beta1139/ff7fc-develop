@@ -1,0 +1,99 @@
+create npc_event 71711 717 28 9 123 1 2 none
+create npc_event 71712 717 29 9 123 0 2 none
+create npc_event 71713 717 28 10 123 2 2 none
+create npc_event 71714 717 29 10 123 3 2 none
+create npc_event 71715 717 28 9 21 0 2 none
+chg_npc_y_offset 71715 6
+slide_walk_npc 71711 left 13
+slide_walk_npc 71712 left 13
+slide_walk_npc 71713 left 13
+slide_walk_npc 71714 left 13
+slide_npc 71715 left 13
+loop 4
+sleep 8
+chg_npc_y_offset 71715 7
+sleep 8
+chg_npc_y_offset 71715 6
+pool
+chg_npc_dir 71706 up
+sleep 8
+chg_npc_y_offset 71715 7
+chg_npc_dir 71700 up
+sleep 8
+chg_npc_y_offset 71715 6
+chg_npc_dir 71701 up
+chg_npc_dir 71703 up
+sleep 8
+jump_npc 71706 same 2
+chg_npc_dir 71702 up
+chg_npc_dir 71704 up
+loop 2
+chg_npc_y_offset 71715 7
+sleep 8
+chg_npc_y_offset 71715 6
+sleep 8
+pool
+chg_npc_y_offset 71715 7
+chg_speed 71706 fast
+move_npc 71706 up 5
+sleep 8
+chg_npc_y_offset 71715 6
+loop 2
+sleep 8
+chg_npc_y_offset 71715 7
+sleep 8
+chg_npc_y_offset 71715 6
+pool
+jump_npc 71706 same 2
+loop 2
+sleep 8
+chg_npc_y_offset 71715 7
+sleep 8
+chg_npc_y_offset 71715 6
+pool
+move_npc 71706 left 5
+sleep 8
+chg_npc_y_offset 71715 7
+sleep 8
+chg_npc_y_offset 71715 6
+chg_speed 71711 slow
+chg_speed 71712 slow
+chg_speed 71713 slow
+chg_speed 71714 slow
+slide_walk_npc 71711 down 1
+slide_walk_npc 71712 down 1
+slide_walk_npc 71713 down 1
+slide_walk_npc 71714 down 1
+slide_npc 71715 down 1
+sleep 8
+chg_npc_y_offset 71715 7
+sleep 8
+chg_npc_y_offset 71715 6
+sleep 8
+chg_npc_y_offset 71715 7
+jump_npc 71706 same 2
+chg_npc_dir 71706 up
+sleep 8
+chg_npc_y_offset 71715 6
+chg_speed 71711 not_move
+chg_speed 71712 not_move
+chg_speed 71713 not_move
+chg_speed 71714 not_move
+sleep 8
+chg_npc_y_offset 71715 7
+sleep 8
+chg_npc_y_offset 71715 6
+sleep 8
+chg_npc_y_offset 71715 7
+move_npc 71706 up 3
+sleep 8
+chg_npc_y_offset 71715 6
+sleep 8
+chg_npc_y_offset 71715 7
+open_door 71750
+sleep 8
+chg_npc_y_offset 71715 6
+kill 71706
+sleep 8
+close_door 71750
+kill 71715

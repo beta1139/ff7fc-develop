@@ -1,0 +1,13 @@
+kill_through_range 13621 13635
+kill_through_range 13653 13655
+include ./event/common/del_member_all.txt
+sleep 16
+create npc2 13621 136 15 14 1 3 1 
+create npc2 13625 136 10 14 33 1 4 
+create npc 14301 143 14 23 4 3 0 レッド13\n「ジェノバ　サンプル……\n　さっするに　うえのかいに　むかったようだ\n　おくの　サンプルようエレベーターを　つかってな
+create event_generator 14320 143 0 0 17 0 0 @../common/143/jenova_red13.txt
+create npc 14401 144 20 27 4 1 0 レッド13\n「なにか　もくてきに　むかっているような……\n　うえに……？
+add_party_mem 0
+add_party_mem 2
+add_party_mem 3
+set_flag 0 4

@@ -1,4 +1,8 @@
+// 66F会議イベント後～67Fジェノバイベントの間だけ存在
+// レッド13 宝条
+create npc2 13500 135 10 20 4 2 1 
 create npc_event 13501 135 13 20 22 2 0 none
+// 
 create event_generator 13420 134 39 21 17 0 0 @134/hojo2.txt
 create event_generator 13520 135 14 24 17 0 0 @135/hojo3.txt
 create event_generator 13570 135 13 31 17 0 0 @../common/encount_off.txt
@@ -9,6 +13,4 @@ create event_generator 13470 134 13 32 17 0 0 @../common/encount_on.txt
 create event_generator 13471 134 14 32 17 0 0 @../common/encount_on.txt
 create event_generator 13472 134 15 32 17 0 0 @../common/encount_on.txt
 create event_generator 13473 134 16 32 17 0 0 @../common/encount_on.txt
-// レッド13
-create npc2 13500 135 10 20 4 2 1 
 // 

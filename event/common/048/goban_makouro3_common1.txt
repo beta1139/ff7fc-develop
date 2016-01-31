@@ -1,0 +1,148 @@
+chg_npc_img 4802 1
+move_char left 1
+move_npc 4802 right 1
+move_npc 4801 right 1
+sleep 8
+chg_event_move_char_speed normal
+sleep 4
+stop_bgm
+set_flag 20 1
+sleep 4
+boss_encount 234
+sleep 64
+wait_encount_end
+stop_bgm
+create npc_event 4800 48 5 26 0 2 2 none
+draw_char off
+play_se thunder3.ogg
+loop 10
+chg_npc_dir 4820 down
+sleep 2
+chg_npc_dir 4820 left
+sleep 2
+chg_npc_dir 4820 up
+sleep 2
+chg_npc_dir 4820 right
+sleep 2
+pool
+kill 4820
+sleep 4
+create npc_event 4820 48 4 26 122 3 0 none
+sleep 4
+kill 4820
+sleep 4
+create npc_event 4820 48 4 26 122 1 0 none
+sleep 4
+kill 4820
+sleep 4
+create npc_event 4820 48 4 26 122 2 0 none
+sleep 4
+kill 4820
+sleep 4
+create npc_event 4820 48 4 26 122 0 0 none
+sleep 4
+kill 4820
+stop_bgm
+sleep 8
+flush
+create npc_event 4820 48 4 26 122 3 0 none
+create explode 4821 48 4 26 0 0 0 none
+sleep 2
+chg_npc_dir 4820 down
+sleep 2
+chg_npc_dir 4820 left
+sleep 2
+chg_npc_dir 4820 up
+sleep 2
+kill 4820
+play_se magic_attack.wav
+flush
+jump_npc_target_pos 4802 2 25
+jump_npc_target_pos 4801 1 26
+jump_npc 4800 up 2
+sleep 8
+jump_char up 2
+create explode 4822 48 4 25 0 0 0 none
+create map_obj 4850 48 4 26 32 0 0 
+create map_obj 4851 48 4 25 32 0 0 
+create map_obj 4852 48 4 27 32 0 0 
+chg_npc_dir 4800 up
+sleep 2
+chg_npc_dir 4800 right
+sleep 2
+chg_npc_dir 4800 down
+sleep 2
+chg_npc_dir 4800 left
+sleep 2
+create map_obj 4853 48 3 25 33 0 0 
+create map_obj 4854 48 3 26 35 0 0 
+create map_obj 4855 48 3 27 33 0 0 
+chg_npc_dir 4800 up
+sleep 2
+chg_npc_dir 4800 right
+sleep 2
+chg_npc_dir 4800 down
+sleep 2
+chg_npc_dir 4800 left
+sleep 2
+chg_npc_dir 4800 up
+create explode 4823 48 5 27 0 0 0 none
+create map_obj 4856 48 5 25 34 0 0 
+create map_obj 4857 48 5 26 36 0 0 
+create map_obj 4858 48 5 27 34 0 0 
+chg_speed 4802 fast
+slide_npc 4802 down 1
+sleep 2
+chg_npc_dir 4800 right
+sleep 2
+chg_npc_dir 4800 down
+sleep 2
+chg_npc_dir 4800 left
+sleep 2
+chg_npc_dir 4800 up
+sleep 2
+chg_npc_dir 4800 right
+sleep 2
+chg_npc_dir 4800 down
+sleep 2
+chg_npc_dir 4800 left
+sleep 2
+chg_speed 4800 fast
+slide_npc 4800 down 4
+jump_char down 2
+loop 4
+chg_npc_dir 4800 up
+sleep 2
+chg_npc_dir 4800 right
+sleep 2
+chg_npc_dir 4800 down
+sleep 2
+chg_npc_dir 4800 left
+sleep 2
+pool
+chg_npc_dir 4800 up
+chg_npc_img 4800 115
+sleep 4
+chg_npc_y_offset 4800 -2
+sleep 12
+slide_walk_npc 4802 left 1
+move_npc 4801 right 2
+chg_npc_y_offset 4800 -4
+sleep 4
+chg_speed 4802 not_step
+sleep 8
+chg_speed 4800 normal
+step_npc 4800 1
+chg_speed 4801 not_step
+sleep 4
+play_event_bgm 1-07-Hurry_!.ogg
+chg_speed 4802 fast
+step_npc 4802 1
+sleep 16
+jump_npc 4802 same 2
+sleep 16
+chg_npc_y_offset 4800 -3
+sleep 8
+step_npc 4800 1
+sleep 8
+step_npc 4802 3

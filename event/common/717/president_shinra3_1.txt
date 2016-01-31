@@ -1,0 +1,10 @@
+wait_same_pos
+kill_through_range 71720 71723
+create npc_event 71705 717 9 25 156 2 0 none
+sleep 40
+kill 71705
+move_char up 1
+sleep 16
+move_char right 1
+sleep 16
+include ./event/common/717/president_shinra3.txt

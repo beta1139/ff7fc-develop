@@ -1,0 +1,36 @@
+set_eternal_event
+wait_same_pos
+if_not_active_mem 0
+move_char up 2
+sleep 32
+end
+fi
+if_active_mem 1
+set_flag 19 0
+create npc_event 13900 139 37 24 1 1 2 none
+include ./event/common/139/remind_common1.txt
+msg バレット\n「どこいくんだい？\n　[66かいエレベ－タ]で\n　みんなまってるぜ
+include ./event/common/139/remind_common2.txt
+end
+fi
+if_active_mem 2
+set_flag 19 1
+create npc_event 13900 139 37 24 2 1 2 none
+include ./event/common/139/remind_common1.txt
+msg ティファ\n「どこいくの？\n　[66かいエレベ－タ]で\n　みんなまっているわよ
+include ./event/common/139/remind_common2.txt
+end
+fi
+if_active_mem 3
+set_flag 19 2
+create npc_event 13900 139 37 24 3 1 2 none
+include ./event/common/139/remind_common1.txt
+msg エアリス\n「そっちじゃない！\n　みんなは　[66かいエレベ－タ]で\n　まっているわ
+include ./event/common/139/remind_common2.txt
+end
+fi
+if_not_active_mem 1
+move_char up 2
+sleep 32
+end
+fi

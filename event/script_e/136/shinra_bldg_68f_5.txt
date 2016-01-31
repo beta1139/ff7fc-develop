@@ -1,0 +1,31 @@
+wait_target_talked 13621
+reset_talked_flag 13621
+chg_type 13621 npc_event
+chg_type 13624 npc_event
+chg_speed 13621 normal
+chg_speed 13624 normal
+sleep 16
+jump_npc 13624 same 1
+sleep 16
+step_npc 13624 2
+msg レッド13\n「にんげんのしわざ　ではないな
+sleep 16
+chg_npc_dir 13624 down
+sleep 16
+step_npc 13624 2
+msg レッド13\n「わたしが　このさきのようすを　みてくる
+sleep 16
+chg_speed 13624 fast
+move_npc 13624 down 7
+sleep 56
+kill 13624
+chg_npc_dir 13621 right
+reset_talked_flag 13622
+sleep 16
+step_npc 13621 2
+msg バレット\n「こいつの　あとしまつは　オレにまかせて\n　おまえらはさきにいけ\n　しんらに　みつからねえうちによ！
+chg_npc_dir 13621 left
+chg_speed 13621 not_move
+chg_type 13621 npc3
+chg_param 13622 ティファ\n「さ　レッド13のあとを　おいましょう！
+create event_generator 13615 136 0 0 17 0 0 @136/shinra_bldg_68f_6.txt

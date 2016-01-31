@@ -1,3 +1,4 @@
+loop_inf
 chg_speed 2601 normal
 chg_speed 2602 normal
 loop 2
@@ -179,4 +180,4 @@ end
 fi
 draw_char on
 kill 2626
-include ./event/script/026/beginner's_hall_common.txt
+pool

@@ -1,0 +1,16 @@
+reset_talk_npc
+sleep 8
+chg_char_dir right
+chg_char_img_tmp 97
+step_char 3
+sleep 48
+chg_char_img_tmp 0
+chg_char_dir down
+restore_char_img
+move_npc 13900 down 1
+move_npc 13901 right 1
+sleep 16
+kill_through_range 13900 13901
+sleep 8
+chg_char_dir up
+set_flag 19 0
