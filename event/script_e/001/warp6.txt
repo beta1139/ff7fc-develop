@@ -6,7 +6,8 @@ set_flag 4 0
 sleep 8
 fi
 if_flag_lesser 3 3
-if_flag 4 8
+if_flag 4 10
+set_flag 4 0
 end
 fi
 include ./event/common/now_loading.txt
@@ -113,12 +114,39 @@ include ./event/common/act/act1-9_1e.txt
 sleep 16
 include ./event/common/act/act1-9_2.txt
 include ./event/common/act/act1-9_3e.txt
+if_not_owned_item 4000
+add_item 4000
+fi
+if_not_owned_item 4100
+add_item 4100
+fi
 fi
 if_flag 4 7
 remove_all_materia 0
 remove_all_materia 2
 set_flag 30 38
 warp_ff3_2 145 27 21 2 right
+fi
+if_flag 4 8
+sleep 16
+include ./event/common/act/act1-9_4e.txt
+play_event_bgm 1-20-Still_more_Fighting.ogg
+set_flag 25 20
+set_flag 30 39
+warp_ff3_2 145 21 21 2 right
+set_flag 28 9
+fi
+if_flag 4 9
+sleep 16
+set_flag 0 4
+play_event_bgm 1-22-Crazy_Motorcycle.ogg
+play_se_loop motorcycle.ogg
+draw_char off
+set_flag 25 20
+set_flag 30 39
+create event_generator 10802 108 0 0 17 0 0 @../common/108/gbike_pre3.txt
+erase_msg3
+end
 fi
 fi
 if_flag 3 2

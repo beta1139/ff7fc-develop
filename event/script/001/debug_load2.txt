@@ -1,0 +1,58 @@
+set_eternal_event
+wait_target_talk 185
+reset_talk_flag 185
+play_se save_point.wav
+set_talk_npc 185
+msg デバッグセーブ　ふくげんマシン2\n「こちらはミッドガルいこうの　ふくげんマシンです\n　ミッドガルいぜんの　セーブデータから\n　さいかいするばあいや\n　デバッグセーブの　せつめいについては\n　ひだりの　ふくげんマシン1に　はなしかけてください\n\n\n#2\n　　コンティニューする\n　　きょうみないね\n\n\n[[]][[「あ　そ！]]
+if_flag 3 1
+reset_talk_npc
+end
+fi
+if_flag 3 0
+msg #6\n　　スロット0\n　　スロット1\n　　スロット2\n　　スロット3\n　　スロット4\n　　きょうみないね\n[[#2\n　　そのままコンティニュー\n　　ひとつまえのポイントからコンティニュー\n\n\n[[]][[]]]][[#2\n　　そのままコンティニュー\n　　ひとつまえのポイントからコンティニュー\n\n\n[[]][[]]]][[#2\n　　そのままコンティニュー\n　　ひとつまえのポイントからコンティニュー\n\n\n[[]][[]]]][[#2\n　　そのままコンティニュー\n　　ひとつまえのポイントからコンティニュー\n\n\n[[]][[]]]][[#2\n　　そのままコンティニュー\n　　ひとつまえのポイントからコンティニュー\n\n\n[[]][[]]]][[「ア　ソ！]]
+sleep 16
+if_flag 3 5
+end
+fi
+include ./event/common/now_loading.txt
+if_flag 3 0
+load_status_data status_data
+fi
+if_flag 3 1
+load_status_data status_data1
+fi
+if_flag 3 2
+load_status_data status_data2
+fi
+if_flag 3 3
+load_status_data status_data3
+fi
+if_flag 3 4
+load_status_data status_data4
+fi
+sleep 8
+if_flag 4 0
+fi
+if_flag 4 1
+if_flag_greater 30 39
+sub_flag 30 1
+fi
+fi
+sleep 8
+if_flag_lesser 30 40
+erase_msg3
+sleep 8
+play_se beep_ff3.ogg
+msg 　ミッドガルいぜんのセーブデータは\n　ひだりの　ふくげんマシン1をごりようください
+fi
+if_flag 30 40
+include ./event/common/act/act2-1_1.txt
+create npc2 185 1 7 10 121 3 0 
+set_flag 9 5
+set_flag 25 21
+set_flag 30 40
+warp_ff3_2 57 24 25 2 down
+fi
+fi
+erase_msg3
+reset_talk_npc

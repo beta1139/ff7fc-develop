@@ -7,7 +7,12 @@ chg_speed 11103 normal
 chg_speed 11104 normal
 set_slide_char_flag
 if_char_dir up
+if_flag_lesser 25 20
 create npc_event 11110 111 4 17 0 0 2 none
+fi
+if_flag 25 20
+create npc_event 11110 111 4 17 3 0 2 none
+fi
 draw_char off
 move_char up 1
 sleep 16
@@ -19,7 +24,12 @@ move_npc 11110 up 1
 sleep 16
 fi
 if_char_dir left
+if_flag_lesser 25 20
 create npc_event 11110 111 5 16 0 2 2 none
+fi
+if_flag 25 20
+create npc_event 11110 111 5 16 3 2 2 none
+fi
 draw_char off
 move_char up 2
 sleep 16

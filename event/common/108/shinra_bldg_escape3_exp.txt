@@ -1,0 +1,20 @@
+wait_key_push_edge a
+if_flag 19 0
+sleep 8
+step_npc 10811 2
+chg_npc_dir 10811 left
+chg_npc_img 10811 98
+fi
+if_flag 19 1
+step_npc 10813 3
+chg_npc_img 10811 1
+chg_npc_dir 10811 up
+chg_npc_dir 10814 right
+fi
+if_flag 19 2
+step_npc 10811 3
+fi
+if_flag 19 3
+chg_speed 10814 normal
+step_npc 10814 3
+fi

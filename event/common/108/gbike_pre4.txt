@@ -1,0 +1,47 @@
+// 
+// Gバイク　パーティー編成シーン
+// 
+create npc_event 70820 708 8 6 181 1 3 none
+create npc_event 70821 708 8 7 181 2 3 none
+create npc_event 70822 708 8 12 182 1 3 none
+create npc_event 70823 708 8 13 182 2 3 none
+create npc_event 70824 708 8 14 182 0 3 none
+create npc_event 70825 708 8 7 121 2 3 none
+create npc_event 70826 708 8 14 121 2 3 none
+warp 708 8 7 down
+sleep 32
+create npc2 70850 708 8 8 17 0 4 
+create npc2 70851 708 7 7 17 0 4 
+create npc2 70852 708 8 6 17 0 4 
+create npc2 70853 708 9 7 17 0 4 
+step_npc 70820 4
+step_npc 70821 4
+step_npc 70822 4
+step_npc 70823 4
+step_npc 70824 4
+step_npc 70825 4
+step_npc 70826 4
+include ./event/common/effect_fadein.txt
+include ./event/common/key_valid.txt
+kill_through 70800
+include ./event/common/del_member_all.txt
+sleep 16
+add_party_mem 0
+add_party_mem 1
+add_party_mem 2
+add_party_mem 3
+add_party_mem 4
+chg_char_state_move
+include ./event/script/party_mem.txt
+set_key_unvalid select
+create event_generator 70800 708 0 0 17 0 0 @confirm2.txt
+loop_inf
+step_npc 70820 12
+step_npc 70821 12
+step_npc 70822 12
+step_npc 70823 12
+step_npc 70824 12
+step_npc 70825 12
+step_npc 70826 12
+sleep 96
+pool

@@ -28,6 +28,9 @@ fi
 if_flag 25 19
 include ./event/script/menu_remove_materia.txt
 fi
+if_flag_greater 25 19
+include ./event/script/party_mem.txt
+fi
 chg_char_state_move
 sleep 8
 set_key_valid select

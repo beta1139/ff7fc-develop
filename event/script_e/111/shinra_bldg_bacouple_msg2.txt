@@ -14,7 +14,12 @@ fi
 chg_npc_dir 11104 right
 sleep 16
 create npc_event 11111 111 5 16 1 0 2 none
+if_flag_lesser 25 20
 create npc_event 11112 111 5 16 2 0 2 none
+fi
+if_flag 25 20
+create npc_event 11112 111 5 16 4 0 2 none
+fi
 move_npc 11111 up 1
 move_npc 11112 down 1
 sleep 16

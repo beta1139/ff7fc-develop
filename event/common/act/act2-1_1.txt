@@ -1,0 +1,13 @@
+kill_through_range 100 14599
+sleep 16
+create map_obj 5700 57 29 13 75 0 0 
+create map_obj 5701 57 29 14 75 0 0 
+create map_obj 5702 57 29 15 75 0 0 
+create map_obj 5703 57 29 16 75 0 0 
+create map_obj 5704 57 29 17 75 0 0 
+create map_obj 5705 57 29 18 75 0 0 
+create map_obj 5706 57 29 19 76 0 0 
+create npc2 5740 57 22 19 17 1 4 
+create npc2 5741 57 23 19 17 1 4 
+create npc2 5742 57 24 19 17 1 4 
+create npc2 5743 57 25 19 17 1 4 

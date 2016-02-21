@@ -1,0 +1,50 @@
+if_flag 3 0
+move_char up 1
+sleep 16
+fi
+if_flag 3 1
+create npc_event 5710 57 23 28 0 0 2 none
+draw_char off
+move_char up 3
+chg_type 5711 npc_event
+chg_speed 5711 fast
+chg_type 5712 npc_event
+chg_speed 5712 normal
+chg_type 5713 npc_event
+chg_speed 5713 normal
+chg_type 5714 npc_event
+chg_speed 5714 normal
+chg_npc_dir 5711 down
+chg_npc_dir 5712 down
+chg_npc_dir 5713 down
+chg_npc_dir 5714 down
+sleep 48
+include ./event/common/key_unvalid.txt
+jump_npc 5711 same 2
+loop 2
+sleep 4
+chg_npc_dir 5711 left
+sleep 4
+chg_npc_dir 5711 up
+sleep 4
+chg_npc_dir 5711 right
+sleep 4
+chg_npc_dir 5711 down
+pool
+chg_npc_dir 5711 up
+chg_npc_img 5711 95
+chg_char_state_move
+create event_generator 5782 57 23 28 17 0 0 @057/departure3.txt
+loop_inf
+jump_npc 5711 same 1
+sleep 16
+jump_npc 5711 same 1
+sleep 32
+chg_npc_dir 5711 down
+step_npc 5711 7
+sleep 32
+chg_npc_dir 5711 right
+sleep 24
+chg_npc_dir 5711 up
+pool
+fi

@@ -1,0 +1,107 @@
+sleep 48
+play_bgm
+sleep 32
+move_npc 5711 left 2
+slide_walk_npc 5712 down 1
+move_npc 5713 left 3
+move_npc 5714 down 2
+slide_walk_npc 5710 down 6
+include ./event/common/effect_fadein.txt
+reset_screen_effect
+chg_event_move_char_speed slow
+move_char down 4
+sleep 16
+chg_speed 5712 normal
+step_npc 5712 1
+sleep 16
+play_se jump.wav
+jump_npc_target_pos 5712 29 23
+sleep 16
+move_npc 5711 down 1
+move_npc 5714 left 3
+sleep 8
+chg_npc_dir 5712 down
+sleep 24
+chg_npc_dir 5711 left
+move_npc 5713 down 1
+sleep 16
+play_se landing.wav
+sleep 16
+move_npc 5713 down 1
+chg_npc_dir 5712 left
+sleep 16
+chg_speed 5712 slow
+move_npc 5712 left 3
+sleep 16
+move_npc 5713 left 1
+move_npc 5714 down 1
+sleep 32
+move_npc 5713 down 1
+chg_npc_img 5710 0
+chg_speed 5710 normal
+step_npc 5710 1
+chg_npc_dir 5714 down
+sleep 16
+play_se jump.wav
+jump_npc_target_pos 5710 29 23
+sleep 16
+chg_npc_dir 5710 down
+sleep 16
+chg_npc_dir 5713 up
+move_npc 5712 down 2
+sleep 32
+play_se landing.wav
+chg_event_move_char_speed normal
+move_char right 3
+sleep 32
+chg_npc_dir 5712 right
+sleep 16
+chg_char_dir down
+draw_char on
+kill 5710
+chg_speed 5711 not_move
+chg_speed 5712 not_move
+chg_speed 5713 not_move
+chg_speed 5714 not_move
+set_flag_wall 5711
+set_flag_wall 5712
+set_flag_wall 5713
+set_flag_wall 5714
+chg_type 5711 npc2
+chg_type 5712 npc2
+chg_type 5713 npc2
+chg_type 5714 npc
+include ./event/common/key_valid.txt
+create event_generator 5761 57 0 0 17 0 0 @057/departure_baret.txt
+create event_generator 5762 57 0 0 17 0 0 @057/departure_tifa.txt
+create event_generator 5763 57 0 0 17 0 0 @057/departure_aeris.txt
+create event_generator 5770 57 18 28 17 0 0 @../common/057/move_right.txt
+create event_generator 5771 57 19 28 17 0 0 @../common/057/move_right.txt
+create event_generator 5772 57 20 28 17 0 0 @../common/057/move_right.txt
+create event_generator 5773 57 21 28 17 0 0 @../common/057/move_right.txt
+create event_generator 5774 57 22 28 17 0 0 @../common/057/move_right.txt
+create event_generator 5775 57 24 28 17 0 0 @../common/057/move_left.txt
+create event_generator 5776 57 25 28 17 0 0 @../common/057/move_left.txt
+create event_generator 5777 57 26 28 17 0 0 @../common/057/move_left.txt
+create event_generator 5778 57 27 28 17 0 0 @../common/057/move_left.txt
+create event_generator 5779 57 28 28 17 0 0 @../common/057/move_left.txt
+create event_generator 5780 57 29 28 17 0 0 @../common/057/move_left.txt
+create event_generator 5781 57 23 28 17 0 0 @057/departure2.txt
+create npc2 5720 57 17 21 17 0 4 
+create npc2 5721 57 17 22 17 0 4 
+create npc2 5722 57 17 22 17 0 4 
+create npc2 5723 57 17 23 17 0 4 
+create npc2 5724 57 17 24 17 0 4 
+create npc2 5725 57 17 25 17 0 4 
+create npc2 5726 57 17 26 17 0 4 
+create npc2 5727 57 17 27 17 0 4 
+create npc2 5728 57 17 28 17 0 4 
+create npc2 5729 57 30 21 17 0 4 
+create npc2 5730 57 30 22 17 0 4 
+create npc2 5731 57 30 22 17 0 4 
+create npc2 5732 57 30 23 17 0 4 
+create npc2 5733 57 30 24 17 0 4 
+create npc2 5734 57 30 25 17 0 4 
+create npc2 5735 57 30 26 17 0 4 
+create npc2 5736 57 30 27 17 0 4 
+create npc2 5737 57 30 28 17 0 4 

@@ -1,0 +1,149 @@
+chg_image_pos 000 0 0 0 0 256 288
+chg_image_pos 001 0 288 0 0 256 288
+step_npc 70820 12
+step_npc 70821 12
+step_npc 70822 12
+step_npc 70823 12
+step_npc 70824 12
+step_npc 70825 12
+step_npc 70826 12
+loop 96
+include ./event/common/708/highway_y.txt
+pool
+include ./event/common/708/highway_y_reset.txt
+step_npc 70820 4
+step_npc 70821 4
+step_npc 70822 12
+step_npc 70823 12
+step_npc 70824 12
+step_npc 70825 4
+step_npc 70826 12
+loop 32
+include ./event/common/708/highway_y.txt
+pool
+create npc_event 70870 708 8 5 156 2 2 none
+chg_speed 70820 normal
+chg_speed 70821 normal
+chg_speed 70825 normal
+slide_walk_npc 70820 right 1
+slide_walk_npc 70821 right 1
+slide_walk_npc 70825 right 1
+slide_walk_npc 70870 right 1
+loop 16
+include ./event/common/708/highway_y.txt
+pool
+chg_speed 70820 fast
+chg_speed 70821 fast
+chg_speed 70825 fast
+step_npc 70820 6
+step_npc 70821 6
+step_npc 70825 6
+loop 48
+include ./event/common/708/highway_y.txt
+pool
+include ./event/common/708/highway_y_reset.txt
+step_npc 70820 3
+step_npc 70821 3
+step_npc 70822 3
+step_npc 70823 3
+step_npc 70824 3
+step_npc 70825 3
+step_npc 70826 3
+loop 24
+include ./event/common/708/highway_y.txt
+pool
+kill_through 70870
+slide_walk_npc 70820 down 9
+slide_walk_npc 70821 down 9
+slide_walk_npc 70822 down 9
+slide_walk_npc 70823 down 9
+slide_walk_npc 70824 down 9
+slide_walk_npc 70825 down 9
+slide_walk_npc 70826 down 9
+loop 72
+include ./event/common/708/highway_y.txt
+pool
+include ./event/common/708/highway_y_reset.txt
+chg_event_move_char_speed normal
+move_char down 3
+kill_through_range 70822 70826
+play_se train_stop2.ogg
+chg_npc_img 70820 180
+chg_npc_img 70821 180
+chg_npc_dir 70820 up
+chg_npc_dir 70821 right
+create npc_event 70828 708 10 15 180 1 3 none
+create npc_event 70829 708 10 16 180 2 3 none
+step_npc 70820 8
+step_npc 70821 8
+step_npc 70828 8
+step_npc 70829 8
+loop 48
+include ./event/common/708/highway_y.txt
+pool
+draw_image 002 0 368 0 0 256 32 0 event/shinra_bldg/highway_y_end.png
+create npc_event 70830 708 8 23 160 1 2 none
+create npc_event 70831 708 8 24 160 2 2 none
+create npc_event 70832 708 7 23 160 0 2 none
+create npc_event 70833 708 7 24 160 3 2 none
+create npc_event 70834 708 6 23 161 1 2 none
+create npc_event 70835 708 6 24 161 2 2 none
+slide_walk_npc 70830 up 5
+slide_walk_npc 70831 up 5
+slide_walk_npc 70832 up 5
+slide_walk_npc 70833 up 5
+slide_walk_npc 70834 up 5
+slide_walk_npc 70835 up 5
+loop 16
+chg_image_pos_offset 000 0 -3 0 0 0 0
+chg_image_pos_offset 001 0 -3 0 0 0 0
+chg_image_pos_offset 002 0 -3 0 0 0 0
+sleep 1
+pool
+chg_speed 70820 normal
+chg_speed 70821 normal
+chg_speed 70828 normal
+chg_speed 70829 normal
+step_npc 70820 4
+step_npc 70821 4
+step_npc 70828 4
+step_npc 70829 4
+play_se train_stop2.ogg
+loop 32
+chg_image_pos_offset 000 0 -2 0 0 0 0
+chg_image_pos_offset 001 0 -2 0 0 0 0
+chg_image_pos_offset 002 0 -2 0 0 0 0
+sleep 1
+pool
+chg_image_pos_offset 001 0 0 0 0 0 -64
+loop 32
+chg_image_pos_offset 000 0 -2 0 0 0 0
+chg_image_pos_offset 001 0 -2 0 0 0 0
+chg_image_pos_offset 002 0 -2 0 0 0 0
+sleep 1
+pool
+stop_se
+loop 6
+chg_npc_y_offset 70820 -3
+chg_npc_y_offset 70821 -3
+chg_npc_y_offset 70828 -3
+chg_npc_y_offset 70829 -3
+chg_npc_y_offset 70830 -3
+chg_npc_y_offset 70831 -3
+chg_npc_y_offset 70832 -3
+chg_npc_y_offset 70833 -3
+chg_npc_y_offset 70834 -3
+chg_npc_y_offset 70835 -3
+sleep 4
+chg_npc_y_offset 70820 -4
+chg_npc_y_offset 70821 -4
+chg_npc_y_offset 70828 -4
+chg_npc_y_offset 70829 -4
+chg_npc_y_offset 70830 -4
+chg_npc_y_offset 70831 -4
+chg_npc_y_offset 70832 -4
+chg_npc_y_offset 70833 -4
+chg_npc_y_offset 70834 -4
+chg_npc_y_offset 70835 -4
+sleep 4
+pool

@@ -1,0 +1,20 @@
+set_eternal_event
+wait_target_talk 5713
+reset_talk_flag 5713
+chg_type 5713 npc_event
+chg_dir_to_char 5713
+chg_speed 5713 normal
+set_talk_npc 5713
+msg エアリス\n「そういえば　わたし\n　ミッドガルでるの　はじめて……\n\n#2\n　　そうか……ふあんか？\n　　きけんだぞ　いいのか？\n\n\n[[]][[]]
+step_npc 5713 2
+sleep 16
+if_flag 3 0
+msg エアリス\n「ちょっと　う～ん　かなり　かな\n　でも　なんでもやさんが\n　いっしょだし　ね？
+fi
+if_flag 3 1
+msg エアリス\n「いうと　おもった！
+fi
+reset_talk_npc
+sleep 16
+chg_speed 5713 not_move
+chg_type 5713 npc2

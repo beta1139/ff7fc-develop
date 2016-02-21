@@ -1,0 +1,152 @@
+set_flag 19 0
+fadeout
+include ./event/common/act/act2-1_1.txt
+sleep 16
+create npc_event 5710 57 23 26 0 3 1 none
+create npc_event 5711 57 24 25 1 1 1 none
+create npc_event 5712 57 29 18 2 0 1 none
+create npc_event 5713 57 27 22 3 2 1 none
+create npc_event 5714 57 28 23 4 1 2 none
+set_layer 5710 front
+if_active_mem 1
+add_likability 1 100
+fi
+if_active_mem 2
+add_likability 2 100
+fi
+if_active_mem 3
+add_likability 3 100
+fi
+sleep 16
+if_active_mem 1
+if_active_mem 2
+set_flag 19 0
+fi
+fi
+if_active_mem 1
+if_active_mem 3
+set_flag 19 1
+fi
+fi
+if_active_mem 1
+if_active_mem 4
+set_flag 19 2
+fi
+fi
+if_active_mem 2
+if_active_mem 3
+set_flag 19 3
+fi
+fi
+if_active_mem 2
+if_active_mem 4
+set_flag 19 4
+fi
+fi
+if_active_mem 3
+if_active_mem 4
+set_flag 19 5
+fi
+fi
+sleep 16
+if_flag 19 0
+del_party_mem 3
+del_party_mem 4
+set_npc_pos 5711 57 22 25
+chg_npc_dir 5711 right
+set_npc_pos 5712 57 22 27
+chg_npc_dir 5712 right
+set_npc_pos 5713 57 27 27
+chg_npc_dir 5713 left
+set_npc_pos 5714 57 27 26
+chg_npc_dir 5714 left
+fi
+if_flag 19 1
+del_party_mem 2
+del_party_mem 4
+set_npc_pos 5711 57 22 27
+chg_npc_dir 5711 right
+set_npc_pos 5713 57 22 25
+chg_npc_dir 5713 right
+set_npc_pos 5712 57 27 27
+chg_npc_dir 5712 left
+set_npc_pos 5714 57 27 26
+chg_npc_dir 5714 left
+fi
+if_flag 19 2
+del_party_mem 2
+del_party_mem 3
+set_npc_pos 5711 57 22 27
+chg_npc_dir 5711 right
+set_npc_pos 5714 57 22 25
+chg_npc_dir 5714 right
+set_npc_pos 5712 57 27 27
+chg_npc_dir 5712 left
+set_npc_pos 5713 57 27 26
+chg_npc_dir 5713 left
+fi
+if_flag 19 3
+del_party_mem 1
+del_party_mem 4
+set_npc_pos 5712 57 22 27
+chg_npc_dir 5712 right
+set_npc_pos 5713 57 22 25
+chg_npc_dir 5713 right
+set_npc_pos 5711 57 27 26
+chg_npc_dir 5711 left
+set_npc_pos 5714 57 27 27
+chg_npc_dir 5714 left
+fi
+if_flag 19 4
+del_party_mem 1
+del_party_mem 3
+set_npc_pos 5712 57 22 27
+chg_npc_dir 5712 right
+set_npc_pos 5714 57 22 25
+chg_npc_dir 5714 right
+set_npc_pos 5711 57 27 26
+chg_npc_dir 5711 left
+set_npc_pos 5713 57 27 27
+chg_npc_dir 5713 left
+fi
+if_flag 19 5
+del_party_mem 1
+del_party_mem 2
+set_npc_pos 5713 57 22 25
+chg_npc_dir 5713 right
+set_npc_pos 5714 57 22 27
+chg_npc_dir 5714 right
+set_npc_pos 5711 57 27 26
+chg_npc_dir 5711 left
+set_npc_pos 5712 57 27 27
+chg_npc_dir 5712 left
+fi
+sleep 16
+fadein
+sleep 16
+if_flag 19 0
+set_ignore_map_layer_flag 5713 1
+set_layer 5713 front
+loop 2
+jump_npc 5713 same 1
+sleep 16
+pool
+step_npc 5713 2
+sleep 64
+chg_speed 5713 slow
+move_npc 5713 right 5
+jump_npc 5714 same 1
+sleep 16
+step_npc 5714 1
+sleep 16
+move_npc 5714 right 5
+sleep 96
+chg_speed 5711 slow
+chg_speed 5712 slow
+move_npc 5711 right 1
+move_npc 5712 right 1
+sleep 32
+move_npc 5711 down 1
+move_npc 5712 up 1
+sleep 32
+fi

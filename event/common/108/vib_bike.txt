@@ -1,0 +1,10 @@
+chg_npc_y_offset 10870 -3
+chg_npc_y_offset 10871 -3
+chg_npc_y_offset 10872 -3
+chg_npc_y_offset 10873 -3
+sleep 4
+chg_npc_y_offset 10870 -4
+chg_npc_y_offset 10871 -4
+chg_npc_y_offset 10872 -4
+chg_npc_y_offset 10873 -4
+sleep 4

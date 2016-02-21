@@ -1,0 +1,185 @@
+wait_event_invalid 13724
+include ./event/common/057/departure4_common.txt
+if_flag 19 1
+sleep 16
+chg_npc_dir 5712 up
+sleep 4
+chg_npc_dir 5712 right
+sleep 4
+chg_npc_dir 5712 down
+sleep 4
+chg_npc_dir 5712 left
+sleep 4
+chg_npc_dir 5712 left
+step_npc 5712 2
+include ./event/script_e/057/departure_msg_tifa.txt
+sleep 16
+chg_speed 5712 slow
+move_npc 5712 right 5
+jump_npc 5714 same 1
+sleep 16
+step_npc 5714 1
+sleep 16
+move_npc 5714 right 5
+sleep 96
+chg_speed 5711 slow
+chg_speed 5713 slow
+move_npc 5711 right 1
+move_npc 5713 right 1
+sleep 32
+move_npc 5711 up 1
+move_npc 5713 down 1
+sleep 32
+fi
+if_flag 19 2
+chg_speed 5713 slow
+step_npc 5713 2
+sleep 16
+msg エアリス\n「……よそうがいの
+sleep 16
+chg_npc_dir 5712 up
+sleep 16
+chg_speed 5712 slow
+step_npc 5712 2
+sleep 16
+msg ティファ\n「……くみあわせ
+sleep 16
+set_layer 5712 front
+chg_npc_dir 5712 left
+sleep 16
+jump_npc 5712 same 1
+sleep 16
+chg_speed 5712 normal
+step_npc 5712 2
+msg ティファ\n「まあ　オトコどうし　たのしくやりなさい
+sleep 16
+chg_npc_dir 5712 up
+sleep 4
+chg_npc_dir 5712 right
+sleep 4
+chg_npc_dir 5712 down
+sleep 4
+chg_npc_dir 5712 left
+sleep 4
+chg_npc_dir 5712 left
+step_npc 5712 2
+include ./event/script_e/057/departure_msg_tifa.txt
+loop 2
+jump_npc 5712 same 1
+jump_npc 5713 same 1
+sleep 16
+pool
+chg_speed 5712 slow
+move_npc 5712 right 5
+move_npc 5713 right 5
+sleep 96
+chg_speed 5711 slow
+chg_speed 5714 slow
+move_npc 5711 right 1
+move_npc 5714 right 1
+sleep 32
+move_npc 5711 up 1
+move_npc 5714 down 1
+sleep 32
+fi
+if_flag 19 3
+chg_speed 5711 slow
+step_npc 5711 2
+sleep 16
+msg バレット\n「……やるとおもったぜ
+sleep 32
+move_npc 5711 right 1
+sleep 32
+jump_npc 5711 same 1
+chg_npc_dir 5711 left
+sleep 16
+chg_speed 5711 normal
+step_npc 5711 1
+include ./event/script_e/057/departure_msg_baret.txt
+sleep 16
+chg_speed 5711 slow
+move_npc 5711 right 5
+move_npc 5714 right 5
+sleep 96
+chg_speed 5712 slow
+chg_speed 5713 slow
+move_npc 5712 right 1
+move_npc 5713 right 1
+sleep 32
+move_npc 5712 up 1
+move_npc 5713 down 1
+sleep 32
+fi
+if_flag 19 4
+chg_speed 5711 slow
+move_npc 5711 right 1
+sleep 32
+jump_npc 5711 same 1
+chg_npc_dir 5711 left
+sleep 16
+chg_speed 5711 normal
+step_npc 5711 1
+include ./event/script_e/057/departure_msg_baret.txt
+jump_npc 5713 same 1
+sleep 16
+step_npc 5713 2
+chg_speed 5711 slow
+sleep 32
+move_npc 5711 right 5
+sleep 32
+chg_speed 5713 slow
+move_npc 5713 right 5
+sleep 96
+chg_speed 5712 slow
+chg_speed 5714 slow
+move_npc 5712 right 1
+move_npc 5714 right 1
+sleep 32
+move_npc 5712 up 1
+move_npc 5714 down 1
+sleep 32
+fi
+if_flag 19 5
+chg_speed 5711 slow
+move_npc 5711 right 1
+sleep 32
+jump_npc 5711 same 1
+chg_npc_dir 5711 left
+sleep 16
+chg_speed 5711 normal
+step_npc 5711 1
+include ./event/script_e/057/departure_msg_baret.txt
+jump_npc 5712 same 1
+sleep 16
+chg_speed 5712 normal
+step_npc 5712 2
+include ./event/script_e/057/departure_msg_tifa.txt
+sleep 32
+chg_speed 5711 slow
+chg_speed 5712 slow
+chg_speed 5713 slow
+chg_speed 5714 slow
+move_npc 5711 right 5
+move_npc 5712 right 5
+sleep 96
+move_npc 5713 right 1
+move_npc 5714 right 1
+sleep 32
+move_npc 5713 down 1
+move_npc 5714 up 1
+sleep 32
+fi
+kill_through_range 5750 5799
+kill_through_range 5711 5739
+move_char down 1
+sleep 16
+chg_char_dir right
+draw_char on
+kill 5710
+include ./event/common/key_valid.txt
+set_flag 9 5
+set_flag 17 0
+set_flag 19 0
+set_flag 25 21
+set_flag 30 40
+create event_generator 5799 57 0 0 17 0 0 @../common/point.txt

@@ -1,0 +1,3 @@
+chg_image_pos_offset 000 -3 0 0 0 0 0
+chg_image_pos_offset 001 -3 0 0 0 0 0
+sleep 1

@@ -1,0 +1,20 @@
+loop_inf
+wait_key_push_edge a
+set_key_unvalid select
+play_se cursor_ff3_select_cancel.ogg
+erase_msg3
+sleep 16
+msg  Are you sureÅH\n\n\n\n#2\n  Yes\n  No\n\n\n\n[[]][[]]
+if_flag 3 0
+include ./event/common/key_unvalid.txt
+create event_generator 70801 708 0 0 17 0 0 @../common/708/gbike1.txt
+end
+fi
+if_flag 3 1
+sleep 8
+include ./event/script_e/party_mem.txt
+chg_char_state_move
+sleep 8
+set_key_valid select
+fi
+pool

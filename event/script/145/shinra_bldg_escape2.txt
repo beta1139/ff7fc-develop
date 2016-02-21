@@ -1,17 +1,59 @@
-set_eternal_event
 wait_target_talked 14506
 reset_talked_flag 14506
 chg_type 14506 npc_event
 chg_speed 14506 normal
 chg_dir_to_char 14506
+if_char_dir up
+move_char left 1
+sleep 16
+move_char up 1
+fi
+if_char_dir down
+move_char left 1
+sleep 16
+move_char down 1
+fi
+sleep 8
+chg_npc_dir 14506 left
+sleep 8
+chg_char_dir right
 jump_char same 1
 sleep 16
 chg_event_move_char_speed fast
 step_char 1
 sleep 8
 msg ÅwÇ∆Ç«ÇﬂÇÕÇ≥ÇπÇ»Ç©Ç¡ÇΩ\nÅ@ÇﬂÇÒÇ«Ç§Ç»Ç±Ç∆Ç…Å@Ç»ÇËÇªÇ§Çæ
+create npc_event 14507 145 23 21 0 3 3 none
+draw_char off
+sleep 8
+chg_speed 14506 fast
+move_npc 14506 right 6
+sleep 8
+move_npc 14507 right 5
+sleep 24
+fadeout
+sleep 16
+kill_through_range 14506 14507
+sleep 16
+if_active_mem 0
+del_party_mem 0
+fi
+add_party_mem 3
+add_party_mem 1
+add_party_mem 4
+if_flag 28 9
+warp 108 24 18 left
+create npc_event 10813 108 28 18 3 2 3 none
+fi
+if_flag 28 8
+warp 108 24 22 left
+create npc_event 10813 108 28 22 3 2 3 none
+fi
+play_se train_info.ogg
+fadein
+move_npc 10813 left 4
+sleep 32
+draw_char on
+kill 10813
 chg_event_move_char_speed normal
-chg_npc_dir 14506 left
-chg_type 14506 npc
-chg_speed 14506 not_move
-set_flag_wall 14506
+set_flag 1 1

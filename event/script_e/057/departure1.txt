@@ -1,0 +1,24 @@
+set_screen_effect sub 255 255 255 0
+loop 4
+sleep 8
+inc_screen_effect_val 12
+sleep 8
+inc_screen_effect_val 13
+pool
+erase_image 000
+kill_through_range 70800 70899
+warp 57 26 19 up
+create map_obj 5700 57 29 13 75 0 0 
+create map_obj 5701 57 29 14 75 0 0 
+create map_obj 5702 57 29 15 75 0 0 
+create map_obj 5703 57 29 16 75 0 0 
+create map_obj 5704 57 29 17 75 0 0 
+create map_obj 5705 57 29 18 75 0 0 
+create map_obj 5706 57 29 19 76 0 0 
+sleep 32
+create npc_event 5710 57 29 13 157 0 1 none
+create npc_event 5711 57 24 25 1 1 1 none
+create npc_event 5712 57 29 18 2 0 1 none
+create npc_event 5713 57 27 22 3 2 1 none
+create npc_event 5714 57 28 23 4 1 1 レッド13\n「わたしは　こきょうに　かえるつもりだ\n　それまでは　いっしょにいってやる
+include ./event/common/057/departure1_common.txt

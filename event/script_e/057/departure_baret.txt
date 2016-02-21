@@ -1,0 +1,62 @@
+set_eternal_event
+wait_target_talk 5711
+reset_talk_flag 5711
+chg_type 5711 npc_event
+chg_dir_to_char 5711
+chg_speed 5711 normal
+set_talk_npc 5711
+msg バレット\n「エアリスのおふくろさんには\n　あんぜんなばしょに　うつるようにって\n　いっといたから　マリンもあんぜんだな\n#2\n　　そうだな\n　　さ～て　どうかな\n\n\n[[]][[]]
+reset_talk_npc
+if_char_dir up
+create npc_event 5710 57 22 27 0 0 2 none
+draw_char off
+move_char up 1
+sleep 16
+fi
+chg_type 5713 npc_event
+chg_npc_dir 5713 down
+chg_speed 5713 normal
+if_char_dir right
+chg_npc_dir 5713 left
+fi
+if_char_dir left
+chg_npc_dir 5713 down
+fi
+if_char_dir down
+chg_npc_dir 5713 left
+fi
+if_flag 3 0
+sleep 16
+step_npc 5713 2
+sleep 16
+set_talk_npc 5713
+msg エアリス\n「もう　ミッドガルはイヤだって\n　いってた……　ちょうどよかったかな
+fi
+if_flag 3 1
+set_layer 5713 front
+if_char_dir up
+chg_npc_img 5713 99
+fi
+if_char_dir left
+chg_npc_img 5713 99
+fi
+jump_npc 5713 same 1
+sleep 16
+step_npc 5713 2
+set_talk_npc 5713
+msg エアリス\n「やめてよ　クラウド！\n　わたしだって　しんぱいなんだから
+fi
+if_char_dir up
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 5710
+fi
+reset_talk_npc
+chg_speed 5711 not_move
+chg_type 5711 npc2
+chg_npc_dir 5711 down
+chg_npc_img 5713 3
+chg_speed 5713 not_move
+chg_type 5713 npc2

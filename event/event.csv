@@ -1580,7 +1580,7 @@ npc_event,10805,108,17,24,73,0,1,"none"
 npc_event,10806,108,14,22,73,2,0,"none"
 npc_event,10807,108,13,22,74,3,0,"none"
 npc_event,10808,108,11,15,73,2,1,"none"
-npc3,10815,108,19,5,17,0,4,"　　　　　　[こんしゅうの　ひょうご]
+npc3,10815,108,14,3,17,0,4,"　　　　　　[こんしゅうの　ひょうご]
 　　シンラの　ミライは　せかいの　ミライ！！
 　　まこうの　ひかりで　あかるい　よのなか！"
 event_generator,10820,108,14,32,17,0,0,"@108/shinra_bldg_01f.txt"
@@ -1616,6 +1616,10 @@ npc,11000,110,14,5,17,2,4," 　　　　　　[かめどうらく　つうしん]
 　　　　　　　　　しごとのあとの
 　　　　　　いっぱいは　さいこうですよ！"
 event_generator,11030,108,0,0,17,0,0,"@../common/110/shinra_bldg_kame.txt"
+event_generator,11036,110,7,4,17,0,0,"@../common/122/01f.txt"
+event_generator,11037,110,8,4,17,0,0,"@../common/122/01f.txt"
+event_generator,11038,110,20,4,17,0,0,"@../common/122/01f.txt"
+event_generator,11039,110,21,4,17,0,0,"@../common/122/01f.txt"
 event_generator,11040,110,12,4,17,0,0,"@../common/110/elevator02f_l.txt"
 event_generator,11041,110,16,4,17,0,0,"@../common/110/elevator02f_r.txt"
 event_generator,11042,110,12,3,17,0,0,"@108/elevator_msg.txt"
@@ -1646,6 +1650,18 @@ treasure_materia,11157,111,11,12,4,0,0,4000
 treasure_item,11160,111,6,4,0,0,0,1000
 treasure_item,11161,111,8,4,0,0,0,1000
 treasure_item,11162,111,10,4,0,0,0,1000
+event_generator,11236,112,5,13,17,0,0,"@../common/112/03f.txt"
+event_generator,11237,112,6,13,17,0,0,"@../common/112/03f.txt"
+event_generator,11238,112,18,13,17,0,0,"@../common/112/03f.txt"
+event_generator,11239,112,19,13,17,0,0,"@../common/112/03f.txt"
+event_generator,11240,112,10,5,17,0,0,"@../common/110/elevator02f_l.txt"
+event_generator,11241,112,14,5,17,0,0,"@../common/110/elevator02f_r.txt"
+event_generator,11242,112,10,4,17,0,0,"@108/elevator_msg.txt"
+event_generator,11243,112,14,4,17,0,0,"@108/elevator_msg.txt"
+map_door,11250,112,10,4,17,0,0,0
+map_door,11251,112,14,4,17,0,0,0
+npc2,11290,112,6,5,161,3,4,"none"
+npc2,11291,112,7,5,161,0,4,"none"
 event_generator,11320,113,3,2,17,0,0,"@113/shinra_bldg_elevator1.txt"
 event_generator,11322,113,3,2,17,0,0,"@../common/113/shinra_bldg_elevator_switch1.txt"
 event_generator,11323,113,19,2,17,0,0,"@../common/113/shinra_bldg_elevator_switch2.txt"
@@ -1715,10 +1731,10 @@ map_door,12152,121,22,32,18,0,0,0
 map_door,12153,121,26,19,18,0,0,0
 map_door,12154,121,26,32,18,0,0,0
 map_door,12155,121,37,25,18,0,0,0
-event_generator,12234,122,7,31,17,0,0,"@../common/122/1f.txt"
-event_generator,12235,122,8,31,17,0,0,"@../common/122/1f.txt"
-event_generator,12236,122,12,31,17,0,0,"@../common/122/1f.txt"
-event_generator,12237,122,13,31,17,0,0,"@../common/122/1f.txt"
+event_generator,12234,122,7,31,17,0,0,"@../common/122/01f.txt"
+event_generator,12235,122,8,31,17,0,0,"@../common/122/01f.txt"
+event_generator,12236,122,12,31,17,0,0,"@../common/122/01f.txt"
+event_generator,12237,122,13,31,17,0,0,"@../common/122/01f.txt"
 event_generator,12238,122,7,30,17,0,0,"@../common/108/outside_elevator_r.txt"
 event_generator,12239,122,8,30,17,0,0,"@../common/108/outside_elevator_r.txt"
 event_generator,12240,122,12,30,17,0,0,"@../common/108/outside_elevator_l.txt"

@@ -1,0 +1,393 @@
+// 
+// Gバイク　飛び降りシーン
+// 
+kill_through_range 10870 10895
+include ./event/common/effect_fadeout.txt
+kill_through_range 11070 11092
+sleep 16
+set_image_trans_col 0 110 0
+create npc_event 10870 720 18 18 180 0 3 none
+create npc_event 10871 720 18 19 180 3 3 none
+create npc_event 10872 720 19 18 180 1 3 none
+create npc_event 10873 720 19 19 180 2 3 none
+create npc_event 10890 720 20 20 184 1 3 none
+create npc_event 10891 720 20 21 184 2 3 none
+create npc_event 10892 720 21 20 184 0 3 none
+create npc_event 10893 720 21 21 184 3 3 none
+create npc_event 10894 720 22 20 185 1 3 none
+create npc_event 10895 720 22 21 185 2 3 none
+sleep 24
+warp 720 11 18 up
+jump_npc_target_pos 10870 16 18
+jump_npc_target_pos 10871 16 19
+jump_npc_target_pos 10872 17 18
+jump_npc_target_pos 10873 17 19
+slide_walk_npc 10890 left 2
+slide_walk_npc 10891 left 2
+slide_walk_npc 10892 left 2
+slide_walk_npc 10893 left 2
+slide_walk_npc 10894 left 2
+slide_walk_npc 10895 left 2
+include ./event/common/effect_fadein.txt
+jump_npc_target_pos 10890 16 20
+jump_npc_target_pos 10891 16 21
+jump_npc_target_pos 10892 17 20
+jump_npc_target_pos 10893 17 21
+jump_npc_target_pos 10894 18 20
+jump_npc_target_pos 10895 18 21
+sleep 16
+chg_npc_img 10870 181
+chg_npc_img 10871 181
+set_npc_pos 10872 720 0 0
+set_npc_pos 10873 720 0 0
+play_se train_stop2.ogg
+slide_walk_npc 10870 left 4
+slide_walk_npc 10871 left 4
+sleep 16
+slide_walk_npc 10890 left 3
+slide_walk_npc 10891 left 3
+slide_walk_npc 10892 left 3
+slide_walk_npc 10893 left 3
+slide_walk_npc 10894 left 3
+slide_walk_npc 10895 left 3
+sleep 16
+chg_speed 10870 normal
+chg_speed 10871 normal
+slide_walk_npc 10870 left 1
+slide_walk_npc 10871 left 1
+sleep 8
+chg_npc_img 10890 183
+chg_npc_img 10891 183
+chg_npc_img 10892 183
+set_npc_pos 10892 720 13 22
+set_npc_pos 10893 720 0 0
+set_npc_pos 10894 720 0 0
+set_npc_pos 10895 720 0 0
+chg_speed 10890 normal
+chg_speed 10891 normal
+chg_speed 10892 normal
+slide_walk_npc 10890 left 1
+slide_walk_npc 10891 left 1
+slide_walk_npc 10892 left 1
+set_flag 19 1
+sleep 8
+play_se_loop motorcycle.ogg
+include ./event/common/108/vib_bike.txt
+erase_image 000
+loop 2
+include ./event/common/108/vib_mix.txt
+pool
+move_char up 10
+chg_speed 10870 fast
+chg_speed 10871 fast
+chg_speed 10890 fast
+chg_speed 10891 fast
+chg_speed 10892 fast
+slide_walk_npc 10870 up 6
+slide_walk_npc 10871 up 6
+slide_walk_npc 10890 up 6
+slide_walk_npc 10891 up 6
+slide_walk_npc 10892 up 6
+create map_obj 72050 720 11 5 74 0 0 
+create map_obj 72051 720 12 5 74 0 0 
+create map_obj 72052 720 11 4 74 0 0 
+create map_obj 72053 720 12 4 74 0 0 
+create map_obj 72054 720 11 3 74 0 0 
+sleep 48
+loop 8
+include ./event/common/108/vib_mix.txt
+pool
+jump_npc 10870 same 2
+jump_npc 10871 same 2
+loop 4
+include ./event/common/108/vib_truck.txt
+pool
+slide_walk_npc 10870 up 6
+slide_walk_npc 10871 up 6
+sleep 16
+move_char up 4
+sleep 16
+jump_npc 10890 same 2
+jump_npc 10891 same 2
+jump_npc 10892 same 2
+sleep 16
+set_screen_effect add 255 255 255 0
+jump_npc_target_pos 10870 11 0
+jump_npc_target_pos 10871 11 1
+play_se shock.ogg
+set_image_trans_col 0 0 0
+draw_image 000 112 128 0 0 16 16 1 event/shinra_bldg/glass.png
+draw_image 001 128 128 0 0 16 16 1 event/shinra_bldg/glass.png
+kill_through_range 72050 72051
+inc_screen_effect_val 20
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+inc_map_draw_y_offset
+loop 2
+dec_screen_effect_val 20
+sleep 1
+pool
+create npc_event 72080 720 11 5 168 0 2 none
+create npc_event 72081 720 12 5 168 0 2 none
+create npc_event 72082 720 11 4 168 0 2 none
+create npc_event 72083 720 12 4 168 0 2 none
+jump_npc_target_pos 72080 9 9
+jump_npc_target_pos 72081 14 9
+jump_npc_target_pos 72082 8 7
+jump_npc_target_pos 72083 15 8
+draw_image 002 112 112 0 0 16 16 1 event/shinra_bldg/glass.png
+draw_image 003 128 112 0 0 16 16 1 event/shinra_bldg/glass.png
+kill_through_range 72052 72053
+erase_image_range 000 001
+inc_screen_effect_val 20
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+inc_map_draw_y_offset
+loop 2
+dec_screen_effect_val 20
+sleep 1
+pool
+play_se shock.ogg
+create npc_event 72084 720 11 4 168 0 2 none
+create npc_event 72085 720 12 4 168 0 2 none
+create npc_event 72086 720 11 5 168 0 2 none
+create npc_event 72087 720 12 5 168 0 2 none
+jump_npc_target_pos 72084 10 10
+jump_npc_target_pos 72085 13 8
+jump_npc_target_pos 72086 8 11
+jump_npc_target_pos 72087 15 11
+draw_image 004 112 96 0 0 16 16 1 event/shinra_bldg/glass.png
+kill_through 72054
+erase_image_range 002 003
+inc_screen_effect_val 20
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+dec_map_draw_y_offset
+loop 2
+dec_screen_effect_val 20
+sleep 1
+pool
+create npc_event 72088 720 11 3 168 0 2 none
+create npc_event 72089 720 12 3 168 0 2 none
+jump_npc_target_pos 72088 7 8
+jump_npc_target_pos 72089 14 6
+erase_image 004
+inc_screen_effect_val 20
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+dec_map_draw_y_offset
+loop 2
+dec_screen_effect_val 20
+sleep 1
+pool
+slide_walk_npc 10890 up 6
+slide_walk_npc 10891 up 6
+slide_walk_npc 10892 up 6
+sleep 24
+stop_se
+sleep 8
+include ./event/common/effect_fadeout.txt
+sleep 16
+kill_through_range 10870 10895
+kill_through_range 72080 72089
+// 
+// Gバイク　ハイウェイシーン
+// 
+sleep 16
+warp 708 8 7 down
+set_image_trans_col 0 0 0
+draw_image 000 0 0 0 0 288 224 0 event/shinra_bldg/highway_x.png
+draw_image 001 288 0 0 0 288 224 0 event/shinra_bldg/highway_x.png
+draw_image 002 32 -128 0 0 16 16 0 event/shinra_bldg/fragment.png
+draw_image 003 16 -88 0 0 16 16 0 event/shinra_bldg/fragment.png
+draw_image 004 32 -112 0 0 16 16 0 event/shinra_bldg/fragment.png
+draw_image 005 0 -96 0 0 16 16 0 event/shinra_bldg/fragment.png
+draw_image 006 16 -128 0 0 16 16 0 event/shinra_bldg/fragment.png
+draw_image 007 0 -80 0 0 16 16 0 event/shinra_bldg/fragment.png
+create npc_event 70819 708 -2 7 121 2 2 none
+create npc_event 70820 708 -2 6 179 1 3 none
+create npc_event 70821 708 -2 7 179 2 3 none
+create npc_event 70822 708 -1 6 179 0 3 none
+create npc_event 70823 708 -1 7 179 3 3 none
+slide_walk_npc 70819 right 6
+jump_npc_target_pos 70820 4 6
+jump_npc_target_pos 70821 4 7
+jump_npc_target_pos 70822 5 6
+jump_npc_target_pos 70823 5 7
+sleep 48
+include ./event/common/effect_fadein.txt
+reset_screen_effect
+loop 16
+chg_image_pos_offset 002 0 4 0 0 0 0
+chg_image_pos_offset 003 0 8 0 0 0 0
+chg_image_pos_offset 004 0 8 0 0 0 0
+chg_image_pos_offset 005 0 4 0 0 0 0
+chg_image_pos_offset 006 0 4 0 0 0 0
+sleep 1
+pool
+loop 16
+chg_image_pos_offset 002 0 4 0 0 0 0
+chg_image_pos_offset 003 0 8 0 0 0 0
+chg_image_pos_offset 004 0 8 0 0 0 0
+chg_image_pos_offset 005 0 4 0 0 0 0
+chg_image_pos_offset 006 0 4 0 0 0 0
+chg_image_pos_offset 007 0 8 0 0 0 0
+sleep 1
+pool
+play_se shock.ogg
+move_char left 3
+kill 70819
+loop 8
+inc_map_draw_y_offset
+chg_image_pos_offset 002 0 4 0 0 0 0
+chg_image_pos_offset 005 0 4 0 0 0 0
+chg_image_pos_offset 006 0 4 0 0 0 0
+chg_image_pos_offset 007 0 4 0 0 0 0
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+chg_image_pos_offset 002 0 4 0 0 0 0
+chg_image_pos_offset 005 0 4 0 0 0 0
+chg_image_pos_offset 006 0 4 0 0 0 0
+sleep 1
+pool
+loop 8
+inc_map_draw_y_offset
+chg_image_pos_offset 002 0 4 0 0 0 0
+chg_image_pos_offset 005 0 4 0 0 0 0
+sleep 1
+pool
+play_se_loop motorcycle.ogg
+chg_event_move_char_speed normal
+move_char down 1
+step_npc 70820 2
+step_npc 70821 2
+step_npc 70822 2
+step_npc 70823 2
+loop 8
+dec_map_draw_y_offset
+chg_image_pos_offset 000 -3 0 0 0 0 0
+chg_image_pos_offset 001 -3 0 0 0 0 0
+chg_image_pos_offset 002 -3 0 0 0 0 0
+chg_image_pos_offset 003 -3 0 0 0 0 0
+chg_image_pos_offset 004 -3 0 0 0 0 0
+chg_image_pos_offset 005 -3 0 0 0 0 0
+chg_image_pos_offset 006 -3 0 0 0 0 0
+chg_image_pos_offset 007 -3 0 0 0 0 0
+sleep 1
+pool
+loop 8
+chg_image_pos_offset 000 -3 0 0 0 0 0
+chg_image_pos_offset 001 -3 0 0 0 0 0
+chg_image_pos_offset 002 -3 0 0 0 0 0
+chg_image_pos_offset 003 -3 0 0 0 0 0
+chg_image_pos_offset 004 -3 0 0 0 0 0
+chg_image_pos_offset 005 -3 0 0 0 0 0
+chg_image_pos_offset 006 -3 0 0 0 0 0
+chg_image_pos_offset 007 -3 0 0 0 0 0
+sleep 1
+pool
+erase_image_range 002 007
+move_char up 2
+step_npc 70820 42
+step_npc 70821 42
+step_npc 70822 42
+step_npc 70823 42
+loop 32
+include ./event/common/708/highway_x.txt
+pool
+move_char down 2
+loop 32
+include ./event/common/708/highway_x.txt
+pool
+move_char up 2
+loop 16
+include ./event/common/708/highway_x.txt
+pool
+include ./event/common/708/highway_x_reset.txt
+loop 16
+include ./event/common/708/highway_x.txt
+pool
+move_char down 1
+loop 32
+include ./event/common/708/highway_x.txt
+pool
+create npc_event 70824 708 -5 3 161 1 3 none
+create npc_event 70825 708 -5 4 161 2 3 none
+create npc_event 70826 708 -4 3 160 0 3 none
+create npc_event 70827 708 -4 4 160 3 3 none
+create npc_event 70828 708 -3 3 160 1 3 none
+create npc_event 70829 708 -3 4 160 2 3 none
+slide_walk_npc 70824 right 13
+slide_walk_npc 70825 right 13
+slide_walk_npc 70826 right 13
+slide_walk_npc 70827 right 13
+slide_walk_npc 70828 right 13
+slide_walk_npc 70829 right 13
+loop 48
+include ./event/common/708/highway_x.txt
+pool
+include ./event/common/708/highway_x_reset.txt
+loop 56
+include ./event/common/708/highway_x.txt
+pool
+chg_speed 70824 normal
+chg_speed 70825 normal
+chg_speed 70826 normal
+chg_speed 70827 normal
+chg_speed 70828 normal
+chg_speed 70829 normal
+slide_walk_npc 70824 down 1
+slide_walk_npc 70825 down 1
+slide_walk_npc 70826 down 1
+slide_walk_npc 70827 down 1
+slide_walk_npc 70828 down 1
+slide_walk_npc 70829 down 1
+loop 16
+include ./event/common/708/highway_x.txt
+pool
+chg_speed 70824 fast
+chg_speed 70825 fast
+chg_speed 70826 fast
+chg_speed 70827 fast
+chg_speed 70828 fast
+chg_speed 70829 fast
+step_npc 70824 11
+step_npc 70825 11
+step_npc 70826 11
+step_npc 70827 11
+step_npc 70828 11
+step_npc 70829 11
+loop 24
+include ./event/common/708/highway_x.txt
+pool
+include ./event/common/708/highway_x_reset.txt
+loop 48
+include ./event/common/708/highway_x.txt
+pool
+set_screen_effect sub 255 255 255 0
+loop 4
+loop 2
+include ./event/common/708/highway_x.txt
+pool
+inc_screen_effect_val 12
+loop 2
+include ./event/common/708/highway_x.txt
+pool
+inc_screen_effect_val 13
+pool
+sleep 16
+kill_through_range 70820 70829
+erase_image_range 000 001
+sleep 32
+stop_se
+create event_generator 10803 108 0 0 17 0 0 @../common/108/gbike_pre4.txt

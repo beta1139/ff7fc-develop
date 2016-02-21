@@ -11,7 +11,7 @@ set_flag 3 1
 sleep 8
 fi
 if_active_mem 0
-msg 　しゅうりょうしても　よろしいですか？\n\n\n\n#2\n 　はい\n　　いいえ\n\n\n\n[[]][[]]
+msg  Are you sure？\n\n\n\n#2\n  Yes\n  No\n\n\n\n[[]][[]]
 fi
 if_flag 3 0
 if_flag 25 19
@@ -27,6 +27,9 @@ include ./event/script_e/party_mem.txt
 fi
 if_flag 25 19
 include ./event/script_e/menu_remove_materia.txt
+fi
+if_flag_greater 25 19
+include ./event/script_e/party_mem.txt
 fi
 chg_char_state_move
 sleep 8

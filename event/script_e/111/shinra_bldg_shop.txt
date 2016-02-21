@@ -1,8 +1,14 @@
 wait_target_talk 11101
 reset_talk_flag 11101
+if_flag_lesser 25 20
 create npc_event 11110 111 7 12 0 0 2 none
-create npc_event 11111 111 7 12 1 0 2 none
 create npc_event 11112 111 7 12 2 0 2 none
+fi
+if_flag 25 20
+create npc_event 11110 111 7 12 3 0 2 none
+create npc_event 11112 111 7 12 4 0 2 none
+fi
+create npc_event 11111 111 7 12 1 0 2 none
 draw_char off
 move_char up 1
 move_npc 11111 down 1

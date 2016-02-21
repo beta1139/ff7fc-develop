@@ -5,7 +5,12 @@ if_flag_lesser 28 3
 draw_image 000 113 99 0 0 14 10 0 event/shinra_bldg/number.png
 fi
 if_flag_greater 28 2
+if_flag 24 0
 draw_image 000 113 99 14 0 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag_greater 24 0
+draw_image 000 113 99 28 0 14 10 0 event/shinra_bldg/number.png
+fi
 fi
 move_char down 1
 loop 16

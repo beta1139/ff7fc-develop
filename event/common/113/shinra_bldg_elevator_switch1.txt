@@ -4,7 +4,12 @@ if_flag_lesser 28 3
 draw_image 000 113 99 0 0 14 10 0 event/shinra_bldg/number.png
 fi
 if_flag_greater 28 2
+if_flag 24 0
 draw_image 000 113 99 14 0 14 10 0 event/shinra_bldg/number.png
+fi
+if_flag_greater 24 0
+draw_image 000 113 99 28 0 14 10 0 event/shinra_bldg/number.png
+fi
 fi
 move_char down 1
 loop 16
@@ -21,6 +26,8 @@ close_door 10850
 close_door 10851
 close_door 11050
 close_door 11051
+close_door 11250
+close_door 11251
 chg_char_dir up
 sleep 16
 create npc_event 11310 113 2 3 0 0 2 none
@@ -73,7 +80,9 @@ dec_map_draw_y_offset
 sleep 1
 pool
 pool
+if_flag 24 0
 chg_image_pos_offset 000 0 0 14 0 0 0
+fi
 loop 10
 dec_map_draw_y_offset
 sleep 1

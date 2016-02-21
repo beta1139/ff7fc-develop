@@ -1,5 +1,9 @@
 set_eternal_event
 wait_talk
+if_flag 25 20
+msg エアリス\n「はやく　ここから\n　にげなくちゃ……
+end
+fi
 if_flag_lesser 28 5
 msg  Ride the elevator?\n\n\n\n#2\n  Get in.\n  Don't.\n\n\n[[]][[]]
 fi

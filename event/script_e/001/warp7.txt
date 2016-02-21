@@ -1,0 +1,28 @@
+set_eternal_event
+wait_target_talked 183
+reset_talked_flag 183
+if_flag 3 1
+end
+fi
+include ./event/common/now_loading.txt
+include ./event/common/del_member_all.txt
+if_flag_lesser 3 1
+set_flag 0 0
+set_flag 1 0
+set_flag 17 0
+set_flag 19 0
+set_flag 20 0
+fi
+if_flag 3 0
+include ./event/common/act/act2-1_1.txt
+add_party_mem 0
+add_party_mem 1
+add_party_mem 2
+set_flag 9 5
+set_flag 25 21
+set_flag 30 40
+warp_ff3_2 57 24 25 2 down
+fi
+create npc2 183 1 7 12 64 0 0 
+erase_msg3
+draw_char on

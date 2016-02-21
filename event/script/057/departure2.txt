@@ -1,0 +1,5 @@
+set_eternal_event
+wait_same_pos
+chg_char_dir up
+msg 『さて……\n\n\n\n#2\n　　もうすこし　ここにいよう\n　　いこうか！
+include ./event/common/057/departure2_common.txt

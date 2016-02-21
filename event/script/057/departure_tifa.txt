@@ -1,0 +1,20 @@
+set_eternal_event
+wait_target_talk 5712
+reset_talk_flag 5712
+chg_type 5712 npc_event
+chg_dir_to_char 5712
+chg_speed 5712 normal
+set_talk_npc 5712
+msg ティファ\n「……たびが　はじまるのね\n\n\n#2\n　　たびは　きらいか？\n　　きけんだぞ　いいのか？\n\n\n[[]][[]]
+step_npc 5712 2
+sleep 16
+if_flag 3 0
+msg ティファ\n「……どうかな\n　でも　もうかえるところ　ないもの\n　たびが　すきとかキライとか　かんけいないわ
+fi
+if_flag 3 1
+msg ティファ\n「……う～ん\n　でもほら　クラウドが　やくそくまもってくれれば\n　だいじょうぶよね　きっと
+fi
+reset_talk_npc
+sleep 16
+chg_speed 5712 not_move
+chg_type 5712 npc2

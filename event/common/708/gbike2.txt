@@ -1,0 +1,264 @@
+set_flag 19 0
+loop 3
+if_flag 19 0
+msg 　Gバイクあん　その1\n　エンカウントけいしきで　のりきる
+fi
+if_flag 19 1
+msg 　こんなかんじで　3れんせんぐらい？を　そうてい\n　てきのしゅるいや　かずは　かり\n　ごいけんおまちしてます
+fi
+if_flag 19 2
+msg 　ちなみに　ボス　[モーターボール]の\n　モンスターがぞうがありませんorz
+fi
+play_se_loop motorcycle.ogg
+sleep 64
+if_flag 19 0
+create npc_event 70860 708 7 -1 186 1 3 none
+create npc_event 70861 708 7 0 186 2 3 none
+create npc_event 70862 708 9 -1 186 1 3 none
+create npc_event 70863 708 9 0 186 2 3 none
+create npc_event 70864 708 6 -3 186 1 3 none
+create npc_event 70865 708 6 -2 186 2 3 none
+create npc_event 70866 708 11 -2 186 1 3 none
+create npc_event 70867 708 11 -1 186 2 3 none
+create npc_event 70868 708 5 -2 186 1 3 none
+create npc_event 70869 708 5 -1 186 2 3 none
+create npc_event 70870 708 10 -3 186 1 3 none
+create npc_event 70871 708 10 -2 186 2 3 none
+fi
+if_flag 19 1
+create npc_event 70860 708 7 -1 186 1 3 none
+create npc_event 70861 708 7 0 186 2 3 none
+create npc_event 70862 708 9 -1 186 1 3 none
+create npc_event 70863 708 9 0 186 2 3 none
+create npc_event 70864 708 7 -4 187 1 3 none
+create npc_event 70865 708 7 -3 187 2 3 none
+create npc_event 70866 708 12 -2 186 1 3 none
+create npc_event 70867 708 12 -1 186 2 3 none
+create npc_event 70868 708 5 -2 187 1 3 none
+create npc_event 70869 708 5 -1 187 2 3 none
+create npc_event 70870 708 10 -3 187 1 3 none
+create npc_event 70871 708 10 -2 187 2 3 none
+fi
+if_flag 19 2
+create npc_event 70860 708 7 -1 187 1 3 none
+create npc_event 70861 708 7 0 187 2 3 none
+create npc_event 70862 708 9 -1 187 1 3 none
+create npc_event 70863 708 9 0 187 2 3 none
+create npc_event 70864 708 7 -4 187 1 3 none
+create npc_event 70865 708 7 -3 187 2 3 none
+create npc_event 70866 708 9 -4 187 1 3 none
+create npc_event 70867 708 9 -3 187 2 3 none
+create npc_event 70868 708 6 -3 187 1 3 none
+create npc_event 70869 708 6 -2 187 2 3 none
+create npc_event 70870 708 10 -3 187 1 3 none
+create npc_event 70871 708 10 -2 187 2 3 none
+fi
+slide_walk_npc 70860 down 6
+slide_walk_npc 70861 down 6
+slide_walk_npc 70862 down 6
+slide_walk_npc 70863 down 6
+slide_walk_npc 70864 down 6
+slide_walk_npc 70865 down 6
+slide_walk_npc 70866 down 6
+slide_walk_npc 70867 down 6
+slide_walk_npc 70868 down 6
+slide_walk_npc 70869 down 6
+slide_walk_npc 70870 down 6
+slide_walk_npc 70871 down 6
+sleep 48
+stop_se
+if_flag 19 0
+encount 188
+fi
+if_flag 19 1
+encount 188
+fi
+if_flag 19 2
+encount 188
+fi
+step_npc 70860 8
+step_npc 70861 8
+step_npc 70862 8
+step_npc 70863 8
+step_npc 70864 8
+step_npc 70865 8
+step_npc 70866 8
+step_npc 70867 8
+step_npc 70868 8
+step_npc 70869 8
+step_npc 70870 8
+step_npc 70871 8
+sleep 64
+kill 70801
+wait_encount_end
+if_flag_lesser 19 2
+create event_generator 70801 708 0 0 17 0 0 @../common/708/gbike_img.txt
+fi
+if_flag 19 2
+create event_generator 70801 708 0 0 17 0 0 @../common/708/gbike_img2.txt
+fi
+play_se killed.wav
+slide_walk_npc 70860 up 6
+slide_walk_npc 70861 up 6
+slide_walk_npc 70862 up 6
+slide_walk_npc 70863 up 6
+slide_walk_npc 70864 up 6
+slide_walk_npc 70865 up 6
+slide_walk_npc 70866 up 6
+slide_walk_npc 70867 up 6
+slide_walk_npc 70868 up 6
+slide_walk_npc 70869 up 6
+slide_walk_npc 70870 up 6
+slide_walk_npc 70871 up 6
+loop 6
+chg_npc_img 70860 17
+chg_npc_img 70861 17
+chg_npc_img 70862 17
+chg_npc_img 70863 17
+chg_npc_img 70864 17
+chg_npc_img 70865 17
+chg_npc_img 70866 17
+chg_npc_img 70867 17
+chg_npc_img 70868 17
+chg_npc_img 70869 17
+chg_npc_img 70870 17
+chg_npc_img 70871 17
+sleep 4
+if_flag 19 0
+chg_npc_img 70860 186
+chg_npc_img 70861 186
+chg_npc_img 70862 186
+chg_npc_img 70863 186
+chg_npc_img 70864 186
+chg_npc_img 70865 186
+chg_npc_img 70866 186
+chg_npc_img 70867 186
+chg_npc_img 70868 186
+chg_npc_img 70869 186
+chg_npc_img 70870 186
+chg_npc_img 70871 186
+fi
+if_flag 19 1
+chg_npc_img 70860 186
+chg_npc_img 70861 186
+chg_npc_img 70862 186
+chg_npc_img 70863 186
+chg_npc_img 70864 187
+chg_npc_img 70865 187
+chg_npc_img 70866 186
+chg_npc_img 70867 186
+chg_npc_img 70868 187
+chg_npc_img 70869 187
+chg_npc_img 70870 187
+chg_npc_img 70871 187
+fi
+if_flag 19 2
+chg_npc_img 70860 187
+chg_npc_img 70861 187
+chg_npc_img 70862 187
+chg_npc_img 70863 187
+chg_npc_img 70864 187
+chg_npc_img 70865 187
+chg_npc_img 70866 187
+chg_npc_img 70867 187
+chg_npc_img 70868 187
+chg_npc_img 70869 187
+chg_npc_img 70870 187
+chg_npc_img 70871 187
+fi
+sleep 4
+pool
+kill_through_range 70860 70871
+if_flag_lesser 19 2
+sleep 64
+fi
+if_flag 19 2
+sleep 48
+fi
+add_flag 19 1
+pool
+play_se_loop motorcycle.ogg
+create npc_event 70860 708 7 -1 188 1 3 none
+create npc_event 70861 708 7 0 188 2 3 none
+create npc_event 70862 708 8 -1 188 0 3 none
+create npc_event 70863 708 8 0 188 3 3 none
+slide_walk_npc 70860 down 9
+slide_walk_npc 70861 down 9
+slide_walk_npc 70862 down 9
+slide_walk_npc 70863 down 9
+chg_npc_img 70860 188
+chg_npc_img 70861 188
+chg_npc_img 70862 188
+chg_npc_img 70863 188
+sleep 72
+chg_event_move_char_speed fast
+move_char down 6
+step_npc 70860 3
+step_npc 70861 3
+step_npc 70862 3
+step_npc 70863 3
+sleep 24
+step_npc 70860 3
+step_npc 70861 3
+step_npc 70862 3
+step_npc 70863 3
+sleep 24
+chg_speed 70860 fast
+chg_speed 70861 fast
+chg_speed 70862 fast
+chg_speed 70863 fast
+slide_walk_npc 70860 up 4
+slide_walk_npc 70861 up 4
+slide_walk_npc 70862 up 4
+slide_walk_npc 70863 up 4
+sleep 72
+chg_speed 70860 slow
+chg_speed 70861 slow
+chg_speed 70862 slow
+chg_speed 70863 slow
+slide_walk_npc 70860 right 1
+slide_walk_npc 70861 right 1
+slide_walk_npc 70862 right 1
+slide_walk_npc 70863 right 1
+sleep 96
+chg_speed 70860 fast
+chg_speed 70861 fast
+chg_speed 70862 fast
+chg_speed 70863 fast
+slide_walk_npc 70860 down 7
+slide_walk_npc 70861 down 7
+slide_walk_npc 70862 down 7
+slide_walk_npc 70863 down 7
+sleep 56
+chg_speed 70860 normal
+chg_speed 70861 normal
+chg_speed 70862 normal
+chg_speed 70863 normal
+slide_walk_npc 70860 down 2
+slide_walk_npc 70861 down 2
+slide_walk_npc 70862 down 2
+slide_walk_npc 70863 down 2
+sleep 32
+jump_npc 70860 same 3
+jump_npc 70861 same 3
+jump_npc 70862 same 3
+jump_npc 70863 same 3
+sleep 32
+set_flag 0 0
+sleep 16
+msg           WANTED\n    　　 『モーターボール』のグラ\n       Dead or Alive
+boss_encount 188
+chg_speed 70860 fast
+chg_speed 70861 fast
+chg_speed 70862 fast
+chg_speed 70863 fast
+step_npc 70860 8
+step_npc 70861 8
+step_npc 70862 8
+step_npc 70863 8
+sleep 64
+play_map_bgm 720
+kill_through_range 70800 70899
+erase_image_range 000 002
+wait_encount_end
+create event_generator 70803 708 0 0 17 0 0 @708/goodbye_midgar.txt

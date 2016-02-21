@@ -707,7 +707,7 @@ id,type,bgm,battle_back,monster_party_id
 705,1,nothing,0,188/189/190/191
 706,1,2-20-Cait_Sith's_Theme.ogg,0,188/189/190/191
 707,0,1-04-Anxious_Heart.ogg,4,249/250/251/252/254
-708,1,through,15,188/189/190/191
+708,1,through,32,188/189/190/191
 709,1,through,12,255/256/257
 710,0,nothing,0,188/189/190/191
 711,0,nothing,0,188/189/190/191

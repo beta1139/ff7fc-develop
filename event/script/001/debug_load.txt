@@ -60,6 +60,13 @@ fi
 fi
 sleep 8
 include ./event/common/del_member2.txt
+if_flag 30 40
+play_se beep_ff3.ogg
+msg 　ミッドガルいこうのセーブデータは\n　みぎの　ふくげんマシン2をごりようください
+erase_msg3
+reset_talk_npc
+end
+fi
 if_flag 30 0
 if_owned_item 4000
 kill_through 1000
@@ -277,6 +284,7 @@ create event_generator 10214 102 0 0 17 0 0 @../common/102/plate_support_timer.t
 set_flag 21 0
 fi
 fi
+if_flag_lesser 30 33
 if_flag_greater 30 20
 include ./event/common/act/act1-4_3j.txt
 include ./event/common/act/act1-6_1.txt
@@ -306,6 +314,7 @@ warp_ff3_2 89 12 50 2 up
 play_event_bgm 4-01-Shinra_Army_Wages_a_Full-scale_Attack.ogg
 set_flag 20 0
 set_flag 23 0
+fi
 fi
 if_flag_greater 30 23
 include ./event/common/act/act1-8_1.txt

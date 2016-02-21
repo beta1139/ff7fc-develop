@@ -1,0 +1,100 @@
+include ./event/common/effect_fadeout.txt
+warp 708 9 10 down
+draw_char off
+draw_image 000 -24 -48 0 0 304 400 0 event/shinra_bldg/highway_end.png
+create npc_event 70820 708 10 14 0 0 1 none
+create npc_event 70821 708 7 11 1 0 1 none
+create npc_event 70822 708 11 15 2 0 1 none
+create npc_event 70823 708 8 16 3 0 1 none
+create npc_event 70824 708 12 11 4 0 1 none
+create npc_event 70825 708 5 16 161 3 1 none
+create npc_event 70826 708 6 16 161 0 1 none
+create npc_event 70827 708 12 13 184 1 1 none
+create npc_event 70828 708 12 14 184 2 1 none
+create npc_event 70829 708 13 13 184 0 1 none
+create npc_event 70830 708 13 14 184 3 1 none
+create npc_event 70831 708 14 13 185 1 1 none
+create npc_event 70832 708 14 14 185 2 1 none
+sleep 8
+play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
+sleep 24
+include ./event/common/effect_fadein.txt
+sleep 32
+chg_npc_dir 70821 down
+sleep 16
+step_npc 70821 2
+sleep 16
+msg バレット\n「さて　どうするよ？
+sleep 16
+chg_npc_dir 70824 left
+move_npc 70820 up 4
+sleep 48
+chg_npc_dir 70821 right
+sleep 32
+chg_npc_dir 70821 up
+sleep 16
+chg_npc_dir 70824 up
+sleep 32
+step_npc 70820 2
+sleep 16
+msg 『セフィロスはいきている\n　おれは……あのときの　けっちゃくを\n　つけなくてはいけない
+sleep 16
+move_npc 70821 up 1
+sleep 32
+chg_npc_dir 70821 right
+step_npc 70821 2
+sleep 16
+msg バレット\n「それが　ほしをすくうことに　なるんだな？
+sleep 32
+step_npc 70820 1
+sleep 16
+msg 『……おそらく　な
+chg_npc_dir 70821 up
+sleep 24
+jump_npc 70821 same 1
+sleep 16
+chg_speed 70821 normal
+step_npc 70821 2
+msg バレット\n「おっし　オレはいくぜ！
+move_npc 70823 up 4
+sleep 128
+set_active_msg 70823
+jump_npc 70823 same 1
+msg エアリス\n「わたしも　いく\n　……しりたいこと　あるから
+sleep 16
+step_npc 70820 2
+sleep 16
+msg 『こだいしゅのことか？
+sleep 16
+step_npc 70823 2
+sleep 16
+msg エアリス\n「……いろいろ　たくさん
+chg_npc_dir 70820 up
+move_npc 70822 up 3
+sleep 112
+step_npc 70822 2
+sleep 16
+msg ティファ\n「さらばミッドガル　ね
+sleep 16
+chg_speed 70821 slow
+slide_npc 70820 down 3
+slide_npc 70821 down 3
+slide_npc 70822 down 3
+slide_npc 70823 down 3
+slide_npc 70824 down 3
+slide_npc 70825 down 3
+slide_npc 70826 down 3
+slide_npc 70827 down 3
+slide_npc 70828 down 3
+slide_npc 70829 down 3
+slide_npc 70830 down 3
+slide_npc 70831 down 3
+slide_npc 70832 down 3
+loop 3
+loop 16
+sleep 2
+chg_image_pos_offset 000 0 1 0 0 0 0
+pool
+pool
+sleep 32
+create event_generator 5760 57 0 0 17 0 0 @057/departure1.txt

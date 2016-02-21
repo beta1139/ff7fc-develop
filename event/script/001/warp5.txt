@@ -3,6 +3,7 @@ wait_target_talked 164
 reset_talked_flag 164
 if_flag_lesser 3 3
 if_flag 4 4
+set_flag 4 0
 end
 fi
 include ./event/common/now_loading.txt

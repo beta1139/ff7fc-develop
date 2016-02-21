@@ -1,0 +1,65 @@
+msg バレット\n「ここからさき\n　だんたいこうどうには　リーダーがひつようだ\n　リーダーといえば　オレしかいねえ
+sleep 32
+chg_npc_dir 5712 left
+sleep 32
+chg_speed 5712 slow
+step_npc 5712 2
+sleep 16
+msg ティファ\n「そうかしら……
+sleep 32
+chg_npc_dir 5713 right
+sleep 32
+jump_npc 5713 same 1
+sleep 16
+step_npc 5713 2
+msg ティファ\n「どうかんがえてもクラウド　よね
+kill 5781
+chg_npc_dir 5711 right
+sleep 32
+chg_speed 5711 normal
+step_npc 5711 2
+sleep 32
+chg_speed 5711 slow
+step_npc 5711 1
+sleep 64
+chg_npc_img 5711 1
+chg_npc_dir 5711 down
+sleep 32
+chg_npc_img 5711 98
+chg_npc_dir 5711 left
+step_npc 5711 3
+sleep 16
+msg バレット\n「チッ…………わかったよ\n　ここから　[ほくとうにカームってまち]　があるんだ\n　なにかあったら　そこを　しゅうごうばしょにしよう
+sleep 8
+chg_npc_img 5711 117
+chg_npc_dir 5711 down
+sleep 8
+chg_npc_dir 5711 up
+sleep 24
+chg_npc_img 5711 1
+chg_npc_dir 5711 left
+sleep 16
+chg_npc_dir 5711 down
+sleep 4
+chg_npc_dir 5711 right
+sleep 4
+chg_npc_dir 5711 up
+sleep 4
+chg_npc_dir 5711 left
+sleep 4
+chg_npc_dir 5711 down
+jump_npc 5711 same 1
+sleep 16
+chg_speed 5711 normal
+step_npc 5711 3
+msg バレット\n「それにしたって　のっぱらを　5にんでゾロゾロ\n　あるくなんて　あぶなくてしょうがねえ\n　おまえ　パーティーを2くみにわけてみろ
+create npc2 5715 57 22 25 17 0 4 
+create npc2 5716 57 23 24 17 0 4 
+create npc2 5717 57 23 26 17 0 4 
+create npc2 5718 57 24 25 17 0 4 
+sleep 16
+include ./event/script/party_mem.txt
+include ./event/common/key_valid.txt
+set_key_unvalid select
+create event_generator 13724 137 0 0 17 0 0 @confirm.txt
+create event_generator 5783 57 0 0 17 0 0 @057/departure4.txt

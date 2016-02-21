@@ -1,0 +1,485 @@
+if_flag 80 0
+draw_char off
+fadeout
+stop_se
+sleep 16
+// 
+// Gバイク　バイク登場シーン
+// 
+set_flag 19 0
+chg_type 10890 npc_event
+chg_type 10891 npc_event
+chg_type 10892 npc_event
+chg_type 10893 npc_event
+chg_type 10894 npc_event
+chg_type 10895 npc_event
+chg_speed 10890 normal
+chg_speed 10891 normal
+chg_speed 10892 normal
+chg_speed 10893 normal
+chg_speed 10894 normal
+chg_speed 10895 normal
+include ./event/common/108/vib_truck.txt
+sleep 8
+warp 719 4 18 down
+kill_through_range 71811 71814
+create npc_event 71910 719 4 1 181 1 3 none
+create npc_event 71911 719 4 2 181 2 3 none
+create npc_event 70810 708 4 7 181 1 3 none
+create npc_event 70811 708 4 8 181 2 3 none
+sleep 16
+fadein
+chg_event_move_char_speed fast
+move_char up 10
+play_se_loop motorcycle.ogg
+sleep 64
+slide_walk_npc 71910 down 3
+slide_walk_npc 71911 down 3
+sleep 24
+jump_npc_target_pos 71910 4 5
+jump_npc_target_pos 71911 4 6
+sleep 16
+slide_walk_npc 71910 down 2
+slide_walk_npc 71911 down 2
+sleep 16
+draw_image 000 64 -16 0 0 112 256 0 event/shinra_bldg/stairway.png
+draw_image 001 64 240 0 0 112 256 0 event/shinra_bldg/stairway.png
+draw_image 002 64 496 0 0 112 256 0 event/shinra_bldg/stairway.png
+warp 708 4 8 down
+step_npc 70810 6
+step_npc 70811 6
+loop 48
+sleep 1
+chg_image_pos_offset 000 0 -2 0 0 0 0
+chg_image_pos_offset 001 0 -2 0 0 0 0
+chg_image_pos_offset 002 0 -2 0 0 0 0
+pool
+jump_npc 70810 same 1
+jump_npc 70811 same 1
+loop 16
+sleep 1
+chg_image_pos_offset 000 0 -2 0 0 0 0
+chg_image_pos_offset 001 0 -2 0 0 0 0
+chg_image_pos_offset 002 0 -2 0 0 0 0
+pool
+step_npc 70810 8
+step_npc 70811 8
+loop 64
+sleep 1
+chg_image_pos_offset 000 0 -2 0 0 0 0
+chg_image_pos_offset 001 0 -2 0 0 0 0
+chg_image_pos_offset 002 0 -2 0 0 0 0
+pool
+chg_image_pos_offset 000 0 256 0 0 0 0
+chg_image_pos_offset 001 0 256 0 0 0 0
+chg_image_pos_offset 002 0 256 0 0 0 0
+fadeout
+kill_through 10800
+sleep 16
+stop_se
+erase_image_range 000 002
+kill_through_range 71910 71911
+kill_through_range 70810 70811
+fadein
+include ./event/common/effect_fadeout.txt
+// 
+// Gバイク　メンバー合流シーン
+// 
+warp 108 11 11 up
+create npc_event 10811 108 11 16 1 0 2 none
+create npc_event 10812 108 11 11 2 0 2 none
+create npc_event 10813 108 11 13 3 0 2 none
+create npc_event 10814 108 11 14 4 0 2 none
+sleep 8
+chg_event_move_char_speed normal
+move_char up 1
+move_npc 10811 up 6
+move_npc 10812 up 1
+move_npc 10813 up 3
+move_npc 10814 up 4
+include ./event/common/effect_fadein.txt
+reset_screen_effect
+move_npc 10812 right 1
+sleep 16
+move_npc 10812 up 3
+sleep 16
+set_ignore_map_layer_flag 10813 1
+set_layer 10813 front
+move_npc 10813 right 4
+sleep 16
+set_ignore_map_layer_flag 10814 1
+set_layer 10814 front
+move_npc 10814 right 2
+sleep 16
+move_npc 10812 right 2
+sleep 16
+move_npc 10811 right 1
+chg_npc_dir 10814 up
+sleep 16
+chg_npc_dir 10812 down
+jump_npc 10812 same 2
+move_npc 10811 up 3
+chg_npc_dir 10813 up
+sleep 32
+chg_speed 10812 fast
+chg_npc_dir 10812 left
+step_npc 10812 1
+sleep 16
+chg_npc_dir 10811 right
+chg_npc_dir 10812 down
+step_npc 10812 1
+chg_npc_dir 10813 left
+chg_npc_dir 10814 right
+sleep 16
+jump_npc 10811 same 1
+chg_event_move_char_speed fast
+play_se_loop motorcycle.ogg
+move_char right 6
+sleep 16
+chg_npc_dir 10812 left
+step_npc 10812 3
+sleep 24
+chg_speed 10811 fast
+step_npc 10811 3
+create npc_event 10870 108 21 12 181 1 3 none
+create npc_event 10871 108 21 13 181 2 3 none
+slide_walk_npc 10870 down 6
+slide_walk_npc 10871 down 6
+sleep 8
+move_char down 8
+sleep 40
+chg_speed 10870 normal
+chg_speed 10871 normal
+slide_walk_npc 10870 down 1
+slide_walk_npc 10871 down 1
+play_se train_stop2.ogg
+sleep 16
+chg_npc_img 10870 180
+chg_npc_dir 10870 up
+chg_npc_img 10871 180
+chg_npc_dir 10871 right
+create npc_event 10872 108 22 19 180 1 2 none
+create npc_event 10873 108 22 20 180 2 2 none
+set_ignore_map_layer_flag 10870 1
+set_layer 10870 front
+set_ignore_map_layer_flag 10871 1
+set_layer 10871 front
+set_ignore_map_layer_flag 10872 1
+set_layer 10872 front
+set_ignore_map_layer_flag 10873 1
+set_layer 10873 front
+slide_walk_npc 10870 down 1
+slide_walk_npc 10871 down 1
+slide_walk_npc 10872 down 1
+slide_walk_npc 10873 down 1
+sleep 16
+chg_speed 10870 slow
+chg_speed 10871 slow
+chg_speed 10872 slow
+chg_speed 10873 slow
+slide_walk_npc 10870 down 1
+slide_walk_npc 10871 down 1
+slide_walk_npc 10872 down 1
+slide_walk_npc 10873 down 1
+sleep 16
+play_se_loop motorcycle.ogg
+loop 3
+include ./event/common/108/vib_bike.txt
+pool
+jump_npc 10870 same 2
+jump_npc 10871 same 2
+jump_npc 10872 same 2
+jump_npc 10873 same 2
+sleep 32
+chg_speed 10870 fast
+chg_speed 10871 fast
+chg_speed 10872 fast
+chg_speed 10873 fast
+slide_walk_npc 10870 left 3
+slide_walk_npc 10871 left 3
+slide_walk_npc 10872 left 3
+slide_walk_npc 10873 left 3
+sleep 24
+chg_npc_img 10870 181
+chg_npc_img 10871 181
+chg_npc_img 10872 17
+chg_npc_img 10873 17
+chg_speed 10870 normal
+chg_speed 10871 normal
+slide_walk_npc 10870 left 1
+slide_walk_npc 10871 left 1
+sleep 16
+loop 2
+include ./event/common/108/vib_bike.txt
+pool
+chg_speed 10870 fast
+chg_speed 10871 fast
+move_char up 10
+slide_walk_npc 10870 up 15
+slide_walk_npc 10871 up 15
+step_npc 10812 9
+sleep 40
+chg_npc_dir 10813 down
+sleep 40
+chg_npc_dir 10812 right
+chg_npc_dir 10813 right
+sleep 24
+chg_npc_dir 10813 up
+sleep 8
+chg_npc_dir 10812 left
+sleep 8
+jump_npc 10812 same 2
+chg_npc_img 10870 180
+chg_npc_img 10871 180
+chg_npc_img 10872 180
+chg_npc_img 10873 180
+set_npc_pos 10870 108 17 6
+set_npc_pos 10871 108 17 7
+set_npc_pos 10872 108 18 6
+set_npc_pos 10873 108 18 7
+chg_speed 10870 normal
+chg_speed 10871 normal
+chg_speed 10872 normal
+chg_speed 10873 normal
+slide_walk_npc 10870 up 1
+slide_walk_npc 10871 up 1
+slide_walk_npc 10872 up 1
+slide_walk_npc 10873 up 1
+sleep 4
+chg_npc_dir 10812 down
+sleep 4
+chg_npc_dir 10812 right
+sleep 4
+chg_npc_dir 10812 up
+sleep 4
+chg_npc_dir 10812 left
+loop 2
+include ./event/common/108/vib_bike.txt
+pool
+chg_speed 10812 fast
+step_npc 10812 3
+chg_speed 10870 fast
+chg_speed 10871 fast
+chg_speed 10872 fast
+chg_speed 10873 fast
+slide_walk_npc 10870 left 9
+slide_walk_npc 10871 left 9
+slide_walk_npc 10872 left 9
+slide_walk_npc 10873 left 9
+sleep 24
+chg_speed 10812 normal
+move_npc 10812 right 1
+sleep 8
+chg_speed 10811 normal
+step_npc 10811 2
+sleep 8
+chg_npc_dir 10814 up
+move_npc 10812 down 1
+sleep 16
+set_layer 10812 back
+jump_npc 10812 down 1
+sleep 16
+kill 10812
+set_npc_pos 10870 108 9 10
+set_npc_pos 10871 108 9 11
+set_npc_pos 10872 108 8 10
+set_npc_pos 10873 108 8 11
+chg_npc_img 10870 179
+chg_npc_img 10871 179
+chg_npc_img 10872 179
+chg_npc_img 10873 179
+sleep 16
+chg_npc_dir 10811 down
+chg_npc_dir 10814 left
+sleep 16
+slide_walk_npc 10870 right 8
+slide_walk_npc 10871 right 8
+slide_walk_npc 10872 right 8
+slide_walk_npc 10873 right 8
+chg_speed 10811 normal
+move_npc 10811 down 2
+set_layer 10814 back
+jump_npc 10813 up 1
+loop 2
+include ./event/common/108/vib_truck.txt
+pool
+kill 10813
+loop 2
+include ./event/common/108/vib_truck.txt
+pool
+chg_npc_dir 10811 up
+chg_npc_img 10811 95
+jump_npc 10811 same 1
+loop 2
+include ./event/common/108/vib_truck.txt
+pool
+chg_speed 10811 fast
+chg_npc_dir 10811 down
+step_npc 10811 4
+loop 2
+include ./event/common/108/vib_truck.txt
+pool
+loop 2
+include ./event/common/108/vib_mix.txt
+pool
+chg_npc_img 10811 1
+chg_npc_dir 10811 right
+loop 2
+include ./event/common/108/vib_mix.txt
+pool
+jump_npc 10811 right 1
+loop 2
+include ./event/common/108/vib_mix.txt
+pool
+kill 10811
+move_npc 10814 left 1
+set_npc_pos 10870 108 17 10
+set_npc_pos 10871 108 17 11
+set_npc_pos 10872 108 0 0
+set_npc_pos 10873 108 0 0
+chg_npc_img 10870 181
+chg_npc_img 10871 181
+chg_npc_dir 10870 down
+chg_npc_dir 10871 left
+loop 2
+include ./event/common/108/vib_mix.txt
+pool
+move_npc 10814 up 1
+jump_npc 10890 same 1
+jump_npc 10891 same 1
+jump_npc 10892 same 1
+jump_npc 10893 same 1
+jump_npc 10894 same 1
+jump_npc 10895 same 1
+chg_speed 10870 normal
+chg_speed 10871 normal
+slide_walk_npc 10870 down 3
+slide_walk_npc 10871 down 3
+sleep 16
+jump_npc 10814 same 1
+chg_npc_dir 10814 right
+slide_walk_npc 10890 right 2
+slide_walk_npc 10891 right 2
+slide_walk_npc 10892 right 2
+slide_walk_npc 10893 right 2
+slide_walk_npc 10894 right 2
+slide_walk_npc 10895 right 2
+sleep 16
+chg_speed 10814 fast
+move_npc 10814 right 3
+sleep 16
+jump_npc 10870 same 1
+jump_npc 10871 same 1
+include ./event/common/108/vib_bike.txt
+kill 10814
+include ./event/common/108/vib_truck.txt
+chg_speed 10870 fast
+chg_speed 10871 fast
+slide_walk_npc 10870 down 5
+slide_walk_npc 10871 down 5
+loop 2
+include ./event/common/108/vib_truck.txt
+pool
+chg_npc_img 10890 182
+chg_npc_dir 10890 up
+chg_npc_img 10891 182
+chg_npc_dir 10891 left
+chg_npc_img 10892 182
+chg_npc_dir 10892 down
+set_npc_pos 10890 108 17 10
+set_npc_pos 10891 108 17 9
+set_npc_pos 10892 108 17 8
+set_npc_pos 10893 108 0 0
+set_npc_pos 10894 108 0 0
+set_npc_pos 10895 108 0 0
+chg_speed 10890 normal
+chg_speed 10891 normal
+chg_speed 10892 normal
+include ./event/common/108/vib_truck.txt
+slide_walk_npc 10890 down 2
+slide_walk_npc 10891 down 2
+slide_walk_npc 10892 down 2
+sleep 32
+chg_speed 10890 fast
+chg_speed 10891 fast
+chg_speed 10892 fast
+slide_walk_npc 10890 down 6
+slide_walk_npc 10891 down 6
+slide_walk_npc 10892 down 6
+set_ignore_map_layer_flag 10870 0
+set_ignore_map_layer_flag 10871 0
+sleep 48
+set_npc_pos 10870 108 8 20
+set_npc_pos 10871 108 8 21
+chg_npc_dir 10870 up
+chg_npc_dir 10871 right
+set_npc_pos 10890 108 7 22
+set_npc_pos 10891 108 7 23
+set_npc_pos 10892 108 7 24
+chg_npc_img 10890 183
+chg_npc_img 10891 183
+chg_npc_img 10892 183
+chg_npc_dir 10890 down
+chg_npc_dir 10891 left
+chg_npc_dir 10892 up
+sleep 32
+move_char left 7
+sleep 40
+chg_speed 10870 normal
+chg_speed 10871 normal
+chg_speed 10890 normal
+chg_speed 10891 normal
+chg_speed 10892 normal
+slide_walk_npc 10870 up 6
+slide_walk_npc 10871 up 6
+slide_walk_npc 10890 up 6
+slide_walk_npc 10891 up 6
+slide_walk_npc 10892 up 6
+sleep 16
+move_char down 6
+sleep 80
+chg_speed 10870 fast
+chg_speed 10871 fast
+chg_speed 10890 fast
+chg_speed 10891 fast
+chg_speed 10892 fast
+slide_walk_npc 10870 up 2
+slide_walk_npc 10871 up 2
+slide_walk_npc 10890 up 2
+slide_walk_npc 10891 up 2
+slide_walk_npc 10892 up 2
+include ./event/common/effect_fadeout.txt
+// 
+// Gバイク　階段登りシーン
+// 
+sleep 16
+create npc_event 11070 110 8 16 181 0 3 none
+create npc_event 11071 110 8 17 181 3 3 none
+create npc_event 11090 110 7 17 183 1 3 none
+create npc_event 11091 110 7 18 183 2 3 none
+create npc_event 11092 110 7 19 183 0 3 none
+sleep 16
+warp 110 11 16 up
+slide_walk_npc 11070 up 2
+slide_walk_npc 11071 up 2
+slide_walk_npc 11090 up 3
+slide_walk_npc 11091 up 3
+slide_walk_npc 11092 up 3
+move_char up 10
+include ./event/common/effect_fadein.txt
+jump_npc_target_pos 11070 8 13
+jump_npc_target_pos 11071 8 14
+sleep 8
+jump_npc_target_pos 11090 7 13
+jump_npc_target_pos 11091 7 14
+jump_npc_target_pos 11092 7 15
+sleep 8
+slide_walk_npc 11070 up 11
+slide_walk_npc 11071 up 11
+sleep 8
+slide_walk_npc 11090 up 10
+slide_walk_npc 11091 up 10
+slide_walk_npc 11092 up 10
+sleep 64
+fi
+create event_generator 10802 108 0 0 17 0 0 @../common/108/gbike_pre3.txt

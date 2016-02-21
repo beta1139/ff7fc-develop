@@ -14,5 +14,8 @@ kill_through 14505
 create npc 14506 145 24 21 2 2 0 ティファ\n「ルーファウスは？
 sleep 16
 create event_generator 14521 145 0 0 17 0 0 @145/shinra_bldg_escape2.txt
+create event_generator 10800 108 13 27 17 0 0 @../common/108/shinra_bldg_escape3_1.txt
+create event_generator 10801 108 15 27 17 0 0 @../common/108/shinra_bldg_escape3_2.txt
+create event_generator 10802 108 14 27 17 0 0 @../script/108/shinra_bldg_escape3.txt
 add_party_mem 0
 set_flag 0 4

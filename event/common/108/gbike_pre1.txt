@@ -1,0 +1,61 @@
+sleep 8
+move_npc 10812 left 1
+play_event_bgm 1-22-Crazy_Motorcycle.ogg
+sleep 8
+chg_speed 10811 normal
+chg_speed 10813 normal
+chg_speed 10814 normal
+chg_npc_dir 10811 down
+move_npc 10812 up 8
+move_npc 10813 left 1
+move_npc 10814 up 4
+sleep 16
+chg_npc_dir 10811 left
+move_npc 10813 up 9
+sleep 32
+chg_npc_dir 10811 up
+sleep 8
+jump_npc 10811 same 2
+sleep 8
+move_npc 10814 left 2
+sleep 32
+move_npc 10811 up 5
+move_npc 10814 up 8
+sleep 64
+move_npc 10813 left 2
+sleep 16
+move_npc 10811 left 3
+sleep 16
+move_npc 10813 up 3
+sleep 32
+move_npc 10811 up 1
+fadeout
+sleep 32
+kill_through_range 10810 10814
+warp 708 0 0 left
+fadein
+include ./event/common/effect_fadeout.txt
+create npc_event 71811 718 16 9 1 2 3 none
+create npc_event 71812 718 12 10 2 2 3 none
+create npc_event 71813 718 16 9 3 2 3 none
+create npc_event 71814 718 16 10 4 2 3 none
+warp 718 7 8 left
+sleep 8
+move_npc 71812 left 5
+include ./event/common/effect_fadein.txt
+sleep 24
+chg_npc_dir 71812 right
+sleep 8
+jump_npc 71812 same 2
+sleep 32
+step_npc 71812 2
+sleep 8
+move_npc 71814 left 17
+sleep 16
+move_npc 71813 left 15
+move_npc 71812 left 8
+sleep 40
+move_npc 71811 left 9
+kill_through 10801
+sleep 48
+create event_generator 10801 719 0 0 17 0 0 @../common/108/gbike_pre2.txt

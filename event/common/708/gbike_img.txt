@@ -1,0 +1,15 @@
+chg_image_pos 000 0 0 0 0 256 288
+chg_image_pos 001 0 288 0 0 256 288
+loop_inf
+step_npc 70820 12
+step_npc 70821 12
+step_npc 70822 12
+step_npc 70823 12
+step_npc 70824 12
+step_npc 70825 12
+step_npc 70826 12
+loop 96
+include ./event/common/708/highway_y.txt
+pool
+include ./event/common/708/highway_y_reset.txt
+pool

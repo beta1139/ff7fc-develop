@@ -56,9 +56,11 @@ create npc_event 10810 108 16 4 0 0 2 none
 fi
 if_flag 28 3
 create npc_event 11010 110 12 4 0 0 2 none
+create npc_event 11210 112 10 5 0 0 2 none
 fi
 if_flag 28 4
 create npc_event 11010 110 16 4 0 0 2 none
+create npc_event 11210 112 14 5 0 0 2 none
 fi
 draw_char off
 if_flag_lesser 28 3
@@ -79,19 +81,26 @@ kill 10810
 fi
 if_flag_greater 28 2
 chg_npc_y_offset 11010 -6
+chg_npc_y_offset 11210 -6
 sleep 3
 chg_npc_y_offset 11010 -8
+chg_npc_y_offset 11210 -8
 sleep 3
 chg_npc_img 11010 115
+chg_npc_img 11210 115
 sleep 32
 play_se button.ogg
 sleep 32
 chg_npc_y_offset 11010 -6
+chg_npc_y_offset 11210 -6
 sleep 4
 chg_npc_y_offset 11010 -4
+chg_npc_y_offset 11210 -6
 chg_npc_img 11010 0
+chg_npc_img 11210 0
 draw_char on
 kill 11010
+kill 11210
 fi
 fi
 if_flag_greater 28 4
@@ -129,9 +138,11 @@ open_door 10851
 fi
 if_flag 28 3
 open_door 11050
+open_door 11250
 fi
 if_flag 28 4
 open_door 11051
+open_door 11251
 fi
 if_flag 28 5
 open_door 11750

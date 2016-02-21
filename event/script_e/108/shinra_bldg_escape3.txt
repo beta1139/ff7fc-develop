@@ -1,0 +1,200 @@
+wait_same_pos
+kill_through_range 10800 10808
+create npc_event 10811 108 14 27 1 1 2 none
+create npc_event 10813 108 14 27 3 1 2 none
+create npc_event 10814 108 14 27 4 1 2 none
+draw_char off
+move_npc 10811 down 1
+move_npc 10814 left 1
+sleep 16
+chg_npc_dir 10814 down
+sleep 12
+set_layer 10811 front
+chg_npc_dir 10811 up
+chg_npc_img 10811 95
+set_active_msg 10811
+jump_npc 10811 same 1
+msg バレット\n「オレが　さきにいくぜ！
+chg_npc_img 10811 1
+chg_npc_dir 10814 down
+sleep 4
+chg_npc_dir 10811 left
+sleep 4
+chg_npc_dir 10811 up
+sleep 4
+chg_npc_dir 10811 right
+sleep 4
+chg_npc_dir 10811 down
+chg_speed 10811 fast
+move_npc 10811 down 5
+sleep 40
+chg_npc_img 10811 17
+sleep 12
+loop 5
+include ./event/common/effect_gunshot01.txt
+pool
+sleep 8
+loop 6
+include ./event/common/effect_gunshot01.txt
+pool
+sleep 8
+loop 4
+include ./event/common/effect_gunshot01.txt
+pool
+sleep 16
+chg_npc_dir 10811 up
+chg_npc_img 10811 1
+move_npc 10811 up 4
+sleep 32
+chg_npc_dir 10811 down
+sleep 8
+chg_npc_img 10811 145
+sleep 8
+step_npc 10811 6
+loop 6
+include ./event/common/effect_gunshot01.txt
+pool
+reset_screen_effect
+sleep 16
+include ./event/common/key_unvalid.txt
+chg_npc_img 10811 1
+sleep 16
+set_flag 19 0
+chg_speed 10811 slow
+slide_walk_npc 10811 up 1
+sleep 32
+step_npc 10811 1
+chg_char_state_move
+create event_generator 10803 108 0 0 17 0 0 @../common/108/shinra_bldg_escape3_exp.txt
+msg バレット\n「チッ……！\n　すっかり　かこまれてやがる\n\n　オレひとりならともかく\n　このメンツじゃ……
+wait_event_invalid 10803
+chg_speed 10813 normal
+jump_npc 10813 same 1
+sleep 16
+step_npc 10813 2
+set_flag 19 1
+create event_generator 10803 108 0 0 17 0 0 @../common/108/shinra_bldg_escape3_exp.txt
+msg エアリス\n「……やっぱり　あなたたちだけで\n　にげて\n\n　あのひとたちが　ねらっているのは\n　わたし\n　あなたたちだけなら……
+wait_event_invalid 10803
+sleep 16
+chg_npc_dir 10814 down
+set_layer 10811 front
+chg_speed 10811 normal
+jump_npc 10811 same 1
+sleep 16
+step_npc 10811 1
+set_flag 19 2
+create event_generator 10803 108 0 0 17 0 0 @../common/108/shinra_bldg_escape3_exp.txt
+msg バレット\n「ヘッ　そうはいかねえな\n\n\n　アンタはマリンをまもるために\n　ヤツらにつかまった\n　こんどは　オレがアンタをまもるばんだ
+wait_event_invalid 10803
+chg_speed 10811 slow
+move_npc 10811 down 1
+sleep 32
+chg_npc_dir 10811 left
+chg_npc_img 10811 98
+step_npc 10811 3
+msg バレット\n「これいじょうヤツらの……　シンラの\n　すきかってには　させねえ
+sleep 16
+chg_speed 10813 slow
+move_npc 10813 down 1
+sleep 32
+step_npc 10813 1
+msg エアリス\n「……ありがと　バレットさん
+chg_npc_img 10811 1
+chg_npc_dir 10811 up
+sleep 24
+set_layer 10811 front
+jump_npc 10811 same 1
+sleep 16
+set_layer 10811 front
+jump_npc 10811 same 1
+msg バレット\n「ヘヘッ　よしてくれよ\n　『バレットさん』なんて　オレのガラじゃねえや
+sleep 16
+chg_npc_dir 10811 down
+sleep 8
+chg_npc_img 10811 145
+sleep 16
+jump_npc 10814 same 1
+sleep 16
+chg_speed 10814 slow
+step_npc 10814 2
+set_flag 19 3
+create event_generator 10803 108 0 0 17 0 0 @../common/108/shinra_bldg_escape3_exp.txt
+msg レッド13\n「……さて\n\n\n　キミたちのはなしが　おわったなら\n　そろそろここから　にげだすほうほうを\n　かんがえてみないか？
+wait_event_invalid 10803
+sleep 8
+chg_npc_img 10811 1
+chg_npc_dir 10811 up
+sleep 16
+chg_npc_dir 10811 left
+sleep 4
+chg_npc_dir 10811 down
+sleep 4
+chg_npc_dir 10811 right
+sleep 4
+chg_npc_dir 10811 up
+chg_speed 10811 normal
+set_layer 10811 front
+sleep 16
+jump_npc 10811 same 1
+msg バレット\n「ん？あ　ああ……\n　チェッ　いやに　れいせいなやつだな\n　どこかの　だれかさんみたいだぜ
+sleep 8
+set_active_msg 10814
+step_npc 10814 1
+msg レッド13\n「なにか？
+sleep 8
+step_npc 10811 2
+msg バレット\n「いや　なんでもねえよ\n　さて　どうするか……　
+sleep 24
+msg ティファ\n「バレット！！
+create npc_event 10812 108 20 15 2 1 3 none
+chg_npc_dir 10813 up
+chg_npc_dir 10814 up
+chg_event_move_char_speed fast
+move_char up 6
+sleep 40
+move_npc 10812 down 6
+sleep 48
+move_npc 10812 left 5
+sleep 40
+move_char down 2
+move_npc 10812 down 2
+jump_npc 10811 same 1
+sleep 8
+msg3 -1 バレット\n「ティファ！\n　クラウドは！？
+sleep 8
+chg_speed 10811 fast
+step_npc 10811 4
+wait_key_push_edge a
+erase_msg3
+jump_npc 10812 same 1
+sleep 16
+set_active_msg 10812
+move_npc 10812 left 3
+sleep 8
+msg3 -1 ティファ\n「みんな　こっち！
+sleep 16
+jump_npc 10812 same 1
+chg_npc_dir 10812 down
+sleep 16
+step_npc 10812 3
+wait_key_push_edge a
+erase_msg3
+stop_bgm
+move_npc 10811 right 1
+sleep 8
+move_npc 10811 up 2
+sleep 16
+move_npc 10811 left 1
+sleep 8
+chg_npc_dir 10811 up
+jump_npc 10811 same 1
+sleep 16
+step_npc 10811 3
+msg バレット\n「ええ！？\n　どうしたんだよ？\n　クラウドは？
+jump_npc 10812 same 2
+kill_through 10800
+sleep 32
+step_npc 10812 2
+msg ティファ\n「はなしはあと！\n　いいからはやく！！
+create event_generator 10800 718 0 0 17 0 0 @../common/108/gbike_pre1.txt
