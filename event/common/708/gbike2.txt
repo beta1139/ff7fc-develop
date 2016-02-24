@@ -173,7 +173,7 @@ if_flag_lesser 19 2
 sleep 64
 fi
 if_flag 19 2
-sleep 48
+sleep 24
 fi
 add_flag 19 1
 pool

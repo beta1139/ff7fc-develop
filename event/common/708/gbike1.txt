@@ -3,13 +3,13 @@ draw_image 000 0 0 0 0 256 288 0 event/shinra_bldg/highway_y.png
 draw_image 001 0 288 0 0 256 288 0 event/shinra_bldg/highway_y.png
 set_image_alpha 000 0
 set_image_alpha 001 0
-step_npc 70820 12
-step_npc 70821 12
-step_npc 70822 12
-step_npc 70823 12
-step_npc 70824 12
-step_npc 70825 12
-step_npc 70826 12
+step_npc 70820 9
+step_npc 70821 9
+step_npc 70822 9
+step_npc 70823 9
+step_npc 70824 9
+step_npc 70825 9
+step_npc 70826 9
 loop 2
 include ./event/common/708/highway_y.txt
 pool
@@ -57,7 +57,7 @@ include ./event/common/708/highway_y.txt
 pool
 chg_char_state_move
 create event_generator 70802 708 0 0 17 0 0 @../common/708/gbike2.txt
-loop 40
+loop 16
 include ./event/common/708/highway_y.txt
 pool
 include ./event/common/708/gbike_img.txt

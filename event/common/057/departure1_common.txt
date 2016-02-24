@@ -1,4 +1,4 @@
-sleep 48
+sleep 64
 play_bgm
 sleep 32
 move_npc 5711 left 2

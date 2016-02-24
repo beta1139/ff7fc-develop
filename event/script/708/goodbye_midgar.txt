@@ -15,7 +15,7 @@ create npc_event 70829 708 13 13 184 0 1 none
 create npc_event 70830 708 13 14 184 3 1 none
 create npc_event 70831 708 14 13 185 1 1 none
 create npc_event 70832 708 14 14 185 2 1 none
-sleep 8
+sleep 24
 play_event_bgm 2-04-On_that_Day_Five_Years_Ago.ogg
 sleep 24
 include ./event/common/effect_fadein.txt

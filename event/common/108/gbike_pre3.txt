@@ -204,24 +204,24 @@ kill_through_range 72080 72089
 sleep 16
 warp 708 8 7 down
 set_image_trans_col 0 0 0
-draw_image 000 0 0 0 0 288 224 0 event/shinra_bldg/highway_x.png
-draw_image 001 288 0 0 0 288 224 0 event/shinra_bldg/highway_x.png
+draw_image 000 0 -16 0 0 288 256 0 event/shinra_bldg/highway_x.png
+draw_image 001 288 -16 0 0 288 256 0 event/shinra_bldg/highway_x.png
 draw_image 002 32 -128 0 0 16 16 0 event/shinra_bldg/fragment.png
 draw_image 003 16 -88 0 0 16 16 0 event/shinra_bldg/fragment.png
 draw_image 004 32 -112 0 0 16 16 0 event/shinra_bldg/fragment.png
 draw_image 005 0 -96 0 0 16 16 0 event/shinra_bldg/fragment.png
 draw_image 006 16 -128 0 0 16 16 0 event/shinra_bldg/fragment.png
 draw_image 007 0 -80 0 0 16 16 0 event/shinra_bldg/fragment.png
-create npc_event 70819 708 -2 7 121 2 2 none
-create npc_event 70820 708 -2 6 179 1 3 none
-create npc_event 70821 708 -2 7 179 2 3 none
-create npc_event 70822 708 -1 6 179 0 3 none
-create npc_event 70823 708 -1 7 179 3 3 none
+create npc_event 70819 708 -2 8 121 2 2 none
+create npc_event 70820 708 -2 7 179 1 3 none
+create npc_event 70821 708 -2 8 179 2 3 none
+create npc_event 70822 708 -1 7 179 0 3 none
+create npc_event 70823 708 -1 8 179 3 3 none
 slide_walk_npc 70819 right 6
-jump_npc_target_pos 70820 4 6
-jump_npc_target_pos 70821 4 7
-jump_npc_target_pos 70822 5 6
-jump_npc_target_pos 70823 5 7
+jump_npc_target_pos 70820 4 7
+jump_npc_target_pos 70821 4 8
+jump_npc_target_pos 70822 5 7
+jump_npc_target_pos 70823 5 8
 sleep 48
 include ./event/common/effect_fadein.txt
 reset_screen_effect
@@ -242,6 +242,7 @@ chg_image_pos_offset 006 0 4 0 0 0 0
 chg_image_pos_offset 007 0 8 0 0 0 0
 sleep 1
 pool
+chg_event_move_char_speed fast
 play_se shock.ogg
 move_char left 3
 kill 70819
@@ -298,20 +299,26 @@ sleep 1
 pool
 erase_image_range 002 007
 move_char up 2
-step_npc 70820 42
-step_npc 70821 42
-step_npc 70822 42
-step_npc 70823 42
+step_npc 70820 44
+step_npc 70821 44
+step_npc 70822 44
+step_npc 70823 44
 loop 32
-include ./event/common/708/highway_x.txt
+chg_image_pos_offset 000 -3 0 0 0 0 0
+chg_image_pos_offset 001 -3 0 0 0 0 0
+sleep 1
 pool
 move_char down 2
 loop 32
-include ./event/common/708/highway_x.txt
+chg_image_pos_offset 000 -3 0 0 0 0 0
+chg_image_pos_offset 001 -3 0 0 0 0 0
+sleep 1
 pool
 move_char up 2
 loop 16
-include ./event/common/708/highway_x.txt
+chg_image_pos_offset 000 -3 0 0 0 0 0
+chg_image_pos_offset 001 -3 0 0 0 0 0
+sleep 1
 pool
 include ./event/common/708/highway_x_reset.txt
 loop 16
@@ -321,25 +328,26 @@ move_char down 1
 loop 32
 include ./event/common/708/highway_x.txt
 pool
-create npc_event 70824 708 -5 3 161 1 3 none
-create npc_event 70825 708 -5 4 161 2 3 none
-create npc_event 70826 708 -4 3 160 0 3 none
-create npc_event 70827 708 -4 4 160 3 3 none
-create npc_event 70828 708 -3 3 160 1 3 none
-create npc_event 70829 708 -3 4 160 2 3 none
+create npc_event 70824 708 -5 4 161 1 3 none
+create npc_event 70825 708 -5 5 161 2 3 none
+create npc_event 70826 708 -4 4 160 0 3 none
+create npc_event 70827 708 -4 5 160 3 3 none
+create npc_event 70828 708 -3 4 160 1 3 none
+create npc_event 70829 708 -3 5 160 2 3 none
 slide_walk_npc 70824 right 13
 slide_walk_npc 70825 right 13
 slide_walk_npc 70826 right 13
 slide_walk_npc 70827 right 13
 slide_walk_npc 70828 right 13
 slide_walk_npc 70829 right 13
-loop 48
+loop 24
 include ./event/common/708/highway_x.txt
 pool
 include ./event/common/708/highway_x_reset.txt
-loop 56
+loop 72
 include ./event/common/708/highway_x.txt
 pool
+include ./event/common/708/highway_x_reset.txt
 chg_speed 70824 normal
 chg_speed 70825 normal
 chg_speed 70826 normal
@@ -361,13 +369,13 @@ chg_speed 70826 fast
 chg_speed 70827 fast
 chg_speed 70828 fast
 chg_speed 70829 fast
-step_npc 70824 11
-step_npc 70825 11
-step_npc 70826 11
-step_npc 70827 11
-step_npc 70828 11
-step_npc 70829 11
-loop 24
+step_npc 70824 15
+step_npc 70825 15
+step_npc 70826 15
+step_npc 70827 15
+step_npc 70828 15
+step_npc 70829 15
+loop 56
 include ./event/common/708/highway_x.txt
 pool
 include ./event/common/708/highway_x_reset.txt
