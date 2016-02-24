@@ -9,7 +9,7 @@ slide_walk_npc 5710 down 6
 include ./event/common/effect_fadein.txt
 reset_screen_effect
 chg_event_move_char_speed slow
-move_char down 4
+move_char down 5
 sleep 16
 chg_speed 5712 normal
 step_npc 5712 1

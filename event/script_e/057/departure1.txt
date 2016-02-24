@@ -7,7 +7,7 @@ inc_screen_effect_val 13
 pool
 erase_image 000
 kill_through_range 70800 70899
-warp 57 26 19 up
+warp 57 26 18 up
 create map_obj 5700 57 29 13 75 0 0 
 create map_obj 5701 57 29 14 75 0 0 
 create map_obj 5702 57 29 15 75 0 0 
