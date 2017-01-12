@@ -19,7 +19,7 @@ kill_through_range 7260 7297
 kill_through 7351
 kill_through 7511
 kill_through 7515
-kill_through 7601
+kill_through_range 7601 7604
 kill_through_range 7611 7614
 kill_through 7707
 kill_through 7751
