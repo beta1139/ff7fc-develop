@@ -2,6 +2,7 @@ kill_through 13621
 kill_through 13625
 kill_through 14320
 kill_through 14301
+kill_through_range 14303 14305
 kill_through 14401
 create event_generator 71620 716 22 16 17 0 0 @../common/flag00.txt
 create event_generator 71621 716 22 17 17 0 0 @../common/flag04.txt

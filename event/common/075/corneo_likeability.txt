@@ -30,7 +30,7 @@ set_flag 18 2
 fi
 if_owned_item 6002
 set_flag 15 5
-set_flag 18 4
+set_flag 18 3
 fi
 if_owned_item 6003
 add_flag 18 1
@@ -39,7 +39,7 @@ if_owned_item 6004
 add_flag 18 2
 fi
 if_owned_item 6005
-add_flag 18 4
+add_flag 18 3
 fi
 if_owned_item 6006
 add_flag 18 1
@@ -48,7 +48,7 @@ if_owned_item 6007
 add_flag 18 2
 fi
 if_owned_item 6008
-add_flag 18 4
+add_flag 18 3
 fi
 if_owned_item 6009
 add_flag 18 1
@@ -57,7 +57,7 @@ if_owned_item 6010
 add_flag 18 2
 fi
 if_owned_item 6011
-add_flag 18 4
+add_flag 18 3
 fi
 if_flag 22 1
 add_flag 18 2

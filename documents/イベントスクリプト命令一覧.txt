@@ -380,11 +380,11 @@ set_slide_walk_npc_flag (event_id)
 reset_slide_walk_npc_flag (event_id)
   set_slide_walk_npc_flagの解除
 
-door_open (event_id)
+open_door (event_id)
   グラフィックをドアがオープンしたものに変える
   (ただしevent_typeがmap_doorである場合に限る)
   
-door_close (event_id)
+close_door (event_id)
   グラフィックをドアがクローズしたものに変える
   (ただしevent_typeがmap_doorである場合に限る)
 

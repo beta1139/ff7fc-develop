@@ -70,7 +70,7 @@ sleep 32
 play_se pick_up.wav
 if_flag 14 3
 add_item 6008
-add_flag 18 4
+add_flag 18 3
 msg キーアイテム『ダイアのティアラ』をてにいれた
 fi
 if_flag 14 4

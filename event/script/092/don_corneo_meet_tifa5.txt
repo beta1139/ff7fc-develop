@@ -26,6 +26,7 @@ msg ティファ\n「？？？？
 reset_talk_npc
 sleep 48
 chg_speed 9222 fast
+chg_npc_img 9222 152
 jump_npc 9222 same 2
 play_se puy.ogg
 sleep 32
@@ -38,6 +39,7 @@ set_talk_npc 9222
 msg ティファ\n「そのかっこうはどうしたの！？\n　ここでなにをしてるの！？
 reset_talk_npc
 sleep 16
+chg_npc_img 9222 130
 step_npc 9222 4
 set_talk_npc 9222
 msg ティファ\n「あ　それより\n　あれからどうしたの！？\n　からだはだいじょうぶ！？

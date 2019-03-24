@@ -1,7 +1,7 @@
 wait_same_pos
 chg_char_img_tmp 169
 kill_through_range 13243 13244
-kill_through 13003
+kill_through 13303
 set_key_valid up
 set_key_unvalid down
 set_key_unvalid left

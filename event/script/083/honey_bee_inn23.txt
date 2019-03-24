@@ -457,6 +457,7 @@ sleep 4
 step_npc 8317 2
 play_se pick_up.wav
 add_item 6014
+add_flag 18 1
 msg キーアイテム『ビキニパンツ』をてにいれた！
 sleep 16
 chg_npc_dir 8317 up

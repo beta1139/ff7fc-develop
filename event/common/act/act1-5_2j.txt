@@ -41,7 +41,7 @@ if_owned_item 6001
 if_owned_item 6002
 del_item 6000
 del_item 6001
-set_flag 18 4
+set_flag 18 3
 fi
 fi
 fi

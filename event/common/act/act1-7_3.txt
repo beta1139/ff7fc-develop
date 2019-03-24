@@ -8,7 +8,12 @@ fi
 if_owned_item 1084
 del_item 1084
 fi
+kill_through_range 7103 7105
 sleep 8
+set_flag 13 2
+create event_generator 7103 71 6 3 17 0 0 @../common/071/kill_smoke1_1.txt
+create event_generator 7104 71 7 3 17 0 0 @../common/071/kill_smoke1_1.txt
+create event_generator 7105 71 8 3 17 0 0 @../common/071/kill_smoke1_1.txt
 create npc2 5801 58 17 13 90 2 0 
 create npc2 5802 58 16 13 72 3 0 
 create event_generator 5824 58 0 0 17 0 0 @058/goban_slums_small_talk1_1.txt
@@ -65,8 +70,17 @@ chg_type 7924 npc2
 chg_type 8613 npc2
 chg_type 8614 npc2
 set_npc_pos 7922 79 10 12
+set_npc_pos 7923 79 9 11
+set_npc_pos 7924 79 10 11
 chg_speed 7922 not_move
+chg_speed 7923 not_move
+chg_speed 7924 not_move
 chg_npc_dir 7922 down
+chg_npc_dir 7923 down
+chg_npc_dir 7924 down
+set_flag_wall 7922
+set_flag_wall 7923
+set_flag_wall 7924
 set_npc_pos 6322 63 7 6
 chg_npc_dir 6322 up
 chg_npc_dir 6424 right
@@ -81,9 +95,6 @@ set_flag 14 0
 set_flag 15 0
 set_flag 16 0
 set_flag 19 0
-if_owned_or_equipped_item 4201
-kill_through 7030
-fi
 if_flag 10 1
 add_item 1084
 add_item 1084

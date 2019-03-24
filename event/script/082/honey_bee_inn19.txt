@@ -9,6 +9,7 @@ step_npc 8215 2
 sleep 32
 play_se pick_up.wav
 add_item 6013
+add_flag 18 3
 msg キーアイテム『ランジェリー』をてにいれた！
 if_char_dir right
 create npc_event 8210 82 9 5 0 3 2 none

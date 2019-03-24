@@ -30,7 +30,7 @@ fi
 if_flag 15 5
 play_se pick_up.wav
 add_item 6002
-add_flag 18 4
+add_flag 18 3
 msg You got the key item\n[Silk Dress]!
 fi
 chg_char_dir left

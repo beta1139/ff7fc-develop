@@ -1,4 +1,4 @@
-kill_through_range 7100 7104
+kill_through_range 7100 7105
 kill_through 7222
 kill_through 7511
 kill_through 7601
@@ -31,8 +31,9 @@ chg_npc_dir 7223 right
 chg_npc_dir 7610 up
 chg_npc_img 7610 71
 sleep 16
-create event_generator 7103 71 6 2 17 0 0 @../common/071/kill_smoke1_1.txt
-create event_generator 7104 71 7 2 17 0 0 @../common/071/kill_smoke1_1.txt
+create event_generator 7103 71 6 3 17 0 0 @../common/071/kill_smoke1_1.txt
+create event_generator 7104 71 7 3 17 0 0 @../common/071/kill_smoke1_1.txt
+create event_generator 7105 71 8 3 17 0 0 @../common/071/kill_smoke1_1.txt
 create event_generator 7260 72 0 0 17 0 0 @072/wall_market12.txt
 create event_generator 7501 75 0 0 17 0 0 @075/wm_boutique1.txt
 create event_generator 7602 76 0 0 17 0 0 @076/wm_materia_shop2.txt

@@ -128,8 +128,8 @@ kill_through_range 9320 9325
 kill_through 9500
 create event_generator 9502 95 6 9 17 0 0 @095/don_corneo4.txt
 create event_generator 9503 95 6 12 17 0 0 @095/don_corneo5_1.txt
-create event_generator 9505 95 8 8 17 0 0 @095/don_corneo_chg_right.txt
-create event_generator 9506 95 9 8 17 0 0 @095/don_corneo_chg_right.txt
+create event_generator 9505 95 8 8 17 0 0 @../common/095/don_corneo_chg_right.txt
+create event_generator 9506 95 9 8 17 0 0 @../common/095/don_corneo_chg_right.txt
 create event_generator 9509 95 0 0 17 0 0 @095/don_corneo6.txt
 create npc_event 9520 95 6 10 13 1 0 
 create npc_event 9523 95 6 8 39 1 0 none

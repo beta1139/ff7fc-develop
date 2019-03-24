@@ -137,13 +137,16 @@ msg コルネオ\n「ほひ～！！\n　きめたき～めた！\n\n　こんやのあいては……
 reset_talk_npc
 chg_speed 9323 normal
 step_npc 9323 12
-if_flag_lesser 18 10
+if_flag_lesser 18 7
 create event_generator 9305 93 7 9 17 0 0 @093/don_corneo_pick_tifa.txt
 fi
-if_flag_greater 18 9
+if_flag 18 7
 create event_generator 9306 93 7 9 17 0 0 @093/don_corneo_pick_aeris.txt
 fi
-if_flag_greater 18 15
+if_flag 18 8
+create event_generator 9306 93 7 9 17 0 0 @093/don_corneo_pick_aeris.txt
+fi
+if_flag_greater 18 8
 sleep 16
 kill_through 9306
 create event_generator 9307 93 7 9 17 0 0 @093/don_corneo_pick_cloud.txt

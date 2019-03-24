@@ -2,6 +2,8 @@ create event_generator 6802 68 12 9 17 0 0 @../common/068/rokubangai_kill_smoke.
 create event_generator 7113 71 3 8 17 0 0 @../common/068/rokubangai_kill_smoke.txt
 create event_generator 7114 71 3 9 17 0 0 @../common/068/rokubangai_kill_smoke.txt
 create event_generator 7115 71 3 10 17 0 0 @../common/068/rokubangai_kill_smoke.txt
+kill_through_range 7080 7083
+sleep 8
 chg_char_state_move
 loop_inf
 create smoke 7080 70 19 24 0 0 0 none

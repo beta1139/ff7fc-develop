@@ -120,7 +120,7 @@ chg_npc_dir 8130 up
 chg_type 8130 npc2
 play_se cloud_makeup.ogg
 end_fake_countdown
-add_flag 18 2
+add_flag 18 1
 set_flag 22 1
 sleep 32
 kill_through_range 8102 8104

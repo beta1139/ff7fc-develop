@@ -24,8 +24,8 @@ chg_speed 9523 not_move
 chg_type 9523 npc2
 chg_event_move_char_speed normal
 create event_generator 9504 95 6 12 17 0 0 @095/don_corneo5_2.txt
-create event_generator 9505 95 8 8 17 0 0 @095/don_corneo_chg_right.txt
-create event_generator 9506 95 9 8 17 0 0 @095/don_corneo_chg_right.txt
+create event_generator 9505 95 8 8 17 0 0 @../common/095/don_corneo_chg_right.txt
+create event_generator 9506 95 9 8 17 0 0 @../common/095/don_corneo_chg_right.txt
 chg_char_state_move
 loop_inf
 sleep 400

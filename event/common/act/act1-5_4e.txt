@@ -12,11 +12,14 @@ kill_through_range 8803 8807
 kill_through_range 8816 8817
 chg_param 8715 `Hmm, you can do\n better than that.
 sleep 8
-if_flag_greater 18 9
+if_flag 18 7
+chg_param 8715 `Well, not half bad.
+fi
+if_flag 18 8
 chg_param 8715 `Well, not half bad.
 fi
 sleep 8
-if_flag_greater 18 15
+if_flag_greater 18 8
 chg_param 8715 `Hey, you look great.
 fi
 chg_param 7510 `==She's kind of\n ==extraordinary.

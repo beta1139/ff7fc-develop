@@ -20,7 +20,7 @@ step_npc 8715 2
 sleep 32
 play_se pick_up.wav
 add_item 6005
-add_flag 18 4
+add_flag 18 3
 msg You got the key item\n[Blonde Wig]!
 sleep 16
 step_npc 8710 2
