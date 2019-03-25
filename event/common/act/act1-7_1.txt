@@ -21,7 +21,7 @@ kill_through 6531
 fi
 include ./event/common/del_member.txt
 set_flag 0 0
-set_flag 1 0
+set_flag 1 1
 set_flag 14 0
 set_flag 15 0
 set_flag 16 0

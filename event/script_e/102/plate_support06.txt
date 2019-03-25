@@ -294,10 +294,8 @@ chg_npc_dir 10262 right
 sleep 4
 chg_npc_dir 10262 down
 chg_npc_img 10262 147
-set_active_msg 10262
 play_se squat.ogg
 msg Reno\n`You can't, y'know.\n Nobody gets in Mister\n Reno's way, y'know.
-set_inactive_msg 10262
 chg_event_move_char_speed normal
 create event_generator 10202 102 0 0 17 0 0 @102/plate_support_reno.txt
 kill 10261

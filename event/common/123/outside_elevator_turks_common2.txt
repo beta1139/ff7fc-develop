@@ -69,3 +69,4 @@ sleep 48
 chg_speed 12310 slow
 step_npc 12310 1
 sleep 16
+kill_through 14020

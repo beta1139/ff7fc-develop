@@ -34,6 +34,7 @@ reset_screen_effect
 sleep 16
 step_npc 10153 4
 sleep 16
+chg_char_state_move
 create event_generator 10115 101 1 1 17 0 0 @../common/101/plate_support_barret3.txt
 set_talk_npc 10153
 msg バレット\n「ティファ！　クラウド！\n　きてくれたのか！\n\n　きをつけろ！　やつら\n　ヘリでおそってきやがる
@@ -47,6 +48,7 @@ chg_npc_dir 10153 down
 move_char up 1
 move_npc 10155 up 2
 sleep 16
+kill 10115
 move_npc 10154 left 1
 move_char left 1
 chg_npc_dir 10153 right
@@ -59,6 +61,7 @@ chg_npc_dir 10155 left
 sleep 12
 chg_npc_dir 10155 up
 sleep 8
+chg_char_state_event
 step_npc 10155 3
 msg ティファ\n「ほんかくてきに　くるまえに\n　そうびを　ととのいておいたほうがいいわ！
 add_party_mem 1

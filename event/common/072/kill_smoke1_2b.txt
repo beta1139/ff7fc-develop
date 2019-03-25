@@ -2,6 +2,7 @@ wait_same_pos
 kill_through_range 7103 7105
 kill_through_range 7275 7278
 kill_through_range 7292 7296
+kill_through_range 8400 8402
 if_flag 9 2
 chg_char_img_tmp 13
 kill_through_range 7271 7273
@@ -11,6 +12,9 @@ chg_char_state_move
 create event_generator 7271 72 18 25 17 0 0 @../common/072/smoke1.txt
 create event_generator 7272 72 17 26 17 0 0 @../common/072/smoke1.txt
 create event_generator 7273 72 18 27 17 0 0 @../common/072/smoke1.txt
+create event_generator 8400 84 11 37 17 0 0 @../common/084/kill_smoke9.txt
+create event_generator 8401 84 12 37 17 0 0 @../common/084/kill_smoke9.txt
+create event_generator 8402 84 13 37 17 0 0 @../common/084/kill_smoke9.txt
 if_flag 9 2
 loop_inf
 sleep 400

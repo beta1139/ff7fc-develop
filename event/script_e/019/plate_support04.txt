@@ -157,5 +157,6 @@ set_layer 1923 back
 include ./event/common/act/act1-6_3e.txt
 chg_event_move_char_speed normal
 include ./event/common/key_valid.txt
+set_flag 1 0
 set_flag 30 19
 create event_generator 1990 19 0 0 17 0 0 @../common/point.txt

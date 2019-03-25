@@ -1,3 +1,6 @@
 wait_key_push_edge a
 chg_npc_dir 10153 left
 chg_npc_img 10153 98
+loop_inf
+sleep 400
+pool

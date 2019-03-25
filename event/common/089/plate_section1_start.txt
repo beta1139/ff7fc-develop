@@ -21,3 +21,4 @@ chg_npc_dir 8911 left
 kill_through_range 8430 8432
 kill_through_range 8460 8462
 kill_through 8900
+set_flag 11 0

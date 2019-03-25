@@ -45,4 +45,3 @@ move_char right 1
 sleep 16
 kill 9992
 create event_generator 9907 99 17 30 17 0 0 @../common/099/train_gimmick_c02.txt
-add_item 2014
