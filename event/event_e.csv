@@ -897,8 +897,9 @@ npc,5803,58,28,20,68,0,2,"`What I'm doing?
  dropped on the street,
  but nothing comes down
  from above. Right?"
-npc,5804,58,28,14,85,1,2,"`Bow, wow!"
+npc2,5804,58,28,14,85,1,2,""
 event_generator,5820,58,13,20,17,0,0,"@058/gobangai_slums4.txt"
+event_generator,5826,58,0,0,17,0,0,"@../common/058/dog.txt"
 map_door,5850,58,20,24,0,0,0,0
 map_door,5851,58,25,21,0,0,0,0
 map_door,5852,58,31,15,0,0,0,0
@@ -1891,6 +1892,28 @@ event_generator,13991,139,24,27,17,0,0,"@save_msg.txt"
 map_door,14050,140,15,12,20,0,0,0
 event_generator,14140,141,21,9,17,0,0,"@../common/141/warp_out.txt"
 map_door,14150,141,21,9,20,0,0,0
+map_door,14650,146,27,29,4,0,0,0
+map_door,14651,146,32,26,4,0,0,0
+map_door,14652,146,36,26,4,0,0,0
+map_door,14653,146,40,27,4,0,0,0
+map_door,14654,146,44,25,4,0,0,0
+map_door,14655,146,47,25,4,0,0,0
+map_door,14656,146,50,25,4,0,0,0
+map_door,14657,146,46,30,4,0,0,0
+map_door,14658,146,49,32,4,0,0,0
+map_door,14750,147,7,14,4,0,0,0
+map_door,14950,149,8,14,4,0,0,0
+map_door,15150,151,3,12,4,0,0,0
+map_door,15151,151,5,3,4,0,0,0
+map_door,15250,152,6,3,4,0,0,0
+map_door,15350,153,4,23,4,0,0,0
+map_door,15450,154,3,3,4,0,0,0
+map_door,15650,156,3,12,4,0,0,0
+map_door,15750,157,4,12,4,0,0,0
+map_door,15751,157,9,12,4,0,0,0
+map_door,15850,158,6,16,4,0,0,0
+map_door,15950,159,4,12,4,0,0,0
+map_door,15951,159,4,3,4,0,0,0
 event_generator,70200,702,11,16,17,0,0,"@702/tifa'smemory1.txt"
 npc_event,70201,702,11,21,17,0,2,"none"
 npc_event,70202,702,11,20,17,1,2,"none"
@@ -2752,3 +2775,4 @@ npc,60001,600,11,15,6,1,0,"`Awww==
 event_generator,60002,600,0,0,17,0,0,"@600/yufi.txt"
 save_point,60010,600,7,13,0,0,0,
 event_generator,60011,600,7,13,17,0,0,"@600/fake_save.txt"
+event_generator,90100,901,158,83,17,0,0,"@901/world_map.txt"

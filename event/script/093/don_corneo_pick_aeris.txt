@@ -16,7 +16,7 @@ chg_npc_dir 9322 left
 sleep 32
 chg_speed 9321 normal
 step_npc 9321 2
-msg エアリスァ\n「まぁ　コルネオさんたら\n　おめがたかいわ
+msg エアリス\n「まぁ　コルネオさんたら\n　おめがたかいわ
 sleep 24
 chg_npc_dir 9323 up
 sleep 16

@@ -19,6 +19,8 @@ event_generator: スクリプトに記述されたイベント処理を実行する
 
 npc            : 話しかけるとparamの欄の内容が表示される。
                  speedに設定したスピードで自動で歩き回る
+                 0：not_move(その場で足踏み)　1:slow(0.5倍速)　2:normal(通常)
+                 3：fast(2倍速)　4:not_step(動かない＆足踏み無し)
                  イベント状態では処理が止まる。
                  画像は./image/character.bmpを使用
                  image_idと画像の対応は"新キャラチップ対応表.txt"に記載

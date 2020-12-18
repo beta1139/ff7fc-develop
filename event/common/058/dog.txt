@@ -1,0 +1,6 @@
+set_eternal_event
+wait_target_talk 5804
+reset_talk_flag 5804
+play_se dog.ogg
+chg_dir_to_char 5804
+sleep 16

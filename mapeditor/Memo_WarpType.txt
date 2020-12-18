@@ -1,0 +1,11 @@
+Dungeon→Field(上昇音)
+[WARP TYPE]=DOWN
+-------------------------------------------
+Field→Dungeon(下降音)
+[WARP TYPE]=UP
+-------------------------------------------
+Dungeon→Dungeon2(下降音)
+[WARP TYPE]=LEFT
+-------------------------------------------
+Dungeon2→Dungeon(上昇音)
+[WARP TYPE]=RIGHT

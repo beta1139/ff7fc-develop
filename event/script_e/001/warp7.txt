@@ -18,6 +18,9 @@ include ./event/common/act/act2-1_1.txt
 add_party_mem 0
 add_party_mem 1
 add_party_mem 2
+set_flag 0 0
+set_flag 1 0
+set_flag 20 0
 set_flag 9 5
 set_flag 25 21
 set_flag 30 40

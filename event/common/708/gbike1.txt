@@ -51,7 +51,6 @@ pool
 set_image_alpha 000 100
 set_image_alpha 001 100
 kill_through_range 70850 70853
-include ./event/common/key_valid.txt
 loop 40
 include ./event/common/708/highway_y.txt
 pool

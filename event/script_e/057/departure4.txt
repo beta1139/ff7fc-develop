@@ -36,9 +36,7 @@ chg_speed 5713 slow
 step_npc 5713 2
 sleep 16
 msg エアリス\n「……よそうがいの
-sleep 16
-chg_npc_dir 5712 up
-sleep 16
+sleep 32
 chg_speed 5712 slow
 step_npc 5712 2
 sleep 16
@@ -177,9 +175,12 @@ chg_char_dir right
 draw_char on
 kill 5710
 include ./event/common/key_valid.txt
+set_flag 0 0
+set_flag 1 0
 set_flag 9 5
 set_flag 17 0
 set_flag 19 0
+set_flag 20 0
 set_flag 25 21
 set_flag 30 40
 create event_generator 5799 57 0 0 17 0 0 @../common/point.txt

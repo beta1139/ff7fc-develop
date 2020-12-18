@@ -85,7 +85,7 @@ sub_flag 29 1
 kill_through_range 11903 11906
 kill_through_range 11910 11912
 draw_char off
-warp 708 0 0 down
+warp 108 14 43 down
 wait_encount_end
 set_screen_effect sub 255 255 255 100
 sleep 16

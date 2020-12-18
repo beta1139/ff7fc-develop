@@ -30,7 +30,7 @@ set_active_msg 4922
 set_active_msg 4923
 step_npc 4920 1
 if_flag 3 0
-msg `You take good care.
+msg {You take good care.
 jump_npc 4922 same 1
 jump_npc 4923 same 1
 msg `Yes!

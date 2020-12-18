@@ -1,2 +1,3 @@
 wait_target_talked 6323
+reset_talked_flag 6323
 add_flag 27 1

@@ -1,4 +1,5 @@
 set_flag 19 0
+include ./event/common/key_valid.txt
 loop 3
 if_flag 19 0
 msg 　Gバイクあん　その1\n　エンカウントけいしきで　のりきる
@@ -9,6 +10,7 @@ fi
 if_flag 19 2
 msg 　ちなみに　ボス　[モーターボール]の\n　モンスターがぞうがありませんorz
 fi
+include ./event/common/key_unvalid.txt
 play_se_loop motorcycle.ogg
 sleep 64
 if_flag 19 0
@@ -67,6 +69,7 @@ slide_walk_npc 70870 down 6
 slide_walk_npc 70871 down 6
 sleep 48
 stop_se
+include ./event/common/key_valid.txt
 if_flag 19 0
 encount 188
 fi
@@ -91,6 +94,7 @@ step_npc 70871 8
 sleep 64
 kill 70801
 wait_encount_end
+include ./event/common/key_unvalid.txt
 if_flag_lesser 19 2
 create event_generator 70801 708 0 0 17 0 0 @../common/708/gbike_img.txt
 fi
@@ -246,6 +250,7 @@ jump_npc 70863 same 3
 sleep 32
 set_flag 0 0
 sleep 16
+include ./event/common/key_valid.txt
 msg           WANTED\n    　　 『モーターボール』のグラ\n       Dead or Alive
 boss_encount 188
 chg_speed 70860 fast
