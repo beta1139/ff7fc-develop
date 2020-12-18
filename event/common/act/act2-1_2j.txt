@@ -1,0 +1,48 @@
+create npc 14600 146 29 29 66 3 0 「あっ　きいてくれよ！\n\n\n\n　なにか　おもしろいことでも\n　ないかなぁ……？
+create npc 14601 146 42 29 77 1 1 「しんらカンパニーが　まこうエネルギーを\n　じつようか　してくれたおかげで\n　わしらのせいかつも　べんりになったもんじゃ
+create npc 14602 146 39 32 79 1 0 「プレジデントしんらが　ころされたそうだな。\n　それに　むすこのルーファウス　しんしゃちょうも\n　おおケガしたって　いうじゃないか\n\n　どうだ　はつみみだろ？\n\n\n\n#2\n　　お　じじょうつう！\n　　きょうみないね\n\n\n[[「ふふふ……ここだけのはなしだが\n　しんらおやこを　おそったのは\n　アバラなんとかいう　そしきだって　はなしだぜ]][[「きょうみなしか？\n　たびをするなら　しんらカンパニーの\n　うごきには　ちゅうもく　したほうがいいぜ]]
+create npc 14603 146 39 33 88 0 0 「くうちゅうに　うかぶとし　といわれるミッドガル。\n　いちど　このめで　みてみたいものだわ
+create npc 14604 146 36 34 91 2 1 「まこうろがある　ばしょのとちは\n　どんどん　やせていってしまう　というはなしだ\n\n\n　このまちみたいに\n　まこうエネルギーは　きょうきゅう　してもらうだけ\n　ってのが　いちばんいい　ほうほうなのさ
+create npc 14605 146 45 31 89 1 0 「ボクのおとうさん　たんこうふ　なんだけど\n　ミスリルのこうざんに　モンスターが　やってきて\n　しごとが　できなくなっちゃったんだ\n\n　いまじゃ　このおくの　さかばで　おさけばっかり\n　のんで　よっぱらっているよ
+create event_generator 14620 146 0 0 17 1 0 @146/talked_npc1.txt
+create event_generator 14621 146 0 0 17 1 0 @146/talked_npc2.txt
+create event_generator 14622 146 0 0 17 1 0 @146/talked_npc3.txt
+create event_generator 14631 146 24 31 17 1 0 @146/kalm1_1.txt
+create event_generator 14632 146 24 32 17 1 0 @../common/move_up.txt
+create event_generator 14633 146 24 33 17 1 0 @../common/move_up.txt
+create npc_event 14700 147 7 4 68 1 0 none
+create npc2 14701 147 7 5 17 0 0 
+create event_generator 14720 147 0 0 17 1 0 @147/talk_npc1.txt
+create npc2 14900 149 2 6 68 0 0 
+create event_generator 14920 149 0 0 17 1 0 @149/talk_npc1.txt
+create npc 15000 150 5 6 74 3 1 「まこうエネルギーの　おかげで\n　いろいろ　べんりに　なったけど……\n\n\n　でも　そのかわりに　どうぶつや　しょくぶつが\n　どんどん　へっているような　きがするわ\n\n\n　わたしは　むかしのほうが\n　よかったんじゃないかと　おもうの\n\n\n　ね　そうよね？\n\n\n\n#2\n　　そうかもしれない\n　　そんなことはない\n\n\n[[「そうでしょ？　そうおもうわよね]][[「おかあさんと　おなじことを　いうのね]]
+create event_generator 15020 150 0 0 17 1 0 @150/talked_npc1.txt
+create npc 15100 151 4 7 77 0 0 「おまえたち　ミッドガルから\n　きたんじゃと？\n\n\n　わしも　いぜん　ミッドガルに\n　すんでいたんじゃが\n　ちかごろは　あそこも　いろいろあるようじゃな
+create npc_event 15101 151 5 2 85 1 0 none
+create event_generator 15120 151 5 3 17 1 0 @../common/151/door.txt
+create npc 15200 152 2 6 17 0 0 『カギがかかっていて　あかない……
+create npc 15300 153 4 19 66 3 0 「あやしい　くろマントのおとこが\n　このまちに　いたんだ！\n　ぶっそうな　カタナなんか　もちあるいてさ
+create event_generator 15320 153 0 0 17 1 0 @153/talked_npc1.txt
+create npc 15400 154 4 5 67 1 0 「……おにいちゃん　こどもっぽくて\n　わたし　はずかしい
+create npc 15401 154 4 9 65 1 3 「ぼく　おおきくなったら\n　しんらの　ソルジャーになるんだ！\n　そのために　いまから　モウクウレン\n　してるんだ！！
+create event_generator 15420 154 0 0 17 1 0 @154/talked_npc1.txt
+create npc_event 15800 158 8 10 90 1 0 none
+create npc2 15801 158 8 11 17 1 0 
+create npc2 15802 158 9 10 17 1 0 
+create npc 15803 158 4 12 66 0 0 「ミッドガルじゃ　テロリストが\n　まこうろを　ばくは　したらしいぜ\n\n\n　さいきん　ぶっそうなことが　おおいよな。\n　やだ　やだ
+create npc 15804 158 6 12 79 0 0 「オレはよぉ　このまちの　みなみにある　こうざん\n　[ミスリルマイン]で　はたらいていたんだ\n\n\n　しかしよぉ　そのこうざんに　モンスターが\n　わんさか　でるようになってな\n\n\n　おかげで　しょうばいあがったり。\n　ここで　ひがな　1にち　のんだくれてるのさ
+create npc_event 15805 158 8 6 68 0 0 none
+create event_generator 15820 158 0 0 17 1 0 @158/talk_npc1_1.txt
+create event_generator 15821 158 0 0 17 1 0 @158/talk_npc1_2.txt
+create event_generator 15824 158 0 0 17 1 0 @158/talked_npc3.txt
+create event_generator 15825 158 10 7 17 1 0 @158/msg_npc4.txt
+create npc 15900 159 6 6 78 3 1 「モンスターってのは　しんらが　つくったって\n　ウワサがあるが　ホントかねえ？\n\n\n#2\n　　そのとおり\n　　たんなるウワサ\n\n\n[[]][[]]
+create event_generator 15920 159 0 0 17 1 0 @159/talked_npc1.txt
+create npc 16000 160 6 8 77 0 0 「きょうも　げんきだ　ごはんがうまい……っと。\n　へいわじゃのう
+if_flag_lesser 41 6
+create npc2 14800 148 1 4 17 1 0 
+create npc_event 14801 148 1 3 168 3 0 none
+chg_npc_y_offset 14801 -10
+create event_generator 14820 148 0 0 17 1 0 @148/talked_npc1.txt
+set_flag 41 0
+fi

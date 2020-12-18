@@ -1,0 +1,4 @@
+set_eternal_event
+wait_target_talk 15705
+reset_talk_flag 15705
+open_armor_shop 3003

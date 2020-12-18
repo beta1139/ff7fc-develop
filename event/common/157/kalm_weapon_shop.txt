@@ -1,0 +1,4 @@
+set_eternal_event
+wait_target_talk 15703
+reset_talk_flag 15703
+open_weapon_shop 2001/2102/2202/2302

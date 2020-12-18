@@ -1,0 +1,4 @@
+set_eternal_event
+wait_target_talk 15601
+reset_talk_flag 15601
+open_item_shop 1000/1007/1008/1052/1013
