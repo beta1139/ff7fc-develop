@@ -98,20 +98,40 @@ if_equipped_item (idx)
 fi
   idxのアイテムを装備していれば処理を実行する
 
+if_equipped_item_for_party (idx)
+(処理)
+fi
+  idxのアイテムをパーティメンバーが装備していれば処理を実行する
+
 if_not_equipped_item (idx)
 (処理)
 fi
   idxのアイテムを装備していなければ処理を実行する
+
+if_not_equipped_item_for_party (idx)
+(処理)
+fi
+  idxのアイテムをパーティメンバーが装備していなければ処理を実行する
 
 if_owned_or_equipped_item (idx)
 (処理)
 fi
   idxのアイテムを所有もしくは装備していれば処理を実行する
 
+if_owned_or_equipped_item_for_party (idx)
+(処理)
+fi
+  idxのアイテムを所有もしくはパーティメンバーが装備していれば処理を実行する
+
 if_not_owned_or_equipped_item (idx)
 (処理)
 fi
   idxのアイテムを所有もしくは装備していなければ処理を実行する
+
+if_not_owned_or_equipped_item_for_party (idx)
+(処理)
+fi
+  idxのアイテムを所有もしくはパーティメンバーが装備していなければ処理を実行する
 
 if_char_dir (direction)
 (処理)
