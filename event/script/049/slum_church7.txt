@@ -320,6 +320,7 @@ pool
 wait_key_push_edge a
 fadeout
 sleep 16
+add_party_mem_with_lvup 3
 set_text_alpha 3 0
 set_text_alpha 8 0
 set_text_alpha 9 0
@@ -338,6 +339,7 @@ msg レノ\n「ま　いいかぁ\n　おしごとおしごと　と
 chg_npc_dir 4903 up
 sleep 16
 kill 4990
+del_party_mem 3
 move_char up 1
 move_npc 4903 up 2
 sleep 32

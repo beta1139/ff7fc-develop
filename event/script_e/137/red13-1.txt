@@ -153,7 +153,7 @@ msg 『おまえのなまえは？
 sleep 24
 chg_speed 13715 not_move
 msg レッド13\n「ホウジョウは　わたしを　レッド13となづけた\n　わたしにとっては　むいみな　なまえだ\n　すきなように　よんでくれ
-add_party_mem 4
+add_party_mem_with_lvup 4
 chg_speed 13715 normal
 sleep 24
 chg_npc_dir 13713 left

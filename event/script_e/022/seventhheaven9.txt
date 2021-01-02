@@ -24,7 +24,7 @@ step_npc 2206 3
 msg Baret\n`So that's a SOLDIER's\n trade secret?\n\n Well, awright.\n I'll ask Jessie later.\n But you're in charge of\n materias!
 fi
 sleep 16
-play_se ready.wav
+play_se ready.ogg
 msg Materia system\n Open MENU and select\n MTRIA to manage\n materias.
 sleep 16
 chg_type 2202 npc_event
@@ -61,7 +61,7 @@ chg_char_dir down
 chg_type 2201 npc
 chg_speed 2201 normal
 add_party_mem 1
-add_party_mem 2
+add_party_mem_with_lvup 2
 recover_active_chara
 enable_char_chg
 erase_msg3
@@ -96,7 +96,7 @@ chg_char_dir right
 chg_type 2201 npc
 chg_speed 2201 normal
 add_party_mem 1
-add_party_mem 2
+add_party_mem_with_lvup 2
 recover_active_chara
 enable_char_chg
 erase_msg3
@@ -133,7 +133,7 @@ chg_char_dir left
 chg_type 2201 npc
 chg_speed 2201 normal
 add_party_mem 1
-add_party_mem 2
+add_party_mem_with_lvup 2
 recover_active_chara
 enable_char_chg
 erase_msg3

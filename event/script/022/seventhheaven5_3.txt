@@ -1,4 +1,4 @@
 wait_same_pos
-play_se ready.wav
+play_se ready.ogg
 sleep 16
 msg 　ちかへ　おりるには\n　（ほうこうキー）を　うえにむけたあと\n　（Aボタン）を　おしてください

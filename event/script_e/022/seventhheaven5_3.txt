@@ -1,4 +1,4 @@
 wait_same_pos
-play_se ready.wav
+play_se ready.ogg
 sleep 16
 msg  Press UP button then OK\n (default X) button to go\n down to the basement.
