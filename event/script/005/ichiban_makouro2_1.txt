@@ -10,4 +10,4 @@ chg_npc_img 503 1
 move_npc 503 down 1
 sleep 16
 kill 503
-add_party_mem 1
+add_party_mem_with_lvup 1
