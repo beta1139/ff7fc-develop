@@ -368,11 +368,11 @@ set_eternal_event
 set_flag_wall (event_id)
   当たり判定フラグを有効にする
 
-reset_talked_flag
+reset_talked_flag (event_id)
   NPCに話しかけた後に立つフラグをリセットする
   (同じNPCに対してwait_target_talkedを再使用するときなど使える)
 
-reset_talk_flag
+reset_talk_flag (event_id)
   NPCに話しかけた際に立つフラグをリセットする
   (同じNPCに対してwait_target_talkを再使用するときなど使える)
 
