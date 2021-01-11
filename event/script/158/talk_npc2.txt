@@ -1,0 +1,22 @@
+backup_char_dir
+if_char_dir up
+create npc_event 15810 158 8 12 0 0 2 none
+draw_char off
+move_char up 1
+sleep 16
+fi
+chg_dir_to_char 15800
+chg_speed 15800 normal
+set_talk_npc 15800
+msg 「しんらカンパニーは　じぶんたちに　さからうもの\n　たちを　どんどん　はいじょ　しようとしている\n\n\n　われわれは　このむと　このまざるに　かかわらず\n　しんらカンパニーの　しはいを\n　うけいれなければ　ならないのさ
+reset_talk_npc
+restore_char_dir
+if_char_dir up
+move_char down 1
+sleep 16
+restore_char_dir
+draw_char on
+kill 15810
+fi
+chg_npc_dir 15800 down
+chg_speed 15800 not_move

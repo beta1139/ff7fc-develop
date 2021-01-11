@@ -1,0 +1,3 @@
+wait_target_talked 15804
+reset_talked_flag 15804
+chg_param 15804 「ウィ～　ひっく。\n オレは　ヨってるぞォ～！！

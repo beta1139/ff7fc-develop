@@ -1,0 +1,8 @@
+set_eternal_event
+wait_target_talked 29604
+reset_talked_flag 29604
+if_flag 3 0
+fi
+if_flag 3 1
+create event_generator 29628 296 38 8 17 0 0 @296/tifa_papa1.txt
+fi

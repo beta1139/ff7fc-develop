@@ -1,0 +1,8 @@
+if_flag 21 0
+wait_same_pos
+draw_image 14699 16 16 0 0 224 32 1 event/kalm_e.bmp
+wait_key_push_edge a
+erase_image 14699
+set_flag 21 1
+create event_generator 90120 901 175 79 17 1 0 @../common/901/reset_flag21.txt
+fi

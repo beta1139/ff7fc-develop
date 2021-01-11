@@ -1,0 +1,24 @@
+loop_inf
+if_flag 17 0
+chg_speed 14811 normal
+chg_npc_img 14811 95
+chg_npc_dir 14811 down
+step_npc 14811 4
+sleep 64
+chg_npc_dir 14811 up
+loop 2
+jump_npc 14811 same 1
+sleep 16
+pool
+fi
+if_flag 17 1
+chg_speed 14811 slow
+chg_npc_img 14811 95
+chg_npc_dir 14811 down
+step_npc 14811 1
+sleep 32
+chg_npc_dir 14811 right
+chg_npc_img 14811 1
+end
+fi
+pool

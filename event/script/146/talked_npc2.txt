@@ -1,0 +1,6 @@
+set_eternal_event
+wait_target_talked 14602
+reset_talked_flag 14602
+if_flag 3 1
+chg_param 14602 「このせかいは　しんらカンパニーの　うごきに\n　ふりまわされているのさ。\n　あんたたちも　それを　うけいれることだな
+fi

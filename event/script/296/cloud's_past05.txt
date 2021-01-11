@@ -1,0 +1,46 @@
+wait_same_pos
+chg_event_move_char_speed fast
+move_char down 1
+slide_walk_npc 29610 down 1
+sleep 8
+close_door 29650
+jump_npc 29610 same 1
+sleep 16
+step_npc 29610 1
+sleep 8
+chg_char_dir right
+chg_npc_img 29610 12
+chg_npc_dir 29610 right
+jump_npc 29610 same 1
+sleep 16
+draw_char on
+kill 29610
+move_char right 8
+sleep 8
+open_door 29651
+create npc_event 29603 296 24 19 66 1 2 ÅuÇµÇ·ÇµÇÒÅ@Ç∆ÇÁÇπÇƒÇ≠ÇÍÇÈÇ©Ç»Çü
+move_npc 29603 down 1
+sleep 16
+close_door 29651
+move_npc 29603 right 5
+sleep 40
+move_char up 9
+sleep 40
+move_npc 29603 up 7
+sleep 32
+move_char right 6
+sleep 48
+chg_event_move_char_speed normal
+sleep 16
+chg_char_img_tmp 97
+step_char 4
+sleep 16
+move_npc 29603 right 2
+sleep 32
+chg_speed 29603 not_move
+chg_type 29603 npc
+set_flag_wall 29603
+sleep 16
+reset_char_img_tmp
+chg_char_dir right
+kill_through_range 29900 29922

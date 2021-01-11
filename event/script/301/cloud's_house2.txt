@@ -1,0 +1,40 @@
+move_npc 30111 down 2
+sleep 64
+chg_speed 30111 normal
+step_npc 30111 2
+set_talk_npc 30111
+msg 「ほんとうにりっぱになってぇ
+reset_talk_npc
+chg_speed 30111 slow
+move_npc 30111 down 1
+sleep 32
+move_npc 30111 right 1
+sleep 32
+chg_npc_dir 30111 down
+chg_speed 30111 normal
+step_npc 30111 2
+msg 「そんなんじゃ　あれだね\n　おんなのこも　ほっとかないだろ？
+sleep 32
+chg_npc_dir 30110 down
+sleep 32
+msg 『……べつに
+sleep 32
+chg_speed 30111 slow
+move_npc 30111 left 1
+sleep 32
+move_npc 30111 down 1
+sleep 32
+chg_npc_dir 30111 right
+sleep 16
+chg_speed 30111 normal
+step_npc 30111 2
+msg 「……しんぱいなんだよ\n　とかいには　いろいろゆうわくが\n　おおいんだろ？\n\n　ちゃんとした　かのじょがいれば\n　かあさん　すこしは\n　あんしんできるってもんだ
+sleep 32
+chg_npc_dir 30110 right
+sleep 32
+msg 『……おれはだいじょうぶだよ
+sleep 32
+step_npc 30111 2
+msg 「あんたにはねぇ……\n\n\n\n　ちょっとしたおねえさんで\n　あんたをグイグイひっぱっていく\n\n\n　そんなおんなのこが\n　ピッタリだとおもうんだけどね
+sleep 32
+msg 『……きょうみないな

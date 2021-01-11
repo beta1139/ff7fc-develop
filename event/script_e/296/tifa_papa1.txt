@@ -1,0 +1,43 @@
+backup_npc_dir 29604
+chg_dir_to_char 29604
+chg_type 29604 npc_event
+chg_speed 29604 fast
+jump_npc 29604 same 1
+set_talk_npc 29604
+msg 「おまえ　クラウドだな？
+sleep 16
+step_npc 29604 2
+msg 「わたしをわすれたのか？
+reset_talk_npc
+backup_char_dir
+sleep 16
+if_char_dir right
+chg_char_dir down
+fi
+if_char_dir up
+chg_char_dir right
+fi
+if_char_dir left
+chg_char_dir down
+fi
+sleep 48
+restore_char_dir
+sleep 24
+step_char 1
+sleep 16
+msg 『ティファの……
+sleep 16
+jump_npc 29604 same 1
+set_talk_npc 29604
+msg 「そう。\n　ティファの　ちちおやだ
+sleep 32
+chg_speed 29604 slow
+step_npc 29604 1
+sleep 16
+msg ティファパパ\n「……むすめには　ちかづかないで\n　もらいたいものだな
+reset_talk_npc
+kill 29627
+chg_speed 29604 not_move
+chg_type 29604 npc
+restore_npc_dir 29604
+chg_param 29604 ティファパパ\n「しんらに　たよらなくても\n　じぶんの　むらぐらい　まもってみせる！

@@ -1,0 +1,5 @@
+set_eternal_event
+wait_target_talk 15101
+reset_talk_flag 15101
+play_se dog2.ogg
+sleep 16

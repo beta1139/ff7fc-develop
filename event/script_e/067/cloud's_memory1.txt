@@ -86,55 +86,16 @@ fadeout
 sleep 32
 warp 301 11 9 down
 draw_char off
-create npc_event 30120 301 11 10 12 2 2 none
-chg_npc_y_offset 30120 5
-create npc_event 30121 301 10 6 136 1 1 none
+create npc_event 30110 301 11 10 12 2 2 none
+chg_npc_y_offset 30110 5
+create npc_event 30111 301 10 6 136 1 1 none
 sleep 32
 fadein
-move_npc 30121 down 2
-sleep 64
-chg_speed 30121 normal
-step_npc 30121 2
-set_talk_npc 30121
-msg `Look how handsome\n my son has become!
-reset_talk_npc
-chg_speed 30121 slow
-move_npc 30121 down 1
-sleep 32
-move_npc 30121 right 1
-sleep 32
-chg_npc_dir 30121 down
-chg_speed 30121 normal
-step_npc 30121 2
-msg `Such a nice boy.\n Girls don't leave you\n alone, do they?
-sleep 32
-chg_npc_dir 30120 down
-sleep 32
-msg {==Not really.
-sleep 32
-chg_speed 30121 slow
-move_npc 30121 left 1
-sleep 32
-move_npc 30121 down 1
-sleep 32
-chg_npc_dir 30121 right
-sleep 16
-chg_speed 30121 normal
-step_npc 30121 2
-msg `==I'm worried for you.\n You have many temptations\n in the city, don't you?\n\n I wouldn't worry so\n if only you had a\n steady girlfriend.
-sleep 32
-chg_npc_dir 30120 right
-sleep 32
-msg {==I'm all right.
-sleep 32
-step_npc 30121 2
-msg `For a boy like you==\n\n\n\n A little older than you\n and whom you can put\n good trust in.\n\n I believe such a girl\n is perfect for you.
-sleep 32
-msg {==Not interested.
+include ./event/script_e/301/cloud's_house2.txt
 sleep 48
 fadeout
 sleep 32
-kill_through_range 30120 30121
+kill_through_range 30110 30111
 warp 67 3 13 down
 create npc_event 6730 67 3 12 96 3 2 none
 chg_npc_y_offset 6730 5

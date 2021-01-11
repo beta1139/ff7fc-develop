@@ -1,0 +1,24 @@
+set_eternal_event
+wait_same_pos
+if_flag 9 6
+chg_npc_dir 29611 up
+msg セフィロス\n「おい　おちつけ！\n　こっちでまってろ
+chg_npc_dir 29611 left
+move_char down 1
+sleep 16
+end
+fi
+sleep 16
+chg_char_dir down
+sleep 16
+fadeout
+draw_char off
+warp 296 0 44 down
+fadein
+msg 『このさきは……ニブルさんだ\n\n\n\n　やまへ　いったときのことは\n　あとで　はなすよ
+fadeout
+warp 296 37 8 down
+draw_char on
+fadein
+move_char down 1
+sleep 16

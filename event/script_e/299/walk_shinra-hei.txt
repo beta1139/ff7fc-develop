@@ -1,0 +1,16 @@
+create npc_event 29900 299 9 7 31 0 1 ベッドがひとつたりない……
+set_flag_wall 29900
+move_npc 29900 up 1
+sleep 32
+move_npc 29900 left 2
+sleep 64
+move_npc 29900 down 5
+sleep 64
+open_door 29950
+play_se door_open.ogg
+sleep 32
+close_door 29950
+sleep 64
+chg_type 29900 npc
+chg_speed 29900 not_move
+kill 29602

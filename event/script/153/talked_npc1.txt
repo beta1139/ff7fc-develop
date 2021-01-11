@@ -1,0 +1,3 @@
+wait_target_talked 15300
+reset_talked_flag 15300
+chg_param 15300 「なんで　だれも　しんじてくれないんだ～！\n　……こどくなボク

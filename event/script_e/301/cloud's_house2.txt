@@ -1,0 +1,40 @@
+move_npc 30111 down 2
+sleep 64
+chg_speed 30111 normal
+step_npc 30111 2
+set_talk_npc 30111
+msg `Look how handsome\n my son has become!
+reset_talk_npc
+chg_speed 30111 slow
+move_npc 30111 down 1
+sleep 32
+move_npc 30111 right 1
+sleep 32
+chg_npc_dir 30111 down
+chg_speed 30111 normal
+step_npc 30111 2
+msg `Such a nice boy.\n Girls don't leave you\n alone, do they?
+sleep 32
+chg_npc_dir 30110 down
+sleep 32
+msg {==Not really.
+sleep 32
+chg_speed 30111 slow
+move_npc 30111 left 1
+sleep 32
+move_npc 30111 down 1
+sleep 32
+chg_npc_dir 30111 right
+sleep 16
+chg_speed 30111 normal
+step_npc 30111 2
+msg `==I'm worried for you.\n You have many temptations\n in the city, don't you?\n\n I wouldn't worry so\n if only you had a\n steady girlfriend.
+sleep 32
+chg_npc_dir 30110 right
+sleep 32
+msg {==I'm all right.
+sleep 32
+step_npc 30111 2
+msg `For a boy like you==\n\n\n\n A little older than you\n and whom you can put\n good trust in.\n\n I believe such a girl\n is perfect for you.
+sleep 32
+msg {==Not interested.

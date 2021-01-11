@@ -23,3 +23,10 @@ create npc2 15705 157 7 6 17 0 0
 create event_generator 15720 156 0 0 17 1 0 @../common/157/kalm_materia_shop.txt
 create event_generator 15721 156 0 0 17 1 0 @../common/157/kalm_weapon_shop.txt
 create event_generator 15722 156 0 0 17 1 0 @../common/157/kalm_armor_shop.txt
+if_flag_lesser 41 6
+create npc2 14800 148 1 4 17 1 0 
+create npc_event 14801 148 1 3 168 3 0 none
+chg_npc_y_offset 14801 -10
+create event_generator 14820 148 0 0 17 1 0 @148/talked_npc1.txt
+set_flag 41 0
+fi

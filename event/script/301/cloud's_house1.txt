@@ -1,0 +1,293 @@
+set_eternal_event
+wait_same_pos
+if_flag 15 1
+fadeout
+sleep 16
+draw_char off
+warp 301 0 29 down
+fadein
+sleep 16
+msg 『なあ……\n\n\n\n　あまり……おぼえてないんだ。\n　はなすことは　もう……ない
+sleep 16
+msg エアリス\n「もう　いいよ　クラウド
+fadeout
+fi
+if_flag 15 0
+sleep 16
+move_char down 1
+sleep 16
+msg 『ここは……おれのいえだ。\n　5ねんまえの　じけんとは　かんけいないな
+fadeout
+draw_char off
+warp 301 0 29 down
+fadein
+sleep 16
+msg バレット\n「でもよ　きょうみあるぜ
+sleep 16
+msg エアリス\n「わたしも！\n　ひさしぶり　だったんでしょ？
+msg バレット\n「きかせろよ！\n\n\n　かぞくと　あったんだろ？\n\n\n\n#2\n　　はなしたくないんだ\n　　やれやれ……\n\n\n[[バレット\n「ま　ムリにとは　いわねえけどよ]][[『かぞくっていっても……\n\n\n\n　おやじは……\n　おれがまだ　こどものころに\n　しんでしまった\n\n　だから　かあさんが\n　このいえには　ひとりで\n　すんでいた\n\n　ああ　おれ　かあさんにあったよ\n\n\n\n　かあさんは……げんきな　ひとだった。\n　ぜんぜん　かわってなかった\n\n\n　そのなんにちか　あとには\n　しんでしまったけど……\n\n\n　あのときは……ほんとうに　げんきだった]]
+fadeout
+sleep 16
+if_flag 3 0
+fi
+if_flag 3 1
+warp 301 9 14 down
+create npc_event 30110 301 9 14 12 0 1 none
+sleep 16
+fadein
+chg_event_move_char_speed slow
+move_char up 3
+move_npc 30110 up 3
+sleep 128
+chg_npc_dir 30110 down
+sleep 16
+chg_npc_img 30110 97
+chg_npc_dir 30110 right
+chg_speed 30110 normal
+step_npc 30110 4
+sleep 64
+chg_npc_img 30110 12
+chg_npc_dir 30110 up
+sleep 16
+chg_speed 30110 slow
+step_npc 30110 1
+sleep 32
+msg 『あの……
+chg_event_move_char_speed normal
+move_char up 3
+sleep 16
+chg_speed 30111 slow
+chg_npc_dir 30111 down
+sleep 32
+move_char right 1
+sleep 16
+move_npc 30111 left 3
+sleep 96
+move_npc 30111 down 1
+sleep 32
+chg_speed 30111 normal
+step_npc 30111 1
+set_talk_npc 30111
+msg 「は～い？
+reset_talk_npc
+create npc_event 30112 301 10 6 156 2 4 none
+sleep 32
+kill 30112
+jump_npc 30111 same 2
+sleep 32
+chg_speed 30111 fast
+chg_event_move_char_speed fast
+move_npc 30111 down 2
+move_char down 3
+sleep 16
+move_npc 30111 left 1
+sleep 8
+move_char left 1
+move_npc 30111 down 1
+sleep 8
+step_npc 30111 2
+set_talk_npc 30111
+msg 「クラウド!?
+reset_talk_npc
+jump_npc 30111 same 1
+sleep 16
+chg_speed 30111 normal
+step_npc 30111 2
+set_talk_npc 30111
+msg 「おかえりなさい　クラウド！
+reset_talk_npc
+sleep 16
+chg_npc_img 30110 97
+chg_npc_dir 30110 right
+chg_speed 30110 normal
+step_npc 30110 1
+sleep 32
+chg_npc_img 30110 12
+chg_npc_dir 30110 up
+sleep 16
+chg_speed 30110 slow
+step_npc 30110 2
+msg 『ただいま　かあさん
+set_screen_effect add 255 255 255 100
+play_se white_noise.ogg
+sleep 8
+set_npc_pos 30110 301 7 9
+set_npc_pos 30111 301 10 9
+chg_npc_dir 30110 right
+chg_npc_dir 30111 left
+warp 301 10 9 right
+sleep 16
+stop_se
+reset_screen_effect
+chg_speed 30111 slow
+move_npc 30111 left 2
+sleep 64
+step_npc 30111 1
+msg 「どれどれ……\n　ハレギすがた　かあさんにも\n　よ～く　みせておくれ
+sleep 32
+move_npc 30111 up 1
+sleep 32
+move_npc 30111 left 1
+sleep 32
+chg_npc_dir 30111 down
+sleep 32
+step_npc 30111 1
+set_talk_npc 30111
+msg 「ふ～ん
+reset_talk_npc
+sleep 32
+move_npc 30111 left 1
+sleep 32
+move_npc 30111 down 1
+sleep 32
+chg_npc_dir 30111 right
+sleep 32
+step_npc 30111 2
+set_talk_npc 30111
+msg 「ほれぼれしちゃうねえ
+reset_talk_npc
+sleep 32
+move_npc 30111 up 1
+sleep 32
+move_npc 30111 right 2
+sleep 64
+move_npc 30111 down 1
+sleep 32
+chg_npc_dir 30111 left
+sleep 32
+chg_npc_dir 30111 left
+sleep 16
+jump_npc 30111 same 1
+msg 「これ　ソルジャーさんの\n　せいふく　かい？
+sleep 40
+step_npc 30110 1
+msg 『…………かあさん　おれ
+set_screen_effect add 255 255 255 100
+play_se white_noise.ogg
+sleep 8
+set_npc_pos 30110 301 11 10
+set_npc_pos 30111 301 10 6
+chg_npc_y_offset 30110 5
+chg_npc_dir 30110 right
+chg_npc_dir 30111 left
+warp 301 11 9 down
+sleep 16
+stop_se
+reset_screen_effect
+include ./event/script/301/cloud's_house2.txt
+set_screen_effect add 255 255 255 100
+play_se_loop white_noise.ogg
+sleep 8
+set_npc_pos 30110 301 10 7
+set_npc_pos 30111 301 10 6
+chg_npc_y_offset 30110 -3
+chg_npc_dir 30110 up
+chg_npc_dir 30111 down
+warp 301 10 7 down
+sleep 48
+stop_se
+reset_screen_effect
+sleep 16
+step_npc 30111 2
+set_talk_npc 30111
+msg 「ちゃんとゴハンは\n　たべてるのかい？
+reset_talk_npc
+sleep 16
+chg_speed 30110 normal
+step_npc 30110 2
+msg 『だいじょうぶ。\n　かいしゃが　めんどう　みてくれている
+sleep 32
+jump_npc 30111 same 1
+sleep 16
+step_npc 30111 2
+set_talk_npc 30111
+msg 「そうなのかい\n\n\n\n　あんた　りょうりなんて\n　できないだろ？\n\n\n　いったいどうしているのかと\n　おもってたんだよ
+reset_talk_npc
+set_screen_effect add 255 255 255 100
+play_se_loop white_noise.ogg
+sleep 8
+set_npc_pos 30110 301 10 8
+set_npc_pos 30111 301 9 6
+chg_npc_y_offset 30110 -3
+chg_npc_dir 30110 up
+chg_npc_dir 30111 up
+warp 301 10 7 down
+sleep 32
+stop_se
+reset_screen_effect
+sleep 24
+chg_npc_dir 30111 down
+sleep 16
+step_npc 30111 2
+set_talk_npc 30111
+msg 「ねえ　クラウド
+reset_talk_npc
+set_screen_effect add 255 255 255 100
+play_se white_noise.ogg
+sleep 8
+set_npc_pos 30111 301 11 6
+chg_npc_dir 30110 up
+chg_npc_dir 30111 up
+warp 301 10 7 down
+sleep 24
+stop_se
+reset_screen_effect
+sleep 24
+chg_npc_dir 30111 down
+sleep 16
+step_npc 30111 2
+set_talk_npc 30111
+msg 「でもねぇ　クラウド
+reset_talk_npc
+set_screen_effect add 255 255 255 100
+play_se white_noise.ogg
+sleep 8
+set_npc_pos 30111 301 10 6
+chg_npc_dir 30110 up
+chg_npc_dir 30111 up
+warp 301 10 7 down
+sleep 24
+stop_se
+reset_screen_effect
+sleep 24
+chg_npc_dir 30111 down
+sleep 16
+jump_npc 30111 same 1
+set_talk_npc 30111
+msg 「そうだろ　クラウド？
+reset_talk_npc
+set_screen_effect add 255 255 255 100
+play_se white_noise.ogg
+sleep 8
+set_npc_pos 30110 301 9 8
+set_npc_pos 30111 301 6 8
+chg_npc_dir 30110 left
+chg_npc_dir 30111 left
+warp 301 10 7 down
+sleep 24
+stop_se
+reset_screen_effect
+sleep 24
+chg_npc_dir 30111 right
+sleep 16
+step_npc 30111 2
+set_talk_npc 30111
+msg 「かあさんは　いつだって　あんたの
+reset_talk_npc
+fadeout
+sleep 40
+warp 301 0 29 down
+sleep 40
+fadein
+chg_event_move_char_speed normal
+msg 『…………もう　やめよう……
+kill_through_range 30110 30111
+set_flag 15 1
+fadeout
+fi
+fi
+sleep 16
+warp 296 32 19 down
+draw_char on
+sleep 16
+fadein

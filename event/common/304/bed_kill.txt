@@ -1,0 +1,5 @@
+wait_same_pos
+chg_char_state_event
+kill 30520
+kill_through_range 30500 30502
+create event_generator 30423 304 8 5 17 0 0 @../common/304/bed_create.txt

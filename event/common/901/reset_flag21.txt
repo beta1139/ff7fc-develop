@@ -1,0 +1,5 @@
+if_flag 21 1
+wait_same_pos
+create event_generator 14630 146 22 31 17 1 0 @146/name_kalm.txt
+set_flag 21 0
+fi

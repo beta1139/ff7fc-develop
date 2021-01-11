@@ -1,0 +1,113 @@
+wait_same_pos
+sleep 32
+chg_speed 29611 normal
+step_npc 29611 2
+set_talk_npc 29611
+msg セフィロス\n「まこうろへの　しゅっぱつは　みょうちょう。\n　きょうは　はやめに　ねむっておけ
+reset_talk_npc
+sleep 32
+chg_speed 29611 slow
+move_npc 29611 up 1
+sleep 32
+open_door 29650
+play_se door_open.ogg
+sleep 64
+chg_npc_dir 29611 down
+close_door 29650
+sleep 32
+move_npc 29611 down 1
+sleep 32
+chg_npc_dir 29611 left
+sleep 32
+jump_npc 29611 same 1
+set_talk_npc 29611
+msg セフィロス\n「みはりは　ひとりでいいから\n　おまえたちも　やすんでおけよ
+reset_talk_npc
+sleep 16
+chg_speed 29602 normal
+move_npc 29602 right 6
+sleep 96
+move_npc 29602 down 1
+sleep 16
+chg_npc_dir 29611 up
+move_npc 29602 right 1
+sleep 16
+chg_npc_dir 29602 up
+sleep 16
+chg_event_move_char_speed slow
+move_char up 1
+move_npc 29611 up 1
+sleep 32
+set_talk_npc 29611
+msg セフィロス\n「そうだったな……
+reset_talk_npc
+sleep 16
+chg_npc_dir 29611 down
+sleep 32
+chg_speed 29611 normal
+step_npc 29611 2
+set_talk_npc 29611
+msg セフィロス\n「かぞくや　しりあいと\n　あってきても　かまわないぞ
+reset_talk_npc
+sleep 32
+chg_speed 29611 slow
+move_npc 29611 up 1
+open_door 29650
+open_door 29651
+play_se door_open.ogg
+create npc_event 29603 296 24 19 66 1 2 「えいゆうセフィロスが　くるってんで\n　カメラのよういして\n　まってたんですよ\n\n　セフィロスとモンスターの\n　ツーショットが　ほしいんです\n\n\n#2\n　　おれの　しゃしんをとれ\n　　きけんだから　いえにはいってろ\n\n\n[[「……マイナーなひとの　しゃしんは\n　とらない　しゅぎ　なんですよう]][[「はいはい……\n　（えらそうに）\n\n\n　おろっ？\n　（こいつはたしか……）\n\n\n　あんた……\n　クラウドくん？\n\n\n　ふ～ん……そっかぁ\n　そうなんだぁ]]
+move_npc 29603 down 2
+sleep 16
+close_door 29651
+sleep 16
+kill 29611
+close_door 29650
+move_char down 1
+move_npc 29603 left 2
+sleep 32
+chg_char_dir up
+draw_char on
+kill 29610
+chg_event_move_char_speed normal
+chg_speed 29602 slow
+chg_speed 29603 not_move
+chg_type 29602 npc
+chg_type 29603 npc
+set_flag_wall 29602
+set_flag_wall 29603
+create npc 29604 296 34 11 190 1 0 「ん？　あんた\n　しんらの？\n\n\n#2\n　　そのとおりだ\n　　あんたは？\n\n\n[[「ふん……\n　わかぞうが　えらそうに]][[「わたしは　このむらの……\n　……\n　……!?]]　
+create event_generator 29624 296 37 8 17 0 0 @296/before_mt_nibel1_1.txt
+create event_generator 29625 296 38 8 17 0 0 @296/before_mt_nibel1_2.txt
+create event_generator 29626 296 29 11 17 0 0 @296/before_shinra_mansion.txt
+create event_generator 29627 296 0 0 17 0 0 @../common/296/tifa_papa1_create.txt
+create npc_event 29800 298 7 11 17 0 0 
+create npc2 29801 298 7 10 77 1 0 
+set_flag_wall 29800
+create npc 29811 298 5 10 50 1 0 「……ふむふむ\n\n\n\n　モンスターたいじに　やってきた\n　しんらの　にんげんだな？
+create event_generator 29820 298 0 0 17 0 0 @298/nibelheim_inn_past1.txt
+create event_generator 29821 298 0 0 17 0 0 @298/nibelheim_inn_past2.txt
+create event_generator 29822 298 0 0 17 0 0 @298/zangan1.txt
+create map_door 29850 298 4 9 4 0 0 
+create map_door 29851 298 7 9 4 0 0 
+create npc2 29911 299 6 5 5 0 4 セフィロス\n「…………
+create event_generator 29920 299 0 0 17 0 0 @299/talk_sephiroth1.txt
+create map_door 29950 299 7 9 4 0 0 
+create npc_event 30000 300 6 12 68 3 0 none
+create event_generator 30020 300 6 17 17 0 0 @300/nibelheim_item_shop_past.txt
+create npc_event 30111 301 13 6 136 0 0 none
+create event_generator 30120 301 8 14 17 0 0 @301/cloud's_house1.txt
+create event_generator 30121 301 9 14 17 0 0 @301/cloud's_house1.txt
+create event_generator 30220 302 6 15 17 0 0 @302/tifa's_house1.txt
+create event_generator 30221 302 7 15 17 0 0 @302/tifa's_house1.txt
+create npc 30300 303 3 18 17 3 0 『てがみだ……
+create npc2 30301 303 3 13 17 3 0 
+create npc2 30302 303 9 18 17 3 0 
+create event_generator 30320 303 6 14 17 0 0 @303/tifa's_house2.txt
+create event_generator 30321 303 0 0 17 0 0 @303/tifa's_house3.txt
+create event_generator 30322 303 0 0 17 0 0 @303/tifa's_house4.txt
+create event_generator 30323 303 0 0 17 0 0 @303/tifa's_house5.txt
+create map_door 30350 303 8 10 4 0 0 
+create npc3 30400 304 15 10 68 0 0 「……ああ　しんらのかたですね。\n　ごくろうさまです
+create event_generator 30420 304 0 0 17 0 0 @304/talked_npc1.txt
+create event_generator 30423 304 8 5 17 0 0 @../common/304/bed_create.txt
+set_flag 15 0

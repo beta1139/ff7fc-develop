@@ -1,5 +1,6 @@
 wait_event_invalid 13724
 include ./event/common/057/departure4_common.txt
+include ./event/common/act/act2-1_2e.txt
 if_flag 19 1
 sleep 16
 chg_npc_dir 5712 up

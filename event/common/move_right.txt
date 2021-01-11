@@ -1,0 +1,3 @@
+wait_same_pos
+move_char right 1
+sleep 16

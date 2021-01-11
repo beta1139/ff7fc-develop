@@ -1,0 +1,13 @@
+set_eternal_event
+wait_target_talked 14603
+reset_talked_flag 14603
+if_flag 17 0
+chg_param 14603 「このまちの　みなみにある\n　[ミスリルマイン]を　ぬけて\n　さらに　にしへいくと　[ジュノン]という\n　しんらカンパニーの　みなとが　あるの\n　そこにも　まこうろがあって\n　おおきな　たてものが　たくさん　たっているそうよ。\n　ああ　いってみたいわぁ
+set_flag 17 1
+end
+fi
+if_flag 17 1
+chg_param 14603 「くうちゅうに　うかぶとし　といわれるミッドガル。\n　いちど　このめで　みてみたいものだわ
+set_flag 17 0
+end
+fi

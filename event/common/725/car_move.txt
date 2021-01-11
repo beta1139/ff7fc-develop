@@ -1,0 +1,58 @@
+wait_same_pos
+play_event_bgm EX-11-Rain.ogg
+draw_char off
+sleep 16
+chg_char_state_move
+loop_inf
+if_flag_lesser 17 2
+inc_map_draw_y_offset
+sleep 8
+dec_map_draw_y_offset
+sleep 8
+inc_map_draw_y_offset
+sleep 16
+dec_map_draw_y_offset
+sleep 48
+fi
+if_flag 17 2
+flush
+stop_bgm
+play_se shock.ogg
+chg_speed 72500 normal
+jump_npc 72500 same 1
+jump_npc 72501 same 1
+jump_npc 72502 same 1
+jump_npc 72510 same 1
+jump_npc 72511 same 1
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_dir 72510 left
+chg_npc_dir 72511 up
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_npc_dir 72501 up
+chg_npc_dir 72502 right
+play_event_bgm EX-11-Rain.ogg
+end
+fi
+pool

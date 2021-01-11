@@ -1,0 +1,55 @@
+set_eternal_event
+wait_target_talk 14800
+reset_talk_flag 14800
+add_flag 41 1
+if_flag_lesser 41 6
+create npc_event 14810 148 1 5 0 0 2 none
+draw_char off
+chg_npc_y_offset 14810 -6
+sleep 3
+chg_npc_y_offset 14810 -8
+sleep 3
+chg_npc_img 14810 115
+msg 『てが　とどかない……
+chg_npc_y_offset 14810 -6
+sleep 4
+chg_npc_y_offset 14810 -4
+chg_npc_img 14810 0
+draw_char on
+kill 14810
+fi
+if_flag 41 5
+sleep 16
+jump_char same 1
+sleep 16
+msg 『いいかげんに　しろ！！
+chg_event_move_char_speed fast
+step_char 2
+sleep 10
+play_se damage.wav
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+chg_event_move_char_speed normal
+chg_speed 14801 normal
+set_slide_npc_flag 14801
+sleep 16
+play_se barrel_falling.ogg
+move_npc 14801 down 2
+sleep 32
+chg_npc_y_offset 14801 -4
+stop_se
+chg_speed 14801 not_move
+reset_slide_npc_flag 14801
+msg 『……
+play_se pick_up.wav
+msg 『ラストエリクサー』がおちてきた！
+kill 14801
+add_item 1006
+set_flag 41 6
+fi

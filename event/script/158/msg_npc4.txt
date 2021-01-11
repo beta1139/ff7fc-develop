@@ -1,0 +1,11 @@
+set_eternal_event
+wait_same_pos
+chg_npc_dir 15805 right
+chg_speed 15805 normal
+set_talk_npc 15805
+msg u‚¿‚ã‚¤‚Ú‚¤‚É@‚Í‚¢‚Á‚Ä‚±‚È‚¢‚Å‚¨‚­‚ê
+reset_talk_npc
+move_char down 1
+sleep 16
+chg_speed 15805 not_move
+chg_npc_dir 15805 up

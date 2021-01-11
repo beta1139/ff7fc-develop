@@ -1,0 +1,47 @@
+wait_same_pos
+set_flag 17 0
+create event_generator 14634 146 22 31 17 1 0 @146/out1_1.txt
+create event_generator 14635 146 22 32 17 1 0 @146/out1_2.txt
+chg_char_dir right
+if_active_mem 1
+if_active_mem 2
+create npc_event 14611 146 24 31 1 3 2 none
+create npc_event 14612 146 24 31 2 3 2 none
+set_flag 17 0
+fi
+if_active_mem 3
+create npc_event 14611 146 24 31 1 3 2 none
+create npc_event 14612 146 24 31 3 3 2 none
+set_flag 17 1
+fi
+if_active_mem 4
+create npc_event 14611 146 24 31 4 3 2 none
+create npc_event 14612 146 24 31 1 3 2 none
+set_flag 17 2
+fi
+include ./event/script_e/146/kalm2.txt
+end
+fi
+if_active_mem 2
+create npc_event 14611 146 24 31 2 3 2 none
+if_active_mem 3
+create npc_event 14612 146 24 31 3 3 2 none
+set_flag 17 3
+fi
+if_active_mem 4
+create npc_event 14612 146 24 31 4 3 2 none
+set_flag 17 4
+fi
+include ./event/script_e/146/kalm2.txt
+end
+fi
+if_active_mem 3
+create npc_event 14611 146 24 31 3 3 2 none
+if_active_mem 4
+create npc_event 14612 146 24 31 4 3 2 none
+set_flag 17 5
+fi
+include ./event/script_e/146/kalm2.txt
+end
+fi
+kill_through_range 14631 14633

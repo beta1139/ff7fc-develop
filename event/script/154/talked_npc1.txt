@@ -1,0 +1,4 @@
+wait_target_talked 15401
+reset_talked_flag 15401
+chg_param 15401 「うりゃー　アシコシのクンレン～
+create event_generator 15421 154 0 0 17 1 0 @154/talked_npc2.txt

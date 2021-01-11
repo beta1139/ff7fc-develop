@@ -1,5 +1,4 @@
 wait_same_pos
-erase_image_range 000 001
 chg_char_dir right
 msg `C'mon, newcomer.\n Follow me.
 move_npc 108 right 8

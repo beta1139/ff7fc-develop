@@ -1,0 +1,3 @@
+wait_target_talk 15801
+reset_talk_flag 15801
+include ./event/script/158/talk_npc1.txt

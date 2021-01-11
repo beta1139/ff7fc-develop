@@ -1,0 +1,16 @@
+sleep 32
+chg_type 29604 npc_event
+chg_speed 29604 slow
+move_npc 29604 up 2
+sleep 64
+chg_npc_dir 29604 right
+sleep 16
+step_npc 29604 2
+set_talk_npc 29604
+msg ティファパパ\n「セフィロス　きいてくれ。\n　もしものことがあったら……
+reset_talk_npc
+sleep 16
+step_npc 29611 2
+set_talk_npc 29611
+msg セフィロス\n「……あんしんしてくれ
+reset_talk_npc

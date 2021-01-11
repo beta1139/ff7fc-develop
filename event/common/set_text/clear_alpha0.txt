@@ -1,0 +1,24 @@
+clear_text 1
+clear_text 2
+clear_text 3
+clear_text 4
+clear_text 5
+clear_text 6
+clear_text 7
+clear_text 8
+clear_text 9
+clear_text 10
+clear_text 11
+clear_text 12
+set_text_alpha 1 0
+set_text_alpha 2 0
+set_text_alpha 3 0
+set_text_alpha 4 0
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+set_text_alpha 12 0

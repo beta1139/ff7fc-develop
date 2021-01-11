@@ -1,0 +1,49 @@
+set_eternal_event
+wait_same_pos
+create npc_event 30010 300 6 17 12 0 2 none
+draw_char off
+move_char up 4
+sleep 16
+chg_npc_dir 30000 down
+chg_speed 30000 normal
+sleep 48
+step_npc 30000 1
+set_talk_npc 30000
+msg 「はい　いらっしゃい
+chg_event_move_char_speed slow
+chg_speed 30000 slow
+move_char down 2
+move_npc 30000 down 2
+sleep 96
+jump_npc 30000 same 1
+msg 「あれっ？\n　あんたは……
+reset_talk_npc
+chg_npc_img 30000 17
+set_screen_effect add 255 255 255 100
+play_se white_noise.ogg
+sleep 24
+stop_se
+reset_screen_effect
+sleep 48
+chg_npc_dir 30010 right
+sleep 8
+chg_npc_dir 30010 left
+sleep 8
+chg_npc_dir 30010 up
+sleep 16
+step_npc 30010 1
+msg 『……ここへは　いったのかな？\n　……おぼえてないな
+fadeout
+warp 300 0 29 down
+fadein
+msg バレット\n「じれったいぜ！\n　かんけいないなら　さきを　きかせろ！
+fadeout
+warp 296 24 19 down
+chg_npc_img 30000 68
+set_npc_pos 30000 300 6 12
+chg_npc_dir 30000 right
+chg_speed 30000 not_move
+draw_char on
+kill 30010
+chg_event_move_char_speed normal
+fadein

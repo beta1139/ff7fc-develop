@@ -1,0 +1,46 @@
+set_eternal_event
+wait_target_talk 30411
+reset_talk_flag 30411
+chg_type 30411 npc_event
+chg_type 30412 npc_event
+chg_speed 30411 normal
+chg_speed 30412 normal
+chg_dir_to_char 30411
+sleep 16
+if_char_dir down
+create npc_event 30410 304 7 9 12 1 2 none
+draw_char off
+fi
+jump_npc 30411 same 2
+sleep 16
+set_talk_npc 30411
+msg 「カッコイ～！！
+reset_talk_npc
+if_char_dir up
+chg_npc_dir 30412 left
+fi
+if_char_dir left
+create npc_event 30410 304 8 10 12 2 2 none
+draw_char off
+chg_npc_dir 30412 up
+fi
+if_char_dir down
+chg_npc_dir 30412 up
+draw_char on
+kill 30410
+fi
+sleep 32
+jump_npc 30412 same 1
+msg 「カッキー！！
+sleep 16
+chg_npc_dir 30411 left
+chg_speed 30411 not_move
+chg_type 30411 npc2
+sleep 16
+if_char_dir left
+draw_char on
+kill 30410
+fi
+chg_npc_dir 30412 left
+chg_speed 30412 not_move
+chg_type 30412 npc

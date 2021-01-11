@@ -1,0 +1,3 @@
+wait_target_talked 14601
+reset_talked_flag 14601
+chg_param 14601 「ちと　べんりに　なりすぎたかも\n　しれんがの

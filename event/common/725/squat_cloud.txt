@@ -1,0 +1,23 @@
+loop_inf
+if_flag 17 0
+chg_npc_img 72510 126
+chg_npc_dir 72510 down
+sleep 16
+chg_npc_dir 72510 up
+sleep 8
+chg_npc_dir 72510 left
+sleep 8
+chg_npc_dir 72510 up
+sleep 8
+fi
+if_flag 17 1
+inc_map_draw_y_offset
+sleep 16
+dec_map_draw_y_offset
+sleep 16
+inc_map_draw_y_offset
+sleep 32
+dec_map_draw_y_offset
+sleep 48
+fi
+pool

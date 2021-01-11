@@ -1,0 +1,235 @@
+set_eternal_event
+wait_target_talked 30300
+reset_talked_flag 30300
+sleep 32
+set_screen_effect sub 255 255 255 0
+loop 4
+sleep 4
+inc_screen_effect_val 10
+pool
+msg ティファ\n「もしかして　よんだの？\n　わたしあての　てがみ\n\n#2\n　　そんなことはしない！\n　　ああ……\n\n\n[[ティファ\n「そうよね！]][[ティファ\n「ないようも　おぼえているとか……\n\n\n#2\n　　おぼえてない……\n　　はっきりと\n\n\n[[ティファ\n「それじゃあ　セフィロスのはなしの\n　つづきを　きかせて？]][[『おれは　よんでしまった……\n\n\n\n　よろずやの　むすこが\n　ティファにかいた　てがみだった……]]]]
+if_flag 3 1
+if_flag 4 1
+set_flag 42 1
+backup_char_dir
+include ./event/common/set_text/clear_alpha0.txt
+if_char_dir left
+create npc_event 30310 303 4 18 12 2 2 none
+fi
+if_char_dir down
+create npc_event 30310 303 3 17 12 1 2 none
+fi
+draw_char off
+set_slide_char_flag
+sleep 16
+if_char_dir left
+move_char left 6
+sleep 96
+fi
+if_char_dir down
+move_char left 5
+sleep 80
+fi
+set_text 1 　 　ティファ　げんきか？
+set_text 2 　 　ぼくは　ようか(8にち)まえに　ミッドガルについた
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　きのうは　ニブルヘイム　しゅっしんの
+set_text 2 　 　なかまたちが　あつまってくれたんだ。
+set_text 3 　 　あ　クラウドだけは　れんらくさきが
+set_text 4 　 　わからなくて　よべなかったけど
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+include ./event/common/set_text/st04.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　でも　アイツは　もともとみんなと
+set_text 2 　 　なかが　よかったわけでもないし
+set_text 3 　 　きっと　よんでも　つまらないから
+set_text 4 　 　まあ　いいんじゃないかって
+set_text 5 　 　みんなと　はなしてた
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+include ./event/common/set_text/st04.txt
+include ./event/common/set_text/st05.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　うーん。
+set_text 2 　 　クラウドのはなしを　してもしょうがない
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　ミッドガルはすごいところだ。
+set_text 2 　 　ぼくは　はっきりいって
+set_text 3 　 　おくれていて　ダサダサの
+set_text 4 　 　ナントカってかんじだった
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+include ./event/common/set_text/st04.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　スラムのひとたちでさえ
+set_text 2 　 　へやのなかは　とてもきれいなんだ
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　いまは　おかねがないから
+set_text 2 　 　スラムにすんでいるけど
+set_text 3 　 　いつかは　ほんでみたような
+set_text 4 　 　オシャレなへやに　すんでやるつもりだ
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+include ./event/common/set_text/st04.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　……などと　かいてみたが
+set_text 2 　 　そのためには　まずしごとを
+set_text 3 　 　みつけなくちゃいけない。
+set_text 4 　 　そうなんだ。
+set_text 5 　 　まだ　しごと　みつからないんだ
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+include ./event/common/set_text/st04.txt
+include ./event/common/set_text/st05.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　りょうしんには　しんらカンパニーで
+set_text 2 　 　はたらきぐちが　みつかったって
+set_text 3 　 　ウソのてがみを　だしてしまった
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　もう　あともどりは　できないかな。
+set_text 2 　 　じっかの　よろずやを
+set_text 3 　 　つけば　よかったかなとおもう
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 16
+msg ティファ\n「ねえ　クラウド……\n　それぜんぶ　おぼえてるの？\n\n#2\n　　いや　ここまでだな\n　　なぜか　さいごまでおぼえてる\n\n\n[[ティファ\n「それじゃあ　セフィロスのはなしの\n　つづきを　きかせて？]][[『おれのことが　かいてあったからかな……]]
+if_flag 3 1
+sleep 40
+set_text 1 　 　ミッドガルに　ついたばかりなのに
+set_text 2 　 　かんがえるのは　ニブルヘイムのこと
+set_text 3 　 　ばかりなんだ
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　ねえ　ティファ。
+set_text 2 　 　あの　オンボロきゅうすいとうは
+set_text 3 　 　ちゃんと　うごいているか？
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　やどやのじいさんは　げんきか？
+set_text 2 　 　ぼくのりょうしんは　まいにち　みせをあけてるか？
+set_text 3 　 　モンスターは　おそってこないか？
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　なによりティファ　どうしてる？
+set_text 2 　 　もう　なんねんも　あっていないような
+set_text 3 　 　きぶんだよ
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　きのうもみんなで
+set_text 2 　 　ティファのはなしで　もりあがった
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　みんなティファがすきなんだ。
+set_text 2 　 　でも　ティファはみんなの
+set_text 3 　 　アイドルだったから
+set_text 4 　 　なかまを　うらぎることができなかった
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+include ./event/common/set_text/st04.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　なーんてカッコつけてたけど
+set_text 2 　 　ほんとうは　こくはくして　フラれるのが
+set_text 3 　 　こわかっただけなんだよ
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　あ　これいじょうかくと　ラブレターに
+set_text 2 　 　なってしまう！
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　だからこんかいは　このへんで。
+set_text 2 　 　じゃあ　げんきで。
+set_text 3 　 　また　てがみかくよ
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+sleep 40
+set_text 1 　 　P.S.　へんじ　すごくほしい
+include ./event/common/set_text/st01.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+fi
+if_char_dir left
+move_char right 6
+sleep 96
+fi
+if_char_dir down
+move_char right 5
+sleep 80
+fi
+draw_char on
+kill 30310
+reset_slide_char_flag
+fi
+fi
+loop 4
+sleep 4
+dec_screen_effect_val 10
+pool
+reset_screen_effect

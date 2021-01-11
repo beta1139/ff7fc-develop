@@ -1,0 +1,14 @@
+set_eternal_event
+wait_key_push_edge right
+play_se piano_b.ogg
+step_npc 30310 1
+if_flag 17 0
+end
+fi
+if_flag 16 1
+if_flag 17 3
+set_flag 17 4
+end
+fi
+fi
+set_flag 17 20

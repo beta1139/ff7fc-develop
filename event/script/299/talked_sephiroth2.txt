@@ -1,0 +1,44 @@
+set_eternal_event
+wait_target_talked 29911
+reset_talked_flag 29911
+chg_type 29911 npc_event
+chg_speed 29911 normal
+sleep 16
+chg_dir_to_char 29911
+sleep 16
+step_npc 29911 2
+set_talk_npc 29911
+msg セフィロス\n「……あすは　はやいぞ。\n　そろそろ　ねむったほうがいいな\n\n#2\n　　まだはやいよ\n　　ああ　そうしよう\n\n\n[[セフィロス\n「……あしたは　おこさないからな]][[]]
+if_flag 3 1
+chg_npc_dir 29911 up
+step_npc 29911 2
+msg セフィロス\n「まこうろへの　ガイドは\n　てはい　しておいた\n\n　わかいむすめ　らしいが\n　たよりにしていいものか……
+reset_talk_npc
+chg_npc_dir 29900 up
+sleep 32
+fadeout
+kill_through_range 29602 29623
+kill_through_range 29627 29628
+kill_through_range 30400 30423
+kill_through_range 30500 30520
+sleep 32
+recover_active_chara
+draw_char off
+warp 296 20 20 down
+sleep 32
+create npc_event 29610 296 20 20 97 0 3 none
+create npc2 29611 296 36 12 5 2 0 
+create npc 29612 296 37 10 31 1 0 「なんか　きんちょうしてさあ。\n　ねむれなかったんだよね　おれ
+create npc 29613 296 38 10 31 1 0 「……また　ちこくだな
+create npc 29604 296 35 14 190 0 0 ティファパパ\n「こんなことなら　やまあるき　なんて\n　きんし　しておけばよかった……
+create event_generator 29630 296 20 20 17 0 0 @296/cloud's_past05.txt
+create event_generator 29631 296 0 0 17 0 0 @296/cloud's_past06.txt
+create npc 30400 304 15 10 68 0 0 「いってらっしゃい
+set_flag 9 6
+fadein
+end
+fi
+reset_talk_npc
+chg_npc_dir 29911 up
+chg_speed 29911 not_step
+chg_type 29911 npc3

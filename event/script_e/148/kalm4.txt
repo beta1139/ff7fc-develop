@@ -1,0 +1,97 @@
+wait_same_pos
+chg_char_dir down
+chg_speed 14811 normal
+chg_speed 14812 normal
+chg_speed 14813 normal
+chg_speed 14814 normal
+chg_npc_dir 14811 up
+chg_npc_dir 14812 up
+create npc_event 14810 148 6 7 0 1 2 none
+draw_char off
+sleep 16
+chg_npc_img 14811 95
+jump_npc 14811 same 1
+sleep 16
+chg_npc_img 14811 1
+jump_npc 14811 same 1
+msg バレット\n「おそいじゃねぇか！
+sleep 16
+step_npc 14810 2
+msg 『すまない。\n　またせたようだな
+sleep 16
+chg_npc_dir 14813 left
+sleep 16
+chg_npc_dir 14813 down
+sleep 16
+chg_npc_dir 14813 up
+sleep 24
+step_npc 14813 2
+msg エアリス\n「これで　みんなそろったわね
+sleep 32
+chg_speed 14811 slow
+set_active_msg 14811
+move_npc 14811 up 1
+msg バレット\n「さあて…\n　きかせてもらおうじゃねえか\n\n　セフィロス　ほしのきき。\n　おまえが　しっていることの　すべてを
+sleep 16
+chg_npc_dir 14810 right
+sleep 96
+step_npc 14810 2
+msg 『……おれは　セフィロスにあこがれて\n　ソルジャーになったんだ\n\n\n　いくつかの　さくせんを　いっしょにこなすうちに\n　おれたちは　したしくなった
+sleep 16
+chg_npc_dir 14811 right
+sleep 32
+step_npc 14811 1
+msg バレット\n「しんゆう　ってやつか？
+chg_npc_dir 14810 down
+sleep 32
+chg_npc_dir 14810 down
+chg_npc_img 14810 103
+sleep 16
+chg_npc_dir 14810 left
+sleep 16
+sleep 48
+chg_npc_dir 14810 down
+msg 『どうかな……\n\n\n\n　としも　はなれていたし\n　セフィロスは　じぶんのことを\n　ほとんど　はなさなかった
+chg_npc_img 14810 0
+sleep 16
+chg_npc_dir 14812 left
+msg ティファ\n「…………
+chg_npc_img 14810 0
+chg_npc_dir 14810 down
+sleep 32
+chg_npc_dir 14811 up
+sleep 32
+chg_npc_dir 14810 left
+sleep 32
+chg_speed 14810 slow
+step_npc 14810 3
+msg 『せんゆう……かな。\n　おれたちは　しんらいしあっていた。\n　あのときまでは……
+sleep 16
+jump_npc 14813 same 1
+msg エアリス\n「あのとき？
+stop_bgm
+chg_npc_dir 14810 down
+sleep 16
+chg_npc_dir 14812 up
+sleep 64
+chg_event_move_char_speed slow
+move_npc 14810 up 1
+move_char up 1
+sleep 64
+step_npc 14810 1
+msg 『せんそう　しゅうけつごの　ソルジャーのにんむは\n　しんらに　はんこうする　ひとたちを……。\n　ゆううつな　しごとが　おおかったな
+sleep 32
+step_npc 14810 1
+msg 『……あれは5ねんまえ\n\n\n\n　……おれは　16さいだった
+create event_generator 72520 725 5 7 17 1 0 @../common/725/car_move.txt
+create event_generator 72521 725 5 7 17 1 0 @725/cloud's_past01.txt
+create npc_event 72500 725 4 3 31 0 0 none
+create npc_event 72501 725 4 5 31 1 1 none
+create npc_event 72502 725 4 7 31 1 1 none
+create npc_event 72510 725 5 7 12 1 1 none
+create npc_event 72511 725 6 6 178 0 1 none
+fadeout
+sleep 32
+warp 725 5 7 down
+sleep 32
+fadein

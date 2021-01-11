@@ -1,0 +1,238 @@
+wait_target_talk 29611
+reset_talk_flag 29611
+chg_type 29611 npc_event
+chg_dir_to_char 29611
+chg_speed 29611 slow
+set_talk_npc 29611
+msg セフィロス\n「ガイドがきたら　しゅっぱつだ
+reset_talk_npc
+set_slide_char_flag
+chg_npc_dir 29611 left
+include ./event/common/key_unvalid.txt
+sleep 16
+chg_char_state_move
+create event_generator 29632 296 0 0 17 0 0 @296/tifa_papa2.txt
+if_char_dir down
+create npc_event 29614 296 36 11 12 1 2 none
+draw_char off
+move_npc 29614 right 2
+sleep 32
+fi
+if_char_dir up
+create npc_event 29614 296 36 13 12 0 2 none
+draw_char off
+move_npc 29614 right 2
+sleep 32
+move_npc 29614 up 2
+move_char up 1
+sleep 32
+fi
+if_char_dir right
+create npc_event 29614 296 35 12 12 3 2 none
+draw_char off
+move_npc 29614 up 1
+sleep 16
+move_npc 29614 right 3
+sleep 48
+fi
+if_char_dir left
+create npc_event 29614 296 37 12 12 2 2 none
+draw_char off
+move_npc 29614 right 1
+sleep 16
+move_npc 29614 up 1
+sleep 16
+fi
+chg_npc_dir 29614 up
+step_npc 29614 2
+sleep 32
+create npc_event 29615 296 29 20 14 0 2 none
+set_active_msg 29615
+move_npc 29615 up 8
+sleep 128
+move_npc 29615 right 4
+sleep 64
+wait_event_invalid 29632
+sleep 16
+chg_type 29615 npc_event
+jump_npc 29615 same 1
+msg ティファ\n「だいじょうぶだから　パパ！
+chg_npc_dir 29604 left
+sleep 16
+step_npc 29615 2
+msg ティファ\n「つよ～いソルジャーが\n　ふたりもいるのよ
+chg_npc_dir 29614 left
+set_active_msg 29604
+move_npc 29604 down 2
+sleep 32
+move_npc 29615 right 1
+sleep 16
+step_npc 29615 2
+msg ティファ\n「ティファです。\n　よろしくおねがいします！
+jump_npc 29614 same 2
+sleep 16
+chg_npc_dir 29604 up
+sleep 16
+chg_speed 29614 fast
+step_npc 29614 2
+set_talk_npc 29614
+msg 『ティファ！\n あんたがガイド!？
+reset_talk_npc
+chg_speed 29614 normal
+move_npc 29614 left 4
+sleep 32
+if_char_dir up
+move_char left 1
+fi
+if_char_dir down
+move_char left 1
+fi
+if_char_dir left
+move_char left 2
+fi
+sleep 32
+chg_npc_dir 29614 down
+chg_npc_dir 29615 up
+sleep 16
+jump_npc 29615 same 1
+sleep 16
+step_npc 29615 2
+msg ティファ\n「そういうこと\n　このむらで　1ばんのガイドといえば\n　わたしのことでしょうね
+sleep 24
+chg_speed 29614 fast
+step_npc 29614 3
+set_talk_npc 29614
+msg 『でも　きけんすぎる！\n　そんなことにあんたを\n　まきこむわけには　いかない！
+reset_talk_npc
+move_npc 29611 up 1
+sleep 32
+chg_npc_dir 29611 left
+sleep 16
+step_npc 29611 2
+set_talk_npc 29611
+msg セフィロス\n「おまえが　まもってやれば\n　もんだいは　なかろう\n\n　……では　いこうか
+reset_talk_npc
+set_active_msg 29611
+move_npc 29611 up 1
+sleep 16
+chg_type 29603 npc_event
+chg_npc_dir 29603 up
+chg_speed 29603 slow
+step_npc 29603 1
+msg 「あの……
+sleep 16
+chg_npc_dir 29611 down
+sleep 16
+chg_speed 29603 fast
+move_npc 29603 right 5
+sleep 40
+move_npc 29603 up 1
+sleep 8
+step_npc 29603 2
+msg 「セフィロスさん！　きねんに　しゃしんを1まい
+chg_npc_dir 29611 right
+sleep 40
+chg_npc_dir 29603 left
+sleep 16
+chg_speed 29603 normal
+move_npc 29603 left 1
+sleep 16
+chg_npc_dir 29615 right
+chg_speed 29603 slow
+sleep 8
+jump_npc 29603 same 1
+msg 「ティファちゃんからも\n　たのんでくれないかな……
+sleep 16
+chg_npc_dir 29615 up
+sleep 32
+chg_npc_dir 29614 down
+chg_npc_img 29614 103
+sleep 48
+chg_npc_dir 29614 left
+sleep 32
+chg_npc_dir 29614 down
+chg_npc_img 29614 12
+sleep 32
+chg_npc_dir 29614 right
+sleep 32
+chg_speed 29614 slow
+chg_speed 29615 slow
+move_npc 29614 left 1
+sleep 32
+chg_npc_dir 29614 down
+sleep 32
+move_npc 29615 up 1
+sleep 16
+chg_npc_dir 29603 up
+sleep 16
+chg_npc_dir 29615 down
+sleep 32
+chg_speed 29603 normal
+move_npc 29603 down 1
+sleep 16
+move_npc 29603 left 1
+sleep 16
+chg_npc_dir 29603 up
+sleep 32
+chg_npc_dir 29614 right
+sleep 32
+move_npc 29611 down 1
+sleep 32
+move_npc 29611 left 1
+sleep 16
+chg_npc_dir 29614 down
+sleep 16
+chg_npc_dir 29611 down
+sleep 32
+jump_npc 29603 same 1
+sleep 16
+step_npc 29603 2
+msg 「いきますよ～！
+sleep 40
+step_npc 29603 2
+flush
+play_se camera.ogg
+sleep 56
+move_npc 29611 right 1
+sleep 32
+move_npc 29611 up 1
+jump_npc 29603 same 1
+msg 「はい　どうも！
+include ./event/common/key_valid.txt
+sleep 16
+move_npc 29603 up 1
+sleep 16
+step_npc 29603 2
+msg 「しゃしんできたら\n　みなさんにあげますからね！
+sleep 32
+reset_slide_char_flag
+fadeout
+sleep 32
+warp 726 18 22 down
+draw_char off
+add_party_mem 9
+kill_through_range 29605 29615
+kill_through_range 29624 29625
+sleep 32
+chg_param 29811 ザンガン\n「おっ？\n　なきながら　かえってきたのかな？
+kill_through 29822
+create event_generator 72620 726 18 22 17 0 0 @726/mt_nibel1.txt
+create npc_event 72610 726 28 19 14 2 1 none
+create npc_event 72611 726 30 18 5 2 1 none
+create npc_event 72612 726 30 20 12 0 1 none
+create npc_event 72613 726 31 20 31 0 1 none
+create npc_event 72614 726 29 22 31 0 1 none
+chg_speed 29603 not_move
+chg_speed 29604 not_move
+chg_type 29603 npc
+chg_type 29604 npc
+set_npc_pos 29603 296 37 10
+set_npc_pos 29604 296 38 11
+chg_npc_dir 29603 up
+chg_npc_dir 29604 up
+set_inactive_msg 29604
+chg_param 29604 ティファパパ\n「おまえに　こんなことを　たのむのは\n　はらがたつが……\n\n　ティファのそばから　はなれるな！\n　さっさと　むすめのそばに　もどってくれ！
+chg_param 29603 「セフィロス　なにしてる？
+draw_image 000 -16 0 0 0 288 256 1 event/black.png
+set_image_alpha 000 50
+fadein

@@ -1,0 +1,29 @@
+wait_target_talk 30301
+reset_talk_flag 30301
+play_se recover.wav
+set_flag 43 1
+msg 　こんなところに\n　　『ちょっと　せのびパンツ』が！
+sleep 16
+chg_char_dir down
+sleep 64
+set_screen_effect sub 255 255 0 0
+loop 4
+sleep 4
+inc_screen_effect_val 10
+pool
+sleep 48
+msg ティファ\n「クラウド……それ　ほんとうなの？\n\n\n#2\n　　ああ……\n　　じょうだんだ　おこるな……\n\n\n[[]][[]]
+sleep 16
+msg ティファ\n「……クラウド\n\n\n　いまは　すごくマジメな　はなしを\n　してるんでしょ？
+loop 4
+sleep 4
+dec_screen_effect_val 10
+pool
+reset_screen_effect
+sleep 16
+chg_char_img_tmp 97
+chg_char_dir right
+step_char 4
+sleep 64
+reset_char_img_tmp
+chg_char_dir down

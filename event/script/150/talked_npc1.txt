@@ -1,0 +1,3 @@
+wait_target_talked 15000
+reset_talked_flag 15000
+chg_param 15000 「わたしは　どうぶつと　あそべたころのほうが\n　よかったとおもうわ……

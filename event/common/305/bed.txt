@@ -1,0 +1,9 @@
+wait_same_pos
+create event_generator 30422 304 8 4 17 0 0 @../common/304/bed_kill.txt
+chg_char_state_move
+loop_inf
+step_npc 30501 1
+sleep 32
+step_npc 30502 1
+sleep 112
+pool

@@ -1,0 +1,74 @@
+wait_target_talked 30400
+reset_talked_flag 30400
+chg_type 30400 npc_event
+chg_dir_to_char 30400
+chg_speed 30400 normal
+sleep 32
+jump_npc 30400 same 1
+sleep 16
+step_npc 30400 2
+msg 「あら　ごめんなさい！\n　クラウドくんだったのね。\n　きづかなくって
+kill_through 30423
+kill_through_range 30500 30504
+kill_through 30520
+sleep 16
+chg_type 30400 npc
+chg_speed 30400 not_move
+create npc_event 30411 304 8 4 67 1 3 none
+move_npc 30411 down 6
+sleep 32
+create npc_event 30412 304 8 4 65 1 3 「……………………
+move_npc 30412 down 7
+sleep 16
+move_npc 30411 right 4
+sleep 40
+move_npc 30412 right 3
+sleep 24
+chg_char_dir left
+sleep 32
+chg_speed 30411 normal
+jump_npc 30411 same 2
+sleep 16
+msg 「しんら～？
+chg_npc_dir 30412 up
+sleep 48
+chg_npc_dir 30412 right
+sleep 32
+jump_npc 30412 same 1
+msg 「ちんら～？
+sleep 32
+jump_npc 30411 same 2
+sleep 16
+msg 「ソルジャ？
+chg_npc_dir 30412 up
+sleep 32
+chg_npc_dir 30412 right
+sleep 32
+jump_npc 30412 same 1
+msg 「そるざ？
+sleep 32
+jump_npc 30411 same 2
+sleep 16
+msg 「モンスターやっつけるの？
+chg_npc_dir 30412 up
+sleep 32
+chg_npc_dir 30412 right
+sleep 40
+jump_npc 30412 same 1
+msg 「…………つけるの？
+sleep 16
+move_npc 30411 left 5
+sleep 32
+chg_speed 30412 normal
+move_npc 30412 left 3
+sleep 48
+chg_param 30400 「クラウドくん　なかなか\n　たくましくなったわね
+chg_type 30400 npc
+chg_npc_dir 30400 up
+chg_speed 30411 not_move
+chg_speed 30412 not_move
+chg_type 30411 npc2
+chg_type 30412 npc
+set_flag_wall 30411
+set_flag_wall 30412
+create event_generator 30421 304 0 0 17 0 0 @304/talk_npc2.txt

@@ -1,0 +1,34 @@
+wait_same_pos
+kill_through_range 30220 30221
+fadeout
+sleep 16
+draw_char off
+warp 302 0 29 down
+fadein
+sleep 16
+msg ティファ\n「ねえ　クラウド……\n\n\n　わたしのいえにも　はいったの？\n\n\n\n#2\n　　ああ……\n　　い　いや……\n\n\n[[『ティファ　いるかなとおもって]][[『そういえば　いかなかったな]]
+if_flag 3 0
+fadeout
+sleep 16
+warp 302 6 15 up
+draw_char on
+fadein
+jump_char same 1
+sleep 4
+chg_char_dir right
+sleep 4
+chg_char_dir down
+sleep 4
+chg_char_dir left
+sleep 4
+chg_char_dir up
+fi
+if_flag 3 1
+fadeout
+sleep 16
+warp 296 35 21 down
+draw_char on
+create event_generator 29629 296 35 21 17 0 0 @../common/296/tifa's_house1_create.txt
+sleep 16
+fadein
+fi

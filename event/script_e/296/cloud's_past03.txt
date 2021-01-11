@@ -1,0 +1,98 @@
+wait_same_pos
+fadeout
+sleep 16
+warp 296 0 44 down
+draw_char off
+fadein
+msg バレット\n「ちょっとまった！！
+fadeout
+sleep 16
+warp 296 15 23 right
+kill_through_range 29600 29621
+draw_char on
+fadein
+sleep 16
+chg_char_dir left
+sleep 16
+msg バレット\n「な　あれじゃねえか？
+sleep 16
+chg_char_dir down
+msg バレット\n「セフィロスがいってた\n　ははおやの　なまえ……
+kill_through_range 14810 14814
+fadeout
+warp 148 6 6 down
+sleep 16
+create npc_event 14810 148 6 6 0 1 2 none
+create npc_event 14811 148 5 8 1 0 2 none
+create npc_event 14812 148 7 9 2 2 2 none
+create npc_event 14813 148 7 10 3 2 2 none
+create npc_event 14814 148 6 11 4 0 2 none
+draw_char off
+sleep 16
+fadein
+set_flag 17 0
+sleep 16
+include ./event/common/key_unvalid.txt
+chg_char_state_move
+set_active_msg 14811
+create event_generator 29624 296 0 0 17 0 0 @../common/296/baret.txt
+sleep 96
+include ./event/common/key_valid.txt
+msg バレット\n「ジェノバ……おぼえてるぞ！\n　しんらビルにいた　くびナシの\n　バケモノだな！
+include ./event/common/key_unvalid.txt
+sleep 32
+step_npc 14810 2
+include ./event/common/key_valid.txt
+msg 『そのとおりだ
+include ./event/common/key_unvalid.txt
+jump_npc 14812 same 1
+sleep 16
+jump_npc 14812 same 1
+sleep 16
+step_npc 14812 2
+include ./event/common/key_valid.txt
+msg ティファ\n「ちょっとバレット。\n　クラウドのはなし　ちゃんときかせて\n　しつもんはあとよ
+include ./event/common/key_unvalid.txt
+set_flag 17 1
+wait_event_invalid 29624
+sleep 32
+chg_speed 14811 slow
+step_npc 14811 2
+include ./event/common/key_valid.txt
+msg バレット\n「でもよぉ　ティファ……
+sleep 16
+chg_npc_dir 14812 up
+sleep 16
+step_npc 14812 2
+msg ティファ\n「さあクラウド　つづけて
+sleep 24
+chg_npc_dir 14813 up
+sleep 16
+jump_npc 14813 same 1
+msg エアリス\n「おさななじみの　さいかいね！
+sleep 32
+chg_npc_dir 14810 right
+chg_npc_img 14810 97
+step_npc 14810 4
+sleep 32
+msg 『……ティファには\n　おどろかされたな
+chg_npc_dir 14811 up
+fadeout
+sleep 32
+warp 148 26 7 down
+sleep 32
+fadein
+msg 『……むらは　ひっそりしていた\n\n\n\n　みんな　モンスターをおそれて\n　いえに　とじこもっていたのかな？\n\n\n　いや　おれたちを\n　おそれていたのか……
+fadeout
+sleep 16
+warp 296 20 23 up
+draw_char off
+create event_generator 29623 296 20 23 17 0 0 @296/cloud's_past04.txt
+sleep 16
+create npc_event 29610 296 20 23 12 0 2 none
+create npc_event 29611 296 20 22 5 1 1 none
+create npc2 29600 296 15 22 17 0 0 none
+create npc2 29601 296 15 23 17 0 0 none
+create npc_event 29602 296 12 23 31 2 3 「はぁ……\n　ドキドキするなぁ\n\n\n#2\n　　どうしてだ？\n　　おれはワクワクしてる\n\n\n[[「いつ　モンスターがくるか\n　わからないだろ？]][[「……そうだったな。\n　えいゆうになるチャンス　のがすなよ]]
+sleep 16
+fadein

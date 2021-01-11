@@ -1,0 +1,94 @@
+wait_same_pos
+fadeout
+sleep 16
+warp 296 19 22 down
+play_event_bgm 1-04-Anxious_Heart.ogg
+sleep 16
+fadein
+chg_event_move_char_speed slow
+move_char left 5
+move_npc 29611 right 5
+sleep 160
+chg_npc_dir 29611 left
+sleep 32
+chg_speed 29611 normal
+jump_npc 29611 same 1
+msg セフィロス\n「どんな　きぶんなんだ？
+sleep 64
+step_npc 29611 2
+msg セフィロス\n「ひさしぶりの　こきょうなんだろ？
+sleep 32
+chg_npc_dir 29611 down
+sleep 32
+chg_npc_dir 29611 right
+sleep 32
+chg_npc_dir 29611 up
+sleep 32
+chg_npc_dir 29611 left
+step_npc 29611 2
+msg セフィロス\n「どんな　きぶんが　するものなんだ？\n\n\n　オレには　こきょうが　ないから\n わからないんだ……
+sleep 32
+msg 『ええと……りょうしんは？
+sleep 32
+step_npc 29611 2
+msg セフィロス\n「ははの　なは　ジェノバ。\n　オレをうんで　すぐにしんだ。\n　ちちは……
+sleep 16
+chg_npc_dir 29611 down
+sleep 48
+chg_speed 29611 normal
+chg_npc_img 29611 189
+chg_npc_dir 29611 down
+sleep 16
+step_npc 29611 4
+sleep 64
+chg_speed 29611 fast
+step_npc 29611 4
+sleep 80
+chg_npc_dir 29611 up
+chg_speed 29611 normal
+step_npc 29611 1
+sleep 64
+chg_npc_dir 29611 left
+sleep 32
+chg_speed 29611 slow
+step_npc 29611 2
+sleep 64
+msg セフィロス\n「オレは　なにを　はなしてるんだ……
+chg_npc_img 29611 5
+sleep 32
+chg_speed 29611 normal
+step_npc 29611 2
+msg セフィロス\n「さあ　いこうか
+chg_speed 29611 slow
+move_npc 29611 right 5
+create npc_event 29600 296 5 21 31 3 1 「たいくつなんだよな　みはりって\n\n\n\n#2\n　　いつもの　やるか？\n　　ガマンガマン　しごとだろ？\n\n\n[[]][[]]
+create npc_event 29613 296 6 23 31 3 1 「ヒソヒソ……\n　（ウロチョロしてるとしかられるぞ）
+create npc_event 29610 296 4 22 12 3 1 none
+if_party_mem 0
+del_party_mem 0
+fi
+sleep 64
+move_npc 29600 right 4
+move_npc 29613 right 3
+move_npc 29610 right 4
+move_char left 6
+add_party_mem 10
+sleep 128
+chg_npc_dir 29600 down
+sleep 64
+chg_char_dir right
+draw_char on
+kill 29610
+recover_all_chara
+chg_event_move_char_speed normal
+chg_speed 29600 not_move
+chg_speed 29613 not_move
+chg_speed 29611 not_step
+chg_type 29600 npc
+chg_type 29613 npc
+chg_type 29611 npc3
+set_flag_wall 29600
+set_flag_wall 29613
+set_flag_wall 29611
+create event_generator 29621 296 0 0 17 0 0 @296/talked_npc.txt
+create event_generator 29622 296 15 23 17 0 0 @296/cloud's_past03.txt

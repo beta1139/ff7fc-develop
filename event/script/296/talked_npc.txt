@@ -1,0 +1,93 @@
+set_eternal_event
+wait_target_talked 29600
+reset_talked_flag 29600
+chg_dir_to_char 29600
+if_flag 3 0
+if_char_dir up
+create npc_event 29610 296 9 22 12 0 1 none
+fi
+if_char_dir left
+create npc_event 29610 296 10 21 12 2 1 none
+fi
+if_char_dir right
+create npc_event 29610 296 8 21 12 3 1 none
+fi
+draw_char off
+jump_npc 29610 same 1
+sleep 16
+msg 『れんしゅうでも　するか？
+sleep 16
+chg_npc_dir 29613 up
+sleep 16
+chg_type 29600 npc_event
+chg_speed 29600 normal
+chg_type 29613 npc_event
+chg_speed 29613 normal
+step_npc 29600 2
+step_npc 29600 2
+set_talk_npc 29600
+msg 「れんしゅう……\n　ああ　ポーズのれんしゅうか\n\n\n　ソルジャーは　つねに　たにんのめを\n　いしきしなくちゃ　ならないってか？\n\n\n　……どうだっけ？
+sleep 32
+loop 2
+chg_npc_dir 29600 right
+sleep 8
+chg_npc_dir 29600 up
+sleep 8
+chg_npc_dir 29600 left
+sleep 8
+chg_npc_dir 29600 down
+sleep 8
+pool
+jump_npc 29600 same 2
+chg_npc_dir 29600 right
+sleep 8
+chg_npc_dir 29600 up
+sleep 8
+chg_npc_dir 29600 left
+sleep 8
+chg_npc_dir 29600 down
+sleep 8
+chg_npc_img 29600 140
+chg_npc_dir 29600 left
+sleep 48
+chg_npc_img 29600 31
+chg_npc_dir 29600 down
+chg_dir_to_char 29600
+step_npc 29600 2
+msg 「……こうか？
+reset_talk_npc
+loop 2
+jump_npc 29610 same 1
+sleep 16
+pool
+chg_speed 29610 fast
+step_npc 29610 1
+msg 『うまくなったな！
+include ./event/common/key_unvalid.txt
+chg_char_state_move
+set_active_msg 29600
+create event_generator 29623 296 0 0 17 0 0 @../common/296/pose_npc2.txt
+sleep 32
+set_talk_npc 29600
+step_npc 29600 2
+include ./event/common/key_valid.txt
+msg 「おれ　ソルジャーなんかに\n　なりたくないんだよねえ
+wait_event_invalid 29623
+sleep 16
+reset_talk_npc
+draw_char on
+kill 29610
+chg_type 29600 npc
+chg_type 29613 npc
+chg_speed 29600 not_move
+chg_speed 29613 not_move
+chg_npc_dir 29613 right
+set_inactive_msg 29600
+chg_char_state_event
+fi
+if_flag 3 1
+step_char 2
+sleep 32
+msg 『ときどき　はなしにくるからさ。\n　ガマンしてろよ
+fi
+chg_npc_dir 29600 down

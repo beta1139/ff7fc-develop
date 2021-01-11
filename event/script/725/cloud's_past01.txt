@@ -1,0 +1,258 @@
+wait_same_pos
+sleep 32
+chg_event_move_char_speed slow
+move_npc 72510 down 1
+sleep 32
+jump_npc 72510 same 1
+msg 『すごい　あめだな
+sleep 16
+chg_npc_dir 72510 left
+sleep 32
+move_char up 1
+move_npc 72510 up 1
+sleep 32
+chg_npc_dir 72510 left
+sleep 32
+chg_npc_dir 72510 down
+chg_npc_img 72510 103
+sleep 32
+chg_npc_dir 72510 left
+sleep 32
+chg_npc_img 72510 12
+sleep 16
+step_npc 72510 1
+msg 『おい　きぶんはどうだ？
+sleep 16
+chg_npc_dir 72502 left
+sleep 32
+step_npc 72502 1
+sleep 16
+msg 「……だいじょうぶ
+sleep 32
+chg_speed 72510 normal
+step_npc 72510 2
+msg 『おれは　のりものよい　なんて\n　なったことないからな\n\n\n　よくわからないんだ
+chg_npc_dir 72510 up
+sleep 32
+chg_speed 72510 normal
+chg_event_move_char_speed normal
+move_char up 2
+move_npc 72510 up 2
+sleep 32
+chg_npc_dir 72510 left
+jump_npc 72510 same 1
+sleep 16
+step_npc 72510 2
+msg 『じゅんびはOK？
+sleep 16
+chg_npc_dir 72510 down
+sleep 48
+loop 2
+move_char down 1
+move_npc 72510 down 1
+sleep 32
+pool
+sleep 16
+chg_npc_img 72510 126
+loop 2
+chg_npc_dir 72510 down
+sleep 16
+chg_npc_dir 72510 up
+sleep 8
+chg_npc_dir 72510 left
+sleep 8
+chg_npc_dir 72510 up
+sleep 8
+pool
+chg_npc_dir 72510 down
+chg_npc_img 72511 5
+chg_npc_dir 72511 down
+sleep 16
+chg_npc_dir 72510 up
+sleep 8
+step_npc 72511 1
+msg セフィロス\n「おい　おまえ
+chg_npc_dir 72510 down
+chg_npc_img 72510 12
+sleep 16
+chg_npc_dir 72510 up
+sleep 32
+step_npc 72511 2
+set_flag 17 0
+msg セフィロス\n「もうすこしおちつけ
+chg_npc_dir 72510 down
+sleep 32
+create event_generator 72522 725 0 0 17 1 0 @../common/725/squat_cloud.txt
+msg 『あたらしいマテリア　しきゅう　されたんだ\n\n\n\n　はやくつかってみたくて\n　おちつかなくてさ
+sleep 64
+step_npc 72511 1
+msg セフィロス\n「……こどもか　おまえは
+set_flag 17 1
+sleep 80
+kill 72522
+chg_npc_dir 72510 up
+chg_npc_img 72510 12
+sleep 16
+chg_npc_dir 72510 up
+chg_npc_img 72510 12
+sleep 16
+chg_npc_dir 72510 up
+chg_npc_img 72510 12
+jump_npc 72510 same 1
+msg 『なぁ　そろそろ　こんかいのしごと\n　おしえてくれよ
+sleep 32
+step_npc 72511 2
+msg セフィロス\n「……こんかいの　にんむは\n　いつもとちがう
+sleep 16
+loop 2
+jump_npc 72510 same 1
+sleep 16
+pool
+chg_speed 72510 fast
+step_npc 72510 2
+msg 『それは　うれしいね！
+sleep 32
+jump_npc 72511 same 1
+msg セフィロス\n「どうしてだ？
+sleep 32
+chg_speed 72510 normal
+move_npc 72510 down 1
+sleep 16
+step_npc 72510 3
+msg 『おれは　あんたみたいになりたくて\n　ソルジャーになったんだ\n\n\n　それなのに　クラス1STに\n　しょうかくしたと　どうじに\n　せんそうが　おわってしまった\n\n　おれが　ヒーローになるチャンスが\n　へってしまったわけさ\n\n\n だから　そういうチャンスがあるなら\n　おれは　ぜったいにモノにしてみせる
+chg_npc_dir 72510 up
+sleep 16
+jump_npc 72510 same 1
+msg 『な　どんなきぶんだ？\n　えいゆう　セフィロスさん？
+sleep 32
+step_npc 72511 2
+msg セフィロス\n「……おまえ　こんかいの　にんむが\n しりたかったんじゃないのか？
+chg_npc_dir 72510 right
+chg_npc_img 72510 97
+step_npc 72510 4
+sleep 64
+chg_npc_img 72510 12
+chg_npc_dir 72510 up
+sleep 16
+move_npc 72510 up 2
+sleep 32
+chg_npc_dir 72510 right
+sleep 32
+chg_npc_dir 72511 left
+sleep 16
+step_npc 72511 2
+msg セフィロス\n「こんかいの　にんむは\n　ろうきゅうかした　まこうろの　ちょうさだ\n\n　いじょうどうさを　おこしているうえに\n　きょうぼうな　どうぶつが　はっせいしている\n\n\n そいつらを　しまつしつつ\n　げんいんを　みつけだし　はいじょする
+chg_npc_dir 72510 down
+sleep 64
+chg_npc_dir 72510 right
+sleep 16
+step_npc 72510 2
+msg 『きょうぼうな　どうぶつ……\n　ばしょはどこだ？
+sleep 16
+chg_npc_dir 72511 down
+sleep 16
+step_npc 72511 2
+msg セフィロス\n「ニブルヘイムのまこうろだ
+sleep 16
+chg_speed 72510 slow
+step_npc 72510 1
+msg 『ニブルヘイム……
+sleep 32
+jump_npc 72510 same 1
+msg 『ニブルヘイムは\n　おれの　うまれこきょうなんだ
+sleep 16
+chg_npc_dir 72511 left
+sleep 16
+step_npc 72511 1
+msg セフィロス\n「そうか……こきょうか
+set_flag 17 2
+wait_event_invalid 72520
+msg 「へ　へんなどうぶつが！！\n　トラックに　つっこんできました！
+chg_npc_dir 72510 down
+recover_all_chara
+sleep 16
+set_active_msg 72511
+chg_speed 72511 normal
+move_npc 72511 down 1
+msg セフィロス\n「モンスターのおでましか
+draw_image 000 0 160 0 0 256 224 1 event/black.png
+set_image_alpha 000 100
+chg_speed 72510 normal
+chg_npc_dir 72500 down
+del_party_mem 0
+sleep 16
+add_party_mem 10
+add_party_mem 9
+move_npc 72510 down 2
+move_npc 72511 down 1
+sleep 16
+chg_npc_dir 72502 down
+jump_npc 72511 down 2
+sleep 16
+play_event_bgm EX-12-Pre_Those_Chosen.ogg
+jump_npc 72510 down 2
+sleep 16
+kill 72511
+set_flag 0 4
+set_flag 20 1
+sleep 16
+kill 72510
+erase_image 000
+encount 565
+sleep 64
+warp 725 15 14 down
+kill_through_range 72500 72510
+wait_encount_end
+fadeout
+stop_bgm
+sleep 32
+warp 148 6 6 down
+del_party_mem 9
+del_party_mem 10
+chg_npc_dir 14810 down
+chg_npc_dir 14812 left
+chg_npc_dir 14813 left
+sleep 32
+fadein
+chg_speed 14810 normal
+sleep 32
+step_npc 14810 3
+msg 『セフィロスのつよさは　ふつうじゃない。\n　せけんで　しられている\n　どんな　はなしよりも……すごかった
+sleep 16
+chg_npc_dir 14813 up
+sleep 16
+jump_npc 14813 same 1
+msg エアリス\n「あれ～？\n クラウドのかつやくは？
+sleep 48
+chg_npc_dir 14810 right
+chg_npc_img 14810 97
+step_npc 14810 4
+sleep 64
+chg_speed 14810 slow
+step_npc 14810 1
+msg 『おれか？　おれは　セフィロスの　たたかいぶりに\n みとれていたな
+sleep 16
+msg ティファ\n「………
+sleep 16
+chg_npc_img 14810 0
+chg_npc_dir 14810 down
+sleep 16
+chg_speed 14810 normal
+step_npc 14810 2
+msg 『……そして　おれたちは\n　ニブルヘイムに　ついたんだ
+fadeout
+sleep 8
+warp 296 0 44 down
+create npc_event 29611 296 4 22 5 3 1 セフィロス\n「まこうの　においがするな
+create event_generator 29620 296 0 44 17 0 0 @296/cloud's_past02.txt
+create map_door 29650 296 20 20 4 0 0 
+create map_door 29651 296 24 19 4 0 0 
+create map_door 29652 296 32 19 4 0 0 
+create map_door 29653 296 35 21 4 0 0 
+create map_door 29654 296 38 24 4 0 0 
+create map_door 29655 296 27 7 4 0 0 
+draw_char off
+sleep 16
+fadein
+set_flag 0 0
+set_flag 20 0

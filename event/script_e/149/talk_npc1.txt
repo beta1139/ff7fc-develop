@@ -1,0 +1,19 @@
+wait_target_talk 14900
+reset_talk_flag 14900
+chg_type 14900 npc_event
+chg_speed 14900 normal
+chg_dir_to_char 14900
+set_talk_npc 14900
+msg 「まこうエネルギーの　おかげで\n　せいかつが　いろいろと　べんりになったわ。\n　しんら　さまさまよね\n\n　あなたも　そうおもうでしょ？\n\n\n\n#2\n　　そうかもしれない\n　　そんなことはない\n\n\n[[]][[]]
+if_flag 3 0
+jump_npc 14900 same 1
+msg 「そうでしょ！\n　もう　まこうエネルギーのない\n　せいかつなんて　かんがえられないわね
+sleep 16
+fi
+if_flag 3 1
+msg 「ふ～ん。\n　でも　まこうエネルギーのない\n　せいかつなんて　わたしは　かんがえられないわね
+fi
+reset_talk_npc
+chg_type 14900 npc
+chg_speed 14900 slow
+chg_param 14900 「まこうエネルギーの　おかげで\n　せいかつが　いろいろと　べんりになったわ。\n　しんら　さまさまよね

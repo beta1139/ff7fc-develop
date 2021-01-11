@@ -1,0 +1,95 @@
+wait_target_talked 29811
+reset_talked_flag 29811
+chg_type 29811 npc_event
+chg_speed 29811 normal
+chg_dir_to_char 29811
+sleep 16
+step_char 1
+sleep 16
+msg 『あんたは？
+if_char_dir right
+create npc_event 29810 298 4 10 12 3 2 none
+fi
+if_char_dir up
+create npc_event 29810 298 5 11 12 0 2 none
+fi
+draw_char off
+sleep 16
+step_npc 29811 2
+set_talk_npc 29811
+msg ザンガン\n「わたしはザンガン。\n　せかいじゅうの　こどもたちに\n　ぶじゅつを　おしえる　たびをしている
+reset_talk_npc
+chg_npc_dir 29811 down
+sleep 8
+jump_npc 29811 down 2
+play_se jump.wav
+loop 2
+sleep 8
+chg_npc_dir 29811 up
+chg_npc_img 29811 191
+sleep 8
+chg_npc_img 29811 50
+chg_npc_dir 29811 down
+pool
+play_se landing.wav
+chg_npc_dir 29811 left
+sleep 8
+jump_npc 29811 right 2
+play_se jump.wav
+loop 2
+sleep 8
+chg_npc_dir 29811 left
+chg_npc_img 29811 191
+sleep 4
+chg_npc_dir 29811 right
+sleep 4
+chg_npc_dir 29811 left
+chg_npc_img 29811 50
+pool
+play_se landing.wav
+sleep 8
+jump_npc 29811 left 2
+play_se jump.wav
+loop 2
+sleep 8
+chg_npc_dir 29811 left
+chg_npc_img 29811 191
+sleep 4
+chg_npc_dir 29811 right
+sleep 4
+chg_npc_dir 29811 left
+chg_npc_img 29811 50
+pool
+play_se landing.wav
+sleep 4
+chg_npc_dir 29811 up
+sleep 4
+chg_npc_dir 29811 right
+sleep 4
+chg_npc_dir 29811 down
+sleep 4
+chg_speed 29811 normal
+step_npc 29811 2
+msg ザンガン\n「でしは　せかいじゅうに　128にん！\n\n\n　このむらでは　ティファという　おんなのこが\n　わたしの　でしになった
+chg_npc_dir 29811 up
+sleep 24
+chg_npc_dir 29810 down
+sleep 16
+step_npc 29810 1
+msg 『ティファだって？
+sleep 16
+step_npc 29811 2
+msg ザンガン\n「ティファは　センスがよいな。\n　かのじょは　つよくなるぞ
+sleep 8
+jump_npc 29811 up 2
+play_se jump.wav
+sleep 32
+play_se landing.wav
+sleep 8
+chg_npc_dir 29811 down
+chg_char_dir down
+chg_param 29811 ザンガン\n「しんらの　にんげんの　たたかいぶり\n　しっかり　みせてもらうよ\n\n　つかえるようだったら\n　ザンガンりゅう　かくとうじゅつに\n　とりいれるのも　いいな\n\n　ま　しっかりやってくれ
+draw_char on
+kill 29810
+chg_speed 29811 not_move
+chg_type 29811 npc

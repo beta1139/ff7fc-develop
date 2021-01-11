@@ -1,0 +1,3 @@
+wait_target_talked 15401
+reset_talked_flag 15401
+chg_param 15401 「うりゃー　うりゃ　うりゃ～

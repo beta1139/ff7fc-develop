@@ -1,0 +1,22 @@
+wait_same_pos
+chg_speed 15101 normal
+play_se dog.ogg
+sleep 16
+move_npc 15101 down 3
+move_char down 3
+sleep 16
+close_door 15151
+sleep 8
+play_se dog.ogg
+sleep 24
+move_npc 15101 left 2
+sleep 32
+move_npc 15101 down 2
+sleep 16
+chg_npc_dir 15100 left
+sleep 16
+chg_npc_dir 15101 right
+chg_type 15101 npc2
+chg_speed 15101 not_move
+set_flag_wall 15101
+create event_generator 15121 151 0 0 17 1 0 @../common/151/dog.txt

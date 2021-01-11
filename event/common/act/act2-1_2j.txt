@@ -39,10 +39,3 @@ create event_generator 15825 158 10 7 17 1 0 @158/msg_npc4.txt
 create npc 15900 159 6 6 78 3 1 「モンスターってのは　しんらが　つくったって\n　ウワサがあるが　ホントかねえ？\n\n\n#2\n　　そのとおり\n　　たんなるウワサ\n\n\n[[]][[]]
 create event_generator 15920 159 0 0 17 1 0 @159/talked_npc1.txt
 create npc 16000 160 6 8 77 0 0 「きょうも　げんきだ　ごはんがうまい……っと。\n　へいわじゃのう
-if_flag_lesser 41 6
-create npc2 14800 148 1 4 17 1 0 
-create npc_event 14801 148 1 3 168 3 0 none
-chg_npc_y_offset 14801 -10
-create event_generator 14820 148 0 0 17 1 0 @148/talked_npc1.txt
-set_flag 41 0
-fi

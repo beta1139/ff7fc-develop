@@ -1,0 +1,22 @@
+set_eternal_event
+wait_same_pos
+if_flag 9 6
+msg セフィロス\n「おい　こっちにきていろ！
+move_char down 1
+sleep 16
+end
+fi
+sleep 16
+chg_char_dir down
+sleep 16
+fadeout
+draw_char off
+warp 296 0 44 down
+fadein
+msg 『このやしきは……\n\n\n\n　……いや　あとにしよう
+fadeout
+warp 296 29 11 down
+draw_char on
+fadein
+move_char down 1
+sleep 16

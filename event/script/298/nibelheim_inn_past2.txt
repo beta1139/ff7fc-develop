@@ -1,0 +1,8 @@
+set_eternal_event
+wait_target_talk 29801
+reset_talk_flag 29801
+chg_dir_to_char 29801
+chg_speed 29801 normal
+include ./event/script/298/nibelheim_inn_msg.txt
+chg_npc_dir 29801 down
+chg_speed 29801 not_move

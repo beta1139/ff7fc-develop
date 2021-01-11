@@ -1,0 +1,154 @@
+move_npc 14611 right 3
+sleep 16
+move_npc 14612 right 3
+sleep 32
+move_npc 14611 up 1
+sleep 16
+chg_npc_dir 14611 right
+move_npc 14612 down 1
+sleep 32
+chg_npc_dir 14611 up
+chg_npc_dir 14612 right
+sleep 32
+chg_npc_dir 14611 right
+chg_npc_dir 14612 down
+sleep 32
+chg_npc_dir 14611 left
+chg_npc_dir 14612 left
+set_talk_npc 14612
+if_flag 17 0
+jump_npc 14612 same 1
+msg ティファ\n「ここが　カームね
+fi
+if_flag 17 1
+step_npc 14612 2
+msg エアリス\n「カームについたね
+fi
+if_flag 17 2
+step_npc 14612 2
+msg バレット\n「ここが　カームだ
+fi
+if_flag 17 3
+step_npc 14612 2
+msg エアリス\n「カームについたね
+fi
+if_flag_greater 17 3
+chg_speed 14612 slow
+step_npc 14612 1
+msg レッド13\n「……カームについたな
+fi
+reset_talk_npc
+sleep 16
+set_talk_npc 14611
+if_flag_lesser 17 2
+step_npc 14611 2
+msg バレット\n「おい　さきに　やどやで　まってるぜ。\n　チンタラせずに　はやくこいよ！
+fi
+if_flag 17 2
+chg_speed 14611 slow
+step_npc 14611 1
+msg レッド13\n「やどやで　おちあう てはずだったな。\n　……いくか
+sleep 16
+fi
+if_flag_greater 17 2
+if_flag_lesser 17 5
+step_npc 14611 2
+msg ティファ\n「やどやで　みんながまってるわ。\n　いきましょう　クラウド
+fi
+fi
+if_flag 17 5
+step_npc 14611 2
+msg エアリス\n「みんな　もうついてるかな。\n　はやく　やどやに　いきましょ！
+fi
+reset_talk_npc
+chg_npc_dir 14611 up
+sleep 16
+chg_npc_dir 14611 up
+sleep 16
+chg_speed 14611 slow
+move_npc 14611 up 1
+open_door 14650
+play_se door_open.ogg
+sleep 32
+kill 14611
+close_door 14650
+sleep 16
+if_flag 17 0
+step_npc 14612 2
+msg ティファ\n「いきましょう　クラウド
+jump_npc 14612 same 1
+chg_npc_dir 14612 left
+sleep 4
+chg_npc_dir 14612 down
+sleep 4
+chg_npc_dir 14612 right
+sleep 4
+chg_npc_dir 14612 up
+sleep 4
+fi
+if_flag 17 1
+jump_npc 14612 same 1
+msg エアリス\n「じゃあ　さき　いってるね
+chg_npc_dir 14612 up
+fi
+if_flag 17 2
+step_npc 14612 2
+msg バレット\n「とっととこいよ
+jump_npc 14612 same 2
+loop 2
+chg_npc_dir 14612 left
+sleep 4
+chg_npc_dir 14612 down
+sleep 4
+chg_npc_dir 14612 right
+sleep 4
+chg_npc_dir 14612 up
+sleep 4
+pool
+fi
+if_flag 17 3
+jump_npc 14612 same 1
+msg エアリス\n「じゃあ　さき　いってるね
+chg_npc_dir 14612 up
+fi
+if_flag_greater 17 3
+step_npc 14612 1
+msg レッド13\n「いこう　クラウド
+chg_npc_dir 14612 up
+sleep 16
+fi
+sleep 16
+chg_speed 14612 normal
+move_npc 14612 up 3
+sleep 32
+open_door 14650
+play_se door_open.ogg
+sleep 16
+kill 14612
+sleep 8
+close_door 14650
+kill_through_range 14631 14633
+draw_image 14699 16 16 0 0 224 32 1 event/kalm_e.bmp
+wait_key_push_edge a
+erase_image 14699
+set_flag 21 1
+create event_generator 90120 901 175 79 17 1 0 @../common/901/reset_flag21.txt
+set_flag 17 0
+if_party_mem 1
+del_party_mem 1
+fi
+if_party_mem 2
+del_party_mem 2
+fi
+if_party_mem 3
+del_party_mem 3
+fi
+if_party_mem 4
+del_party_mem 4
+fi
+create treasure_item 14960 149 9 3 0 0 0 1003
+create treasure_item 15260 152 6 2 0 0 0 1003
+create treasure_item 15440 154 3 2 0 0 0 1072
+create treasure_box 15540 155 3 4 3 0 0 2805
+create treasure_item 15940 159 4 2 0 0 0 1003
+set_flag 17 0

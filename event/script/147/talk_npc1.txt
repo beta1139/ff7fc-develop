@@ -1,0 +1,17 @@
+set_eternal_event
+wait_target_talk 14701
+reset_talk_flag 14701
+create npc_event 14710 147 7 6 0 0 2 none
+draw_char off
+move_char up 1
+chg_speed 14700 normal
+sleep 16
+set_talk_npc 14700
+msg 「クラウドさまですね。\n　おつれさまが　2かいで　おまちです
+reset_talk_npc
+move_char down 1
+sleep 16
+chg_char_dir up
+draw_char on
+kill 14710
+chg_speed 14700 not_move

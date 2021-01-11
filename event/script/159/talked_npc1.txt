@@ -1,0 +1,11 @@
+wait_target_talked 15900
+reset_talked_flag 15900
+if_flag 3 0
+fi
+if_flag 3 1
+fi
+chg_dir_to_char 15900
+set_talk_npc 15900
+msg 「どっちにしたって\n　まこうろの　せわに　なってるかぎり\n　しんらにゃ　さからえないんだけどね
+reset_talk_npc
+chg_param 15900 「どっちにしたって\n　まこうろの　せわに　なってるかぎり\n　しんらにゃ　さからえないんだけどね

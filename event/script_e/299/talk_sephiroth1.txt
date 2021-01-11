@@ -1,0 +1,30 @@
+wait_target_talk 29911
+reset_talked_flag 29911
+include ./event/common/key_unvalid.txt
+sleep 16
+chg_char_state_move
+create event_generator 29921 299 0 0 17 0 0 @299/walk_shinra-hei.txt
+sleep 16
+step_char 1
+sleep 16
+msg 『なにをみている？
+chg_type 29911 npc_event
+chg_speed 29911 slow
+chg_dir_to_char 29911
+sleep 32
+step_npc 29911 1
+set_talk_npc 29911
+msg セフィロス\n「……このふうけい\n　オレはしっているような　きがする
+reset_talk_npc
+sleep 16
+chg_npc_dir 29911 up
+chg_speed 29911 not_step
+sleep 16
+chg_char_dir up
+sleep 16
+wait_event_invalid 29921
+chg_type 29911 npc3
+chg_char_state_event
+reset_talked_flag 29911
+create event_generator 29922 299 0 0 17 0 0 @299/talked_sephiroth2.txt
+include ./event/common/key_valid.txt

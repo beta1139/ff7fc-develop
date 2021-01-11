@@ -1,0 +1,23 @@
+wait_same_pos
+chg_npc_dir 14813 up
+chg_speed 14813 normal
+jump_npc 14813 same 1
+sleep 16
+step_npc 14813 2
+chg_speed 14811 normal
+chg_speed 14812 normal
+chg_speed 14814 normal
+chg_npc_dir 14811 up
+chg_npc_dir 14812 up
+chg_npc_img 14814 4
+msg エアリス\n「クラウド　おそい～っ！
+chg_char_dir down
+chg_speed 14811 not_move
+chg_speed 14812 not_move
+chg_speed 14813 not_move
+chg_speed 14814 not_move
+create event_generator 14822 148 4 8 17 1 0 @../common/move_up.txt
+create event_generator 14823 148 4 7 17 1 0 @../common/move_right.txt
+create event_generator 14824 148 5 7 17 1 0 @../common/move_right.txt
+create event_generator 14825 148 7 7 17 1 0 @../common/move_left.txt
+create event_generator 14826 148 6 7 17 1 0 @148/kalm4.txt

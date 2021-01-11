@@ -1,0 +1,85 @@
+chg_event_move_char_speed slow
+move_char right 5
+move_npc 72610 left 13
+move_npc 72611 left 15
+move_npc 72612 up 1
+move_npc 72613 up 2
+move_npc 72614 right 1
+sleep 32
+move_npc 72612 left 15
+move_npc 72614 up 3
+sleep 32
+move_npc 72613 left 16
+sleep 64
+move_npc 72614 left 15
+sleep 32
+move_char up 4
+sleep 128
+move_char left 7
+sleep 128
+move_npc 72610 up 5
+sleep 64
+move_npc 72611 up 4
+sleep 32
+move_char up 7
+move_npc 72612 up 4
+sleep 64
+move_npc 72610 right 7
+move_npc 72613 up 3
+sleep 32
+move_npc 72611 right 7
+move_npc 72614 up 5
+sleep 32
+move_npc 72612 right 7
+sleep 32
+move_npc 72613 right 7
+sleep 96
+move_npc 72614 right 1
+sleep 32
+move_npc 72614 right 1
+move_npc 72610 up 3
+sleep 32
+move_npc 72611 up 4
+chg_speed 72614 normal
+sleep 16
+move_npc 72614 right 3
+sleep 16
+move_npc 72612 up 4
+sleep 32
+move_npc 72613 up 4
+move_npc 72610 left 9
+chg_speed 72614 slow
+move_npc 72614 right 2
+sleep 64
+move_npc 72611 left 8
+move_npc 72614 up 4
+sleep 32
+move_npc 72612 left 7
+sleep 32
+move_npc 72613 left 6
+sleep 64
+move_npc 72614 left 1
+sleep 32
+jump_npc 72614 same 1
+sleep 16
+chg_speed 72614 normal
+move_npc 72614 left 3
+sleep 48
+chg_speed 72614 slow
+move_npc 72614 left 1
+chg_event_move_char_speed normal
+fadeout
+sleep 32
+warp 296 0 44 down
+kill_through_range 72610 72614
+fadein
+msg イベントさくせい　ここまで
+fadeout
+draw_char on
+sleep 32
+warp 726 11 11 left
+play_bgm
+fadein
+set_flag 9 7
+chg_char_state_event
+include ./event/common/key_valid.txt

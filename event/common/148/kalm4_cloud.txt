@@ -1,0 +1,5 @@
+wait_key_push_edge a
+chg_npc_dir 14810 down
+loop_inf
+sleep 400
+pool

@@ -1,0 +1,18 @@
+loop 2
+chg_npc_dir 29613 left
+sleep 8
+chg_npc_dir 29613 down
+sleep 8
+chg_npc_dir 29613 right
+sleep 8
+chg_npc_dir 29613 up
+sleep 8
+pool
+jump_npc 29613 same 2
+chg_npc_dir 29613 left
+sleep 8
+chg_npc_dir 29613 down
+sleep 8
+chg_npc_dir 29613 right
+sleep 8
+chg_npc_dir 29613 up

@@ -1,0 +1,219 @@
+set_eternal_event
+wait_target_talk 30302
+reset_talk_flag 30302
+sleep 16
+set_screen_effect sub 255 255 255 0
+loop 4
+sleep 4
+inc_screen_effect_val 10
+pool
+msg ティファ\n「わたしのピアノをひいたの？\n\n\n#3\n　　いや　ひかなかった\n　　ギンギンにひいた\n　　ちょっとだけ\n\n[[]][[……どうやって　ひくんだったかな？\n\n\n\n#2\n　　そうさ　せつめい\n　　かだいきょくに　ちょうせん\n\n\n[[]][[]]]][[『おれだって　がくふぐらい　よめ……\n　えっと……]]
+if_flag 3 1
+set_flag 17 0
+set_flag 16 0
+set_flag 44 1
+set_npc_pos 30302 303 9 17
+stop_bgm
+if_flag 4 1
+set_key_unvalid start
+end_fake_countdown
+msg3 -1 ばんそうにあわせて\n　メロディーをひこう\n　(カウント0からスタート)
+fi
+include ./event/common/set_text/clear_alpha0.txt
+set_text 1                      C (OK)
+set_text 2                      D (CANCEL)
+set_text 3                      E (Switch)
+set_text 4                      F (UP)
+set_text 5                      G (DOWN)
+set_text 6                      A (LEFT)
+set_text 7                      B (RIGHT)
+if_flag 4 0
+set_text 9                      Exit
+set_text 10                        (MENU)
+loop 4
+sleep 1
+set_text_alpha 1 100
+set_text_alpha 2 100
+set_text_alpha 3 100
+set_text_alpha 4 100
+set_text_alpha 5 100
+set_text_alpha 6 100
+set_text_alpha 7 100
+if_flag 4 0
+set_text_alpha 9 100
+set_text_alpha 10 100
+fi
+sleep 1
+set_text_alpha 1 75
+set_text_alpha 2 75
+set_text_alpha 3 75
+set_text_alpha 4 75
+set_text_alpha 5 75
+set_text_alpha 6 75
+set_text_alpha 7 75
+if_flag 4 0
+set_text_alpha 9 75
+set_text_alpha 10 75
+fi
+pool
+sleep 16
+create npc_event 30310 303 9 19 12 0 2 none
+create npc2 30311 303 8 19 17 3 4 
+create npc2 30312 303 10 19 17 3 4 
+draw_char off
+create event_generator 30330 303 0 0 17 0 0 @../common/303/piano_c.txt
+create event_generator 30331 303 0 0 17 0 0 @../common/303/piano_d.txt
+create event_generator 30332 303 0 0 17 0 0 @../common/303/piano_e.txt
+create event_generator 30333 303 0 0 17 0 0 @../common/303/piano_f.txt
+create event_generator 30334 303 0 0 17 0 0 @../common/303/piano_g.txt
+create event_generator 30335 303 0 0 17 0 0 @../common/303/piano_a.txt
+create event_generator 30336 303 0 0 17 0 0 @../common/303/piano_b.txt
+set_slide_char_flag
+sleep 40
+if_flag 4 0
+chg_char_state_move
+wait_key_push_edge start
+chg_char_state_event
+draw_char on
+kill_through_range 30310 30312
+kill_through_range 30330 30336
+include ./event/common/set_text/clear_alpha0.txt
+stop_bgm
+sleep 16
+reset_slide_char_flag
+play_event_bgm 1-04-Anxious_Heart.ogg
+stop_se
+fi
+if_flag 4 1
+start_fake_countdown_sec 8
+play_event_bgm EX-13-Piano_Acc.ogg
+chg_char_state_move
+sleep 460
+erase_msg3
+set_flag 16 0
+set_flag 17 0
+wait_fake_countover
+sleep 1
+start_fake_countdown_sec 9
+sleep 39
+add_flag 16 1
+sleep 60
+add_flag 16 1
+sleep 80
+loop 4
+add_flag 16 1
+sleep 60
+pool
+wait_fake_countover
+chg_char_state_event
+kill_through_range 30330 30336
+include ./event/common/set_text/clear_alpha0.txt
+stop_bgm
+sleep 16
+end_fake_countdown
+if_flag 16 10
+step_npc 30310 2
+sleep 16
+msg 『どこかできいたメロディ。\n　なんとなく　うまくひけた……
+sleep 16
+jump_npc 30310 same 1
+sleep 4
+chg_npc_dir 30310 left
+sleep 4
+chg_npc_dir 30310 down
+sleep 4
+chg_npc_dir 30310 right
+sleep 4
+chg_npc_dir 30310 up
+sleep 8
+fi
+reset_slide_char_flag
+play_event_bgm 1-04-Anxious_Heart.ogg
+stop_se
+draw_char on
+kill_through_range 30310 30312
+fi
+fi
+if_flag 3 2
+stop_bgm
+set_flag 44 1
+sleep 16
+step_char 1
+sleep 16
+msg3 104 ド…
+play_se piano_c.ogg
+sleep 104
+step_char 1
+sleep 16
+msg3 44 レ…
+play_se piano_d.ogg
+sleep 44
+step_char 1
+sleep 16
+msg3 44 ミ…
+play_se piano_e.ogg
+sleep 44
+step_char 1
+sleep 16
+msg3 104 シー…
+play_se piano_b.ogg
+sleep 104
+step_char 1
+sleep 16
+msg3 104 ラー…
+play_se piano_a.ogg
+sleep 104
+step_char 1
+sleep 16
+msg3 44 ド…
+play_se piano_c.ogg
+sleep 44
+step_char 1
+sleep 16
+msg3 44 レ…
+play_se piano_d.ogg
+sleep 44
+step_char 1
+sleep 16
+msg3 44 ミ…
+play_se piano_e.ogg
+sleep 44
+step_char 1
+sleep 16
+msg3 44 ソ…
+play_se piano_g.ogg
+sleep 44
+step_char 1
+sleep 16
+msg3 44 ファ…
+play_se piano_f.ogg
+sleep 44
+step_char 1
+sleep 16
+msg3 44 ド…
+play_se piano_c.ogg
+sleep 44
+step_char 1
+sleep 16
+msg3 44 レ…
+play_se piano_d.ogg
+sleep 44
+step_char 1
+sleep 16
+msg3 60 ド…
+play_se piano_c.ogg
+sleep 90
+stop_se
+msg 『いいや　もう
+play_event_bgm 1-04-Anxious_Heart.ogg
+erase_msg3
+fi
+loop 4
+sleep 4
+dec_screen_effect_val 10
+pool
+reset_screen_effect
+set_key_valid start
+set_npc_pos 30302 303 9 18
+set_flag 16 0
+set_flag 17 0
