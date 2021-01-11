@@ -123,7 +123,7 @@ chg_speed 30111 slow
 move_npc 30111 left 2
 sleep 64
 step_npc 30111 1
-msg 「どれどれ……\n　ハレギすがた　かあさんにも\n　よ～く　みせておくれ
+msg 「どれどれ……\n　ハレすがた　かあさんにも\n　よ～く　みせておくれ
 sleep 32
 move_npc 30111 up 1
 sleep 32
