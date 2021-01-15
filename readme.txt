@@ -1,520 +1,131 @@
+## ðŸ‘‹ FF7FCé–‹ç™ºãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¸ã‚ˆã†ã“ãï¼
+- ç§ãŸã¡ã¯é–‹ç™ºã«å‚åŠ ã—ãŸã„ãƒ¡ãƒ³ãƒãƒ¼ã‚’æ­“è¿Žã—ã¾ã™
+- ä¸€ç·’ã«ï¼¦ï¼¦ï¼—ï¼¦ï¼£ã‚’é–‹ç™ºã—ã¾ã—ã‚‡ã†ðŸ’ª
+
+å§‹ã‚ã‚‹ã«ã¯ä»¥ä¸‹ã«è‡ªå·±ç´¹ä»‹ã‚’ã‚³ãƒ¡ãƒ³ãƒˆã—ã¦ã€ã“ã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã§ä½•ã‚’ã™ã‚‹ã®ã‹æ•™ãˆã¦ãã ã•ã„
+https://github.com/beta1139/ff7fc-develop/discussions/71
+
 ----------------------------------------------------------------------
 FF7FC
 ----------------------------------------------------------------------
-¡ƒvƒƒOƒ‰ƒ€»ìŽÒ
+â– ãƒ—ãƒ­ã‚°ãƒ©ãƒ è£½ä½œè€…
   BETA
 
-¡‘€ì•û–@
-  Eª«¨©         : –îˆóƒL[
-  EŒˆ’è             : x
-  EƒLƒƒƒ“ƒZƒ‹       : z
-  Eƒƒjƒ…[         : space
-  EƒLƒƒƒ‰ƒ`ƒFƒ“ƒW   : c
-  EI—¹             : ESC or q
-  EƒGƒ“ƒJƒEƒ“ƒg     : s
-  EƒfƒoƒbƒOî•ñ•\Ž¦ : a
-  EƒGƒ“ƒJƒEƒ“ƒg‚ÌƒIƒ“ƒIƒtØ‚è‘Ö‚¦: a + s
-  EƒCƒxƒ“ƒgî•ño—Í : F1
-  Eˆ—‘¬“x‚ðã‚°‚é : ƒeƒ“ƒL[‚Ìƒvƒ‰ƒX
-  Eˆ—‘¬“x‚ð‰º‚°‚é : ƒeƒ“ƒL[‚Ìƒ}ƒCƒiƒX
-  Eˆ—‘¬“x‚ð’Êí‚É–ß‚· : ƒeƒ“ƒL[‚ÌƒAƒXƒ^ƒŠƒXƒN
-  E“–‚½‚è”»’è—LŒø^–³ŒøØ‚è‘Ö‚¦: ¶ƒVƒtƒgƒL[
-  EŠÈˆÕƒZ[ƒuƒf[ƒ^Ø‘Ö: F2
-    F2‰Ÿ‰º‚Å‹L˜^æ‚ðˆÈ‰º‚Ì‚æ‚¤‚ÉØ‚è‘Ö‚¦‚é
+â– æ“ä½œæ–¹æ³•
+  ãƒ»â†‘â†“â†’â†         : çŸ¢å°ã‚­ãƒ¼
+  ãƒ»æ±ºå®š             : x
+  ãƒ»ã‚­ãƒ£ãƒ³ã‚»ãƒ«       : z
+  ãƒ»ãƒ¡ãƒ‹ãƒ¥ãƒ¼         : space
+  ãƒ»ã‚­ãƒ£ãƒ©ãƒã‚§ãƒ³ã‚¸   : c
+  ãƒ»çµ‚äº†             : ESC or q
+  ãƒ»ã‚¨ãƒ³ã‚«ã‚¦ãƒ³ãƒˆ     : s
+  ãƒ»ãƒ‡ãƒãƒƒã‚°æƒ…å ±è¡¨ç¤º : a
+  ãƒ»ã‚¨ãƒ³ã‚«ã‚¦ãƒ³ãƒˆã®ã‚ªãƒ³ã‚ªãƒ•åˆ‡ã‚Šæ›¿ãˆ: a + s
+  ãƒ»ã‚¤ãƒ™ãƒ³ãƒˆæƒ…å ±å‡ºåŠ› : F1
+  ãƒ»å‡¦ç†é€Ÿåº¦ã‚’ä¸Šã’ã‚‹ : ãƒ†ãƒ³ã‚­ãƒ¼ã®ãƒ—ãƒ©ã‚¹
+  ãƒ»å‡¦ç†é€Ÿåº¦ã‚’ä¸‹ã’ã‚‹ : ãƒ†ãƒ³ã‚­ãƒ¼ã®ãƒžã‚¤ãƒŠã‚¹
+  ãƒ»å‡¦ç†é€Ÿåº¦ã‚’é€šå¸¸ã«æˆ»ã™ : ãƒ†ãƒ³ã‚­ãƒ¼ã®ã‚¢ã‚¹ã‚¿ãƒªã‚¹ã‚¯
+  ãƒ»å½“ãŸã‚Šåˆ¤å®šæœ‰åŠ¹ï¼ç„¡åŠ¹åˆ‡ã‚Šæ›¿ãˆ: å·¦ã‚·ãƒ•ãƒˆã‚­ãƒ¼
+  ãƒ»ç°¡æ˜“ã‚»ãƒ¼ãƒ–ãƒ‡ãƒ¼ã‚¿åˆ‡æ›¿: F2
+    F2æŠ¼ä¸‹ã§è¨˜éŒ²å…ˆã‚’ä»¥ä¸‹ã®ã‚ˆã†ã«åˆ‡ã‚Šæ›¿ãˆã‚‹
        ./save/status_data => ./save/status_data1 => ./save/status_data2 => ./save/status_data3 => ./save/status_data4
-    => ./save/status_data => (ŒJ‚è•Ô‚µ)
-  EŠÈˆÕƒZ[ƒu       : F5 (./save/status_data(‚È‚µ,1,2,3,4)‚É‹L˜^‚·‚é)
-  EŠÈˆÕƒ[ƒh       : F7 (./save/status_data(‚È‚µ,1,2,3,4)‚ð•œŒ³‚·‚é)
-    ¦ŠÈˆÕƒZ[ƒu•ƒ[ƒh‹@”\‚Å‹L˜^••œŒ³‚³‚ê‚éƒf[ƒ^‚ÍˆÈ‰º‚Ì‚Ý
-    E‘Sƒƒ“ƒo[‚ÌƒXƒe[ƒ^ƒX
-    Eƒp[ƒeƒB\¬
-    EŠŽƒAƒCƒeƒ€
-    EŠŽƒMƒ‹
-    EƒRƒ“ƒtƒBƒOÝ’è
-    EƒCƒxƒ“ƒgƒtƒ‰ƒO‚Ì‚V”ÔˆÈ~
+    => ./save/status_data => (ç¹°ã‚Šè¿”ã—)
+  ãƒ»ç°¡æ˜“ã‚»ãƒ¼ãƒ–       : F5 (./save/status_data(ãªã—,1,2,3,4)ã«è¨˜éŒ²ã™ã‚‹)
+  ãƒ»ç°¡æ˜“ãƒ­ãƒ¼ãƒ‰       : F7 (./save/status_data(ãªã—,1,2,3,4)ã‚’å¾©å…ƒã™ã‚‹)
+    â€»ç°¡æ˜“ã‚»ãƒ¼ãƒ–ï¼†ãƒ­ãƒ¼ãƒ‰æ©Ÿèƒ½ã§è¨˜éŒ²ï¼†å¾©å…ƒã•ã‚Œã‚‹ãƒ‡ãƒ¼ã‚¿ã¯ä»¥ä¸‹ã®ã¿
+    ãƒ»å…¨ãƒ¡ãƒ³ãƒãƒ¼ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹
+    ãƒ»ãƒ‘ãƒ¼ãƒ†ã‚£æ§‹æˆ
+    ãƒ»æ‰€æŒã‚¢ã‚¤ãƒ†ãƒ 
+    ãƒ»æ‰€æŒã‚®ãƒ«
+    ãƒ»ã‚³ãƒ³ãƒ•ã‚£ã‚°è¨­å®š
+    ãƒ»ã‚¤ãƒ™ãƒ³ãƒˆãƒ•ãƒ©ã‚°ã®ï¼—ç•ªä»¥é™
 
-¡Ý’è
-  Econfig_CS.exe
-    EXƒL[‚ÆZƒL[‚Ì“ü‚ê‘Ö‚¦
-    E‰æ–ÊƒTƒCƒY•ÏX
-    E‚’¼“¯Šúon/offÝ’è
-    EƒQ[ƒ€ŠJŽnŽž‚ÌƒV[ƒ“‘I‘ð
-    EƒQ[ƒ€ƒXƒ^[ƒgˆÊ’u
-    EƒEƒBƒ“ƒhƒE”ñƒAƒNƒeƒBƒuŽž‚Ì‹““®
-  EkeyConfig.exe
-    EƒL[Ý’è
+â– è¨­å®š
+  ãƒ»config_CS.exe
+    ãƒ»Xã‚­ãƒ¼ã¨Zã‚­ãƒ¼ã®å…¥ã‚Œæ›¿ãˆ
+    ãƒ»ç”»é¢ã‚µã‚¤ã‚ºå¤‰æ›´
+    ãƒ»åž‚ç›´åŒæœŸon/offè¨­å®š
+    ãƒ»ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã®ã‚·ãƒ¼ãƒ³é¸æŠž
+    ãƒ»ã‚²ãƒ¼ãƒ ã‚¹ã‚¿ãƒ¼ãƒˆä½ç½®
+    ãƒ»ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦éžã‚¢ã‚¯ãƒ†ã‚£ãƒ–æ™‚ã®æŒ™å‹•
+  ãƒ»keyConfig.exe
+    ãƒ»ã‚­ãƒ¼è¨­å®š
 
-¡“®ìŠÂ‹«
-  ˆÈ‰º‚ÌŠÂ‹«‚Å³í“®ì‚ðŠm”FÏ‚Ý
-  EOS    :windows7
-  ECPU   :Intel Corei5 CPU 750 @2.67GHz
-  EMEMORY:4.00GB
-  EƒOƒ‰ƒ{:NVIDIA GeForce GT220
+â– å‹•ä½œç’°å¢ƒ
+  ä»¥ä¸‹ã®ç’°å¢ƒã§æ­£å¸¸å‹•ä½œã‚’ç¢ºèªæ¸ˆã¿
+  ãƒ»OS    :windows7
+  ãƒ»CPU   :Intel Corei5 CPU 750 @2.67GHz
+  ãƒ»MEMORY:4.00GB
+  ãƒ»ã‚°ãƒ©ãƒœ:NVIDIA GeForce GT220
 
-¡ƒtƒHƒ‹ƒ_\¬
+â– ãƒ•ã‚©ãƒ«ãƒ€æ§‹æˆ
   FF7FC
-  |--documents/            ŠeŽíƒhƒLƒ…ƒƒ“ƒg’u‚«ê
-  |  |--ƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg–½—ßˆê——.txt
-  |  `--ƒCƒxƒ“ƒgƒtƒ‰ƒOŠÇ—•\.xls
+  |--documents/            å„ç¨®ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆç½®ãå ´
+  |  |--ã‚¤ãƒ™ãƒ³ãƒˆã‚¹ã‚¯ãƒªãƒ—ãƒˆå‘½ä»¤ä¸€è¦§.txt
+  |  `--ã‚¤ãƒ™ãƒ³ãƒˆãƒ•ãƒ©ã‚°ç®¡ç†è¡¨.xls
   |
-  |--event/                ƒCƒxƒ“ƒgƒtƒ@ƒCƒ‹Ši”[ƒtƒHƒ‹ƒ_
-  |  |--script/            ƒCƒxƒ“ƒgƒXƒNƒŠƒvƒgƒtƒ@ƒCƒ‹Ši”[ƒtƒHƒ‹ƒ_
-  |  |--script_e/          ƒCƒxƒ“ƒgƒXƒNƒŠƒvƒgƒtƒ@ƒCƒ‹Ši”[ƒtƒHƒ‹ƒ_(‰pŒê”Å)
-  |  |--event.csv          ƒCƒxƒ“ƒgî•ñ(NPC‚Ì’Ç‰Á‚È‚Ç)
-  |  `--event_e.csv        ƒCƒxƒ“ƒgî•ñ(NPC‚Ì’Ç‰Á‚È‚Ç)(‰pŒê”Å)
+  |--event/                ã‚¤ãƒ™ãƒ³ãƒˆãƒ•ã‚¡ã‚¤ãƒ«æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
+  |  |--script/            ã‚¤ãƒ™ãƒ³ãƒˆã‚¹ã‚¯ãƒªãƒ—ãƒˆãƒ•ã‚¡ã‚¤ãƒ«æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
+  |  |--script_e/          ã‚¤ãƒ™ãƒ³ãƒˆã‚¹ã‚¯ãƒªãƒ—ãƒˆãƒ•ã‚¡ã‚¤ãƒ«æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€(è‹±èªžç‰ˆ)
+  |  |--event.csv          ã‚¤ãƒ™ãƒ³ãƒˆæƒ…å ±(NPCã®è¿½åŠ ãªã©)
+  |  `--event_e.csv        ã‚¤ãƒ™ãƒ³ãƒˆæƒ…å ±(NPCã®è¿½åŠ ãªã©)(è‹±èªžç‰ˆ)
   |
-  |--image/                ‰æ‘œƒtƒ@ƒCƒ‹Ši”[ƒtƒHƒ‹ƒ_
-  |--item/                 ƒAƒCƒeƒ€ƒf[ƒ^Ši”[ƒtƒHƒ‹ƒ_
-  |--item_e/               ƒAƒCƒeƒ€ƒf[ƒ^Ši”[ƒtƒHƒ‹ƒ_(‰pŒê”Å)
-  |--mapdata/              ƒ}ƒbƒvƒf[ƒ^Ši”[ƒtƒHƒ‹ƒ_
-  |  |-- mapdata_000       ƒ}ƒbƒvƒGƒfƒBƒ^‚Åì¬‚µ‚½ƒ}ƒbƒvƒf[ƒ^
+  |--image/                ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
+  |--item/                 ã‚¢ã‚¤ãƒ†ãƒ ãƒ‡ãƒ¼ã‚¿æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
+  |--item_e/               ã‚¢ã‚¤ãƒ†ãƒ ãƒ‡ãƒ¼ã‚¿æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€(è‹±èªžç‰ˆ)
+  |--mapdata/              ãƒžãƒƒãƒ—ãƒ‡ãƒ¼ã‚¿æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
+  |  |-- mapdata_000       ãƒžãƒƒãƒ—ã‚¨ãƒ‡ã‚£ã‚¿ã§ä½œæˆã—ãŸãƒžãƒƒãƒ—ãƒ‡ãƒ¼ã‚¿
   |  |        |
   |  |-- mapdata_999
-  |  `-- setting.txt       ƒ}ƒbƒv–ˆ‚ÌˆÈ‰º‚ÌÝ’è‚ª’è‹`‚³‚ê‚Ä‚¢‚éƒtƒ@ƒCƒ‹
-  |                        BGM/í“¬‰æ–Ê”wŒi‰æ‘œƒtƒ@ƒCƒ‹–¼/ƒGƒ“ƒJƒEƒ“ƒg‚·‚é“GƒOƒ‹[ƒvID
-  |--mapeditor/            ƒ}ƒbƒvƒGƒfƒBƒ^
-  |--monsterdata/          ƒ‚ƒ“ƒXƒ^[ƒf[ƒ^Ši”[ƒtƒHƒ‹ƒ_
-  |  |-- monster_data.csv        “GŒÂ•Ê‚ÌƒXƒe[ƒ^ƒXA‰æ‘œƒtƒ@ƒCƒ‹–¼‚È‚Ç‚Ì’è‹`
-  |  `-- monster_party_data.txt  “GƒOƒ‹[ƒvID‚Ì’è‹`ƒtƒ@ƒCƒ‹
-  |--monsterdata/          ƒ‚ƒ“ƒXƒ^[ƒf[ƒ^Ši”[ƒtƒHƒ‹ƒ_(‰pŒê”Å)
+  |  `-- setting.txt       ãƒžãƒƒãƒ—æ¯Žã®ä»¥ä¸‹ã®è¨­å®šãŒå®šç¾©ã•ã‚Œã¦ã„ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«
+  |                        BGM/æˆ¦é—˜ç”»é¢èƒŒæ™¯ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å/ã‚¨ãƒ³ã‚«ã‚¦ãƒ³ãƒˆã™ã‚‹æ•µã‚°ãƒ«ãƒ¼ãƒ—ID
+  |--mapeditor/            ãƒžãƒƒãƒ—ã‚¨ãƒ‡ã‚£ã‚¿
+  |--monsterdata/          ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ãƒ‡ãƒ¼ã‚¿æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
+  |  |-- monster_data.csv        æ•µå€‹åˆ¥ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã€ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«åãªã©ã®å®šç¾©
+  |  `-- monster_party_data.txt  æ•µã‚°ãƒ«ãƒ¼ãƒ—IDã®å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«
+  |--monsterdata/          ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ãƒ‡ãƒ¼ã‚¿æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€(è‹±èªžç‰ˆ)
   |
-  |--save/                 ƒZ[ƒuƒtƒ@ƒCƒ‹Ši”[ƒtƒHƒ‹ƒ_
+  |--save/                 ã‚»ãƒ¼ãƒ–ãƒ•ã‚¡ã‚¤ãƒ«æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
   |
-  |--sound/                ƒTƒEƒ“ƒhƒtƒ@ƒCƒ‹Ši”[ƒtƒHƒ‹ƒ_
-  |  |--bgm/               BGMŠi”[ƒtƒHƒ‹ƒ_
-  |  |--se/                SEŠi”[ƒtƒHƒ‹ƒ_
-  |  `--setting.txt        í“¬ˆÈŠO‚ÌBGMƒtƒ@ƒCƒ‹–¼‚Ì’è‹`
+  |--sound/                ã‚µã‚¦ãƒ³ãƒ‰ãƒ•ã‚¡ã‚¤ãƒ«æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
+  |  |--bgm/               BGMæ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
+  |  |--se/                SEæ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
+  |  `--setting.txt        æˆ¦é—˜ä»¥å¤–ã®BGMãƒ•ã‚¡ã‚¤ãƒ«åã®å®šç¾©
   |
-  |--text/                 •¶Žš—ñƒŠƒ\[ƒXƒtƒ@ƒCƒ‹Ši”[ƒtƒHƒ‹ƒ_
-  |--text_e/               •¶Žš—ñƒŠƒ\[ƒXƒtƒ@ƒCƒ‹Ši”[ƒtƒHƒ‹ƒ_(‰pŒê)
-  |--tools/                ƒc[ƒ‹—Þ
-  |  |--make_map_data/     ƒ}ƒbƒv‰æ‘œ‹y‚Ñƒ}ƒbƒvƒ`ƒbƒv‰æ‘œ‚©‚çƒ}ƒbƒvƒf[ƒ^‚ð¶¬‚·‚éƒc[ƒ‹
-  |  |--map_chip_edit/     •s–¾
-  |  `--map_chip_id_replacer/ ƒ`ƒbƒv‚h‚c‚ð•ÏŠ·‚·‚éƒc[ƒ‹
+  |--text/                 æ–‡å­—åˆ—ãƒªã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€
+  |--text_e/               æ–‡å­—åˆ—ãƒªã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«æ ¼ç´ãƒ•ã‚©ãƒ«ãƒ€(è‹±èªž)
+  |--tools/                ãƒ„ãƒ¼ãƒ«é¡ž
+  |  |--make_map_data/     ãƒžãƒƒãƒ—ç”»åƒåŠã³ãƒžãƒƒãƒ—ãƒãƒƒãƒ—ç”»åƒã‹ã‚‰ãƒžãƒƒãƒ—ãƒ‡ãƒ¼ã‚¿ã‚’ç”Ÿæˆã™ã‚‹ãƒ„ãƒ¼ãƒ«
+  |  |--map_chip_edit/     ä¸æ˜Ž
+  |  `--map_chip_id_replacer/ ãƒãƒƒãƒ—ï¼©ï¼¤ã‚’å¤‰æ›ã™ã‚‹ãƒ„ãƒ¼ãƒ«
   |
-  |--config_CS.exe            ŠeŽíÝ’è•ÏX—pƒvƒƒOƒ‰ƒ€
-  |--EventEditor_CS.exe    ƒCƒxƒ“ƒgì¬ƒc[ƒ‹
-  |--FF7FC.exe             ƒQ[ƒ€–{‘Ì
-  |--ini.bin               config.exe‚Å¶¬‚µ‚½Ý’èƒtƒ@ƒCƒ‹
-  |--keyConfig.exe         ƒL[Ý’èƒc[ƒ‹
-  |--keySetting.bin        ƒL[Ý’èî•ñ’è‹`ƒtƒ@ƒCƒ‹
-  |--readme.txt            ‚±‚Ìƒtƒ@ƒCƒ‹
-  |--SaveDataEditor.exe    ƒZ[ƒuƒf[ƒ^•ÒWƒc[ƒ‹
-  |--ƒ}ƒbƒvNO‘Î‰ž•\.txt    ƒ}ƒbƒvNO‘Î‰ž
-  `--VƒLƒƒƒ‰ƒ`ƒbƒv‘Î‰ž•\.txt ƒLƒƒƒ‰ID‘Î‰ž•\
+  |--config_CS.exe            å„ç¨®è¨­å®šå¤‰æ›´ç”¨ãƒ—ãƒ­ã‚°ãƒ©ãƒ 
+  |--EventEditor_CS.exe    ã‚¤ãƒ™ãƒ³ãƒˆä½œæˆãƒ„ãƒ¼ãƒ«
+  |--FF7FC.exe             ã‚²ãƒ¼ãƒ æœ¬ä½“
+  |--ini.bin               config.exeã§ç”Ÿæˆã—ãŸè¨­å®šãƒ•ã‚¡ã‚¤ãƒ«
+  |--keyConfig.exe         ã‚­ãƒ¼è¨­å®šãƒ„ãƒ¼ãƒ«
+  |--keySetting.bin        ã‚­ãƒ¼è¨­å®šæƒ…å ±å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«
+  |--readme.txt            ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«
+  |--SaveDataEditor.exe    ã‚»ãƒ¼ãƒ–ãƒ‡ãƒ¼ã‚¿ç·¨é›†ãƒ„ãƒ¼ãƒ«
+  |--ãƒžãƒƒãƒ—NOå¯¾å¿œè¡¨.txt    ãƒžãƒƒãƒ—NOå¯¾å¿œ
+  `--æ–°ã‚­ãƒ£ãƒ©ãƒãƒƒãƒ—å¯¾å¿œè¡¨.txt ã‚­ãƒ£ãƒ©IDå¯¾å¿œè¡¨
 
-  œƒ}ƒbƒv–ˆ‚ÌBGM‚ÌÝ’è‚ð•ÏX‚µ‚½‚¢ê‡
-    E"./mapdata/setting.txt"‚ð•ÒW‚·‚é
-      ID‚Ì—ñ‚É0‚©‚ç999‚Ü‚Å‚Ì”Žš‚ª•À‚ñ‚Å‚¢‚é‚Ì‚ÅA
-      ‘Î‰ž‚·‚és‚Ìbgm‚Ì€–Ú‚ð‘‚«Š·‚¦‚Ä‰º‚³‚¢
-      id         :ƒ}ƒbƒvID
-      type       :–¢Žg—p
-      bgm        :BGMƒtƒ@ƒCƒ‹–¼
-      battle_back:í“¬‰æ–Ê”wŒi
+  â—ãƒžãƒƒãƒ—æ¯Žã®BGMã®è¨­å®šã‚’å¤‰æ›´ã—ãŸã„å ´åˆ
+    ãƒ»"./mapdata/setting.txt"ã‚’ç·¨é›†ã™ã‚‹
+      IDã®åˆ—ã«0ã‹ã‚‰999ã¾ã§ã®æ•°å­—ãŒä¸¦ã‚“ã§ã„ã‚‹ã®ã§ã€
+      å¯¾å¿œã™ã‚‹è¡Œã®bgmã®é …ç›®ã‚’æ›¸ãæ›ãˆã¦ä¸‹ã•ã„
+      id         :ãƒžãƒƒãƒ—ID
+      type       :æœªä½¿ç”¨
+      bgm        :BGMãƒ•ã‚¡ã‚¤ãƒ«å
+      battle_back:æˆ¦é—˜ç”»é¢èƒŒæ™¯
 
-¡ŽÀ‘••Û—¯€–Ú
-  Eƒ}ƒbƒv‚É“ü‚Á‚½‚Æ‚«‚Éƒ}ƒbƒv–¼‚ð‰æ–Êã•”‚É•\Ž¦‚³‚¹‚é
-  EƒI[ƒvƒjƒ“ƒO“dŽÔ
-  Eƒ{ƒXÁ–ÅƒAƒjƒ
-  Eƒp[ƒeƒBƒAƒ^ƒbƒN
-  EƒWƒƒƒ“ƒv‚Ìchg_speed
+â– å®Ÿè£…ä¿ç•™é …ç›®
+  ãƒ»ãƒžãƒƒãƒ—ã«å…¥ã£ãŸã¨ãã«ãƒžãƒƒãƒ—åã‚’ç”»é¢ä¸Šéƒ¨ã«è¡¨ç¤ºã•ã›ã‚‹
+  ãƒ»ã‚ªãƒ¼ãƒ—ãƒ‹ãƒ³ã‚°é›»è»Š
+  ãƒ»ãƒœã‚¹æ¶ˆæ»…ã‚¢ãƒ‹ãƒ¡
+  ãƒ»ãƒ‘ãƒ¼ãƒ†ã‚£ã‚¢ã‚¿ãƒƒã‚¯
+  ãƒ»ã‚¸ãƒ£ãƒ³ãƒ—ã®chg_speed
 
-¡XV—š—ð
-  EXV—š—ð‚ÍˆÈ‰º‚ðŽQÆ
-    https://github.com/beta1139/ff7fc-develop/commits/master
 
-  E2013/1/8
-	EƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-	  Eloop_inf`pool•¶
-	  Eplay_se_loop
-  E2013/1/2
-    E’EoŽž‚Ì”š”­‚ÌƒGƒtƒFƒNƒg“ü‚ê‚½
-	Eƒ‚ƒ“ƒXƒ^[‰æ‘œ’Ç‰Á
-  E2013/1/1
-	EƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-      Echg_image_pos
-      Echg_image_pos_offset
-      Eset_image_trans_col
-  E2012/12/31
-	EƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-	  Edraw_image
-	  Eerase_image
-	  Eset_image_alpha
-	  Einc_image_alpha
-	  Edec_image_alpha
-  E2012/12/30
-	EƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-	  Edraw_countdown
-	EƒGƒŒƒx[ƒ^[ˆÚ“®’†‚ÉƒJƒEƒ“ƒgƒ_ƒEƒ“ƒEƒBƒ“ƒhƒE‚Ì•\Ž¦‚ðÁ‚·‚æ‚¤‚É‚µ‚½
-	Echg_char_state_move‚ðŽÀs’†‚É•Ê‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚ÌŽÀs‚ªŽn‚Ü‚Á‚½ê‡‚ÉA
-	  ƒLƒƒƒ‰‚Ì“®ì‚ªŽ~‚Ü‚é‚±‚Æ‚ª‚ ‚éƒoƒOC³
-	Emap_id:7‚Ìƒ}ƒbƒv‚Émap_door‚ðÝ’u
-	Eƒ}ƒbƒvƒGƒfƒBƒ^‚Ìƒ}ƒbƒvÀ•W•\Ž¦‚ð’Ç‰Á
-  E2012/12/29
-	Eƒ}ƒbƒvƒGƒfƒBƒ^‚ÉƒRƒsƒy‹@”\’Ç‰Á
-  E2012/12/27
-	EƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-	  Ebackup_char_dir
-	  Erestore_char_dir
-	Eƒ}ƒbƒvŠÔƒ[ƒv’†‚Émap_obj‚Ì•\Ž¦‚ªÁ‚¦‚é‚±‚Æ‚ª‚ ‚Á‚½ƒoƒOC³
-	Eƒ[ƒh‚Åthrough‚Ìƒ}ƒbƒv‚©‚çŽn‚ß‚é‚Æ–³‰¹‚É‚È‚éƒoƒOC³
-  E2012/12/26
-    Eoggƒtƒ@ƒCƒ‹Ä¶ŠJŽnŽž‚ÉLOOPSTARTƒRƒƒ“ƒg‚ð“Ç‚ÝŽæ‚èA
-	@ƒ‹[ƒvˆÊ’u‚ðÝ’è‚·‚é‚æ‚¤‚É‚µ‚½
-  E2012/12/23
-    Econfig_CS.exe‚ÅƒQ[ƒ€ŠJŽnŽž‚Ì‰ŠúˆÊ’u‚ðÝ’è‚Å‚«‚é‚æ‚¤‚É‚µ‚½
-	EƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-	  Echg_char_img_tmp
-	  Ereset_char_img_tmp
-	  Eset_map_draw_y_offset
-	  Einc_map_draw_y_offset
-	  Edec_map_draw_y_offset
-	EƒGƒŒƒx[ƒ^[‚ÌƒCƒxƒ“ƒg‚ð‚c‚p‚S•—‚É‚µ‚½
-  E2012/12/22
-	Ebgm_through‚Åí“¬‚a‚f‚l–Â‚è‚Á‚Ï‚È‚µC³
-	EƒVƒ‡ƒbƒv‚ðŠJ‚¢‚½ŒãAƒZƒŠƒtƒEƒBƒ“ƒhƒE‚ÉNPC‚ª‰B‚ê‚È‚­‚È‚éƒoƒOC³
-    Eif•ª‚Ì“ü‚êŽq‘Î‰ž‚µ‚½
-	EƒZƒŒƒNƒgƒ{ƒ^ƒ“‚ÅƒLƒƒƒ‰ƒ`ƒFƒ“ƒW‚È‚µ‚É‚µ‚½
-	EƒGƒ“ƒJƒEƒ“ƒg‚ÌƒGƒtƒFƒNƒg’†‚Ìmap_obj‚Æmap_door‚Ì•\Ž¦‚ª‚»‚Ì‚Ü‚Ü‚È‚Ì‚ð’¼‚µ‚½
-	EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-	  Eenable_char_chg
-	  Edisable_char_chg
-	  Echg_char_state_move
-	  Echg_char_state_event
-	  Echg_npc_y_offset
-	E‚e‚P‰Ÿ‰º‚ÅƒCƒxƒ“ƒgƒf[ƒ^‚Ìî•ñ‚ðƒtƒ@ƒCƒ‹(event_info.txt)o—Í‚·‚é‚æ‚¤‚É‚µ‚½
-  E2012/12/20
-    EPart9@635‚Ìƒ}[ƒW
-  E2012/12/19
-    Emap_obj.bmp‚Ì‰æ‘œ‚Ì•‚ð256ŒÅ’è‚É‚µ‚ÄA
-@@  ‚Í‚Ýo‚·•ª‚Í‰º‚Ìs‚Ì‰æ‘œ‚ðŽg‚¤‚æ‚¤‚É‚µ‚½
-  E2012/12/17
-    EPart9@597‚ðƒ}[ƒW
-  E2012/12/15
-    Eƒ[ƒvŽž‚Émap_obj‚Æmap_door‚Ì•\Ž¦‚ª‚¨‚©‚µ‚¢ƒoƒOC³
-    EƒLƒƒƒ‰ƒ`ƒbƒvXV
-    EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-	  Eset_text_col
-  E2012/12/14
-    EƒLƒƒƒ‰ƒ`ƒbƒvXV
-	EƒeƒLƒXƒg‚É()’Ç‰Á
-	E‹N“®’¼Œã‚Ì‚e‚e‚R•—ƒeƒLƒXƒgƒCƒxƒ“ƒgŽÀ‘•
-	Econfig.exe‚ðC#‚Åì‚è’¼‚µ‚½
-	  ‹N“®’¼Œã‚ÌƒQ[ƒ€‚Ìó‘Ô‚ðˆÈ‰º‚©‚ç‘I‘ð‚Å‚«‚é‚æ‚¤‚É‚µ‚½
-	  E‚e‚e‚R•—ƒeƒLƒXƒgƒCƒxƒ“ƒg
-	  Eƒ^ƒCƒgƒ‹‰æ–Ê
-	  E‚Í‚¶‚ß‚©‚çorƒRƒ“ƒeƒBƒjƒ…[‰æ–Ê
-  E2012/12/13
-    EPart9@547,549‚ðƒ}[ƒW
-	  (“à—e)
-	  EƒoƒŒƒbƒg“{‚èƒ‚[ƒVƒ‡ƒ“‚ÌƒLƒƒƒ‰ƒ`ƒbƒv’Ç‰Á
-      E“ñ‚Â‚Ìumap_doorv(map_door.bmp)‚ð’Ç‰Á
-      EusevƒtƒHƒ‹ƒ_‚Ì"warp out.wav"‚ÌÅŒã‚Éæ‚Á‚Ä‚½ƒ|ƒbƒvƒmƒCƒY‚ðœ‹Ž
-      EubgmvƒtƒHƒ‹ƒ_‚Ì"Ex-02-Train_Noise_Open.ogg"‚Ì‰¹—Ê‚ðƒ}ƒCƒiƒX1.5db
-      Emapdata016‚ÌƒOƒ‰‚ðˆê•”C³
-      @(ÀÈ‚ª‚ ‚é‚Æ‚»‚ÌŒãêŠ•Ï‚¦‚é•K—v‚È‚¢‚È‚ÆŽv‚Á‚½‚Ì‚ÅEÎ)
-      EƒCƒxƒ“ƒgƒtƒ‰ƒO‚ÉŽµ”ÔƒXƒ‰ƒ€‚ÌBGM(ƒeƒBƒtƒ@‰Á“ü)‚ðŽû”[
-        mapdata‚Ìsetting.txt‚ð•ÏX
-      @‚±‚ê‚É‚æ‚èŽµ”ÔŠXƒXƒ‰ƒ€‚ÌBGM‚ð“r’†‚ÅØ‚è‘Ö‚¦(On_that`¨Barrett's_Theme)
-      @(ƒZƒuƒ“ƒXƒwƒuƒ“‚ÌBGM‚ÍŒÅ’è)
-      Emap_obj.bmp‚ðXV
-      @ƒAƒoƒ‰ƒ“ƒ`EƒAƒWƒg‚Ì“ü‚è•û‚ð•ÏX
-      @(Žè‘O‚ÅAƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚ÄƒWƒƒƒ“ƒv)(‚Å‚à’n–¡‚¾‚Æ‚¢‚¤/Î)
-      E—ñŽÔ”ò‚Ñ~‚èƒV[ƒ“‚Å‚Ìƒ}ƒbƒv•ƒXƒNƒŠƒvƒg‚ð”÷C³
-      @(Œ´ì‚Ì‚æ‚¤‚É“r’†‚Åƒgƒ“ƒlƒ‹‚É“ü‚é‚æ‚¤‚É‚µ‚½)
-      Eˆê”Ô–‚æ˜F‚Ì‘OX‚©‚ç‹C‚É‚È‚Á‚Ä‚½ƒXƒy[ƒX‚É•ó” ”z’u
-      @(Žè‘O‚ÅAƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚ÄƒWƒƒƒ“ƒv)
-      @(‚±‚¤‚¢‚¤ƒIƒŠƒWƒiƒ‹‚Ì—V‚Ñ‚ð‚¿‚å‚­‚¿‚å‚­“ü‚ê‚Æ‚­‚Ì‚à–Ê”’‚¢‚©‚È‚ÆŽv‚Á‚Ä‚é‚ñ‚Å‚·‚ªA
-      @•s—v‚È‚ç‰“—¶‚È‚­ƒfƒŠ[ƒg‚Åw)
-      Eˆê”Ô–‚æ˜F‚ÆŽµ”ÔƒXƒ‰ƒ€‚ÉƒZ[ƒuƒ|ƒCƒ“ƒg‚ð’Ç‰Á
-  E2012/12/11
-    EPart9@539‚ÌƒXƒNƒŠƒvƒgƒtƒ@ƒCƒ‹‚ðƒ}[ƒW
-  E2012/12/09
-    EƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-	  jump_char_target_pos
-	EƒCƒxƒ“ƒgì¬
-	  ƒ†ƒtƒB‚ÌƒCƒxƒ“ƒgì‚è‚©‚¯
-  E2012/12/08
-    EƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-	  jump_char
-  E2012/12/07
-    EƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-      set_slide_walk_char_flag
-      reset_slide_walk_char_flag
-	  set_slide_npc_flag
-	  reset_slide_npc_flag
-	  set_slide_walk_npc_flag
-	  reset_slide_walk_npc_flag
-	  warp_ff3
-	  door_open
-	  door_close
-	EƒCƒxƒ“ƒgƒ^ƒCƒv’Ç‰Á
-	  map_obj
-	  map_door
-	EƒZƒuƒ“ƒXƒwƒuƒ“‚ÌƒCƒxƒ“ƒg‚ÅƒJƒEƒ“ƒ^[ã‚°‰º‚°‚ðŽÀ‘•
-	E—ñŽÔ“à‚ÅƒWƒFƒV[‚ªƒhƒA‚ð•Â‚ß‚éƒCƒxƒ“ƒgŽÀ‘•
-	E‚V”ÔŠXƒXƒ‰ƒ€‚ÉŠJ•Â‚·‚éƒhƒA‚ðÝ’u
-  E2012/12/06
-    EBGM’Ç‰Á
-      Ex-02-Train_Noise_Open.ogg
-      Ex-01-Train_Noise_Close.ogg
-    ESE’Ç‰Á
-      ƒPƒAƒ‹AƒPƒAƒ‹ƒ‰
-    Ejump_npc‚Ìsame‚Åchg_npc_img‚ª—˜‚©‚È‚­‚È‚é•s‹ï‡C³
-    EƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-      set_slide_char_flag
-      reset_slide_char_flag
-  E2012/12/03
-    Emove_char–½—ß‚ð”ñ“¯Šú‚É•ÏX
-    EƒXƒNƒŠƒvƒgƒtƒ@ƒCƒ‹‚Ìmove_char‚ðŽg—p‚µ‚Ä‚¢‚é‘S‚Ä‚Ì‰ÓŠ‚É
-      ƒLƒƒƒ‰‚ÌˆÚ“®—Ê*16‚ÌŽžŠÔ‚Ìsleep‚ð‘}“ü
-  E2012/12/02
-    EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-      Echg_npc_img
-      Echg_event_move_char_speed
-    EƒCƒxƒ“ƒgƒtƒ‰ƒO‚Ìid:0‚Ì’l‚ª4‚Ì‚Æ‚«‚Í
-      Ä¶’†‚ÌBGM‚ð‚¸‚Á‚ÆÄ¶‚³‚¹‚½‚Ü‚Ü‚É‚È‚é‚æ‚¤‚É‚µ‚½
-    E./mapdata/setting.txt‚ÅthroughŽw’è‚Å‘O‚ÉÄ¶‚µ‚Ä‚¢‚½
-      ƒtƒB[ƒ‹ƒhBGM‚ðÄ¶‚·‚é‚æ‚¤‚É‚µ‚½
-  E2012/12/02
-    EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-      Eloop ` pool•¶
-      Eset_text
-      Eset_text_alpha
-      Eclear_text
-    EƒfƒoƒbƒOƒGƒŠƒA‚Éã‹L‚Ì–½—ß‚ðŽg—p‚µ‚½ƒCƒxƒ“ƒg’Ç‰Á
-  E2012/12/01
-    E>>part9@451‚Ìƒ}[ƒW
-    E>>part9@458‚Ìƒ}[ƒW
-    EBGMƒtƒ@ƒCƒ‹ƒŠƒl[ƒ€
-    Eƒjƒ…[ƒQ[ƒ€A‚Â‚Ã‚«‚©‚ç‚Ì‰æ–Ê‚É”wŒi‰æ‘œ•\Ž¦
-  E2012/11/27
-    EŽµ”ÔŠX“ž’…`ƒeƒBƒtƒ@‡—¬‚Ü‚Å‚ÌƒCƒxƒ“ƒg‚ðì¬
-    Eƒ}ƒbƒvID:701,702‚ð’Ç‰Á
-    Eƒ}ƒbƒvID:22‚ÌƒOƒ‰AƒAƒ^ƒŠ”»’è‚ðˆê•”•ÏX
-    Eh‰®‚ÌBGM‚ðSEƒtƒHƒ‹ƒ_‚É•ÏX(ƒ‹[ƒvÄ¶‚ð–h‚®‚½‚ß)
-    Eƒ[ƒvƒ`ƒ‡ƒRƒ{ˆê•”•ÏX
-    E"mapdata_011"‚Æ"mapdata_033"‚ðíœ
-    Echg_type‚Ånpc3Žw’è‚Å‚«‚È‚¢ƒoƒOC³
-    Enpc_event‚ðnot_move‚É‚·‚é‚Æ
-      chg_type‚Ånpc‚É‚µ‚Ächg_speed‚Ånot_moveˆÈŠO‚É‚µ‚Ä‚à“®‚©‚È‚­‚È‚éƒoƒOC³
-    EƒŠƒ~ƒbƒgƒAƒjƒ[ƒVƒ‡ƒ“’†‚à•mŽ€Žž‚ÌŠ¾‚ª•\Ž¦‚³‚ê‚Ä‚¢‚½‚Ì‚ðC³
-  E2012/11/26
-    EƒK[ƒhƒXƒR[ƒsƒIƒ“í‘O‚ÌƒCƒxƒ“ƒg‚ÉƒL[ƒ“‰¹’Ç‰Á
-    EƒZ[ƒuƒ|ƒCƒ“ƒgŽÀ‘•(event_editor_CS.exe‚àXV)
-    EBGM’Ç‰Á(1-00-Barrett's_Theme.ogg)
-    EƒAƒCƒeƒ€‚ðE‚Á‚½‚Æ‚«‚ÌSEXV
-    Eƒ}ƒbƒvNO‘Î‰ž•\.txt‚ðŠi”[
-    EƒWƒƒƒ“ƒv‚·‚éƒLƒƒƒ‰‚É˜b‚µ‚©‚¯‚é‚Æ‚«‚ÉˆÚ“®ƒL[“ü—Í‚ÅƒoƒO‚é‚Ì‚ðC³
-    EƒfƒoƒbƒOƒGƒŠƒA‚ÌNPC‚ÌID‚©‚Ô‚èC³
-    E‰w’·‚Ì‰æ‘œ‚ð‰w’·‚É•ÏX
-  E2012/11/25
-    EƒLƒƒƒ‰ƒ`ƒbƒv‚É‰w’·’Ç‰Á
-    Eƒwƒr[ƒVƒ‡ƒbƒg‚ÌF‚ðÔ‚É•ÏX
-    EBGM’Ç‰Á(1-02-00-Opening.ogg)
-    EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß‚ð’Ç‰Á
-      Eplay_event_bgm
-      Erecover_active_chara
-      Estep_npc
-      Ejump_npc
-      Ejump_npc_target_pos
-      Eslide_npc
-      Eslide_walk_npc
-      Eset_npc_pos
-  E2012/11/24
-    EƒLƒƒƒ‰ƒ`ƒbƒvXV
-    EŽæ…“ƒƒ}ƒbƒv’Ç‰Á
-    EƒtƒHƒ“ƒg‚É'`'‚ð’Ç‰Á
-    Eu‚Ú‚¤‚¬‚åvAuƒ`ƒFƒ“ƒWv‚Ì‘I‘ð‚ðƒLƒƒƒ“ƒZƒ‹‚·‚é‚Æ
-    @ƒJ[ƒ\ƒ‹ˆÊ’u‚ªƒoƒO‚é‚Ì‚ðC³
-    Eƒ}ƒeƒŠƒA‚Ì‰æ‘œXV
-    Eƒ}ƒbƒvã‚É—Ž‚¿‚Ä‚¢‚éƒ}ƒeƒŠƒA‚ðƒAƒjƒ[ƒVƒ‡ƒ“‚³‚¹‚é‚æ‚¤‚É‚µ‚½
-    Eƒ}ƒeƒŠƒAŽæ“¾ŽžSE•ÏX
-    E’Êíí“¬BGMXV
-    EBGM’Ç‰Á(¶–½‚Ì—¬‚ê(ŠCŠO–¼F3-02-Life_Stream))
-  E2012/11/23
-    E7”ÔŠX‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚ðƒ}[ƒW
-    E—ñŽÔ“à‚ÌBGM•ÏX
-    EƒQ[ƒ€ŠJŽnŽž‚ÉƒfƒoƒbƒO—pƒ[ƒv‘•’u”z’u
-    Eƒoƒgƒ‹ƒLƒƒƒ‰‚Ì‰æ‘œXV
-    EƒPƒAƒ‹AƒPƒAƒ‹ƒ‰‚ÌƒGƒtƒFƒNƒgŽÀ‘•
-    Eƒ[ƒhŽž‚ÉNPC‚ÌˆÊ’u‚ª‚¸‚ê‚éƒoƒOC³
-    Eƒtƒ@ƒCƒA‚ÆƒuƒŠƒUƒh‚ÌSE’Ç‰Á
-    E•mŽ€ƒLƒƒƒ‰‚ÌŠ¾ŽÀ‘•
-    EƒŠƒ~ƒbƒg‚ª—­‚Ü‚Á‚½Œã‚P‰ñ‚¾‚¯TIME‚ª‘‚­—­‚Ü‚é‚æ‚¤‚É‚µ‚½
-  E2012/11/18
-    EƒtƒHƒ“ƒg‚Éu‚Ÿ‚¡‚£‚¥‚§v‚ð’Ç‰Á
-  E2012/11/17
-    E˜b‚µ‚©‚¯‚Ä‚àU‚è•Ô‚ç‚È‚¢npc3‚ðŽÀ‘•
-    EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß‚ð’Ç‰Á
-      Eif_owned_item ` fi •¶
-    EƒAƒCƒeƒ€ƒf[ƒ^‚ðŠg[
-  E2012/11/16
-    Econfig.exe‚ÉŒ¾Œê‚Ì‘I‘ð€–Ú‚ð’Ç‰Á
-    E‰Ô”„‚èƒCƒxƒ“ƒg‚ð‹­§‰»
-    E‰Ô”„‚èƒCƒxƒ“ƒg‚Å‰Ô‚ð”ƒ‚Á‚½‚©‚ÌŒ‹‰Ê‚ð
-    @ƒCƒxƒ“ƒgƒtƒ‰ƒO‚ÉŠi”[‚·‚é‚æ‚¤‚É‚µ‚½
-    EƒRƒ“ƒeƒBƒjƒ…[‚ÅŽn‚ß‚é‚ÆDOOR‚ªNPC‚É‚È‚éƒoƒOC³
-  E2012/11/11
-    Eí“¬’†‚Å‚àƒJƒEƒ“ƒgƒ_ƒEƒ“‚ÌƒCƒxƒ“ƒg‚ÅƒQ[ƒ€ƒI[ƒo[‚É‚È‚é‚æ‚¤‚É‚µ‚½
-    EƒQ[ƒ€ŠJŽn‚©‚çˆê”Ô–‚Œõ˜F“Ë“ü‚Ü‚Å‚Íí“¬’†‚Å‚àƒtƒB[ƒ‹ƒhBGM‚ð—¬‚µ‚½‚Ü‚Ü‚ÉC³
-  E2012/10/14
-    EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß‚ð’Ç‰Á
-      Eif_party_mem ` fi •¶
-      Eif_active_mem ` fi •¶
-      Eif_char_img ` fi •¶
-      Ewait_target_talk
-      Ereset_talk_flag
-      Ebackup_npc_dir
-      Echg_dir_to_char
-      Eset_talk_npc
-      Erestore_npc_dir
-      Ereset_talk_npc
-  E2012/10/11
-    Ewait_talk‚ÌƒCƒxƒ“ƒg‚Ìã‚ÉE‚¦‚éƒAƒCƒeƒ€‚ð
-      d‚Ë‚Ä˜b‚µ‚©‚¯‚é‚ÆƒoƒO‚é‚Ì‚ðC³
-    Escreen_effect blue‚ÌŒø‰Ê‚ð”–‚­‚µ‚½
-    EshopŒn‚ÌƒXƒNƒŠƒvƒg–½—ß‚ÌŽd—l‚ð•ÏX
-    EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß‚ð’Ç‰Á
-      Ekill_through
-      Erecover_talked_npc_dir
-  E2012/10/07
-    E”ª”ÔŠX‚Ì•ºŽm‚É’Ç‚¢ž‚Ü‚ê‚éƒCƒxƒ“ƒgŽÀ‘•
-    E—ñŽÔ“à‚ÌƒCƒxƒ“ƒgŽÀ‘•
-    EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß‚ð’Ç‰Á
-      Echg_param
-  E2012/10/05
-  @E‘I‘ðŽˆ‚Ì‚ ‚éƒZƒŠƒt‚ðŽÀ‘•
-  @E”ª”ÔŠX‚Ì‚Í‚È‚¤‚è‚ÌƒCƒxƒ“ƒg‚ðŽÀ‘•
-    EƒLƒƒƒ‰ƒXƒe[ƒ^ƒX‚ÉDŠ´“x‚Ìƒpƒ‰ƒ[ƒ^‚ð’Ç‰Á
-    EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß‚ð’Ç‰Á
-      Ewait_target_talked
-      Eif_flag ` fi •¶
-      Eadd_gil
-      Esub_gil
-      Eadd_likability
-      Esub_likability
-  E2012/10/03
-    EƒRƒ“ƒtƒBƒO‰æ–Ê‚ðì¬
-    EATB‚ÌƒEƒFƒCƒg‚É‘Î‰ž
-    EƒJ[ƒ\ƒ‹ˆÊ’u‚Ì‚«‚¨‚­ŽÀ‘•
-  E2012/10/01
-    E”š”jƒ~ƒbƒVƒ‡ƒ“‚ÌƒJƒEƒ“ƒgƒ_ƒEƒ“‚ðŽÀ‘•
-  E2012/09/30
-    EuƒTƒ“ƒ_[v,uƒTƒ“ƒ_ƒ‰v,uƒTƒ“ƒ_ƒKv‚ÌƒAƒjƒ[ƒVƒ‡ƒ“‚ðŽÀ‘•
-    Eˆê”ÔŠX‰w‚ÅÅ‰‚ÌƒCƒxƒ“ƒgƒGƒ“ƒJƒEƒ“ƒg‚ªI‚í‚é‚Ü‚Å‚ÍƒGƒ“ƒJƒEƒ“ƒg‚µ‚È‚¢‚æ‚¤‚É‚µ‚½
-    EƒCƒxƒ“ƒgumateriav‚ð”pŽ~B‘ã‚í‚è‚Éutreasure_itemv‚ðŽÀ‘•
-      ƒ}ƒeƒŠƒA‚¾‚¯‚Å‚È‚­ƒ}ƒbƒvã‚É—Ž‚¿‚Ä‚¢‚éƒAƒCƒeƒ€‚ð‰½‚Å‚àE‚¦‚é‚æ‚¤‚É‚È‚Á‚½
-    EˆÈ‰º‚ÌƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚Ì–½—ß’Ç‰Á
-      Ewait_event_invalid
-      Eset_eternal_event
-      Eset_flag_wall
-      Eopen_item_shop
-      Eopen_weapon_shop
-      Eopen_armor_shop
-      Eopen_materia_shop
-      Eopen_acce_shop
-  E2012/09/28
-    EUŒ‚–‚–@‰r¥Žž‚ÌƒGƒtƒFƒNƒgŽÀ‘•
-    EuƒuƒŠƒUƒhv,uƒuƒŠƒUƒ‰v,uƒtƒ@ƒCƒAv,uƒtƒ@ƒCƒ‰v‚Ì
-    @ƒAƒjƒ[ƒVƒ‡ƒ“‚ðŽÀ‘•
-  E2012/09/27
-    EƒŠƒ~ƒbƒg‹ZŠJŽnŽž‚ÌƒGƒtƒFƒNƒgŽÀ‘•
-    E‰ñ•œ–‚–@‰r¥Žž‚ÌƒGƒtƒFƒNƒgŽÀ‘•
-  E2012/09/25
-    E”š”jƒ~ƒbƒVƒ‡ƒ“‚ÌƒCƒxƒ“ƒg‚ðŽÀ‘•
-    EƒŠƒ~ƒbƒg‹ZuƒuƒŒƒCƒo[v,uƒwƒr[ƒVƒ‡ƒbƒgv‚ÌƒAƒjƒ[ƒVƒ‡ƒ“‚ðŽÀ‘•
-    EƒZ[ƒu‰æ–Ê‚É•\Ž¦‚³‚ê‚éƒLƒƒƒ‰‚ðƒp[ƒeƒBƒƒ“ƒo[‚Ì‚Ý‚Æ‚µ‚½
-    EƒZ[ƒuƒf[ƒ^‚É”Ä—pƒCƒxƒ“ƒg—pƒtƒ‰ƒO100ƒoƒCƒg‚ð’Ç‰Á
-  E2012/09/20
-    E“ÆŽ©Žd—lƒCƒxƒ“ƒgƒXƒNƒŠƒvƒg‚ð“±“ü
-    Eˆê”ÔŠX‰w‚ÌƒCƒxƒ“ƒg‚ðŽÀ‘•
-  E2012/09/14
-    Eƒ}ƒbƒvã‚É—Ž‚¿‚Ä‚¢‚éƒ}ƒeƒŠƒA‚ðE‚¦‚é‚æ‚¤‚É‚µ‚½
-  E2012/09/13
-    EƒZ[ƒuƒf[ƒ^‚ÉƒCƒxƒ“ƒgƒf[ƒ^‚ð’Ç‰Á
-    ESaveDataEditor‚ðVƒZ[ƒuƒf[ƒ^Žd—l‚É‘Î‰ž
-    Eƒ}ƒbƒv–ˆ‚ÉƒGƒ“ƒJƒEƒ“ƒg‚Ì—L–³‚ðŠO•”ƒtƒ@ƒCƒ‹‚ÅÝ’è‚Å‚«‚é‚æ‚¤‚É‚µ‚½
-  E2012/09/10
-    Eƒoƒgƒ‹ƒRƒ}ƒ“ƒhuƒŠƒ~ƒbƒgv‚ðŽÀ‘•
-    Eí“¬Œã‚ÉƒhƒƒbƒvƒAƒCƒeƒ€‚ªƒhƒƒbƒv‚·‚éˆ—ŽÀ‘•
-  E2012/09/09
-    Eƒoƒgƒ‹ƒRƒ}ƒ“ƒhu‚Ü‚Ù‚¤v‚ðŽÀ‘•
-    Eƒoƒgƒ‹ƒRƒ}ƒ“ƒhuƒAƒCƒeƒ€v‚ðŽÀ‘•
-  E2012/09/06
-    Eí“¬Œã‚ÌƒtƒB[ƒ‹ƒh‚a‚f‚lÄ¶ŠJŽnˆÊ’u‚ª
-      í“¬‘O‚ÌƒtƒB[ƒ‹ƒh‚a‚f‚lÄ¶’âŽ~ˆÊ’u‚Æ‚È‚é‚æ‚¤‚É‚µ‚½
-  E2012/09/05
-    Eƒoƒgƒ‹ƒRƒ}ƒ“ƒhu‚É‚°‚év‚ðŽÀ‘•
-  E2012/09/04
-    Eƒoƒgƒ‹ƒRƒ}ƒ“ƒhu ‚Ú‚¤‚¬‚åvAuƒ`ƒFƒ“ƒWv‚ðŽÀ‘•
-  E2012/09/03
-    E“G‚ªŽ€‚Ê‚Æ‚«‚ÌƒAƒjƒ[ƒVƒ‡ƒ“ŽÀ‘•
-    Eƒoƒgƒ‹ƒEƒBƒ“ƒhƒE‚Ì•\Ž¦ˆÊ’u’²®
-    E•mŽ€Žž‚¨‚æ‚ÑŽ€–SŽž‚É‚g‚o‚Ì•\Ž¦F‚ð•Ï‚¦‚é‚æ‚¤‚É‚µ‚½
-    EƒŠƒ~ƒbƒg‚ª—­‚Ü‚é‚æ‚¤‚É‚µ‚½
-    Eí“¬‰æ–Ê‚¨‚æ‚Ñƒƒjƒ…[‰æ–Ê‚ÌƒŠƒ~ƒbƒgƒo[•\Ž¦ˆ—ŽÀ‘•
-  E2012/08/15
-    ESaveDataEditor‚ðì¬
-  E2012/06/29
-    EEventEditor.exe‚ðC#‚Åì‚è’¼‚µ‚½(ŠÂ‹«ˆË‘¶‚Å“®ì‚µ‚È‚¢–â‘è‰ðÁ‚µ‚½H)
-    E’ÊíUŒ‚‚Ìƒoƒgƒ‹ƒGƒtƒFƒNƒg‚ðŽÀ‘•‚µ‚½
-  E2011/09/11
-    E•ó” ‚ðŽÀ‘•
-  E2011/09/07
-    EƒGƒ“ƒJƒEƒ“ƒgˆ—‚ðŽÀ‘•‚µ‚½
-    Eƒ_ƒ“ƒWƒ‡ƒ“‚ðì‚Á‚½
-  E2011/09/05
-    E’ÊíUŒ‚‚Ìƒ_ƒ[ƒWŽZo‚ÉŒvŽZŽ®‚ð“±“ü
-    Eƒƒjƒ…[‰æ–Ê‚©‚ç‰ñ•œ–‚–@‚ðŽg‚¦‚é‚æ‚¤‚É‚µ‚½
-  E2011/09/03
-    EƒŒƒxƒ‹ƒAƒbƒvˆ—‚ðŽÀ‘•
-    EŠl“¾‚`‚o‚ªƒ}ƒeƒŠƒA‚É—­‚Ü‚éˆ—ŽÀ‘•
-    EƒZ[ƒuƒf[ƒ^‚ðƒoƒCƒiƒŠ‰»
-    EƒZ[ƒuƒf[ƒ^‚ÉƒLƒƒƒ‰ƒNƒ^[‚ÌƒXƒe[ƒ^ƒXî•ñ‚È‚Ç‚ð’Ç‰Á
-  E2011/09/01
-    Eƒ}ƒeƒŠƒA‚ð‘•”õ‚Å‚«‚é‚æ‚¤‚É‚µ‚½
-@E2011/08/30
-    Eƒ}ƒeƒŠƒA‰®ŽÀ‘•
-@E2011/08/29
-    E•Ší‚ð‘•”õ‚Å‚«‚é‚æ‚¤‚É‚µ‚½
-    E–h‹ï‚ð‘•”õ‚Å‚«‚é‚æ‚¤‚É‚µ‚½
-    EƒAƒNƒZƒTƒŠ‚ð‘•”õ‚Å‚«‚é‚æ‚¤‚É‚µ‚½
-@E2011/08/24
-@@EƒAƒCƒeƒ€ƒf[ƒ^‚Ì’è‹`‚ðŠg[
-  E2011/07/14
-    EEventEditor‚ðì¬‚µ‚½
-  E2011/07/09
-    E‚Ô‚«‰®ŽÀ‘•
-    E‚Ú‚¤‚®‰®ŽÀ‘•
-    EƒAƒNƒZƒTƒŠ[‰®ŽÀ‘•
-  E2011/07/06
-    E‚Ç‚¤‚®‚âŽÀ‘•
-    Eƒƒjƒ…[‚©‚ç‚ÌƒAƒCƒeƒ€Žg—pŽÀ‘•(ˆÈ‰º‚ÌƒAƒCƒeƒ€‚Ì‚Ý)
-      Eƒ|[ƒVƒ‡ƒ“
-      EƒnƒCƒ|[ƒVƒ‡ƒ“
-      EƒGƒNƒXƒ|[ƒVƒ‡ƒ“
-      EƒG[ƒeƒ‹
-      EƒG[ƒeƒ‹ƒ^[ƒ{
-      EƒGƒŠƒNƒT[
-      EƒtƒFƒjƒbƒNƒX‚Ì”ö
-  E2011/06/25
-    EƒL[ƒRƒ“ƒtƒBƒOƒAƒvƒŠì¬
-  E2011/05/24
-    Eí“¬ƒVƒXƒeƒ€‚Ì—Œ`‚ª‚Å‚«‚½
-  E2011/05/14
-    EVƒ}ƒbƒvƒf[ƒ^Žd—l‚É‘Î‰ž
-    Eƒ}ƒbƒv–ˆ‚ÉŠO•”ƒtƒ@ƒCƒ‹‚ÅBGM‚ðÝ’è‚Å‚«‚é‚æ‚¤‚É‚µ‚½
-    EƒLƒƒƒ“ƒZƒ‹ƒL[‚Ì‰Ÿ‚µ‚Á‚Ï‚È‚µ‚Åƒ_ƒbƒVƒ…‚Å‚«‚é‚æ‚¤‚É‚µ‚½
-    EƒZ[ƒu/ƒ[ƒh‚ðŽÀ‘•(ƒ}ƒbƒv‚h‚cCXÀ•WAYÀ•W‚Ì‚Ý)
-    EƒCƒxƒ“ƒgƒtƒ@ƒCƒ‹‚Ìƒ}ƒbƒv‚h‚c‚ðV‚µ‚¢ƒ}ƒbƒv‚É‘Î‰ž‚µ‚½‚à‚Ì‚ÉC³
-    ESƒL[‚Ì“ü—Í‚ÅŒ»ÝˆÊ’u‚Ì•\Ž¦/”ñ•\Ž¦‚ª‚Å‚«‚é‚æ‚¤‚É‚µ‚½
-    EJoyPad‚É‘Î‰ž
-  E2010/12/31
-    Eƒƒjƒ…[‰æ–Ê‚ðì¬’†
-    EƒLƒƒƒ‰ƒ`ƒFƒ“ƒW‘Î‰ž
-  E2010/12/26
-    Ealpha 1.00 release
-
+â€»è¦æœ›ã€ãƒã‚°å ±å‘Šãªã©å‹Ÿé›†
 ----------------------------------------------------------------------
-¦—v–]AƒoƒO•ñ‚È‚Ç•åW
