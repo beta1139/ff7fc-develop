@@ -5,7 +5,7 @@
 最新版プロジェクトファイル一式
 https://github.com/beta1139/ff7fc-develop/archive/master.zip
 
-ご意見ご感想その他はこちらへ
+コメントはこちらへ
 https://github.com/beta1139/ff7fc-develop/discussions/71
 
 ## テスター募集
