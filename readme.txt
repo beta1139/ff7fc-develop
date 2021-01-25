@@ -6,7 +6,7 @@
 https://github.com/beta1139/ff7fc-develop/archive/master.zip
 
 コメントはこちらへ
-https://github.com/beta1139/ff7fc-develop/discussions/71
+https://github.com/beta1139/ff7fc-develop/discussions/73
 （※コメントするにはgithubアカウントが必要です）
 
 ## テスター募集
