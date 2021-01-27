@@ -121,6 +121,8 @@ sleep 16
 move_char right 2
 move_npc 9521 left 2
 sleep 32
+set_flag_wall 9521
+set_flag_wall 9522
 chg_npc_dir 9521 up
 chg_npc_dir 9522 up
 chg_type 9521 npc2
