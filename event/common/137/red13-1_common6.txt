@@ -1,7 +1,7 @@
 stop_se
 sleep 16
 set_flag 20 1
-boss_encount 1
+boss_encount 285
 sleep 64
 kill 13701
 warp 137 13 18 left
