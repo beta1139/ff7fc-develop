@@ -7,7 +7,6 @@ chg_char_dir right
 sleep 8
 chg_npc_dir 1920 left
 fi
-if_flag 16 0
 if_char_dir down
 move_char up 2
 move_npc 1920 up 2
@@ -16,6 +15,7 @@ chg_npc_dir 1921 up
 sleep 8
 chg_npc_dir 1920 down
 fi
+if_flag 16 0
 if_char_dir right
 move_npc 1920 left 2
 sleep 8
