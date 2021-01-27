@@ -45,10 +45,14 @@ sleep 8
 play_se door_open.ogg
 create map_obj 9980 99 28 20 53 0 0 
 sleep 24
-draw_char on
+set_char_layer back
+create npc_event 9845 99 29 20 0 2 2 none
 chg_event_move_char_speed normal
 move_char left 1
+move_npc 9845 left 1
 sleep 16
+draw_char on
+kill 9845
 kill 9980
 set_npc_pos 9919 99 29 21
 set_npc_pos 9920 99 29 22

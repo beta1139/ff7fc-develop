@@ -23,6 +23,11 @@ move_char down 1
 sleep 16
 end
 fi
+if_flag 30 27
+if_not_owned_item 6020
+end
+fi
+fi
 msg 　エレベーターにのりますか？\n\n\n\n#2\n　　はい\n　　いいえ\n\n\n[[]][[]]
 if_flag 3 0
 if_flag_lesser 25 10

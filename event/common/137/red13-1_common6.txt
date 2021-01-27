@@ -1,7 +1,7 @@
 stop_se
 sleep 16
 set_flag 20 1
-boss_encount 285
+boss_encount 1
 sleep 64
 kill 13701
 warp 137 13 18 left
@@ -20,7 +20,7 @@ set_npc_pos 13712 137 15 19
 fi
 wait_encount_end
 set_flag 20 0
-play_event_bgm 3-01-Cosmo_Canyon.ogg
+play_event_bgm 1-21_Red_XIII's_Theme_1.ogg
 if_not_owned_or_equipped_item 4207
 create treasure_materia 13740 137 10 20 2 0 0 4207
 play_se coin.ogg

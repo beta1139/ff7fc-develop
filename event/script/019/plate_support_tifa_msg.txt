@@ -1,9 +1,8 @@
 chg_event_move_char_speed fast
-set_flag 16 0
 if_char_dir left
+set_flag 16 1
 move_npc 1920 right 2
 sleep 8
-set_flag 16 1
 chg_char_dir right
 sleep 8
 chg_npc_dir 1920 left

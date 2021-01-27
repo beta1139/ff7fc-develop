@@ -70,6 +70,8 @@ kill 9821
 kill 9822
 restore_char_img
 set_flag 30 18
+create event_generator 9840 99 23 32 17 0 0 @../common/move_right.txt
+create event_generator 9841 99 24 32 17 0 0 @099/train_graveyard_tips.txt
 draw_image 9899 16 16 0 0 224 32 1 event/train_graveyard.bmp
 wait_key_push_edge a
 erase_image 9899
