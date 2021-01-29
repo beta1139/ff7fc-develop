@@ -36,6 +36,14 @@ move_char down 1
 sleep 16
 end
 fi
+if_flag 25 10
+if_not_owned_item 6019
+msg {Doesn't work==\n We need another way up.
+move_char down 1
+sleep 16
+end
+fi
+fi
 include ./event/common/108/outside_elevator_msg_common.txt
 fi
 if_flag 3 1
