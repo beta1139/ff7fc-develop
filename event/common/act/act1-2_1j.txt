@@ -3,7 +3,7 @@ kill_through_range 1765 1799
 kill_through_range 1900 1949
 kill_through_range 1963 2089
 kill_through_range 2200 2249
-kill_through_range 2251 2260
+kill_through_range 2251 2262
 kill_through_range 2300 2359
 kill_through_range 2530 2531
 kill_through_range 2600 2601
