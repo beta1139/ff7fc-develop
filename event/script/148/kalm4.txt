@@ -8,6 +8,7 @@ chg_npc_dir 14811 up
 chg_npc_dir 14812 up
 create npc_event 14810 148 6 7 0 1 2 none
 draw_char off
+kill_through_range 14822 14825
 sleep 16
 chg_npc_img 14811 95
 jump_npc 14811 same 1
