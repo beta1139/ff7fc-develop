@@ -1,0 +1,58 @@
+chg_npc_img 32811 198
+chg_npc_dir 32811 up
+chg_npc_img 32812 198
+chg_npc_img 32813 198
+chg_npc_dir 32813 down
+set_npc_pos 32812 328 4 16
+set_npc_pos 32813 328 4 15
+play_se katana.ogg
+sleep 8
+// セフィロス　さらに昂る
+chg_npc_dir 32811 right
+chg_npc_img 32812 17
+chg_npc_img 32813 17
+chg_npc_img 32814 199
+set_npc_pos 32814 328 6 16
+chg_npc_dir 32814 down
+loop 2
+inc_map_draw_y_offset
+chg_npc_y_offset 32862 2
+chg_npc_y_offset 32863 2
+sleep 2
+dec_map_draw_y_offset
+chg_npc_y_offset 32862 0
+chg_npc_y_offset 32863 0
+sleep 2
+pool
+chg_speed 32810 normal
+step_npc 32810 2
+set_flag 17 3
+loop 2
+sleep 24
+chg_npc_img 32811 199
+chg_npc_dir 32811 right
+chg_npc_img 32812 17
+chg_npc_img 32813 17
+chg_npc_img 32814 17
+play_se katana.ogg
+sleep 8
+chg_npc_dir 32811 up
+chg_npc_img 32812 199
+set_npc_pos 32812 328 5 15
+chg_npc_img 32813 17
+chg_npc_img 32814 17
+loop 2
+inc_map_draw_y_offset
+chg_npc_y_offset 32862 2
+chg_npc_y_offset 32863 2
+sleep 2
+dec_map_draw_y_offset
+chg_npc_y_offset 32862 0
+chg_npc_y_offset 32863 0
+sleep 2
+pool
+pool
+create event_generator 32826 328 0 0 17 0 0 @../common/328/sephiros_shaking.txt
+sleep 16
+erase_msg3
+sleep 16

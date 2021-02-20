@@ -3,6 +3,7 @@ create event_generator 3012 30 8 6 17 0 0 @030/train5.txt
 chg_char_state_move
 stop_se
 loop_inf
+if_flag 17 0
 sleep 32
 inc_map_draw_y_offset
 sleep 8
@@ -20,4 +21,8 @@ inc_map_draw_y_offset
 sleep 16
 dec_map_draw_y_offset
 sleep 48
+fi
+if_flag 17 1
+end
+fi
 pool

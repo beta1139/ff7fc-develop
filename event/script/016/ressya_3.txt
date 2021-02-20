@@ -17,6 +17,8 @@ sleep 16
 play_se train_info.ogg
 msg しゃないアナウンス\n「まもなく　スラムななばんがい\n　れっしゃはかば　えき
 sleep 32
+set_flag 17 1
+wait_event_invalid 1600
 fadeout
 kill_through_range 1600 1699
 draw_char off
@@ -28,3 +30,4 @@ set_key_valid right
 set_key_valid start
 sleep 40
 fadein
+set_flag 17 0

@@ -1,0 +1,112 @@
+wait_same_pos
+chg_char_dir left
+create npc_event 72713 727 46 12 31 2 2 
+move_npc 72713 left 2
+set_layer 72713 front
+set_ignore_map_layer_flag 72713 1
+create npc_event 72714 727 46 11 31 2 2 「はやくいこうぜ
+move_npc 72714 left 5
+sleep 32
+move_npc 72713 up 2
+sleep 32
+move_npc 72713 left 3
+sleep 48
+chg_speed 72710 slow
+move_npc 72710 left 2
+chg_npc_dir 72713 left
+loop 2
+sleep 1
+chg_npc_y_offset 72490 1
+chg_npc_y_offset 72491 1
+sleep 1
+chg_npc_y_offset 72490 0
+chg_npc_y_offset 72491 0
+sleep 6
+pool
+sleep 8
+loop 2
+sleep 1
+chg_npc_y_offset 72488 1
+chg_npc_y_offset 72489 1
+sleep 1
+chg_npc_y_offset 72488 0
+chg_npc_y_offset 72489 0
+sleep 6
+pool
+sleep 8
+loop 2
+sleep 1
+chg_npc_y_offset 72486 1
+chg_npc_y_offset 72487 1
+sleep 1
+chg_npc_y_offset 72486 0
+chg_npc_y_offset 72487 0
+sleep 6
+pool
+chg_npc_dir 72710 right
+sleep 16
+msg ティファ\n「さ　ここからがたいへんよ！\n　ついてきて！
+set_flag 17 1
+chg_speed 72710 normal
+move_npc 72710 left 8
+loop 2
+sleep 1
+chg_npc_y_offset 72484 1
+chg_npc_y_offset 72485 1
+sleep 1
+chg_npc_y_offset 72484 0
+chg_npc_y_offset 72485 0
+sleep 6
+pool
+sleep 8
+chg_speed 72713 slow
+chg_speed 72714 slow
+move_npc 72714 left 4
+move_npc 72713 left 4
+set_ignore_map_layer_flag 72713 0
+set_layer 72713 back
+loop 2
+sleep 1
+chg_npc_y_offset 72482 1
+chg_npc_y_offset 72483 1
+sleep 1
+chg_npc_y_offset 72482 0
+chg_npc_y_offset 72483 0
+sleep 6
+pool
+loop 2
+sleep 1
+chg_npc_y_offset 72480 1
+chg_npc_y_offset 72481 1
+sleep 1
+chg_npc_y_offset 72480 0
+chg_npc_y_offset 72481 0
+sleep 6
+pool
+loop 2
+sleep 1
+chg_npc_y_offset 72478 1
+chg_npc_y_offset 72479 1
+sleep 1
+chg_npc_y_offset 72478 0
+chg_npc_y_offset 72479 0
+sleep 6
+pool
+sleep 24
+chg_event_move_char_speed slow
+move_char left 1
+sleep 32
+chg_event_move_char_speed normal
+chg_npc_y_offset 72490 1
+chg_npc_y_offset 72491 1
+sleep 1
+chg_npc_y_offset 72490 0
+chg_npc_y_offset 72491 0
+sleep 23
+chg_speed 72713 not_move
+chg_speed 72714 not_move
+chg_type 72714 npc
+chg_npc_dir 72710 right
+chg_speed 72710 not_move
+set_flag_wall 72714
+create event_generator 72721 727 28 11 17 0 0 @727/mt_nibel3.txt

@@ -1,0 +1,41 @@
+wait_target_talked 32811
+include ./event/common/328/nibel_reactor3_1.txt
+msg セフィロス\n「……わかったよ　ホウジョウ\n\n\n　でもな　こんなことしたって\n　あんたは　ガストはかせ　には\n　かなわないのさ
+sleep 16
+chg_npc_img 32811 5
+sleep 24
+chg_npc_dir 32811 left
+sleep 16
+chg_speed 32811 normal
+step_npc 32811 2
+msg セフィロス\n「これは　まこうエネルギーを　ぎょうしゅくして\n　さらに　ひやすシステムだ……ほんらいは　な\n\n　さて……さらに　ぎょうしゅく　すると\n　まこうエネルギーは　どうなる？
+create npc_event 32810 328 8 16 12 3 3 none
+draw_char off
+sleep 16
+chg_npc_dir 32810 down
+sleep 16
+chg_npc_dir 32810 left
+sleep 8
+chg_npc_dir 32810 up
+sleep 24
+chg_npc_dir 32810 right
+sleep 16
+jump_npc 32810 same 1
+sleep 16
+step_npc 32810 2
+msg 『え　ええと……\n　そうだった！\n　マテリアが　できるんだな
+sleep 16
+step_npc 32811 2
+msg セフィロス\n「そう　ふつうならな。\n　でもホウジョウは　このなかに　あるものをいれた。\n　……みろ
+sleep 16
+chg_speed 32811 slow
+move_npc 32811 right 1
+sleep 32
+chg_npc_dir 32811 left
+draw_char on
+kill 32810
+chg_speed 32811 not_move
+chg_type 32811 npc
+chg_param 32811 セフィロス\n「マドから　なかを　のぞいてみろ
+kill 32800
+create event_generator 32824 328 9 15 17 0 0 @../common/328/nibel_reactor4.txt

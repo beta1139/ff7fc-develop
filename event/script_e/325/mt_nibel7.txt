@@ -1,0 +1,172 @@
+wait_same_pos
+chg_char_dir down
+sleep 16
+create npc_event 32510 325 13 13 31 0 1 none
+create npc_event 32511 325 13 13 5 0 1 none
+create npc_event 32513 325 13 13 14 1 1 none
+move_npc 32510 right 1
+move_npc 32511 down 2
+move_npc 32513 left 1
+sleep 32
+move_npc 32510 down 2
+move_npc 32513 down 2
+sleep 64
+chg_npc_dir 32510 up
+chg_npc_dir 32511 up
+sleep 32
+chg_npc_dir 32513 up
+sleep 8
+chg_npc_dir 32513 right
+sleep 8
+chg_npc_dir 32513 down
+sleep 8
+chg_npc_dir 32513 left
+sleep 8
+chg_npc_dir 32513 up
+chg_speed 32513 normal
+step_npc 32513 2
+msg ティファ\n「ついたわ。\n ずいぶん　とおまわり\n　しちゃったけどね
+create npc_event 32512 325 13 13 12 1 1 none
+draw_char off
+sleep 16
+move_npc 32512 left 1
+sleep 32
+move_npc 32512 down 1
+sleep 32
+chg_speed 32512 normal
+step_npc 32512 2
+msg 『ティファはここで　まっていてくれ
+chg_speed 32513 fast
+jump_npc 32513 same 1
+sleep 16
+jump_npc 32513 same 1
+sleep 16
+step_npc 32513 2
+msg ティファ\n「わたしも　なかへいく！\n　みたい！
+sleep 16
+move_npc 32511 up 3
+chg_npc_dir 32512 right
+chg_npc_img 32512 97
+step_npc 32512 3
+sleep 96
+set_talk_npc 32511
+step_npc 32511 1
+msg セフィロス\n「このなかは　いっぱんじん　たちいりきんしだ\n　しんらの　きぎょうひみつで\n　いっぱいだからな
+reset_talk_npc
+jump_npc 32513 same 1
+sleep 16
+step_npc 32513 1
+msg ティファ\n「でも！
+chg_npc_dir 32511 down
+sleep 32
+chg_speed 32511 slow
+move_npc 32511 down 1
+sleep 32
+chg_speed 32511 normal
+step_npc 32511 1
+msg セフィロス\n「おじょうさんを　まもってやりな
+sleep 16
+chg_npc_img 32512 12
+chg_npc_dir 32512 down
+chg_speed 32510 normal
+jump_npc 32510 same 1
+sleep 16
+step_npc 32510 2
+sleep 48
+chg_speed 32511 slow
+chg_speed 32512 slow
+move_npc 32511 up 2
+move_npc 32512 right 1
+sleep 32
+chg_speed 32510 slow
+move_npc 32510 left 1
+move_npc 32512 up 4
+sleep 32
+move_npc 32510 up 2
+chg_speed 32511 normal
+step_npc 32511 2
+sleep 16
+chg_speed 32513 normal
+jump_npc 32513 same 1
+sleep 16
+play_se door_open.ogg
+open_door 32550
+chg_speed 32511 slow
+move_npc 32511 up 1
+move_npc 32513 right 1
+sleep 16
+move_npc 32513 up 1
+sleep 16
+kill 32511
+chg_npc_dir 32510 down
+sleep 8
+chg_speed 32510 normal
+jump_npc 32510 same 1
+sleep 16
+step_npc 32510 2
+sleep 8
+kill 32512
+sleep 8
+close_door 32550
+sleep 24
+jump_npc 32513 same 2
+msg3 -1 ティファ\n「ん　もう！
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 16
+wait_key_push_edge a
+erase_msg3
+sleep 16
+chg_npc_img 32513 193
+chg_npc_dir 32513 up
+sleep 16
+chg_speed 32513 slow
+slide_walk_npc 32513 down 1
+sleep 64
+slide_walk_npc 32513 down 1
+sleep 48
+chg_npc_img 32513 193
+chg_npc_dir 32513 up
+sleep 16
+chg_speed 32513 normal
+jump_npc 32513 same 2
+sleep 32
+play_se bump.ogg
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 24
+chg_npc_dir 32513 right
+sleep 16
+step_npc 32513 2
+msg ティファ\n「しっかりまもってね！
+create event_generator 32720 327 11 19 17 0 0 @../common/327/nibel_reactor_jump1.txt
+create event_generator 32721 327 11 23 17 0 0 @../common/327/nibel_reactor_jump1.txt
+create npc_event 32711 327 14 18 5 2 1 none
+create event_generator 32724 327 18 24 17 0 0 @../common/327/nibel_reactor_sephiros.txt
+create npc2 32800 328 9 15 17 0 0 
+create npc2 32811 328 7 10 5 0 0 セフィロス\n「バルブは　とじたのか？
+create event_generator 32820 328 7 19 17 0 0 @../common/328/nibel_reactor.txt
+create event_generator 32821 328 0 0 17 0 0 @328/nibel_reactor1.txt
+create map_door 32850 328 7 9 22 0 0 
+recover_all_chara
+sleep 16
+warp_ff3_2 327 18 24 2 up
+draw_char on
+open_door 32550
+set_flag_wall 32510
+chg_type 32513 npc
+chg_npc_img 32513 14
+chg_speed 32513 slow
+set_flag_wall 32513

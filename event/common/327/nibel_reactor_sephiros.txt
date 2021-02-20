@@ -1,0 +1,12 @@
+wait_same_pos
+set_flag 17 0
+chg_char_state_move
+move_npc 32711 up 12
+set_flag_wall 32711
+sleep 352
+chg_npc_img 32711 17
+set_flag 17 1
+sleep 32
+loop_inf
+sleep 160
+pool

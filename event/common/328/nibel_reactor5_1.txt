@@ -1,0 +1,30 @@
+fadeout
+set_flag 17 0
+stop_se
+kill 32824
+kill_through_range 32825 32826
+reset_screen_effect
+// ƒ|ƒbƒh“à‚ðŒ©‚½Œã
+chg_type 32811 npc_event
+chg_speed 32811 normal
+sleep 16
+erase_image_range 000 003
+warp 328 9 15 up
+sleep 32
+fadein
+jump_char down 1
+jump_npc_target_pos 32810 9 16
+sleep 8
+chg_npc_img 32810 12
+chg_npc_dir 32810 up
+sleep 8
+play_se landing.wav
+sleep 8
+chg_npc_img 32810 197
+sleep 24
+loop 3
+chg_npc_y_offset 32810 -3
+sleep 2
+chg_npc_y_offset 32810 -4
+sleep 2
+pool

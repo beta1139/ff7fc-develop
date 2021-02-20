@@ -13,7 +13,7 @@ set_text_alpha 4 25
 sleep 8
 include ./event/common/set_text/clear_alpha0.txt
 set_text 2 　 　ニブルさんの さむざむとした　くうき
-set_text 3 　 　かわってなかったな…
+set_text 3 　 　かわっていなかったな…
 include ./event/common/set_text/st02.txt
 include ./event/common/set_text/st03.txt
 sleep 416
@@ -24,8 +24,7 @@ set_text_alpha 2 25
 set_text_alpha 3 25
 sleep 8
 include ./event/common/set_text/clear_alpha0.txt
-loop 50
-dec_image_alpha 000
-sleep 1
-pool
-erase_image 000
+wait_event_invalid 72621
+create event_generator 72720 727 37 11 17 0 0 @727/mt_nibel2.txt
+chg_char_state_event
+include ./event/common/key_valid.txt

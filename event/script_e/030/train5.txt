@@ -129,9 +129,10 @@ draw_char on
 kill 3000
 sleep 16
 play_se train_info.ogg
+set_flag 17 1
 msg `UNIDENTIFIED PASSENGER\n DISPLACEMENT DETECTED\n VERIFICATION IN PROGRESS
 play_se_loop alarm.ogg
-kill_through 3020
+wait_event_invalid 3020
 chg_type 3005 npc3
 sleep 8
 create event_generator 3013 30 2 6 17 0 0 @../common/028/train_move_alarm.txt
@@ -142,3 +143,4 @@ set_key_valid down
 set_key_valid right
 set_key_valid start
 start_fake_countdown_sec 18
+set_flag 17 0

@@ -1,0 +1,6 @@
+wait_same_pos
+stop_se
+kill_through 73120
+kill_through 72921
+create event_generator 73021 730 13 19 17 0 0 @../common/730/mt_nibel_spring.txt
+create event_generator 73022 730 13 8 17 0 0 @../common/730/mt_nibel_spring.txt

@@ -201,6 +201,8 @@ sleep 40
 kill 3201
 move_char down 3
 sleep 32
+set_flag 16 1
+set_flag 17 1
 chg_npc_dir 3204 right
 sleep 16
 chg_npc_dir 3203 down
@@ -209,8 +211,8 @@ chg_npc_dir 3205 down
 sleep 64
 chg_npc_dir 3204 down
 sleep 16
-kill_through 2815
-kill_through 3013
+wait_event_invalid 2815
+wait_event_invalid 3013
 kill_through 2820
 kill_through 2821
 reset_screen_effect

@@ -1,0 +1,201 @@
+wait_same_pos
+set_flag 17 0
+play_se_loop spring.ogg
+create npc_event 73013 730 13 19 12 0 1 none
+draw_char off
+set_screen_effect add 144 208 255 0
+include ./event/common/key_unvalid.txt
+move_char up 7
+move_npc 73013 up 3
+sleep 36
+loop 20
+inc_screen_effect_val 1
+sleep 3
+pool
+create npc_event 73010 730 13 16 31 0 1 none
+create npc_event 73011 730 13 16 5 0 1 none
+create npc_event 73012 730 13 16 14 0 1 none
+move_npc 73010 right 2
+sleep 32
+chg_char_state_move
+move_npc 73011 left 1
+move_npc 73012 right 1
+sleep 32
+chg_npc_dir 73010 up
+chg_npc_dir 73011 up
+chg_npc_dir 73012 up
+step_npc 73013 2
+loop 20
+dec_screen_effect_val 1
+sleep 3
+pool
+reset_screen_effect
+msg 『……これは？
+chg_event_move_char_speed slow
+sleep 16
+chg_npc_dir 73011 right
+sleep 16
+step_npc 73011 2
+msg セフィロス\n「まこうのいずみ。\n　しぜんのきょうい　というやつだな
+chg_event_move_char_speed normal
+set_active_msg 73012
+move_npc 73012 up 1
+sleep 16
+msg ティファ\n「こんなに　きれいなのに……
+sleep 16
+move_npc 73012 right 1
+sleep 16
+chg_npc_dir 73011 up
+sleep 16
+move_npc 73012 up 2
+sleep 64
+chg_npc_dir 73012 down
+sleep 16
+step_npc 73012 3
+msg ティファ\n「このまま　まこうろが　エネルギーを\n　すいあげつづけたら\n　このいずみも　きえてしまうのね
+sleep 16
+move_npc 73011 up 2
+sleep 32
+chg_npc_dir 73012 left
+sleep 32
+move_npc 73011 left 1
+sleep 32
+move_npc 73011 up 1
+sleep 32
+chg_npc_dir 73011 right
+sleep 16
+chg_speed 73011 normal
+step_npc 73011 3
+msg セフィロス\n「マテリアだ。\n　まこうエネルギーが　ぎょうしゅくされると\n　マテリアができる\n　てんねんの　マテリアをみるなんて\n　めったにない　きかいだ
+chg_speed 73013 normal
+move_npc 73013 up 1
+move_npc 73010 up 1
+sleep 16
+move_npc 73013 left 2
+sleep 16
+move_npc 73010 left 2
+sleep 16
+move_npc 73013 up 1
+sleep 16
+move_npc 73013 left 1
+sleep 16
+move_npc 73013 up 3
+sleep 16
+chg_npc_dir 73010 up
+sleep 32
+move_npc 73013 right 3
+sleep 48
+chg_npc_dir 73013 down
+sleep 24
+jump_npc 73013 same 1
+sleep 16
+step_npc 73013 2
+set_talk_npc 73013
+msg 『そういえば……\n　どうしてマテリアをつかうと\n　まほうを　つかうことができるんだ？
+reset_talk_npc
+sleep 16
+chg_npc_dir 73011 up
+sleep 16
+jump_npc 73011 same 1
+msg セフィロス\n「そんなこともしらずに\n ソルジャーをやっているのか？
+chg_npc_dir 73013 right
+chg_npc_img 73013 97
+sleep 16
+chg_speed 73013 slow
+step_npc 73013 1
+chg_npc_dir 73011 right
+sleep 16
+chg_speed 73011 slow
+step_npc 73011 3
+msg セフィロス\n「……マテリアのなかには\n　いわゆる　こだいしゅの　ちしきが\n　ふうじこまれている\n　だいち　ほしのちからを　じゆうにあやつる　ちしき。\n　そのちしきが　ほしと　われわれを　むずびつけ\n　まほうをよびだす……といわれている
+chg_npc_img 73013 12
+chg_npc_dir 73013 down
+chg_npc_dir 73011 up
+sleep 32
+chg_speed 73013 slow
+step_npc 73013 2
+set_talk_npc 73013
+msg 『まほう……ふしぎなちからだ……
+reset_talk_npc
+sleep 16
+chg_npc_dir 73011 down
+sleep 16
+chg_speed 73011 normal
+chg_npc_img 73011 189
+chg_npc_dir 73011 down
+sleep 16
+step_npc 73011 8
+create event_generator 73021 730 13 19 17 0 0 @../common/730/laugh.txt
+msg セフィロス\n「ハハハハハ！
+sleep 16
+jump_npc 73013 same 1
+sleep 16
+chg_speed 73013 normal
+step_npc 73013 2
+set_talk_npc 73013
+msg 『なにか　へんなこといったか？
+reset_talk_npc
+set_flag 17 1
+wait_event_invalid 73021
+sleep 16
+chg_speed 73011 slow
+chg_npc_dir 73011 right
+sleep 32
+step_npc 73011 4
+msg セフィロス\n「ある　おとこがな　ふしぎなちからなんて\n　ひかがくてきな　いいかたは　ゆるさん\n　まほうなんて　よびかたもダメだ！\n　そういって　おこっていたのを\n　おもいだしただけだ
+sleep 16
+step_npc 73013 1
+set_talk_npc 73013
+msg 『だれだ　それ？
+reset_talk_npc
+chg_npc_img 73011 5
+chg_npc_dir 73011 up
+sleep 16
+step_npc 73011 3
+msg セフィロス\n「しんらカンパニーの　ホウジョウ。\n　いだいな　かがくしゃの　しごとをひきついだ\n　みじゅくな　おとこだ\n　コンプレックスのかたまりのような　おとこだな
+chg_npc_dir 73011 right
+sleep 48
+step_npc 73012 3
+msg ティファ\n「まこうのいずみ……\n　このなかには　こだいしゅのちしきが\n　はいっているのね
+sleep 16
+fadeout
+stop_se
+sleep 64
+warp 728 23 9 right
+create npc_event 72811 728 22 10 5 3 1 none
+create npc_event 72812 728 24 10 14 3 1 none
+create npc_event 72810 728 26 9 31 3 1 none
+create npc_event 72813 728 28 9 12 3 1 none
+move_npc 72811 left 10
+move_npc 72812 left 12
+move_npc 72810 left 12
+move_npc 72813 left 12
+fadein
+sleep 40
+chg_event_move_char_speed slow
+move_char left 8
+sleep 256
+move_npc 72811 up 2
+sleep 32
+fadeout
+warp 325 31 29 up
+kill_through_range 73010 73013
+kill_through_range 72810 72813
+create map_door 32550 325 13 10 0 0 0 
+create map_door 32551 325 19 2 0 0 0 
+create npc2 32500 325 19 2 17 0 0 
+fadein
+sleep 32
+warp_ff3_2 325 11 16 2 up
+draw_char on
+create event_generator 32520 325 6 19 17 0 0 @../common/325/mt_nibel_warp.txt
+create event_generator 32521 325 5 19 17 0 0 @../common/325/mt_nibel_warp.txt
+create event_generator 32522 325 6 18 17 0 0 @../common/encount_off.txt
+create event_generator 32523 325 13 13 17 0 0 @325/mt_nibel7.txt
+chg_event_move_char_speed normal
+create event_generator 73021 730 13 19 17 0 0 @../common/730/mt_nibel_spring.txt
+create event_generator 73022 730 13 8 17 0 0 @../common/730/mt_nibel_spring.txt
+chg_char_state_event
+include ./event/common/key_valid.txt
+recover_all_chara
+set_flag 1 1

@@ -49,10 +49,10 @@ erase_image_range 003 005
 sleep 72
 play_event_bgm 1-11-Fanfare.ogg
 wait_key_push_edge a
-play_event_bgm Ex-08-nothing.ogg
+stop_bgm
 sleep 32
 erase_image 000
 sleep 16
-play_event_bgm 1-02b-Bombing_Mission.ogg
+play_event_bgm 1-20-Still_more_Fighting.ogg
 sleep 16
-create event_generator 95150 951 7 5 17 0 0 @../common/951/guard_scorpion.txt
+create event_generator 95155 951 7 5 17 0 0 @../common/951/ru-fausu.txt

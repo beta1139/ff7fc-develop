@@ -1,0 +1,50 @@
+wait_talk
+create npc_event 32810 328 9 16 12 0 0 none
+draw_char off
+play_se jump.wav
+jump_char up 1
+chg_speed 32810 slow
+jump_npc_target_pos 32810 9 15
+sleep 8
+chg_npc_dir 32810 down
+chg_npc_img 32810 197
+sleep 8
+step_npc 32810 1
+inc_map_draw_y_offset
+chg_npc_y_offset 32810 -3
+sleep 4
+dec_map_draw_y_offset
+chg_npc_y_offset 32810 -4
+sleep 4
+chg_npc_y_offset 32810 -3
+sleep 4
+chg_npc_y_offset 32810 -4
+sleep 24
+fadeout
+include ./event/common/key_unvalid.txt
+warp 328 0 29 up
+draw_char off
+sleep 32
+set_image_trans_col 96 96 96
+draw_image 001 82 36 0 0 90 90 0 event/mt_nibel/monster.png
+draw_image 000 82 36 0 0 90 90 0 event/mt_nibel/monster_gray.png
+draw_image 003 0 8 0 0 256 224 1 event/mt_nibel/window.png
+draw_image 002 0 8 0 0 256 480 1 event/mt_nibel/bubble.png
+sleep 32
+play_se_loop magic_light_reactor_pod.ogg
+chg_char_state_move
+create event_generator 32825 328 0 0 17 0 0 @../common/328/pod_bubble.txt
+fadein
+create event_generator 32826 328 0 0 17 0 0 @../common/328/pod_effect.txt
+create event_generator 32827 328 0 0 17 0 0 @328/nibel_reactor5.txt
+loop_inf
+loop 2
+sleep 16
+chg_image_pos_offset 000 0 -1 0 0 0 0
+chg_image_pos_offset 001 0 -1 0 0 0 0
+sleep 4
+chg_image_pos_offset 000 0 1 0 0 0 0
+chg_image_pos_offset 001 0 1 0 0 0 0
+sleep 4
+pool
+pool

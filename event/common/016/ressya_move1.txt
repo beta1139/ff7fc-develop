@@ -6,6 +6,7 @@ fi
 sleep 16
 chg_char_state_move
 loop_inf
+if_flag 17 0
 inc_map_draw_y_offset
 sleep 8
 dec_map_draw_y_offset
@@ -14,4 +15,8 @@ inc_map_draw_y_offset
 sleep 16
 dec_map_draw_y_offset
 sleep 48
+fi
+if_flag 17 1
+end
+fi
 pool

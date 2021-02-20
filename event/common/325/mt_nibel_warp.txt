@@ -1,0 +1,9 @@
+set_eternal_event
+wait_same_pos
+if_flag_lesser 9 8
+warp_ff3_2 732 12 8 3 down
+fi
+if_flag_greater 9 7
+warp_ff3_2 324 12 8 3 down
+fi
+set_flag 1 0

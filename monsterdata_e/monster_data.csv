@@ -128,10 +128,10 @@ monster_id,print_name,lv,hp,mp,attack,magic,defense,m.defense,dexterity,evade,ex
 126,Yang,24,1200,220,5,32,50,420,75,1,300,40,300,0,yan.bmp
 127,Ying,24,1200,0,75,5,420,50,75,1,400,30,400,0,yan.bmp
 128,Zu,27,1200,40,55,40,50,150,64,1,450,38,430,0,zu.bmp
-129,SonicSpeed,26,750,50,52,44,52,96,60,1,370,28,330,0,none.bmp
-130,TwinBrain,25,400,20,45,25,44,96,48,1,340,32,320,0,none.bmp
+129,SonicSpeed,26,750,50,52,44,52,96,60,1,370,28,330,0,sonic_speed.bmp
+130,TwinBrain,25,400,20,45,25,44,96,48,1,340,32,320,0,twin_brain.bmp
 131,Dragon,32,3500,250,90,65,120,300,90,20,900,110,1400,0,dragon.bmp
-132,Kyuvilduns,24,800,0,48,40,42,64,56,1,340,34,368,0,none.bmp
+132,Kyuvilduns,24,800,0,48,40,42,64,56,1,340,34,368,0,kyuvilduns.bmp
 133,Screamer,26,800,40,67,40,44,120,68,1,400,33,400,0,screamer.bmp
 134,MateriKeep,38,8400,300,?,?,?,?,?,?,3000,200,2400,0,materia_keeper.bmp
 135,Palmer,38,6000,240,?,?,?,?,?,?,1800,98,5000,0,paruma.bmp
@@ -290,3 +290,7 @@ monster_id,print_name,lv,hp,mp,attack,magic,defense,m.defense,dexterity,evade,ex
 288,Chocobo,?,?,?,13,52,40,26,101,1,10,1,1,0,cyokobo.bmp
 289,Test0,?,30000,0,?,?,?,?,?,?,1000,100,10000,0,none.bmp
 290,MistyNinja,?,?,?,?,?,?,?,?,?,?,?,?,0,nazono_ninja.bmp
+291,Dragon,32,3500,250,90,65,120,300,90,20,0,0,0,0,dragon.bmp
+292,SonicSpeed,26,750,50,52,44,52,96,60,1,0,0,0,0,sonic_speed.bmp
+293,Kyuvilduns,24,800,0,48,40,42,64,56,1,0,0,0,0,kyuvilduns.bmp
+294,TwinBrain,25,400,20,45,25,44,96,48,1,0,0,0,0,twin_brain.bmp

@@ -1,0 +1,4 @@
+wait_same_pos
+kill_through 32724
+kill_through 32711
+chg_char_state_event

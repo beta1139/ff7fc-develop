@@ -1,0 +1,260 @@
+sleep 240
+include ./event/common/328/nibel_reactor5_1.txt
+msg 『こ　これは！？
+sleep 48
+step_npc 32811 2
+msg セフィロス\n「おまえたち　ふつうのソルジャーは\n　まこうを　あびた　にんげんだ\n\n　いっぱんじん　とはちがうが\n　それでも　にんげんなんだ
+chg_npc_dir 32811 right
+sleep 16
+chg_speed 32811 slow
+move_npc 32811 right 1
+sleep 40
+chg_npc_dir 32811 up
+sleep 32
+chg_npc_dir 32811 left
+sleep 32
+chg_speed 32811 normal
+jump_npc 32811 same 1
+msg セフィロス\n「しかし　こいつらはなんだ？\n　おまえたちとは　くらべものに　ならないほど\n　こうみつどの　まこうに　ひたされている
+sleep 32
+chg_char_dir up
+reset_char_img_tmp
+draw_char on
+kill 32810
+sleep 32
+step_char 1
+sleep 32
+msg 『……これが　モンスター？
+sleep 16
+chg_npc_dir 32811 up
+sleep 16
+step_npc 32811 2
+msg セフィロス\n「そうだ。\n　モンスターをうみだしたのは\n　しんらカンパニーの　ホウジョウだ\n　まこうエネルギーが　つくりだす\n　いぎょうの　せいぶつ。\n　それがモンスターの　しょうたい
+sleep 16
+reset_slide_walk_char_flag
+chg_char_dir right
+sleep 16
+chg_event_move_char_speed normal
+jump_char same 1
+sleep 16
+step_char 1
+sleep 16
+msg 『ふつうのソルジャーって？\n　あんたは　ちがうのか？
+flush
+set_flag 17 0
+sleep 96
+chg_npc_img 32811 196
+sleep 16
+create event_generator 32826 328 0 0 17 0 0 @../common/328/sephiros_shaking.txt
+sleep 24
+move_char right 1
+sleep 16
+chg_event_move_char_speed fast
+jump_char same 1
+msg3 -1 『お　おい　セフィロス！
+sleep 16
+step_char 2
+sleep 16
+wait_key_push_edge a
+erase_msg3
+set_flag 17 1
+sleep 32
+msg セフィロス\n「ま　まさか……
+set_flag 17 2
+sleep 64
+chg_speed 32811 slow
+step_npc 32811 2
+sleep 16
+create npc_event 32812 328 10 16 17 2 2 none
+create npc_event 32813 328 10 15 17 1 2 none
+create npc_event 32814 328 12 16 17 1 2 none
+create map_obj 32860 328 11 14 79 0 0 
+create map_obj 32861 328 11 15 80 0 0 
+create map_obj 32862 328 5 14 77 0 0 
+create map_obj 32863 328 5 15 78 0 0 
+create npc_event 32810 328 10 16 12 3 2 none
+draw_char off
+msg セフィロス\n「……オレも？
+include ./event/common/328/nibel_reactor5_2.txt
+msg セフィロス\n「……オレはこうして　うみだされたのか？
+include ./event/common/328/nibel_reactor5_3.txt
+msg3 -1 セフィロス\n「オレはモンスターと\n　おなじだというのか……
+set_image_trans_col 0 234 218
+sleep 16
+chg_npc_dir 32810 up
+chg_speed 32810 fast
+step_npc 32810 1
+wait_key_push_edge a
+erase_msg3
+sleep 16
+msg3 -1 『…セフィロス
+include ./event/common/328/nibel_reactor5_4.txt
+msg3 -1 セフィロス\n「おまえも　みただろう！\n　こいつらの　なかにいるのは……\n　まさしく　にんげんだ……
+wait_key_push_edge a
+erase_msg3
+create npc_event 32815 328 7 17 17 2 2 none
+jump_npc 32810 same 1
+sleep 16
+chg_speed 32810 slow
+step_npc 32810 1
+sleep 16
+msg3 -1 『にんげん！？　まさか！
+include ./event/common/328/nibel_reactor5_5.txt
+msg セフィロス\n「……こどものころから\n　オレはかんじていた\n\n　オレは　ほかの　やつらとはちがう。\n　オレは　とくべつなそんざい\n　なんだと　おもっていた
+sleep 16
+chg_npc_dir 32811 up
+sleep 32
+step_npc 32811 1
+msg セフィロス\n「しかし　それは……\n　それは　こんな　いみじゃない
+include ./event/common/328/nibel_reactor5_6.txt
+set_image_trans_col 78 168 16
+draw_image 000 0 8 0 0 256 224 1 event/black.png
+draw_image 001 112 172 192 1568 16 16 1 character.bmp
+draw_image 002 96 172 192 1552 16 16 1 character.bmp
+draw_image 003 96 156 192 1536 16 16 1 character.bmp
+set_image_alpha 000 0
+set_image_alpha 001 100
+set_image_alpha 002 100
+set_image_alpha 003 100
+sleep 4
+set_image_alpha 000 10
+sleep 4
+set_image_alpha 000 20
+sleep 4
+set_image_alpha 000 30
+sleep 4
+set_image_alpha 000 40
+sleep 4
+set_image_alpha 000 50
+sleep 4
+set_image_alpha 000 60
+sleep 4
+set_image_alpha 000 70
+sleep 4
+set_image_alpha 000 80
+sleep 4
+set_image_alpha 000 90
+sleep 4
+set_image_alpha 000 100
+stop_bgm
+kill_through_range 32860 32867
+kill 32883
+chg_npc_img 32810 12
+chg_npc_img 32811 17
+chg_npc_img 32812 17
+chg_npc_img 32813 17
+sleep 32
+include ./event/common/set_text/clear_alpha0.txt
+sleep 16
+set_text 6 　 　　 　 　 オレは……にんげんなのか？
+include ./event/common/set_text/st06.txt
+kill 32850
+wait_key_push_edge a
+include ./event/common/set_text/fadeout_all.txt
+draw_image 004 0 8 0 0 256 224 0 event/black.png
+set_text 5 　 　　 　セフィロスが　なにをいっているのか
+set_text 6 　 　　 　そのときの　おれには　よくわからなかった
+set_image_alpha 001 90
+set_image_alpha 002 90
+set_image_alpha 003 90
+sleep 8
+set_image_alpha 001 80
+set_image_alpha 002 80
+set_image_alpha 003 80
+sleep 8
+set_image_alpha 001 70
+set_image_alpha 002 70
+set_image_alpha 003 70
+sleep 8
+set_image_alpha 001 60
+set_image_alpha 002 60
+set_image_alpha 003 60
+sleep 8
+set_image_alpha 000 90
+set_image_alpha 001 50
+set_image_alpha 002 50
+set_image_alpha 003 50
+sleep 8
+set_image_alpha 000 80
+set_image_alpha 001 40
+set_image_alpha 002 40
+set_image_alpha 003 40
+sleep 8
+set_image_alpha 000 70
+set_image_alpha 001 30
+set_image_alpha 002 30
+set_image_alpha 003 30
+sleep 8
+set_image_alpha 000 60
+set_image_alpha 001 20
+set_image_alpha 002 20
+set_image_alpha 003 20
+sleep 8
+set_image_alpha 000 50
+set_image_alpha 001 10
+set_image_alpha 002 10
+set_image_alpha 003 10
+include ./event/common/set_text/al05_000.txt
+set_image_alpha 000 40
+set_image_alpha 001 5
+set_image_alpha 002 5
+set_image_alpha 003 5
+include ./event/common/set_text/al05_025.txt
+set_image_alpha 001 0
+set_image_alpha 002 0
+set_image_alpha 003 0
+set_image_alpha 000 30
+include ./event/common/set_text/al05_050.txt
+set_image_alpha 000 20
+include ./event/common/set_text/al05_075.txt
+set_image_alpha 000 10
+sleep 16
+erase_image_range 001 003
+include ./event/common/set_text/st06.txt
+wait_key_push_edge a
+include ./event/common/set_text/fadeout_all.txt
+set_text 5 　 　　 　おれは　なによりも　しんらカンパニーが
+set_text 6 　 　　 　モンスターをつくっていた　ということに
+set_text 7 　 　　 　ショックをうけていた
+sleep 40
+include ./event/common/set_text/st05.txt
+include ./event/common/set_text/st06.txt
+include ./event/common/set_text/st07.txt
+set_image_alpha 000 10
+sleep 4
+set_image_alpha 000 20
+sleep 4
+set_image_alpha 000 30
+sleep 4
+set_image_alpha 000 40
+sleep 4
+set_image_alpha 000 50
+sleep 4
+set_image_alpha 000 60
+sleep 4
+set_image_alpha 000 70
+sleep 4
+set_image_alpha 000 80
+sleep 4
+set_image_alpha 000 90
+sleep 4
+set_image_alpha 000 100
+wait_key_push_edge a
+include ./event/common/set_text/fadeout_all.txt
+include ./event/common/set_text/clear_alpha0.txt
+fadeout
+sleep 32
+erase_image_range 000 004
+kill 32810
+kill_through_range 14810 14814
+warp 148 6 6 down
+draw_char on
+sleep 16
+create npc_event 14811 148 5 8 1 0 2 none
+create npc_event 14812 148 7 9 2 2 2 none
+create npc_event 14813 148 7 10 3 2 2 none
+create npc_event 14814 148 6 11 4 0 2 none
+create event_generator 14827 148 6 6 17 1 0 @148/cloud's_past07.txt
+sleep 32
+fadein
+chg_char_state_event

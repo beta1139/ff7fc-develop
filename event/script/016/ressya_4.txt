@@ -12,9 +12,10 @@ set_talk_npc 1667
 set_key_valid a
 msg ジェシー\n「わたし　こういうの　すきなのよ\n　ばくだんとか　モニタがめんとか　ハイテクかんけい
 reset_talk_npc
-sleep 48
+set_flag 17 1
+sleep 32
+wait_event_invalid 1600
 fadeout
-kill 1600
 kill_through 1676
 kill 1666
 create npc3 1662 16 16 19 35 0 4 ビッグス\n「スースー……ムニャムニャ……\n　バレット　いばってんじゃねえぞ……
@@ -27,6 +28,7 @@ fadein
 sleep 16
 chg_npc_dir 70300 left
 msg ジェシー\n「さ　はじめるわよ
+set_flag 17 0
 chg_npc_dir 70300 up
 chg_speed 70300 not_move
 sleep 16

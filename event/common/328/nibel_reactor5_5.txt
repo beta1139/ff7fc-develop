@@ -1,0 +1,51 @@
+sleep 16
+chg_speed 32810 fast
+step_npc 32810 4
+kill 32815
+wait_key_push_edge a
+erase_msg3
+// セフィロス　抜刀後静かに歩きだす
+set_flag 17 2
+wait_event_invalid 32826
+chg_npc_y_offset 32811 -4
+chg_npc_y_offset 32812 -4
+sleep 16
+chg_speed 32811 slow
+chg_speed 32812 slow
+chg_speed 32813 slow
+chg_speed 32814 slow
+chg_npc_img 32811 201
+chg_npc_dir 32811 down
+chg_npc_img 32812 201
+set_npc_pos 32812 328 6 16
+chg_npc_img 32813 17
+set_npc_pos 32813 328 5 17
+chg_npc_dir 32813 up
+set_npc_pos 32814 328 4 17
+chg_npc_dir 32814 right
+chg_npc_img 32813 201
+chg_npc_img 32814 201
+sleep 16
+slide_walk_npc 32811 right 2
+slide_walk_npc 32812 right 2
+slide_walk_npc 32813 right 2
+slide_walk_npc 32814 right 2
+loop 4
+sleep 8
+chg_npc_y_offset 32811 -5
+chg_npc_y_offset 32812 -5
+chg_npc_y_offset 32813 -5
+chg_npc_y_offset 32814 -5
+sleep 8
+chg_npc_y_offset 32811 -4
+chg_npc_y_offset 32812 -4
+chg_npc_y_offset 32813 -4
+chg_npc_y_offset 32814 -4
+pool
+sleep 16
+chg_npc_img 32811 202
+chg_npc_img 32812 202
+set_npc_pos 32812 328 7 17
+sleep 16
+step_npc 32811 3
+step_npc 32812 3

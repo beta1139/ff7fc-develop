@@ -1,0 +1,53 @@
+wait_target_talk 32811
+create npc_event 32810 328 7 11 12 0 2 none
+draw_char off
+chg_type 32811 npc_event
+chg_speed 32811 slow
+chg_event_move_char_speed slow
+move_char up 3
+sleep 32
+msg3 -1 『JENOVA……なんだろう。\n　ロックは……あかないか……
+sleep 64
+wait_key_push_edge a
+erase_msg3
+chg_event_move_char_speed normal
+move_char down 3
+sleep 32
+chg_npc_dir 32811 down
+sleep 16
+chg_char_dir up
+draw_char on
+kill 32810
+move_char down 2
+move_npc 32811 down 6
+sleep 32
+move_char left 1
+sleep 16
+chg_char_dir right
+sleep 80
+chg_event_move_char_speed slow
+move_char right 1
+sleep 32
+move_char down 1
+sleep 32
+chg_event_move_char_speed normal
+move_npc 32811 left 2
+sleep 64
+chg_npc_dir 32811 up
+sleep 16
+chg_speed 32811 normal
+step_npc 32811 2
+msg セフィロス\n「いじょうどうさの　げんいんは　これだな。\n　このぶぶんが　こわれているんだ\n\n　クラウド　バルブをとじてくれ
+create event_generator 32822 328 5 15 17 0 0 @328/nibel_reactor2.txt
+jump_char same 1
+sleep 16
+step_char 2
+chg_speed 32811 slow
+move_npc 32811 right 4
+sleep 88
+chg_char_state_move
+sleep 40
+chg_npc_dir 32811 up
+chg_speed 32811 not_move
+chg_type 32811 npc
+chg_char_state_event

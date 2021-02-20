@@ -1,0 +1,15 @@
+wait_talk
+reset_talk_flag 32811
+reset_talked_flag 32811
+step_char 8
+sleep 16
+loop 3
+play_se valve.ogg
+sleep 32
+pool
+sleep 16
+play_se valve_close.ogg
+sleep 16
+chg_type 32811 npc3
+chg_param 32811 セフィロス\n「なぜ　こわれた……？
+create event_generator 32823 328 0 0 17 0 0 @328/nibel_reactor3.txt

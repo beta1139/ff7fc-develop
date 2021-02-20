@@ -1,0 +1,7 @@
+loop_inf
+step_npc 73011 4
+sleep 64
+if_flag 17 1
+end
+fi
+pool

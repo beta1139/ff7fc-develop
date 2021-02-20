@@ -1,0 +1,169 @@
+loop_inf
+if_flag 17 0
+// 「こんな意味じゃない」の後、電気の帯
+sleep 8
+fi
+if_flag 17 1
+// 雷光　揺れ
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+fi
+if_flag 17 2
+// 雷光　揺れとseとスクリーンエフェクト
+set_screen_effect add 160 48 0 100
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+reset_screen_effect
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+fi
+if_flag 17 3
+// 雷光　seがモンスター叫びに変更　揺れとスクリーンエフェクト
+loop 2
+set_screen_effect sub 160 48 0 100
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+reset_screen_effect
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+fi
+if_flag 17 4
+// 気体噴射　揺れとスクリーンエフェクト
+loop 2
+set_screen_effect sub 96 208 204 100
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+reset_screen_effect
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+sleep 3
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 3
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+fi
+// モンスターがポッドから出現
+if_flag 17 5
+loop 3
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+// スクリーンエフェクトと揺れ
+loop 2
+loop 5
+set_screen_effect sub 96 208 224 100
+loop 3
+inc_map_draw_y_offset
+sleep 1
+pool
+reset_screen_effect
+loop 3
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+pool
+// スクリーンエフェクト-ここまで
+loop 4
+inc_map_draw_y_offset
+sleep 1
+dec_map_draw_y_offset
+sleep 1
+pool
+// 揺れが上下に3
+loop 2
+loop 3
+loop 3
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 3
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+// 揺れが上下に2
+loop 2
+loop 2
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 2
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+pool
+// 揺れが上下に1
+loop 4
+inc_map_draw_y_offset
+sleep 1
+dec_map_draw_y_offset
+sleep 1
+pool
+end
+fi
+pool

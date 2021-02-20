@@ -1,0 +1,84 @@
+loop 4
+sleep 1
+set_text_alpha 1 75
+set_text_alpha 2 75
+set_text_alpha 3 75
+set_text_alpha 4 75
+set_text_alpha 5 75
+set_text_alpha 6 75
+set_text_alpha 7 75
+set_text_alpha 8 75
+set_text_alpha 9 75
+set_text_alpha 10 75
+set_text_alpha 11 75
+set_text_alpha 12 75
+sleep 1
+set_text_alpha 1 50
+set_text_alpha 2 50
+set_text_alpha 3 50
+set_text_alpha 4 50
+set_text_alpha 5 50
+set_text_alpha 6 50
+set_text_alpha 7 50
+set_text_alpha 8 50
+set_text_alpha 9 50
+set_text_alpha 10 50
+set_text_alpha 11 50
+set_text_alpha 12 50
+pool
+loop 4
+sleep 1
+set_text_alpha 1 50
+set_text_alpha 2 50
+set_text_alpha 3 50
+set_text_alpha 4 50
+set_text_alpha 5 50
+set_text_alpha 6 50
+set_text_alpha 7 50
+set_text_alpha 8 50
+set_text_alpha 9 50
+set_text_alpha 10 50
+set_text_alpha 11 50
+set_text_alpha 12 50
+sleep 1
+set_text_alpha 1 25
+set_text_alpha 2 25
+set_text_alpha 3 25
+set_text_alpha 4 25
+set_text_alpha 5 25
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+set_text_alpha 9 25
+set_text_alpha 10 25
+set_text_alpha 11 25
+set_text_alpha 12 25
+pool
+loop 4
+sleep 1
+set_text_alpha 1 25
+set_text_alpha 2 25
+set_text_alpha 3 25
+set_text_alpha 4 25
+set_text_alpha 5 25
+set_text_alpha 6 25
+set_text_alpha 7 25
+set_text_alpha 8 25
+set_text_alpha 9 25
+set_text_alpha 10 25
+set_text_alpha 11 25
+set_text_alpha 12 25
+sleep 1
+set_text_alpha 1 0
+set_text_alpha 2 0
+set_text_alpha 3 0
+set_text_alpha 4 0
+set_text_alpha 5 0
+set_text_alpha 6 0
+set_text_alpha 7 0
+set_text_alpha 8 0
+set_text_alpha 9 0
+set_text_alpha 10 0
+set_text_alpha 11 0
+set_text_alpha 12 0
+pool

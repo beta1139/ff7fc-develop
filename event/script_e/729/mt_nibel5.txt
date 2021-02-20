@@ -1,0 +1,43 @@
+wait_same_pos
+move_char up 1
+sleep 16
+create npc_event 72913 729 14 30 12 0 1 none
+draw_char off
+move_char up 2
+sleep 32
+create npc_event 72910 729 14 30 31 0 1 none
+create npc_event 72911 729 14 30 5 0 1 none
+create npc_event 72912 729 14 30 14 0 1 none
+move_npc 72910 down 1
+move_npc 72911 right 1
+move_npc 72912 left 1
+sleep 32
+chg_npc_dir 72910 up
+chg_npc_dir 72911 up
+chg_npc_dir 72912 up
+sleep 32
+step_npc 72913 2
+sleep 32
+msg 『これは？
+sleep 16
+chg_npc_dir 72912 right
+sleep 16
+step_npc 72912 1
+msg ティファ\n「ふしぎないろの　どうくつね……
+sleep 16
+chg_npc_dir 72911 left
+sleep 16
+step_npc 72911 2
+msg セフィロス\n「まこうエネルギーだな。\n　このやまは　とくにエネルギーが　ほうふなのだ。\n　だから　まこうろが　つくられた
+sleep 16
+move_char down 2
+move_npc 72910 up 1
+move_npc 72911 left 1
+move_npc 72912 right 1
+sleep 32
+chg_char_dir up
+draw_char on
+create event_generator 73020 730 13 19 17 0 0 @730/mt_nibel6.txt
+create npc_event 73000 730 13 13 194 2 0 none
+kill_through_range 72910 72913
+recover_all_chara

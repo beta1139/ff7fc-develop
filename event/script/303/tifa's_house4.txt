@@ -13,6 +13,9 @@ inc_screen_effect_val 10
 pool
 sleep 48
 msg ティファ\n「クラウド……それ　ほんとうなの？\n\n\n#2\n　　ああ……\n　　じょうだんだ　おこるな……\n\n\n[[]][[]]
+if_flag 3 0
+add_item 6044
+fi
 sleep 16
 msg ティファ\n「……クラウド\n\n\n　いまは　すごくマジメな　はなしを\n　してるんでしょ？
 loop 4

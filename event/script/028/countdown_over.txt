@@ -588,8 +588,10 @@ move_char down 2
 sleep 8
 fi
 sleep 32
-kill_through 2815
-kill_through 3013
+set_flag 16 1
+set_flag 17 1
+wait_event_invalid 2815
+wait_event_invalid 3013
 kill_through 2820
 kill_through 2821
 reset_screen_effect
@@ -605,3 +607,5 @@ sleep 32
 chg_char_dir up
 play_bgm
 fadein
+set_flag 17 0
+set_flag 16 0

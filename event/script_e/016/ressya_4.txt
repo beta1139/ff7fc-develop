@@ -12,7 +12,9 @@ set_talk_npc 1667
 set_key_valid a
 msg Jessie\n`I'm into this kind of\n things. Bombs, monitors,\n anything hi-tech.
 reset_talk_npc
-sleep 48
+set_flag 17 1
+sleep 32
+wait_event_invalid 1600
 fadeout
 kill 1600
 kill_through 1676
@@ -27,6 +29,7 @@ fadein
 sleep 16
 chg_npc_dir 70300 left
 msg Jessie\n`Here we go.
+set_flag 17 0
 chg_npc_dir 70300 up
 chg_speed 70300 not_move
 sleep 16

@@ -1,0 +1,65 @@
+sleep 8
+chg_npc_y_offset 72490 1
+chg_npc_y_offset 72491 1
+sleep 8
+chg_npc_y_offset 72490 0
+chg_npc_y_offset 72491 0
+sleep 8
+loop 2
+chg_npc_y_offset 72488 1
+chg_npc_y_offset 72489 1
+sleep 8
+chg_npc_y_offset 72488 0
+chg_npc_y_offset 72489 0
+sleep 8
+pool
+loop 2
+chg_npc_y_offset 72486 1
+chg_npc_y_offset 72487 1
+sleep 8
+chg_npc_y_offset 72486 0
+chg_npc_y_offset 72487 0
+sleep 8
+pool
+loop 2
+chg_npc_y_offset 72484 1
+chg_npc_y_offset 72485 1
+sleep 8
+chg_npc_y_offset 72484 0
+chg_npc_y_offset 72485 0
+sleep 8
+pool
+// ‚±‚±‚Ü‚Åsleep120
+loop_inf
+if_flag 17 0
+loop 8
+inc_map_draw_y_offset
+sleep 2
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 2
+pool
+fi
+if_flag 17 1
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+if_flag 17 2
+end
+fi
+fi
+pool

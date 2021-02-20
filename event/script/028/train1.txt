@@ -684,6 +684,7 @@ chg_npc_img 1754 18
 chg_npc_img 1755 20
 chg_npc_img 1756 21
 chg_npc_img 1757 22
+set_flag 17 0
 fadeout
 sleep 88
 warp 28 5 6 up
@@ -691,6 +692,7 @@ fadein
 chg_char_state_move
 play_se_loop train_noise_close.ogg
 loop_inf
+if_flag 17 0
 inc_map_draw_y_offset
 sleep 8
 dec_map_draw_y_offset
@@ -699,4 +701,8 @@ inc_map_draw_y_offset
 sleep 16
 dec_map_draw_y_offset
 sleep 48
+fi
+if_flag 17 1
+end
+fi
 pool

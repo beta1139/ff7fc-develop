@@ -1,0 +1,132 @@
+wait_same_pos
+play_se landslide.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 48
+loop 2
+loop 2
+chg_npc_y_offset 72813 -3
+sleep 1
+chg_npc_y_offset 72813 -4
+sleep 1
+pool
+sleep 16
+pool
+chg_npc_img 72813 12
+sleep 64
+chg_npc_dir 72813 up
+sleep 16
+loop 3
+loop 2
+chg_npc_y_offset 72812 -3
+sleep 1
+chg_npc_y_offset 72812 -4
+sleep 1
+pool
+chg_npc_dir 72813 left
+sleep 8
+pool
+sleep 8
+step_npc 72813 2
+chg_npc_img 72812 14
+sleep 16
+chg_npc_dir 72812 right
+sleep 16
+step_npc 72812 2
+create npc_event 72811 728 10 36 5 2 1 none
+move_npc 72811 left 1
+sleep 32
+chg_npc_dir 72813 up
+sleep 16
+chg_npc_dir 72812 up
+move_npc 72811 left 1
+create npc_event 72810 728 10 36 31 2 1 none
+move_npc 72810 left 1
+sleep 48
+move_npc 72810 left 1
+move_npc 72811 down 1
+sleep 48
+loop 2
+move_npc 72811 down 1
+move_npc 72810 down 1
+sleep 48
+pool
+move_npc 72811 right 1
+move_npc 72810 down 1
+sleep 32
+chg_npc_dir 72810 right
+chg_npc_dir 72811 down
+sleep 32
+kill_through_range 72880 72890
+step_npc 72811 2
+set_talk_npc 72811
+msg セフィロス\n「ぶじのようだな。\n　もとの　ばしょまで　もどれるのか？
+reset_talk_npc
+sleep 16
+move_npc 72810 right 1
+move_npc 72811 right 2
+chg_npc_dir 72812 down
+sleep 16
+chg_npc_dir 72812 right
+sleep 16
+set_active_msg 72810
+move_npc 72810 down 2
+sleep 16
+chg_npc_dir 72812 up
+sleep 16
+step_npc 72812 2
+msg ティファ\n「このへんのどうくつは　アリのすみたいに\n　いりくんでいるから……
+sleep 16
+chg_npc_dir 72812 left
+sleep 16
+chg_npc_dir 72812 down
+sleep 16
+chg_npc_dir 72812 up
+step_npc 72812 2
+msg ティファ\n「それにセフィロスさん。\n　ひとり　すがたが　みえないけど……
+chg_npc_dir 72810 up
+sleep 16
+chg_npc_dir 72811 down
+sleep 16
+chg_speed 72811 normal
+step_npc 72811 3
+set_talk_npc 72811
+msg セフィロス\n「つめたいようだが　さがしている　じかんはない。\n　さあ　もどれないなら　さきへ　すすむぞ。\n　これからは　いっしょに　こうどうする
+reset_talk_npc
+sleep 16
+chg_speed 72810 normal
+chg_speed 72812 normal
+move_npc 72810 right 3
+move_npc 72812 right 2
+sleep 32
+kill 72812
+sleep 16
+chg_speed 72811 slow
+move_npc 72810 up 1
+move_npc 72811 right 1
+sleep 16
+kill 72810
+sleep 16
+move_char right 1
+move_npc 72811 down 1
+sleep 16
+kill 72811
+chg_char_dir up
+draw_char on
+kill 72813
+recover_all_chara
+create event_generator 72920 729 14 31 17 0 0 @729/mt_nibel5.txt

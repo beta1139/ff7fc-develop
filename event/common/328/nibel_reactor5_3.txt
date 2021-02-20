@@ -1,0 +1,58 @@
+chg_speed 32811 fast
+chg_speed 32812 fast
+chg_speed 32813 fast
+chg_speed 32814 fast
+chg_npc_img 32811 200
+chg_npc_dir 32811 down
+chg_npc_img 32812 200
+set_npc_pos 32812 328 10 16
+draw_char off
+sleep 16
+// セフィロス　昂ぶり後に走り出す
+slide_walk_npc 32811 left 6
+slide_walk_npc 32812 left 6
+loop 2
+sleep 4
+chg_npc_y_offset 32811 -5
+chg_npc_y_offset 32812 -5
+sleep 4
+chg_npc_y_offset 32811 -4
+chg_npc_y_offset 32812 -4
+pool
+chg_event_move_char_speed fast
+move_char left 3
+sleep 4
+chg_npc_y_offset 32811 -5
+chg_npc_y_offset 32812 -5
+sleep 4
+chg_npc_y_offset 32811 -4
+chg_npc_y_offset 32812 -4
+chg_npc_dir 32810 left
+loop 3
+sleep 4
+chg_npc_y_offset 32811 -5
+chg_npc_y_offset 32812 -5
+sleep 4
+chg_npc_y_offset 32811 -4
+chg_npc_y_offset 32812 -4
+pool
+chg_npc_img 32811 199
+chg_npc_dir 32811 right
+chg_npc_img 32812 17
+chg_speed 32810 normal
+move_npc 32810 left 2
+play_se katana.ogg
+sleep 8
+chg_npc_dir 32811 up
+chg_npc_img 32812 199
+set_npc_pos 32812 328 5 15
+loop 2
+inc_map_draw_y_offset
+chg_npc_y_offset 32862 2
+chg_npc_y_offset 32863 2
+sleep 2
+dec_map_draw_y_offset
+chg_npc_y_offset 32862 0
+chg_npc_y_offset 32863 0
+sleep 2
+pool

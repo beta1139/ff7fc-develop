@@ -1,0 +1,41 @@
+wait_same_pos
+include ./event/common/key_unvalid.txt
+set_flag 17 0
+create npc_event 72712 727 28 11 12 2 3 none
+draw_char off
+chg_speed 72710 fast
+chg_speed 72711 fast
+chg_type 72713 npc_event
+chg_type 72714 npc_event
+chg_speed 72713 slow
+chg_speed 72714 slow
+move_npc 72713 down 1
+move_npc 72714 left 6
+play_se creak.ogg
+loop 8
+inc_map_draw_y_offset
+sleep 2
+pool
+chg_char_state_move
+create event_generator 72722 727 0 0 17 0 0 @../common/727/mt_nibel_bridge2.txt
+loop 8
+dec_map_draw_y_offset
+sleep 2
+pool
+// walkから16
+chg_npc_dir 72712 right
+chg_npc_dir 72710 down
+loop 6
+inc_map_draw_y_offset
+sleep 2
+pool
+loop 6
+dec_map_draw_y_offset
+sleep 2
+pool
+// walkから40
+chg_npc_y_offset 72488 0
+chg_npc_y_offset 72489 0
+move_npc 72713 left 3
+msg3 -1 ティファ\n「は　はしが！！
+include ./event/common/727/mt_nibel_bridge1.txt

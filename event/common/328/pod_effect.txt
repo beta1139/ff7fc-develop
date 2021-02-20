@@ -1,0 +1,58 @@
+loop_inf
+set_screen_effect sub 176 16 48 0
+set_image_alpha 001 0
+loop 2
+inc_screen_effect_val 33
+set_image_alpha 001 10
+sleep 2
+inc_screen_effect_val 33
+set_image_alpha 001 20
+sleep 2
+inc_screen_effect_val 34
+set_image_alpha 001 30
+sleep 2
+dec_screen_effect_val 33
+set_image_alpha 001 40
+sleep 2
+dec_screen_effect_val 33
+set_image_alpha 001 50
+sleep 2
+dec_screen_effect_val 34
+set_image_alpha 001 60
+sleep 2
+inc_screen_effect_val 33
+set_image_alpha 001 70
+sleep 2
+inc_screen_effect_val 33
+set_image_alpha 001 80
+sleep 2
+inc_screen_effect_val 34
+set_image_alpha 001 90
+sleep 2
+dec_screen_effect_val 33
+set_image_alpha 001 100
+sleep 2
+dec_screen_effect_val 33
+sleep 2
+dec_screen_effect_val 34
+set_image_alpha 001 90
+sleep 2
+set_image_alpha 001 80
+sleep 2
+set_image_alpha 001 70
+sleep 2
+set_image_alpha 001 60
+sleep 2
+set_image_alpha 001 50
+sleep 2
+set_image_alpha 001 40
+sleep 2
+set_image_alpha 001 30
+sleep 2
+set_image_alpha 001 20
+sleep 2
+set_image_alpha 001 10
+sleep 2
+pool
+pool
+reset_screen_effect

@@ -1,0 +1,48 @@
+loop_inf
+if_flag 17 0
+// セフィロス　頭を抱える
+step_npc 32811 1
+sleep 24
+chg_npc_y_offset 32811 -3
+sleep 2
+chg_npc_y_offset 32811 -4
+sleep 4
+fi
+if_flag 17 1
+// セフィロス　「まさか」時の揺れ
+chg_speed 32811 fast
+step_npc 32811 1
+inc_map_draw_y_offset
+chg_npc_y_offset 32811 -3
+sleep 2
+dec_map_draw_y_offset
+chg_npc_y_offset 32811 -4
+sleep 2
+chg_npc_y_offset 32811 -3
+sleep 4
+inc_map_draw_y_offset
+chg_npc_y_offset 32811 -4
+sleep 2
+dec_map_draw_y_offset
+chg_npc_y_offset 32811 -3
+sleep 2
+chg_npc_y_offset 32811 -4
+sleep 2
+fi
+if_flag 17 2
+// セフィロス　揺れ終了
+end
+fi
+if_flag 17 3
+// セフィロス　刀を振り下ろした後、揺れ続ける
+chg_npc_y_offset 32811 -3
+chg_npc_y_offset 32812 -3
+sleep 2
+chg_npc_y_offset 32811 -4
+chg_npc_y_offset 32812 -4
+sleep 2
+chg_npc_y_offset 32811 -3
+chg_npc_y_offset 32812 -3
+sleep 4
+fi
+pool

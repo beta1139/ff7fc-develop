@@ -1,0 +1,240 @@
+chg_event_move_char_speed normal
+sleep 16
+// セフィロスうつむき後、モンスターが目覚める
+flush
+set_flag 17 0
+play_se door_open3.ogg
+move_char up 3
+create npc_event 32880 328 5 12 194 0 2 none
+create npc_event 32881 328 6 12 194 3 2 none
+create map_obj 32864 328 5 11 79 0 0 
+create map_obj 32865 328 5 12 80 0 0 
+chg_npc_y_offset 32880 0
+chg_npc_y_offset 32881 0
+slide_walk_npc 32880 up 2
+slide_walk_npc 32881 up 2
+loop 2
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+loop 2
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+jump_npc 32810 same 1
+chg_npc_img 32811 200
+chg_npc_dir 32811 down
+chg_npc_img 32812 200
+set_npc_pos 32812 328 6 16
+loop 2
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+chg_npc_img 32880 17
+chg_npc_img 32881 17
+loop 2
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+step_npc 32810 3
+create event_generator 32828 328 0 0 17 0 0 @../common/328/shaking.txt
+loop 2
+chg_npc_img 32811 203
+chg_npc_dir 32811 down
+chg_npc_img 32812 203
+set_npc_pos 32812 328 7 15
+chg_npc_img 32880 194
+chg_npc_img 32881 194
+set_npc_pos 32880 328 5 12
+set_npc_pos 32881 328 6 12
+slide_walk_npc 32880 up 2
+slide_walk_npc 32881 up 2
+loop 2
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+loop 4
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+set_flag 17 1
+chg_npc_img 32880 17
+chg_npc_img 32881 17
+loop 2
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+set_flag 17 2
+play_se_loop shock.ogg
+pool
+loop 4
+chg_npc_img 32880 194
+chg_npc_img 32881 194
+set_npc_pos 32880 328 5 12
+set_npc_pos 32881 328 6 12
+slide_walk_npc 32880 up 2
+slide_walk_npc 32881 up 2
+loop 6
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+chg_npc_img 32880 17
+chg_npc_img 32881 17
+play_se_loop shock.ogg
+loop 2
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+pool
+play_se monster.ogg
+set_flag 17 3
+loop 8
+chg_npc_img 32880 194
+chg_npc_img 32881 194
+set_npc_pos 32880 328 5 12
+set_npc_pos 32881 328 6 12
+slide_walk_npc 32880 up 2
+slide_walk_npc 32881 up 2
+loop 3
+chg_npc_img 32864 87
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+chg_npc_img 32864 79
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+chg_npc_img 32880 17
+chg_npc_img 32881 17
+chg_npc_img 32864 87
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+chg_npc_img 32864 79
+chg_npc_y_offset 32864 1
+chg_npc_y_offset 32865 1
+sleep 2
+chg_npc_y_offset 32864 0
+chg_npc_y_offset 32865 0
+sleep 2
+pool
+chg_npc_img 32864 87
+play_se door_open3.ogg
+create npc_event 32870 328 5 10 204 0 0 none
+chg_npc_y_offset 32870 1
+set_flag 17 4
+sleep 8
+chg_npc_img 32864 79
+create npc_event 32871 328 6 11 204 3 0 none
+chg_npc_y_offset 32871 0
+loop 2
+chg_npc_img 32864 88
+sleep 16
+chg_npc_img 32864 79
+sleep 16
+pool
+chg_npc_img 32864 88
+sleep 16
+kill_through_range 32870 32871
+set_layer 32865 front
+set_layer 32864 front
+chg_npc_img 32864 79
+sleep 16
+chg_npc_img 32864 88
+sleep 16
+set_flag 17 5
+play_se monster2.ogg
+chg_npc_img 32864 82
+chg_npc_img 32865 83
+create map_obj 32866 328 6 11 84 0 0 
+create map_obj 32867 328 6 12 85 0 0 
+create npc_event 32883 328 5 12 204 1 2 none
+chg_npc_y_offset 32883 -4
+sleep 16
+chg_npc_img 32864 81
+chg_npc_img 32865 80
+set_layer 32864 back
+kill 32866
+chg_npc_img 32867 86
+slide_walk_npc 32883 up 1
+sleep 1
+chg_npc_y_offset 32883 -3
+sleep 1
+chg_npc_y_offset 32883 -2
+sleep 1
+chg_npc_y_offset 32883 -1
+sleep 1
+chg_npc_y_offset 32883 0
+sleep 1
+chg_npc_y_offset 32883 1
+sleep 1
+chg_npc_y_offset 32883 2
+sleep 1
+chg_npc_y_offset 32883 3
+sleep 1
+chg_npc_img 32883 204
+sleep 8
+chg_speed 32883 slow
+step_npc 32883 1
+sleep 32
+step_npc 32810 1
+chg_npc_img 32811 198
+chg_npc_img 32812 198
+chg_npc_img 32813 198
+chg_npc_dir 32811 up
+chg_npc_dir 32812 left
+chg_npc_dir 32813 down
+set_npc_pos 32812 328 6 16
+set_npc_pos 32813 328 6 15
+sleep 16
+step_npc 32883 2
+sleep 64
+chg_speed 32883 not_move
+wait_event_invalid 32828
+sleep 24

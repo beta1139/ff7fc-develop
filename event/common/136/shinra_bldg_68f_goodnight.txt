@@ -1,8 +1,6 @@
 chg_event_move_char_speed slow
 move_char left 1
 sleep 32
-move_char down 2
-sleep 64
 chg_char_dir right
 sleep 48
 fadeout

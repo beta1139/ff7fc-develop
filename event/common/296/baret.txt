@@ -21,4 +21,11 @@ chg_npc_dir 14811 right
 chg_npc_img 14811 1
 end
 fi
+if_flag 17 2
+step_npc 14811 2
+sleep 32
+fi
+if_flag 17 3
+end
+fi
 pool

@@ -1,0 +1,84 @@
+chg_event_move_char_speed normal
+chg_npc_img 32811 5
+// セフィロス　抜刀
+sleep 48
+chg_npc_dir 32811 right
+sleep 16
+loop 2
+set_screen_effect add 160 48 0 100
+sleep 2
+reset_screen_effect
+sleep 2
+pool
+chg_npc_dir 32811 up
+chg_npc_img 32811 198
+chg_npc_img 32812 198
+chg_npc_img 32813 198
+chg_npc_img 32814 17
+move_char up 1
+sleep 8
+chg_speed 32810 fast
+step_npc 32810 1
+play_se katana.ogg
+sleep 8
+chg_npc_dir 32811 right
+chg_npc_img 32812 17
+chg_npc_img 32813 17
+chg_npc_img 32814 199
+loop 2
+inc_map_draw_y_offset
+chg_npc_y_offset 32860 2
+chg_npc_y_offset 32861 2
+sleep 2
+dec_map_draw_y_offset
+chg_npc_y_offset 32860 0
+chg_npc_y_offset 32861 0
+sleep 2
+pool
+chg_npc_dir 32810 up
+jump_npc_target_pos 32810 9 18
+sleep 40
+chg_npc_dir 32811 up
+chg_npc_img 32811 198
+chg_npc_img 32812 198
+chg_npc_img 32813 198
+chg_npc_img 32814 17
+play_se katana.ogg
+sleep 8
+chg_npc_dir 32811 right
+chg_npc_img 32812 17
+chg_npc_img 32813 17
+chg_npc_img 32814 199
+loop 2
+inc_map_draw_y_offset
+chg_npc_y_offset 32860 2
+chg_npc_y_offset 32861 2
+sleep 2
+dec_map_draw_y_offset
+chg_npc_y_offset 32860 0
+chg_npc_y_offset 32861 0
+sleep 2
+pool
+sleep 48
+chg_npc_img 32811 199
+chg_npc_dir 32811 right
+chg_npc_img 32812 17
+chg_npc_img 32813 17
+chg_npc_img 32814 17
+play_se katana.ogg
+sleep 8
+chg_npc_dir 32811 up
+chg_npc_img 32812 199
+set_npc_pos 32812 328 11 15
+chg_npc_img 32813 17
+chg_npc_img 32814 17
+loop 2
+inc_map_draw_y_offset
+chg_npc_y_offset 32860 2
+chg_npc_y_offset 32861 2
+sleep 2
+dec_map_draw_y_offset
+chg_npc_y_offset 32860 0
+chg_npc_y_offset 32861 0
+sleep 2
+pool

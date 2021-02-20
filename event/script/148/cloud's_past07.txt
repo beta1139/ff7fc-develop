@@ -1,0 +1,68 @@
+wait_same_pos
+// 328/nibel_reactor5.txtからの続き
+set_flag 17 2
+sleep 16
+chg_npc_dir 14811 down
+sleep 8
+chg_npc_dir 14811 left
+chg_npc_img 14811 98
+sleep 16
+include ./event/common/key_unvalid.txt
+chg_char_state_move
+set_active_msg 14811
+create event_generator 29624 296 0 0 17 0 0 @../common/296/baret.txt
+sleep 16
+msg バレット\n「くっ……しんらめっ！\n　ますます　ゆるさねえ！
+sleep 32
+chg_speed 14812 slow
+step_npc 14812 2
+msg ティファ\n「……あの　まこうろには\n そんな　ひみつが　あったのね
+sleep 32
+step_npc 14814 2
+msg レッド13\n「ここ　すうねんらいのモンスターの　ぞうかには\n　そういった　りゆうがあったのか
+sleep 16
+jump_npc 14814 same 1
+sleep 16
+step_npc 14814 2
+msg レッド13\n「これからの　クラウドのはなしは\n　じっくりときく　ひつようがあるな。\n　そうではないか　バレット？
+set_flag 17 3
+wait_event_invalid 29624
+chg_npc_dir 14811 down
+chg_npc_img 14811 1
+sleep 32
+chg_npc_dir 14811 right
+sleep 16
+chg_npc_dir 14811 left
+sleep 32
+chg_npc_dir 14811 right
+sleep 4
+chg_npc_dir 14811 up
+sleep 4
+chg_npc_dir 14811 left
+sleep 4
+chg_npc_dir 14811 down
+sleep 16
+jump_npc 14811 same 1
+sleep 16
+set_inactive_msg 14811
+chg_speed 14811 fast
+step_npc 14811 3
+if_owned_item 6044
+del_item 6044
+fi
+del_party_mem 10
+del_party_mem 9
+add_party_mem 0
+include ./event/common/key_valid.txt
+chg_char_state_event
+msg バレット\n「(な　なんでオレに　はなしを　ふるんだ！？)
+msg おつかれさまでした。\n　イベントさくせいここまで\n\n\n#2\n　　ひといき　いれよう\n　　ひといき　いれるしかない\n\n\n[[]][[]]
+// \n\n\n#2\n　　セーブして　ひといき　いれよう\n　　このまま　はなしをつづけてくれ
+set_flag_wall 14811
+set_flag_wall 14812
+set_flag_wall 14813
+set_flag_wall 14814
+set_flag 30 41
+set_flag 17 0
+set_flag 1 0
+create event_generator 5799 57 0 0 17 0 0 @../common/point.txt

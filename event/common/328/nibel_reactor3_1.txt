@@ -1,0 +1,45 @@
+chg_type 32811 npc_event
+chg_speed 32811 normal
+play_se jump.wav
+chg_speed 32811 slow
+jump_npc_target_pos 32811 9 15
+sleep 8
+chg_npc_dir 32811 down
+chg_npc_img 32811 196
+sleep 8
+step_npc 32811 1
+inc_map_draw_y_offset
+chg_npc_y_offset 32811 -3
+sleep 4
+dec_map_draw_y_offset
+chg_npc_y_offset 32811 -4
+sleep 4
+chg_npc_y_offset 32811 -3
+sleep 4
+chg_npc_y_offset 32811 -4
+sleep 4
+chg_char_dir up
+sleep 48
+loop 2
+loop 2
+chg_npc_y_offset 32811 -3
+sleep 1
+chg_npc_y_offset 32811 -4
+sleep 1
+pool
+sleep 48
+pool
+play_se jump.wav
+jump_npc_target_pos 32811 9 16
+sleep 8
+chg_npc_img 32811 5
+chg_npc_dir 32811 up
+sleep 8
+play_se landing.wav
+sleep 16
+chg_char_dir right
+sleep 16
+chg_npc_dir 32811 right
+sleep 32
+chg_npc_img 32811 196
+sleep 16

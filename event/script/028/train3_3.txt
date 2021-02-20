@@ -29,9 +29,12 @@ move_char down 1
 sleep 16
 chg_speed 2802 not_move
 move_char right 2
-sleep 192
-kill_through 2810
+sleep 160
+set_flag 17 1
+set_flag 16 0
+wait_event_invalid 2810
 kill_through 2899
 create event_generator 2815 28 18 5 17 0 0 @../common/028/train_move_alarm.txt
 sleep 16
 create event_generator 2816 28 18 5 17 0 0 @028/train4.txt
+set_flag 17 0

@@ -1,0 +1,5 @@
+wait_same_pos
+play_se_loop spring.ogg
+kill_through_range 73021 73022
+create event_generator 73120 731 8 26 17 0 0 @../common/729/mt_nibel_se_stop.txt
+create event_generator 72921 729 12 7 17 0 0 @../common/729/mt_nibel_se_stop.txt

@@ -1,0 +1,459 @@
+move_char left 3
+chg_npc_dir 72711 up
+loop 8
+inc_map_draw_y_offset
+sleep 2
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 2
+pool
+// walk‚©‚ç72
+chg_npc_dir 72712 left
+chg_npc_dir 72710 right
+play_se creak.ogg
+loop 6
+inc_map_draw_y_offset
+sleep 2
+pool
+play_se creak.ogg
+loop 6
+dec_map_draw_y_offset
+sleep 2
+pool
+// walk‚©‚ç96
+chg_npc_y_offset 72464 1
+chg_npc_y_offset 72465 1
+chg_npc_y_offset 72462 -1
+chg_npc_y_offset 72463 -1
+chg_npc_dir 72711 left
+loop 8
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 8
+dec_map_draw_y_offset
+sleep 1
+pool
+// walk‚©‚ç112
+chg_npc_dir 72712 down
+chg_npc_dir 72710 down
+loop 4
+inc_map_draw_y_offset
+chg_npc_y_offset 72462 1
+chg_npc_y_offset 72463 1
+chg_npc_y_offset 72464 -1
+chg_npc_y_offset 72465 -1
+sleep 1
+pool
+loop 4
+dec_map_draw_y_offset
+chg_npc_y_offset 72462 2
+chg_npc_y_offset 72463 2
+chg_npc_y_offset 72464 0
+chg_npc_y_offset 72465 0
+sleep 1
+pool
+// mt_nibel_bridge2‚©‚çsleep120
+loop 2
+play_se creak.ogg
+chg_npc_y_offset 72482 1
+chg_npc_y_offset 72483 1
+loop 8
+inc_map_draw_y_offset
+chg_npc_y_offset 72462 1
+chg_npc_y_offset 72463 1
+chg_npc_y_offset 72464 -1
+chg_npc_y_offset 72465 -1
+sleep 1
+pool
+chg_npc_y_offset 72482 0
+chg_npc_y_offset 72483 0
+chg_npc_dir 72711 right
+loop 8
+dec_map_draw_y_offset
+chg_npc_y_offset 72462 2
+chg_npc_y_offset 72463 2
+chg_npc_y_offset 72464 0
+chg_npc_y_offset 72465 0
+sleep 1
+pool
+pool
+set_flag 17 1
+play_se break.ogg
+flush
+erase_msg3
+kill_through_range 72462 72463
+chg_npc_dir 72710 right
+chg_npc_dir 72710 left
+chg_npc_dir 72712 left
+chg_npc_dir 72711 down
+chg_npc_y_offset 72480 1
+chg_npc_y_offset 72481 1
+sleep 8
+chg_npc_y_offset 72480 0
+chg_npc_y_offset 72481 0
+sleep 8
+jump_npc 72710 same 2
+stop_se
+chg_npc_dir 72464 up
+chg_npc_dir 72465 right
+chg_npc_y_offset 72480 1
+chg_npc_y_offset 72481 1
+sleep 8
+chg_npc_y_offset 72480 0
+chg_npc_y_offset 72481 0
+sleep 8
+jump_npc 72712 same 1
+play_se_loop barrel_falling.ogg
+step_npc 72464 8
+step_npc 72465 8
+sleep 8
+set_npc_pos 72464 727 23 12
+set_npc_pos 72465 727 23 13
+step_npc 72466 8
+step_npc 72467 8
+chg_npc_dir 72466 up
+chg_npc_dir 72467 right
+chg_npc_dir 72711 left
+sleep 8
+set_npc_pos 72464 727 23 13
+set_npc_pos 72465 727 23 14
+step_npc 72710 7
+step_npc 72712 2
+chg_npc_dir 72712 right
+sleep 8
+set_npc_pos 72464 727 23 14
+set_npc_pos 72465 727 23 15
+set_npc_pos 72466 727 24 12
+set_npc_pos 72467 727 24 13
+chg_npc_dir 72468 up
+chg_npc_dir 72469 right
+chg_npc_dir 72710 right
+sleep 8
+set_npc_pos 72464 727 23 15
+set_npc_pos 72465 727 23 16
+set_npc_pos 72466 727 24 13
+set_npc_pos 72467 727 24 14
+step_npc 72468 8
+step_npc 72469 8
+chg_npc_dir 72710 left
+chg_npc_img 72710 152
+step_npc 72712 3
+sleep 8
+set_npc_pos 72464 727 23 16
+set_npc_pos 72465 727 23 17
+set_npc_pos 72466 727 24 14
+set_npc_pos 72467 727 24 15
+set_npc_pos 72468 727 25 12
+set_npc_pos 72469 727 25 13
+chg_npc_dir 72470 up
+chg_npc_dir 72471 right
+slide_npc 72711 down 8
+sleep 8
+set_npc_pos 72464 727 23 17
+set_npc_pos 72465 727 23 18
+set_npc_pos 72466 727 24 15
+set_npc_pos 72467 727 24 16
+set_npc_pos 72468 727 25 13
+set_npc_pos 72469 727 25 14
+step_npc 72470 8
+step_npc 72471 8
+chg_npc_dir 72712 left
+jump_npc 72712 same 1
+sleep 8
+set_npc_pos 72464 727 23 18
+set_npc_pos 72465 727 23 19
+set_npc_pos 72466 727 24 16
+set_npc_pos 72467 727 24 17
+set_npc_pos 72468 727 25 14
+set_npc_pos 72469 727 25 15
+set_npc_pos 72470 727 26 12
+set_npc_pos 72471 727 26 13
+chg_npc_dir 72472 up
+chg_npc_dir 72473 right
+slide_walk_npc 72710 down 8
+jump_npc 72714 same 1
+sleep 8
+set_npc_pos 72464 727 23 19
+set_npc_pos 72465 727 23 20
+set_npc_pos 72466 727 24 17
+set_npc_pos 72467 727 24 18
+set_npc_pos 72468 727 25 15
+set_npc_pos 72469 727 25 16
+set_npc_pos 72470 727 26 13
+set_npc_pos 72471 727 26 14
+step_npc 72472 8
+step_npc 72473 8
+chg_speed 72712 fast
+step_npc 72712 4
+sleep 8
+set_npc_pos 72466 727 24 18
+set_npc_pos 72467 727 24 19
+set_npc_pos 72468 727 25 16
+set_npc_pos 72469 727 25 17
+set_npc_pos 72470 727 26 14
+set_npc_pos 72471 727 26 15
+set_npc_pos 72472 727 27 12
+set_npc_pos 72473 727 27 13
+chg_npc_dir 72474 up
+chg_npc_dir 72475 right
+chg_npc_dir 72714 right
+sleep 8
+set_npc_pos 72466 727 24 19
+set_npc_pos 72467 727 24 20
+set_npc_pos 72468 727 25 17
+set_npc_pos 72469 727 25 18
+set_npc_pos 72470 727 26 15
+set_npc_pos 72471 727 26 16
+set_npc_pos 72472 727 27 13
+set_npc_pos 72473 727 27 14
+step_npc 72474 8
+step_npc 72475 8
+sleep 8
+set_npc_pos 72468 727 25 18
+set_npc_pos 72469 727 25 19
+set_npc_pos 72470 727 26 16
+set_npc_pos 72471 727 26 17
+set_npc_pos 72472 727 27 14
+set_npc_pos 72473 727 27 15
+set_npc_pos 72474 727 28 12
+set_npc_pos 72475 727 28 13
+chg_npc_dir 72476 up
+chg_npc_dir 72477 right
+slide_npc 72712 down 8
+chg_npc_dir 72712 up
+chg_npc_img 72712 97
+jump_npc 72714 same 2
+sleep 8
+set_npc_pos 72468 727 25 19
+set_npc_pos 72469 727 25 20
+set_npc_pos 72470 727 26 17
+set_npc_pos 72471 727 26 18
+set_npc_pos 72472 727 27 15
+set_npc_pos 72473 727 27 16
+set_npc_pos 72474 727 28 13
+set_npc_pos 72475 727 28 14
+step_npc 72476 8
+step_npc 72477 8
+sleep 8
+set_npc_pos 72470 727 26 18
+set_npc_pos 72471 727 26 19
+set_npc_pos 72472 727 27 16
+set_npc_pos 72473 727 27 17
+set_npc_pos 72474 727 28 14
+set_npc_pos 72475 727 28 15
+set_npc_pos 72476 727 29 12
+set_npc_pos 72477 727 29 13
+chg_npc_dir 72478 up
+chg_npc_dir 72479 right
+sleep 8
+set_npc_pos 72470 727 26 19
+set_npc_pos 72471 727 26 20
+set_npc_pos 72472 727 27 17
+set_npc_pos 72473 727 27 18
+set_npc_pos 72474 727 28 15
+set_npc_pos 72475 727 28 16
+set_npc_pos 72476 727 29 13
+set_npc_pos 72477 727 29 14
+step_npc 72478 8
+step_npc 72479 8
+sleep 8
+set_npc_pos 72472 727 27 18
+set_npc_pos 72473 727 27 19
+set_npc_pos 72474 727 28 16
+set_npc_pos 72475 727 28 17
+set_npc_pos 72476 727 29 14
+set_npc_pos 72477 727 29 15
+set_npc_pos 72478 727 30 12
+set_npc_pos 72479 727 30 13
+chg_npc_dir 72480 up
+chg_npc_dir 72481 right
+chg_speed 72714 normal
+move_npc 72714 right 2
+move_char right 3
+sleep 8
+set_npc_pos 72472 727 27 19
+set_npc_pos 72473 727 27 20
+set_npc_pos 72474 727 28 17
+set_npc_pos 72475 727 28 18
+set_npc_pos 72476 727 29 15
+set_npc_pos 72477 727 29 16
+set_npc_pos 72478 727 30 13
+set_npc_pos 72479 727 30 14
+step_npc 72713 3
+step_npc 72480 8
+step_npc 72481 8
+sleep 8
+set_npc_pos 72474 727 28 18
+set_npc_pos 72475 727 28 19
+set_npc_pos 72476 727 29 16
+set_npc_pos 72477 727 29 17
+set_npc_pos 72478 727 30 14
+set_npc_pos 72479 727 30 15
+set_npc_pos 72480 727 31 12
+set_npc_pos 72481 727 31 13
+chg_npc_dir 72482 up
+chg_npc_dir 72483 right
+chg_npc_dir 72714 left
+sleep 8
+set_npc_pos 72474 727 28 19
+set_npc_pos 72475 727 28 20
+set_npc_pos 72476 727 29 17
+set_npc_pos 72477 727 29 18
+set_npc_pos 72478 727 30 15
+set_npc_pos 72479 727 30 16
+set_npc_pos 72480 727 31 13
+set_npc_pos 72481 727 31 14
+step_npc 72482 8
+step_npc 72483 8
+sleep 8
+set_npc_pos 72476 727 29 18
+set_npc_pos 72477 727 29 19
+set_npc_pos 72478 727 30 16
+set_npc_pos 72479 727 30 17
+set_npc_pos 72480 727 31 14
+set_npc_pos 72481 727 31 15
+set_npc_pos 72482 727 32 12
+set_npc_pos 72483 727 32 13
+chg_npc_dir 72484 up
+chg_npc_dir 72485 right
+jump_npc 72713 same 1
+jump_npc 72714 same 1
+sleep 8
+set_npc_pos 72476 727 29 19
+set_npc_pos 72477 727 29 20
+set_npc_pos 72478 727 30 17
+set_npc_pos 72479 727 30 18
+set_npc_pos 72480 727 31 15
+set_npc_pos 72481 727 31 16
+set_npc_pos 72482 727 32 13
+set_npc_pos 72483 727 32 14
+step_npc 72484 8
+step_npc 72485 8
+sleep 8
+set_npc_pos 72478 727 30 18
+set_npc_pos 72479 727 30 19
+set_npc_pos 72480 727 31 16
+set_npc_pos 72481 727 31 17
+set_npc_pos 72482 727 32 14
+set_npc_pos 72483 727 32 15
+set_npc_pos 72484 727 33 12
+set_npc_pos 72485 727 33 13
+chg_npc_dir 72486 up
+chg_npc_dir 72487 right
+move_npc 72713 right 1
+chg_speed 72714 fast
+slide_walk_npc 72714 down 8
+sleep 8
+set_npc_pos 72478 727 30 19
+set_npc_pos 72479 727 30 20
+set_npc_pos 72480 727 31 17
+set_npc_pos 72481 727 31 18
+set_npc_pos 72482 727 32 15
+set_npc_pos 72483 727 32 16
+set_npc_pos 72484 727 33 13
+set_npc_pos 72485 727 33 14
+step_npc 72486 8
+step_npc 72487 8
+sleep 8
+set_npc_pos 72480 727 31 18
+set_npc_pos 72481 727 31 19
+set_npc_pos 72482 727 32 16
+set_npc_pos 72483 727 32 17
+set_npc_pos 72484 727 33 14
+set_npc_pos 72485 727 33 15
+set_npc_pos 72486 727 34 12
+set_npc_pos 72487 727 34 13
+chg_npc_dir 72488 up
+chg_npc_dir 72489 right
+chg_speed 72713 fast
+slide_walk_npc 72713 down 8
+sleep 8
+set_npc_pos 72480 727 31 19
+set_npc_pos 72481 727 31 20
+set_npc_pos 72482 727 32 17
+set_npc_pos 72483 727 32 18
+set_npc_pos 72484 727 33 15
+set_npc_pos 72485 727 33 16
+set_npc_pos 72486 727 34 13
+set_npc_pos 72487 727 34 14
+sleep 8
+chg_npc_dir 72714 up
+chg_npc_img 72714 139
+set_npc_pos 72482 727 32 18
+set_npc_pos 72483 727 32 19
+set_npc_pos 72484 727 33 16
+set_npc_pos 72485 727 33 17
+set_npc_pos 72486 727 34 14
+set_npc_pos 72487 727 34 15
+sleep 8
+set_npc_pos 72482 727 32 19
+set_npc_pos 72483 727 32 20
+set_npc_pos 72484 727 33 17
+set_npc_pos 72485 727 33 18
+set_npc_pos 72486 727 34 15
+set_npc_pos 72487 727 34 16
+sleep 8
+set_npc_pos 72484 727 33 18
+set_npc_pos 72485 727 33 19
+set_npc_pos 72486 727 34 16
+set_npc_pos 72487 727 34 17
+chg_npc_dir 72713 left
+sleep 8
+set_npc_pos 72484 727 33 19
+set_npc_pos 72485 727 33 20
+set_npc_pos 72486 727 34 17
+set_npc_pos 72487 727 34 18
+sleep 8
+set_npc_pos 72486 727 34 18
+set_npc_pos 72487 727 34 19
+sleep 8
+set_npc_pos 72486 727 34 19
+set_npc_pos 72487 727 34 20
+sleep 24
+stop_se
+set_flag 17 2
+kill_through_range 72790 72797
+wait_event_invalid 72722
+create npc_event 72880 728 9 38 194 1 3 none
+create npc_event 72881 728 10 39 194 1 3 none
+create npc_event 72882 728 12 40 194 1 3 none
+create npc_event 72883 728 14 41 194 1 3 none
+create npc_event 72884 728 15 37 194 1 3 none
+create npc_event 72885 728 16 38 194 1 3 none
+create npc_event 72886 728 18 35 194 1 3 none
+create npc_event 72887 728 9 31 194 1 3 none
+create npc_event 72888 728 11 32 194 1 3 none
+create npc_event 72889 728 13 30 194 1 3 none
+create npc_event 72890 728 15 33 194 1 3 none
+set_ignore_map_layer_flag 72880 1
+set_layer 72880 front
+set_ignore_map_layer_flag 72881 1
+set_layer 72881 front
+set_ignore_map_layer_flag 72887 1
+set_layer 72887 front
+jump_npc_target_pos 72880 9 48
+jump_npc_target_pos 72881 10 48
+jump_npc_target_pos 72882 12 48
+jump_npc_target_pos 72883 14 48
+jump_npc_target_pos 72884 15 48
+jump_npc_target_pos 72885 16 48
+jump_npc_target_pos 72886 18 48
+move_npc 72887 down 16
+move_npc 72888 down 15
+move_npc 72889 down 17
+move_npc 72890 down 14
+fadeout
+kill_through_range 72460 72499
+kill_through_range 72710 72714
+sleep 32
+warp 727 28 28 down
+create event_generator 72820 728 11 40 17 0 0 @728/mt_nibel4.txt
+chg_char_state_event
+sleep 16
+create npc_event 72813 728 12 40 193 1 1 none
+create npc_event 72812 728 10 40 193 2 1 none
+fadein
+warp_ff3_2 728 11 40 2 up
+include ./event/common/key_valid.txt

@@ -1,0 +1,41 @@
+wait_talk
+kill_through_range 32720 32723
+play_se jump.wav
+if_char_dir left
+jump_char left 1
+fi
+if_char_dir right
+jump_char right 1
+fi
+if_char_dir up
+jump_char up 1
+fi
+if_char_dir down
+jump_char down 1
+fi
+sleep 16
+chg_char_img_tmp 195
+play_se landing.wav
+if_char_dir left
+chg_char_dir up
+sleep 8
+fi
+if_char_dir right
+chg_char_dir up
+sleep 8
+fi
+if_char_dir up
+move_char up 1
+fi
+if_char_dir down
+move_char down 1
+fi
+sleep 16
+include ./event/common/key_climb.txt
+disable_char_chg
+create event_generator 32722 327 11 19 17 0 0 @../common/327/nibel_reactor_jump2.txt
+create event_generator 32723 327 11 23 17 0 0 @../common/327/nibel_reactor_jump2.txt
+chg_char_state_move
+loop_inf
+sleep 160
+pool

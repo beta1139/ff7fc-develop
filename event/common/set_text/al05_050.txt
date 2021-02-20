@@ -1,0 +1,6 @@
+loop 4
+sleep 1
+set_text_alpha 5 75
+sleep 1
+set_text_alpha 5 50
+pool

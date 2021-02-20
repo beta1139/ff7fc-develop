@@ -1,0 +1,22 @@
+wait_same_pos
+play_se jump.wav
+kill_through_range 32720 32723
+if_char_dir up
+jump_char up 1
+fi
+if_char_dir down
+jump_char down 1
+fi
+sleep 8
+reset_char_img_tmp
+sleep 8
+play_se landing.wav
+create event_generator 32720 327 11 19 17 0 0 @../common/327/nibel_reactor_jump1.txt
+create event_generator 32721 327 11 23 17 0 0 @../common/327/nibel_reactor_jump1.txt
+include ./event/common/key_climb_reset.txt
+if_flag 17 1
+kill_through 32724
+kill_through 32711
+wait_event_invalid 32724
+chg_char_state_event
+fi
