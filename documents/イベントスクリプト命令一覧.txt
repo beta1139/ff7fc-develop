@@ -587,8 +587,16 @@ set_image_alpha (image_idx) (alpha)
 inc_image_alpha (image_idx)
   image_idxで指定した画像のアルファ値を1増やす
 
-dec_image_alpha
+add_image_alpha (image_idx) (value)
+  image_idxで指定した画像のアルファ値をvalueで指定した値増やす
+　（アルファ値が100以上なら100を設定する）
+
+dec_image_alpha (image_idx)
   image_idxで指定した画像のアルファ値を1減らす
+
+sub_image_alpha (image_idx) (value)
+  image_idxで指定した画像のアルファ値をvalueで指定した値減らす
+　（アルファ値が0以下なら0を設定する）
 
 chg_image_pos (image_idx) (dst_x) (dst_y) (src_x) (src_y) (src_w) (src_h)
   draw_imageで生成した画像の位置情報を再設定する
