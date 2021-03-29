@@ -5,3 +5,6 @@ set_flag 17 0
 set_flag 20 0
 set_flag 21 0
 msg [ワールドマップでのセーブ]\nワールドマップでは　いつでも\nメニューをひらいて　[セーブ］をえらぶと\nゲームのじょうたいを　ほぞんできます。
+create event_generator 14631 146 24 31 17 1 0 @146/kalm1_1.txt
+create event_generator 14632 146 24 32 17 1 0 @../common/move_up.txt
+create event_generator 14633 146 24 33 17 1 0 @../common/move_up.txt

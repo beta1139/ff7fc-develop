@@ -1,0 +1,36 @@
+wait_same_pos
+// from 148/cloud's_past08.txt
+include ./event/common/key_unvalid.txt
+create npc_event 31410 314 4 24 12 0 1 none
+draw_char off
+chg_event_move_char_speed slow
+chg_char_state_move
+create event_generator 31421 314 4 24 17 0 0 @314/shinra_mansion2.txt
+set_flag 17 0
+move_char up 7
+move_npc 31411 right 5
+set_flag 16 1
+sleep 64
+set_layer 31450 front
+close_door 31450
+move_npc 31410 up 2
+sleep 192
+set_layer 31450 back
+loop_inf
+if_flag 17 0
+move_npc 31411 left 5
+set_flag 16 0
+sleep 256
+fi
+if_flag 17 1
+end
+fi
+if_flag 17 0
+move_npc 31411 right 5
+set_flag 16 1
+sleep 256
+fi
+if_flag 17 1
+end
+fi
+pool

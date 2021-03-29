@@ -1,0 +1,350 @@
+wait_same_pos
+// 324/nibel_reactor10.txtからの続き
+step_npc 14810 2
+sleep 16
+msg 『……このはなしは　ここでおわりなんだ
+jump_npc 14811 same 2
+loop 2
+chg_npc_dir 14811 right
+sleep 4
+chg_npc_dir 14811 down
+sleep 4
+chg_npc_dir 14811 left
+sleep 4
+chg_npc_dir 14811 up
+sleep 4
+pool
+step_npc 14811 2
+msg バレット\n「ちょっとまてよ！\n　つづきは　どうなったんだ？
+sleep 16
+chg_npc_dir 14810 right
+chg_npc_img 14810 97
+step_npc 14810 2
+sleep 32
+chg_speed 14810 slow
+step_npc 14810 1
+msg 『……おぼえてない\n\n\n\n　というか　つくっていない
+chg_speed 14811 fast
+step_npc 14811 2
+sleep 24
+chg_npc_dir 14813 up
+sleep 16
+step_npc 14813 2
+msg エアリス\n「セフィロスは　どうなったの？
+chg_npc_dir 14810 down
+chg_npc_img 14810 0
+sleep 16
+chg_speed 14810 normal
+step_npc 14810 2
+msg 『じつりょくからいって\n　オレがセフィロスを\n　たおせたとは　おもえないんだ
+sleep 32
+step_npc 14812 2
+msg ティファ\n「こうしききろくでは　セフィロスは\n　しんだことになっていたわ。\n　しんぶんで　みたもの
+chg_npc_dir 14811 right
+sleep 16
+chg_npc_dir 14813 left
+sleep 24
+chg_speed 14813 slow
+chg_npc_img 14813 15
+step_npc 14813 2
+msg エアリス\n「しんぶんは　しんらが　だしているのよ。\n　しんようできない
+sleep 16
+chg_speed 14810 normal
+step_npc 14810 2
+msg 『……オレは　たしかめたい。\n　あのとき　なにがあったのかを\n\n\n　セフィロスに　たたかいを　いどんだオレは\n　まだいきている。\n　セフィロスは　なぜ　オレをころさなかったのか？
+sleep 16
+chg_npc_dir 14812 down
+sleep 16
+chg_speed 14812 slow
+step_npc 14812 2
+msg ティファ\n「……わたしも　いきているわ
+sleep 16
+chg_npc_img 14813 3
+chg_npc_dir 14813 up
+sleep 8
+jump_npc 14813 same 1
+sleep 16
+chg_speed 14813 normal
+step_npc 14813 2
+msg エアリス\n「なんだか　いろいろ　へん。\n　ねえ　ジェノバは？\n　しんらビルに　いたのは　ジェノバ　よね？
+jump_npc 14810 same 1
+sleep 16
+step_npc 14810 2
+msg 『しんらが　ニブルヘイムから\n　ミッドガルへ　はこんだのは　かくじつだな
+sleep 16
+chg_npc_dir 14813 left
+sleep 16
+step_npc 14813 2
+msg エアリス\n「そのあと　まただれかが　もちだした？\n　しんらビルからも　なくなってたわよ
+sleep 16
+chg_npc_dir 14812 left
+sleep 32
+include ./event/common/key_unvalid.txt
+step_npc 14812 1
+set_flag 17 0
+msg ティファ\n「セフィロス……？
+jump_npc 14811 same 2
+loop 2
+chg_npc_dir 14811 right
+sleep 4
+chg_npc_dir 14811 down
+sleep 4
+chg_npc_dir 14811 left
+sleep 4
+chg_npc_dir 14811 up
+sleep 4
+pool
+chg_char_state_move
+create event_generator 14828 148 0 0 17 1 0 @../common/148/baret.txt
+msg バレット\n「が～～～っ！\n　わけがわかんねえ！\n\n　オレはいくぜ\n　オレはいくぜ！\n　オレはいくぜ！！\n　かんがえるのは　オマエたちにまかせた！
+kill 14828
+sleep 8
+chg_speed 14811 fast
+chg_npc_dir 14811 right
+step_npc 14811 6
+sleep 48
+chg_speed 14811 normal
+chg_npc_img 14811 1
+jump_npc 14811 same 1
+chg_npc_dir 14811 right
+sleep 4
+chg_npc_dir 14811 down
+sleep 4
+chg_npc_dir 14811 left
+sleep 4
+chg_npc_dir 14811 up
+sleep 4
+move_npc 14811 up 4
+sleep 32
+chg_npc_dir 14810 up
+chg_char_state_event
+sleep 16
+move_char up 1
+sleep 16
+chg_npc_dir 14811 down
+include ./event/common/key_valid.txt
+sleep 16
+set_talk_npc 14811
+jump_npc 14811 same 1
+msg バレット\n「おい　クラウド！\n　しゅっぱつの　じゅんびを　ととのえろ！\n\n#2\n　　ちょっとまて\n　　わかったよ\n\n\n[[]][[]]
+if_flag 3 1
+add_likability 1 100
+chg_npc_img 14811 95
+chg_npc_dir 14811 up
+step_npc 14811 2
+msg バレット\n「よっしゃ　いこうぜ！
+sleep 16
+fi
+if_flag 3 0
+chg_npc_img 14811 209
+chg_npc_dir 14811 right
+jump_npc 14811 same 1
+sleep 32
+step_npc 14811 2
+msg バレット\n「クラウド　なにをためらう！\n　セフィロスが　やくそくのちに　むかうのを\n　だまってみているのか？\n　セフィロスも　しんらも\n　やくそくのちには　いかせねえ。\n　いかせちまったら\n　とりかえしのつかねえことになる\n　オレにわかるのはそれだけだぜ！\n\n\n\n#2\n　　すばらしい！\n　　それだけか？\n\n\n[[]][[]]
+chg_npc_img 14811 98
+chg_npc_dir 14811 left
+if_flag 3 0
+add_likability 1 300
+sleep 16
+jump_npc 14810 same 1
+sleep 16
+step_npc 14810 1
+sleep 32
+jump_npc 14811 same 1
+sleep 16
+jump_npc 14811 same 1
+sleep 16
+chg_npc_img 14811 98
+chg_npc_dir 14811 left
+step_npc 14811 2
+msg バレット\n「まかせとけって！
+fi
+if_flag 3 1
+sub_likability 1 100
+chg_npc_img 14810 103
+sleep 32
+reset_talk_npc
+chg_npc_dir 14810 right
+msg 『やれやれ……
+chg_npc_img 14810 0
+chg_npc_dir 14810 up
+sleep 16
+chg_npc_img 14811 95
+chg_npc_dir 14811 up
+jump_npc 14811 same 1
+set_talk_npc 14811
+msg バレット\n「いいじゃねえかよ！\n　それで　じゅうぶんだぜ！
+fi
+fi
+reset_talk_npc
+chg_npc_img 14811 1
+chg_npc_dir 14811 left
+sleep 16
+move_npc 14811 left 1
+sleep 16
+kill 14811
+sleep 16
+move_char down 1
+sleep 16
+chg_npc_img 14810 103
+chg_npc_dir 14810 up
+sleep 48
+chg_npc_dir 14810 right
+msg 『やれやれ……
+chg_npc_img 14810 0
+chg_npc_dir 14810 up
+sleep 32
+msg ティファ\n「………
+chg_npc_dir 14812 up
+sleep 16
+chg_speed 14812 slow
+move_npc 14812 up 2
+sleep 64
+msg ティファ\n「……ねぇクラウド
+chg_npc_dir 14810 down
+sleep 32
+step_npc 14812 2
+msg ティファ\n「セフィロスに　きられたわたしは\n　どんなふうだった？
+sleep 32
+chg_npc_img 14810 206
+sleep 16
+chg_speed 14810 slow
+step_npc 14810 2
+msg 『もうダメだとおもった。\n……かなしかったよ
+sleep 32
+msg ティファ\n「………
+sleep 32
+chg_speed 14813 slow
+step_npc 14813 2
+msg エアリス\n「わたし……
+chg_npc_img 14810 0
+sleep 16
+chg_npc_dir 14812 down
+sleep 16
+step_npc 14813 3
+msg エアリス\n「こだいしゅ……セトラ……ジェノバ……\n　セフィロス……わたし……
+sleep 16
+chg_npc_dir 14812 left
+sleep 48
+chg_speed 14812 normal
+jump_npc 14812 same 1
+sleep 4
+chg_npc_dir 14812 up
+sleep 4
+chg_npc_dir 14812 right
+sleep 4
+chg_npc_dir 14812 down
+sleep 4
+chg_npc_dir 14812 left
+step_npc 14812 2
+msg ティファ\n「いきましょう。\n　バレットがまっているわ
+sleep 16
+chg_npc_dir 14813 up
+sleep 16
+chg_speed 14810 normal
+chg_speed 14813 normal
+jump_npc 14810 same 1
+jump_npc 14813 same 1
+sleep 16
+step_npc 14810 1
+step_npc 14813 1
+sleep 16
+move_npc 14810 up 2
+move_npc 14812 up 3
+move_npc 14813 up 6
+sleep 32
+move_char down 4
+move_npc 14810 left 2
+sleep 16
+move_npc 14812 left 3
+sleep 16
+kill 14810
+sleep 16
+chg_npc_dir 14814 right
+sleep 16
+kill 14812
+move_npc 14813 left 3
+chg_speed 14814 slow
+step_npc 14814 2
+msg3 -1 レッド13\n「じつに　きょうみぶかい　はなしだ……
+sleep 48
+kill 14813
+wait_key_push_edge a
+erase_msg3
+sleep 16
+fadeout
+kill_through 90120
+sleep 16
+kill 14814
+warp 147 3 4 left
+draw_char on
+sleep 16
+play_bgm
+if_party_mem 1
+del_party_mem 1
+fi
+if_party_mem 2
+del_party_mem 2
+fi
+if_party_mem 3
+del_party_mem 3
+fi
+if_party_mem 4
+del_party_mem 4
+fi
+if_party_mem 10
+del_party_mem 10
+fi
+if_not_active_mem 0
+add_party_mem 0
+fi
+create event_generator 14721 147 7 11 17 1 0 @147/phs.txt
+create event_generator 14722 147 8 11 17 1 0 @147/phs.txt
+if_flag 10 0
+create npc2 14711 147 7 11 3 3 0 
+create npc2 14712 147 8 11 4 2 0 
+add_party_mem 1
+add_party_mem 2
+fi
+if_flag 10 1
+create npc2 14711 147 7 11 2 3 0 
+create npc2 14712 147 8 11 4 2 0 
+add_party_mem 1
+add_party_mem 3
+fi
+if_flag 10 2
+create npc2 14711 147 7 11 2 3 0 
+create npc2 14712 147 8 11 3 2 0 
+add_party_mem 1
+add_party_mem 4
+fi
+if_flag 10 3
+create npc2 14711 147 7 11 1 3 0 
+create npc2 14712 147 8 11 4 2 0 
+add_party_mem 2
+add_party_mem 3
+fi
+if_flag 10 4
+create npc2 14711 147 7 11 1 3 0 
+create npc2 14712 147 8 11 3 2 0 
+add_party_mem 2
+add_party_mem 4
+fi
+if_flag_greater 10 4
+create npc2 14711 147 7 11 1 3 0 
+create npc2 14712 147 8 11 2 2 0 
+add_party_mem 3
+add_party_mem 4
+fi
+sleep 16
+fadein
+set_flag 0 0
+set_flag 1 0
+set_flag 16 0
+set_flag 17 0
+set_flag 21 1
+chg_event_move_char_speed normal
+kill_through_range 14631 14635
+create event_generator 90120 901 175 79 17 1 0 @../common/901/reset_flag21.txt
+set_flag 30 42

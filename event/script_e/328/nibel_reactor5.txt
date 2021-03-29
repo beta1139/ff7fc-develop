@@ -256,6 +256,9 @@ create npc_event 14812 148 7 9 2 2 2 none
 create npc_event 14813 148 7 10 3 2 2 none
 create npc_event 14814 148 6 11 4 0 2 none
 create event_generator 14827 148 6 6 17 1 0 @148/cloud's_past07.txt
+del_party_mem 9
+del_party_mem 10
+add_party_mem 0
 sleep 32
 fadein
 chg_char_state_event

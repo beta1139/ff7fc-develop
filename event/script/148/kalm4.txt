@@ -90,7 +90,7 @@ create npc_event 72500 725 4 3 31 0 0 none
 create npc_event 72501 725 4 5 31 1 1 none
 create npc_event 72502 725 4 7 31 1 1 none
 create npc_event 72510 725 5 7 12 1 1 none
-create npc_event 72511 725 6 6 178 0 1 none
+create npc_event 72511 725 6 6 100 2 1 none
 fadeout
 sleep 32
 warp 725 5 7 down

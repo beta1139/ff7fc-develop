@@ -1,0 +1,3 @@
+wait_same_pos
+// from 312/shinra_mansion4.txt
+msg セフィロス\n「クックック……

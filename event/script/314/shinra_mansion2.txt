@@ -1,0 +1,31 @@
+// from common/314/shinra_mansion1.txt
+msg3 -1 セフィロス\n「……2000ねんまえの　ちそうから\n　みつかった　かし　じょうたいの　せいぶつ
+wait_key_push_edge a
+erase_msg3
+sleep 32
+msg3 -1 セフィロス\n「そのせいぶつを　ガストはかせは\n　ジェノバと　めいめいした……
+wait_key_push_edge a
+erase_msg3
+sleep 32
+msg3 -1 セフィロス\n「Xねん　Xがつ　Xにち。\n　ジェノバを　"こだいしゅ"と　かくにん……
+wait_key_push_edge a
+erase_msg3
+sleep 32
+msg3 -1 セフィロス\n「Xねん　Xがつ　Xにち。\n　ジェノバ.プロジェクト　しょうにん。\n　まこうろ　1ごうき　しようきょか……
+wait_key_push_edge a
+erase_msg3
+set_flag 17 1
+sleep 16
+wait_event_invalid 31420
+if_flag 16 0
+move_npc 31411 right 2
+sleep 64
+fi
+if_flag 16 1
+move_npc 31411 left 3
+sleep 96
+fi
+move_char up 6
+move_npc 31411 up 6
+sleep 192
+create event_generator 31422 314 0 0 17 0 0 @314/shinra_mansion3.txt

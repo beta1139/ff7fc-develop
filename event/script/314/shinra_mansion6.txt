@@ -1,0 +1,333 @@
+wait_same_pos
+// from 312/shinra_mansion4.txt
+create npc_event 31410 314 6 10 12 0 2 none
+draw_char off
+msg3 -1 セフィロス\n「だれだ！！
+move_char up 3
+sleep 48
+wait_key_push_edge a
+erase_msg3
+sleep 32
+chg_speed 31411 slow
+step_npc 31411 2
+msg セフィロス\n「フッ……うらぎりものめ
+sleep 16
+step_npc 31410 1
+msg 『うらぎりもの？
+chg_npc_dir 31411 down
+sleep 32
+chg_npc_dir 31411 left
+chg_npc_img 31411 5
+jump_npc_target_pos 31411 5 6
+play_se jump.wav
+sleep 6
+chg_npc_y_offset 31411 1
+sleep 1
+chg_npc_y_offset 31411 0
+sleep 1
+chg_npc_y_offset 31411 -1
+sleep 1
+chg_npc_y_offset 31411 -2
+sleep 1
+chg_npc_y_offset 31411 -3
+sleep 1
+chg_npc_y_offset 31411 -4
+sleep 5
+play_se landing.wav
+sleep 3
+chg_npc_dir 31411 up
+sleep 32
+step_npc 31411 2
+set_talk_npc 31411
+msg セフィロス\n「なにもしらぬ　うらぎりものよ。\n　おしえてやろう\n\n　このほしは　もともと"セトラ"のものだった。\n　セトラは　たびをする　みんぞく。\n　たびをして　ほしをひらき　そしてまた　たび…\n\n　つらく　きびしいたびのはてに\n　やくそくのちを　しり\n　しじょうのこうふくを　みつける
+chg_npc_img 31411 5
+chg_npc_dir 31411 left
+sleep 32
+step_npc 31411 2
+msg セフィロス\n「だが　たびをきらう　ものたちが　あらわれた。\n　そのものは　たびをすることをやめ\n　いえをもち　あんらくな　せいかつを　えらんだ\n　セトラとほしが　うみだしたものを　うばい\n　なにも　かえそうとしない
+sleep 16
+chg_npc_img 31411 100
+chg_npc_dir 31411 down
+sleep 32
+step_npc 31411 3
+sleep 16
+msg セフィロス\n「それが　おまえたちの　そせんだ
+reset_talk_npc
+sleep 16
+chg_speed 31410 slow
+step_npc 31410 1
+msg 『セフィロス……
+sleep 16
+chg_npc_img 31411 5
+set_active_msg 31411
+move_npc 31411 left 1
+set_talk_npc 31411
+msg セフィロス\n「むかし　このほしを　さいがいがおそった\n\n\n　おまえたちの　そせんは\n　にげまわり……　かくれたおかげで\n　いきのびた
+sleep 32
+chg_event_move_char_speed slow
+chg_npc_img 31411 100
+move_npc 31411 down 2
+sleep 16
+move_char down 1
+sleep 32
+msg セフィロス\n「ほしのききは　セトラのぎせいで　かいひされた。\n　そのあとで　のうのうと　かずをふやしたのが\n　おまえたちだ\n セトラは　こうしてレポートのなかに\n　のこるだけの　しゅぞくに　なってしまった
+sleep 16
+chg_npc_img 31411 5
+chg_npc_dir 31411 right
+sleep 16
+jump_npc 31410 same 1
+sleep 16
+chg_speed 31410 normal
+step_npc 31410 2
+msg 『それがあんたとどういう\n　かんけいが　あるんだ？
+sleep 24
+chg_npc_img 31411 100
+chg_npc_dir 31411 down
+sleep 24
+chg_speed 31411 slow
+step_npc 31411 2
+sleep 32
+msg セフィロス\n「わからないか？
+sleep 16
+msg3 -1 セフィロス\n「2000ねんまえの　ちそうから　はっけんされ\n　ジェノバと　なづけられた　こだいしゅ
+move_npc 31411 down 2
+sleep 32
+move_char down 1
+sleep 32
+chg_npc_img 31411 5
+move_npc 31411 right 1
+sleep 32
+wait_key_push_edge a
+erase_msg3
+sleep 24
+chg_npc_dir 31411 up
+sleep 24
+chg_npc_img 31411 5
+chg_npc_dir 31411 left
+sleep 24
+chg_npc_img 31411 100
+chg_npc_dir 31411 down
+sleep 24
+step_npc 31411 1
+msg セフィロス\n「そして　ジェノバ.プロジェクト
+sleep 24
+chg_npc_dir 31411 left
+msg セフィロス\n「ジェノバ.プロジェクトとは\n　こだいしゅ……つまり　セトラの　のうりょくをもった\n　にんげんを　つくりだすことだ
+sleep 32
+chg_speed 31411 slow
+step_npc 31411 3
+sleep 32
+msg3 -1 セフィロス\n「……つくりだされたのは　オレだ
+wait_key_push_edge a
+erase_msg3
+jump_npc 31410 same 1
+chg_npc_dir 31410 left
+sleep 16
+chg_speed 31410 fast
+step_npc 31410 2
+msg 『つ　つくりだされた！？
+sleep 16
+chg_npc_img 31411 5
+chg_npc_dir 31411 right
+sleep 32
+move_npc 31411 right 1
+sleep 8
+chg_speed 31410 slow
+move_npc 31410 right 1
+sleep 24
+chg_npc_dir 31410 left
+move_npc 31411 down 2
+msg3 -1 セフィロス\n「そう
+sleep 16
+move_char down 1
+sleep 48
+wait_key_push_edge a
+erase_msg3
+step_npc 31411 2
+msg セフィロス\n「ジェノバ.プロジェクトのせきにんしゃ\n　てんさいてき　かがくしゃ　ガストはかせが\n　オレを　つくりだした
+sleep 16
+move_npc 31411 down 4
+sleep 16
+msg3 -1 『そんなこと……どうやって……
+sleep 16
+move_npc 31410 left 1
+sleep 32
+chg_npc_dir 31410 down
+chg_speed 31410 fast
+step_npc 31410 2
+sleep 64
+wait_key_push_edge a
+erase_msg3
+chg_event_move_char_speed normal
+move_char down 2
+chg_speed 31410 normal
+move_npc 31410 down 2
+sleep 32
+chg_speed 31410 fast
+step_npc 31410 1
+msg 『セ　セフィロス？
+stop_bgm
+sleep 64
+chg_speed 31411 normal
+step_npc 31411 1
+msg セフィロス\n「じゃまをするな。\n　オレは　ははに　あいにゆく。
+play_se katana.ogg
+if_flag 19 0
+play_event_bgm 3-05-Those_Chosen_by_the_Planet.ogg
+fi
+if_flag 19 1
+play_event_bgm 3-05-Those_Chosen_by_the_Planet2.ogg
+fi
+chg_npc_img 31411 207
+create npc_event 31412 314 5 16 207 2 1 none
+create npc_event 31413 314 5 15 207 0 1 none
+sleep 8
+chg_npc_img 31411 202
+chg_npc_dir 31411 right
+chg_npc_img 31412 202
+set_npc_pos 31412 314 6 17
+kill 31413
+sleep 16
+chg_speed 31411 slow
+slide_walk_npc 31411 down 3
+slide_walk_npc 31412 down 3
+sleep 32
+chg_speed 31410 slow
+step_npc 31410 1
+sleep 64
+chg_npc_img 31411 200
+chg_npc_dir 31411 down
+chg_npc_img 31412 200
+set_npc_pos 31412 314 5 19
+slide_walk_npc 31411 left 2
+slide_walk_npc 31412 left 2
+chg_speed 31410 normal
+step_npc 31410 1
+loop 2
+sleep 8
+chg_npc_y_offset 31411 -5
+chg_npc_y_offset 31412 -5
+sleep 8
+chg_npc_y_offset 31411 -4
+chg_npc_y_offset 31412 -4
+pool
+chg_speed 31410 fast
+step_npc 31410 2
+loop 2
+sleep 8
+chg_npc_y_offset 31411 -5
+chg_npc_y_offset 31412 -5
+sleep 8
+chg_npc_y_offset 31411 -4
+chg_npc_y_offset 31412 -4
+pool
+chg_npc_img 31411 202
+chg_npc_dir 31411 right
+chg_npc_img 31412 202
+set_npc_pos 31412 314 4 20
+slide_walk_npc 31411 down 1
+slide_walk_npc 31412 down 1
+sleep 32
+kill_through_range 31411 31412
+create npc_event 29701 297 26 12 80 3 0 none
+create npc_event 29702 297 31 12 80 3 0 none
+create npc_event 29703 297 27 13 80 3 0 none
+create npc_event 29704 297 31 13 80 3 0 none
+create npc_event 29705 297 22 14 80 3 0 none
+create npc_event 29706 297 25 14 80 3 0 none
+create npc_event 29707 297 30 14 80 3 0 none
+create npc_event 29708 297 32 14 80 3 0 none
+create npc_event 29709 297 20 15 80 3 0 none
+create npc_event 29710 297 23 15 80 3 0 none
+create npc_event 29711 297 26 15 80 3 0 none
+create npc_event 29712 297 31 15 80 3 0 none
+create npc_event 29713 297 18 16 80 3 0 none
+create npc_event 29714 297 18 16 80 3 0 none
+create npc_event 29715 297 25 16 80 3 0 none
+create npc_event 29716 297 32 16 80 3 0 none
+create npc_event 29717 297 36 16 80 3 0 none
+create npc_event 29718 297 21 17 80 3 0 none
+create npc_event 29719 297 21 17 80 3 0 none
+create npc_event 29720 297 21 17 80 3 0 none
+create npc_event 29721 297 21 17 80 3 0 none
+create npc_event 29722 297 21 17 80 3 0 none
+create npc_event 29723 297 23 17 80 3 0 none
+create npc_event 29724 297 31 17 80 3 0 none
+create npc_event 29725 297 34 17 80 3 0 none
+create npc_event 29726 297 19 18 80 3 0 none
+create npc_event 29727 297 22 18 80 3 0 none
+create npc_event 29728 297 28 18 80 3 0 none
+create npc_event 29729 297 33 18 80 3 0 none
+create npc_event 29730 297 37 18 80 3 0 none
+create npc_event 29731 297 20 19 80 3 0 none
+create npc_event 29732 297 23 19 80 3 0 none
+create npc_event 29733 297 29 19 80 3 0 none
+create npc_event 29734 297 31 19 80 3 0 none
+create npc_event 29735 297 38 19 80 3 0 none
+create npc_event 29736 297 19 20 80 3 0 none
+create npc_event 29737 297 33 20 80 3 0 none
+create npc_event 29738 297 36 20 80 3 0 none
+create npc_event 29739 297 36 20 80 3 0 none
+create npc_event 29740 297 23 21 80 3 0 none
+create npc_event 29741 297 39 21 80 3 0 none
+create npc_event 29742 297 24 22 80 3 0 none
+create npc_event 29743 297 31 22 80 3 0 none
+create npc_event 29744 297 37 22 80 3 0 none
+create npc_event 29745 297 20 23 80 3 0 none
+create npc_event 29746 297 25 23 80 3 0 none
+create npc_event 29747 297 26 23 80 3 0 none
+create npc_event 29748 297 30 23 80 3 0 none
+create npc_event 29749 297 34 23 80 3 0 none
+create npc_event 29750 297 18 24 80 3 0 none
+create npc_event 29751 297 22 24 80 3 0 none
+create npc_event 29752 297 27 24 80 3 0 none
+create npc_event 29753 297 37 24 80 3 0 none
+create npc_event 29754 297 19 25 80 3 0 none
+create npc_event 29755 297 24 25 80 3 0 none
+create npc_event 29756 297 29 25 80 3 0 none
+create npc_event 29757 297 33 25 80 3 0 none
+create npc_event 29758 297 39 25 80 3 0 none
+create npc_event 29759 297 18 26 80 3 0 none
+create npc_event 29760 297 26 26 80 3 0 none
+create npc_event 29761 297 31 26 80 3 0 none
+create npc_event 29762 297 37 26 80 3 0 none
+create npc_event 29763 297 20 27 80 3 0 none
+create npc_event 29764 297 23 27 80 3 0 none
+create npc_event 29765 297 28 27 80 3 0 none
+create npc_event 29766 297 36 27 80 3 0 none
+create npc_event 29767 297 18 28 80 3 0 none
+create npc_event 29768 297 22 28 80 3 0 none
+create npc_event 29769 297 30 28 80 3 0 none
+create npc_event 29770 297 33 28 80 3 0 none
+create npc_event 29771 297 38 28 80 3 0 none
+create npc_event 29772 297 20 29 80 3 0 none
+create npc_event 29773 297 25 29 80 3 0 none
+create npc_event 29774 297 32 29 80 3 0 none
+create npc_event 29775 297 37 29 80 3 0 none
+set_flag_wall 29701
+set_flag_wall 29703
+set_flag_wall 29728
+set_flag_wall 29733
+set_flag_wall 29737
+set_flag_wall 29740
+set_flag_wall 29742
+set_flag_wall 29743
+set_flag_wall 29746
+set_flag_wall 29747
+set_flag_wall 29748
+create npc_event 29780 297 25 20 50 0 0 none
+create npc2 29781 297 24 21 208 1 4 none
+create npc2 29782 297 32 21 140 1 4 none
+create event_generator 29790 297 30 12 17 1 0 @297/zangan2.txt
+create event_generator 29791 297 30 13 17 1 0 @297/zangan2.txt
+create event_generator 29792 297 29 18 17 1 0 @297/zangan3.txt
+create event_generator 29793 297 24 21 17 1 0 @297/talk_npc.txt
+create event_generator 29794 297 32 21 17 1 0 @297/talk_npc2.txt
+create event_generator 29795 297 32 19 17 1 0 @297/cloud's_past10.txt
+sleep 32
+draw_char on
+kill 31410
+kill_through 31100
+set_flag 9 8
+set_flag 17 0
+set_flag 18 2

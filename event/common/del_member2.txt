@@ -24,3 +24,9 @@ fi
 if_party_mem 8
 del_party_mem 8
 fi
+if_party_mem 9
+del_party_mem 9
+fi
+if_party_mem 10
+del_party_mem 10
+fi

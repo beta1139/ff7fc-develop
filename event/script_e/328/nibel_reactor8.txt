@@ -1,0 +1,126 @@
+// from 327/nibel_reactor7.txt
+wait_target_talk 32815
+chg_event_move_char_speed fast
+step_char 2
+sleep 16
+play_se jump.wav
+jump_char_target_pos 8 16
+sleep 16
+play_se landing.wav
+sleep 8
+chg_char_dir left
+sleep 8
+create npc_event 32810 328 8 16 12 2 1 none
+draw_char off
+chg_type 32815 npc_event
+chg_speed 32815 slow
+step_npc 32815 2
+sleep 8
+chg_event_move_char_speed slow
+move_char left 1
+move_npc 32810 left 1
+sleep 16
+chg_speed 32810 not_step
+chg_npc_dir 32810 down
+sleep 32
+loop 2
+chg_npc_y_offset 32815 -3
+sleep 4
+chg_npc_y_offset 32815 -4
+sleep 4
+pool
+step_npc 32815 2
+sleep 16
+msg3 -1 ティファ\n「……ピンチの……ときには\n　……きてくれるって\n　やくそくしたのに……
+loop 2
+chg_npc_y_offset 32815 -3
+sleep 4
+chg_npc_y_offset 32815 -4
+sleep 4
+pool
+wait_key_push_edge a
+erase_msg3
+sleep 16
+chg_npc_img 32810 97
+chg_npc_dir 32810 down
+sleep 32
+step_npc 32810 1
+loop 8
+chg_npc_y_offset 32810 -3
+sleep 2
+chg_npc_y_offset 32810 -4
+sleep 2
+pool
+sleep 32
+loop 6
+chg_npc_y_offset 32810 -3
+sleep 2
+chg_npc_y_offset 32810 -4
+sleep 2
+pool
+sleep 32
+chg_npc_img 32810 12
+chg_npc_dir 32810 left
+sleep 48
+chg_speed 32810 slow
+move_npc 32810 left 1
+sleep 16
+chg_speed 32810 not_step
+sleep 16
+play_se squat.ogg
+chg_npc_dir 32810 down
+jump_npc 32810 same 1
+chg_npc_dir 32815 left
+sleep 4
+jump_npc 32815 same 1
+sleep 44
+chg_npc_dir 32810 right
+jump_npc 32810 same 1
+chg_npc_img 32815 193
+set_npc_pos 32815 328 7 16
+chg_npc_y_offset 32815 -5
+chg_speed 32815 slow
+slide_npc 32815 right 1
+sleep 12
+chg_npc_y_offset 32815 -6
+chg_speed 32815 not_step
+sleep 36
+chg_speed 32810 slow
+chg_speed 32815 slow
+loop 3
+move_char right 1
+slide_walk_npc 32815 right 1
+move_npc 32810 right 1
+loop 2
+sleep 8
+chg_npc_y_offset 32815 -6
+sleep 8
+chg_npc_y_offset 32815 -5
+pool
+sleep 32
+pool
+slide_walk_npc 32815 right 1
+move_npc 32810 right 1
+sleep 8
+chg_npc_y_offset 32815 -6
+sleep 8
+chg_npc_y_offset 32815 -5
+sleep 4
+chg_speed 32810 not_step
+chg_speed 32815 not_step
+sleep 40
+chg_npc_y_offset 32815 -4
+sleep 4
+create npc2 32816 328 11 16 193 2 4 none
+kill 32815
+play_se squat.ogg
+chg_speed 32810 slow
+slide_walk_npc 32810 left 1
+sleep 20
+chg_speed 32810 not_step
+sleep 28
+draw_char on
+kill 32810
+chg_event_move_char_speed normal
+create event_generator 32821 328 0 0 17 1 0 @328/talk_tifa.txt
+create event_generator 32822 328 7 9 17 1 0 @328/nibel_reactor9.txt

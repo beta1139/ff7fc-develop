@@ -1,0 +1,66 @@
+wait_same_pos
+// from 314/shinra_mansion6.txt
+set_flag 17 0
+kill_through_range 29793 94
+move_char up 1
+sleep 16
+draw_char off
+sleep 80
+chg_char_dir down
+draw_char on
+chg_event_move_char_speed slow
+move_char down 2
+sleep 80
+chg_char_img_tmp 206
+sleep 32
+step_char 2
+sleep 96
+create npc_event 29783 297 32 20 206 1 4 none
+draw_char off
+loop 2
+loop 2
+sleep 2
+chg_npc_y_offset 29783 -3
+sleep 2
+chg_npc_y_offset 29783 -4
+pool
+sleep 2
+pool
+sleep 96
+draw_char on
+reset_char_img_tmp
+kill 29783
+sleep 16
+chg_char_dir right
+sleep 32
+chg_char_img_tmp 206
+step_char 2
+sleep 64
+chg_event_move_char_speed normal
+step_char 1
+sleep 64
+chg_event_move_char_speed slow
+chg_char_dir down
+reset_char_img_tmp
+sleep 48
+move_char left 4
+sleep 32
+set_screen_effect sub 255 255 255 0
+include ./event/common/set_text/clear_alpha0.txt
+loop 20
+sleep 4
+inc_screen_effect_val 5
+pool
+set_text 5 　 　         『ひどい……　
+include ./event/common/set_text/st05.txt
+wait_key_push_edge a
+include ./event/common/set_text/fadeout_all.txt
+set_text 5 　 　         『セフィロス……
+set_text 6 　 　         　ひどすぎる……
+include ./event/common/set_text/st05.txt
+include ./event/common/set_text/st06.txt
+warp 297 28 21 down
+wait_key_push_edge a
+include ./event/common/set_text/fadeout_all.txt
+include ./event/common/set_text/clear_alpha0.txt
+include ./event/common/297/cloud's_past10_1.txt

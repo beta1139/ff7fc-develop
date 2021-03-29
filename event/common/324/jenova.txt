@@ -1,0 +1,102 @@
+// from common/324/jenova_statue.txt
+chg_event_move_char_speed normal
+include ./event/common/effect_fadeout.txt
+sleep 16
+set_flag 19 0
+set_image_trans_col 32 0 176
+draw_image 000 0 8 0 0 256 560 1 event/shinra_bldg/bubble_blue.png
+set_image_trans_col 32 0 176
+draw_image 001 0 8 0 0 128 192 0 event/nibel/jenova_gray.png
+set_image_alpha 001 100
+set_image_trans_col 32 0 176
+draw_image 002 128 8 128 0 128 192 0 event/nibel/jenova.png
+set_image_trans_col 32 0 176
+draw_image 003 0 8 0 0 128 192 0 event/nibel/jenova.png
+set_image_alpha 003 0
+set_image_trans_col 32 0 176
+draw_image 006 128 8 128 0 128 192 0 event/nibel/jenova_gray.png
+set_image_alpha 006 0
+warp 715 7 7 down
+set_flag 19 0
+sleep 16
+create event_generator 32431 324 0 0 17 0 0 @../common/324/jenova_effect.txt
+create event_generator 32430 324 0 0 17 0 0 @../common/135/bubble.txt
+loop 15
+chg_image_pos_offset 001 1 -2 0 0 0 0
+chg_image_pos_offset 002 1 -2 0 0 0 0
+chg_image_pos_offset 003 1 -2 0 0 0 0
+chg_image_pos_offset 006 1 -2 0 0 0 0
+sleep 4
+chg_image_pos_offset 001 0 2 0 0 0 0
+chg_image_pos_offset 002 0 2 0 0 0 0
+chg_image_pos_offset 003 0 2 0 0 0 0
+chg_image_pos_offset 006 0 2 0 0 0 0
+sleep 4
+chg_image_pos_offset 001 -1 -2 0 0 0 0
+chg_image_pos_offset 002 -1 -2 0 0 0 0
+chg_image_pos_offset 003 -1 -2 0 0 0 0
+chg_image_pos_offset 006 -1 -2 0 0 0 0
+sleep 4
+chg_image_pos_offset 001 0 2 0 0 0 0
+chg_image_pos_offset 002 0 2 0 0 0 0
+chg_image_pos_offset 003 0 2 0 0 0 0
+chg_image_pos_offset 006 0 2 0 0 0 0
+sleep 4
+pool
+draw_image 004 0 224 0 0 256 32 1 event/nibel/lightning.png
+set_flag 19 1
+loop 5
+loop 4
+chg_image_pos_offset 001 1 -2 0 0 0 0
+chg_image_pos_offset 002 1 -2 0 0 0 0
+chg_image_pos_offset 003 1 -2 0 0 0 0
+chg_image_pos_offset 004 0 -20 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 2 0 0 0 0
+chg_image_pos_offset 002 0 2 0 0 0 0
+chg_image_pos_offset 003 0 2 0 0 0 0
+chg_image_pos_offset 004 0 -20 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 -1 -2 0 0 0 0
+chg_image_pos_offset 002 -1 -2 0 0 0 0
+chg_image_pos_offset 003 -1 -2 0 0 0 0
+chg_image_pos_offset 004 0 -20 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 2 0 0 0 0
+chg_image_pos_offset 002 0 2 0 0 0 0
+chg_image_pos_offset 003 0 2 0 0 0 0
+chg_image_pos_offset 004 0 -20 0 0 0 0
+sleep 2
+pool
+chg_image_pos_offset 004 0 320 0 0 0 0
+pool
+set_flag 19 2
+loop_inf
+loop 4
+chg_image_pos_offset 001 1 -2 0 0 0 0
+chg_image_pos_offset 002 1 -2 0 0 0 0
+chg_image_pos_offset 003 1 -2 0 0 0 0
+chg_image_pos_offset 004 0 -20 0 0 0 0
+chg_image_pos_offset 006 1 -2 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 2 0 0 0 0
+chg_image_pos_offset 002 0 2 0 0 0 0
+chg_image_pos_offset 003 0 2 0 0 0 0
+chg_image_pos_offset 004 0 -20 0 0 0 0
+chg_image_pos_offset 006 0 2 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 -1 -2 0 0 0 0
+chg_image_pos_offset 002 -1 -2 0 0 0 0
+chg_image_pos_offset 003 -1 -2 0 0 0 0
+chg_image_pos_offset 004 0 -20 0 0 0 0
+chg_image_pos_offset 006 -1 -2 0 0 0 0
+sleep 2
+chg_image_pos_offset 001 0 2 0 0 0 0
+chg_image_pos_offset 002 0 2 0 0 0 0
+chg_image_pos_offset 003 0 2 0 0 0 0
+chg_image_pos_offset 004 0 -20 0 0 0 0
+chg_image_pos_offset 006 0 2 0 0 0 0
+sleep 2
+pool
+chg_image_pos_offset 004 0 320 0 0 0 0
+pool

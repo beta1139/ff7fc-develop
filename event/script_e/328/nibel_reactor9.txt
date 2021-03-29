@@ -1,0 +1,324 @@
+// from 328/nibel_reactor8.txt
+wait_same_pos
+draw_char off
+fadeout
+sleep 64
+warp 324 7 7 up
+play_event_bgm EX-12-Pre_Those_Chosen.ogg
+create npc_event 32411 324 7 13 5 0 0 none
+draw_image 001 0 8 0 0 256 224 1 event/black.png
+set_image_alpha 001 100
+close_door 32850
+sleep 93
+fadein
+chg_event_move_char_speed slow
+move_char down 5
+loop 13
+sub_image_alpha 001 4
+sleep 10
+pool
+chg_speed 32411 normal
+loop 4
+sub_image_alpha 001 4
+sleep 10
+pool
+loop 4
+sub_image_alpha 001 4
+sleep 10
+pool
+loop 4
+sub_image_alpha 001 4
+sleep 10
+pool
+play_event_bgm EX-12-Pre_Those_Chosen.ogg
+chg_npc_dir 32411 down
+loop 4
+sub_image_alpha 001 4
+sleep 10
+pool
+erase_image 001
+chg_npc_dir 32411 up
+chg_npc_img 32411 189
+sleep 24
+chg_speed 32411 slow
+step_npc 32411 1
+sleep 32
+chg_speed 32411 normal
+step_npc 32411 2
+sleep 32
+chg_speed 32411 fast
+step_npc 32411 4
+sleep 64
+chg_speed 32411 normal
+chg_npc_dir 32411 down
+sleep 16
+step_npc 32411 2
+sleep 32
+chg_speed 32411 fast
+step_npc 32411 5
+sleep 56
+chg_npc_img 32411 5
+chg_speed 32411 normal
+chg_npc_dir 32411 up
+sleep 40
+step_npc 32411 3
+sleep 32
+play_event_bgm 3-05-Those_Chosen_by_the_Planet.ogg
+msg セフィロス\n「かあさん　いっしょに　このほしを\n　とりもどそうよ\n\n　オレ　いいことを　かんがえたんだよ。\n　やくそくのちへ　いこう
+set_image_trans_col 32 0 176
+draw_image 001 112 208 0 0 16 32 1 event/black.png
+create npc_event 32410 324 7 19 12 0 1 none
+move_npc 32410 up 2
+sleep 64
+erase_image 001
+step_npc 32410 1
+msg 『セフィロス……
+kill_through_range 29700 29799
+kill_through 32420
+sleep 32
+jump_npc 32410 same 1
+sleep 16
+set_flag 17 0
+chg_speed 32410 fast
+step_npc 32410 3
+msg 『オレのかぞくを！　オレのこきょうを！\n　よくもやってくれたな！
+include ./event/common/key_unvalid.txt
+sleep 64
+chg_char_state_move
+create event_generator 32420 324 0 0 17 1 0 @../common/324/sephiros_shaking.txt
+msg セフィロス\n「クックック……\n　かあさん　またやつらが　きたよ
+kill 32420
+sleep 2
+chg_npc_y_offset 32411 -4
+sleep 48
+chg_speed 32411 normal
+step_npc 32411 2
+msg セフィロス\n「かあさんは　すぐれた　のうりょくと\n　ちしき　そして　まほうで\n　このほしの　しはいしゃに　なるはずだった
+include ./event/common/set_text/clear_alpha0.txt
+set_image_trans_col 78 168 16
+draw_image 001 0 8 0 0 256 224 1 event/black.png
+draw_image 002 112 188 128 96 16 16 1 character.bmp
+draw_image 003 112 124 160 32 16 16 1 character.bmp
+set_image_alpha 001 0
+set_image_alpha 002 100
+set_image_alpha 003 100
+chg_npc_img 32410 17
+chg_npc_img 32411 17
+sleep 16
+set_screen_effect sub 255 255 255 0
+loop 7
+sleep 12
+add_image_alpha 001 10
+pool
+set_text 4 　        　けど　アイツらが……
+create event_generator 32421 324 0 0 17 1 0 @../common/set_text/st04.txt
+move_char up 1
+loop 2
+chg_image_pos_offset 003 -1 0 16 0 0 0
+loop 4
+sleep 2
+chg_image_pos_offset 002 0 1 0 0 0 0
+pool
+chg_image_pos_offset 003 1 0 -16 0 0 0
+loop 4
+sleep 2
+chg_image_pos_offset 002 0 1 0 0 0 0
+pool
+pool
+wait_event_invalid 32421
+wait_key_push_edge a
+include ./event/common/set_text/fadeout_all.txt
+sleep 24
+set_text 4 　         なんの　とりえもない
+set_text 5 　       　　　  アイツらが
+create event_generator 32421 324 0 0 17 1 0 @../common/set_text/st04.txt
+create event_generator 32422 324 0 0 17 1 0 @../common/set_text/st05.txt
+move_char up 1
+loop 2
+chg_image_pos_offset 003 -1 0 16 0 0 0
+loop 4
+sleep 2
+chg_image_pos_offset 002 0 1 0 0 0 0
+pool
+chg_image_pos_offset 003 1 0 -16 0 0 0
+loop 4
+sleep 2
+chg_image_pos_offset 002 0 1 0 0 0 0
+pool
+pool
+wait_event_invalid 32422
+wait_key_push_edge a
+include ./event/common/set_text/fadeout_all.txt
+sleep 16
+move_char up 1
+loop 2
+add_image_alpha 001 10
+chg_image_pos_offset 003 -1 0 16 0 0 0
+loop 4
+sleep 2
+chg_image_pos_offset 002 0 1 0 0 0 0
+pool
+chg_image_pos_offset 003 1 0 -16 0 0 0
+loop 4
+sleep 2
+chg_image_pos_offset 002 0 1 0 0 0 0
+pool
+pool
+add_image_alpha 001 10
+set_text 4 　          かあさんたちから　
+set_text 5 　       このほしを うばったんだよね
+create event_generator 32421 324 0 0 17 1 0 @../common/set_text/st04.txt
+create event_generator 32422 324 0 0 17 1 0 @../common/set_text/st05.txt
+wait_event_invalid 32422
+wait_key_push_edge a
+include ./event/common/set_text/fadeout_all.txt
+sleep 32
+set_text 4 　        でも　もう　かなしまないで
+clear_text 5
+include ./event/common/set_text/st04.txt
+wait_key_push_edge a
+sleep 16
+include ./event/common/set_text/fadeout_all.txt
+include ./event/common/set_text/clear_alpha0.txt
+loop 9
+sub_image_alpha 001 4
+sleep 4
+pool
+loop 2
+chg_image_pos_offset 003 -1 0 16 0 0 0
+loop 4
+sleep 2
+chg_image_pos_offset 003 0 -1 0 0 0 0
+sub_image_alpha 001 4
+pool
+chg_image_pos_offset 003 1 0 -16 0 0 0
+loop 4
+sleep 2
+chg_image_pos_offset 003 0 -1 0 0 0 0
+sub_image_alpha 001 4
+pool
+pool
+sleep 16
+set_npc_pos 32411 324 7 9
+chg_npc_img 32411 5
+chg_npc_img 32410 12
+erase_image_range 001 003
+chg_speed 32411 slow
+draw_image 000 112 64 0 0 16 32 1 event/shinra_bldg/white.png
+set_image_alpha 000 0
+chg_npc_img 32411 203
+chg_npc_dir 32411 down
+create npc_event 32412 324 7 8 203 2 2 none
+create map_obj 32460 324 7 6 111 0 0 
+create map_obj 32461 324 6 7 108 0 0 
+create map_obj 32462 324 7 7 109 0 0 
+create map_obj 32463 324 8 7 110 0 0 
+sleep 16
+chg_npc_img 32411 198
+chg_npc_dir 32411 up
+set_npc_pos 32412 324 6 9
+chg_npc_img 32412 198
+create npc_event 32413 324 6 8 198 1 2 none
+set_flag 17 0
+sleep 16
+chg_npc_dir 32411 right
+chg_npc_img 32412 199
+chg_npc_dir 32412 down
+set_npc_pos 32412 324 8 9
+kill 32413
+flush
+play_se katana2.ogg
+loop 2
+inc_map_draw_y_offset
+chg_npc_y_offset 32461 2
+chg_npc_y_offset 32462 2
+chg_npc_y_offset 32463 2
+sleep 2
+dec_map_draw_y_offset
+chg_npc_y_offset 32461 0
+chg_npc_y_offset 32462 0
+chg_npc_y_offset 32463 0
+sleep 2
+pool
+create event_generator 32423 324 0 0 17 0 0 @../common/137/white.txt
+create event_generator 32424 328 0 0 17 0 0 @../common/324/jenova_statue.txt
+create npc_event 32440 328 6 8 194 0 3 none
+create npc_event 32441 328 7 8 194 0 3 none
+create npc_event 32442 328 8 8 194 3 3 none
+move_npc 32440 up 2
+move_npc 32441 up 2
+move_npc 32442 up 2
+create map_obj 32470 324 7 6 94 0 0 
+create map_obj 32471 324 8 6 95 0 0 
+create map_obj 32472 324 6 7 105 0 0 
+create map_obj 32473 324 7 7 96 0 0 
+create map_obj 32474 324 8 7 97 0 0 
+create map_obj 32475 324 9 7 98 0 0 
+kill_through_range 32460 32463
+sleep 24
+create map_obj 32476 324 7 6 106 0 0 
+create map_obj 32477 324 8 6 107 0 0 
+create map_obj 32478 324 7 7 106 0 0 
+create map_obj 32479 324 8 7 107 0 0 
+create map_obj 32480 324 9 7 99 0 0 
+create map_obj 32481 324 9 8 100 0 0 
+create map_obj 32482 324 9 9 101 0 0 
+sleep 16
+play_se_loop shock.ogg
+sleep 8
+set_flag 17 1
+set_npc_pos 32440 324 6 8
+set_npc_pos 32441 324 7 8
+set_npc_pos 32442 324 8 8
+move_npc 32440 up 2
+move_npc 32441 up 2
+move_npc 32442 up 2
+create map_obj 32483 324 8 9 102 0 0 
+create map_obj 32484 324 9 9 103 0 0 
+create map_obj 32485 324 10 9 104 0 0 
+kill 32475
+kill_through_range 32480 32482
+sleep 24
+set_npc_pos 32483 324 8 10
+set_npc_pos 32484 324 9 10
+set_npc_pos 32485 324 10 10
+sleep 16
+set_npc_pos 32440 324 6 8
+set_npc_pos 32441 324 7 8
+set_npc_pos 32442 324 8 8
+move_npc 32440 up 2
+move_npc 32441 up 2
+move_npc 32442 up 2
+set_npc_pos 32483 324 8 11
+set_npc_pos 32484 324 9 11
+set_npc_pos 32485 324 10 11
+sleep 8
+kill 32483
+kill 32484
+set_npc_pos 32485 324 10 12
+sleep 8
+kill 32485
+loop 4
+set_npc_pos 32440 324 6 8
+set_npc_pos 32441 324 7 8
+set_npc_pos 32442 324 8 8
+move_npc 32440 up 2
+move_npc 32441 up 2
+move_npc 32442 up 2
+sleep 16
+pool
+set_flag 17 2
+chg_npc_img 32411 203
+chg_npc_dir 32411 down
+chg_npc_img 32412 203
+chg_npc_dir 32412 left
+set_npc_pos 32412 324 7 8
+loop_inf
+set_npc_pos 32440 324 6 8
+set_npc_pos 32441 324 7 8
+set_npc_pos 32442 324 8 8
+move_npc 32440 up 2
+move_npc 32441 up 2
+move_npc 32442 up 2
+sleep 16
+pool

@@ -28,6 +28,7 @@ pool
 sleep 16
 pool
 chg_npc_img 72813 12
+chg_npc_dir 72813 down
 sleep 64
 chg_npc_dir 72813 up
 sleep 16

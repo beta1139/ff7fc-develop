@@ -1,0 +1,55 @@
+set_eternal_event
+wait_same_pos
+chg_npc_dir 29780 right
+set_screen_effect sub 255 255 255 0
+include ./event/common/set_text/clear_alpha0.txt
+loop 4
+sleep 2
+inc_screen_effect_val 10
+pool
+set_text 8 　 　「お～い！　
+set_text 9 　 　　だれか　いるのか！？
+loop 4
+sleep 1
+set_text_alpha 8 25
+set_text_alpha 9 25
+sleep 1
+set_text_alpha 8 0
+set_text_alpha 9 0
+pool
+loop 4
+sleep 1
+set_text_alpha 8 50
+set_text_alpha 9 50
+sleep 1
+set_text_alpha 8 25
+set_text_alpha 9 25
+pool
+loop 4
+sleep 1
+set_text_alpha 8 75
+set_text_alpha 9 75
+sleep 1
+set_text_alpha 8 50
+set_text_alpha 9 50
+pool
+loop 4
+sleep 1
+set_text_alpha 8 100
+set_text_alpha 9 100
+sleep 1
+set_text_alpha 8 75
+set_text_alpha 9 75
+pool
+wait_key_push_edge a
+chg_npc_dir 29780 up
+move_char left 1
+include ./event/common/set_text/clear_alpha0.txt
+loop 4
+sleep 2
+dec_screen_effect_val 10
+pool
+reset_screen_effect
+sleep 8
+move_char down 1
+sleep 16

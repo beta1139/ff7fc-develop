@@ -1,0 +1,74 @@
+// from common/315/cloud's_past_fire2.txt
+wait_same_pos
+create npc_event 32713 327 14 14 12 0 2 none
+draw_char off
+chg_event_move_char_speed slow
+move_char up 4
+sleep 96
+chg_speed 32711 normal
+msg3 -1 ティファ\n「パパ……
+sleep 32
+wait_key_push_edge a
+erase_msg3
+step_npc 32711 2
+sleep 48
+msg ティファ\n「セフィロスね！
+sleep 32
+step_npc 32711 3
+sleep 48
+msg ティファ\n「セフィロスがやったのね！
+sleep 16
+chg_speed 32711 slow
+move_npc 32711 right 1
+sleep 16
+chg_speed 32711 not_step
+sleep 64
+msg ティファ\n「セフィロス……ソルジャー……\n　まこうろ……しんら……ぜんぶ！
+chg_speed 32711 slow
+slide_walk_npc 32711 left 1
+sleep 16
+chg_speed 32711 not_step
+sleep 48
+chg_npc_img 32711 120
+msg3 -1 ティファ\n「ぜんぶ　だいキライ！
+loop 5
+loop 3
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 3
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+wait_key_push_edge a
+erase_msg3
+chg_npc_img 32711 14
+chg_npc_dir 32711 up
+sleep 16
+chg_speed 32711 slow
+move_npc 32711 up 1
+sleep 26
+chg_speed 32711 not_step
+sleep 32
+chg_speed 32710 slow
+chg_speed 32711 slow
+slide_walk_npc 32711 down 1
+slide_walk_npc 32710 down 1
+sleep 16
+chg_speed 32710 not_step
+chg_speed 32711 not_step
+sleep 72
+chg_speed 32710 fast
+chg_speed 32711 fast
+move_npc 32711 up 3
+move_npc 32710 up 3
+sleep 24
+kill_through_range 32710 32711
+chg_event_move_char_speed slow
+move_char down 4
+sleep 128
+chg_char_dir up
+draw_char on
+kill 32713
+chg_event_move_char_speed normal

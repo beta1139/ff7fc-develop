@@ -3,7 +3,7 @@ wait_target_talk 185
 reset_talk_flag 185
 play_se save_point.wav
 set_talk_npc 185
-msg Continue For FF7FC Dev. 2\n「こちらはミッドガルいこうの　ふくげんマシンです\n　ミッドガルいぜんの　セーブデータから\n　さいかいするばあいや\n　デバッグセーブの　せつめいについては\n　ひだりの　ふくげんマシン1に　はなしかけてください\n\n\n#2\n  Continue\n  Not interested\n\n\n[[]][[`Uh-huh.]]
+msg Continue For FF7FC Dev. 2\n「こちらはワールドマップいこうの　ふくげんマシンです\n　ワールドマップより　まえのセーブデータから\n　さいかいするばあいや\n　デバッグセーブの　せつめいについては\n　ひだりの　ふくげんマシン1に　はなしかけてください\n\n\n#2\n  Continue\n  Not interested\n\n\n[[]][[`Uh-huh.]]
 if_flag 3 1
 reset_talk_npc
 end
@@ -43,15 +43,31 @@ if_flag_lesser 30 40
 erase_msg3
 sleep 8
 play_se beep_ff3.ogg
-msg 　ミッドガルいぜんのセーブデータは\n　ひだりの　ふくげんマシン1をごりようください
+msg 　　ワールドマップより　まえのセーブデータは\n　ひだりの　ふくげんマシン1をごりようください
+fi
+if_flag_greater 30 39
+include ./event/common/act/act2-1_1.txt
+include ./event/common/act/act2-1_2e.txt
+create npc2 185 1 7 10 121 3 0 
+set_flag 25 21
 fi
 if_flag 30 40
-include ./event/common/act/act2-1_1.txt
-create npc2 185 1 7 10 121 3 0 
 set_flag 9 5
-set_flag 25 21
-set_flag 30 40
 warp_ff3_2 57 24 25 2 down
+create event_generator 90100 901 158 83 17 0 0 @901/world_map.txt
+fi
+if_flag 30 41
+include ./event/common/del_member_all.txt
+sleep 8
+add_party_mem 10
+set_flag 9 7
+warp_ff3_2 148 6 6 2 down
+stop_bgm
+create npc_event 14811 148 5 8 1 0 2 non
+create npc_event 14812 148 7 9 2 2 2 none
+create npc_event 14813 148 7 10 3 2 2 none
+create npc_event 14814 148 6 11 4 0 2 none
+create event_generator 14829 148 6 6 17 1 0 @148/cloud's_past08.txt
 fi
 fi
 erase_msg3

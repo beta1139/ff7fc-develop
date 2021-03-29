@@ -1,0 +1,68 @@
+// from common/297/cloud's_past10_1.txt
+// 炎シーン　セフィロスの顔表示
+loop 10
+sleep 4
+add_image_alpha 030 10
+add_image_alpha 031 10
+add_image_alpha 032 10
+pool
+loop 10
+sleep 2
+sub_image_alpha 030 10
+sub_image_alpha 031 10
+sub_image_alpha 032 10
+pool
+loop_inf
+if_flag 17 0
+loop 10
+sleep 2
+add_image_alpha 030 10
+add_image_alpha 031 10
+add_image_alpha 032 10
+pool
+loop 10
+sleep 2
+sub_image_alpha 030 10
+sub_image_alpha 031 10
+sub_image_alpha 032 10
+pool
+fi
+if_flag_lesser 17 3
+if_flag_greater 17 0
+// セフィロスが右に動き出す
+loop 10
+sleep 2
+add_image_alpha 030 10
+add_image_alpha 031 10
+add_image_alpha 033 10
+pool
+loop 10
+sleep 2
+sub_image_alpha 030 10
+sub_image_alpha 031 10
+sub_image_alpha 033 10
+pool
+fi
+fi
+if_flag 17 3
+// セフィロスがフェードアウト
+loop 10
+sleep 2
+add_image_alpha 030 10
+add_image_alpha 031 10
+add_image_alpha 033 10
+pool
+loop 50
+chg_image_pos_offset 030 0 2 0 0 0 0
+chg_image_pos_offset 031 0 -2 0 0 0 0
+chg_image_pos_offset 033 0 2 0 0 0 0
+chg_image_pos_offset 034 0 2 0 0 0 0
+chg_image_pos_offset 035 0 -2 0 0 0 0
+sleep 2
+sub_image_alpha 030 2
+sub_image_alpha 031 2
+sub_image_alpha 033 2
+pool
+end
+fi
+pool

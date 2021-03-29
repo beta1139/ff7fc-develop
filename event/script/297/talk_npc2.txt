@@ -1,0 +1,37 @@
+set_eternal_event
+wait_talk
+set_screen_effect sub 255 255 255 0
+include ./event/common/set_text/clear_alpha0.txt
+chg_npc_y_offset 29782 -3
+inc_screen_effect_val 10
+sleep 2
+chg_npc_y_offset 29782 -4
+inc_screen_effect_val 10
+sleep 2
+inc_screen_effect_val 10
+sleep 2
+inc_screen_effect_val 10
+chg_npc_y_offset 29782 -3
+sleep 4
+chg_npc_y_offset 29782 -4
+set_text 2 　 　              ……セフィロ……ス
+include ./event/common/set_text/st02.txt
+sleep 4
+chg_npc_y_offset 29782 -3
+sleep 4
+chg_npc_y_offset 29782 -4
+backup_char_dir
+wait_key_push_edge a
+chg_char_img_tmp 206
+chg_char_dir down
+sleep 16
+step_char 2
+sleep 80
+include ./event/common/set_text/clear_alpha0.txt
+loop 4
+sleep 2
+dec_screen_effect_val 10
+pool
+reset_screen_effect
+reset_char_img_tmp
+restore_char_dir

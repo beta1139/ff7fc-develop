@@ -1,0 +1,18 @@
+// from 327/nibel_reactor8.txt
+set_eternal_event
+wait_target_talk 32816
+reset_talk_flag 32816
+chg_type 32816 npc_event
+msg3 -1 ティファ\n「……ピンチの……ときには\n　……きてくれるって\n　やくそくしたのに……
+loop 2
+chg_npc_y_offset 32816 -3
+sleep 4
+chg_npc_y_offset 32816 -4
+sleep 4
+pool
+chg_speed 32816 slow
+step_npc 32816 1
+wait_key_push_edge a
+erase_msg3
+chg_speed 32816 not_step
+chg_type 32816 npc2

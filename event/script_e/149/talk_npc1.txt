@@ -6,11 +6,35 @@ chg_dir_to_char 14900
 set_talk_npc 14900
 msg 「まこうエネルギーの　おかげで\n　せいかつが　いろいろと　べんりになったわ。\n　しんら　さまさまよね\n\n　あなたも　そうおもうでしょ？\n\n\n\n#2\n　　そうかもしれない\n　　そんなことはない\n\n\n[[]][[]]
 if_flag 3 0
+if_active_mem 1
+sub_likability 1 200
+fi
+if_active_mem 2
+sub_likability 2 100
+fi
+if_active_mem 3
+sub_likability 3 100
+fi
+if_active_mem 5
+add_likability 5 100
+fi
 jump_npc 14900 same 1
 msg 「そうでしょ！\n　もう　まこうエネルギーのない\n　せいかつなんて　かんがえられないわね
 sleep 16
 fi
 if_flag 3 1
+if_active_mem 1
+add_likability 1 200
+fi
+if_active_mem 2
+add_likability 2 100
+fi
+if_active_mem 3
+add_likability 3 100
+fi
+if_active_mem 5
+sub_likability 5 100
+fi
 msg 「ふ～ん。\n　でも　まこうエネルギーのない\n　せいかつなんて　わたしは　かんがえられないわね
 fi
 reset_talk_npc

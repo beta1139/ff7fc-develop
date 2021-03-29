@@ -1,0 +1,16 @@
+draw_image 061 224 130 0 0 184 1 1 event/plate_support/noise.png
+loop 4
+sleep 1
+chg_image_pos_offset 061 -52 0 0 0 0 0
+pool
+draw_image 062 -152 140 0 0 184 1 1 event/plate_support/noise.png
+loop 4
+sleep 1
+chg_image_pos_offset 061 -52 0 0 0 0 0
+chg_image_pos_offset 062 52 0 0 0 0 0
+pool
+loop 4
+sleep 1
+chg_image_pos_offset 062 52 0 0 0 0 0
+pool
+erase_image_range 061 062

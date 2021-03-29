@@ -1,0 +1,245 @@
+create npc_event 29783 297 28 21 206 1 1 none
+include ./event/common/key_unvalid.txt
+draw_char off
+kill_through_range 29700 29702
+sleep 64
+step_npc 29783 3
+loop 10
+sleep 4
+dec_screen_effect_val 10
+pool
+sleep 56
+chg_npc_img 29783 97
+create npc_event 29784 297 28 12 90 3 2 none
+create npc_event 29785 297 29 13 68 0 3 none
+create npc_event 29786 297 29 12 200 1 0 none
+create npc_event 29787 297 28 12 200 2 0 none
+create npc_event 29788 297 28 11 17 0 0 none
+sleep 48
+create npc_event 29700 297 28 20 156 2 2 none
+set_ignore_map_layer_flag 29785 1
+set_layer 29785 front
+chg_npc_img 29783 12
+sleep 24
+chg_npc_dir 29783 up
+sleep 16
+kill 29700
+sleep 8
+chg_speed 29783 fast
+jump_npc 29783 same 2
+sleep 32
+chg_event_move_char_speed fast
+move_char up 7
+move_npc 29783 up 2
+sleep 48
+loop_inf
+chg_npc_dir 29786 right
+set_npc_pos 29787 297 29 11
+chg_npc_dir 29787 up
+sleep 8
+flush
+create npc_event 29789 297 28 12 211 2 0 none
+chg_npc_img 29786 203
+chg_npc_dir 29786 up
+set_npc_pos 29787 297 28 12
+chg_npc_img 29787 203
+chg_npc_dir 29787 right
+set_map_draw_y_offset 2
+sleep 2
+set_map_draw_y_offset 4
+sleep 2
+create npc_event 29790 297 28 11 211 1 0 none
+sleep 4
+chg_npc_img 29786 198
+chg_npc_dir 29786 right
+set_npc_pos 29787 297 30 12
+chg_npc_img 29787 199
+chg_npc_dir 29787 down
+chg_npc_img 29784 208
+chg_npc_dir 29784 left
+chg_speed 29784 slow
+jump_npc 29784 same 1
+set_map_draw_y_offset 0
+sleep 12
+kill 29789
+sleep 4
+kill 29790
+step_npc 29784 1
+jump_npc 29785 same 1
+loop 2
+chg_npc_y_offset 29784 -3
+sleep 4
+chg_npc_y_offset 29784 -4
+sleep 4
+pool
+jump_npc 29783 same 1
+chg_npc_img 29785 151
+chg_npc_dir 29785 down
+step_npc 29785 4
+chg_npc_dir 29786 down
+chg_npc_img 29786 202
+chg_npc_dir 29786 right
+chg_npc_img 29787 202
+chg_npc_dir 29787 left
+set_npc_pos 29787 297 29 13
+sleep 16
+step_npc 29783 5
+chg_npc_img 29786 207
+chg_npc_dir 29786 down
+chg_npc_img 29787 207
+set_npc_pos 29787 297 28 12
+chg_npc_img 29788 207
+sleep 8
+flush
+create npc_event 29789 297 29 12 211 1 0 none
+set_layer 29789 front
+chg_npc_dir 29786 right
+chg_npc_img 29787 206
+chg_npc_dir 29787 up
+set_npc_pos 29787 297 30 12
+chg_npc_img 29788 17
+jump_npc 29785 same 1
+set_map_draw_y_offset 4
+sleep 4
+create npc_event 29790 297 29 13 211 2 0 none
+set_layer 29790 front
+sleep 4
+chg_npc_img 29785 208
+chg_npc_dir 29785 up
+set_map_draw_y_offset 0
+loop 2
+chg_npc_y_offset 29785 -3
+sleep 4
+chg_npc_y_offset 29785 -4
+sleep 4
+pool
+kill 29789
+sleep 4
+kill 29790
+sleep 12
+set_layer 29785 back
+chg_npc_img 29786 202
+chg_npc_dir 29786 up
+chg_npc_img 29787 202
+chg_npc_dir 29787 left
+set_npc_pos 29787 297 29 13
+chg_speed 29786 normal
+chg_speed 29787 normal
+create npc_event 31586 315 8 5 202 0 1 none
+create npc_event 31587 315 8 6 202 2 1 none
+create npc_event 31583 315 7 12 12 0 1 none
+sleep 32
+// 全体背景
+set_image_trans_col 78 168 16
+draw_image 041 0 7 0 0 256 224 1 event/black.png
+// セフィロス
+set_image_trans_col 78 168 16
+draw_image 042 128 76 64 1632 16 16 1 character.bmp
+draw_image 043 128 92 64 1616 16 16 1 character.bmp
+// セフィロスのみにかかる背景
+draw_image 044 192 40 0 0 16 48 1 event/black.png
+// 全体背景
+draw_image 070 0 8 0 0 256 224 1 event/black.png
+// 回想クラウド
+draw_image 071 112 188 128 96 16 16 1 character.bmp
+set_image_alpha 041 0
+set_image_alpha 042 100
+set_image_alpha 043 100
+set_image_alpha 044 0
+set_image_alpha 070 0
+set_image_alpha 071 100
+loop 10
+sleep 10
+add_image_alpha 041 10
+pool
+warp 315 7 7 up
+// セフィロス-クラウドの背景炎
+set_image_trans_col 0 0 0
+draw_image 040 105 77 0 176 48 48 1 battle_effect3.bmp
+draw_image 050 89 152 48 176 48 48 1 battle_effect3.bmp
+set_image_alpha 040 100
+set_image_alpha 050 0
+chg_char_state_move
+create event_generator 31530 315 0 0 17 1 0 @../common/315/cloud's_past_fire1.txt
+loop 10
+sub_image_alpha 041 10
+add_image_alpha 050 10
+sleep 16
+pool
+erase_image_range 041 043
+set_flag 17 0
+create event_generator 31531 315 0 0 17 1 0 @../common/315/cloud's_past_fire2.txt
+sleep 64
+chg_npc_dir 31586 right
+sleep 64
+draw_image 030 80 39 0 0 52 128 1 event/nibel/sephiros.png
+draw_image 031 132 39 52 0 52 128 1 event/nibel/sephiros.png
+draw_image 032 120 119 0 0 4 8 1 event/nibel/orange.png
+set_image_trans_col 78 168 16
+draw_image 034 104 91 0 0 16 4 1 event/black.png
+draw_image 035 140 91 0 0 16 4 1 event/black.png
+set_image_alpha 030 0
+set_image_alpha 031 0
+set_image_alpha 032 0
+sleep 8
+create event_generator 31532 315 0 0 17 1 0 @../common/315/cloud's_past_fire3.txt
+loop 3
+chg_image_pos_offset 034 0 -1 0 0 0 0
+chg_image_pos_offset 035 0 -1 0 0 0 0
+sleep 16
+pool
+erase_image_range 034 035
+sleep 128
+draw_image 033 120 119 0 0 4 8 1 event/nibel/brown.png
+set_image_alpha 033 0
+chg_npc_img 31586 201
+chg_npc_dir 31586 down
+chg_npc_img 31587 201
+chg_npc_dir 31587 left
+set_npc_pos 31587 315 9 5
+create npc_event 31588 315 8 6 201 0 1 none
+create npc_event 31589 315 7 6 201 3 1 none
+chg_speed 31586 slow
+set_flag 17 1
+loop 4
+slide_walk_npc 31586 right 1
+slide_walk_npc 31587 right 1
+slide_walk_npc 31588 right 1
+slide_walk_npc 31589 right 1
+loop 2
+sleep 8
+chg_npc_y_offset 31586 -3
+chg_npc_y_offset 31587 -3
+chg_npc_y_offset 31588 -3
+chg_npc_y_offset 31589 -3
+sleep 8
+chg_npc_y_offset 31586 -4
+chg_npc_y_offset 31587 -4
+chg_npc_y_offset 31588 -4
+chg_npc_y_offset 31589 -4
+pool
+sleep 16
+pool
+chg_npc_img 31586 203
+chg_npc_img 31587 203
+chg_npc_dir 31587 left
+set_npc_pos 31587 315 12 4
+kill_through_range 31588 31589
+set_image_trans_col 78 168 16
+draw_image 034 104 87 0 0 16 4 1 event/black.png
+draw_image 035 140 87 0 0 16 4 1 event/black.png
+set_image_alpha 034 0
+set_image_alpha 035 0
+sleep 16
+set_flag 17 2
+set_image_alpha 034 100
+set_image_alpha 035 100
+loop 2
+slide_walk_npc 31586 up 1
+slide_walk_npc 31587 up 1
+loop 2
+chg_image_pos_offset 034 0 1 0 0 0 0
+chg_image_pos_offset 035 0 1 0 0 0 0
+sleep 24
+pool
+pool

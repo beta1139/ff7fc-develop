@@ -1,0 +1,32 @@
+set_eternal_event
+wait_target_talk 31298
+reset_talk_flag 31298
+chg_type 31298 npc_event
+chg_dir_to_char 31298
+set_talk_npc 31298
+msg 「BGM Those Chosen きりかえスイッチ\n\n\n\n#3\n　　パターン1\n　　パターン2\n　　きょうみないね\n\n[[]][[]][[「あ　そ！]]
+if_flag 3 0
+set_flag 19 0
+if_flag 18 1
+play_event_bgm EX-12-Pre_Those_Chosen.ogg
+fi
+if_flag 18 2
+play_event_bgm 3-05-Those_Chosen_by_the_Planet.ogg
+fi
+msg 「パターン1にしたよ
+fi
+if_flag 3 1
+set_flag 19 1
+if_flag 18 1
+play_event_bgm EX-12-Pre_Those_Chosen2.ogg
+fi
+if_flag 18 2
+play_event_bgm 3-05-Those_Chosen_by_the_Planet2.ogg
+fi
+msg 「パターン2にしたよ
+fi
+if_flag 3 2
+fi
+reset_talk_npc
+chg_type 31298 npc2
+reset_talk_npc

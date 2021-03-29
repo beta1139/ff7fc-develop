@@ -1,0 +1,154 @@
+// from common/324/jenova_effect.txt
+chg_event_move_char_speed normal
+chg_speed 32410 normal
+chg_char_state_move
+move_char up 2
+move_npc 32410 up 2
+create event_generator 32427 324 0 0 17 1 0 @../common/324/lightning.txt
+sleep 32
+chg_speed 32410 fast
+step_npc 32410 3
+msg 『オレの　かなしみは　どうしてくれる！\n　かぞく……ともだち……\n　こきょうを　うばわれた　オレのかなしみは！！
+move_char up 1
+chg_speed 32410 normal
+move_npc 32410 up 1
+sleep 16
+chg_speed 32410 fast
+step_npc 32410 3
+msg 『あんたの　かなしみと　おなじだ！
+set_flag 17 1
+chg_event_move_char_speed normal
+move_char up 4
+sleep 64
+create event_generator 32420 324 0 0 17 1 0 @../common/324/sephiros_shaking.txt
+msg セフィロス\n「クックック……オレのかなしみ？\n　なにを　かなしむ？
+kill 32420
+sleep 16
+wait_event_invalid 32420
+chg_npc_img 32411 201
+chg_npc_img 32412 201
+set_npc_pos 32412 324 8 9
+create npc_event 32413 324 7 10 201 0 1 none
+chg_speed 32412 slow
+sleep 16
+chg_npc_y_offset 32411 -4
+chg_npc_y_offset 32412 -4
+msg3 -1 セフィロス\n「オレは　えらばれしもの。\n　このほしの　しはいしゃとして\n　えらばれし　そんざいだ
+sleep 16
+chg_npc_img 32411 202
+chg_npc_dir 32411 right
+chg_npc_img 32412 202
+set_npc_pos 32412 324 7 10
+chg_npc_img 32413 17
+step_npc 32411 2
+step_npc 32412 2
+step_npc 32413 2
+wait_key_push_edge a
+erase_msg3
+sleep 16
+chg_npc_img 32411 207
+chg_npc_dir 32411 down
+chg_npc_img 32412 207
+chg_npc_dir 32412 left
+set_npc_pos 32412 324 6 9
+chg_npc_img 32413 207
+set_npc_pos 32413 324 6 8
+set_image_trans_col 78 168 16
+draw_image 000 117 108 133 768 8 8 1 character.bmp
+sleep 24
+step_npc 32411 2
+step_npc 32413 2
+step_npc 32412 2
+msg セフィロス\n「このほしを　おろかな おまえたちから\n　セトラのてに　とりもどすために　せいを　うけた。\n　なにをかなしめ　というのだ？
+sleep 16
+chg_event_move_char_speed slow
+move_char down 1
+loop 16
+sleep 2
+chg_image_pos_offset 000 0 -1 0 0 0 0
+pool
+chg_npc_img 32410 209
+sleep 48
+chg_speed 32410 slow
+step_npc 32410 2
+msg 『セフィロス……\n　しんらい　していたのに……
+sleep 16
+chg_npc_img 32410 12
+sleep 48
+// move_npc 32410 up 1
+// sleep 32
+chg_npc_img 32410 210
+chg_npc_dir 32410 down
+create npc_event 32414 324 8 13 210 2 1 none
+play_se katana.ogg
+sleep 32
+chg_npc_dir 32410 up
+chg_npc_dir 32414 right
+msg 『いや　おまえは　もう\n　オレのしっている　セフィロスじゃない！
+sleep 64
+draw_image 010 0 120 0 0 256 112 1 event/black.png
+include ./event/common/324/noise1.txt
+sleep 64
+chg_image_pos_offset 010 0 -112 0 0 0 0
+include ./event/common/324/noise2.txt
+sleep 56
+chg_image_pos_offset 010 0 112 0 0 0 0
+include ./event/common/324/noise1.txt
+sleep 48
+chg_image_pos_offset 010 0 -112 0 0 0 0
+include ./event/common/324/noise2.txt
+sleep 40
+chg_image_pos_offset 010 0 112 0 0 0 0
+include ./event/common/324/noise1.txt
+sleep 32
+chg_image_pos_offset 010 0 -112 0 0 0 0
+include ./event/common/324/noise2.txt
+sleep 24
+chg_image_pos_offset 010 0 112 0 0 0 0
+include ./event/common/324/noise1.txt
+sleep 16
+chg_image_pos_offset 010 0 -112 0 0 0 0
+include ./event/common/324/noise2.txt
+sleep 8
+chg_image_pos_offset 010 0 112 0 0 0 0
+include ./event/common/324/noise1.txt
+sleep 4
+chg_image_pos_offset 010 0 -112 0 0 0 0
+include ./event/common/324/noise2.txt
+kill 32427
+sleep 3
+play_se_loop beeeeep.wav
+kill_through_range 32440 32442
+set_screen_effect add 255 255 255 0
+create event_generator 32427 324 0 0 17 1 0 @../common/324/battle_effect.txt
+loop 20
+inc_screen_effect_val 5
+chg_image_pos_offset 010 0 112 0 0 0 0
+sleep 4
+chg_image_pos_offset 010 0 -112 0 0 0 0
+sleep 4
+pool
+play_se_loop white_noise.ogg
+chg_image_pos_offset 010 0 0 0 0 0 112
+sleep 128
+stop_bgm
+sleep 64
+fadeout
+stop_se
+kill_through 32427
+sleep 16
+erase_image_range 000 010
+kill_through_range 32410 32419
+kill_through_range 14810 14814
+warp 148 6 6 down
+reset_screen_effect
+sleep 16
+create npc_event 14810 148 6 6 0 1 2 none
+create npc_event 14811 148 5 8 1 0 3 none
+create npc_event 14812 148 7 9 2 2 2 none
+create npc_event 14813 148 7 10 3 2 2 none
+create npc_event 14814 148 6 11 4 0 2 none
+create event_generator 14827 148 6 6 17 1 0 @148/cloud's_past11.txt
+sleep 16
+fadein
+chg_char_state_event

@@ -1,0 +1,24 @@
+set_eternal_event
+wait_talk
+chg_type 29781 npc_event
+chg_speed 29781 slow
+step_npc 29781 3
+set_screen_effect sub 255 255 255 0
+include ./event/common/set_text/clear_alpha0.txt
+loop 4
+sleep 2
+inc_screen_effect_val 10
+pool
+set_text 2 　 　……な　なぁ……
+set_text 3 　 　おれ　しんじゃうの？
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+loop 4
+sleep 2
+dec_screen_effect_val 10
+pool
+reset_screen_effect
+chg_type 29781 npc2
+chg_speed 29781 not_step

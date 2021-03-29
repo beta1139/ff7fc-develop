@@ -1,0 +1,16 @@
+loop_inf
+if_flag 17 0
+chg_npc_y_offset 32411 -3
+sleep 3
+chg_npc_y_offset 32411 -4
+sleep 3
+fi
+if_flag 17 1
+chg_npc_y_offset 32411 -3
+chg_npc_y_offset 32412 -3
+sleep 3
+chg_npc_y_offset 32411 -4
+chg_npc_y_offset 32412 -4
+sleep 3
+fi
+pool

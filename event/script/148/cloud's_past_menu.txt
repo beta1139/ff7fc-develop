@@ -1,0 +1,29 @@
+loop_inf
+wait_key_push_edge a
+play_se cursor_ff3_select_cancel.ogg
+erase_msg3
+stop_bgm
+sleep 16
+msg 　しゅうりょうしても　よろしいですか？\n\n\n\n#2\n 　はい\n　　いいえ\n\n\n\n[[]][[]]
+if_flag 3 0
+chg_char_state_event
+chg_npc_dir 14811 up
+set_flag_wall 14811
+set_flag_wall 14812
+set_flag_wall 14813
+set_flag_wall 14814
+set_flag 30 41
+set_flag 17 0
+set_flag 1 0
+create event_generator 14880 148 0 0 17 0 0 @../common/point.txt
+set_key_valid select
+create event_generator 14829 148 6 6 17 1 0 @148/cloud's_past08.txt
+end
+fi
+if_flag 3 1
+sleep 8
+msg3 -1 　[スタートボタン]で　メニューをひらく\n　[Aボタン]で　しゅうりょう
+chg_char_state_move
+sleep 8
+fi
+pool

@@ -312,8 +312,8 @@ id,type,bgm,battle_back,monster_party_id
 310,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
 311,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
 312,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
-313,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
-314,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
+313,1,1-02b-Bombing_Mission.ogg,0,188/189/190/191
+314,1,1-02b-Bombing_Mission.ogg,0,188/189/190/191
 315,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
 316,0,1-02b-Bombing_Mission.ogg,0,188/189/190/191
 317,0,1-14-Underneath_the_Rotting_Pizza.ogg,31,114/115/362/364

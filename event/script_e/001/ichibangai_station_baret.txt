@@ -17,7 +17,7 @@ create npc 166 1 3 10 64 1 0 Debug Warp\n`Wark!\n\n\n#2\n  World Map\n  Not inte
 create npc 168 1 2 10 64 1 0 Debug selector test\n`Wark!\n\n\n#11\n  1\n  2\n  3\n  4\n  5\n  6\n  7\n  8\n  9\n  10\n  11\n[[You chose 1]][[You chose 2]][[You chose 3]][[You chose 4]][[You chose 5]][[You chose 6]][[You chose 7]][[#2\n  8-1\n  8-2\n\n\n[[#2\n  8-1-1\n  8-1-2\n\n\n[[You chose 8-1-1]][[You chose 8-1-2]]]][[You chose 8-2]]]][[]][[#2\n  10-1\n  10-2\n\n\n[[]][[]]]][[#5\n  a\n  b\n  c\n  d\n  e\n[[]][[]][[]][[]][[]]]]
 create npc2 169 1 6 10 121 3 0 
 create npc 181 1 4 10 85 1 0 Other Samples\n「ワン\n\n\n#3\n  ボス アニメーション\n  BEGINNER'S HALL\n  Not interested\n\n[[]][[]][[`Uh-huh.]]
-create npc 183 1 7 12 64 0 0 Debug Warp\n`Wark!\n\n\n#2\n  Midgar\n  Not interested\n\n\n[[]][[`Uh-huh.]]
+create npc 183 1 7 12 64 0 0 Debug Warp\n`Wark!\n\n\n#3\n  Midgar\n  {CLOUD}'s Past -second\n  Not interested\n\n[[#7\n  Cloud-Baret-Tifa\n  Cloud-Baret-Aeris\n  Cloud-Baret-Red13\n  Cloud-Tifa-Aeris\n  Cloud-Tifa-Red13\n  Cloud-Aeris-Red13\n  Not interested\n[[]][[]][[]][[]][[]][[]][[`Uh-huh.]]]][[]][[`Uh-huh.]]
 create npc2 185 1 7 10 121 3 0 
 create event_generator 170 1 0 0 17 1 0 @001/warp.txt
 create event_generator 171 1 0 0 17 1 0 @001/warp2.txt

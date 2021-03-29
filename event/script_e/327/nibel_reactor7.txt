@@ -1,0 +1,228 @@
+// from common/315/cloud's_past_fire2.txt
+wait_same_pos
+move_char up 1
+sleep 16
+fadeout
+kill_through_range 32800 32899
+sleep 64
+draw_char off
+warp 328 7 10 up
+create npc_event 32811 328 7 10 5 0 1 none
+create npc_event 32814 328 7 19 121 0 2 none
+create npc_event 32815 328 7 19 14 0 2 none
+chg_npc_y_offset 32814 -6
+create map_door 32850 328 7 9 22 0 0 
+play_event_bgm EX-14-Magic_Light_Reactor2.ogg
+sleep 32
+fadein
+step_npc 32811 3
+msg セフィロス\n「かあさん　あいにきたよ。\n　このとびらをあけておくれ
+move_char down 5
+sleep 16
+move_npc 32814 up 3
+move_npc 32815 up 3
+sleep 64
+msg3 -1 ティファ\n「よくもパパを！\n よくも　ムラのみんなを！
+loop 6
+chg_npc_y_offset 32815 -3
+sleep 3
+chg_npc_y_offset 32815 -4
+sleep 3
+pool
+wait_key_push_edge a
+erase_msg3
+chg_event_move_char_speed slow
+chg_speed 32814 slow
+chg_speed 32815 slow
+move_char up 5
+sleep 1
+move_npc 32814 up 5
+move_npc 32815 up 5
+sleep 128
+chg_npc_dir 32811 down
+sleep 32
+chg_npc_img 32815 193
+chg_npc_img 32814 17
+chg_npc_y_offset 32814 0
+slide_npc 32814 right 1
+play_se katana_swing.ogg
+sleep 11
+chg_speed 32814 not_step
+sleep 5
+play_se catch.ogg
+chg_npc_dir 32815 right
+chg_npc_img 32815 197
+chg_npc_img 32811 205
+chg_npc_dir 32811 down
+set_map_draw_y_offset 2
+sleep 2
+chg_npc_y_offset 32815 -3
+set_map_draw_y_offset 0
+sleep 2
+chg_npc_y_offset 32815 -4
+set_map_draw_y_offset 2
+sleep 2
+chg_npc_y_offset 32815 -3
+set_map_draw_y_offset 0
+sleep 4
+loop 2
+loop 2
+chg_npc_y_offset 32815 -3
+sleep 2
+chg_npc_y_offset 32815 -4
+sleep 2
+chg_npc_y_offset 32815 -3
+sleep 4
+pool
+play_se creak.ogg
+pool
+loop 7
+chg_npc_y_offset 32815 -3
+sleep 2
+chg_npc_y_offset 32815 -4
+sleep 2
+chg_npc_y_offset 32815 -3
+sleep 4
+chg_npc_y_offset 32815 -4
+sleep 2
+pool
+play_se squat.ogg
+loop 2
+chg_npc_y_offset 32811 -3
+chg_npc_y_offset 32815 -3
+sleep 2
+chg_npc_y_offset 32811 -4
+chg_npc_y_offset 32815 -4
+sleep 2
+pool
+set_layer 32811 front
+chg_npc_img 32811 5
+chg_npc_dir 32811 up
+set_npc_pos 32814 328 7 10
+chg_npc_img 32814 121
+chg_npc_img 32815 14
+chg_npc_dir 32815 right
+jump_npc 32815 same 1
+sleep 4
+chg_npc_dir 32815 left
+chg_npc_img 32815 152
+sleep 4
+chg_npc_img 32815 14
+chg_npc_img 32811 201
+chg_npc_dir 32811 down
+set_layer 32811 back
+create npc_event 32812 328 8 10 201 2 1 none
+kill 32814
+sleep 4
+chg_npc_dir 32815 up
+sleep 4
+chg_npc_dir 32815 right
+chg_npc_img 32811 202
+chg_npc_dir 32811 right
+chg_npc_img 32812 202
+set_npc_pos 32812 328 7 11
+chg_npc_dir 32815 left
+chg_npc_img 32815 152
+sleep 4
+chg_npc_img 32815 14
+play_se katana_swing.ogg
+sleep 4
+chg_npc_img 32811 207
+chg_npc_dir 32811 down
+chg_npc_img 32812 207
+set_npc_pos 32812 328 6 10
+create npc_event 32813 328 6 9 207 0 2 none
+chg_npc_dir 32815 up
+sleep 8
+flush
+move_char down 3
+play_se katana2.ogg
+chg_npc_dir 32811 right
+chg_npc_img 32812 206
+chg_npc_dir 32812 up
+set_npc_pos 32812 328 8 10
+kill 32813
+chg_speed 32815 fast
+jump_npc_target_pos 32815 7 13
+set_map_draw_y_offset 5
+sleep 4
+set_map_draw_y_offset 0
+sleep 4
+set_map_draw_y_offset 4
+chg_npc_img 32815 209
+chg_npc_dir 32815 down
+sleep 4
+set_map_draw_y_offset 0
+sleep 20
+step_npc 32815 1
+play_se damage.wav
+set_map_draw_y_offset 4
+chg_npc_y_offset 32815 -3
+sleep 4
+set_map_draw_y_offset 0
+chg_npc_y_offset 32815 -4
+sleep 4
+jump_npc_target_pos 32815 7 16
+sleep 48
+jump_npc 32815 same 1
+play_se damage_critical.ogg
+loop 2
+set_map_draw_y_offset 3
+chg_npc_y_offset 32815 -3
+sleep 4
+set_map_draw_y_offset 0
+chg_npc_y_offset 32815 -4
+sleep 4
+pool
+chg_speed 32815 slow
+step_npc 32815 1
+loop 4
+chg_npc_y_offset 32815 -3
+sleep 2
+chg_npc_y_offset 32815 -4
+sleep 2
+pool
+sleep 32
+draw_image 000 0 224 0 0 256 224 1 event/black.png
+create npc_event 32810 328 7 20 12 0 3 none
+move_npc 32810 up 1
+sleep 8
+erase_image 000
+jump_npc 32810 same 1
+sleep 16
+step_npc 32810 3
+sleep 24
+chg_npc_img 32811 202
+chg_npc_dir 32811 down
+chg_npc_img 32812 202
+chg_npc_dir 32812 left
+set_npc_pos 32812 328 7 11
+sleep 16
+step_npc 32811 1
+step_npc 32812 1
+sleep 64
+chg_npc_img 32811 203
+chg_npc_img 32812 203
+set_npc_pos 32812 328 7 9
+sleep 32
+play_se door_open.ogg
+open_door 32850
+sleep 16
+slide_walk_npc 32811 up 1
+slide_walk_npc 32812 up 1
+sleep 32
+kill_through_range 32811 32812
+sleep 4
+close_door 32850
+sleep 12
+chg_event_move_char_speed normal
+move_char down 6
+sleep 96
+set_flag_wall 32815
+chg_speed 32815 not_step
+chg_type 32815 npc2
+chg_char_dir up
+draw_char on
+kill 32810
+create event_generator 32820 328 0 0 17 1 0 @328/nibel_reactor8.txt
+create event_generator 32740 327 14 8 17 1 0 @../common/327/nibel_reactor_bgm1.txt

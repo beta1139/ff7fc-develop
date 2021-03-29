@@ -1,0 +1,17 @@
+// ƒWƒFƒmƒo‘œ‚ğa‚Á‚½Œã‚ÌˆîÈ
+create npc_event 32440 328 6 8 194 0 3 none
+create npc_event 32441 328 7 8 194 0 3 none
+create npc_event 32442 328 8 8 194 3 3 none
+loop_inf
+set_npc_pos 32440 324 6 8
+set_npc_pos 32441 324 7 8
+set_npc_pos 32442 324 8 8
+move_npc 32440 up 2
+move_npc 32441 up 2
+move_npc 32442 up 2
+sleep 16
+set_npc_pos 32440 324 6 29
+set_npc_pos 32441 324 7 29
+set_npc_pos 32442 324 8 29
+sleep 56
+pool

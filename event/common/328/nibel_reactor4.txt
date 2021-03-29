@@ -28,8 +28,8 @@ sleep 32
 set_image_trans_col 96 96 96
 draw_image 001 82 36 0 0 90 90 0 event/mt_nibel/monster.png
 draw_image 000 82 36 0 0 90 90 0 event/mt_nibel/monster_gray.png
-draw_image 003 0 8 0 0 256 224 1 event/mt_nibel/window.png
-draw_image 002 0 8 0 0 256 224 1 event/mt_nibel/bubble.png
+draw_image 003 0 7 0 0 256 224 1 event/mt_nibel/window.png
+draw_image 002 0 7 0 0 256 224 1 event/mt_nibel/bubble.png
 sleep 32
 play_se_loop magic_light_reactor_pod.ogg
 chg_char_state_move

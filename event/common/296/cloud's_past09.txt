@@ -1,0 +1,99 @@
+wait_same_pos
+// 148/cloud's_past08.txt‚©‚ç‚Ì‘±‚«
+sleep 64
+move_char down 9
+sleep 144
+move_char left 9
+sleep 72
+open_door 29650
+play_se door_open.ogg
+sleep 8
+create npc_event 29602 296 20 20 31 1 2 none
+move_npc 29602 down 2
+sleep 16
+close_door 29650
+sleep 16
+step_npc 29602 2
+chg_npc_dir 29602 up
+sleep 32
+open_door 29650
+play_se door_open.ogg
+draw_char on
+chg_char_dir down
+reset_slide_char_flag
+move_char down 1
+sleep 16
+close_door 29650
+sleep 32
+chg_npc_dir 29602 right
+sleep 16
+chg_char_dir right
+sleep 32
+chg_char_dir down
+sleep 16
+jump_char same 1
+sleep 16
+step_char 2
+sleep 32
+chg_event_move_char_speed fast
+chg_speed 29602 fast
+move_char right 9
+sleep 8
+move_npc 29602 right 9
+sleep 64
+move_char up 7
+sleep 8
+move_npc 29602 up 7
+sleep 48
+chg_event_move_char_speed normal
+move_char up 1
+sleep 8
+chg_speed 29602 normal
+move_npc 29602 up 1
+sleep 8
+chg_event_move_char_speed slow
+move_char up 2
+sleep 8
+chg_speed 29602 slow
+move_npc 29602 up 1
+sleep 24
+chg_npc_dir 29603 up
+chg_npc_dir 29605 up
+sleep 32
+chg_char_dir down
+sleep 32
+chg_event_move_char_speed normal
+step_char 3
+sleep 80
+chg_char_dir up
+sleep 32
+chg_event_move_char_speed slow
+move_char up 2
+sleep 64
+move_char left 2
+sleep 64
+move_char up 2
+sleep 32
+open_door 29655
+play_se door_open.ogg
+sleep 32
+open_door 30650
+warp_ff3_2 306 10 15 2 up
+set_flag 1 1
+set_flag_wall 29603
+set_flag_wall 29604
+set_flag_wall 29605
+chg_type 29603 npc
+chg_type 29604 npc
+chg_type 29605 npc
+chg_npc_dir 29603 down
+chg_npc_dir 29604 right
+chg_npc_dir 29605 down
+set_npc_pos 29603 296 28 12
+set_npc_pos 29604 296 30 12
+set_npc_pos 29605 296 29 13
+kill 29602
+chg_event_move_char_speed normal
+create npc2 31298 312 39 12 61 2 0 
+create event_generator 31299 312 0 0 17 0 0 @../common/314/bgm_test.txt
+set_flag 18 0

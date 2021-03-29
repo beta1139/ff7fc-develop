@@ -7,9 +7,6 @@ create npc 14605 146 45 31 89 1 0 「ボクのおとうさん　たんこうふ　なんだけど\n　
 create event_generator 14620 146 0 0 17 1 0 @146/talked_npc1.txt
 create event_generator 14621 146 0 0 17 1 0 @146/talked_npc2.txt
 create event_generator 14622 146 0 0 17 1 0 @146/talked_npc3.txt
-create event_generator 14631 146 24 31 17 1 0 @146/kalm1_1.txt
-create event_generator 14632 146 24 32 17 1 0 @../common/move_up.txt
-create event_generator 14633 146 24 33 17 1 0 @../common/move_up.txt
 create npc_event 14700 147 7 4 68 1 0 none
 create npc2 14701 147 7 5 17 0 0 
 create event_generator 14720 147 0 0 17 1 0 @147/talk_npc1.txt

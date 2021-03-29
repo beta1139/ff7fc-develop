@@ -1,0 +1,313 @@
+// from common/297/cloud's_past10_1.txt
+// âäÉVÅ[Éì
+loop 2
+sleep 16
+chg_image_pos_offset 040 0 0 48 0 0 0
+chg_image_pos_offset 050 0 0 -48 0 0 0
+sleep 16
+chg_image_pos_offset 040 0 0 -48 0 0 0
+chg_image_pos_offset 050 0 0 48 0 0 0
+pool
+set_image_trans_col 0 0 0
+draw_image 051 69 110 0 176 48 48 1 battle_effect3.bmp
+draw_image 052 125 137 48 176 48 48 1 battle_effect3.bmp
+draw_image 053 150 65 0 176 48 48 1 battle_effect3.bmp
+draw_image 054 148 102 48 176 48 48 1 battle_effect3.bmp
+draw_image 055 67 64 0 176 48 48 1 battle_effect3.bmp
+draw_image 056 152 142 48 176 48 48 1 battle_effect3.bmp
+draw_image 057 120 98 0 176 48 48 1 battle_effect3.bmp
+set_image_alpha 051 0
+set_image_alpha 052 0
+set_image_alpha 053 0
+set_image_alpha 054 0
+set_image_alpha 055 0
+set_image_alpha 056 0
+set_image_alpha 057 0
+loop 2
+sleep 16
+chg_image_pos_offset 040 0 0 48 0 0 0
+chg_image_pos_offset 050 0 0 -48 0 0 0
+chg_image_pos_offset 051 0 0 48 0 0 0
+chg_image_pos_offset 052 0 0 -48 0 0 0
+chg_image_pos_offset 053 0 0 48 0 0 0
+chg_image_pos_offset 054 0 0 -48 0 0 0
+chg_image_pos_offset 055 0 0 48 0 0 0
+chg_image_pos_offset 056 0 0 -48 0 0 0
+chg_image_pos_offset 057 0 0 48 0 0 0
+add_image_alpha 051 10
+add_image_alpha 052 10
+add_image_alpha 053 10
+add_image_alpha 054 10
+add_image_alpha 055 10
+add_image_alpha 056 10
+add_image_alpha 057 10
+sleep 16
+chg_image_pos_offset 040 0 0 -48 0 0 0
+chg_image_pos_offset 050 0 0 48 0 0 0
+chg_image_pos_offset 051 0 0 -48 0 0 0
+chg_image_pos_offset 052 0 0 48 0 0 0
+chg_image_pos_offset 053 0 0 -48 0 0 0
+chg_image_pos_offset 054 0 0 48 0 0 0
+chg_image_pos_offset 055 0 0 -48 0 0 0
+chg_image_pos_offset 056 0 0 48 0 0 0
+chg_image_pos_offset 057 0 0 -48 0 0 0
+add_image_alpha 051 10
+add_image_alpha 052 10
+add_image_alpha 053 10
+add_image_alpha 054 10
+add_image_alpha 055 10
+add_image_alpha 056 10
+add_image_alpha 057 10
+pool
+draw_image 058 42 135 48 176 48 48 0 battle_effect3.bmp
+draw_image 059 170 41 0 176 48 48 1 battle_effect3.bmp
+draw_image 060 31 44 48 176 48 48 0 battle_effect3.bmp
+draw_image 061 179 123 0 176 48 48 1 battle_effect3.bmp
+draw_image 062 43 91 48 176 48 48 0 battle_effect3.bmp
+draw_image 063 180 84 0 176 48 48 1 battle_effect3.bmp
+draw_image 064 13 94 48 176 48 48 0 battle_effect3.bmp
+draw_image 065 202 87 0 176 48 48 1 battle_effect3.bmp
+set_image_alpha 058 0
+set_image_alpha 059 0
+set_image_alpha 060 0
+set_image_alpha 061 0
+set_image_alpha 062 0
+set_image_alpha 063 0
+set_image_alpha 064 0
+set_image_alpha 065 0
+loop 3
+sleep 16
+chg_image_pos_offset 040 0 -1 48 0 0 0
+chg_image_pos_offset 050 0 0 -48 0 0 0
+chg_image_pos_offset 051 0 0 48 0 0 0
+chg_image_pos_offset 052 0 0 -48 0 0 0
+chg_image_pos_offset 053 0 0 48 0 0 0
+chg_image_pos_offset 054 0 0 -48 0 0 0
+chg_image_pos_offset 055 0 0 48 0 0 0
+chg_image_pos_offset 056 0 0 -48 0 0 0
+chg_image_pos_offset 057 0 0 48 0 0 0
+chg_image_pos_offset 058 0 0 -48 0 0 0
+chg_image_pos_offset 059 0 0 48 0 0 0
+chg_image_pos_offset 060 0 0 -48 0 0 0
+chg_image_pos_offset 061 0 0 48 0 0 0
+chg_image_pos_offset 062 0 0 -48 0 0 0
+chg_image_pos_offset 063 0 0 48 0 0 0
+chg_image_pos_offset 064 0 0 -48 0 0 0
+chg_image_pos_offset 065 0 0 48 0 0 0
+add_image_alpha 051 10
+add_image_alpha 052 10
+add_image_alpha 053 10
+add_image_alpha 054 10
+add_image_alpha 055 10
+add_image_alpha 056 10
+add_image_alpha 057 10
+add_image_alpha 058 10
+add_image_alpha 059 10
+add_image_alpha 060 10
+add_image_alpha 061 10
+add_image_alpha 062 10
+add_image_alpha 063 10
+add_image_alpha 064 10
+add_image_alpha 065 10
+sleep 16
+chg_image_pos_offset 040 0 -1 -48 0 0 0
+chg_image_pos_offset 050 0 0 48 0 0 0
+chg_image_pos_offset 051 0 0 -48 0 0 0
+chg_image_pos_offset 052 0 0 48 0 0 0
+chg_image_pos_offset 053 0 0 -48 0 0 0
+chg_image_pos_offset 054 0 0 48 0 0 0
+chg_image_pos_offset 055 0 0 -48 0 0 0
+chg_image_pos_offset 056 0 0 48 0 0 0
+chg_image_pos_offset 057 0 0 -48 0 0 0
+chg_image_pos_offset 058 0 0 48 0 0 0
+chg_image_pos_offset 059 0 0 -48 0 0 0
+chg_image_pos_offset 060 0 0 48 0 0 0
+chg_image_pos_offset 061 0 0 -48 0 0 0
+chg_image_pos_offset 062 0 0 48 0 0 0
+chg_image_pos_offset 063 0 0 -48 0 0 0
+chg_image_pos_offset 064 0 0 48 0 0 0
+chg_image_pos_offset 065 0 0 -48 0 0 0
+add_image_alpha 051 10
+add_image_alpha 052 10
+add_image_alpha 053 10
+add_image_alpha 054 10
+add_image_alpha 055 10
+add_image_alpha 056 10
+add_image_alpha 057 10
+add_image_alpha 058 10
+add_image_alpha 059 10
+add_image_alpha 060 10
+add_image_alpha 061 10
+add_image_alpha 062 10
+add_image_alpha 063 10
+add_image_alpha 064 10
+add_image_alpha 065 10
+pool
+loop 2
+sleep 16
+chg_image_pos_offset 040 0 -2 48 0 0 0
+chg_image_pos_offset 050 0 0 -48 0 0 0
+chg_image_pos_offset 051 0 0 48 0 0 0
+chg_image_pos_offset 052 0 0 -48 0 0 0
+chg_image_pos_offset 053 0 0 48 0 0 0
+chg_image_pos_offset 054 0 0 -48 0 0 0
+chg_image_pos_offset 055 0 0 48 0 0 0
+chg_image_pos_offset 056 0 0 -48 0 0 0
+chg_image_pos_offset 057 0 0 48 0 0 0
+chg_image_pos_offset 058 0 0 -48 0 0 0
+chg_image_pos_offset 059 0 0 48 0 0 0
+chg_image_pos_offset 060 0 0 -48 0 0 0
+chg_image_pos_offset 061 0 0 48 0 0 0
+chg_image_pos_offset 062 0 0 -48 0 0 0
+chg_image_pos_offset 063 0 0 48 0 0 0
+chg_image_pos_offset 064 0 0 -48 0 0 0
+chg_image_pos_offset 065 0 0 48 0 0 0
+add_image_alpha 058 10
+add_image_alpha 059 10
+add_image_alpha 060 10
+add_image_alpha 061 10
+add_image_alpha 062 10
+add_image_alpha 063 10
+add_image_alpha 064 10
+add_image_alpha 065 10
+sleep 16
+chg_image_pos_offset 040 0 -2 -48 0 0 0
+chg_image_pos_offset 050 0 0 48 0 0 0
+chg_image_pos_offset 051 0 0 -48 0 0 0
+chg_image_pos_offset 052 0 0 48 0 0 0
+chg_image_pos_offset 053 0 0 -48 0 0 0
+chg_image_pos_offset 054 0 0 48 0 0 0
+chg_image_pos_offset 055 0 0 -48 0 0 0
+chg_image_pos_offset 056 0 0 48 0 0 0
+chg_image_pos_offset 057 0 0 -48 0 0 0
+chg_image_pos_offset 058 0 0 48 0 0 0
+chg_image_pos_offset 059 0 0 -48 0 0 0
+chg_image_pos_offset 060 0 0 48 0 0 0
+chg_image_pos_offset 061 0 0 -48 0 0 0
+chg_image_pos_offset 062 0 0 48 0 0 0
+chg_image_pos_offset 063 0 0 -48 0 0 0
+chg_image_pos_offset 064 0 0 48 0 0 0
+chg_image_pos_offset 065 0 0 -48 0 0 0
+add_image_alpha 058 10
+add_image_alpha 059 10
+add_image_alpha 060 10
+add_image_alpha 061 10
+add_image_alpha 062 10
+add_image_alpha 063 10
+add_image_alpha 064 10
+add_image_alpha 065 10
+pool
+loop_inf
+if_flag_lesser 17 2
+sleep 16
+chg_image_pos 040 305 67 48 176 48 48
+chg_image_pos_offset 050 0 0 -48 0 0 0
+chg_image_pos 051 69 110 0 176 48 48
+chg_image_pos_offset 052 0 0 -48 0 0 0
+chg_image_pos_offset 053 0 0 48 0 0 0
+chg_image_pos_offset 054 0 0 -48 0 0 0
+chg_image_pos 055 67 64 0 176 48 48
+chg_image_pos_offset 056 0 0 -48 0 0 0
+chg_image_pos 057 320 98 0 176 48 48
+chg_image_pos_offset 058 0 0 -48 0 0 0
+chg_image_pos_offset 059 0 0 48 0 0 0
+chg_image_pos_offset 060 0 0 -48 0 0 0
+chg_image_pos_offset 061 0 0 48 0 0 0
+chg_image_pos_offset 062 0 0 -48 0 0 0
+chg_image_pos_offset 063 0 0 48 0 0 0
+chg_image_pos_offset 064 0 0 -48 0 0 0
+chg_image_pos_offset 065 0 0 48 0 0 0
+sleep 16
+chg_image_pos_offset 040 0 -2 -48 0 0 0
+chg_image_pos_offset 050 0 0 48 0 0 0
+chg_image_pos_offset 051 0 0 -48 0 0 0
+chg_image_pos_offset 052 0 0 48 0 0 0
+chg_image_pos_offset 053 0 0 -48 0 0 0
+chg_image_pos_offset 054 0 0 48 0 0 0
+chg_image_pos_offset 055 0 0 -48 0 0 0
+chg_image_pos_offset 056 0 0 48 0 0 0
+chg_image_pos_offset 057 0 0 -48 0 0 0
+chg_image_pos_offset 058 0 0 48 0 0 0
+chg_image_pos_offset 059 0 0 -48 0 0 0
+chg_image_pos_offset 060 0 0 48 0 0 0
+chg_image_pos_offset 061 0 0 -48 0 0 0
+chg_image_pos_offset 062 0 0 48 0 0 0
+chg_image_pos_offset 063 0 0 -48 0 0 0
+chg_image_pos_offset 064 0 0 48 0 0 0
+chg_image_pos_offset 065 0 0 -48 0 0 0
+sleep 16
+chg_image_pos_offset 040 0 -2 48 0 0 0
+chg_image_pos_offset 050 0 0 -48 0 0 0
+chg_image_pos_offset 051 0 0 48 0 0 0
+chg_image_pos_offset 052 0 0 48 0 0 0
+chg_image_pos_offset 053 0 0 48 0 0 0
+chg_image_pos_offset 054 0 0 -48 0 0 0
+chg_image_pos_offset 055 0 0 48 0 0 0
+chg_image_pos_offset 056 0 0 -48 0 0 0
+chg_image_pos_offset 057 0 0 48 0 0 0
+chg_image_pos_offset 058 0 0 -48 0 0 0
+chg_image_pos_offset 059 0 0 48 0 0 0
+chg_image_pos_offset 060 0 0 -48 0 0 0
+chg_image_pos_offset 061 0 0 48 0 0 0
+chg_image_pos_offset 062 0 0 -48 0 0 0
+chg_image_pos_offset 063 0 0 48 0 0 0
+chg_image_pos_offset 064 0 0 -48 0 0 0
+chg_image_pos_offset 065 0 0 48 0 0 0
+sleep 16
+chg_image_pos_offset 040 0 -2 -96 0 0 0
+chg_image_pos_offset 050 0 0 48 0 0 0
+chg_image_pos_offset 051 0 0 -96 0 0 0
+chg_image_pos 052 125 137 48 176 48 48
+chg_image_pos_offset 053 0 0 -48 0 0 0
+chg_image_pos_offset 054 0 0 48 0 0 0
+chg_image_pos_offset 055 0 0 -96 0 0 0
+chg_image_pos_offset 056 0 0 48 0 0 0
+chg_image_pos_offset 057 0 0 -96 0 0 0
+chg_image_pos_offset 058 0 0 48 0 0 0
+chg_image_pos_offset 059 0 0 -48 0 0 0
+chg_image_pos_offset 060 0 0 48 0 0 0
+chg_image_pos_offset 061 0 0 -48 0 0 0
+chg_image_pos_offset 062 0 0 48 0 0 0
+chg_image_pos_offset 063 0 0 -48 0 0 0
+chg_image_pos_offset 064 0 0 48 0 0 0
+chg_image_pos_offset 065 0 0 -48 0 0 0
+fi
+if_flag_greater 17 1
+sleep 16
+chg_image_pos 040 305 67 48 176 48 48
+chg_image_pos_offset 050 0 0 -48 0 0 0
+chg_image_pos 051 69 110 48 176 48 48
+chg_image_pos_offset 052 0 0 -48 0 0 0
+chg_image_pos_offset 053 0 0 48 0 0 0
+chg_image_pos_offset 054 0 0 -48 0 0 0
+chg_image_pos 055 67 64 48 176 48 48
+chg_image_pos_offset 056 0 0 -48 0 0 0
+chg_image_pos 057 320 98 48 176 48 48
+chg_image_pos_offset 058 0 0 -48 0 0 0
+chg_image_pos_offset 059 0 0 48 0 0 0
+chg_image_pos_offset 060 0 0 -48 0 0 0
+chg_image_pos_offset 061 0 0 48 0 0 0
+chg_image_pos_offset 062 0 0 -48 0 0 0
+chg_image_pos_offset 063 0 0 48 0 0 0
+chg_image_pos_offset 064 0 0 -48 0 0 0
+chg_image_pos_offset 065 0 0 48 0 0 0
+sleep 16
+chg_image_pos_offset 040 0 -2 -48 0 0 0
+chg_image_pos_offset 050 0 0 48 0 0 0
+chg_image_pos_offset 051 0 0 -48 0 0 0
+chg_image_pos_offset 052 0 0 48 0 0 0
+chg_image_pos_offset 053 0 0 -48 0 0 0
+chg_image_pos_offset 054 0 0 48 0 0 0
+chg_image_pos_offset 055 0 0 -48 0 0 0
+chg_image_pos_offset 056 0 0 48 0 0 0
+chg_image_pos_offset 057 0 0 -48 0 0 0
+chg_image_pos_offset 058 0 0 48 0 0 0
+chg_image_pos_offset 059 0 0 -48 0 0 0
+chg_image_pos_offset 060 0 0 48 0 0 0
+chg_image_pos_offset 061 0 0 -48 0 0 0
+chg_image_pos_offset 062 0 0 48 0 0 0
+chg_image_pos_offset 063 0 0 -48 0 0 0
+chg_image_pos_offset 064 0 0 48 0 0 0
+chg_image_pos_offset 065 0 0 -48 0 0 0
+fi
+pool

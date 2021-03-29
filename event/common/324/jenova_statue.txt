@@ -1,0 +1,90 @@
+// from 328/nibel_reactor9.txt
+loop_inf
+if_flag 17 0
+// ジェノバ像を斬った直後 揺れとスクリーンエフェクト(暗)
+set_screen_effect add 127 127 127 50
+loop 3
+inc_map_draw_y_offset
+sleep 1
+pool
+reset_screen_effect
+loop 3
+dec_map_draw_y_offset
+sleep 1
+pool
+sleep 6
+fi
+if_flag 17 1
+// 揺れとスクリーンエフェクト(暗)
+loop 2
+set_screen_effect sub 136 136 0 100
+loop 6
+inc_map_draw_y_offset
+sleep 1
+pool
+reset_screen_effect
+loop 6
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+fi
+// 揺れとスクリーンエフェクト(暗2)
+if_flag 17 2
+loop 3
+set_screen_effect sub 96 208 224 100
+loop 4
+inc_map_draw_y_offset
+sleep 1
+pool
+reset_screen_effect
+loop 4
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+// 揺れが小刻みに
+loop 5
+set_screen_effect sub 96 208 224 50
+loop 3
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 3
+dec_map_draw_y_offset
+sleep 1
+pool
+reset_screen_effect
+loop 3
+inc_map_draw_y_offset
+sleep 1
+pool
+loop 3
+dec_map_draw_y_offset
+sleep 1
+pool
+pool
+// フェードアウト
+draw_image 005 0 7 0 0 256 224 1 event/black.png
+set_image_alpha 005 0
+loop 10
+chg_image_pos_offset 005 0 -1 0 0 0 0
+inc_map_draw_y_offset
+sleep 4
+add_image_alpha 005 5
+chg_image_pos_offset 005 0 1 0 0 0 0
+dec_map_draw_y_offset
+sleep 4
+add_image_alpha 005 5
+pool
+kill_through 32423
+kill_through 32822
+erase_image 000
+kill_through_range 32440 32443
+sleep 16
+set_map_draw_y_offset 0
+stop_se
+create event_generator 32425 328 0 0 17 0 0 @../common/324/jenova.txt
+end
+fi
+pool

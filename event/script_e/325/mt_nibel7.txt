@@ -124,16 +124,13 @@ wait_key_push_edge a
 erase_msg3
 sleep 16
 chg_npc_img 32513 193
-chg_npc_dir 32513 up
+chg_npc_dir 32513 down
 sleep 16
 chg_speed 32513 slow
-slide_walk_npc 32513 down 1
+loop 2
+move_npc 32513 down 1
 sleep 64
-slide_walk_npc 32513 down 1
-sleep 48
-chg_npc_img 32513 193
-chg_npc_dir 32513 up
-sleep 16
+pool
 chg_speed 32513 normal
 jump_npc 32513 same 2
 sleep 32
@@ -160,6 +157,7 @@ create npc2 32811 328 7 10 5 0 0 セフィロス\n「バルブは　とじたのか？
 create event_generator 32820 328 7 19 17 0 0 @../common/328/nibel_reactor.txt
 create event_generator 32821 328 0 0 17 0 0 @328/nibel_reactor1.txt
 create map_door 32850 328 7 9 22 0 0 
+create npc2 32851 328 7 9 17 0 0 
 recover_all_chara
 sleep 16
 warp_ff3_2 327 18 24 2 up

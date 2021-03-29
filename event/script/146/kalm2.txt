@@ -16,23 +16,23 @@ sleep 32
 chg_npc_dir 14611 left
 chg_npc_dir 14612 left
 set_talk_npc 14612
-if_flag 17 0
+if_flag 10 0
 jump_npc 14612 same 1
 msg ティファ\n「ここが　カームね
 fi
-if_flag 17 1
+if_flag 10 1
 step_npc 14612 2
 msg エアリス\n「カームについたね
 fi
-if_flag 17 2
+if_flag 10 2
 step_npc 14612 2
 msg バレット\n「ここが　カームだ
 fi
-if_flag 17 3
+if_flag 10 3
 step_npc 14612 2
 msg エアリス\n「カームについたね
 fi
-if_flag_greater 17 3
+if_flag_greater 10 3
 chg_speed 14612 slow
 step_npc 14612 1
 msg レッド13\n「……カームについたな
@@ -40,23 +40,23 @@ fi
 reset_talk_npc
 sleep 16
 set_talk_npc 14611
-if_flag_lesser 17 2
+if_flag_lesser 10 2
 step_npc 14611 2
 msg バレット\n「おい　さきに　やどやで　まってるぜ。\n　チンタラせずに　はやくこいよ！
 fi
-if_flag 17 2
+if_flag 10 2
 chg_speed 14611 slow
 step_npc 14611 1
 msg レッド13\n「やどやで　おちあう てはずだったな。\n　……いくか
 sleep 16
 fi
-if_flag_greater 17 2
-if_flag_lesser 17 5
+if_flag_greater 10 2
+if_flag_lesser 10 5
 step_npc 14611 2
 msg ティファ\n「やどやで　みんながまってるわ。\n　いきましょう　クラウド
 fi
 fi
-if_flag 17 5
+if_flag 10 5
 step_npc 14611 2
 msg エアリス\n「みんな　もうついてるかな。\n　はやく　やどやに　いきましょ！
 fi
@@ -73,7 +73,7 @@ sleep 32
 kill 14611
 close_door 14650
 sleep 16
-if_flag 17 0
+if_flag 10 0
 step_npc 14612 2
 msg ティファ\n「いきましょう　クラウド
 jump_npc 14612 same 1
@@ -86,12 +86,12 @@ sleep 4
 chg_npc_dir 14612 up
 sleep 4
 fi
-if_flag 17 1
+if_flag 10 1
 jump_npc 14612 same 1
 msg エアリス\n「じゃあ　さき　いってるね
 chg_npc_dir 14612 up
 fi
-if_flag 17 2
+if_flag 10 2
 step_npc 14612 2
 msg バレット\n「とっととこいよ
 jump_npc 14612 same 2
@@ -106,12 +106,12 @@ chg_npc_dir 14612 up
 sleep 4
 pool
 fi
-if_flag 17 3
+if_flag 10 3
 jump_npc 14612 same 1
 msg エアリス\n「じゃあ　さき　いってるね
 chg_npc_dir 14612 up
 fi
-if_flag_greater 17 3
+if_flag_greater 10 3
 step_npc 14612 1
 msg レッド13\n「いこう　クラウド
 chg_npc_dir 14612 up
@@ -133,7 +133,6 @@ wait_key_push_edge a
 erase_image 14699
 set_flag 21 1
 create event_generator 90120 901 175 79 17 1 0 @../common/901/reset_flag21.txt
-set_flag 17 0
 if_party_mem 1
 del_party_mem 1
 fi
@@ -156,4 +155,3 @@ create npc_event 14812 148 7 9 2 2 0 none
 create npc_event 14813 148 7 10 3 2 0 none
 create npc_event 14814 148 6 11 176 0 0 none
 create event_generator 14821 148 5 4 17 1 0 @148/kalm3.txt
-set_flag 17 0

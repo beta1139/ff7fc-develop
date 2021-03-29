@@ -1,0 +1,21 @@
+// from 314/shinra_mansion2.txt
+step_npc 31411 2
+msg セフィロス\n「オレのははの　なは　ジェノバ……\n　ジェノバ.プロジェクト……\n　これは　ぐうぜんなのか？
+sleep 64
+step_npc 31411 2
+msg セフィロス\n「ガストはかせ……\n　どうしてなにも　おしえてくれなかった？\n　……どうしてしんだ？
+sleep 32
+fadeout
+sleep 32
+warp 314 4 20 up
+draw_char on
+kill 31410
+sleep 32
+chg_speed 31411 not_step
+chg_type 31411 npc3
+set_flag_wall 31411
+fadein
+include ./event/common/key_valid.txt
+chg_char_state_event
+chg_event_move_char_speed normal
+create event_generator 31220 312 38 11 17 1 0 @312/shinra_mansion4.txt

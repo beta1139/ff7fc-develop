@@ -452,7 +452,7 @@ warp 727 28 28 down
 create event_generator 72820 728 11 40 17 0 0 @728/mt_nibel4.txt
 chg_char_state_event
 sleep 16
-create npc_event 72813 728 12 40 193 1 1 none
+create npc_event 72813 728 12 40 197 2 1 none
 create npc_event 72812 728 10 40 193 2 1 none
 fadein
 warp_ff3_2 728 11 40 2 up

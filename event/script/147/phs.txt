@@ -1,0 +1,93 @@
+// 148/cloud's_past11.txtから生成
+wait_talk
+chg_type 14711 npc_event
+chg_type 14712 npc_event
+chg_dir_to_char 14711
+chg_dir_to_char 14712
+chg_speed 14711 normal
+chg_speed 14712 normal
+sleep 16
+set_layer 14711 front
+jump_npc 14711 same 1
+if_not_active_mem 1
+msg バレット\n「おい　クラウド。\n　これからは『PHS』でな
+fi
+if_not_active_mem 2
+if_active_mem 1
+msg ティファ\n「あ　クラウド。\n　これからは『PHS』をつかって
+fi
+fi
+if_not_active_mem 4
+if_not_active_mem 3
+msg エアリス\n「あ　クラウド。\n　これからは『PHS』をつかってね
+fi
+fi
+sleep 16
+include ./event/common/effect_fadeout.txt
+sleep 16
+play_se ready.ogg
+msg [パーティのいれかえ]\n　メニューをひらいて　『PHS』をえらぶと\n　パーティメンバーのいれかえが　できます。\n\n　ただし『PHS』がつかえるのは\n　ワールドマップとセーブポイントのうえだけです。\n（みてい）
+include ./event/common/effect_fadein.txt
+reset_screen_effect
+sleep 16
+step_npc 14712 2
+if_not_active_mem 1
+if_not_active_mem 2
+msg ティファ\n「『PHS』があれば\n　れんらくが　とりやすくなるわね
+fi
+fi
+if_not_active_mem 3
+if_active_mem 4
+msg エアリス\n「『PHS』があれば\n　いつでもクラウドにあえるね！
+fi
+fi
+if_not_active_mem 4
+msg レッド13\n「『PHS』があれば\n　たがいの　れんらくがとりやすくなる
+fi
+sleep 16
+step_npc 14711 2
+if_not_active_mem 3
+if_not_active_mem 4
+msg エアリス\n「じゃあ　わたしいくね
+fi
+fi
+if_not_active_mem 2
+if_not_active_mem 4
+msg ティファ\n「じゃあ　わたしいくね
+fi
+if_not_active_mem 3
+msg ティファ\n「じゃあ　さきにいくわね
+fi
+fi
+if_not_active_mem 1
+msg バレット\n「じゃあな　オレたちはいくぜ
+fi
+set_layer 14711 back
+chg_speed 14711 slow
+chg_speed 14712 slow
+move_npc 14711 down 3
+sleep 32
+move_npc 14712 left 1
+sleep 32
+move_npc 14712 down 3
+play_se door_open.ogg
+open_door 14750
+sleep 32
+kill 14711
+sleep 64
+kill 14712
+close_door 14750
+if_not_active_mem 1
+add_party_mem 1
+fi
+if_not_active_mem 2
+add_party_mem 2
+fi
+if_not_active_mem 3
+add_party_mem 3
+fi
+if_not_active_mem 4
+add_party_mem 4
+fi
+set_flag 30 42
+create event_generator 14880 148 0 0 17 0 0 @../common/point.txt

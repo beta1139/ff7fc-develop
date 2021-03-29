@@ -1,0 +1,250 @@
+// from common/297/cloud's_past10_1.txt
+// 炎シーン点滅　次イベントのファイル生成
+set_screen_effect add 160 48 0 0
+loop_inf
+if_flag_lesser 17 2
+loop 5
+inc_screen_effect_val 15
+sleep 2
+pool
+loop 5
+dec_screen_effect_val 15
+sleep 2
+pool
+fi
+if_flag 17 2
+// セフィロスが上に動き出す
+set_image_alpha 044 5
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 10
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 15
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 20
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 25
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 30
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 35
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 40
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 45
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 50
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 55
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 60
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 65
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 70
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 75
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 80
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_flag 17 3
+// セフィロス・フェードアウト
+set_image_alpha 044 85
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 90
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 95
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 044 100
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+chg_npc_img 31586 17
+chg_npc_img 31587 17
+set_image_alpha 044 0
+loop 10
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+pool
+set_image_alpha 070 10
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 070 20
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 070 30
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 070 40
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 070 50
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 070 60
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 070 70
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 070 80
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 070 90
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+set_image_alpha 070 100
+loop 6
+loop 5
+inc_screen_effect_val 20
+sleep 1
+pool
+loop 5
+dec_screen_effect_val 20
+sleep 1
+pool
+pool
+fadeout
+reset_screen_effect
+sleep 48
+kill_through_range 31500 31599
+sleep 16
+erase_image_range 000 099
+kill_through_range 32550 32551
+create npc_event 31710 317 17 14 12 1 2 none
+warp 317 10 23 up
+sleep 32
+create map_door 32550 325 13 10 0 0 0 
+create map_door 32551 325 19 2 0 0 0 
+fadein
+stop_se
+chg_event_move_char_speed slow
+move_char up 10
+move_npc 31710 right 5
+sleep 80
+move_npc 31710 up 3
+sleep 48
+move_npc 31710 left 13
+sleep 192
+fadeout
+kill_through_range 32500 32549
+sleep 32
+warp 325 13 17 up
+create npc_event 32510 325 13 16 12 0 2 none
+open_door 32550
+sleep 32
+move_npc 32510 up 2
+fadein
+chg_event_move_char_speed normal
+move_char up 8
+sleep 64
+move_npc 32510 up 4
+sleep 64
+kill 32510
+kill 31710
+sleep 16
+fadeout
+warp 327 18 23 up
+kill_through_range 32720 32721
+kill_through_range 29700 29799
+close_door 32550
+draw_char on
+sleep 64
+play_event_bgm EX-13-Magic_Light_Reactor.ogg
+create npc2 32700 327 18 24 17 0 4 
+create npc_event 32710 327 14 9 121 0 3 none
+create npc_event 32711 327 14 10 14 3 0 none
+create npc2 32712 327 15 10 21 2 4 
+chg_npc_y_offset 32710 -3
+create event_generator 32720 327 11 19 17 0 0 @../common/327/nibel_reactor_jump1.txt
+create event_generator 32721 327 11 23 17 0 0 @../common/327/nibel_reactor_jump1.txt
+create event_generator 32725 327 14 14 17 0 0 @327/nibel_reactor6.txt
+create event_generator 32726 327 14 8 17 0 0 @327/nibel_reactor7.txt
+sleep 32
+fadein
+include ./event/common/key_valid.txt
+chg_char_state_event
+end
+fi
+pool

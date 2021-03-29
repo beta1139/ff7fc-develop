@@ -1,0 +1,138 @@
+// from common/324/jenova.txt
+set_screen_effect sub 64 96 248 100
+set_gray_scale
+loop 5
+dec_screen_effect_val 10
+loop 2
+set_image_alpha 005 50
+sleep 4
+pool
+loop 2
+set_image_alpha 005 0
+sleep 4
+pool
+pool
+dec_screen_effect_val 50
+reset_gray_scale
+loop_inf
+if_flag 19 0
+set_image_alpha 001 0
+set_image_alpha 003 100
+set_image_alpha 002 0
+set_image_alpha 006 100
+loop 5
+inc_screen_effect_val 10
+sleep 1
+pool
+set_image_alpha 001 100
+set_image_alpha 003 0
+set_image_alpha 002 100
+set_image_alpha 006 0
+loop 5
+inc_screen_effect_val 10
+sleep 1
+pool
+set_gray_scale
+set_image_alpha 001 0
+set_image_alpha 003 100
+set_image_alpha 002 0
+set_image_alpha 006 100
+loop 5
+dec_screen_effect_val 10
+sleep 1
+pool
+set_image_alpha 001 100
+set_image_alpha 003 0
+set_image_alpha 002 100
+set_image_alpha 006 0
+loop 5
+dec_screen_effect_val 10
+sleep 1
+pool
+reset_gray_scale
+sleep 8
+fi
+//　グレイスケール終わり
+if_flag 19 1
+set_screen_effect sub 64 96 248 0
+set_image_alpha 001 0
+set_image_alpha 003 100
+set_image_alpha 002 100
+loop 5
+inc_screen_effect_val 10
+sleep 1
+pool
+set_image_alpha 001 0
+set_image_alpha 003 100
+set_image_alpha 002 100
+loop 5
+inc_screen_effect_val 10
+sleep 1
+pool
+set_image_alpha 001 0
+set_image_alpha 003 100
+set_image_alpha 002 100
+loop 5
+dec_screen_effect_val 10
+sleep 1
+pool
+set_image_alpha 001 0
+set_image_alpha 003 100
+set_image_alpha 002 100
+loop 5
+dec_screen_effect_val 10
+sleep 1
+pool
+sleep 8
+fi
+// 明るい点滅
+if_flag 19 2
+set_screen_effect add 64 96 248 0
+loop 2
+loop 10
+inc_screen_effect_val 10
+sleep 1
+pool
+set_gray_scale
+loop 10
+dec_screen_effect_val 10
+sleep 1
+pool
+reset_gray_scale
+pool
+loop 5
+add_image_alpha 006 10
+add_image_alpha 005 10
+loop 10
+inc_screen_effect_val 10
+sleep 1
+pool
+set_gray_scale
+add_image_alpha 006 10
+add_image_alpha 005 10
+loop 10
+dec_screen_effect_val 10
+sleep 1
+pool
+reset_gray_scale
+pool
+reset_screen_effect
+sleep 16
+kill_through 107
+kill_through 32425
+kill 32430
+sleep 16
+fadeout
+stop_se
+sleep 16
+erase_image_range 000 006
+warp 324 7 16 down
+set_npc_pos 32410 324 7 16
+chg_npc_img 32410 12
+sleep 48
+chg_char_state_event
+fadein
+create event_generator 32426 324 0 0 17 1 0 @324/nibel_reactor10.txt
+end
+fi
+pool

@@ -1,0 +1,225 @@
+wait_same_pos
+// from 314/shinra_mansion6.txt
+kill_through_range 29790 29791
+chg_char_dir down
+chg_npc_dir 29780 right
+set_screen_effect sub 255 255 255 0
+include ./event/common/set_text/clear_alpha0.txt
+loop 4
+sleep 2
+inc_screen_effect_val 10
+pool
+set_text 1 　 　ザンガン　
+set_text 2 　 　「おっ　あんたか！　
+set_text 3 　 　　あんたは　しょうき　なんだろうな？
+loop 4
+sleep 1
+set_text_alpha 1 25
+set_text_alpha 2 25
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 1 0
+set_text_alpha 2 0
+set_text_alpha 3 0
+pool
+loop 4
+sleep 1
+set_text_alpha 1 50
+set_text_alpha 2 50
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 1 25
+set_text_alpha 2 25
+set_text_alpha 3 25
+pool
+loop 4
+sleep 1
+set_text_alpha 1 75
+set_text_alpha 2 75
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 1 50
+set_text_alpha 2 50
+set_text_alpha 3 50
+pool
+loop 4
+sleep 1
+set_text_alpha 1 100
+set_text_alpha 2 100
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 1 75
+set_text_alpha 2 75
+set_text_alpha 3 75
+pool
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+jump_char same 1
+sleep 16
+chg_event_move_char_speed fast
+step_char 2
+sleep 32
+set_text 1 　 　ザンガン　
+set_text 2 　 　「それならこっちにきて
+set_text 3 　 　　てつだってくれ！
+loop 4
+sleep 1
+set_text_alpha 1 25
+set_text_alpha 2 25
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 1 0
+set_text_alpha 2 0
+set_text_alpha 3 0
+pool
+loop 4
+sleep 1
+set_text_alpha 1 50
+set_text_alpha 2 50
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 1 25
+set_text_alpha 2 25
+set_text_alpha 3 25
+pool
+loop 4
+sleep 1
+set_text_alpha 1 75
+set_text_alpha 2 75
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 1 50
+set_text_alpha 2 50
+set_text_alpha 3 50
+pool
+loop 4
+sleep 1
+set_text_alpha 1 100
+set_text_alpha 2 100
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 1 75
+set_text_alpha 2 75
+set_text_alpha 3 75
+pool
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+chg_event_move_char_speed normal
+set_slide_walk_char_flag
+move_char up 1
+sleep 16
+reset_slide_walk_char_flag
+chg_event_move_char_speed fast
+step_char 1
+sleep 8
+move_char down 1
+loop 4
+sleep 2
+dec_screen_effect_val 10
+pool
+reset_screen_effect
+sleep 8
+jump_char down 3
+sleep 48
+chg_char_img_tmp 143
+set_map_draw_y_offset 2
+sleep 2
+set_map_draw_y_offset 0
+sleep 14
+reset_char_img_tmp
+sleep 24
+chg_event_move_char_speed normal
+move_char left 1
+sleep 48
+step_char 1
+chg_char_dir up
+sleep 40
+chg_char_dir right
+sleep 40
+chg_char_dir down
+sleep 48
+chg_npc_dir 29780 down
+sleep 16
+chg_char_img_tmp 206
+sleep 32
+chg_event_move_char_speed slow
+step_char 3
+sleep 16
+set_screen_effect sub 255 255 255 0
+include ./event/common/set_text/clear_alpha0.txt
+loop 4
+sleep 2
+inc_screen_effect_val 10
+pool
+set_text 1 　 　ザンガン　
+set_text 2 　 　「オレは　このいえをみてくる。　
+set_text 3 　 　　あんたは　そっちのいえを！
+loop 4
+sleep 1
+set_text_alpha 1 25
+set_text_alpha 2 25
+set_text_alpha 3 25
+sleep 1
+set_text_alpha 1 0
+set_text_alpha 2 0
+set_text_alpha 3 0
+pool
+loop 4
+sleep 1
+set_text_alpha 1 50
+set_text_alpha 2 50
+set_text_alpha 3 50
+sleep 1
+set_text_alpha 1 25
+set_text_alpha 2 25
+set_text_alpha 3 25
+pool
+loop 4
+sleep 1
+set_text_alpha 1 75
+set_text_alpha 2 75
+set_text_alpha 3 75
+sleep 1
+set_text_alpha 1 50
+set_text_alpha 2 50
+set_text_alpha 3 50
+pool
+loop 4
+sleep 1
+set_text_alpha 1 100
+set_text_alpha 2 100
+set_text_alpha 3 100
+sleep 1
+set_text_alpha 1 75
+set_text_alpha 2 75
+set_text_alpha 3 75
+pool
+wait_key_push_edge a
+include ./event/common/set_text/clear_alpha0.txt
+loop 4
+sleep 2
+dec_screen_effect_val 10
+pool
+reset_screen_effect
+reset_char_img_tmp
+chg_npc_dir 29780 left
+sleep 16
+jump_npc 29780 left 1
+sleep 4
+chg_npc_dir 29780 up
+sleep 4
+chg_npc_dir 29780 right
+sleep 4
+chg_npc_dir 29780 down
+sleep 4
+chg_npc_dir 29780 left
+sleep 2
+chg_npc_dir 29780 up
+sleep 16
+jump_npc 29780 same 1
+sleep 16
+chg_speed 29780 normal
+move_npc 29780 up 2
+sleep 32
+kill 29780
+chg_event_move_char_speed normal

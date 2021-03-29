@@ -1,0 +1,132 @@
+wait_same_pos
+// from 314/shinra_mansion3.txt
+fadeout
+sleep 32
+draw_char off
+warp 314 6 15 up
+chg_type 31411 npc_event
+chg_npc_dir 31411 left
+chg_speed 31411 not_move
+set_npc_pos 31411 314 6 15
+create map_obj 31460 314 6 16 89 0 0 
+sleep 32
+fadein
+chg_event_move_char_speed slow
+move_char left 7
+include ./event/common/set_text/clear_alpha0.txt
+sleep 112
+set_text 1 　 　それいこう　セフィロスは　
+set_text 2 　 　しんらやしきに
+set_text 3 　 　こもりきりになった……
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+sleep 16
+wait_key_push_edge a
+include ./event/common/set_text/fadeout_all.txt
+set_image_trans_col 78 168 16
+draw_image 000 224 108 160 1616 16 16 1 character.bmp
+draw_image 001 224 128 160 80 16 16 1 map_obj.bmp
+draw_image 002 224 112 176 80 16 16 1 map_obj.bmp
+draw_image 003 224 96 192 80 16 16 1 map_obj.bmp
+draw_image 004 224 76 160 1648 16 16 1 character.bmp
+set_image_alpha 004 0
+set_image_alpha 001 0
+set_image_alpha 002 0
+set_image_alpha 003 0
+chg_npc_img 31411 17
+loop 100
+dec_image_alpha 000
+inc_image_alpha 001
+sleep 1
+pool
+erase_image 000
+set_npc_pos 31411 314 6 13
+chg_npc_dir 31411 right
+chg_speed 31411 normal
+loop 50
+inc_image_alpha 002
+sleep 1
+pool
+loop 50
+inc_image_alpha 002
+inc_image_alpha 003
+sleep 1
+pool
+loop 50
+inc_image_alpha 003
+inc_image_alpha 004
+sleep 1
+pool
+loop 50
+inc_image_alpha 004
+sleep 1
+pool
+chg_npc_img 31411 205
+erase_image 004
+set_text 1 　 　まるで　なにかに
+set_text 2 　 　とりつかれたかのように
+set_text 3 　 　しょもつを　よみあさり
+set_text 4 　 　ちかしつの　あかりは
+set_text 5 　 　けっして　きえることは　なかった……
+include ./event/common/set_text/st01.txt
+include ./event/common/set_text/st02.txt
+include ./event/common/set_text/st03.txt
+chg_npc_dir 31411 up
+include ./event/common/set_text/st04.txt
+include ./event/common/set_text/st05.txt
+sleep 16
+wait_key_push_edge a
+draw_image 005 224 76 160 1632 16 16 1 character.bmp
+draw_image 006 224 80 176 80 16 16 1 map_obj.bmp
+draw_image 007 224 64 160 80 16 16 1 map_obj.bmp
+draw_image 008 224 44 160 1616 16 16 1 character.bmp
+chg_npc_img 31411 17
+set_image_alpha 006 0
+set_image_alpha 007 0
+set_image_alpha 008 0
+include ./event/common/set_text/fadeout_all.txt
+loop 100
+dec_image_alpha 005
+inc_image_alpha 006
+sleep 1
+pool
+loop 50
+inc_image_alpha 007
+sleep 1
+pool
+loop 50
+inc_image_alpha 007
+inc_image_alpha 008
+sleep 1
+pool
+loop 50
+inc_image_alpha 008
+sleep 1
+pool
+set_npc_pos 31411 314 6 11
+chg_npc_img 31411 205
+erase_image 008
+sleep 96
+chg_event_move_char_speed normal
+stop_bgm
+fadeout
+sleep 32
+erase_image_range 000 008
+include ./event/common/set_text/clear_alpha0.txt
+close_door 31251
+kill 31460
+warp 309 7 16 down
+draw_char on
+sleep 32
+create event_generator 31421 314 4 24 17 1 0 @314/shinra_mansion5.txt
+create event_generator 31422 314 6 10 17 1 0 @314/shinra_mansion6.txt
+set_npc_pos 31411 314 6 6
+chg_npc_y_offset 31411 2
+chg_npc_img 31411 100
+chg_npc_dir 31411 left
+chg_speed 31411 slow
+chg_param 31100 「セフィロスさんの\n　ようすが　へんなんだ
+sleep 32
+play_event_bgm EX-12-Pre_Those_Chosen.ogg
+fadein
