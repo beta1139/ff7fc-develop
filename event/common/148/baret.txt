@@ -1,0 +1,11 @@
+loop_inf
+chg_npc_img 14811 95
+chg_npc_dir 14811 up
+jump_npc 14811 same 1
+sleep 16
+jump_npc 14811 same 1
+sleep 16
+chg_speed 14811 normal
+step_npc 14811 2
+sleep 32
+pool
