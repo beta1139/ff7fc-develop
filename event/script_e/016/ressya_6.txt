@@ -3,12 +3,9 @@ wait_target_talk 1665
 set_key_unvalid left
 set_key_unvalid down
 set_key_unvalid right
-set_key_unvalid a
 set_key_unvalid start
 chg_type 1665 npc_event
 chg_npc_dir 1665 right
-sleep 16
-set_key_valid a
 set_talk_npc 1665
 msg Baret,\n`Look==we're nearin' the\n surface. Our home without\n no day or no night.\n If it weren't for that\n fuckin' Midgar Plate==\n we could see the big sky.
 reset_talk_npc

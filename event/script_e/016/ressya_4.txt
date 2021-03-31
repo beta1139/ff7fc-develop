@@ -1,15 +1,17 @@
 wait_event_invalid 1661
-wait_target_talked 1667
+wait_target_talk 1667
 set_key_unvalid up
 set_key_unvalid left
 set_key_unvalid down
 set_key_unvalid right
-set_key_unvalid a
 set_key_unvalid start
+chg_dir_to_char 1667
+chg_speed 1667 normal
 chg_type 1667 npc_event
-sleep 16
 set_talk_npc 1667
-set_key_valid a
+msg Jessie\n`Cloud, why don't you\n watch this with me?\n\n Midgar Train System\n Display. It'll be fun\n if we watch together.\n I'll explain it to you.
+sleep 16
+jump_npc 1667 same 1
 msg Jessie\n`I'm into this kind of\n things. Bombs, monitors,\n anything hi-tech.
 reset_talk_npc
 set_flag 17 1

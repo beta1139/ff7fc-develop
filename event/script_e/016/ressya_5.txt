@@ -1,9 +1,13 @@
 wait_event_invalid 1661
-wait_target_talked 1668
+wait_target_talk 1668
+set_key_unvalid left
+set_key_unvalid right
+set_key_unvalid b
+set_key_unvalid start
 chg_type 1668 npc_event
 chg_dir_to_char 1668
 chg_speed 1668 normal
-if_char_dir down
+msg Wedge\n`Work hard in AVALANCHE\n and someday I'm gonna\n make a big name==!\n You think I can have\n a rosy future?\n\n\n#2\n  What are you expecting?\n  Forget it.\n\n\n[[]][[]]
 create npc_event 1640 16 16 21 0 1 2 none
 draw_char off
 sleep 8
@@ -27,3 +31,7 @@ chg_npc_dir 1668 down
 chg_speed 1668 not_step
 chg_type 1668 npc
 chg_param 1668 Wedge\n`Work hard in AVALANCHE\n and someday I'm gonna\n make a big name==!
+set_key_valid left
+set_key_valid right
+set_key_valid b
+set_key_valid start

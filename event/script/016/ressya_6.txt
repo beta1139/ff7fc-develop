@@ -3,13 +3,10 @@ wait_target_talk 1665
 set_key_unvalid left
 set_key_unvalid down
 set_key_unvalid right
-set_key_unvalid a
 set_key_unvalid start
+set_talk_npc 1665
 chg_type 1665 npc_event
 chg_npc_dir 1665 right
-sleep 16
-set_key_valid a
-set_talk_npc 1665
 msg バレット\n「みろよ……ちじょうが　みえてきたぜ\n　ひるも　よるもねえ　おれたちの　まちがよ\n\n　ミッドガルの　プレートさえ　なけりゃなあ……\n　でっけえ　そらが　おがめんのになあ
 reset_talk_npc
 if_char_dir right

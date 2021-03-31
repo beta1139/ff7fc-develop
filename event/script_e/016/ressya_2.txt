@@ -47,13 +47,13 @@ loop 6
 dec_map_draw_y_offset
 sleep 1
 pool
-create npc_event 1668 16 1 21 36 3 2 Wedge\n`Work hard in AVALANCHE\n and someday I'm gonna\n make a big name==!\n You think I can have\n a rosy future?\n\n\n#2\n  What are you expecting?\n  Forget it.\n\n\n[[]][[]]
+create npc_event 1668 16 1 21 36 3 2 
 move_npc 1668 right 2
 sleep 16
 create npc_event 1666 16 1 21 35 3 2 Biggs\n`I see they're not\n on red alert yet.\n\n Won't be this easy\n tomorrow, though.
 move_npc 1666 right 1
 sleep 16
-create npc_event 1667 16 1 21 34 3 2 Jessie\n`Cloud, why don't you\n watch this with me?\n\n Midgar Train System\n Display. It'll be fun\n if we watch together.\n I'll explain it to you.
+create npc_event 1667 16 1 21 34 3 2 
 move_npc 1666 up 1
 move_npc 1667 right 1
 sleep 16
@@ -111,8 +111,8 @@ sleep 16
 chg_char_dir right
 chg_type 1665 npc
 chg_type 1666 npc
-chg_type 1667 npc
-chg_type 1668 npc
+chg_type 1667 npc2
+chg_type 1668 npc2
 chg_speed 1665 not_step
 chg_speed 1666 not_step
 chg_speed 1668 not_step
