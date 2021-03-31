@@ -68,6 +68,7 @@ chg_npc_dir 1908 down
 sleep 8
 move_npc 1909 down 1
 sleep 16
+chg_char_img 0
 step_npc 1921 4
 msg 『だいじょうぶか？\n　……ウェッジ！！
 sleep 64
