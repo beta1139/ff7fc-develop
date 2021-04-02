@@ -9,7 +9,7 @@ create event_generator 14621 146 0 0 17 1 0 @146/talked_npc2.txt
 create event_generator 14622 146 0 0 17 1 0 @146/talked_npc3.txt
 create npc_event 14700 147 7 4 68 1 0 none
 create npc2 14701 147 7 5 17 0 0 
-create event_generator 14720 147 0 0 17 1 0 @147/talk_npc1.txt
+create event_generator 14720 147 0 0 17 1 0 @147/kalm_inn.txt
 create npc2 14900 149 2 6 68 0 0 
 create event_generator 14920 149 0 0 17 1 0 @149/talk_npc1.txt
 create npc 15000 150 5 6 74 3 1 「まこうエネルギーの　おかげで\n　いろいろ　べんりに　なったけど……\n\n\n　でも　そのかわりに　どうぶつや　しょくぶつが\n　どんどん　へっているような　きがするわ\n\n\n　わたしは　むかしのほうが\n　よかったんじゃないかと　おもうの\n\n\n　ね　そうよね？\n\n\n\n#2\n　　そうかもしれない\n　　そんなことはない\n\n\n[[「そうでしょ？　そうおもうわよね]][[「おかあさんと　おなじことを　いうのね]]

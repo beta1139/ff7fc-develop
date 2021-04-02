@@ -69,6 +69,11 @@ create npc_event 14813 148 7 10 3 2 2 none
 create npc_event 14814 148 6 11 4 0 2 none
 create event_generator 14829 148 6 6 17 1 0 @148/cloud's_past08.txt
 fi
+if_flag 30 42
+set_flag 9 7
+warp_ff3_2 147 7 10 2 down
+enable_char_chg
+fi
 fi
 erase_msg3
 reset_talk_npc

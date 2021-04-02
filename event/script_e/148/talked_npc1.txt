@@ -3,6 +3,7 @@ wait_target_talk 14800
 reset_talk_flag 14800
 add_flag 41 1
 if_flag_lesser 41 6
+chg_char_img_tmp 0
 create npc_event 14810 148 1 5 0 0 2 none
 draw_char off
 chg_npc_y_offset 14810 -6
@@ -47,8 +48,12 @@ stop_se
 chg_speed 14801 not_move
 reset_slide_npc_flag 14801
 msg 『……
+chg_char_img_tmp 97
+chg_char_dir left
 play_se pick_up.wav
 msg 『ラストエリクサー』がおちてきた！
+chg_char_img_tmp 0
+chg_char_dir down
 kill 14801
 add_item 1006
 set_flag 41 6

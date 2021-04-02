@@ -11,10 +11,10 @@ if_flag_lesser 30 42
 msg 「クラウドさまですね。\n　おつれさまが　2かいで　おまちです
 fi
 if_flag_greater 30 41
-msg `Welcome to our inn.\n 20 Gil for a night.\n\n\n#2\n  Stay the night.\n  Don't.\n\n\n[[]][[]]
+msg 「いっぱく　20ギルです。\n　とまっていかれますか？\n\n\n#2\n　　はい\n　　いいえ\n\n\n[[]][[]]
 if_flag 3 0
 if_gil_less 20
-msg `You don't have\n enough money.
+msg 「おかねが　たりませんよ
 fi
 if_gil_greater 19
 sub_gil 20
@@ -23,12 +23,13 @@ play_event_bgm 2-03-Good_Night_until_Tomorrow.ogg
 recover_all_chara
 sleep 400
 warp 147 7 6 down
+chg_char_img_tmp 0
 draw_char on
 kill 14710
 fadein
 play_bgm
 reset_talk_npc
-msg {Yawn==\nRestored HP and MP!
+msg 『あー　よくねた……\nHP MPが　かいふくした！
 chg_speed 14700 not_move
 end
 fi

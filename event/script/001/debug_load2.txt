@@ -72,6 +72,7 @@ fi
 if_flag 30 42
 set_flag 9 7
 warp_ff3_2 147 7 10 2 down
+enable_char_chg
 fi
 fi
 erase_msg3
